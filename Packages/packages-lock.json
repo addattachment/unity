@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.tobii.xr.sdk": {
-      "version": "file:C:/Users/student/Downloads/TobiiXRSDK_3.0.1.179",
+      "version": "file:../Assets/VR_packages/TobiiXRSDK_3.0.1.179",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -184,7 +184,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "file:C:/Users/student/Downloads/PICO Unity Integration SDK v211",
+      "version": "file:../Assets/VR_packages/PICO Unity Integration SDK v211",
       "depth": 0,
       "source": "local",
       "dependencies": {
