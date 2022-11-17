@@ -19,10 +19,11 @@ public class TargetPos : MonoBehaviour
         
     }
 
-    public Vector3 GetFuturePosition(float time)
+    public Vector3 GetFuturePositionOfTarget(float time)
     {
         var angle = time * rotationVector;
         var resultingPos = RotatePointAroundPivot(this.transform.position, _parent.transform.position, angle);
+        //Debug.Log(resultingPos);
         return resultingPos;
     }
     

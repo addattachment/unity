@@ -1,6 +1,9 @@
+using Assets.Scripts;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
@@ -23,7 +26,9 @@ public class GameManager : MonoBehaviour
     public GameObject hitTarget;
     //[Header("GUI")]
     //[SerializeField] GameObject HUD;
-
+    [Header("bullet settings")]
+    public bool steerBall = false; // boolean to check if we want to steer the ball or let it follow it's natural path
+    public bool hitSuccesGuide = false; // if hitSuccesGuid is true, we want the ball to hitSuccesGuid the target, otherwise definitely miss
 
     // Start is called before the first frame update
     void Start()
@@ -49,12 +54,10 @@ public class GameManager : MonoBehaviour
         SetNewBullet();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void RestartScene()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
     }
-
     public void StartNewTrial()
     {
         RemainingTries = 5;
@@ -86,5 +89,23 @@ public class GameManager : MonoBehaviour
             }
             slingshot.Bullet = bullet;
         }
+    }
+    public void SetBallSteering()
+    {
+        steerBall = !steerBall;
+        GameObject.FindGameObjectWithTag("debug")
+            .GetComponentInChildren<DebugExample>()
+            .SetDebugText("" + steerBall + " " + hitSuccesGuide);
+        slingshot.SetTargetReachable(steerBall, hitSuccesGuide);
+    }
+
+    public void SetHitTargetSteering()
+    {
+        hitSuccesGuide = !hitSuccesGuide;
+        GameObject.FindGameObjectWithTag("debug")
+            .GetComponentInChildren<DebugExample>()
+            .SetDebugText("" + steerBall + " " + hitSuccesGuide);
+        slingshot.SetTargetReachable(steerBall, hitSuccesGuide);
+
     }
 }

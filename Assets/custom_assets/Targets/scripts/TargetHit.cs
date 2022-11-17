@@ -5,11 +5,11 @@ using UnityEngine;
 public class TargetHit : MonoBehaviour
 {
     [SerializeField] private Material material;
-    [SerializeField] private AudioSource cheering;
-    [SerializeField] private AudioSource booing;
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource missSound;
     [SerializeField] private GameObject TargetGO;
     private Target Target;
-    public bool activeTarget = false; // if activeTarget is true, this is the target to hit
+    public bool activeTarget = false; // if activeTarget is true, this is the target to hitSuccesGuid
 
     private void Start()
     {
@@ -21,9 +21,7 @@ public class TargetHit : MonoBehaviour
         activeTarget = active;
     }
     private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("hit by "+collision.gameObject.name);
-        Debug.Log(collision.gameObject.GetComponent<Renderer>().material.name+ material.name);
+    {      
         if (Target.readyForHit)
         {
             Target.readyForHit = false;
@@ -31,13 +29,15 @@ public class TargetHit : MonoBehaviour
             if(activeTarget)
             {
                 Debug.Log("correct target touched!");
-                cheering.Play();
+                hitSound.Play();
             }
             else
             {
                 Debug.Log("wrong!");
-                booing.Play();
+                missSound.Play();
             }
         }
+        // we tell the bullet that it did hitSuccesGuid a target, so we don't have to play a sound anymore.
+        collision.gameObject.GetComponent<Bullet>().didHitATarget = true;
     }
 }
