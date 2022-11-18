@@ -12,7 +12,6 @@ PICO Technology Co., Ltd.
 
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.XR.Management;
@@ -125,7 +124,7 @@ namespace Unity.XR.PXR
             {
                 PXR_Plugin.System.UPxr_InitializeFocusCallback();
             }
- 
+
             return displaySubsystem != null;
         }
 

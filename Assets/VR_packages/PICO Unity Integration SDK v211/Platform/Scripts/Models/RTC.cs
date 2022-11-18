@@ -25,7 +25,7 @@ namespace Pico.Platform.Models
             UserId = CLIB.ppf_RtcBinaryMessageReceived_GetUserId(o);
             var ptr = CLIB.ppf_RtcBinaryMessageReceived_GetData(o);
             var sz = CLIB.ppf_RtcBinaryMessageReceived_GetLength(o);
-            Data = MarshalUtil.ByteArrayFromNative(ptr, (uint) sz);
+            Data = MarshalUtil.ByteArrayFromNative(ptr, (uint)sz);
             RoomId = CLIB.ppf_RtcBinaryMessageReceived_GetRoomId(o);
         }
     }
@@ -114,7 +114,7 @@ namespace Pico.Platform.Models
             StreamType = CLIB.ppf_RtcStreamSyncInfo_GetStreamType(o);
             var ptr = CLIB.ppf_RtcStreamSyncInfo_GetData(o);
             var sz = CLIB.ppf_RtcStreamSyncInfo_GetLength(o);
-            Data = MarshalUtil.ByteArrayFromNative(ptr, (uint) sz);
+            Data = MarshalUtil.ByteArrayFromNative(ptr, (uint)sz);
         }
     }
 
@@ -174,7 +174,7 @@ namespace Pico.Platform.Models
 
         public RtcLocalAudioPropertiesReport(IntPtr o)
         {
-            ulong total = (ulong) CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(o);
+            ulong total = (ulong)CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(o);
             AudioPropertiesInfos = new RtcLocalAudioPropertiesInfo[total];
             for (uint i = 0; i < total; i++)
             {

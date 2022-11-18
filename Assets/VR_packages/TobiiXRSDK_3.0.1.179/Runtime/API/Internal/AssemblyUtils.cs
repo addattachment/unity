@@ -5,10 +5,8 @@ namespace Tobii.XR.Internal
     using System;
     using System.Collections.Generic;
     using System.Linq;
-    using System.Reflection;
-    using UnityEngine;
 
-    public static class AssemblyUtils 
+    public static class AssemblyUtils
     {
         public static Type EyetrackingProviderType(string typeName)
         {
@@ -25,9 +23,9 @@ namespace Tobii.XR.Internal
         public static string GetProviderCompilerFlag(IEyeTrackingProvider provider)
         {
             var attribute = Attribute.GetCustomAttribute(provider.GetType(), typeof(CompilerFlagAttribute)) as CompilerFlagAttribute;
-            if(attribute == null) return null;
-            
-            return attribute.Flag;            
+            if (attribute == null) return null;
+
+            return attribute.Flag;
         }
 
         private static Dictionary<string, string> _cachedProviderDisplayNames = new Dictionary<string, string>();

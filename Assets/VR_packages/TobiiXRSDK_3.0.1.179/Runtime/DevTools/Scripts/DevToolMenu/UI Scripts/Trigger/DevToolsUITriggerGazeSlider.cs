@@ -131,7 +131,7 @@ namespace Tobii.XR.GazeModifier
             if (Mathf.Abs(_incrementedMoveAmount) > _sizePerStep)
             {
                 // Determine the number of steps to move.
-                _stepsToMove = (int) (_incrementedMoveAmount / _sizePerStep);
+                _stepsToMove = (int)(_incrementedMoveAmount / _sizePerStep);
 
                 // Reset the value after it has been used to update the current step.
                 _incrementedMoveAmount = 0;
@@ -148,19 +148,19 @@ namespace Tobii.XR.GazeModifier
             _sliderGraphics.SetFillAmount(_sliderFillAmount);
 
             // Calculate the new value and update the value text.
-            Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+            Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
             _sliderGraphics.UpdateValueText(Value);
 
         }
 
         public void SetSliderTo(int number)
         {
-            _sliderFillAmount = (float) (number - _minValue) / (float) (_maxValue - _minValue);
+            _sliderFillAmount = (float)(number - _minValue) / (float)(_maxValue - _minValue);
             _sliderGraphics.SetFillAmount(_sliderFillAmount);
-            Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+            Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
             _sliderGraphics.UpdateValueText(Value);
             _sizePerStep = 1f / (_maxValue - _minValue);
-            _currentStep = (int) (_sliderFillAmount / _sizePerStep);
+            _currentStep = (int)(_sliderFillAmount / _sizePerStep);
         }
 
         /// <summary>

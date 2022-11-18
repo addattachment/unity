@@ -1,6 +1,5 @@
 //  Copyright © 2015-2022 Pico Technology Co., Ltd. All Rights Reserved.
 
-using System.Collections;
 using PXR_Audio.Spatializer;
 using UnityEditor;
 using UnityEngine;
@@ -95,7 +94,7 @@ public class PXR_Audio_Spatializer_AudioSource : MonoBehaviour
         sourceConfig.enableDoppler = enableDoppler;
         sourceGainAmplitude = DB2Mag(sourceGainDB);
         sourceConfig.sourceGain = sourceGainAmplitude;
-        
+
         PXR_Audio.Spatializer.Result ret = Context.AddSourceWithConfig(
             ref sourceConfig,
             ref sourceId,
@@ -246,7 +245,7 @@ public class PXR_Audio_Spatializer_AudioSource : MonoBehaviour
 
             if (attenuationDistanceChanged)
             {
-                PXR_Audio.Spatializer.Result ret = 
+                PXR_Audio.Spatializer.Result ret =
                     Context.SetSourceRange(sourceId, minAttenuationDistance, maxAttenuationDistance);
                 if (ret == PXR_Audio.Spatializer.Result.Success)
                     attenuationDistanceChanged = false;
@@ -309,7 +308,7 @@ public class PXR_Audio_Spatializer_AudioSource : MonoBehaviour
 
         isAudioDSPInProgress = true;
         int numFrames = data.Length / channels;
-        float oneOverChannelsF = 1.0f / ((float) channels);
+        float oneOverChannelsF = 1.0f / ((float)channels);
 
         //  force to mono
         if (channels > 1)
@@ -324,7 +323,7 @@ public class PXR_Audio_Spatializer_AudioSource : MonoBehaviour
                 data[frame] = sample * oneOverChannelsF;
             }
         }
-        Context.SubmitSourceBuffer(sourceId, data, (uint) numFrames);
+        Context.SubmitSourceBuffer(sourceId, data, (uint)numFrames);
 
         //  Mute Original signal
         for (int i = 0; i < data.Length; ++i)

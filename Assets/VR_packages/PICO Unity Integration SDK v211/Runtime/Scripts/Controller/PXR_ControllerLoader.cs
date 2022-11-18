@@ -10,9 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections;
-using System.IO;
 using LitJson;
+using System.IO;
 using UnityEngine;
 
 namespace Unity.XR.PXR
@@ -101,10 +100,10 @@ namespace Unity.XR.PXR
                         break; ;
                     }
                 case ControllerSimulationType.PICO_4:
-                {
-                    var neo3Object = Instantiate(hand == PXR_Input.Controller.LeftController ? PICO_4L : PICO_4R, transform, false);
-                    break; ;
-                }
+                    {
+                        var neo3Object = Instantiate(hand == PXR_Input.Controller.LeftController ? PICO_4L : PICO_4R, transform, false);
+                        break; ;
+                    }
             }
 #endif
         }
@@ -318,7 +317,7 @@ namespace Unity.XR.PXR
 
                 loadModelSuccess = true;
                 PXR_ControllerKeyEffects controllerVisual = go.AddComponent<PXR_ControllerKeyEffects>();
-                
+
                 controllerVisual.hand = hand;
                 LoadTexture(controllerVisual, controllerType.ToString() + id.ToString(), false);
                 go.transform.localRotation = Quaternion.Euler(new Vector3(0, 180, 0));

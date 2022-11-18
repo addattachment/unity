@@ -1,8 +1,8 @@
 ﻿namespace Tobii.XR.Internal
 {
-    using UnityEngine;
-    using UnityEditor;
     using System.IO;
+    using UnityEditor;
+    using UnityEngine;
 
     public class TobiiEulaCheck : EditorWindow
     {
@@ -70,8 +70,8 @@ and agree to be bound, by the Tobii XR Unity SDK License and Use Agreement.</col
 #endif
             }
         }
-        
-        
+
+
         private static TobiiEulaFile LoadOrCreateEulaFile()
         {
             var eulaFile = TobiiEulaFile.CreateEulaFile(out var resourceExists);

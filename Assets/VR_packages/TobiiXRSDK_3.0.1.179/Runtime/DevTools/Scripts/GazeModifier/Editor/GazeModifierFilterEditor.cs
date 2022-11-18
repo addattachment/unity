@@ -1,9 +1,6 @@
 
 namespace Tobii.XR.GazeModifier
 {
-    using System.IO;
-    using System.Linq;
-    using System.Reflection;
     using UnityEditor;
     using UnityEngine;
 

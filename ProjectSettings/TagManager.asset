@@ -9,8 +9,8 @@ TagManager:
   - slingshot
   - slingshotHook
   - Ground
-  - Bullet
   - debugCube
+  - ball
   layers:
   - Default
   - TransparentFX

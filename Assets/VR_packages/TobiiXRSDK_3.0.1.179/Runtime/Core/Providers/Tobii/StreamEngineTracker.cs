@@ -13,18 +13,18 @@ using Debug = UnityEngine.Debug;
 
 namespace Tobii.XR
 {
-    
+
     public delegate void WearableDataCallback(ref tobii_wearable_consumer_data_t data);
     public delegate void WearableAdvancedDataCallback(ref tobii_wearable_advanced_data_t data);
     public delegate void WearableFoveatedDataCallback(ref tobii_wearable_foveated_gaze_t data);
-    
+
     public class StreamEngineTrackerStartInfo
     {
         public WearableDataCallback WearableDataCallback;
         public WearableAdvancedDataCallback WearableAdvancedDataCallback;
         public WearableFoveatedDataCallback WearableFoveatedDataCallback;
     }
-    
+
     public class StreamEngineTracker
     {
         private static readonly tobii_wearable_consumer_data_callback_t
@@ -52,7 +52,7 @@ namespace Tobii.XR
         public readonly StreamEngineContext Context;
         public readonly tobii_feature_group_t LicenseLevel;
         public readonly List<string> FriendlyValidationErrors = new List<string>();
-        
+
         public bool ConvergenceDistanceSupported { get; private set; }
 
         public StreamEngineTracker(StreamEngineTracker_Description description)
@@ -63,9 +63,9 @@ namespace Tobii.XR
             {
                 description = new StreamEngineTracker_Description();
             }
-            
+
             // Connect
-            var customLog = new tobii_custom_log_t {log_func = LogCallback};
+            var customLog = new tobii_custom_log_t { log_func = LogCallback };
             var connectResult = ConnectionHelper.TryConnect(_streamEngineInteropWrapper, description, out Context, customLog);
             if (!connectResult.Connected)
             {
@@ -74,20 +74,20 @@ namespace Tobii.XR
 
             // Start background thread that handles processing of data and reconnecting
             _processInBackground = true;
-            _backgroundThread = new Thread(ProcessLoop) {IsBackground = true};
+            _backgroundThread = new Thread(ProcessLoop) { IsBackground = true };
             _backgroundThread.Start();
-            
+
             // Get connection metadata
             CheckForCapabilities(Context.Device);
             Interop.tobii_get_feature_group(Context.Device, out LicenseLevel);
-            
+
             // Print friendly validation errors
             try
             {
                 for (var i = 0; i < connectResult.LicenseValidationResults.Count; ++i)
                 {
                     if (connectResult.LicenseValidationResults[i] == tobii_license_validation_result_t.TOBII_LICENSE_VALIDATION_RESULT_OK) continue;
-            
+
                     var result = Interop.tobii_get_device_info(Context.Device, out var deviceInfo);
                     var licenseParser = new LicenseParser(description.License[i]);
                     var friendlyMessage = licenseParser.FriendlyValidationError(connectResult.LicenseValidationResults[i], deviceInfo);
@@ -114,7 +114,7 @@ namespace Tobii.XR
                     throw new Exception("Failed to subscribe to eye tracking data: " + result);
                 }
             }
-            
+
             if (startInfo.WearableAdvancedDataCallback != null)
             {
                 _wearableAdvancedDataCallbackPointer = GCHandle.Alloc(startInfo.WearableAdvancedDataCallback);
@@ -124,7 +124,7 @@ namespace Tobii.XR
                     throw new Exception("Failed to subscribe to eye tracking data: " + result);
                 }
             }
-            
+
             if (startInfo.WearableFoveatedDataCallback != null)
             {
                 _wearableFoveatedDataCallbackPointer = GCHandle.Alloc(startInfo.WearableFoveatedDataCallback);
@@ -141,7 +141,7 @@ namespace Tobii.XR
         /// </summary>
         private void ProcessLoop()
         {
-            var devices = new[] {Context.Device};
+            var devices = new[] { Context.Device };
             while (_processInBackground)
             {
                 if (_isReconnecting)
@@ -160,7 +160,7 @@ namespace Tobii.XR
                 {
                     UnityEngine.Debug.Log("Reconnecting...");
                     _isReconnecting = true;
-                }    
+                }
             }
         }
 
@@ -169,12 +169,12 @@ namespace Tobii.XR
             // Stop background thread
             _processInBackground = false;
             if (_backgroundThread != null) _backgroundThread.Join();
-            
+
             if (_wearableDataCallbackPointer.IsAllocated) _wearableDataCallbackPointer.Free();
             if (_wearableAdvancedDataCallbackPointer.IsAllocated) _wearableAdvancedDataCallbackPointer.Free();
             if (_wearableFoveatedDataCallbackPointer.IsAllocated) _wearableFoveatedDataCallbackPointer.Free();
             if (Context == null) return;
-            
+
             // Ensure all jobs having a pointer to this connection are completed
             foreach (var job in _jobsDependingOnDevice)
             {
@@ -194,7 +194,7 @@ namespace Tobii.XR
             stopwatch.Start();
             var result = Interop.tobii_device_process_callbacks(deviceContext);
             stopwatch.Stop();
-            var milliseconds = stopwatch.ElapsedMilliseconds; 
+            var milliseconds = stopwatch.ElapsedMilliseconds;
 
             if (result != tobii_error_t.TOBII_ERROR_NO_ERROR)
             {
@@ -218,14 +218,14 @@ namespace Tobii.XR
                 tobii_capability_t.TOBII_CAPABILITY_COMPOUND_STREAM_WEARABLE_CONVERGENCE_DISTANCE, out supported);
             ConvergenceDistanceSupported = supported;
         }
-        
+
         #region Static callbacks
-        
+
         [AOT.MonoPInvokeCallback(typeof(tobii_wearable_consumer_data_callback_t))]
         private static void OnWearableData(ref tobii_wearable_consumer_data_t data, IntPtr userData)
         {
             var gch = GCHandle.FromIntPtr(userData);
-            var t = (WearableDataCallback) gch.Target;
+            var t = (WearableDataCallback)gch.Target;
             t.Invoke(ref data);
         }
 
@@ -233,15 +233,15 @@ namespace Tobii.XR
         private static void OnAdvancedWearableData(ref tobii_wearable_advanced_data_t data, IntPtr userData)
         {
             var gch = GCHandle.FromIntPtr(userData);
-            var t = (WearableAdvancedDataCallback) gch.Target;
+            var t = (WearableAdvancedDataCallback)gch.Target;
             t.Invoke(ref data);
         }
-        
+
         [AOT.MonoPInvokeCallback(typeof(tobii_wearable_foveated_gaze_callback_t))]
         private static void OnWearableFoveatedGaze(ref tobii_wearable_foveated_gaze_t data, IntPtr userData)
         {
             var gch = GCHandle.FromIntPtr(userData);
-            var t = (WearableFoveatedDataCallback) gch.Target;
+            var t = (WearableFoveatedDataCallback)gch.Target;
             t.Invoke(ref data);
         }
 
@@ -250,7 +250,7 @@ namespace Tobii.XR
         {
             UnityEngine.Debug.Log(text);
         }
-        
+
         #endregion
 
         #region Timesync

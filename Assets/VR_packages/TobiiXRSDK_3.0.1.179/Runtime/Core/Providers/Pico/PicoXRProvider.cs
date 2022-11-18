@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.XR;
-using Debug = UnityEngine.Debug;
 
 namespace Tobii.XR
 {
@@ -38,7 +36,7 @@ namespace Tobii.XR
                 InputDevices.GetDevicesWithCharacteristics(InputDeviceCharacteristics.EyeTracking | InputDeviceCharacteristics.HeadMounted, devices);
                 _eyeTrackingDevice = devices.FirstOrDefault();
             }
-            
+
             if (!_eyeTrackingDevice.isValid) return;
 
             _eyeTrackingDataLocal.GazeRay.IsValid = false;

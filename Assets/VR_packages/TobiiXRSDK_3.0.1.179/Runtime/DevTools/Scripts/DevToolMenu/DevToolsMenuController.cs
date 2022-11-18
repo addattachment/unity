@@ -1,7 +1,7 @@
 ﻿// Copyright © 2018 – Property of Tobii AB (publ) - All Rights Reserved
 
-using Tobii.XR.GazeModifier;
 using System.Collections;
+using Tobii.XR.GazeModifier;
 using UnityEngine;
 
 namespace Tobii.XR.DevTools

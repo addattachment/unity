@@ -17,7 +17,7 @@ namespace Tobii.XR.GazeModifier
             _settings = settings;
             _metricsForPercentile = new MetricsForPercentile(settings.Repository);
         }
-        
+
         private Vector3 Modify(Vector3 direction, Vector3 forward)
         {
             var maxAngleDegrees = GetMaxAngle(direction, forward);

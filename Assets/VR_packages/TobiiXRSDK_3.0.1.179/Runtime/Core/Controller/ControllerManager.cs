@@ -299,7 +299,7 @@ namespace Tobii.XR
             return Input.GetKey(KeyCode.JoystickButton0) || Input.GetKey(KeyCode.Space);
 #endif
         }
-        
+
         public bool AnyTriggerPressed()
         {
             if (GetButtonPressDown(ControllerButton.Trigger)) return true;

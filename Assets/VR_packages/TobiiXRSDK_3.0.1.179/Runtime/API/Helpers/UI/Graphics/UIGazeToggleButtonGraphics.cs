@@ -13,7 +13,8 @@ namespace Tobii.XR
     public class UIGazeToggleButtonGraphics : MonoBehaviour
     {
 #pragma warning disable 649
-        [Header("Components")] [SerializeField]
+        [Header("Components")]
+        [SerializeField]
         private RectTransform _buttonTransform;
 
         [SerializeField] private Text _label;
@@ -33,7 +34,8 @@ namespace Tobii.XR
             [SerializeField] public Color FocusOutlineColor;
         }
 
-        [Header("Colors")] [SerializeField, Tooltip("The color of the knob when the user is not focusing on the button.")]
+        [Header("Colors")]
+        [SerializeField, Tooltip("The color of the knob when the user is not focusing on the button.")]
         private Color _knobDefaultColor;
 
         [SerializeField, Tooltip("The color of the knob when the user is focusing on the button.")]
@@ -54,7 +56,8 @@ namespace Tobii.XR
         [SerializeField, Tooltip("The colors used for when the button is pressed down.")]
         private VisualStateColors _pressedDownColors;
 
-        [Header("Focused")] [SerializeField, Tooltip("The scale of the button when the user is focusing on it.")]
+        [Header("Focused")]
+        [SerializeField, Tooltip("The scale of the button when the user is focusing on it.")]
         private float _buttonFocusScale = 1.05f;
 
         [SerializeField, Tooltip("The scale of the knob when the user is focusing on it.")]
@@ -66,7 +69,8 @@ namespace Tobii.XR
         [SerializeField, Tooltip("How the visual feedback is animated.")]
         private AnimationCurve _focusAnimationCurve;
 
-        [Header("Clicked")] [SerializeField, Tooltip("The duration for the toggle click animation.")]
+        [Header("Clicked")]
+        [SerializeField, Tooltip("The duration for the toggle click animation.")]
         private float _toggleAnimationDuration = 0.1f;
 
         [SerializeField, Tooltip("How the toggle click is animated.")]

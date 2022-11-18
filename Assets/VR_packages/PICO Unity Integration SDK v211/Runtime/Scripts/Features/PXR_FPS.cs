@@ -43,7 +43,7 @@ namespace Unity.XR.PXR
             if (timeLeft <= 0.0)
             {
                 float fps = PXR_Plugin.System.UPxr_GetConfigInt(ConfigType.RenderFPS);
-                
+
                 strFps = string.Format("FPS: {0:f0}", fps);
                 fpsText.text = strFps;
 

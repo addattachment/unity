@@ -20,12 +20,12 @@ namespace Tobii.XR.Internal
             return element;
         }
 
-        public static bool ArrayContains(this SerializedProperty array, Func<SerializedProperty,bool> compareFunction)
+        public static bool ArrayContains(this SerializedProperty array, Func<SerializedProperty, bool> compareFunction)
         {
-            for(int i = 0; i < array.arraySize; i++)
+            for (int i = 0; i < array.arraySize; i++)
             {
                 var element = array.GetArrayElementAtIndex(i);
-                if(compareFunction(element)) return true;
+                if (compareFunction(element)) return true;
             }
             return false;
         }

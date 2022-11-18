@@ -59,11 +59,11 @@ namespace Tobii.XR
         {
             get { return Internal.Provider != null; }
         }
-        
+
         public static bool Start(TobiiXR_Settings settings = null)
         {
             if (IsRunning) Stop();
-            
+
             if (!TobiiEula.IsEulaAccepted())
             {
                 Debug.LogWarning(
@@ -76,7 +76,7 @@ namespace Tobii.XR
                 settings = new TobiiXR_Settings();
             }
             Internal.Settings = settings;
-            
+
             // Check if a license was supplied
             string licenseKey = null;
             if (settings.LicenseAsset != null) // Prioritize asset
@@ -89,7 +89,7 @@ namespace Tobii.XR
                 Debug.Log("Using license string from settings");
                 licenseKey = settings.OcumenLicense;
             }
-            
+
             // Setup eye tracking provider
             if (settings.AdvancedEnabled)
             {
@@ -152,7 +152,7 @@ namespace Tobii.XR
 
                 Debug.Log($"Starting TobiiXR with ({Internal.Provider}) as provider for eye tracking.");
             }
-            
+
             // Setup G2OM
             if (settings.G2OM != null)
             {

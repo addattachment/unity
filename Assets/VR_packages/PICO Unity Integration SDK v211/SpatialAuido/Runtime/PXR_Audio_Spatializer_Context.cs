@@ -1,7 +1,6 @@
 //  Copyright © 2015-2022 Pico Technology Co., Ltd. All Rights Reserved.
 
 using System;
-using System.Collections;
 using PXR_Audio.Spatializer;
 using UnityEngine;
 using UnityEngine.Events;
@@ -41,7 +40,7 @@ public partial class PXR_Audio_Spatializer_Context : MonoBehaviour
             return _api;
         }
     }
-    
+
     private static PXR_Audio_Spatializer_Context _instance;
 
     public static PXR_Audio_Spatializer_Context Instance => _instance;
@@ -67,7 +66,7 @@ public partial class PXR_Audio_Spatializer_Context : MonoBehaviour
     #endregion
 
     public PXR_Audio.Spatializer.RenderingMode RenderingQuality => renderingQuality;
-    
+
     [SerializeField] private UnityEvent lateInitEvent;
 
     private AudioConfiguration audioConfig;
@@ -472,7 +471,7 @@ public partial class PXR_Audio_Spatializer_Context : MonoBehaviour
         {
             Debug.LogError("Failed to commit scene, error code: " + ret);
         }
-        
+
         lateInitEvent.Invoke();
 
         initialized = true;

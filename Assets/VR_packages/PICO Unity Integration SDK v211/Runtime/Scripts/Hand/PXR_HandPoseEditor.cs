@@ -10,8 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using UnityEngine;
 using Unity.XR.PXR;
+using UnityEngine;
 
 public class PXR_HandPoseEditor : MonoBehaviour
 {

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetPos : MonoBehaviour
@@ -16,7 +14,7 @@ public class TargetPos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public Vector3 GetFuturePositionOfTarget(float time)
@@ -26,7 +24,7 @@ public class TargetPos : MonoBehaviour
         //Debug.Log(resultingPos);
         return resultingPos;
     }
-    
+
     private Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Vector3 angles)
     {
         return Quaternion.Euler(angles) * (point - pivot) + pivot;

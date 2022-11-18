@@ -11,11 +11,11 @@ PICO Technology Co., Ltd.
 *******************************************************************************/
 
 #if UNITY_INPUT_SYSTEM
-using UnityEngine.Scripting;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.XR;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.InputSystem.Layouts;
+using UnityEngine.InputSystem.XR;
+using UnityEngine.Scripting;
 
 namespace Unity.XR.PXR.Input
 {

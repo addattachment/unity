@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Collections.Generic;
-using Pico.Platform.Models;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -48,7 +48,7 @@ namespace Pico.Platform
         /// </returns>
         public static Task ReportResultsInsecure(UInt64 roomId, Dictionary<string, int> data)
         {
-            KVPairArray kvarray = new KVPairArray((uint) data.Count);
+            KVPairArray kvarray = new KVPairArray((uint)data.Count);
             uint n = 0;
             foreach (var d in data)
             {
@@ -119,7 +119,7 @@ namespace Pico.Platform
                 Debug.LogError(CoreService.UninitializedError);
                 return null;
             }
-            
+
             if (matchmakingOptions == null)
             {
                 return new Task<MatchmakingBrowseResult>(CLIB.ppf_Matchmaking_Browse2(pool, IntPtr.Zero));
@@ -191,7 +191,7 @@ namespace Pico.Platform
                 Debug.LogError(CoreService.UninitializedError);
                 return null;
             }
-            
+
             if (matchmakingOptions == null)
             {
                 return new Task<MatchmakingEnqueueResultAndRoom>(CLIB.ppf_Matchmaking_CreateAndEnqueueRoom2(pool, IntPtr.Zero));

@@ -1,4 +1,3 @@
-using System;
 using UnityEditor;
 using UnityEngine;
 
@@ -25,7 +24,7 @@ public class PXR_Audio_Spatializer_ContextEditor : Editor
         if (showMeshBakingUtilsFlag)
         {
             EditorGUI.indentLevel++;
-            
+
             EditorGUILayout.PropertyField(meshBakingLayerMask);
             serializedObject.ApplyModifiedProperties();
             EditorGUILayout.BeginHorizontal();
@@ -78,7 +77,7 @@ public class PXR_Audio_Spatializer_ContextEditor : Editor
 
                 Debug.LogFormat("Cleared baked static meshes for gameObject: {0}", bakedObjectNames);
             }
-            
+
             GUILayout.Space(EditorGUI.indentLevel * 15 - 15);
             EditorGUILayout.EndHorizontal();
 

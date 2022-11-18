@@ -3,7 +3,6 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using System.Threading;
 using Tobii.StreamEngine;
 using Unity.Jobs;
 using UnityEngine;
@@ -36,7 +35,7 @@ namespace Tobii.XR
 
         private PositionGuideData _positionGuideData;
         private readonly object _lockPositionGuideData = new object();
-        
+
         public Matrix4x4 LocalToWorldMatrix => _localToWorldMatrix;
 
         public void GetEyeTrackingDataLocal(TobiiXR_EyeTrackingData data)
@@ -81,9 +80,9 @@ namespace Tobii.XR
             var createInfo = new StreamEngineTracker_Description();
             if (!string.IsNullOrEmpty(licenseKey))
             {
-                createInfo.License = new[] {licenseKey};
+                createInfo.License = new[] { licenseKey };
             }
-            
+
             try
             {
                 _cameraPoseHistory = new CameraPoseHistory();
@@ -94,7 +93,7 @@ namespace Tobii.XR
                 if (enableAdvanced) startInfo.WearableAdvancedDataCallback = OnAdvancedWearableData;
                 else startInfo.WearableDataCallback = OnWearableData;
                 _streamEngineTracker.Start(startInfo);
-                
+
                 return true;
             }
             catch (Exception e)
@@ -132,7 +131,7 @@ namespace Tobii.XR
                     EyeTrackingDataHelper.Copy(data, _advancedEyeTrackingData);
                     AdvancedData.Enqueue(data);
                 }
-                
+
                 // Limit size of public queue
                 while (AdvancedData.Count > AdvancedDataQueueSize) AdvancedData.Dequeue();
             }
@@ -156,7 +155,7 @@ namespace Tobii.XR
         {
             return _cameraPoseHistory.GetLocalToWorldMatrix();
         }
-        
+
         private void OnWearableData(ref tobii_wearable_consumer_data_t data)
         {
             lock (_lockEyeTrackingDataLocal)
@@ -164,7 +163,7 @@ namespace Tobii.XR
                 StreamEngineDataMapper.FromConsumerData(_eyeTrackingDataLocalInternal, ref data,
                     _streamEngineTracker.ConvergenceDistanceSupported, _headToCenterEyeTranslation);
             }
-            
+
             lock (_lockPositionGuideData)
             {
                 StreamEngineDataMapper.FillPositionGuideData(ref _positionGuideData, ref data);
@@ -190,7 +189,7 @@ namespace Tobii.XR
                 StreamEngineDataMapper.FromAdvancedData(_eyeTrackingDataLocalInternal, ref data,
                     _streamEngineTracker.ConvergenceDistanceSupported, _headToCenterEyeTranslation);
             }
-            
+
             lock (_lockPositionGuideData)
             {
                 StreamEngineDataMapper.FillPositionGuideData(ref _positionGuideData, ref data);

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TargetHit : MonoBehaviour
@@ -21,12 +19,12 @@ public class TargetHit : MonoBehaviour
         activeTarget = active;
     }
     private void OnCollisionEnter(Collision collision)
-    {      
+    {
         if (Target.readyForHit)
         {
             Target.readyForHit = false;
             //if (collision.gameObject.GetComponent<Renderer>().material.name == material.name)
-            if(activeTarget)
+            if (activeTarget)
             {
                 Debug.Log("correct target touched!");
                 hitSound.Play();
@@ -38,6 +36,6 @@ public class TargetHit : MonoBehaviour
             }
         }
         // we tell the bullet that it did hitSuccesGuid a target, so we don't have to play a sound anymore.
-        collision.gameObject.GetComponent<Bullet>().didHitATarget = true;
+        collision.gameObject.GetComponent<Ball>().didHitATarget = true;
     }
 }

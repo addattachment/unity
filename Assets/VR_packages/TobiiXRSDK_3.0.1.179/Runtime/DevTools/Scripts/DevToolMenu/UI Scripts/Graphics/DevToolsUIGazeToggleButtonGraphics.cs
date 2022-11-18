@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Tobii.XR.DevTools
-{  
+{
     /// <summary>
     /// The graphics for the gaze toggle button, including animations.
     /// </summary>

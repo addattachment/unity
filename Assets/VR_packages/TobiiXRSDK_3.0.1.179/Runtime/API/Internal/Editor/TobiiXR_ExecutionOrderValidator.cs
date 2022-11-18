@@ -4,7 +4,7 @@ namespace Tobii.XR.Internal
 {
     using UnityEditor;
     using UnityEngine;
-    
+
     // Credit http://squabpie.com/blog/2015/11/13/scripts-execution-order.html
     [InitializeOnLoad]
     public class TobiiXR_ExecutionOrderValidator

@@ -1,6 +1,5 @@
 //  Copyright © 2015-2022 Pico Technology Co., Ltd. All Rights Reserved.
 
-using System.Collections;
 using PXR_Audio.Spatializer;
 using UnityEngine;
 
@@ -20,9 +19,9 @@ public class PXR_Audio_Spatializer_AudioListener : MonoBehaviour
         }
     }
 
-    private float[] positionArray = new float[3] {0.0f, 0.0f, 0.0f};
-    private float[] frontArray = new float[3] {0.0f, 0.0f, 0.0f};
-    private float[] upArray = new float[3] {0.0f, 0.0f, 0.0f};
+    private float[] positionArray = new float[3] { 0.0f, 0.0f, 0.0f };
+    private float[] frontArray = new float[3] { 0.0f, 0.0f, 0.0f };
+    private float[] upArray = new float[3] { 0.0f, 0.0f, 0.0f };
 
     private bool isAudioDSPInProgress = false;
 
@@ -78,11 +77,11 @@ public class PXR_Audio_Spatializer_AudioListener : MonoBehaviour
 
     private void OnAudioFilterRead(float[] data, int channels)
     {
-        if (!isActive || context == null || !context.Initialized || Context.spatializerApiImpl==SpatializerApiImpl.wwise)
+        if (!isActive || context == null || !context.Initialized || Context.spatializerApiImpl == SpatializerApiImpl.wwise)
             return;
 
         isAudioDSPInProgress = true;
-        context.GetInterleavedBinauralBuffer(data, (uint) (data.Length / channels), true);
+        context.GetInterleavedBinauralBuffer(data, (uint)(data.Length / channels), true);
         isAudioDSPInProgress = false;
     }
 }

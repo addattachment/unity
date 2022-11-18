@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 2715402290459226208}
   - component: {fileID: 6023756880996850148}
   m_Layer: 3
-  m_Name: slingshotBullet
+  m_Name: Ball
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,12 +305,10 @@ MonoBehaviour:
   BulletNoHitAudio: {fileID: 6023756880996850148}
   ReleaseTime: 0.15
   DestructionTime: 3
-  springJoint: {fileID: 0}
-  trailRenderer: {fileID: 0}
   didHitATarget: 0
   isFlying: 0
   debugCube: {fileID: 1584659989431123720, guid: 3364112e3302b254086e817e32c63839, type: 3}
-  mixHitTrajectory: 0.165
+  launchDebugPushed: 0
 --- !u!96 &2715402290459226524
 TrailRenderer:
   serializedVersion: 2

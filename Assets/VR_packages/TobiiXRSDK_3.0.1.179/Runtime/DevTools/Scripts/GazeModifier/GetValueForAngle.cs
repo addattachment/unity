@@ -27,7 +27,7 @@ namespace Tobii.XR.GazeModifier
                 _max = valuePairs.OrderBy(n => n.x).Last();
                 if (valuePairs.Count(f => f.x == 0) == 0)
                 {
-                    _values.Add(new Vector2(0,0));
+                    _values.Add(new Vector2(0, 0));
                 }
                 _values.AddRange(valuePairs);
             }
@@ -37,7 +37,7 @@ namespace Tobii.XR.GazeModifier
         {
             get { return _values.Count > 0; }
         }
-      
+
         private float Evaluate(IList<Vector2> target, float val)
         {
             var count = target.Count;

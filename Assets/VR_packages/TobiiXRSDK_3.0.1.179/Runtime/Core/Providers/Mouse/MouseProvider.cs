@@ -48,8 +48,8 @@ namespace Tobii.XR
                 var v = Input.mousePosition.y / Screen.height;
 
                 // Handle aspect mismatch between window and eye buffer
-                var eyeAspect = (float) XRSettings.eyeTextureWidth / XRSettings.eyeTextureHeight;
-                var screenAspect = (float) Screen.width / Screen.height;
+                var eyeAspect = (float)XRSettings.eyeTextureWidth / XRSettings.eyeTextureHeight;
+                var screenAspect = (float)Screen.width / Screen.height;
                 var visibleWidthRatio = 1.0f;
                 var visibleHeightRatio = 1.0f;
                 if (screenAspect > eyeAspect) visibleHeightRatio = eyeAspect / screenAspect;

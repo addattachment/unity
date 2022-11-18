@@ -35,7 +35,7 @@ namespace Pico.Platform
             if (!(managedObj is string))
                 throw new MarshalDirectiveException("UTF8Marshaler must be used on a string.");
 
-            return MarshalUtil.StringToPtr((string) managedObj);
+            return MarshalUtil.StringToPtr((string)managedObj);
         }
 
         public object MarshalNativeToManaged(IntPtr str)
@@ -134,14 +134,14 @@ namespace Pico.Platform
         public static byte[] ByteArrayFromNative(IntPtr ptr, uint length)
         {
             var ans = new byte[length];
-            Marshal.Copy(ptr, ans, 0, (int) length);
+            Marshal.Copy(ptr, ans, 0, (int)length);
             return ans;
         }
 
         public static IntPtr ByteArrayToNative(byte[] a)
         {
-            var ptr=Marshal.AllocHGlobal(a.Length);
-            Marshal.Copy(a,0,ptr,a.Length);
+            var ptr = Marshal.AllocHGlobal(a.Length);
+            Marshal.Copy(a, 0, ptr, a.Length);
             return ptr;
         }
     }

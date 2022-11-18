@@ -23,7 +23,7 @@ namespace Tobii.XR.Internal
         {
             return _tobiiSDKEulaAccepted;
         }
-		
+
 #if UNITY_EDITOR
         public void SetEulaAccepted()
         {

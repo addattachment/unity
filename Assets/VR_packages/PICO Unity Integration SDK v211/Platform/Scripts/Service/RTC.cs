@@ -10,10 +10,10 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Pico.Platform.Models;
 using UnityEngine;
 using UnityEngine.Android;
 
@@ -69,7 +69,7 @@ namespace Pico.Platform
                 }
             }
 
-            return new Task<string>(CLIB.ppf_Rtc_GetToken((IntPtr) tokenOption));
+            return new Task<string>(CLIB.ppf_Rtc_GetToken((IntPtr)tokenOption));
         }
 
         /// <summary>
@@ -111,7 +111,7 @@ namespace Pico.Platform
             roomOption.SetToken(token);
             roomOption.SetRoomProfileType(roomProfileType);
             roomOption.SetIsAutoSubscribeAudio(isAutoSubscribeAudio);
-            return CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+            return CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
         }
 
         /// <summary>
@@ -130,11 +130,11 @@ namespace Pico.Platform
         /// </returns>
         public static int JoinRoom2(RtcRoomOptions joinRoomOptions, bool leaveIfInRoom = true)
         {
-            var res = CLIB.ppf_Rtc_JoinRoom((IntPtr) joinRoomOptions);
+            var res = CLIB.ppf_Rtc_JoinRoom((IntPtr)joinRoomOptions);
             if (leaveIfInRoom && res == -2)
             {
                 LeaveRoom(joinRoomOptions.RoomId);
-                res = CLIB.ppf_Rtc_JoinRoom((IntPtr) joinRoomOptions);
+                res = CLIB.ppf_Rtc_JoinRoom((IntPtr)joinRoomOptions);
             }
 
             return res;
@@ -174,11 +174,11 @@ namespace Pico.Platform
             roomOption.SetToken(token);
             roomOption.SetRoomProfileType(roomProfileType);
             roomOption.SetIsAutoSubscribeAudio(isAutoSubscribeAudio);
-            var res = CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+            var res = CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
             if (res == -2)
             {
                 LeaveRoom(roomId);
-                res = CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+                res = CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
             }
 
             return res;
@@ -239,7 +239,7 @@ namespace Pico.Platform
         {
             var conf = new RtcAudioPropertyOptions();
             conf.SetInterval(interval);
-            CLIB.ppf_Rtc_EnableAudioPropertiesReport((IntPtr) conf);
+            CLIB.ppf_Rtc_EnableAudioPropertiesReport((IntPtr)conf);
         }
 
         /// <summary>
@@ -477,7 +477,7 @@ namespace Pico.Platform
             config.SetStreamIndex(RtcStreamIndex.Main);
             config.SetStreamType(RtcSyncInfoStreamType.Audio);
             var ptr = MarshalUtil.ByteArrayToNative(data);
-            var ans = CLIB.ppf_Rtc_SendStreamSyncInfo(ptr, data.Length, (IntPtr) config);
+            var ans = CLIB.ppf_Rtc_SendStreamSyncInfo(ptr, data.Length, (IntPtr)config);
             Marshal.FreeHGlobal(ptr);
             return ans;
         }

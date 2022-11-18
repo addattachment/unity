@@ -144,7 +144,7 @@ namespace Tobii.XR
             if (Mathf.Abs(_incrementedMoveAmount) > _sizePerStep)
             {
                 // Determine the number of steps to move.
-                _stepsToMove = (int) (_incrementedMoveAmount / _sizePerStep);
+                _stepsToMove = (int)(_incrementedMoveAmount / _sizePerStep);
 
                 // Reset the value after it has been used to update the current step.
                 _incrementedMoveAmount = 0;
@@ -161,7 +161,7 @@ namespace Tobii.XR
             _sliderGraphics.SetFillAmount(_sliderFillAmount);
 
             // Calculate the new value and update the value text.
-            Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+            Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
             _sliderGraphics.UpdateValueText(Value);
 
             _padXLastFrame = padXCurrentFrame;

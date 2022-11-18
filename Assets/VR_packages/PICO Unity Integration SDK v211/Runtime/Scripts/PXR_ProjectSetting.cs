@@ -16,10 +16,10 @@ using UnityEngine;
 namespace Unity.XR.PXR
 {
     [System.Serializable]
-    public class PXR_ProjectSetting: ScriptableObject
+    public class PXR_ProjectSetting : ScriptableObject
     {
         public bool useContentProtect;
-        public  bool handTracking;
+        public bool handTracking;
 
         public static PXR_ProjectSetting GetProjectConfig()
         {

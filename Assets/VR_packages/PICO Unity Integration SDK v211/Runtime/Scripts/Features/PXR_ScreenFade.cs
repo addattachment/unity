@@ -59,7 +59,7 @@ namespace Unity.XR.PXR
             CreateModel();
         }
 
-        
+
 
         public void SetCurrentAlpha(float alpha)
         {

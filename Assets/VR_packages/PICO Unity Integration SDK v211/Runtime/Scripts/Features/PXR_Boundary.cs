@@ -10,7 +10,6 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System;
 using UnityEngine;
 
 namespace Unity.XR.PXR

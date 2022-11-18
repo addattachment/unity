@@ -11,7 +11,6 @@ PICO Technology Co., Ltd.
 *******************************************************************************/
 
 using System.IO;
-using Unity.XR.PXR;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEngine;

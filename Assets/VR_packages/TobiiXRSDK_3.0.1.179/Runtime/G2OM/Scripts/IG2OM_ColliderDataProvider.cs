@@ -3,7 +3,6 @@
 namespace Tobii.G2OM
 {
     using System.Collections.Generic;
-    using UnityEngine;
 
     public interface IG2OM_ColliderDataProvider
     {

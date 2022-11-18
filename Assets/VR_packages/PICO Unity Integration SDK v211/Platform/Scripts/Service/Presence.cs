@@ -10,8 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
-using System;
 using Pico.Platform.Models;
+using System;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -37,7 +37,7 @@ namespace Pico.Platform
                 return null;
             }
 
-            return new Task<UserList>(CLIB.ppf_Presence_GetInvitableUsers((IntPtr) options));
+            return new Task<UserList>(CLIB.ppf_Presence_GetInvitableUsers((IntPtr)options));
         }
 
         /// <summary>
@@ -120,7 +120,7 @@ namespace Pico.Platform
                 return null;
             }
 
-            return new Task(CLIB.ppf_Presence_Set((IntPtr) options));
+            return new Task(CLIB.ppf_Presence_Set((IntPtr)options));
         }
 
         /// <summary>

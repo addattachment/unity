@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Collections.Generic;
-using Pico.Platform.Models;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -39,7 +39,7 @@ namespace Pico.Platform
         /// </returns>
         public static Task<Room> UpdateDataStore(UInt64 roomId, Dictionary<string, string> data)
         {
-            KVPairArray kvarray = new KVPairArray((uint) data.Count);
+            KVPairArray kvarray = new KVPairArray((uint)data.Count);
             uint n = 0;
             foreach (var d in data)
             {
@@ -85,7 +85,7 @@ namespace Pico.Platform
                 return null;
             }
 
-            return new Task<Room>(CLIB.ppf_Room_CreateAndJoinPrivate2( policy, maxUsers, roomOptions.GetHandle()));
+            return new Task<Room>(CLIB.ppf_Room_CreateAndJoinPrivate2(policy, maxUsers, roomOptions.GetHandle()));
         }
 
         /// <summary>Gets the information about a specified room.</summary>
@@ -299,7 +299,7 @@ namespace Pico.Platform
 
             return new Task<Room>(CLIB.ppf_Room_KickUser(roomId, userId, kickDuration));
         }
-        
+
         /// <summary>Leaves the current room.
         /// @note  The room you are now in will be returned if the request succeeds.</summary>
         ///
@@ -608,5 +608,5 @@ namespace Pico.Platform
             return Handle;
         }
     }
-    
+
 }

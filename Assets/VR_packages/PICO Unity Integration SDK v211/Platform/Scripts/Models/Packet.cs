@@ -23,14 +23,14 @@ namespace Pico.Platform.Models
         public Packet(IntPtr handler)
         {
             this.handler = handler;
-            this.size = (ulong) CLIB.ppf_Packet_GetSize(handler);
+            this.size = (ulong)CLIB.ppf_Packet_GetSize(handler);
         }
 
         public ulong GetBytes(byte[] dest)
         {
-            if ((ulong) dest.LongLength >= size)
+            if ((ulong)dest.LongLength >= size)
             {
-                Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), dest, 0, (int) size);
+                Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), dest, 0, (int)size);
                 return size;
             }
             else
@@ -44,7 +44,7 @@ namespace Pico.Platform.Models
             if (size > 0)
             {
                 byte[] bytes = new byte[size];
-                Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), bytes, 0, (int) size);
+                Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), bytes, 0, (int)size);
                 return System.Text.Encoding.UTF8.GetString(bytes);
             }
             else

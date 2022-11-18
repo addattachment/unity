@@ -14,7 +14,6 @@ using System;
 using UnityEngine;
 using UnityEngine.XR.Management;
 #if UNITY_EDITOR
-using UnityEditor;
 #endif
 
 namespace Unity.XR.PXR

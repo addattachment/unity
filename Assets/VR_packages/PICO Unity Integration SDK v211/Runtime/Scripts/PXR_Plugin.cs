@@ -10,10 +10,7 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.ComponentModel;
-using System.Drawing;
 using System;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -400,20 +397,23 @@ namespace Unity.XR.PXR
         PxrTrackingModeHandBit
     }
 
-    public enum PICOCastUrlTypeEnum {
+    public enum PICOCastUrlTypeEnum
+    {
         NORMAL_URL,
         NO_CONFIRM_URL,
         RTMP_URL
     }
 
-    public enum PICOCastOptionOrStatusEnum {
+    public enum PICOCastOptionOrStatusEnum
+    {
         OPTION_RESOLUTION_LEVEL,
         OPTION_BITRATE_LEVEL,
         OPTION_AUDIO_ENABLE,
         PICO_CAST_STATUS
     }
 
-    public enum PICOCastOptionValueEnum {
+    public enum PICOCastOptionValueEnum
+    {
         OPTION_VALUE_RESOLUTION_HIGH,
         OPTION_VALUE_RESOLUTION_MIDDL,
         OPTION_VALUE_RESOLUTION_AUTO,
@@ -432,7 +432,8 @@ namespace Unity.XR.PXR
         STATUS_VALUE_ERROR
     }
 
-    public enum ControllerKeyEnum {
+    public enum ControllerKeyEnum
+    {
         CONTROLLER_KEY_JOYSTICK,
         CONTROLLER_KEY_MENU,
         CONTROLLER_KEY_TRIGGER,
@@ -678,7 +679,8 @@ namespace Unity.XR.PXR
     };
 
     [StructLayout(LayoutKind.Sequential)]
-    public struct VibrateInfo {
+    public struct VibrateInfo
+    {
         public uint slot;
         public uint reversal;
         public float amp;
@@ -2482,7 +2484,8 @@ namespace Unity.XR.PXR
 #endif
             }
 
-            public static int UPxr_InstallOTAPackage(String otaPackagePath) {
+            public static int UPxr_InstallOTAPackage(String otaPackagePath)
+            {
                 int value = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
             value = tobHelper.Call<int>("pbsInstallOTAPackage",otaPackagePath, 0);
@@ -2490,7 +2493,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static string UPxr_GetAutoConnectWiFiConfig() {
+            public static string UPxr_GetAutoConnectWiFiConfig()
+            {
                 string str = "";
 #if UNITY_ANDROID && !UNITY_EDITOR
                 str = tobHelper.Call<string>("pbsGetAutoConnectWiFiConfig", 0);
@@ -2516,7 +2520,8 @@ namespace Unity.XR.PXR
                 return str;
             }
 
-            public static int UPxr_GetControllerKeyState(ControllerKeyEnum pxrControllerKey) {
+            public static int UPxr_GetControllerKeyState(ControllerKeyEnum pxrControllerKey)
+            {
                 int volue = 1;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<int>("pbsGetControllerKeyState", GetEnumType(pxrControllerKey),0);
@@ -2524,7 +2529,8 @@ namespace Unity.XR.PXR
                 return volue;
             }
 
-            public static int UPxr_SetControllerKeyState(ControllerKeyEnum controllerKeyEnum, SwitchEnum status) {
+            public static int UPxr_SetControllerKeyState(ControllerKeyEnum controllerKeyEnum, SwitchEnum status)
+            {
                 int volue = 1;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<int>("pbsSetControllerKeyState", GetEnumType(controllerKeyEnum),GetEnumType(status),0);
@@ -2532,7 +2538,8 @@ namespace Unity.XR.PXR
                 return volue;
             }
 
-            public static SwitchEnum UPxr_ControlGetPowerOffWithUSBCable() {
+            public static SwitchEnum UPxr_ControlGetPowerOffWithUSBCable()
+            {
                 int num = 0;
                 SwitchEnum switchEnum = SwitchEnum.S_OFF;
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -2548,7 +2555,8 @@ namespace Unity.XR.PXR
                 return switchEnum;
             }
 
-            public static ScreenOffDelayTimeEnum UPxr_PropertyGetScreenOffDelay() {
+            public static ScreenOffDelayTimeEnum UPxr_PropertyGetScreenOffDelay()
+            {
                 int num = 0;
                 ScreenOffDelayTimeEnum screenOffDelayTimeEnum = ScreenOffDelayTimeEnum.NEVER;
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -2580,7 +2588,8 @@ namespace Unity.XR.PXR
                 return screenOffDelayTimeEnum;
             }
 
-            public static SleepDelayTimeEnum UPxr_PropertyGetSleepDelay() {
+            public static SleepDelayTimeEnum UPxr_PropertyGetSleepDelay()
+            {
                 int num = 0;
                 SleepDelayTimeEnum sleepDelayTime = SleepDelayTimeEnum.NEVER;
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -2613,7 +2622,8 @@ namespace Unity.XR.PXR
                 return sleepDelayTime;
             }
 
-            public static string UPxr_PropertyGetPowerKeyStatus() {
+            public static string UPxr_PropertyGetPowerKeyStatus()
+            {
                 string str = "";
 #if UNITY_ANDROID && !UNITY_EDITOR
                 str = tobHelper.Call<string>("pbsPropertyGetPowerKeyStatus", 0);
@@ -2621,7 +2631,8 @@ namespace Unity.XR.PXR
                 return str;
             }
 
-            public static int UPxr_GetEnterKeyStatus() {
+            public static int UPxr_GetEnterKeyStatus()
+            {
                 int volue = 1;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<int>("pbsGetEnterKeyStatus",0);
@@ -2647,7 +2658,8 @@ namespace Unity.XR.PXR
                 return volue;
             }
 
-            public static string UPxr_PropertyGetHomKeyStatus(HomeEventEnum homeEvent) {
+            public static string UPxr_PropertyGetHomKeyStatus(HomeEventEnum homeEvent)
+            {
                 string volue = "";
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<string>("pbsPropertyGetHomKeyStatus", GetEnumType(homeEvent),0);
@@ -2655,14 +2667,16 @@ namespace Unity.XR.PXR
                 return volue;
             }
 
-            public static void UPxr_GetSwitchSystemFunctionStatus(SystemFunctionSwitchEnum systemFunction,Action<int> callback) {
+            public static void UPxr_GetSwitchSystemFunctionStatus(SystemFunctionSwitchEnum systemFunction, Action<int> callback)
+            {
 #if UNITY_ANDROID && !UNITY_EDITOR
                 if (callback != null) IntCallback = callback;
                 tobHelper.Call("pbsGetSwitchSystemFunctionStatus", GetEnumType(systemFunction),null,0);
 #endif
             }
 
-            public static string UPxr_SwitchGetUsbConfigurationOption() {
+            public static string UPxr_SwitchGetUsbConfigurationOption()
+            {
                 string volue = "";
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<string>("pbsSwitchGetUsbConfigurationOption", 0);
@@ -2679,7 +2693,8 @@ namespace Unity.XR.PXR
                 return volue;
             }
 
-            public static int UPxr_PICOCastInit(Action<int> callback) {
+            public static int UPxr_PICOCastInit(Action<int> callback)
+            {
                 int value = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 if (callback != null) IntCallback = callback;
@@ -2688,7 +2703,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static int UPxr_PICOCastSetShowAuthorization(int authZ) {
+            public static int UPxr_PICOCastSetShowAuthorization(int authZ)
+            {
                 int value = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 value = tobHelper.Call<int>("pbsPicoCastSetShowAuthorization",authZ,0);
@@ -2696,7 +2712,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static int UPxr_PICOCastGetShowAuthorization() {
+            public static int UPxr_PICOCastGetShowAuthorization()
+            {
                 int value = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 value = tobHelper.Call<int>("pbsPicoCastGetShowAuthorization",0);
@@ -2704,7 +2721,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static string UPxr_PICOCastGetUrl(PICOCastUrlTypeEnum urlType) {
+            public static string UPxr_PICOCastGetUrl(PICOCastUrlTypeEnum urlType)
+            {
                 string volue = "";
 #if UNITY_ANDROID && !UNITY_EDITOR
                 volue = tobHelper.Call<string>("pbsPicoCastGetUrl",GetEnumType(urlType), 0);
@@ -2721,7 +2739,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static int UPxr_PICOCastSetOption(PICOCastOptionOrStatusEnum castOptionOrStatus, PICOCastOptionValueEnum castOptionValue) {
+            public static int UPxr_PICOCastSetOption(PICOCastOptionOrStatusEnum castOptionOrStatus, PICOCastOptionValueEnum castOptionValue)
+            {
                 int value = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
                 value = tobHelper.Call<int>("pbsPicoCastSetOption",GetEnumType(castOptionOrStatus),GetEnumType(castOptionValue),0);
@@ -2729,7 +2748,8 @@ namespace Unity.XR.PXR
                 return value;
             }
 
-            public static PICOCastOptionValueEnum UPxr_PICOCastGetOptionOrStatus(PICOCastOptionOrStatusEnum castOptionOrStatus) {
+            public static PICOCastOptionValueEnum UPxr_PICOCastGetOptionOrStatus(PICOCastOptionOrStatusEnum castOptionOrStatus)
+            {
                 PICOCastOptionValueEnum value = PICOCastOptionValueEnum.STATUS_VALUE_ERROR;
                 int num = 0;
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -3636,7 +3656,7 @@ namespace Unity.XR.PXR
                 return " ";
             }
 
-            public static int UPxr_StartVibrateBySharem(float[] data, int slot, int buffersize, int sampleRate, int channelMask, int bitrate ,int channelFlip, ref int sourceId)
+            public static int UPxr_StartVibrateBySharem(float[] data, int slot, int buffersize, int sampleRate, int channelMask, int bitrate, int channelFlip, ref int sourceId)
             {
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
                 {
@@ -3656,7 +3676,7 @@ namespace Unity.XR.PXR
                 return 0;
             }
 
-            public static int UPxr_SaveVibrateByCache(float[] data, int slot, int buffersize, int sampleRate, int channelMask, int bitrate, int slotconfig, int enableV , ref int sourceId)
+            public static int UPxr_SaveVibrateByCache(float[] data, int slot, int buffersize, int sampleRate, int channelMask, int bitrate, int slotconfig, int enableV, ref int sourceId)
             {
 
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
@@ -3701,7 +3721,8 @@ namespace Unity.XR.PXR
                 return 0;
             }
 
-            public static int UPxr_StartVibrateByPHF(string data, int buffersize, ref int sourceId, int slot, int reversal, float amp) {
+            public static int UPxr_StartVibrateByPHF(string data, int buffersize, ref int sourceId, int slot, int reversal, float amp)
+            {
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
                 {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -3716,7 +3737,8 @@ namespace Unity.XR.PXR
                 return 0;
             }
 
-            public static int UPxr_PauseVibrate(int sourceID) {
+            public static int UPxr_PauseVibrate(int sourceID)
+            {
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
                 {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -3727,7 +3749,8 @@ namespace Unity.XR.PXR
                 return 0;
             }
 
-            public static int UPxr_ResumeVibrate(int sourceID) {
+            public static int UPxr_ResumeVibrate(int sourceID)
+            {
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
                 {
 #if UNITY_ANDROID && !UNITY_EDITOR
@@ -3738,7 +3761,8 @@ namespace Unity.XR.PXR
                 return 0;
             }
 
-            public static int UPxr_UpdateVibrateParams(int clicp_id,int slot, int reversal, float amp) {
+            public static int UPxr_UpdateVibrateParams(int clicp_id, int slot, int reversal, float amp)
+            {
                 if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000308)
                 {
 #if UNITY_ANDROID && !UNITY_EDITOR

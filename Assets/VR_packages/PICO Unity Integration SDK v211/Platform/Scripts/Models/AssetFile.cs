@@ -54,11 +54,11 @@ namespace Pico.Platform.Models
     {
         public AssetDetailsList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_AssetDetailsArray_GetSize(a);
+            var count = (int)CLIB.ppf_AssetDetailsArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new AssetDetails(CLIB.ppf_AssetDetailsArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new AssetDetails(CLIB.ppf_AssetDetailsArray_GetElement(a, (UIntPtr)i)));
             }
 
             NextPageParam = CLIB.ppf_AssetDetailsArray_GetNextPageParam(a);

@@ -1,6 +1,4 @@
-using Assets.Scripts;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,35 +11,20 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject target;
     [SerializeField] private List<GameObject> targetList;
 
-    //[SerializeField] private Material red;
-    //[SerializeField] private Material blue;
-    //[SerializeField] private Material green;
-    //[SerializeField] private List<Material> materialList;
-
     [Header("Trialsettings")]
     public GameObject slingshotBullet;
-    //public GameObject remainingBullet;
     public int RemainingTries = 5;
-    
+
     public GameObject hitTarget;
     //[Header("GUI")]
     //[SerializeField] GameObject HUD;
-    [Header("bullet settings")]
-    public bool steerBall = false; // boolean to check if we want to steer the ball or let it follow it's natural path
-    public bool hitSuccesGuide = false; // if hitSuccesGuid is true, we want the ball to hitSuccesGuid the target, otherwise definitely miss
 
-    // Start is called before the first frame update
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
         }
-        //materialList = new List<Material>();
-        //materialList.Add(red);
-        //materialList.Add(blue);
-        //materialList.Add(green);
-
         target = GameObject.FindGameObjectWithTag("target");
         foreach (Transform x in target.transform)
         {
@@ -56,7 +39,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name) ;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void StartNewTrial()
     {
@@ -78,7 +61,7 @@ public class GameManager : MonoBehaviour
                 hitTarget = targetList[Random.Range(0, targetList.Count)];
                 bullet.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;
                 bullet.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
-                foreach(GameObject target in targetList)
+                foreach (GameObject target in targetList)
                 {
                     if (target == hitTarget)
                     {
@@ -87,25 +70,9 @@ public class GameManager : MonoBehaviour
                     else target.GetComponent<TargetHit>().SetActiveTarget(false);
                 }
             }
-            slingshot.Bullet = bullet;
+            slingshot.Ball = bullet;
         }
     }
-    public void SetBallSteering()
-    {
-        steerBall = !steerBall;
-        GameObject.FindGameObjectWithTag("debug")
-            .GetComponentInChildren<DebugExample>()
-            .SetDebugText("" + steerBall + " " + hitSuccesGuide);
-        slingshot.SetTargetReachable(steerBall, hitSuccesGuide);
-    }
 
-    public void SetHitTargetSteering()
-    {
-        hitSuccesGuide = !hitSuccesGuide;
-        GameObject.FindGameObjectWithTag("debug")
-            .GetComponentInChildren<DebugExample>()
-            .SetDebugText("" + steerBall + " " + hitSuccesGuide);
-        slingshot.SetTargetReachable(steerBall, hitSuccesGuide);
 
-    }
 }

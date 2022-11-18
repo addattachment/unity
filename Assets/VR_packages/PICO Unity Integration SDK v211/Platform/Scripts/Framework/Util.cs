@@ -30,12 +30,12 @@ namespace Pico.Platform
 
         public static int DateTimeToSeconds(DateTime t)
         {
-            return (int) (t.ToUniversalTime() - UnixEpoch).TotalSeconds;
+            return (int)(t.ToUniversalTime() - UnixEpoch).TotalSeconds;
         }
 
         public static long DateTimeToMilliSeconds(DateTime t)
         {
-            return (long) (t.ToUniversalTime() - UnixEpoch).TotalMilliseconds;
+            return (long)(t.ToUniversalTime() - UnixEpoch).TotalMilliseconds;
         }
 
         public static DateTime MilliSecondsToDateTime(long milliSeconds)

@@ -1,8 +1,4 @@
-﻿using System;
-using Tobii.StreamEngine;
-using UnityEngine;
-
-namespace Tobii.XR
+﻿namespace Tobii.XR
 {
     public class StreamEngineTracker_Description
     {

@@ -11,7 +11,6 @@ Pico Technology Co., Ltd.
 *******************************************************************************/
 
 using System;
-using UnityEngine;
 
 namespace Pico.Platform.Models
 {
@@ -41,11 +40,11 @@ namespace Pico.Platform.Models
     {
         public SportDailySummaryList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_SportDailySummaryArray_GetSize(a);
+            var count = (int)CLIB.ppf_SportDailySummaryArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new SportDailySummary(CLIB.ppf_SportDailySummaryArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new SportDailySummary(CLIB.ppf_SportDailySummaryArray_GetElement(a, (UIntPtr)i)));
             }
         }
     }

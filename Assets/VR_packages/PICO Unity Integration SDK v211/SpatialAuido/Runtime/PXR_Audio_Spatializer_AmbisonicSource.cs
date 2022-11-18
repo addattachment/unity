@@ -9,7 +9,7 @@ public class PXR_Audio_Spatializer_AmbisonicSource : MonoBehaviour
 
     private float playheadPosition = 0.0f;
     private bool wasPlaying = false;
-    
+
     /// <summary>
     /// Resume audio playing status.
     /// </summary>

@@ -40,10 +40,10 @@ namespace Pico.Platform.Models
             Description = CLIB.ppf_Room_GetDescription(o);
             RoomId = CLIB.ppf_Room_GetID(o);
             IsMembershipLocked = CLIB.ppf_Room_GetIsMembershipLocked(o);
-            RoomJoinPolicy = (RoomJoinPolicy) CLIB.ppf_Room_GetJoinPolicy(o);
-            RoomJoinability = (RoomJoinability) CLIB.ppf_Room_GetJoinability(o);
+            RoomJoinPolicy = (RoomJoinPolicy)CLIB.ppf_Room_GetJoinPolicy(o);
+            RoomJoinability = (RoomJoinability)CLIB.ppf_Room_GetJoinability(o);
             MaxUsers = CLIB.ppf_Room_GetMaxUsers(o);
-            RoomType = (RoomType) CLIB.ppf_Room_GetType(o);
+            RoomType = (RoomType)CLIB.ppf_Room_GetType(o);
             {
                 var ptr = CLIB.ppf_Room_GetOwner(o);
                 if (ptr == IntPtr.Zero)
@@ -80,7 +80,7 @@ namespace Pico.Platform.Models
             CurIndex = CLIB.ppf_RoomArray_GetPageIndex(a);
             PageSize = CLIB.ppf_RoomArray_GetPageSize(a);
             NextPageParam = CLIB.ppf_RoomArray_HasNextPage(a) ? "true" : string.Empty;
-            int count = (int) CLIB.ppf_RoomArray_GetSize(a);
+            int count = (int)CLIB.ppf_RoomArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {

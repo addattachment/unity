@@ -10,7 +10,7 @@ namespace Tobii.G2OM
         {
             return new G2OM_Candidate
             {
-                candidate_id = (ulong) candidateId,
+                candidate_id = (ulong)candidateId,
                 aabb_max_local_space = max.AsG2OMVector3(),
                 aabb_min_local_space = min.AsG2OMVector3(),
                 world_to_local_matrix = worldToLocal.AsG2OMMatrix4x4(),

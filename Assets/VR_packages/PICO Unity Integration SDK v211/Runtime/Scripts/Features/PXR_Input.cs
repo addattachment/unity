@@ -41,12 +41,14 @@ namespace Unity.XR.PXR
             LeftAndRight = 3,
         }
 
-        public enum ChannelFlip {
+        public enum ChannelFlip
+        {
             No,
             Yes,
         }
 
-        public enum CacheConfig {
+        public enum CacheConfig
+        {
             CacheAndVibrate = 1,
             CacheNoVibrate = 2,
         }
@@ -134,11 +136,11 @@ namespace Unity.XR.PXR
             PxrControllerTracking pxrControllerTracking = new PxrControllerTracking();
             float[] headData = new float[7] { 0, 0, 0, 0, 0, 0, 0 };
 
-            PXR_Plugin.Controller.UPxr_GetControllerTrackingState((uint)controller, predictTime,headData, ref pxrControllerTracking);
+            PXR_Plugin.Controller.UPxr_GetControllerTrackingState((uint)controller, predictTime, headData, ref pxrControllerTracking);
 
             return new Quaternion(
                 pxrControllerTracking.localControllerPose.pose.orientation.x,
-                pxrControllerTracking.localControllerPose.pose.orientation.y, 
+                pxrControllerTracking.localControllerPose.pose.orientation.y,
                 pxrControllerTracking.localControllerPose.pose.orientation.z,
                 pxrControllerTracking.localControllerPose.pose.orientation.w);
         }
@@ -157,7 +159,7 @@ namespace Unity.XR.PXR
             PXR_Plugin.Controller.UPxr_GetControllerTrackingState((uint)controller, predictTime, headData, ref pxrControllerTracking);
 
             return new Vector3(
-                pxrControllerTracking.localControllerPose.pose.position.x, 
+                pxrControllerTracking.localControllerPose.pose.position.x,
                 pxrControllerTracking.localControllerPose.pose.position.y,
                 pxrControllerTracking.localControllerPose.pose.position.z);
         }
@@ -173,7 +175,8 @@ namespace Unity.XR.PXR
         /// <param name="strength">Vibration amplitude. Its valid value ranges from `0` to `1`. The higher the value, the stronger the vibration amplitude.</param>
         /// <param name="time">Vibration duration, which ranges from `0` to `65535` ms.</param>
         /// <returns></returns>
-        public static int SetControllerVibrationEvent(UInt32 hand, int frequency, float strength, int time) {
+        public static int SetControllerVibrationEvent(UInt32 hand, int frequency, float strength, int time)
+        {
             return PXR_Plugin.Controller.UPxr_SetControllerVibrationEvent(hand, frequency, strength, time);
         }
 
@@ -182,7 +185,8 @@ namespace Unity.XR.PXR
         /// </summary>
         /// <param name="id">A reserved parameter, set it to the source ID returned by `StartVibrateBySharem` or `SaveVibrateByCache` to stop the corresponding vibration,
         /// or set it to 0 to stop all vibrations.</param>
-        public static int StopControllerVCMotor(int sourceId) {
+        public static int StopControllerVCMotor(int sourceId)
+        {
             return PXR_Plugin.Controller.UPxr_StopControllerVCMotor(sourceId);
         }
 
@@ -196,7 +200,8 @@ namespace Unity.XR.PXR
         /// * `2`: right controller
         /// * `3`: left and right controllers
         /// </param>
-        public static int StartControllerVCMotor(string file, VibrateController vibrateController) {
+        public static int StartControllerVCMotor(string file, VibrateController vibrateController)
+        {
             return PXR_Plugin.Controller.UPxr_StartControllerVCMotor(file, (int)vibrateController);
         }
 
@@ -211,7 +216,8 @@ namespace Unity.XR.PXR
         /// * `4`: 4×standard amplitude
         /// @note "3×standard amplitude" and "4×standard amplitude" are NOT recommended as they will cause serious loss of vibration details.
         /// </param>
-        public static int SetControllerAmp(float mode) {
+        public static int SetControllerAmp(float mode)
+        {
             return PXR_Plugin.Controller.UPxr_SetControllerAmp(mode);
         }
 
@@ -232,7 +238,8 @@ namespace Unity.XR.PXR
         /// </param>
         /// <param nname="sourceId">Returns the unique ID for controlling the corresponding vibration,
         /// which will be used in `StartVibrateByCache`, `ClearVibrateByCache` or `StopControllerVCMotor`.</param>
-        public static int StartVibrateBySharem(AudioClip audioClip, VibrateController vibrateController, ChannelFlip channelFlip,ref int sourceId) {
+        public static int StartVibrateBySharem(AudioClip audioClip, VibrateController vibrateController, ChannelFlip channelFlip, ref int sourceId)
+        {
             if (audioClip == null)
             {
                 return 0;
@@ -242,7 +249,7 @@ namespace Unity.XR.PXR
             audioClip.GetData(data, 0);
             int sampleRate = audioClip.frequency;
             int channelMask = audioClip.channels;
-            return PXR_Plugin.Controller.UPxr_StartVibrateBySharem(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip,ref sourceId);
+            return PXR_Plugin.Controller.UPxr_StartVibrateBySharem(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, ref sourceId);
         }
 
         /// <summary>
@@ -266,11 +273,11 @@ namespace Unity.XR.PXR
         /// <param name="sourceId">Returns the unique ID for controlling the corresponding vibration,
         /// which will be used in `StartVibrateByCache`, `ClearVibrateByCache` or `StopControllerVCMotor`.</param>
         /// <returns></returns>
-        public static int StartVibrateBySharem(float[] data, VibrateController vibrateController, int buffersize, int frequency, int channelMask, ChannelFlip channelFlip,ref int sourceId)
+        public static int StartVibrateBySharem(float[] data, VibrateController vibrateController, int buffersize, int frequency, int channelMask, ChannelFlip channelFlip, ref int sourceId)
         {
             return PXR_Plugin.Controller.UPxr_StartVibrateBySharem(data, (int)vibrateController, buffersize, frequency, channelMask, 32, (int)channelFlip, ref sourceId);
         }
-        
+
         /// <summary>
         /// Caches sound vibration data.
         /// @note Cached audio data can be extracted from the cache directory and then transmitted, which reduces resource consumption and improves service performance.
@@ -296,7 +303,7 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int SaveVibrateByCache(AudioClip audioClip, VibrateController vibrateController, ChannelFlip channelFlip, CacheConfig cacheConfig,ref int sourceId)
+        public static int SaveVibrateByCache(AudioClip audioClip, VibrateController vibrateController, ChannelFlip channelFlip, CacheConfig cacheConfig, ref int sourceId)
         {
             if (audioClip == null)
             {
@@ -307,7 +314,7 @@ namespace Unity.XR.PXR
             audioClip.GetData(data, 0);
             int sampleRate = audioClip.frequency;
             int channelMask = audioClip.channels;
-            return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, (int)cacheConfig,ref sourceId);
+            return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, (int)cacheConfig, ref sourceId);
         }
 
         /// <summary>
@@ -341,7 +348,7 @@ namespace Unity.XR.PXR
         /// </returns>
         public static int SaveVibrateByCache(float[] data, VibrateController vibrateController, int buffersize, int frequency, int channelMask, ChannelFlip channelFlip, CacheConfig cacheConfig, ref int sourceId)
         {
-            return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, frequency, channelMask, 32, (int)channelFlip, (int)cacheConfig,ref sourceId);
+            return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, frequency, channelMask, 32, (int)channelFlip, (int)cacheConfig, ref sourceId);
         }
 
         /// <summary>
@@ -352,10 +359,11 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int StartVibrateByCache(int sourceId) {
+        public static int StartVibrateByCache(int sourceId)
+        {
             return PXR_Plugin.Controller.UPxr_StartVibrateByCache(sourceId);
         }
-        
+
         /// <summary>
         /// Clears cached sound vibration data.
         /// </summary>
@@ -364,7 +372,8 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int ClearVibrateByCache(int sourceId) {
+        public static int ClearVibrateByCache(int sourceId)
+        {
             return PXR_Plugin.Controller.UPxr_ClearVibrateByCache(sourceId);
         }
 
@@ -396,7 +405,8 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int StartVibrateByPHF(TextAsset phfText,ref int sourceId, VibrateController vibrateController, ChannelFlip channelFlip,float amp) {
+        public static int StartVibrateByPHF(TextAsset phfText, ref int sourceId, VibrateController vibrateController, ChannelFlip channelFlip, float amp)
+        {
             return PXR_Plugin.Controller.UPxr_StartVibrateByPHF(phfText.text, phfText.text.Length, ref sourceId, (int)vibrateController, (int)channelFlip, amp);
         }
 
@@ -408,7 +418,8 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int PauseVibrate(int sourceId) {
+        public static int PauseVibrate(int sourceId)
+        {
             return PXR_Plugin.Controller.UPxr_PauseVibrate(sourceId);
         }
 
@@ -420,7 +431,8 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int ResumeVibrate(int sourceId) {
+        public static int ResumeVibrate(int sourceId)
+        {
             return PXR_Plugin.Controller.UPxr_ResumeVibrate(sourceId);
         }
 
@@ -446,7 +458,8 @@ namespace Unity.XR.PXR
         /// * `0`: success
         /// * `-1`: failure
         /// </returns>
-        public static int UpdateVibrateParams(int sourceId, VibrateController vibrateController, ChannelFlip channelFlip, float amp) {
+        public static int UpdateVibrateParams(int sourceId, VibrateController vibrateController, ChannelFlip channelFlip, float amp)
+        {
             return PXR_Plugin.Controller.UPxr_UpdateVibrateParams(sourceId, (int)vibrateController, (int)channelFlip, amp);
         }
 

@@ -13,7 +13,6 @@ PICO Technology Co., Ltd.
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.XR;
 using UnityEngine.XR.Management;
 
 namespace Unity.XR.PXR
@@ -42,7 +41,7 @@ namespace Unity.XR.PXR
         private int lastBoundaryState = 0;
         private int currentBoundaryState;
         private float refreshRate = -1.0f;
-        
+
         private Camera[] eyeCamera;
         private int[] eyeCameraOriginCullingMask = new int[3];
         private CameraClearFlags[] eyeCameraOriginClearFlag = new CameraClearFlags[3];
@@ -88,14 +87,17 @@ namespace Unity.XR.PXR
             }
             eyeCamera = new Camera[3];
             Camera[] cam = gameObject.GetComponentsInChildren<Camera>();
-            for (int i = 0; i < cam.Length; i++) {
-                if (cam[i].stereoTargetEye == StereoTargetEyeMask.Both) {
+            for (int i = 0; i < cam.Length; i++)
+            {
+                if (cam[i].stereoTargetEye == StereoTargetEyeMask.Both)
+                {
                     eyeCamera[0] = cam[i];
-                }else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Left)
+                }
+                else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Left)
                 {
                     eyeCamera[1] = cam[i];
                 }
-                else if(cam[i].stereoTargetEye == StereoTargetEyeMask.Right)
+                else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Right)
                 {
                     eyeCamera[2] = cam[i];
                 }
@@ -125,8 +127,9 @@ namespace Unity.XR.PXR
 
                 foreach (var layer in PXR_OverLay.Instances)
                 {
-                    if (eyeCamera[0] != null && eyeCamera[0].enabled) {
-                        layer.RefreshCamera(eyeCamera[0],eyeCamera[0]);
+                    if (eyeCamera[0] != null && eyeCamera[0].enabled)
+                    {
+                        layer.RefreshCamera(eyeCamera[0], eyeCamera[0]);
                     }
                     else if (eyeCamera[1] != null && eyeCamera[1].enabled)
                     {
@@ -200,7 +203,7 @@ namespace Unity.XR.PXR
 #endif
             PXR_Plugin.Controller.UPxr_SetControllerDelay();
         }
-        
+
         void Update()
         {
             currentBoundaryState = PXR_Plugin.Boundary.UPxr_GetSeeThroughState();
@@ -303,7 +306,7 @@ namespace Unity.XR.PXR
             }
             PLog.i(TAG, string.Format("Customize FPS : {0}", Application.targetFrameRate));
         }
-        
+
         //bind verify service success call back
         void BindVerifyServiceCallback()
         {

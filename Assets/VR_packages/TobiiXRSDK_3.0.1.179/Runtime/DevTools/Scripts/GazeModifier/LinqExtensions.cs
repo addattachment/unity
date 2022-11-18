@@ -33,7 +33,7 @@ namespace Tobii.XR.GazeModifier
         {
             var s = source.ToList();
             var total = s.Count;
-            var toTake  = Mathf.RoundToInt(total * percentage);
+            var toTake = Mathf.RoundToInt(total * percentage);
             var skipFirst = Mathf.RoundToInt((total - toTake) / 2);
             return s.Skip(skipFirst).Take(toTake);
         }

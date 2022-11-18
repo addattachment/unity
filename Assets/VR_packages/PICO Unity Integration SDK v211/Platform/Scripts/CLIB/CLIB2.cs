@@ -44,7 +44,7 @@ namespace Pico.Platform
         public static ulong ppf_Leaderboard_GetEntriesByIds(string leaderboardName, int pageSize, int pageIdx, LeaderboardStartAt startAt, string[] userIDs)
         {
             var userIds = new PtrArray(userIDs);
-            var result = ppf_Leaderboard_GetEntriesByIds(leaderboardName, pageSize, pageIdx, startAt, userIds.a, (uint) userIDs.Length);
+            var result = ppf_Leaderboard_GetEntriesByIds(leaderboardName, pageSize, pageIdx, startAt, userIds.a, (uint)userIDs.Length);
             userIds.Free();
             return result;
         }
@@ -60,7 +60,7 @@ namespace Pico.Platform
         public static ulong ppf_Presence_SendInvites(string[] userIDs)
         {
             var ptrs = new PtrArray(userIDs);
-            var result = ppf_Presence_SendInvites(ptrs.a, (uint) userIDs.Length);
+            var result = ppf_Presence_SendInvites(ptrs.a, (uint)userIDs.Length);
             ptrs.Free();
             return result;
         }
@@ -68,7 +68,7 @@ namespace Pico.Platform
         public static Dictionary<string, string> DataStoreFromNative(IntPtr ppfDataStore)
         {
             var map = new Dictionary<string, string>();
-            var size = (int) ppf_DataStore_GetNumKeys(ppfDataStore);
+            var size = (int)ppf_DataStore_GetNumKeys(ppfDataStore);
             for (var i = 0; i < size; i++)
             {
                 string key = ppf_DataStore_GetKey(ppfDataStore, i);

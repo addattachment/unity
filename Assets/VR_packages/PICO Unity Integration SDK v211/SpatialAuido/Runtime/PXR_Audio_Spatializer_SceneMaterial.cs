@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PXR_Audio_Spatializer_SceneMaterial : MonoBehaviour
 {
-    [SerializeField] 
+    [SerializeField]
     public PXR_Audio.Spatializer.AcousticsMaterial materialPreset = PXR_Audio.Spatializer.AcousticsMaterial.AcousticTile;
     private PXR_Audio.Spatializer.AcousticsMaterial lastMaterialPreset = PXR_Audio.Spatializer.AcousticsMaterial.AcousticTile;
-    
+
     [SerializeField]
     [Range(0.0f, 1.0f)]
     public float[] absorption = new float[4];
-    
+
     [SerializeField]
     [Range(0.0f, 1.0f)]
     public float scattering = 0.0f;
-    
+
     [SerializeField]
     [Range(0.0f, 1.0f)]
     public float transmission = 0.0f;
@@ -30,11 +30,11 @@ public class PXR_Audio_Spatializer_SceneMaterial : MonoBehaviour
             return context;
         }
     }
-    
+
     private float[] absorptionForValidation = new float[4];
     private float scatteringForValidation = 0.0f;
     private float transmissionForValidation = 0.0f;
-    
+
     private void OnValidate()
     {
         if (lastMaterialPreset != materialPreset) // material_preset is changed

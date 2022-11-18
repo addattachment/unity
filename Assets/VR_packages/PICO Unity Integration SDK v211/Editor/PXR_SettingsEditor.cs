@@ -10,11 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEditor;
-using Unity.XR.PXR;
+using UnityEngine;
 
 namespace Unity.XR.PXR.Editor
 {
@@ -33,7 +30,7 @@ namespace Unity.XR.PXR.Editor
 
         void OnEnable()
         {
-            if (stereoRenderingModeAndroid == null) 
+            if (stereoRenderingModeAndroid == null)
                 stereoRenderingModeAndroid = serializedObject.FindProperty(StereoRenderingModeAndroid);
             if (systemDisplayFrequency == null)
                 systemDisplayFrequency = serializedObject.FindProperty(SystemDisplayFrequency);

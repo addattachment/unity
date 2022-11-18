@@ -33,7 +33,7 @@ public class PXR_Audio_Spatializer_SceneGeometryEditor : Editor
         if (showMeshBakingUtilsFlag)
         {
             EditorGUI.indentLevel++;
-            
+
             EditorGUILayout.PropertyField(meshBakingLayerMask);
             serializedObject.ApplyModifiedProperties();
             EditorGUILayout.BeginHorizontal();

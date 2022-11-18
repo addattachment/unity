@@ -19,7 +19,7 @@ namespace Tobii.G2OM
             var options = new G2OM_ContextCreateOptions();
 
             var result = G2OM_InitializeOptions(ref internalOptions);
-            if(result == G2OM_Error.Ok) // What to do if this fails?
+            if (result == G2OM_Error.Ok) // What to do if this fails?
             {
                 options.capacity = internalOptions.capacity;
                 options.thread_count = internalOptions.thread_count;
@@ -36,17 +36,17 @@ namespace Tobii.G2OM
 
         public static G2OM_Error G2OM_ContextCreateEx(out IntPtr context, ref G2OM_ContextCreateOptions options)
         {
-            var has_license = !string.IsNullOrEmpty(options.license_content); 
+            var has_license = !string.IsNullOrEmpty(options.license_content);
             var internalOptions = new G2OM_Internal_ContextCreateOptions();
-            var license = has_license ? options.license_content : "" ;
-            
+            var license = has_license ? options.license_content : "";
+
             var bytes = has_license ? Encoding.UTF8.GetBytes(options.license_content) : new byte[0];
             var ptr = Marshal.AllocHGlobal(license.Length);
 
             Marshal.Copy(bytes, 0, ptr, bytes.Length);
 
             internalOptions.capacity = options.capacity;
-            internalOptions.license_length = (uint) license.Length;
+            internalOptions.license_length = (uint)license.Length;
             internalOptions.thread_count = options.thread_count;
             internalOptions.license_ptr = has_license ? ptr : IntPtr.Zero;
 
@@ -65,7 +65,7 @@ namespace Tobii.G2OM
             public IntPtr license_ptr;
             public uint license_length;
         }
-                
+
         [DllImport(g2om_lib, CallingConvention = CallingConvention.Cdecl, EntryPoint = "g2om_process")]
         public static extern G2OM_Error G2OM_Process(IntPtr context, ref G2OM_DeviceData deviceData, ref G2OM_RaycastResult raycastResult, uint candidatesCount, G2OM_Candidate[] candidates, G2OM_CandidateResult[] candidateResults);
 
@@ -143,7 +143,7 @@ namespace Tobii.G2OM
         public G2OM_Matrix4x4 world_to_local_matrix;
         public G2OM_Matrix4x4 local_to_world_matrix;
     }
-    
+
     [StructLayout(LayoutKind.Sequential)]
     public struct G2OM_Matrix4x4
     {
@@ -213,7 +213,7 @@ namespace Tobii.G2OM
     {
         public static byte ToByte(this bool b)
         {
-            return b ? (byte) 1 : (byte) 0;
+            return b ? (byte)1 : (byte)0;
         }
 
         public static bool ToBool(this byte b)

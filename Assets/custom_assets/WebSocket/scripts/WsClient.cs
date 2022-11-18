@@ -1,6 +1,4 @@
-using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using WebSocketSharp;
@@ -85,7 +83,7 @@ public class WsClient : MonoBehaviour
 
     private void HandleIncomingMessage(string message)
     {
-        Debug.Log("INVOKING "+message);
+        Debug.Log("INVOKING " + message);
         wsToDebug.SetDebug(message);
         //wsMsgReceived.Invoke(message);
     }
