@@ -1,6 +1,7 @@
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using WebSocketSharp;
@@ -50,6 +51,7 @@ public class WsClient : MonoBehaviour
         {
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             HandleIncomingMessage(e.Data);
+            wsToDebug.SetDebug(e.Data);
         };
         ws.OnClose += (sender, e) =>
         {
