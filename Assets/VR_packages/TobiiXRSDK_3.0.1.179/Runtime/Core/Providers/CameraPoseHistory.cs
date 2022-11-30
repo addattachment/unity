@@ -23,8 +23,8 @@ namespace Tobii.XR
             public long TimestampUs;
             public Matrix4x4 Matrix;
 
-            public static readonly CameraPoseSample AncientPose = new CameraPoseSample {TimestampUs = long.MinValue, Matrix = Matrix4x4.identity};
-            public static readonly CameraPoseSample FuturePose = new CameraPoseSample {TimestampUs = long.MaxValue, Matrix = Matrix4x4.identity};
+            public static readonly CameraPoseSample AncientPose = new CameraPoseSample { TimestampUs = long.MinValue, Matrix = Matrix4x4.identity };
+            public static readonly CameraPoseSample FuturePose = new CameraPoseSample { TimestampUs = long.MaxValue, Matrix = Matrix4x4.identity };
         }
 
         private const int SecsToUs = 1000000;
@@ -50,7 +50,7 @@ namespace Tobii.XR
             var frameOffsetBetweenHeadPoseAndEyePose = Mathf.CeilToInt(eyeMotionToPhotonLatencySec / frameDurationSecs);
             _history = Enumerable.Repeat(CameraPoseSample.AncientPose, frameOffsetBetweenHeadPoseAndEyePose + 1).ToArray();
             _cameraTransform = CameraHelper.GetCameraTransform();
-            _headPosePredictionUs = (long) (headPosePredictionSecs * SecsToUs);
+            _headPosePredictionUs = (long)(headPosePredictionSecs * SecsToUs);
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace Tobii.XR
         public void Tick(long systemTimestampUs)
         {
             // Calculate, in system time, when the frame started
-            var timeSinceStartOfFrameUs = (long) (SecsToUs * (Time.realtimeSinceStartup - Time.unscaledTime));
+            var timeSinceStartOfFrameUs = (long)(SecsToUs * (Time.realtimeSinceStartup - Time.unscaledTime));
             var timestampStartOfFrameUs = systemTimestampUs - timeSinceStartOfFrameUs;
 
             // Sample predicted camera pose and set timestamp as the predicted time 
@@ -109,7 +109,7 @@ namespace Tobii.XR
 
             if (beforeSet && afterSet)
             {
-                var t = (float) (timestampUs - before.TimestampUs) / (float) (after.TimestampUs - before.TimestampUs);
+                var t = (float)(timestampUs - before.TimestampUs) / (float)(after.TimestampUs - before.TimestampUs);
                 var translation = Vector3.Lerp(before.Matrix.MultiplyPoint3x4(Vector3.zero), after.Matrix.MultiplyPoint3x4(Vector3.zero), t);
                 var rotation = Quaternion.Lerp(before.Matrix.rotation, after.Matrix.rotation, t);
                 matrix = Matrix4x4.TRS(translation, rotation, Vector3.one);

@@ -22,12 +22,14 @@ namespace Tobii.XR
     public class UIGazeButtonGraphics : MonoBehaviour
     {
 #pragma warning disable 649
-        [Header("Components")] [SerializeField]
+        [Header("Components")]
+        [SerializeField]
         private Image _buttonImage;
 
         [SerializeField] private Text _label;
 
-        [Header("Focused")] [SerializeField, Tooltip("The color of the button background when focused.")]
+        [Header("Focused")]
+        [SerializeField, Tooltip("The color of the button background when focused.")]
         private Color _backgroundFocusColor;
 
         [SerializeField, Tooltip("The color of the label when focused.")]
@@ -42,7 +44,8 @@ namespace Tobii.XR
         [SerializeField, Tooltip("How the visual feedback is animated.")]
         private AnimationCurve _visualFeedbackAnimationCurve;
 
-        [Header("Pressed")] [SerializeField, Tooltip("The color of the button background when the button is pressed down.")]
+        [Header("Pressed")]
+        [SerializeField, Tooltip("The color of the button background when the button is pressed down.")]
         private Color _backgroundPressColor;
 
         [SerializeField, Tooltip("The color fo the label when the button is pressed down.")]

@@ -14,7 +14,7 @@ using System;
 
 namespace Pico.Platform.Models
 {
-    
+
     public class Destination
     {
         public readonly string ApiName;
@@ -38,13 +38,13 @@ namespace Pico.Platform.Models
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new Destination(CLIB.ppf_DestinationArray_GetElement(a,(UIntPtr) i)));
+                this.Add(new Destination(CLIB.ppf_DestinationArray_GetElement(a, (UIntPtr)i)));
             }
 
             NextPageParam = CLIB.ppf_DestinationArray_GetNextPageParam(a);
         }
     }
-    
+
     public class ApplicationInvite
     {
         public readonly Destination Destination;
@@ -64,7 +64,7 @@ namespace Pico.Platform.Models
             MatchSessionId = CLIB.ppf_ApplicationInvite_GetMatchSessionId(o);
         }
     }
-    
+
 
     public class ApplicationInviteList : MessageArray<ApplicationInvite>
     {
@@ -80,7 +80,7 @@ namespace Pico.Platform.Models
             NextPageParam = CLIB.ppf_ApplicationInviteArray_GetNextPageParam(a);
         }
     }
-    
+
     public class LaunchDetails
     {
         public readonly string DeeplinkMessage;
@@ -108,7 +108,7 @@ namespace Pico.Platform.Models
             LaunchType = CLIB.ppf_LaunchDetails_GetLaunchType(o);
         }
     }
-    
+
     public class SendInvitesResult
     {
         public readonly ApplicationInviteList Invites;

@@ -12,12 +12,12 @@ public class TobiiNotificationView : MonoBehaviour
         if (go == null)
         {
             var prefab = Resources.Load("Tobii Notification View");
-            go = (GameObject)Instantiate(prefab);    
+            go = (GameObject)Instantiate(prefab);
         }
 
         var view = go.GetComponent<TobiiNotificationView>();
 
-        
+
         view.SetMessage(message);
     }
 

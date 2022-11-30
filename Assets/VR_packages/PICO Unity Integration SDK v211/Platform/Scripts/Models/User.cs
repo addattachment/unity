@@ -56,11 +56,11 @@ namespace Pico.Platform.Models
     {
         public UserList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_UserArray_GetSize(a);
+            var count = (int)CLIB.ppf_UserArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new User(CLIB.ppf_UserArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new User(CLIB.ppf_UserArray_GetElement(a, (UIntPtr)i)));
             }
 
             NextPageParam = CLIB.ppf_UserArray_GetNextPageParam(a);
@@ -101,11 +101,11 @@ namespace Pico.Platform.Models
     {
         public UserRoomList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_UserAndRoomArray_GetSize(a);
+            var count = (int)CLIB.ppf_UserAndRoomArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new UserRoom(CLIB.ppf_UserAndRoomArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new UserRoom(CLIB.ppf_UserAndRoomArray_GetElement(a, (UIntPtr)i)));
             }
 
             NextPageParam = CLIB.ppf_UserAndRoomArray_GetNextPageParam(a);
@@ -122,11 +122,11 @@ namespace Pico.Platform.Models
         public PermissionResult(IntPtr o)
         {
             {
-                int sz = (int) CLIB.ppf_PermissionResult_GetAuthorizedPermissionsSize(o);
+                int sz = (int)CLIB.ppf_PermissionResult_GetAuthorizedPermissionsSize(o);
                 AuthorizedPermissions = new string[sz];
                 for (int i = 0; i < sz; i++)
                 {
-                    AuthorizedPermissions[i] = CLIB.ppf_PermissionResult_GetAuthorizedPermissions(o, (UIntPtr) i);
+                    AuthorizedPermissions[i] = CLIB.ppf_PermissionResult_GetAuthorizedPermissions(o, (UIntPtr)i);
                 }
             }
 

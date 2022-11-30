@@ -37,7 +37,7 @@ namespace Pico.Platform.Models
     {
         public ProductList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_ProductArray_GetSize(a);
+            var count = (int)CLIB.ppf_ProductArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
@@ -70,7 +70,7 @@ namespace Pico.Platform.Models
     {
         public PurchaseList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_PurchaseArray_GetSize(a);
+            var count = (int)CLIB.ppf_PurchaseArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {

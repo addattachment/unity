@@ -12,7 +12,8 @@ namespace Tobii.XR
     public class UIGazeSliderGraphics : MonoBehaviour
     {
 #pragma warning disable 649
-        [Header("Components")] [SerializeField]
+        [Header("Components")]
+        [SerializeField]
         private Image _backgroundImage;
 
         [SerializeField] private Image _fillImage;
@@ -20,7 +21,8 @@ namespace Tobii.XR
         [SerializeField] private Text _valueText;
         [SerializeField] private Text _label;
 
-        [Header("Focused")] [SerializeField, Tooltip("The color of the background when the user is focusing on the slider.")]
+        [Header("Focused")]
+        [SerializeField, Tooltip("The color of the background when the user is focusing on the slider.")]
         private Color _backgroundFocusColor;
 
         [SerializeField, Tooltip("The color of the filled slider when the user is focusing on the slider.")]
@@ -38,7 +40,8 @@ namespace Tobii.XR
         [SerializeField, Tooltip("How the visual highlighted is animated.")]
         private AnimationCurve _visualFeedbackAnimationCurve;
 
-        [Header("Handle")] [SerializeField, Tooltip("The color of the handle when the user is focusing on the slider and touching the touchpad.")]
+        [Header("Handle")]
+        [SerializeField, Tooltip("The color of the handle when the user is focusing on the slider and touching the touchpad.")]
         private Color _handleOnTouchColor;
 
         [SerializeField, Tooltip("The duration for the handle to become visible when the user looks at the slider and touches the touchpad or go back to the default color when the user looks away.")]

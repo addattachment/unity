@@ -31,7 +31,7 @@ namespace Pico.Platform.Models
             SentTime = new DateTime();
             try
             {
-                SentTime = Util.SecondsToDateTime((long) CLIB.ppf_RoomInviteNotification_GetSentTime(o));
+                SentTime = Util.SecondsToDateTime((long)CLIB.ppf_RoomInviteNotification_GetSentTime(o));
             }
             catch (UnityException ex)
             {
@@ -46,7 +46,7 @@ namespace Pico.Platform.Models
         public RoomInviteNotificationList(IntPtr a)
         {
             NextPageParam = CLIB.ppf_RoomInviteNotificationArray_HasNextPage(a) ? "true" : string.Empty;
-            int count = (int) CLIB.ppf_RoomInviteNotificationArray_GetSize(a);
+            int count = (int)CLIB.ppf_RoomInviteNotificationArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {

@@ -15,8 +15,8 @@ namespace Tobii.XR.Internal
         {
             var type = AssemblyUtils.EyetrackingProviderType(eyetrackerProviderType);
             var attribute = Attribute.GetCustomAttribute(type, typeof(CompilerFlagAttribute)) as CompilerFlagAttribute;
-            if(attribute == null) return null;
-            
+            if (attribute == null) return null;
+
             return attribute.Flag;
         }
 
@@ -24,8 +24,8 @@ namespace Tobii.XR.Internal
         {
             var type = AssemblyUtils.EyetrackingProviderType(eyetrackerProviderType);
             var attribute = Attribute.GetCustomAttribute(type, typeof(CompilerFlagAttribute)) as CompilerFlagAttribute;
-            if(attribute == null) return null;
-            
+            if (attribute == null) return null;
+
             return attribute.DisplayMessage;
         }
 
@@ -54,7 +54,7 @@ namespace Tobii.XR.Internal
             foreach (var provider in providers)
             {
                 var unselectable = Attribute.GetCustomAttribute(provider, typeof(UnSelectableProviderAttribute)) != null;
-                if(unselectable) continue;
+                if (unselectable) continue;
 
                 var attribute = Attribute.GetCustomAttribute(provider, typeof(SupportedPlatformAttribute)) as SupportedPlatformAttribute;
 
@@ -83,6 +83,6 @@ namespace Tobii.XR.Internal
             {
                 return PlayerSettings.GetScriptingDefineSymbolsForGroup(targetGroup);
             }
-        }        
+        }
     }
 }

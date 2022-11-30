@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 public class plastic_fps_controller : MonoBehaviour
@@ -6,15 +5,15 @@ public class plastic_fps_controller : MonoBehaviour
     [SerializeField] private float speed = 5.0f;
 
     [SerializeField] private float mouseSensitivity = 3.5f;
-    
+
     private float _cameraPitch = 0.0f;
     private float _cameraYaw = 0.0f;
 
     private bool _isCursorLocked = false;
-    
+
     private void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -46,13 +45,13 @@ public class plastic_fps_controller : MonoBehaviour
     void UpdateRotation()
     {
         Vector2 targetMousePos = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-        
+
         _cameraPitch = -targetMousePos.y * mouseSensitivity;
         _cameraYaw = targetMousePos.x * mouseSensitivity;
 
         transform.eulerAngles += new Vector3(_cameraPitch, _cameraYaw, 0.0f);
     }
-    
+
     void UpdatePosition()
     {
         //  Calculate movement distance
@@ -65,7 +64,7 @@ public class plastic_fps_controller : MonoBehaviour
         {
             movementDistance /= 5.0f;
         }
-            
+
         Vector3 movement = Vector3.zero;
         if (Input.GetKey(KeyCode.A))
         {
@@ -100,11 +99,15 @@ public class plastic_fps_controller : MonoBehaviour
         SetCursorLock(false);
     }
 
-    private void SetCursorLock(bool lockCursor) {
-        if (lockCursor) {
+    private void SetCursorLock(bool lockCursor)
+    {
+        if (lockCursor)
+        {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-        } else {
+        }
+        else
+        {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }

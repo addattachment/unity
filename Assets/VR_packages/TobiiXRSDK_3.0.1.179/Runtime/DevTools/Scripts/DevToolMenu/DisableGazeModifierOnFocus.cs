@@ -11,9 +11,10 @@ namespace Tobii.XR.DevTools
     {
         IEnumerator Start()
         {
-            yield return new WaitUntil(() => {
+            yield return new WaitUntil(() =>
+            {
                 var filter = TobiiXR.Internal.Filter as GazeModifierFilter;
-                if(filter != null)
+                if (filter != null)
                 {
                     filter.Settings.AddDisabler(this);
                     return true;

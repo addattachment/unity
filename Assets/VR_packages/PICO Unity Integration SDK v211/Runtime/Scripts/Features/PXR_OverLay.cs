@@ -11,12 +11,9 @@ PICO Technology Co., Ltd.
 *******************************************************************************/
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering;
-using UnityEngine.XR;
 
 namespace Unity.XR.PXR
 {
@@ -164,7 +161,7 @@ namespace Unity.XR.PXR
             ClearTexture();
         }
 
-        public void RefreshCamera(Camera leftCamera,Camera rightCamera)
+        public void RefreshCamera(Camera leftCamera, Camera rightCamera)
         {
             overlayEyeCamera[0] = leftCamera;
             overlayEyeCamera[1] = rightCamera;

@@ -13,13 +13,13 @@ PICO Technology Co., Ltd.
 using System;
 using System.Collections.Generic;
 using System.Xml;
-using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEditor;
 using UnityEditor.Android;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
-using UnityEditor;
 using UnityEditor.XR.Management;
+using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.XR.Management;
 
 namespace Unity.XR.PXR.Editor
@@ -31,7 +31,7 @@ namespace Unity.XR.PXR.Editor
         {
             XRGeneralSettings generalSettings = XRGeneralSettingsPerBuildTarget.XRGeneralSettingsForBuildTarget(BuildTargetGroup.Android);
             if (generalSettings == null) return false;
-                var assignedSettings = generalSettings.AssignedSettings;
+            var assignedSettings = generalSettings.AssignedSettings;
             if (assignedSettings == null) return false;
 #if UNITY_2021_1_OR_NEWER
             foreach (XRLoader loader in assignedSettings.activeLoaders)
@@ -93,8 +93,8 @@ namespace Unity.XR.PXR.Editor
     {
         public void OnPostGenerateGradleAndroidProject(string path)
         {
-            if(!PXR_BuildProcessor.IsLoaderExists())
-               return;
+            if (!PXR_BuildProcessor.IsLoaderExists())
+                return;
             string originManifestPath = path + "/src/main/AndroidManifest.xml";
             XmlDocument doc = new XmlDocument();
             doc.Load(originManifestPath);
@@ -103,16 +103,16 @@ namespace Unity.XR.PXR.Editor
             string metaDataTagPath = applicationTagPath + "/meta-data";
             string usesPermissionTagName = "uses-permission";
             var settings = PXR_XmlTools.GetSettings();
-            doc.InsertAttributeInTargetTag(applicationTagPath,null, new Dictionary<string, string>() {{"requestLegacyExternalStorage", "true"}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","pvr.app.type"}},new Dictionary<string, string>{{"value","vr"}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","pvr.sdk.version"}},new Dictionary<string, string>{{"value","XR Platform_2.1.1.3"}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","enable_cpt"}},new Dictionary<string, string>{{"value",PXR_ProjectSetting.GetProjectConfig().useContentProtect ? "1" : "0"}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","enable_entitlementcheck"}},new Dictionary<string, string>{{"value",PXR_PlatformSetting.Instance.startTimeEntitlementCheck ? "1" : "0"}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","handtracking"}},new Dictionary<string, string> {{"value",PXR_ProjectSetting.GetProjectConfig().handTracking ? "1" : "0" }});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","rendering_mode"}},new Dictionary<string, string>{{"value",((int)settings.stereoRenderingModeAndroid).ToString()}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","display_rate"}},new Dictionary<string, string>{{"value",((int)settings.systemDisplayFrequency).ToString()}});
-            doc.InsertAttributeInTargetTag(metaDataTagPath,new Dictionary<string, string>{{"name","color_Space"}},new Dictionary<string, string>{{"value",QualitySettings.activeColorSpace == ColorSpace.Linear ? "1" : "0"}});
-            doc.CreateElementInTag(manifestTagPath,usesPermissionTagName,new Dictionary<string, string>{{"name","android.permission.WRITE_SETTINGS"}});
+            doc.InsertAttributeInTargetTag(applicationTagPath, null, new Dictionary<string, string>() { { "requestLegacyExternalStorage", "true" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "pvr.app.type" } }, new Dictionary<string, string> { { "value", "vr" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "pvr.sdk.version" } }, new Dictionary<string, string> { { "value", "XR Platform_2.1.1.3" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "enable_cpt" } }, new Dictionary<string, string> { { "value", PXR_ProjectSetting.GetProjectConfig().useContentProtect ? "1" : "0" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "enable_entitlementcheck" } }, new Dictionary<string, string> { { "value", PXR_PlatformSetting.Instance.startTimeEntitlementCheck ? "1" : "0" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "handtracking" } }, new Dictionary<string, string> { { "value", PXR_ProjectSetting.GetProjectConfig().handTracking ? "1" : "0" } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "rendering_mode" } }, new Dictionary<string, string> { { "value", ((int)settings.stereoRenderingModeAndroid).ToString() } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "display_rate" } }, new Dictionary<string, string> { { "value", ((int)settings.systemDisplayFrequency).ToString() } });
+            doc.InsertAttributeInTargetTag(metaDataTagPath, new Dictionary<string, string> { { "name", "color_Space" } }, new Dictionary<string, string> { { "value", QualitySettings.activeColorSpace == ColorSpace.Linear ? "1" : "0" } });
+            doc.CreateElementInTag(manifestTagPath, usesPermissionTagName, new Dictionary<string, string> { { "name", "android.permission.WRITE_SETTINGS" } });
             doc.Save(originManifestPath);
         }
         public int callbackOrder { get { return 10000; } }
@@ -122,10 +122,10 @@ namespace Unity.XR.PXR.Editor
     public static class PXR_XmlTools
     {
         static readonly string androidURI = "http://schemas.android.com/apk/res/android";
-        public static void InsertAttributeInTargetTag(this XmlDocument doc,string tagPath,Dictionary<string,string> filterDic,Dictionary<string,string> attributeDic)
+        public static void InsertAttributeInTargetTag(this XmlDocument doc, string tagPath, Dictionary<string, string> filterDic, Dictionary<string, string> attributeDic)
         {
             XmlElement targetElement = null;
-            if(filterDic == null)
+            if (filterDic == null)
                 targetElement = doc.SelectSingleNode(tagPath) as XmlElement;
             else
             {
@@ -146,9 +146,9 @@ namespace Unity.XR.PXR.Editor
             {
                 string parentPath = tagPath.Substring(0, tagPath.LastIndexOf("/"));
                 string tagName = tagPath.Substring(tagPath.LastIndexOf("/") + 1);
-                foreach(var item in attributeDic)
-                    filterDic.Add(item.Key,item.Value);
-                doc.CreateElementInTag(parentPath,tagName,filterDic);
+                foreach (var item in attributeDic)
+                    filterDic.Add(item.Key, item.Value);
+                doc.CreateElementInTag(parentPath, tagName, filterDic);
             }
             else UpdateOrCreateAttribute(targetElement, attributeDic);
         }
@@ -176,7 +176,7 @@ namespace Unity.XR.PXR.Editor
         {
             foreach (var filterCase in filterDic)
             {
-                string caseValue = element.GetAttribute(filterCase.Key,androidURI);
+                string caseValue = element.GetAttribute(filterCase.Key, androidURI);
                 if (String.IsNullOrEmpty(caseValue) || caseValue != filterCase.Value)
                     return false;
             }
@@ -186,7 +186,7 @@ namespace Unity.XR.PXR.Editor
         {
             foreach (var attributeItem in attributeDic)
             {
-                element.SetAttribute(attributeItem.Key,androidURI,attributeItem.Value);
+                element.SetAttribute(attributeItem.Key, androidURI, attributeItem.Value);
             }
         }
         public static PXR_Settings GetSettings()

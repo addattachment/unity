@@ -34,7 +34,7 @@ namespace Unity.XR.PXR
         private Renderer controllerRenderMat;
         private XRNode node;
 
-        private bool lPrimary2DButton, rPrimary2DButton, lMenuButton, rMenuButton, lGripButton, rGripButton, lTriggerButton, rTriggerButton,x,y,a,b;
+        private bool lPrimary2DButton, rPrimary2DButton, lMenuButton, rMenuButton, lGripButton, rGripButton, lTriggerButton, rTriggerButton, x, y, a, b;
 
         void Start()
         {

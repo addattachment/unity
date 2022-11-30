@@ -1,7 +1,6 @@
 //  Copyright © 2015-2022 Pico Technology Co., Ltd. All Rights Reserved.
 
 using System.Runtime.InteropServices;
-using UnityEngine;
 
 namespace PXR_Audio
 {
@@ -158,7 +157,7 @@ namespace PXR_Audio
             // This is useful when audio middleware specifies spread value by itself.
             public float sourceGain; // Master gain of sound source.
             public float reflectionGain; // Reflection gain relative to default (master gain).
-            
+
             [MarshalAs(UnmanagedType.U1)] public bool enableDoppler;
 
             public SourceConfig(SourceMode inMode)

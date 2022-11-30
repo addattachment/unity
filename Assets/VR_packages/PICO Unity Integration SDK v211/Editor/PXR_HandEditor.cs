@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using UnityEngine;
-using UnityEditor;
 using Unity.XR.PXR;
+using UnityEditor;
+using UnityEngine;
 
 [CustomEditor(typeof(PXR_Hand))]
 public class PXR_HandEditor : Editor

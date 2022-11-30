@@ -19,7 +19,7 @@ public static class XRDisplaySubSystemHelper
         DisplaySystems.Clear();
         SubsystemManager.GetInstances(DisplaySystems);
         _activeDisplaySystem = displaySubsystem = DisplaySystems.FirstOrDefault(x => x.running);
-        
+
         return _activeDisplaySystem != null;
     }
 
@@ -66,7 +66,7 @@ public static class XRDisplaySubSystemHelper
         right = default;
 
         if (!TryGetFirstActive(out var ds)) return false;
-        
+
         var leftAssigned = false;
         var renderPassCount = ds.GetRenderPassCount();
         for (var renderPassIndex = 0; renderPassIndex < renderPassCount; renderPassIndex++)

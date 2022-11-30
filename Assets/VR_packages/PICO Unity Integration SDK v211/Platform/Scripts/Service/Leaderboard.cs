@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Runtime.InteropServices;
-using Pico.Platform.Models;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -204,7 +204,7 @@ namespace Pico.Platform
                 GCHandle hobj = GCHandle.Alloc(extraData, GCHandleType.Pinned);
                 IntPtr pobj = hobj.AddrOfPinnedObject();
                 var result = new Task<bool>(CLIB.ppf_Leaderboard_WriteEntry(leaderboardName, score, pobj,
-                    (uint) (extraData != null ? extraData.Length : 0), forceUpdate));
+                    (uint)(extraData != null ? extraData.Length : 0), forceUpdate));
                 if (hobj.IsAllocated)
                     hobj.Free();
                 return result;
@@ -247,7 +247,7 @@ namespace Pico.Platform
                 GCHandle hobj = GCHandle.Alloc(extraData, GCHandleType.Pinned);
                 IntPtr pobj = hobj.AddrOfPinnedObject();
                 var result = new Task<bool>(CLIB.ppf_Leaderboard_WriteEntryWithSupplementaryMetric(leaderboardName, score,
-                    supplementaryMetric, pobj, (uint) (extraData != null ? extraData.Length : 0), forceUpdate));
+                    supplementaryMetric, pobj, (uint)(extraData != null ? extraData.Length : 0), forceUpdate));
                 if (hobj.IsAllocated)
                     hobj.Free();
                 return result;

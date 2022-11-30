@@ -2,12 +2,12 @@
 
 namespace Tobii.XR
 {
-    using UnityEngine;
-    using Tobii.G2OM;
     using System;
-    using Tobii.XR.Internal;
     using System.Collections.Generic;
     using System.Linq;
+    using Tobii.G2OM;
+    using Tobii.XR.Internal;
+    using UnityEngine;
 
     [Serializable]
     public class TobiiXR_Settings
@@ -87,7 +87,7 @@ namespace Tobii.XR
         public bool PopupLicenseValidationErrors;
 
         public TextAsset LicenseAsset;
-        
+
         public IEyeTrackingProvider GetProvider()
         {
             var eyeTrackingProviders = _platform == RuntimePlatform.Android ? AndroidEyeTrackingProviders : StandaloneEyeTrackingProviders;

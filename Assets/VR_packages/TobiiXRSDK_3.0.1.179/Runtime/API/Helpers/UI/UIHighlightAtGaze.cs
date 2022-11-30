@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Tobii.XR
 {
-//Monobehaviour which implements the "IGazeFocusable" interface, meaning it will be called on when the object receives focus
+    //Monobehaviour which implements the "IGazeFocusable" interface, meaning it will be called on when the object receives focus
     public class UIHighlightAtGaze : MonoBehaviour, IGazeFocusable
     {
         public Color HighlightColor = Color.red;

@@ -44,11 +44,11 @@ namespace Pico.Platform.Models
     {
         public MatchmakingAdminSnapshotCandidateList(IntPtr a)
         {
-            var count = (int) CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetSize(a);
+            var count = (int)CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetSize(a);
             this.Capacity = count;
             for (int i = 0; i < count; i++)
             {
-                this.Add(new MatchmakingAdminSnapshotCandidate(CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new MatchmakingAdminSnapshotCandidate(CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetElement(a, (UIntPtr)i)));
             }
         }
     }
@@ -129,11 +129,11 @@ namespace Pico.Platform.Models
     {
         public MatchmakingRoomList(IntPtr a)
         {
-            int count = (int) CLIB.ppf_MatchmakingRoomArray_GetSize(a);
+            int count = (int)CLIB.ppf_MatchmakingRoomArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {
-                this.Add(new MatchmakingRoom(CLIB.ppf_MatchmakingRoomArray_GetElement(a, (UIntPtr) i)));
+                this.Add(new MatchmakingRoom(CLIB.ppf_MatchmakingRoomArray_GetElement(a, (UIntPtr)i)));
             }
         }
     }

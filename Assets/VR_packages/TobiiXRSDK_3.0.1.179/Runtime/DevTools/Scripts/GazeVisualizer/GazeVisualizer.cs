@@ -38,7 +38,7 @@ namespace Tobii.XR
 
         private const float OffsetFromFarClipPlane = 10f;
         private const float PrecisionAngleScaleFactor = 5f;
-        
+
         private void Start()
         {
             _mainCamera = CameraHelper.GetMainCamera();
@@ -57,8 +57,8 @@ namespace Tobii.XR
             EyeTrackingDataHelper.TransformGazeData(eyeTrackingData, localToWorldMatrix);
             var gazeModifierFilter = TobiiXR.Internal.Filter as GazeModifierFilter;
 
-            if (gazeModifierFilter != null) gazeModifierFilter.FilterAccuracyOnly(eyeTrackingData, worldForward);    
-            
+            if (gazeModifierFilter != null) gazeModifierFilter.FilterAccuracyOnly(eyeTrackingData, worldForward);
+
             var gazeRay = eyeTrackingData.GazeRay;
             _spriteRenderer.enabled = gazeRay.IsValid;
             if (_spriteRenderer.enabled == false) return;

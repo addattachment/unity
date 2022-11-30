@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Runtime.InteropServices;
-using Pico.Platform.Models;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -64,7 +64,7 @@ namespace Pico.Platform
 
             GCHandle hobj = GCHandle.Alloc(bytes, GCHandleType.Pinned);
             IntPtr pobj = hobj.AddrOfPinnedObject();
-            var ok = CLIB.ppf_Net_SendPacket(userId, (UIntPtr) bytes.Length, pobj);
+            var ok = CLIB.ppf_Net_SendPacket(userId, (UIntPtr)bytes.Length, pobj);
             if (hobj.IsAllocated)
                 hobj.Free();
             return ok;
@@ -96,7 +96,7 @@ namespace Pico.Platform
 
             GCHandle hobj = GCHandle.Alloc(bytes, GCHandleType.Pinned);
             IntPtr pobj = hobj.AddrOfPinnedObject();
-            var ok = CLIB.ppf_Net_SendPacket2(userId, (UIntPtr) bytes.Length, pobj, reliable);
+            var ok = CLIB.ppf_Net_SendPacket2(userId, (UIntPtr)bytes.Length, pobj, reliable);
             if (hobj.IsAllocated)
                 hobj.Free();
             return ok;
@@ -120,7 +120,7 @@ namespace Pico.Platform
 
             GCHandle hobj = GCHandle.Alloc(bytes, GCHandleType.Pinned);
             IntPtr pobj = hobj.AddrOfPinnedObject();
-            var ok = CLIB.ppf_Net_SendPacketToCurrentRoom((UIntPtr) bytes.Length, pobj);
+            var ok = CLIB.ppf_Net_SendPacketToCurrentRoom((UIntPtr)bytes.Length, pobj);
             if (hobj.IsAllocated)
                 hobj.Free();
             return ok;
@@ -146,7 +146,7 @@ namespace Pico.Platform
 
             GCHandle hobj = GCHandle.Alloc(bytes, GCHandleType.Pinned);
             IntPtr pobj = hobj.AddrOfPinnedObject();
-            var ok = CLIB.ppf_Net_SendPacketToCurrentRoom2((UIntPtr) bytes.Length, pobj, reliable);
+            var ok = CLIB.ppf_Net_SendPacketToCurrentRoom2((UIntPtr)bytes.Length, pobj, reliable);
             if (hobj.IsAllocated)
                 hobj.Free();
             return ok;

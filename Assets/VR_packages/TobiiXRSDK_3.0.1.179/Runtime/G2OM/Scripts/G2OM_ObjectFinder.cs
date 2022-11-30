@@ -58,7 +58,7 @@ namespace Tobii.G2OM
                 var hitACandidate = distinguisher.IsGameObjectGazeFocusable(id, go);
                 raycastResult.gaze_ray = new G2OM_Raycast
                 {
-                    candidate_id = (ulong)id, 
+                    candidate_id = (ulong)id,
                     is_raycast_id_valid = hitACandidate.ToByte()
                 };
             }
@@ -74,9 +74,9 @@ namespace Tobii.G2OM
 
         private static void DrawDebugRays(ref G2OM_DeviceData deviceData, G2OM_GazeRay[] rays, int numberOfRaysThisFrame)
         {
-            if(rays.Length <= 0) return;
-            if(rays[0].is_valid.ToBool() == false) return;
-            
+            if (rays.Length <= 0) return;
+            if (rays[0].is_valid.ToBool() == false) return;
+
             Debug.DrawRay(rays[0].ray.origin.Vector(), rays[0].ray.direction.Vector() * 100, Color.red);
 
             for (int i = 1; i < numberOfRaysThisFrame; i++)
@@ -93,10 +93,10 @@ namespace Tobii.G2OM
             return Mathf.Clamp(rays, MinimumRaysPerFrame, MaxRaysPerFrame);
         }
 
-        private static void FindObjects(G2OM_GazeRay[] rays, 
+        private static void FindObjects(G2OM_GazeRay[] rays,
             Dictionary<int, GameObject> foundObjects,
-            IG2OM_ObjectDistinguisher distinguisher, 
-            LayerMask layerMask, 
+            IG2OM_ObjectDistinguisher distinguisher,
+            LayerMask layerMask,
             int numberOfRaysThisFrame)
         {
             foundObjects.Clear();

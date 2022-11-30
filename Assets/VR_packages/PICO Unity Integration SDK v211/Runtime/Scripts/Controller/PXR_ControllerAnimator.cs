@@ -10,8 +10,6 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 
@@ -89,7 +87,7 @@ namespace Unity.XR.PXR
 
                 if (controller == PXR_Input.Controller.LeftController)
                     controllerAnimator.SetBool(menu, menuButton);
-                else if(controller == PXR_Input.Controller.RightController)
+                else if (controller == PXR_Input.Controller.RightController)
                     controllerAnimator.SetBool(media, menuButton);
             }
         }

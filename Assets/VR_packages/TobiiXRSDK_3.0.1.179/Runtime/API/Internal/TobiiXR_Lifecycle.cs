@@ -4,7 +4,7 @@ namespace Tobii.XR.Internal
 {
     using System;
     using UnityEngine;
-    
+
     public class TobiiXR_Lifecycle : MonoBehaviour
     {
         public Action OnApplicationQuitAction = delegate { };

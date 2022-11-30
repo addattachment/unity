@@ -23,7 +23,7 @@ namespace Tobii.XR
         /// timestamp from the advanced eye tracking data package.
         /// </remarks>
         public long SystemTimestamp;
-        
+
         /// <summary>
         /// Timestamp, from the eye tracker clock, when the data used to calculate eye tracking signals was captured.
         /// Measured in microseconds. Guaranteed to be monotonic.

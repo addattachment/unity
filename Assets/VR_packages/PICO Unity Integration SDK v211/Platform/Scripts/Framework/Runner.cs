@@ -12,9 +12,10 @@ Pico Technology Co., Ltd.
 
 using UnityEngine;
 
-namespace Pico.Platform {
+namespace Pico.Platform
+{
 
-    public class Runner: MonoBehaviour
+    public class Runner : MonoBehaviour
     {
         void Awake()
         {

@@ -177,7 +177,7 @@ namespace Unity.XR.PXR
             {
                 min = n;
                 max = m;
-                width =w;
+                width = w;
             }
         }
     }

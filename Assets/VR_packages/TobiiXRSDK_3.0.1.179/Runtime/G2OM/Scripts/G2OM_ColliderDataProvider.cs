@@ -17,12 +17,12 @@ namespace Tobii.G2OM
             {
                 var id = candidate.Key;
                 var go = candidate.Value.GameObject;
-                
+
                 var collider = go.GetComponent<Collider>();
                 var box = collider as BoxCollider;
                 var sphereCollider = collider as SphereCollider;
                 var capsuleCollider = collider as CapsuleCollider;
-                
+
                 Vector3 min, max;
                 if (box != null)
                 {
@@ -51,7 +51,7 @@ namespace Tobii.G2OM
 
                     // The value can be 0, 1 or 2 corresponding to the X, Y and Z axes, respectively.
                     var direction = capsuleCollider.direction;
-                    
+
                     var r = capsuleCollider.radius;
                     var radius = new Vector3(r, r, r);
 

@@ -10,8 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
-using System;
 using Pico.Platform.Models;
+using System;
 
 namespace Pico.Platform
 {

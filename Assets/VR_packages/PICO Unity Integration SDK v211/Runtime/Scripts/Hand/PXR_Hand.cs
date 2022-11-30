@@ -11,8 +11,8 @@ PICO Technology Co., Ltd.
 *******************************************************************************/
 
 using System.Collections.Generic;
-using UnityEngine;
 using Unity.XR.PXR;
+using UnityEngine;
 
 public class PXR_Hand : MonoBehaviour
 {
@@ -63,7 +63,7 @@ public class PXR_Hand : MonoBehaviour
         {
             if (handJointLocations.isActive == 0) return;
 
-            transform.localScale = Vector3.one*handJointLocations.handScale;
+            transform.localScale = Vector3.one * handJointLocations.handScale;
 
             for (int i = 0; i < handJoints.Count; ++i)
             {
@@ -86,17 +86,17 @@ public class PXR_Hand : MonoBehaviour
     {
         if (PXR_HandTracking.GetAimState(handType, ref aimState))
         {
-            Computed = (aimState.aimStatus&HandAimStatus.AimComputed) != 0;
+            Computed = (aimState.aimStatus & HandAimStatus.AimComputed) != 0;
 
             RayPose = aimState.aimRayPose;
-            RayValid = (aimState.aimStatus&HandAimStatus.AimRayValid) != 0;
-            RayTouched = (aimState.aimStatus&HandAimStatus.AimRayTouched) != 0;
+            RayValid = (aimState.aimStatus & HandAimStatus.AimRayValid) != 0;
+            RayTouched = (aimState.aimStatus & HandAimStatus.AimRayTouched) != 0;
             TouchStrengthRay = aimState.touchStrengthRay;
 
-            IndexPinching = (aimState.aimStatus&HandAimStatus.AimIndexPinching) != 0;
-            MiddlePinching = (aimState.aimStatus&HandAimStatus.AimMiddlePinching) != 0;
-            RingPinching = (aimState.aimStatus&HandAimStatus.AimRingPinching) != 0;
-            LittlePinching = (aimState.aimStatus&HandAimStatus.AimLittlePinching) != 0;
+            IndexPinching = (aimState.aimStatus & HandAimStatus.AimIndexPinching) != 0;
+            MiddlePinching = (aimState.aimStatus & HandAimStatus.AimMiddlePinching) != 0;
+            RingPinching = (aimState.aimStatus & HandAimStatus.AimRingPinching) != 0;
+            LittlePinching = (aimState.aimStatus & HandAimStatus.AimLittlePinching) != 0;
 
             PinchStrengthIndex = aimState.pinchStrengthIndex;
             PinchStrengthMiddle = aimState.pinchStrengthMiddle;
@@ -119,7 +119,7 @@ public class PXR_Hand : MonoBehaviour
             {
                 foreach (var touchRender in touchRenders)
                 {
-                    touchRender.SetBlendShapeWeight(0, aimState.touchStrengthRay*100);
+                    touchRender.SetBlendShapeWeight(0, aimState.touchStrengthRay * 100);
                 }
             }
         }

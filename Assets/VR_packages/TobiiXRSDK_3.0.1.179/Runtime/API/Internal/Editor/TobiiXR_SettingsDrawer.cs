@@ -4,7 +4,6 @@ using System.Text;
 namespace Tobii.XR.Internal
 {
     using System.Collections.Generic;
-    using System.Linq;
     using UnityEditor;
     using UnityEditorInternal;
     using UnityEngine;
@@ -21,7 +20,7 @@ namespace Tobii.XR.Internal
         private ReorderableList _androidProviderList;
         private float _providerListHeight;
         private bool _initialized;
-        private readonly Color _redColor = new Color32(255,40,40, 255);
+        private readonly Color _redColor = new Color32(255, 40, 40, 255);
 
         private void Init(SerializedProperty property)
         {
@@ -34,13 +33,13 @@ namespace Tobii.XR.Internal
 
             _initialized = true;
         }
-        
+
         [UnityEditor.Callbacks.DidReloadScripts]
         private static void OnScriptsReloaded()
         {
             _scriptsReloaded = true;
         }
-        
+
         private static ReorderableList CreateReorderableList(string title, SerializedProperty property, SerializedProperty listProperty, List<TobiiXR_Settings.ProviderElement> providers)
         {
             var reorderableList = new ReorderableList(listProperty.serializedObject, listProperty);
@@ -133,13 +132,13 @@ namespace Tobii.XR.Internal
 
             EditorGUI.PropertyField(position, layerMask, new GUIContent("G2OM Layer Mask", "Choose in which layers G2OM looks for potential candidates."));
             CarriageReturn(ref position);
-            
+
             // ***************************
             // Ocumen
             // ***************************
             EditorGUI.LabelField(position, "", GUI.skin.horizontalSlider);
             CarriageReturn(ref position);
-            
+
             EditorGUI.LabelField(position, new GUIContent("Tobii Ocumen", "This section adds settings for Ocumen usages of the XR SDK."), EditorStyles.boldLabel);
             CarriageReturn(ref position);
 
@@ -151,7 +150,7 @@ namespace Tobii.XR.Internal
             buttonPosition = position;
             buttonContent = new GUIContent("Open website");
             buttonPosition.width = GUI.skin.button.CalcSize(buttonContent).x;
-            
+
             if (GUI.Button(buttonPosition, buttonContent))
             {
                 Application.OpenURL("https://vr.tobii.com/sdk/solutions/tobii-ocumen/");
@@ -161,7 +160,7 @@ namespace Tobii.XR.Internal
             CarriageReturn(ref position);
             EditorGUI.PropertyField(position, licenseProp, new GUIContent("License Asset", "Choose license asset to use."));
             CarriageReturn(ref position);
-            
+
 
             if (licenseProp.objectReferenceValue != null)
             {
@@ -178,7 +177,7 @@ namespace Tobii.XR.Internal
 
                     if (lic.ValidTo != null)
                     {
-                        var time = (DateTime) lic.ValidTo;
+                        var time = (DateTime)lic.ValidTo;
                         EditorGUI.LabelField(position, "Expiry Date:", time.ToString("yyyy-MM-dd"), GetExpiryDateColor(lic.ValidTo, style));
                     }
                     else
@@ -203,14 +202,14 @@ namespace Tobii.XR.Internal
                 }
                 else
                 {
-                    var style = new GUIStyle {normal = {textColor = _redColor}};
+                    var style = new GUIStyle { normal = { textColor = _redColor } };
                     EditorGUI.LabelField(position, "Invalid License", style);
                     advancedEnabled.boolValue = false;
                 }
-                
+
                 EditorGUI.indentLevel--;
                 CarriageReturn(ref position);
-                
+
                 EditorGUI.PropertyField(position, popupLicenseValidationErrors, new GUIContent("Show License Errors", "License validation error messages are normally printed to the Unity log. If this feature is enabled, they will also be shown in a dialog to the user."));
                 CarriageReturn(ref position);
             }
@@ -226,7 +225,7 @@ namespace Tobii.XR.Internal
             // ***************************
             EditorGUI.LabelField(position, "", GUI.skin.horizontalSlider);
             CarriageReturn(ref position);
-            
+
             EditorGUI.LabelField(position, new GUIContent("Eye Tracking Providers", "If no provider is initialized successfully TobiiXR will use Nose Direction Provider even if it is removed from this list."), EditorStyles.boldLabel);
             CarriageReturn(ref position);
 
@@ -271,11 +270,11 @@ namespace Tobii.XR.Internal
                 style.normal.textColor = Color.green;
                 return style;
             }
-            
+
             var daysLeft = (licValidTo.Value - DateTime.Now).Days;
             if (daysLeft < 0)
             {
-                style.normal.textColor = _redColor; 
+                style.normal.textColor = _redColor;
             }
             else if (daysLeft < 190)
             {
@@ -294,12 +293,12 @@ namespace Tobii.XR.Internal
             style.normal.textColor = licenseAvailable ? Color.green : _redColor;
             return style;
         }
-        
+
         private string GetLicenseAvailablityString(bool licenseAvailable)
         {
             return licenseAvailable ? "Included" : "Not Included";
         }
-        
+
         private void CarriageReturn(ref Rect position, int count = 1)
         {
             for (; count > 0; count--)

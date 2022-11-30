@@ -1,7 +1,6 @@
 ﻿// Copyright © 2018 – Property of Tobii AB (publ) - All Rights Reserved
 
 using Tobii.G2OM;
-using Tobii.XR.DevTools;
 using UnityEngine;
 using UnityEngine.Events;
 

@@ -10,11 +10,11 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using UnityEngine;
-using UnityEditor;
 using System;
-using Unity.XR.PXR;
 using System.Collections.Generic;
+using Unity.XR.PXR;
+using UnityEditor;
+using UnityEngine;
 
 [CustomEditor(typeof(PXR_HandPoseEditor))]
 public class PXR_HandPoseEditors : Editor
@@ -32,7 +32,7 @@ public class PXR_HandPoseEditors : Editor
         if (GUILayout.Button("New"))
         {
             m_Target.config = CreateInstance<PXR_HandPoseConfig>();
-            AssetDatabase.CreateAsset(m_Target.config, string.Format("Assets/{0}.asset", typeof(PXR_HandPoseConfig).Name+"_"+DateTime.Now.ToString("MMddhhmmss")));
+            AssetDatabase.CreateAsset(m_Target.config, string.Format("Assets/{0}.asset", typeof(PXR_HandPoseConfig).Name + "_" + DateTime.Now.ToString("MMddhhmmss")));
         }
         if (GUILayout.Button("Save"))
         {
@@ -118,7 +118,7 @@ public class PXR_HandPoseEditors : Editor
                     count = listBones.Count - count;
                     for (int i = 0; i < count; i++)
                     {
-                        listBones.Remove(listBones[listBones.Count-1]);
+                        listBones.Remove(listBones[listBones.Count - 1]);
                     }
                 }
             }
@@ -126,7 +126,7 @@ public class PXR_HandPoseEditors : Editor
 
         foreach (var bones in listBones)
         {
-            EditorGUILayout.LabelField("Element "+listBones.IndexOf(bones));
+            EditorGUILayout.LabelField("Element " + listBones.IndexOf(bones));
             EditorGUILayout.BeginHorizontal();
             GUILayout.Space(10);
             using (new GUILayout.VerticalScope())
@@ -176,7 +176,7 @@ public class PXR_HandPoseEditors : Editor
         string flexionRangeMin;
         if (min - (width / 2) >= rangeMin)
         {
-            flexionRangeMin = $"{min - (width /2)}";
+            flexionRangeMin = $"{min - (width / 2)}";
         }
         else
         {
@@ -186,13 +186,13 @@ public class PXR_HandPoseEditors : Editor
         string flexionRangeMax;
         if (max + (width / 2) <= rangeMax)
         {
-            flexionRangeMax = $"{max + (width /2)}";
+            flexionRangeMax = $"{max + (width / 2)}";
         }
         else
         {
             flexionRangeMax = $"{rangeMax}";
         }
-        return $"[{min+(width / 2)}~{max-(width/2)}],[{flexionRangeMin}~{flexionRangeMax}]";
+        return $"[{min + (width / 2)}~{max - (width / 2)}],[{flexionRangeMin}~{flexionRangeMax}]";
     }
 
     private void FingerConfig(ref PXR_HandPoseConfig.ShapesRecognizer.Finger finger)

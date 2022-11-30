@@ -11,12 +11,12 @@ namespace Tobii.XR
         public bool Connected = false;
         public readonly List<tobii_license_validation_result_t> LicenseValidationResults = new List<tobii_license_validation_result_t>();
     }
-    
+
     public static class ConnectionHelper
     {
         private static readonly tobii_device_url_receiver_t _deviceUrlReceiver = DeviceUrlReceiver; // Needed to prevent GC from removing callback
         private static readonly Stopwatch _stopwatch = new Stopwatch();
-        
+
         public static ConnectResult TryConnect(IStreamEngineInterop interop, StreamEngineTracker_Description description, out StreamEngineContext context, tobii_custom_log_t customLog = null)
         {
             _stopwatch.Reset();
@@ -66,7 +66,7 @@ namespace Tobii.XR
         private static ConnectResult CreateDeviceContext(IStreamEngineInterop interop, string url, Interop.tobii_field_of_use_t fieldOfUse, IntPtr apiContext, string[] licenseKeys, out IntPtr deviceContext)
         {
             var connectResult = new ConnectResult();
-            
+
             // Connect without license
             if (licenseKeys == null || licenseKeys.Length == 0)
             {
@@ -160,7 +160,7 @@ namespace Tobii.XR
             deviceContext = IntPtr.Zero;
             deviceUrl = "";
             var connectResult = new ConnectResult();
-            
+
             for (var i = 0; i < connectedDevices.Count; i++)
             {
                 var connectedDeviceUrl = connectedDevices[i];
@@ -200,5 +200,5 @@ namespace Tobii.XR
         }
     }
 
-    
+
 }

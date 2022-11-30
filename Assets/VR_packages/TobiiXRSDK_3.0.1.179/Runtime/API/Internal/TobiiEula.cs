@@ -8,15 +8,15 @@ namespace Tobii.XR.Internal
 
         public static bool IsEulaAccepted()
         {
-            #if !UNITY_EDITOR
+#if !UNITY_EDITOR
                 if(_eulaFile == null) _eulaFile = TobiiEulaFile.LoadEulaFile();
-            #endif
+#endif
 
             if (_eulaFile != null)
             {
                 return _eulaFile.IsEulaAccepted();
             }
-            
+
             return false;
         }
 

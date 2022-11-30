@@ -89,7 +89,7 @@ namespace Tobii.XR
         /// </code>
         /// </example>
         public TobiiXR_AdvancedEyeTrackingData LatestData => _provider.AdvancedEyeTrackingData;
-        
+
         /// <summary>
         /// Interpolates between the closest camera pose recorded before and after the supplied timestamp.
         ///

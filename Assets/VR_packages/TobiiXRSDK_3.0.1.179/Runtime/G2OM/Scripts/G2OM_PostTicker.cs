@@ -15,7 +15,7 @@ namespace Tobii.G2OM
         public void TickComplete(List<FocusedCandidate> focusedObjects)
         {
             GameObject focusedObject = focusedObjects.Count == 0 ? null : focusedObjects[0].GameObject;
-            
+
             UpdateFocusableComponents(focusedObject, ref _previousGazeFocusedObject, _gazeFocusableComponents);
         }
 

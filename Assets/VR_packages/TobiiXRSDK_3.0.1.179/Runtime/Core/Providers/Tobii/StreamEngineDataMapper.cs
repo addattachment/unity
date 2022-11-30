@@ -99,7 +99,7 @@ namespace Tobii.XR
             to.Right.PositionGuide.y = data.right.position_guide_xy.y;
             to.Right.PositionGuide.x = data.right.position_guide_xy.x;
         }
-        
+
         public static void FillPositionGuideData(ref PositionGuideData to,
             ref tobii_wearable_advanced_data_t data)
         {

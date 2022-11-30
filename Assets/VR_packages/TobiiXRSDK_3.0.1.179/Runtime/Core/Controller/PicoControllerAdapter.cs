@@ -1,6 +1,4 @@
-﻿using Tobii.XR;
-using UnityEngine;
-
+﻿
 #if TOBIIXR_PICOPROVIDER
 namespace Tobii.XR.Examples
 {

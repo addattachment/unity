@@ -18,7 +18,7 @@ namespace Pico.Platform
     public class Task
     {
         public readonly ulong TaskId;
-        
+
         public Task(ulong taskId)
         {
             this.TaskId = taskId;

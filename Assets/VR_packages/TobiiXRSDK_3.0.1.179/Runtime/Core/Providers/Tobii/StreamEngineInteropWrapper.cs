@@ -15,7 +15,7 @@ namespace Tobii.XR
         tobii_error_t tobii_enumerate_local_device_urls_internal(IntPtr apiContext, tobii_device_url_receiver_t receiverFunction, IntPtr userData);
         tobii_error_t tobii_get_device_info(IntPtr deviceContext, out tobii_device_info_t info);
     }
-    
+
     internal class StreamEngineInteropWrapper : IStreamEngineInterop
     {
         public tobii_error_t tobii_api_create(out IntPtr apiContext, tobii_custom_log_t logger)

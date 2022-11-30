@@ -10,11 +10,11 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections.Generic;
-using UnityEngine;
-using Unity.XR.PXR;
-using UnityEngine.Events;
 using System;
+using System.Collections.Generic;
+using Unity.XR.PXR;
+using UnityEngine;
+using UnityEngine.Events;
 
 public class PXR_HandPose : MonoBehaviour
 {
@@ -72,7 +72,7 @@ public class PXR_HandPose : MonoBehaviour
                     leftWirstRot = rightHandJointLocations.jointLocations[i].pose.Orientation.ToQuat();
                 }
             }
-            rightShapesVaild = RightHandShapesRecognizerCheck(rightJointPos, rightWirstRot*Vector3.right, rightWirstRot*Vector3.forward);
+            rightShapesVaild = RightHandShapesRecognizerCheck(rightJointPos, rightWirstRot * Vector3.right, rightWirstRot * Vector3.forward);
             BonesRecognizerCheck(rightJointPos, ref rightBonesVaild);
 
         }
@@ -92,7 +92,7 @@ public class PXR_HandPose : MonoBehaviour
                     leftWirstRot = leftHandJointLocations.jointLocations[i].pose.Orientation.ToQuat();
                 }
             }
-            leftShapesVaild = LeftHandShapesRecognizerCheck(leftJointPos, leftWirstRot*Vector3.right, leftWirstRot*Vector3.back);
+            leftShapesVaild = LeftHandShapesRecognizerCheck(leftJointPos, leftWirstRot * Vector3.right, leftWirstRot * Vector3.back);
             BonesRecognizerCheck(leftJointPos, ref leftBonesVaild);
         }
 

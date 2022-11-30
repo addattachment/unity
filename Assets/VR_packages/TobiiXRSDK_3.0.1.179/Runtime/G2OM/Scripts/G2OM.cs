@@ -202,11 +202,11 @@ namespace Tobii.G2OM
             // shrink list to fit g2om capacity
             // without this g2om will return error -10
             var remainCount = allCandidates.Count - keysToRemove.Count;
-            if(remainCount > maxKeysToKeep)
+            if (remainCount > maxKeysToKeep)
             {
                 var removeCount = remainCount - maxKeysToKeep;
                 var ordered = allCandidates.Where(k => keysToRemove.Contains(k.Key) == false).OrderByDescending(k => now - k.Value.Timestamp);
-                for(int i = 0; i < removeCount; i++)
+                for (int i = 0; i < removeCount; i++)
                 {
                     keysToRemove.Add(ordered.ElementAt(i).Key);
                 }
@@ -230,13 +230,13 @@ namespace Tobii.G2OM
 
                 if (candidate.score <= Mathf.Epsilon) break;
 
-                var id = (int) candidate.candidate_id;
+                var id = (int)candidate.candidate_id;
 
                 if (allCandidates.ContainsKey(id) == false)
                 {
                     Debug.LogError("This should not happen"); // TODO: What should we do if this happens? -- swik 2019-09-04
                     continue;
-                } 
+                }
 
                 var gazeFocusedObject = new FocusedCandidate
                 {

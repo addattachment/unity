@@ -15,7 +15,7 @@ using UnityEngine;
 public class TobiiXR_Initializer : MonoBehaviour
 {
     public TobiiXR_Settings Settings;
-    
+
     private void Awake()
     {
         TobiiXR.Start(Settings);

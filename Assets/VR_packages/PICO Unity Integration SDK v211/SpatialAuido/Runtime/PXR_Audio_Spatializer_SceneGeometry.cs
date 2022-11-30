@@ -1,8 +1,7 @@
 //  Copyright © 2015-2022 Pico Technology Co., Ltd. All Rights Reserved.
 
-using System;
-using System.Collections.Generic;
 using PXR_Audio.Spatializer;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -243,7 +242,7 @@ public partial class PXR_Audio_Spatializer_SceneGeometry : MonoBehaviour
             currentBakedStaticMeshAssetPath = null;
             serializedObject.FindProperty("currentBakedStaticMeshAssetPath").stringValue =
                 currentBakedStaticMeshAssetPath;
-        } 
+        }
         serializedObject.ApplyModifiedProperties();
     }
 #endif

@@ -77,7 +77,7 @@ namespace Tobii.XR.GazeModifier
         private float GetTrackability(Vector3 direction, Vector3 forward)
         {
             var angle = Mathf.Abs(Vector3.Angle(direction, forward));
-            return _metricsForPercentile.Trackability(_settings.SelectedPercentileIndex,angle);
+            return _metricsForPercentile.Trackability(_settings.SelectedPercentileIndex, angle);
         }
     }
 }

@@ -43,11 +43,11 @@ namespace Tobii.XR.GazeModifier
         {
             _disablers.Add(disabler);
         }
-        
+
         public void SetPercentileRepository(IPercentileRepository repo)
         {
             Repository = repo;
-            NumberOfPercentiles  = repo.LoadAll()
+            NumberOfPercentiles = repo.LoadAll()
                 .Select(v => v.Percentile)
                 .Distinct()
                 .Count();

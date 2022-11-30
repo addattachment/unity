@@ -95,14 +95,14 @@ namespace Unity.XR.PXR
             switch (hand)
             {
                 case PXR_Input.Controller.LeftController:
-                {
-                    InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(CommonUsages.batteryLevel, out curBattery);
-                }
+                    {
+                        InputDevices.GetDeviceAtXRNode(XRNode.LeftHand).TryGetFeatureValue(CommonUsages.batteryLevel, out curBattery);
+                    }
                     break;
                 case PXR_Input.Controller.RightController:
-                {
-                    InputDevices.GetDeviceAtXRNode(XRNode.RightHand).TryGetFeatureValue(CommonUsages.batteryLevel, out curBattery);
-                }
+                    {
+                        InputDevices.GetDeviceAtXRNode(XRNode.RightHand).TryGetFeatureValue(CommonUsages.batteryLevel, out curBattery);
+                    }
                     break;
             }
             return (int)curBattery;

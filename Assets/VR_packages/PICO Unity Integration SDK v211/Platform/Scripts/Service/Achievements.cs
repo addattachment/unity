@@ -10,9 +10,9 @@ material is strictly forbidden unless prior written permission is obtained from
 Pico Technology Co., Ltd.
 *******************************************************************************/
 
+using Pico.Platform.Models;
 using System;
 using System.Runtime.InteropServices;
-using Pico.Platform.Models;
 using UnityEngine;
 
 namespace Pico.Platform
@@ -64,7 +64,7 @@ namespace Pico.Platform
             {
                 GCHandle hobj = GCHandle.Alloc(extraData, GCHandleType.Pinned);
                 IntPtr pobj = hobj.AddrOfPinnedObject();
-                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddCount(name, count, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddCount(name, count, pobj, (uint)(extraData != null ? extraData.Length : 0)));
                 if (hobj.IsAllocated)
                     hobj.Free();
                 return result;
@@ -112,7 +112,7 @@ namespace Pico.Platform
             {
                 GCHandle hobj = GCHandle.Alloc(extraData, GCHandleType.Pinned);
                 IntPtr pobj = hobj.AddrOfPinnedObject();
-                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddFields(name, fields, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddFields(name, fields, pobj, (uint)(extraData != null ? extraData.Length : 0)));
                 if (hobj.IsAllocated)
                     hobj.Free();
                 return result;
@@ -319,7 +319,7 @@ namespace Pico.Platform
             {
                 GCHandle hobj = GCHandle.Alloc(extraData, GCHandleType.Pinned);
                 IntPtr pobj = hobj.AddrOfPinnedObject();
-                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_Unlock(name, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+                var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_Unlock(name, pobj, (uint)(extraData != null ? extraData.Length : 0)));
                 if (hobj.IsAllocated)
                     hobj.Free();
                 return result;

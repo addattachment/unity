@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using Tobii.StreamEngine;
 using UnityEngine;
 
@@ -15,7 +14,7 @@ namespace Tobii.XR
     public class LicenseParser
     {
         private readonly LicenseJson _json;
-        
+
         public string Licensee { get; private set; }
         public DateTime? ValidTo { get; private set; }
         public bool EyeImages { get; private set; }

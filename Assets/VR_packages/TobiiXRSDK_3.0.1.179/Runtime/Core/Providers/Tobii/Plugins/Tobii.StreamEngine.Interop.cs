@@ -511,7 +511,7 @@ namespace Tobii.StreamEngine
 
         [DllImport(stream_engine_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "tobii_faults_unsubscribe")]
         public static extern tobii_error_t tobii_faults_unsubscribe(IntPtr device);
-        
+
         [DllImport(stream_engine_dll, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi, EntryPoint = "tobii_get_warnings")]
         private static extern tobii_error_t tobii_get_warnings(IntPtr device, StringBuilder warnings);
 
@@ -530,7 +530,7 @@ namespace Tobii.StreamEngine
 
         [DllImport(stream_engine_dll, CallingConvention = CallingConvention.Cdecl, EntryPoint = "tobii_warnings_unsubscribe")]
         public static extern tobii_error_t tobii_warnings_unsubscribe(IntPtr device);
-  
+
         #endregion
 
         #region Advanced
@@ -1223,7 +1223,7 @@ namespace Tobii.StreamEngine
     [StructLayout(LayoutKind.Sequential)]
     public struct tobii_calibration_stimulus_point_data_t
     {
-        public TobiiVector3  point_xyz;
+        public TobiiVector3 point_xyz;
         public tobii_calibration_stimulus_point_status_t left_status;
         public float left_bias;
         public float left_precision;

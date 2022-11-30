@@ -10,18 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System.Xml;
-using System.IO;
-using UnityEngine.UI;
 using System;
-using UnityEngine.XR;
-using Unity.XR.PXR;
-using Unity.XR;
-using System.Text.RegularExpressions;
-using System.Runtime.InteropServices;
+using UnityEngine;
 using UnityEngine.Rendering;
 
 namespace Unity.XR.PXR
@@ -82,7 +72,7 @@ namespace Unity.XR.PXR
         private float height;
 
         private Vector3 locationDeflection;
-        private Vector3 angularDeflection ;
+        private Vector3 angularDeflection;
 
         private PxrLayerParam layerParam = new PxrLayerParam();
         private UInt32 imageCounts = 0;
@@ -110,7 +100,8 @@ namespace Unity.XR.PXR
             {
                 pxrmrc = this;
             }
-            else {
+            else
+            {
                 Destroy(gameObject);
             }
             DontDestroyOnLoad(gameObject);
@@ -121,7 +112,8 @@ namespace Unity.XR.PXR
             GetMotionShotEnable();
         }
 
-        public void Pxr_MRCPoseInitialize() {
+        public void Pxr_MRCPoseInitialize()
+        {
             if (layerTexturesInfo == null)
             {
                 layerTexturesInfo = new LayerTexture[2];
@@ -168,7 +160,8 @@ namespace Unity.XR.PXR
             Debug.Log("PXR_MRCInit Succeed");
         }
 
-        public void Pxr_GetHeight() {
+        public void Pxr_GetHeight()
+        {
             height = Camera.main.transform.localPosition.y - PXR_Plugin.System.UPxr_GetMrcY();
             Debug.Log("Pxr_GetMrcY+:" + PXR_Plugin.System.UPxr_GetMrcY().ToString());
         }
@@ -191,12 +184,14 @@ namespace Unity.XR.PXR
             PXR_Plugin.System.RecenterSuccess -= UPxr_Calibration;
         }
 
-        void OnApplicationPause(bool pause) {
+        void OnApplicationPause(bool pause)
+        {
             if (pause)
             {
 
             }
-            else {
+            else
+            {
                 if (PXR_Plugin.System.UPxr_GetMRCEnable())
                 {
                     UPxr_Calibration();
@@ -204,7 +199,8 @@ namespace Unity.XR.PXR
             }
         }
 
-        public void UPxr_ReadXML(out CameraData cameradata) {
+        public void UPxr_ReadXML(out CameraData cameradata)
+        {
             CameraData cameraDataNew = new CameraData();
             string path = Application.persistentDataPath + "/mrc.xml";
             cameraAttribute = PXR_Plugin.PlatformSetting.UPxr_MRCCalibration(path);
@@ -218,8 +214,9 @@ namespace Unity.XR.PXR
             yFov = cameraAttribute[2];
             cameraDataNew.translation = new float[3];
             cameraDataNew.rotation = new float[4];
-            for (int i = 0; i < 3; i++) {
-                cameraDataNew.translation[i] = cameraAttribute[3+i];
+            for (int i = 0; i < 3; i++)
+            {
+                cameraDataNew.translation[i] = cameraAttribute[3 + i];
             }
             for (int i = 0; i < 4; i++)
             {
@@ -340,7 +337,8 @@ namespace Unity.XR.PXR
             mrcPlay = true;
         }
 
-        public void UPxr_CreateMRCOverlay(uint width,uint height) {
+        public void UPxr_CreateMRCOverlay(uint width, uint height)
+        {
             layerParam.layerId = 9999;
             layerParam.layerShape = PXR_OverLay.OverlayShape.Quad;
             layerParam.layerType = PXR_OverLay.OverlayType.Overlay;
@@ -356,7 +354,8 @@ namespace Unity.XR.PXR
             PXR_Plugin.Render.UPxr_CreateLayerParam(layerParam);
         }
 
-        public void UPxr_GetLayerImage() {
+        public void UPxr_GetLayerImage()
+        {
             if (createMRCOverlaySucceed == false)
             {
                 if (PXR_Plugin.Render.UPxr_GetLayerImageCount(9999, EyeType.EyeLeft, ref imageCounts) == 0 && imageCounts > 0)
@@ -421,7 +420,8 @@ namespace Unity.XR.PXR
             UPxr_CopyMRCTexture(arg2);
         }
 
-        public void UPxr_CopyMRCTexture(Camera cam) {
+        public void UPxr_CopyMRCTexture(Camera cam)
+        {
             if (cam == null || cam.tag != Camera.main.tag || cam.stereoActiveEye == Camera.MonoOrStereoscopicEye.Right) return;
             if (createMRCOverlaySucceed && PXR_Plugin.System.UPxr_GetMRCEnable())
             {
@@ -480,7 +480,8 @@ namespace Unity.XR.PXR
                             Graphics.CopyTexture(tempRT, 0, 0, dstT, 0, 0);
                         }
                     }
-                    else {
+                    else
+                    {
                         if (eyeId == 0)
                         {
                             Graphics.CopyTexture(mrcRenderTexture, 0, 0, dstT, 0, 0);
@@ -558,7 +559,7 @@ namespace Unity.XR.PXR
                 if (backCameraObj != null && foregroundCameraObj != null && motionShotEnable)
                 {
                     UPxr_Calibration();
-                } 
+                }
                 UPxr_GetLayerImage();
             }
             else
@@ -579,7 +580,8 @@ namespace Unity.XR.PXR
             return yFov;
         }
 
-        public void UPxr_Calibration() {
+        public void UPxr_Calibration()
+        {
             if (PXR_Plugin.System.UPxr_GetMRCEnable())
             {
                 PxrPosef pose = new PxrPosef();
@@ -613,8 +615,10 @@ namespace Unity.XR.PXR
             return new Vector3(-vector3.x + angularDeflection.x, -vector3.y + angularDeflection.y, -vector3.z + angularDeflection.z);
         }
 
-        public void GetMotionShotEnable() {
-            if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000306) {
+        public void GetMotionShotEnable()
+        {
+            if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000306)
+            {
                 motionShotEnable = true;
             }
         }

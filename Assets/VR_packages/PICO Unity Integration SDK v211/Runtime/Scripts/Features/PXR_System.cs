@@ -11,9 +11,6 @@ PICO Technology Co., Ltd.
 *******************************************************************************/
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
 namespace Unity.XR.PXR
 {
@@ -944,11 +941,13 @@ namespace Unity.XR.PXR
         /// </param>
         /// <param name="sensorFrameIndex">Sensor frame index.</param>
         /// <returns>The predicted status of the sensor.</returns>
-        public static int GetPredictedMainSensorStateNew(ref PxrSensorState2 sensorState, ref int sensorFrameIndex) {
+        public static int GetPredictedMainSensorStateNew(ref PxrSensorState2 sensorState, ref int sensorFrameIndex)
+        {
             return PXR_Plugin.System.UPxr_GetPredictedMainSensorStateNew(ref sensorState, ref sensorFrameIndex);
         }
-        
-        public static int ContentProtect(int data) {
+
+        public static int ContentProtect(int data)
+        {
             return PXR_Plugin.System.UPxr_ContentProtect(data);
         }
 
@@ -956,7 +955,8 @@ namespace Unity.XR.PXR
         /// Gets the CPU utilization of the current device.
         /// </summary>
         /// <returns>The CPU utilization of the current device.</returns>
-        public static float[] GetCpuUsages() {
+        public static float[] GetCpuUsages()
+        {
             return PXR_Plugin.System.UPxr_GetCpuUsages();
         }
 
@@ -976,21 +976,24 @@ namespace Unity.XR.PXR
         /// * `3`(`TEMPERATURE_THROTTLING_BELOW_VR_MIN`): temperature threshold for throttling. If the actual temperature is higher than the threshold, the lowest clock frequency for VR mode will not be met
         /// </param>
         /// <returns>An array of requested device temperatures in Celsius.</returns>
-        public static float[] GetDeviceTemperatures(int type, int source) {
+        public static float[] GetDeviceTemperatures(int type, int source)
+        {
             return PXR_Plugin.System.UPxr_GetDeviceTemperatures(type, source);
         }
 
         /// <summary>
         /// Captures the current screen.
         /// </summary>
-        public static void Capture() {
+        public static void Capture()
+        {
             PXR_Plugin.System.UPxr_Capture();
         }
 
         /// <summary>
         /// Records the screen. Call this function again to stop recording.
         /// </summary>
-        public static void Record() {
+        public static void Record()
+        {
             PXR_Plugin.System.UPxr_Record();
         }
 
@@ -1005,7 +1008,8 @@ namespace Unity.XR.PXR
         /// * `1`: password error
         /// * `2`: unknown error
         /// </param>
-        public static void ControlSetAutoConnectWIFIWithErrorCodeCallback(String ssid, String pwd, int ext, Action<int> callback) {
+        public static void ControlSetAutoConnectWIFIWithErrorCodeCallback(String ssid, String pwd, int ext, Action<int> callback)
+        {
             PXR_Plugin.System.UPxr_ControlSetAutoConnectWIFIWithErrorCodeCallback(ssid, pwd, ext, callback);
         }
 
@@ -1018,7 +1022,8 @@ namespace Unity.XR.PXR
         /// * `false`: not keep
         /// </param>
         /// <param name="ext">Reserved parameter, pass `0` by default.</param>
-        public static void AppKeepAlive(String appPackageName, bool keepAlive, int ext) {
+        public static void AppKeepAlive(String appPackageName, bool keepAlive, int ext)
+        {
             PXR_Plugin.System.UPxr_AppKeepAlive(appPackageName, keepAlive, ext);
         }
 
@@ -1051,7 +1056,8 @@ namespace Unity.XR.PXR
         /// * `true`: enable
         /// * `false`: disable
         /// </param>
-        public static void TimingShutdown(int year, int month, int day, int hour, int minute, bool open) {
+        public static void TimingShutdown(int year, int month, int day, int hour, int minute, bool open)
+        {
             PXR_Plugin.System.UPxr_TimingShutdown(year, month, day, hour, minute, open);
         }
 
@@ -1072,7 +1078,8 @@ namespace Unity.XR.PXR
         /// * `false`: hide
         /// </param>
         /// <param name="ext">Reserved parameter, pass `0` by default.</param>
-        public static void StartVrSettingsItem(StartVRSettingsEnum settingsEnum, bool hideOtherItem, int ext) {
+        public static void StartVrSettingsItem(StartVRSettingsEnum settingsEnum, bool hideOtherItem, int ext)
+        {
             PXR_Plugin.System.UPxr_StartVrSettingsItem(settingsEnum, hideOtherItem, ext);
         }
 
@@ -1085,7 +1092,8 @@ namespace Unity.XR.PXR
         /// * `S_OFF`: do not change
         /// </param>
         /// <param name="ext">Reserved parameter, pass `0` by default.</param>
-        public static void SwitchVolumeToHomeAndEnter(SwitchEnum switchEnum, int ext) {
+        public static void SwitchVolumeToHomeAndEnter(SwitchEnum switchEnum, int ext)
+        {
             PXR_Plugin.System.UPxr_SwitchVolumeToHomeAndEnter(switchEnum, ext);
         }
 
@@ -1097,7 +1105,8 @@ namespace Unity.XR.PXR
         /// * `S_ON`: changed
         /// * `S_OFF`: not changed
         /// </returns>
-        public static SwitchEnum IsVolumeChangeToHomeAndEnter() {
+        public static SwitchEnum IsVolumeChangeToHomeAndEnter()
+        {
             return PXR_Plugin.System.UPxr_IsVolumeChangeToHomeAndEnter();
         }
 
@@ -1110,7 +1119,8 @@ namespace Unity.XR.PXR
         /// * `1`: failure
         /// * `2`: OTA package version too low
         /// </returns>
-        public static int InstallOTAPackage(String otaPackagePath) {
+        public static int InstallOTAPackage(String otaPackagePath)
+        {
             return PXR_Plugin.System.UPxr_InstallOTAPackage(otaPackagePath);
         }
 
@@ -1118,7 +1128,8 @@ namespace Unity.XR.PXR
         /// Gets the configuration of the Wi-Fi nerwork that the device automatically connnects to.
         /// </summary>
         /// <returns>The SSID and password of the Wi-Fi network.</returns>
-        public static string GetAutoConnectWiFiConfig() {
+        public static string GetAutoConnectWiFiConfig()
+        {
             return PXR_Plugin.System.UPxr_GetAutoConnectWiFiConfig();
         }
 
@@ -1131,7 +1142,8 @@ namespace Unity.XR.PXR
         ///   * `false`: disabled
         /// * `time`: the time when the device auto starts up. Returned when `open` is `true`.
         /// </returns>
-        public static string GetTimingStartupStatus() {
+        public static string GetTimingStartupStatus()
+        {
             return PXR_Plugin.System.UPxr_GetTimingStartupStatus();
         }
 
@@ -1144,7 +1156,8 @@ namespace Unity.XR.PXR
         ///   * `false`: disabled
         /// * `time`: the time when the device auto shuts down. Returned when `open` is `true`.
         /// </returns>
-        public static string GetTimingShutdownStatus() {
+        public static string GetTimingShutdownStatus()
+        {
             return PXR_Plugin.System.UPxr_GetTimingShutdownStatus();
         }
 
@@ -1166,7 +1179,8 @@ namespace Unity.XR.PXR
         /// * `0`: disabled
         /// * `1`: enabled
         /// </returns>
-        public static int GetControllerKeyState(ControllerKeyEnum pxrControllerKey) {
+        public static int GetControllerKeyState(ControllerKeyEnum pxrControllerKey)
+        {
             return PXR_Plugin.System.UPxr_GetControllerKeyState(pxrControllerKey);
         }
 
@@ -1186,7 +1200,8 @@ namespace Unity.XR.PXR
         /// Gets the screen timeout setting for the device.
         /// </summary>
         /// <returns>`PBS_ScreenOffDelayTimeEnum`: the enumerations of screen timeout. </returns>
-        public static ScreenOffDelayTimeEnum GetScreenOffDelay() {
+        public static ScreenOffDelayTimeEnum GetScreenOffDelay()
+        {
             return PXR_Plugin.System.UPxr_PropertyGetScreenOffDelay();
         }
 
@@ -1194,7 +1209,8 @@ namespace Unity.XR.PXR
         /// Gets the sleep timeout settings for the device.
         /// </summary>
         /// <returns>`PBS_SleepDelayTimeEnum`: the enumeration of sleep timeout.</returns>
-        public static SleepDelayTimeEnum GetSleepDelay() {
+        public static SleepDelayTimeEnum GetSleepDelay()
+        {
             return PXR_Plugin.System.UPxr_PropertyGetSleepDelay();
         }
 
@@ -1207,7 +1223,8 @@ namespace Unity.XR.PXR
         /// * `longTap`: whether a long-press event has been set
         /// * `longPressTime`: the time after which the long-press event takes place. Returned when `longTap` is `true`.
         /// </returns>
-        public static string GetPowerKeyStatus() {
+        public static string GetPowerKeyStatus()
+        {
             return PXR_Plugin.System.UPxr_PropertyGetPowerKeyStatus();
         }
 
@@ -1218,7 +1235,8 @@ namespace Unity.XR.PXR
         /// * `0`: disabled
         /// * `1`: enabled
         /// </returns>
-        public static int GetEnterKeyStatus() {
+        public static int GetEnterKeyStatus()
+        {
             return PXR_Plugin.System.UPxr_GetEnterKeyStatus();
         }
 
@@ -1229,7 +1247,8 @@ namespace Unity.XR.PXR
         /// * `0`: disabled
         /// * `1`: enabled
         /// </returns>
-        public static int GetVolumeKeyStatus() {
+        public static int GetVolumeKeyStatus()
+        {
             return PXR_Plugin.System.UPxr_GetVolumeKeyStatus();
         }
 
@@ -1240,7 +1259,8 @@ namespace Unity.XR.PXR
         /// * `0`: disabled
         /// * `1`: enabled
         /// </returns>
-        public static int GetBackKeyStatus() {
+        public static int GetBackKeyStatus()
+        {
             return PXR_Plugin.System.UPxr_GetBackKeyStatus();
         }
 
@@ -1259,7 +1279,8 @@ namespace Unity.XR.PXR
         /// * If you have not set any event for the event type you pass in the request, the response will return `null`.
         /// * For event enumerations, see `PropertySetHomeKey` or `PropertySetHomeKeyAll`.
         /// </returns>
-        public static string GetHomKeyStatus(HomeEventEnum homeEvent) {
+        public static string GetHomKeyStatus(HomeEventEnum homeEvent)
+        {
             return PXR_Plugin.System.UPxr_PropertyGetHomKeyStatus(homeEvent);
         }
 
@@ -1301,7 +1322,8 @@ namespace Unity.XR.PXR
         /// * `0`: off
         /// * `1`: on
         /// </param>
-        public static void GetSwitchSystemFunctionStatus(SystemFunctionSwitchEnum systemFunction, Action<int> callback) {
+        public static void GetSwitchSystemFunctionStatus(SystemFunctionSwitchEnum systemFunction, Action<int> callback)
+        {
             PXR_Plugin.System.UPxr_GetSwitchSystemFunctionStatus(systemFunction, callback);
         }
 
@@ -1312,7 +1334,8 @@ namespace Unity.XR.PXR
         /// * `MTP`: MTP mode
         /// * `CHARGE`: charging mode
         /// </returns>
-        public static string GetUsbConfigurationOption() {
+        public static string GetUsbConfigurationOption()
+        {
             return PXR_Plugin.System.UPxr_SwitchGetUsbConfigurationOption();
         }
 
@@ -1320,7 +1343,8 @@ namespace Unity.XR.PXR
         /// Gets the current launcher.
         /// </summary>
         /// <returns>The package name or class name of the launcher.</returns>
-        public static string GetCurrentLauncher() {
+        public static string GetCurrentLauncher()
+        {
             return PXR_Plugin.System.UPxr_GetCurrentLauncher();
         }
 
@@ -1336,7 +1360,8 @@ namespace Unity.XR.PXR
         /// * `0`: failure
         /// * `1`: success
         /// </returns>
-        public static int PICOCastInit(Action<int> callback) {
+        public static int PICOCastInit(Action<int> callback)
+        {
             return PXR_Plugin.System.UPxr_PICOCastInit(callback);
         }
 
@@ -1352,7 +1377,8 @@ namespace Unity.XR.PXR
         /// * `0`: failure
         /// * `1`: success
         /// </returns>
-        public static int PICOCastSetShowAuthorization(int authZ) {
+        public static int PICOCastSetShowAuthorization(int authZ)
+        {
             return PXR_Plugin.System.UPxr_PICOCastSetShowAuthorization(authZ);
         }
 
@@ -1364,7 +1390,8 @@ namespace Unity.XR.PXR
         /// * `1`: always allow
         /// * `2`: not accepted
         /// </returns>
-        public static int PICOCastGetShowAuthorization() {
+        public static int PICOCastGetShowAuthorization()
+        {
             return PXR_Plugin.System.UPxr_PICOCastGetShowAuthorization();
         }
 
@@ -1377,7 +1404,8 @@ namespace Unity.XR.PXR
         /// * `RtmpURL`: Returns the RTMP live streaming URL. The screencast authorization window will not appear on the VR headset's screen.
         /// </param>
         /// <returns>The URL for screencast.</returns>
-        public static string PICOCastGetUrl(PICOCastUrlTypeEnum urlType) {
+        public static string PICOCastGetUrl(PICOCastUrlTypeEnum urlType)
+        {
             return PXR_Plugin.System.UPxr_PICOCastGetUrl(urlType);
         }
 
@@ -1420,7 +1448,8 @@ namespace Unity.XR.PXR
         /// * `0`: failure
         /// * `1`: success
         /// </returns>
-        public static int PICOCastSetOption(PICOCastOptionOrStatusEnum castOptionOrStatus, PICOCastOptionValueEnum castOptionValue) {
+        public static int PICOCastSetOption(PICOCastOptionOrStatusEnum castOptionOrStatus, PICOCastOptionValueEnum castOptionValue)
+        {
             return PXR_Plugin.System.UPxr_PICOCastSetOption(castOptionOrStatus, castOptionValue);
         }
 
@@ -1452,7 +1481,8 @@ namespace Unity.XR.PXR
         ///   * `STATUS_VALUE_STATE_STOPPED`
         ///   * `STATUS_VALUE_ERROR`
         /// </returns>
-        public static PICOCastOptionValueEnum PICOCastGetOptionOrStatus(PICOCastOptionOrStatusEnum castOptionOrStatus) {
+        public static PICOCastOptionValueEnum PICOCastGetOptionOrStatus(PICOCastOptionOrStatusEnum castOptionOrStatus)
+        {
             return PXR_Plugin.System.UPxr_PICOCastGetOptionOrStatus(castOptionOrStatus);
         }
 

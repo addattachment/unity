@@ -10,14 +10,8 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Xml;
-using Unity.XR.PXR;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 namespace Unity.XR.PXR.Editor
 {
@@ -105,7 +99,7 @@ namespace Unity.XR.PXR.Editor
                 EditorGUI.BeginDisabledGroup(true);
                 manager.useRecommendedAntiAliasingLevel = EditorGUILayout.Toggle("Use Recommended MSAA", manager.useRecommendedAntiAliasingLevel);
                 EditorGUI.EndDisabledGroup();
-                EditorGUILayout.HelpBox("A Scriptable Render Pipeline is in use,the 'Use Recommended MSAA' will not be used. ", MessageType.Info,true);
+                EditorGUILayout.HelpBox("A Scriptable Render Pipeline is in use,the 'Use Recommended MSAA' will not be used. ", MessageType.Info, true);
             }
             else
             {
@@ -119,7 +113,7 @@ namespace Unity.XR.PXR.Editor
             }
             serializedObject.ApplyModifiedProperties();
         }
-        
+
     }
 }
 

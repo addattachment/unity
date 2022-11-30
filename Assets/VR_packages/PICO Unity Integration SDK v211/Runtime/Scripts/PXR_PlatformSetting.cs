@@ -10,7 +10,6 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -59,14 +58,15 @@ namespace Unity.XR.PXR
                         }
 
                     }
-                    else {
+                    else
+                    {
                         if (instance == null)
                         {
                             instance = CreateInstance<PXR_PlatformSetting>();
                             UnityEditor.AssetDatabase.CreateAsset(instance, "Assets/Resources/PXR_PlatformSetting.asset");
                         }
                     }
-                        
+
 #endif
                 }
                 return instance;

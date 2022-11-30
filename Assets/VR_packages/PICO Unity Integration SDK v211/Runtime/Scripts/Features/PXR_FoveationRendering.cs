@@ -10,8 +10,6 @@ material is strictly forbidden unless prior written permission is obtained from
 PICO Technology Co., Ltd. 
 *******************************************************************************/
 
-using UnityEngine;
-
 namespace Unity.XR.PXR
 {
     public class PXR_FoveationRendering

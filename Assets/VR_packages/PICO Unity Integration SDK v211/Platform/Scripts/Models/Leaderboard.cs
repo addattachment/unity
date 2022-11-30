@@ -11,7 +11,6 @@ Pico Technology Co., Ltd.
 *******************************************************************************/
 
 using System;
-using System.Runtime.InteropServices;
 
 namespace Pico.Platform.Models
 {
@@ -41,11 +40,11 @@ namespace Pico.Platform.Models
         public LeaderboardList(IntPtr a)
         {
             NextPageParam = CLIB.ppf_LeaderboardArray_HasNextPage(a) ? "true" : string.Empty;
-            var count = (int) CLIB.ppf_LeaderboardArray_GetSize(a);
+            var count = (int)CLIB.ppf_LeaderboardArray_GetSize(a);
             this.Capacity = count;
             for (var i = 0; i < count; i++)
             {
-                Add(new Leaderboard(CLIB.ppf_LeaderboardArray_GetElement(a, (UIntPtr) i)));
+                Add(new Leaderboard(CLIB.ppf_LeaderboardArray_GetElement(a, (UIntPtr)i)));
             }
         }
     }
@@ -87,7 +86,7 @@ namespace Pico.Platform.Models
             ID = CLIB.ppf_LeaderboardEntry_GetID(o);
             Rank = CLIB.ppf_LeaderboardEntry_GetRank(o);
             Score = CLIB.ppf_LeaderboardEntry_GetScore(o);
-            Timestamp = Util.SecondsToDateTime((long) CLIB.ppf_LeaderboardEntry_GetTimestamp(o));
+            Timestamp = Util.SecondsToDateTime((long)CLIB.ppf_LeaderboardEntry_GetTimestamp(o));
             User = new User(CLIB.ppf_LeaderboardEntry_GetUser(o));
             {
                 var pointer = CLIB.ppf_LeaderboardEntry_GetSupplementaryMetric(o);
@@ -110,7 +109,7 @@ namespace Pico.Platform.Models
         public LeaderboardEntryList(IntPtr a)
         {
             NextPageParam = CLIB.ppf_LeaderboardEntryArray_HasNextPage(a) ? "true" : string.Empty;
-            var count = (int) CLIB.ppf_LeaderboardEntryArray_GetSize(a);
+            var count = (int)CLIB.ppf_LeaderboardEntryArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {

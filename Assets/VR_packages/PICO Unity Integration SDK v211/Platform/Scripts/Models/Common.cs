@@ -12,7 +12,6 @@ Pico Technology Co., Ltd.
 
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
 
 namespace Pico.Platform.Models
 {
@@ -121,7 +120,7 @@ namespace Pico.Platform.Models
 
         public KVPairType GetValueType()
         {
-            return (KVPairType) CLIB.ppf_KeyValuePair_GetValueType(Handle);
+            return (KVPairType)CLIB.ppf_KeyValuePair_GetValueType(Handle);
         }
 
         ~KVPair()

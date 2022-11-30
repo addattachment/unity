@@ -67,8 +67,8 @@ namespace Pico.Platform.Models
 
         public AchievementDefinitionList(IntPtr a)
         {
-            TotalSize = (ulong) CLIB.ppf_AchievementDefinitionArray_GetTotalSize(a);
-            var count = (int) CLIB.ppf_AchievementDefinitionArray_GetSize(a);
+            TotalSize = (ulong)CLIB.ppf_AchievementDefinitionArray_GetTotalSize(a);
+            var count = (int)CLIB.ppf_AchievementDefinitionArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {
@@ -100,11 +100,11 @@ namespace Pico.Platform.Models
 
             uint size = CLIB.ppf_AchievementProgress_GetExtraDataLength(o);
             ExtraData = new byte[size];
-            Marshal.Copy(CLIB.ppf_AchievementProgress_GetExtraData(o), ExtraData, 0, (int) size);
+            Marshal.Copy(CLIB.ppf_AchievementProgress_GetExtraData(o), ExtraData, 0, (int)size);
             var unlockTime = CLIB.ppf_AchievementProgress_GetUnlockTime(o);
             if (unlockTime != 0)
             {
-                UnlockTime = Util.SecondsToDateTime((long) unlockTime);
+                UnlockTime = Util.SecondsToDateTime((long)unlockTime);
             }
         }
     }
@@ -115,8 +115,8 @@ namespace Pico.Platform.Models
 
         public AchievementProgressList(IntPtr a)
         {
-            TotalSize = (ulong) CLIB.ppf_AchievementProgressArray_GetTotalSize(a);
-            var count = (int) CLIB.ppf_AchievementProgressArray_GetSize(a);
+            TotalSize = (ulong)CLIB.ppf_AchievementProgressArray_GetTotalSize(a);
+            var count = (int)CLIB.ppf_AchievementProgressArray_GetSize(a);
             this.Capacity = count;
             for (uint i = 0; i < count; i++)
             {

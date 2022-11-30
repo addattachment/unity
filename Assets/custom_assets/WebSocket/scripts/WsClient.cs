@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -32,7 +31,7 @@ public class WsClient : MonoBehaviour
             return JsonUtility.ToJson(this);
         }
     }
-    [SerializeField] private WSHelloworld wsHello;
+    private WSHelloworld wsHello;
     private void Start()
     {
         wsHello = new WSHelloworld("Hello from " + ip);
@@ -87,7 +86,7 @@ public class WsClient : MonoBehaviour
 
     private void HandleIncomingMessage(string message)
     {
-        Debug.Log("INVOKING "+message);
+        Debug.Log("INVOKING " + message);
         wsToDebug.SetDebug(message);
         //wsMsgReceived.Invoke(message);
     }
