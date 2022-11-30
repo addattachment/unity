@@ -10,8 +10,10 @@ public class Ball : MonoBehaviour
     [Header("AudioSamples")]
     [SerializeField] private AudioSource SlingshotAudio;
     [SerializeField] private AudioSource SlingshotReleaseAudio;
-    [SerializeField] private AudioSource BulletImpactAudio;
-    [SerializeField] private AudioSource BulletNoHitAudio;
+    [SerializeField] private AudioSource BulletFloorImpact;
+    [SerializeField] private AudioSource BulletDestructionNoHitSound;
+    [SerializeField] private AudioSource BulletCorrectHitAudio;
+    [SerializeField] private AudioSource BulletWrongHitAudio;
 
     [Header("shooting arguments")]
     [Tooltip("time used for determining when bullet is not attached to slingshot anymore")] public float ReleaseTime = 0.5f;
@@ -22,6 +24,8 @@ public class Ball : MonoBehaviour
     private float? _time_to_target = 1.0f;
     Vector3 _hitTargetPos;
     private GameObject target;
+    [Header("score result")]
+    [SerializeField] private GameScore gameScore;
 
     // DEBUGGING
 #if DEBUGMODE
@@ -79,12 +83,40 @@ PlaceDebugCube(Rb.position);
         GetComponent<TrailRenderer>().enabled = false;
         if (collision.collider.CompareTag("Ground"))
         {
-            if (!BulletImpactAudio.isPlaying)
+            if (!BulletFloorImpact.isPlaying)
             {
-                BulletImpactAudio.Play();
+                BulletFloorImpact.Play();
+            }
+            if (!didHitATarget)
+            {
+                // we didn't hit any target, so this equals hitting the wrong target
+                gameScore.AddToScore(0);
             }
         }
+        if (collision.collider.CompareTag("subTarget"))
+        {
+            var th = collision.collider.GetComponent<TargetHit>();
+            if (target.GetComponent<Target>().readyForHit == true)
+            {
+                target.GetComponent<Target>().readyForHit = false;
+                if (th.activeTarget)
+                {
+                    Debug.Log("correct target touched!");
+                    gameScore.AddToScore(1);
+                    BulletCorrectHitAudio.Play();
+                }
+                else
+                {
+                    Debug.Log("wrong!");
+                    BulletWrongHitAudio.Play();
+                    gameScore.AddToScore(0);
+                }
+            }
+            didHitATarget = true;
+        }
+
     }
+
 
     /// <summary>
     /// 
@@ -127,10 +159,11 @@ PlaceDebugCube(Rb.position);
     IEnumerator Explode()
     {
         yield return new WaitForSeconds(DestructionTime);
-        GameManager.Instance.SetNewBullet();
+        GameManager.Instance.SwitchPlayer();
+        GameManager.Instance.SetNewBall();
         if (!didHitATarget)
         {
-            BulletNoHitAudio.Play();
+            BulletDestructionNoHitSound.Play();
         }
         Destroy(gameObject);
     }

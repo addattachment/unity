@@ -1,4 +1,4 @@
-using LSL4Unity.Samples.SimplePhysicsEvent;
+using LSL;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,13 +25,13 @@ public class SendToLSL : MonoBehaviour
             {
                 _time = 0.0f;
                 var marker = Random.Range(0,12);
-                outletPassThrough.SendMarker(marker);
+                outletPassThrough.SendMarker("marker: " + marker);
             }
         }
     }
     private void OnTriggerEnter(Collider other)
     {
         var marker = Random.Range(0, 12);
-        outletPassThrough.SendMarker(marker);
+        outletPassThrough.SendMarker("marker: " + marker);
     }
 }

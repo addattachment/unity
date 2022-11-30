@@ -4,7 +4,7 @@ using UnityEngine;
 using LSL;
 using static LSL.liblsl;
 
-namespace LSL4Unity.Samples.SimplePhysicsEvent
+namespace LSL
 {
     public class OutletPassThrough : MonoBehaviour
     {
@@ -34,12 +34,29 @@ namespace LSL4Unity.Samples.SimplePhysicsEvent
             outlet = new StreamOutlet(streamInfo);
         }
 
-        public void SendMarker(int marker) {
-            if (outlet!=null)
+        public void SendMarker(string marker)
+        {
+            switch (marker)
+            {
+                case "ball shot":
+                    SendMarker(1);
+                    break;
+                case "ball impact":
+                    SendMarker(2);
+                    break;
+                default:
+                    Debug.Log("unknown command");
+                    break;
+            }
+        }
+
+        private void SendMarker(int marker)
+        {
+            if (outlet != null)
             {
                 sample[0] = marker;
                 outlet.push_sample(sample);
-                Debug.Log("LSL stream: "+sample);
+                Debug.Log("LSL stream: " + sample);
             }
         }
     }

@@ -11,6 +11,11 @@ TagManager:
   - Ground
   - debugCube
   - ball
+  - Bullet
+  - lsl
+  - ws
+  - subTarget
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 2248467486586270875}
   m_Layer: 0
   m_Name: Slingshot
-  m_TagString: Untagged
+  m_TagString: slingshot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,10 +179,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20224d8d8912d0240b481e7f4dde3a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bullet: {fileID: 2715402290459226517, guid: 95d01b245aeead54d9340b30f7bb8a44, type: 3}
+  Ball: {fileID: 2715402290459226517, guid: 95d01b245aeead54d9340b30f7bb8a44, type: 3}
   LeftSide: {fileID: 2248467487866639563}
   RightSide: {fileID: 2248467486502112113}
   Hook: {fileID: 2248467486719660995}
+  launchForceMultiplier: 20
+  minDeflectionDist: 1.3
+  reachTarget: 0
+  debug_text: {fileID: 0}
 --- !u!1 &2248467486719660995
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +199,7 @@ GameObject:
   - component: {fileID: 2248467486719660996}
   m_Layer: 0
   m_Name: Hook
-  m_TagString: Untagged
+  m_TagString: slingshotHook
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

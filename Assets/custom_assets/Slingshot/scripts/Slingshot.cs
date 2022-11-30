@@ -8,17 +8,17 @@ public class Slingshot : MonoBehaviour
 {
     public GameObject Ball;
     [Header("slingshot machine anchor points")]
-    private GameObject LeftSide;
-    private GameObject RightSide;
-    private GameObject Hook;
+    [SerializeField] private GameObject LeftSide;
+    [SerializeField] private GameObject RightSide;
+    [SerializeField] private GameObject Hook;
     private Vector3 slingshotPocketToBallDistance;
     private LineRenderer Line;
 
     [Header("Shooting parameters")]
     [SerializeField] private float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
-    [Serializable] public enum reachTargetEnum { may = 0, must = 1, musnt = 2 }
-    [Tooltip("defines whether we may, must or musn't hit the correct target")] public reachTargetEnum reachTarget;
+    [Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2 }
+    [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
 
@@ -28,7 +28,7 @@ public class Slingshot : MonoBehaviour
         Line = GetComponent<LineRenderer>();
         Line.positionCount = 3;
         slingshotPocketToBallDistance = Ball.transform.localScale;
-        reachTarget = reachTargetEnum.may;
+        reachTarget = ReachTargetEnum.may;
     }
 
     void Update()
@@ -60,7 +60,7 @@ public class Slingshot : MonoBehaviour
     /// <param name="reachEnumInt">int interpretation of the enum</param>
     public void SetTargetReachable(int reachEnumInt)
     {
-        reachTarget = (reachTargetEnum)reachEnumInt;
+        reachTarget = (ReachTargetEnum)reachEnumInt;
     }
     public GameObject getHook()
     {
@@ -86,12 +86,12 @@ public class Slingshot : MonoBehaviour
         Vector3 _launchForce;
         switch (reachTarget)
         {
-            case reachTargetEnum.may:
+            case ReachTargetEnum.may:
                 _direction = _hookPos - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hook
                 _launchForce = _direction * launchForceMultiplier;//  - (Physics.gravity * 0.25f); I don't think we need to compensate here, feels less natural to me??
                 return _launchForce;
-            case reachTargetEnum.must:
+            case ReachTargetEnum.must:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
                 _launchForce = _direction * launchForceMultiplier;
@@ -99,7 +99,7 @@ public class Slingshot : MonoBehaviour
                 _launchForce -= (Physics.gravity * 0.25f);
                 return _launchForce;
 
-            case reachTargetEnum.musnt:
+            case ReachTargetEnum.musnt:
                 // first we calculate the mustreachforce & mayreachforce
                 // if they are too close to each other, we alter the forceVector away from the mayreachforce vector
                 //mayreachForce

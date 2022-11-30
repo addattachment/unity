@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1001177429090512263}
   m_Layer: 0
   m_Name: WsClient
-  m_TagString: Untagged
+  m_TagString: ws
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63,9 +63,6 @@ MonoBehaviour:
   ip: localhost
   port: 8080
   wsToDebug: {fileID: 0}
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
   wsMsgReceived:
     m_PersistentCalls:
       m_Calls: []

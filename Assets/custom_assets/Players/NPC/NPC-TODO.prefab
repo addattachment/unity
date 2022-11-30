@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3348262492378628207
+--- !u!1 &5736673880466855916
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3348262492378628205}
-  - component: {fileID: 3348262492378628204}
+  - component: {fileID: 5736673880466855918}
+  - component: {fileID: 5736673880466855919}
   m_Layer: 0
-  m_Name: LSLOutlet
-  m_TagString: lsl
+  m_Name: NPC-TODO
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3348262492378628205
+--- !u!4 &5736673880466855918
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3348262492378628207}
+  m_GameObject: {fileID: 5736673880466855916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,18 +32,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3348262492378628204
+--- !u!114 &5736673880466855919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3348262492378628207}
+  m_GameObject: {fileID: 5736673880466855916}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbfa8ad9dac03b947bf08ad97473c7de, type: 3}
+  m_Script: {fileID: 11500000, guid: fcb98aa046d45224b8c20b3d81840fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StreamName: DataSyncMarker
-  ContentType: Markers
-  StreamId: 12345
+  playerName: saskia
+  gender: 1
+  height: 110
+  isRealPlayer: 0
+  score: 0
+  amountOfBallsInTrial: 0
+  isActivePlayer: 0

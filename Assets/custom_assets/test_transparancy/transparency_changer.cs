@@ -31,6 +31,5 @@ public class transparency_changer : MonoBehaviour
         transp_interpol = Mathf.Lerp(0.0f, 1.0f, time / pingpongtime);
         x.a = transp_interpol;
         cr.SetColor(x);
-        Debug.Log(transp_interpol);
     }
 }
