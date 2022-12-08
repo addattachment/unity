@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 
 public class GameManager : MonoBehaviour
@@ -9,11 +10,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Slingshot slingshot;
     [SerializeField] private GameObject slingshotHook;
     [SerializeField] private GameObject target;
-    [SerializeField] private List<GameObject> targetList;
+    //[SerializeField] private List<GameObject> targetList;
+    [SerializeField] private GameObject[] targetList;
 
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
-
+    [SerializeField] private bool restartBool = false;
+    private GameObject instBall;
 
     [Header("Trialsettings")]
     public GameObject slingshotBall;
@@ -22,12 +25,16 @@ public class GameManager : MonoBehaviour
     //[Header("GUI")]
     //[SerializeField] GameObject HUD;
 
-    void Start()
+    private void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
         }
+    }
+    void Start()
+    {
+
         InitTargets();
         slingshot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
         slingshotHook = slingshot.getHook();
@@ -38,16 +45,20 @@ public class GameManager : MonoBehaviour
         StartNewTrial();
     }
 
-    private void InitTargets() {
-        target = GameObject.FindGameObjectWithTag("target");
-        foreach (Transform x in target.transform)
-        {
-            targetList.Add(x.gameObject);
-        }
+    private void InitTargets()
+    {
+        targetList = GameObject.FindGameObjectsWithTag("subTarget");
+        //foreach (Transform x in target.transform)
+        //{
+        //    targetList.Add(x.gameObject);
+        //}
     }
     public void RestartScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        var activeScene = SceneManager.GetActiveScene().name;
+        //SceneManager.UnloadScene("PlayerScene");
+        //SceneManager.LoadScene("PlayerScene", LoadSceneMode.Additive);
+        SceneManager.LoadScene(activeScene);
     }
     public void StartNewTrial()
     {
@@ -60,19 +71,19 @@ public class GameManager : MonoBehaviour
 
     public void SetNewBall()
     {
-        Player activeParticipant = player.isActivePlayer? player : NPC; // see who is the active player to get a new ball
+        Player activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
         activeParticipant.amountOfBallsInTrial--;
         if (activeParticipant.amountOfBallsInTrial > 0)
         {
             // Make sure we can detect collisions by the new bullet (only once!)
             target.GetComponent<Target>().readyForHit = true;
             // Instantiate the new bullet
-            GameObject ball = Instantiate(slingshotBall, slingshotHook.transform.position, Quaternion.identity);
-            if (targetList.Count > 0)
+            instBall = Instantiate(slingshotBall, slingshotHook.transform.position, Quaternion.identity, slingshot.transform);
+            if (targetList.Length > 0)
             {
-                hitTarget = targetList[Random.Range(0, targetList.Count)];
-                ball.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;
-                ball.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
+                hitTarget = targetList[Random.Range(0, targetList.Length)];
+                instBall.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;
+                instBall.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
                 foreach (GameObject target in targetList)
                 {
                     if (target == hitTarget)
@@ -82,7 +93,7 @@ public class GameManager : MonoBehaviour
                     else target.GetComponent<TargetHit>().SetActiveTarget(false);
                 }
             }
-            slingshot.Ball = ball;
+            slingshot.Ball = instBall;
         }
     }
 
@@ -93,5 +104,12 @@ public class GameManager : MonoBehaviour
         NPC.isActivePlayer = false;//  !NPC.isActivePlayer;
     }
 
+    private void Update()
+    {
+        if (restartBool)
+        {
+            RestartScene();
+        }
+    }
 
 }

@@ -16,6 +16,8 @@ TagManager:
   - ws
   - subTarget
   - NPC
+  - gameScore
+  - missTargets
   layers:
   - Default
   - TransparentFX

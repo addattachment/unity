@@ -7,7 +7,6 @@ public class TargetPos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _parent = this.transform.parent.gameObject;
         rotationVector = _parent.GetComponent<Target>().rotationVector;
     }
 

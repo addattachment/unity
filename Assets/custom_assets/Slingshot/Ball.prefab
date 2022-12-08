@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 7515327708362005642}
   m_Layer: 3
   m_Name: Ball
-  m_TagString: Bullet
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -302,13 +302,16 @@ MonoBehaviour:
   slingShot: {fileID: 0}
   SlingshotAudio: {fileID: 2715402290459226525}
   SlingshotReleaseAudio: {fileID: 2715402290459226526}
-  BulletFloorImpact: {fileID: 2715402290459226208}
-  BulletDestructionNoHitSound: {fileID: 6023756880996850148}
-  BulletCorrectHitAudio: {fileID: 7515327708362005642}
-  BulletWrongHitAudio: {fileID: 6023756880996850148}
+  BallFloorImpact: {fileID: 2715402290459226208}
+  BallDestructionNoHitSound: {fileID: 6023756880996850148}
+  BallCorrectHitAudio: {fileID: 7515327708362005642}
+  BallWrongHitAudio: {fileID: 6023756880996850148}
   ReleaseTime: 0.15
   DestructionTime: 3
   didHitATarget: 0
+  gameScore: {fileID: 0}
+  gameManager: {fileID: 0}
+  lsl: {fileID: 0}
   debug_text: {fileID: 0}
   launchDebugPushed: 0
 --- !u!96 &2715402290459226524
@@ -904,7 +907,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 15e67dd6e83764f4e9ec70ec89d4de92, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

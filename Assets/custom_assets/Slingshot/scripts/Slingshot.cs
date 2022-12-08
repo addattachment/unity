@@ -29,6 +29,7 @@ public class Slingshot : MonoBehaviour
         Line.positionCount = 3;
         slingshotPocketToBallDistance = Ball.transform.localScale;
         reachTarget = ReachTargetEnum.may;
+        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
     }
 
     void Update()

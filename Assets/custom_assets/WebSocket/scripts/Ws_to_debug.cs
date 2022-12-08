@@ -2,7 +2,12 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
+[Serializable]
+public class m_WS_Event : UnityEvent<int>
+{
+}
 public class Ws_to_debug : MonoBehaviour
 {
     [SerializeField] private TMP_Text debug;

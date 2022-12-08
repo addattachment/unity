@@ -1,4 +1,5 @@
 using Assets.Scripts;
+using LSL;
 using System.Collections;
 using UnityEngine;
 
@@ -10,10 +11,10 @@ public class Ball : MonoBehaviour
     [Header("AudioSamples")]
     [SerializeField] private AudioSource SlingshotAudio;
     [SerializeField] private AudioSource SlingshotReleaseAudio;
-    [SerializeField] private AudioSource BulletFloorImpact;
-    [SerializeField] private AudioSource BulletDestructionNoHitSound;
-    [SerializeField] private AudioSource BulletCorrectHitAudio;
-    [SerializeField] private AudioSource BulletWrongHitAudio;
+    [SerializeField] private AudioSource BallFloorImpact;
+    [SerializeField] private AudioSource BallDestructionNoHitSound;
+    [SerializeField] private AudioSource BallCorrectHitAudio;
+    [SerializeField] private AudioSource BallWrongHitAudio;
 
     [Header("shooting arguments")]
     [Tooltip("time used for determining when bullet is not attached to slingshot anymore")] public float ReleaseTime = 0.5f;
@@ -26,6 +27,9 @@ public class Ball : MonoBehaviour
     private GameObject target;
     [Header("score result")]
     [SerializeField] private GameScore gameScore;
+    [SerializeField] private GameManager gameManager;
+    [SerializeField] private OutletPassThrough lsl;
+
 
     // DEBUGGING
 #if DEBUGMODE
@@ -38,16 +42,16 @@ public class Ball : MonoBehaviour
     Vector3 _fakeBallStartPoint = new Vector3(0, 0.4f, 0);
     public bool launchDebugPushed = false;
 #endif
-    void Awake()
-    {
-        Rb = GetComponent<Rigidbody>();
-        target = GameObject.FindGameObjectWithTag("target"); // todo write tests for finding all gameobjects
-        slingShot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
-
-    }
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
+        Rb = GetComponent<Rigidbody>();
+        target = GameObject.FindGameObjectWithTag("target"); // todo write tests for finding all gameobjects
+        slingShot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
+        gameScore = GameObject.FindGameObjectWithTag("gameScore").GetComponent<GameScore>();
+        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
+        lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
 
     }
 
@@ -61,8 +65,10 @@ public class Ball : MonoBehaviour
             InitDebugCube();
 #endif
             launchDebugPushed = false;
+            lsl.SendMarker(Marker.ball_release);
             float _time = (float)_time_to_target.Value;
-            _hitTargetPos = GameManager.Instance.hitTarget.GetComponent<TargetPos>().GetFuturePositionOfTarget(_time);
+            var _hitTarget = GameManager.Instance.hitTarget;
+            _hitTargetPos = _hitTarget.GetComponent<TargetPos>().GetFuturePositionOfTarget(_time);
             Launch(_fakeBallStartPoint);
             StartCoroutine(Explode());
         }
@@ -77,20 +83,23 @@ PlaceDebugCube(Rb.position);
 
     }
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!didHitATarget)
+        {
+            BallWrongHitAudio.Play();
+            // we didn't hit any target, so this equals hitting the wrong target
+            gameScore.AddToScore(0);
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         GetComponent<TrailRenderer>().enabled = false;
-        if (collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground") && !didHitATarget)
         {
-            if (!BulletFloorImpact.isPlaying)
+            if (!BallFloorImpact.isPlaying)
             {
-                BulletFloorImpact.Play();
-            }
-            if (!didHitATarget)
-            {
-                // we didn't hit any target, so this equals hitting the wrong target
-                gameScore.AddToScore(0);
+                BallFloorImpact.Play();
             }
         }
         if (collision.collider.CompareTag("subTarget"))
@@ -103,12 +112,12 @@ PlaceDebugCube(Rb.position);
                 {
                     Debug.Log("correct target touched!");
                     gameScore.AddToScore(1);
-                    BulletCorrectHitAudio.Play();
+                    BallCorrectHitAudio.Play();
                 }
                 else
                 {
                     Debug.Log("wrong!");
-                    BulletWrongHitAudio.Play();
+                    BallWrongHitAudio.Play();
                     gameScore.AddToScore(0);
                 }
             }
@@ -144,6 +153,9 @@ PlaceDebugCube(Rb.position);
     // we release the Ball
     public void VRExitEvent()
     {
+        // notify the backend that we did release the ball
+        lsl.SendMarker(Marker.ball_release);
+
         _time_to_target = CalcFlyingTime(Rb, target.transform.position);
         _hitTargetPos = GameManager.Instance.hitTarget
            .GetComponent<TargetPos>()
@@ -163,7 +175,7 @@ PlaceDebugCube(Rb.position);
         GameManager.Instance.SetNewBall();
         if (!didHitATarget)
         {
-            BulletDestructionNoHitSound.Play();
+            BallDestructionNoHitSound.Play();
         }
         Destroy(gameObject);
     }

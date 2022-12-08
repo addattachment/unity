@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class transparency_changer : MonoBehaviour
+public class Transparency_changer: MonoBehaviour
 {
     private CanvasRenderer cr;
     private float time = 0.0f;

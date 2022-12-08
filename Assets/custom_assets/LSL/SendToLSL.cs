@@ -24,14 +24,12 @@ public class SendToLSL : MonoBehaviour
             if(_time >= _exec_time)
             {
                 _time = 0.0f;
-                var marker = Random.Range(0,12);
-                outletPassThrough.SendMarker("marker: " + marker);
+                outletPassThrough.SendMarker(Marker.test) ;
             }
         }
     }
     private void OnTriggerEnter(Collider other)
     {
-        var marker = Random.Range(0, 12);
-        outletPassThrough.SendMarker("marker: " + marker);
+        outletPassThrough.SendMarker(Marker.test);
     }
 }
