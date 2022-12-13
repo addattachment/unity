@@ -48,7 +48,7 @@ public class GameScore : MonoBehaviour
         //update the score
         activeParticipant.score += score;
         debug_text.SetDebugText("" + activeParticipant.name + " " + activeParticipant.score);
-        ws.SendWSMessage(activeParticipant.name + "score: " + activeParticipant.score);
+        ws.SendWSMessage("name: " +activeParticipant.name + ", score: " + activeParticipant.score);
         lsl.SendMarker(Marker.score);
         //int trial = gameManager
     }

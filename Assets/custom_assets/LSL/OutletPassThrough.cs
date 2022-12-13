@@ -11,7 +11,7 @@ namespace LSL
     public class m_LSL_Event : UnityEvent<string>
     {
     }
-    public enum Marker { ball_release = 0, ball_good_hit = 1, ball_bad_hit = 2, score = 3, test = 4 };
+    public enum Marker { game_start = 0, ball_release = 1, ball_good_hit = 2, ball_bad_hit = 3, score = 4, test = 5 };
 
     public class OutletPassThrough : MonoBehaviour
     {
@@ -50,21 +50,22 @@ namespace LSL
         public void SendMarker(Marker marker)
         {
             Debug.Log(Time.time + (int)marker);
-            switch (marker)
-            {
-                case Marker.ball_release:
-                case Marker.ball_good_hit:
-                case Marker.ball_bad_hit:
-                case Marker.score:
-                    SendMarker((int)marker);
-                    break;
-                case Marker.test:
-                    SendMarker((int)marker);
-                    break;
-                default:
-                    Debug.Log("unknown command");
-                    break;
-            }
+            //switch (marker)
+            //{
+            //    case Marker.ball_release:
+            //    case Marker.ball_good_hit:
+            //    case Marker.ball_bad_hit:
+            //    case Marker.score:
+            //        SendMarker((int)marker);
+            //        break;
+            //    case Marker.test:
+            //        SendMarker((int)marker);
+            //        break;
+            //    default:
+            //        Debug.Log("unknown command");
+            //        break;
+            //}
+            SendMarker((int)marker);
         }
 
         private void SendMarker(int marker)

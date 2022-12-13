@@ -9,7 +9,7 @@ using WebSocketSharp;
 public class WsClient : MonoBehaviour
 {
     public WebSocket ws;
-    private bool hasWsConnection = false;
+    public bool hasWsConnection = false;
     private float timeoutLength = 2.0f;
     private float timeoutTimer = 0.0f;
     [SerializeField] private string ip = "localhost";
@@ -95,9 +95,11 @@ public class WsClient : MonoBehaviour
     public void SendWSMessage(string message)
     {
         Debug.Log("sending " + message);
+        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+        int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)
         {
-            ws.Send(message);
+            ws.Send("time: " + cur_time + ", "+message);
         }
     }
     public void SetDebug(string message)
@@ -112,7 +114,9 @@ public class WsClient : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        SendWSMessage("Android application is closing");
+        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+        int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+        SendWSMessage("time: " + cur_time + ", message: Android application is closing ");
         ws.CloseAsync(CloseStatusCode.Normal);
     }
 

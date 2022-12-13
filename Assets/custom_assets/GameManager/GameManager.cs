@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
-
+using LSL;
 
 public class GameManager : MonoBehaviour
 {
@@ -20,8 +20,12 @@ public class GameManager : MonoBehaviour
 
     [Header("Trialsettings")]
     public GameObject slingshotBall;
-
+    
     public GameObject hitTarget;
+    [Header("dataConnections")]
+    [SerializeField] private OutletPassThrough lsl;
+    [SerializeField] private WsClient ws;
+
     //[Header("GUI")]
     //[SerializeField] GameObject HUD;
 
@@ -34,7 +38,8 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-
+        ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
+        lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
         InitTargets();
         slingshot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
         slingshotHook = slingshot.getHook();
@@ -43,6 +48,16 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
         StartNewTrial();
+        SendSyncTime();
+
+    }
+
+    private void SendSyncTime()
+    {
+
+        while (!ws.hasWsConnection) { }
+        lsl.SendMarker(Marker.game_start);
+        ws.SendWSMessage("message: game started");
     }
 
     private void InitTargets()
