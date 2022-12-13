@@ -1,0 +1,3 @@
+[submodule "Assets/blender"]
+	path = Assets/blender
+	url = https://github.com/addattachment/blender
