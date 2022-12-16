@@ -53,3 +53,5 @@ MonoBehaviour:
   restartBool: 0
   slingshotBall: {fileID: 2715402290459226517, guid: 95d01b245aeead54d9340b30f7bb8a44, type: 3}
   hitTarget: {fileID: 0}
+  lsl: {fileID: 0}
+  ws: {fileID: 0}

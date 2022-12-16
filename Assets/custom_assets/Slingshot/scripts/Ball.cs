@@ -9,12 +9,15 @@ public class Ball : MonoBehaviour
     [SerializeField] private Slingshot slingShot; // link to the slingshot
 
     [Header("AudioSamples")]
-    [SerializeField] private AudioSource SlingshotAudio;
+    [SerializeField] private AudioSource SlingshotPullAudio;
     [SerializeField] private AudioSource SlingshotReleaseAudio;
     [SerializeField] private AudioSource BallFloorImpact;
     [SerializeField] private AudioSource BallDestructionNoHitSound;
-    [SerializeField] private AudioSource BallCorrectHitAudio;
-    [SerializeField] private AudioSource BallWrongHitAudio;
+    //[SerializeField] private AudioSource BallCorrectHitAudio;
+    //[SerializeField] private AudioSource BallWrongHitAudio;
+    [SerializeField] private AudioSource ball_flying_audio;
+    [SerializeField] private AudioSource ball_burning_audio;
+
 
     [Header("shooting arguments")]
     [Tooltip("time used for determining when bullet is not attached to slingshot anymore")] public float ReleaseTime = 0.5f;
@@ -30,6 +33,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private OutletPassThrough lsl;
 
+    [Header("atmosphere")]
+    [SerializeField] private GameObject backgroundSound;
 
     // DEBUGGING
 #if DEBUGMODE
@@ -52,6 +57,7 @@ public class Ball : MonoBehaviour
         gameScore = GameObject.FindGameObjectWithTag("gameScore").GetComponent<GameScore>();
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
+        backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
 
     }
 
@@ -65,10 +71,12 @@ public class Ball : MonoBehaviour
             InitDebugCube();
 #endif
             launchDebugPushed = false;
+            ball_flying_audio.Play();
+            backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
             lsl.SendMarker(Marker.ball_release);
             float _time = (float)_time_to_target.Value;
             var _hitTarget = GameManager.Instance.hitTarget;
-            _hitTargetPos = _hitTarget.GetComponent<TargetPos>().GetFuturePositionOfTarget(_time);
+            _hitTargetPos = _hitTarget.GetComponent<TargetPosRot>().GetFuturePositionOfTarget(_time);
             Launch(_fakeBallStartPoint);
             StartCoroutine(Explode());
         }
@@ -87,9 +95,17 @@ PlaceDebugCube(Rb.position);
     {
         if (!didHitATarget)
         {
-            BallWrongHitAudio.Play();
-            // we didn't hit any target, so this equals hitting the wrong target
-            gameScore.AddToScore(0);
+            if (other.CompareTag("Ground"))
+            {
+                // we didn't hit any target, so this equals hitting the wrong target
+                gameScore.AddToScore(0);
+            }
+            if (other.CompareTag("subTarget"))
+            {
+                var th = other.GetComponent<TargetHit>();
+                CalcImpact(th);
+                didHitATarget = true;
+            }
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -105,24 +121,35 @@ PlaceDebugCube(Rb.position);
         if (collision.collider.CompareTag("subTarget"))
         {
             var th = collision.collider.GetComponent<TargetHit>();
-            if (target.GetComponent<Target>().readyForHit == true)
-            {
-                target.GetComponent<Target>().readyForHit = false;
-                if (th.activeTarget)
-                {
-                    Debug.Log("correct target touched!");
-                    gameScore.AddToScore(1);
-                    BallCorrectHitAudio.Play();
-                }
-                else
-                {
-                    Debug.Log("wrong!");
-                    BallWrongHitAudio.Play();
-                    gameScore.AddToScore(0);
-                }
-            }
+            CalcImpact(th);
             didHitATarget = true;
         }
+
+    }
+
+
+    private void CalcImpact(TargetHit th)
+    {
+        if (target.GetComponent<Targets>().readyForHit == true)
+        {
+            target.GetComponent<Targets>().readyForHit = false;
+            if (th.activeTarget)
+            {
+                Debug.Log("correct target touched!");
+                gameScore.AddToScore(1);
+                //BallCorrectHitAudio.Play();
+                DestroyThisBall();
+            }
+            else
+            {
+                Debug.Log("wrong!");
+                //BallWrongHitAudio.Play();
+                gameScore.AddToScore(0);
+                DestroyThisBall();
+            }
+        }
+        
+
 
     }
 
@@ -146,8 +173,10 @@ PlaceDebugCube(Rb.position);
 #if DEBUGMODE
         InitDebugCube();
 #endif
-
-        SlingshotAudio.Play();
+        ball_burning_audio.loop = true;
+        ball_burning_audio.Play();
+        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
+        SlingshotPullAudio.Play();
     }
 
     // we release the Ball
@@ -155,10 +184,10 @@ PlaceDebugCube(Rb.position);
     {
         // notify the backend that we did release the ball
         lsl.SendMarker(Marker.ball_release);
-
+        ball_flying_audio.Play();
         _time_to_target = CalcFlyingTime(Rb, target.transform.position);
         _hitTargetPos = GameManager.Instance.hitTarget
-           .GetComponent<TargetPos>()
+           .GetComponent<TargetPosRot>()
            .GetFuturePositionOfTarget((float)_time_to_target.Value);
         Launch(Rb.position);
 #if DEBUGMODE
@@ -168,16 +197,25 @@ PlaceDebugCube(Rb.position);
         StartCoroutine(Explode());
     }
 
+    /// <summary>
+    /// DestroyThisBall
+    /// first makes sure a new ball is created and immediately destroys this one
+    /// </summary>
+    private void DestroyThisBall()
+    { 
+        GameManager.Instance.SwitchPlayer();
+        GameManager.Instance.SetNewBall();
+        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
+        Destroy(gameObject);
+    }
     IEnumerator Explode()
     {
         yield return new WaitForSeconds(DestructionTime);
-        GameManager.Instance.SwitchPlayer();
-        GameManager.Instance.SetNewBall();
         if (!didHitATarget)
         {
             BallDestructionNoHitSound.Play();
         }
-        Destroy(gameObject);
+        DestroyThisBall();
     }
 
 

@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbfa8ad9dac03b947bf08ad97473c7de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StreamName: DataSyncMarker
+  StreamName_1: DataSyncMarker_emotibit
+  StreamName_2: DataSyncMarker_eeg
   ContentType: Markers
-  StreamId: 12345
+  StreamId_1: LSL1
+  StreamId_2: LSL2
+  channel_format_type: 6

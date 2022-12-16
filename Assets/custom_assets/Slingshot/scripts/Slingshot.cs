@@ -15,7 +15,7 @@ public class Slingshot : MonoBehaviour
     private LineRenderer Line;
 
     [Header("Shooting parameters")]
-    [SerializeField] private float launchForceMultiplier = 20.0f;
+    [SerializeField, Range(0.0f, 50.0f)] private float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
     [Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2 }
     [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
@@ -85,6 +85,7 @@ public class Slingshot : MonoBehaviour
         Vector3 _hookPos = Hook.transform.position;
         Vector3 _direction;
         Vector3 _launchForce;
+        //TODO something wrong with speed calculation?
         switch (reachTarget)
         {
             case ReachTargetEnum.may:

@@ -54,8 +54,8 @@ public class GameManager : MonoBehaviour
 
     private void SendSyncTime()
     {
-
-        while (!ws.hasWsConnection) { }
+//TODO SendSyncTime blocks execution if no websocket available, set in different thread or just remove?
+        //while (!ws.hasWsConnection) { }
         lsl.SendMarker(Marker.game_start);
         ws.SendWSMessage("message: game started");
     }
@@ -67,6 +67,13 @@ public class GameManager : MonoBehaviour
         //{
         //    targetList.Add(x.gameObject);
         //}
+    }
+    public void SwitchScene(string sceneToLoad)
+    {
+        //string[] sceneList = {"BaseRotscene", "BasePolescene"};
+        //var activeScene = SceneManager.GetActiveScene().name;
+        //string sceneToLoad = 
+        SceneManager.LoadScene(sceneToLoad);
     }
     public void RestartScene()
     {
@@ -91,7 +98,7 @@ public class GameManager : MonoBehaviour
         if (activeParticipant.amountOfBallsInTrial > 0)
         {
             // Make sure we can detect collisions by the new bullet (only once!)
-            target.GetComponent<Target>().readyForHit = true;
+            target.GetComponent<Targets>().readyForHit = true;
             // Instantiate the new bullet
             instBall = Instantiate(slingshotBall, slingshotHook.transform.position, Quaternion.identity, slingshot.transform);
             if (targetList.Length > 0)

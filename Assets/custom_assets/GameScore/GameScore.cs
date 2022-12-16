@@ -11,9 +11,10 @@ public class GameScore : MonoBehaviour
     [SerializeField] private OutletPassThrough lsl;
     [SerializeField] GameManager gameManager;
     [SerializeField] private DebugConnection debug_text;
-
+    [SerializeField] private GameSounds gameSounds;
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
+    [SerializeField] private ScoreBoardAll scoreboard;
 
     m_LSL_Event m_LSL = new ();
     m_WS_Event m_WS = new ();
@@ -26,7 +27,8 @@ public class GameScore : MonoBehaviour
         NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
         gameManager = GameManager.Instance;
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
-
+        gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
+        scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
     }
 
     // Update is called once per frame
@@ -42,18 +44,46 @@ public class GameScore : MonoBehaviour
     /// <param name="score"></param>
     public void AddToScore(int score)
     {
-        lsl.SendMarker(score==1 ? Marker.ball_good_hit : Marker.ball_bad_hit);
+        PlaySound(score);
+        UpdatePlayerScore(score);
+        scoreboard.UpdateScores();
+        LSLNotifyGoodOrBadHit(score);
+        WSUpdateScore(score);
 
-        Player activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
-        //update the score
-        activeParticipant.score += score;
-        debug_text.SetDebugText("" + activeParticipant.name + " " + activeParticipant.score);
-        ws.SendWSMessage("name: " +activeParticipant.name + ", score: " + activeParticipant.score);
-        lsl.SendMarker(Marker.score);
+        
         //int trial = gameManager
     }
 
-    
+    private void UpdatePlayerScore(int score)
+    {
+        Player activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
+        //update the score
+        activeParticipant.score += score;
+    }
+    private void PlaySound(int score)
+    {
+        if (score == 1)
+        {
+            gameSounds.BallCorrectHitAudio.Play();
+        }
+        else
+            gameSounds.BallWrongHitAudio.Play();
+    }
+
+    private void LSLNotifyGoodOrBadHit(int score)
+    {
+        lsl.SendMarker(score == 1 ? Marker.ball_good_hit : Marker.ball_bad_hit);
+
+    }
+
+    private void WSUpdateScore(int score)
+    {
+        Player activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
+
+        debug_text.SetDebugText("" + activeParticipant.name + " " + activeParticipant.score);
+        ws.SendWSMessage("name: " + activeParticipant.name + ", score: " + activeParticipant.score);
+        lsl.SendMarker(Marker.score);
+    }
 
 
 

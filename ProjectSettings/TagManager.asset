@@ -18,6 +18,9 @@ TagManager:
   - NPC
   - gameScore
   - missTargets
+  - atmosphere
+  - gameSounds
+  - scoreboard
   layers:
   - Default
   - TransparentFX

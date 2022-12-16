@@ -60,7 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50effbeb3dea8454aad43da07ac14fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ip: localhost
+  hasWsConnection: 0
+  ip: 192.168.50.188
   port: 8080
   wsToDebug: {fileID: 0}
   wsMsgReceived:
