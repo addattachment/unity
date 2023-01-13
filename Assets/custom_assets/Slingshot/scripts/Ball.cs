@@ -37,6 +37,8 @@ public class Ball : MonoBehaviour
     [SerializeField] private GameObject backgroundSound;
 
     // DEBUGGING
+    public GameObject debugCube;
+
 #if DEBUGMODE
     public GameObject debugCube;
     private GameObject debugCubeInstance;
@@ -44,8 +46,8 @@ public class Ball : MonoBehaviour
 #endif
     [SerializeField] private DebugConnection debug_text;
 #if UNITY_EDITOR
-    Vector3 _fakeBallStartPoint = new Vector3(0, 0.4f, 0);
-    public bool launchDebugPushed = false;
+    public Vector3 _fakeBallStartPoint = new Vector3(0, 0.4f, 0);
+    public bool doFakeLaunch = false;
 #endif
 
     private void Start()
@@ -53,7 +55,7 @@ public class Ball : MonoBehaviour
         gameManager = GameManager.Instance;
         Rb = GetComponent<Rigidbody>();
         target = GameObject.FindGameObjectWithTag("target"); // todo write tests for finding all gameobjects
-        slingShot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
+        slingShot = this.GetComponentInParent<Slingshot>();
         gameScore = GameObject.FindGameObjectWithTag("gameScore").GetComponent<GameScore>();
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
@@ -65,20 +67,13 @@ public class Ball : MonoBehaviour
     void FixedUpdate()
     {
 #if UNITY_EDITOR
-        if (launchDebugPushed)
+        if (doFakeLaunch)
         {
 #if DEBUGMODE
             InitDebugCube();
 #endif
-            launchDebugPushed = false;
-            ball_flying_audio.Play();
-            backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
-            lsl.SendMarker(Marker.ball_release);
-            float _time = (float)_time_to_target.Value;
-            var _hitTarget = GameManager.Instance.hitTarget;
-            _hitTargetPos = _hitTarget.GetComponent<TargetPosRot>().GetFuturePositionOfTarget(_time);
-            Launch(_fakeBallStartPoint);
-            StartCoroutine(Explode());
+            doFakeLaunch = false;
+            FakeLaunch();
         }
 #if DEBUGMODE
         PlaceDebugCube(_fakeBallStartPoint);
@@ -93,6 +88,7 @@ PlaceDebugCube(Rb.position);
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("triggered " + other.name + " at " + Time.time);
         if (!didHitATarget)
         {
             if (other.CompareTag("Ground"))
@@ -110,6 +106,8 @@ PlaceDebugCube(Rb.position);
     }
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
+
         GetComponent<TrailRenderer>().enabled = false;
         if (collision.collider.CompareTag("Ground") && !didHitATarget)
         {
@@ -153,13 +151,33 @@ PlaceDebugCube(Rb.position);
 
     }
 
+    public void FakeLaunch()
+    {
+        // audio stuff
+        ball_flying_audio.Play();
+        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
+        //Send LSL data
+        lsl.SendMarker(Marker.ball_release);
+        //Calculate trajectory of ball
+        var _hitTarget = gameManager.hitTarget;
 
+        _time_to_target = CalcFlyingTime(Rb, _hitTarget.transform.position);
+        float _time = (float)_time_to_target.Value;
+        Debug.Log("target time to target would be " + _time); // CalcFlyingTime(Rb, target.transform.position));
+
+        _hitTargetPos = _hitTarget.GetComponent<TargetPosRot>().GetFuturePositionOfTarget(_time);
+        Debug.Log("shoot at " + Time.time + " for " + _time + " seconds with mode: " + slingShot.reachTarget);
+        Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
+        Launch(_fakeBallStartPoint+slingShot.transform.position);
+        StartCoroutine(Explode());
+    }
     /// <summary>
     /// 
     /// </summary>
     /// <param name="origin"> from where do we shoot the ball, normally it's position, yet for debugging we can choose</param>
     private void Launch(Vector3 origin)
     {
+        Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
         var launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
         Rb.AddForce(launchForce, ForceMode.Impulse);
 
@@ -185,7 +203,8 @@ PlaceDebugCube(Rb.position);
         // notify the backend that we did release the ball
         lsl.SendMarker(Marker.ball_release);
         ball_flying_audio.Play();
-        _time_to_target = CalcFlyingTime(Rb, target.transform.position);
+        //_time_to_target = CalcFlyingTime(Rb, target.transform.position);
+        _time_to_target = CalcFlyingTime(Rb, gameManager.hitTarget.transform.position);
         _hitTargetPos = GameManager.Instance.hitTarget
            .GetComponent<TargetPosRot>()
            .GetFuturePositionOfTarget((float)_time_to_target.Value);

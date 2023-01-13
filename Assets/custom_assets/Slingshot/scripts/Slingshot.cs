@@ -21,7 +21,7 @@ public class Slingshot : MonoBehaviour
     [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
-
+    public bool slingshotIsActive = false;
 
     void Start()
     {
@@ -34,7 +34,9 @@ public class Slingshot : MonoBehaviour
 
     void Update()
     {
-        DrawSlingshotLines();
+        
+            DrawSlingshotLines();
+        
     }
 
 
@@ -43,16 +45,25 @@ public class Slingshot : MonoBehaviour
     /// </summary>
     private void DrawSlingshotLines()
     {
-        Line.SetPosition(0, LeftSide.transform.position);
-        if (Ball == null || Ball.GetComponent<SpringJoint>() == null)
+        if (slingshotIsActive)
         {
-            Line.SetPosition(1, Hook.transform.position);
+            Line.SetPosition(0, LeftSide.transform.position);
+            if (Ball == null || Ball.GetComponent<SpringJoint>() == null)
+            {
+                Line.SetPosition(1, Hook.transform.position);
+            }
+            else
+            {
+                Line.SetPosition(1, new Vector3(Ball.transform.position.x, Ball.transform.position.y, Ball.transform.position.z - 1f * slingshotPocketToBallDistance.z));
+            }
+            Line.SetPosition(2, RightSide.transform.position);
         }
         else
         {
-            Line.SetPosition(1, new Vector3(Ball.transform.position.x, Ball.transform.position.y, Ball.transform.position.z - 1f * slingshotPocketToBallDistance.z));
+            Line.SetPosition(0, LeftSide.transform.position);
+            Line.SetPosition(1, Hook.transform.position);
+            Line.SetPosition(2, RightSide.transform.position);
         }
-        Line.SetPosition(2, RightSide.transform.position);
     }
     /// <summary>
     /// SetTargetReachable sets the possibility to steer the ball towards or away from the target.

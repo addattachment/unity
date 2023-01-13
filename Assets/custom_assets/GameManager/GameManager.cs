@@ -7,20 +7,22 @@ using LSL;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    [SerializeField] private Slingshot slingshot;
-    [SerializeField] private GameObject slingshotHook;
+    //[SerializeField] private Slingshot slingshot;
+    //[SerializeField] private GameObject slingshotHook;
     [SerializeField] private GameObject target;
     //[SerializeField] private List<GameObject> targetList;
     [SerializeField] private GameObject[] targetList;
 
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
+    [SerializeField] Player activeParticipant;
     [SerializeField] private bool restartBool = false;
+    [SerializeField] private bool switchPlayer = false;
     private GameObject instBall;
 
     [Header("Trialsettings")]
     public GameObject slingshotBall;
-    
+
     public GameObject hitTarget;
     [Header("dataConnections")]
     [SerializeField] private OutletPassThrough lsl;
@@ -41,20 +43,30 @@ public class GameManager : MonoBehaviour
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
         InitTargets();
-        slingshot = GameObject.FindGameObjectWithTag("slingshot").GetComponent<Slingshot>();
-        slingshotHook = slingshot.getHook();
+
         //int level = SceneManager.GetActiveScene().buildIndex;
         //HighscoreText.text = GetHighscore(level).ToString();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
         StartNewTrial();
         SendSyncTime();
-
     }
 
+    private void Update()
+    {
+        if (restartBool)
+        {
+            RestartScene();
+        }
+        if (switchPlayer)
+        {
+            switchPlayer = false;
+            SwitchPlayer();
+        }
+    }
     private void SendSyncTime()
     {
-//TODO SendSyncTime blocks execution if no websocket available, set in different thread or just remove?
+        //TODO SendSyncTime blocks execution if no websocket available, set in different thread or just remove?
         //while (!ws.hasWsConnection) { }
         lsl.SendMarker(Marker.game_start);
         ws.SendWSMessage("message: game started");
@@ -86,14 +98,16 @@ public class GameManager : MonoBehaviour
     {
         player.amountOfBallsInTrial = 5;
         NPC.amountOfBallsInTrial = 5;
-        player.isActivePlayer = true;
-        NPC.isActivePlayer = false;
+        player.SetActive(true);
+        NPC.SetActive(false);
+        activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
         SetNewBall();
     }
 
     public void SetNewBall()
     {
-        Player activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
+        var slingshot = activeParticipant.slingshot;
+        var slingshotHook = slingshot.getHook();
         activeParticipant.amountOfBallsInTrial--;
         if (activeParticipant.amountOfBallsInTrial > 0)
         {
@@ -116,22 +130,18 @@ public class GameManager : MonoBehaviour
                 }
             }
             slingshot.Ball = instBall;
+            
         }
     }
 
     public void SwitchPlayer()
     {
         //temp adaptation while only 1 player
-        player.isActivePlayer = true;// !player.isActivePlayer;
-        NPC.isActivePlayer = false;//  !NPC.isActivePlayer;
+        player.SetActive(!player.isActivePlayer);// ;
+        NPC.SetActive(!NPC.isActivePlayer);//  ;
+        activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
     }
 
-    private void Update()
-    {
-        if (restartBool)
-        {
-            RestartScene();
-        }
-    }
+
 
 }
