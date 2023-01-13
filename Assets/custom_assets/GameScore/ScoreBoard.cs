@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ScoreBoard : MonoBehaviour
 {
-    [SerializeField] private TMP_Text name;
+    [SerializeField] private TMP_Text _name;
     [SerializeField] private TMP_Text score;
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
@@ -34,7 +34,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void SetNames()
     {
-        name.SetText(subject.name);
+        _name.SetText(subject.name);
     }
 
     public void UpdateScores()
