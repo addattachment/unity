@@ -40,16 +40,16 @@ namespace LSL
 
         void Start()
         {
-            StreamInfo streamInfo1 = new StreamInfo(StreamName_1, ContentType, 1, IRREGULAR_RATE,
+            StreamInfo streamInfo1 = new(StreamName_1, ContentType, 1, IRREGULAR_RATE,
                 channel_format_type, StreamId_1); //int8 should be more than enough for coding the differing signals
             outlet_1 = new StreamOutlet(streamInfo1);
-            StreamInfo streamInfo2 = new StreamInfo(StreamName_2, ContentType, 1, IRREGULAR_RATE,
+            StreamInfo streamInfo2 = new(StreamName_2, ContentType, 1, IRREGULAR_RATE,
                 channel_format_type, StreamId_2); //int8 should be more than enough for coding the differing signals
             outlet_2 = new StreamOutlet(streamInfo2);
         }
         public void SendMarker(Marker marker)
         {
-            Debug.Log(Time.time + (int)marker);
+            //Debug.Log(Time.time + (int)marker);
             //switch (marker)
             //{
             //    case Marker.ball_release:
@@ -79,7 +79,7 @@ namespace LSL
             {
                 outlet_2.push_sample(sample);
             }
-            Debug.Log("LSL stream: " + Time.time + " " + sample);
+            //Debug.Log("LSL stream: " + Time.time + " " + sample);
 
         }
     }

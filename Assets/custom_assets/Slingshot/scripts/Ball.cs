@@ -13,8 +13,6 @@ public class Ball : MonoBehaviour
     [SerializeField] private AudioSource SlingshotReleaseAudio;
     [SerializeField] private AudioSource BallFloorImpact;
     [SerializeField] private AudioSource BallDestructionNoHitSound;
-    //[SerializeField] private AudioSource BallCorrectHitAudio;
-    //[SerializeField] private AudioSource BallWrongHitAudio;
     [SerializeField] private AudioSource ball_flying_audio;
     [SerializeField] private AudioSource ball_burning_audio;
 
@@ -25,13 +23,14 @@ public class Ball : MonoBehaviour
 
     public bool didHitATarget = false;
     [Header("ball Steering")]
-    private float? _time_to_target = 1.0f;
+    private float _time_to_target = 1.0f;
     Vector3 _hitTargetPos;
     private GameObject target;
     [Header("score result")]
     [SerializeField] private GameScore gameScore;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private OutletPassThrough lsl;
+    [SerializeField] private TargetGroup targetGroup;
 
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
@@ -45,10 +44,8 @@ public class Ball : MonoBehaviour
     private bool cubePlaced = false;
 #endif
     [SerializeField] private DebugConnection debug_text;
-#if UNITY_EDITOR
     public Vector3 _fakeBallStartPoint = new Vector3(0, 0.4f, 0);
     public bool doFakeLaunch = false;
-#endif
 
     private void Start()
     {
@@ -60,7 +57,7 @@ public class Ball : MonoBehaviour
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
-
+        targetGroup = GameObject.FindGameObjectWithTag("target").GetComponentInChildren<TargetGroup>();
     }
 
 
@@ -79,7 +76,7 @@ public class Ball : MonoBehaviour
         PlaceDebugCube(_fakeBallStartPoint);
 #endif
 #else
-#if DEBUG
+#if DEBUGMODE
 PlaceDebugCube(Rb.position);
 #endif
 #endif
@@ -133,22 +130,16 @@ PlaceDebugCube(Rb.position);
             target.GetComponent<Targets>().readyForHit = false;
             if (th.activeTarget)
             {
-                Debug.Log("correct target touched!");
+                Debug.Log("correct target touched! at " + Time.time);
                 gameScore.AddToScore(1);
-                //BallCorrectHitAudio.Play();
-                DestroyThisBall();
             }
             else
             {
-                Debug.Log("wrong!");
-                //BallWrongHitAudio.Play();
+                Debug.Log("wrong! at " + Time.time);
                 gameScore.AddToScore(0);
-                DestroyThisBall();
             }
+            DestroyThisBall();
         }
-        
-
-
     }
 
     public void FakeLaunch()
@@ -159,16 +150,14 @@ PlaceDebugCube(Rb.position);
         //Send LSL data
         lsl.SendMarker(Marker.ball_release);
         //Calculate trajectory of ball
-        var _hitTarget = gameManager.hitTarget;
+        Rb.position = _fakeBallStartPoint + slingShot.transform.position;
+        _time_to_target = CalcFlyingTime(Rb, targetGroup.hitTarget.transform.position);
+        Debug.Log("target time to target would be " + _time_to_target); // CalcFlyingTime(Rb, target.transform.position));
 
-        _time_to_target = CalcFlyingTime(Rb, _hitTarget.transform.position);
-        float _time = (float)_time_to_target.Value;
-        Debug.Log("target time to target would be " + _time); // CalcFlyingTime(Rb, target.transform.position));
-
-        _hitTargetPos = _hitTarget.GetComponent<TargetPosRot>().GetFuturePositionOfTarget(_time);
-        Debug.Log("shoot at " + Time.time + " for " + _time + " seconds with mode: " + slingShot.reachTarget);
-        Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
-        Launch(_fakeBallStartPoint+slingShot.transform.position);
+        _hitTargetPos = targetGroup.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
+        Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
+        //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
+        Launch(_fakeBallStartPoint + slingShot.transform.position);
         StartCoroutine(Explode());
     }
     /// <summary>
@@ -204,10 +193,12 @@ PlaceDebugCube(Rb.position);
         lsl.SendMarker(Marker.ball_release);
         ball_flying_audio.Play();
         //_time_to_target = CalcFlyingTime(Rb, target.transform.position);
-        _time_to_target = CalcFlyingTime(Rb, gameManager.hitTarget.transform.position);
-        _hitTargetPos = GameManager.Instance.hitTarget
-           .GetComponent<TargetPosRot>()
-           .GetFuturePositionOfTarget((float)_time_to_target.Value);
+        _time_to_target = CalcFlyingTime(Rb, targetGroup.hitTarget.transform.position);
+        debug_text.SetDebugText("time to target: " + _time_to_target);
+        _hitTargetPos = targetGroup.hitTarget
+           .GetComponent<TargetPosUpdate>()
+           .GetFuturePositionOfTarget(_time_to_target);
+        debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
         Launch(Rb.position);
 #if DEBUGMODE
         Destroy(debugCubeInstance);
@@ -221,11 +212,11 @@ PlaceDebugCube(Rb.position);
     /// first makes sure a new ball is created and immediately destroys this one
     /// </summary>
     private void DestroyThisBall()
-    { 
-        GameManager.Instance.SwitchPlayer();
-        GameManager.Instance.SetNewBall();
+    {
+        gameManager.SwitchPlayer();
+        gameManager.PrepNewShootingTurn();
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
-        Destroy(gameObject);
+        Destroy(gameObject, 2.0f);
     }
     IEnumerator Explode()
     {
@@ -239,16 +230,20 @@ PlaceDebugCube(Rb.position);
 
 
     /// <summary>
-    /// function to calculate approximately how long the ball will take to hitSuccesGuid the target
-    /// returns null if we won't hitSuccesGuid the target, yet hitSuccesGuid the floor first
+    /// function to calculate approximately how long the ball will take to hit the target
+    /// should return null if we won't hit the target, or hit the floor first
     /// </summary>
-    /// <param name="targetDistance"> distance of the target we want to hit</param>
-    /// <param name="debugOn"> it's only useful </param>
+    /// <param name="Rb"> Rigidbody of the ball TODO not necessary?</param>
+    /// <param name="targetDistance">distance of the target we want to hit </param>
     /// <returns></returns>
-    private float? CalcFlyingTime(Rigidbody Rb, Vector3 targetDistance)
+    private float CalcFlyingTime(Rigidbody Rb, Vector3 targetDistance)
     {
-        float approx_time_to_target = slingShot.CalcImpactTime(Rb, targetDistance);
-        return approx_time_to_target;
+        var _distance = targetDistance - Rb.position;
+        var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
+        var _launchForce = _direction * slingShot.launchForceMultiplier;
+        var launchVel = _launchForce / Rb.mass;
+        float time = _distance.magnitude / launchVel.magnitude ;
+        return time;
     }
 
 #if DEBUGMODE

@@ -120,7 +120,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.25
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -314,9 +314,11 @@ MonoBehaviour:
   gameScore: {fileID: 0}
   gameManager: {fileID: 0}
   lsl: {fileID: 0}
+  targetGroup: {fileID: 0}
   backgroundSound: {fileID: 0}
   debugCube: {fileID: 8773603073383532084, guid: 1cc44c649dcfd7d4d9ea589234eb32f2, type: 3}
   debug_text: {fileID: 0}
+  _fakeBallStartPoint: {x: 0, y: 0.4, z: 0}
   doFakeLaunch: 0
 --- !u!96 &2715402290459226524
 TrailRenderer:
@@ -360,7 +362,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 1
+  m_Time: 4
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1

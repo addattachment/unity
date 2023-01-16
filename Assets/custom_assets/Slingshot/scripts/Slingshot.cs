@@ -15,7 +15,7 @@ public class Slingshot : MonoBehaviour
     private LineRenderer Line;
 
     [Header("Shooting parameters")]
-    [SerializeField, Range(0.0f, 50.0f)] private float launchForceMultiplier = 20.0f;
+    [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
     [Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2 }
     [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
@@ -28,15 +28,13 @@ public class Slingshot : MonoBehaviour
         Line = GetComponent<LineRenderer>();
         Line.positionCount = 3;
         slingshotPocketToBallDistance = Ball.transform.localScale;
-        reachTarget = ReachTargetEnum.may;
+        reachTarget = ReachTargetEnum.must; //TODO put back to may
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
     }
 
     void Update()
-    {
-        
+    {        
             DrawSlingshotLines();
-        
     }
 
 
@@ -74,12 +72,12 @@ public class Slingshot : MonoBehaviour
     {
         reachTarget = (ReachTargetEnum)reachEnumInt;
     }
-    public GameObject getHook()
+    public GameObject GetHook()
     {
         return Hook;
     }
 
-    public Transform getHookTransform()
+    public Transform GetHookTransform()
     {
         return Hook.transform;
     }
@@ -129,7 +127,7 @@ public class Slingshot : MonoBehaviour
                     var _y_displ_dir = _launchForce.y >= _mustReachForce.y ? 1 : -1;
                     var _min_y_displ = Mathf.Sqrt(Mathf.Pow(minDeflectionDist, 2) - Mathf.Pow(Mathf.Abs(_launchForce.x - _mustReachForce.x), 2));
                     var _move_y = Random.Range(_min_y_displ, _min_y_displ + 0.4f) * _y_displ_dir;
-                    Vector3 deflectionVector = new Vector3(0, _move_y);
+                    Vector3 deflectionVector = new(0, _move_y);
                     _launchForce += deflectionVector;
                 }
                 return _launchForce;
@@ -142,21 +140,21 @@ public class Slingshot : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// THIS IS AN APPROXIMATION OF HOW LONG THE OBJECT WOULD TRAVERSE TO TARGET
-    /// </summary>
-    /// <param name="Rb"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
-    public float CalcImpactTime(Rigidbody Rb, Vector3 target)
-    {
-        var _distance = target - Rb.position;
-        var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
-        var _launchForce = _direction * launchForceMultiplier;
-        var launchVel = _launchForce / Rb.mass;
-        float time = launchVel.z / _distance.z;
-        return time;
-    }
+    ///// <summary>
+    ///// THIS IS AN APPROXIMATION OF HOW LONG THE OBJECT WOULD TRAVERSE TO TARGET
+    ///// </summary>
+    ///// <param name="Rb"></param>
+    ///// <param name="target"></param>
+    ///// <returns></returns>
+    //public float CalcImpactTime(Rigidbody Rb, Vector3 target)
+    //{
+    //    var _distance = target - Rb.position;
+    //    var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
+    //    var _launchForce = _direction * launchForceMultiplier;
+    //    var launchVel = _launchForce / Rb.mass;
+    //    float time = launchVel.z / _distance.z;
+    //    return time;
+    //}
 
 
 }

@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
     //[SerializeField] private GameObject slingshotHook;
     [SerializeField] private GameObject target;
     //[SerializeField] private List<GameObject> targetList;
-    [SerializeField] private GameObject[] targetList;
-
+    //[SerializeField] private GameObject[] targetList;
+    [SerializeField] private TargetGroup targetGroup;
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
     [SerializeField] Player activeParticipant;
@@ -23,7 +23,6 @@ public class GameManager : MonoBehaviour
     [Header("Trialsettings")]
     public GameObject slingshotBall;
 
-    public GameObject hitTarget;
     [Header("dataConnections")]
     [SerializeField] private OutletPassThrough lsl;
     [SerializeField] private WsClient ws;
@@ -42,8 +41,7 @@ public class GameManager : MonoBehaviour
     {
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
-        InitTargets();
-
+        targetGroup = FindObjectOfType<TargetGroup>();
         //int level = SceneManager.GetActiveScene().buildIndex;
         //HighscoreText.text = GetHighscore(level).ToString();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -72,14 +70,9 @@ public class GameManager : MonoBehaviour
         ws.SendWSMessage("message: game started");
     }
 
-    private void InitTargets()
-    {
-        targetList = GameObject.FindGameObjectsWithTag("subTarget");
-        //foreach (Transform x in target.transform)
-        //{
-        //    targetList.Add(x.gameObject);
-        //}
-    }
+
+
+
     public void SwitchScene(string sceneToLoad)
     {
         //string[] sceneList = {"BaseRotscene", "BasePolescene"};
@@ -101,36 +94,27 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
         NPC.SetActive(false);
         activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
-        SetNewBall();
+        targetGroup.UpdateDirections();
+        PrepNewShootingTurn();
     }
 
-    public void SetNewBall()
+    public void PrepNewShootingTurn()
     {
         var slingshot = activeParticipant.slingshot;
-        var slingshotHook = slingshot.getHook();
+        var slingshotHook = slingshot.GetHook();
         activeParticipant.amountOfBallsInTrial--;
         if (activeParticipant.amountOfBallsInTrial > 0)
         {
             // Make sure we can detect collisions by the new bullet (only once!)
             target.GetComponent<Targets>().readyForHit = true;
-            // Instantiate the new bullet
+            // Set the new target
+            targetGroup.SetNewHitTarget();
+
+            // Instantiate the new bullet and it's colors
             instBall = Instantiate(slingshotBall, slingshotHook.transform.position, Quaternion.identity, slingshot.transform);
-            if (targetList.Length > 0)
-            {
-                hitTarget = targetList[Random.Range(0, targetList.Length)];
-                instBall.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;
-                instBall.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
-                foreach (GameObject target in targetList)
-                {
-                    if (target == hitTarget)
-                    {
-                        target.GetComponent<TargetHit>().SetActiveTarget(true);
-                    }
-                    else target.GetComponent<TargetHit>().SetActiveTarget(false);
-                }
-            }
+            instBall.GetComponent<Renderer>().material = targetGroup.hitTarget.GetComponent<Renderer>().material;
+            instBall.GetComponent<TrailRenderer>().material.color = targetGroup.hitTarget.GetComponent<Renderer>().material.color;
             slingshot.Ball = instBall;
-            
         }
     }
 
@@ -141,7 +125,4 @@ public class GameManager : MonoBehaviour
         NPC.SetActive(!NPC.isActivePlayer);//  ;
         activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
     }
-
-
-
 }

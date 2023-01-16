@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: reachTarget
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2248467486586270875, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: launchForceMultiplier
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2248467486586270877, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
       propertyPath: m_RootOrder
       value: 1

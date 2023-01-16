@@ -24,6 +24,9 @@ public class ScoreBoard : MonoBehaviour
         {
             subject = NPC;
         }
+
+        // TODO as long as we don't send the names:
+        SetNames();
     }
 
     // Update is called once per frame
@@ -34,7 +37,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void SetNames()
     {
-        _name.SetText(subject.name);
+        _name.SetText(subject.playerName);
     }
 
     public void UpdateScores()
