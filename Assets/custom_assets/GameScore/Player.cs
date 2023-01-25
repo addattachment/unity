@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum Gender { Male, Female, X };
+public enum Contingency { c_20, c_80 };
 public class Player : MonoBehaviour
 {
-    public enum Gender { Male, Female, X };
 
     //Set once in game
     public string playerName = "";
@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     public int height = 0;
     public bool isRealPlayer = false;
     public bool isActivePlayer = false;
-
+    public Contingency contingency = Contingency.c_20;
     //Set multiple times in game
     public int score = 0;
     public int amountOfBallsInTrial = 0;

@@ -2,6 +2,7 @@ using Assets.Scripts;
 using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
+[Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2, mayNPC = 3 }
 
 [RequireComponent(typeof(LineRenderer))]
 public class Slingshot : MonoBehaviour
@@ -17,7 +18,6 @@ public class Slingshot : MonoBehaviour
     [Header("Shooting parameters")]
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
-    [Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2 }
     [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
@@ -28,13 +28,13 @@ public class Slingshot : MonoBehaviour
         Line = GetComponent<LineRenderer>();
         Line.positionCount = 3;
         slingshotPocketToBallDistance = Ball.transform.localScale;
-        reachTarget = ReachTargetEnum.must; //TODO put back to may
+        reachTarget = ReachTargetEnum.may;
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
     }
 
     void Update()
-    {        
-            DrawSlingshotLines();
+    {
+        DrawSlingshotLines();
     }
 
 
@@ -63,14 +63,16 @@ public class Slingshot : MonoBehaviour
             Line.SetPosition(2, RightSide.transform.position);
         }
     }
+
+
     /// <summary>
     /// SetTargetReachable sets the possibility to steer the ball towards or away from the target.
     /// This can be used in the gamemanager to set the trial option, or with debug buttons switching the state
     /// </summary>
     /// <param name="reachEnumInt">int interpretation of the enum</param>
-    public void SetTargetReachable(int reachEnumInt)
+    public void SetTargetReachable(ReachTargetEnum reachEnum)
     {
-        reachTarget = (ReachTargetEnum)reachEnumInt;
+        reachTarget = reachEnum;
     }
     public GameObject GetHook()
     {
@@ -131,7 +133,16 @@ public class Slingshot : MonoBehaviour
                     _launchForce += deflectionVector;
                 }
                 return _launchForce;
+            case ReachTargetEnum.mayNPC:
+                _direction = hitTargetLoc - _ballPos;
+                _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
+                _direction.x += Random.Range(0.0f, 0.2f);
+                _direction.y += Random.Range(0.0f, 0.2f);
 
+                _launchForce = _direction * launchForceMultiplier;
+                //compensate for gravity TODO seems correct, BUT WHY??
+                _launchForce -= (Physics.gravity * 0.25f);
+                return _launchForce;
             default:
                 _direction = (_hookPos - _ballPos);
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hook
@@ -139,6 +150,8 @@ public class Slingshot : MonoBehaviour
                 return _launchForce;
         }
     }
+
+
 
     ///// <summary>
     ///// THIS IS AN APPROXIMATION OF HOW LONG THE OBJECT WOULD TRAVERSE TO TARGET

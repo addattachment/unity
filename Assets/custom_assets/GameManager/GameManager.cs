@@ -3,25 +3,32 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 using LSL;
+using TrialNS;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    //[SerializeField] private Slingshot slingshot;
-    //[SerializeField] private GameObject slingshotHook;
+
     [SerializeField] private GameObject target;
-    //[SerializeField] private List<GameObject> targetList;
-    //[SerializeField] private GameObject[] targetList;
     [SerializeField] private TargetGroup targetGroup;
+    public bool gameDidStart = false;
+
+    [Header("player settings")]
     [SerializeField] private Player player;
     [SerializeField] private Player NPC;
     [SerializeField] Player activeParticipant;
+    public bool playerSettingsAreSet = false;
+
+    [Header("development settings")]
     [SerializeField] private bool restartBool = false;
     [SerializeField] private bool switchPlayer = false;
     private GameObject instBall;
 
     [Header("Trialsettings")]
     public GameObject slingshotBall;
+    [SerializeField] private int ballsPerGame = 5;
+    public bool trialListGenerated = false;
+    [SerializeField] TrialList trialList;
 
     [Header("dataConnections")]
     [SerializeField] private OutletPassThrough lsl;
@@ -46,12 +53,18 @@ public class GameManager : MonoBehaviour
         //HighscoreText.text = GetHighscore(level).ToString();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
-        StartNewTrial();
-        SendSyncTime();
+
+
     }
 
     private void Update()
     {
+        if ((gameDidStart == false) && (trialListGenerated == true))
+        {
+            gameDidStart = true;
+            StartNewTrial();
+            SendSyncTime();
+        }
         if (restartBool)
         {
             RestartScene();
@@ -89,8 +102,8 @@ public class GameManager : MonoBehaviour
     }
     public void StartNewTrial()
     {
-        player.amountOfBallsInTrial = 5;
-        NPC.amountOfBallsInTrial = 5;
+        player.amountOfBallsInTrial = ballsPerGame;
+        NPC.amountOfBallsInTrial = ballsPerGame;
         player.SetActive(true);
         NPC.SetActive(false);
         activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
@@ -102,8 +115,12 @@ public class GameManager : MonoBehaviour
     {
         var slingshot = activeParticipant.slingshot;
         var slingshotHook = slingshot.GetHook();
+        //float chanceForMustReachtarget = 0.5f; // we'll vary this value
+
+        SetPlayerScoringChance(slingshot);
+
         activeParticipant.amountOfBallsInTrial--;
-        if (activeParticipant.amountOfBallsInTrial > 0)
+        if (activeParticipant.amountOfBallsInTrial >= 0)
         {
             // Make sure we can detect collisions by the new bullet (only once!)
             target.GetComponent<Targets>().readyForHit = true;
@@ -118,6 +135,80 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// sets the ReachtargetEnum of the active slingshot
+    /// we use a random float to have variation within a trial
+    /// </summary>
+    /// <param name="slingshot"></param>
+    private void SetPlayerScoringChance(Slingshot slingshot)
+    {
+        float guess = Random.Range(0.0f, 1.0f);
+        Trial currentTrial = trialList.GetCurrentTrial();
+
+        if (currentTrial.IsGoodTrial() == true)
+        {
+            // NPC has 50% chance of scoring
+            // Player has 20% of balls which are steered towards target
+
+            if (activeParticipant.isRealPlayer)
+            {
+                // have a chance that the ball must hit the target
+                // equal chance must vs may?
+                if (guess >= 0.8f)
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                }
+                else
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.may);
+                }
+            }
+            else
+            {
+                // equal or less chance of scoring than human player??
+                // equal chance must vs mustn
+                if (guess >= 0.5f)
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                }
+                else
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.mayNPC);
+                }
+            }
+        }
+        else
+        {
+            // NPC 60% chance of scoring
+            // player max random[20-50%] chance of scoring
+            if (player.isRealPlayer)
+            {
+                // have a low chance that the ball must hit the target 
+                // most of the time it should be musn't, sometimes may
+                if (guess >= Random.Range(0.2f, 0.5f))
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.may);
+                }
+                else
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.musnt);
+                }
+            }
+            else
+            {
+                // equal or less chance of scoring than human player??
+                // most of the time should be must, sometimes may
+                if (guess >= 0.4f)
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                }
+                else
+                {
+                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.mayNPC);
+                }
+            }
+        }
+    }
     public void SwitchPlayer()
     {
         //temp adaptation while only 1 player

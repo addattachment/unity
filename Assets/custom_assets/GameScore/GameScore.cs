@@ -34,7 +34,10 @@ public class GameScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if ((gameManager.gameDidStart == false) && (gameManager.trialListGenerated == true))
+        {
+            scoreboard.UpdateNames();
+        }
     }
 
     /// <summary>
