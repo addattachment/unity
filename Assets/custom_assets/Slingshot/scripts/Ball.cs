@@ -37,6 +37,7 @@ public class Ball : MonoBehaviour
 
     // DEBUGGING
     public GameObject debugCube;
+    private string _name;
 
 #if DEBUGMODE
     public GameObject debugCube;
@@ -58,6 +59,7 @@ public class Ball : MonoBehaviour
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
         targetGroup = GameObject.FindGameObjectWithTag("target").GetComponentInChildren<TargetGroup>();
+        _name = "" + Time.time;
     }
 
 
@@ -85,40 +87,81 @@ PlaceDebugCube(Rb.position);
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered " + other.name + " at " + Time.time);
-        if (!didHitATarget)
+        if (didHitATarget == false)
         {
+            Debug.Log("triggered " + other.name + " at " + Time.time);
+            // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
+            GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
+            temp.GetComponent<BoxCollider>().enabled = false;
+            temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            //Destroy(temp, 2.0f);
+            temp.transform.position = targetGroup.hitTarget.transform.position;
+            temp.name = "ShouldHitlocation" + _name;
+
             if (other.CompareTag("Ground"))
             {
+                didHitATarget = true;
+
                 // we didn't hit any target, so this equals hitting the wrong target
                 gameScore.AddToScore(0);
+                DestroyThisBall();
             }
             if (other.CompareTag("subTarget"))
             {
-                var th = other.GetComponent<TargetHit>();
-                CalcImpact(th);
                 didHitATarget = true;
+
+                var th = other.GetComponent<TargetHit>();
+                if (th == null)
+                {
+                    // if we hit the cylinder INSIDE the target, we also want to check if it's the active target
+                    th = other.GetComponentInParent<TargetHit>();
+                }
+                
+
+                CalcImpact(th);
+            }
+            if (other.CompareTag("missTargets"))
+            {
+                didHitATarget = true;
+
+                
+                DestroyThisBall();
             }
         }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-
-        GetComponent<TrailRenderer>().enabled = false;
-        if (collision.collider.CompareTag("Ground") && !didHitATarget)
+        if (didHitATarget == false)
         {
-            if (!BallFloorImpact.isPlaying)
-            {
-                BallFloorImpact.Play();
-            }
+            Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
+            // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
+            GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
+            temp.GetComponent<BoxCollider>().enabled = false;
+            temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
+            temp.transform.position = targetGroup.hitTarget.transform.position;
+            temp.name = "ShouldHitlocation" + _name;
         }
-        if (collision.collider.CompareTag("subTarget"))
-        {
-            var th = collision.collider.GetComponent<TargetHit>();
-            CalcImpact(th);
-            didHitATarget = true;
-        }
+        //GetComponent<TrailRenderer>().enabled = false;
+        //if (collision.collider.CompareTag("Ground") && !didHitATarget)
+        //{
+        //    if (!BallFloorImpact.isPlaying)
+        //    {
+        //        BallFloorImpact.Play();
+        //    }
+        //}
+        //if (collision.collider.CompareTag("subTarget"))
+        //{
+        //    var th = collision.collider.GetComponent<TargetHit>();
+        //    if (th == null)
+        //    {
+        //        // if we hit the cylinder INSIDE the target, we also want to check if it's the active target
+        //        th = collision.collider.GetComponentInParent<TargetHit>();
+        //    }
+        //    CalcImpact(th);
+        //    didHitATarget = true;
+        //}
 
     }
 
@@ -152,8 +195,6 @@ PlaceDebugCube(Rb.position);
         //Calculate trajectory of ball
         Rb.position = _fakeBallStartPoint + slingShot.transform.position;
         _time_to_target = CalcFlyingTime(Rb, targetGroup.hitTarget.transform.position);
-        Debug.Log("target time to target would be " + _time_to_target); // CalcFlyingTime(Rb, target.transform.position));
-
         _hitTargetPos = targetGroup.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
@@ -166,7 +207,7 @@ PlaceDebugCube(Rb.position);
     /// <param name="origin"> from where do we shoot the ball, normally it's position, yet for debugging we can choose</param>
     private void Launch(Vector3 origin)
     {
-        Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
+        //Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
         var launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
         Rb.AddForce(launchForce, ForceMode.Impulse);
 
@@ -216,7 +257,7 @@ PlaceDebugCube(Rb.position);
         gameManager.SwitchPlayer();
         gameManager.PrepNewShootingTurn();
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
-        Destroy(gameObject, 2.0f);
+        Destroy(gameObject, 1.0f);
     }
     IEnumerator Explode()
     {
@@ -242,7 +283,7 @@ PlaceDebugCube(Rb.position);
         var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
         var _launchForce = _direction * slingShot.launchForceMultiplier;
         var launchVel = _launchForce / Rb.mass;
-        float time = _distance.magnitude / launchVel.magnitude ;
+        float time = _distance.magnitude / launchVel.magnitude;
         return time;
     }
 
