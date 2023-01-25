@@ -20,7 +20,7 @@ public class TargetGroup : MonoBehaviour
         UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
         // we can randomize the direction of the rings
         rotationVector = ((float)Random.Range(0, 2) * 2 - 1) * rotationVector;
-        targetList = GameObject.FindGameObjectsWithTag("subTarget");
+        //targetList = GameObject.FindGameObjectsWithTag("subTarget");
         hitTarget = targetList[0]; // random starting point
     }
 
@@ -56,7 +56,7 @@ public class TargetGroup : MonoBehaviour
         foreach (GameObject target in targetList)
         {
             //give each target a new speed to move
-            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 0.15f); //todo
+            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 0.1f); //todo
             //give each target a new direction to start moving
             target.GetComponent<TargetTranslate>().direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? TargetTranslate.EnumDirection.forward : TargetTranslate.EnumDirection.backward;
         }
