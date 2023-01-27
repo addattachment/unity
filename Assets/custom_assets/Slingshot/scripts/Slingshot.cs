@@ -76,6 +76,11 @@ public class Slingshot : MonoBehaviour
     {
         reachTarget = reachEnum;
     }
+
+    public void SetTargetReachableInt(int reachEnumInt)
+    {
+        reachTarget = (ReachTargetEnum)reachEnumInt;
+    }
     public GameObject GetHook()
     {
         return Hook;

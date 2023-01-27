@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using System.Collections;
 using System.Collections.Generic;
 using TrialNS;
@@ -11,11 +12,14 @@ public class PlayerGroup : MonoBehaviour
     public Player activeParticipant;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private bool switchPlayer = false;
+    [SerializeField] private DebugConnection debug_text;
 
     void Start()
     {
         //gameManager = GameManager.Instance;
         ResetPlayers();
+        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
+
     }
 
     // Update is called once per frame
@@ -85,7 +89,7 @@ public class PlayerGroup : MonoBehaviour
     {
         float guess = Random.Range(0.0f, 1.0f);
         //Trial currentTrial = trialList.GetCurrentTrial();
-
+        ReachTargetEnum reachChance;
         if (currentTrial.IsGoodTrial() == true)
         {
             // NPC has 50% chance of scoring
@@ -97,12 +101,14 @@ public class PlayerGroup : MonoBehaviour
                 // equal chance must vs may?
                 if (guess >= 0.8f)
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                    reachChance = ReachTargetEnum.must;
                 }
                 else
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.may);
+                    reachChance = ReachTargetEnum.may;
                 }
+                debug_text.SetToggleReach(reachChance, activeParticipant);
+
             }
             else
             {
@@ -110,11 +116,11 @@ public class PlayerGroup : MonoBehaviour
                 // equal chance must vs mustn
                 if (guess >= 0.5f)
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                    reachChance = ReachTargetEnum.must;
                 }
                 else
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.mayNPC);
+                    reachChance = ReachTargetEnum.mayNPC;
                 }
             }
         }
@@ -128,12 +134,13 @@ public class PlayerGroup : MonoBehaviour
                 // most of the time it should be musn't, sometimes may
                 if (guess >= Random.Range(0.2f, 0.5f))
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.may);
+                    reachChance = ReachTargetEnum.may;
                 }
                 else
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.musnt);
+                    reachChance = ReachTargetEnum.musnt;
                 }
+                debug_text.SetToggleReach(reachChance, activeParticipant);
             }
             else
             {
@@ -141,13 +148,14 @@ public class PlayerGroup : MonoBehaviour
                 // most of the time should be must, sometimes may
                 if (guess >= 0.4f)
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.must);
+                    reachChance = ReachTargetEnum.must;
                 }
                 else
                 {
-                    slingshot.SetTargetReachable(reachEnum: ReachTargetEnum.mayNPC);
+                    reachChance = ReachTargetEnum.mayNPC;
                 }
             }
         }
+        slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

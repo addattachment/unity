@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8dfb5d5e7835a4e8b3c33b278f8e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 1581272121843294191}
+  _name: {fileID: 1581272121843294191}
   score: {fileID: 1581272122030684232}
   player: {fileID: 0}
   NPC: {fileID: 0}
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b8dfb5d5e7835a4e8b3c33b278f8e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: {fileID: 1581272120468461406}
+  _name: {fileID: 1581272120468461406}
   score: {fileID: 1581272120550022957}
   player: {fileID: 0}
   NPC: {fileID: 0}
