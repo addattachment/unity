@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TrialNS;
 using UnityEngine;
 public enum Gender { Male, Female, X };
 public enum Contingency { c_20, c_80 };
@@ -31,8 +32,9 @@ public class Player : MonoBehaviour
     {
         float wait_time = Random.Range(1.0f, 3.0f);
         yield return new WaitForSeconds(wait_time);
-        var ballScript = slingshot.Ball.GetComponent<Ball>();
+        var ballScript = slingshot.InstBall.GetComponent<Ball>();
         ballScript.FakeLaunch();
     }
+ 
 }
 

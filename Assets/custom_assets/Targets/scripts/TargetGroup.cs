@@ -13,6 +13,7 @@ public class TargetGroup : MonoBehaviour
 
     public GameObject[] targetList;
     public GameObject hitTarget;
+    public bool readyForHit = false;
 
 
     private void Start()
@@ -37,7 +38,7 @@ public class TargetGroup : MonoBehaviour
             GameObject NewHitTarget = targetList[Random.Range(0, targetList.Length)];
             foreach (GameObject target in targetList)
             {
-                //choose the new target
+                //choose the new targets
                 if (target == NewHitTarget)
                 {
                     target.GetComponent<TargetHit>().SetActiveTarget(true);
@@ -55,9 +56,9 @@ public class TargetGroup : MonoBehaviour
     {
         foreach (GameObject target in targetList)
         {
-            //give each target a new speed to move
+            //give each targets a new speed to move
             target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 0.1f); //todo
-            //give each target a new direction to start moving
+            //give each targets a new direction to start moving
             target.GetComponent<TargetTranslate>().direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? TargetTranslate.EnumDirection.forward : TargetTranslate.EnumDirection.backward;
         }
     }

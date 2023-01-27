@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 /// <summary>
-/// a class giving area's in which we'd hit the target
+/// a class giving area's in which we'd hit the targets
 /// </summary>
 public class TargetMouthArea : MonoBehaviour
 {

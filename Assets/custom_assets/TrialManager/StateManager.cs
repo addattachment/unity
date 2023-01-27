@@ -8,26 +8,43 @@ namespace TrialNS
     public class StateManager : MonoBehaviour
     {
         public StateMachine currentState;
-        public PreTrialState preTrialState = new PreTrialState();
-        public TrialState trialState = new TrialState();
-        public PostTrialState postTrialState = new PostTrialState();
+        public PreTrialState preTrialState = new();
+        public TrialState trialState = new();
+        public PostTrialState postTrialState = new();
+        public IntroState introState = new();
+        //TODO we need some more states probably: 
+        // an intro state
+        // a prepplayer state (generate triallist, set names etc)
 
         public bool startTrial = false;
         public bool endTrial = false;
         public bool restart = false;
-        // trialName is for debugging purposes
-        public string trialName = "PreTrial";
+        public bool ballIsShot = false;
+        // trialPhase is for debugging purposes
+        public string trialPhase = "IntroState";
 
+        //public Player player;
+        //public Player NPC;
+        public PlayerGroup players;
+
+        public TargetGroup targets;
+
+        public TrialList trialList;
+
+        public GameObject caregiverFeedbackScreen; 
+
+        public GameManager gameManager;
 
         // Start is called before the first frame update
         void Start()
         {
           
             // starting state for our state machine
-            currentState = preTrialState;
-            trialName = "PreTrial";
+            currentState = introState;
+            trialPhase = "IntroState";
             // "this" is a reference to the context (this EXACT Monobehavior script)
             currentState.EnterState(this);
+            gameManager = GameManager.Instance;
         }
 
         // Update is called once per frame

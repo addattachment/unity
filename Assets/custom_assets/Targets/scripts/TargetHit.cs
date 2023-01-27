@@ -2,7 +2,7 @@ using UnityEngine;
 using LSL;
 public class TargetHit : MonoBehaviour
 {
-    public bool activeTarget = false; // if activeTarget is true, this is the target to hitSuccesGuid
+    public bool activeTarget = false; // if activeTarget is true, this is the targets to hitSuccesGuid
 
 
     private void Start()

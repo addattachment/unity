@@ -2,7 +2,7 @@ using Assets.Scripts;
 using LSL;
 using System.Collections;
 using UnityEngine;
-
+using TrialNS;
 public class Ball : MonoBehaviour
 {
     private Rigidbody Rb;
@@ -25,12 +25,12 @@ public class Ball : MonoBehaviour
     [Header("ball Steering")]
     private float _time_to_target = 1.0f;
     Vector3 _hitTargetPos;
-    private GameObject target;
+    private TargetGroup targets;
     [Header("score result")]
     [SerializeField] private GameScore gameScore;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private OutletPassThrough lsl;
-    [SerializeField] private TargetGroup targetGroup;
+    [SerializeField] private StateManager stateMgr;
 
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
@@ -52,13 +52,17 @@ public class Ball : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         Rb = GetComponent<Rigidbody>();
-        target = GameObject.FindGameObjectWithTag("target"); // todo write tests for finding all gameobjects
+        targets = GameObject.FindGameObjectWithTag("target")
+                            .GetComponent<TargetGroup>(); // todo write tests for finding all gameobjects
         slingShot = this.GetComponentInParent<Slingshot>();
-        gameScore = GameObject.FindGameObjectWithTag("gameScore").GetComponent<GameScore>();
-        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
-        lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
+        gameScore = GameObject.FindGameObjectWithTag("gameScore")
+                              .GetComponent<GameScore>();
+        debug_text = GameObject.FindGameObjectWithTag("debug")
+                               .GetComponentInChildren<DebugConnection>();
+        lsl = GameObject.FindGameObjectWithTag("lsl")
+                        .GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
-        targetGroup = GameObject.FindGameObjectWithTag("target").GetComponentInChildren<TargetGroup>();
+        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<StateManager>();
         _name = "" + Time.time;
     }
 
@@ -96,14 +100,14 @@ PlaceDebugCube(Rb.position);
             temp.GetComponent<BoxCollider>().enabled = false;
             temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             //Destroy(temp, 2.0f);
-            temp.transform.position = targetGroup.hitTarget.transform.position;
+            temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
 
             if (other.CompareTag("Ground"))
             {
                 didHitATarget = true;
 
-                // we didn't hit any target, so this equals hitting the wrong target
+                // we didn't hit any targets, so this equals hitting the wrong targets
                 gameScore.AddToScore(0);
                 DestroyThisBall();
             }
@@ -114,7 +118,7 @@ PlaceDebugCube(Rb.position);
                 var th = other.GetComponent<TargetHit>();
                 if (th == null)
                 {
-                    // if we hit the cylinder INSIDE the target, we also want to check if it's the active target
+                    // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
                     th = other.GetComponentInParent<TargetHit>();
                 }
                 
@@ -140,7 +144,7 @@ PlaceDebugCube(Rb.position);
             temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
             temp.GetComponent<BoxCollider>().enabled = false;
             temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            temp.transform.position = targetGroup.hitTarget.transform.position;
+            temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
         }
         //GetComponent<TrailRenderer>().enabled = false;
@@ -156,7 +160,7 @@ PlaceDebugCube(Rb.position);
         //    var th = collision.collider.GetComponent<TargetHit>();
         //    if (th == null)
         //    {
-        //        // if we hit the cylinder INSIDE the target, we also want to check if it's the active target
+        //        // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
         //        th = collision.collider.GetComponentInParent<TargetHit>();
         //    }
         //    CalcImpact(th);
@@ -168,12 +172,12 @@ PlaceDebugCube(Rb.position);
 
     private void CalcImpact(TargetHit th)
     {
-        if (target.GetComponent<Targets>().readyForHit == true)
+        if (targets.readyForHit == true)
         {
-            target.GetComponent<Targets>().readyForHit = false;
+            targets.readyForHit = false;
             if (th.activeTarget)
             {
-                Debug.Log("correct target touched! at " + Time.time);
+                Debug.Log("correct targets touched! at " + Time.time);
                 gameScore.AddToScore(1);
             }
             else
@@ -194,8 +198,8 @@ PlaceDebugCube(Rb.position);
         lsl.SendMarker(Marker.ball_release);
         //Calculate trajectory of ball
         Rb.position = _fakeBallStartPoint + slingShot.transform.position;
-        _time_to_target = CalcFlyingTime(Rb, targetGroup.hitTarget.transform.position);
-        _hitTargetPos = targetGroup.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
+        _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
+        _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
         Launch(_fakeBallStartPoint + slingShot.transform.position);
@@ -233,10 +237,10 @@ PlaceDebugCube(Rb.position);
         // notify the backend that we did release the ball
         lsl.SendMarker(Marker.ball_release);
         ball_flying_audio.Play();
-        //_time_to_target = CalcFlyingTime(Rb, target.transform.position);
-        _time_to_target = CalcFlyingTime(Rb, targetGroup.hitTarget.transform.position);
-        debug_text.SetDebugText("time to target: " + _time_to_target);
-        _hitTargetPos = targetGroup.hitTarget
+        //_time_to_target = CalcFlyingTime(Rb, targets.transform.position);
+        _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
+        debug_text.SetDebugText("time to targets: " + _time_to_target);
+        _hitTargetPos = targets.hitTarget
            .GetComponent<TargetPosUpdate>()
            .GetFuturePositionOfTarget(_time_to_target);
         debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
@@ -254,8 +258,8 @@ PlaceDebugCube(Rb.position);
     /// </summary>
     private void DestroyThisBall()
     {
-        gameManager.SwitchPlayer();
-        gameManager.PrepNewShootingTurn();
+        stateMgr.ballIsShot = true;
+
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
         Destroy(gameObject, 1.0f);
     }
@@ -271,13 +275,13 @@ PlaceDebugCube(Rb.position);
 
 
     /// <summary>
-    /// function to calculate approximately how long the ball will take to hit the target
-    /// should return null if we won't hit the target, or hit the floor first
+    /// function to calculate approximately how long the ball will take to hit the targets
+    /// should return null if we won't hit the targets, or hit the floor first
     /// </summary>
     /// <param name="Rb"> Rigidbody of the ball TODO not necessary?</param>
-    /// <param name="targetDistance">distance of the target we want to hit </param>
+    /// <param name="targetDistance">distance of the targets we want to hit </param>
     /// <returns></returns>
-    private float CalcFlyingTime(Rigidbody Rb, Vector3 targetDistance)
+    private float CalcFlyingTime(Vector3 targetDistance)
     {
         var _distance = targetDistance - Rb.position;
         var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget

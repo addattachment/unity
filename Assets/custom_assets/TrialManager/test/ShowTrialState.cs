@@ -30,7 +30,7 @@ public class ShowTrialState : MonoBehaviour
         var currentTrial = trialList.GetCurrentTrial();
         string _updatedText =
             "state: " +
-            stateManager.trialName.ToString() +
+            stateManager.trialPhase.ToString() +
             "\r\n" +
             currentTrial.GetTrialNumber().ToString() +
             "\r\n good trial? " +
@@ -43,14 +43,14 @@ public class ShowTrialState : MonoBehaviour
     // Update is called once per frame
     // void Update()
     // {
-    //     _text.text = stateManager.trialName;
+    //     _text.text = stateManager.trialPhase;
     // }
     public void UpdateText()
     {
         var currentTrial = trialList.GetCurrentTrial();
         string _updatedText =
             "state: " +
-            stateManager.trialName.ToString() +
+            stateManager.trialPhase.ToString() +
             "\r\n" +
             currentTrial.GetTrialNumber().ToString() +
             "\r\n good trial? " +

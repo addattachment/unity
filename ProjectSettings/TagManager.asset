@@ -21,6 +21,7 @@ TagManager:
   - atmosphere
   - gameSounds
   - scoreboard
+  - state
   layers:
   - Default
   - TransparentFX

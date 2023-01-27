@@ -7,7 +7,9 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(LineRenderer))]
 public class Slingshot : MonoBehaviour
 {
-    public GameObject Ball;
+    [SerializeField] private GameObject Ball;
+    public GameObject InstBall;
+    [SerializeField] private GameObject BallPrefab;
     [Header("slingshot machine anchor points")]
     [SerializeField] private GameObject LeftSide;
     [SerializeField] private GameObject RightSide;
@@ -18,7 +20,7 @@ public class Slingshot : MonoBehaviour
     [Header("Shooting parameters")]
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
-    [Tooltip("defines whether we may, must or musn't hit the correct target")] public ReachTargetEnum reachTarget;
+    [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
     public bool slingshotIsActive = false;
@@ -46,13 +48,13 @@ public class Slingshot : MonoBehaviour
         if (slingshotIsActive)
         {
             Line.SetPosition(0, LeftSide.transform.position);
-            if (Ball == null || Ball.GetComponent<SpringJoint>() == null)
+            if (InstBall == null || InstBall.GetComponent<SpringJoint>() == null)
             {
                 Line.SetPosition(1, Hook.transform.position);
             }
             else
             {
-                Line.SetPosition(1, new Vector3(Ball.transform.position.x, Ball.transform.position.y, Ball.transform.position.z - 1f * slingshotPocketToBallDistance.z));
+                Line.SetPosition(1, new Vector3(InstBall.transform.position.x, InstBall.transform.position.y, InstBall.transform.position.z - 1f * slingshotPocketToBallDistance.z));
             }
             Line.SetPosition(2, RightSide.transform.position);
         }
@@ -66,7 +68,7 @@ public class Slingshot : MonoBehaviour
 
 
     /// <summary>
-    /// SetTargetReachable sets the possibility to steer the ball towards or away from the target.
+    /// SetTargetReachable sets the possibility to steer the ball towards or away from the targets.
     /// This can be used in the gamemanager to set the trial option, or with debug buttons switching the state
     /// </summary>
     /// <param name="reachEnumInt">int interpretation of the enum</param>
@@ -157,11 +159,11 @@ public class Slingshot : MonoBehaviour
     ///// THIS IS AN APPROXIMATION OF HOW LONG THE OBJECT WOULD TRAVERSE TO TARGET
     ///// </summary>
     ///// <param name="Rb"></param>
-    ///// <param name="target"></param>
+    ///// <param name="targets"></param>
     ///// <returns></returns>
-    //public float CalcImpactTime(Rigidbody Rb, Vector3 target)
+    //public float CalcImpactTime(Rigidbody Rb, Vector3 targets)
     //{
-    //    var _distance = target - Rb.position;
+    //    var _distance = targets - Rb.position;
     //    var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
     //    var _launchForce = _direction * launchForceMultiplier;
     //    var launchVel = _launchForce / Rb.mass;
@@ -169,5 +171,12 @@ public class Slingshot : MonoBehaviour
     //    return time;
     //}
 
+    public void PrepNewBall(TargetGroup targets)
+    {
+        InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, this.transform);
+        InstBall.GetComponent<Renderer>().material = targets.hitTarget.GetComponent<Renderer>().material;
+        InstBall.GetComponent<TrailRenderer>().material.color = targets.hitTarget.GetComponent<Renderer>().material.color;
+        //Ball = instBall;
+    }
 
 }

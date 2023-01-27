@@ -1,12 +1,24 @@
 using UnityEngine;
 namespace TrialNS
 {
+    /// <summary>
+    /// we see the caregiver + respons
+    /// we score the caregiver
+    /// 
+    /// we update the trialnumber
+    /// we switch to pretrial if more trials to come, otherwise exitscene
+    /// 
+    /// </summary>
     public class PostTrialState : StateMachine
     {
         public override void EnterState(StateManager state)
         {
             Debug.Log("Entering PostTrialState");
-            state.trialName = "PostTrialState";
+            state.trialPhase = "PostTrialState";
+            state.trialList.NextTrial();
+            state.caregiverFeedbackScreen.SetActive(true);
+
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().UpdateText(state.trialList.GetCurrentTrial().Response());
         }
 
         public override void OnCollisionEnter(StateManager state)

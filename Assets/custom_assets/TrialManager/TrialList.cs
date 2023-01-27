@@ -80,22 +80,22 @@ namespace TrialNS
                 Trial temp = new(); // temp trial to fill in values
                 temp.CreateTrial(trialnr, isGood, response, atm);
                 trialsList.Add(temp);
-    }
-}
+            }
+        }
 
-/// <summary>
-/// get to know what the current trial is, defined by its index, its good or bad values, etc.
-/// </summary>
-/// <returns></returns>
-public Trial GetCurrentTrial()
-{
+        /// <summary>
+        /// get to know what the current trial is, defined by its index, its good or bad values, etc.
+        /// </summary>
+        /// <returns></returns>
+        public Trial GetCurrentTrial()
+        {
 
-    return trialsList[currentTrial];
-}
+            return trialsList[currentTrial];
+        }
 
-public void NextTrial()
-{
-    currentTrial++;
-}
+        public void NextTrial()
+        {
+            currentTrial++;
+        }
     }
 }
