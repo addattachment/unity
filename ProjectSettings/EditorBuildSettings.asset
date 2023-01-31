@@ -5,15 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/BasePolescene.unity
-    guid: cf4aec7a11f954946b2fd3dfe5acabb6
-  - enabled: 0
-    path: Assets/Scenes/BaseRotscene.unity
-    guid: bf0a3faba8851fe4f8ed8e393b260874
   - enabled: 1
     path: Assets/Scenes/Basescene.unity
     guid: d83c62f3a69856347bca838ed36bcf12

@@ -51,6 +51,7 @@ MonoBehaviour:
   activeParticipant: {fileID: 0}
   gameManager: {fileID: 0}
   switchPlayer: 0
+  debug_text: {fileID: 0}
 --- !u!1001 &1824150657328725024
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,6 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
-[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof (Animator))]
 public class Hand : MonoBehaviour
 {
     public float speed;
@@ -51,7 +54,7 @@ public class Hand : MonoBehaviour
                     .MoveTowards(gripCurrent,
                     gripTarget,
                     Time.deltaTime * speed);
-            animator.SetFloat(animatorGripParam, gripCurrent);
+            animator.SetFloat (animatorGripParam, gripCurrent);
         }
         if (triggerTarget != triggerCurrent)
         {
@@ -60,7 +63,7 @@ public class Hand : MonoBehaviour
                     .MoveTowards(triggerCurrent,
                     triggerTarget,
                     Time.deltaTime * speed);
-            animator.SetFloat(animatorTriggerParam, triggerCurrent);
+            animator.SetFloat (animatorTriggerParam, triggerCurrent);
         }
     }
 }

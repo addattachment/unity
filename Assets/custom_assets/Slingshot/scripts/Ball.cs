@@ -95,6 +95,7 @@ PlaceDebugCube(Rb.position);
         {
             Debug.Log("triggered " + other.name + " at " + Time.time);
             // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
+#if DEBUGCUBE
             GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
             temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
             temp.GetComponent<BoxCollider>().enabled = false;
@@ -102,6 +103,7 @@ PlaceDebugCube(Rb.position);
             //Destroy(temp, 2.0f);
             temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
+#endif
 
             if (other.CompareTag("Ground"))
             {
@@ -140,12 +142,14 @@ PlaceDebugCube(Rb.position);
         {
             Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
             // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
+#if DEBUGCUBE
             GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
             temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
             temp.GetComponent<BoxCollider>().enabled = false;
             temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
+#endif
         }
         //GetComponent<TrailRenderer>().enabled = false;
         //if (collision.collider.CompareTag("Ground") && !didHitATarget)

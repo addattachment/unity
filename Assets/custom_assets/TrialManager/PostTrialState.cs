@@ -18,7 +18,7 @@ namespace TrialNS
             state.trialList.NextTrial();
             state.caregiverFeedbackScreen.SetActive(true);
 
-            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().UpdateText(state.trialList.GetCurrentTrial().Response());
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().GiveFeedback();
         }
 
         public override void OnCollisionEnter(StateManager state)

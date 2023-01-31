@@ -1594,6 +1594,7 @@ MonoBehaviour:
   height: 0
   isRealPlayer: 1
   isActivePlayer: 0
+  contingency: 0
   score: 0
   amountOfBallsInTrial: 0
   slingshot: {fileID: 7235846809606924420}

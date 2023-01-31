@@ -1,7 +1,9 @@
+using Assets.Scripts;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -14,9 +16,14 @@ namespace TrialNS
         //public int numberOfTrials = 5; // TBD NEEDED??
         [SerializeField] private List<Trial> trialsList; // list of trials to be used in block of experiment
         public int currentTrial = 0; // where we are currently in the block
-        [SerializeField] private TextAsset trialList20;
-        [SerializeField] private TextAsset trialList80;
+        [SerializeField] private string audioClips20_dir;
+        [SerializeField] private string audioClips80_dir;
+
+        public AudioClip[] audioClips;
+        [SerializeField] private TextAsset trialListTA;
+
         private GameManager gameManager;
+        [SerializeField] private DebugConnection debug_text;
 
         private void Awake()
         {
@@ -26,6 +33,9 @@ namespace TrialNS
         void Start()
         {
             gameManager = GameManager.Instance;
+
+            debug_text = GameObject.FindGameObjectWithTag("debug")
+                       .GetComponentInChildren<DebugConnection>();
         }
 
         private void Update()
@@ -36,14 +46,23 @@ namespace TrialNS
                 Debug.Log("triallist gets filled in");
                 if (player.contingency == Contingency.c_20)
                 {
-                    ReadTrial(trialList20);
+                    LoadFromResourcesFolder(audioClips20_dir);
+
                 }
                 else
                 {
-                    ReadTrial(trialList80);
+                    LoadFromResourcesFolder(audioClips80_dir);
+
                 }
+                ReadTrial(trialListTA);
                 gameManager.trialListGenerated = true;
             }
+        }
+
+        private void LoadFromResourcesFolder(string contingency_dir)
+        {
+            audioClips = Resources.LoadAll<AudioClip>(contingency_dir);
+            trialListTA = Resources.LoadAll<TextAsset>(contingency_dir)[0];
         }
 
 
@@ -80,6 +99,7 @@ namespace TrialNS
                 Trial temp = new(); // temp trial to fill in values
                 temp.CreateTrial(trialnr, isGood, response, atm);
                 trialsList.Add(temp);
+                debug_text.SetDebugText(response);
             }
         }
 
@@ -89,7 +109,6 @@ namespace TrialNS
         /// <returns></returns>
         public Trial GetCurrentTrial()
         {
-
             return trialsList[currentTrial];
         }
 

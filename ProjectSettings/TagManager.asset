@@ -22,6 +22,7 @@ TagManager:
   - gameSounds
   - scoreboard
   - state
+  - Hand
   layers:
   - Default
   - TransparentFX

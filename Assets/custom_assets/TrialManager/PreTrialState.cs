@@ -16,6 +16,8 @@ namespace TrialNS
             state.trialPhase = "preTrial";
             state.players.ResetPlayers();
             state.targets.UpdateDirections();
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(0);
+
         }
 
         public override void OnCollisionEnter(StateManager state)
