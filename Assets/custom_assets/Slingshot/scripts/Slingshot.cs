@@ -7,9 +7,11 @@ using Random = UnityEngine.Random;
 [RequireComponent(typeof(LineRenderer))]
 public class Slingshot : MonoBehaviour
 {
+    [Header("player")]
+    public PlayerScore playerScore;
     [SerializeField] private GameObject Ball;
     public GameObject InstBall;
-    [SerializeField] private GameObject BallPrefab;
+    //[SerializeField] private GameObject BallPrefab;
     [Header("slingshot machine anchor points")]
     [SerializeField] private GameObject LeftSide;
     [SerializeField] private GameObject RightSide;

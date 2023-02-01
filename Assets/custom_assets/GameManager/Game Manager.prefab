@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5342910215410073657}
   - component: {fileID: 5342910215410073656}
+  - component: {fileID: 1788032904}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -44,14 +45,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57571decbd237c4468381425d4aff868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slingshot: {fileID: 0}
-  slingshotHook: {fileID: 0}
   target: {fileID: 0}
-  targetList: []
-  player: {fileID: 0}
-  NPC: {fileID: 0}
+  gameDidStart: 0
+  stateMGR: {fileID: 0}
+  playerSettingsAreSet: 0
   restartBool: 0
-  slingshotBall: {fileID: 2715402290459226517, guid: 95d01b245aeead54d9340b30f7bb8a44, type: 3}
-  hitTarget: {fileID: 0}
+  ballsPerGame: 5
+  trialListGenerated: 0
+  trialList: {fileID: 0}
   lsl: {fileID: 0}
   ws: {fileID: 0}
+--- !u!114 &1788032904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5342910215410073659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b23048875c247d4d8ea553ce5dd49e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDevelopmentMode: 1
+  playerName: Pieter
+  gender: 0
+  contingency: 0
+  height: 130
+  NPCNameMale: Sander
+  NPCNameFemale: Tinne
+  player: {fileID: 0}
+  NPC: {fileID: 0}

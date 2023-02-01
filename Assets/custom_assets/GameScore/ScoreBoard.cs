@@ -42,7 +42,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void UpdateScores()
     {
-        var text = subject.score + "/" + (5 - subject.amountOfBallsInTrial);
+        var text = subject.score + "/" + GameManager.Instance.ballsPerGame;
         score.SetText(text);
     }
 }

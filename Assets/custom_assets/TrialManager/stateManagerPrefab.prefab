@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 10101465225465173}
   m_Layer: 0
   m_Name: stateManagerPrefab
-  m_TagString: Untagged
+  m_TagString: state
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10101465225465178}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.609105, y: 0.9058118, z: 2.613612}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,7 +48,13 @@ MonoBehaviour:
   startTrial: 0
   endTrial: 0
   restart: 0
-  trialName: 
+  ballIsShot: 0
+  trialPhase: IntroState
+  players: {fileID: 0}
+  targets: {fileID: 0}
+  trialList: {fileID: 0}
+  caregiverFeedbackScreen: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &10101465225465173
 MonoBehaviour:
   m_ObjectHideFlags: 0

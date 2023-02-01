@@ -7,31 +7,70 @@ using TrialNS;
 public class CaregiverFeedback : MonoBehaviour
 {
     [SerializeField] private TMP_Text feedbackText;
-    [SerializeField] private AudioSource feedbackSpeech;
+    //[SerializeField] private SpeechToMouth feedbackSpeech;
+    [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
+    [SerializeField] private StateManager stateMgr;
+
+    public AudioSource audioSource;
+    private bool speechHasStarted = false;
+    [SerializeField] private bool testPlay = false;
+
+    [SerializeField] private ReadFeedback feedbackPole;
     // Start is called before the first frame update    
     void Start()
     {
-
+        //feedbackSpeech = GetComponent<SpeechToMouth>();
+        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<StateManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //TESTING//////////
+        if (testPlay)
+        {
+            // in order to test the end of a feedback moment, we first need to make sure we're in end trial state
+            stateMgr.endTrial = true;
+            testPlay = false;
+            Speak();
+        }
+        ///////////////////
+        //We want to check when the speech is done, only then do we want to raise the FeedbackButton
+        if (speechHasStarted)
+        {
+            if (!audioSource.isPlaying)
+            {
+                speechHasStarted = false;
+                feedbackPole.RaiseFeedbackPole(EndFeedback);
+            }
+        }
+    }
+
+    public void EndFeedback()
+    {
+        Debug.Log("ending feedback, starting new trial");
+        stateMgr.restart = true; //TODO PLACEHOLDER, first show screen for scoring the caregiver
     }
 
     public void GiveFeedback()
     {
         feedbackText.SetText(trialList.GetCurrentTrial().Response());
         LoadAudioClip(trialList.currentTrial);
-        feedbackSpeech.Play();
+        Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
+        caregiverEmotion.SetAtmosphere(emotion);
+        Speak();
     }
 
     public void LoadAudioClip(int index)
     {
-        feedbackSpeech.clip = trialList.audioClips[index];
+        audioSource.clip = trialList.audioClips[index];
     }
 
+    public void Speak()
+    {
+        audioSource.Play(); 
+        speechHasStarted = true;
 
+    }
 }

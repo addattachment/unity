@@ -3,11 +3,11 @@ using UnityEngine;
 
 namespace TrialNS
 {
-/// <summary>
-/// In the trialstate a certain amount of balls is given to each player
-/// we go to the post-trial state when both players have zero balls left
-/// 
-/// </summary>
+    /// <summary>
+    /// In the trialstate a certain amount of balls is given to each player
+    /// we go to the post-trial state when both players have zero balls left
+    /// 
+    /// </summary>
     public class TrialState : StateMachine
     {
         /// <summary>
@@ -16,7 +16,7 @@ namespace TrialNS
         /// <param name="state"></param>
         public override void EnterState(StateManager state)
         {
-            
+
             Debug.Log("Entering Trial State");
             state.trialPhase = "TrialState";
             state.players.PrepNewShootingTurn(state.trialList, state.targets);
@@ -45,7 +45,12 @@ namespace TrialNS
         {
             Debug.Log("Exiting Trial State");
             state.endTrial = false;
+            //make sure other variables are also false
+            state.startTrial = false;
+
+            state.restart = false;
+            state.ballIsShot = false;
         }
-       
+
     }
 }

@@ -14,7 +14,6 @@ public class Ball : MonoBehaviour
     [SerializeField] private AudioSource BallFloorImpact;
     [SerializeField] private AudioSource BallDestructionNoHitSound;
     [SerializeField] private AudioSource ball_flying_audio;
-    [SerializeField] private AudioSource ball_burning_audio;
 
 
     [Header("shooting arguments")]
@@ -27,7 +26,7 @@ public class Ball : MonoBehaviour
     Vector3 _hitTargetPos;
     private TargetGroup targets;
     [Header("score result")]
-    [SerializeField] private GameScore gameScore;
+    [SerializeField] private PlayerScore playerScore;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private OutletPassThrough lsl;
     [SerializeField] private StateManager stateMgr;
@@ -55,8 +54,7 @@ public class Ball : MonoBehaviour
         targets = GameObject.FindGameObjectWithTag("target")
                             .GetComponent<TargetGroup>(); // todo write tests for finding all gameobjects
         slingShot = this.GetComponentInParent<Slingshot>();
-        gameScore = GameObject.FindGameObjectWithTag("gameScore")
-                              .GetComponent<GameScore>();
+        playerScore = slingShot.playerScore;
         debug_text = GameObject.FindGameObjectWithTag("debug")
                                .GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl")
@@ -89,11 +87,13 @@ PlaceDebugCube(Rb.position);
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void ProcessCollision(GameObject coll)
     {
+
         if (didHitATarget == false)
         {
-            Debug.Log("triggered " + other.name + " at " + Time.time);
+            debug_text.SetDebugText("hit: " + coll.name);
+
             // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
 #if DEBUGCUBE
             GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
@@ -104,73 +104,51 @@ PlaceDebugCube(Rb.position);
             temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
 #endif
-
-            if (other.CompareTag("Ground"))
+            if (coll.CompareTag("subTarget"))
             {
                 didHitATarget = true;
-
-                // we didn't hit any targets, so this equals hitting the wrong targets
-                gameScore.AddToScore(0);
-                DestroyThisBall();
-            }
-            if (other.CompareTag("subTarget"))
-            {
-                didHitATarget = true;
-
-                var th = other.GetComponent<TargetHit>();
+                var th = coll.GetComponent<TargetHit>();
                 if (th == null)
                 {
                     // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
-                    th = other.GetComponentInParent<TargetHit>();
+                    th = coll.GetComponentInParent<TargetHit>();
                 }
-                
-
                 CalcImpact(th);
             }
-            if (other.CompareTag("missTargets"))
+            if (coll.CompareTag("missTargets"))
             {
                 didHitATarget = true;
+                playerScore.AddToScore(false);
+                DestroyThisBall();
+            }
+            if (coll.CompareTag("Floor"))
+            {
+                didHitATarget = true;
+                playerScore.AddToScore(false);
+                DestroyThisBall();
+                //TODO create animation for splashing ball?
+            }
+            if (coll.CompareTag("gamehall"))
+            {
+                didHitATarget = true;
+                // we didn't hit any targets, so this equals hitting the wrong targets
+                //TODO create animation for splashing ball?
 
-                
+                playerScore.AddToScore(false);
                 DestroyThisBall();
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("triggered " + other.name + " at " + Time.time);
+        ProcessCollision(other.gameObject);
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        if (didHitATarget == false)
-        {
-            Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-            // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
-#if DEBUGCUBE
-            GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-            temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
-            temp.GetComponent<BoxCollider>().enabled = false;
-            temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-            temp.transform.position = targets.hitTarget.transform.position;
-            temp.name = "ShouldHitlocation" + _name;
-#endif
-        }
-        //GetComponent<TrailRenderer>().enabled = false;
-        //if (collision.collider.CompareTag("Ground") && !didHitATarget)
-        //{
-        //    if (!BallFloorImpact.isPlaying)
-        //    {
-        //        BallFloorImpact.Play();
-        //    }
-        //}
-        //if (collision.collider.CompareTag("subTarget"))
-        //{
-        //    var th = collision.collider.GetComponent<TargetHit>();
-        //    if (th == null)
-        //    {
-        //        // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
-        //        th = collision.collider.GetComponentInParent<TargetHit>();
-        //    }
-        //    CalcImpact(th);
-        //    didHitATarget = true;
-        //}
-
+        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
+        ProcessCollision(collision.gameObject);
     }
 
 
@@ -182,12 +160,12 @@ PlaceDebugCube(Rb.position);
             if (th.activeTarget)
             {
                 Debug.Log("correct targets touched! at " + Time.time);
-                gameScore.AddToScore(1);
+                playerScore.AddToScore(true);
             }
             else
             {
                 Debug.Log("wrong! at " + Time.time);
-                gameScore.AddToScore(0);
+                playerScore.AddToScore(false);
             }
             DestroyThisBall();
         }
@@ -229,8 +207,7 @@ PlaceDebugCube(Rb.position);
 #if DEBUGMODE
         InitDebugCube();
 #endif
-        ball_burning_audio.loop = true;
-        ball_burning_audio.Play();
+
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         SlingshotPullAudio.Play();
     }
@@ -262,10 +239,11 @@ PlaceDebugCube(Rb.position);
     /// </summary>
     private void DestroyThisBall()
     {
+
         stateMgr.ballIsShot = true;
 
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
-        Destroy(gameObject, 1.0f);
+        Destroy(gameObject);
     }
     IEnumerator Explode()
     {

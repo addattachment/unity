@@ -331,7 +331,7 @@ MonoBehaviour:
   ReleaseTime: 0.15
   DestructionTime: 3
   didHitATarget: 0
-  gameScore: {fileID: 0}
+  playerScore: {fileID: 0}
   gameManager: {fileID: 0}
   lsl: {fileID: 0}
   stateMgr: {fileID: 0}
@@ -1125,7 +1125,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d0a05aafba3e04845af4c959d09aebcf, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.191
   m_Pitch: 1
   Loop: 1

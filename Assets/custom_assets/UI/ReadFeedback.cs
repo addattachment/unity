@@ -12,12 +12,17 @@ public class ReadFeedback : MonoBehaviour
 {
     [SerializeField] private float Height;
     [SerializeField] private Button button;
+    //TEST bools
     public bool RaiseFeedback = false;
     public bool LowerFeedback = false;
+    ////////
     private Hashtable upHash;
     private Hashtable downHash;
     [SerializeField] private BoxCollider boxColl;
-    public UnityEvent pushEvent;
+    [Tooltip("not used at the moment")] public UnityEvent pushEvent;
+
+    public delegate void TestDelegate();// This defines what type of method you're going to call.
+    public TestDelegate m_methodToCall; // This is the variable holding the method you're going to call.
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +32,18 @@ public class ReadFeedback : MonoBehaviour
         if (pushEvent == null)
             pushEvent = new UnityEvent();
     }
+    private void Test()
+    {
+        Debug.Log("The pole was pushed as a test and goes down now");
+    }
 
     // Update is called once per frame
     void Update()
     {
+        ////////////TEST
         if (RaiseFeedback)
         {
-            RaiseFeedbackPole();
+            RaiseFeedbackPole(Test);
             RaiseFeedback = false;
         }
         if (LowerFeedback)
@@ -41,14 +51,17 @@ public class ReadFeedback : MonoBehaviour
             LowerFeedbackPole();
             LowerFeedback = false;
         }
+        //////////////////
     }
 
-    public void RaiseFeedbackPole()
+    public void RaiseFeedbackPole(TestDelegate method)
     {
         iTween.MoveBy(gameObject, upHash);
         button.interactable = true;
         boxColl.enabled = true;
 
+        // load the function to execute once the button is pushed
+        m_methodToCall = method;
     }
 
     public void LowerFeedbackPole()
@@ -56,6 +69,7 @@ public class ReadFeedback : MonoBehaviour
         iTween.MoveBy(gameObject, downHash);
         button.interactable = false;
         boxColl.enabled = false;
+        FunctionToExecute(m_methodToCall);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -79,5 +93,10 @@ public class ReadFeedback : MonoBehaviour
             pushEvent.Invoke();
 
         }
+    }
+
+    public void FunctionToExecute(TestDelegate method)
+    {
+        method();
     }
 }

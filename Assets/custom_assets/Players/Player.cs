@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public Contingency contingency = Contingency.c_20;
     //Set multiple times in game
     public int score = 0;
-    public int amountOfBallsInTrial = 0;
+    public int currentBallInTrial = 0;
     public Slingshot slingshot;
     public void SetActive(bool active)
     {
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShootBall()
     {
-        float wait_time = Random.Range(1.0f, 3.0f);
+        float wait_time = Random.Range(0.2f, 1.5f);
         yield return new WaitForSeconds(wait_time);
         var ballScript = slingshot.InstBall.GetComponent<Ball>();
         ballScript.FakeLaunch();

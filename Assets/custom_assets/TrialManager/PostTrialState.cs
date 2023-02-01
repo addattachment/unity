@@ -35,6 +35,13 @@ namespace TrialNS
         {
             Debug.Log("Exiting PostTrialState");
             state.restart = false;
+            //make sure other variables are also false
+            state.endTrial = false;
+            state.startTrial = false;
+            state.ballIsShot = false;
+
+            state.caregiverFeedbackScreen.SetActive(false);
+
             // look for the public gameobject triallist and update the trialstate
             try { GameObject.Find("trialListPrefab").GetComponent<TrialList>().NextTrial(); }
             catch { Debug.Log("Could not find trialListPrefab"); }

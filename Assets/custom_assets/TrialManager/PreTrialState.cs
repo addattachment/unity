@@ -37,6 +37,10 @@ namespace TrialNS
         {
             Debug.Log("Exiting PreTrialState");
             state.startTrial = false;
+            //make sure other variables are also false
+            state.endTrial = false;
+            state.ballIsShot = false;
+            state.restart = false;
         }
     }
 }

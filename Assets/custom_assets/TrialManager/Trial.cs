@@ -18,9 +18,25 @@ namespace TrialNS
             this.atmosphere = atmosphere;
         }
 
+        /// <summary>
+        /// Get the index of the current trial
+        /// </summary>
+        /// <returns></returns>
         public int GetTrialNumber() { return this.trialNumber; }
+        /// <summary>
+        /// Depicts whether the player may win or not
+        /// </summary>
+        /// <returns></returns>
         public bool IsGoodTrial() { return this.isGoodTrial; }
+        /// <summary>
+        /// Returns the response that needs to be given to the child
+        /// </summary>
+        /// <returns></returns>
         public string Response() { return this.response; }
+        /// <summary>
+        /// returns the emotion/atmosphere of the caregiver
+        /// </summary>
+        /// <returns></returns>
         public Atmosphere GetAtmosphere() { return this.atmosphere; }
     }
 

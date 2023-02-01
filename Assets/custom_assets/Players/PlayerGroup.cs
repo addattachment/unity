@@ -48,8 +48,8 @@ public class PlayerGroup : MonoBehaviour
     /// </summary>
     public void ResetPlayers()
     {
-        player.amountOfBallsInTrial = gameManager.ballsPerGame;
-        NPC.amountOfBallsInTrial = gameManager.ballsPerGame;
+        player.currentBallInTrial =0;
+        NPC.currentBallInTrial = 0;
         player.SetActive(true);
         NPC.SetActive(false);
         activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
@@ -63,9 +63,8 @@ public class PlayerGroup : MonoBehaviour
 
         SetPlayerScoringChance(slingshot, trialList.GetCurrentTrial());
 
-        if (activeParticipant.amountOfBallsInTrial > 0)
+        if (activeParticipant.currentBallInTrial < gameManager.ballsPerGame)
         {
-            activeParticipant.amountOfBallsInTrial--;
             // Make sure we can detect collisions by the new bullet (only once!)
             targets.readyForHit = true;
             // Set the new targets
