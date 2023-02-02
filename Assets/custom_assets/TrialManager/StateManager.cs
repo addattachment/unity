@@ -11,6 +11,8 @@ namespace TrialNS
         public PreTrialState preTrialState = new();
         public TrialState trialState = new();
         public PostTrialState postTrialState = new();
+        public CaregiverFeedbackState caregiverFeedbackState = new();
+        public CaregiverScoringState caregiverScoringState = new();
         public IntroState introState = new();
         //TODO we need some more states probably: 
         // an intro state
@@ -34,6 +36,7 @@ namespace TrialNS
         public GameObject caregiverFeedbackScreen; 
 
         public GameManager gameManager;
+
 
         // Start is called before the first frame update
         void Start()

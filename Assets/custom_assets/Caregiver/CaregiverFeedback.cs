@@ -11,7 +11,9 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
     [SerializeField] private StateManager stateMgr;
-
+    [SerializeField] private Light sun;
+    [SerializeField] private Light caregiverSpotLight;
+    [SerializeField] private Slingshot slingshot;
     public AudioSource audioSource;
     private bool speechHasStarted = false;
     [SerializeField] private bool testPlay = false;
@@ -50,11 +52,13 @@ public class CaregiverFeedback : MonoBehaviour
     public void EndFeedback()
     {
         Debug.Log("ending feedback, starting new trial");
+        SetEnvironmentForFeedback(false);
         stateMgr.restart = true; //TODO PLACEHOLDER, first show screen for scoring the caregiver
     }
 
     public void GiveFeedback()
     {
+        SetEnvironmentForFeedback(true);
         feedbackText.SetText(trialList.GetCurrentTrial().Response());
         LoadAudioClip(trialList.currentTrial);
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
@@ -62,6 +66,21 @@ public class CaregiverFeedback : MonoBehaviour
         Speak();
     }
 
+    private void SetEnvironmentForFeedback(bool enabled)
+    {
+        if (enabled)
+        {
+            sun.enabled = false;
+            slingshot.slingshotIsActive = false;
+            caregiverSpotLight.enabled = true;
+        }
+        else
+        {
+            sun.enabled = true;
+            slingshot.slingshotIsActive = true;
+            caregiverSpotLight.enabled = false;
+        }
+    }
     public void LoadAudioClip(int index)
     {
         audioSource.clip = trialList.audioClips[index];

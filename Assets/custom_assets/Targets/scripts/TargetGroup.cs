@@ -52,10 +52,14 @@ public class TargetGroup : MonoBehaviour
         }
     }
 
-    public void UpdateDirections()
+    public void SetTranslateValues()
     {
         foreach (GameObject target in targetList)
         {
+            //give each target a random starting point (only change x axis)
+            Vector3 currentPos = target.transform.position;
+            currentPos.x = Random.Range(-6.0f, 6.0f);
+            target.transform.position = currentPos;
             //give each targets a new speed to move
             target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 0.1f); //todo
             //give each targets a new direction to start moving

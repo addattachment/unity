@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class Slingshot : MonoBehaviour
 {
     [Header("player")]
+    public Player player;
     public PlayerScore playerScore;
     [SerializeField] private GameObject Ball;
     public GameObject InstBall;
@@ -49,6 +50,7 @@ public class Slingshot : MonoBehaviour
     {
         if (slingshotIsActive)
         {
+            Line.enabled = true;
             Line.SetPosition(0, LeftSide.transform.position);
             if (InstBall == null || InstBall.GetComponent<SpringJoint>() == null)
             {
@@ -62,9 +64,10 @@ public class Slingshot : MonoBehaviour
         }
         else
         {
-            Line.SetPosition(0, LeftSide.transform.position);
-            Line.SetPosition(1, Hook.transform.position);
-            Line.SetPosition(2, RightSide.transform.position);
+            Line.enabled = false;
+            //Line.SetPosition(0, LeftSide.transform.position);
+            //Line.SetPosition(1, Hook.transform.position);
+            //Line.SetPosition(2, RightSide.transform.position);
         }
     }
 
@@ -183,7 +186,7 @@ public class Slingshot : MonoBehaviour
         InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, this.transform);
         InstBall.GetComponent<Renderer>().material = targets.hitTarget.GetComponent<Renderer>().material;
         InstBall.GetComponent<TrailRenderer>().material.color = targets.hitTarget.GetComponent<Renderer>().material.color;
-        //Ball = instBall;
+        player.instBall = InstBall;
     }
 
 }

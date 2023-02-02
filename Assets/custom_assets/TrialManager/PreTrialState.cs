@@ -5,7 +5,7 @@ namespace TrialNS
     /// In the pretrialstate we set the amount of balls for each player
     /// the speed of the rings is adapted
     ///     
-    /// We clear the scoreboard (?)
+    /// We clear the scoreDots
     /// 
     /// </summary>
     public class PreTrialState : StateMachine
@@ -15,9 +15,8 @@ namespace TrialNS
             Debug.Log("Entering PreTrialState");
             state.trialPhase = "preTrial";
             state.players.ResetPlayers();
-            state.targets.UpdateDirections();
+            state.targets.SetTranslateValues();
             state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(0);
-
         }
 
         public override void OnCollisionEnter(StateManager state)

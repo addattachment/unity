@@ -18,6 +18,8 @@ public class Player : MonoBehaviour
     public int score = 0;
     public int currentBallInTrial = 0;
     public Slingshot slingshot;
+    public GameObject instBall;
+    public PlayerScore playerScore;
     public void SetActive(bool active)
     {
         isActivePlayer = active;
@@ -35,6 +37,5 @@ public class Player : MonoBehaviour
         var ballScript = slingshot.InstBall.GetComponent<Ball>();
         ballScript.FakeLaunch();
     }
- 
 }
 

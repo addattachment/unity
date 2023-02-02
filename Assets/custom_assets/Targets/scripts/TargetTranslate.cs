@@ -14,8 +14,7 @@ public class TargetTranslate : MonoBehaviour
     void Start()
     {
         targetGroup = this.GetComponentInParent<TargetGroup>();
-        movementVector = new();
-        
+        movementVector = new(); 
     }
 
     // Update is called once per frame

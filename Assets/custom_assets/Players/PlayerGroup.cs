@@ -52,6 +52,8 @@ public class PlayerGroup : MonoBehaviour
         NPC.currentBallInTrial = 0;
         player.SetActive(true);
         NPC.SetActive(false);
+        player.playerScore.ResetScore();
+        NPC.playerScore.ResetScore();
         activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
     }
 

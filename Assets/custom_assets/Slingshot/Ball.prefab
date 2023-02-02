@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -7149560571694955272}
   - component: {fileID: 2715402290459226210}
   - component: {fileID: 2715402290459226211}
+  - component: {fileID: 1689189970557431855}
   - component: {fileID: 2715402290459226524}
   - component: {fileID: 2715402290459226209}
   - component: {fileID: 2715402290459226525}
@@ -327,7 +328,6 @@ MonoBehaviour:
   BallFloorImpact: {fileID: 2715402290459226208}
   BallDestructionNoHitSound: {fileID: 6023756880996850148}
   ball_flying_audio: {fileID: 3183251434648196830}
-  ball_burning_audio: {fileID: -2954766378998175224}
   ReleaseTime: 0.15
   DestructionTime: 3
   didHitATarget: 0
@@ -340,6 +340,24 @@ MonoBehaviour:
   debug_text: {fileID: 0}
   _fakeBallStartPoint: {x: 0, y: 0.4, z: 0}
   doFakeLaunch: 0
+--- !u!114 &1689189970557431855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715402290459226517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30f78ed5e5eb44c188a740990ce49414, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceGainDB: 0
+  sourceSize: 0
+  enableDoppler: 1
+  sourceAttenuationMode: 2
+  minAttenuationDistance: 1
+  maxAttenuationDistance: 100
 --- !u!96 &2715402290459226524
 TrailRenderer:
   serializedVersion: 2
