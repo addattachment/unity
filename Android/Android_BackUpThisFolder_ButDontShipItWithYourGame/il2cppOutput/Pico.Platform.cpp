@@ -20612,7 +20612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CLIB_ppf_Leaderboard_GetEntriesByIds
 		NullCheck(L_1);
 		PtrArray__ctor_m4298F17487002703A9ED5E2D8E025373FC8CC1EA(L_1, L_0, NULL);
 		V_0 = L_1;
-		// var result = ppf_Leaderboard_GetEntriesByIds(leaderboardName, pageSize, pageIdx, startAt, userIds.a, (uint) userIDs.Length);
+		// var result = ppf_Leaderboard_GetEntriesByIds(leaderboardName, pageSize, pageIdx, startAt, userIds.a, (uint)userIDs.Length);
 		String_t* L_2 = ___leaderboardName0;
 		int32_t L_3 = ___pageSize1;
 		int32_t L_4 = ___pageIdx2;
@@ -20682,7 +20682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CLIB_ppf_Presence_SendInvites_mD2EB2
 		NullCheck(L_1);
 		PtrArray__ctor_m4298F17487002703A9ED5E2D8E025373FC8CC1EA(L_1, L_0, NULL);
 		V_0 = L_1;
-		// var result = ppf_Presence_SendInvites(ptrs.a, (uint) userIDs.Length);
+		// var result = ppf_Presence_SendInvites(ptrs.a, (uint)userIDs.Length);
 		PtrArray_t979BE2D58A36A1D6EE014756C77144986C527753* L_2 = V_0;
 		NullCheck(L_2);
 		IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* L_3 = L_2->___a_0;
@@ -20720,7 +20720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F31
 		NullCheck(L_0);
 		Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052(L_0, Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052_RuntimeMethod_var);
 		V_0 = L_0;
-		// var size = (int) ppf_DataStore_GetNumKeys(ppfDataStore);
+		// var size = (int)ppf_DataStore_GetNumKeys(ppfDataStore);
 		intptr_t L_1 = ___ppfDataStore0;
 		uintptr_t L_2;
 		L_2 = CLIB_ppf_DataStore_GetNumKeys_m009C40A8421FB9F1CCAD5C17D79A08A079AE3F04(L_1, NULL);
@@ -37623,7 +37623,7 @@ IL_0009:
 
 IL_001c:
 	{
-		// return MarshalUtil.StringToPtr((string) managedObj);
+		// return MarshalUtil.StringToPtr((string)managedObj);
 		RuntimeObject* L_4 = ___managedObj0;
 		intptr_t L_5;
 		L_5 = MarshalUtil_StringToPtr_m8ACFFBF1DE80A3F38874B113748BB8F7C120557A(((String_t*)CastclassSealed((RuntimeObject*)L_4, String_t_il2cpp_TypeInfo_var)), NULL);
@@ -38203,7 +38203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		uint32_t L_0 = ___length1;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)L_0);
 		V_0 = L_1;
-		// Marshal.Copy(ptr, ans, 0, (int) length);
+		// Marshal.Copy(ptr, ans, 0, (int)length);
 		intptr_t L_2 = ___ptr0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = V_0;
 		uint32_t L_4 = ___length1;
@@ -38226,14 +38226,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t MarshalUtil_ByteArrayToNative_mFFC7E
 	intptr_t V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// var ptr=Marshal.AllocHGlobal(a.Length);
+		// var ptr = Marshal.AllocHGlobal(a.Length);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___a0;
 		NullCheck(L_0);
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
 		intptr_t L_1;
 		L_1 = Marshal_AllocHGlobal_mE1D700DF967E28BE8AB3E0D67C81A96B4FCC8F4F(((int32_t)(((RuntimeArray*)L_0)->max_length)), NULL);
 		V_0 = L_1;
-		// Marshal.Copy(a,0,ptr,a.Length);
+		// Marshal.Copy(a, 0, ptr, a.Length);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___a0;
 		intptr_t L_3 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___a0;
@@ -40290,7 +40290,7 @@ IL_0334:
 
 IL_034f:
 	{
-		// msg = new Message<PlatformInitializeResult>(msgPointer, ptr => { return (PlatformInitializeResult) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<PlatformInitializeResult>(msgPointer, ptr => { return (PlatformInitializeResult)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_23 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
 		GetDataFromMessage_t3A6C5AA5732AFF4E71586956A9DF06D1A3D70F29* L_24 = ((U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var))->___U3CU3E9__1_0_1;
@@ -41256,7 +41256,7 @@ IL_06f6:
 
 IL_0701:
 	{
-		// msg = new Message<RtcConnectionState>(msgPointer, ptr => { return (RtcConnectionState) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<RtcConnectionState>(msgPointer, ptr => { return (RtcConnectionState)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_177 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
 		GetDataFromMessage_t892BD1835ADA16E861CC00283FB46FABB6311FFF* L_178 = ((U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var))->___U3CU3E9__1_22_23;
@@ -41554,7 +41554,7 @@ IL_0823:
 
 IL_082e:
 	{
-		// msg = new Message<RtcAudioPlaybackDevice>(msgPointer, ptr => { return (RtcAudioPlaybackDevice) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<RtcAudioPlaybackDevice>(msgPointer, ptr => { return (RtcAudioPlaybackDevice)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_226 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
 		GetDataFromMessage_t886A56E107B76C81FA14F06A8B3F0A8BA0F8D8AC* L_227 = ((U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var))->___U3CU3E9__1_29_30;
@@ -42526,7 +42526,7 @@ IL_0bec:
 		// {
 		//     var objHandle = CLIB.ppf_Message_GetPlatformGameInitialize(ptr);
 		//     var obj = CLIB.ppf_PlatformGameInitialize_GetResult(objHandle);
-		//     return (GameInitializeResult) obj;
+		//     return (GameInitializeResult)obj;
 		// });
 		intptr_t L_382 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
@@ -42569,7 +42569,7 @@ IL_0c17:
 		// msg = new Message<GameConnectionEvent>(msgPointer, ptr =>
 		// {
 		//     var obj = CLIB.ppf_Message_GetGameConnectionEvent(ptr);
-		//     return (GameConnectionEvent) obj;
+		//     return (GameConnectionEvent)obj;
 		// });
 		intptr_t L_389 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
@@ -42612,7 +42612,7 @@ IL_0c42:
 		// msg = new Message<GameRequestFailedReason>(msgPointer, ptr =>
 		// {
 		//     var obj = CLIB.ppf_Message_GetGameRequestFailedReason(ptr);
-		//     return (GameRequestFailedReason) obj;
+		//     return (GameRequestFailedReason)obj;
 		// });
 		intptr_t L_396 = ___msgPointer0;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_il2cpp_TypeInfo_var);
@@ -43016,7 +43016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m94B22A6F92F6671D98EE2576B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_0_mF7FC414EA2D234A40788E2C945AA109C60A34888 (U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144* __this, intptr_t ___ptr0, const RuntimeMethod* method) 
 {
 	{
-		// msg = new Message<PlatformInitializeResult>(msgPointer, ptr => { return (PlatformInitializeResult) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<PlatformInitializeResult>(msgPointer, ptr => { return (PlatformInitializeResult)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_0 = ___ptr0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_Message_GetInt32_m7F94C1D3606C3B758357BAF696833E27FCE1A55F(L_0, NULL);
@@ -43898,7 +43898,7 @@ IL_0016:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_22_mE8CF0BF81B4D59370C8B27C3DE012C0BAD82A1E5 (U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144* __this, intptr_t ___ptr0, const RuntimeMethod* method) 
 {
 	{
-		// msg = new Message<RtcConnectionState>(msgPointer, ptr => { return (RtcConnectionState) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<RtcConnectionState>(msgPointer, ptr => { return (RtcConnectionState)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_0 = ___ptr0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_Message_GetInt32_m7F94C1D3606C3B758357BAF696833E27FCE1A55F(L_0, NULL);
@@ -44135,7 +44135,7 @@ IL_0016:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_29_m401793E9CBB4163978FE526F2D28A44707917732 (U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144* __this, intptr_t ___ptr0, const RuntimeMethod* method) 
 {
 	{
-		// msg = new Message<RtcAudioPlaybackDevice>(msgPointer, ptr => { return (RtcAudioPlaybackDevice) CLIB.ppf_Message_GetInt32(ptr); });
+		// msg = new Message<RtcAudioPlaybackDevice>(msgPointer, ptr => { return (RtcAudioPlaybackDevice)CLIB.ppf_Message_GetInt32(ptr); });
 		intptr_t L_0 = ___ptr0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_Message_GetInt32_m7F94C1D3606C3B758357BAF696833E27FCE1A55F(L_0, NULL);
@@ -44902,7 +44902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_51_m1C
 		// var obj = CLIB.ppf_PlatformGameInitialize_GetResult(objHandle);
 		int32_t L_2;
 		L_2 = CLIB_ppf_PlatformGameInitialize_GetResult_m5317F0E9FEEF20143C1AC1339FBD95B67AE1A34D(L_1, NULL);
-		// return (GameInitializeResult) obj;
+		// return (GameInitializeResult)obj;
 		return L_2;
 	}
 }
@@ -44914,7 +44914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_52_mFE
 		intptr_t L_0 = ___ptr0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_Message_GetGameConnectionEvent_mC8319BF835ECE5CFE0A6923362F2D5D27BBCDB37(L_0, NULL);
-		// return (GameConnectionEvent) obj;
+		// return (GameConnectionEvent)obj;
 		return L_1;
 	}
 }
@@ -44926,7 +44926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CParseMessageU3Eb__1_53_mC9
 		intptr_t L_0 = ___ptr0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_Message_GetGameRequestFailedReason_mA906DDF7141CA4E0ADFC18595D95841E5FD40A02(L_0, NULL);
-		// return (GameRequestFailedReason) obj;
+		// return (GameRequestFailedReason)obj;
 		return L_1;
 	}
 }
@@ -45260,7 +45260,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Util_DateTimeToSeconds_m2A66E9D055F2B
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// return (int) (t.ToUniversalTime() - UnixEpoch).TotalSeconds;
+		// return (int)(t.ToUniversalTime() - UnixEpoch).TotalSeconds;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
 		L_0 = DateTime_ToUniversalTime_m52CA1EAD0BE0A357BCACC38747ECA4A8810155A9((&___t0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
@@ -45287,7 +45287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Util_DateTimeToMilliSeconds_m36AACCD6
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		// return (long) (t.ToUniversalTime() - UnixEpoch).TotalMilliseconds;
+		// return (long)(t.ToUniversalTime() - UnixEpoch).TotalMilliseconds;
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
 		L_0 = DateTime_ToUniversalTime_m52CA1EAD0BE0A357BCACC38747ECA4A8810155A9((&___t0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
@@ -45432,7 +45432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tF342307DE7C1C1EA12DC5F9121C6665010655
 		intptr_t L_3;
 		L_3 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_3;
-		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddCount(name, count, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddCount(name, count, pobj, (uint)(extraData != null ? extraData.Length : 0)));
 		String_t* L_4 = ___name0;
 		int64_t L_5 = ___count1;
 		intptr_t L_6 = V_1;
@@ -45557,7 +45557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tF342307DE7C1C1EA12DC5F9121C6665010655
 		intptr_t L_3;
 		L_3 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_3;
-		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddFields(name, fields, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_AddFields(name, fields, pobj, (uint)(extraData != null ? extraData.Length : 0)));
 		String_t* L_4 = ___name0;
 		String_t* L_5 = ___fields1;
 		intptr_t L_6 = V_1;
@@ -45859,7 +45859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tF342307DE7C1C1EA12DC5F9121C6665010655
 		intptr_t L_3;
 		L_3 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_3;
-		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_Unlock(name, pobj, (uint) (extraData != null ? extraData.Length : 0)));
+		// var result = new Task<AchievementUpdate>(CLIB.ppf_Achievements_Unlock(name, pobj, (uint)(extraData != null ? extraData.Length : 0)));
 		String_t* L_4 = ___name0;
 		intptr_t L_5 = V_1;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___extraData1;
@@ -45969,7 +45969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tE330EB8BD455BC886AFAD76115A14CF4EC8A4
 
 IL_0013:
 	{
-		// return new Task<string>(CLIB.ppf_Application_LaunchOtherApp(packageName, (IntPtr) options));
+		// return new Task<string>(CLIB.ppf_Application_LaunchOtherApp(packageName, (IntPtr)options));
 		String_t* L_2 = ___packageName0;
 		ApplicationOptions_t1AC5184E06F457C12B2D8C1A0C2BF02B638876FD* L_3 = ___options1;
 		intptr_t L_4;
@@ -47798,7 +47798,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t485A9EBB7504EE8270E445E3713105BD168E0
 		L_3 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_3;
 		// var result = new Task<bool>(CLIB.ppf_Leaderboard_WriteEntry(leaderboardName, score, pobj,
-		//     (uint) (extraData != null ? extraData.Length : 0), forceUpdate));
+		//     (uint)(extraData != null ? extraData.Length : 0), forceUpdate));
 		String_t* L_4 = ___leaderboardName0;
 		int64_t L_5 = ___score1;
 		intptr_t L_6 = V_1;
@@ -47927,7 +47927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t485A9EBB7504EE8270E445E3713105BD168E0
 		L_3 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_3;
 		// var result = new Task<bool>(CLIB.ppf_Leaderboard_WriteEntryWithSupplementaryMetric(leaderboardName, score,
-		//     supplementaryMetric, pobj, (uint) (extraData != null ? extraData.Length : 0), forceUpdate));
+		//     supplementaryMetric, pobj, (uint)(extraData != null ? extraData.Length : 0), forceUpdate));
 		String_t* L_4 = ___leaderboardName0;
 		int64_t L_5 = ___score1;
 		int64_t L_6 = ___supplementaryMetric2;
@@ -48039,7 +48039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_tC29EF12AB9AC997C961D610D4FDB6493E20501A
 	KeyValuePair_2_t203D89707A14A98B3FB295DFFAC0F4D3CF2B1078 V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		// KVPairArray kvarray = new KVPairArray((uint) data.Count);
+		// KVPairArray kvarray = new KVPairArray((uint)data.Count);
 		Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE85588* L_0 = ___data1;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -48912,7 +48912,7 @@ IL_0027:
 		intptr_t L_7;
 		L_7 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_7;
-		// var ok = CLIB.ppf_Net_SendPacket(userId, (UIntPtr) bytes.Length, pobj);
+		// var ok = CLIB.ppf_Net_SendPacket(userId, (UIntPtr)bytes.Length, pobj);
 		String_t* L_8 = ___userId0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = ___bytes1;
 		NullCheck(L_9);
@@ -49012,7 +49012,7 @@ IL_0027:
 		intptr_t L_7;
 		L_7 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_7;
-		// var ok = CLIB.ppf_Net_SendPacket2(userId, (UIntPtr) bytes.Length, pobj, reliable);
+		// var ok = CLIB.ppf_Net_SendPacket2(userId, (UIntPtr)bytes.Length, pobj, reliable);
 		String_t* L_8 = ___userId0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_9 = ___bytes1;
 		NullCheck(L_9);
@@ -49092,7 +49092,7 @@ IL_0013:
 		intptr_t L_4;
 		L_4 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_4;
-		// var ok = CLIB.ppf_Net_SendPacketToCurrentRoom((UIntPtr) bytes.Length, pobj);
+		// var ok = CLIB.ppf_Net_SendPacketToCurrentRoom((UIntPtr)bytes.Length, pobj);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___bytes0;
 		NullCheck(L_5);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -49170,7 +49170,7 @@ IL_0013:
 		intptr_t L_4;
 		L_4 = GCHandle_AddrOfPinnedObject_m9C047E154D6F0FE66BE003AB99F0B67A2CA953A6((&V_0), NULL);
 		V_1 = L_4;
-		// var ok = CLIB.ppf_Net_SendPacketToCurrentRoom2((UIntPtr) bytes.Length, pobj, reliable);
+		// var ok = CLIB.ppf_Net_SendPacketToCurrentRoom2((UIntPtr)bytes.Length, pobj, reliable);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___bytes0;
 		NullCheck(L_5);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -49415,7 +49415,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_tD9B36526DDEFB32BE238D1EDD0FE7990EF812
 
 IL_0013:
 	{
-		// return new Task<UserList>(CLIB.ppf_Presence_GetInvitableUsers((IntPtr) options));
+		// return new Task<UserList>(CLIB.ppf_Presence_GetInvitableUsers((IntPtr)options));
 		InviteOptions_tE74C22F2B22505EF2EA24E11A5E20404742133F2* L_2 = ___options0;
 		intptr_t L_3;
 		L_3 = InviteOptions_op_Explicit_m24388B944B1EDB386B3030A7B6B25194BBF32433(L_2, NULL);
@@ -49650,7 +49650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_tC29EF12AB9AC997C961D610D4FDB6493E20501A
 
 IL_0013:
 	{
-		// return new Task(CLIB.ppf_Presence_Set((IntPtr) options));
+		// return new Task(CLIB.ppf_Presence_Set((IntPtr)options));
 		PresenceOptions_tA0A62ABCEFD1D650D39B8899A3E9E56AD86061EA* L_2 = ___options0;
 		intptr_t L_3;
 		L_3 = PresenceOptions_op_Explicit_mB78CBE9568271234ACB3A4ADE68029F1460AA71F(L_2, NULL);
@@ -50347,7 +50347,7 @@ IL_0056_1:
 
 IL_006f:
 	{
-		// return new Task<string>(CLIB.ppf_Rtc_GetToken((IntPtr) tokenOption));
+		// return new Task<string>(CLIB.ppf_Rtc_GetToken((IntPtr)tokenOption));
 		RtcGetTokenOptions_t205258484121F3BD42DE3373E12D890B8F20FE04* L_17 = V_0;
 		intptr_t L_18;
 		L_18 = RtcGetTokenOptions_op_Explicit_m2C0198AF4A1EBFC38FBADC794E4D16B84D87C5E8(L_17, NULL);
@@ -50398,7 +50398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_JoinRoom_mD767E3C3C08FB15C
 		bool L_10 = ___isAutoSubscribeAudio4;
 		NullCheck(L_9);
 		RtcRoomOptions_SetIsAutoSubscribeAudio_mF9F8CFA3C0CF8679E148E7A4FA72922F5F3C2FEA(L_9, L_10, NULL);
-		// return CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+		// return CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
 		intptr_t L_11;
 		L_11 = RtcRoomOptions_op_Explicit_m1D6004F7427083F2536EC9560695CF86DCC556FC(L_9, NULL);
 		int32_t L_12;
@@ -50411,7 +50411,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_JoinRoom2_mDAF20AEFB3E1A04
 {
 	int32_t V_0 = 0;
 	{
-		// var res = CLIB.ppf_Rtc_JoinRoom((IntPtr) joinRoomOptions);
+		// var res = CLIB.ppf_Rtc_JoinRoom((IntPtr)joinRoomOptions);
 		RtcRoomOptions_t984C08B4206DC7498A34C5B9D29FFFAABA42413C* L_0 = ___joinRoomOptions0;
 		intptr_t L_1;
 		L_1 = RtcRoomOptions_op_Explicit_m1D6004F7427083F2536EC9560695CF86DCC556FC(L_0, NULL);
@@ -50439,7 +50439,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_JoinRoom2_mDAF20AEFB3E1A04
 		String_t* L_6 = L_5->___RoomId_0;
 		int32_t L_7;
 		L_7 = RtcService_LeaveRoom_mA107985AEF28D4074599B1786AC12BD6A7A9BA55(L_6, NULL);
-		// res = CLIB.ppf_Rtc_JoinRoom((IntPtr) joinRoomOptions);
+		// res = CLIB.ppf_Rtc_JoinRoom((IntPtr)joinRoomOptions);
 		RtcRoomOptions_t984C08B4206DC7498A34C5B9D29FFFAABA42413C* L_8 = ___joinRoomOptions0;
 		intptr_t L_9;
 		L_9 = RtcRoomOptions_op_Explicit_m1D6004F7427083F2536EC9560695CF86DCC556FC(L_8, NULL);
@@ -50497,7 +50497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_JoinRoomWithRetry_m168135D
 		bool L_10 = ___isAutoSubscribeAudio4;
 		NullCheck(L_9);
 		RtcRoomOptions_SetIsAutoSubscribeAudio_mF9F8CFA3C0CF8679E148E7A4FA72922F5F3C2FEA(L_9, L_10, NULL);
-		// var res = CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+		// var res = CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
 		RtcRoomOptions_t984C08B4206DC7498A34C5B9D29FFFAABA42413C* L_11 = V_0;
 		intptr_t L_12;
 		L_12 = RtcRoomOptions_op_Explicit_m1D6004F7427083F2536EC9560695CF86DCC556FC(L_11, NULL);
@@ -50516,7 +50516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_JoinRoomWithRetry_m168135D
 		String_t* L_15 = ___roomId0;
 		int32_t L_16;
 		L_16 = RtcService_LeaveRoom_mA107985AEF28D4074599B1786AC12BD6A7A9BA55(L_15, NULL);
-		// res = CLIB.ppf_Rtc_JoinRoom((IntPtr) roomOption);
+		// res = CLIB.ppf_Rtc_JoinRoom((IntPtr)roomOption);
 		RtcRoomOptions_t984C08B4206DC7498A34C5B9D29FFFAABA42413C* L_17 = V_0;
 		intptr_t L_18;
 		L_18 = RtcRoomOptions_op_Explicit_m1D6004F7427083F2536EC9560695CF86DCC556FC(L_17, NULL);
@@ -50595,7 +50595,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcService_EnableAudioPropertiesReport_m
 		int32_t L_2 = ___interval0;
 		NullCheck(L_1);
 		RtcAudioPropertyOptions_SetInterval_mE877C41059831A3B7392008FBE94FF8B086F8A6F(L_1, L_2, NULL);
-		// CLIB.ppf_Rtc_EnableAudioPropertiesReport((IntPtr) conf);
+		// CLIB.ppf_Rtc_EnableAudioPropertiesReport((IntPtr)conf);
 		intptr_t L_3;
 		L_3 = RtcAudioPropertyOptions_op_Explicit_mEF0B08C167BF86A43299D8336107C905AAB8738A(L_1, NULL);
 		CLIB_ppf_Rtc_EnableAudioPropertiesReport_mF2CAD0D08CDB262CB150B1C68E9FADECA4B62CDF(L_3, NULL);
@@ -50898,7 +50898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RtcService_SendStreamSyncInfo_m990BF2
 		intptr_t L_6;
 		L_6 = MarshalUtil_ByteArrayToNative_mFFC7EA525495EFD0719021B9BFA57F13053C0C59(L_5, NULL);
 		V_1 = L_6;
-		// var ans = CLIB.ppf_Rtc_SendStreamSyncInfo(ptr, data.Length, (IntPtr) config);
+		// var ans = CLIB.ppf_Rtc_SendStreamSyncInfo(ptr, data.Length, (IntPtr)config);
 		intptr_t L_7 = V_1;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8 = ___data0;
 		NullCheck(L_8);
@@ -51966,7 +51966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0F4E80CEE21F59E4975DA750542C7A079B640
 	KeyValuePair_2_t47AB280304B50F542FD7E14F25DB2C374AEDD80A V_3;
 	memset((&V_3), 0, sizeof(V_3));
 	{
-		// KVPairArray kvarray = new KVPairArray((uint) data.Count);
+		// KVPairArray kvarray = new KVPairArray((uint)data.Count);
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_0 = ___data1;
 		NullCheck(L_0);
 		int32_t L_1;
@@ -52101,7 +52101,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Task_1_t0F4E80CEE21F59E4975DA750542C7A079B640
 
 IL_0013:
 	{
-		// return new Task<Room>(CLIB.ppf_Room_CreateAndJoinPrivate2( policy, maxUsers, roomOptions.GetHandle()));
+		// return new Task<Room>(CLIB.ppf_Room_CreateAndJoinPrivate2(policy, maxUsers, roomOptions.GetHandle()));
 		int32_t L_2 = ___policy0;
 		uint32_t L_3 = ___maxUsers1;
 		RoomOptions_tEE99060EE0FB807DAA5D74B8C6FAAB176046EE6C* L_4 = ___roomOptions2;
@@ -53871,7 +53871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementDefinitionList__ctor_mC28E32F
 	{
 		// public AchievementDefinitionList(IntPtr a)
 		MessageArray_1__ctor_m905C3BFF49F4BC7EBE5EAD26C6BCCF90D3891197(__this, MessageArray_1__ctor_m905C3BFF49F4BC7EBE5EAD26C6BCCF90D3891197_RuntimeMethod_var);
-		// TotalSize = (ulong) CLIB.ppf_AchievementDefinitionArray_GetTotalSize(a);
+		// TotalSize = (ulong)CLIB.ppf_AchievementDefinitionArray_GetTotalSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_AchievementDefinitionArray_GetTotalSize_m9C689F24E693863ECD4D851439ED8BFD753E6752(L_0, NULL);
@@ -53879,7 +53879,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementDefinitionList__ctor_mC28E32F
 		uint64_t L_2;
 		L_2 = UIntPtr_op_Explicit_mC39E70F0324C1C514A3044790BC19C5FC4C58E1C(L_1, NULL);
 		__this->___TotalSize_8 = L_2;
-		// var count = (int) CLIB.ppf_AchievementDefinitionArray_GetSize(a);
+		// var count = (int)CLIB.ppf_AchievementDefinitionArray_GetSize(a);
 		intptr_t L_3 = ___a0;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_AchievementDefinitionArray_GetSize_m8FE98785AEEB563B1FE2AC151A1B3E3437EAD069(L_3, NULL);
@@ -54018,7 +54018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementProgress__ctor_m68F11EF213C18
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)L_12);
 		__this->___ExtraData_6 = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ExtraData_6), (void*)L_13);
-		// Marshal.Copy(CLIB.ppf_AchievementProgress_GetExtraData(o), ExtraData, 0, (int) size);
+		// Marshal.Copy(CLIB.ppf_AchievementProgress_GetExtraData(o), ExtraData, 0, (int)size);
 		intptr_t L_14 = ___o0;
 		intptr_t L_15;
 		L_15 = CLIB_ppf_AchievementProgress_GetExtraData_mDC3E422F50EA5370FBF2F7A52BD795249517A002(L_14, NULL);
@@ -54039,7 +54039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementProgress__ctor_m68F11EF213C18
 		}
 	}
 	{
-		// UnlockTime = Util.SecondsToDateTime((long) unlockTime);
+		// UnlockTime = Util.SecondsToDateTime((long)unlockTime);
 		uint64_t L_21 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_22;
@@ -54085,7 +54085,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementProgressList__ctor_m72F474B6E
 	{
 		// public AchievementProgressList(IntPtr a)
 		MessageArray_1__ctor_m524B76E9F5969802120F700687FC0D64F5B57E86(__this, MessageArray_1__ctor_m524B76E9F5969802120F700687FC0D64F5B57E86_RuntimeMethod_var);
-		// TotalSize = (ulong) CLIB.ppf_AchievementProgressArray_GetTotalSize(a);
+		// TotalSize = (ulong)CLIB.ppf_AchievementProgressArray_GetTotalSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_AchievementProgressArray_GetTotalSize_mC3175379053AB577C69AB41EA5A5EC534852E7B5(L_0, NULL);
@@ -54093,7 +54093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AchievementProgressList__ctor_m72F474B6E
 		uint64_t L_2;
 		L_2 = UIntPtr_op_Explicit_mC39E70F0324C1C514A3044790BC19C5FC4C58E1C(L_1, NULL);
 		__this->___TotalSize_8 = L_2;
-		// var count = (int) CLIB.ppf_AchievementProgressArray_GetSize(a);
+		// var count = (int)CLIB.ppf_AchievementProgressArray_GetSize(a);
 		intptr_t L_3 = ___a0;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_AchievementProgressArray_GetSize_m29D3B35F1B6EDE522D4B46AD1703B439146EEFA6(L_3, NULL);
@@ -54297,7 +54297,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetDetailsList__ctor_mEA3C0E1B86DB6D98
 	{
 		// public AssetDetailsList(IntPtr a)
 		MessageArray_1__ctor_mC7AB2699069FEA27C89F1D2415C2AC641A6B6C65(__this, MessageArray_1__ctor_mC7AB2699069FEA27C89F1D2415C2AC641A6B6C65_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_AssetDetailsArray_GetSize(a);
+		// var count = (int)CLIB.ppf_AssetDetailsArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_AssetDetailsArray_GetSize_m3B6364D955279EACA3D41FC8AD6F1CEFDADD9EB3(L_0, NULL);
@@ -54315,7 +54315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssetDetailsList__ctor_mEA3C0E1B86DB6D98
 
 IL_001d:
 	{
-		// this.Add(new AssetDetails(CLIB.ppf_AssetDetailsArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new AssetDetails(CLIB.ppf_AssetDetailsArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -54871,7 +54871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* KVPair_GetKey_mD365933EB2FC29F14D61
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t KVPair_GetValueType_mADB4962A836988B5F20B9D2F00A1D5A4698E99FE (KVPair_tDE035093F0CFB787DFC8501354638263FAC71228* __this, const RuntimeMethod* method) 
 {
 	{
-		// return (KVPairType) CLIB.ppf_KeyValuePair_GetValueType(Handle);
+		// return (KVPairType)CLIB.ppf_KeyValuePair_GetValueType(Handle);
 		intptr_t L_0 = __this->___Handle_0;
 		int32_t L_1;
 		L_1 = CLIB_ppf_KeyValuePair_GetValueType_m8187AA9F51A1415406499CBB7AF06BF5EB2F2F58(L_0, NULL);
@@ -55008,7 +55008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProductList__ctor_m1695A4B3B525695E09D1B
 	{
 		// public ProductList(IntPtr a)
 		MessageArray_1__ctor_m92D960CC24A5B064FE6E8C97DA4467BC08A79923(__this, MessageArray_1__ctor_m92D960CC24A5B064FE6E8C97DA4467BC08A79923_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_ProductArray_GetSize(a);
+		// var count = (int)CLIB.ppf_ProductArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_ProductArray_GetSize_mFCEA31B51068BB4AD3CED4B0028E09863C4F71B5(L_0, NULL);
@@ -55130,7 +55130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PurchaseList__ctor_mC20EB07A2367AD127BEB
 	{
 		// public PurchaseList(IntPtr a)
 		MessageArray_1__ctor_mF5CAE9BFD1A8D87066E9510B0C895736F135D37E(__this, MessageArray_1__ctor_mF5CAE9BFD1A8D87066E9510B0C895736F135D37E_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_PurchaseArray_GetSize(a);
+		// var count = (int)CLIB.ppf_PurchaseArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_PurchaseArray_GetSize_m92D02571FA69EF3D0EEE73A96BD56ABDC5C996E7(L_0, NULL);
@@ -55316,7 +55316,7 @@ IL_001b:
 		NullCheck(G_B3_1);
 		((MessageArray_1_tE78A92F21AA7680ADBDFD2438037CE1FE5707DCA*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_tE78A92F21AA7680ADBDFD2438037CE1FE5707DCA*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
-		// var count = (int) CLIB.ppf_LeaderboardArray_GetSize(a);
+		// var count = (int)CLIB.ppf_LeaderboardArray_GetSize(a);
 		intptr_t L_3 = ___a0;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_LeaderboardArray_GetSize_m3DFA564BAA2CF667AA76A96DCF995DE0A1838C78(L_3, NULL);
@@ -55334,7 +55334,7 @@ IL_001b:
 
 IL_0037:
 	{
-		// Add(new Leaderboard(CLIB.ppf_LeaderboardArray_GetElement(a, (UIntPtr) i)));
+		// Add(new Leaderboard(CLIB.ppf_LeaderboardArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_7 = ___a0;
 		int32_t L_8 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -55460,7 +55460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LeaderboardEntry__ctor_m454C436D3104F047
 		int64_t L_14;
 		L_14 = CLIB_ppf_LeaderboardEntry_GetScore_m24E1C2A7BCED1E417807F6A1C688365D66F7FA05(L_13, NULL);
 		__this->___Score_4 = L_14;
-		// Timestamp = Util.SecondsToDateTime((long) CLIB.ppf_LeaderboardEntry_GetTimestamp(o));
+		// Timestamp = Util.SecondsToDateTime((long)CLIB.ppf_LeaderboardEntry_GetTimestamp(o));
 		intptr_t L_15 = ___o0;
 		uint64_t L_16;
 		L_16 = CLIB_ppf_LeaderboardEntry_GetTimestamp_mBC09300B8237EE0952D2C83E8F0E16E86851DC48(L_15, NULL);
@@ -55573,7 +55573,7 @@ IL_001b:
 		NullCheck(G_B3_1);
 		((MessageArray_1_t8FDB3E02E097EE30BF9BF8697656EB4540C25083*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_t8FDB3E02E097EE30BF9BF8697656EB4540C25083*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
-		// var count = (int) CLIB.ppf_LeaderboardEntryArray_GetSize(a);
+		// var count = (int)CLIB.ppf_LeaderboardEntryArray_GetSize(a);
 		intptr_t L_3 = ___a0;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_LeaderboardEntryArray_GetSize_mE3316BF4E74C8DC56289CD13A6655AFAC5CD66E3(L_3, NULL);
@@ -55708,7 +55708,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DestinationList__ctor_mD7A0E573B9F5E3054
 
 IL_001d:
 	{
-		// this.Add(new Destination(CLIB.ppf_DestinationArray_GetElement(a,(UIntPtr) i)));
+		// this.Add(new Destination(CLIB.ppf_DestinationArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -56108,7 +56108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakingAdminSnapshotCandidateList__c
 	{
 		// public MatchmakingAdminSnapshotCandidateList(IntPtr a)
 		MessageArray_1__ctor_m9FE6B5730785F0A4B7F83D98BC294924A9D4F9F7(__this, MessageArray_1__ctor_m9FE6B5730785F0A4B7F83D98BC294924A9D4F9F7_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetSize(a);
+		// var count = (int)CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_MatchmakingAdminSnapshotCandidateArray_GetSize_m6B859A00F2823BD7516AEADEAFCC1CDEC87299D6(L_0, NULL);
@@ -56126,7 +56126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakingAdminSnapshotCandidateList__c
 
 IL_001d:
 	{
-		// this.Add(new MatchmakingAdminSnapshotCandidate(CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new MatchmakingAdminSnapshotCandidate(CLIB.ppf_MatchmakingAdminSnapshotCandidateArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -56401,7 +56401,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakingRoomList__ctor_mB75E767CE87A6
 	{
 		// public MatchmakingRoomList(IntPtr a)
 		MessageArray_1__ctor_mA00558697DE9668167401347F4A38C3FE5B4B1A2(__this, MessageArray_1__ctor_mA00558697DE9668167401347F4A38C3FE5B4B1A2_RuntimeMethod_var);
-		// int count = (int) CLIB.ppf_MatchmakingRoomArray_GetSize(a);
+		// int count = (int)CLIB.ppf_MatchmakingRoomArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_MatchmakingRoomArray_GetSize_mA154B0F4F0179721C2C0748810C0A1405C52E4B7(L_0, NULL);
@@ -56419,7 +56419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MatchmakingRoomList__ctor_mB75E767CE87A6
 
 IL_001d:
 	{
-		// this.Add(new MatchmakingRoom(CLIB.ppf_MatchmakingRoomArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new MatchmakingRoom(CLIB.ppf_MatchmakingRoomArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		uint32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -56542,7 +56542,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotification__ctor_mE27363216C
 	}
 	try
 	{// begin try (depth: 1)
-		// SentTime = Util.SecondsToDateTime((long) CLIB.ppf_RoomInviteNotification_GetSentTime(o));
+		// SentTime = Util.SecondsToDateTime((long)CLIB.ppf_RoomInviteNotification_GetSentTime(o));
 		intptr_t L_7 = ___o0;
 		uint64_t L_8;
 		L_8 = CLIB_ppf_RoomInviteNotification_GetSentTime_mFAAB2C49992E53005C844BB13DD9BC9E0C0BDF31(L_7, NULL);

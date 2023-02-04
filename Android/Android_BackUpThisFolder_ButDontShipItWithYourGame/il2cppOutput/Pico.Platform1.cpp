@@ -1757,7 +1757,7 @@ IL_001b:
 		NullCheck(G_B3_1);
 		((MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
-		// int count = (int) CLIB.ppf_RoomInviteNotificationArray_GetSize(a);
+		// int count = (int)CLIB.ppf_RoomInviteNotificationArray_GetSize(a);
 		intptr_t L_3 = ___a0;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_RoomInviteNotificationArray_GetSize_mF1BB8BC228A57E1DAD14FC99C05CB4A60E0E489C(L_3, NULL);
@@ -1830,7 +1830,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet__ctor_mF5AA777719C7728CACC4426F08
 		// this.handler = handler;
 		intptr_t L_0 = ___handler0;
 		__this->___handler_1 = L_0;
-		// this.size = (ulong) CLIB.ppf_Packet_GetSize(handler);
+		// this.size = (ulong)CLIB.ppf_Packet_GetSize(handler);
 		intptr_t L_1 = ___handler0;
 		uintptr_t L_2;
 		L_2 = CLIB_ppf_Packet_GetSize_m78C58AF3AB6827B26335C65EF982BAF7E4A126B2(L_1, NULL);
@@ -1852,7 +1852,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if ((ulong) dest.LongLength >= size)
+		// if ((ulong)dest.LongLength >= size)
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___dest0;
 		NullCheck(L_0);
 		uint64_t L_1 = __this->___size_0;
@@ -1862,7 +1862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF
 		}
 	}
 	{
-		// Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), dest, 0, (int) size);
+		// Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), dest, 0, (int)size);
 		intptr_t L_2 = __this->___handler_1;
 		intptr_t L_3;
 		L_3 = CLIB_ppf_Packet_GetBytes_m2E236C86BA3A54CD86BAB04E7615E60D53992BD6(L_2, NULL);
@@ -1916,7 +1916,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Packet_GetBytes_m4C7DCFED67828EDF17
 		if ((uint64_t)(L_1) > INTPTR_MAX) IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_overflow_exception(), Packet_GetBytes_m4C7DCFED67828EDF17C7FE19DF0B192FF9172EE9_RuntimeMethod_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((intptr_t)L_1));
 		V_0 = L_2;
-		// Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), bytes, 0, (int) size);
+		// Marshal.Copy(CLIB.ppf_Packet_GetBytes(handler), bytes, 0, (int)size);
 		intptr_t L_3 = __this->___handler_1;
 		intptr_t L_4;
 		L_4 = CLIB_ppf_Packet_GetBytes_m2E236C86BA3A54CD86BAB04E7615E60D53992BD6(L_3, NULL);
@@ -2046,7 +2046,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F5899
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcBinaryMessageReceived_GetLength_mAE30F8C97E18C9BDF368A89900750B82AE66ADB6(L_4, NULL);
 		V_1 = L_5;
-		// Data = MarshalUtil.ByteArrayFromNative(ptr, (uint) sz);
+		// Data = MarshalUtil.ByteArrayFromNative(ptr, (uint)sz);
 		intptr_t L_6 = V_0;
 		int32_t L_7 = V_1;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
@@ -2291,7 +2291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E85865
 		int32_t L_8;
 		L_8 = CLIB_ppf_RtcStreamSyncInfo_GetLength_m26D46D4D0E3A56BD9A68A012B7E1C74F4D353075(L_7, NULL);
 		V_1 = L_8;
-		// Data = MarshalUtil.ByteArrayFromNative(ptr, (uint) sz);
+		// Data = MarshalUtil.ByteArrayFromNative(ptr, (uint)sz);
 		intptr_t L_9 = V_0;
 		int32_t L_10 = V_1;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11;
@@ -2457,7 +2457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesReport__ctor_m070
 	{
 		// public RtcLocalAudioPropertiesReport(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// ulong total = (ulong) CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(o);
+		// ulong total = (ulong)CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(o);
 		intptr_t L_0 = ___o0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize_m28B6D26993F11462B9104B2B345E54A03BD52222(L_0, NULL);
@@ -2960,12 +2960,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A7
 		bool L_8;
 		L_8 = CLIB_ppf_Room_GetIsMembershipLocked_mBD764E8C3065A499C905B80F69DA01147CC0D871(L_7, NULL);
 		__this->___IsMembershipLocked_3 = L_8;
-		// RoomJoinPolicy = (RoomJoinPolicy) CLIB.ppf_Room_GetJoinPolicy(o);
+		// RoomJoinPolicy = (RoomJoinPolicy)CLIB.ppf_Room_GetJoinPolicy(o);
 		intptr_t L_9 = ___o0;
 		int32_t L_10;
 		L_10 = CLIB_ppf_Room_GetJoinPolicy_m24C4471F581824B15E3B344C4A3FAA198CE53F67(L_9, NULL);
 		__this->___RoomJoinPolicy_4 = L_10;
-		// RoomJoinability = (RoomJoinability) CLIB.ppf_Room_GetJoinability(o);
+		// RoomJoinability = (RoomJoinability)CLIB.ppf_Room_GetJoinability(o);
 		intptr_t L_11 = ___o0;
 		int32_t L_12;
 		L_12 = CLIB_ppf_Room_GetJoinability_m958ABFDE1B9363ECE134562E64BB668B95FE85EC(L_11, NULL);
@@ -2975,7 +2975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A7
 		uint32_t L_14;
 		L_14 = CLIB_ppf_Room_GetMaxUsers_m4D68C7BBEBF0ABC3FB3045C91E958E2E170DC3C8(L_13, NULL);
 		__this->___MaxUsers_6 = L_14;
-		// RoomType = (RoomType) CLIB.ppf_Room_GetType(o);
+		// RoomType = (RoomType)CLIB.ppf_Room_GetType(o);
 		intptr_t L_15 = ___o0;
 		int32_t L_16;
 		L_16 = CLIB_ppf_Room_GetType_m700962CEBDAD23371A91A114BD94E77B035BEC46(L_15, NULL);
@@ -3121,7 +3121,7 @@ IL_0033:
 		NullCheck(G_B3_1);
 		((MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
-		// int count = (int) CLIB.ppf_RoomArray_GetSize(a);
+		// int count = (int)CLIB.ppf_RoomArray_GetSize(a);
 		intptr_t L_7 = ___a0;
 		uintptr_t L_8;
 		L_8 = CLIB_ppf_RoomArray_GetSize_m45370408581AA01542641B430FC8B9FAD0E647D4(L_7, NULL);
@@ -3254,7 +3254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645
 	{
 		// public SportDailySummaryList(IntPtr a)
 		MessageArray_1__ctor_mA979AAEE168F9640490FF54CC91E4A42248A3DD3(__this, MessageArray_1__ctor_mA979AAEE168F9640490FF54CC91E4A42248A3DD3_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_SportDailySummaryArray_GetSize(a);
+		// var count = (int)CLIB.ppf_SportDailySummaryArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_SportDailySummaryArray_GetSize_m9F3A52497FFD1F31C7173BF514579B275F69CE6F(L_0, NULL);
@@ -3272,7 +3272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645
 
 IL_001d:
 	{
-		// this.Add(new SportDailySummary(CLIB.ppf_SportDailySummaryArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new SportDailySummary(CLIB.ppf_SportDailySummaryArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3552,7 +3552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042
 	{
 		// public UserList(IntPtr a)
 		MessageArray_1__ctor_mB9282B974A69F693F481FD1242C22EA48D3DBB94(__this, MessageArray_1__ctor_mB9282B974A69F693F481FD1242C22EA48D3DBB94_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_UserArray_GetSize(a);
+		// var count = (int)CLIB.ppf_UserArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_UserArray_GetSize_m1B47B3FC655ECEE76E8E58D651BFF2B3576AC17E(L_0, NULL);
@@ -3570,7 +3570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042
 
 IL_001d:
 	{
-		// this.Add(new User(CLIB.ppf_UserArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new User(CLIB.ppf_UserArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3726,7 +3726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2B
 	{
 		// public UserRoomList(IntPtr a)
 		MessageArray_1__ctor_mC9A4F0DDF161BCD0B98654B9D0EB3BB88C5FEC7D(__this, MessageArray_1__ctor_mC9A4F0DDF161BCD0B98654B9D0EB3BB88C5FEC7D_RuntimeMethod_var);
-		// var count = (int) CLIB.ppf_UserAndRoomArray_GetSize(a);
+		// var count = (int)CLIB.ppf_UserAndRoomArray_GetSize(a);
 		intptr_t L_0 = ___a0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_UserAndRoomArray_GetSize_m14CBF59FA42C319C705958304E3FE7FC3DA051F1(L_0, NULL);
@@ -3744,7 +3744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2B
 
 IL_001d:
 	{
-		// this.Add(new UserRoom(CLIB.ppf_UserAndRoomArray_GetElement(a, (UIntPtr) i)));
+		// this.Add(new UserRoom(CLIB.ppf_UserAndRoomArray_GetElement(a, (UIntPtr)i)));
 		intptr_t L_4 = ___a0;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3805,7 +3805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionResult__ctor_mEE6A0FB5268F3D3A
 	{
 		// public PermissionResult(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		// int sz = (int) CLIB.ppf_PermissionResult_GetAuthorizedPermissionsSize(o);
+		// int sz = (int)CLIB.ppf_PermissionResult_GetAuthorizedPermissionsSize(o);
 		intptr_t L_0 = ___o0;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_PermissionResult_GetAuthorizedPermissionsSize_mC0764542BF7D615FDB4203A1016864686BD81440(L_0, NULL);
@@ -3825,7 +3825,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionResult__ctor_mEE6A0FB5268F3D3A
 
 IL_0022:
 	{
-		// AuthorizedPermissions[i] = CLIB.ppf_PermissionResult_GetAuthorizedPermissions(o, (UIntPtr) i);
+		// AuthorizedPermissions[i] = CLIB.ppf_PermissionResult_GetAuthorizedPermissions(o, (UIntPtr)i);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = __this->___AuthorizedPermissions_0;
 		int32_t L_6 = V_1;
 		intptr_t L_7 = ___o0;

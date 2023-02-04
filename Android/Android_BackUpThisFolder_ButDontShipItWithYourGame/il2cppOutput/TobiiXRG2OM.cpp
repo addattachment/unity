@@ -2458,7 +2458,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR G2OM_ContextCreateOptions_tC95FE52B169E1291C4
 		// var result = G2OM_InitializeOptions(ref internalOptions);
 		int32_t L_0;
 		L_0 = Interop_G2OM_InitializeOptions_mD4486BC548349ACB703D95991CDE7BF88CA007EF((&V_0), NULL);
-		// if(result == G2OM_Error.Ok) // What to do if this fails?
+		// if (result == G2OM_Error.Ok) // What to do if this fails?
 		if (L_0)
 		{
 			goto IL_0033;
@@ -2563,7 +2563,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Interop_G2OM_ContextCreateEx_m810A2D0
 		V_0 = (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
 		// var internalOptions = new G2OM_Internal_ContextCreateOptions();
 		il2cpp_codegen_initobj((&V_1), sizeof(G2OM_Internal_ContextCreateOptions_tFA59BA9250B812AF656DDC92FE94F9999F4AD77A));
-		// var license = has_license ? options.license_content : "" ;
+		// var license = has_license ? options.license_content : "";
 		bool L_3 = V_0;
 		if (L_3)
 		{
@@ -2632,7 +2632,7 @@ IL_0043:
 		G2OM_ContextCreateOptions_tC95FE52B169E1291C4C71EBBCB5B2F19DCACD2A5* L_18 = ___options1;
 		uint32_t L_19 = L_18->___capacity_0;
 		(&V_1)->___capacity_0 = L_19;
-		// internalOptions.license_length = (uint) license.Length;
+		// internalOptions.license_length = (uint)license.Length;
 		String_t* L_20 = V_2;
 		NullCheck(L_20);
 		int32_t L_21;
@@ -2979,7 +2979,7 @@ IL2CPP_EXTERN_C void G2OM_ContextCreateOptions_tC95FE52B169E1291C4C71EBBCB5B2F19
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t G2OM_ExtensionMethods_ToByte_m84B897A12FB3A8F40C0E958BBBEA6AE2D30485E5 (bool ___b0, const RuntimeMethod* method) 
 {
 	{
-		// return b ? (byte) 1 : (byte) 0;
+		// return b ? (byte)1 : (byte)0;
 		bool L_0 = ___b0;
 		if (L_0)
 		{
@@ -3020,7 +3020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR G2OM_Candidate_tA1CB20BFD0A11EC85F26F085D704D
 	{
 		// return new G2OM_Candidate
 		// {
-		//     candidate_id = (ulong) candidateId,
+		//     candidate_id = (ulong)candidateId,
 		//     aabb_max_local_space = max.AsG2OMVector3(),
 		//     aabb_min_local_space = min.AsG2OMVector3(),
 		//     world_to_local_matrix = worldToLocal.AsG2OMMatrix4x4(),
@@ -4162,7 +4162,7 @@ IL_0084:
 		int32_t L_27;
 		L_27 = List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_inline(L_26, List_1_get_Count_mF590592E32D421DE2C6E2F0D5C2F62FB14CCEFDF_RuntimeMethod_var);
 		V_1 = ((int32_t)il2cpp_codegen_subtract(L_24, L_27));
-		// if(remainCount > maxKeysToKeep)
+		// if (remainCount > maxKeysToKeep)
 		int32_t L_28 = V_1;
 		int32_t L_29 = ___maxKeysToKeep4;
 		if ((((int32_t)L_28) <= ((int32_t)L_29)))
@@ -4190,7 +4190,7 @@ IL_0084:
 		RuntimeObject* L_38;
 		L_38 = Enumerable_OrderByDescending_TisKeyValuePair_2_tD3ABECDE39520A2DA73B480F79D9E0AC43E2F5D5_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m954FA3BB5581C36A362F80B422A7D01F5A34AAC7(L_35, L_37, Enumerable_OrderByDescending_TisKeyValuePair_2_tD3ABECDE39520A2DA73B480F79D9E0AC43E2F5D5_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_m954FA3BB5581C36A362F80B422A7D01F5A34AAC7_RuntimeMethod_var);
 		V_6 = L_38;
-		// for(int i = 0; i < removeCount; i++)
+		// for (int i = 0; i < removeCount; i++)
 		V_7 = 0;
 		goto IL_00f2;
 	}
@@ -4210,14 +4210,14 @@ IL_00cf:
 		L_44 = KeyValuePair_2_get_Key_m19A9C5C859D69A8F83795C7E4266CA957F99031F_inline((&V_8), KeyValuePair_2_get_Key_m19A9C5C859D69A8F83795C7E4266CA957F99031F_RuntimeMethod_var);
 		NullCheck(L_40);
 		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_40, L_44, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
-		// for(int i = 0; i < removeCount; i++)
+		// for (int i = 0; i < removeCount; i++)
 		int32_t L_45 = V_7;
 		V_7 = ((int32_t)il2cpp_codegen_add(L_45, 1));
 	}
 
 IL_00f2:
 	{
-		// for(int i = 0; i < removeCount; i++)
+		// for (int i = 0; i < removeCount; i++)
 		int32_t L_46 = V_7;
 		int32_t L_47 = V_5;
 		if ((((int32_t)L_46) < ((int32_t)L_47)))
@@ -4383,7 +4383,7 @@ IL_000d:
 		}
 	}
 	{
-		// var id = (int) candidate.candidate_id;
+		// var id = (int)candidate.candidate_id;
 		G2OM_CandidateResult_tE20516807F4B35D954748850A959622FA906EDD6 L_8 = V_1;
 		uint64_t L_9 = L_8.___candidate_id_0;
 		V_2 = ((int32_t)L_9);
@@ -5452,7 +5452,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_ObjectFinder_DrawDebugRays_m33124BC
 	}
 	int32_t V_0 = 0;
 	{
-		// if(rays.Length <= 0) return;
+		// if (rays.Length <= 0) return;
 		G2OM_GazeRayU5BU5D_tBF1236A4D469EB1DA852998108BB1D1E7EC60700* L_0 = ___rays1;
 		NullCheck(L_0);
 		if ((((RuntimeArray*)L_0)->max_length))
@@ -5461,13 +5461,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_ObjectFinder_DrawDebugRays_m33124BC
 		}
 	}
 	{
-		// if(rays.Length <= 0) return;
+		// if (rays.Length <= 0) return;
 		return;
 	}
 
 IL_0005:
 	{
-		// if(rays[0].is_valid.ToBool() == false) return;
+		// if (rays[0].is_valid.ToBool() == false) return;
 		G2OM_GazeRayU5BU5D_tBF1236A4D469EB1DA852998108BB1D1E7EC60700* L_1 = ___rays1;
 		NullCheck(L_1);
 		uint8_t L_2 = ((L_1)->GetAddressAt(static_cast<il2cpp_array_size_t>(0)))->___is_valid_1;
@@ -5479,7 +5479,7 @@ IL_0005:
 		}
 	}
 	{
-		// if(rays[0].is_valid.ToBool() == false) return;
+		// if (rays[0].is_valid.ToBool() == false) return;
 		return;
 	}
 

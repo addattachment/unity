@@ -644,7 +644,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plastic_fps_controller_OnDestroy_m73771A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void plastic_fps_controller_SetCursorLock_m898E077C2D6E2203AB4E21B89DCD803A98017129 (plastic_fps_controller_tC31A9CB8BB7C74B080A30EB31BA7214C1D3AC8D0* __this, bool ___lockCursor0, const RuntimeMethod* method) 
 {
 	{
-		// if (lockCursor) {
+		// if (lockCursor)
 		bool L_0 = ___lockCursor0;
 		if (!L_0)
 		{

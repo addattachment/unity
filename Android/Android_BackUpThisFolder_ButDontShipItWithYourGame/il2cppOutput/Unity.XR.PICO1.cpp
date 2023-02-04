@@ -9421,7 +9421,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF
 		// float[] headData = new float[7] { 0, 0, 0, 0, 0, 0, 0 };
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)7);
 		V_1 = L_0;
-		// PXR_Plugin.Controller.UPxr_GetControllerTrackingState((uint)controller, predictTime,headData, ref pxrControllerTracking);
+		// PXR_Plugin.Controller.UPxr_GetControllerTrackingState((uint)controller, predictTime, headData, ref pxrControllerTracking);
 		int32_t L_1 = ___controller0;
 		double L_2 = ___predictTime1;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = V_1;
@@ -9626,7 +9626,7 @@ IL_000b:
 		int32_t L_17;
 		L_17 = AudioClip_get_channels_mFEECF5D6389D196BA5102EB79257298B9FDC9F84(L_16, NULL);
 		V_3 = L_17;
-		// return PXR_Plugin.Controller.UPxr_StartVibrateBySharem(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip,ref sourceId);
+		// return PXR_Plugin.Controller.UPxr_StartVibrateBySharem(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, ref sourceId);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_18 = V_0;
 		int32_t L_19 = ___vibrateController1;
 		int32_t L_20 = V_1;
@@ -9727,7 +9727,7 @@ IL_000b:
 		int32_t L_17;
 		L_17 = AudioClip_get_channels_mFEECF5D6389D196BA5102EB79257298B9FDC9F84(L_16, NULL);
 		V_3 = L_17;
-		// return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, (int)cacheConfig,ref sourceId);
+		// return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, sampleRate, channelMask, 32, (int)channelFlip, (int)cacheConfig, ref sourceId);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_18 = V_0;
 		int32_t L_19 = ___vibrateController1;
 		int32_t L_20 = V_1;
@@ -9745,7 +9745,7 @@ IL_000b:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Input_SaveVibrateByCache_m43048E2921B5F64823FC102C3CFA1E96750AA29E (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___data0, int32_t ___vibrateController1, int32_t ___buffersize2, int32_t ___frequency3, int32_t ___channelMask4, int32_t ___channelFlip5, int32_t ___cacheConfig6, int32_t* ___sourceId7, const RuntimeMethod* method) 
 {
 	{
-		// return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, frequency, channelMask, 32, (int)channelFlip, (int)cacheConfig,ref sourceId);
+		// return PXR_Plugin.Controller.UPxr_SaveVibrateByCache(data, (int)vibrateController, buffersize, frequency, channelMask, 32, (int)channelFlip, (int)cacheConfig, ref sourceId);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___data0;
 		int32_t L_1 = ___vibrateController1;
 		int32_t L_2 = ___buffersize2;
@@ -10647,14 +10647,14 @@ IL_0072:
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)4);
 		(&V_0)->___rotation_7 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___rotation_7), (void*)L_25);
-		// for (int i = 0; i < 3; i++) {
+		// for (int i = 0; i < 3; i++)
 		V_4 = 0;
 		goto IL_00e2;
 	}
 
 IL_00c8:
 	{
-		// cameraDataNew.translation[i] = cameraAttribute[3+i];
+		// cameraDataNew.translation[i] = cameraAttribute[3 + i];
 		CameraData_t0CCCC1B0C0339B9D4AD2591FAEE822EA45075BB9 L_26 = V_0;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_27 = L_26.___translation_6;
 		int32_t L_28 = V_4;
@@ -10665,14 +10665,14 @@ IL_00c8:
 		float L_32 = (L_29)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
 		NullCheck(L_27);
 		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(L_28), (float)L_32);
-		// for (int i = 0; i < 3; i++) {
+		// for (int i = 0; i < 3; i++)
 		int32_t L_33 = V_4;
 		V_4 = ((int32_t)il2cpp_codegen_add(L_33, 1));
 	}
 
 IL_00e2:
 	{
-		// for (int i = 0; i < 3; i++) {
+		// for (int i = 0; i < 3; i++)
 		int32_t L_34 = V_4;
 		if ((((int32_t)L_34) < ((int32_t)3)))
 		{
@@ -12758,7 +12758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_MRC_GetMotionShotEnable_mA4B5B5FA4F3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000306) {
+		// if (PXR_Plugin.System.UPxr_GetAPIVersion() >= 0x2000306)
 		il2cpp_codegen_runtime_class_init_inline(System_t4255BA2E24C230336F7C003E6DD13B25588178DB_il2cpp_TypeInfo_var);
 		int32_t L_0;
 		L_0 = System_UPxr_GetAPIVersion_m5F403C49AA1755E9775384B7945394DDD2E1779D(NULL);
@@ -18699,7 +18699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RangeConfigs__ctor_mF5828AD696E2B5176BF1
 		// max = m;
 		float L_1 = ___m1;
 		__this->___max_1 = L_1;
-		// width =w;
+		// width = w;
 		float L_2 = ___w2;
 		__this->___width_2 = L_2;
 		// }
@@ -19565,14 +19565,14 @@ IL_004e:
 		CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_11;
 		L_11 = GameObject_GetComponentsInChildren_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_mC81EC5880E0A0CA0FE8D6FCD9DA7DDB14ECA652E(L_10, GameObject_GetComponentsInChildren_TisCamera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_mC81EC5880E0A0CA0FE8D6FCD9DA7DDB14ECA652E_RuntimeMethod_var);
 		V_1 = L_11;
-		// for (int i = 0; i < cam.Length; i++) {
+		// for (int i = 0; i < cam.Length; i++)
 		V_3 = 0;
 		goto IL_00b4;
 	}
 
 IL_006a:
 	{
-		// if (cam[i].stereoTargetEye == StereoTargetEyeMask.Both) {
+		// if (cam[i].stereoTargetEye == StereoTargetEyeMask.Both)
 		CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_12 = V_1;
 		int32_t L_13 = V_3;
 		NullCheck(L_12);
@@ -19602,7 +19602,7 @@ IL_006a:
 
 IL_0082:
 	{
-		// }else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Left)
+		// else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Left)
 		CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_22 = V_1;
 		int32_t L_23 = V_3;
 		NullCheck(L_22);
@@ -19632,7 +19632,7 @@ IL_0082:
 
 IL_009a:
 	{
-		// else if(cam[i].stereoTargetEye == StereoTargetEyeMask.Right)
+		// else if (cam[i].stereoTargetEye == StereoTargetEyeMask.Right)
 		CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_32 = V_1;
 		int32_t L_33 = V_3;
 		NullCheck(L_32);
@@ -19661,14 +19661,14 @@ IL_009a:
 
 IL_00b0:
 	{
-		// for (int i = 0; i < cam.Length; i++) {
+		// for (int i = 0; i < cam.Length; i++)
 		int32_t L_42 = V_3;
 		V_3 = ((int32_t)il2cpp_codegen_add(L_42, 1));
 	}
 
 IL_00b4:
 	{
-		// for (int i = 0; i < cam.Length; i++) {
+		// for (int i = 0; i < cam.Length; i++)
 		int32_t L_43 = V_3;
 		CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_44 = V_1;
 		NullCheck(L_44);
@@ -19815,7 +19815,7 @@ IL_0044_1:
 				PXR_OverLay_tA8223124328169543809AC832BAB5E344A01A3F3* L_11;
 				L_11 = Enumerator_get_Current_m86073FF6BC6AE901B485190E8445B1FC59304CC1_inline((&V_0), Enumerator_get_Current_m86073FF6BC6AE901B485190E8445B1FC59304CC1_RuntimeMethod_var);
 				V_1 = L_11;
-				// if (eyeCamera[0] != null && eyeCamera[0].enabled) {
+				// if (eyeCamera[0] != null && eyeCamera[0].enabled)
 				CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_12 = __this->___eyeCamera_10;
 				NullCheck(L_12);
 				int32_t L_13 = 0;
@@ -19842,7 +19842,7 @@ IL_0044_1:
 				}
 			}
 			{
-				// layer.RefreshCamera(eyeCamera[0],eyeCamera[0]);
+				// layer.RefreshCamera(eyeCamera[0], eyeCamera[0]);
 				PXR_OverLay_tA8223124328169543809AC832BAB5E344A01A3F3* L_20 = V_1;
 				CameraU5BU5D_t1506EBA524A07AD1066D6DD4D7DFC6721F1AC26B* L_21 = __this->___eyeCamera_10;
 				NullCheck(L_21);

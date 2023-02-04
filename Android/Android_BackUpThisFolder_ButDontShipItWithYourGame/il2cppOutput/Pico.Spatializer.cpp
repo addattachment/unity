@@ -2383,7 +2383,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener_OnAu
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if (!isActive || context == null || !context.Initialized || Context.spatializerApiImpl==SpatializerApiImpl.wwise)
+		// if (!isActive || context == null || !context.Initialized || Context.spatializerApiImpl == SpatializerApiImpl.wwise)
 		bool L_0 = __this->___isActive_4;
 		if (!L_0)
 		{
@@ -2431,7 +2431,7 @@ IL_0032:
 	{
 		// isAudioDSPInProgress = true;
 		__this->___isAudioDSPInProgress_9 = (bool)1;
-		// context.GetInterleavedBinauralBuffer(data, (uint) (data.Length / channels), true);
+		// context.GetInterleavedBinauralBuffer(data, (uint)(data.Length / channels), true);
 		PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* L_7 = __this->___context_5;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = ___data0;
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = ___data0;
@@ -2456,15 +2456,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener__cto
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// private float[] positionArray = new float[3] {0.0f, 0.0f, 0.0f};
+		// private float[] positionArray = new float[3] { 0.0f, 0.0f, 0.0f };
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		__this->___positionArray_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___positionArray_6), (void*)L_0);
-		// private float[] frontArray = new float[3] {0.0f, 0.0f, 0.0f};
+		// private float[] frontArray = new float[3] { 0.0f, 0.0f, 0.0f };
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		__this->___frontArray_7 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___frontArray_7), (void*)L_1);
-		// private float[] upArray = new float[3] {0.0f, 0.0f, 0.0f};
+		// private float[] upArray = new float[3] { 0.0f, 0.0f, 0.0f };
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)3);
 		__this->___upArray_8 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___upArray_8), (void*)L_2);
@@ -3433,7 +3433,7 @@ IL_0043:
 		NullCheck(L_11);
 		int32_t L_12 = ___channels1;
 		V_0 = ((int32_t)(((int32_t)(((RuntimeArray*)L_11)->max_length))/L_12));
-		// float oneOverChannelsF = 1.0f / ((float) channels);
+		// float oneOverChannelsF = 1.0f / ((float)channels);
 		int32_t L_13 = ___channels1;
 		V_1 = ((float)((1.0f)/((float)L_13)));
 		// if (channels > 1)
@@ -3511,7 +3511,7 @@ IL_0090:
 
 IL_0094:
 	{
-		// Context.SubmitSourceBuffer(sourceId, data, (uint) numFrames);
+		// Context.SubmitSourceBuffer(sourceId, data, (uint)numFrames);
 		PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* L_32;
 		L_32 = PXR_Audio_Spatializer_AudioSource_get_Context_m7C93FA1CFB084128D95714985128F19E09CC116B(__this, NULL);
 		int32_t L_33 = __this->___sourceId_19;

@@ -6989,7 +6989,7 @@ IL_0033:
 		}
 	}
 	{
-		// _stepsToMove = (int) (_incrementedMoveAmount / _sizePerStep);
+		// _stepsToMove = (int)(_incrementedMoveAmount / _sizePerStep);
 		float L_10 = __this->____incrementedMoveAmount_14;
 		float L_11 = __this->____sizePerStep_15;
 		__this->____stepsToMove_13 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_10/L_11)));
@@ -7025,7 +7025,7 @@ IL_00bc:
 		float L_22 = __this->____sliderFillAmount_20;
 		NullCheck(L_21);
 		DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0(L_21, L_22, NULL);
-		// Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+		// Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
 		int32_t L_23 = __this->____minValue_7;
 		int32_t L_24 = __this->____maxValue_8;
 		float L_25 = __this->____sliderFillAmount_20;
@@ -7046,7 +7046,7 @@ IL_00bc:
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___number0, const RuntimeMethod* method) 
 {
 	{
-		// _sliderFillAmount = (float) (number - _minValue) / (float) (_maxValue - _minValue);
+		// _sliderFillAmount = (float)(number - _minValue) / (float)(_maxValue - _minValue);
 		int32_t L_0 = ___number0;
 		int32_t L_1 = __this->____minValue_7;
 		int32_t L_2 = __this->____maxValue_8;
@@ -7057,7 +7057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_
 		float L_5 = __this->____sliderFillAmount_20;
 		NullCheck(L_4);
 		DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0(L_4, L_5, NULL);
-		// Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+		// Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
 		int32_t L_6 = __this->____minValue_7;
 		int32_t L_7 = __this->____maxValue_8;
 		float L_8 = __this->____sliderFillAmount_20;
@@ -7074,7 +7074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_
 		int32_t L_12 = __this->____maxValue_8;
 		int32_t L_13 = __this->____minValue_7;
 		__this->____sizePerStep_15 = ((float)((1.0f)/((float)((int32_t)il2cpp_codegen_subtract(L_12, L_13)))));
-		// _currentStep = (int) (_sliderFillAmount / _sizePerStep);
+		// _currentStep = (int)(_sliderFillAmount / _sizePerStep);
 		float L_14 = __this->____sliderFillAmount_20;
 		float L_15 = __this->____sizePerStep_15;
 		__this->____currentStep_12 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_14/L_15)));
@@ -8161,7 +8161,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileReposi
 		// Repository = repo;
 		RuntimeObject* L_0 = ___repo0;
 		GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline(__this, L_0, NULL);
-		// NumberOfPercentiles  = repo.LoadAll()
+		// NumberOfPercentiles = repo.LoadAll()
 		//     .Select(v => v.Percentile)
 		//     .Distinct()
 		//     .Count();
@@ -8429,7 +8429,7 @@ IL_006a:
 		}
 	}
 	{
-		// _values.Add(new Vector2(0,0));
+		// _values.Add(new Vector2(0, 0));
 		List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* L_20 = __this->____values_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_21;
 		memset((&L_21), 0, sizeof(L_21));
@@ -9267,7 +9267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 
 IL_001f:
 	{
-		// var angle = _metricsForPercentile.Accuracy(_settings.SelectedPercentileIndex,diff);
+		// var angle = _metricsForPercentile.Accuracy(_settings.SelectedPercentileIndex, diff);
 		MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* L_9 = __this->____metricsForPercentile_1;
 		RuntimeObject* L_10 = __this->____settings_0;
 		NullCheck(L_10);
@@ -9783,7 +9783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m2
 		float L_3;
 		L_3 = fabsf(L_2);
 		V_0 = L_3;
-		// return _metricsForPercentile.Trackability(_settings.SelectedPercentileIndex,angle);
+		// return _metricsForPercentile.Trackability(_settings.SelectedPercentileIndex, angle);
 		MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* L_4 = __this->____metricsForPercentile_6;
 		RuntimeObject* L_5 = __this->____settings_0;
 		NullCheck(L_5);
@@ -13438,7 +13438,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DisableGazeModifierOnFocus_U3CStartU3Eb_
 		EyeTrackingFilterBase_t6ABBD06FCC91786F6D144D13ABEE8CC1EA0C4AE2* L_1;
 		L_1 = TobiiXRInternal_get_Filter_mF0C88D16BB8A142AF824E06C840AEA5891595FA2(L_0, NULL);
 		V_0 = ((GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C*)IsInstClass((RuntimeObject*)L_1, GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C_il2cpp_TypeInfo_var));
-		// if(filter != null)
+		// if (filter != null)
 		GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* L_2 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		bool L_3;
@@ -13529,9 +13529,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CStartU3Ed__0_MoveNext_m8FBB5BF393382A
 IL_0017:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitUntil(() => {
+		// yield return new WaitUntil(() =>
+		// {
 		//     var filter = TobiiXR.Internal.Filter as GazeModifierFilter;
-		//     if(filter != null)
+		//     if (filter != null)
 		//     {
 		//         filter.Settings.AddDisabler(this);
 		//         return true;

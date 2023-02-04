@@ -6861,7 +6861,7 @@ IL_004f:
 		}
 	}
 	{
-		// _stepsToMove = (int) (_incrementedMoveAmount / _sizePerStep);
+		// _stepsToMove = (int)(_incrementedMoveAmount / _sizePerStep);
 		float L_15 = __this->____incrementedMoveAmount_17;
 		float L_16 = __this->____sizePerStep_18;
 		__this->____stepsToMove_16 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_15/L_16)));
@@ -6897,7 +6897,7 @@ IL_00d8:
 		float L_27 = __this->____sliderFillAmount_20;
 		NullCheck(L_26);
 		UIGazeSliderGraphics_SetFillAmount_m9131CC762C36CF33E8EDFDA68C042054BEDDB911(L_26, L_27, NULL);
-		// Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+		// Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
 		int32_t L_28 = __this->____minValue_7;
 		int32_t L_29 = __this->____maxValue_8;
 		float L_30 = __this->____sliderFillAmount_20;
@@ -9105,7 +9105,7 @@ IL_0033:
 		}
 	}
 	{
-		// _stepsToMove = (int) (_incrementedMoveAmount / _sizePerStep);
+		// _stepsToMove = (int)(_incrementedMoveAmount / _sizePerStep);
 		float L_10 = __this->____incrementedMoveAmount_14;
 		float L_11 = __this->____sizePerStep_15;
 		__this->____stepsToMove_13 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(L_10/L_11)));
@@ -9141,7 +9141,7 @@ IL_00bc:
 		float L_22 = __this->____sliderFillAmount_20;
 		NullCheck(L_21);
 		UIGazeSliderGraphics_SetFillAmount_m9131CC762C36CF33E8EDFDA68C042054BEDDB911(L_21, L_22, NULL);
-		// Value = (int) Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
+		// Value = (int)Mathf.Lerp(_minValue, _maxValue, _sliderFillAmount);
 		int32_t L_23 = __this->____minValue_7;
 		int32_t L_24 = __this->____maxValue_8;
 		float L_25 = __this->____sliderFillAmount_20;
@@ -11961,7 +11961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AssemblyUtils_GetProviderCompilerFl
 		Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA* L_4;
 		L_4 = Attribute_GetCustomAttribute_mF48604D4722E67239F3D6A48CFCCBCDE7BCFFB06(L_1, L_3, NULL);
 		V_0 = ((CompilerFlagAttribute_t0F8579440681093B8A75A62F785909A674DC3541*)IsInstClass((RuntimeObject*)L_4, CompilerFlagAttribute_t0F8579440681093B8A75A62F785909A674DC3541_il2cpp_TypeInfo_var));
-		// if(attribute == null) return null;
+		// if (attribute == null) return null;
 		CompilerFlagAttribute_t0F8579440681093B8A75A62F785909A674DC3541* L_5 = V_0;
 		if (L_5)
 		{
@@ -11969,7 +11969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AssemblyUtils_GetProviderCompilerFl
 		}
 	}
 	{
-		// if(attribute == null) return null;
+		// if (attribute == null) return null;
 		return (String_t*)NULL;
 	}
 
