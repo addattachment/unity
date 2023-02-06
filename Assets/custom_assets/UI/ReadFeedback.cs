@@ -20,7 +20,7 @@ public class ReadFeedback : MonoBehaviour
     private Hashtable downHash;
     [SerializeField] private BoxCollider boxColl;
     [Tooltip("not used at the moment")] public UnityEvent pushEvent;
-
+    public bool isTouched = false;
     public delegate void TestDelegate();// This defines what type of method you're going to call.
     public TestDelegate m_methodToCall; // This is the variable holding the method you're going to call.
     // Start is called before the first frame update
@@ -54,6 +54,15 @@ public class ReadFeedback : MonoBehaviour
         //////////////////
     }
 
+    public void RaiseFeedbackPole()//TestDelegate method)
+    {
+        iTween.MoveBy(gameObject, upHash);
+        button.interactable = true;
+        boxColl.enabled = true;
+
+        // load the function to execute once the button is pushed
+        //m_methodToCall = method;
+    }   
     public void RaiseFeedbackPole(TestDelegate method)
     {
         iTween.MoveBy(gameObject, upHash);
@@ -69,7 +78,8 @@ public class ReadFeedback : MonoBehaviour
         iTween.MoveBy(gameObject, downHash);
         button.interactable = false;
         boxColl.enabled = false;
-        FunctionToExecute(m_methodToCall);
+        isTouched = true;
+        //FunctionToExecute(m_methodToCall);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -78,7 +88,7 @@ public class ReadFeedback : MonoBehaviour
         if (collision.gameObject.CompareTag("Hand"))
         {
             LowerFeedbackPole();
-            pushEvent.Invoke();
+            //pushEvent.Invoke();
 
         }
     }
@@ -90,7 +100,7 @@ public class ReadFeedback : MonoBehaviour
         if (other.gameObject.CompareTag("Hand"))
         {
             LowerFeedbackPole();
-            pushEvent.Invoke();
+            //pushEvent.Invoke();
 
         }
     }

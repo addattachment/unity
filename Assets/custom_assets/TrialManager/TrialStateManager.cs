@@ -11,12 +11,15 @@ namespace TrialNS
         public PreTrialState preTrialState = new();
         public TrialState trialState = new();
         public PostTrialState postTrialState = new();
-        public CaregiverFeedbackState caregiverFeedbackState = new();
-        public CaregiverScoringState caregiverScoringState = new();
         public IntroState introState = new();
-        //TODO we need some more states probably: 
-        // an intro state
-        // a prepplayer state (generate triallist, set names etc)
+
+        public PlayerGroup players;
+        public TargetGroup targets;
+        public TrialList trialList;
+        public GameManager gameManager;
+        public BallStateManager ballStates;
+        public CaregiverStateManager caregiverStates;
+       
 
         public bool startTrial = false;
         public bool endTrial = false;
@@ -26,24 +29,11 @@ namespace TrialNS
         // trialPhase is for debugging purposes
         public string trialPhase = "IntroState";
 
-        //public Player player;
-        //public Player NPC;
-        public PlayerGroup players;
 
-        public TargetGroup targets;
-
-        public TrialList trialList;
-
-        public GameObject caregiverFeedbackScreen; 
-
-        public GameManager gameManager;
-
-        public BallStateManager ballStates;
 
         // Start is called before the first frame update
         void Start()
         {
-          
             // starting state for our state machine
             currentState = introState;
             trialPhase = "IntroState";

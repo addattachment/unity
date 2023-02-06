@@ -16,9 +16,7 @@ namespace TrialNS
             Debug.Log("Entering PostTrialState");
             state.trialPhase = "PostTrialState";
             state.trialList.NextTrial();
-            state.caregiverFeedbackScreen.SetActive(true);
-
-            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().GiveFeedback();
+            state.caregiverStates.mustGiveFeedback = true;
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -28,19 +26,21 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
-            if (state.restart) { state.SwitchState(state.preTrialState); }
+            if (state.restart)
+            {
+                state.restart = false;
+                state.SwitchState(state.preTrialState);
+            }
         }
 
         public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting PostTrialState");
-            state.restart = false;
             //make sure other variables are also false
             state.endTrial = false;
             state.startTrial = false;
             state.ballIsShot = false;
 
-            state.caregiverFeedbackScreen.SetActive(false);
 
             // look for the public gameobject triallist and update the trialstate
             try { GameObject.Find("trialListPrefab").GetComponent<TrialList>().NextTrial(); }

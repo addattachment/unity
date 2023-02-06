@@ -22,7 +22,6 @@ public class CaregiverFeedback : MonoBehaviour
     // Start is called before the first frame update    
     void Start()
     {
-        //feedbackSpeech = GetComponent<SpeechToMouth>();
         stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
     }
 
@@ -35,38 +34,23 @@ public class CaregiverFeedback : MonoBehaviour
             // in order to test the end of a feedback moment, we first need to make sure we're in end trial state
             stateMgr.endTrial = true;
             testPlay = false;
-            Speak();
+            audioSource.Play();
         }
         ///////////////////
-        //We want to check when the speech is done, only then do we want to raise the FeedbackButton
-        if (speechHasStarted)
-        {
-            if (!audioSource.isPlaying)
-            {
-                speechHasStarted = false;
-                feedbackPole.RaiseFeedbackPole(EndFeedback);
-            }
-        }
+
     }
 
-    public void EndFeedback()
-    {
-        Debug.Log("ending feedback, starting new trial");
-        SetEnvironmentForFeedback(false);
-        stateMgr.restart = true; //TODO PLACEHOLDER, first show screen for scoring the caregiver
-    }
 
     public void GiveFeedback()
     {
-        SetEnvironmentForFeedback(true);
         feedbackText.SetText(trialList.GetCurrentTrial().Response());
         LoadAudioClip(trialList.currentTrial);
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
         caregiverEmotion.SetAtmosphere(emotion);
-        Speak();
+        audioSource.Play();
     }
 
-    private void SetEnvironmentForFeedback(bool enabled)
+    public void SetEnvironmentForFeedback(bool enabled)
     {
         if (enabled)
         {
@@ -86,9 +70,4 @@ public class CaregiverFeedback : MonoBehaviour
         audioSource.clip = trialList.audioClips[index];
     }
 
-    public void Speak()
-    {
-        audioSource.Play(); 
-        speechHasStarted = true;
-    }
 }

@@ -22,6 +22,7 @@ public class BallStateManager : MonoBehaviour
     public PlayerGroup players;
     public TrialList trialList;
     public TargetGroup targets;
+    public Ball currentBall;
 
     public int amountOfBallsInTrial = 0;
     // booleans to control state
@@ -30,18 +31,15 @@ public class BallStateManager : MonoBehaviour
     public bool canLaunch = false;
     public bool didShoot = false;
 
-    public Ball currentBall;
-
     // ballPhase is for debugging purposes
     public string ballPhase = "ballInitState";
+
     private void Start()
     {
         currentBallState = ballInitState;
         ballPhase = "ballInitState";
         currentBallState.EnterState(this);
         gameManager = GameManager.Instance;
-
-
     }
     private void Update()
     {

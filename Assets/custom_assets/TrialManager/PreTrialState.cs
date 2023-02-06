@@ -16,7 +16,6 @@ namespace TrialNS
             state.trialPhase = "preTrial";
             state.players.ResetPlayers();
             state.targets.SetTranslateValues();
-            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.trialList.currentTrial);
             state.ballStates.SwitchState(state.ballStates.ballInitState);
         }
 
