@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 
@@ -445,7 +444,6 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-struct Il2CppArrayBounds;
 
 // System.Reflection.MemberInfo
 struct MemberInfo_t  : public RuntimeObject
@@ -459,12 +457,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
-};
-
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
 };
 
 // System.ValueType
@@ -540,14 +532,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 {
 	// System.Boolean System.Boolean::m_value
 	bool ___m_value_0;
-};
-
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
 };
 
 // UnityEngine.InputSystem.Utilities.FourCC
@@ -626,12 +610,6 @@ struct IntPtr_t
 	void* ___m_value_0;
 };
 
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
 // UnityEngine.InputSystem.Utilities.InternedString
 struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 
 {
@@ -654,7 +632,6 @@ struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735_marshaled_com
 };
 
 // UnityEngineInternal.Input.NativeInputEvent
-#pragma pack(push, tp, 1)
 struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8 
 {
 	union
@@ -741,7 +718,6 @@ struct NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8
 		uint8_t NativeInputEvent_tDE7DE9A48ACA442A8D37E2920836D00C26408CB8__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.Utilities.PrimitiveValue
 struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 
@@ -1270,26 +1246,6 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7
 	float ___y_1;
 };
 
-struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
-{
-	// UnityEngine.Vector2 UnityEngine.Vector2::zeroVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector_2;
-	// UnityEngine.Vector2 UnityEngine.Vector2::oneVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector_3;
-	// UnityEngine.Vector2 UnityEngine.Vector2::upVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector_4;
-	// UnityEngine.Vector2 UnityEngine.Vector2::downVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector_5;
-	// UnityEngine.Vector2 UnityEngine.Vector2::leftVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector_6;
-	// UnityEngine.Vector2 UnityEngine.Vector2::rightVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector_7;
-	// UnityEngine.Vector2 UnityEngine.Vector2::positiveInfinityVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector_8;
-	// UnityEngine.Vector2 UnityEngine.Vector2::negativeInfinityVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector_9;
-};
-
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
 {
@@ -1407,12 +1363,6 @@ struct Exception_t  : public RuntimeObject
 	// System.Int32 System.Exception::caught_in_unmanaged
 	int32_t ___caught_in_unmanaged_16;
 };
-
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
 // Native definition for P/Invoke marshalling of System.Exception
 struct Exception_t_marshaled_pinvoke
 {
@@ -1455,7 +1405,6 @@ struct Exception_t_marshaled_com
 };
 
 // UnityEngine.InputSystem.LowLevel.InputDeviceCommand
-#pragma pack(push, tp, 1)
 struct InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E 
 {
 	union
@@ -1493,10 +1442,8 @@ struct InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E
 		uint8_t InputDeviceCommand_t219FD4502984D73D423496E4A2ED7FDB6CBE710E__padding[8];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.InputEvent
-#pragma pack(push, tp, 1)
 struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5 
 {
 	union
@@ -1523,7 +1470,6 @@ struct InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5
 		uint8_t InputEvent_t10F727342D1A79DCFC06529C203BB61C194AEBC5__padding[20];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.LowLevel.InputStateBlock
 struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 
@@ -1538,65 +1484,12 @@ struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5
 	uint32_t ___U3CsizeInBitsU3Ek__BackingField_36;
 };
 
-struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5_StaticFields
-{
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatBit
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatBit_2;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatSBit
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatSBit_4;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatInt
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatInt_6;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatUInt
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatUInt_8;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatShort
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatShort_10;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatUShort
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatUShort_12;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatByte
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatByte_14;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatSByte
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatSByte_16;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatLong
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatLong_18;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatULong
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatULong_20;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatFloat
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatFloat_22;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatDouble
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatDouble_24;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2_26;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3_27;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatQuaternion
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatQuaternion_28;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2Short
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2Short_29;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3Short
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3Short_30;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2Byte
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2Byte_31;
-	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3Byte
-	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3Byte_32;
-};
-
 // UnityEngine.InputSystem.LowLevel.InputUpdate
 struct InputUpdate_t3D4F0AD6CD83C86A73B8165929FF0CB151A07CCD  : public RuntimeObject
 {
 };
 
-struct InputUpdate_t3D4F0AD6CD83C86A73B8165929FF0CB151A07CCD_StaticFields
-{
-	// System.UInt32 UnityEngine.InputSystem.LowLevel.InputUpdate::s_UpdateStepCount
-	uint32_t ___s_UpdateStepCount_0;
-	// UnityEngine.InputSystem.LowLevel.InputUpdateType UnityEngine.InputSystem.LowLevel.InputUpdate::s_LatestUpdateType
-	int32_t ___s_LatestUpdateType_1;
-	// UnityEngine.InputSystem.LowLevel.InputUpdate/UpdateStepCount UnityEngine.InputSystem.LowLevel.InputUpdate::s_PlayerUpdateStepCount
-	UpdateStepCount_tF3C9095BD6614FD4E6024DAF43DE8F5602D8E324 ___s_PlayerUpdateStepCount_2;
-};
-
 // UnityEngine.InputSystem.LowLevel.MouseState
-#pragma pack(push, tp, 1)
 struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1 
 {
 	union
@@ -1686,7 +1579,6 @@ struct MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1
 		uint8_t MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1__padding[30];
 	};
 };
-#pragma pack(pop, tp)
 
 // System.RuntimeFieldHandle
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
@@ -1750,7 +1642,6 @@ struct InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E  : public RuntimeO
 };
 
 // UnityEngine.InputSystem.LowLevel.StateEvent
-#pragma pack(push, tp, 1)
 struct StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F 
 {
 	union
@@ -1807,7 +1698,6 @@ struct StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F
 		uint8_t StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F__padding[25];
 	};
 };
-#pragma pack(pop, tp)
 
 // System.SystemException
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
@@ -1821,26 +1711,7 @@ struct Type_t  : public MemberInfo_t
 	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl_8;
 };
 
-struct Type_t_StaticFields
-{
-	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
-	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
-	// System.Char System.Type::Delimiter
-	Il2CppChar ___Delimiter_1;
-	// System.Type[] System.Type::EmptyTypes
-	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
-	// System.Object System.Type::Missing
-	RuntimeObject* ___Missing_3;
-	// System.Reflection.MemberFilter System.Type::FilterAttribute
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
-	// System.Reflection.MemberFilter System.Type::FilterName
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
-	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
-};
-
 // UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand
-#pragma pack(push, tp, 1)
 struct WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0 
 {
 	union
@@ -1878,7 +1749,6 @@ struct WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0
 		uint8_t WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0__padding[16];
 	};
 };
-#pragma pack(pop, tp)
 
 // UnityEngine.InputSystem.InputControl`1<System.Int32>
 struct InputControl_1_t6610D981ECAED7950370CC37B55465BBFDDD6A61  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
@@ -1997,12 +1867,6 @@ struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43  : public InputDevice_
 	InlinedArray_1_t8249EE706E2222F1A22F40FB70BEB230C11C5992 ___m_ImeCompositionListeners_49;
 };
 
-struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_StaticFields
-{
-	// UnityEngine.InputSystem.Keyboard UnityEngine.InputSystem.Keyboard::<current>k__BackingField
-	Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* ___U3CcurrentU3Ek__BackingField_45;
-};
-
 // UnityEngine.InputSystem.Pointer
 struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
 {
@@ -2016,12 +1880,6 @@ struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A  : public InputDevice_t
 	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CpressureU3Ek__BackingField_42;
 	// UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.Pointer::<press>k__BackingField
 	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CpressU3Ek__BackingField_43;
-};
-
-struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields
-{
-	// UnityEngine.InputSystem.Pointer UnityEngine.InputSystem.Pointer::<current>k__BackingField
-	Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___U3CcurrentU3Ek__BackingField_44;
 };
 
 // UnityEngine.InputSystem.Controls.Vector2Control
@@ -2038,14 +1896,6 @@ struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF  : public AxisCon
 {
 	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::pressPoint
 	float ___pressPoint_33;
-};
-
-struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
-{
-	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::s_GlobalDefaultButtonPressPoint
-	float ___s_GlobalDefaultButtonPressPoint_34;
-	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::s_GlobalDefaultButtonReleaseThreshold
-	float ___s_GlobalDefaultButtonReleaseThreshold_35;
 };
 
 // UnityEngine.InputSystem.Controls.DeltaControl
@@ -2085,14 +1935,6 @@ struct Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F  : public Pointer_t800EF2
 	IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___U3CclickCountU3Ek__BackingField_51;
 };
 
-struct Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields
-{
-	// UnityEngine.InputSystem.Mouse UnityEngine.InputSystem.Mouse::<current>k__BackingField
-	Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___U3CcurrentU3Ek__BackingField_52;
-	// UnityEngine.InputSystem.Mouse UnityEngine.InputSystem.Mouse::s_PlatformMouseDevice
-	Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___s_PlatformMouseDevice_53;
-};
-
 // UnityEngine.InputSystem.Pen
 struct Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF  : public Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A
 {
@@ -2114,12 +1956,6 @@ struct Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF  : public Pointer_t800EF283
 	Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___U3CtiltU3Ek__BackingField_52;
 	// UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.Pen::<twist>k__BackingField
 	AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___U3CtwistU3Ek__BackingField_53;
-};
-
-struct Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields
-{
-	// UnityEngine.InputSystem.Pen UnityEngine.InputSystem.Pen::<current>k__BackingField
-	Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___U3CcurrentU3Ek__BackingField_54;
 };
 
 // UnityEngine.InputSystem.Controls.AnyKeyControl
@@ -2155,6 +1991,383 @@ struct KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0  : public ButtonCont
 	// System.Int32 UnityEngine.InputSystem.Controls.KeyControl::m_ScanCode
 	int32_t ___m_ScanCode_38;
 };
+
+// System.Reflection.MemberInfo
+
+// System.Reflection.MemberInfo
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// System.ValueType
+
+// System.ValueType
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<System.Char>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<System.Char>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<UnityEngine.InputSystem.LowLevel.IMECompositionString>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<UnityEngine.InputSystem.LowLevel.IMECompositionString>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Int32>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Int32>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Single>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<System.Single>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Vector2>>
+
+// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputProcessor`1<UnityEngine.Vector2>>
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// UnityEngine.InputSystem.Utilities.FourCC
+
+// UnityEngine.InputSystem.Utilities.FourCC
+
+// UnityEngine.InputSystem.Layouts.InputDeviceDescription
+
+// UnityEngine.InputSystem.Layouts.InputDeviceDescription
+
+// UnityEngine.InputSystem.LowLevel.InputEventPtr
+
+// UnityEngine.InputSystem.LowLevel.InputEventPtr
+
+// System.Int32
+
+// System.Int32
+
+// System.Int64
+
+// System.Int64
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// UnityEngine.InputSystem.Utilities.InternedString
+
+// UnityEngine.InputSystem.Utilities.InternedString
+
+// UnityEngineInternal.Input.NativeInputEvent
+
+// UnityEngineInternal.Input.NativeInputEvent
+
+// UnityEngine.InputSystem.Utilities.PrimitiveValue
+
+// UnityEngine.InputSystem.Utilities.PrimitiveValue
+
+// System.Single
+
+// System.Single
+
+// System.UInt16
+
+// System.UInt16
+
+// System.UInt32
+
+// System.UInt32
+
+// UnityEngine.Vector2
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	// UnityEngine.Vector2 UnityEngine.Vector2::zeroVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector_2;
+	// UnityEngine.Vector2 UnityEngine.Vector2::oneVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector_3;
+	// UnityEngine.Vector2 UnityEngine.Vector2::upVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector_4;
+	// UnityEngine.Vector2 UnityEngine.Vector2::downVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector_5;
+	// UnityEngine.Vector2 UnityEngine.Vector2::leftVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector_6;
+	// UnityEngine.Vector2 UnityEngine.Vector2::rightVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector_7;
+	// UnityEngine.Vector2 UnityEngine.Vector2::positiveInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector_8;
+	// UnityEngine.Vector2 UnityEngine.Vector2::negativeInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector_9;
+};
+
+// UnityEngine.Vector2
+
+// System.Void
+
+// System.Void
+
+// UnityEngine.InputSystem.InputControlExtensions/ControlBuilder
+
+// UnityEngine.InputSystem.InputControlExtensions/ControlBuilder
+
+// UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder
+
+// UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder
+
+// UnityEngine.InputSystem.LowLevel.InputUpdate/UpdateStepCount
+
+// UnityEngine.InputSystem.LowLevel.InputUpdate/UpdateStepCount
+
+// UnityEngine.InputSystem.LowLevel.StateEvent/<stateData>e__FixedBuffer
+
+// UnityEngine.InputSystem.LowLevel.StateEvent/<stateData>e__FixedBuffer
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// UnityEngine.InputSystem.LowLevel.InputDeviceCommand
+
+// UnityEngine.InputSystem.LowLevel.InputDeviceCommand
+
+// UnityEngine.InputSystem.LowLevel.InputEvent
+
+// UnityEngine.InputSystem.LowLevel.InputEvent
+
+// UnityEngine.InputSystem.LowLevel.InputStateBlock
+struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5_StaticFields
+{
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatBit
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatBit_2;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatSBit
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatSBit_4;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatInt
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatInt_6;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatUInt
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatUInt_8;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatShort
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatShort_10;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatUShort
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatUShort_12;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatByte
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatByte_14;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatSByte
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatSByte_16;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatLong
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatLong_18;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatULong
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatULong_20;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatFloat
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatFloat_22;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatDouble
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatDouble_24;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2_26;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3_27;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatQuaternion
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatQuaternion_28;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2Short
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2Short_29;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3Short
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3Short_30;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector2Byte
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector2Byte_31;
+	// UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputStateBlock::FormatVector3Byte
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___FormatVector3Byte_32;
+};
+
+// UnityEngine.InputSystem.LowLevel.InputStateBlock
+
+// UnityEngine.InputSystem.LowLevel.InputUpdate
+struct InputUpdate_t3D4F0AD6CD83C86A73B8165929FF0CB151A07CCD_StaticFields
+{
+	// System.UInt32 UnityEngine.InputSystem.LowLevel.InputUpdate::s_UpdateStepCount
+	uint32_t ___s_UpdateStepCount_0;
+	// UnityEngine.InputSystem.LowLevel.InputUpdateType UnityEngine.InputSystem.LowLevel.InputUpdate::s_LatestUpdateType
+	int32_t ___s_LatestUpdateType_1;
+	// UnityEngine.InputSystem.LowLevel.InputUpdate/UpdateStepCount UnityEngine.InputSystem.LowLevel.InputUpdate::s_PlayerUpdateStepCount
+	UpdateStepCount_tF3C9095BD6614FD4E6024DAF43DE8F5602D8E324 ___s_PlayerUpdateStepCount_2;
+};
+
+// UnityEngine.InputSystem.LowLevel.InputUpdate
+
+// UnityEngine.InputSystem.LowLevel.MouseState
+
+// UnityEngine.InputSystem.LowLevel.MouseState
+
+// System.RuntimeFieldHandle
+
+// System.RuntimeFieldHandle
+
+// System.RuntimeTypeHandle
+
+// System.RuntimeTypeHandle
+
+// UnityEngine.InputSystem.InputControl
+
+// UnityEngine.InputSystem.InputControl
+
+// UnityEngine.InputSystem.LowLevel.StateEvent
+
+// UnityEngine.InputSystem.LowLevel.StateEvent
+
+// System.SystemException
+
+// System.SystemException
+
+// System.Type
+struct Type_t_StaticFields
+{
+	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
+	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_1;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
+	// System.Object System.Type::Missing
+	RuntimeObject* ___Missing_3;
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
+};
+
+// System.Type
+
+// UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand
+
+// UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand
+
+// UnityEngine.InputSystem.InputControl`1<System.Int32>
+
+// UnityEngine.InputSystem.InputControl`1<System.Int32>
+
+// UnityEngine.InputSystem.InputControl`1<System.Single>
+
+// UnityEngine.InputSystem.InputControl`1<System.Single>
+
+// UnityEngine.InputSystem.InputControl`1<UnityEngine.Vector2>
+
+// UnityEngine.InputSystem.InputControl`1<UnityEngine.Vector2>
+
+// System.ArgumentException
+
+// System.ArgumentException
+
+// UnityEngine.InputSystem.InputDevice
+
+// UnityEngine.InputSystem.InputDevice
+
+// UnityEngine.InputSystem.Controls.AxisControl
+
+// UnityEngine.InputSystem.Controls.AxisControl
+
+// UnityEngine.InputSystem.Controls.IntegerControl
+
+// UnityEngine.InputSystem.Controls.IntegerControl
+
+// System.ComponentModel.InvalidEnumArgumentException
+
+// System.ComponentModel.InvalidEnumArgumentException
+
+// UnityEngine.InputSystem.Keyboard
+struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_StaticFields
+{
+	// UnityEngine.InputSystem.Keyboard UnityEngine.InputSystem.Keyboard::<current>k__BackingField
+	Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* ___U3CcurrentU3Ek__BackingField_45;
+};
+
+// UnityEngine.InputSystem.Keyboard
+
+// UnityEngine.InputSystem.Pointer
+struct Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields
+{
+	// UnityEngine.InputSystem.Pointer UnityEngine.InputSystem.Pointer::<current>k__BackingField
+	Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___U3CcurrentU3Ek__BackingField_44;
+};
+
+// UnityEngine.InputSystem.Pointer
+
+// UnityEngine.InputSystem.Controls.Vector2Control
+
+// UnityEngine.InputSystem.Controls.Vector2Control
+
+// UnityEngine.InputSystem.Controls.ButtonControl
+struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
+{
+	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::s_GlobalDefaultButtonPressPoint
+	float ___s_GlobalDefaultButtonPressPoint_34;
+	// System.Single UnityEngine.InputSystem.Controls.ButtonControl::s_GlobalDefaultButtonReleaseThreshold
+	float ___s_GlobalDefaultButtonReleaseThreshold_35;
+};
+
+// UnityEngine.InputSystem.Controls.ButtonControl
+
+// UnityEngine.InputSystem.Controls.DeltaControl
+
+// UnityEngine.InputSystem.Controls.DeltaControl
+
+// UnityEngine.InputSystem.FastKeyboard
+
+// UnityEngine.InputSystem.FastKeyboard
+
+// UnityEngine.InputSystem.Mouse
+struct Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields
+{
+	// UnityEngine.InputSystem.Mouse UnityEngine.InputSystem.Mouse::<current>k__BackingField
+	Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___U3CcurrentU3Ek__BackingField_52;
+	// UnityEngine.InputSystem.Mouse UnityEngine.InputSystem.Mouse::s_PlatformMouseDevice
+	Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___s_PlatformMouseDevice_53;
+};
+
+// UnityEngine.InputSystem.Mouse
+
+// UnityEngine.InputSystem.Pen
+struct Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields
+{
+	// UnityEngine.InputSystem.Pen UnityEngine.InputSystem.Pen::<current>k__BackingField
+	Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___U3CcurrentU3Ek__BackingField_54;
+};
+
+// UnityEngine.InputSystem.Pen
+
+// UnityEngine.InputSystem.Controls.AnyKeyControl
+
+// UnityEngine.InputSystem.Controls.AnyKeyControl
+
+// UnityEngine.InputSystem.Controls.DiscreteButtonControl
+
+// UnityEngine.InputSystem.Controls.DiscreteButtonControl
+
+// UnityEngine.InputSystem.FastMouse
+
+// UnityEngine.InputSystem.FastMouse
+
+// UnityEngine.InputSystem.Controls.KeyControl
+
+// UnityEngine.InputSystem.Controls.KeyControl
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -2305,18 +2518,18 @@ struct InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17  : public Ru
 
 
 // System.Int64 UnityEngine.InputSystem.InputDevice::ExecuteCommand<UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand>(TCommand&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86_gshared (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0* ___command0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86_gshared (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0* ___0_command, const RuntimeMethod* method) ;
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<System.Object>(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputState::Change<UnityEngine.Vector2>(UnityEngine.InputSystem.InputControl,TState,UnityEngine.InputSystem.LowLevel.InputUpdateType,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___state1, int32_t ___updateType2, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_state, int32_t ___2_updateType, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___3_eventPtr, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputState::Change<UnityEngine.InputSystem.LowLevel.MouseState>(UnityEngine.InputSystem.InputControl,TState&,UnityEngine.InputSystem.LowLevel.InputUpdateType,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1* ___state1, int32_t ___updateType2, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E_gshared (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1* ___1_state, int32_t ___2_updateType, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___3_eventPtr, const RuntimeMethod* method) ;
 
 // System.Void UnityEngine.InputSystem.Pointer::MakeCurrent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_MakeCurrent_m78C156FD8FF20DBEDC1EE659E54ED6EB927141DF (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::set_current(UnityEngine.InputSystem.Mouse)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::OnAdded()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_OnAdded_m7288FD5986A95531B9B7EB74E99B28B4AB20FF7D (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.InputSystem.InputDevice::get_native()
@@ -2326,41 +2539,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnRemoved_m8B30B152B41924B1EE690
 // UnityEngine.InputSystem.Mouse UnityEngine.InputSystem.Mouse::get_current()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* Mouse_get_current_m410C1F9ABC5AA77353574E8815F7E63289707986_inline (const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand::Create(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0 WarpMousePositionCommand_Create_m39A1846CF1D388004F229D0C66600059A422636F (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___position0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0 WarpMousePositionCommand_Create_m39A1846CF1D388004F229D0C66600059A422636F (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_position, const RuntimeMethod* method) ;
 // System.Int64 UnityEngine.InputSystem.InputDevice::ExecuteCommand<UnityEngine.InputSystem.LowLevel.WarpMousePositionCommand>(TCommand&)
-inline int64_t InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0* ___command0, const RuntimeMethod* method)
+inline int64_t InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0* ___0_command, const RuntimeMethod* method)
 {
-	return ((  int64_t (*) (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B*, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0*, const RuntimeMethod*))InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86_gshared)(__this, ___command0, method);
+	return ((  int64_t (*) (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B*, WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0*, const RuntimeMethod*))InputDevice_ExecuteCommand_TisWarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0_m866A116984D62310E36A42F40813E134AD999C86_gshared)(__this, ___0_command, method);
 }
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.DeltaControl>(System.String)
-inline DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* InputControl_GetChildControl_TisDeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B_m0FA5BE28A4F86FACEF1F48AF590E34A11B02654E (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method)
+inline DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* InputControl_GetChildControl_TisDeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B_m0FA5BE28A4F86FACEF1F48AF590E34A11B02654E (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
 {
-	return ((  DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___path0, method);
+	return ((  DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_scroll(UnityEngine.InputSystem.Controls.DeltaControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) ;
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.ButtonControl>(System.String)
-inline ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method)
+inline ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* InputControl_GetChildControl_TisButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_m37B3269440E54D5C867480E334993426D47F9044 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
 {
-	return ((  ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___path0, method);
+	return ((  ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_leftButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::set_middleButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::set_rightButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::set_forwardButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::set_backButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.IntegerControl>(System.String)
-inline IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method)
+inline IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* InputControl_GetChildControl_TisIntegerControl_tA24544EFF42204852F638FF5147F754962C997AB_m87D5D6574BD57F88D41DDE18D17933360E255297 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
 {
-	return ((  IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___path0, method);
+	return ((  IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_clickCount(UnityEngine.InputSystem.Controls.IntegerControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::FinishSetup()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_FinishSetup_m8A6BFEFCDD2AA085471757A211B9262DE0B8FDCD (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::OnNextUpdate()
@@ -2370,20 +2583,20 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3
 // UnityEngine.Vector2 UnityEngine.Vector2::get_zero()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_get_zero_m32506C40EC2EE7D5D4410BF40D3EE683A3D5F32C_inline (const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputState::Change<UnityEngine.Vector2>(UnityEngine.InputSystem.InputControl,TState,UnityEngine.InputSystem.LowLevel.InputUpdateType,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-inline void InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___state1, int32_t ___updateType2, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr3, const RuntimeMethod* method)
+inline void InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_state, int32_t ___2_updateType, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___3_eventPtr, const RuntimeMethod* method)
 {
-	((  void (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, int32_t, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0, const RuntimeMethod*))InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0_gshared)(___control0, ___state1, ___updateType2, ___eventPtr3, method);
+	((  void (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, int32_t, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0, const RuntimeMethod*))InputState_Change_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m609643C08A3C699718B4AB9B241F15FF2EFFFEB0_gshared)(___0_control, ___1_state, ___2_updateType, ___3_eventPtr, method);
 }
 // System.Void* UnityEngine.InputSystem.InputControl::get_currentStatePtr()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* InputControl_get_currentStatePtr_m77D2900EEE4AAB505C98292AF8538DDCF44F8C3C (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControlExtensions::AccumulateValueInEvent(UnityEngine.InputSystem.InputControl`1<UnityEngine.Vector2>,System.Void*,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControlExtensions_AccumulateValueInEvent_mE82152B46D78005333C8B1F6AB842DCA67797387 (InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66* ___control0, void* ___currentStatePtr1, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___newState2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControlExtensions_AccumulateValueInEvent_mE82152B46D78005333C8B1F6AB842DCA67797387 (InputControl_1_tC164085710F2FAA9161295C9B7FE273AF893CF66* ___0_control, void* ___1_currentStatePtr, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___2_newState, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::OnNextUpdate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnNextUpdate_m00085152EFFF1252640E83A33C2767E563CA1B50 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer__ctor_mD96F9E30371AD5B7C3F8C2B7EDEA322D0108B8C8 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.Pen::get_tip()
@@ -2401,471 +2614,471 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7A
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.Pen::get_inRange()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* Pen_get_inRange_mAEBA398A84B9CBC255A6F442CE22D110277C3045_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___handle0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___0_handle, const RuntimeMethod* method) ;
 // System.Void System.ComponentModel.InvalidEnumArgumentException::.ctor(System.String,System.Int32,System.Type)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidEnumArgumentException__ctor_mB6DA9F3F2403BFA3AAD577AA4A27034D29A60EB4 (InvalidEnumArgumentException_t5B42625AD815A72639D894ED1592FF4BE438D989* __this, String_t* ___argumentName0, int32_t ___invalidValue1, Type_t* ___enumClass2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidEnumArgumentException__ctor_mB6DA9F3F2403BFA3AAD577AA4A27034D29A60EB4 (InvalidEnumArgumentException_t5B42625AD815A72639D894ED1592FF4BE438D989* __this, String_t* ___0_argumentName, int32_t ___1_invalidValue, Type_t* ___2_enumClass, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_current(UnityEngine.InputSystem.Pen)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Pen UnityEngine.InputSystem.Pen::get_current()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* Pen_get_current_m00F91ABDEAFBE112707EAE720B1481DE5AECC795_inline (const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_tip(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_eraser(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_firstBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_secondBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_thirdBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_fourthBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pen::set_inRange(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.Vector2Control>(System.String)
-inline Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method)
+inline Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* InputControl_GetChildControl_TisVector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432_m3957D0D8F6F298173F867E33A3E5ED0F9A591F85 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
 {
-	return ((  Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___path0, method);
+	return ((  Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
 }
 // System.Void UnityEngine.InputSystem.Pen::set_tilt(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
 // TControl UnityEngine.InputSystem.InputControl::GetChildControl<UnityEngine.InputSystem.Controls.AxisControl>(System.String)
-inline AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___path0, const RuntimeMethod* method)
+inline AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* InputControl_GetChildControl_TisAxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7_mE395247B4A734866EFF7A908510EEF5B2CFE3841 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, String_t* ___0_path, const RuntimeMethod* method)
 {
-	return ((  AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___path0, method);
+	return ((  AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, String_t*, const RuntimeMethod*))InputControl_GetChildControl_TisRuntimeObject_m5E81C3A512C444426EB15097CCF01D73CF1C614C_gshared)(__this, ___0_path, method);
 }
 // System.Void UnityEngine.InputSystem.Pen::set_twist(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::MakeCurrent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_MakeCurrent_mA189366502F9A1C15719CBD911FBC7CC1FBD2D1D (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_current(UnityEngine.InputSystem.Pointer)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::OnRemoved()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_OnRemoved_m283B9C9672D0D5E044133C5E38A7322B34B14FD4 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Pointer UnityEngine.InputSystem.Pointer::get_current()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* Pointer_get_current_m207443803344C305DEAAEBA56C445980D6C22CB3_inline (const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_position(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_delta(UnityEngine.InputSystem.Controls.DeltaControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_radius(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_pressure(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Pointer::set_press(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControl::FinishSetup()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_FinishSetup_m46B682B124C6E127183D19E1BA86E966472C7C15 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.Pointer::get_delta()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* Pointer_get_delta_mB1F6851275453D4BE23E79F6FD5C5E87D901E569_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputState::Change(UnityEngine.InputSystem.InputDevice,UnityEngine.InputSystem.LowLevel.InputEventPtr,UnityEngine.InputSystem.LowLevel.InputUpdateType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_m3920D1C32EA34F4F87A363043D7D750498070E64 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___device0, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr1, int32_t ___updateType2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputState_Change_m3920D1C32EA34F4F87A363043D7D750498070E64 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___0_device, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___1_eventPtr, int32_t ___2_updateType, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice__ctor_mAA72B9458CD588116A968FE54C2AD2B59C787E51 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Keyboard__ctor_m2B58419F882AE21EADD736429B12945AE5C5B293 (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions::Setup(UnityEngine.InputSystem.InputDevice,System.Int32,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 InputControlExtensions_Setup_m4760089D238ED18D5A857C38E992A0E9E9633822 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___device0, int32_t ___controlCount1, int32_t ___usageCount2, int32_t ___aliasCount3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 InputControlExtensions_Setup_m4760089D238ED18D5A857C38E992A0E9E9633822 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___0_device, int32_t ___1_controlCount, int32_t ___2_usageCount, int32_t ___3_aliasCount, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithName(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithName_m9CAF681E7BC82E50A1D8D4756736B62BE2E86888_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithName_m9CAF681E7BC82E50A1D8D4756736B62BE2E86888_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithDisplayName(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithDisplayName_mEF9664AEE5D5410C6F5397CDB4A0DA7C16956F38_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___displayName0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithDisplayName_mEF9664AEE5D5410C6F5397CDB4A0DA7C16956F38_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___0_displayName, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithChildren(System.Int32,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithChildren_mB52CDAE18A90B4B198C055946B55C6FB2C0C6682_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithChildren_mB52CDAE18A90B4B198C055946B55C6FB2C0C6682_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Utilities.InternedString::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935 (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735* __this, String_t* ___text0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935 (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735* __this, String_t* ___0_text, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithLayout(UnityEngine.InputSystem.Utilities.InternedString)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithLayout_m14B43FBB39236278CC11452BBA6B95398362EF4F_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___layout0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithLayout_m14B43FBB39236278CC11452BBA6B95398362EF4F_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_layout, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Utilities.FourCC::.ctor(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FourCC__ctor_mE761C8779BB6DC85BA1662DC9ECEC39D62ED9A56_inline (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED* __this, int32_t ___code0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FourCC__ctor_mE761C8779BB6DC85BA1662DC9ECEC39D62ED9A56_inline (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED* __this, int32_t ___0_code, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputStateBlock::set_format(UnityEngine.InputSystem.Utilities.FourCC)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_format_mC6AA651913216B6B3CEF1031BC8778182009F73A_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_format_mC6AA651913216B6B3CEF1031BC8778182009F73A_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputStateBlock::set_sizeInBits(System.UInt32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_sizeInBits_mE7B623711880E0A1C1E563AF809A24A9C63AE115_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_sizeInBits_mE7B623711880E0A1C1E563AF809A24A9C63AE115_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithStateBlock(UnityEngine.InputSystem.LowLevel.InputStateBlock)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateBlock_mB1B5E1A98A0E205BD74AB0513E86A380A0FE731D_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___stateBlock0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateBlock_mB1B5E1A98A0E205BD74AB0513E86A380A0FE731D_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___0_stateBlock, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AnyKeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardanyKey(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* FastKeyboard_Initialize_ctrlKeyboardanyKey_mA9F3B12351CA0D1B57599FEFF82FC5787489BC41 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAnyKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* FastKeyboard_Initialize_ctrlKeyboardanyKey_mA9F3B12351CA0D1B57599FEFF82FC5787489BC41 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAnyKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardescape(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardescape_m5E50F1A0667D9C29CDFBA27457125C9B5553B2F9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardescape_m5E50F1A0667D9C29CDFBA27457125C9B5553B2F9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardspace(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardspace_m8E9F1A91000906C6FE460967B855C54B3B80722D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardspace_m8E9F1A91000906C6FE460967B855C54B3B80722D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardenter(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardenter_m4F14DA8FBDB16EF44D8D181FBA74AD4C21CE8118 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardenter_m4F14DA8FBDB16EF44D8D181FBA74AD4C21CE8118 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardtab(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardtab_m2F7A71730043684000C1C79B2D1CCB50807171C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardtab_m2F7A71730043684000C1C79B2D1CCB50807171C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackquote(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackquote_m9E7CA97B0855C3737E095A82D84F771131AE2C66 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackquote_m9E7CA97B0855C3737E095A82D84F771131AE2C66 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardquote(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardquote_m2CD2BC91D9E741BA3BC79574B41C66A5D73CCC2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardquote_m2CD2BC91D9E741BA3BC79574B41C66A5D73CCC2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardsemicolon(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardsemicolon_m7A70BD84F2498C3379D3C9077A4EC033A4EEEC22 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardsemicolon_m7A70BD84F2498C3379D3C9077A4EC033A4EEEC22 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcomma(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcomma_m925E827058E1D7E743329114B9ADC935ECFC1DD3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcomma_m925E827058E1D7E743329114B9ADC935ECFC1DD3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardperiod(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardperiod_mA9A4A699F0912EBADA1FCCAD7896C850765AC0EE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardperiod_mA9A4A699F0912EBADA1FCCAD7896C850765AC0EE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardslash(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardslash_m9B1ECD90E13A9CAFD7C11142C8B0723962E1B8AD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardslash_m9B1ECD90E13A9CAFD7C11142C8B0723962E1B8AD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackslash(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackslash_m066D85EB65BC9C641887B2B7787DF9C4CB748D0C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackslash_m066D85EB65BC9C641887B2B7787DF9C4CB748D0C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftBracket(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftBracket_m6883CEE4B8E44F68C59A9FB4AB762DC4EA9FF3CE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftBracket_m6883CEE4B8E44F68C59A9FB4AB762DC4EA9FF3CE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightBracket(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightBracket_mC574E33AB72E57FF24AF05D5F6A7153D0A4F9690 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightBracket_mC574E33AB72E57FF24AF05D5F6A7153D0A4F9690 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardminus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardminus_mA53B51FAD96DC5924EE8021A285C1A180CA9CB93 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardminus_mA53B51FAD96DC5924EE8021A285C1A180CA9CB93 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardequals(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardequals_mB3C1B9BC34E758AEE51D51F56B03AD2193DE6E70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardequals_mB3C1B9BC34E758AEE51D51F56B03AD2193DE6E70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardupArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardupArrow_m1EE5D649753D3A89EA32B1EB8E93CFA268F53A2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardupArrow_m1EE5D649753D3A89EA32B1EB8E93CFA268F53A2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarddownArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddownArrow_m2734D9A9A7C2E6E227F999B38B7D19775576D98E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddownArrow_m2734D9A9A7C2E6E227F999B38B7D19775576D98E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftArrow_m14669E2E2A396CA49856CA0326D89C178ECFABCB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftArrow_m14669E2E2A396CA49856CA0326D89C178ECFABCB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightArrow_mD78D624F19092393A528C404C5D1E2CE77E26EE2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightArrow_mD78D624F19092393A528C404C5D1E2CE77E26EE2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarda(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarda_m6BE97A5294EB0EFA3CAAFDCD7BCAE2404C9CD557 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarda_m6BE97A5294EB0EFA3CAAFDCD7BCAE2404C9CD557 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardb(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardb_m21BBCD21F4AE65AAAF5DAC4F84EC92F4356BBE5B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardb_m21BBCD21F4AE65AAAF5DAC4F84EC92F4356BBE5B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardc(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardc_m1E9AF3782E1CC183F0AF965555AC0DCC49C6360D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardc_m1E9AF3782E1CC183F0AF965555AC0DCC49C6360D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardd(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardd_mC25AE965F4D5B9B30F7CDCA79FE87D4C99BAC32C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardd_mC25AE965F4D5B9B30F7CDCA79FE87D4C99BAC32C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarde(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarde_mF7898CFE0DEF370F30782EFF5CCDF3439B96100C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarde_mF7898CFE0DEF370F30782EFF5CCDF3439B96100C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf_m13EB5B7FA4F04F8050F398C809E4C1AF6F284E75 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf_m13EB5B7FA4F04F8050F398C809E4C1AF6F284E75 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardg(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardg_m3E7A6E6BADCC8879D343A6535141D53DC24ED71B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardg_m3E7A6E6BADCC8879D343A6535141D53DC24ED71B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardh(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardh_m1A395246155CEB8E3E252FCC78426C4157FB050C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardh_m1A395246155CEB8E3E252FCC78426C4157FB050C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardi(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardi_m63E0537E5B15E346FA5D9210001A903D531B083E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardi_m63E0537E5B15E346FA5D9210001A903D531B083E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardj(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardj_m434F261ACBD3920F4599825814C6AA80ECACA35C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardj_m434F261ACBD3920F4599825814C6AA80ECACA35C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardk(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardk_m0E8D5123177B1654E66F5B2C84037F1CD1846331 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardk_m0E8D5123177B1654E66F5B2C84037F1CD1846331 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardl_m0D98753CF551E205D590611A2002F82D94EED7E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardl_m0D98753CF551E205D590611A2002F82D94EED7E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardm(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardm_mCA30A11971424C5022F5B620879991C6D64452EA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardm_mCA30A11971424C5022F5B620879991C6D64452EA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardn(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardn_m31A589CF5FF6BB201FAB53C20ACA220B9D58654C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardn_m31A589CF5FF6BB201FAB53C20ACA220B9D58654C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardo(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardo_mD690AB733F442903A6C881A0C3018641214D7DB3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardo_mD690AB733F442903A6C881A0C3018641214D7DB3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardp(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardp_m95EB08CD1C9C710DF3D383C4E4F6A4BF0E802B5E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardp_m95EB08CD1C9C710DF3D383C4E4F6A4BF0E802B5E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardq(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardq_m180737ED5824AA5A64EA30650E0BE586AC3F1329 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardq_m180737ED5824AA5A64EA30650E0BE586AC3F1329 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardr(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardr_m39AF23E41EB3DF305757ABA70F08E33CA547F786 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardr_m39AF23E41EB3DF305757ABA70F08E33CA547F786 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboards(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboards_m2CC333F9A3D8001CBCAA30BFC398F944004CAB47 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboards_m2CC333F9A3D8001CBCAA30BFC398F944004CAB47 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardt_mD3BE40E00C75538E0BBFC99C736140E18A6C1C80 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardt_mD3BE40E00C75538E0BBFC99C736140E18A6C1C80 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardu(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardu_m4346350CFCD7B3F4D88DF06A979194EF9A9425C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardu_m4346350CFCD7B3F4D88DF06A979194EF9A9425C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardv(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardv_mC23456551D23792AB9B38271E7BDB0D0797B96C9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardv_mC23456551D23792AB9B38271E7BDB0D0797B96C9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardw(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardw_m46184E662B43C2F47A17F122EB05B205BA2BD79B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardw_m46184E662B43C2F47A17F122EB05B205BA2BD79B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardx_m91A5577425E136D306A2ACDF0E0CCF80089D4B01 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardx_m91A5577425E136D306A2ACDF0E0CCF80089D4B01 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardy(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardy_mB29606EF7494AB7A2B4DE396B47C2B2C317B65FA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardy_mB29606EF7494AB7A2B4DE396B47C2B2C317B65FA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardz(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardz_m98D15DCD21BD6EBAE78E126CB8350A4AE20321CF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardz_m98D15DCD21BD6EBAE78E126CB8350A4AE20321CF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard1_m11B29F949785664265BEBB8FFC2761E9C52AE742 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard1_m11B29F949785664265BEBB8FFC2761E9C52AE742 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard2_m711AE810D56EBEA6F3588126EEE7CE87CEFAD420 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard2_m711AE810D56EBEA6F3588126EEE7CE87CEFAD420 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard3_m0CB12774E09B5B7DCDFE46011154BBB378EEB180 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard3_m0CB12774E09B5B7DCDFE46011154BBB378EEB180 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard4_m12145A7DED21E2619ED08D4EF62C16F94CCFB0F3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard4_m12145A7DED21E2619ED08D4EF62C16F94CCFB0F3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard5_mCA146FE2079618FA336B63DD94F0E544EEDAF944 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard5_mCA146FE2079618FA336B63DD94F0E544EEDAF944 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard6_m8424BA8A0B6C2514F62AF2048CC044EAF299C0BA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard6_m8424BA8A0B6C2514F62AF2048CC044EAF299C0BA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard7_mB208281402E16B4AEE104BA8F3846CEE62059B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard7_mB208281402E16B4AEE104BA8F3846CEE62059B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard8_mDB78A7F564962E440089B66A06FAB24F87AB0C91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard8_mDB78A7F564962E440089B66A06FAB24F87AB0C91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard9_m6500F55EC8F085F9FC1836D2FA4F028899C8FE05 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard9_m6500F55EC8F085F9FC1836D2FA4F028899C8FE05 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard0(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard0_m197315D863629E6CA84C0A5EA38EA186486F28FB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard0_m197315D863629E6CA84C0A5EA38EA186486F28FB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftShift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftShift_mD1418732F4F28C89F4676A429057615147FCF98C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftShift_mD1418732F4F28C89F4676A429057615147FCF98C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightShift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightShift_m01FE27420BAB023CBF3B3C1E41918BAA484C7959 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightShift_m01FE27420BAB023CBF3B3C1E41918BAA484C7959 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardshift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardshift_mF6E94F3328055FC07659F062D7432032EBA37109 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardshift_mF6E94F3328055FC07659F062D7432032EBA37109 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftAlt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftAlt_m61D7E13A6F98FB0BDB9D056F7E4C97938060AF46 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftAlt_m61D7E13A6F98FB0BDB9D056F7E4C97938060AF46 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightAlt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightAlt_mEDFFC459C2FB0DF45E9C8737AEDFE6A40597BF7C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightAlt_mEDFFC459C2FB0DF45E9C8737AEDFE6A40597BF7C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardalt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardalt_mD05DC8F0A4E944E82E37B7FD039333F4DF58E09E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardalt_mD05DC8F0A4E944E82E37B7FD039333F4DF58E09E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftCtrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftCtrl_m9888650A9A499A0B9C5D1320775199FB2F2FDD91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftCtrl_m9888650A9A499A0B9C5D1320775199FB2F2FDD91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightCtrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightCtrl_mF3A4DF1E74E9EBA7F3A01E59DDA4D7F631C107B9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightCtrl_mF3A4DF1E74E9EBA7F3A01E59DDA4D7F631C107B9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardctrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardctrl_mEDD76EF2D931AD7433739D336F18B57A824482A3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardctrl_mEDD76EF2D931AD7433739D336F18B57A824482A3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftMeta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftMeta_m7EE2593BC9817C3C4D6D4EED580B9A8E8AFBA63B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftMeta_m7EE2593BC9817C3C4D6D4EED580B9A8E8AFBA63B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightMeta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightMeta_mBB0153758E5ABF0D58BD937FB0AC143CF116EBCF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightMeta_mBB0153758E5ABF0D58BD937FB0AC143CF116EBCF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcontextMenu(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcontextMenu_m0ABD27FBCA4B4CBD7131FD10B65FC22C8A1E0728 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcontextMenu_m0ABD27FBCA4B4CBD7131FD10B65FC22C8A1E0728 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackspace(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackspace_m58A28952812F6263D81A74697A0444B29236CE03 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackspace_m58A28952812F6263D81A74697A0444B29236CE03 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpageDown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageDown_mC349FAA02E76CA3FBBB6D37D3BE294E0107FEBC6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageDown_mC349FAA02E76CA3FBBB6D37D3BE294E0107FEBC6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpageUp(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageUp_mC772095C4641AC118F9F9DE53054562F79141A40 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageUp_mC772095C4641AC118F9F9DE53054562F79141A40 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardhome(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardhome_mC730E90F117158FF27131D33D218790BA08E9488 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardhome_mC730E90F117158FF27131D33D218790BA08E9488 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardend(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardend_mB6FFD7B6E1F2AE10C35D27569A6AB09F0B65FD84 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardend_mB6FFD7B6E1F2AE10C35D27569A6AB09F0B65FD84 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardinsert(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardinsert_mD91B56AECA31C43767288BDA7DD23DFFFAD2643E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardinsert_mD91B56AECA31C43767288BDA7DD23DFFFAD2643E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarddelete(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddelete_m819117F248C52DEF805A29E0E858172B485ABC70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddelete_m819117F248C52DEF805A29E0E858172B485ABC70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcapsLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcapsLock_m167BE5602211D0F41074B1C33E79D574A6E13925 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcapsLock_m167BE5602211D0F41074B1C33E79D574A6E13925 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumLock_m1FCEA3742C107DB129918534CBD7BEC78854046B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumLock_m1FCEA3742C107DB129918534CBD7BEC78854046B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardprintScreen(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardprintScreen_m83DF85EDAFA58A943E4C99E843806B6012C01261 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardprintScreen_m83DF85EDAFA58A943E4C99E843806B6012C01261 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardscrollLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardscrollLock_m542EF8E8CF7428E504C6135CDC543A5660F5188B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardscrollLock_m542EF8E8CF7428E504C6135CDC543A5660F5188B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpause(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpause_m2F76B984D0681E4B78E27FAE675AD4C8F10E4560 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpause_m2F76B984D0681E4B78E27FAE675AD4C8F10E4560 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadEnter(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEnter_m4E63592CFB6A2D2146E38B5D04BEEDB324CFDEAA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEnter_m4E63592CFB6A2D2146E38B5D04BEEDB324CFDEAA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadDivide(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadDivide_m5EDC65E26B7746216AC72CCCB3838AF235F51DC8 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadDivide_m5EDC65E26B7746216AC72CCCB3838AF235F51DC8 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadMultiply(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMultiply_mA1379D492A7ED5A0E7744FDD7D87D55BF204D4E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMultiply_mA1379D492A7ED5A0E7744FDD7D87D55BF204D4E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadPlus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPlus_m7DB8421F8206608803D1A144AA2FEB19BFB170E7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPlus_m7DB8421F8206608803D1A144AA2FEB19BFB170E7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadMinus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMinus_m47D2CE0FC25346DB813E893748EBBBFD914EFFB9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMinus_m47D2CE0FC25346DB813E893748EBBBFD914EFFB9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadPeriod(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPeriod_m6F162BC640B7041E3DFC39C04391539AB14C2D77 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPeriod_m6F162BC640B7041E3DFC39C04391539AB14C2D77 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadEquals(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEquals_m9C8AD1F7F6CCF824CF974F77604CBF12F70E1DA2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEquals_m9C8AD1F7F6CCF824CF974F77604CBF12F70E1DA2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad1_m64F89C4A83488969355BE9A942C957526537B0CA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad1_m64F89C4A83488969355BE9A942C957526537B0CA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad2_mF1761C4924922A3D9F983CED36CA79EDAC5E79EB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad2_mF1761C4924922A3D9F983CED36CA79EDAC5E79EB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad3_m596D19FF5BC77A2B85B74C45C26A3A27E2182654 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad3_m596D19FF5BC77A2B85B74C45C26A3A27E2182654 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad4_mE8E30A4C6BCD8B434AB7F9D0354F127DFFB66023 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad4_mE8E30A4C6BCD8B434AB7F9D0354F127DFFB66023 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad5_m4E16143A0F17EC3CBB4598E263722B9F25E50775 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad5_m4E16143A0F17EC3CBB4598E263722B9F25E50775 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad6_mC5E8949659691FFE47990A0844D7018E9A0BE0A4 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad6_mC5E8949659691FFE47990A0844D7018E9A0BE0A4 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad7_mB0074B0C219BB1148860A0AC7BC5FBF0367AD00A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad7_mB0074B0C219BB1148860A0AC7BC5FBF0367AD00A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad8_m7AA765F6CC8A0684AC2ABF97FD713B7D05567E1D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad8_m7AA765F6CC8A0684AC2ABF97FD713B7D05567E1D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad9_mBA466E460B1DFB45DCF9E8AA21480537F6029F58 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad9_mBA466E460B1DFB45DCF9E8AA21480537F6029F58 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad0(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad0_m5870FD587C9088B032FB41AF4D7181868CCA7552 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad0_m5870FD587C9088B032FB41AF4D7181868CCA7552 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf1_m22FBBB392AF9A46D7B1173C788BF12FE3DE295E3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf1_m22FBBB392AF9A46D7B1173C788BF12FE3DE295E3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf2_m89393E6E968234B31C3307BADB5220E648A74B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf2_m89393E6E968234B31C3307BADB5220E648A74B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf3_m6407D43FC943C68660EA3EDF291FFFBD4C72E444 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf3_m6407D43FC943C68660EA3EDF291FFFBD4C72E444 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf4_mA2EBEDE3E6442E87A41578A91102058F438C924C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf4_mA2EBEDE3E6442E87A41578A91102058F438C924C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf5_m1B7EA2DCCD1D3C82B0A007315D8A9932AD001DD7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf5_m1B7EA2DCCD1D3C82B0A007315D8A9932AD001DD7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf6_m7460C9A39B1CD38119F95B5BDA6078257123DD9C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf6_m7460C9A39B1CD38119F95B5BDA6078257123DD9C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf7_mF847D270DA61D9BD050920A5C315BA29F71BC169 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf7_mF847D270DA61D9BD050920A5C315BA29F71BC169 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf8_mC429A23AFCFDFB66903E48D378680ED382E91B4A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf8_mC429A23AFCFDFB66903E48D378680ED382E91B4A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf9_m00B86A238F5BD7B6E974F665D050C36609F26105 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf9_m00B86A238F5BD7B6E974F665D050C36609F26105 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf10(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf10_mF0115A09106548DDEB56AF481A31FC459EAA0CFD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf10_mF0115A09106548DDEB56AF481A31FC459EAA0CFD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf11(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf11_mD57A8878BDD2A99E42B1C054825162041C27AA27 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf11_mD57A8878BDD2A99E42B1C054825162041C27AA27 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf12(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf12_m53888F35B7822246C4C9B53049E8AD1F95892AD2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf12_m53888F35B7822246C4C9B53049E8AD1F95892AD2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM1_m28559EF6003DD9C84EABB0D1482EEE907AA244A2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM1_m28559EF6003DD9C84EABB0D1482EEE907AA244A2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM2_m138A1243DD3C807E4149826C70D593E9D2723F0D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM2_m138A1243DD3C807E4149826C70D593E9D2723F0D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM3_m7547EF7064838343D76326346D27C62668ABE607 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM3_m7547EF7064838343D76326346D27C62668ABE607 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM4_m2A6BAB46BC8DBE7D3CAE3D7266D9C41FA8626913 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM4_m2A6BAB46BC8DBE7D3CAE3D7266D9C41FA8626913 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM5_m0A7D2E86690242F3E895E203C7E8339B5679E707 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM5_m0A7D2E86690242F3E895E203C7E8339B5679E707 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardIMESelected(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastKeyboard_Initialize_ctrlKeyboardIMESelected_mB1A88861AF58D24760A678A780A411DDDBDC518B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastKeyboard_Initialize_ctrlKeyboardIMESelected_mB1A88861AF58D24760A678A780A411DDDBDC518B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithControlUsage(System.Int32,UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlUsage_m6BC2EC2CA804EDC65D1165C63E403F3E93944714_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___controlIndex0, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___usage1, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlUsage_m6BC2EC2CA804EDC65D1165C63E403F3E93944714_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_controlIndex, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___1_usage, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___2_control, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithControlAlias(System.Int32,UnityEngine.InputSystem.Utilities.InternedString)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlAlias_mBAC72EDB7F19F7675A18FFE490DB8D8194EA1EB9_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___controlIndex0, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___alias1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlAlias_mBAC72EDB7F19F7675A18FFE490DB8D8194EA1EB9_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_controlIndex, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___1_alias, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_keys(UnityEngine.InputSystem.Controls.KeyControl[])
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_keys_m0182B12C60B17A40B2F45E21791545C222E8E657_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_keys_m0182B12C60B17A40B2F45E21791545C222E8E657_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.KeyControl[] UnityEngine.InputSystem.Keyboard::get_keys()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* Keyboard_get_keys_mFBD2937C14FA628B7DAFEE536D0A491D3A32DD8D_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_anyKey(UnityEngine.InputSystem.Controls.AnyKeyControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_anyKey_m0899947E20A7AE7619621838EEAD156DEC48E6A9_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_anyKey_m0899947E20A7AE7619621838EEAD156DEC48E6A9_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_shiftKey(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_shiftKey_m5EDBC8DA6545EF41CBBB5C34E9643424361D0131_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_shiftKey_m5EDBC8DA6545EF41CBBB5C34E9643424361D0131_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_ctrlKey(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_ctrlKey_m0ADFD4E0EF0DD87C1172A830F9974C57D2CB99AD_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_ctrlKey_m0ADFD4E0EF0DD87C1172A830F9974C57D2CB99AD_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_altKey(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_altKey_m9E7D88FF8A887EAA4D0718029EE8ED5B91517359_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_altKey_m9E7D88FF8A887EAA4D0718029EE8ED5B91517359_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Keyboard::set_imeSelected(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_imeSelected_mE0660BE4C1EEB634D8FDBFA93E20D30C570FE651_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_imeSelected_mE0660BE4C1EEB634D8FDBFA93E20D30C570FE651_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeArray(System.Array,System.RuntimeFieldHandle)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___array0, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___fldHandle1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::WithStateOffsetToControlIndexMap(System.UInt32[])
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateOffsetToControlIndexMap_m5C180F0BE65CD62017E4662DC59DB56677B5F39A_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___map0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateOffsetToControlIndexMap_m5C180F0BE65CD62017E4662DC59DB56677B5F39A_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___0_map, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::Finish()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeviceBuilder_Finish_mA2C52B2A38B0618CAA4737DB610C65F385957F65_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.AnyKeyControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AnyKeyControl__ctor_mAFE1F38BFFB85D3DCBDB986878BBD1795341DD05 (AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions::Setup(UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 InputControlExtensions_Setup_mF91CB1EB9FC2B896289D1FD12B6A65901DF53F00 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 InputControlExtensions_Setup_mF91CB1EB9FC2B896289D1FD12B6A65901DF53F00 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::At(UnityEngine.InputSystem.InputDevice,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___device0, int32_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___0_device, int32_t ___1_index, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithParent(UnityEngine.InputSystem.InputControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithName(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithName_m7506A150252C16D8EA717AD106D03779395C5ADA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithName_m7506A150252C16D8EA717AD106D03779395C5ADA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithDisplayName(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___displayName0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_displayName, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithLayout(UnityEngine.InputSystem.Utilities.InternedString)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___layout0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_layout, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::IsSynthetic(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsSynthetic_m4555CF5C808F396EFC65892D90CC98911037C22F_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsSynthetic_m4555CF5C808F396EFC65892D90CC98911037C22F_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::IsButton(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsButton_mCF3AD67106B0EC5A7FF0CB8CC0BD8F126D5205BF_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsButton_mCF3AD67106B0EC5A7FF0CB8CC0BD8F126D5205BF_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputStateBlock::set_byteOffset(System.UInt32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_byteOffset_mC5776F9F286F0658100E92A75A60EB25A1DDBD40_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_byteOffset_mC5776F9F286F0658100E92A75A60EB25A1DDBD40_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputStateBlock::set_bitOffset(System.UInt32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_bitOffset_mB4F67CC1BF4EBB3152CEC64BECFF724C1416A163_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_bitOffset_mB4F67CC1BF4EBB3152CEC64BECFF724C1416A163_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithStateBlock(UnityEngine.InputSystem.LowLevel.InputStateBlock)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithStateBlock_m79CAB3553C883060988D202D5A9E266538FD5789_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___stateBlock0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithStateBlock_m79CAB3553C883060988D202D5A9E266538FD5789_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___0_stateBlock, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Utilities.PrimitiveValue UnityEngine.InputSystem.Utilities.PrimitiveValue::op_Implicit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 PrimitiveValue_op_Implicit_mAEEE3AFD629C0F27AA275B5A31D31D148D81F99D (int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 PrimitiveValue_op_Implicit_mAEEE3AFD629C0F27AA275B5A31D31D148D81F99D (int32_t ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithMinAndMax(UnityEngine.InputSystem.Utilities.PrimitiveValue,UnityEngine.InputSystem.Utilities.PrimitiveValue)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithMinAndMax_m8F5E297F1E17D475B156203F6D6C812032BE69A2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___min0, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___max1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithMinAndMax_m8F5E297F1E17D475B156203F6D6C812032BE69A2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___0_min, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___1_max, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::Finish()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ControlBuilder_Finish_m16789C23501E86888660478C4BB5CB70B74D1DBA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.KeyControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyControl__ctor_m73F145B86E485B4C152E3FDC7CF0D1FEF5D9C6CE (KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithUsages(System.Int32,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithUsages_mF3CB62381A394ACAB421BE7378E63A211787B9C1_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithUsages_mF3CB62381A394ACAB421BE7378E63A211787B9C1_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.KeyControl::set_keyCode(UnityEngine.InputSystem.Key)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyControl_set_keyCode_mC5A750983557C0CD8818BCE6189F8F6293948394_inline (KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyControl_set_keyCode_mC5A750983557C0CD8818BCE6189F8F6293948394_inline (KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DiscreteButtonControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DiscreteButtonControl__ctor_mC27C8EF4847496114A491CC16705B97F6CFA2056 (DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithAliases(System.Int32,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithAliases_mF016A1F936DF5CEB94202923788ABE9591F8F976_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithAliases_mF016A1F936DF5CEB94202923788ABE9591F8F976_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.ButtonControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ButtonControl__ctor_mF6F46704B8CC76DA22F543EFF8D136676893ACEB (ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Mouse::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse__ctor_m69690503088B4F22710F1C3D10B42C3AC550BA0C (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseposition(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseposition_m54F22B2BBF09D1EC94B56AE70A53EA45A84D6A0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kVector2Layout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseposition_m54F22B2BBF09D1EC94B56AE70A53EA45A84D6A0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kVector2Layout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedelta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousedelta_m622E0BED3DC083EC17E7B5ABB56771758FA9B387 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDeltaLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousedelta_m622E0BED3DC083EC17E7B5ABB56771758FA9B387 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDeltaLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescroll(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousescroll_m52C14358C6567D16F73B47D81768B9B1EBE89637 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDeltaLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousescroll_m52C14358C6567D16F73B47D81768B9B1EBE89637 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDeltaLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepress(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousepress_m6BAA8D30CFF95C9C939E568ADBC95D4AC27E2DEC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousepress_m6BAA8D30CFF95C9C939E568ADBC95D4AC27E2DEC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseleftButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseleftButton_m45E61E21555DA9D507DCEE7F88310CC6F3431B21 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseleftButton_m45E61E21555DA9D507DCEE7F88310CC6F3431B21 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouserightButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouserightButton_m3A50758814C802B210062D454CBE77B5425F9984 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouserightButton_m3A50758814C802B210062D454CBE77B5425F9984 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousemiddleButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousemiddleButton_mA43E6C0695D4AF1F49D824D23511B6327276255E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousemiddleButton_mA43E6C0695D4AF1F49D824D23511B6327276255E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseforwardButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseforwardButton_mCE0FA549F660C03BD12C8FB9A30FCA8B516F4F0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseforwardButton_mCE0FA549F660C03BD12C8FB9A30FCA8B516F4F0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousebackButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousebackButton_m1069D0C5747547A851F12A71F6700734FDE8F6A5 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousebackButton_m1069D0C5747547A851F12A71F6700734FDE8F6A5 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepressure(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepressure_m6EB0B062A51E3EDB23D19FC3752B95B0F5FA79DC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepressure_m6EB0B062A51E3EDB23D19FC3752B95B0F5FA79DC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradius(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseradius_m7D76762D60AE31B02D815B7DD944DB13E1AD6D6E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kVector2Layout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseradius_m7D76762D60AE31B02D815B7DD944DB13E1AD6D6E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kVector2Layout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.IntegerControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepointerId(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMousepointerId_mBE78B0CA0A0839E232BA24AC03F75CC88AD43F6B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDigitalLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMousepointerId_mBE78B0CA0A0839E232BA24AC03F75CC88AD43F6B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDigitalLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.IntegerControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseclickCount(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMouseclickCount_m65D1D90ADC35296690F21AA3C8EFDD687E0412D6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kIntegerLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMouseclickCount_m65D1D90ADC35296690F21AA3C8EFDD687E0412D6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kIntegerLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepositionx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositionx_mD2068D68B04F774738E887F2F91C774F27813449 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositionx_mD2068D68B04F774738E887F2F91C774F27813449 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepositiony(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositiony_m7B57AF282F4C4FCF0E41B3287133EFA7D79B7DD6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositiony_m7B57AF282F4C4FCF0E41B3287133EFA7D79B7DD6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaup(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaup_mA4E2DED585398B38D6771F19F3F71B327EAD7622 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaup_mA4E2DED585398B38D6771F19F3F71B327EAD7622 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltadown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltadown_mBFDAD50FD2E00EB45BE9FD51BD7AF6CDC22191A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltadown_mBFDAD50FD2E00EB45BE9FD51BD7AF6CDC22191A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaleft(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaleft_m44857ECCA2BB71788BD1E7AA0983855F037558C3 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaleft_m44857ECCA2BB71788BD1E7AA0983855F037558C3 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaright(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaright_mE8F59ED6C81FB4632DF8706A859D4CDBC2EA9F47 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaright_mE8F59ED6C81FB4632DF8706A859D4CDBC2EA9F47 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltax(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltax_mCF2B20C996ADE1D3CD9CF75BAB0A512BEAA824A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltax_mCF2B20C996ADE1D3CD9CF75BAB0A512BEAA824A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltay(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltay_mDF6C222FB2B86529B9A6B05ACF9E0C9C3C691ACC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltay_mDF6C222FB2B86529B9A6B05ACF9E0C9C3C691ACC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollup(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollup_m35C906E3FDC5EB197E37933FBE9297E9634AA40B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollup_m35C906E3FDC5EB197E37933FBE9297E9634AA40B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrolldown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolldown_m5768AE5B73CA130EE40D358312E7C0B6E36E0444 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolldown_m5768AE5B73CA130EE40D358312E7C0B6E36E0444 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollleft(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollleft_m8408A636A5921B846E8CCF891F321A2E564E7570 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollleft_m8408A636A5921B846E8CCF891F321A2E564E7570 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollright(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollright_mBB3236D3898F45EF2A9278AC4FC970A2F371888C (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollright_mBB3236D3898F45EF2A9278AC4FC970A2F371888C (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollx_mDAF68F01705D239068002833E5E291BE1E71E0B2 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollx_mDAF68F01705D239068002833E5E291BE1E71E0B2 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrolly(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolly_mE06E7A9C78D4BE4EA7A773AFB01B9B58DEC05854 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolly_mE06E7A9C78D4BE4EA7A773AFB01B9B58DEC05854 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradiusx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusx_mFE6E56ECFBBBC388C05A981C28D94F17C94E8824 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusx_mFE6E56ECFBBBC388C05A981C28D94F17C94E8824 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradiusy(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusy_m0EF47D967D23336DBE16320983C999A038C20A14 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusy_m0EF47D967D23336DBE16320983C999A038C20A14 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.Vector2Control::set_x(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_x_m99BE9EF688C3B153DA726627B3CBD724F8D20BE1_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_x_m99BE9EF688C3B153DA726627B3CBD724F8D20BE1_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.Vector2Control::set_y(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_y_m9023BACC80F2CF0AE28E2F5D0E9BBA54104E89F8_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_y_m9023BACC80F2CF0AE28E2F5D0E9BBA54104E89F8_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DeltaControl::set_up(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_up_m738DF0E92B973E4E6AF5BE9A115458717B745174_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_up_m738DF0E92B973E4E6AF5BE9A115458717B745174_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DeltaControl::set_down(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_down_mD809599F9F67F402EEFC805F315C0D72F35FFCF0_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_down_mD809599F9F67F402EEFC805F315C0D72F35FFCF0_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DeltaControl::set_left(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_left_m1C0E45C2868801280CC30474B9368F23B7400697_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_left_m1C0E45C2868801280CC30474B9368F23B7400697_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DeltaControl::set_right(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_right_m60FBA0555C4E7CA40954DA7EE6BBC0E0032B0905_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_right_m60FBA0555C4E7CA40954DA7EE6BBC0E0032B0905_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.Vector2Control::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector2Control__ctor_m9F2990DA999344F23AA90F6EE77884A75D4F29F8 (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithChildren(System.Int32,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithChildren_m926E7A1B156891F65B5A2856EE2D7BC497507CEC_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithChildren_m926E7A1B156891F65B5A2856EE2D7BC497507CEC_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::DontReset(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_DontReset_mD81E0A7E983F4B91A863FEBE093F8191B9242144_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_DontReset_mD81E0A7E983F4B91A863FEBE093F8191B9242144_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.DeltaControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DeltaControl__ctor_m221788585AD5E0B67F3CFE1199DC6C2B0C237CB4 (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithShortDisplayName(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___shortDisplayName0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_shortDisplayName, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.AxisControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AxisControl__ctor_m9648C9B9777699B9028DF822BB5A3884F3865BEE (AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControlExtensions/ControlBuilder UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::WithDefaultState(UnityEngine.InputSystem.Utilities.PrimitiveValue)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDefaultState_mB348E8E6C5130A30CEE8A885C488065F496038F2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDefaultState_mB348E8E6C5130A30CEE8A885C488065F496038F2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.Controls.IntegerControl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntegerControl__ctor_mC6E1C70B301EE12C2590B64C2DD53F02A577892D (IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.LowLevel.InputUpdateType UnityEngine.InputSystem.LowLevel.InputState::get_currentUpdateType()
@@ -2873,11 +3086,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t InputState_get_currentUpd
 // UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.InputEventPtr::get_type()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0* __this, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.Utilities.FourCC::op_Implicit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61 (int32_t ___i0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61 (int32_t ___0_i, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.InputSystem.Utilities.FourCC::op_Inequality(UnityEngine.InputSystem.Utilities.FourCC,UnityEngine.InputSystem.Utilities.FourCC)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FourCC_op_Inequality_m8E764B9EF56D488E40480A3E69230EF623C7B92B (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___left0, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___right1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FourCC_op_Inequality_m8E764B9EF56D488E40480A3E69230EF623C7B92B (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___0_left, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___1_right, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.LowLevel.StateEvent* UnityEngine.InputSystem.LowLevel.StateEvent::FromUnchecked(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* StateEvent_FromUnchecked_m2735488B081D9C8E972D4F2B6D80C044599BFB81 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___ptr0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* StateEvent_FromUnchecked_m2735488B081D9C8E972D4F2B6D80C044599BFB81 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_ptr, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.Utilities.FourCC UnityEngine.InputSystem.LowLevel.MouseState::get_Format()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED MouseState_get_Format_mF26144ED65F47F6A3DE5E19D5C8A21F5D1A840AE (const RuntimeMethod* method) ;
 // System.Void* UnityEngine.InputSystem.LowLevel.StateEvent::get_state()
@@ -2885,38 +3098,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* StateEvent_get_state_m4DE9A0A398BE8CBC8
 // System.UInt32 UnityEngine.InputSystem.LowLevel.InputStateBlock::get_byteOffset()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t InputStateBlock_get_byteOffset_m6EADE5C9C8B346D38E543E38777ED67ED2AEA0AC_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector2 UnityEngine.Vector2::op_Addition(UnityEngine.Vector2,UnityEngine.Vector2)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___a0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___b1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputState::Change<UnityEngine.InputSystem.LowLevel.MouseState>(UnityEngine.InputSystem.InputControl,TState&,UnityEngine.InputSystem.LowLevel.InputUpdateType,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-inline void InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1* ___state1, int32_t ___updateType2, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr3, const RuntimeMethod* method)
+inline void InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1* ___1_state, int32_t ___2_updateType, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___3_eventPtr, const RuntimeMethod* method)
 {
-	((  void (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1*, int32_t, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0, const RuntimeMethod*))InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E_gshared)(___control0, ___state1, ___updateType2, ___eventPtr3, method);
+	((  void (*) (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*, MouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1*, int32_t, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0, const RuntimeMethod*))InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E_gshared)(___0_control, ___1_state, ___2_updateType, ___3_eventPtr, method);
 }
 // System.Void UnityEngine.InputSystem.FastMouse::OnNextUpdate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnNextUpdate_mFE738278EC26FBC6BF3908A9821BEAFC2CAE9246 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.FastMouse::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2662B4DB4CA5F86DCCAFDF436 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2662B4DB4CA5F86DCCAFDF436 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.InputSystem.FastMouse::MergeForward(UnityEngine.InputSystem.LowLevel.InputEventPtr,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625C3B6A015F7874E140FBE6D54 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___currentEventPtr0, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___nextEventPtr1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625C3B6A015F7874E140FBE6D54 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_currentEventPtr, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___1_nextEventPtr, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputDevice UnityEngine.InputSystem.InputControlExtensions/DeviceBuilder::get_device()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, const RuntimeMethod* method) ;
 // System.String UnityEngine.InputSystem.Utilities.InternedString::op_Implicit(UnityEngine.InputSystem.Utilities.InternedString)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InternedString_op_Implicit_m99D80AAE853F54FA2EF2603D020C7454B608D2F6 (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___str0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* InternedString_op_Implicit_m99D80AAE853F54FA2EF2603D020C7454B608D2F6 (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_str, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControl::set_isSetupFinished(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_isSetupFinished_m261F46AF1FA214549675E23394E2820E6D09D7C9 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_isSetupFinished_m261F46AF1FA214549675E23394E2820E6D09D7C9 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.InputSystem.InputControl UnityEngine.InputSystem.InputControlExtensions/ControlBuilder::get_control()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControl::set_synthetic(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_synthetic_mC788F8B981CCA27755D02DFCD46C0FDC9FD77B5B (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_synthetic_mC788F8B981CCA27755D02DFCD46C0FDC9FD77B5B (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControl::set_isButton(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_isButton_m862BB994D08F3488611839657F2381B12976C661 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_isButton_m862BB994D08F3488611839657F2381B12976C661 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputControl::set_dontReset(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_dontReset_m56292E2D5FAB000EDD5821E99066CA94E392CA40 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputControl_set_dontReset_m56292E2D5FAB000EDD5821E99066CA94E392CA40 (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::set_hasDontResetControls(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_set_hasDontResetControls_m69B8A85FC12A9125F346D8ED1408F28F059B08A5 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_set_hasDontResetControls_m69B8A85FC12A9125F346D8ED1408F28F059B08A5 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.InputDevice::set_hasControlsWithDefaultState(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_set_hasControlsWithDefaultState_mC8F5DCB4C54700278AE7F291D2C6052D5C528D07 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InputDevice_set_hasControlsWithDefaultState_mC8F5DCB4C54700278AE7F291D2C6052D5C528D07 (InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -2932,11 +3145,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_scroll(UnityEngine.InputSystem.Controls.DeltaControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public DeltaControl scroll { get; protected set; }
-		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___value0;
+		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___0_value;
 		__this->___U3CscrollU3Ek__BackingField_45 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CscrollU3Ek__BackingField_45), (void*)L_0);
 		return;
@@ -2952,11 +3165,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_leftButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl leftButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CleftButtonU3Ek__BackingField_46 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftButtonU3Ek__BackingField_46), (void*)L_0);
 		return;
@@ -2972,11 +3185,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_middleButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl middleButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CmiddleButtonU3Ek__BackingField_47 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmiddleButtonU3Ek__BackingField_47), (void*)L_0);
 		return;
@@ -2992,11 +3205,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_rightButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl rightButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CrightButtonU3Ek__BackingField_48 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightButtonU3Ek__BackingField_48), (void*)L_0);
 		return;
@@ -3012,11 +3225,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_backButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl backButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CbackButtonU3Ek__BackingField_49 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackButtonU3Ek__BackingField_49), (void*)L_0);
 		return;
@@ -3032,11 +3245,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_forwardButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl forwardButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CforwardButtonU3Ek__BackingField_50 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CforwardButtonU3Ek__BackingField_50), (void*)L_0);
 		return;
@@ -3052,11 +3265,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_clickCount(UnityEngine.InputSystem.Controls.IntegerControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public IntegerControl clickCount { get; protected set;  }
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___value0;
+		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___0_value;
 		__this->___U3CclickCountU3Ek__BackingField_51 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CclickCountU3Ek__BackingField_51), (void*)L_0);
 		return;
@@ -3078,7 +3291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC33
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::set_current(UnityEngine.InputSystem.Mouse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3088,7 +3301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E9266
 	}
 	{
 		// public new static Mouse current { get; private set; }
-		Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* L_0 = ___value0;
+		Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* L_0 = ___0_value;
 		((Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields*)il2cpp_codegen_static_fields_for(Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_52 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields*)il2cpp_codegen_static_fields_for(Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_52), (void*)L_0);
 		return;
@@ -3171,7 +3384,7 @@ IL_0014:
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::WarpCursorPosition(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_WarpCursorPosition_m086106C392532E4A86537F6D40576265C69EA37B (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___position0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_WarpCursorPosition_m086106C392532E4A86537F6D40576265C69EA37B (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3183,7 +3396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_WarpCursorPosition_m086106C392532E
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		// var command = WarpMousePositionCommand.Create(position);
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___position0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_position;
 		WarpMousePositionCommand_t7E08561BB4C9C77F171BACDCE2D71E8B7BA79FB0 L_1;
 		L_1 = WarpMousePositionCommand_Create_m39A1846CF1D388004F229D0C66600059A422636F(L_0, NULL);
 		V_0 = L_1;
@@ -3274,7 +3487,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnNextUpdate_m00085152EFFF1252640E
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	{
 		// scroll.AccumulateValueInEvent(currentStatePtr, eventPtr);
@@ -3282,10 +3495,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_OnStateEvent_mDFED0AF6A4E8492260F2
 		L_0 = Mouse_get_scroll_mB17E8A9038C866A29701595E06B8806E945ACA00_inline(__this, NULL);
 		void* L_1;
 		L_1 = InputControl_get_currentStatePtr_m77D2900EEE4AAB505C98292AF8538DDCF44F8C3C(__this, NULL);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_2 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_2 = ___0_eventPtr;
 		InputControlExtensions_AccumulateValueInEvent_mE82152B46D78005333C8B1F6AB842DCA67797387(L_0, L_1, L_2, NULL);
 		// base.OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___0_eventPtr;
 		Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D(__this, L_3, NULL);
 		// }
 		return;
@@ -3302,11 +3515,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_UnityEngine_InputSystem_LowLevel_I
 	}
 }
 // System.Void UnityEngine.InputSystem.Mouse::UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_m1F60F20DABBE741626FFCEB6BE3F9B4BA3960556 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mouse_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_m1F60F20DABBE741626FFCEB6BE3F9B4BA3960556 (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	{
 		// OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___0_eventPtr;
 		Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80(__this, L_0, NULL);
 		// }
 		return;
@@ -3338,11 +3551,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_tip(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl tip { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CtipU3Ek__BackingField_45 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtipU3Ek__BackingField_45), (void*)L_0);
 		return;
@@ -3358,11 +3571,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_eraser(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl eraser { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CeraserU3Ek__BackingField_46 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeraserU3Ek__BackingField_46), (void*)L_0);
 		return;
@@ -3378,11 +3591,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_firstBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl firstBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CfirstBarrelButtonU3Ek__BackingField_47 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfirstBarrelButtonU3Ek__BackingField_47), (void*)L_0);
 		return;
@@ -3398,11 +3611,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_secondBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl secondBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CsecondBarrelButtonU3Ek__BackingField_48 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondBarrelButtonU3Ek__BackingField_48), (void*)L_0);
 		return;
@@ -3418,11 +3631,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_thirdBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl thirdBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CthirdBarrelButtonU3Ek__BackingField_49 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthirdBarrelButtonU3Ek__BackingField_49), (void*)L_0);
 		return;
@@ -3438,11 +3651,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_fourthBarrelButton(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl fourthBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CfourthBarrelButtonU3Ek__BackingField_50 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfourthBarrelButtonU3Ek__BackingField_50), (void*)L_0);
 		return;
@@ -3458,11 +3671,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_inRange(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl inRange { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CinRangeU3Ek__BackingField_51 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinRangeU3Ek__BackingField_51), (void*)L_0);
 		return;
@@ -3478,11 +3691,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_tilt(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control tilt { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CtiltU3Ek__BackingField_52 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtiltU3Ek__BackingField_52), (void*)L_0);
 		return;
@@ -3498,11 +3711,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_twist(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl twist { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CtwistU3Ek__BackingField_53 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtwistU3Ek__BackingField_53), (void*)L_0);
 		return;
@@ -3524,7 +3737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF
 	}
 }
 // System.Void UnityEngine.InputSystem.Pen::set_current(UnityEngine.InputSystem.Pen)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3534,17 +3747,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D54
 	}
 	{
 		// public new static Pen current { get; internal set; }
-		Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* L_0 = ___value0;
+		Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* L_0 = ___0_value;
 		((Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields*)il2cpp_codegen_static_fields_for(Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_54 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields*)il2cpp_codegen_static_fields_for(Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_54), (void*)L_0);
 		return;
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.Pen::get_Item(UnityEngine.InputSystem.PenButton)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* Pen_get_Item_m7DF94736BA0E4640AB27A22A96518CF62A278AC8 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, int32_t ___button0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* Pen_get_Item_m7DF94736BA0E4640AB27A22A96518CF62A278AC8 (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, int32_t ___0_button, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___button0;
+		int32_t L_0 = ___0_button;
 		switch (L_0)
 		{
 			case 0:
@@ -3640,7 +3853,7 @@ IL_004e:
 IL_0055:
 	{
 		// throw new InvalidEnumArgumentException(nameof(button), (int)button, typeof(PenButton));
-		int32_t L_8 = ___button0;
+		int32_t L_8 = ___0_button;
 		RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B L_9 = { reinterpret_cast<intptr_t> (((RuntimeType*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&PenButton_t0BA4B52240ABD38446866B65EE531F669377E554_0_0_0_var))) };
 		il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Type_t_il2cpp_TypeInfo_var)));
 		Type_t* L_10;
@@ -3777,11 +3990,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_position(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control position { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CpositionU3Ek__BackingField_39 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpositionU3Ek__BackingField_39), (void*)L_0);
 		return;
@@ -3797,11 +4010,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_delta(UnityEngine.InputSystem.Controls.DeltaControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public DeltaControl delta { get; protected set; }
-		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___value0;
+		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___0_value;
 		__this->___U3CdeltaU3Ek__BackingField_40 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeltaU3Ek__BackingField_40), (void*)L_0);
 		return;
@@ -3817,11 +4030,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_radius(UnityEngine.InputSystem.Controls.Vector2Control)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control radius { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CradiusU3Ek__BackingField_41 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CradiusU3Ek__BackingField_41), (void*)L_0);
 		return;
@@ -3837,11 +4050,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_pressure(UnityEngine.InputSystem.Controls.AxisControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl pressure { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CpressureU3Ek__BackingField_42 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpressureU3Ek__BackingField_42), (void*)L_0);
 		return;
@@ -3857,11 +4070,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_press(UnityEngine.InputSystem.Controls.ButtonControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl press { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CpressU3Ek__BackingField_43 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpressU3Ek__BackingField_43), (void*)L_0);
 		return;
@@ -3883,7 +4096,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Pointer_t800EF2832B62E889AC9C182E3B18098AF220
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::set_current(UnityEngine.InputSystem.Pointer)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3893,7 +4106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717
 	}
 	{
 		// public static Pointer current { get; internal set; }
-		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0 = ___value0;
+		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0 = ___0_value;
 		((Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields*)il2cpp_codegen_static_fields_for(Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_44 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields*)il2cpp_codegen_static_fields_for(Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_44), (void*)L_0);
 		return;
@@ -4005,7 +4218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnNextUpdate_m51AD1EF38875C7499D
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	{
 		// delta.AccumulateValueInEvent(currentStatePtr, eventPtr);
@@ -4013,10 +4226,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_OnStateEvent_mA432F19AFD7D3F1259
 		L_0 = Pointer_get_delta_mB1F6851275453D4BE23E79F6FD5C5E87D901E569_inline(__this, NULL);
 		void* L_1;
 		L_1 = InputControl_get_currentStatePtr_m77D2900EEE4AAB505C98292AF8538DDCF44F8C3C(__this, NULL);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_2 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_2 = ___0_eventPtr;
 		InputControlExtensions_AccumulateValueInEvent_mE82152B46D78005333C8B1F6AB842DCA67797387(L_0, L_1, L_2, NULL);
 		// InputState.Change(this, eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___0_eventPtr;
 		InputState_Change_m3920D1C32EA34F4F87A363043D7D750498070E64(__this, L_3, 0, NULL);
 		// }
 		return;
@@ -4033,18 +4246,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_UnityEngine_InputSystem_LowLevel
 	}
 }
 // System.Void UnityEngine.InputSystem.Pointer::UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_mB80529A0F61C62ADCC36C795A1E718AFA9281983 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Pointer_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_mB80529A0F61C62ADCC36C795A1E718AFA9281983 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	{
 		// OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___0_eventPtr;
 		Pointer_OnStateEvent_mA432F19AFD7D3F1259A43D451F5E43D2F472207D(__this, L_0, NULL);
 		// }
 		return;
 	}
 }
 // System.Boolean UnityEngine.InputSystem.Pointer::UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.GetStateOffsetForEvent(UnityEngine.InputSystem.InputControl,UnityEngine.InputSystem.LowLevel.InputEventPtr,System.UInt32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Pointer_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_GetStateOffsetForEvent_m16D35792AD7AF3D4F637ABB525DB1C00051C8A73 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control0, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr1, uint32_t* ___offset2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Pointer_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_GetStateOffsetForEvent_m16D35792AD7AF3D4F637ABB525DB1C00051C8A73 (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_control, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___1_eventPtr, uint32_t* ___2_offset, const RuntimeMethod* method) 
 {
 	{
 		// return false;
@@ -5806,7 +6019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastKeyboard__ctor_m6F80B480E318C8B26CA2
 	}
 }
 // UnityEngine.InputSystem.Controls.AnyKeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardanyKey(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* FastKeyboard_Initialize_ctrlKeyboardanyKey_mA9F3B12351CA0D1B57599FEFF82FC5787489BC41 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAnyKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* FastKeyboard_Initialize_ctrlKeyboardanyKey_mA9F3B12351CA0D1B57599FEFF82FC5787489BC41 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAnyKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5849,7 +6062,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 0, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -5859,7 +6072,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralCA9A476D6B34090F07989779FE0C5709C2709121, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kAnyKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kAnyKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -5894,7 +6107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardescape(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardescape_m5E50F1A0667D9C29CDFBA27457125C9B5553B2F9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardescape_m5E50F1A0667D9C29CDFBA27457125C9B5553B2F9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5937,7 +6150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 1, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -5947,7 +6160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral297053DD260F1A612E64AEB43C06286160BA63A8, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -5986,7 +6199,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardspace(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardspace_m8E9F1A91000906C6FE460967B855C54B3B80722D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardspace_m8E9F1A91000906C6FE460967B855C54B3B80722D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6028,7 +6241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 2, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6038,7 +6251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral6A1A60D09A402886B9E41F1C146512E64298B7EF, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6074,7 +6287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardenter(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardenter_m4F14DA8FBDB16EF44D8D181FBA74AD4C21CE8118 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardenter_m4F14DA8FBDB16EF44D8D181FBA74AD4C21CE8118 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6117,7 +6330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 3, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6127,7 +6340,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralF2F086189B26212ADEE86AD14210C2BFDFB8780F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6166,7 +6379,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardtab(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardtab_m2F7A71730043684000C1C79B2D1CCB50807171C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardtab_m2F7A71730043684000C1C79B2D1CCB50807171C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6208,7 +6421,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 4, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6218,7 +6431,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3C41A859C65B3A0285D898D6E67AD38C7C0C704B, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6254,7 +6467,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackquote(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackquote_m9E7CA97B0855C3737E095A82D84F771131AE2C66 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackquote_m9E7CA97B0855C3737E095A82D84F771131AE2C66 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6296,7 +6509,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 5, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6306,7 +6519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral54F4AAE0436CBCC0163FCF662535D64F6E0BB00C, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6342,7 +6555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardquote(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardquote_m2CD2BC91D9E741BA3BC79574B41C66A5D73CCC2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardquote_m2CD2BC91D9E741BA3BC79574B41C66A5D73CCC2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6384,7 +6597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 6, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6394,7 +6607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6430,7 +6643,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardsemicolon(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardsemicolon_m7A70BD84F2498C3379D3C9077A4EC033A4EEEC22 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardsemicolon_m7A70BD84F2498C3379D3C9077A4EC033A4EEEC22 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6472,7 +6685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 7, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6482,7 +6695,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral951CCB49640C8F9E81FB4E0D82730321F4E15BB3, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6518,7 +6731,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcomma(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcomma_m925E827058E1D7E743329114B9ADC935ECFC1DD3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcomma_m925E827058E1D7E743329114B9ADC935ECFC1DD3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6560,7 +6773,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 8, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6570,7 +6783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralC18C9BB6DF0D5C60CE5A5D2D3D6111BEB6F8CCEB, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6606,7 +6819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardperiod(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardperiod_mA9A4A699F0912EBADA1FCCAD7896C850765AC0EE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardperiod_mA9A4A699F0912EBADA1FCCAD7896C850765AC0EE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6648,7 +6861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)9), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6658,7 +6871,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralF3E84B722399601AD7E281754E917478AA9AD48D, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6694,7 +6907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardslash(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardslash_m9B1ECD90E13A9CAFD7C11142C8B0723962E1B8AD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardslash_m9B1ECD90E13A9CAFD7C11142C8B0723962E1B8AD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6736,7 +6949,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)10), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6746,7 +6959,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6782,7 +6995,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackslash(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackslash_m066D85EB65BC9C641887B2B7787DF9C4CB748D0C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackslash_m066D85EB65BC9C641887B2B7787DF9C4CB748D0C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6824,7 +7037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)11), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6834,7 +7047,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral09B11B6CC411D8B9FFB75EAAE9A35B2AF248CE40, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6870,7 +7083,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftBracket(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftBracket_m6883CEE4B8E44F68C59A9FB4AB762DC4EA9FF3CE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftBracket_m6883CEE4B8E44F68C59A9FB4AB762DC4EA9FF3CE (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6912,7 +7125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)12), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -6922,7 +7135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralD9691C4FD8A1F6B09DB1147CA32B442772FB46A1, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -6958,7 +7171,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightBracket(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightBracket_mC574E33AB72E57FF24AF05D5F6A7153D0A4F9690 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightBracket_mC574E33AB72E57FF24AF05D5F6A7153D0A4F9690 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7000,7 +7213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)13), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7010,7 +7223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralE166C9564FBDE461738077E3B1B506525EB6ACCC, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7046,7 +7259,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardminus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardminus_mA53B51FAD96DC5924EE8021A285C1A180CA9CB93 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardminus_mA53B51FAD96DC5924EE8021A285C1A180CA9CB93 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7088,7 +7301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)14), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7098,7 +7311,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3B2C1C62D4D1C2A0C8A9AC42DB00D33C654F9AD0, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7134,7 +7347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardequals(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardequals_mB3C1B9BC34E758AEE51D51F56B03AD2193DE6E70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardequals_mB3C1B9BC34E758AEE51D51F56B03AD2193DE6E70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7176,7 +7389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)15), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7186,7 +7399,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral1FA13CA565DC9B5105D70A528D26A6FC7A57049E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7222,7 +7435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardupArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardupArrow_m1EE5D649753D3A89EA32B1EB8E93CFA268F53A2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardupArrow_m1EE5D649753D3A89EA32B1EB8E93CFA268F53A2B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7264,7 +7477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)16), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7274,7 +7487,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral4C9D4B805526FF0AE7B727DD86646C1DEFA37070, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7310,7 +7523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarddownArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddownArrow_m2734D9A9A7C2E6E227F999B38B7D19775576D98E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddownArrow_m2734D9A9A7C2E6E227F999B38B7D19775576D98E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7352,7 +7565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)17), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7362,7 +7575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral409DB5CB15F95B38DC86DD90A773E2CCC13B30FE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7398,7 +7611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftArrow_m14669E2E2A396CA49856CA0326D89C178ECFABCB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftArrow_m14669E2E2A396CA49856CA0326D89C178ECFABCB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7440,7 +7653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)18), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7450,7 +7663,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral9C5D4CEE9F3169B997F11F4D81929F94BE6C076B, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7486,7 +7699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightArrow(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightArrow_mD78D624F19092393A528C404C5D1E2CE77E26EE2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightArrow_mD78D624F19092393A528C404C5D1E2CE77E26EE2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7528,7 +7741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)19), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7538,7 +7751,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral67F79AB17E9D3F0177BAA2B4C90149FDA53748C2, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7574,7 +7787,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarda(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarda_m6BE97A5294EB0EFA3CAAFDCD7BCAE2404C9CD557 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarda_m6BE97A5294EB0EFA3CAAFDCD7BCAE2404C9CD557 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7616,7 +7829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)20), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7626,7 +7839,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralEF420ABFDDBDA7B9EE665D85EF62E4A437554003, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7662,7 +7875,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardb(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardb_m21BBCD21F4AE65AAAF5DAC4F84EC92F4356BBE5B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardb_m21BBCD21F4AE65AAAF5DAC4F84EC92F4356BBE5B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7704,7 +7917,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)21), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7714,7 +7927,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralAB69FA1AB6BB831506EFCAD83900FEE751E85F6F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7750,7 +7963,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardc(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardc_m1E9AF3782E1CC183F0AF965555AC0DCC49C6360D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardc_m1E9AF3782E1CC183F0AF965555AC0DCC49C6360D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7792,7 +8005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)22), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7802,7 +8015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBF86C9E9E7FE0EF09A2EAE8066CDC31F859254CC, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7838,7 +8051,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardd(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardd_mC25AE965F4D5B9B30F7CDCA79FE87D4C99BAC32C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardd_mC25AE965F4D5B9B30F7CDCA79FE87D4C99BAC32C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7880,7 +8093,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)23), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7890,7 +8103,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralA019FB7F17AA36A9743C530E1F11D5613B8B1158, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -7926,7 +8139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarde(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarde_mF7898CFE0DEF370F30782EFF5CCDF3439B96100C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarde_mF7898CFE0DEF370F30782EFF5CCDF3439B96100C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7968,7 +8181,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)24), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -7978,7 +8191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral579A50C67ADB00AC3925859C23590322B2D0BE9D, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8014,7 +8227,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf_m13EB5B7FA4F04F8050F398C809E4C1AF6F284E75 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf_m13EB5B7FA4F04F8050F398C809E4C1AF6F284E75 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8056,7 +8269,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)25), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8066,7 +8279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralFD60316EE3ADB7B16A998DF8AE0D68C293F6622E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8102,7 +8315,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardg(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardg_m3E7A6E6BADCC8879D343A6535141D53DC24ED71B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardg_m3E7A6E6BADCC8879D343A6535141D53DC24ED71B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8144,7 +8357,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)26), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8154,7 +8367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3DCC6243286938BE75C3FA773B9BA71160A2E869, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8190,7 +8403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardh(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardh_m1A395246155CEB8E3E252FCC78426C4157FB050C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardh_m1A395246155CEB8E3E252FCC78426C4157FB050C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8232,7 +8445,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)27), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8242,7 +8455,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral410E5346BCA8EE150FFD507311DD85789F2E171E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8278,7 +8491,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardi(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardi_m63E0537E5B15E346FA5D9210001A903D531B083E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardi_m63E0537E5B15E346FA5D9210001A903D531B083E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8320,7 +8533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)28), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8330,7 +8543,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral6CB05FD18E12F98F81A204339D25DD82BC993FDD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8366,7 +8579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardj(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardj_m434F261ACBD3920F4599825814C6AA80ECACA35C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardj_m434F261ACBD3920F4599825814C6AA80ECACA35C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8408,7 +8621,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)29), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8418,7 +8631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral0EBD646B60E1C3FCE0203770591ED3C3D63537DC, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8454,7 +8667,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardk(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardk_m0E8D5123177B1654E66F5B2C84037F1CD1846331 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardk_m0E8D5123177B1654E66F5B2C84037F1CD1846331 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8496,7 +8709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)30), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8506,7 +8719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3D714DD3E8E77A697EF557E85ED2B014A96328C5, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8542,7 +8755,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardl_m0D98753CF551E205D590611A2002F82D94EED7E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardl_m0D98753CF551E205D590611A2002F82D94EED7E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8584,7 +8797,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)31), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8594,7 +8807,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7E70AF961A2F88ADB9DB7B9C3B5F25A532C1570A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8630,7 +8843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardm(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardm_mCA30A11971424C5022F5B620879991C6D64452EA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardm_mCA30A11971424C5022F5B620879991C6D64452EA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8672,7 +8885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)32), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8682,7 +8895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralDD7461C99FE0AF610527A1F4273DBC4696AB5F17, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8718,7 +8931,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardn(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardn_m31A589CF5FF6BB201FAB53C20ACA220B9D58654C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardn_m31A589CF5FF6BB201FAB53C20ACA220B9D58654C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8760,7 +8973,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)33), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8770,7 +8983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralE42E8BB820D4F7550A0F04619F4E15FDC56943B9, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8806,7 +9019,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardo(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardo_mD690AB733F442903A6C881A0C3018641214D7DB3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardo_mD690AB733F442903A6C881A0C3018641214D7DB3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8848,7 +9061,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)34), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8858,7 +9071,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral99C165894B2900048144F5DEF682937FE73CA541, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8894,7 +9107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardp(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardp_m95EB08CD1C9C710DF3D383C4E4F6A4BF0E802B5E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardp_m95EB08CD1C9C710DF3D383C4E4F6A4BF0E802B5E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8936,7 +9149,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)35), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -8946,7 +9159,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralFCA440D9A4F7E2D10772A726D6FB427BAE128D34, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -8982,7 +9195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardq(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardq_m180737ED5824AA5A64EA30650E0BE586AC3F1329 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardq_m180737ED5824AA5A64EA30650E0BE586AC3F1329 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9024,7 +9237,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)36), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9034,7 +9247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral49A7EA21ECB328D154FA2262BB41626D795F4D90, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9070,7 +9283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardr(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardr_m39AF23E41EB3DF305757ABA70F08E33CA547F786 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardr_m39AF23E41EB3DF305757ABA70F08E33CA547F786 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9112,7 +9325,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)37), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9122,7 +9335,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2C3D4826D5236B3C9A914C5CE2E3D8CEA48AC7CE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9158,7 +9371,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboards(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboards_m2CC333F9A3D8001CBCAA30BFC398F944004CAB47 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboards_m2CC333F9A3D8001CBCAA30BFC398F944004CAB47 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9200,7 +9413,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)38), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9210,7 +9423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral09684B67A5909FD48E1F14A8AF8DDD483C620B10, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9246,7 +9459,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardt_mD3BE40E00C75538E0BBFC99C736140E18A6C1C80 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardt_mD3BE40E00C75538E0BBFC99C736140E18A6C1C80 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9288,7 +9501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)39), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9298,7 +9511,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7B18F301A198B83778B5E546729B0539A0D4E758, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9334,7 +9547,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardu(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardu_m4346350CFCD7B3F4D88DF06A979194EF9A9425C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardu_m4346350CFCD7B3F4D88DF06A979194EF9A9425C6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9376,7 +9589,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)40), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9386,7 +9599,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral51B9A921875B50DC2E745884E0F3B09DFCFEA44A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9422,7 +9635,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardv(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardv_mC23456551D23792AB9B38271E7BDB0D0797B96C9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardv_mC23456551D23792AB9B38271E7BDB0D0797B96C9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9464,7 +9677,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)41), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9474,7 +9687,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral5377EFB7D3540F7856D33807A13661041629AB2F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9510,7 +9723,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardw(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardw_m46184E662B43C2F47A17F122EB05B205BA2BD79B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardw_m46184E662B43C2F47A17F122EB05B205BA2BD79B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9552,7 +9765,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)42), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9562,7 +9775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3ACC4CC1ADEC59220C31AAE3AEFE4D604CB500A9, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9598,7 +9811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardx_m91A5577425E136D306A2ACDF0E0CCF80089D4B01 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardx_m91A5577425E136D306A2ACDF0E0CCF80089D4B01 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9640,7 +9853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)43), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9650,7 +9863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralD5D2875F228D651E1289522AEAAB8C492001C1BE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9686,7 +9899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardy(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardy_mB29606EF7494AB7A2B4DE396B47C2B2C317B65FA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardy_mB29606EF7494AB7A2B4DE396B47C2B2C317B65FA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9728,7 +9941,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)44), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9738,7 +9951,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralC5CB235FDF341E57B3A3E3D289810AD3382B4E8B, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9774,7 +9987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardz(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardz_m98D15DCD21BD6EBAE78E126CB8350A4AE20321CF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardz_m98D15DCD21BD6EBAE78E126CB8350A4AE20321CF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9816,7 +10029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)45), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9826,7 +10039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral234D19ACC97DBDDB4C2351D9B583DDC8AD958380, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9862,7 +10075,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard1_m11B29F949785664265BEBB8FFC2761E9C52AE742 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard1_m11B29F949785664265BEBB8FFC2761E9C52AE742 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9903,7 +10116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)46), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -9913,7 +10126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralE91FE173F59B063D620A934CE1A010F2B114C1F3, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -9949,7 +10162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard2_m711AE810D56EBEA6F3588126EEE7CE87CEFAD420 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard2_m711AE810D56EBEA6F3588126EEE7CE87CEFAD420 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9990,7 +10203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)47), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10000,7 +10213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral21ED4C7AF50D987589A9029FC0422151BE3A0FC2, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10036,7 +10249,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard3_m0CB12774E09B5B7DCDFE46011154BBB378EEB180 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard3_m0CB12774E09B5B7DCDFE46011154BBB378EEB180 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10077,7 +10290,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)48), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10087,7 +10300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2064F80F811DB79A33C4E51C10221454E30C74AE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10123,7 +10336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard4_m12145A7DED21E2619ED08D4EF62C16F94CCFB0F3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard4_m12145A7DED21E2619ED08D4EF62C16F94CCFB0F3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10164,7 +10377,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)49), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10174,7 +10387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7454695E25D304C65D0C1333D8008E862569CAE9, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10210,7 +10423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard5_mCA146FE2079618FA336B63DD94F0E544EEDAF944 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard5_mCA146FE2079618FA336B63DD94F0E544EEDAF944 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10251,7 +10464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)50), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10261,7 +10474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralF7DDF59B44DDF9253B657C54053522CF694D3FBE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10297,7 +10510,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard6_m8424BA8A0B6C2514F62AF2048CC044EAF299C0BA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard6_m8424BA8A0B6C2514F62AF2048CC044EAF299C0BA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10338,7 +10551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)51), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10348,7 +10561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2F7234099CCD07F9C0939ACCC13D7F7F6E95DBAD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10384,7 +10597,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard7_mB208281402E16B4AEE104BA8F3846CEE62059B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard7_mB208281402E16B4AEE104BA8F3846CEE62059B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10425,7 +10638,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)52), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10435,7 +10648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7402F76B2D6078A455F77607AF6E7350B6DE019E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10471,7 +10684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard8_mDB78A7F564962E440089B66A06FAB24F87AB0C91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard8_mDB78A7F564962E440089B66A06FAB24F87AB0C91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10512,7 +10725,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)53), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10522,7 +10735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralB16CF3324CA15FF0851B0F99DD86AC638C3E0CAE, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10558,7 +10771,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard9_m6500F55EC8F085F9FC1836D2FA4F028899C8FE05 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard9_m6500F55EC8F085F9FC1836D2FA4F028899C8FE05 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10599,7 +10812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)54), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10609,7 +10822,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral25D74BC981E6316A5E3CAEEA0BAF3C438F5C94DA, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10645,7 +10858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboard0(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard0_m197315D863629E6CA84C0A5EA38EA186486F28FB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboard0_m197315D863629E6CA84C0A5EA38EA186486F28FB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10686,7 +10899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)55), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10696,7 +10909,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10732,7 +10945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftShift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftShift_mD1418732F4F28C89F4676A429057615147FCF98C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftShift_mD1418732F4F28C89F4676A429057615147FCF98C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10775,7 +10988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)56), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10785,7 +10998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral08D95FD97B8F0748D98BA3472832BB277B967510, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10824,7 +11037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightShift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightShift_m01FE27420BAB023CBF3B3C1E41918BAA484C7959 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightShift_m01FE27420BAB023CBF3B3C1E41918BAA484C7959 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10867,7 +11080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)57), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -10877,7 +11090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralD25AE031E356B979055532C5F4FB7AE3F58795D1, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -10916,7 +11129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardshift(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardshift_mF6E94F3328055FC07659F062D7432032EBA37109 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardshift_mF6E94F3328055FC07659F062D7432032EBA37109 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10969,7 +11182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)58), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -10979,7 +11192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralF164B67C241F3C67C0F6D0D0CA2449391C0CD635, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kDiscreteButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kDiscreteButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -11017,7 +11230,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftAlt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftAlt_m61D7E13A6F98FB0BDB9D056F7E4C97938060AF46 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftAlt_m61D7E13A6F98FB0BDB9D056F7E4C97938060AF46 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11060,7 +11273,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)59), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11070,7 +11283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralA46CE902A68FD2D88C53C19D8F524209D8E018AD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11109,7 +11322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightAlt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightAlt_mEDFFC459C2FB0DF45E9C8737AEDFE6A40597BF7C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightAlt_mEDFFC459C2FB0DF45E9C8737AEDFE6A40597BF7C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11153,7 +11366,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)60), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11163,7 +11376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral74CC96EA154F92A218F5A11F97D8773C43DC28E2, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11205,7 +11418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardalt(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardalt_mD05DC8F0A4E944E82E37B7FD039333F4DF58E09E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardalt_mD05DC8F0A4E944E82E37B7FD039333F4DF58E09E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11258,7 +11471,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)61), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -11268,7 +11481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral810CA7E09CB8F713EC64075CC05753584C147DF1, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kDiscreteButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kDiscreteButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -11306,7 +11519,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftCtrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftCtrl_m9888650A9A499A0B9C5D1320775199FB2F2FDD91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftCtrl_m9888650A9A499A0B9C5D1320775199FB2F2FDD91 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11349,7 +11562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)62), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11359,7 +11572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2D3C1C66F61261121D9CEA933CEC5C3873519716, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11398,7 +11611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightCtrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightCtrl_mF3A4DF1E74E9EBA7F3A01E59DDA4D7F631C107B9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightCtrl_mF3A4DF1E74E9EBA7F3A01E59DDA4D7F631C107B9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11441,7 +11654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)63), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11451,7 +11664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralFEFA8D6FDA432831C82AD37DD87CFBE366EED684, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11490,7 +11703,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.DiscreteButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardctrl(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardctrl_mEDD76EF2D931AD7433739D336F18B57A824482A3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDiscreteButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451EF43441B8EAF105813C* FastKeyboard_Initialize_ctrlKeyboardctrl_mEDD76EF2D931AD7433739D336F18B57A824482A3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDiscreteButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11543,7 +11756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)64), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -11553,7 +11766,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral931DFDCE8A7F395390F2AC831102C486A12DB07C, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kDiscreteButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kDiscreteButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -11591,7 +11804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DiscreteButtonControl_t3F3349EABF0E553E7E451E
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardleftMeta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftMeta_m7EE2593BC9817C3C4D6D4EED580B9A8E8AFBA63B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardleftMeta_m7EE2593BC9817C3C4D6D4EED580B9A8E8AFBA63B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11635,7 +11848,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)65), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11645,7 +11858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral12CEFB45617DF21EEC26EB0C0B8F69E299603B05, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11687,7 +11900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardrightMeta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightMeta_mBB0153758E5ABF0D58BD937FB0AC143CF116EBCF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardrightMeta_mBB0153758E5ABF0D58BD937FB0AC143CF116EBCF (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11731,7 +11944,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)66), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11741,7 +11954,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral399626108D4F7FA6970990EFCEC157C6E9E09944, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11783,7 +11996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcontextMenu(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcontextMenu_m0ABD27FBCA4B4CBD7131FD10B65FC22C8A1E0728 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcontextMenu_m0ABD27FBCA4B4CBD7131FD10B65FC22C8A1E0728 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11826,7 +12039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)67), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11836,7 +12049,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralFBDF00C9694425CA0709EE1B65D4E484C4E2043F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11875,7 +12088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardbackspace(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackspace_m58A28952812F6263D81A74697A0444B29236CE03 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardbackspace_m58A28952812F6263D81A74697A0444B29236CE03 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11917,7 +12130,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)68), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -11927,7 +12140,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral6DE15AD227D587D6558AF2F2AA1F1333640CB51A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -11963,7 +12176,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpageDown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageDown_mC349FAA02E76CA3FBBB6D37D3BE294E0107FEBC6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageDown_mC349FAA02E76CA3FBBB6D37D3BE294E0107FEBC6 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12005,7 +12218,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)69), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12015,7 +12228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral0D55ECBC2BFDE94A6FC0BE9F2E2FD8F791530F2A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12051,7 +12264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpageUp(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageUp_mC772095C4641AC118F9F9DE53054562F79141A40 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpageUp_mC772095C4641AC118F9F9DE53054562F79141A40 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12093,7 +12306,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)70), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12103,7 +12316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral645F62EBDD09B12A3AD56E1F1C46646B69F7A60A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12139,7 +12352,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardhome(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardhome_mC730E90F117158FF27131D33D218790BA08E9488 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardhome_mC730E90F117158FF27131D33D218790BA08E9488 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12181,7 +12394,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)71), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12191,7 +12404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral19E6F54B915CB01A74B7174DFEF8AC62E0C2BB5F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12227,7 +12440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardend(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardend_mB6FFD7B6E1F2AE10C35D27569A6AB09F0B65FD84 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardend_mB6FFD7B6E1F2AE10C35D27569A6AB09F0B65FD84 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12269,7 +12482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)72), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12279,7 +12492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralAB236FE2BF72D00A5CFAFFB9CA58750A49DA02B2, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12315,7 +12528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardinsert(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardinsert_mD91B56AECA31C43767288BDA7DD23DFFFAD2643E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardinsert_mD91B56AECA31C43767288BDA7DD23DFFFAD2643E (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12357,7 +12570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)73), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12367,7 +12580,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral3A09DEF2E79A5537263C4F770F064EA301EB2CD2, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12403,7 +12616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboarddelete(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddelete_m819117F248C52DEF805A29E0E858172B485ABC70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboarddelete_m819117F248C52DEF805A29E0E858172B485ABC70 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12445,7 +12658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)74), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12455,7 +12668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral824E903B1E7FC13229B28EFC49EE5B6F62A6225E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12491,7 +12704,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardcapsLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcapsLock_m167BE5602211D0F41074B1C33E79D574A6E13925 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardcapsLock_m167BE5602211D0F41074B1C33E79D574A6E13925 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12533,7 +12746,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)75), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12543,7 +12756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral635360A89CA2D69AD89232B72432E176BE8F219E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12579,7 +12792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumLock_m1FCEA3742C107DB129918534CBD7BEC78854046B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumLock_m1FCEA3742C107DB129918534CBD7BEC78854046B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12621,7 +12834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)76), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12631,7 +12844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralABA72D187E9F1B7989C889F63CDBA5ACD4CFC67B, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12667,7 +12880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardprintScreen(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardprintScreen_m83DF85EDAFA58A943E4C99E843806B6012C01261 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardprintScreen_m83DF85EDAFA58A943E4C99E843806B6012C01261 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12709,7 +12922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)77), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12719,7 +12932,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralE4FD1232E31D34AAEC17DFDEBACFD2E7A7B114D9, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12755,7 +12968,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardscrollLock(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardscrollLock_m542EF8E8CF7428E504C6135CDC543A5660F5188B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardscrollLock_m542EF8E8CF7428E504C6135CDC543A5660F5188B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12797,7 +13010,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)78), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12807,7 +13020,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralD8A9DF50AFFABB6FBAA6067B817F34F70A1AB8C8, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12843,7 +13056,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardpause(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpause_m2F76B984D0681E4B78E27FAE675AD4C8F10E4560 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardpause_m2F76B984D0681E4B78E27FAE675AD4C8F10E4560 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12885,7 +13098,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)79), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12895,7 +13108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2084A76D85D92A2615C4C1880108A2EBA2192949, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -12931,7 +13144,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadEnter(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEnter_m4E63592CFB6A2D2146E38B5D04BEEDB324CFDEAA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEnter_m4E63592CFB6A2D2146E38B5D04BEEDB324CFDEAA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12973,7 +13186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)80), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -12983,7 +13196,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralDEE65B0A24CA124E8B12286020065069CF85DD08, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13019,7 +13232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadDivide(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadDivide_m5EDC65E26B7746216AC72CCCB3838AF235F51DC8 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadDivide_m5EDC65E26B7746216AC72CCCB3838AF235F51DC8 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13061,7 +13274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)81), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13071,7 +13284,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral83E3622202742B1269E29827BEF99EB8AE64A083, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13107,7 +13320,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadMultiply(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMultiply_mA1379D492A7ED5A0E7744FDD7D87D55BF204D4E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMultiply_mA1379D492A7ED5A0E7744FDD7D87D55BF204D4E2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13149,7 +13362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)82), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13159,7 +13372,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBFB940B2CDAE27E2FA03FE4888D693E0DC85A963, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13195,7 +13408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadPlus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPlus_m7DB8421F8206608803D1A144AA2FEB19BFB170E7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPlus_m7DB8421F8206608803D1A144AA2FEB19BFB170E7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13237,7 +13450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)83), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13247,7 +13460,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralCB1089BB4917810118BD9EBF092793AC0F1AFF87, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13283,7 +13496,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadMinus(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMinus_m47D2CE0FC25346DB813E893748EBBBFD914EFFB9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadMinus_m47D2CE0FC25346DB813E893748EBBBFD914EFFB9 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13325,7 +13538,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)84), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13335,7 +13548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralC724E6CE2970E6AE3A178A979ACEBE6EC65B69AC, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13371,7 +13584,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadPeriod(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPeriod_m6F162BC640B7041E3DFC39C04391539AB14C2D77 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadPeriod_m6F162BC640B7041E3DFC39C04391539AB14C2D77 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13413,7 +13626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)85), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13423,7 +13636,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral24D4753C69184918CB7E6D291587A78E7094547A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13459,7 +13672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpadEquals(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEquals_m9C8AD1F7F6CCF824CF974F77604CBF12F70E1DA2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpadEquals_m9C8AD1F7F6CCF824CF974F77604CBF12F70E1DA2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13501,7 +13714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)86), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13511,7 +13724,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral8D568C2FD00B5C6EE3F015BBA3E2497B3503573D, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13547,7 +13760,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad1_m64F89C4A83488969355BE9A942C957526537B0CA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad1_m64F89C4A83488969355BE9A942C957526537B0CA (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13589,7 +13802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)87), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13599,7 +13812,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBC2ECF1CDB42AF17ECA9A56F28C161855BCE94D1, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13635,7 +13848,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad2_mF1761C4924922A3D9F983CED36CA79EDAC5E79EB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad2_mF1761C4924922A3D9F983CED36CA79EDAC5E79EB (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13677,7 +13890,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)88), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13687,7 +13900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral16887BA0386A82A065E97D3573E11902191206AD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13723,7 +13936,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad3_m596D19FF5BC77A2B85B74C45C26A3A27E2182654 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad3_m596D19FF5BC77A2B85B74C45C26A3A27E2182654 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13765,7 +13978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)89), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13775,7 +13988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7189A33066A1D14F48B465DCF83FD41FB9EA52AB, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13811,7 +14024,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad4_mE8E30A4C6BCD8B434AB7F9D0354F127DFFB66023 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad4_mE8E30A4C6BCD8B434AB7F9D0354F127DFFB66023 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13853,7 +14066,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)90), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13863,7 +14076,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralDF8851DD38E1955EED0622FADA102BB133A79B4E, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13899,7 +14112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad5_m4E16143A0F17EC3CBB4598E263722B9F25E50775 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad5_m4E16143A0F17EC3CBB4598E263722B9F25E50775 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13941,7 +14154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)91), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -13951,7 +14164,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralB8B08BD165E40B70E2330D43041C5307EB81C4C6, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -13987,7 +14200,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad6_mC5E8949659691FFE47990A0844D7018E9A0BE0A4 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad6_mC5E8949659691FFE47990A0844D7018E9A0BE0A4 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14029,7 +14242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)92), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14039,7 +14252,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBF7CCB41BA9C36BA5B7453CDE8B0B10D6AD8C2A6, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14075,7 +14288,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad7_mB0074B0C219BB1148860A0AC7BC5FBF0367AD00A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad7_mB0074B0C219BB1148860A0AC7BC5FBF0367AD00A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14117,7 +14330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)93), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14127,7 +14340,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral59484ED7D21F876883585E7D64F05B03D978AAB6, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14163,7 +14376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad8_m7AA765F6CC8A0684AC2ABF97FD713B7D05567E1D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad8_m7AA765F6CC8A0684AC2ABF97FD713B7D05567E1D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14205,7 +14418,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)94), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14215,7 +14428,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral6C4C595659A5736B163338535EC6066FE1C8E42A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14251,7 +14464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad9_mBA466E460B1DFB45DCF9E8AA21480537F6029F58 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad9_mBA466E460B1DFB45DCF9E8AA21480537F6029F58 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14293,7 +14506,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)95), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14303,7 +14516,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralB22ED1ECEE4266BC9C4BE9FAFE55D56688893F91, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14339,7 +14552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardnumpad0(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad0_m5870FD587C9088B032FB41AF4D7181868CCA7552 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardnumpad0_m5870FD587C9088B032FB41AF4D7181868CCA7552 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14381,7 +14594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)96), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14391,7 +14604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral9694270DAA5E2C3AA977C2D4538E87DDDF2A45BB, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14427,7 +14640,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf1_m22FBBB392AF9A46D7B1173C788BF12FE3DE295E3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf1_m22FBBB392AF9A46D7B1173C788BF12FE3DE295E3 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14469,7 +14682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)97), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14479,7 +14692,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralC613D4D2FE3F5D74727D376F793286A2BCBB1391, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14515,7 +14728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf2_m89393E6E968234B31C3307BADB5220E648A74B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf2_m89393E6E968234B31C3307BADB5220E648A74B65 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14557,7 +14770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)98), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14567,7 +14780,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14603,7 +14816,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf3_m6407D43FC943C68660EA3EDF291FFFBD4C72E444 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf3_m6407D43FC943C68660EA3EDF291FFFBD4C72E444 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14645,7 +14858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)99), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14655,7 +14868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralB3312B5F5FE977DBC98BFFF43A809C3713ADC6B9, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14691,7 +14904,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf4_mA2EBEDE3E6442E87A41578A91102058F438C924C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf4_mA2EBEDE3E6442E87A41578A91102058F438C924C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14733,7 +14946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)100), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14743,7 +14956,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral1DA847B0C8711F8529FBC7BC20711A1361A8B323, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14779,7 +14992,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf5_m1B7EA2DCCD1D3C82B0A007315D8A9932AD001DD7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf5_m1B7EA2DCCD1D3C82B0A007315D8A9932AD001DD7 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14821,7 +15034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)101), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14831,7 +15044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralC0A7EDEBF99915540EBE211C25A14FEFF82DDAA7, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14867,7 +15080,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf6(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf6_m7460C9A39B1CD38119F95B5BDA6078257123DD9C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf6_m7460C9A39B1CD38119F95B5BDA6078257123DD9C (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14909,7 +15122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)102), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -14919,7 +15132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralAAF764D0E49CF83587ED98F50A47A2B697560BC3, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -14955,7 +15168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf7(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf7_mF847D270DA61D9BD050920A5C315BA29F71BC169 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf7_mF847D270DA61D9BD050920A5C315BA29F71BC169 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14997,7 +15210,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)103), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15007,7 +15220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral2EA2FDA05AB90F271FD0153F11CED5D07A1C10A0, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15043,7 +15256,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf8(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf8_mC429A23AFCFDFB66903E48D378680ED382E91B4A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf8_mC429A23AFCFDFB66903E48D378680ED382E91B4A (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15085,7 +15298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)104), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15095,7 +15308,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralD56A06C79C6CCAF7CC07E8943A73F835809D4D23, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15131,7 +15344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf9(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf9_m00B86A238F5BD7B6E974F665D050C36609F26105 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf9_m00B86A238F5BD7B6E974F665D050C36609F26105 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15173,7 +15386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)105), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15183,7 +15396,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7934DA150770239F554DB9C62DDC3E01E3863F3A, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15219,7 +15432,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf10(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf10_mF0115A09106548DDEB56AF481A31FC459EAA0CFD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf10_mF0115A09106548DDEB56AF481A31FC459EAA0CFD (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15261,7 +15474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)106), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15271,7 +15484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral0055AAA1E753635DDFD10712A80410778BF50080, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15307,7 +15520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf11(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf11_mD57A8878BDD2A99E42B1C054825162041C27AA27 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf11_mD57A8878BDD2A99E42B1C054825162041C27AA27 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15349,7 +15562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)107), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15359,7 +15572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralCA22289F97C7A51C28D48B231D49EE856BD5E84F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15395,7 +15608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardf12(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf12_m53888F35B7822246C4C9B53049E8AD1F95892AD2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardf12_m53888F35B7822246C4C9B53049E8AD1F95892AD2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15437,7 +15650,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)108), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15447,7 +15660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral64165106E0F98E6C3A556C53CEF226B714B640CD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15483,7 +15696,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM1(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM1_m28559EF6003DD9C84EABB0D1482EEE907AA244A2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM1_m28559EF6003DD9C84EABB0D1482EEE907AA244A2 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15524,7 +15737,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)109), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15534,7 +15747,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralAFEE4C6059B28F9E25F6E784975504551CE265FA, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15570,7 +15783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM2(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM2_m138A1243DD3C807E4149826C70D593E9D2723F0D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM2_m138A1243DD3C807E4149826C70D593E9D2723F0D (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15611,7 +15824,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)110), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15621,7 +15834,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralFAC11A4E95F0596A1AC85788104F2F025688B1AD, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15657,7 +15870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM3(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM3_m7547EF7064838343D76326346D27C62668ABE607 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM3_m7547EF7064838343D76326346D27C62668ABE607 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15698,7 +15911,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)111), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15708,7 +15921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralCD96AD41C127E80C50DBE21A46FA7FBA37C44065, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15744,7 +15957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM4(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM4_m2A6BAB46BC8DBE7D3CAE3D7266D9C41FA8626913 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM4_m2A6BAB46BC8DBE7D3CAE3D7266D9C41FA8626913 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15785,7 +15998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)112), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15795,7 +16008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBC14F997E98B27E4F25AAF8B695FE771F7B62459, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15831,7 +16044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.KeyControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardOEM5(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM5_m0A7D2E86690242F3E895E203C7E8339B5679E707 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kKeyLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* FastKeyboard_Initialize_ctrlKeyboardOEM5_m0A7D2E86690242F3E895E203C7E8339B5679E707 (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kKeyLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15872,7 +16085,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)113), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15882,7 +16095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralA13DE776E4C2FC8691859D31E79E9E2F3E487F16, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kKeyLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kKeyLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -15918,7 +16131,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastKeyboard::Initialize_ctrlKeyboardIMESelected(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastKeyboard_Initialize_ctrlKeyboardIMESelected_mB1A88861AF58D24760A678A780A411DDDBDC518B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastKeyboard_Initialize_ctrlKeyboardIMESelected_mB1A88861AF58D24760A678A780A411DDDBDC518B (FastKeyboard_t2AD2BAAE315832F97141A23E6A032BCD372824A6* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15960,7 +16173,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)114), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -15970,7 +16183,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralE3D215EAA2BB62B6A3DA67D2CFB11F3176A1B93F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -16513,7 +16726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse__ctor_mC33EC7DB997731A8B3EA6F2
 	}
 }
 // UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseposition(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseposition_m54F22B2BBF09D1EC94B56AE70A53EA45A84D6A0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kVector2Layout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseposition_m54F22B2BBF09D1EC94B56AE70A53EA45A84D6A0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kVector2Layout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16559,7 +16772,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 0, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16572,7 +16785,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral570A8C820BD3B01A870C767E1B234057A3ABC60F, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kVector2Layout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kVector2Layout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -16600,7 +16813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 	}
 }
 // UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedelta(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousedelta_m622E0BED3DC083EC17E7B5ABB56771758FA9B387 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDeltaLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousedelta_m622E0BED3DC083EC17E7B5ABB56771758FA9B387 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDeltaLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16642,7 +16855,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 1, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16655,7 +16868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralBB3F223896EC30F7292484479FB732D822BBDFBE, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kDeltaLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kDeltaLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -16680,7 +16893,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 	}
 }
 // UnityEngine.InputSystem.Controls.DeltaControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescroll(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousescroll_m52C14358C6567D16F73B47D81768B9B1EBE89637 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDeltaLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* FastMouse_Initialize_ctrlMousescroll_m52C14358C6567D16F73B47D81768B9B1EBE89637 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDeltaLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16721,7 +16934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 2, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16734,7 +16947,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral6BDD037B6AEE48B5D323DAAEAB467A82A176AF5E, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kDeltaLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kDeltaLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -16756,7 +16969,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A1
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepress(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousepress_m6BAA8D30CFF95C9C939E568ADBC95D4AC27E2DEC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousepress_m6BAA8D30CFF95C9C939E568ADBC95D4AC27E2DEC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16799,7 +17012,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 3, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16809,7 +17022,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteralA99DCC00443D797894F4B10607C716D806A9105F, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -16844,7 +17057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseleftButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseleftButton_m45E61E21555DA9D507DCEE7F88310CC6F3431B21 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseleftButton_m45E61E21555DA9D507DCEE7F88310CC6F3431B21 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16889,7 +17102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 4, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16902,7 +17115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral757C8DB25D755A37051E5C2B4849D4812ABB2F58, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -16937,7 +17150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouserightButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouserightButton_m3A50758814C802B210062D454CBE77B5425F9984 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouserightButton_m3A50758814C802B210062D454CBE77B5425F9984 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16982,7 +17195,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 5, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -16995,7 +17208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralAFEF46016A995FD00AD45BB459121E73C6AF4EE0, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -17030,7 +17243,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousemiddleButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousemiddleButton_mA43E6C0695D4AF1F49D824D23511B6327276255E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousemiddleButton_mA43E6C0695D4AF1F49D824D23511B6327276255E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17074,7 +17287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 6, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17087,7 +17300,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralD62B87B96C1AF943A04794CB78B7B9A50D415FD1, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -17119,7 +17332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseforwardButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseforwardButton_mCE0FA549F660C03BD12C8FB9A30FCA8B516F4F0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMouseforwardButton_mCE0FA549F660C03BD12C8FB9A30FCA8B516F4F0B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17162,7 +17375,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 7, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17172,7 +17385,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral724F6EF07C0D3FFFD32A55027218B65FB4F377E1, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -17207,7 +17420,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.ButtonControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousebackButton(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousebackButton_m1069D0C5747547A851F12A71F6700734FDE8F6A5 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kButtonLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* FastMouse_Initialize_ctrlMousebackButton_m1069D0C5747547A851F12A71F6700734FDE8F6A5 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kButtonLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17250,7 +17463,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, 8, NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17260,7 +17473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral4A261EB7E7319776625F5A015EA18053797E6890, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kButtonLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kButtonLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -17295,7 +17508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7ADC0285F0EC98
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepressure(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepressure_m6EB0B062A51E3EDB23D19FC3752B95B0F5FA79DC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepressure_m6EB0B062A51E3EDB23D19FC3752B95B0F5FA79DC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17337,7 +17550,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)9), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17347,7 +17560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral7CFABA7C6462657D1BE1B82BCB25DB5422A67CE8, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -17377,7 +17590,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.Vector2Control UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradius(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseradius_m7D76762D60AE31B02D815B7DD944DB13E1AD6D6E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kVector2Layout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* FastMouse_Initialize_ctrlMouseradius_m7D76762D60AE31B02D815B7DD944DB13E1AD6D6E (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kVector2Layout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17419,7 +17632,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)10), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17432,7 +17645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral4242348F79D89713783C664DBCE2420B6B2900DE, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kVector2Layout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kVector2Layout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -17457,7 +17670,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2Control_t8D1B4021A1D82671AF916D3C0A476
 	}
 }
 // UnityEngine.InputSystem.Controls.IntegerControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepointerId(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMousepointerId_mBE78B0CA0A0839E232BA24AC03F75CC88AD43F6B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kDigitalLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMousepointerId_mBE78B0CA0A0839E232BA24AC03F75CC88AD43F6B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kDigitalLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17496,7 +17709,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)11), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17506,7 +17719,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral903F03FC1A11E4761D33E056D90BB5870B47104B, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kDigitalLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kDigitalLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -17528,7 +17741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 	}
 }
 // UnityEngine.InputSystem.Controls.IntegerControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseclickCount(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMouseclickCount_m65D1D90ADC35296690F21AA3C8EFDD687E0412D6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kIntegerLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* FastMouse_Initialize_ctrlMouseclickCount_m65D1D90ADC35296690F21AA3C8EFDD687E0412D6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kIntegerLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17569,7 +17782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)12), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17579,7 +17792,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline((&V_0), _stringLiteral8749E756FB4409A7DA5D332D9444516DACC43DFF, NULL);
 		V_0 = L_7;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___kIntegerLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_8 = ___0_kIntegerLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_9;
 		L_9 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_8, NULL);
 		V_0 = L_9;
@@ -17604,7 +17817,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IntegerControl_tA24544EFF42204852F638FF5147F7
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepositionx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositionx_mD2068D68B04F774738E887F2F91C774F27813449 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositionx_mD2068D68B04F774738E887F2F91C774F27813449 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17646,7 +17859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)13), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17659,7 +17872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral63A66544182E60A0B41E75178AA7BE94309EF08F, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -17684,7 +17897,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousepositiony(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositiony_m7B57AF282F4C4FCF0E41B3287133EFA7D79B7DD6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousepositiony_m7B57AF282F4C4FCF0E41B3287133EFA7D79B7DD6 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17726,7 +17939,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)14), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -17739,7 +17952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralC5ED819663B2FB75AB220874BDCC37731931BF53, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -17764,7 +17977,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaup(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaup_mA4E2DED585398B38D6771F19F3F71B327EAD7622 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaup_mA4E2DED585398B38D6771F19F3F71B327EAD7622 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17812,7 +18025,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)15), NULL);
 		V_0 = L_5;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_6, NULL);
 		V_0 = L_7;
@@ -17825,7 +18038,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralFB56A2F44F5D52FB336ACEBDAA624066C8780F3D, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -17850,7 +18063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltadown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltadown_mBFDAD50FD2E00EB45BE9FD51BD7AF6CDC22191A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltadown_mBFDAD50FD2E00EB45BE9FD51BD7AF6CDC22191A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17901,7 +18114,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)16), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -17914,7 +18127,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_11;
 		L_11 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral8E5708A6E10ECEDD6C79E0A4A1B15A225EFE7E57, NULL);
 		V_0 = L_11;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_13;
 		L_13 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_12, NULL);
 		V_0 = L_13;
@@ -17939,7 +18152,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaleft(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaleft_m44857ECCA2BB71788BD1E7AA0983855F037558C3 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaleft_m44857ECCA2BB71788BD1E7AA0983855F037558C3 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17990,7 +18203,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)17), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -18003,7 +18216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_11;
 		L_11 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral876D93F4B29CCD7342A2D8D702F8945FF0396682, NULL);
 		V_0 = L_11;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_13;
 		L_13 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_12, NULL);
 		V_0 = L_13;
@@ -18028,7 +18241,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltaright(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaright_mE8F59ED6C81FB4632DF8706A859D4CDBC2EA9F47 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltaright_mE8F59ED6C81FB4632DF8706A859D4CDBC2EA9F47 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18076,7 +18289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)18), NULL);
 		V_0 = L_5;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_6, NULL);
 		V_0 = L_7;
@@ -18089,7 +18302,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral135F326F5507595B90A8E7BB8ED2E8E96F199BF2, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -18114,7 +18327,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltax(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltax_mCF2B20C996ADE1D3CD9CF75BAB0A512BEAA824A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltax_mCF2B20C996ADE1D3CD9CF75BAB0A512BEAA824A9 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18155,7 +18368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)19), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18168,7 +18381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral2D1FADF5216A279FF8145B59C3BB842997CDF199, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18190,7 +18403,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousedeltay(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltay_mDF6C222FB2B86529B9A6B05ACF9E0C9C3C691ACC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousedeltay_mDF6C222FB2B86529B9A6B05ACF9E0C9C3C691ACC (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18231,7 +18444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)20), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18244,7 +18457,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral9538BAEDBF589D7D271123873993D6B72FC02D11, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18266,7 +18479,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollup(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollup_m35C906E3FDC5EB197E37933FBE9297E9634AA40B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollup_m35C906E3FDC5EB197E37933FBE9297E9634AA40B (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18314,7 +18527,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)21), NULL);
 		V_0 = L_5;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_6, NULL);
 		V_0 = L_7;
@@ -18327,7 +18540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralFA16A3D9394E844B0E56B6CA4D4428E01226697E, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -18352,7 +18565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrolldown(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolldown_m5768AE5B73CA130EE40D358312E7C0B6E36E0444 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolldown_m5768AE5B73CA130EE40D358312E7C0B6E36E0444 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18403,7 +18616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)22), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -18416,7 +18629,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_11;
 		L_11 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralF247A0DBFB59FBEE0621677A34D856D54629ADAB, NULL);
 		V_0 = L_11;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_13;
 		L_13 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_12, NULL);
 		V_0 = L_13;
@@ -18441,7 +18654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollleft(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollleft_m8408A636A5921B846E8CCF891F321A2E564E7570 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollleft_m8408A636A5921B846E8CCF891F321A2E564E7570 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18492,7 +18705,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_6;
 		L_6 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)23), NULL);
 		V_0 = L_6;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_7, NULL);
 		V_0 = L_8;
@@ -18505,7 +18718,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_11;
 		L_11 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral25CC55CC625783E96431BAB58F1C49B6336901B8, NULL);
 		V_0 = L_11;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_12 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_13;
 		L_13 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_12, NULL);
 		V_0 = L_13;
@@ -18530,7 +18743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollright(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollright_mBB3236D3898F45EF2A9278AC4FC970A2F371888C (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollright_mBB3236D3898F45EF2A9278AC4FC970A2F371888C (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18578,7 +18791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)24), NULL);
 		V_0 = L_5;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_6 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_7;
 		L_7 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_6, NULL);
 		V_0 = L_7;
@@ -18591,7 +18804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral2B87243FBDB9C2AC6368983767212AE4EB2B35CF, NULL);
 		V_0 = L_10;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_11 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_12;
 		L_12 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_11, NULL);
 		V_0 = L_12;
@@ -18616,7 +18829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrollx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollx_mDAF68F01705D239068002833E5E291BE1E71E0B2 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrollx_mDAF68F01705D239068002833E5E291BE1E71E0B2 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18659,7 +18872,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)25), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18672,7 +18885,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral2F20D95A90FE1B26252C8FE75359B02D822DB053, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18700,7 +18913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMousescrolly(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolly_mE06E7A9C78D4BE4EA7A773AFB01B9B58DEC05854 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMousescrolly_mE06E7A9C78D4BE4EA7A773AFB01B9B58DEC05854 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18744,7 +18957,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)26), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18757,7 +18970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral9D567EE0085883D3AC2E1EE49E14A74E61BEFBC0, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18785,7 +18998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradiusx(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusx_mFE6E56ECFBBBC388C05A981C28D94F17C94E8824 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusx_mFE6E56ECFBBBC388C05A981C28D94F17C94E8824 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18826,7 +19039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)27), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18839,7 +19052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteralC7C7E6AD84800CB8A50706F46E0567A6458C0F10, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18861,7 +19074,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 	}
 }
 // UnityEngine.InputSystem.Controls.AxisControl UnityEngine.InputSystem.FastMouse::Initialize_ctrlMouseradiusy(UnityEngine.InputSystem.Utilities.InternedString,UnityEngine.InputSystem.InputControl)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusy_m0EF47D967D23336DBE16320983C999A038C20A14 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___kAxisLayout0, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* FastMouse_Initialize_ctrlMouseradiusy_m0EF47D967D23336DBE16320983C999A038C20A14 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_kAxisLayout, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___1_parent, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18902,7 +19115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_3;
 		L_3 = ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline((&V_0), __this, ((int32_t)28), NULL);
 		V_0 = L_3;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___parent1;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4 = ___1_parent;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_5;
 		L_5 = ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline((&V_0), L_4, NULL);
 		V_0 = L_5;
@@ -18915,7 +19128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AxisControl_tD6613A2445A3C2BFA22C77E16CA3201A
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_8;
 		L_8 = ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline((&V_0), _stringLiteral8B02FFB11C49AD538568BC137F5740AB874DC570, NULL);
 		V_0 = L_8;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___kAxisLayout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_9 = ___0_kAxisLayout;
 		ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 L_10;
 		L_10 = ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline((&V_0), L_9, NULL);
 		V_0 = L_10;
@@ -18973,7 +19186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnNextUpdate_mFE738278EC26FBC6
 	}
 }
 // System.Void UnityEngine.InputSystem.FastMouse::OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2662B4DB4CA5F86DCCAFDF436 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2662B4DB4CA5F86DCCAFDF436 (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18988,7 +19201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2
 	{
 		// if (eventPtr.type != StateEvent.Type)
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_0;
-		L_0 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___eventPtr0), NULL);
+		L_0 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___0_eventPtr), NULL);
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_1;
 		L_1 = FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61(((int32_t)1398030676), NULL);
 		bool L_2;
@@ -19000,7 +19213,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2
 	}
 	{
 		// base.OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_3 = ___0_eventPtr;
 		Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80(__this, L_3, NULL);
 		// return;
 		return;
@@ -19009,7 +19222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_OnStateEvent_mD0DCD13FA05C3DA2
 IL_0020:
 	{
 		// var stateEvent = StateEvent.FromUnchecked(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_4 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_4 = ___0_eventPtr;
 		StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* L_5;
 		L_5 = StateEvent_FromUnchecked_m2735488B081D9C8E972D4F2B6D80C044599BFB81(L_4, NULL);
 		V_0 = L_5;
@@ -19028,7 +19241,7 @@ IL_0020:
 	}
 	{
 		// base.OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_10 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_10 = ___0_eventPtr;
 		Mouse_OnStateEvent_mDFED0AF6A4E8492260F20AFC0F29298CA9D59D80(__this, L_10, NULL);
 		// return;
 		return;
@@ -19072,7 +19285,7 @@ IL_0041:
 		// InputState.Change(this, ref newState, InputState.currentUpdateType, eventPtr: eventPtr);
 		int32_t L_29;
 		L_29 = InputState_get_currentUpdateType_m77DBCEC0F6E435740C44467281149B2F74025C10_inline(NULL);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_30 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_30 = ___0_eventPtr;
 		InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E(__this, (&V_1), L_29, L_30, InputState_Change_TisMouseState_t0D9AD9D7629CA3F363E7C2AFD710A11D965408E1_mC39BF003BD629FC9FC7DD20AE938E97C7A53302E_RuntimeMethod_var);
 		// }
 		return;
@@ -19089,18 +19302,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_UnityEngine_InputSystem_LowLev
 	}
 }
 // System.Void UnityEngine.InputSystem.FastMouse::UnityEngine.InputSystem.LowLevel.IInputStateCallbackReceiver.OnStateEvent(UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_m3773E486F78F86176267BA39D6ED2A5FE407BC3A (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___eventPtr0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FastMouse_UnityEngine_InputSystem_LowLevel_IInputStateCallbackReceiver_OnStateEvent_m3773E486F78F86176267BA39D6ED2A5FE407BC3A (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_eventPtr, const RuntimeMethod* method) 
 {
 	{
 		// OnStateEvent(eventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___eventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___0_eventPtr;
 		FastMouse_OnStateEvent_mD0DCD13FA05C3DA2662B4DB4CA5F86DCCAFDF436(__this, L_0, NULL);
 		// }
 		return;
 	}
 }
 // System.Boolean UnityEngine.InputSystem.FastMouse::MergeForward(UnityEngine.InputSystem.LowLevel.InputEventPtr,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625C3B6A015F7874E140FBE6D54 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___currentEventPtr0, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___nextEventPtr1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625C3B6A015F7874E140FBE6D54 (InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_currentEventPtr, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___1_nextEventPtr, const RuntimeMethod* method) 
 {
 	StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* V_0 = NULL;
 	StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* V_1 = NULL;
@@ -19109,7 +19322,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625
 	{
 		// if (currentEventPtr.type != StateEvent.Type || nextEventPtr.type != StateEvent.Type)
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_0;
-		L_0 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___currentEventPtr0), NULL);
+		L_0 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___0_currentEventPtr), NULL);
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_1;
 		L_1 = FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61(((int32_t)1398030676), NULL);
 		bool L_2;
@@ -19121,7 +19334,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_MergeForward_m6D7907290CA79625
 	}
 	{
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_3;
-		L_3 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___nextEventPtr1), NULL);
+		L_3 = InputEventPtr_get_type_m15241E84546FBC6172CF80B8E0D4EDA9B0FABC69((&___1_nextEventPtr), NULL);
 		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_4;
 		L_4 = FourCC_op_Implicit_mFEE14A923AACEE90FAAC5234C718CD1B20690F61(((int32_t)1398030676), NULL);
 		bool L_5;
@@ -19141,12 +19354,12 @@ IL_0030:
 IL_0032:
 	{
 		// var currentEvent = StateEvent.FromUnchecked(currentEventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_6 = ___currentEventPtr0;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_6 = ___0_currentEventPtr;
 		StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* L_7;
 		L_7 = StateEvent_FromUnchecked_m2735488B081D9C8E972D4F2B6D80C044599BFB81(L_6, NULL);
 		V_0 = L_7;
 		// var nextEvent = StateEvent.FromUnchecked(nextEventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_8 = ___nextEventPtr1;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_8 = ___1_nextEventPtr;
 		StateEvent_tB93D5F08B084A2BC9FFC71B084409DBBD2516C0F* L_9;
 		L_9 = StateEvent_FromUnchecked_m2735488B081D9C8E972D4F2B6D80C044599BFB81(L_8, NULL);
 		V_1 = L_9;
@@ -19257,12 +19470,12 @@ IL_0092:
 	}
 }
 // System.Boolean UnityEngine.InputSystem.FastMouse::UnityEngine.InputSystem.LowLevel.IEventMerger.MergeForward(UnityEngine.InputSystem.LowLevel.InputEventPtr,UnityEngine.InputSystem.LowLevel.InputEventPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_UnityEngine_InputSystem_LowLevel_IEventMerger_MergeForward_m1D1C843B6603AAE7C9CAD8D21851FDBEE9EC6C4A (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___currentEventPtr0, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___nextEventPtr1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_UnityEngine_InputSystem_LowLevel_IEventMerger_MergeForward_m1D1C843B6603AAE7C9CAD8D21851FDBEE9EC6C4A (FastMouse_t8625CBF765C2880DA42DA5A1FB9432005B64CF8D* __this, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___0_currentEventPtr, InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 ___1_nextEventPtr, const RuntimeMethod* method) 
 {
 	{
 		// return MergeForward(currentEventPtr, nextEventPtr);
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___currentEventPtr0;
-		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_1 = ___nextEventPtr1;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_0 = ___0_currentEventPtr;
+		InputEventPtr_tC2A58521C9AFB479CC88789D5E0797D817C721C0 L_1 = ___1_nextEventPtr;
 		bool L_2;
 		L_2 = FastMouse_MergeForward_m6D7907290CA79625C3B6A015F7874E140FBE6D54(L_0, L_1, NULL);
 		return L_2;
@@ -19271,7 +19484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FastMouse_UnityEngine_InputSystem_LowLev
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD709EF47A2E926680D67E2F524839B5341_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19281,7 +19494,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_current_m2BA54FD70
 	}
 	{
 		// public new static Mouse current { get; private set; }
-		Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* L_0 = ___value0;
+		Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* L_0 = ___0_value;
 		((Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields*)il2cpp_codegen_static_fields_for(Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_52 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_StaticFields*)il2cpp_codegen_static_fields_for(Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_52), (void*)L_0);
 		return;
@@ -19301,71 +19514,71 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Mouse_t9A9CC4636FA9CDBAD7FB7A02DB
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_scroll_mDFC2420E163DD6C54B319F0E92645B947A68237F_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public DeltaControl scroll { get; protected set; }
-		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___value0;
+		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___0_value;
 		__this->___U3CscrollU3Ek__BackingField_45 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CscrollU3Ek__BackingField_45), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_leftButton_mD27E2E1790193CE4FEA6F87306E3AD535E24C1CA_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl leftButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CleftButtonU3Ek__BackingField_46 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftButtonU3Ek__BackingField_46), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_middleButton_m16FB7FF8B6FC14726F551EFE3570051C32B105C8_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl middleButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CmiddleButtonU3Ek__BackingField_47 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CmiddleButtonU3Ek__BackingField_47), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_rightButton_mC985A4F17F6230B1B6869D56E71095C7406A2010_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl rightButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CrightButtonU3Ek__BackingField_48 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightButtonU3Ek__BackingField_48), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_forwardButton_mADAF136B7091458D4A524B2589C9470D9ECB101B_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl forwardButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CforwardButtonU3Ek__BackingField_50 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CforwardButtonU3Ek__BackingField_50), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_backButton_m02B6C2F592671BFE00E61F9DE4F646783FAF6672_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl backButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CbackButtonU3Ek__BackingField_49 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CbackButtonU3Ek__BackingField_49), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Mouse_set_clickCount_mEA6479663B0A198C0045A6C8BE51DF1B4D71F6C4_inline (Mouse_t9A9CC4636FA9CDBAD7FB7A02DB0D6395EDCC338F* __this, IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public IntegerControl clickCount { get; protected set;  }
-		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___value0;
+		IntegerControl_tA24544EFF42204852F638FF5147F754962C997AB* L_0 = ___0_value;
 		__this->___U3CclickCountU3Ek__BackingField_51 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CclickCountU3Ek__BackingField_51), (void*)L_0);
 		return;
@@ -19457,7 +19670,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ButtonControl_t85949109B98AAF5B7A
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A3186095B5B0D542F94099849BBCCA27_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19467,7 +19680,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_current_m20F92D30A31
 	}
 	{
 		// public new static Pen current { get; internal set; }
-		Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* L_0 = ___value0;
+		Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* L_0 = ___0_value;
 		((Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields*)il2cpp_codegen_static_fields_for(Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_54 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_StaticFields*)il2cpp_codegen_static_fields_for(Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_54), (void*)L_0);
 		return;
@@ -19487,97 +19700,97 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pen_tBDA63CF60697FAF5D75A8A19E939
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tip_m2E3899DD7ABDDCE06226939FA4B26EF7167DD7D3_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl tip { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CtipU3Ek__BackingField_45 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtipU3Ek__BackingField_45), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_eraser_m54046F2449B45C3D51688C97B0B744C9A92035C4_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl eraser { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CeraserU3Ek__BackingField_46 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CeraserU3Ek__BackingField_46), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_firstBarrelButton_m8BBFD8A78C9B798F4C7448BA1EE9F4B957266ACE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl firstBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CfirstBarrelButtonU3Ek__BackingField_47 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfirstBarrelButtonU3Ek__BackingField_47), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_secondBarrelButton_m6AE5186C4346C1CEA2AADD1C250F07328A793958_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl secondBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CsecondBarrelButtonU3Ek__BackingField_48 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CsecondBarrelButtonU3Ek__BackingField_48), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_thirdBarrelButton_mE02413502E35E79916BF0432AC163AE52D18DC28_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl thirdBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CthirdBarrelButtonU3Ek__BackingField_49 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CthirdBarrelButtonU3Ek__BackingField_49), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_fourthBarrelButton_m341A5159DCE288029F418AC3FC1E3FACF97254DA_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl fourthBarrelButton { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CfourthBarrelButtonU3Ek__BackingField_50 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CfourthBarrelButtonU3Ek__BackingField_50), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_inRange_m4B02E5AA683E6022D894A5F3487B6DB9FFE778EE_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl inRange { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CinRangeU3Ek__BackingField_51 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CinRangeU3Ek__BackingField_51), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_tilt_mC480769B17CCCC2187A85E1BE6B9607583E61373_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control tilt { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CtiltU3Ek__BackingField_52 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtiltU3Ek__BackingField_52), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pen_set_twist_m37597EDEA7F2FB85967E3B675794050B797E08C1_inline (Pen_tBDA63CF60697FAF5D75A8A19E939BAC1BE434AFF* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl twist { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CtwistU3Ek__BackingField_53 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CtwistU3Ek__BackingField_53), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0089411CFC717921900386D25F6DA24C75_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19587,7 +19800,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_current_mECDE5C0
 	}
 	{
 		// public static Pointer current { get; internal set; }
-		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0 = ___value0;
+		Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* L_0 = ___0_value;
 		((Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields*)il2cpp_codegen_static_fields_for(Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_44 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_StaticFields*)il2cpp_codegen_static_fields_for(Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField_44), (void*)L_0);
 		return;
@@ -19607,51 +19820,51 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Pointer_t800EF2832B62E889AC9C182E
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_position_m2D924A583D251F04C6868D10969E1ED6EC4EB7D3_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control position { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CpositionU3Ek__BackingField_39 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpositionU3Ek__BackingField_39), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_delta_mEB61C0A0FDD20CF0DF6792ACF1BE796C8E007570_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public DeltaControl delta { get; protected set; }
-		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___value0;
+		DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* L_0 = ___0_value;
 		__this->___U3CdeltaU3Ek__BackingField_40 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdeltaU3Ek__BackingField_40), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_radius_m09D5572AFA099FCAA41926908D7A6439749BD2DE_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Vector2Control radius { get; protected set; }
-		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___value0;
+		Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* L_0 = ___0_value;
 		__this->___U3CradiusU3Ek__BackingField_41 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CradiusU3Ek__BackingField_41), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_pressure_m2593E7CCA07D8C8F71A7B76425C67982AEF632E8_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl pressure { get; protected set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CpressureU3Ek__BackingField_42 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpressureU3Ek__BackingField_42), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Pointer_set_press_mC489CD308019C8ED1CC9C75F2772C6DCD550F4E0_inline (Pointer_t800EF2832B62E889AC9C182E3B18098AF220E32A* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl press { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CpressU3Ek__BackingField_43 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CpressU3Ek__BackingField_43), (void*)L_0);
 		return;
@@ -19665,13 +19878,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeltaControl_t63053AF5E0CD02B62F3
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithName_m9CAF681E7BC82E50A1D8D4756736B62BE2E86888_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithName_m9CAF681E7BC82E50A1D8D4756736B62BE2E86888_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
 		// device.m_Name = new InternedString(name);
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935((&L_2), L_1, /*hidden argument*/NULL);
@@ -19686,13 +19899,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_3;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithDisplayName_mEF9664AEE5D5410C6F5397CDB4A0DA7C16956F38_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___displayName0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithDisplayName_mEF9664AEE5D5410C6F5397CDB4A0DA7C16956F38_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, String_t* ___0_displayName, const RuntimeMethod* method) 
 {
 	{
 		// device.m_DisplayNameFromLayout = new InternedString(displayName);
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		String_t* L_1 = ___displayName0;
+		String_t* L_1 = ___0_displayName;
 		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935((&L_2), L_1, /*hidden argument*/NULL);
@@ -19706,19 +19919,19 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithChildren_mB52CDAE18A90B4B198C055946B55C6FB2C0C6682_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithChildren_mB52CDAE18A90B4B198C055946B55C6FB2C0C6682_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) 
 {
 	{
 		// device.m_ChildStartIndex = startIndex;
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		int32_t L_1 = ___startIndex0;
+		int32_t L_1 = ___0_startIndex;
 		NullCheck(L_0);
 		((InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_0)->___m_ChildStartIndex_16 = L_1;
 		// device.m_ChildCount = count;
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_2;
 		L_2 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		int32_t L_3 = ___count1;
+		int32_t L_3 = ___1_count;
 		NullCheck(L_2);
 		((InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_2)->___m_ChildCount_15 = L_3;
 		// return this;
@@ -19726,13 +19939,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithLayout_m14B43FBB39236278CC11452BBA6B95398362EF4F_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___layout0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithLayout_m14B43FBB39236278CC11452BBA6B95398362EF4F_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_layout, const RuntimeMethod* method) 
 {
 	{
 		// device.m_Layout = layout;
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_1 = ___layout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_1 = ___0_layout;
 		NullCheck(L_0);
 		((InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_0)->___m_Layout_7 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)&(((&((InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_0)->___m_Layout_7))->___m_StringOriginalCase_0), (void*)NULL);
@@ -19744,41 +19957,41 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FourCC__ctor_mE761C8779BB6DC85BA1662DC9ECEC39D62ED9A56_inline (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED* __this, int32_t ___code0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void FourCC__ctor_mE761C8779BB6DC85BA1662DC9ECEC39D62ED9A56_inline (FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED* __this, int32_t ___0_code, const RuntimeMethod* method) 
 {
 	{
 		// m_Code = code;
-		int32_t L_0 = ___code0;
+		int32_t L_0 = ___0_code;
 		__this->___m_Code_0 = L_0;
 		// }
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_format_mC6AA651913216B6B3CEF1031BC8778182009F73A_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_format_mC6AA651913216B6B3CEF1031BC8778182009F73A_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public FourCC format { get; set; }
-		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_0 = ___value0;
+		FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED L_0 = ___0_value;
 		__this->___U3CformatU3Ek__BackingField_33 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_sizeInBits_mE7B623711880E0A1C1E563AF809A24A9C63AE115_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_sizeInBits_mE7B623711880E0A1C1E563AF809A24A9C63AE115_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public uint sizeInBits { get; set; }
-		uint32_t L_0 = ___value0;
+		uint32_t L_0 = ___0_value;
 		__this->___U3CsizeInBitsU3Ek__BackingField_36 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateBlock_mB1B5E1A98A0E205BD74AB0513E86A380A0FE731D_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___stateBlock0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateBlock_mB1B5E1A98A0E205BD74AB0513E86A380A0FE731D_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___0_stateBlock, const RuntimeMethod* method) 
 {
 	{
 		// device.m_StateBlock = stateBlock;
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 L_1 = ___stateBlock0;
+		InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 L_1 = ___0_stateBlock;
 		NullCheck(L_0);
 		((InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_0)->___m_StateBlock_0 = L_1;
 		// return this;
@@ -19786,7 +19999,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlUsage_m6BC2EC2CA804EDC65D1165C63E403F3E93944714_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___controlIndex0, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___usage1, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___control2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlUsage_m6BC2EC2CA804EDC65D1165C63E403F3E93944714_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_controlIndex, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___1_usage, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___2_control, const RuntimeMethod* method) 
 {
 	{
 		// device.m_UsagesForEachControl[controlIndex] = usage;
@@ -19794,8 +20007,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
 		NullCheck(L_0);
 		InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* L_1 = L_0->___m_UsagesForEachControl_32;
-		int32_t L_2 = ___controlIndex0;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_3 = ___usage1;
+		int32_t L_2 = ___0_controlIndex;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_3 = ___1_usage;
 		NullCheck(L_1);
 		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_2), (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735)L_3);
 		// device.m_UsageToControl[controlIndex] = control;
@@ -19803,8 +20016,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		L_4 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
 		NullCheck(L_4);
 		InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* L_5 = L_4->___m_UsageToControl_33;
-		int32_t L_6 = ___controlIndex0;
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___control2;
+		int32_t L_6 = ___0_controlIndex;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_7 = ___2_control;
 		NullCheck(L_5);
 		ArrayElementTypeCheck (L_5, L_7);
 		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(L_6), (InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E*)L_7);
@@ -19813,7 +20026,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_8;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlAlias_mBAC72EDB7F19F7675A18FFE490DB8D8194EA1EB9_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___controlIndex0, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___alias1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithControlAlias_mBAC72EDB7F19F7675A18FFE490DB8D8194EA1EB9_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, int32_t ___0_controlIndex, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___1_alias, const RuntimeMethod* method) 
 {
 	{
 		// device.m_AliasesForEachControl[controlIndex] = alias;
@@ -19821,8 +20034,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
 		NullCheck(L_0);
 		InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* L_1 = L_0->___m_AliasesForEachControl_31;
-		int32_t L_2 = ___controlIndex0;
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_3 = ___alias1;
+		int32_t L_2 = ___0_controlIndex;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_3 = ___1_alias;
 		NullCheck(L_1);
 		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(L_2), (InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735)L_3);
 		// return this;
@@ -19830,11 +20043,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_keys_m0182B12C60B17A40B2F45E21791545C222E8E657_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_keys_m0182B12C60B17A40B2F45E21791545C222E8E657_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// set => m_Keys = value;
-		KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* L_0 = ___value0;
+		KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* L_0 = ___0_value;
 		__this->___m_Keys_48 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___m_Keys_48), (void*)L_0);
 		return;
@@ -19848,63 +20061,63 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR KeyControlU5BU5D_t247D92FAA9E46BA
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_anyKey_m0899947E20A7AE7619621838EEAD156DEC48E6A9_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_anyKey_m0899947E20A7AE7619621838EEAD156DEC48E6A9_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AnyKeyControl anyKey { get; protected set; }
-		AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* L_0 = ___value0;
+		AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* L_0 = ___0_value;
 		__this->___U3CanyKeyU3Ek__BackingField_40 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CanyKeyU3Ek__BackingField_40), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_shiftKey_m5EDBC8DA6545EF41CBBB5C34E9643424361D0131_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_shiftKey_m5EDBC8DA6545EF41CBBB5C34E9643424361D0131_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl shiftKey { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CshiftKeyU3Ek__BackingField_41 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CshiftKeyU3Ek__BackingField_41), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_ctrlKey_m0ADFD4E0EF0DD87C1172A830F9974C57D2CB99AD_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_ctrlKey_m0ADFD4E0EF0DD87C1172A830F9974C57D2CB99AD_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl ctrlKey { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CctrlKeyU3Ek__BackingField_42 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CctrlKeyU3Ek__BackingField_42), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_altKey_m9E7D88FF8A887EAA4D0718029EE8ED5B91517359_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_altKey_m9E7D88FF8A887EAA4D0718029EE8ED5B91517359_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl altKey { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CaltKeyU3Ek__BackingField_43 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CaltKeyU3Ek__BackingField_43), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_imeSelected_mE0660BE4C1EEB634D8FDBFA93E20D30C570FE651_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Keyboard_set_imeSelected_mE0660BE4C1EEB634D8FDBFA93E20D30C570FE651_inline (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public ButtonControl imeSelected { get; protected set; }
-		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___value0;
+		ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* L_0 = ___0_value;
 		__this->___U3CimeSelectedU3Ek__BackingField_44 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CimeSelectedU3Ek__BackingField_44), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateOffsetToControlIndexMap_m5C180F0BE65CD62017E4662DC59DB56677B5F39A_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___map0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4 DeviceBuilder_WithStateOffsetToControlIndexMap_m5C180F0BE65CD62017E4662DC59DB56677B5F39A_inline (DeviceBuilder_t3D3A66799A2B6B6282AC2FB71B1DE5034E668CC4* __this, UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___0_map, const RuntimeMethod* method) 
 {
 	{
 		// device.m_StateOffsetToControlMap = map;
 		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0;
 		L_0 = DeviceBuilder_get_device_m3D80AEE1900BA7EFE23D943080C3DA9A2D8268AB_inline(__this, NULL);
-		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = ___map0;
+		UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* L_1 = ___0_map;
 		NullCheck(L_0);
 		L_0->___m_StateOffsetToControlMap_35 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&L_0->___m_StateOffsetToControlMap_35), (void*)L_1);
@@ -19925,14 +20138,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeviceBuilder_Finish_mA2C52B
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___device0, int32_t ___index1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_At_mC5ADE238272B7B90A730AB2B6C54CEACD9A4B800_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___0_device, int32_t ___1_index, const RuntimeMethod* method) 
 {
 	{
 		// device.m_ChildrenForEachControl[index] = control;
-		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0 = ___device0;
+		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_0 = ___0_device;
 		NullCheck(L_0);
 		InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* L_1 = L_0->___m_ChildrenForEachControl_34;
-		int32_t L_2 = ___index1;
+		int32_t L_2 = ___1_index;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_3;
 		L_3 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
 		NullCheck(L_1);
@@ -19941,7 +20154,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		// control.m_Device = device;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_4;
 		L_4 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_5 = ___device0;
+		InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* L_5 = ___0_device;
 		NullCheck(L_4);
 		L_4->___m_Device_9 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___m_Device_9), (void*)L_5);
@@ -19950,13 +20163,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_6;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___parent0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithParent_m443238A4D9A120F991A0DD0D3CE792E2CA5D0C80_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___0_parent, const RuntimeMethod* method) 
 {
 	{
 		// control.m_Parent = parent;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_1 = ___parent0;
+		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_1 = ___0_parent;
 		NullCheck(L_0);
 		L_0->___m_Parent_10 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&L_0->___m_Parent_10), (void*)L_1);
@@ -19965,13 +20178,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithName_m7506A150252C16D8EA717AD106D03779395C5ADA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithName_m7506A150252C16D8EA717AD106D03779395C5ADA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
 		// control.m_Name = new InternedString(name);
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935((&L_2), L_1, /*hidden argument*/NULL);
@@ -19986,13 +20199,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_3;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___displayName0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDisplayName_m325CFB598477C68D7122784B4B93116E9701C290_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_displayName, const RuntimeMethod* method) 
 {
 	{
 		// control.m_DisplayNameFromLayout = new InternedString(displayName);
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		String_t* L_1 = ___displayName0;
+		String_t* L_1 = ___0_displayName;
 		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935((&L_2), L_1, /*hidden argument*/NULL);
@@ -20006,13 +20219,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___layout0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithLayout_mE69F50DB223B391FD9CB7835460004D9A7AA80AA_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___0_layout, const RuntimeMethod* method) 
 {
 	{
 		// control.m_Layout = layout;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_1 = ___layout0;
+		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_1 = ___0_layout;
 		NullCheck(L_0);
 		L_0->___m_Layout_7 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)&(((&L_0->___m_Layout_7))->___m_StringOriginalCase_0), (void*)NULL);
@@ -20024,13 +20237,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsSynthetic_m4555CF5C808F396EFC65892D90CC98911037C22F_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsSynthetic_m4555CF5C808F396EFC65892D90CC98911037C22F_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// control.synthetic = value;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		bool L_1 = ___value0;
+		bool L_1 = ___0_value;
 		NullCheck(L_0);
 		InputControl_set_synthetic_mC788F8B981CCA27755D02DFCD46C0FDC9FD77B5B(L_0, L_1, NULL);
 		// return this;
@@ -20038,13 +20251,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsButton_mCF3AD67106B0EC5A7FF0CB8CC0BD8F126D5205BF_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_IsButton_mCF3AD67106B0EC5A7FF0CB8CC0BD8F126D5205BF_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// control.isButton = value;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		bool L_1 = ___value0;
+		bool L_1 = ___0_value;
 		NullCheck(L_0);
 		InputControl_set_isButton_m862BB994D08F3488611839657F2381B12976C661(L_0, L_1, NULL);
 		// return this;
@@ -20052,31 +20265,31 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_byteOffset_mC5776F9F286F0658100E92A75A60EB25A1DDBD40_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_byteOffset_mC5776F9F286F0658100E92A75A60EB25A1DDBD40_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public uint byteOffset { get; set; }
-		uint32_t L_0 = ___value0;
+		uint32_t L_0 = ___0_value;
 		__this->___U3CbyteOffsetU3Ek__BackingField_34 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_bitOffset_mB4F67CC1BF4EBB3152CEC64BECFF724C1416A163_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void InputStateBlock_set_bitOffset_mB4F67CC1BF4EBB3152CEC64BECFF724C1416A163_inline (InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5* __this, uint32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public uint bitOffset { get; set; }
-		uint32_t L_0 = ___value0;
+		uint32_t L_0 = ___0_value;
 		__this->___U3CbitOffsetU3Ek__BackingField_35 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithStateBlock_m79CAB3553C883060988D202D5A9E266538FD5789_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___stateBlock0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithStateBlock_m79CAB3553C883060988D202D5A9E266538FD5789_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___0_stateBlock, const RuntimeMethod* method) 
 {
 	{
 		// control.m_StateBlock = stateBlock;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 L_1 = ___stateBlock0;
+		InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 L_1 = ___0_stateBlock;
 		NullCheck(L_0);
 		L_0->___m_StateBlock_0 = L_1;
 		// return this;
@@ -20084,19 +20297,19 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_2;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithMinAndMax_m8F5E297F1E17D475B156203F6D6C812032BE69A2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___min0, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___max1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithMinAndMax_m8F5E297F1E17D475B156203F6D6C812032BE69A2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___0_min, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___1_max, const RuntimeMethod* method) 
 {
 	{
 		// control.m_MinValue = min;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_1 = ___min0;
+		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_1 = ___0_min;
 		NullCheck(L_0);
 		L_0->___m_MinValue_19 = L_1;
 		// control.m_MaxValue = max;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_2;
 		L_2 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_3 = ___max1;
+		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_3 = ___1_max;
 		NullCheck(L_2);
 		L_2->___m_MaxValue_20 = L_3;
 		// return this;
@@ -20116,19 +20329,19 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ControlBuilder_Finish_m16789
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithUsages_mF3CB62381A394ACAB421BE7378E63A211787B9C1_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithUsages_mF3CB62381A394ACAB421BE7378E63A211787B9C1_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) 
 {
 	{
 		// control.m_UsageStartIndex = startIndex;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_1 = ___startIndex0;
+		int32_t L_1 = ___0_startIndex;
 		NullCheck(L_0);
 		L_0->___m_UsageStartIndex_12 = L_1;
 		// control.m_UsageCount = count;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_2;
 		L_2 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_3 = ___count1;
+		int32_t L_3 = ___1_count;
 		NullCheck(L_2);
 		L_2->___m_UsageCount_11 = L_3;
 		// return this;
@@ -20136,28 +20349,28 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyControl_set_keyCode_mC5A750983557C0CD8818BCE6189F8F6293948394_inline (KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void KeyControl_set_keyCode_mC5A750983557C0CD8818BCE6189F8F6293948394_inline (KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public Key keyCode { get; set; }
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->___U3CkeyCodeU3Ek__BackingField_37 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithAliases_mF016A1F936DF5CEB94202923788ABE9591F8F976_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithAliases_mF016A1F936DF5CEB94202923788ABE9591F8F976_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) 
 {
 	{
 		// control.m_AliasStartIndex = startIndex;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_1 = ___startIndex0;
+		int32_t L_1 = ___0_startIndex;
 		NullCheck(L_0);
 		L_0->___m_AliasStartIndex_14 = L_1;
 		// control.m_AliasCount = count;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_2;
 		L_2 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_3 = ___count1;
+		int32_t L_3 = ___1_count;
 		NullCheck(L_2);
 		L_2->___m_AliasCount_13 = L_3;
 		// return this;
@@ -20165,79 +20378,79 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_x_m99BE9EF688C3B153DA726627B3CBD724F8D20BE1_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_x_m99BE9EF688C3B153DA726627B3CBD724F8D20BE1_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl x { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CxU3Ek__BackingField_22 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CxU3Ek__BackingField_22), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_y_m9023BACC80F2CF0AE28E2F5D0E9BBA54104E89F8_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2Control_set_y_m9023BACC80F2CF0AE28E2F5D0E9BBA54104E89F8_inline (Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl y { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CyU3Ek__BackingField_23 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CyU3Ek__BackingField_23), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_up_m738DF0E92B973E4E6AF5BE9A115458717B745174_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_up_m738DF0E92B973E4E6AF5BE9A115458717B745174_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl up { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CupU3Ek__BackingField_24 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CupU3Ek__BackingField_24), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_down_mD809599F9F67F402EEFC805F315C0D72F35FFCF0_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_down_mD809599F9F67F402EEFC805F315C0D72F35FFCF0_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl down { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CdownU3Ek__BackingField_25 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CdownU3Ek__BackingField_25), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_left_m1C0E45C2868801280CC30474B9368F23B7400697_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_left_m1C0E45C2868801280CC30474B9368F23B7400697_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl left { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CleftU3Ek__BackingField_26 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CleftU3Ek__BackingField_26), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_right_m60FBA0555C4E7CA40954DA7EE6BBC0E0032B0905_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DeltaControl_set_right_m60FBA0555C4E7CA40954DA7EE6BBC0E0032B0905_inline (DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B* __this, AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public AxisControl right { get; set; }
-		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___value0;
+		AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7* L_0 = ___0_value;
 		__this->___U3CrightU3Ek__BackingField_27 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CrightU3Ek__BackingField_27), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithChildren_m926E7A1B156891F65B5A2856EE2D7BC497507CEC_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___startIndex0, int32_t ___count1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithChildren_m926E7A1B156891F65B5A2856EE2D7BC497507CEC_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, int32_t ___0_startIndex, int32_t ___1_count, const RuntimeMethod* method) 
 {
 	{
 		// control.m_ChildStartIndex = startIndex;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_1 = ___startIndex0;
+		int32_t L_1 = ___0_startIndex;
 		NullCheck(L_0);
 		L_0->___m_ChildStartIndex_16 = L_1;
 		// control.m_ChildCount = count;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_2;
 		L_2 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		int32_t L_3 = ___count1;
+		int32_t L_3 = ___1_count;
 		NullCheck(L_2);
 		L_2->___m_ChildCount_15 = L_3;
 		// return this;
@@ -20245,17 +20458,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_DontReset_mD81E0A7E983F4B91A863FEBE093F8191B9242144_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_DontReset_mD81E0A7E983F4B91A863FEBE093F8191B9242144_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// control.dontReset = value;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		bool L_1 = ___value0;
+		bool L_1 = ___0_value;
 		NullCheck(L_0);
 		InputControl_set_dontReset_m56292E2D5FAB000EDD5821E99066CA94E392CA40(L_0, L_1, NULL);
 		// if (value)
-		bool L_2 = ___value0;
+		bool L_2 = ___0_value;
 		if (!L_2)
 		{
 			goto IL_0020;
@@ -20278,13 +20491,13 @@ IL_0020:
 		return L_5;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___shortDisplayName0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithShortDisplayName_m9813B2D8441E0A41980C3F203C3A75A0C1301A68_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, String_t* ___0_shortDisplayName, const RuntimeMethod* method) 
 {
 	{
 		// control.m_ShortDisplayNameFromLayout = new InternedString(shortDisplayName);
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		String_t* L_1 = ___shortDisplayName0;
+		String_t* L_1 = ___0_shortDisplayName;
 		InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 L_2;
 		memset((&L_2), 0, sizeof(L_2));
 		InternedString__ctor_m2E9672D46D84C82F705DE799CE8B6123EB95E935((&L_2), L_1, /*hidden argument*/NULL);
@@ -20298,13 +20511,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B
 		return L_4;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDefaultState_mB348E8E6C5130A30CEE8A885C488065F496038F2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15 ControlBuilder_WithDefaultState_mB348E8E6C5130A30CEE8A885C488065F496038F2_inline (ControlBuilder_t9531519F44B76B04B9128FFF514E806FCCA1BB15* __this, PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// control.m_DefaultState = value;
 		InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* L_0;
 		L_0 = ControlBuilder_get_control_m988C5EFC6631CDE6987FCC3C314FBDA9C37E0E30_inline(__this, NULL);
-		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_1 = ___value0;
+		PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 L_1 = ___0_value;
 		NullCheck(L_0);
 		L_0->___m_DefaultState_18 = L_1;
 		// control.m_Device.hasControlsWithDefaultState = true;
@@ -20341,18 +20554,18 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t InputStateBlock_get_byte
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___a0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___b1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Vector2_op_Addition_m8136742CE6EE33BA4EB81C5F584678455917D2AE_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_a, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_b, const RuntimeMethod* method) 
 {
 	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___a0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_a;
 		float L_1 = L_0.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___b1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___1_b;
 		float L_3 = L_2.___x_0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___a0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4 = ___0_a;
 		float L_5 = L_4.___y_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___b1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_6 = ___1_b;
 		float L_7 = L_6.___y_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
 		memset((&L_8), 0, sizeof(L_8));
@@ -20383,12 +20596,12 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR InputControl_t74F06B623518F992BF8
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___x0;
+		float L_0 = ___0_x;
 		__this->___x_0 = L_0;
-		float L_1 = ___y1;
+		float L_1 = ___1_y;
 		__this->___y_1 = L_1;
 		return;
 	}

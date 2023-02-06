@@ -532,7 +532,6 @@ UnityEngine.GUIUtility::Internal_GetDefaultSkin
 UnityEngine.GUIUtility::get_pixelsPerPoint
 UnityEngine.GUIUtility::get_compositionString
 UnityEngine.GUIUtility::get_systemCopyBuffer
-UnityEngine.GUIUtility::AlignRectToDevice_Injected
 UnityEngine.GUIUtility::BeginContainer
 UnityEngine.GUIUtility::BeginContainerFromOwner
 UnityEngine.GUIUtility::Internal_EndContainer
@@ -906,13 +905,13 @@ UnityEngine.TextCore.LowLevel.FontEngine::TryGetGlyphWithIndexValue_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::TryGetGlyphWithUnicodeValue_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::TryGetSystemFontReference_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::GetFaceInfo_Internal
-UnityEngine.TextCore.LowLevel.FontEngine::GetGlyphPairAdjustmentRecordsFromMarshallingArray
+UnityEngine.TextCore.LowLevel.FontEngine::GetPairAdjustmentRecordsFromMarshallingArray
 UnityEngine.TextCore.LowLevel.FontEngine::InitializeFontEngine_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_And_FaceIndex_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_and_FaceIndex_FromFont_Internal
 UnityEngine.TextCore.LowLevel.FontEngine::LoadFontFace_With_Size_by_FamilyName_and_StyleName_Internal
-UnityEngine.TextCore.LowLevel.FontEngine::PopulatePairAdjustmentRecordMarshallingArray_from_GlyphIndexes
+UnityEngine.TextCore.LowLevel.FontEngine::PopulatePairAdjustmentRecordMarshallingArray_from_KernTable
 UnityEngine.TextCore.LowLevel.FontEngine::GetGlyphIndex
 UnityEngine.TextCore.LowLevel.FontEngine::ResetAtlasTexture
 UnityEngine.TextCore.LowLevel.FontEngine::SetTextureUploadMode
@@ -937,8 +936,8 @@ UnityEngine.Texture2D::Internal_CreateImpl
 UnityEngine.Texture2D::ReinitializeImpl
 UnityEngine.Texture2D::ReinitializeWithFormatImpl
 UnityEngine.Texture2D::get_isReadable
-UnityEngine.Texture2D::GetRawImageDataSize
 UnityEngine.Texture2D::GetWritableImageData
+UnityEngine.Texture2D::GetRawImageDataSize
 UnityEngine.Texture2D::ApplyImpl
 UnityEngine.Texture2D::GetPixelBilinearImpl_Injected
 UnityEngine.Texture2D::ReadPixelsImpl_Injected

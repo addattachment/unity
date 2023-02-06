@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 struct VirtualActionInvoker0
@@ -377,7 +376,6 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-struct Il2CppArrayBounds;
 
 // WebSocketSharp.Net.AuthenticationBase
 struct AuthenticationBase_tBF6E3ADBD81587D47A5A75276D954BD922690517  : public RuntimeObject
@@ -412,30 +410,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObjec
 	EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293* ___encoderFallback_13;
 	// System.Text.DecoderFallback System.Text.Encoding::decoderFallback
 	DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90* ___decoderFallback_14;
-};
-
-struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
-{
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
-	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
-	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
-	// System.Object System.Text.Encoding::s_InternalSyncObject
-	RuntimeObject* ___s_InternalSyncObject_15;
 };
 
 // System.Net.EndPoint
@@ -544,12 +518,6 @@ struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387  : public RuntimeO
 	RuntimeObject* ____waitQueueSync_20;
 };
 
-struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387_StaticFields
-{
-	// System.String WebSocketSharp.Net.HttpListener::_defaultRealm
-	String_t* ____defaultRealm_9;
-};
-
 // WebSocketSharp.Net.HttpListenerContext
 struct HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC  : public RuntimeObject
 {
@@ -621,24 +589,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484  : public RuntimeObje
 	int32_t ____hashCode_11;
 };
 
-struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
-{
-	// System.Net.IPAddress System.Net.IPAddress::Any
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Any_0;
-	// System.Net.IPAddress System.Net.IPAddress::Loopback
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Loopback_1;
-	// System.Net.IPAddress System.Net.IPAddress::Broadcast
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Broadcast_2;
-	// System.Net.IPAddress System.Net.IPAddress::None
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___None_3;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6Any
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Any_5;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6Loopback
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Loopback_6;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6None
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6None_7;
-};
-
 // WebSocketSharp.Logger
 struct Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7  : public RuntimeObject
 {
@@ -690,12 +640,6 @@ struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC  : pub
 	int32_t ____version_15;
 	// System.Object System.Collections.Specialized.NameObjectCollectionBase::_syncRoot
 	RuntimeObject* ____syncRoot_16;
-};
-
-struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
-{
-	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
-	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
 };
 
 // System.Runtime.Serialization.SerializationInfo
@@ -783,66 +727,6 @@ struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E  : public RuntimeObject
 	int32_t ___ID_33;
 };
 
-struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E_StaticFields
-{
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::AcceptCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___AcceptCompletedHandler_0;
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::ReceiveCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___ReceiveCompletedHandler_1;
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::SendCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___SendCompletedHandler_2;
-	// System.Net.Sockets.Socket/TaskSocketAsyncEventArgs`1<System.Net.Sockets.Socket> System.Net.Sockets.Socket::s_rentedSocketSentinel
-	TaskSocketAsyncEventArgs_1_tEB937620E5B15D91E5BFEFFA707CF800930F8401* ___s_rentedSocketSentinel_3;
-	// System.Net.Sockets.Socket/Int32TaskSocketAsyncEventArgs System.Net.Sockets.Socket::s_rentedInt32Sentinel
-	Int32TaskSocketAsyncEventArgs_t36C5FC82499ED9DAFE7F05C38EF92D77A0B248E9* ___s_rentedInt32Sentinel_4;
-	// System.Threading.Tasks.Task`1<System.Int32> System.Net.Sockets.Socket::s_zeroTask
-	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ___s_zeroTask_5;
-	// System.Object System.Net.Sockets.Socket::s_InternalSyncObject
-	RuntimeObject* ___s_InternalSyncObject_7;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv4
-	bool ___s_SupportsIPv4_8;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv6
-	bool ___s_SupportsIPv6_9;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_OSSupportsIPv6
-	bool ___s_OSSupportsIPv6_10;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_Initialized
-	bool ___s_Initialized_11;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_LoggingEnabled
-	bool ___s_LoggingEnabled_12;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_PerfCountersEnabled
-	bool ___s_PerfCountersEnabled_13;
-	// System.AsyncCallback System.Net.Sockets.Socket::AcceptAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___AcceptAsyncCallback_34;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptCallback_35;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptReceiveCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptReceiveCallback_36;
-	// System.AsyncCallback System.Net.Sockets.Socket::ConnectAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ConnectAsyncCallback_37;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginConnectCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginConnectCallback_38;
-	// System.AsyncCallback System.Net.Sockets.Socket::DisconnectAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___DisconnectAsyncCallback_39;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginDisconnectCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginDisconnectCallback_40;
-	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveAsyncCallback_41;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveCallback_42;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveGenericCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveGenericCallback_43;
-	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveFromAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveFromAsyncCallback_44;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveFromCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveFromCallback_45;
-	// System.AsyncCallback System.Net.Sockets.Socket::SendAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendAsyncCallback_46;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginSendGenericCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginSendGenericCallback_47;
-	// System.AsyncCallback System.Net.Sockets.Socket::SendToAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendToAsyncCallback_48;
-};
-
 // System.String
 struct String_t  : public RuntimeObject
 {
@@ -850,12 +734,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
-};
-
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
 };
 
 // System.Text.StringBuilder
@@ -905,54 +783,6 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
 	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_21;
 	// System.Boolean System.Uri::m_iriParsing
 	bool ___m_iriParsing_22;
-};
-
-struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
-{
-	// System.String System.Uri::UriSchemeFile
-	String_t* ___UriSchemeFile_0;
-	// System.String System.Uri::UriSchemeFtp
-	String_t* ___UriSchemeFtp_1;
-	// System.String System.Uri::UriSchemeGopher
-	String_t* ___UriSchemeGopher_2;
-	// System.String System.Uri::UriSchemeHttp
-	String_t* ___UriSchemeHttp_3;
-	// System.String System.Uri::UriSchemeHttps
-	String_t* ___UriSchemeHttps_4;
-	// System.String System.Uri::UriSchemeWs
-	String_t* ___UriSchemeWs_5;
-	// System.String System.Uri::UriSchemeWss
-	String_t* ___UriSchemeWss_6;
-	// System.String System.Uri::UriSchemeMailto
-	String_t* ___UriSchemeMailto_7;
-	// System.String System.Uri::UriSchemeNews
-	String_t* ___UriSchemeNews_8;
-	// System.String System.Uri::UriSchemeNntp
-	String_t* ___UriSchemeNntp_9;
-	// System.String System.Uri::UriSchemeNetTcp
-	String_t* ___UriSchemeNetTcp_10;
-	// System.String System.Uri::UriSchemeNetPipe
-	String_t* ___UriSchemeNetPipe_11;
-	// System.String System.Uri::SchemeDelimiter
-	String_t* ___SchemeDelimiter_12;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
-	bool ___s_ConfigInitialized_23;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
-	bool ___s_ConfigInitializing_24;
-	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
-	int32_t ___s_IdnScope_25;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
-	bool ___s_IriParsing_26;
-	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
-	bool ___useDotNetRelativeOrAbsolute_27;
-	// System.Boolean System.Uri::IsWindowsFileSystem
-	bool ___IsWindowsFileSystem_29;
-	// System.Object System.Uri::s_initLock
-	RuntimeObject* ___s_initLock_30;
-	// System.Char[] System.Uri::HexLowerChars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
-	// System.Char[] System.Uri::_WSchars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
 };
 
 // System.ValueType
@@ -1069,14 +899,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-};
-
 // System.Byte
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
 {
@@ -1091,31 +913,11 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17
 	Il2CppChar ___m_value_0;
 };
 
-struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
-{
-	// System.Byte[] System.Char::s_categoryForLatin1
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
-};
-
 // System.DateTime
 struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D 
 {
 	// System.UInt64 System.DateTime::_dateData
 	uint64_t ____dateData_46;
-};
-
-struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
-{
-	// System.Int32[] System.DateTime::s_daysToMonth365
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
-	// System.Int32[] System.DateTime::s_daysToMonth366
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
-	// System.DateTime System.DateTime::UnixEpoch
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
 };
 
 // System.Guid
@@ -1143,12 +945,6 @@ struct Guid_t
 	uint8_t ____j_10;
 	// System.Byte System.Guid::_k
 	uint8_t ____k_11;
-};
-
-struct Guid_t_StaticFields
-{
-	// System.Guid System.Guid::Empty
-	Guid_t ___Empty_0;
 };
 
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
@@ -1191,14 +987,6 @@ struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB  : public EndPoint_t
 	int32_t ____port_1;
 };
 
-struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB_StaticFields
-{
-	// System.Net.IPEndPoint System.Net.IPEndPoint::Any
-	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___Any_2;
-	// System.Net.IPEndPoint System.Net.IPEndPoint::IPv6Any
-	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___IPv6Any_3;
-};
-
 // System.Int32
 struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
 {
@@ -1211,12 +999,6 @@ struct IntPtr_t
 {
 	// System.Void* System.IntPtr::m_value
 	void* ___m_value_0;
-};
-
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
 };
 
 // System.Collections.Specialized.NameValueCollection
@@ -1235,12 +1017,6 @@ struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefOb
 	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_3;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
 	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_4;
-};
-
-struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
-{
-	// System.IO.Stream System.IO.Stream::Null
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null_1;
 };
 
 // WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext
@@ -1275,16 +1051,6 @@ struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A
 	int64_t ____ticks_22;
 };
 
-struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
-{
-	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
-	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
-	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
-};
-
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
 {
@@ -1298,7 +1064,6 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 };
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
-#pragma pack(push, tp, 1)
 struct __StaticArrayInitTypeSizeU3D14_t2E553AA959222D2E314E13D6A80D8DB3835D872F 
 {
 	union
@@ -1312,19 +1077,10 @@ struct __StaticArrayInitTypeSizeU3D14_t2E553AA959222D2E314E13D6A80D8DB3835D872F
 		uint8_t __StaticArrayInitTypeSizeU3D14_t2E553AA959222D2E314E13D6A80D8DB3835D872F__padding[14];
 	};
 };
-#pragma pack(pop, tp)
 
 // <PrivateImplementationDetails>
 struct U3CPrivateImplementationDetailsU3E_tE2E45F09B1224B753B14385A84BC342FCAC9053A  : public RuntimeObject
 {
-};
-
-struct U3CPrivateImplementationDetailsU3E_tE2E45F09B1224B753B14385A84BC342FCAC9053A_StaticFields
-{
-	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14 <PrivateImplementationDetails>::49BE292FEFD2E3B7218C9123B9A016847C2A5C96
-	__StaticArrayInitTypeSizeU3D14_t2E553AA959222D2E314E13D6A80D8DB3835D872F ___49BE292FEFD2E3B7218C9123B9A016847C2A5C96_0;
-	// System.Int64 <PrivateImplementationDetails>::6532575F81314AADD4BCFD96F1517D5BBFF2B60B
-	int64_t ___6532575F81314AADD4BCFD96F1517D5BBFF2B60B_1;
 };
 
 // System.Net.Security.AuthenticatedStream
@@ -1437,12 +1193,6 @@ struct Exception_t  : public RuntimeObject
 	// System.Int32 System.Exception::caught_in_unmanaged
 	int32_t ___caught_in_unmanaged_16;
 };
-
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
 // Native definition for P/Invoke marshalling of System.Exception
 struct Exception_t_marshaled_pinvoke
 {
@@ -1531,12 +1281,6 @@ struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD  : public R
 	bool ____websocketRequestSet_21;
 };
 
-struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD_StaticFields
-{
-	// System.Byte[] WebSocketSharp.Net.HttpListenerRequest::_100continue
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____100continue_0;
-};
-
 // System.Net.Sockets.NetworkStream
 struct NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
@@ -1565,12 +1309,6 @@ struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331  : public N
 	bool ____internallyUsed_21;
 	// WebSocketSharp.Net.HttpHeaderType WebSocketSharp.Net.WebHeaderCollection::_state
 	int32_t ____state_22;
-};
-
-struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticFields
-{
-	// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo> WebSocketSharp.Net.WebHeaderCollection::_headers
-	Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* ____headers_20;
 };
 
 // WebSocketSharp.WebSocket
@@ -1672,18 +1410,6 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4  : public RuntimeObje
 	EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9* ___OnMessage_52;
 	// System.EventHandler WebSocketSharp.WebSocket::OnOpen
 	EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* ___OnOpen_53;
-};
-
-struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
-{
-	// System.Int32 WebSocketSharp.WebSocket::_maxRetryCountForConnect
-	int32_t ____maxRetryCountForConnect_25;
-	// System.Byte[] WebSocketSharp.WebSocket::EmptyBytes
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___EmptyBytes_47;
-	// System.Int32 WebSocketSharp.WebSocket::FragmentLength
-	int32_t ___FragmentLength_48;
-	// System.Security.Cryptography.RandomNumberGenerator WebSocketSharp.WebSocket::RandomNumber
-	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ___RandomNumber_49;
 };
 
 // System.Security.Cryptography.X509Certificates.X509Certificate
@@ -1790,6 +1516,508 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public
 struct RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955  : public MulticastDelegate_t
 {
 };
+
+// WebSocketSharp.Net.AuthenticationBase
+
+// WebSocketSharp.Net.AuthenticationBase
+
+// WebSocketSharp.Net.CookieCollection
+
+// WebSocketSharp.Net.CookieCollection
+
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
+{
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
+	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
+	// System.Object System.Text.Encoding::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_15;
+};
+
+// System.Text.Encoding
+
+// System.Net.EndPoint
+
+// System.Net.EndPoint
+
+// WebSocketSharp.HttpBase
+
+// WebSocketSharp.HttpBase
+
+// WebSocketSharp.Net.HttpConnection
+
+// WebSocketSharp.Net.HttpConnection
+
+// WebSocketSharp.Net.HttpListener
+struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387_StaticFields
+{
+	// System.String WebSocketSharp.Net.HttpListener::_defaultRealm
+	String_t* ____defaultRealm_9;
+};
+
+// WebSocketSharp.Net.HttpListener
+
+// WebSocketSharp.Net.HttpListenerContext
+
+// WebSocketSharp.Net.HttpListenerContext
+
+// WebSocketSharp.Net.HttpListenerResponse
+
+// WebSocketSharp.Net.HttpListenerResponse
+
+// System.Net.IPAddress
+struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
+{
+	// System.Net.IPAddress System.Net.IPAddress::Any
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Any_0;
+	// System.Net.IPAddress System.Net.IPAddress::Loopback
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Loopback_1;
+	// System.Net.IPAddress System.Net.IPAddress::Broadcast
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Broadcast_2;
+	// System.Net.IPAddress System.Net.IPAddress::None
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___None_3;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6Any
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Any_5;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6Loopback
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Loopback_6;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6None
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6None_7;
+};
+
+// System.Net.IPAddress
+
+// WebSocketSharp.Logger
+
+// WebSocketSharp.Logger
+
+// System.MarshalByRefObject
+
+// System.MarshalByRefObject
+
+// System.Collections.Specialized.NameObjectCollectionBase
+struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
+{
+	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
+	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
+};
+
+// System.Collections.Specialized.NameObjectCollectionBase
+
+// System.Runtime.Serialization.SerializationInfo
+
+// System.Runtime.Serialization.SerializationInfo
+
+// WebSocketSharp.Net.ServerSslConfiguration
+
+// WebSocketSharp.Net.ServerSslConfiguration
+
+// System.Net.Sockets.Socket
+struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E_StaticFields
+{
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::AcceptCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___AcceptCompletedHandler_0;
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::ReceiveCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___ReceiveCompletedHandler_1;
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::SendCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___SendCompletedHandler_2;
+	// System.Net.Sockets.Socket/TaskSocketAsyncEventArgs`1<System.Net.Sockets.Socket> System.Net.Sockets.Socket::s_rentedSocketSentinel
+	TaskSocketAsyncEventArgs_1_tEB937620E5B15D91E5BFEFFA707CF800930F8401* ___s_rentedSocketSentinel_3;
+	// System.Net.Sockets.Socket/Int32TaskSocketAsyncEventArgs System.Net.Sockets.Socket::s_rentedInt32Sentinel
+	Int32TaskSocketAsyncEventArgs_t36C5FC82499ED9DAFE7F05C38EF92D77A0B248E9* ___s_rentedInt32Sentinel_4;
+	// System.Threading.Tasks.Task`1<System.Int32> System.Net.Sockets.Socket::s_zeroTask
+	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ___s_zeroTask_5;
+	// System.Object System.Net.Sockets.Socket::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_7;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv4
+	bool ___s_SupportsIPv4_8;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv6
+	bool ___s_SupportsIPv6_9;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_OSSupportsIPv6
+	bool ___s_OSSupportsIPv6_10;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_Initialized
+	bool ___s_Initialized_11;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_LoggingEnabled
+	bool ___s_LoggingEnabled_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_PerfCountersEnabled
+	bool ___s_PerfCountersEnabled_13;
+	// System.AsyncCallback System.Net.Sockets.Socket::AcceptAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___AcceptAsyncCallback_34;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptCallback_35;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptReceiveCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptReceiveCallback_36;
+	// System.AsyncCallback System.Net.Sockets.Socket::ConnectAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ConnectAsyncCallback_37;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginConnectCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginConnectCallback_38;
+	// System.AsyncCallback System.Net.Sockets.Socket::DisconnectAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___DisconnectAsyncCallback_39;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginDisconnectCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginDisconnectCallback_40;
+	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveAsyncCallback_41;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveCallback_42;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveGenericCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveGenericCallback_43;
+	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveFromAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveFromAsyncCallback_44;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveFromCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveFromCallback_45;
+	// System.AsyncCallback System.Net.Sockets.Socket::SendAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendAsyncCallback_46;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginSendGenericCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginSendGenericCallback_47;
+	// System.AsyncCallback System.Net.Sockets.Socket::SendToAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendToAsyncCallback_48;
+};
+
+// System.Net.Sockets.Socket
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// System.Text.StringBuilder
+
+// System.Text.StringBuilder
+
+// System.Net.Sockets.TcpClient
+
+// System.Net.Sockets.TcpClient
+
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
+{
+	// System.String System.Uri::UriSchemeFile
+	String_t* ___UriSchemeFile_0;
+	// System.String System.Uri::UriSchemeFtp
+	String_t* ___UriSchemeFtp_1;
+	// System.String System.Uri::UriSchemeGopher
+	String_t* ___UriSchemeGopher_2;
+	// System.String System.Uri::UriSchemeHttp
+	String_t* ___UriSchemeHttp_3;
+	// System.String System.Uri::UriSchemeHttps
+	String_t* ___UriSchemeHttps_4;
+	// System.String System.Uri::UriSchemeWs
+	String_t* ___UriSchemeWs_5;
+	// System.String System.Uri::UriSchemeWss
+	String_t* ___UriSchemeWss_6;
+	// System.String System.Uri::UriSchemeMailto
+	String_t* ___UriSchemeMailto_7;
+	// System.String System.Uri::UriSchemeNews
+	String_t* ___UriSchemeNews_8;
+	// System.String System.Uri::UriSchemeNntp
+	String_t* ___UriSchemeNntp_9;
+	// System.String System.Uri::UriSchemeNetTcp
+	String_t* ___UriSchemeNetTcp_10;
+	// System.String System.Uri::UriSchemeNetPipe
+	String_t* ___UriSchemeNetPipe_11;
+	// System.String System.Uri::SchemeDelimiter
+	String_t* ___SchemeDelimiter_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
+	bool ___s_ConfigInitialized_23;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
+	bool ___s_ConfigInitializing_24;
+	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
+	int32_t ___s_IdnScope_25;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
+	bool ___s_IriParsing_26;
+	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
+	bool ___useDotNetRelativeOrAbsolute_27;
+	// System.Boolean System.Uri::IsWindowsFileSystem
+	bool ___IsWindowsFileSystem_29;
+	// System.Object System.Uri::s_initLock
+	RuntimeObject* ___s_initLock_30;
+	// System.Char[] System.Uri::HexLowerChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
+	// System.Char[] System.Uri::_WSchars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
+};
+
+// System.Uri
+
+// System.ValueType
+
+// System.ValueType
+
+// WebSocketSharp.Net.WebSockets.WebSocketContext
+
+// WebSocketSharp.Net.WebSockets.WebSocketContext
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext/<get_SecWebSocketProtocols>d__30
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext/<get_SecWebSocketProtocols>d__30
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<>c__DisplayClass49_0
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<>c__DisplayClass49_0
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<get_SecWebSocketProtocols>d__38
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<get_SecWebSocketProtocols>d__38
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0
+
+// WebSocketSharp.Net.AuthenticationChallenge
+
+// WebSocketSharp.Net.AuthenticationChallenge
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// System.Byte
+
+// System.Byte
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
+{
+	// System.Byte[] System.Char::s_categoryForLatin1
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
+};
+
+// System.Char
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
+{
+	// System.Int32[] System.DateTime::s_daysToMonth365
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
+	// System.Int32[] System.DateTime::s_daysToMonth366
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
+	// System.DateTime System.DateTime::UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
+};
+
+// System.DateTime
+
+// System.Guid
+struct Guid_t_StaticFields
+{
+	// System.Guid System.Guid::Empty
+	Guid_t ___Empty_0;
+};
+
+// System.Guid
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
+
+// WebSocketSharp.HttpRequest
+
+// WebSocketSharp.HttpRequest
+
+// WebSocketSharp.HttpResponse
+
+// WebSocketSharp.HttpResponse
+
+// System.Net.IPEndPoint
+struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB_StaticFields
+{
+	// System.Net.IPEndPoint System.Net.IPEndPoint::Any
+	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___Any_2;
+	// System.Net.IPEndPoint System.Net.IPEndPoint::IPv6Any
+	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___IPv6Any_3;
+};
+
+// System.Net.IPEndPoint
+
+// System.Int32
+
+// System.Int32
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// System.Collections.Specialized.NameValueCollection
+
+// System.Collections.Specialized.NameValueCollection
+
+// System.IO.Stream
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
+{
+	// System.IO.Stream System.IO.Stream::Null
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null_1;
+};
+
+// System.IO.Stream
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext
+
+// WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext
+
+// System.TimeSpan
+struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
+{
+	// System.TimeSpan System.TimeSpan::Zero
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
+	// System.TimeSpan System.TimeSpan::MaxValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
+	// System.TimeSpan System.TimeSpan::MinValue
+	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
+};
+
+// System.TimeSpan
+
+// System.Void
+
+// System.Void
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+
+// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14
+
+// <PrivateImplementationDetails>
+struct U3CPrivateImplementationDetailsU3E_tE2E45F09B1224B753B14385A84BC342FCAC9053A_StaticFields
+{
+	// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=14 <PrivateImplementationDetails>::49BE292FEFD2E3B7218C9123B9A016847C2A5C96
+	__StaticArrayInitTypeSizeU3D14_t2E553AA959222D2E314E13D6A80D8DB3835D872F ___49BE292FEFD2E3B7218C9123B9A016847C2A5C96_0;
+	// System.Int64 <PrivateImplementationDetails>::6532575F81314AADD4BCFD96F1517D5BBFF2B60B
+	int64_t ___6532575F81314AADD4BCFD96F1517D5BBFF2B60B_1;
+};
+
+// <PrivateImplementationDetails>
+
+// System.Net.Security.AuthenticatedStream
+
+// System.Net.Security.AuthenticatedStream
+
+// System.Delegate
+
+// System.Delegate
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// WebSocketSharp.Net.HttpListenerRequest
+struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD_StaticFields
+{
+	// System.Byte[] WebSocketSharp.Net.HttpListenerRequest::_100continue
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____100continue_0;
+};
+
+// WebSocketSharp.Net.HttpListenerRequest
+
+// System.Net.Sockets.NetworkStream
+
+// System.Net.Sockets.NetworkStream
+
+// WebSocketSharp.Net.WebHeaderCollection
+struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo> WebSocketSharp.Net.WebHeaderCollection::_headers
+	Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* ____headers_20;
+};
+
+// WebSocketSharp.Net.WebHeaderCollection
+
+// WebSocketSharp.WebSocket
+struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
+{
+	// System.Int32 WebSocketSharp.WebSocket::_maxRetryCountForConnect
+	int32_t ____maxRetryCountForConnect_25;
+	// System.Byte[] WebSocketSharp.WebSocket::EmptyBytes
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___EmptyBytes_47;
+	// System.Int32 WebSocketSharp.WebSocket::FragmentLength
+	int32_t ___FragmentLength_48;
+	// System.Security.Cryptography.RandomNumberGenerator WebSocketSharp.WebSocket::RandomNumber
+	RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3* ___RandomNumber_49;
+};
+
+// WebSocketSharp.WebSocket
+
+// System.Security.Cryptography.X509Certificates.X509Certificate
+
+// System.Security.Cryptography.X509Certificates.X509Certificate
+
+// System.MulticastDelegate
+
+// System.MulticastDelegate
+
+// System.Net.Security.SslStream
+
+// System.Net.Security.SslStream
+
+// System.SystemException
+
+// System.SystemException
+
+// System.Security.Cryptography.X509Certificates.X509Certificate2
+
+// System.Security.Cryptography.X509Certificates.X509Certificate2
+
+// System.Func`1<System.Boolean>
+
+// System.Func`1<System.Boolean>
+
+// System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>
+
+// System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>
+
+// System.NotSupportedException
+
+// System.NotSupportedException
+
+// System.Net.Security.RemoteCertificateValidationCallback
+
+// System.Net.Security.RemoteCertificateValidationCallback
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1897,24 +2125,24 @@ struct ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031  : public RuntimeArr
 
 
 // System.Void System.Func`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // TResult System.Func`1<System.Boolean>::Invoke()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Func_1_Invoke_mBB7F37C468451AF57FAF31635C544D6B8C4373B2_gshared_inline (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, const RuntimeMethod* method) ;
 
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsMultiValue(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___headerName0, bool ___response1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___0_headerName, bool ___1_response, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mAB076D92DC92723B2224D75987BE463AF1CE7132 (StringBuilder_t* __this, String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mAB076D92DC92723B2224D75987BE463AF1CE7132 (StringBuilder_t* __this, String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m28FE9B110F21DDB8FF5F5E35A0EABD659DB22C2F (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m28FE9B110F21DDB8FF5F5E35A0EABD659DB22C2F (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.WebSocketContext::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocketContext__ctor_m484ECCA69246F21C1B6C7D05599D0060F0BD6E9F (WebSocketContext_t864B980CACE6C6D128960E555404BC87E7A4C3F2* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.WebSocket::.ctor(WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket__ctor_mA33F71662A7E04C9BB4184F8058B88B186188494 (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* ___context0, String_t* ___protocol1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket__ctor_mA33F71662A7E04C9BB4184F8058B88B186188494 (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* ___0_context, String_t* ___1_protocol, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListener WebSocketSharp.Net.HttpListenerContext::get_Listener()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* HttpListenerContext_get_Listener_mE950DCF55052613D0A41ADA8F901AEB155CD729B_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Logger WebSocketSharp.Net.HttpListener::get_Log()
@@ -1930,7 +2158,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CookieCollection_t338EE72A3B05CDF04DFEE639DE5
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpListenerRequest::get_Headers()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpListenerRequest_get_Headers_m67932C4F282A5045D83F0C2D839A998C9779FC19_inline (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.String System.Collections.Specialized.NameValueCollection::get_Item(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_get_Item_mE3ED755803E67BC852123C70EEF8D53774FA635F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_get_Item_mE3ED755803E67BC852123C70EEF8D53774FA635F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Security.Principal.IPrincipal WebSocketSharp.Net.HttpListenerContext::get_User()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerContext_get_User_m051AC7D6877A3ABA59C71C08D617D15F307F78F0_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::get_IsLocal()
@@ -1944,21 +2172,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 // System.Uri WebSocketSharp.Net.HttpListenerRequest::get_Url()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpListenerRequest_get_Url_m373D68AE0F65FE23CA4C862068F08469E852059F_inline (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext/<get_SecWebSocketProtocols>d__30::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__30__ctor_m0A3084A7F5CC65C555ACF8ED3C0C1F7595B0D491 (U3Cget_SecWebSocketProtocolsU3Ed__30_t409BDD978652708D8C3C2EE3243D3DCCC9F79C4F* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__30__ctor_m0A3084A7F5CC65C555ACF8ED3C0C1F7595B0D491 (U3Cget_SecWebSocketProtocolsU3Ed__30_t409BDD978652708D8C3C2EE3243D3DCCC9F79C4F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpConnection::get_LocalEndPoint()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* HttpConnection_get_LocalEndPoint_m0AB62E9295B37D2743F908E8B6F20D2CFEDC7FC9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpConnection::get_RemoteEndPoint()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* HttpConnection_get_RemoteEndPoint_mB6A9813B7D5C604817C770A674909EF9D38AEC24 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpConnection::Close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___force0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___0_force, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerResponse WebSocketSharp.Net.HttpListenerContext::get_Response()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* HttpListenerContext_get_Response_mAC597BA8D4DC2A6570EB13D0030B71D74DDF4234_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Ext::Close(WebSocketSharp.Net.HttpListenerResponse,WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Close_mA3C0C6CF738A15A002314F334ECD78A09678D70F (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___response0, int32_t ___code1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Close_mA3C0C6CF738A15A002314F334ECD78A09678D70F (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___0_response, int32_t ___1_code, const RuntimeMethod* method) ;
 // System.Int32 System.Environment::get_CurrentManagedThreadId()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Environment_get_CurrentManagedThreadId_m66483AADCCC13272EBDCD94D31D2E52603C24BDF (const RuntimeMethod* method) ;
 // System.String[] System.String::Split(System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___separator0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_separator, const RuntimeMethod* method) ;
 // System.String System.String::Trim()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5 (String_t* __this, const RuntimeMethod* method) ;
 // System.Void System.NotSupportedException::.ctor()
@@ -1970,7 +2198,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4
 // System.Net.Security.RemoteCertificateValidationCallback WebSocketSharp.Net.ServerSslConfiguration::get_ClientCertificateValidationCallback()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ServerSslConfiguration_get_ClientCertificateValidationCallback_mC1622658A32AF13C48FAC4EF9DFEE5FE120F8DE8 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, const RuntimeMethod* method) ;
 // System.Void System.Net.Security.SslStream::.ctor(System.IO.Stream,System.Boolean,System.Net.Security.RemoteCertificateValidationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SslStream__ctor_m9096E6E85E60C4D205A26FA43D121FECEC735484 (SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___innerStream0, bool ___leaveInnerStreamOpen1, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___userCertificateValidationCallback2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SslStream__ctor_m9096E6E85E60C4D205A26FA43D121FECEC735484 (SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_innerStream, bool ___1_leaveInnerStreamOpen, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___2_userCertificateValidationCallback, const RuntimeMethod* method) ;
 // System.Security.Cryptography.X509Certificates.X509Certificate2 WebSocketSharp.Net.ServerSslConfiguration::get_ServerCertificate()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ServerSslConfiguration_get_ServerCertificate_mE0F7225FC3A210B20DA8EEAC56D1CCD04EBBDF09_inline (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.ServerSslConfiguration::get_ClientCertificateRequired()
@@ -1980,7 +2208,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ServerSslConfiguration_ge
 // System.Boolean WebSocketSharp.Net.ServerSslConfiguration::get_CheckCertificateRevocation()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool ServerSslConfiguration_get_CheckCertificateRevocation_m776DAD1635CFFDACA375601BD40F2AE5E3F2BFB6_inline (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.HttpRequest WebSocketSharp.HttpRequest::Read(System.IO.Stream,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* HttpRequest_Read_m6BF8318F7B9BFC2314631C627CCD1DF19BEDF108 (Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, int32_t ___millisecondsTimeout1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* HttpRequest_Read_m6BF8318F7B9BFC2314631C627CCD1DF19BEDF108 (Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, int32_t ___1_millisecondsTimeout, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.HttpRequest::get_RequestUri()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpRequest_get_RequestUri_m1C8F6CD60083DBCEE095967D109DA8D9AEFC95E6_inline (HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* __this, const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.HttpBase::get_Headers()
@@ -1988,25 +2216,25 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4
 // System.Boolean WebSocketSharp.HttpRequest::get_IsWebSocketRequest()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpRequest_get_IsWebSocketRequest_mDB209A7B5726490B2C68BF213CFEDB09957B9B1A (HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* __this, const RuntimeMethod* method) ;
 // System.Uri WebSocketSharp.Net.HttpUtility::CreateRequestUrl(System.String,System.String,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___requestUri0, String_t* ___host1, bool ___websocketRequest2, bool ___secure3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___0_requestUri, String_t* ___1_host, bool ___2_websocketRequest, bool ___3_secure, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.WebSocket::.ctor(WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket__ctor_m1881D8AEB009D662D302427FDB713761FD1C050F (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* ___context0, String_t* ___protocol1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket__ctor_m1881D8AEB009D662D302427FDB713761FD1C050F (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* ___0_context, String_t* ___1_protocol, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.CookieCollection WebSocketSharp.HttpRequest::get_Cookies()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* HttpRequest_get_Cookies_mBDDC4879993CDCEDB69B05FB8B58C7E19112D5F5 (HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* __this, const RuntimeMethod* method) ;
 // System.Net.IPAddress System.Net.IPEndPoint::get_Address()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* IPEndPoint_get_Address_m72F783CB76E10E9DBDF680CCC1DAAED201BABB1C_inline (IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::IsLocal(System.Net.IPAddress)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsLocal_mC91D35C52D635EB9E76DE285CA0B8E726593FEB7 (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___address0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsLocal_mC91D35C52D635EB9E76DE285CA0B8E726593FEB7 (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___0_address, const RuntimeMethod* method) ;
 // System.Boolean System.Uri::op_Inequality(System.Uri,System.Uri)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_op_Inequality_m64BE981CDF88B751677B80D883B201BF3CFD83F7 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri10, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_op_Inequality_m64BE981CDF88B751677B80D883B201BF3CFD83F7 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___0_uri1, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___1_uri2, const RuntimeMethod* method) ;
 // System.String System.Uri::get_Query()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Query_m17DEC663263C486C8C8177AF9C4BFE2FFBE51178 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, const RuntimeMethod* method) ;
 // System.Text.Encoding System.Text.Encoding::get_UTF8()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9 (const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::InternalParseQueryString(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___query0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___0_query, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<get_SecWebSocketProtocols>d__38::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__38__ctor_mA3E7A72D05BE91F2ECD79965079B7D7C76DEDFD5 (U3Cget_SecWebSocketProtocolsU3Ed__38_t5EC408D1899DE34A86082BC6C084B24822B2A08F* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__38__ctor_mA3E7A72D05BE91F2ECD79965079B7D7C76DEDFD5 (U3Cget_SecWebSocketProtocolsU3Ed__38_t5EC408D1899DE34A86082BC6C084B24822B2A08F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Net.Sockets.Socket System.Net.Sockets.TcpClient::get_Client()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* TcpClient_get_Client_m38B7DCD73EB42C6BBE6340B5E4C0A8432C1140C0_inline (TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* __this, const RuntimeMethod* method) ;
 // System.Net.EndPoint System.Net.Sockets.Socket::get_LocalEndPoint()
@@ -2016,13 +2244,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EndPoint_t6233F4E2EB9F0F2D36E187F12BE050E6D8B
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<>c__DisplayClass49_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass49_0__ctor_mC4F660327E737D444C157B764EF0EBF2B8E89AD2 (U3CU3Ec__DisplayClass49_0_t44820E63072533E76FB9A121AAB03B5617A3883D* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::Close(WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_m1528E995C751D1A32A84E7E51FB77C3E97A8D359 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___code0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_m1528E995C751D1A32A84E7E51FB77C3E97A8D359 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___0_code, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.AuthenticationChallenge::.ctor(WebSocketSharp.Net.AuthenticationSchemes,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationChallenge__ctor_m933E88096016E0972979F6695183D504D2DC6D5E (AuthenticationChallenge_t6EADF65CD74974F1783AD785778A24AA7F6D00A2* __this, int32_t ___scheme0, String_t* ___realm1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationChallenge__ctor_m933E88096016E0972979F6695183D504D2DC6D5E (AuthenticationChallenge_t6EADF65CD74974F1783AD785778A24AA7F6D00A2* __this, int32_t ___0_scheme, String_t* ___1_realm, const RuntimeMethod* method) ;
 // System.Void System.Func`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22 (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22 (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared)(__this, ___0_object, ___1_method, method);
 }
 // TResult System.Func`1<System.Boolean>::Invoke()
 inline bool Func_1_Invoke_mBB7F37C468451AF57FAF31635C544D6B8C4373B2_inline (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, const RuntimeMethod* method)
@@ -2032,11 +2260,11 @@ inline bool Func_1_Invoke_mBB7F37C468451AF57FAF31635C544D6B8C4373B2_inline (Func
 // System.Void System.Net.Sockets.TcpClient::Close()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpClient_Close_m03E0ED4E4BA87B3F1ED17585AB1327ED76F5FE89 (TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.HttpResponse WebSocketSharp.HttpResponse::CreateCloseResponse(WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* HttpResponse_CreateCloseResponse_mC61A8B52F9A8B1CF544BDFC9EE4BCE54C6535DFA (int32_t ___code0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* HttpResponse_CreateCloseResponse_mC61A8B52F9A8B1CF544BDFC9EE4BCE54C6535DFA (int32_t ___0_code, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.WebSocket::Close(WebSocketSharp.HttpResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket_Close_m1DE2703E6AE7ADDC7AE21C336BB064A3CCB093F5 (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket_Close_m1DE2703E6AE7ADDC7AE21C336BB064A3CCB093F5 (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* __this, HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* ___0_response, const RuntimeMethod* method) ;
 // WebSocketSharp.HttpResponse WebSocketSharp.HttpResponse::CreateUnauthorizedResponse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* HttpResponse_CreateUnauthorizedResponse_m77A4724A278C0F5893B69B8A1B636D4F7F975997 (String_t* ___challenge0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* HttpResponse_CreateUnauthorizedResponse_m77A4724A278C0F5893B69B8A1B636D4F7F975997 (String_t* ___0_challenge, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.HttpBase::ToByteArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpBase_ToByteArray_m2DB4D887C2A308FF8F50274FEBF8DCB18070BA4F (HttpBase_tB62E89097D17A670509D354A75F5AA2CD5BC6B22* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerator`1<System.String> WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<get_SecWebSocketProtocols>d__38::System.Collections.Generic.IEnumerable<System.String>.GetEnumerator()
@@ -2044,9 +2272,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3Cget_SecWebSocketProtocolsU3
 // System.String WebSocketSharp.HttpRequest::get_HttpMethod()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpRequest_get_HttpMethod_mA7CA45A84923B6BFBDB5D37497C2B8FE2380B9C6_inline (HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* __this, const RuntimeMethod* method) ;
 // System.Security.Principal.IPrincipal WebSocketSharp.Net.HttpUtility::CreateUser(System.String,WebSocketSharp.Net.AuthenticationSchemes,System.String,System.String,System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___response0, int32_t ___scheme1, String_t* ___realm2, String_t* ___method3, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___credentialsFinder4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___0_response, int32_t ___1_scheme, String_t* ___2_realm, String_t* ___3_method, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___4_credentialsFinder, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::SendAuthenticationChallenge(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_SendAuthenticationChallenge_m252822AFC3DE898C961FBD60E171578992306EF5 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, String_t* ___challenge0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_SendAuthenticationChallenge_m252822AFC3DE898C961FBD60E171578992306EF5 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, String_t* ___0_challenge, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -2061,7 +2289,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0__ctor_m55E6FBE
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0::<ToStringMultiValue>b__0(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0_U3CToStringMultiValueU3Eb__0_m0B9879B0E75193BA02BAB7BBA4422E391E3C5498 (U3CU3Ec__DisplayClass46_0_t8F64C4EA16518D02C8E29C19513629D5539D4CB0* __this, int32_t ___i0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0_U3CToStringMultiValueU3Eb__0_m0B9879B0E75193BA02BAB7BBA4422E391E3C5498 (U3CU3Ec__DisplayClass46_0_t8F64C4EA16518D02C8E29C19513629D5539D4CB0* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2076,7 +2304,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0_U3CToStringMul
 	String_t* V_3 = NULL;
 	{
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_0 = __this->___U3CU3E4__this_2;
-		int32_t L_1 = ___i0;
+		int32_t L_1 = ___0_i;
 		NullCheck(L_0);
 		String_t* L_2;
 		L_2 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(24 /* System.String System.Collections.Specialized.NameValueCollection::GetKey(System.Int32) */, L_0, L_1);
@@ -2093,7 +2321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0_U3CToStringMul
 	}
 	{
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_6 = __this->___U3CU3E4__this_2;
-		int32_t L_7 = ___i0;
+		int32_t L_7 = ___0_i;
 		NullCheck(L_6);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8;
 		L_8 = VirtualFuncInvoker1< StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*, int32_t >::Invoke(23 /* System.String[] System.Collections.Specialized.NameValueCollection::GetValues(System.Int32) */, L_6, L_7);
@@ -2139,7 +2367,7 @@ IL_004e:
 		StringBuilder_t* L_20 = __this->___buff_1;
 		String_t* L_21 = V_0;
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_22 = __this->___U3CU3E4__this_2;
-		int32_t L_23 = ___i0;
+		int32_t L_23 = ___0_i;
 		NullCheck(L_22);
 		String_t* L_24;
 		L_24 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(22 /* System.String System.Collections.Specialized.NameValueCollection::Get(System.Int32) */, L_22, L_23);
@@ -2166,15 +2394,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass59_0__ctor_m2EA18FD
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0::<GetObjectData>b__0(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass59_0_U3CGetObjectDataU3Eb__0_mA08AB46328C390074D94C3737E2A2EB152E9CCE6 (U3CU3Ec__DisplayClass59_0_t68C8CB5E3E41F8A5EDBBDBD218D08119A9B62660* __this, int32_t ___i0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass59_0_U3CGetObjectDataU3Eb__0_mA08AB46328C390074D94C3737E2A2EB152E9CCE6 (U3CU3Ec__DisplayClass59_0_t68C8CB5E3E41F8A5EDBBDBD218D08119A9B62660* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
 		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = __this->___serializationInfo_0;
 		String_t* L_1;
-		L_1 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___i0), NULL);
+		L_1 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&___0_i), NULL);
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_2 = __this->___U3CU3E4__this_2;
-		int32_t L_3 = ___i0;
+		int32_t L_3 = ___0_i;
 		NullCheck(L_2);
 		String_t* L_4;
 		L_4 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(24 /* System.String System.Collections.Specialized.NameValueCollection::GetKey(System.Int32) */, L_2, L_3);
@@ -2182,12 +2410,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass59_0_U3CGetObjectDa
 		SerializationInfo_AddValue_m28FE9B110F21DDB8FF5F5E35A0EABD659DB22C2F(L_0, L_1, L_4, NULL);
 		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_5 = __this->___serializationInfo_0;
 		int32_t L_6 = __this->___cnt_1;
-		int32_t L_7 = ___i0;
+		int32_t L_7 = ___0_i;
 		V_0 = ((int32_t)il2cpp_codegen_add(L_6, L_7));
 		String_t* L_8;
 		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_0), NULL);
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_9 = __this->___U3CU3E4__this_2;
-		int32_t L_10 = ___i0;
+		int32_t L_10 = ___0_i;
 		NullCheck(L_9);
 		String_t* L_11;
 		L_11 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(22 /* System.String System.Collections.Specialized.NameValueCollection::Get(System.Int32) */, L_9, L_10);
@@ -2213,7 +2441,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0__ctor_mC938EAD
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0::<ToString>b__0(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CToStringU3Eb__0_mB6CBCBED18E8861AB1467A9417A1010C5296C83F (U3CU3Ec__DisplayClass70_0_tCB5F1A02C3F28DA93EB6F505D2D49120FFF3B777* __this, int32_t ___i0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CToStringU3Eb__0_mB6CBCBED18E8861AB1467A9417A1010C5296C83F (U3CU3Ec__DisplayClass70_0_tCB5F1A02C3F28DA93EB6F505D2D49120FFF3B777* __this, int32_t ___0_i, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2224,12 +2452,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CToStringU3E
 	{
 		StringBuilder_t* L_0 = __this->___buff_0;
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_1 = __this->___U3CU3E4__this_1;
-		int32_t L_2 = ___i0;
+		int32_t L_2 = ___0_i;
 		NullCheck(L_1);
 		String_t* L_3;
 		L_3 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(24 /* System.String System.Collections.Specialized.NameValueCollection::GetKey(System.Int32) */, L_1, L_2);
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_4 = __this->___U3CU3E4__this_1;
-		int32_t L_5 = ___i0;
+		int32_t L_5 = ___0_i;
 		NullCheck(L_4);
 		String_t* L_6;
 		L_6 = VirtualFuncInvoker1< String_t*, int32_t >::Invoke(22 /* System.String System.Collections.Specialized.NameValueCollection::Get(System.Int32) */, L_4, L_5);
@@ -2248,7 +2476,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0_U3CToStringU3E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext::.ctor(WebSocketSharp.Net.HttpListenerContext,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext__ctor_m28DE6960A96152FABC7E9F99409A32AA0656A288 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, String_t* ___protocol1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext__ctor_m28DE6960A96152FABC7E9F99409A32AA0656A288 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, String_t* ___1_protocol, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2258,10 +2486,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext__ctor_m28DE
 	}
 	{
 		WebSocketContext__ctor_m484ECCA69246F21C1B6C7D05599D0060F0BD6E9F(__this, NULL);
-		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___context0;
+		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___0_context;
 		__this->____context_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____context_0), (void*)L_0);
-		String_t* L_1 = ___protocol1;
+		String_t* L_1 = ___1_protocol;
 		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_2 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		WebSocket__ctor_mA33F71662A7E04C9BB4184F8058B88B186188494(L_2, __this, L_1, NULL);
@@ -2580,7 +2808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext_Close_m53E3
 	}
 }
 // System.Void WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext::Close(WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext_Close_m77CF7294E7874DE5BE95AD02AA4BF3188B1946E1 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, int32_t ___code0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext_Close_m77CF7294E7874DE5BE95AD02AA4BF3188B1946E1 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, int32_t ___0_code, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2593,7 +2821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext_Close_m77CF
 		NullCheck(L_0);
 		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_1;
 		L_1 = HttpListenerContext_get_Response_mAC597BA8D4DC2A6570EB13D0030B71D74DDF4234_inline(L_0, NULL);
-		int32_t L_2 = ___code0;
+		int32_t L_2 = ___0_code;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		Ext_Close_mA3C0C6CF738A15A002314F334ECD78A09678D70F(L_1, L_2, NULL);
 		return;
@@ -2622,11 +2850,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerWebSocketContext_ToStri
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext/<get_SecWebSocketProtocols>d__30::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__30__ctor_m0A3084A7F5CC65C555ACF8ED3C0C1F7595B0D491 (U3Cget_SecWebSocketProtocolsU3Ed__30_t409BDD978652708D8C3C2EE3243D3DCCC9F79C4F* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__30__ctor_m0A3084A7F5CC65C555ACF8ED3C0C1F7595B0D491 (U3Cget_SecWebSocketProtocolsU3Ed__30_t409BDD978652708D8C3C2EE3243D3DCCC9F79C4F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		int32_t L_1;
 		L_1 = Environment_get_CurrentManagedThreadId_m66483AADCCC13272EBDCD94D31D2E52603C24BDF(NULL);
@@ -2854,7 +3082,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3Cget_SecWebSocketProtocolsU3
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::.ctor(System.Net.Sockets.TcpClient,System.String,System.Boolean,WebSocketSharp.Net.ServerSslConfiguration,WebSocketSharp.Logger)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3F0C0D1B14052AF03191DB6E2E0997A2DBCD (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* ___tcpClient0, String_t* ___protocol1, bool ___secure2, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___sslConfig3, Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7* ___logger4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3F0C0D1B14052AF03191DB6E2E0997A2DBCD (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* ___0_tcpClient, String_t* ___1_protocol, bool ___2_secure, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___3_sslConfig, Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7* ___4_logger, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2869,20 +3097,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3
 	SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* V_1 = NULL;
 	{
 		WebSocketContext__ctor_m484ECCA69246F21C1B6C7D05599D0060F0BD6E9F(__this, NULL);
-		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_0 = ___tcpClient0;
+		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_0 = ___0_tcpClient;
 		__this->____tcpClient_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____tcpClient_6), (void*)L_0);
-		bool L_1 = ___secure2;
+		bool L_1 = ___2_secure;
 		__this->____secure_4 = L_1;
-		Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7* L_2 = ___logger4;
+		Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7* L_2 = ___4_logger;
 		__this->____logger_1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____logger_1), (void*)L_2);
-		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_3 = ___tcpClient0;
+		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_3 = ___0_tcpClient;
 		NullCheck(L_3);
 		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_4;
 		L_4 = TcpClient_GetStream_mDD54336B17D1267BD593E0A1EB9EDF3E9506AEBA(L_3, NULL);
 		V_0 = L_4;
-		bool L_5 = ___secure2;
+		bool L_5 = ___2_secure;
 		if (!L_5)
 		{
 			goto IL_0060;
@@ -2890,7 +3118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3
 	}
 	{
 		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_6 = V_0;
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_7 = ___sslConfig3;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_7 = ___3_sslConfig;
 		NullCheck(L_7);
 		RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* L_8;
 		L_8 = ServerSslConfiguration_get_ClientCertificateValidationCallback_mC1622658A32AF13C48FAC4EF9DFEE5FE120F8DE8(L_7, NULL);
@@ -2899,19 +3127,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3
 		SslStream__ctor_m9096E6E85E60C4D205A26FA43D121FECEC735484(L_9, L_6, (bool)0, L_8, NULL);
 		V_1 = L_9;
 		SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* L_10 = V_1;
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_11 = ___sslConfig3;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_11 = ___3_sslConfig;
 		NullCheck(L_11);
 		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_12;
 		L_12 = ServerSslConfiguration_get_ServerCertificate_mE0F7225FC3A210B20DA8EEAC56D1CCD04EBBDF09_inline(L_11, NULL);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_13 = ___sslConfig3;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_13 = ___3_sslConfig;
 		NullCheck(L_13);
 		bool L_14;
 		L_14 = ServerSslConfiguration_get_ClientCertificateRequired_mB7520FE4975CF07EC241C4A197E000E8692EA302_inline(L_13, NULL);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_15 = ___sslConfig3;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_15 = ___3_sslConfig;
 		NullCheck(L_15);
 		int32_t L_16;
 		L_16 = ServerSslConfiguration_get_EnabledSslProtocols_m3B4420973638CC06262E265D2EC7AF628CE5D57A_inline(L_15, NULL);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_17 = ___sslConfig3;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_17 = ___3_sslConfig;
 		NullCheck(L_17);
 		bool L_18;
 		L_18 = ServerSslConfiguration_get_CheckCertificateRevocation_m776DAD1635CFFDACA375601BD40F2AE5E3F2BFB6_inline(L_17, NULL);
@@ -2952,13 +3180,13 @@ IL_0067:
 		NullCheck(L_28);
 		bool L_29;
 		L_29 = HttpRequest_get_IsWebSocketRequest_mDB209A7B5726490B2C68BF213CFEDB09957B9B1A(L_28, NULL);
-		bool L_30 = ___secure2;
+		bool L_30 = ___2_secure;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_31;
 		L_31 = HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4(L_24, L_27, L_29, L_30, NULL);
 		__this->____uri_7 = L_31;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____uri_7), (void*)L_31);
-		String_t* L_32 = ___protocol1;
+		String_t* L_32 = ___1_protocol;
 		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_33 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
 		NullCheck(L_33);
 		WebSocket__ctor_m1881D8AEB009D662D302427FDB713761FD1C050F(L_33, __this, L_32, NULL);
@@ -3317,7 +3545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::Authenticate(WebSocketSharp.Net.AuthenticationSchemes,System.String,System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TcpListenerWebSocketContext_Authenticate_m32954A2A23FAB64F8CFA4BC9ED9AC16016FA0799 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___scheme0, String_t* ___realm1, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___credentialsFinder2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TcpListenerWebSocketContext_Authenticate_m32954A2A23FAB64F8CFA4BC9ED9AC16016FA0799 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___0_scheme, String_t* ___1_realm, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___2_credentialsFinder, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3339,16 +3567,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TcpListenerWebSocketContext_Authenticate
 		L_1->___U3CU3E4__this_6 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_6), (void*)__this);
 		U3CU3Ec__DisplayClass49_0_t44820E63072533E76FB9A121AAB03B5617A3883D* L_2 = V_0;
-		int32_t L_3 = ___scheme0;
+		int32_t L_3 = ___0_scheme;
 		NullCheck(L_2);
 		L_2->___scheme_1 = L_3;
 		U3CU3Ec__DisplayClass49_0_t44820E63072533E76FB9A121AAB03B5617A3883D* L_4 = V_0;
-		String_t* L_5 = ___realm1;
+		String_t* L_5 = ___1_realm;
 		NullCheck(L_4);
 		L_4->___realm_2 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___realm_2), (void*)L_5);
 		U3CU3Ec__DisplayClass49_0_t44820E63072533E76FB9A121AAB03B5617A3883D* L_6 = V_0;
-		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_7 = ___credentialsFinder2;
+		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_7 = ___2_credentialsFinder;
 		NullCheck(L_6);
 		L_6->___credentialsFinder_3 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&L_6->___credentialsFinder_3), (void*)L_7);
@@ -3435,11 +3663,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_mA07D7
 	}
 }
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::Close(WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_m1528E995C751D1A32A84E7E51FB77C3E97A8D359 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___code0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_m1528E995C751D1A32A84E7E51FB77C3E97A8D359 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, int32_t ___0_code, const RuntimeMethod* method) 
 {
 	{
 		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_0 = __this->____websocket_9;
-		int32_t L_1 = ___code0;
+		int32_t L_1 = ___0_code;
 		HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* L_2;
 		L_2 = HttpResponse_CreateCloseResponse_mC61A8B52F9A8B1CF544BDFC9EE4BCE54C6535DFA(L_1, NULL);
 		NullCheck(L_0);
@@ -3448,11 +3676,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_m1528E
 	}
 }
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext::SendAuthenticationChallenge(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_SendAuthenticationChallenge_m252822AFC3DE898C961FBD60E171578992306EF5 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, String_t* ___challenge0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_SendAuthenticationChallenge_m252822AFC3DE898C961FBD60E171578992306EF5 (TcpListenerWebSocketContext_tFFDCA6B520A5CFAD9A71B7AC0C5529930708B8A9* __this, String_t* ___0_challenge, const RuntimeMethod* method) 
 {
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
 	{
-		String_t* L_0 = ___challenge0;
+		String_t* L_0 = ___0_challenge;
 		HttpResponse_tA75A71DF2E1671E5B21CE97D4D45E217D24117AA* L_1;
 		L_1 = HttpResponse_CreateUnauthorizedResponse_m77A4724A278C0F5893B69B8A1B636D4F7F975997(L_0, NULL);
 		NullCheck(L_1);
@@ -3493,11 +3721,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TcpListenerWebSocketContext_ToStrin
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext/<get_SecWebSocketProtocols>d__38::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__38__ctor_mA3E7A72D05BE91F2ECD79965079B7D7C76DEDFD5 (U3Cget_SecWebSocketProtocolsU3Ed__38_t5EC408D1899DE34A86082BC6C084B24822B2A08F* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3Cget_SecWebSocketProtocolsU3Ed__38__ctor_mA3E7A72D05BE91F2ECD79965079B7D7C76DEDFD5 (U3Cget_SecWebSocketProtocolsU3Ed__38_t5EC408D1899DE34A86082BC6C084B24822B2A08F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		int32_t L_1;
 		L_1 = Environment_get_CurrentManagedThreadId_m66483AADCCC13272EBDCD94D31D2E52603C24BDF(NULL);

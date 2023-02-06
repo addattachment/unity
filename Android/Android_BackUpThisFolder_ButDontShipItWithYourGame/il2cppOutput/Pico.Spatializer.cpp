@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 template <typename R>
@@ -335,12 +334,6 @@ struct List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	MeshFilterU5BU5D_tCE3B457E6F7ECE5ECEE9E09150642150448685BA* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 {
@@ -354,17 +347,10 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
-};
-
 // PXR_Audio.Spatializer.Api
 struct Api_t64D8A27773AE5882B3B45C264344706B43D1141A  : public RuntimeObject
 {
 };
-struct Il2CppArrayBounds;
 
 // System.String
 struct String_t  : public RuntimeObject
@@ -373,12 +359,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
-};
-
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
 };
 
 // UnityEngine.Events.UnityEventBase
@@ -437,14 +417,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-};
-
 // UnityEngine.Color
 struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
 {
@@ -461,12 +433,6 @@ struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F
 // System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
 {
-};
-
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
 };
 // Native definition for P/Invoke marshalling of System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
@@ -489,12 +455,6 @@ struct IntPtr_t
 {
 	// System.Void* System.IntPtr::m_value
 	void* ___m_value_0;
-};
-
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
 };
 
 // UnityEngine.LayerMask
@@ -541,14 +501,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6
 	float ___m33_15;
 };
 
-struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
-{
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::zeroMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix_16;
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::identityMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix_17;
-};
-
 // PXR_Audio.Spatializer.NativeVector3f
 struct NativeVector3f_tFD0F1CF60EFCBC7E75D3C0C5B730F8A02CFBA52F 
 {
@@ -571,12 +523,6 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___z_2;
 	// System.Single UnityEngine.Quaternion::w
 	float ___w_3;
-};
-
-struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
-{
-	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
 };
 
 // System.Single
@@ -611,30 +557,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2
 	float ___z_4;
 };
 
-struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
-{
-	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
-	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
-	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
-	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
-	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
-	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
-	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
-	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
-	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
-	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
-};
-
 // UnityEngine.Vector4
 struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 
 {
@@ -646,18 +568,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3
 	float ___z_3;
 	// System.Single UnityEngine.Vector4::w
 	float ___w_4;
-};
-
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
 };
 
 // System.Void
@@ -757,12 +667,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 {
 	// System.IntPtr UnityEngine.Object::m_CachedPtr
 	intptr_t ___m_CachedPtr_0;
-};
-
-struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
-{
-	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
-	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
 };
 // Native definition for P/Invoke marshalling of UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
@@ -975,16 +879,6 @@ struct PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F  
 	int32_t ___uuid_14;
 };
 
-struct PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F_StaticFields
-{
-	// PXR_Audio.Spatializer.Api PXR_Audio_Spatializer_Context::_api
-	Api_t64D8A27773AE5882B3B45C264344706B43D1141A* ____api_5;
-	// PXR_Audio_Spatializer_Context PXR_Audio_Spatializer_Context::_instance
-	PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* ____instance_6;
-	// System.Int32 PXR_Audio_Spatializer_Context::uuidCounter
-	int32_t ___uuidCounter_13;
-};
-
 // PXR_Audio_Spatializer_SceneGeometry
 struct PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1026,6 +920,290 @@ struct PXR_Audio_Spatializer_SceneMaterial_t5ADBA43D586195CE87E91E4793E0F7D7D93D
 	// System.Single PXR_Audio_Spatializer_SceneMaterial::transmissionForValidation
 	float ___transmissionForValidation_12;
 };
+
+// <Module>
+
+// <Module>
+
+// System.Collections.Generic.List`1<UnityEngine.MeshFilter>
+struct List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	MeshFilterU5BU5D_tCE3B457E6F7ECE5ECEE9E09150642150448685BA* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<UnityEngine.MeshFilter>
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+
+// PXR_Audio.Spatializer.Api
+
+// PXR_Audio.Spatializer.Api
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// UnityEngine.Events.UnityEventBase
+
+// UnityEngine.Events.UnityEventBase
+
+// System.ValueType
+
+// System.ValueType
+
+// PXR_Audio.Spatializer.ApiUnityImpl
+
+// PXR_Audio.Spatializer.ApiUnityImpl
+
+// PXR_Audio.Spatializer.ApiWwiseImpl
+
+// PXR_Audio.Spatializer.ApiWwiseImpl
+
+// UnityEngine.AudioConfiguration
+
+// UnityEngine.AudioConfiguration
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// UnityEngine.Color
+
+// UnityEngine.Color
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+
+// System.Enum
+
+// System.Int32
+
+// System.Int32
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// UnityEngine.LayerMask
+
+// UnityEngine.LayerMask
+
+// UnityEngine.Matrix4x4
+struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
+{
+	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::zeroMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix_16;
+	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::identityMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix_17;
+};
+
+// UnityEngine.Matrix4x4
+
+// PXR_Audio.Spatializer.NativeVector3f
+
+// PXR_Audio.Spatializer.NativeVector3f
+
+// UnityEngine.Quaternion
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
+};
+
+// UnityEngine.Quaternion
+
+// System.Single
+
+// System.Single
+
+// System.UInt32
+
+// System.UInt32
+
+// UnityEngine.Events.UnityEvent
+
+// UnityEngine.Events.UnityEvent
+
+// UnityEngine.Vector3
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
+	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
+	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
+	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
+	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
+	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
+	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
+	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
+	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
+	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
+};
+
+// UnityEngine.Vector3
+
+// UnityEngine.Vector4
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
+{
+	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
+	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
+	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
+	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
+};
+
+// UnityEngine.Vector4
+
+// System.Void
+
+// System.Void
+
+// UnityEngine.CombineInstance
+
+// UnityEngine.CombineInstance
+
+// System.Delegate
+
+// System.Delegate
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+
+// UnityEngine.Object
+
+// PXR_Audio.Spatializer.SourceConfig
+
+// PXR_Audio.Spatializer.SourceConfig
+
+// UnityEngine.Component
+
+// UnityEngine.Component
+
+// UnityEngine.GameObject
+
+// UnityEngine.GameObject
+
+// UnityEngine.Mesh
+
+// UnityEngine.Mesh
+
+// System.MulticastDelegate
+
+// System.MulticastDelegate
+
+// System.AsyncCallback
+
+// System.AsyncCallback
+
+// UnityEngine.Behaviour
+
+// UnityEngine.Behaviour
+
+// PXR_Audio.Spatializer.DistanceAttenuationCallback
+
+// PXR_Audio.Spatializer.DistanceAttenuationCallback
+
+// UnityEngine.MeshFilter
+
+// UnityEngine.MeshFilter
+
+// UnityEngine.Transform
+
+// UnityEngine.Transform
+
+// UnityEngine.AudioSettings/AudioConfigurationChangeHandler
+
+// UnityEngine.AudioSettings/AudioConfigurationChangeHandler
+
+// UnityEngine.AudioBehaviour
+
+// UnityEngine.AudioBehaviour
+
+// UnityEngine.MonoBehaviour
+
+// UnityEngine.MonoBehaviour
+
+// UnityEngine.AudioSource
+
+// UnityEngine.AudioSource
+
+// PXR_Audio_Spatializer_AmbisonicSource
+
+// PXR_Audio_Spatializer_AmbisonicSource
+
+// PXR_Audio_Spatializer_AudioListener
+
+// PXR_Audio_Spatializer_AudioListener
+
+// PXR_Audio_Spatializer_AudioSource
+
+// PXR_Audio_Spatializer_AudioSource
+
+// PXR_Audio_Spatializer_Context
+struct PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F_StaticFields
+{
+	// PXR_Audio.Spatializer.Api PXR_Audio_Spatializer_Context::_api
+	Api_t64D8A27773AE5882B3B45C264344706B43D1141A* ____api_5;
+	// PXR_Audio_Spatializer_Context PXR_Audio_Spatializer_Context::_instance
+	PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* ____instance_6;
+	// System.Int32 PXR_Audio_Spatializer_Context::uuidCounter
+	int32_t ___uuidCounter_13;
+};
+
+// PXR_Audio_Spatializer_Context
+
+// PXR_Audio_Spatializer_SceneGeometry
+
+// PXR_Audio_Spatializer_SceneGeometry
+
+// PXR_Audio_Spatializer_SceneMaterial
+
+// PXR_Audio_Spatializer_SceneMaterial
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1452,18 +1630,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindObjectOfType_TisRun
 // T[] UnityEngine.Component::GetComponents<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Component_GetComponents_TisRuntimeObject_m35447B0B07F9C06A1AF846E482EC6FEB09D2436F_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 
 // System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___exists0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_time(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_time_m6670372FD9C494978B7B3E01B7F4D220616F6204 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, float ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_time_m6670372FD9C494978B7B3E01B7F4D220616F6204 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, float ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::Play()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.AudioSource>()
@@ -1478,7 +1656,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AudioSource_get_time_m130D08644F3673611
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // PXR_Audio_Spatializer_Context PXR_Audio_Spatializer_Context::get_Instance()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* PXR_Audio_Spatializer_Context_get_Instance_m2C5DEDC032B552279DF0796E599F3ADEC18493B0_inline (const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_AudioListener::UpdatePose()
@@ -1486,7 +1664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener_Upda
 // PXR_Audio_Spatializer_Context PXR_Audio_Spatializer_AudioListener::get_Context()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* PXR_Audio_Spatializer_AudioListener_get_Context_m1BA2FDFCED2AC2ABF3BE164B09CC67CF0319A34D (PXR_Audio_Spatializer_AudioListener_tB8BC537F83671897EB33F0365DDE29F5D0581EDF* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Boolean PXR_Audio_Spatializer_Context::get_Initialized()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PXR_Audio_Spatializer_Context_get_Initialized_m2BB4B8AF8AF269F7F792B4DF614D45A666228174_inline (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_AudioListener::RegisterInternal()
@@ -1502,9 +1680,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 // UnityEngine.Vector3 UnityEngine.Transform::get_up()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_up_mE47A9D9D96422224DD0539AA5524DA5440145BB2 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetListenerPose(System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPose_mB46C2F5177C971EBF9F8788F22E1DD729AED05F3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPose_mB46C2F5177C971EBF9F8788F22E1DD729AED05F3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::GetInterleavedBinauralBuffer(System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedBinauralBuffer_mCDA1C70D1EB53F3277826CC7DF1BA03E42181DF2 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr0, uint32_t ___numFrames1, bool ___isAccumulative2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedBinauralBuffer_mCDA1C70D1EB53F3277826CC7DF1BA03E42181DF2 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_outputBufferPtr, uint32_t ___1_numFrames, bool ___2_isAccumulative, const RuntimeMethod* method) ;
 // PXR_Audio_Spatializer_Context PXR_Audio_Spatializer_AudioSource::get_Context()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* PXR_Audio_Spatializer_AudioSource_get_Context_m7C93FA1CFB084128D95714985128F19E09CC116B (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, const RuntimeMethod* method) ;
 // System.Int32 PXR_Audio_Spatializer_Context::get_UUID()
@@ -1512,49 +1690,49 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Con
 // System.Void PXR_Audio_Spatializer_AudioSource::RegisterInternal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_RegisterInternal_m7B61C1624057D461B03E7F580FF7E55F0162E0FF (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, const RuntimeMethod* method) ;
 // System.Void PXR_Audio.Spatializer.SourceConfig::.ctor(PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887 (SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* __this, int32_t ___inMode0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887 (SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* __this, int32_t ___0_inMode, const RuntimeMethod* method) ;
 // System.Single PXR_Audio_Spatializer_AudioSource::DB2Mag(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_DB2Mag_m2BF91D11BCD36F0AA2AE76B9C4BB0C0B85A198BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___db0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_DB2Mag_m2BF91D11BCD36F0AA2AE76B9C4BB0C0B85A198BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_db, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::AddSourceWithConfig(PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithConfig_m99B250A6CD07F026B9ADC9E899058ADA76C00F38 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig0, int32_t* ___sourceId1, bool ___isAsync2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithConfig_m99B250A6CD07F026B9ADC9E899058ADA76C00F38 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___0_sourceConfig, int32_t* ___1_sourceId, bool ___2_isAsync, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogError(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceSize(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceSize_mEDE7DA51A2B63EEEE1420BD169F62F35CCA50D6B (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___volumetricSize1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceSize_mEDE7DA51A2B63EEEE1420BD169F62F35CCA50D6B (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_volumetricSize, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceAttenuationMode(System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceAttenuationMode_m412784BA0D284BC10ACE5C5BBF30CE4CAA3C9EE8 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, int32_t ___mode1, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceAttenuationMode_m412784BA0D284BC10ACE5C5BBF30CE4CAA3C9EE8 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, int32_t ___1_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___2_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_indirectDistanceAttenuationCallback, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceRange(System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceRange_mAD2D76262B2DDF0C10BCF8DB25EC926A3C355AC1 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceRange_mAD2D76262B2DDF0C10BCF8DB25EC926A3C355AC1 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Single PXR_Audio_Spatializer_AudioSource::Mag2DB(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_Mag2DB_m65BFBA07D2EFBCDB2337C5334CB9D353D4AB2EA7 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___mag0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_Mag2DB_m65BFBA07D2EFBCDB2337C5334CB9D353D4AB2EA7 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_mag, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourcePosition(System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourcePosition_mA1B2630A9F08457B72F29774DE89501EB403A4AE (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourcePosition_mA1B2630A9F08457B72F29774DE89501EB403A4AE (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceGain(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceGain_mA9EFA4263E37F3EA8853E4D355C704455E9052C9 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___gain1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceGain_mA9EFA4263E37F3EA8853E4D355C704455E9052C9 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_gain, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetDopplerEffect(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetDopplerEffect_m824508019E0E85718BCB237DF303AF5824B2116E (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, bool ___on1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetDopplerEffect_m824508019E0E85718BCB237DF303AF5824B2116E (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, bool ___1_on, const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_AudioSource::DestroyInternal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_DestroyInternal_mE4DC2F75E9E1B69E8C9A8EF4F3D8A19B0CFA4905 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::RemoveSource(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_RemoveSource_m7FAB5EFBE5EECEC36EDA23D1F8CD8E5D9B0F4289 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_RemoveSource_m7FAB5EFBE5EECEC36EDA23D1F8CD8E5D9B0F4289 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, const RuntimeMethod* method) ;
 // System.String System.Enum::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___str00, String_t* ___str11, String_t* ___str22, String_t* ___str33, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, String_t* ___3_str3, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitSourceBuffer(System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitSourceBuffer_m04CB3848C6564820A7F0F64992D8C6939E3A80A4 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitSourceBuffer_m04CB3848C6564820A7F0F64992D8C6939E3A80A4 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Gizmos::set_color(UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_set_color_m53927A2741937484180B20B55F7F20F8F60C5797 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_set_color_m53927A2741937484180B20B55F7F20F8F60C5797 (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Gizmos::DrawWireSphere(UnityEngine.Vector3,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawWireSphere_m12C01EC9334C32425074A214C5B876271B3DDBA1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___center0, float ___radius1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawWireSphere_m12C01EC9334C32425074A214C5B876271B3DDBA1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_center, float ___1_radius, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Gizmos::DrawSphere(UnityEngine.Vector3,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawSphere_mC7B2862BBDB3141A63B83F0F1E56E30101D4F472 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___center0, float ___radius1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawSphere_mC7B2862BBDB3141A63B83F0F1E56E30101D4F472 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_center, float ___1_radius, const RuntimeMethod* method) ;
 // System.Void PXR_Audio.Spatializer.ApiUnityImpl::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ApiUnityImpl__ctor_m4687F4B6771497056FE2271446D857204F49E77B (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, const RuntimeMethod* method) ;
 // System.Void PXR_Audio.Spatializer.ApiWwiseImpl::.ctor()
@@ -1564,19 +1742,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Api_t64D8A27773AE5882B3B45C264344706B43D1141A
 // UnityEngine.AudioConfiguration UnityEngine.AudioSettings::GetConfiguration()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D AudioSettings_GetConfiguration_mDA005BAD9577EBBE375F6D6C040D7F110508C910 (const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_Context::ResetContext(PXR_Audio.Spatializer.RenderingMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_ResetContext_m583D2D2C04649D660724FB327215C0C62D3F94CA (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___quality0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_ResetContext_m583D2D2C04649D660724FB327215C0C62D3F94CA (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_quality, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.AudioSettings::Reset(UnityEngine.AudioConfiguration)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSettings_Reset_mA15BD1F6C3A6C78D85845D3D86C4271559A12D75 (AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D ___config0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AudioSettings_Reset_mA15BD1F6C3A6C78D85845D3D86C4271559A12D75 (AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D ___0_config, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSettings/AudioConfigurationChangeHandler::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioConfigurationChangeHandler__ctor_mA9827AB9472EC8EE0A0F0FC24EBC06B4740DD944 (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioConfigurationChangeHandler__ctor_mA9827AB9472EC8EE0A0F0FC24EBC06B4740DD944 (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSettings::add_OnAudioConfigurationChanged(UnityEngine.AudioSettings/AudioConfigurationChangeHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSettings_add_OnAudioConfigurationChanged_m53F7FD8FF545E23217D2271424843E27AF31585F (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSettings_add_OnAudioConfigurationChanged_m53F7FD8FF545E23217D2271424843E27AF31585F (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* ___0_value, const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_Context::StartInternal(PXR_Audio.Spatializer.RenderingMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_StartInternal_mEE34CA8148880BC5B0B2AB45FCA781AB35D543AB (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___quality0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_StartInternal_mEE34CA8148880BC5B0B2AB45FCA781AB35D543AB (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_quality, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 // T[] UnityEngine.Object::FindObjectsOfType<PXR_Audio_Spatializer_SceneGeometry>()
 inline PXR_Audio_Spatializer_SceneGeometryU5BU5D_t41710776FD4261140EA6C38AF9BB28BD07C8D836* Object_FindObjectsOfType_TisPXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53_mD3A50A58F9C8A0016BAD412792E90F8A15015F41 (const RuntimeMethod* method)
 {
@@ -1610,7 +1788,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PXR_Audio_Spatializer_AudioL
 // System.Boolean PXR_Audio_Spatializer_AudioSource::get_IsAudioDSPInProgress()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PXR_Audio_Spatializer_AudioSource_get_IsAudioDSPInProgress_m7D65A7961AD22BCD14306D8E531DE3274631B4E3_inline (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSettings::remove_OnAudioConfigurationChanged(UnityEngine.AudioSettings/AudioConfigurationChangeHandler)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSettings_remove_OnAudioConfigurationChanged_mA9CB4575FC75DF3761B8AA0D0259A1255FFF908D (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSettings_remove_OnAudioConfigurationChanged_mA9CB4575FC75DF3761B8AA0D0259A1255FFF908D (AudioConfigurationChangeHandler_tE071B0CBA3B3A77D3E41F5FCB65B4017885B3177* ___0_value, const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_Context::DestroyInternal()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_DestroyInternal_m063774FDE9E5578ADA3BEB196EA9CE0056541066 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, const RuntimeMethod* method) ;
 // System.Void PXR_Audio_Spatializer_AudioSource::Resume()
@@ -1635,14 +1813,14 @@ inline PXR_Audio_Spatializer_SceneMaterial_t5ADBA43D586195CE87E91E4793E0F7D7D93D
 // System.Int32 UnityEngine.Transform::get_childCount()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Transform::GetChild(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Transform_GetChild_mE686DF0C7AAC1F7AEF356967B1C04D8B8E240EAF (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<PXR_Audio_Spatializer_SceneGeometry>()
 inline PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* Component_GetComponent_TisPXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53_m9CA41EB6780D04DC11DE2DDCE2F8D27641D38715 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
 	return ((  PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 // System.Void PXR_Audio_Spatializer_SceneGeometry::GetAllMeshFilter(UnityEngine.Transform,System.Boolean,System.Collections.Generic.List`1<UnityEngine.MeshFilter>,System.Boolean,UnityEngine.LayerMask)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetAllMeshFilter_m96C494F9519996A5456BF827C56348528A902976 (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___transform0, bool ___includeChildren1, List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___meshFilterList2, bool ___isStatic3, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___layerMask4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetAllMeshFilter_m96C494F9519996A5456BF827C56348528A902976 (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, bool ___1_includeChildren, List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___2_meshFilterList, bool ___3_isStatic, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___4_layerMask, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::get_isStatic()
@@ -1650,7 +1828,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_isStatic_mB88ADDE2E0D3544
 // System.Int32 UnityEngine.GameObject::get_layer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.LayerMask::op_Implicit(UnityEngine.LayerMask)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D (LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___mask0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D (LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___0_mask, const RuntimeMethod* method) ;
 // T[] UnityEngine.Component::GetComponents<UnityEngine.MeshFilter>()
 inline MeshFilterU5BU5D_tCE3B457E6F7ECE5ECEE9E09150642150448685BA* Component_GetComponents_TisMeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5_m35299BFF8173B59B694DE1E24B53697CE7E65128 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -1661,9 +1839,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D
 // System.Boolean UnityEngine.Mesh::get_isReadable()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Mesh_get_isReadable_m3309900DB9B66BD321128839E6801722D15CD1E0 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.MeshFilter>::Add(T)
-inline void List_1_Add_m2DCDE5FFA7020B15019DC9EB26D48CB88BE23252_inline (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m2DCDE5FFA7020B15019DC9EB26D48CB88BE23252_inline (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.MeshFilter>::get_Count()
 inline int32_t List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_inline (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, const RuntimeMethod* method)
@@ -1671,59 +1849,59 @@ inline int32_t List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_inline
 	return ((  int32_t (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // T System.Collections.Generic.List`1<UnityEngine.MeshFilter>::get_Item(System.Int32)
-inline MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* List_1_get_Item_m1DDAF5804C36E171686D1F31AEDD7D32876E8348 (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, int32_t ___index0, const RuntimeMethod* method)
+inline MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* List_1_get_Item_m1DDAF5804C36E171686D1F31AEDD7D32876E8348 (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
-	return ((  MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+	return ((  MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
 }
 // System.Void UnityEngine.CombineInstance::set_mesh(UnityEngine.Mesh)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CombineInstance_set_mesh_mB74AB585ED11B0D8B619F7ADC8B55286DD50A1B5 (CombineInstance_t77DDB096E69D0AD2690C57046C5ACD1239451BBE* __this, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CombineInstance_set_mesh_mB74AB585ED11B0D8B619F7ADC8B55286DD50A1B5 (CombineInstance_t77DDB096E69D0AD2690C57046C5ACD1239451BBE* __this, Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 // UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::Scale(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_Scale_m95902D2A889FD6E7B04BBEAE6FAE5D6D8A88E642 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_Scale_m95902D2A889FD6E7B04BBEAE6FAE5D6D8A88E642 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // UnityEngine.Matrix4x4 UnityEngine.Transform::get_localToWorldMatrix()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Transform_get_localToWorldMatrix_m5D35188766856338DD21DE756F42277C21719E6D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::op_Multiply(UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162 (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___lhs0, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___rhs1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 Matrix4x4_op_Multiply_m75E91775655DCA8DFC8EDE0AB787285BB3935162 (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___0_lhs, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_rhs, const RuntimeMethod* method) ;
 // System.Void UnityEngine.CombineInstance::set_transform(UnityEngine.Matrix4x4)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CombineInstance_set_transform_m9C9911DE1F613A1B949DF89CD46B0E8F742F3BEE (CombineInstance_t77DDB096E69D0AD2690C57046C5ACD1239451BBE* __this, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CombineInstance_set_transform_m9C9911DE1F613A1B949DF89CD46B0E8F742F3BEE (CombineInstance_t77DDB096E69D0AD2690C57046C5ACD1239451BBE* __this, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Mesh::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh__ctor_m5A9AECEDDAFFD84811ED8928012BDE97A9CEBD00 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Object::set_name(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_set_name_mC79E6DC8FFD72479C90F0C4CC7F42A0FEAF5AE47 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Mesh::set_indexFormat(UnityEngine.Rendering.IndexFormat)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh_set_indexFormat_mCCC7837A0916FA7A272159DA6AF984B0022488F4 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh_set_indexFormat_mCCC7837A0916FA7A272159DA6AF984B0022488F4 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Mesh::CombineMeshes(UnityEngine.CombineInstance[],System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh_CombineMeshes_m23172B6FF99A4464AA5F4A497209121978A165D5 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, CombineInstanceU5BU5D_tF7855763C164A0775855FF142E891E7BE0ABE093* ___combine0, bool ___mergeSubMeshes1, bool ___useMatrices2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Mesh_CombineMeshes_m23172B6FF99A4464AA5F4A497209121978A165D5 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, CombineInstanceU5BU5D_tF7855763C164A0775855FF142E891E7BE0ABE093* ___0_combine, bool ___1_mergeSubMeshes, bool ___2_useMatrices, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.MeshFilter>::.ctor()
 inline void List_1__ctor_mE87D19792408B0284962521E4F189E704CEE1A8C (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // UnityEngine.LayerMask UnityEngine.LayerMask::op_Implicit(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222 (int32_t ___intVal0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB LayerMask_op_Implicit_m01C8996A2CB2085328B9C33539C43139660D8222 (int32_t ___0_intVal, const RuntimeMethod* method) ;
 // UnityEngine.Mesh PXR_Audio_Spatializer_SceneGeometry::CombineMeshes(System.Collections.Generic.List`1<UnityEngine.MeshFilter>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* PXR_Audio_Spatializer_SceneGeometry_CombineMeshes_mB74A76D83A46D6A1406B8FC7B21475B72649D4AA (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___meshFilterList0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* PXR_Audio_Spatializer_SceneGeometry_CombineMeshes_mB74A76D83A46D6A1406B8FC7B21475B72649D4AA (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___0_meshFilterList, const RuntimeMethod* method) ;
 // UnityEngine.Vector3[] UnityEngine.Mesh::get_vertices()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* Mesh_get_vertices_mA3577F1B08EDDD54E26AEB3F8FFE4EC247D2ABB9 (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, const RuntimeMethod* method) ;
 // System.Single[] PXR_Audio_Spatializer_SceneGeometry::FlattenVerticesBuffer(UnityEngine.Vector3[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* PXR_Audio_Spatializer_SceneGeometry_FlattenVerticesBuffer_m4D854FE84EC191191B1AFA7E78C8B4B2FEFA1BD8 (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___verticesBuffer0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* PXR_Audio_Spatializer_SceneGeometry_FlattenVerticesBuffer_m4D854FE84EC191191B1AFA7E78C8B4B2FEFA1BD8 (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___0_verticesBuffer, const RuntimeMethod* method) ;
 // System.Int32[] UnityEngine.Mesh::get_triangles()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* Mesh_get_triangles_m33E39B4A383CC613C760FA7E297AC417A433F24B (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* __this, const RuntimeMethod* method) ;
 // PXR_Audio_Spatializer_SceneMaterial PXR_Audio_Spatializer_SceneGeometry::get_Material()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PXR_Audio_Spatializer_SceneMaterial_t5ADBA43D586195CE87E91E4793E0F7D7D93D8C83* PXR_Audio_Spatializer_SceneGeometry_get_Material_m9AF67E0552537A7C2B382EF18FF5FCF6F81186CD (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitMeshAndMaterialFactor(System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMeshAndMaterialFactor_mACE6829D79C3F3F145E7D8BA854790889F6C7638 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices0, int32_t ___verticesCount1, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices2, int32_t ___indicesCount3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor4, float ___scatteringFactor5, float ___transmissionFactor6, int32_t* ___geometryId7, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMeshAndMaterialFactor_mACE6829D79C3F3F145E7D8BA854790889F6C7638 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_vertices, int32_t ___1_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_indices, int32_t ___3_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_absorptionFactor, float ___5_scatteringFactor, float ___6_transmissionFactor, int32_t* ___7_geometryId, const RuntimeMethod* method) ;
 // System.String UnityEngine.Object::get_name()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogFormat(System.String,System.Object[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7 (String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogFormat_mD555556327B42AA3482D077EFAEB16B0AFDF72C7 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Transform::get_rotation()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_localScale()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Gizmos::DrawWireMesh(UnityEngine.Mesh,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawWireMesh_m742B67F2113E1DEE8F8416C62AB700E2D76726DF (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___mesh0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___position1, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation2, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___scale3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gizmos_DrawWireMesh_m742B67F2113E1DEE8F8416C62AB700E2D76726DF (Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___0_mesh, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___3_scale, const RuntimeMethod* method) ;
 // System.Boolean PXR_Audio_Spatializer_SceneGeometry::get_isStaticMeshBaked()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PXR_Audio_Spatializer_SceneGeometry_get_isStaticMeshBaked_mFB26905D33FBA55B35D22709ADC8F086FB90E81E (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Gizmos::get_color()
@@ -1737,99 +1915,99 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR PXR_Audio_Spatializer_Context_t53D44235FD7864
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.String PXR_Audio.Spatializer.ApiUnityImpl::GetVersionImport(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4D7104C338C47AFCA8585A8DF335F8498E64A (int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4D7104C338C47AFCA8585A8DF335F8498E64A (int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CreateContextImport(System.IntPtr&,PXR_Audio.Spatializer.RenderingMode,System.UInt32,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContextImport_mE2DA0933509C046253B2CED514C4659454DC117E (intptr_t* ___ctx0, int32_t ___mode1, uint32_t ___framesPerBuffer2, uint32_t ___sampleRate3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContextImport_mE2DA0933509C046253B2CED514C4659454DC117E (intptr_t* ___0_ctx, int32_t ___1_mode, uint32_t ___2_framesPerBuffer, uint32_t ___3_sampleRate, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::InitializeContextImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContextImport_mC5C62793E5E4176E137F471A5C443243BBDB1FD0 (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContextImport_mC5C62793E5E4176E137F471A5C443243BBDB1FD0 (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMeshImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshImport_mD102C291BB2F8527E58A482F78741BCE65737932 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshImport_mD102C291BB2F8527E58A482F78741BCE65737932 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMeshAndMaterialFactorImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactorImport_mFCB8B8EA6E548756C2EC8197504764020FFA600F (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactorImport_mFCB8B8EA6E548756C2EC8197504764020FFA600F (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetAbsorptionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactorImport_mD676D85C6B241952CAB15BAC118F4A61646C4E6D (int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactorImport_mD676D85C6B241952CAB15BAC118F4A61646C4E6D (int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetScatteringFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactorImport_m48A19551CD60102C652FBDADA1998C8933A8CA97 (int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactorImport_m48A19551CD60102C652FBDADA1998C8933A8CA97 (int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetTransmissionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactorImport_mAE071EC135F8B1173E244E08C9C3B14CE5F8265E (int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactorImport_mAE071EC135F8B1173E244E08C9C3B14CE5F8265E (int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CommitSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitSceneImport_m31759A3D80DACEA16D3BB52F1CD110DDA73291F9 (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitSceneImport_m31759A3D80DACEA16D3BB52F1CD110DDA73291F9 (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceImport(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceImport_m14CCC235469EBBB4AEA7BF7280E1AA76E19DF167 (intptr_t ___ctx0, int32_t ___sourceMode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, int32_t* ___sourceId3, bool ___isAsync4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceImport_m14CCC235469EBBB4AEA7BF7280E1AA76E19DF167 (intptr_t ___0_ctx, int32_t ___1_sourceMode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, int32_t* ___3_sourceId, bool ___4_isAsync, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithOrientationImport(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientationImport_m79E407FA770110662032A7B32EC7C2DE5F2A680E (intptr_t ___ctx0, int32_t ___mode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up4, float ___radius5, int32_t* ___sourceId6, bool ___isAsync7, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientationImport_m79E407FA770110662032A7B32EC7C2DE5F2A680E (intptr_t ___0_ctx, int32_t ___1_mode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_up, float ___5_radius, int32_t* ___6_sourceId, bool ___7_isAsync, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithConfigImport(System.IntPtr,PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfigImport_m63348636968AE3BFA917332B21C5D014E84E4CBE (intptr_t ___ctx0, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig1, int32_t* ___sourceId2, bool ___isAsync3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfigImport_m63348636968AE3BFA917332B21C5D014E84E4CBE (intptr_t ___0_ctx, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___1_sourceConfig, int32_t* ___2_sourceId, bool ___3_isAsync, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceAttenuationModeImport(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationModeImport_mD96101B13996BD6603CE601663E0D309D2AC8231 (intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback3, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationModeImport_mD96101B13996BD6603CE601663E0D309D2AC8231 (intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___4_indirectDistanceAttenuationCallback, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceRangeImport(System.IntPtr,System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRangeImport_mE88063D8291F5022AF5035DED6747B1867B82BB0 (intptr_t ___ctx0, int32_t ___sourceId1, float ___rangeMin2, float ___rangeMax3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRangeImport_mE88063D8291F5022AF5035DED6747B1867B82BB0 (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_rangeMin, float ___3_rangeMax, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::RemoveSourceImport(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSourceImport_m46F25D1FBA3B56C1EE931200A73C7E6348B29712 (intptr_t ___ctx0, int32_t ___sourceId1, bool ___is_async2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSourceImport_m46F25D1FBA3B56C1EE931200A73C7E6348B29712 (intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_is_async, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitSourceBufferImport(System.IntPtr,System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBufferImport_mAB83ED2E459919437E71E5E41803909D2B97BB74 (intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr2, uint32_t ___numFrames3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBufferImport_mAB83ED2E459919437E71E5E41803909D2B97BB74 (intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_inputBufferPtr, uint32_t ___3_numFrames, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitAmbisonicChannelBufferImport(System.IntPtr,System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBufferImport_m5F45A40D378E471AED5A16C078ED8CBA19F5D7B8 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicChannelBuffer1, int32_t ___order2, int32_t ___degree3, int32_t ___normType4, float ___gain5, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBufferImport_m5F45A40D378E471AED5A16C078ED8CBA19F5D7B8 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicChannelBuffer, int32_t ___2_order, int32_t ___3_degree, int32_t ___4_normType, float ___5_gain, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitInterleavedAmbisonicBufferImport(System.IntPtr,System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBufferImport_mEC0E16E83BE0164DF914B3B76EE61BCD238E718B (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicBuffer1, int32_t ___ambisonicOrder2, int32_t ___normType3, float ___gain4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBufferImport_mEC0E16E83BE0164DF914B3B76EE61BCD238E718B (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicBuffer, int32_t ___2_ambisonicOrder, int32_t ___3_normType, float ___4_gain, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMatrixInputBufferImport(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBufferImport_m548CE0571D523D176D68FAA38FCDD100B4F62889 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBuffer1, int32_t ___inputChannelIndex2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBufferImport_m548CE0571D523D176D68FAA38FCDD100B4F62889 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBuffer, int32_t ___2_inputChannelIndex, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedBinauralBufferImport(System.IntPtr,System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBufferImport_m33EBA4DFF6E25A9640E0609E658E16DDBE1CA840 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBufferImport_m33EBA4DFF6E25A9640E0609E658E16DDBE1CA840 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarBinauralBufferImport(System.IntPtr,System.Single[][],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBufferImport_mDF13D1CFE95B54AB7B0854DF79938AB7A44B058D (intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBufferImport_mDF13D1CFE95B54AB7B0854DF79938AB7A44B058D (intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedLoudspeakersBufferImport(System.IntPtr,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBufferImport_m2468E743016EBB3387D8705ED572ABF4FE815473 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBufferImport_m2468E743016EBB3387D8705ED572ABF4FE815473 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarLoudspeakersBufferImport(System.IntPtr,System.Single[][],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBufferImport_m8B30F4AF3064A2952A9F597355451EA648674E6A (intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBufferImport_m8B30F4AF3064A2952A9F597355451EA648674E6A (intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSceneImport_mE5D3473C585D73306A3C0F9E9480CF339910C88D (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSceneImport_mE5D3473C585D73306A3C0F9E9480CF339910C88D (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetDopplerEffectImport(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffectImport_mD6E97B1179C87898CAA3A3D8781F3A9F17B4DB9C (intptr_t ___ctx0, int32_t ___sourceId1, bool ___on2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffectImport_mD6E97B1179C87898CAA3A3D8781F3A9F17B4DB9C (intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_on, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetPlaybackModeImport(System.IntPtr,PXR_Audio.Spatializer.PlaybackMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackModeImport_m1365BDD02267856B5F4B2705190462F93FD7659F (intptr_t ___ctx0, int32_t ___playbackMode1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackModeImport_m1365BDD02267856B5F4B2705190462F93FD7659F (intptr_t ___0_ctx, int32_t ___1_playbackMode, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetLoudspeakerArrayImport(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArrayImport_mA9AA83C0AD163D08875DBDA3D944287CE5834CB0 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___positions1, int32_t ___numLoudspeakers2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArrayImport_mA9AA83C0AD163D08875DBDA3D944287CE5834CB0 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_positions, int32_t ___2_numLoudspeakers, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetMappingMatrixImport(System.IntPtr,System.Single[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrixImport_mA15932349B9515B4F84671B76F151BE8938CD501 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___matrix1, int32_t ___numInputChannels2, int32_t ___numOutputChannels3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrixImport_mA15932349B9515B4F84671B76F151BE8938CD501 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_matrix, int32_t ___2_numInputChannels, int32_t ___3_numOutputChannels, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPositionImport(System.IntPtr,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPositionImport_m6B18AF0D7ADBFC63BC98212330420D3C7A16E23B (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPositionImport_m6B18AF0D7ADBFC63BC98212330420D3C7A16E23B (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerOrientationImport(System.IntPtr,System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientationImport_mDBBD4FC62C9FFAA74B71238FD4E3F60B13555D09 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientationImport_mDBBD4FC62C9FFAA74B71238FD4E3F60B13555D09 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPoseImport(System.IntPtr,System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPoseImport_m943D9C833EA12E255AD028A118B609230543C372 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPoseImport_m943D9C833EA12E255AD028A118B609230543C372 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_up, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourcePositionImport(System.IntPtr,System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePositionImport_mAFD86F93AFE1239BC81C4FF7245EA308FCC2816A (intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePositionImport_mAFD86F93AFE1239BC81C4FF7245EA308FCC2816A (intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceGainImport(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGainImport_m802634905D425208478675628448657910EF2164 (intptr_t ___ctx0, int32_t ___sourceId1, float ___gain2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGainImport_m802634905D425208478675628448657910EF2164 (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_gain, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceSizeImport(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSizeImport_mF9C9631C56D860A9BC5EA8175E90E433311DB54B (intptr_t ___ctx0, int32_t ___sourceId1, float ___volumetricSize2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSizeImport_mF9C9631C56D860A9BC5EA8175E90E433311DB54B (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_volumetricSize, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateSourceModeImport(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceModeImport_mC783BD11DD74F571C03B9549B15CF620F69184F5 (intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceModeImport_mC783BD11DD74F571C03B9549B15CF620F69184F5 (intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::DestroyImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_DestroyImport_m09D8466D84C7AA040F2BB36695B460A4E854817A (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_DestroyImport_m09D8466D84C7AA040F2BB36695B460A4E854817A (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogWarning(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Void PXR_Audio.Spatializer.Api::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Api__ctor_mE949CF5885EA222299D3D29088CE0AA7A5EA70F8 (Api_t64D8A27773AE5882B3B45C264344706B43D1141A* __this, const RuntimeMethod* method) ;
 // System.String PXR_Audio.Spatializer.ApiWwiseImpl::GetVersionImport(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE5835DE1B52C33FCC8EEE34E67243E608DF0093A (int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE5835DE1B52C33FCC8EEE34E67243E608DF0093A (int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMeshImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshImport_m1A80028FFBDB3DD3B8F0D3FBDBCF9D452C43E449 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshImport_m1A80028FFBDB3DD3B8F0D3FBDBCF9D452C43E449 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMeshAndMaterialFactorImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactorImport_m555919D2A802B67C73182DBE35C0681EB7151D23 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactorImport_m555919D2A802B67C73182DBE35C0681EB7151D23 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetAbsorptionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactorImport_m4B8D9CE73E937454569CEC75799A05F1345F2257 (int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactorImport_m4B8D9CE73E937454569CEC75799A05F1345F2257 (int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetScatteringFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactorImport_mC8AFF489150A9A17DF00EC3C8A0E53D6FD31D652 (int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactorImport_mC8AFF489150A9A17DF00EC3C8A0E53D6FD31D652 (int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetTransmissionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactorImport_m86B6C4306CE0FE9897F3C196C6B8AA87D2451FF0 (int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactorImport_m86B6C4306CE0FE9897F3C196C6B8AA87D2451FF0 (int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::CommitSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitSceneImport_mC705DF549F87594A577BF150BC7182DC4C234E8A (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitSceneImport_mC705DF549F87594A577BF150BC7182DC4C234E8A (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::UpdateSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSceneImport_m062EBD1274154A8B19C083101732080C3EEAC305 (intptr_t ___ctx0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSceneImport_m062EBD1274154A8B19C083101732080C3EEAC305 (intptr_t ___0_ctx, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetListenerPoseImport(System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPoseImport_m0C0E060E94F5537E09123CBA303CF3FA6A78FED8 (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPoseImport_m0C0E060E94F5537E09123CBA303CF3FA6A78FED8 (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) ;
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::ResetContextImported()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_ResetContextImported_m93C35292CA8E4CFC5077BC136CC849E62680AAED (const RuntimeMethod* method) ;
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -2374,7 +2552,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener_Upda
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioListener::OnAudioFilterRead(System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener_OnAudioFilterRead_m6590F443A2062E66C388AD6CEDEF9F7EA706FD16 (PXR_Audio_Spatializer_AudioListener_tB8BC537F83671897EB33F0365DDE29F5D0581EDF* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___data0, int32_t ___channels1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioListener_OnAudioFilterRead_m6590F443A2062E66C388AD6CEDEF9F7EA706FD16 (PXR_Audio_Spatializer_AudioListener_tB8BC537F83671897EB33F0365DDE29F5D0581EDF* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_data, int32_t ___1_channels, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2433,10 +2611,10 @@ IL_0032:
 		__this->___isAudioDSPInProgress_9 = (bool)1;
 		// context.GetInterleavedBinauralBuffer(data, (uint)(data.Length / channels), true);
 		PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* L_7 = __this->___context_5;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = ___data0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = ___0_data;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = ___0_data;
 		NullCheck(L_9);
-		int32_t L_10 = ___channels1;
+		int32_t L_10 = ___1_channels;
 		NullCheck(L_7);
 		int32_t L_11;
 		L_11 = PXR_Audio_Spatializer_Context_GetInterleavedBinauralBuffer_mCDA1C70D1EB53F3277826CC7DF1BA03E42181DF2(L_7, L_8, ((int32_t)(((int32_t)(((RuntimeArray*)L_9)->max_length))/L_10)), (bool)1, NULL);
@@ -2889,14 +3067,14 @@ IL_0024:
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetGainDB(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGainDB_mFD20DA89E4F7DE0D7A50946F3DAE64AD24119B19 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___gainDB0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGainDB_mFD20DA89E4F7DE0D7A50946F3DAE64AD24119B19 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_gainDB, const RuntimeMethod* method) 
 {
 	{
 		// sourceGainDB = gainDB;
-		float L_0 = ___gainDB0;
+		float L_0 = ___0_gainDB;
 		__this->___sourceGainDB_4 = L_0;
 		// sourceGainAmplitude = DB2Mag(gainDB);
-		float L_1 = ___gainDB0;
+		float L_1 = ___0_gainDB;
 		float L_2;
 		L_2 = PXR_Audio_Spatializer_AudioSource_DB2Mag_m2BF91D11BCD36F0AA2AE76B9C4BB0C0B85A198BD(__this, L_1, NULL);
 		__this->___sourceGainAmplitude_5 = L_2;
@@ -2907,14 +3085,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGai
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetGainAmplitude(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGainAmplitude_mF22ED5477D44CA50C2F2001B89C5B29EED8CA5E1 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___gainAmplitude0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGainAmplitude_mF22ED5477D44CA50C2F2001B89C5B29EED8CA5E1 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_gainAmplitude, const RuntimeMethod* method) 
 {
 	{
 		// sourceGainAmplitude = gainAmplitude;
-		float L_0 = ___gainAmplitude0;
+		float L_0 = ___0_gainAmplitude;
 		__this->___sourceGainAmplitude_5 = L_0;
 		// sourceGainDB = Mag2DB(gainAmplitude);
-		float L_1 = ___gainAmplitude0;
+		float L_1 = ___0_gainAmplitude;
 		float L_2;
 		L_2 = PXR_Audio_Spatializer_AudioSource_Mag2DB_m65BFBA07D2EFBCDB2337C5334CB9D353D4AB2EA7(__this, L_1, NULL);
 		__this->___sourceGainDB_4 = L_2;
@@ -2925,11 +3103,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetGai
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetSize(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetSize_mF81863BBBEAD1473A53E807890AE51DD2E79C1BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___radius0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetSize_mF81863BBBEAD1473A53E807890AE51DD2E79C1BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_radius, const RuntimeMethod* method) 
 {
 	{
 		// sourceSize = radius;
-		float L_0 = ___radius0;
+		float L_0 = ___0_radius;
 		__this->___sourceSize_7 = L_0;
 		// sourceSizeChanged = true;
 		__this->___sourceSizeChanged_8 = (bool)1;
@@ -2938,11 +3116,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetSiz
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetDopplerStatus(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetDopplerStatus_mC53140A09DDB760375F0C64139E208C3023165D3 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, bool ___on0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetDopplerStatus_mC53140A09DDB760375F0C64139E208C3023165D3 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, bool ___0_on, const RuntimeMethod* method) 
 {
 	{
 		// enableDoppler = on;
-		bool L_0 = ___on0;
+		bool L_0 = ___0_on;
 		__this->___enableDoppler_9 = L_0;
 		// enableDopplerChanged = true;
 		__this->___enableDopplerChanged_10 = (bool)1;
@@ -2951,11 +3129,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetDop
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetMinAttenuationRange(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetMinAttenuationRange_mD524B805ACAEE5ED0DDDAB1496B1AD61C7B6B5C2 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___min0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetMinAttenuationRange_mD524B805ACAEE5ED0DDDAB1496B1AD61C7B6B5C2 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_min, const RuntimeMethod* method) 
 {
 	{
 		// minAttenuationDistance = min;
-		float L_0 = ___min0;
+		float L_0 = ___0_min;
 		__this->___minAttenuationDistance_12 = L_0;
 		// attenuationDistanceChanged = true;
 		__this->___attenuationDistanceChanged_14 = (bool)1;
@@ -2964,11 +3142,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetMin
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::SetMaxAttenuationRange(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetMaxAttenuationRange_mE95DDFCE447D45BF8C69A3F34A1EAE642D3EDE7E (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___max0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_SetMaxAttenuationRange_mE95DDFCE447D45BF8C69A3F34A1EAE642D3EDE7E (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_max, const RuntimeMethod* method) 
 {
 	{
 		// maxAttenuationDistance = max;
-		float L_0 = ___max0;
+		float L_0 = ___0_max;
 		__this->___maxAttenuationDistance_13 = L_0;
 		// attenuationDistanceChanged = true;
 		__this->___attenuationDistanceChanged_14 = (bool)1;
@@ -3338,7 +3516,7 @@ IL_0084:
 	}
 }
 // System.Void PXR_Audio_Spatializer_AudioSource::OnAudioFilterRead(System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_OnAudioFilterRead_m945AB5082985FE5DD43A3A211D6AF0614357E14B (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___data0, int32_t ___channels1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_AudioSource_OnAudioFilterRead_m945AB5082985FE5DD43A3A211D6AF0614357E14B (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_data, int32_t ___1_channels, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3399,7 +3577,7 @@ IL_002c:
 IL_0030:
 	{
 		// data[i] = 0.0f;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___0_data;
 		int32_t L_7 = V_2;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (float)(0.0f));
@@ -3412,7 +3590,7 @@ IL_003c:
 	{
 		// for (int i = 0; i < data.Length; ++i)
 		int32_t L_9 = V_2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_10 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_10 = ___0_data;
 		NullCheck(L_10);
 		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
 		{
@@ -3429,15 +3607,15 @@ IL_0043:
 		// isAudioDSPInProgress = true;
 		__this->___isAudioDSPInProgress_16 = (bool)1;
 		// int numFrames = data.Length / channels;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_11 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_11 = ___0_data;
 		NullCheck(L_11);
-		int32_t L_12 = ___channels1;
+		int32_t L_12 = ___1_channels;
 		V_0 = ((int32_t)(((int32_t)(((RuntimeArray*)L_11)->max_length))/L_12));
 		// float oneOverChannelsF = 1.0f / ((float)channels);
-		int32_t L_13 = ___channels1;
+		int32_t L_13 = ___1_channels;
 		V_1 = ((float)((1.0f)/((float)L_13)));
 		// if (channels > 1)
-		int32_t L_14 = ___channels1;
+		int32_t L_14 = ___1_channels;
 		if ((((int32_t)L_14) <= ((int32_t)1)))
 		{
 			goto IL_0094;
@@ -3462,9 +3640,9 @@ IL_006d:
 	{
 		// sample += data[frame * channels + channel];
 		float L_15 = V_4;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_16 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_16 = ___0_data;
 		int32_t L_17 = V_3;
-		int32_t L_18 = ___channels1;
+		int32_t L_18 = ___1_channels;
 		int32_t L_19 = V_5;
 		NullCheck(L_16);
 		int32_t L_20 = ((int32_t)il2cpp_codegen_add(((int32_t)il2cpp_codegen_multiply(L_17, L_18)), L_19));
@@ -3479,7 +3657,7 @@ IL_0080:
 	{
 		// for (int channel = 0; channel < channels; ++channel)
 		int32_t L_23 = V_5;
-		int32_t L_24 = ___channels1;
+		int32_t L_24 = ___1_channels;
 		if ((((int32_t)L_23) < ((int32_t)L_24)))
 		{
 			goto IL_006d;
@@ -3487,7 +3665,7 @@ IL_0080:
 	}
 	{
 		// data[frame] = sample * oneOverChannelsF;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_25 = ___0_data;
 		int32_t L_26 = V_3;
 		float L_27 = V_4;
 		float L_28 = V_1;
@@ -3515,7 +3693,7 @@ IL_0094:
 		PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* L_32;
 		L_32 = PXR_Audio_Spatializer_AudioSource_get_Context_m7C93FA1CFB084128D95714985128F19E09CC116B(__this, NULL);
 		int32_t L_33 = __this->___sourceId_19;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_34 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_34 = ___0_data;
 		int32_t L_35 = V_0;
 		NullCheck(L_32);
 		int32_t L_36;
@@ -3528,7 +3706,7 @@ IL_0094:
 IL_00ad:
 	{
 		// data[i] = 0.0f;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_37 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_37 = ___0_data;
 		int32_t L_38 = V_6;
 		NullCheck(L_37);
 		(L_37)->SetAt(static_cast<il2cpp_array_size_t>(L_38), (float)(0.0f));
@@ -3541,7 +3719,7 @@ IL_00bc:
 	{
 		// for (int i = 0; i < data.Length; ++i)
 		int32_t L_40 = V_6;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_41 = ___data0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_41 = ___0_data;
 		NullCheck(L_41);
 		if ((((int32_t)L_40) < ((int32_t)((int32_t)(((RuntimeArray*)L_41)->max_length)))))
 		{
@@ -3556,22 +3734,22 @@ IL_00bc:
 	}
 }
 // System.Single PXR_Audio_Spatializer_AudioSource::DB2Mag(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_DB2Mag_m2BF91D11BCD36F0AA2AE76B9C4BB0C0B85A198BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___db0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_DB2Mag_m2BF91D11BCD36F0AA2AE76B9C4BB0C0B85A198BD (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_db, const RuntimeMethod* method) 
 {
 	{
 		// return Mathf.Pow(10.0f, db / 20.0f);
-		float L_0 = ___db0;
+		float L_0 = ___0_db;
 		float L_1;
 		L_1 = powf((10.0f), ((float)(L_0/(20.0f))));
 		return L_1;
 	}
 }
 // System.Single PXR_Audio_Spatializer_AudioSource::Mag2DB(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_Mag2DB_m65BFBA07D2EFBCDB2337C5334CB9D353D4AB2EA7 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___mag0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PXR_Audio_Spatializer_AudioSource_Mag2DB_m65BFBA07D2EFBCDB2337C5334CB9D353D4AB2EA7 (PXR_Audio_Spatializer_AudioSource_t6C502AC3BBD81DF4AB834C4162A05F7851DEA86F* __this, float ___0_mag, const RuntimeMethod* method) 
 {
 	{
 		// return 20 * Mathf.Log10(mag);
-		float L_0 = ___mag0;
+		float L_0 = ___0_mag;
 		float L_1;
 		L_1 = log10f(L_0);
 		return ((float)il2cpp_codegen_multiply((20.0f), L_1));
@@ -3903,7 +4081,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_get_UUI
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitMesh(System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMesh_m3AA395F787AB8F802DD5DD5B42AA20F6B1097601 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices0, int32_t ___verticesCount1, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices2, int32_t ___indicesCount3, int32_t ___material4, int32_t* ___geometryId5, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMesh_m3AA395F787AB8F802DD5DD5B42AA20F6B1097601 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_vertices, int32_t ___1_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_indices, int32_t ___3_indicesCount, int32_t ___4_material, int32_t* ___5_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitMesh(
@@ -3917,12 +4095,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___vertices0;
-		int32_t L_3 = ___verticesCount1;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = ___indices2;
-		int32_t L_5 = ___indicesCount3;
-		int32_t L_6 = ___material4;
-		int32_t* L_7 = ___geometryId5;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_vertices;
+		int32_t L_3 = ___1_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = ___2_indices;
+		int32_t L_5 = ___3_indicesCount;
+		int32_t L_6 = ___4_material;
+		int32_t* L_7 = ___5_geometryId;
 		NullCheck(L_0);
 		int32_t L_8;
 		L_8 = VirtualFuncInvoker7< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*, int32_t, int32_t, int32_t* >::Invoke(7 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitMesh(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&) */, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7);
@@ -3930,7 +4108,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitMeshAndMaterialFactor(System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMeshAndMaterialFactor_mACE6829D79C3F3F145E7D8BA854790889F6C7638 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices0, int32_t ___verticesCount1, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices2, int32_t ___indicesCount3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor4, float ___scatteringFactor5, float ___transmissionFactor6, int32_t* ___geometryId7, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMeshAndMaterialFactor_mACE6829D79C3F3F145E7D8BA854790889F6C7638 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_vertices, int32_t ___1_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___2_indices, int32_t ___3_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_absorptionFactor, float ___5_scatteringFactor, float ___6_transmissionFactor, int32_t* ___7_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitMeshAndMaterialFactor(
@@ -3946,14 +4124,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___vertices0;
-		int32_t L_3 = ___verticesCount1;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = ___indices2;
-		int32_t L_5 = ___indicesCount3;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___absorptionFactor4;
-		float L_7 = ___scatteringFactor5;
-		float L_8 = ___transmissionFactor6;
-		int32_t* L_9 = ___geometryId7;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_vertices;
+		int32_t L_3 = ___1_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_4 = ___2_indices;
+		int32_t L_5 = ___3_indicesCount;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_6 = ___4_absorptionFactor;
+		float L_7 = ___5_scatteringFactor;
+		float L_8 = ___6_transmissionFactor;
+		int32_t* L_9 = ___7_geometryId;
 		NullCheck(L_0);
 		int32_t L_10;
 		L_10 = VirtualFuncInvoker9< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C*, int32_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, float, float, int32_t* >::Invoke(8 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitMeshAndMaterialFactor(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&) */, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, L_9);
@@ -3961,7 +4139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::AddSource(PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSource_m67FC93306D95F2E2CD671A6D4EA04958325190D3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceMode0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, int32_t* ___sourceId2, bool ___isAsync3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSource_m67FC93306D95F2E2CD671A6D4EA04958325190D3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceMode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, int32_t* ___2_sourceId, bool ___3_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.AddSource(
@@ -3973,10 +4151,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceMode0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___position1;
-		int32_t* L_4 = ___sourceId2;
-		bool L_5 = ___isAsync3;
+		int32_t L_2 = ___0_sourceMode;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_position;
+		int32_t* L_4 = ___2_sourceId;
+		bool L_5 = ___3_isAsync;
 		NullCheck(L_0);
 		int32_t L_6;
 		L_6 = VirtualFuncInvoker5< int32_t, intptr_t, int32_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t*, bool >::Invoke(13 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::AddSource(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean) */, L_0, L_1, L_2, L_3, L_4, L_5);
@@ -3984,7 +4162,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::AddSourceWithOrientation(PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithOrientation_m44F3B730E529C849386048BD4157AAB3E0464938 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___mode0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up3, float ___radius4, int32_t* ___sourceId5, bool ___isAsync6, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithOrientation_m44F3B730E529C849386048BD4157AAB3E0464938 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_mode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_up, float ___4_radius, int32_t* ___5_sourceId, bool ___6_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.AddSourceWithOrientation(
@@ -3999,13 +4177,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___mode0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___position1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___front2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___up3;
-		float L_6 = ___radius4;
-		int32_t* L_7 = ___sourceId5;
-		bool L_8 = ___isAsync6;
+		int32_t L_2 = ___0_mode;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___2_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___3_up;
+		float L_6 = ___4_radius;
+		int32_t* L_7 = ___5_sourceId;
+		bool L_8 = ___6_isAsync;
 		NullCheck(L_0);
 		int32_t L_9;
 		L_9 = VirtualFuncInvoker8< int32_t, intptr_t, int32_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, float, int32_t*, bool >::Invoke(14 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::AddSourceWithOrientation(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean) */, L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8);
@@ -4013,16 +4191,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::AddSourceWithConfig(PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithConfig_m99B250A6CD07F026B9ADC9E899058ADA76C00F38 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig0, int32_t* ___sourceId1, bool ___isAsync2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSourceWithConfig_m99B250A6CD07F026B9ADC9E899058ADA76C00F38 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___0_sourceConfig, int32_t* ___1_sourceId, bool ___2_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.AddSourceWithConfig(context, ref sourceConfig, ref sourceId, isAsync);
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* L_2 = ___sourceConfig0;
-		int32_t* L_3 = ___sourceId1;
-		bool L_4 = ___isAsync2;
+		SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* L_2 = ___0_sourceConfig;
+		int32_t* L_3 = ___1_sourceId;
+		bool L_4 = ___2_isAsync;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9*, int32_t*, bool >::Invoke(15 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::AddSourceWithConfig(System.IntPtr,PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean) */, L_0, L_1, L_2, L_3, L_4);
@@ -4030,7 +4208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_AddSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceAttenuationMode(System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceAttenuationMode_m412784BA0D284BC10ACE5C5BBF30CE4CAA3C9EE8 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, int32_t ___mode1, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceAttenuationMode_m412784BA0D284BC10ACE5C5BBF30CE4CAA3C9EE8 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, int32_t ___1_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___2_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_indirectDistanceAttenuationCallback, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetSourceAttenuationMode(context, sourceId, mode,
@@ -4038,10 +4216,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		int32_t L_3 = ___mode1;
-		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_4 = ___directDistanceAttenuationCallback2;
-		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_5 = ___indirectDistanceAttenuationCallback3;
+		int32_t L_2 = ___0_sourceId;
+		int32_t L_3 = ___1_mode;
+		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_4 = ___2_directDistanceAttenuationCallback;
+		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_5 = ___3_indirectDistanceAttenuationCallback;
 		NullCheck(L_0);
 		int32_t L_6;
 		L_6 = VirtualFuncInvoker5< int32_t, intptr_t, int32_t, int32_t, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D*, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* >::Invoke(16 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetSourceAttenuationMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback) */, L_0, L_1, L_2, L_3, L_4, L_5);
@@ -4049,16 +4227,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceRange(System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceRange_mAD2D76262B2DDF0C10BCF8DB25EC926A3C355AC1 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceRange_mAD2D76262B2DDF0C10BCF8DB25EC926A3C355AC1 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetSourceRange(context, sourceId, rangeMin, rangeMax);
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		float L_3 = ___rangeMin1;
-		float L_4 = ___rangeMax2;
+		int32_t L_2 = ___0_sourceId;
+		float L_3 = ___1_rangeMin;
+		float L_4 = ___2_rangeMax;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, int32_t, float, float >::Invoke(17 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetSourceRange(System.IntPtr,System.Int32,System.Single,System.Single) */, L_0, L_1, L_2, L_3, L_4);
@@ -4066,14 +4244,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::RemoveSource(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_RemoveSource_m7FAB5EFBE5EECEC36EDA23D1F8CD8E5D9B0F4289 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_RemoveSource_m7FAB5EFBE5EECEC36EDA23D1F8CD8E5D9B0F4289 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.RemoveSource(context, sourceId);
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
+		int32_t L_2 = ___0_sourceId;
 		NullCheck(L_0);
 		int32_t L_3;
 		L_3 = VirtualFuncInvoker2< int32_t, intptr_t, int32_t >::Invoke(18 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::RemoveSource(System.IntPtr,System.Int32) */, L_0, L_1, L_2);
@@ -4081,7 +4259,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_RemoveS
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitSourceBuffer(System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitSourceBuffer_m04CB3848C6564820A7F0F64992D8C6939E3A80A4 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitSourceBuffer_m04CB3848C6564820A7F0F64992D8C6939E3A80A4 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitSourceBuffer(
@@ -4092,9 +4270,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitS
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___inputBufferPtr1;
-		uint32_t L_4 = ___numFrames2;
+		int32_t L_2 = ___0_sourceId;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_inputBufferPtr;
+		uint32_t L_4 = ___2_numFrames;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, int32_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, uint32_t >::Invoke(19 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitSourceBuffer(System.IntPtr,System.Int32,System.Single[],System.UInt32) */, L_0, L_1, L_2, L_3, L_4);
@@ -4102,7 +4280,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitS
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitAmbisonicChannelBuffer(System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitAmbisonicChannelBuffer_m5DB92F6C2FDB487D5B8087BF09876F6849664D49 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicChannelBuffer0, int32_t ___order1, int32_t ___degree2, int32_t ___normType3, float ___gain4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitAmbisonicChannelBuffer_m5DB92F6C2FDB487D5B8087BF09876F6849664D49 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_ambisonicChannelBuffer, int32_t ___1_order, int32_t ___2_degree, int32_t ___3_normType, float ___4_gain, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitAmbisonicChannelBuffer(
@@ -4115,11 +4293,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitA
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___ambisonicChannelBuffer0;
-		int32_t L_3 = ___order1;
-		int32_t L_4 = ___degree2;
-		int32_t L_5 = ___normType3;
-		float L_6 = ___gain4;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_ambisonicChannelBuffer;
+		int32_t L_3 = ___1_order;
+		int32_t L_4 = ___2_degree;
+		int32_t L_5 = ___3_normType;
+		float L_6 = ___4_gain;
 		NullCheck(L_0);
 		int32_t L_7;
 		L_7 = VirtualFuncInvoker6< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t, int32_t, int32_t, float >::Invoke(20 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitAmbisonicChannelBuffer(System.IntPtr,System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single) */, L_0, L_1, L_2, L_3, L_4, L_5, L_6);
@@ -4127,7 +4305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitA
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitInterleavedAmbisonicBuffer(System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitInterleavedAmbisonicBuffer_m0456457C3D5C7BC45111B65D6D6FB723AB55AA25 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicBuffer0, int32_t ___ambisonicOrder1, int32_t ___normType2, float ___gain3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitInterleavedAmbisonicBuffer_m0456457C3D5C7BC45111B65D6D6FB723AB55AA25 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_ambisonicBuffer, int32_t ___1_ambisonicOrder, int32_t ___2_normType, float ___3_gain, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitInterleavedAmbisonicBuffer(
@@ -4139,10 +4317,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitI
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___ambisonicBuffer0;
-		int32_t L_3 = ___ambisonicOrder1;
-		int32_t L_4 = ___normType2;
-		float L_5 = ___gain3;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_ambisonicBuffer;
+		int32_t L_3 = ___1_ambisonicOrder;
+		int32_t L_4 = ___2_normType;
+		float L_5 = ___3_gain;
 		NullCheck(L_0);
 		int32_t L_6;
 		L_6 = VirtualFuncInvoker5< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t, int32_t, float >::Invoke(21 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitInterleavedAmbisonicBuffer(System.IntPtr,System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single) */, L_0, L_1, L_2, L_3, L_4, L_5);
@@ -4150,7 +4328,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitI
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SubmitMatrixInputBuffer(System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMatrixInputBuffer_m1656EF5C0AD5207034F0D63218F2B5820FAB6511 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBuffer0, int32_t ___inputChannelIndex1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitMatrixInputBuffer_m1656EF5C0AD5207034F0D63218F2B5820FAB6511 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_inputBuffer, int32_t ___1_inputChannelIndex, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SubmitMatrixInputBuffer(
@@ -4160,8 +4338,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___inputBuffer0;
-		int32_t L_3 = ___inputChannelIndex1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_inputBuffer;
+		int32_t L_3 = ___1_inputChannelIndex;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t >::Invoke(22 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SubmitMatrixInputBuffer(System.IntPtr,System.Single[],System.Int32) */, L_0, L_1, L_2, L_3);
@@ -4169,7 +4347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SubmitM
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::GetInterleavedBinauralBuffer(System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedBinauralBuffer_mCDA1C70D1EB53F3277826CC7DF1BA03E42181DF2 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr0, uint32_t ___numFrames1, bool ___isAccumulative2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedBinauralBuffer_mCDA1C70D1EB53F3277826CC7DF1BA03E42181DF2 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_outputBufferPtr, uint32_t ___1_numFrames, bool ___2_isAccumulative, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.GetInterleavedBinauralBuffer(
@@ -4180,9 +4358,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInte
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___outputBufferPtr0;
-		uint32_t L_3 = ___numFrames1;
-		bool L_4 = ___isAccumulative2;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_outputBufferPtr;
+		uint32_t L_3 = ___1_numFrames;
+		bool L_4 = ___2_isAccumulative;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, uint32_t, bool >::Invoke(23 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::GetInterleavedBinauralBuffer(System.IntPtr,System.Single[],System.UInt32,System.Boolean) */, L_0, L_1, L_2, L_3, L_4);
@@ -4190,7 +4368,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInte
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::GetPlanarBinauralBuffer(System.Single[][],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlanarBinauralBuffer_m053EF005386AB304A7F5DACFF551C6E2FFE42B57 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr0, uint32_t ___numFrames1, bool ___isAccumulative2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlanarBinauralBuffer_m053EF005386AB304A7F5DACFF551C6E2FFE42B57 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___0_outputBufferPtr, uint32_t ___1_numFrames, bool ___2_isAccumulative, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.GetPlanarBinauralBuffer(
@@ -4201,9 +4379,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlan
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_2 = ___outputBufferPtr0;
-		uint32_t L_3 = ___numFrames1;
-		bool L_4 = ___isAccumulative2;
+		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_2 = ___0_outputBufferPtr;
+		uint32_t L_3 = ___1_numFrames;
+		bool L_4 = ___2_isAccumulative;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4*, uint32_t, bool >::Invoke(24 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::GetPlanarBinauralBuffer(System.IntPtr,System.Single[][],System.UInt32,System.Boolean) */, L_0, L_1, L_2, L_3, L_4);
@@ -4211,7 +4389,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlan
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::GetInterleavedLoudspeakersBuffer(System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedLoudspeakersBuffer_mA023267E96850177CEEA35BE09D7806C687B2A85 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr0, uint32_t ___numFrames1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInterleavedLoudspeakersBuffer_mA023267E96850177CEEA35BE09D7806C687B2A85 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_outputBufferPtr, uint32_t ___1_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.GetInterleavedLoudspeakersBuffer(
@@ -4221,8 +4399,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInte
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___outputBufferPtr0;
-		uint32_t L_3 = ___numFrames1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_outputBufferPtr;
+		uint32_t L_3 = ___1_numFrames;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, uint32_t >::Invoke(25 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::GetInterleavedLoudspeakersBuffer(System.IntPtr,System.Single[],System.UInt32) */, L_0, L_1, L_2, L_3);
@@ -4230,7 +4408,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetInte
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::GetPlanarLoudspeakersBuffer(System.Single[][],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlanarLoudspeakersBuffer_m8BAFCB471C016DD9FBD721CC7542A66FF329DB5F (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr0, uint32_t ___numFrames1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlanarLoudspeakersBuffer_m8BAFCB471C016DD9FBD721CC7542A66FF329DB5F (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___0_outputBufferPtr, uint32_t ___1_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.GetPlanarLoudspeakersBuffer(
@@ -4240,8 +4418,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlan
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_2 = ___outputBufferPtr0;
-		uint32_t L_3 = ___numFrames1;
+		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_2 = ___0_outputBufferPtr;
+		uint32_t L_3 = ___1_numFrames;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4*, uint32_t >::Invoke(26 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::GetPlanarLoudspeakersBuffer(System.IntPtr,System.Single[][],System.UInt32) */, L_0, L_1, L_2, L_3);
@@ -4249,7 +4427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_GetPlan
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetPlaybackMode(PXR_Audio.Spatializer.PlaybackMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetPlaybackMode_m9B6E3E012383A8BE58E55CFA890BB3913766117F (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___playbackMode0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetPlaybackMode_m9B6E3E012383A8BE58E55CFA890BB3913766117F (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_playbackMode, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetPlaybackMode(
@@ -4258,7 +4436,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetPlay
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___playbackMode0;
+		int32_t L_2 = ___0_playbackMode;
 		NullCheck(L_0);
 		int32_t L_3;
 		L_3 = VirtualFuncInvoker2< int32_t, intptr_t, int32_t >::Invoke(29 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetPlaybackMode(System.IntPtr,PXR_Audio.Spatializer.PlaybackMode) */, L_0, L_1, L_2);
@@ -4266,7 +4444,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetPlay
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetLoudspeakerArray(System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetLoudspeakerArray_m4002F7C7B0B905B8EA2866809CB0281F575C6286 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___positions0, int32_t ___numLoudspeakers1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetLoudspeakerArray_m4002F7C7B0B905B8EA2866809CB0281F575C6286 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_positions, int32_t ___1_numLoudspeakers, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetLoudspeakerArray(
@@ -4276,8 +4454,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetLoud
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___positions0;
-		int32_t L_3 = ___numLoudspeakers1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_positions;
+		int32_t L_3 = ___1_numLoudspeakers;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t >::Invoke(30 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetLoudspeakerArray(System.IntPtr,System.Single[],System.Int32) */, L_0, L_1, L_2, L_3);
@@ -4285,7 +4463,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetLoud
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetMappingMatrix(System.Single[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetMappingMatrix_mB7DBA62EF018D5CCB665708F9D8B96E08688C547 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___matrix0, int32_t ___numInputChannels1, int32_t ___numOutputChannels2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetMappingMatrix_mB7DBA62EF018D5CCB665708F9D8B96E08688C547 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_matrix, int32_t ___1_numInputChannels, int32_t ___2_numOutputChannels, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetMappingMatrix(
@@ -4296,9 +4474,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetMapp
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___matrix0;
-		int32_t L_3 = ___numInputChannels1;
-		int32_t L_4 = ___numOutputChannels2;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_matrix;
+		int32_t L_3 = ___1_numInputChannels;
+		int32_t L_4 = ___2_numOutputChannels;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, int32_t, int32_t >::Invoke(31 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetMappingMatrix(System.IntPtr,System.Single[],System.Int32,System.Int32) */, L_0, L_1, L_2, L_3, L_4);
@@ -4306,7 +4484,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetMapp
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetListenerPosition(System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPosition_mBD461F7AF77AFC2881C77AE667E6E7868F73B7FF (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPosition_mBD461F7AF77AFC2881C77AE667E6E7868F73B7FF (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_position, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetListenerPosition(
@@ -4315,7 +4493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___position0;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_position;
 		NullCheck(L_0);
 		int32_t L_3;
 		L_3 = VirtualFuncInvoker2< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* >::Invoke(32 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetListenerPosition(System.IntPtr,System.Single[]) */, L_0, L_1, L_2);
@@ -4323,7 +4501,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetListenerOrientation(System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerOrientation_m2BF32CF558A67A66E429663E499D507AFD7E9D35 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerOrientation_m2BF32CF558A67A66E429663E499D507AFD7E9D35 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_up, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetListenerOrientation(
@@ -4333,8 +4511,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___front0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___up1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_up;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* >::Invoke(33 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetListenerOrientation(System.IntPtr,System.Single[],System.Single[]) */, L_0, L_1, L_2, L_3);
@@ -4342,7 +4520,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetListenerPose(System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPose_mB46C2F5177C971EBF9F8788F22E1DD729AED05F3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetListenerPose_mB46C2F5177C971EBF9F8788F22E1DD729AED05F3 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetListenerPose(
@@ -4353,9 +4531,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___position0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___front1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___up2;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___0_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___2_up;
 		NullCheck(L_0);
 		int32_t L_5;
 		L_5 = VirtualFuncInvoker4< int32_t, intptr_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* >::Invoke(34 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetListenerPose(System.IntPtr,System.Single[],System.Single[],System.Single[]) */, L_0, L_1, L_2, L_3, L_4);
@@ -4363,7 +4541,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetList
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourcePosition(System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourcePosition_mA1B2630A9F08457B72F29774DE89501EB403A4AE (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourcePosition_mA1B2630A9F08457B72F29774DE89501EB403A4AE (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetSourcePosition(
@@ -4373,8 +4551,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___position1;
+		int32_t L_2 = ___0_sourceId;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___1_position;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, int32_t, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* >::Invoke(35 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetSourcePosition(System.IntPtr,System.Int32,System.Single[]) */, L_0, L_1, L_2, L_3);
@@ -4382,7 +4560,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceGain(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceGain_mA9EFA4263E37F3EA8853E4D355C704455E9052C9 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___gain1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceGain_mA9EFA4263E37F3EA8853E4D355C704455E9052C9 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_gain, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetSourceGain(
@@ -4392,8 +4570,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		float L_3 = ___gain1;
+		int32_t L_2 = ___0_sourceId;
+		float L_3 = ___1_gain;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, int32_t, float >::Invoke(36 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetSourceGain(System.IntPtr,System.Int32,System.Single) */, L_0, L_1, L_2, L_3);
@@ -4401,7 +4579,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetSourceSize(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceSize_mEDE7DA51A2B63EEEE1420BD169F62F35CCA50D6B (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, float ___volumetricSize1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSourceSize_mEDE7DA51A2B63EEEE1420BD169F62F35CCA50D6B (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, float ___1_volumetricSize, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetSourceSize(
@@ -4411,8 +4589,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		float L_3 = ___volumetricSize1;
+		int32_t L_2 = ___0_sourceId;
+		float L_3 = ___1_volumetricSize;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, int32_t, float >::Invoke(37 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetSourceSize(System.IntPtr,System.Int32,System.Single) */, L_0, L_1, L_2, L_3);
@@ -4420,7 +4598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetSour
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::UpdateSourceMode(System.Int32,PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_UpdateSourceMode_m3C68641C44479CA6947B9A276C344B89B2DF2309 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, int32_t ___mode1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_UpdateSourceMode_m3C68641C44479CA6947B9A276C344B89B2DF2309 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, int32_t ___1_mode, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.UpdateSourceMode(
@@ -4430,8 +4608,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_UpdateS
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		int32_t L_3 = ___mode1;
+		int32_t L_2 = ___0_sourceId;
+		int32_t L_3 = ___1_mode;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, int32_t, int32_t >::Invoke(38 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::UpdateSourceMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceMode) */, L_0, L_1, L_2, L_3);
@@ -4439,15 +4617,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_UpdateS
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio_Spatializer_Context::SetDopplerEffect(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetDopplerEffect_m824508019E0E85718BCB237DF303AF5824B2116E (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___sourceId0, bool ___on1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetDopplerEffect_m824508019E0E85718BCB237DF303AF5824B2116E (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_sourceId, bool ___1_on, const RuntimeMethod* method) 
 {
 	{
 		// return PXR_Audio_Spatializer_Api.SetDopplerEffect(context, sourceId, on);
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_0;
 		L_0 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t L_1 = __this->___context_7;
-		int32_t L_2 = ___sourceId0;
-		bool L_3 = ___on1;
+		int32_t L_2 = ___0_sourceId;
+		bool L_3 = ___1_on;
 		NullCheck(L_0);
 		int32_t L_4;
 		L_4 = VirtualFuncInvoker3< int32_t, intptr_t, int32_t, bool >::Invoke(28 /* PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.Api::SetDopplerEffect(System.IntPtr,System.Int32,System.Boolean) */, L_0, L_1, L_2, L_3);
@@ -4455,7 +4633,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t PXR_Audio_Spatializer_Context_SetDopp
 	}
 }
 // System.Void PXR_Audio_Spatializer_Context::OnAudioConfigurationChangedEventHandler(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_OnAudioConfigurationChangedEventHandler_m2A37DF93A73D469A432A7CA406475A3959AD3052 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, bool ___deviceWasChanged0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_OnAudioConfigurationChangedEventHandler_m2A37DF93A73D469A432A7CA406475A3959AD3052 (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, bool ___0_deviceWasChanged, const RuntimeMethod* method) 
 {
 	{
 		// audioConfig = AudioSettings.GetConfiguration();
@@ -4470,7 +4648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_OnAudioCon
 	}
 }
 // System.Void PXR_Audio_Spatializer_Context::SetRenderingQuality(PXR_Audio.Spatializer.RenderingMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_SetRenderingQuality_m903358426A84C32A8C8303F3E8409FBEE7A0B56D (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___quality0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_SetRenderingQuality_m903358426A84C32A8C8303F3E8409FBEE7A0B56D (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_quality, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4482,7 +4660,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_SetRenderi
 	}
 	{
 		// renderingQuality = quality;
-		int32_t L_0 = ___quality0;
+		int32_t L_0 = ___0_quality;
 		__this->___renderingQuality_9 = L_0;
 		// AudioSettings.Reset(AudioSettings.GetConfiguration());
 		AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D L_1;
@@ -4555,7 +4733,7 @@ IL_003b:
 	}
 }
 // System.Void PXR_Audio_Spatializer_Context::StartInternal(PXR_Audio.Spatializer.RenderingMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_StartInternal_mEE34CA8148880BC5B0B2AB45FCA781AB35D543AB (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___quality0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_StartInternal_mEE34CA8148880BC5B0B2AB45FCA781AB35D543AB (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_quality, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4601,7 +4779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_StartInter
 		Api_t64D8A27773AE5882B3B45C264344706B43D1141A* L_2;
 		L_2 = PXR_Audio_Spatializer_Context_get_PXR_Audio_Spatializer_Api_m0B5FAF8866CBF942DEEC8B19AC151A21B6FD04A4(__this, NULL);
 		intptr_t* L_3 = (&__this->___context_7);
-		int32_t L_4 = ___quality0;
+		int32_t L_4 = ___0_quality;
 		AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D* L_5 = (&__this->___audioConfig_11);
 		int32_t L_6 = L_5->___dspBufferSize_1;
 		AudioConfiguration_t4C8585EA98B6559B306B6FAD6A68088555394A5D* L_7 = (&__this->___audioConfig_11);
@@ -5094,7 +5272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_Update_m59
 	}
 }
 // System.Void PXR_Audio_Spatializer_Context::ResetContext(PXR_Audio.Spatializer.RenderingMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_ResetContext_m583D2D2C04649D660724FB327215C0C62D3F94CA (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___quality0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_ResetContext_m583D2D2C04649D660724FB327215C0C62D3F94CA (PXR_Audio_Spatializer_Context_t53D44235FD78649BC7348CCC1EB94BAFA721257F* __this, int32_t ___0_quality, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5113,7 +5291,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_Context_ResetConte
 		// DestroyInternal();
 		PXR_Audio_Spatializer_Context_DestroyInternal_m063774FDE9E5578ADA3BEB196EA9CE0056541066(__this, NULL);
 		// StartInternal(quality);
-		int32_t L_0 = ___quality0;
+		int32_t L_0 = ___0_quality;
 		PXR_Audio_Spatializer_Context_StartInternal_mEE34CA8148880BC5B0B2AB45FCA781AB35D543AB(__this, L_0, NULL);
 		// if (spatializerApiImpl == SpatializerApiImpl.wwise)
 		int32_t L_1 = __this->___spatializerApiImpl_4;
@@ -5352,7 +5530,7 @@ IL_001a:
 	}
 }
 // System.Void PXR_Audio_Spatializer_SceneGeometry::GetAllMeshFilter(UnityEngine.Transform,System.Boolean,System.Collections.Generic.List`1<UnityEngine.MeshFilter>,System.Boolean,UnityEngine.LayerMask)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetAllMeshFilter_m96C494F9519996A5456BF827C56348528A902976 (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___transform0, bool ___includeChildren1, List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___meshFilterList2, bool ___isStatic3, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___layerMask4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetAllMeshFilter_m96C494F9519996A5456BF827C56348528A902976 (PXR_Audio_Spatializer_SceneGeometry_t3895127FE77B20D7F830293CA954EE8FD0A16A53* __this, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___0_transform, bool ___1_includeChildren, List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___2_meshFilterList, bool ___3_isStatic, LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB ___4_layerMask, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5371,7 +5549,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetA
 	MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* V_5 = NULL;
 	{
 		// if (includeChildren)
-		bool L_0 = ___includeChildren1;
+		bool L_0 = ___1_includeChildren;
 		if (!L_0)
 		{
 			goto IL_003e;
@@ -5379,7 +5557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetA
 	}
 	{
 		// int childCount = transform.childCount;
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = ___transform0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = ___0_transform;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = Transform_get_childCount_mE9C29C702AB662CC540CA053EDE48BDAFA35B4B0(L_1, NULL);
@@ -5392,7 +5570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PXR_Audio_Spatializer_SceneGeometry_GetA
 IL_000e:
 	{
 		// var childTransform = transform.GetChild(i);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = ___transform0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3 = ___0_transform;
 		int32_t L_4 = V_1;
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
@@ -5417,10 +5595,10 @@ IL_000e:
 		NullCheck(L_9);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
 		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
-		bool L_11 = ___includeChildren1;
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_12 = ___meshFilterList2;
-		bool L_13 = ___isStatic3;
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_14 = ___layerMask4;
+		bool L_11 = ___1_includeChildren;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_12 = ___2_meshFilterList;
+		bool L_13 = ___3_isStatic;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_14 = ___4_layerMask;
 		PXR_Audio_Spatializer_SceneGeometry_GetAllMeshFilter_m96C494F9519996A5456BF827C56348528A902976(__this, L_10, L_11, L_12, L_13, L_14, NULL);
 	}
 
@@ -5445,28 +5623,28 @@ IL_003a:
 IL_003e:
 	{
 		// if (transform.gameObject.isStatic == isStatic && ((1 << transform.gameObject.layer) & layerMask) != 0)
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = ___transform0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18 = ___0_transform;
 		NullCheck(L_18);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_19;
 		L_19 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_18, NULL);
 		NullCheck(L_19);
 		bool L_20;
 		L_20 = GameObject_get_isStatic_mB88ADDE2E0D3544FACC287E9B49AFA116C07FB66(L_19, NULL);
-		bool L_21 = ___isStatic3;
+		bool L_21 = ___3_isStatic;
 		if ((!(((uint32_t)L_20) == ((uint32_t)L_21))))
 		{
 			goto IL_00bc;
 		}
 	}
 	{
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = ___transform0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_22 = ___0_transform;
 		NullCheck(L_22);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_23;
 		L_23 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_22, NULL);
 		NullCheck(L_23);
 		int32_t L_24;
 		L_24 = GameObject_get_layer_m108902B9C89E9F837CE06B9942AA42307450FEAF(L_23, NULL);
-		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_25 = ___layerMask4;
+		LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB L_25 = ___4_layerMask;
 		int32_t L_26;
 		L_26 = LayerMask_op_Implicit_m7F5A5B9D079281AC445ED39DEE1FCFA9D795810D(L_25, NULL);
 		if (!((int32_t)(((int32_t)(1<<((int32_t)(L_24&((int32_t)31)))))&L_26)))
@@ -5476,7 +5654,7 @@ IL_003e:
 	}
 	{
 		// var meshFilterArray = transform.GetComponents<MeshFilter>();
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27 = ___transform0;
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_27 = ___0_transform;
 		NullCheck(L_27);
 		MeshFilterU5BU5D_tCE3B457E6F7ECE5ECEE9E09150642150448685BA* L_28;
 		L_28 = Component_GetComponents_TisMeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5_m35299BFF8173B59B694DE1E24B53697CE7E65128(L_27, Component_GetComponents_TisMeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5_m35299BFF8173B59B694DE1E24B53697CE7E65128_RuntimeMethod_var);
@@ -5528,7 +5706,7 @@ IL_0076:
 		}
 	}
 	{
-		bool L_39 = ___isStatic3;
+		bool L_39 = ___3_isStatic;
 		if (L_39)
 		{
 			goto IL_00a7;
@@ -5551,7 +5729,7 @@ IL_0076:
 IL_00a7:
 	{
 		// meshFilterList.Add(meshFilter);
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_43 = ___meshFilterList2;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_43 = ___2_meshFilterList;
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_44 = V_5;
 		NullCheck(L_43);
 		List_1_Add_m2DCDE5FFA7020B15019DC9EB26D48CB88BE23252_inline(L_43, L_44, List_1_Add_m2DCDE5FFA7020B15019DC9EB26D48CB88BE23252_RuntimeMethod_var);
@@ -5583,7 +5761,7 @@ IL_00bc:
 	}
 }
 // UnityEngine.Mesh PXR_Audio_Spatializer_SceneGeometry::CombineMeshes(System.Collections.Generic.List`1<UnityEngine.MeshFilter>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* PXR_Audio_Spatializer_SceneGeometry_CombineMeshes_mB74A76D83A46D6A1406B8FC7B21475B72649D4AA (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___meshFilterList0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* PXR_Audio_Spatializer_SceneGeometry_CombineMeshes_mB74A76D83A46D6A1406B8FC7B21475B72649D4AA (List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* ___0_meshFilterList, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5599,7 +5777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D
 	int32_t V_1 = 0;
 	{
 		// CombineInstance[] combines = new CombineInstance[meshFilterList.Count];
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_0 = ___meshFilterList0;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_0 = ___0_meshFilterList;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_inline(L_0, List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_RuntimeMethod_var);
@@ -5616,7 +5794,7 @@ IL_0010:
 		CombineInstanceU5BU5D_tF7855763C164A0775855FF142E891E7BE0ABE093* L_3 = V_0;
 		int32_t L_4 = V_1;
 		NullCheck(L_3);
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_5 = ___meshFilterList0;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_5 = ___0_meshFilterList;
 		int32_t L_6 = V_1;
 		NullCheck(L_5);
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_7;
@@ -5635,7 +5813,7 @@ IL_0010:
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_11), (1.0f), (1.0f), (-1.0f), /*hidden argument*/NULL);
 		Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 L_12;
 		L_12 = Matrix4x4_Scale_m95902D2A889FD6E7B04BBEAE6FAE5D6D8A88E642(L_11, NULL);
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_13 = ___meshFilterList0;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_13 = ___0_meshFilterList;
 		int32_t L_14 = V_1;
 		NullCheck(L_13);
 		MeshFilter_t6D1CE2473A1E45AC73013400585A1163BF66B2F5* L_15;
@@ -5658,7 +5836,7 @@ IL_0067:
 	{
 		// for (int i = 0; i < meshFilterList.Count; i++)
 		int32_t L_20 = V_1;
-		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_21 = ___meshFilterList0;
+		List_1_tF38D1A45CF65189578ADAC12AED34802EB2B8930* L_21 = ___0_meshFilterList;
 		NullCheck(L_21);
 		int32_t L_22;
 		L_22 = List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_inline(L_21, List_1_get_Count_mEA72181DA04067D7475922C8DBA014128689F30B_RuntimeMethod_var);
@@ -5692,7 +5870,7 @@ IL_0067:
 	}
 }
 // System.Single[] PXR_Audio_Spatializer_SceneGeometry::FlattenVerticesBuffer(UnityEngine.Vector3[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* PXR_Audio_Spatializer_SceneGeometry_FlattenVerticesBuffer_m4D854FE84EC191191B1AFA7E78C8B4B2FEFA1BD8 (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___verticesBuffer0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* PXR_Audio_Spatializer_SceneGeometry_FlattenVerticesBuffer_m4D854FE84EC191191B1AFA7E78C8B4B2FEFA1BD8 (Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___0_verticesBuffer, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5708,14 +5886,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52C
 	memset((&V_4), 0, sizeof(V_4));
 	{
 		// float[] vertices = new float[verticesBuffer.Length * 3];
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_0 = ___verticesBuffer0;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_0 = ___0_verticesBuffer;
 		NullCheck(L_0);
 		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C*)SZArrayNew(SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_multiply(((int32_t)(((RuntimeArray*)L_0)->max_length)), 3)));
 		V_0 = L_1;
 		// int index = 0;
 		V_1 = 0;
 		// foreach (Vector3 vertex in verticesBuffer)
-		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2 = ___verticesBuffer0;
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2 = ___0_verticesBuffer;
 		V_2 = L_2;
 		V_3 = 0;
 		goto IL_004a;
@@ -6477,7 +6655,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Api__ctor_mE949CF5885EA222299D3D29088CE0
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.String PXR_Audio.Spatializer.ApiUnityImpl::GetVersionImport(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4D7104C338C47AFCA8585A8DF335F8498E64A (int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4D7104C338C47AFCA8585A8DF335F8498E64A (int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (int32_t*, int32_t*, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6492,9 +6670,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	char* returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_get_version)(___major0, ___minor1, ___patch2);
+	char* returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_get_version)(___0_major, ___1_minor, ___2_patch);
 	#else
-	char* returnValue = il2cppPInvokeFunc(___major0, ___minor1, ___patch2);
+	char* returnValue = il2cppPInvokeFunc(___0_major, ___1_minor, ___2_patch);
 	#endif
 
 	// Marshaling of return value back from native representation
@@ -6508,20 +6686,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersionImport_mFBF4
 	return _returnValue_unmarshaled;
 }
 // System.String PXR_Audio.Spatializer.ApiUnityImpl::GetVersion(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersion_mBE2DCBB6811D3FFEBB19EE4DAE34E0C225BCD4E7 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiUnityImpl_GetVersion_mBE2DCBB6811D3FFEBB19EE4DAE34E0C225BCD4E7 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) 
 {
 	{
 		// return GetVersionImport(ref major, ref minor, ref patch);
-		int32_t* L_0 = ___major0;
-		int32_t* L_1 = ___minor1;
-		int32_t* L_2 = ___patch2;
+		int32_t* L_0 = ___0_major;
+		int32_t* L_1 = ___1_minor;
+		int32_t* L_2 = ___2_patch;
 		String_t* L_3;
 		L_3 = ApiUnityImpl_GetVersionImport_mFBF4D7104C338C47AFCA8585A8DF335F8498E64A(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CreateContextImport(System.IntPtr&,PXR_Audio.Spatializer.RenderingMode,System.UInt32,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContextImport_mE2DA0933509C046253B2CED514C4659454DC117E (intptr_t* ___ctx0, int32_t ___mode1, uint32_t ___framesPerBuffer2, uint32_t ___sampleRate3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContextImport_mE2DA0933509C046253B2CED514C4659454DC117E (intptr_t* ___0_ctx, int32_t ___1_mode, uint32_t ___2_framesPerBuffer, uint32_t ___3_sampleRate, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t*, int32_t, uint32_t, uint32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6536,29 +6714,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContextImport_mE2D
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_create_context)(___ctx0, ___mode1, ___framesPerBuffer2, ___sampleRate3);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_create_context)(___0_ctx, ___1_mode, ___2_framesPerBuffer, ___3_sampleRate);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___mode1, ___framesPerBuffer2, ___sampleRate3);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_mode, ___2_framesPerBuffer, ___3_sampleRate);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CreateContext(System.IntPtr&,PXR_Audio.Spatializer.RenderingMode,System.UInt32,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContext_mEE5503B936F170A0200C539072ECF4DA301DBB49 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t* ___ctx0, int32_t ___mode1, uint32_t ___framesPerBuffer2, uint32_t ___sampleRate3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CreateContext_mEE5503B936F170A0200C539072ECF4DA301DBB49 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t* ___0_ctx, int32_t ___1_mode, uint32_t ___2_framesPerBuffer, uint32_t ___3_sampleRate, const RuntimeMethod* method) 
 {
 	{
 		// return CreateContextImport(ref ctx, mode, framesPerBuffer, sampleRate);
-		intptr_t* L_0 = ___ctx0;
-		int32_t L_1 = ___mode1;
-		uint32_t L_2 = ___framesPerBuffer2;
-		uint32_t L_3 = ___sampleRate3;
+		intptr_t* L_0 = ___0_ctx;
+		int32_t L_1 = ___1_mode;
+		uint32_t L_2 = ___2_framesPerBuffer;
+		uint32_t L_3 = ___3_sampleRate;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_CreateContextImport_mE2DA0933509C046253B2CED514C4659454DC117E(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::InitializeContextImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContextImport_mC5C62793E5E4176E137F471A5C443243BBDB1FD0 (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContextImport_mC5C62793E5E4176E137F471A5C443243BBDB1FD0 (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6573,26 +6751,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContextImport_
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_initialize_context)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_initialize_context)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::InitializeContext(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContext_mB71D877D8DDFD3654792D28E8DEEAAD8F56A387C (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_InitializeContext_mB71D877D8DDFD3654792D28E8DEEAAD8F56A387C (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return InitializeContextImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiUnityImpl_InitializeContextImport_mC5C62793E5E4176E137F471A5C443243BBDB1FD0(L_0, NULL);
 		return L_1;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMeshImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshImport_mD102C291BB2F8527E58A482F78741BCE65737932 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshImport_mD102C291BB2F8527E58A482F78741BCE65737932 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t*, int32_t, int32_t, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6605,48 +6783,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshImport_mD102C2
 	}
 	#endif
 
-	// Marshaling of parameter '___vertices1' to native representation
-	float* ____vertices1_marshaled = NULL;
-	if (___vertices1 != NULL)
+	// Marshaling of parameter '___1_vertices' to native representation
+	float* ____1_vertices_marshaled = NULL;
+	if (___1_vertices != NULL)
 	{
-		____vertices1_marshaled = reinterpret_cast<float*>((___vertices1)->GetAddressAtUnchecked(0));
+		____1_vertices_marshaled = reinterpret_cast<float*>((___1_vertices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___indices3' to native representation
-	int32_t* ____indices3_marshaled = NULL;
-	if (___indices3 != NULL)
+	// Marshaling of parameter '___3_indices' to native representation
+	int32_t* ____3_indices_marshaled = NULL;
+	if (___3_indices != NULL)
 	{
-		____indices3_marshaled = reinterpret_cast<int32_t*>((___indices3)->GetAddressAtUnchecked(0));
+		____3_indices_marshaled = reinterpret_cast<int32_t*>((___3_indices)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_mesh)(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ___material5, ___geometryId6);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_mesh)(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ___5_material, ___6_geometryId);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ___material5, ___geometryId6);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ___5_material, ___6_geometryId);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMesh(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMesh_mCF9B4622D3F7FDACBCADC4364DEBC799FCAA8072 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMesh_mCF9B4622D3F7FDACBCADC4364DEBC799FCAA8072 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitMeshImport(ctx, vertices, verticesCount, indices, indicesCount, material, ref geometryId);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___vertices1;
-		int32_t L_2 = ___verticesCount2;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___indices3;
-		int32_t L_4 = ___indicesCount4;
-		int32_t L_5 = ___material5;
-		int32_t* L_6 = ___geometryId6;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_vertices;
+		int32_t L_2 = ___2_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___3_indices;
+		int32_t L_4 = ___4_indicesCount;
+		int32_t L_5 = ___5_material;
+		int32_t* L_6 = ___6_geometryId;
 		int32_t L_7;
 		L_7 = ApiUnityImpl_SubmitMeshImport_mD102C291BB2F8527E58A482F78741BCE65737932(L_0, L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		return L_7;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMeshAndMaterialFactorImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactorImport_mFCB8B8EA6E548756C2EC8197504764020FFA600F (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactorImport_mFCB8B8EA6E548756C2EC8197504764020FFA600F (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t*, int32_t, float*, float, float, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6659,58 +6837,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFac
 	}
 	#endif
 
-	// Marshaling of parameter '___vertices1' to native representation
-	float* ____vertices1_marshaled = NULL;
-	if (___vertices1 != NULL)
+	// Marshaling of parameter '___1_vertices' to native representation
+	float* ____1_vertices_marshaled = NULL;
+	if (___1_vertices != NULL)
 	{
-		____vertices1_marshaled = reinterpret_cast<float*>((___vertices1)->GetAddressAtUnchecked(0));
+		____1_vertices_marshaled = reinterpret_cast<float*>((___1_vertices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___indices3' to native representation
-	int32_t* ____indices3_marshaled = NULL;
-	if (___indices3 != NULL)
+	// Marshaling of parameter '___3_indices' to native representation
+	int32_t* ____3_indices_marshaled = NULL;
+	if (___3_indices != NULL)
 	{
-		____indices3_marshaled = reinterpret_cast<int32_t*>((___indices3)->GetAddressAtUnchecked(0));
+		____3_indices_marshaled = reinterpret_cast<int32_t*>((___3_indices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___absorptionFactor5' to native representation
-	float* ____absorptionFactor5_marshaled = NULL;
-	if (___absorptionFactor5 != NULL)
+	// Marshaling of parameter '___5_absorptionFactor' to native representation
+	float* ____5_absorptionFactor_marshaled = NULL;
+	if (___5_absorptionFactor != NULL)
 	{
-		____absorptionFactor5_marshaled = reinterpret_cast<float*>((___absorptionFactor5)->GetAddressAtUnchecked(0));
+		____5_absorptionFactor_marshaled = reinterpret_cast<float*>((___5_absorptionFactor)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_mesh_and_material_factor)(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ____absorptionFactor5_marshaled, ___scatteringFactor6, ___transmissionFactor7, ___geometryId8);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_mesh_and_material_factor)(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ____5_absorptionFactor_marshaled, ___6_scatteringFactor, ___7_transmissionFactor, ___8_geometryId);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ____absorptionFactor5_marshaled, ___scatteringFactor6, ___transmissionFactor7, ___geometryId8);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ____5_absorptionFactor_marshaled, ___6_scatteringFactor, ___7_transmissionFactor, ___8_geometryId);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMeshAndMaterialFactor(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactor_m2F48302277E8CE01EE210FB60A82DB3DD03F2350 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMeshAndMaterialFactor_m2F48302277E8CE01EE210FB60A82DB3DD03F2350 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitMeshAndMaterialFactorImport(ctx, vertices, verticesCount, indices, indicesCount,
 		//     absorptionFactor, scatteringFactor, transmissionFactor, ref geometryId);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___vertices1;
-		int32_t L_2 = ___verticesCount2;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___indices3;
-		int32_t L_4 = ___indicesCount4;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___absorptionFactor5;
-		float L_6 = ___scatteringFactor6;
-		float L_7 = ___transmissionFactor7;
-		int32_t* L_8 = ___geometryId8;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_vertices;
+		int32_t L_2 = ___2_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___3_indices;
+		int32_t L_4 = ___4_indicesCount;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___5_absorptionFactor;
+		float L_6 = ___6_scatteringFactor;
+		float L_7 = ___7_transmissionFactor;
+		int32_t* L_8 = ___8_geometryId;
 		int32_t L_9;
 		L_9 = ApiUnityImpl_SubmitMeshAndMaterialFactorImport_mFCB8B8EA6E548756C2EC8197504764020FFA600F(L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		return L_9;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetAbsorptionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactorImport_mD676D85C6B241952CAB15BAC118F4A61646C4E6D (int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactorImport_mD676D85C6B241952CAB15BAC118F4A61646C4E6D (int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6723,36 +6901,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactorImpor
 	}
 	#endif
 
-	// Marshaling of parameter '___absorptionFactor1' to native representation
-	float* ____absorptionFactor1_marshaled = NULL;
-	if (___absorptionFactor1 != NULL)
+	// Marshaling of parameter '___1_absorptionFactor' to native representation
+	float* ____1_absorptionFactor_marshaled = NULL;
+	if (___1_absorptionFactor != NULL)
 	{
-		____absorptionFactor1_marshaled = reinterpret_cast<float*>((___absorptionFactor1)->GetAddressAtUnchecked(0));
+		____1_absorptionFactor_marshaled = reinterpret_cast<float*>((___1_absorptionFactor)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_absorption_factor)(___material0, ____absorptionFactor1_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_absorption_factor)(___0_material, ____1_absorptionFactor_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ____absorptionFactor1_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ____1_absorptionFactor_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetAbsorptionFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactor_m72EE98939F81180C9D5E3D50A0D672C0BAF9A2F9 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetAbsorptionFactor_m72EE98939F81180C9D5E3D50A0D672C0BAF9A2F9 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetAbsorptionFactorImport(material, absorptionFactor);
-		int32_t L_0 = ___material0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___absorptionFactor1;
+		int32_t L_0 = ___0_material;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_absorptionFactor;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_GetAbsorptionFactorImport_mD676D85C6B241952CAB15BAC118F4A61646C4E6D(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetScatteringFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactorImport_m48A19551CD60102C652FBDADA1998C8933A8CA97 (int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactorImport_m48A19551CD60102C652FBDADA1998C8933A8CA97 (int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6767,27 +6945,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactorImpor
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_scattering_factor)(___material0, ___scatteringFactor1);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_scattering_factor)(___0_material, ___1_scatteringFactor);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ___scatteringFactor1);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ___1_scatteringFactor);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetScatteringFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactor_m6C433176599FD6A09677B950866F2D90FA0642E6 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetScatteringFactor_m6C433176599FD6A09677B950866F2D90FA0642E6 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetScatteringFactorImport(material, ref scatteringFactor);
-		int32_t L_0 = ___material0;
-		float* L_1 = ___scatteringFactor1;
+		int32_t L_0 = ___0_material;
+		float* L_1 = ___1_scatteringFactor;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_GetScatteringFactorImport_m48A19551CD60102C652FBDADA1998C8933A8CA97(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetTransmissionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactorImport_mAE071EC135F8B1173E244E08C9C3B14CE5F8265E (int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactorImport_mAE071EC135F8B1173E244E08C9C3B14CE5F8265E (int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6802,27 +6980,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactorImp
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_transmission_factor)(___material0, ___transmissionFactor1);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_transmission_factor)(___0_material, ___1_transmissionFactor);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ___transmissionFactor1);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ___1_transmissionFactor);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetTransmissionFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactor_m0C15133FCCE2BB95CE115466FF558C12F867E3AE (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetTransmissionFactor_m0C15133FCCE2BB95CE115466FF558C12F867E3AE (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetTransmissionFactorImport(material, ref transmissionFactor);
-		int32_t L_0 = ___material0;
-		float* L_1 = ___transmissionFactor1;
+		int32_t L_0 = ___0_material;
+		float* L_1 = ___1_transmissionFactor;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_GetTransmissionFactorImport_mAE071EC135F8B1173E244E08C9C3B14CE5F8265E(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CommitSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitSceneImport_m31759A3D80DACEA16D3BB52F1CD110DDA73291F9 (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitSceneImport_m31759A3D80DACEA16D3BB52F1CD110DDA73291F9 (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6837,26 +7015,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitSceneImport_m31759
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_commit_scene)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_commit_scene)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::CommitScene(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitScene_mE7504E69935D11FE0ECF73466C849BB756ECCBF3 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_CommitScene_mE7504E69935D11FE0ECF73466C849BB756ECCBF3 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return CommitSceneImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiUnityImpl_CommitSceneImport_m31759A3D80DACEA16D3BB52F1CD110DDA73291F9(L_0, NULL);
 		return L_1;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceImport(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceImport_m14CCC235469EBBB4AEA7BF7280E1AA76E19DF167 (intptr_t ___ctx0, int32_t ___sourceMode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, int32_t* ___sourceId3, bool ___isAsync4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceImport_m14CCC235469EBBB4AEA7BF7280E1AA76E19DF167 (intptr_t ___0_ctx, int32_t ___1_sourceMode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, int32_t* ___3_sourceId, bool ___4_isAsync, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float*, int32_t*, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6869,39 +7047,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceImport_m14CCC23
 	}
 	#endif
 
-	// Marshaling of parameter '___position2' to native representation
-	float* ____position2_marshaled = NULL;
-	if (___position2 != NULL)
+	// Marshaling of parameter '___2_position' to native representation
+	float* ____2_position_marshaled = NULL;
+	if (___2_position != NULL)
 	{
-		____position2_marshaled = reinterpret_cast<float*>((___position2)->GetAddressAtUnchecked(0));
+		____2_position_marshaled = reinterpret_cast<float*>((___2_position)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source)(___ctx0, ___sourceMode1, ____position2_marshaled, ___sourceId3, static_cast<int32_t>(___isAsync4));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source)(___0_ctx, ___1_sourceMode, ____2_position_marshaled, ___3_sourceId, static_cast<int32_t>(___4_isAsync));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceMode1, ____position2_marshaled, ___sourceId3, static_cast<int32_t>(___isAsync4));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceMode, ____2_position_marshaled, ___3_sourceId, static_cast<int32_t>(___4_isAsync));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSource(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSource_m7FB44CE0AD07CB578B05144B3ED0A55452AE4AD9 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceMode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, int32_t* ___sourceId3, bool ___isAsync4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSource_m7FB44CE0AD07CB578B05144B3ED0A55452AE4AD9 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceMode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, int32_t* ___3_sourceId, bool ___4_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return AddSourceImport(ctx, sourceMode, position, ref sourceId, isAsync);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceMode1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___position2;
-		int32_t* L_3 = ___sourceId3;
-		bool L_4 = ___isAsync4;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceMode;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_position;
+		int32_t* L_3 = ___3_sourceId;
+		bool L_4 = ___4_isAsync;
 		int32_t L_5;
 		L_5 = ApiUnityImpl_AddSourceImport_m14CCC235469EBBB4AEA7BF7280E1AA76E19DF167(L_0, L_1, L_2, L_3, L_4, NULL);
 		return L_5;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithOrientationImport(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientationImport_m79E407FA770110662032A7B32EC7C2DE5F2A680E (intptr_t ___ctx0, int32_t ___mode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up4, float ___radius5, int32_t* ___sourceId6, bool ___isAsync7, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientationImport_m79E407FA770110662032A7B32EC7C2DE5F2A680E (intptr_t ___0_ctx, int32_t ___1_mode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_up, float ___5_radius, int32_t* ___6_sourceId, bool ___7_isAsync, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float*, float*, float*, float, int32_t*, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6914,56 +7092,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientation
 	}
 	#endif
 
-	// Marshaling of parameter '___position2' to native representation
-	float* ____position2_marshaled = NULL;
-	if (___position2 != NULL)
+	// Marshaling of parameter '___2_position' to native representation
+	float* ____2_position_marshaled = NULL;
+	if (___2_position != NULL)
 	{
-		____position2_marshaled = reinterpret_cast<float*>((___position2)->GetAddressAtUnchecked(0));
+		____2_position_marshaled = reinterpret_cast<float*>((___2_position)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___front3' to native representation
-	float* ____front3_marshaled = NULL;
-	if (___front3 != NULL)
+	// Marshaling of parameter '___3_front' to native representation
+	float* ____3_front_marshaled = NULL;
+	if (___3_front != NULL)
 	{
-		____front3_marshaled = reinterpret_cast<float*>((___front3)->GetAddressAtUnchecked(0));
+		____3_front_marshaled = reinterpret_cast<float*>((___3_front)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___up4' to native representation
-	float* ____up4_marshaled = NULL;
-	if (___up4 != NULL)
+	// Marshaling of parameter '___4_up' to native representation
+	float* ____4_up_marshaled = NULL;
+	if (___4_up != NULL)
 	{
-		____up4_marshaled = reinterpret_cast<float*>((___up4)->GetAddressAtUnchecked(0));
+		____4_up_marshaled = reinterpret_cast<float*>((___4_up)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source_with_orientation)(___ctx0, ___mode1, ____position2_marshaled, ____front3_marshaled, ____up4_marshaled, ___radius5, ___sourceId6, static_cast<int32_t>(___isAsync7));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source_with_orientation)(___0_ctx, ___1_mode, ____2_position_marshaled, ____3_front_marshaled, ____4_up_marshaled, ___5_radius, ___6_sourceId, static_cast<int32_t>(___7_isAsync));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___mode1, ____position2_marshaled, ____front3_marshaled, ____up4_marshaled, ___radius5, ___sourceId6, static_cast<int32_t>(___isAsync7));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_mode, ____2_position_marshaled, ____3_front_marshaled, ____4_up_marshaled, ___5_radius, ___6_sourceId, static_cast<int32_t>(___7_isAsync));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithOrientation(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientation_m769BCD1A092E4403F13ABD2589A575D101B73CD1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___mode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up4, float ___radius5, int32_t* ___sourceId6, bool ___isAsync7, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithOrientation_m769BCD1A092E4403F13ABD2589A575D101B73CD1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_mode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_up, float ___5_radius, int32_t* ___6_sourceId, bool ___7_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return AddSourceWithOrientationImport(ctx, mode, position, front, up, radius, ref sourceId, isAsync);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___mode1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___position2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___front3;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___up4;
-		float L_5 = ___radius5;
-		int32_t* L_6 = ___sourceId6;
-		bool L_7 = ___isAsync7;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_mode;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___3_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___4_up;
+		float L_5 = ___5_radius;
+		int32_t* L_6 = ___6_sourceId;
+		bool L_7 = ___7_isAsync;
 		int32_t L_8;
 		L_8 = ApiUnityImpl_AddSourceWithOrientationImport_m79E407FA770110662032A7B32EC7C2DE5F2A680E(L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, NULL);
 		return L_8;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithConfigImport(System.IntPtr,PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfigImport_m63348636968AE3BFA917332B21C5D014E84E4CBE (intptr_t ___ctx0, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig1, int32_t* ___sourceId2, bool ___isAsync3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfigImport_m63348636968AE3BFA917332B21C5D014E84E4CBE (intptr_t ___0_ctx, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___1_sourceConfig, int32_t* ___2_sourceId, bool ___3_isAsync, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9*, int32_t*, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -6978,29 +7156,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfigImpor
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source_with_config)(___ctx0, ___sourceConfig1, ___sourceId2, static_cast<int32_t>(___isAsync3));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_add_source_with_config)(___0_ctx, ___1_sourceConfig, ___2_sourceId, static_cast<int32_t>(___3_isAsync));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceConfig1, ___sourceId2, static_cast<int32_t>(___isAsync3));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceConfig, ___2_sourceId, static_cast<int32_t>(___3_isAsync));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::AddSourceWithConfig(System.IntPtr,PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfig_m8113212459F7F820C8788E4310E3D7DEC8B22880 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig1, int32_t* ___sourceId2, bool ___isAsync3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_AddSourceWithConfig_m8113212459F7F820C8788E4310E3D7DEC8B22880 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___1_sourceConfig, int32_t* ___2_sourceId, bool ___3_isAsync, const RuntimeMethod* method) 
 {
 	{
 		// return AddSourceWithConfigImport(ctx, ref sourceConfig, ref sourceId, isAsync);
-		intptr_t L_0 = ___ctx0;
-		SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* L_1 = ___sourceConfig1;
-		int32_t* L_2 = ___sourceId2;
-		bool L_3 = ___isAsync3;
+		intptr_t L_0 = ___0_ctx;
+		SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* L_1 = ___1_sourceConfig;
+		int32_t* L_2 = ___2_sourceId;
+		bool L_3 = ___3_isAsync;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_AddSourceWithConfigImport_m63348636968AE3BFA917332B21C5D014E84E4CBE(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceAttenuationModeImport(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationModeImport_mD96101B13996BD6603CE601663E0D309D2AC8231 (intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback3, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationModeImport_mD96101B13996BD6603CE601663E0D309D2AC8231 (intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___4_indirectDistanceAttenuationCallback, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, int32_t, Il2CppMethodPointer, Il2CppMethodPointer);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7013,41 +7191,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationMode
 	}
 	#endif
 
-	// Marshaling of parameter '___directDistanceAttenuationCallback3' to native representation
-	Il2CppMethodPointer ____directDistanceAttenuationCallback3_marshaled = NULL;
-	____directDistanceAttenuationCallback3_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___directDistanceAttenuationCallback3));
+	// Marshaling of parameter '___3_directDistanceAttenuationCallback' to native representation
+	Il2CppMethodPointer ____3_directDistanceAttenuationCallback_marshaled = NULL;
+	____3_directDistanceAttenuationCallback_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___3_directDistanceAttenuationCallback));
 
-	// Marshaling of parameter '___indirectDistanceAttenuationCallback4' to native representation
-	Il2CppMethodPointer ____indirectDistanceAttenuationCallback4_marshaled = NULL;
-	____indirectDistanceAttenuationCallback4_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___indirectDistanceAttenuationCallback4));
+	// Marshaling of parameter '___4_indirectDistanceAttenuationCallback' to native representation
+	Il2CppMethodPointer ____4_indirectDistanceAttenuationCallback_marshaled = NULL;
+	____4_indirectDistanceAttenuationCallback_marshaled = il2cpp_codegen_marshal_delegate(reinterpret_cast<MulticastDelegate_t*>(___4_indirectDistanceAttenuationCallback));
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_attenuation_mode)(___ctx0, ___sourceId1, ___mode2, ____directDistanceAttenuationCallback3_marshaled, ____indirectDistanceAttenuationCallback4_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_attenuation_mode)(___0_ctx, ___1_sourceId, ___2_mode, ____3_directDistanceAttenuationCallback_marshaled, ____4_indirectDistanceAttenuationCallback_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ___mode2, ____directDistanceAttenuationCallback3_marshaled, ____indirectDistanceAttenuationCallback4_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ___2_mode, ____3_directDistanceAttenuationCallback_marshaled, ____4_indirectDistanceAttenuationCallback_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceAttenuationMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationMode_m2B76BB2B3222F6148F874A62DEC6C63E6040093E (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback3, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceAttenuationMode_m2B76BB2B3222F6148F874A62DEC6C63E6040093E (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___4_indirectDistanceAttenuationCallback, const RuntimeMethod* method) 
 {
 	{
 		// return SetSourceAttenuationModeImport(ctx, sourceId, mode, directDistanceAttenuationCallback,
 		//     indirectDistanceAttenuationCallback);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		int32_t L_2 = ___mode2;
-		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_3 = ___directDistanceAttenuationCallback3;
-		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_4 = ___indirectDistanceAttenuationCallback4;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		int32_t L_2 = ___2_mode;
+		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_3 = ___3_directDistanceAttenuationCallback;
+		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* L_4 = ___4_indirectDistanceAttenuationCallback;
 		int32_t L_5;
 		L_5 = ApiUnityImpl_SetSourceAttenuationModeImport_mD96101B13996BD6603CE601663E0D309D2AC8231(L_0, L_1, L_2, L_3, L_4, NULL);
 		return L_5;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceRangeImport(System.IntPtr,System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRangeImport_mE88063D8291F5022AF5035DED6747B1867B82BB0 (intptr_t ___ctx0, int32_t ___sourceId1, float ___rangeMin2, float ___rangeMax3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRangeImport_mE88063D8291F5022AF5035DED6747B1867B82BB0 (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_rangeMin, float ___3_rangeMax, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float, float);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7062,29 +7240,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRangeImport_mE8
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_range)(___ctx0, ___sourceId1, ___rangeMin2, ___rangeMax3);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_range)(___0_ctx, ___1_sourceId, ___2_rangeMin, ___3_rangeMax);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ___rangeMin2, ___rangeMax3);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ___2_rangeMin, ___3_rangeMax);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceRange(System.IntPtr,System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRange_m79EB80D7AF57BA49D4E454DBA2892848AA25DB5D (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___rangeMin2, float ___rangeMax3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceRange_m79EB80D7AF57BA49D4E454DBA2892848AA25DB5D (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_rangeMin, float ___3_rangeMax, const RuntimeMethod* method) 
 {
 	{
 		// return SetSourceRangeImport(ctx, sourceId, rangeMin, rangeMax);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		float L_2 = ___rangeMin2;
-		float L_3 = ___rangeMax3;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		float L_2 = ___2_rangeMin;
+		float L_3 = ___3_rangeMax;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_SetSourceRangeImport_mE88063D8291F5022AF5035DED6747B1867B82BB0(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::RemoveSourceImport(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSourceImport_m46F25D1FBA3B56C1EE931200A73C7E6348B29712 (intptr_t ___ctx0, int32_t ___sourceId1, bool ___is_async2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSourceImport_m46F25D1FBA3B56C1EE931200A73C7E6348B29712 (intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_is_async, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7099,27 +7277,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSourceImport_m46F2
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_remove_source)(___ctx0, ___sourceId1, static_cast<int32_t>(___is_async2));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_remove_source)(___0_ctx, ___1_sourceId, static_cast<int32_t>(___2_is_async));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, static_cast<int32_t>(___is_async2));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, static_cast<int32_t>(___2_is_async));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::RemoveSource(System.IntPtr,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSource_mC6CF7EECFCA0474CA304B480CA0951865FD4E067 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_RemoveSource_mC6CF7EECFCA0474CA304B480CA0951865FD4E067 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, const RuntimeMethod* method) 
 {
 	{
 		// return RemoveSourceImport(ctx, sourceId, true);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_RemoveSourceImport_m46F25D1FBA3B56C1EE931200A73C7E6348B29712(L_0, L_1, (bool)1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitSourceBufferImport(System.IntPtr,System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBufferImport_mAB83ED2E459919437E71E5E41803909D2B97BB74 (intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr2, uint32_t ___numFrames3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBufferImport_mAB83ED2E459919437E71E5E41803909D2B97BB74 (intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_inputBufferPtr, uint32_t ___3_numFrames, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float*, uint32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7132,38 +7310,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBufferImport
 	}
 	#endif
 
-	// Marshaling of parameter '___inputBufferPtr2' to native representation
-	float* ____inputBufferPtr2_marshaled = NULL;
-	if (___inputBufferPtr2 != NULL)
+	// Marshaling of parameter '___2_inputBufferPtr' to native representation
+	float* ____2_inputBufferPtr_marshaled = NULL;
+	if (___2_inputBufferPtr != NULL)
 	{
-		____inputBufferPtr2_marshaled = reinterpret_cast<float*>((___inputBufferPtr2)->GetAddressAtUnchecked(0));
+		____2_inputBufferPtr_marshaled = reinterpret_cast<float*>((___2_inputBufferPtr)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_source_buffer)(___ctx0, ___sourceId1, ____inputBufferPtr2_marshaled, ___numFrames3);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_source_buffer)(___0_ctx, ___1_sourceId, ____2_inputBufferPtr_marshaled, ___3_numFrames);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ____inputBufferPtr2_marshaled, ___numFrames3);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ____2_inputBufferPtr_marshaled, ___3_numFrames);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitSourceBuffer(System.IntPtr,System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBuffer_mE3FA114B4ED5D830AB9C30E52CC7DC7F01DAA553 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr2, uint32_t ___numFrames3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitSourceBuffer_mE3FA114B4ED5D830AB9C30E52CC7DC7F01DAA553 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_inputBufferPtr, uint32_t ___3_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitSourceBufferImport(ctx, sourceId, inputBufferPtr, numFrames);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___inputBufferPtr2;
-		uint32_t L_3 = ___numFrames3;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_inputBufferPtr;
+		uint32_t L_3 = ___3_numFrames;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_SubmitSourceBufferImport_mAB83ED2E459919437E71E5E41803909D2B97BB74(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitAmbisonicChannelBufferImport(System.IntPtr,System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBufferImport_m5F45A40D378E471AED5A16C078ED8CBA19F5D7B8 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicChannelBuffer1, int32_t ___order2, int32_t ___degree3, int32_t ___normType4, float ___gain5, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBufferImport_m5F45A40D378E471AED5A16C078ED8CBA19F5D7B8 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicChannelBuffer, int32_t ___2_order, int32_t ___3_degree, int32_t ___4_normType, float ___5_gain, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t, int32_t, float);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7176,40 +7354,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBu
 	}
 	#endif
 
-	// Marshaling of parameter '___ambisonicChannelBuffer1' to native representation
-	float* ____ambisonicChannelBuffer1_marshaled = NULL;
-	if (___ambisonicChannelBuffer1 != NULL)
+	// Marshaling of parameter '___1_ambisonicChannelBuffer' to native representation
+	float* ____1_ambisonicChannelBuffer_marshaled = NULL;
+	if (___1_ambisonicChannelBuffer != NULL)
 	{
-		____ambisonicChannelBuffer1_marshaled = reinterpret_cast<float*>((___ambisonicChannelBuffer1)->GetAddressAtUnchecked(0));
+		____1_ambisonicChannelBuffer_marshaled = reinterpret_cast<float*>((___1_ambisonicChannelBuffer)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_ambisonic_channel_buffer)(___ctx0, ____ambisonicChannelBuffer1_marshaled, ___order2, ___degree3, ___normType4, ___gain5);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_ambisonic_channel_buffer)(___0_ctx, ____1_ambisonicChannelBuffer_marshaled, ___2_order, ___3_degree, ___4_normType, ___5_gain);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____ambisonicChannelBuffer1_marshaled, ___order2, ___degree3, ___normType4, ___gain5);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_ambisonicChannelBuffer_marshaled, ___2_order, ___3_degree, ___4_normType, ___5_gain);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitAmbisonicChannelBuffer(System.IntPtr,System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBuffer_m49763FCD59AB7493FBF7F79BFD9593D47C2E502D (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicChannelBuffer1, int32_t ___order2, int32_t ___degree3, int32_t ___normType4, float ___gain5, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitAmbisonicChannelBuffer_m49763FCD59AB7493FBF7F79BFD9593D47C2E502D (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicChannelBuffer, int32_t ___2_order, int32_t ___3_degree, int32_t ___4_normType, float ___5_gain, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitAmbisonicChannelBufferImport(ctx, ambisonicChannelBuffer, order, degree, normType, gain);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___ambisonicChannelBuffer1;
-		int32_t L_2 = ___order2;
-		int32_t L_3 = ___degree3;
-		int32_t L_4 = ___normType4;
-		float L_5 = ___gain5;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_ambisonicChannelBuffer;
+		int32_t L_2 = ___2_order;
+		int32_t L_3 = ___3_degree;
+		int32_t L_4 = ___4_normType;
+		float L_5 = ___5_gain;
 		int32_t L_6;
 		L_6 = ApiUnityImpl_SubmitAmbisonicChannelBufferImport_m5F45A40D378E471AED5A16C078ED8CBA19F5D7B8(L_0, L_1, L_2, L_3, L_4, L_5, NULL);
 		return L_6;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitInterleavedAmbisonicBufferImport(System.IntPtr,System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBufferImport_mEC0E16E83BE0164DF914B3B76EE61BCD238E718B (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicBuffer1, int32_t ___ambisonicOrder2, int32_t ___normType3, float ___gain4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBufferImport_mEC0E16E83BE0164DF914B3B76EE61BCD238E718B (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicBuffer, int32_t ___2_ambisonicOrder, int32_t ___3_normType, float ___4_gain, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t, float);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7222,39 +7400,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbison
 	}
 	#endif
 
-	// Marshaling of parameter '___ambisonicBuffer1' to native representation
-	float* ____ambisonicBuffer1_marshaled = NULL;
-	if (___ambisonicBuffer1 != NULL)
+	// Marshaling of parameter '___1_ambisonicBuffer' to native representation
+	float* ____1_ambisonicBuffer_marshaled = NULL;
+	if (___1_ambisonicBuffer != NULL)
 	{
-		____ambisonicBuffer1_marshaled = reinterpret_cast<float*>((___ambisonicBuffer1)->GetAddressAtUnchecked(0));
+		____1_ambisonicBuffer_marshaled = reinterpret_cast<float*>((___1_ambisonicBuffer)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_interleaved_ambisonic_buffer)(___ctx0, ____ambisonicBuffer1_marshaled, ___ambisonicOrder2, ___normType3, ___gain4);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_interleaved_ambisonic_buffer)(___0_ctx, ____1_ambisonicBuffer_marshaled, ___2_ambisonicOrder, ___3_normType, ___4_gain);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____ambisonicBuffer1_marshaled, ___ambisonicOrder2, ___normType3, ___gain4);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_ambisonicBuffer_marshaled, ___2_ambisonicOrder, ___3_normType, ___4_gain);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitInterleavedAmbisonicBuffer(System.IntPtr,System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBuffer_m1FC9A1E8BC8EBAD144C4D058F646CE696C41787F (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicBuffer1, int32_t ___ambisonicOrder2, int32_t ___normType3, float ___gain4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitInterleavedAmbisonicBuffer_m1FC9A1E8BC8EBAD144C4D058F646CE696C41787F (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicBuffer, int32_t ___2_ambisonicOrder, int32_t ___3_normType, float ___4_gain, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitInterleavedAmbisonicBufferImport(ctx, ambisonicBuffer, ambisonicOrder, normType, gain);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___ambisonicBuffer1;
-		int32_t L_2 = ___ambisonicOrder2;
-		int32_t L_3 = ___normType3;
-		float L_4 = ___gain4;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_ambisonicBuffer;
+		int32_t L_2 = ___2_ambisonicOrder;
+		int32_t L_3 = ___3_normType;
+		float L_4 = ___4_gain;
 		int32_t L_5;
 		L_5 = ApiUnityImpl_SubmitInterleavedAmbisonicBufferImport_mEC0E16E83BE0164DF914B3B76EE61BCD238E718B(L_0, L_1, L_2, L_3, L_4, NULL);
 		return L_5;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMatrixInputBufferImport(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBufferImport_m548CE0571D523D176D68FAA38FCDD100B4F62889 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBuffer1, int32_t ___inputChannelIndex2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBufferImport_m548CE0571D523D176D68FAA38FCDD100B4F62889 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBuffer, int32_t ___2_inputChannelIndex, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7267,37 +7445,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBufferI
 	}
 	#endif
 
-	// Marshaling of parameter '___inputBuffer1' to native representation
-	float* ____inputBuffer1_marshaled = NULL;
-	if (___inputBuffer1 != NULL)
+	// Marshaling of parameter '___1_inputBuffer' to native representation
+	float* ____1_inputBuffer_marshaled = NULL;
+	if (___1_inputBuffer != NULL)
 	{
-		____inputBuffer1_marshaled = reinterpret_cast<float*>((___inputBuffer1)->GetAddressAtUnchecked(0));
+		____1_inputBuffer_marshaled = reinterpret_cast<float*>((___1_inputBuffer)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_matrix_input_buffer)(___ctx0, ____inputBuffer1_marshaled, ___inputChannelIndex2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_submit_matrix_input_buffer)(___0_ctx, ____1_inputBuffer_marshaled, ___2_inputChannelIndex);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____inputBuffer1_marshaled, ___inputChannelIndex2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_inputBuffer_marshaled, ___2_inputChannelIndex);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SubmitMatrixInputBuffer(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBuffer_m3A63C95B1AFE20BEC1F7F2A05C33E0586EBB12E6 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBuffer1, int32_t ___inputChannelIndex2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SubmitMatrixInputBuffer_m3A63C95B1AFE20BEC1F7F2A05C33E0586EBB12E6 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBuffer, int32_t ___2_inputChannelIndex, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitMatrixInputBufferImport(ctx, inputBuffer, inputChannelIndex);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___inputBuffer1;
-		int32_t L_2 = ___inputChannelIndex2;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_inputBuffer;
+		int32_t L_2 = ___2_inputChannelIndex;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SubmitMatrixInputBufferImport_m548CE0571D523D176D68FAA38FCDD100B4F62889(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedBinauralBufferImport(System.IntPtr,System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBufferImport_m33EBA4DFF6E25A9640E0609E658E16DDBE1CA840 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBufferImport_m33EBA4DFF6E25A9640E0609E658E16DDBE1CA840 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, uint32_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7310,57 +7488,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBu
 	}
 	#endif
 
-	// Marshaling of parameter '___outputBufferPtr1' to native representation
-	float* ____outputBufferPtr1_marshaled = NULL;
-	if (___outputBufferPtr1 != NULL)
+	// Marshaling of parameter '___1_outputBufferPtr' to native representation
+	float* ____1_outputBufferPtr_marshaled = NULL;
+	if (___1_outputBufferPtr != NULL)
 	{
-		____outputBufferPtr1_marshaled = reinterpret_cast<float*>((___outputBufferPtr1)->GetAddressAtUnchecked(0));
+		____1_outputBufferPtr_marshaled = reinterpret_cast<float*>((___1_outputBufferPtr)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_interleaved_binaural_buffer)(___ctx0, ____outputBufferPtr1_marshaled, ___numFrames2, static_cast<int32_t>(___isAccumulative3));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_interleaved_binaural_buffer)(___0_ctx, ____1_outputBufferPtr_marshaled, ___2_numFrames, static_cast<int32_t>(___3_isAccumulative));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____outputBufferPtr1_marshaled, ___numFrames2, static_cast<int32_t>(___isAccumulative3));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_outputBufferPtr_marshaled, ___2_numFrames, static_cast<int32_t>(___3_isAccumulative));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedBinauralBuffer(System.IntPtr,System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBuffer_m24E2BD7C9AC2ABF31B26FACD64E94BD366A62B1A (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedBinauralBuffer_m24E2BD7C9AC2ABF31B26FACD64E94BD366A62B1A (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	{
 		// return GetInterleavedBinauralBufferImport(ctx, outputBufferPtr, numFrames, isAccumulative);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___outputBufferPtr1;
-		uint32_t L_2 = ___numFrames2;
-		bool L_3 = ___isAccumulative3;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_outputBufferPtr;
+		uint32_t L_2 = ___2_numFrames;
+		bool L_3 = ___3_isAccumulative;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_GetInterleavedBinauralBufferImport_m33EBA4DFF6E25A9640E0609E658E16DDBE1CA840(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarBinauralBufferImport(System.IntPtr,System.Single[][],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBufferImport_mDF13D1CFE95B54AB7B0854DF79938AB7A44B058D (intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBufferImport_mDF13D1CFE95B54AB7B0854DF79938AB7A44B058D (intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_marshal_directive_exception("Cannot marshal type 'System.Single[][]'."), NULL);
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarBinauralBuffer(System.IntPtr,System.Single[][],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBuffer_m56BAB94D9F3477554FAA975BF3EACEEB66426802 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarBinauralBuffer_m56BAB94D9F3477554FAA975BF3EACEEB66426802 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	{
 		// return GetPlanarBinauralBufferImport(ctx, outputBufferPtr, numFrames, isAccumulative);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_1 = ___outputBufferPtr1;
-		uint32_t L_2 = ___numFrames2;
-		bool L_3 = ___isAccumulative3;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_1 = ___1_outputBufferPtr;
+		uint32_t L_2 = ___2_numFrames;
+		bool L_3 = ___3_isAccumulative;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_GetPlanarBinauralBufferImport_mDF13D1CFE95B54AB7B0854DF79938AB7A44B058D(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedLoudspeakersBufferImport(System.IntPtr,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBufferImport_m2468E743016EBB3387D8705ED572ABF4FE815473 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBufferImport_m2468E743016EBB3387D8705ED572ABF4FE815473 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, uint32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7373,55 +7551,55 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeake
 	}
 	#endif
 
-	// Marshaling of parameter '___outputBufferPtr1' to native representation
-	float* ____outputBufferPtr1_marshaled = NULL;
-	if (___outputBufferPtr1 != NULL)
+	// Marshaling of parameter '___1_outputBufferPtr' to native representation
+	float* ____1_outputBufferPtr_marshaled = NULL;
+	if (___1_outputBufferPtr != NULL)
 	{
-		____outputBufferPtr1_marshaled = reinterpret_cast<float*>((___outputBufferPtr1)->GetAddressAtUnchecked(0));
+		____1_outputBufferPtr_marshaled = reinterpret_cast<float*>((___1_outputBufferPtr)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_interleaved_loudspeakers_buffer)(___ctx0, ____outputBufferPtr1_marshaled, ___numFrames2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_get_interleaved_loudspeakers_buffer)(___0_ctx, ____1_outputBufferPtr_marshaled, ___2_numFrames);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____outputBufferPtr1_marshaled, ___numFrames2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_outputBufferPtr_marshaled, ___2_numFrames);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetInterleavedLoudspeakersBuffer(System.IntPtr,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBuffer_m40B53C5501730E97A24E31E62A8BC3C9C1C2EA7E (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetInterleavedLoudspeakersBuffer_m40B53C5501730E97A24E31E62A8BC3C9C1C2EA7E (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return GetInterleavedLoudspeakersBufferImport(ctx, outputBufferPtr, numFrames);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___outputBufferPtr1;
-		uint32_t L_2 = ___numFrames2;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_outputBufferPtr;
+		uint32_t L_2 = ___2_numFrames;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_GetInterleavedLoudspeakersBufferImport_m2468E743016EBB3387D8705ED572ABF4FE815473(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarLoudspeakersBufferImport(System.IntPtr,System.Single[][],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBufferImport_m8B30F4AF3064A2952A9F597355451EA648674E6A (intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBufferImport_m8B30F4AF3064A2952A9F597355451EA648674E6A (intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	IL2CPP_RAISE_MANAGED_EXCEPTION(il2cpp_codegen_get_marshal_directive_exception("Cannot marshal type 'System.Single[][]'."), NULL);
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::GetPlanarLoudspeakersBuffer(System.IntPtr,System.Single[][],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBuffer_mF00AF6A6992DD8EE50418ECEDB571EFF0BDCAE4A (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_GetPlanarLoudspeakersBuffer_mF00AF6A6992DD8EE50418ECEDB571EFF0BDCAE4A (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	{
 		// return GetPlanarLoudspeakersBufferImport(ctx, outputBufferPtr, numFrames);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_1 = ___outputBufferPtr1;
-		uint32_t L_2 = ___numFrames2;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* L_1 = ___1_outputBufferPtr;
+		uint32_t L_2 = ___2_numFrames;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_GetPlanarLoudspeakersBufferImport_m8B30F4AF3064A2952A9F597355451EA648674E6A(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSceneImport_mE5D3473C585D73306A3C0F9E9480CF339910C88D (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSceneImport_mE5D3473C585D73306A3C0F9E9480CF339910C88D (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7436,26 +7614,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSceneImport_mE5D34
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_update_scene)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_update_scene)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateScene(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateScene_mC176DEAC79F0F9262AC50F830692D83D6FC7BFC4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateScene_mC176DEAC79F0F9262AC50F830692D83D6FC7BFC4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return UpdateSceneImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiUnityImpl_UpdateSceneImport_mE5D3473C585D73306A3C0F9E9480CF339910C88D(L_0, NULL);
 		return L_1;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetDopplerEffectImport(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffectImport_mD6E97B1179C87898CAA3A3D8781F3A9F17B4DB9C (intptr_t ___ctx0, int32_t ___sourceId1, bool ___on2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffectImport_mD6E97B1179C87898CAA3A3D8781F3A9F17B4DB9C (intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_on, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7470,28 +7648,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffectImport_m
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_doppler_effect)(___ctx0, ___sourceId1, static_cast<int32_t>(___on2));
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_doppler_effect)(___0_ctx, ___1_sourceId, static_cast<int32_t>(___2_on));
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, static_cast<int32_t>(___on2));
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, static_cast<int32_t>(___2_on));
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetDopplerEffect(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffect_mB4B590602C1D887BFE09220BEE5EC02A8944DF71 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, bool ___on2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetDopplerEffect_mB4B590602C1D887BFE09220BEE5EC02A8944DF71 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_on, const RuntimeMethod* method) 
 {
 	{
 		// return SetDopplerEffectImport(ctx, sourceId, on);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		bool L_2 = ___on2;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		bool L_2 = ___2_on;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetDopplerEffectImport_mD6E97B1179C87898CAA3A3D8781F3A9F17B4DB9C(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetPlaybackModeImport(System.IntPtr,PXR_Audio.Spatializer.PlaybackMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackModeImport_m1365BDD02267856B5F4B2705190462F93FD7659F (intptr_t ___ctx0, int32_t ___playbackMode1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackModeImport_m1365BDD02267856B5F4B2705190462F93FD7659F (intptr_t ___0_ctx, int32_t ___1_playbackMode, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7506,27 +7684,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackModeImport_m1
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_playback_mode)(___ctx0, ___playbackMode1);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_playback_mode)(___0_ctx, ___1_playbackMode);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___playbackMode1);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_playbackMode);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetPlaybackMode(System.IntPtr,PXR_Audio.Spatializer.PlaybackMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackMode_mC50485CD2AF0E64E2B7A704993E7F8E863D9FB74 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___playbackMode1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetPlaybackMode_mC50485CD2AF0E64E2B7A704993E7F8E863D9FB74 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_playbackMode, const RuntimeMethod* method) 
 {
 	{
 		// return SetPlaybackModeImport(ctx, playbackMode);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___playbackMode1;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_playbackMode;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_SetPlaybackModeImport_m1365BDD02267856B5F4B2705190462F93FD7659F(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetLoudspeakerArrayImport(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArrayImport_mA9AA83C0AD163D08875DBDA3D944287CE5834CB0 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___positions1, int32_t ___numLoudspeakers2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArrayImport_mA9AA83C0AD163D08875DBDA3D944287CE5834CB0 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_positions, int32_t ___2_numLoudspeakers, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7539,37 +7717,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArrayImpor
 	}
 	#endif
 
-	// Marshaling of parameter '___positions1' to native representation
-	float* ____positions1_marshaled = NULL;
-	if (___positions1 != NULL)
+	// Marshaling of parameter '___1_positions' to native representation
+	float* ____1_positions_marshaled = NULL;
+	if (___1_positions != NULL)
 	{
-		____positions1_marshaled = reinterpret_cast<float*>((___positions1)->GetAddressAtUnchecked(0));
+		____1_positions_marshaled = reinterpret_cast<float*>((___1_positions)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_loudspeaker_array)(___ctx0, ____positions1_marshaled, ___numLoudspeakers2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_loudspeaker_array)(___0_ctx, ____1_positions_marshaled, ___2_numLoudspeakers);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____positions1_marshaled, ___numLoudspeakers2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_positions_marshaled, ___2_numLoudspeakers);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetLoudspeakerArray(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArray_m912B295967000958AE5C538C86829A231372F012 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___positions1, int32_t ___numLoudspeakers2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetLoudspeakerArray_m912B295967000958AE5C538C86829A231372F012 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_positions, int32_t ___2_numLoudspeakers, const RuntimeMethod* method) 
 {
 	{
 		// return SetLoudspeakerArrayImport(ctx, positions, numLoudspeakers);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___positions1;
-		int32_t L_2 = ___numLoudspeakers2;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_positions;
+		int32_t L_2 = ___2_numLoudspeakers;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetLoudspeakerArrayImport_mA9AA83C0AD163D08875DBDA3D944287CE5834CB0(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetMappingMatrixImport(System.IntPtr,System.Single[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrixImport_mA15932349B9515B4F84671B76F151BE8938CD501 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___matrix1, int32_t ___numInputChannels2, int32_t ___numOutputChannels3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrixImport_mA15932349B9515B4F84671B76F151BE8938CD501 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_matrix, int32_t ___2_numInputChannels, int32_t ___3_numOutputChannels, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7582,38 +7760,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrixImport_m
 	}
 	#endif
 
-	// Marshaling of parameter '___matrix1' to native representation
-	float* ____matrix1_marshaled = NULL;
-	if (___matrix1 != NULL)
+	// Marshaling of parameter '___1_matrix' to native representation
+	float* ____1_matrix_marshaled = NULL;
+	if (___1_matrix != NULL)
 	{
-		____matrix1_marshaled = reinterpret_cast<float*>((___matrix1)->GetAddressAtUnchecked(0));
+		____1_matrix_marshaled = reinterpret_cast<float*>((___1_matrix)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_mapping_matrix)(___ctx0, ____matrix1_marshaled, ___numInputChannels2, ___numOutputChannels3);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_mapping_matrix)(___0_ctx, ____1_matrix_marshaled, ___2_numInputChannels, ___3_numOutputChannels);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____matrix1_marshaled, ___numInputChannels2, ___numOutputChannels3);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_matrix_marshaled, ___2_numInputChannels, ___3_numOutputChannels);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetMappingMatrix(System.IntPtr,System.Single[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrix_m2FE69E1950A1F0363D3A18839CA0309FED2F47C4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___matrix1, int32_t ___numInputChannels2, int32_t ___numOutputChannels3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetMappingMatrix_m2FE69E1950A1F0363D3A18839CA0309FED2F47C4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_matrix, int32_t ___2_numInputChannels, int32_t ___3_numOutputChannels, const RuntimeMethod* method) 
 {
 	{
 		// return SetMappingMatrixImport(ctx, matrix, numInputChannels, numOutputChannels);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___matrix1;
-		int32_t L_2 = ___numInputChannels2;
-		int32_t L_3 = ___numOutputChannels3;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_matrix;
+		int32_t L_2 = ___2_numInputChannels;
+		int32_t L_3 = ___3_numOutputChannels;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_SetMappingMatrixImport_mA15932349B9515B4F84671B76F151BE8938CD501(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPositionImport(System.IntPtr,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPositionImport_m6B18AF0D7ADBFC63BC98212330420D3C7A16E23B (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPositionImport_m6B18AF0D7ADBFC63BC98212330420D3C7A16E23B (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7626,36 +7804,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPositionImpor
 	}
 	#endif
 
-	// Marshaling of parameter '___position1' to native representation
-	float* ____position1_marshaled = NULL;
-	if (___position1 != NULL)
+	// Marshaling of parameter '___1_position' to native representation
+	float* ____1_position_marshaled = NULL;
+	if (___1_position != NULL)
 	{
-		____position1_marshaled = reinterpret_cast<float*>((___position1)->GetAddressAtUnchecked(0));
+		____1_position_marshaled = reinterpret_cast<float*>((___1_position)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_position)(___ctx0, ____position1_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_position)(___0_ctx, ____1_position_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____position1_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_position_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPosition(System.IntPtr,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPosition_m3ECDB2AF6DAB0BFC30A7813C7D3A66720E8F19DA (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPosition_m3ECDB2AF6DAB0BFC30A7813C7D3A66720E8F19DA (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) 
 {
 	{
 		// return SetListenerPositionImport(ctx, position);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___position1;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_position;
 		int32_t L_2;
 		L_2 = ApiUnityImpl_SetListenerPositionImport_m6B18AF0D7ADBFC63BC98212330420D3C7A16E23B(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerOrientationImport(System.IntPtr,System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientationImport_mDBBD4FC62C9FFAA74B71238FD4E3F60B13555D09 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientationImport_mDBBD4FC62C9FFAA74B71238FD4E3F60B13555D09 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7668,44 +7846,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientationIm
 	}
 	#endif
 
-	// Marshaling of parameter '___front1' to native representation
-	float* ____front1_marshaled = NULL;
-	if (___front1 != NULL)
+	// Marshaling of parameter '___1_front' to native representation
+	float* ____1_front_marshaled = NULL;
+	if (___1_front != NULL)
 	{
-		____front1_marshaled = reinterpret_cast<float*>((___front1)->GetAddressAtUnchecked(0));
+		____1_front_marshaled = reinterpret_cast<float*>((___1_front)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___up2' to native representation
-	float* ____up2_marshaled = NULL;
-	if (___up2 != NULL)
+	// Marshaling of parameter '___2_up' to native representation
+	float* ____2_up_marshaled = NULL;
+	if (___2_up != NULL)
 	{
-		____up2_marshaled = reinterpret_cast<float*>((___up2)->GetAddressAtUnchecked(0));
+		____2_up_marshaled = reinterpret_cast<float*>((___2_up)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_orientation)(___ctx0, ____front1_marshaled, ____up2_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_orientation)(___0_ctx, ____1_front_marshaled, ____2_up_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____front1_marshaled, ____up2_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_front_marshaled, ____2_up_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerOrientation(System.IntPtr,System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientation_mA230D4F23741BCCE874A2778ABE83FF668E21B6F (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerOrientation_mA230D4F23741BCCE874A2778ABE83FF668E21B6F (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) 
 {
 	{
 		// return SetListenerOrientationImport(ctx, front, up);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___front1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___up2;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_up;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetListenerOrientationImport_mDBBD4FC62C9FFAA74B71238FD4E3F60B13555D09(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPoseImport(System.IntPtr,System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPoseImport_m943D9C833EA12E255AD028A118B609230543C372 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPoseImport_m943D9C833EA12E255AD028A118B609230543C372 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_up, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, float*, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7718,52 +7896,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPoseImport_m9
 	}
 	#endif
 
-	// Marshaling of parameter '___position1' to native representation
-	float* ____position1_marshaled = NULL;
-	if (___position1 != NULL)
+	// Marshaling of parameter '___1_position' to native representation
+	float* ____1_position_marshaled = NULL;
+	if (___1_position != NULL)
 	{
-		____position1_marshaled = reinterpret_cast<float*>((___position1)->GetAddressAtUnchecked(0));
+		____1_position_marshaled = reinterpret_cast<float*>((___1_position)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___front2' to native representation
-	float* ____front2_marshaled = NULL;
-	if (___front2 != NULL)
+	// Marshaling of parameter '___2_front' to native representation
+	float* ____2_front_marshaled = NULL;
+	if (___2_front != NULL)
 	{
-		____front2_marshaled = reinterpret_cast<float*>((___front2)->GetAddressAtUnchecked(0));
+		____2_front_marshaled = reinterpret_cast<float*>((___2_front)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___up3' to native representation
-	float* ____up3_marshaled = NULL;
-	if (___up3 != NULL)
+	// Marshaling of parameter '___3_up' to native representation
+	float* ____3_up_marshaled = NULL;
+	if (___3_up != NULL)
 	{
-		____up3_marshaled = reinterpret_cast<float*>((___up3)->GetAddressAtUnchecked(0));
+		____3_up_marshaled = reinterpret_cast<float*>((___3_up)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_pose)(___ctx0, ____position1_marshaled, ____front2_marshaled, ____up3_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_listener_pose)(___0_ctx, ____1_position_marshaled, ____2_front_marshaled, ____3_up_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____position1_marshaled, ____front2_marshaled, ____up3_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_position_marshaled, ____2_front_marshaled, ____3_up_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetListenerPose(System.IntPtr,System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPose_m5AE9049A2DF35B147A32FFCAAFF7C2745866EB95 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetListenerPose_m5AE9049A2DF35B147A32FFCAAFF7C2745866EB95 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_up, const RuntimeMethod* method) 
 {
 	{
 		// return SetListenerPoseImport(ctx, position, front, up);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___position1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___front2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___up3;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_3 = ___3_up;
 		int32_t L_4;
 		L_4 = ApiUnityImpl_SetListenerPoseImport_m943D9C833EA12E255AD028A118B609230543C372(L_0, L_1, L_2, L_3, NULL);
 		return L_4;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourcePositionImport(System.IntPtr,System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePositionImport_mAFD86F93AFE1239BC81C4FF7245EA308FCC2816A (intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePositionImport_mAFD86F93AFE1239BC81C4FF7245EA308FCC2816A (intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7776,37 +7954,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePositionImport_
 	}
 	#endif
 
-	// Marshaling of parameter '___position2' to native representation
-	float* ____position2_marshaled = NULL;
-	if (___position2 != NULL)
+	// Marshaling of parameter '___2_position' to native representation
+	float* ____2_position_marshaled = NULL;
+	if (___2_position != NULL)
 	{
-		____position2_marshaled = reinterpret_cast<float*>((___position2)->GetAddressAtUnchecked(0));
+		____2_position_marshaled = reinterpret_cast<float*>((___2_position)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_position)(___ctx0, ___sourceId1, ____position2_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_position)(___0_ctx, ___1_sourceId, ____2_position_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ____position2_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ____2_position_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourcePosition(System.IntPtr,System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePosition_m1ACBD5609A945674EE1E8CE66BD459B6641287B4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourcePosition_m1ACBD5609A945674EE1E8CE66BD459B6641287B4 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, const RuntimeMethod* method) 
 {
 	{
 		// return SetSourcePositionImport(ctx, sourceId, position);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___position2;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_2 = ___2_position;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetSourcePositionImport_mAFD86F93AFE1239BC81C4FF7245EA308FCC2816A(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceGainImport(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGainImport_m802634905D425208478675628448657910EF2164 (intptr_t ___ctx0, int32_t ___sourceId1, float ___gain2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGainImport_m802634905D425208478675628448657910EF2164 (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_gain, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7821,28 +7999,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGainImport_m802
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_gain)(___ctx0, ___sourceId1, ___gain2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_gain)(___0_ctx, ___1_sourceId, ___2_gain);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ___gain2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ___2_gain);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceGain(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGain_m42C1F860CF3221520405BDED2B9EDEC029F1DC89 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___gain2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceGain_m42C1F860CF3221520405BDED2B9EDEC029F1DC89 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_gain, const RuntimeMethod* method) 
 {
 	{
 		// return SetSourceGainImport(ctx, sourceId, gain);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		float L_2 = ___gain2;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		float L_2 = ___2_gain;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetSourceGainImport_m802634905D425208478675628448657910EF2164(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceSizeImport(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSizeImport_mF9C9631C56D860A9BC5EA8175E90E433311DB54B (intptr_t ___ctx0, int32_t ___sourceId1, float ___volumetricSize2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSizeImport_mF9C9631C56D860A9BC5EA8175E90E433311DB54B (intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_volumetricSize, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, float);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7857,28 +8035,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSizeImport_mF9C
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_size)(___ctx0, ___sourceId1, ___volumetricSize2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_set_source_size)(___0_ctx, ___1_sourceId, ___2_volumetricSize);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ___volumetricSize2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ___2_volumetricSize);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::SetSourceSize(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSize_m7CBD0CB7DAE794580646DAFF2DCB16A3C08E0365 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___volumetricSize2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_SetSourceSize_m7CBD0CB7DAE794580646DAFF2DCB16A3C08E0365 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_volumetricSize, const RuntimeMethod* method) 
 {
 	{
 		// return SetSourceSizeImport(ctx, sourceId, volumetricSize);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		float L_2 = ___volumetricSize2;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		float L_2 = ___2_volumetricSize;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_SetSourceSizeImport_mF9C9631C56D860A9BC5EA8175E90E433311DB54B(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateSourceModeImport(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceModeImport_mC783BD11DD74F571C03B9549B15CF620F69184F5 (intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceModeImport_mC783BD11DD74F571C03B9549B15CF620F69184F5 (intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, int32_t, int32_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7893,28 +8071,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceModeImport_m
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_update_source_mode)(___ctx0, ___sourceId1, ___mode2);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_update_source_mode)(___0_ctx, ___1_sourceId, ___2_mode);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ___sourceId1, ___mode2);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ___1_sourceId, ___2_mode);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::UpdateSourceMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceMode_m07374CF092566ACE49673347516C0ABBDBFF72B1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_UpdateSourceMode_m07374CF092566ACE49673347516C0ABBDBFF72B1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, const RuntimeMethod* method) 
 {
 	{
 		// return UpdateSourceModeImport(ctx, sourceId, mode);
-		intptr_t L_0 = ___ctx0;
-		int32_t L_1 = ___sourceId1;
-		int32_t L_2 = ___mode2;
+		intptr_t L_0 = ___0_ctx;
+		int32_t L_1 = ___1_sourceId;
+		int32_t L_2 = ___2_mode;
 		int32_t L_3;
 		L_3 = ApiUnityImpl_UpdateSourceModeImport_mC783BD11DD74F571C03B9549B15CF620F69184F5(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::DestroyImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_DestroyImport_m09D8466D84C7AA040F2BB36695B460A4E854817A (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_DestroyImport_m09D8466D84C7AA040F2BB36695B460A4E854817A (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializer_INTERNAL
@@ -7929,19 +8107,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_DestroyImport_m09D8466D8
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializer_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_destroy)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_audio_destroy)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiUnityImpl::Destroy(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_Destroy_mACDC49397C29FE45B524BB0A6B92B9E0712D2AD1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiUnityImpl_Destroy_mACDC49397C29FE45B524BB0A6B92B9E0712D2AD1 (ApiUnityImpl_tAA2B873D46F3FC53F3AF6AB670A7E63D8F03BCF8* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return DestroyImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiUnityImpl_DestroyImport_m09D8466D84C7AA040F2BB36695B460A4E854817A(L_0, NULL);
 		return L_1;
@@ -7982,7 +8160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ApiUnityImpl__ctor_m4687F4B6771497056FE2
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.String PXR_Audio.Spatializer.ApiWwiseImpl::GetVersionImport(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE5835DE1B52C33FCC8EEE34E67243E608DF0093A (int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE5835DE1B52C33FCC8EEE34E67243E608DF0093A (int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) 
 {
 	typedef char* (DEFAULT_CALL *PInvokeFunc) (int32_t*, int32_t*, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -7997,9 +8175,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE583
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	char* returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_get_version)(___major0, ___minor1, ___patch2);
+	char* returnValue = reinterpret_cast<PInvokeFunc>(yggdrasil_get_version)(___0_major, ___1_minor, ___2_patch);
 	#else
-	char* returnValue = il2cppPInvokeFunc(___major0, ___minor1, ___patch2);
+	char* returnValue = il2cppPInvokeFunc(___0_major, ___1_minor, ___2_patch);
 	#endif
 
 	// Marshaling of return value back from native representation
@@ -8013,20 +8191,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersionImport_mE583
 	return _returnValue_unmarshaled;
 }
 // System.String PXR_Audio.Spatializer.ApiWwiseImpl::GetVersion(System.Int32&,System.Int32&,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersion_m1B2DE35990CE8473D505E2387205FC459955439F (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t* ___major0, int32_t* ___minor1, int32_t* ___patch2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* ApiWwiseImpl_GetVersion_m1B2DE35990CE8473D505E2387205FC459955439F (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t* ___0_major, int32_t* ___1_minor, int32_t* ___2_patch, const RuntimeMethod* method) 
 {
 	{
 		// return GetVersionImport(ref major, ref minor, ref patch);
-		int32_t* L_0 = ___major0;
-		int32_t* L_1 = ___minor1;
-		int32_t* L_2 = ___patch2;
+		int32_t* L_0 = ___0_major;
+		int32_t* L_1 = ___1_minor;
+		int32_t* L_2 = ___2_patch;
 		String_t* L_3;
 		L_3 = ApiWwiseImpl_GetVersionImport_mE5835DE1B52C33FCC8EEE34E67243E608DF0093A(L_0, L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::CreateContext(System.IntPtr&,PXR_Audio.Spatializer.RenderingMode,System.UInt32,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CreateContext_m423136C6523C563E1C593CA52A09545BEE28753A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t* ___ctx0, int32_t ___mode1, uint32_t ___framesPerBuffer2, uint32_t ___sampleRate3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CreateContext_m423136C6523C563E1C593CA52A09545BEE28753A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t* ___0_ctx, int32_t ___1_mode, uint32_t ___2_framesPerBuffer, uint32_t ___3_sampleRate, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8044,7 +8222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CreateContext_m423136C65
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::InitializeContext(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_InitializeContext_mE8826AFCCB7684EF43454218432C409AAC12F356 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_InitializeContext_mE8826AFCCB7684EF43454218432C409AAC12F356 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8062,7 +8240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_InitializeContext_mE8826
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMeshImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshImport_m1A80028FFBDB3DD3B8F0D3FBDBCF9D452C43E449 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshImport_m1A80028FFBDB3DD3B8F0D3FBDBCF9D452C43E449 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t*, int32_t, int32_t, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8075,48 +8253,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshImport_m1A8002
 	}
 	#endif
 
-	// Marshaling of parameter '___vertices1' to native representation
-	float* ____vertices1_marshaled = NULL;
-	if (___vertices1 != NULL)
+	// Marshaling of parameter '___1_vertices' to native representation
+	float* ____1_vertices_marshaled = NULL;
+	if (___1_vertices != NULL)
 	{
-		____vertices1_marshaled = reinterpret_cast<float*>((___vertices1)->GetAddressAtUnchecked(0));
+		____1_vertices_marshaled = reinterpret_cast<float*>((___1_vertices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___indices3' to native representation
-	int32_t* ____indices3_marshaled = NULL;
-	if (___indices3 != NULL)
+	// Marshaling of parameter '___3_indices' to native representation
+	int32_t* ____3_indices_marshaled = NULL;
+	if (___3_indices != NULL)
 	{
-		____indices3_marshaled = reinterpret_cast<int32_t*>((___indices3)->GetAddressAtUnchecked(0));
+		____3_indices_marshaled = reinterpret_cast<int32_t*>((___3_indices)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SubmitMesh)(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ___material5, ___geometryId6);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SubmitMesh)(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ___5_material, ___6_geometryId);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ___material5, ___geometryId6);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ___5_material, ___6_geometryId);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMesh(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,PXR_Audio.Spatializer.AcousticsMaterial,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMesh_mD476C9D27C87C1CC4C43882A3BA3F354DC8CF828 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, int32_t ___material5, int32_t* ___geometryId6, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMesh_mD476C9D27C87C1CC4C43882A3BA3F354DC8CF828 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, int32_t ___5_material, int32_t* ___6_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitMeshImport(ctx, vertices, verticesCount, indices, indicesCount, material, ref geometryId);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___vertices1;
-		int32_t L_2 = ___verticesCount2;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___indices3;
-		int32_t L_4 = ___indicesCount4;
-		int32_t L_5 = ___material5;
-		int32_t* L_6 = ___geometryId6;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_vertices;
+		int32_t L_2 = ___2_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___3_indices;
+		int32_t L_4 = ___4_indicesCount;
+		int32_t L_5 = ___5_material;
+		int32_t* L_6 = ___6_geometryId;
 		int32_t L_7;
 		L_7 = ApiWwiseImpl_SubmitMeshImport_m1A80028FFBDB3DD3B8F0D3FBDBCF9D452C43E449(L_0, L_1, L_2, L_3, L_4, L_5, L_6, NULL);
 		return L_7;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMeshAndMaterialFactorImport(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactorImport_m555919D2A802B67C73182DBE35C0681EB7151D23 (intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactorImport_m555919D2A802B67C73182DBE35C0681EB7151D23 (intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t, float*, int32_t, int32_t*, int32_t, float*, float, float, int32_t*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8129,58 +8307,58 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFac
 	}
 	#endif
 
-	// Marshaling of parameter '___vertices1' to native representation
-	float* ____vertices1_marshaled = NULL;
-	if (___vertices1 != NULL)
+	// Marshaling of parameter '___1_vertices' to native representation
+	float* ____1_vertices_marshaled = NULL;
+	if (___1_vertices != NULL)
 	{
-		____vertices1_marshaled = reinterpret_cast<float*>((___vertices1)->GetAddressAtUnchecked(0));
+		____1_vertices_marshaled = reinterpret_cast<float*>((___1_vertices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___indices3' to native representation
-	int32_t* ____indices3_marshaled = NULL;
-	if (___indices3 != NULL)
+	// Marshaling of parameter '___3_indices' to native representation
+	int32_t* ____3_indices_marshaled = NULL;
+	if (___3_indices != NULL)
 	{
-		____indices3_marshaled = reinterpret_cast<int32_t*>((___indices3)->GetAddressAtUnchecked(0));
+		____3_indices_marshaled = reinterpret_cast<int32_t*>((___3_indices)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___absorptionFactor5' to native representation
-	float* ____absorptionFactor5_marshaled = NULL;
-	if (___absorptionFactor5 != NULL)
+	// Marshaling of parameter '___5_absorptionFactor' to native representation
+	float* ____5_absorptionFactor_marshaled = NULL;
+	if (___5_absorptionFactor != NULL)
 	{
-		____absorptionFactor5_marshaled = reinterpret_cast<float*>((___absorptionFactor5)->GetAddressAtUnchecked(0));
+		____5_absorptionFactor_marshaled = reinterpret_cast<float*>((___5_absorptionFactor)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SubmitMeshAndMaterialFactor)(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ____absorptionFactor5_marshaled, ___scatteringFactor6, ___transmissionFactor7, ___geometryId8);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SubmitMeshAndMaterialFactor)(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ____5_absorptionFactor_marshaled, ___6_scatteringFactor, ___7_transmissionFactor, ___8_geometryId);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0, ____vertices1_marshaled, ___verticesCount2, ____indices3_marshaled, ___indicesCount4, ____absorptionFactor5_marshaled, ___scatteringFactor6, ___transmissionFactor7, ___geometryId8);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx, ____1_vertices_marshaled, ___2_verticesCount, ____3_indices_marshaled, ___4_indicesCount, ____5_absorptionFactor_marshaled, ___6_scatteringFactor, ___7_transmissionFactor, ___8_geometryId);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMeshAndMaterialFactor(System.IntPtr,System.Single[],System.Int32,System.Int32[],System.Int32,System.Single[],System.Single,System.Single,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactor_mA9F12F5387340D084430B23921B32C73631FAD5C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___vertices1, int32_t ___verticesCount2, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___indices3, int32_t ___indicesCount4, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor5, float ___scatteringFactor6, float ___transmissionFactor7, int32_t* ___geometryId8, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMeshAndMaterialFactor_mA9F12F5387340D084430B23921B32C73631FAD5C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_vertices, int32_t ___2_verticesCount, Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___3_indices, int32_t ___4_indicesCount, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___5_absorptionFactor, float ___6_scatteringFactor, float ___7_transmissionFactor, int32_t* ___8_geometryId, const RuntimeMethod* method) 
 {
 	{
 		// return SubmitMeshAndMaterialFactorImport(ctx, vertices, verticesCount, indices, indicesCount,
 		//     absorptionFactor, scatteringFactor, transmissionFactor, ref geometryId);
-		intptr_t L_0 = ___ctx0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___vertices1;
-		int32_t L_2 = ___verticesCount2;
-		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___indices3;
-		int32_t L_4 = ___indicesCount4;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___absorptionFactor5;
-		float L_6 = ___scatteringFactor6;
-		float L_7 = ___transmissionFactor7;
-		int32_t* L_8 = ___geometryId8;
+		intptr_t L_0 = ___0_ctx;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_vertices;
+		int32_t L_2 = ___2_verticesCount;
+		Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* L_3 = ___3_indices;
+		int32_t L_4 = ___4_indicesCount;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___5_absorptionFactor;
+		float L_6 = ___6_scatteringFactor;
+		float L_7 = ___7_transmissionFactor;
+		int32_t* L_8 = ___8_geometryId;
 		int32_t L_9;
 		L_9 = ApiWwiseImpl_SubmitMeshAndMaterialFactorImport_m555919D2A802B67C73182DBE35C0681EB7151D23(L_0, L_1, L_2, L_3, L_4, L_5, L_6, L_7, L_8, NULL);
 		return L_9;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetAbsorptionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactorImport_m4B8D9CE73E937454569CEC75799A05F1345F2257 (int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactorImport_m4B8D9CE73E937454569CEC75799A05F1345F2257 (int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8193,36 +8371,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactorImpor
 	}
 	#endif
 
-	// Marshaling of parameter '___absorptionFactor1' to native representation
-	float* ____absorptionFactor1_marshaled = NULL;
-	if (___absorptionFactor1 != NULL)
+	// Marshaling of parameter '___1_absorptionFactor' to native representation
+	float* ____1_absorptionFactor_marshaled = NULL;
+	if (___1_absorptionFactor != NULL)
 	{
-		____absorptionFactor1_marshaled = reinterpret_cast<float*>((___absorptionFactor1)->GetAddressAtUnchecked(0));
+		____1_absorptionFactor_marshaled = reinterpret_cast<float*>((___1_absorptionFactor)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetAbsorptionFactor)(___material0, ____absorptionFactor1_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetAbsorptionFactor)(___0_material, ____1_absorptionFactor_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ____absorptionFactor1_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ____1_absorptionFactor_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetAbsorptionFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactor_m9CE8FBC06D4DF2733849339A6A82D72C94A4493A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___material0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___absorptionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetAbsorptionFactor_m9CE8FBC06D4DF2733849339A6A82D72C94A4493A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___0_material, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_absorptionFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetAbsorptionFactorImport(material, absorptionFactor);
-		int32_t L_0 = ___material0;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___absorptionFactor1;
+		int32_t L_0 = ___0_material;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_absorptionFactor;
 		int32_t L_2;
 		L_2 = ApiWwiseImpl_GetAbsorptionFactorImport_m4B8D9CE73E937454569CEC75799A05F1345F2257(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetScatteringFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactorImport_mC8AFF489150A9A17DF00EC3C8A0E53D6FD31D652 (int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactorImport_mC8AFF489150A9A17DF00EC3C8A0E53D6FD31D652 (int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8237,27 +8415,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactorImpor
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetScatteringFactor)(___material0, ___scatteringFactor1);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetScatteringFactor)(___0_material, ___1_scatteringFactor);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ___scatteringFactor1);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ___1_scatteringFactor);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetScatteringFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactor_m447A06A668D1F43B98D33200812923928FD7AAA7 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___material0, float* ___scatteringFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetScatteringFactor_m447A06A668D1F43B98D33200812923928FD7AAA7 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___0_material, float* ___1_scatteringFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetScatteringFactorImport(material, ref scatteringFactor);
-		int32_t L_0 = ___material0;
-		float* L_1 = ___scatteringFactor1;
+		int32_t L_0 = ___0_material;
+		float* L_1 = ___1_scatteringFactor;
 		int32_t L_2;
 		L_2 = ApiWwiseImpl_GetScatteringFactorImport_mC8AFF489150A9A17DF00EC3C8A0E53D6FD31D652(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetTransmissionFactorImport(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactorImport_m86B6C4306CE0FE9897F3C196C6B8AA87D2451FF0 (int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactorImport_m86B6C4306CE0FE9897F3C196C6B8AA87D2451FF0 (int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (int32_t, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8272,27 +8450,27 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactorImp
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetTransmissionFactor)(___material0, ___transmissionFactor1);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_GetTransmissionFactor)(___0_material, ___1_transmissionFactor);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___material0, ___transmissionFactor1);
+	int32_t returnValue = il2cppPInvokeFunc(___0_material, ___1_transmissionFactor);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetTransmissionFactor(PXR_Audio.Spatializer.AcousticsMaterial,System.Single&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactor_mE5656E3E074B3265371209D0218B782106A2599D (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___material0, float* ___transmissionFactor1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetTransmissionFactor_mE5656E3E074B3265371209D0218B782106A2599D (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, int32_t ___0_material, float* ___1_transmissionFactor, const RuntimeMethod* method) 
 {
 	{
 		// return GetTransmissionFactorImport(material, ref transmissionFactor);
-		int32_t L_0 = ___material0;
-		float* L_1 = ___transmissionFactor1;
+		int32_t L_0 = ___0_material;
+		float* L_1 = ___1_transmissionFactor;
 		int32_t L_2;
 		L_2 = ApiWwiseImpl_GetTransmissionFactorImport_m86B6C4306CE0FE9897F3C196C6B8AA87D2451FF0(L_0, L_1, NULL);
 		return L_2;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::CommitSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitSceneImport_mC705DF549F87594A577BF150BC7182DC4C234E8A (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitSceneImport_mC705DF549F87594A577BF150BC7182DC4C234E8A (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8307,26 +8485,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitSceneImport_mC705D
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_CommitScene)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_CommitScene)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::CommitScene(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitScene_m225A21D9A92D562BDF8B339C0BB6F714B5459294 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_CommitScene_m225A21D9A92D562BDF8B339C0BB6F714B5459294 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return CommitSceneImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiWwiseImpl_CommitSceneImport_mC705DF549F87594A577BF150BC7182DC4C234E8A(L_0, NULL);
 		return L_1;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::AddSource(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSource_mBD2E905A7379D06A3C488ADBD37F347921F1EA82 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceMode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, int32_t* ___sourceId3, bool ___isAsync4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSource_mBD2E905A7379D06A3C488ADBD37F347921F1EA82 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceMode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, int32_t* ___3_sourceId, bool ___4_isAsync, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8344,7 +8522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSource_mBD2E905A7379D
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::AddSourceWithOrientation(System.IntPtr,PXR_Audio.Spatializer.SourceMode,System.Single[],System.Single[],System.Single[],System.Single,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithOrientation_m366ED5F188C649F6C48491CD2BC0B584BD712538 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___mode1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front3, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up4, float ___radius5, int32_t* ___sourceId6, bool ___isAsync7, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithOrientation_m366ED5F188C649F6C48491CD2BC0B584BD712538 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_mode, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___4_up, float ___5_radius, int32_t* ___6_sourceId, bool ___7_isAsync, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8362,7 +8540,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithOrientation
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::AddSourceWithConfig(System.IntPtr,PXR_Audio.Spatializer.SourceConfig&,System.Int32&,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithConfig_m2F095AECBB9FF5265AD304279B9FB18137DAE633 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___sourceConfig1, int32_t* ___sourceId2, bool ___isAsync3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithConfig_m2F095AECBB9FF5265AD304279B9FB18137DAE633 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* ___1_sourceConfig, int32_t* ___2_sourceId, bool ___3_isAsync, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8380,7 +8558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_AddSourceWithConfig_m2F0
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetSourceAttenuationMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceAttenuationMode,PXR_Audio.Spatializer.DistanceAttenuationCallback,PXR_Audio.Spatializer.DistanceAttenuationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceAttenuationMode_mCA33C5381855259A6D6B5A25B3C7B7410479CB1A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___directDistanceAttenuationCallback3, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___indirectDistanceAttenuationCallback4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceAttenuationMode_mCA33C5381855259A6D6B5A25B3C7B7410479CB1A (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___3_directDistanceAttenuationCallback, DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* ___4_indirectDistanceAttenuationCallback, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8398,7 +8576,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceAttenuationMode
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetSourceRange(System.IntPtr,System.Int32,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceRange_mE1629B948C3373BD689D17F945EDB9B7709DFAD6 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___rangeMin2, float ___rangeMax3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceRange_mE1629B948C3373BD689D17F945EDB9B7709DFAD6 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_rangeMin, float ___3_rangeMax, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8416,7 +8594,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceRange_mE1629B94
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::RemoveSource(System.IntPtr,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_RemoveSource_m33AD7159438256143D025991BA4891BD76824960 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_RemoveSource_m33AD7159438256143D025991BA4891BD76824960 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8434,7 +8612,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_RemoveSource_m33AD715943
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitSourceBuffer(System.IntPtr,System.Int32,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitSourceBuffer_m7EA73F7C8083F4F762786D1AACC7AA38A5B77C6C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBufferPtr2, uint32_t ___numFrames3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitSourceBuffer_m7EA73F7C8083F4F762786D1AACC7AA38A5B77C6C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_inputBufferPtr, uint32_t ___3_numFrames, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8452,7 +8630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitSourceBuffer_m7EA7
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitAmbisonicChannelBuffer(System.IntPtr,System.Single[],System.Int32,System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitAmbisonicChannelBuffer_mAA6D9FF9AB00EF7DB23D0598F44C3C62DED1F34E (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicChannelBuffer1, int32_t ___order2, int32_t ___degree3, int32_t ___normType4, float ___gain5, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitAmbisonicChannelBuffer_mAA6D9FF9AB00EF7DB23D0598F44C3C62DED1F34E (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicChannelBuffer, int32_t ___2_order, int32_t ___3_degree, int32_t ___4_normType, float ___5_gain, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8470,7 +8648,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitAmbisonicChannelBu
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitInterleavedAmbisonicBuffer(System.IntPtr,System.Single[],System.Int32,PXR_Audio.Spatializer.AmbisonicNormalizationType,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitInterleavedAmbisonicBuffer_mB13BB62774DAE93E9BF63CD2FB90C6038DD28246 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___ambisonicBuffer1, int32_t ___ambisonicOrder2, int32_t ___normType3, float ___gain4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitInterleavedAmbisonicBuffer_mB13BB62774DAE93E9BF63CD2FB90C6038DD28246 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_ambisonicBuffer, int32_t ___2_ambisonicOrder, int32_t ___3_normType, float ___4_gain, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8488,7 +8666,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitInterleavedAmbison
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SubmitMatrixInputBuffer(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMatrixInputBuffer_m27814FAEB1E2FA816A8ABD86BAA1C86E41EA8CFE (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___inputBuffer1, int32_t ___inputChannelIndex2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMatrixInputBuffer_m27814FAEB1E2FA816A8ABD86BAA1C86E41EA8CFE (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_inputBuffer, int32_t ___2_inputChannelIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8506,7 +8684,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SubmitMatrixInputBuffer_
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetInterleavedBinauralBuffer(System.IntPtr,System.Single[],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedBinauralBuffer_m3615B78AB3FA62146DBCC1932BB32108E414B219 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedBinauralBuffer_m3615B78AB3FA62146DBCC1932BB32108E414B219 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8524,7 +8702,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedBinauralBu
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetPlanarBinauralBuffer(System.IntPtr,System.Single[][],System.UInt32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarBinauralBuffer_m04CC42440D4F8A83225C4651B46E948DC1D085C5 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, bool ___isAccumulative3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarBinauralBuffer_m04CC42440D4F8A83225C4651B46E948DC1D085C5 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, bool ___3_isAccumulative, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8542,7 +8720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarBinauralBuffer_
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetInterleavedLoudspeakersBuffer(System.IntPtr,System.Single[],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedLoudspeakersBuffer_m8C9125521670E034A702309E720185C1685A2D45 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedLoudspeakersBuffer_m8C9125521670E034A702309E720185C1685A2D45 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8560,7 +8738,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetInterleavedLoudspeake
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::GetPlanarLoudspeakersBuffer(System.IntPtr,System.Single[][],System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarLoudspeakersBuffer_m24C89202F8F77EEAF05D8C0A463C22BAF0599A92 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___outputBufferPtr1, uint32_t ___numFrames2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarLoudspeakersBuffer_m24C89202F8F77EEAF05D8C0A463C22BAF0599A92 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5DU5BU5D_tB190BCEA7F01FD9CFF9FC1273681C9F0C75359E4* ___1_outputBufferPtr, uint32_t ___2_numFrames, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8578,7 +8756,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_GetPlanarLoudspeakersBuf
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::UpdateSceneImport(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSceneImport_m062EBD1274154A8B19C083101732080C3EEAC305 (intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSceneImport_m062EBD1274154A8B19C083101732080C3EEAC305 (intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (intptr_t);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8593,26 +8771,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSceneImport_m062EB
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_UpdateScene)(___ctx0);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_UpdateScene)(___0_ctx);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(___ctx0);
+	int32_t returnValue = il2cppPInvokeFunc(___0_ctx);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::UpdateScene(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateScene_m0EAD3CE6C9A1DCB29D839333AA7B40FE14A7BDA2 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateScene_m0EAD3CE6C9A1DCB29D839333AA7B40FE14A7BDA2 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	{
 		// return UpdateSceneImport(ctx);
-		intptr_t L_0 = ___ctx0;
+		intptr_t L_0 = ___0_ctx;
 		int32_t L_1;
 		L_1 = ApiWwiseImpl_UpdateSceneImport_m062EBD1274154A8B19C083101732080C3EEAC305(L_0, NULL);
 		return L_1;
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetDopplerEffect(System.IntPtr,System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetDopplerEffect_m092A72CCF175DACE07DB0A3F010A2B4D40ED0E50 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, bool ___on2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetDopplerEffect_m092A72CCF175DACE07DB0A3F010A2B4D40ED0E50 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, bool ___2_on, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8630,7 +8808,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetDopplerEffect_m092A72
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetPlaybackMode(System.IntPtr,PXR_Audio.Spatializer.PlaybackMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetPlaybackMode_m45E13CF26B704D965D35A88E23E227AD84994CF6 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___playbackMode1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetPlaybackMode_m45E13CF26B704D965D35A88E23E227AD84994CF6 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_playbackMode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8648,7 +8826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetPlaybackMode_m45E13CF
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetLoudspeakerArray(System.IntPtr,System.Single[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetLoudspeakerArray_mD655C8BE3D6F02D41F8D86ECA02FB19CC4441116 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___positions1, int32_t ___numLoudspeakers2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetLoudspeakerArray_mD655C8BE3D6F02D41F8D86ECA02FB19CC4441116 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_positions, int32_t ___2_numLoudspeakers, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8666,7 +8844,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetLoudspeakerArray_mD65
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetMappingMatrix(System.IntPtr,System.Single[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetMappingMatrix_m6020B62E2F862FF9B5159450E4AE1613ED472E31 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___matrix1, int32_t ___numInputChannels2, int32_t ___numOutputChannels3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetMappingMatrix_m6020B62E2F862FF9B5159450E4AE1613ED472E31 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_matrix, int32_t ___2_numInputChannels, int32_t ___3_numOutputChannels, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8684,7 +8862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetMappingMatrix_m6020B6
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetListenerPosition(System.IntPtr,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPosition_m3E66F0E66BEBB9797C53D5BECFBC88E10823EB94 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPosition_m3E66F0E66BEBB9797C53D5BECFBC88E10823EB94 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8702,7 +8880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPosition_m3E6
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetListenerOrientation(System.IntPtr,System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerOrientation_m87B62FDBDB9F9BE4CA484B79C1CFF34B191469C4 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerOrientation_m87B62FDBDB9F9BE4CA484B79C1CFF34B191469C4 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8720,7 +8898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerOrientation_m
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetListenerPoseImport(System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPoseImport_m0C0E060E94F5537E09123CBA303CF3FA6A78FED8 (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPoseImport_m0C0E060E94F5537E09123CBA303CF3FA6A78FED8 (SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___0_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_up, const RuntimeMethod* method) 
 {
 	typedef int32_t (DEFAULT_CALL *PInvokeFunc) (float*, float*, float*);
 	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
@@ -8733,68 +8911,68 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPoseImport_m0
 	}
 	#endif
 
-	// Marshaling of parameter '___position0' to native representation
-	float* ____position0_marshaled = NULL;
-	if (___position0 != NULL)
+	// Marshaling of parameter '___0_position' to native representation
+	float* ____0_position_marshaled = NULL;
+	if (___0_position != NULL)
 	{
-		____position0_marshaled = reinterpret_cast<float*>((___position0)->GetAddressAtUnchecked(0));
+		____0_position_marshaled = reinterpret_cast<float*>((___0_position)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___front1' to native representation
-	float* ____front1_marshaled = NULL;
-	if (___front1 != NULL)
+	// Marshaling of parameter '___1_front' to native representation
+	float* ____1_front_marshaled = NULL;
+	if (___1_front != NULL)
 	{
-		____front1_marshaled = reinterpret_cast<float*>((___front1)->GetAddressAtUnchecked(0));
+		____1_front_marshaled = reinterpret_cast<float*>((___1_front)->GetAddressAtUnchecked(0));
 	}
 
-	// Marshaling of parameter '___up2' to native representation
-	float* ____up2_marshaled = NULL;
-	if (___up2 != NULL)
+	// Marshaling of parameter '___2_up' to native representation
+	float* ____2_up_marshaled = NULL;
+	if (___2_up != NULL)
 	{
-		____up2_marshaled = reinterpret_cast<float*>((___up2)->GetAddressAtUnchecked(0));
+		____2_up_marshaled = reinterpret_cast<float*>((___2_up)->GetAddressAtUnchecked(0));
 	}
 
 	// Native function invocation
 	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_PicoSpatializerWwise_INTERNAL
-	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SetListenerTransform)(____position0_marshaled, ____front1_marshaled, ____up2_marshaled);
+	int32_t returnValue = reinterpret_cast<PInvokeFunc>(CSharp_PicoSpatializerWwise_SetListenerTransform)(____0_position_marshaled, ____1_front_marshaled, ____2_up_marshaled);
 	#else
-	int32_t returnValue = il2cppPInvokeFunc(____position0_marshaled, ____front1_marshaled, ____up2_marshaled);
+	int32_t returnValue = il2cppPInvokeFunc(____0_position_marshaled, ____1_front_marshaled, ____2_up_marshaled);
 	#endif
 
 	return returnValue;
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetListenerPose(System.IntPtr,System.Single[],System.Single[],System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPose_m2B3E3BD8253970E622CF4EF50B1F21453C7E2EE1 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___front2, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___up3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPose_m2B3E3BD8253970E622CF4EF50B1F21453C7E2EE1 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___1_position, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_front, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___3_up, const RuntimeMethod* method) 
 {
 	{
 		// position[2] = -position[2];
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___position1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___position1;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_0 = ___1_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_1 = ___1_position;
 		NullCheck(L_1);
 		int32_t L_2 = 2;
 		float L_3 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
 		NullCheck(L_0);
 		(L_0)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)((-L_3)));
 		// front[2] = -front[2];
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___front2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___front2;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_4 = ___2_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_5 = ___2_front;
 		NullCheck(L_5);
 		int32_t L_6 = 2;
 		float L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		NullCheck(L_4);
 		(L_4)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)((-L_7)));
 		// up[2] = -up[2];
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = ___up3;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = ___up3;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_8 = ___3_up;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_9 = ___3_up;
 		NullCheck(L_9);
 		int32_t L_10 = 2;
 		float L_11 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		NullCheck(L_8);
 		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(2), (float)((-L_11)));
 		// SetListenerPoseImport(position, front, up);
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_12 = ___position1;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_13 = ___front2;
-		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_14 = ___up3;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_12 = ___1_position;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_13 = ___2_front;
+		SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* L_14 = ___3_up;
 		int32_t L_15;
 		L_15 = ApiWwiseImpl_SetListenerPoseImport_m0C0E060E94F5537E09123CBA303CF3FA6A78FED8(L_12, L_13, L_14, NULL);
 		// return Result.Success;
@@ -8802,7 +8980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetListenerPose_m2B3E3BD
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetSourcePosition(System.IntPtr,System.Int32,System.Single[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourcePosition_m7A30DBD7023C9D71CEA641D0CB8B1D2B767BBB06 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___position2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourcePosition_m7A30DBD7023C9D71CEA641D0CB8B1D2B767BBB06 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___2_position, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8820,7 +8998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourcePosition_m7A30D
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetSourceGain(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceGain_mFC1B480372455BAFD9216D130046AC0A4D17544C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___gain2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceGain_mFC1B480372455BAFD9216D130046AC0A4D17544C (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_gain, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8838,7 +9016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceGain_mFC1B48037
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::SetSourceSize(System.IntPtr,System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceSize_mF6C56B388E902B00B58A6F7AC134103E170C7D92 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, float ___volumetricSize2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceSize_mF6C56B388E902B00B58A6F7AC134103E170C7D92 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, float ___2_volumetricSize, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8856,7 +9034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_SetSourceSize_mF6C56B388
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::UpdateSourceMode(System.IntPtr,System.Int32,PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSourceMode_m7BE92771C95F6F5B1D7D52F8B73CB287C1C5C801 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, int32_t ___sourceId1, int32_t ___mode2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSourceMode_m7BE92771C95F6F5B1D7D52F8B73CB287C1C5C801 (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, int32_t ___1_sourceId, int32_t ___2_mode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8874,7 +9052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_UpdateSourceMode_m7BE927
 	}
 }
 // PXR_Audio.Spatializer.Result PXR_Audio.Spatializer.ApiWwiseImpl::Destroy(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_Destroy_mCDDEE786E881A97AA58B800B7BDC1238EB186C7F (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___ctx0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ApiWwiseImpl_Destroy_mCDDEE786E881A97AA58B800B7BDC1238EB186C7F (ApiWwiseImpl_t0A408632CA40CE5BC2A494B341F79F69AC95EA9B* __this, intptr_t ___0_ctx, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8940,7 +9118,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ApiWwiseImpl__ctor_m85C99C89CFF41EFB859C
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_Multicast(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_Multicast(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
 	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
@@ -8949,50 +9127,50 @@ float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A
 	{
 		DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* currentDelegate = reinterpret_cast<DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D*>(delegatesToInvoke[i]);
 		typedef float (*FunctionPointerType) (RuntimeObject*, float, float, float, const RuntimeMethod*);
-		retVal = ((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___distance0, ___rangeMin1, ___rangeMax2, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+		retVal = ((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___0_distance, ___1_rangeMin, ___2_rangeMax, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
 	}
 	return retVal;
 }
-float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenInst(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenInst(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
 	typedef float (*FunctionPointerType) (float, float, float, const RuntimeMethod*);
-	return ((FunctionPointerType)__this->___method_ptr_0)(___distance0, ___rangeMin1, ___rangeMax2, method);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___0_distance, ___1_rangeMin, ___2_rangeMax, method);
 }
-float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenStatic(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenStatic(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
 	typedef float (*FunctionPointerType) (float, float, float, const RuntimeMethod*);
-	return ((FunctionPointerType)__this->___method_ptr_0)(___distance0, ___rangeMin1, ___rangeMax2, method);
+	return ((FunctionPointerType)__this->___method_ptr_0)(___0_distance, ___1_rangeMin, ___2_rangeMax, method);
 }
-float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenStaticInvoker(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenStaticInvoker(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
-	return InvokerFuncInvoker3< float, float, float, float >::Invoke(__this->___method_ptr_0, method, NULL, ___distance0, ___rangeMin1, ___rangeMax2);
+	return InvokerFuncInvoker3< float, float, float, float >::Invoke(__this->___method_ptr_0, method, NULL, ___0_distance, ___1_rangeMin, ___2_rangeMax);
 }
-float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_ClosedStaticInvoker(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_ClosedStaticInvoker(DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
-	return InvokerFuncInvoker4< float, RuntimeObject*, float, float, float >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___distance0, ___rangeMin1, ___rangeMax2);
+	return InvokerFuncInvoker4< float, RuntimeObject*, float, float, float >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___0_distance, ___1_rangeMin, ___2_rangeMax);
 }
-IL2CPP_EXTERN_C  float DelegatePInvokeWrapper_DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  float DelegatePInvokeWrapper_DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method)
 {
 	typedef float (DEFAULT_CALL *PInvokeFunc)(float, float, float);
 	PInvokeFunc il2cppPInvokeFunc = reinterpret_cast<PInvokeFunc>(il2cpp_codegen_get_reverse_pinvoke_function_ptr(__this));
 	// Native function invocation
-	float returnValue = il2cppPInvokeFunc(___distance0, ___rangeMin1, ___rangeMax2);
+	float returnValue = il2cppPInvokeFunc(___0_distance, ___1_rangeMin, ___2_rangeMax);
 
 	return returnValue;
 }
 // System.Void PXR_Audio.Spatializer.DistanceAttenuationCallback::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DistanceAttenuationCallback__ctor_mD616EC74561CF14CA3D8C4E5AB8BE5E27F9C2CC2 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DistanceAttenuationCallback__ctor_mD616EC74561CF14CA3D8C4E5AB8BE5E27F9C2CC2 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) 
 {
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___1_method);
+	__this->___method_3 = ___1_method;
+	__this->___m_target_2 = ___0_object;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___0_object);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___1_method);
 	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
+	if (MethodIsStatic((RuntimeMethod*)___1_method))
 	{
 		bool isOpen = parameterCount == 3;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___1_method))
 			if (isOpen)
 				__this->___invoke_impl_1 = (intptr_t)&DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_OpenStaticInvoker;
 			else
@@ -9008,7 +9186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DistanceAttenuationCallback__ctor_mD616E
 	}
 	else
 	{
-		if (___object0 == NULL)
+		if (___0_object == NULL)
 			il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
 		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
 		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
@@ -9016,13 +9194,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DistanceAttenuationCallback__ctor_mD616E
 	__this->___extra_arg_5 = (intptr_t)&DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98_Multicast;
 }
 // System.Single PXR_Audio.Spatializer.DistanceAttenuationCallback::Invoke(System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DistanceAttenuationCallback_Invoke_mCF8EE5009BCF7DAC077F18FBEC50B2BE7F635A98 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, const RuntimeMethod* method) 
 {
 	typedef float (*FunctionPointerType) (RuntimeObject*, float, float, float, const RuntimeMethod*);
-	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___distance0, ___rangeMin1, ___rangeMax2, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_distance, ___1_rangeMin, ___2_rangeMax, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 // System.IAsyncResult PXR_Audio.Spatializer.DistanceAttenuationCallback::BeginInvoke(System.Single,System.Single,System.Single,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DistanceAttenuationCallback_BeginInvoke_mCBD243F108D70B40D206FB339E2DF3892351FCD5 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___distance0, float ___rangeMin1, float ___rangeMax2, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback3, RuntimeObject* ___object4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DistanceAttenuationCallback_BeginInvoke_mCBD243F108D70B40D206FB339E2DF3892351FCD5 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, float ___0_distance, float ___1_rangeMin, float ___2_rangeMax, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___3_callback, RuntimeObject* ___4_object, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9031,15 +9209,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DistanceAttenuationCallback_Be
 		s_Il2CppMethodInitialized = true;
 	}
 	void *__d_args[4] = {0};
-	__d_args[0] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___distance0);
-	__d_args[1] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___rangeMin1);
-	__d_args[2] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___rangeMax2);
-	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback3, (RuntimeObject*)___object4);
+	__d_args[0] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___0_distance);
+	__d_args[1] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___1_rangeMin);
+	__d_args[2] = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &___2_rangeMax);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___3_callback, (RuntimeObject*)___4_object);
 }
 // System.Single PXR_Audio.Spatializer.DistanceAttenuationCallback::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DistanceAttenuationCallback_EndInvoke_m96739E512F6B0CE34522A8089BAA64BBC2477BC7 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, RuntimeObject* ___result0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DistanceAttenuationCallback_EndInvoke_m96739E512F6B0CE34522A8089BAA64BBC2477BC7 (DistanceAttenuationCallback_tA7DE9D08561930839D7732BB68DC281270FD0D8D* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) 
 {
-	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
+	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___0_result, 0);
 	return *(float*)UnBox ((RuntimeObject*)__result);
 }
 #ifdef __clang__
@@ -9059,11 +9237,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float DistanceAttenuationCallback_EndInvoke_m
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void PXR_Audio.Spatializer.SourceConfig::.ctor(PXR_Audio.Spatializer.SourceMode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887 (SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* __this, int32_t ___inMode0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887 (SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* __this, int32_t ___0_inMode, const RuntimeMethod* method) 
 {
 	{
 		// mode = inMode;
-		int32_t L_0 = ___inMode0;
+		int32_t L_0 = ___0_inMode;
 		__this->___mode_0 = L_0;
 		// position.x = 0.0f;
 		NativeVector3f_tFD0F1CF60EFCBC7E75D3C0C5B730F8A02CFBA52F* L_1 = (&__this->___position_1);
@@ -9112,12 +9290,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SourceConfig__ctor_m6880CB0BEBB9D0CF3792
 		return;
 	}
 }
-IL2CPP_EXTERN_C  void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887_AdjustorThunk (RuntimeObject* __this, int32_t ___inMode0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C  void SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887_AdjustorThunk (RuntimeObject* __this, int32_t ___0_inMode, const RuntimeMethod* method)
 {
 	SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9* _thisAdjusted;
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<SourceConfig_t0FE6BA4C78D6D706E491C8D8C4EBB00C7F79C2B9*>(__this + _offset);
-	SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887(_thisAdjusted, ___inMode0, method);
+	SourceConfig__ctor_m6880CB0BEBB9D0CF3792D06D39D72E4FEC599887(_thisAdjusted, ___0_inMode, method);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -9168,14 +9346,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool PXR_Audio_Spatializer_AudioS
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___x0;
+		float L_0 = ___0_x;
 		__this->___x_2 = L_0;
-		float L_1 = ___y1;
+		float L_1 = ___1_y;
 		__this->___y_3 = L_1;
-		float L_2 = ___z2;
+		float L_2 = ___2_z;
 		__this->___z_4 = L_2;
 		return;
 	}
@@ -9224,7 +9402,7 @@ IL_0009:
 		return L_1;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -9248,7 +9426,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
-		RuntimeObject* L_8 = ___item0;
+		RuntimeObject* L_8 = ___0_item;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
@@ -9256,7 +9434,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 
 IL_0034:
 	{
-		RuntimeObject* L_9 = ___item0;
+		RuntimeObject* L_9 = ___0_item;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}

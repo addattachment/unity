@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 template <typename T1>
@@ -605,12 +604,6 @@ struct List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	U3CU3Ef__AnonymousType0_2U5BU5D_tB51EC4B550360F7BBC106184A5A014F14E7A7F9E* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<Tobii.XR.DevTools.IDisableGazeModifier>
 struct List_1_t00600BF716820AEFA4B71C1839616698B28E10D0  : public RuntimeObject
 {
@@ -622,12 +615,6 @@ struct List_1_t00600BF716820AEFA4B71C1839616698B28E10D0  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t00600BF716820AEFA4B71C1839616698B28E10D0_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	IDisableGazeModifierU5BU5D_t3838872C017D59510FD23E3143458E3BBC9277E3* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<Tobii.XR.GazeModifier.IGazeModifier>
@@ -643,12 +630,6 @@ struct List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	IGazeModifierU5BU5D_tE3A2966266AA3C8A63FCBC9AD3ACFCE244EF674F* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<System.Object>
 struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 {
@@ -660,12 +641,6 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<Tobii.XR.GazeModifier.PercentileData>
@@ -681,12 +656,6 @@ struct List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	PercentileDataU5BU5D_t2A08DC2F5E246F0DFD1C39C95A6DB1B30A4A1A75* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<UnityEngine.Vector2>
 struct List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B  : public RuntimeObject
 {
@@ -700,12 +669,6 @@ struct List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<UnityEngine.Vector3>
 struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B  : public RuntimeObject
 {
@@ -717,12 +680,6 @@ struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.Queue`1<System.Single>
@@ -750,7 +707,6 @@ struct AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1  : public Runt
 	// Tobii.XR.MetricsForPercentile Tobii.XR.GazeModifier.AccuracyModifier::_metricsForPercentile
 	MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* ____metricsForPercentile_1;
 };
-struct Il2CppArrayBounds;
 
 // UnityEngine.CustomYieldInstruction
 struct CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617  : public RuntimeObject
@@ -810,21 +766,9 @@ struct PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770  : public Runtim
 	float ___Trackability_4;
 };
 
-struct PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_StaticFields
-{
-	// Tobii.XR.GazeModifier.ILerpValue Tobii.XR.GazeModifier.PercentileData::_precisionFactors
-	RuntimeObject* ____precisionFactors_5;
-};
-
 // Tobii.XR.GazeModifier.PercentileRepository
 struct PercentileRepository_tC86AB84683DDAC3E0C9FF46F7FE5AA98293A4D35  : public RuntimeObject
 {
-};
-
-struct PercentileRepository_tC86AB84683DDAC3E0C9FF46F7FE5AA98293A4D35_StaticFields
-{
-	// System.Collections.Generic.IList`1<Tobii.XR.GazeModifier.PercentileData> Tobii.XR.GazeModifier.PercentileRepository::_all
-	RuntimeObject* ____all_0;
 };
 
 // Tobii.XR.GazeModifier.PrecisionModifier
@@ -849,29 +793,9 @@ struct String_t  : public RuntimeObject
 	Il2CppChar ____firstChar_5;
 };
 
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
-};
-
 // Tobii.XR.TobiiXR
 struct TobiiXR_t82D424F64C36C534A34C7A396B07954925AEDB2E  : public RuntimeObject
 {
-};
-
-struct TobiiXR_t82D424F64C36C534A34C7A396B07954925AEDB2E_StaticFields
-{
-	// Tobii.XR.TobiiXR/TobiiXRInternal Tobii.XR.TobiiXR::_internal
-	TobiiXRInternal_t3027DA1FA887554B60C0AB984EAB2D321D381C18* ____internal_0;
-	// UnityEngine.GameObject Tobii.XR.TobiiXR::_updaterGameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____updaterGameObject_1;
-	// Tobii.XR.TobiiXR_EyeTrackingData Tobii.XR.TobiiXR::_eyeTrackingDataLocal
-	TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ____eyeTrackingDataLocal_2;
-	// Tobii.XR.TobiiXR_EyeTrackingData Tobii.XR.TobiiXR::_eyeTrackingDataWorld
-	TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ____eyeTrackingDataWorld_3;
-	// Tobii.XR.TobiiXRAdvanced Tobii.XR.TobiiXR::_advanced
-	TobiiXRAdvanced_t43693126B38FAC4333A890B89A7D9CD2EC59F4D8* ____advanced_4;
 };
 
 // Tobii.XR.GazeModifier.TrackabilityModifier
@@ -968,33 +892,9 @@ struct U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0  : public RuntimeObject
 {
 };
 
-struct U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0_StaticFields
-{
-	// Tobii.XR.GazeModifier.GazeModifierSettings/<>c Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9
-	U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* ___U3CU3E9_0;
-	// System.Func`2<Tobii.XR.DevTools.IDisableGazeModifier,System.Boolean> Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9__15_0
-	Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* ___U3CU3E9__15_0_1;
-	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Int32> Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9__17_0
-	Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* ___U3CU3E9__17_0_2;
-};
-
 // Tobii.XR.GazeModifier.GetValueForAngle/<>c
 struct U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9  : public RuntimeObject
 {
-};
-
-struct U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9_StaticFields
-{
-	// Tobii.XR.GazeModifier.GetValueForAngle/<>c Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9
-	U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* ___U3CU3E9_0;
-	// System.Func`2<UnityEngine.Vector2,System.Single> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__3_0
-	Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___U3CU3E9__3_0_1;
-	// System.Func`2<UnityEngine.Vector2,System.Boolean> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__3_1
-	Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___U3CU3E9__3_1_2;
-	// System.Func`2<UnityEngine.Vector2,System.Single> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__6_0
-	Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___U3CU3E9__6_0_3;
-	// System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__6_1
-	Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* ___U3CU3E9__6_1_4;
 };
 
 // Tobii.XR.GazeModifier.GetValueForAngle/<>c__DisplayClass6_0
@@ -1009,33 +909,9 @@ struct U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB  : public RuntimeObject
 {
 };
 
-struct U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_StaticFields
-{
-	// Tobii.XR.GazeModifier.Metrics/<>c Tobii.XR.GazeModifier.Metrics/<>c::<>9
-	U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* ___U3CU3E9_0;
-	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_0
-	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_0_1;
-	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_1
-	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_1_2;
-	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_2
-	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_2_3;
-};
-
 // Tobii.XR.MetricsForPercentile/<>c
 struct U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267  : public RuntimeObject
 {
-};
-
-struct U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267_StaticFields
-{
-	// Tobii.XR.MetricsForPercentile/<>c Tobii.XR.MetricsForPercentile/<>c::<>9
-	U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* ___U3CU3E9_0;
-	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_1
-	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_1_1;
-	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_3
-	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_3_2;
-	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_5
-	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_5_3;
 };
 
 // Tobii.XR.TobiiXR/TobiiXRInternal
@@ -1068,14 +944,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 {
 	// System.Boolean System.Boolean::m_value
 	bool ___m_value_0;
-};
-
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
 };
 
 // System.Byte
@@ -1167,12 +1035,6 @@ struct IntPtr_t
 	void* ___m_value_0;
 };
 
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
 // UnityEngine.LayerMask
 struct LayerMask_t97CB6BDADEDC3D6423C7BCFEA7F86DA2EC6241DB 
 {
@@ -1190,12 +1052,6 @@ struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682
 		};
 		uint8_t Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682__padding[1];
 	};
-};
-
-struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
-{
-	// System.Single UnityEngine.Mathf::Epsilon
-	float ___Epsilon_0;
 };
 
 // UnityEngine.Matrix4x4
@@ -1235,14 +1091,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6
 	float ___m33_15;
 };
 
-struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
-{
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::zeroMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix_16;
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::identityMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix_17;
-};
-
 // UnityEngine.Quaternion
 struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
 {
@@ -1254,12 +1102,6 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___z_2;
 	// System.Single UnityEngine.Quaternion::w
 	float ___w_3;
-};
-
-struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
-{
-	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
 };
 
 // UnityEngine.Rect
@@ -1312,26 +1154,6 @@ struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7
 	float ___y_1;
 };
 
-struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
-{
-	// UnityEngine.Vector2 UnityEngine.Vector2::zeroVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector_2;
-	// UnityEngine.Vector2 UnityEngine.Vector2::oneVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector_3;
-	// UnityEngine.Vector2 UnityEngine.Vector2::upVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector_4;
-	// UnityEngine.Vector2 UnityEngine.Vector2::downVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector_5;
-	// UnityEngine.Vector2 UnityEngine.Vector2::leftVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector_6;
-	// UnityEngine.Vector2 UnityEngine.Vector2::rightVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector_7;
-	// UnityEngine.Vector2 UnityEngine.Vector2::positiveInfinityVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector_8;
-	// UnityEngine.Vector2 UnityEngine.Vector2::negativeInfinityVector
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector_9;
-};
-
 // UnityEngine.Vector3
 struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
 {
@@ -1341,30 +1163,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2
 	float ___y_3;
 	// System.Single UnityEngine.Vector3::z
 	float ___z_4;
-};
-
-struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
-{
-	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
-	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
-	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
-	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
-	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
-	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
-	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
-	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
-	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
-	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
 };
 
 // UnityEngine.Vector4
@@ -1378,18 +1176,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3
 	float ___z_3;
 	// System.Single UnityEngine.Vector4::w
 	float ___w_4;
-};
-
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
 };
 
 // System.Void
@@ -1570,12 +1356,6 @@ struct Exception_t  : public RuntimeObject
 	// System.Int32 System.Exception::caught_in_unmanaged
 	int32_t ___caught_in_unmanaged_16;
 };
-
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
 // Native definition for P/Invoke marshalling of System.Exception
 struct Exception_t_marshaled_pinvoke
 {
@@ -1656,12 +1436,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
 	// System.IntPtr UnityEngine.Object::m_CachedPtr
 	intptr_t ___m_CachedPtr_0;
 };
-
-struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
-{
-	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
-	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
-};
 // Native definition for P/Invoke marshalling of UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
 {
@@ -1740,12 +1514,6 @@ struct TobiiXR_Settings_t5EC70C3B4402041CAB993354AA4360221272100D  : public Runt
 	bool ___PopupLicenseValidationErrors_10;
 	// UnityEngine.TextAsset Tobii.XR.TobiiXR_Settings::LicenseAsset
 	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___LicenseAsset_11;
-};
-
-struct TobiiXR_Settings_t5EC70C3B4402041CAB993354AA4360221272100D_StaticFields
-{
-	// UnityEngine.RuntimePlatform Tobii.XR.TobiiXR_Settings::_platform
-	int32_t ____platform_0;
 };
 
 // Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics/<AnimateButton>d__21
@@ -2086,16 +1854,6 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t019
 {
 };
 
-struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
-{
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreCull
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull_4;
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreRender
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender_5;
-	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPostRender
-	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender_6;
-};
-
 // Tobii.G2OM.G2OM
 struct G2OM_t3012CB8D216E16F631DFFFCAE19FE36E8A1DDCE1  : public RuntimeObject
 {
@@ -2139,12 +1897,6 @@ struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5  : public Transfo
 {
 };
 
-struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
-{
-	// UnityEngine.RectTransform/ReapplyDrivenProperties UnityEngine.RectTransform::reapplyDrivenProperties
-	ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24* ___reapplyDrivenProperties_4;
-};
-
 // UnityEngine.SpriteRenderer
 struct SpriteRenderer_t1DD7FE258F072E1FA87D6577BA27225892B8047B  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
 {
@@ -2165,16 +1917,6 @@ struct ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB  : public Mon
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____velocity_10;
 	// UnityEngine.Vector3 Tobii.XR.ControllerManager::_angularVelocity
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____angularVelocity_11;
-};
-
-struct ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_StaticFields
-{
-	// UnityEngine.GameObject Tobii.XR.ControllerManager::_gameObject
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____gameObject_5;
-	// Tobii.XR.ControllerManager Tobii.XR.ControllerManager::_instance
-	ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* ____instance_6;
-	// Tobii.XR.IControllerAdapter Tobii.XR.ControllerManager::_controllerAdapter
-	RuntimeObject* ____controllerAdapter_7;
 };
 
 // Tobii.XR.DevTools.DevToolsMenuController
@@ -2561,34 +2303,835 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_t
 	bool ___m_SkipMaterialUpdate_9;
 	// System.Boolean UnityEngine.UI.Graphic::m_RaycastTarget
 	bool ___m_RaycastTarget_10;
+	// System.Boolean UnityEngine.UI.Graphic::m_RaycastTargetCache
+	bool ___m_RaycastTargetCache_11;
 	// UnityEngine.Vector4 UnityEngine.UI.Graphic::m_RaycastPadding
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding_11;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding_12;
 	// UnityEngine.RectTransform UnityEngine.UI.Graphic::m_RectTransform
-	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform_12;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform_13;
 	// UnityEngine.CanvasRenderer UnityEngine.UI.Graphic::m_CanvasRenderer
-	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer_13;
+	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer_14;
 	// UnityEngine.Canvas UnityEngine.UI.Graphic::m_Canvas
-	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas_14;
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas_15;
 	// System.Boolean UnityEngine.UI.Graphic::m_VertsDirty
-	bool ___m_VertsDirty_15;
+	bool ___m_VertsDirty_16;
 	// System.Boolean UnityEngine.UI.Graphic::m_MaterialDirty
-	bool ___m_MaterialDirty_16;
+	bool ___m_MaterialDirty_17;
 	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyLayoutCallback
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback_17;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback_18;
 	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyVertsCallback
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback_18;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback_19;
 	// UnityEngine.Events.UnityAction UnityEngine.UI.Graphic::m_OnDirtyMaterialCallback
-	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback_19;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback_20;
 	// UnityEngine.Mesh UnityEngine.UI.Graphic::m_CachedMesh
-	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh_22;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh_23;
 	// UnityEngine.Vector2[] UnityEngine.UI.Graphic::m_CachedUvs
-	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs_23;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs_24;
 	// UnityEngine.UI.CoroutineTween.TweenRunner`1<UnityEngine.UI.CoroutineTween.ColorTween> UnityEngine.UI.Graphic::m_ColorTweenRunner
-	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner_24;
+	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner_25;
 	// System.Boolean UnityEngine.UI.Graphic::<useLegacyMeshGeneration>k__BackingField
-	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField_25;
+	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField_26;
 };
 
+// UnityEngine.UI.MaskableGraphic
+struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
+{
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculateStencil
+	bool ___m_ShouldRecalculateStencil_27;
+	// UnityEngine.Material UnityEngine.UI.MaskableGraphic::m_MaskMaterial
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial_28;
+	// UnityEngine.UI.RectMask2D UnityEngine.UI.MaskableGraphic::m_ParentMask
+	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask_29;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_Maskable
+	bool ___m_Maskable_30;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IsMaskingGraphic
+	bool ___m_IsMaskingGraphic_31;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IncludeForMasking
+	bool ___m_IncludeForMasking_32;
+	// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent UnityEngine.UI.MaskableGraphic::m_OnCullStateChanged
+	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged_33;
+	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculate
+	bool ___m_ShouldRecalculate_34;
+	// System.Int32 UnityEngine.UI.MaskableGraphic::m_StencilValue
+	int32_t ___m_StencilValue_35;
+	// UnityEngine.Vector3[] UnityEngine.UI.MaskableGraphic::m_Corners
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners_36;
+};
+
+// UnityEngine.UI.Image
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	// UnityEngine.Sprite UnityEngine.UI.Image::m_Sprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_Sprite_38;
+	// UnityEngine.Sprite UnityEngine.UI.Image::m_OverrideSprite
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_OverrideSprite_39;
+	// UnityEngine.UI.Image/Type UnityEngine.UI.Image::m_Type
+	int32_t ___m_Type_40;
+	// System.Boolean UnityEngine.UI.Image::m_PreserveAspect
+	bool ___m_PreserveAspect_41;
+	// System.Boolean UnityEngine.UI.Image::m_FillCenter
+	bool ___m_FillCenter_42;
+	// UnityEngine.UI.Image/FillMethod UnityEngine.UI.Image::m_FillMethod
+	int32_t ___m_FillMethod_43;
+	// System.Single UnityEngine.UI.Image::m_FillAmount
+	float ___m_FillAmount_44;
+	// System.Boolean UnityEngine.UI.Image::m_FillClockwise
+	bool ___m_FillClockwise_45;
+	// System.Int32 UnityEngine.UI.Image::m_FillOrigin
+	int32_t ___m_FillOrigin_46;
+	// System.Single UnityEngine.UI.Image::m_AlphaHitTestMinimumThreshold
+	float ___m_AlphaHitTestMinimumThreshold_47;
+	// System.Boolean UnityEngine.UI.Image::m_Tracked
+	bool ___m_Tracked_48;
+	// System.Boolean UnityEngine.UI.Image::m_UseSpriteMesh
+	bool ___m_UseSpriteMesh_49;
+	// System.Single UnityEngine.UI.Image::m_PixelsPerUnitMultiplier
+	float ___m_PixelsPerUnitMultiplier_50;
+	// System.Single UnityEngine.UI.Image::m_CachedReferencePixelsPerUnit
+	float ___m_CachedReferencePixelsPerUnit_51;
+};
+
+// UnityEngine.UI.Text
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	// UnityEngine.UI.FontData UnityEngine.UI.Text::m_FontData
+	FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224* ___m_FontData_37;
+	// System.String UnityEngine.UI.Text::m_Text
+	String_t* ___m_Text_38;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCache
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCache_39;
+	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCacheForLayout
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCacheForLayout_40;
+	// System.Boolean UnityEngine.UI.Text::m_DisableFontTextureRebuiltCallback
+	bool ___m_DisableFontTextureRebuiltCallback_42;
+	// UnityEngine.UIVertex[] UnityEngine.UI.Text::m_TempVerts
+	UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* ___m_TempVerts_43;
+};
+
+// <Module>
+
+// <Module>
+
+// System.Collections.Generic.List`1<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>
+struct List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	U3CU3Ef__AnonymousType0_2U5BU5D_tB51EC4B550360F7BBC106184A5A014F14E7A7F9E* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>
+
+// System.Collections.Generic.List`1<Tobii.XR.DevTools.IDisableGazeModifier>
+struct List_1_t00600BF716820AEFA4B71C1839616698B28E10D0_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	IDisableGazeModifierU5BU5D_t3838872C017D59510FD23E3143458E3BBC9277E3* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Tobii.XR.DevTools.IDisableGazeModifier>
+
+// System.Collections.Generic.List`1<Tobii.XR.GazeModifier.IGazeModifier>
+struct List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	IGazeModifierU5BU5D_tE3A2966266AA3C8A63FCBC9AD3ACFCE244EF674F* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Tobii.XR.GazeModifier.IGazeModifier>
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+
+// System.Collections.Generic.List`1<Tobii.XR.GazeModifier.PercentileData>
+struct List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	PercentileDataU5BU5D_t2A08DC2F5E246F0DFD1C39C95A6DB1B30A4A1A75* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Tobii.XR.GazeModifier.PercentileData>
+
+// System.Collections.Generic.List`1<UnityEngine.Vector2>
+struct List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<UnityEngine.Vector2>
+
+// System.Collections.Generic.List`1<UnityEngine.Vector3>
+struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<UnityEngine.Vector3>
+
+// System.Collections.Generic.Queue`1<System.Single>
+
+// System.Collections.Generic.Queue`1<System.Single>
+
+// Tobii.XR.GazeModifier.AccuracyModifier
+
+// Tobii.XR.GazeModifier.AccuracyModifier
+
+// UnityEngine.CustomYieldInstruction
+
+// UnityEngine.CustomYieldInstruction
+
+// Tobii.XR.GazeModifier.GazeModifierSettings
+
+// Tobii.XR.GazeModifier.GazeModifierSettings
+
+// Tobii.XR.GazeModifier.LinqExtension
+
+// Tobii.XR.GazeModifier.LinqExtension
+
+// Tobii.XR.GazeModifier.Metrics
+
+// Tobii.XR.GazeModifier.Metrics
+
+// Tobii.XR.MetricsForPercentile
+
+// Tobii.XR.MetricsForPercentile
+
+// Tobii.XR.GazeModifier.PercentileData
+struct PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_StaticFields
+{
+	// Tobii.XR.GazeModifier.ILerpValue Tobii.XR.GazeModifier.PercentileData::_precisionFactors
+	RuntimeObject* ____precisionFactors_5;
+};
+
+// Tobii.XR.GazeModifier.PercentileData
+
+// Tobii.XR.GazeModifier.PercentileRepository
+struct PercentileRepository_tC86AB84683DDAC3E0C9FF46F7FE5AA98293A4D35_StaticFields
+{
+	// System.Collections.Generic.IList`1<Tobii.XR.GazeModifier.PercentileData> Tobii.XR.GazeModifier.PercentileRepository::_all
+	RuntimeObject* ____all_0;
+};
+
+// Tobii.XR.GazeModifier.PercentileRepository
+
+// Tobii.XR.GazeModifier.PrecisionModifier
+
+// Tobii.XR.GazeModifier.PrecisionModifier
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// Tobii.XR.TobiiXR
+struct TobiiXR_t82D424F64C36C534A34C7A396B07954925AEDB2E_StaticFields
+{
+	// Tobii.XR.TobiiXR/TobiiXRInternal Tobii.XR.TobiiXR::_internal
+	TobiiXRInternal_t3027DA1FA887554B60C0AB984EAB2D321D381C18* ____internal_0;
+	// UnityEngine.GameObject Tobii.XR.TobiiXR::_updaterGameObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____updaterGameObject_1;
+	// Tobii.XR.TobiiXR_EyeTrackingData Tobii.XR.TobiiXR::_eyeTrackingDataLocal
+	TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ____eyeTrackingDataLocal_2;
+	// Tobii.XR.TobiiXR_EyeTrackingData Tobii.XR.TobiiXR::_eyeTrackingDataWorld
+	TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ____eyeTrackingDataWorld_3;
+	// Tobii.XR.TobiiXRAdvanced Tobii.XR.TobiiXR::_advanced
+	TobiiXRAdvanced_t43693126B38FAC4333A890B89A7D9CD2EC59F4D8* ____advanced_4;
+};
+
+// Tobii.XR.TobiiXR
+
+// Tobii.XR.GazeModifier.TrackabilityModifier
+
+// Tobii.XR.GazeModifier.TrackabilityModifier
+
+// UnityEngine.Events.UnityEventBase
+
+// UnityEngine.Events.UnityEventBase
+
+// System.ValueType
+
+// System.ValueType
+
+// UnityEngine.YieldInstruction
+
+// UnityEngine.YieldInstruction
+
+// Tobii.XR.DevTools.DevToolsMenuController/<Start>d__12
+
+// Tobii.XR.DevTools.DevToolsMenuController/<Start>d__12
+
+// Tobii.XR.DevTools.DisableGazeModifierOnFocus/<Start>d__0
+
+// Tobii.XR.DevTools.DisableGazeModifierOnFocus/<Start>d__0
+
+// Tobii.XR.G2OM_DebugVisualization/<OnPostRender>d__16
+
+// Tobii.XR.G2OM_DebugVisualization/<OnPostRender>d__16
+
+// Tobii.XR.GazeModifier.GazeModifierSettings/<>c
+struct U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0_StaticFields
+{
+	// Tobii.XR.GazeModifier.GazeModifierSettings/<>c Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9
+	U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* ___U3CU3E9_0;
+	// System.Func`2<Tobii.XR.DevTools.IDisableGazeModifier,System.Boolean> Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9__15_0
+	Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* ___U3CU3E9__15_0_1;
+	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Int32> Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<>9__17_0
+	Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* ___U3CU3E9__17_0_2;
+};
+
+// Tobii.XR.GazeModifier.GazeModifierSettings/<>c
+
+// Tobii.XR.GazeModifier.GetValueForAngle/<>c
+struct U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9_StaticFields
+{
+	// Tobii.XR.GazeModifier.GetValueForAngle/<>c Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9
+	U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* ___U3CU3E9_0;
+	// System.Func`2<UnityEngine.Vector2,System.Single> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__3_0
+	Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___U3CU3E9__3_0_1;
+	// System.Func`2<UnityEngine.Vector2,System.Boolean> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__3_1
+	Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___U3CU3E9__3_1_2;
+	// System.Func`2<UnityEngine.Vector2,System.Single> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__6_0
+	Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___U3CU3E9__6_0_3;
+	// System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<>9__6_1
+	Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* ___U3CU3E9__6_1_4;
+};
+
+// Tobii.XR.GazeModifier.GetValueForAngle/<>c
+
+// Tobii.XR.GazeModifier.GetValueForAngle/<>c__DisplayClass6_0
+
+// Tobii.XR.GazeModifier.GetValueForAngle/<>c__DisplayClass6_0
+
+// Tobii.XR.GazeModifier.Metrics/<>c
+struct U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_StaticFields
+{
+	// Tobii.XR.GazeModifier.Metrics/<>c Tobii.XR.GazeModifier.Metrics/<>c::<>9
+	U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* ___U3CU3E9_0;
+	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_0
+	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_0_1;
+	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_1
+	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_1_2;
+	// System.Func`2<UnityEngine.Vector3,System.Single> Tobii.XR.GazeModifier.Metrics/<>c::<>9__2_2
+	Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___U3CU3E9__2_2_3;
+};
+
+// Tobii.XR.GazeModifier.Metrics/<>c
+
+// Tobii.XR.MetricsForPercentile/<>c
+struct U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267_StaticFields
+{
+	// Tobii.XR.MetricsForPercentile/<>c Tobii.XR.MetricsForPercentile/<>c::<>9
+	U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* ___U3CU3E9_0;
+	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_1
+	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_1_1;
+	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_3
+	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_3_2;
+	// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2> Tobii.XR.MetricsForPercentile/<>c::<>9__8_5
+	Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___U3CU3E9__8_5_3;
+};
+
+// Tobii.XR.MetricsForPercentile/<>c
+
+// Tobii.XR.TobiiXR/TobiiXRInternal
+
+// Tobii.XR.TobiiXR/TobiiXRInternal
+
+// UnityEngine.Events.UnityEvent`1<System.Boolean>
+
+// UnityEngine.Events.UnityEvent`1<System.Boolean>
+
+// UnityEngine.Events.UnityEvent`1<System.Int32>
+
+// UnityEngine.Events.UnityEvent`1<System.Int32>
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// System.Byte
+
+// System.Byte
+
+// UnityEngine.Color
+
+// UnityEngine.Color
+
+// System.Double
+
+// System.Double
+
+// Tobii.G2OM.G2OM_Matrix4x4
+
+// Tobii.G2OM.G2OM_Matrix4x4
+
+// Tobii.G2OM.G2OM_Vector3
+
+// Tobii.G2OM.G2OM_Vector3
+
+// System.Int32
+
+// System.Int32
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// UnityEngine.LayerMask
+
+// UnityEngine.LayerMask
+
+// UnityEngine.Mathf
+struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
+{
+	// System.Single UnityEngine.Mathf::Epsilon
+	float ___Epsilon_0;
+};
+
+// UnityEngine.Mathf
+
+// UnityEngine.Matrix4x4
+struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
+{
+	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::zeroMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix_16;
+	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::identityMatrix
+	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix_17;
+};
+
+// UnityEngine.Matrix4x4
+
+// UnityEngine.Quaternion
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
+};
+
+// UnityEngine.Quaternion
+
+// UnityEngine.Rect
+
+// UnityEngine.Rect
+
+// System.Single
+
+// System.Single
+
+// System.UInt32
+
+// System.UInt32
+
+// System.UInt64
+
+// System.UInt64
+
+// UnityEngine.Events.UnityEvent
+
+// UnityEngine.Events.UnityEvent
+
+// UnityEngine.Vector2
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	// UnityEngine.Vector2 UnityEngine.Vector2::zeroVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector_2;
+	// UnityEngine.Vector2 UnityEngine.Vector2::oneVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector_3;
+	// UnityEngine.Vector2 UnityEngine.Vector2::upVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector_4;
+	// UnityEngine.Vector2 UnityEngine.Vector2::downVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector_5;
+	// UnityEngine.Vector2 UnityEngine.Vector2::leftVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector_6;
+	// UnityEngine.Vector2 UnityEngine.Vector2::rightVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector_7;
+	// UnityEngine.Vector2 UnityEngine.Vector2::positiveInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector_8;
+	// UnityEngine.Vector2 UnityEngine.Vector2::negativeInfinityVector
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector_9;
+};
+
+// UnityEngine.Vector2
+
+// UnityEngine.Vector3
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	// UnityEngine.Vector3 UnityEngine.Vector3::zeroVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector_5;
+	// UnityEngine.Vector3 UnityEngine.Vector3::oneVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector_6;
+	// UnityEngine.Vector3 UnityEngine.Vector3::upVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector_7;
+	// UnityEngine.Vector3 UnityEngine.Vector3::downVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector_8;
+	// UnityEngine.Vector3 UnityEngine.Vector3::leftVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector_9;
+	// UnityEngine.Vector3 UnityEngine.Vector3::rightVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector_10;
+	// UnityEngine.Vector3 UnityEngine.Vector3::forwardVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector_11;
+	// UnityEngine.Vector3 UnityEngine.Vector3::backVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector_12;
+	// UnityEngine.Vector3 UnityEngine.Vector3::positiveInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector_13;
+	// UnityEngine.Vector3 UnityEngine.Vector3::negativeInfinityVector
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector_14;
+};
+
+// UnityEngine.Vector3
+
+// UnityEngine.Vector4
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
+{
+	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
+	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
+	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
+	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
+};
+
+// UnityEngine.Vector4
+
+// System.Void
+
+// System.Void
+
+// UnityEngine.WaitForEndOfFrame
+
+// UnityEngine.WaitForEndOfFrame
+
+// UnityEngine.WaitUntil
+
+// UnityEngine.WaitUntil
+
+// <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>
+
+// <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>
+
+// UnityEngine.AnimationCurve
+
+// UnityEngine.AnimationCurve
+
+// UnityEngine.Coroutine
+
+// UnityEngine.Coroutine
+
+// System.Delegate
+
+// System.Delegate
+
+// Tobii.XR.GazeModifier.DevToolsUISliderEvent
+
+// Tobii.XR.GazeModifier.DevToolsUISliderEvent
+
+// Tobii.XR.GazeModifier.DevToolsUIToggleEvent
+
+// Tobii.XR.GazeModifier.DevToolsUIToggleEvent
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// Tobii.G2OM.G2OM_Candidate
+
+// Tobii.G2OM.G2OM_Candidate
+
+// Tobii.G2OM.G2OM_Ray
+
+// Tobii.G2OM.G2OM_Ray
+
+// Tobii.XR.GazeModifier.GetValueForAngle
+
+// Tobii.XR.GazeModifier.GetValueForAngle
+
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+
+// UnityEngine.Object
+
+// UnityEngine.RaycastHit
+
+// UnityEngine.RaycastHit
+
+// Tobii.XR.TobiiXR_GazeRay
+
+// Tobii.XR.TobiiXR_GazeRay
+
+// Tobii.XR.TobiiXR_Settings
+struct TobiiXR_Settings_t5EC70C3B4402041CAB993354AA4360221272100D_StaticFields
+{
+	// UnityEngine.RuntimePlatform Tobii.XR.TobiiXR_Settings::_platform
+	int32_t ____platform_0;
+};
+
+// Tobii.XR.TobiiXR_Settings
+
+// Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics/<AnimateButton>d__21
+
+// Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics/<AnimateButton>d__21
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateHandle>d__45
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateHandle>d__45
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateVisualFeedback>d__44
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateVisualFeedback>d__44
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<AnimateVisualFeedback>d__29
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<AnimateVisualFeedback>d__29
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<MoveKnob>d__31
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<MoveKnob>d__31
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/VisualStateColors
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/VisualStateColors
+
+// Tobii.XR.GazeModifier.Metrics/<>c__DisplayClass0_0
+
+// Tobii.XR.GazeModifier.Metrics/<>c__DisplayClass0_0
+
+// UnityEngine.Component
+
+// UnityEngine.Component
+
+// Tobii.G2OM.G2OM_GazeRay
+
+// Tobii.G2OM.G2OM_GazeRay
+
+// UnityEngine.GameObject
+
+// UnityEngine.GameObject
+
+// UnityEngine.Material
+
+// UnityEngine.Material
+
+// System.MulticastDelegate
+
+// System.MulticastDelegate
+
+// UnityEngine.Shader
+
+// UnityEngine.Shader
+
+// System.SystemException
+
+// System.SystemException
+
+// Tobii.XR.TobiiXR_EyeTrackingData
+
+// Tobii.XR.TobiiXR_EyeTrackingData
+
+// System.Func`1<System.Boolean>
+
+// System.Func`1<System.Boolean>
+
+// System.Func`2<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>,System.Boolean>
+
+// System.Func`2<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>,System.Boolean>
+
+// System.Func`2<Tobii.XR.DevTools.IDisableGazeModifier,System.Boolean>
+
+// System.Func`2<Tobii.XR.DevTools.IDisableGazeModifier,System.Boolean>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Boolean>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Boolean>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Int32>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Int32>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2>
+
+// System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2>
+
+// System.Func`2<UnityEngine.Vector2,System.Boolean>
+
+// System.Func`2<UnityEngine.Vector2,System.Boolean>
+
+// System.Func`2<UnityEngine.Vector2,System.Single>
+
+// System.Func`2<UnityEngine.Vector2,System.Single>
+
+// System.Func`2<UnityEngine.Vector3,System.Single>
+
+// System.Func`2<UnityEngine.Vector3,System.Single>
+
+// System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>
+
+// System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>
+
+// UnityEngine.Behaviour
+
+// UnityEngine.Behaviour
+
+// Tobii.G2OM.G2OM_CandidateResult
+
+// Tobii.G2OM.G2OM_CandidateResult
+
+// Tobii.G2OM.G2OM_DeviceData
+
+// Tobii.G2OM.G2OM_DeviceData
+
+// System.NotSupportedException
+
+// System.NotSupportedException
+
+// UnityEngine.Renderer
+
+// UnityEngine.Renderer
+
+// UnityEngine.Transform
+
+// UnityEngine.Transform
+
+// UnityEngine.Camera
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
+{
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreCull
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull_4;
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPreRender
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender_5;
+	// UnityEngine.Camera/CameraCallback UnityEngine.Camera::onPostRender
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender_6;
+};
+
+// UnityEngine.Camera
+
+// Tobii.G2OM.G2OM
+
+// Tobii.G2OM.G2OM
+
+// UnityEngine.MonoBehaviour
+
+// UnityEngine.MonoBehaviour
+
+// UnityEngine.RectTransform
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
+{
+	// UnityEngine.RectTransform/ReapplyDrivenProperties UnityEngine.RectTransform::reapplyDrivenProperties
+	ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24* ___reapplyDrivenProperties_4;
+};
+
+// UnityEngine.RectTransform
+
+// UnityEngine.SpriteRenderer
+
+// UnityEngine.SpriteRenderer
+
+// Tobii.XR.ControllerManager
+struct ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_StaticFields
+{
+	// UnityEngine.GameObject Tobii.XR.ControllerManager::_gameObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____gameObject_5;
+	// Tobii.XR.ControllerManager Tobii.XR.ControllerManager::_instance
+	ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* ____instance_6;
+	// Tobii.XR.IControllerAdapter Tobii.XR.ControllerManager::_controllerAdapter
+	RuntimeObject* ____controllerAdapter_7;
+};
+
+// Tobii.XR.ControllerManager
+
+// Tobii.XR.DevTools.DevToolsMenuController
+
+// Tobii.XR.DevTools.DevToolsMenuController
+
+// Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics
+
+// Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics
+
+// Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics
+
+// Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerDragDetector
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerDragDetector
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeButton
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeButton
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton
+
+// Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton
+
+// Tobii.XR.DevTools.DisableGazeModifierOnFocus
+
+// Tobii.XR.DevTools.DisableGazeModifierOnFocus
+
+// Tobii.XR.EyeTrackingFilterBase
+
+// Tobii.XR.EyeTrackingFilterBase
+
+// Tobii.XR.G2OM_DebugTool
+
+// Tobii.XR.G2OM_DebugTool
+
+// Tobii.XR.G2OM_DebugVisualization
+
+// Tobii.XR.G2OM_DebugVisualization
+
+// Tobii.XR.GazeVisualizer
+
+// Tobii.XR.GazeVisualizer
+
+// UnityEngine.EventSystems.UIBehaviour
+
+// UnityEngine.EventSystems.UIBehaviour
+
+// Tobii.XR.GazeModifier.GazeModifierFilter
+
+// Tobii.XR.GazeModifier.GazeModifierFilter
+
+// UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 {
 	// UnityEngine.Material UnityEngine.UI.Graphic::s_DefaultUI
@@ -2596,109 +3139,46 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 	// UnityEngine.Texture2D UnityEngine.UI.Graphic::s_WhiteTexture
 	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___s_WhiteTexture_5;
 	// UnityEngine.Mesh UnityEngine.UI.Graphic::s_Mesh
-	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_20;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_21;
 	// UnityEngine.UI.VertexHelper UnityEngine.UI.Graphic::s_VertexHelper
-	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_21;
+	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_22;
 };
+
+// UnityEngine.UI.Graphic
 
 // UnityEngine.UI.MaskableGraphic
-struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
-{
-	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculateStencil
-	bool ___m_ShouldRecalculateStencil_26;
-	// UnityEngine.Material UnityEngine.UI.MaskableGraphic::m_MaskMaterial
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial_27;
-	// UnityEngine.UI.RectMask2D UnityEngine.UI.MaskableGraphic::m_ParentMask
-	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask_28;
-	// System.Boolean UnityEngine.UI.MaskableGraphic::m_Maskable
-	bool ___m_Maskable_29;
-	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IsMaskingGraphic
-	bool ___m_IsMaskingGraphic_30;
-	// System.Boolean UnityEngine.UI.MaskableGraphic::m_IncludeForMasking
-	bool ___m_IncludeForMasking_31;
-	// UnityEngine.UI.MaskableGraphic/CullStateChangedEvent UnityEngine.UI.MaskableGraphic::m_OnCullStateChanged
-	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged_32;
-	// System.Boolean UnityEngine.UI.MaskableGraphic::m_ShouldRecalculate
-	bool ___m_ShouldRecalculate_33;
-	// System.Int32 UnityEngine.UI.MaskableGraphic::m_StencilValue
-	int32_t ___m_StencilValue_34;
-	// UnityEngine.Vector3[] UnityEngine.UI.MaskableGraphic::m_Corners
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners_35;
-};
+
+// UnityEngine.UI.MaskableGraphic
 
 // UnityEngine.UI.Image
-struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
-{
-	// UnityEngine.Sprite UnityEngine.UI.Image::m_Sprite
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_Sprite_37;
-	// UnityEngine.Sprite UnityEngine.UI.Image::m_OverrideSprite
-	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_OverrideSprite_38;
-	// UnityEngine.UI.Image/Type UnityEngine.UI.Image::m_Type
-	int32_t ___m_Type_39;
-	// System.Boolean UnityEngine.UI.Image::m_PreserveAspect
-	bool ___m_PreserveAspect_40;
-	// System.Boolean UnityEngine.UI.Image::m_FillCenter
-	bool ___m_FillCenter_41;
-	// UnityEngine.UI.Image/FillMethod UnityEngine.UI.Image::m_FillMethod
-	int32_t ___m_FillMethod_42;
-	// System.Single UnityEngine.UI.Image::m_FillAmount
-	float ___m_FillAmount_43;
-	// System.Boolean UnityEngine.UI.Image::m_FillClockwise
-	bool ___m_FillClockwise_44;
-	// System.Int32 UnityEngine.UI.Image::m_FillOrigin
-	int32_t ___m_FillOrigin_45;
-	// System.Single UnityEngine.UI.Image::m_AlphaHitTestMinimumThreshold
-	float ___m_AlphaHitTestMinimumThreshold_46;
-	// System.Boolean UnityEngine.UI.Image::m_Tracked
-	bool ___m_Tracked_47;
-	// System.Boolean UnityEngine.UI.Image::m_UseSpriteMesh
-	bool ___m_UseSpriteMesh_48;
-	// System.Single UnityEngine.UI.Image::m_PixelsPerUnitMultiplier
-	float ___m_PixelsPerUnitMultiplier_49;
-	// System.Single UnityEngine.UI.Image::m_CachedReferencePixelsPerUnit
-	float ___m_CachedReferencePixelsPerUnit_50;
-};
-
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields
 {
 	// UnityEngine.Material UnityEngine.UI.Image::s_ETC1DefaultUI
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_ETC1DefaultUI_36;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_ETC1DefaultUI_37;
 	// UnityEngine.Vector2[] UnityEngine.UI.Image::s_VertScratch
-	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_VertScratch_51;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_VertScratch_52;
 	// UnityEngine.Vector2[] UnityEngine.UI.Image::s_UVScratch
-	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_UVScratch_52;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___s_UVScratch_53;
 	// UnityEngine.Vector3[] UnityEngine.UI.Image::s_Xy
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Xy_53;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Xy_54;
 	// UnityEngine.Vector3[] UnityEngine.UI.Image::s_Uv
-	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Uv_54;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___s_Uv_55;
 	// System.Collections.Generic.List`1<UnityEngine.UI.Image> UnityEngine.UI.Image::m_TrackedTexturelessImages
-	List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19* ___m_TrackedTexturelessImages_55;
+	List_1_tE6BB71ABF15905EFA2BE92C38A2716547AEADB19* ___m_TrackedTexturelessImages_56;
 	// System.Boolean UnityEngine.UI.Image::s_Initialized
-	bool ___s_Initialized_56;
+	bool ___s_Initialized_57;
 };
+
+// UnityEngine.UI.Image
 
 // UnityEngine.UI.Text
-struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
-{
-	// UnityEngine.UI.FontData UnityEngine.UI.Text::m_FontData
-	FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224* ___m_FontData_36;
-	// System.String UnityEngine.UI.Text::m_Text
-	String_t* ___m_Text_37;
-	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCache
-	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCache_38;
-	// UnityEngine.TextGenerator UnityEngine.UI.Text::m_TextCacheForLayout
-	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCacheForLayout_39;
-	// System.Boolean UnityEngine.UI.Text::m_DisableFontTextureRebuiltCallback
-	bool ___m_DisableFontTextureRebuiltCallback_41;
-	// UnityEngine.UIVertex[] UnityEngine.UI.Text::m_TempVerts
-	UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* ___m_TempVerts_42;
-};
-
 struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
 {
 	// UnityEngine.Material UnityEngine.UI.Text::s_DefaultText
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultText_40;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultText_41;
 };
+
+// UnityEngine.UI.Text
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -2872,13 +3352,13 @@ struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA  : public Runtime
 
 
 // System.Void System.Func`2<System.Object,System.Boolean>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared (Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Where<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared (RuntimeObject* ___source0, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___predicate1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
 // System.Void System.Func`2<System.Object,UnityEngine.Vector2>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mB8352E429272D346070147A942612E0C937BD03B_gshared (Func_2_t127163694D7C66D0F32B7F8F5BB2507F7516DEE4* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mB8352E429272D346070147A942612E0C937BD03B_gshared (Func_2_t127163694D7C66D0F32B7F8F5BB2507F7516DEE4* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<System.Object,UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m755C2029ECD59CA755A2DFEE0CD90DDE938D1B2E_gshared (RuntimeObject* ___source0, Func_2_t127163694D7C66D0F32B7F8F5BB2507F7516DEE4* ___selector1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m755C2029ECD59CA755A2DFEE0CD90DDE938D1B2E_gshared (RuntimeObject* ___0_source, Func_2_t127163694D7C66D0F32B7F8F5BB2507F7516DEE4* ___1_selector, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
@@ -2886,57 +3366,57 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_mCE6AA3B34C1148F11D12
 // System.Void UnityEngine.Events.UnityEvent`1<System.Boolean>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m7A1EF666468DD954D61FBAD7C721229BD3589934_gshared (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::Invoke(T0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_gshared (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, int32_t ___arg00, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_gshared (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, int32_t ___0_arg0, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Boolean>::Invoke(T0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653_gshared (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB* __this, bool ___arg00, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653_gshared (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB* __this, bool ___0_arg0, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Boolean System.Linq.Enumerable::Any<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared (RuntimeObject* ___source0, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___predicate1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
 // System.Void System.Func`2<System.Object,System.Int32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mEB7603EDE6D79A62E5BD74A896F030D2C9F2A821_gshared (Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mEB7603EDE6D79A62E5BD74A896F030D2C9F2A821_gshared (Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<System.Object,System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8FAC2A5066E30AA4BA544C3F08603F64D4CFF982_gshared (RuntimeObject* ___source0, Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* ___selector1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Select_TisRuntimeObject_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8FAC2A5066E30AA4BA544C3F08603F64D4CFF982_gshared (RuntimeObject* ___0_source, Func_2_t9A0D493A82DCC47C9C819A3B045E02D9B5DDCE1B* ___1_selector, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Distinct<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Int32 System.Linq.Enumerable::Count<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::Clear()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m4F04D407852735E68667980C26DA866BAE103B37_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Boolean System.Linq.Enumerable::Any<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Void System.Func`2<UnityEngine.Vector2,System.Single>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405_gshared (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405_gshared (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Linq.IOrderedEnumerable`1<TSource> System.Linq.Enumerable::OrderBy<UnityEngine.Vector2,System.Single>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC_gshared (RuntimeObject* ___source0, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___keySelector1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC_gshared (RuntimeObject* ___0_source, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___1_keySelector, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::Last<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Void System.Func`2<UnityEngine.Vector2,System.Boolean>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31_gshared (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31_gshared (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Int32 System.Linq.Enumerable::Count<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1_gshared (RuntimeObject* ___source0, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___predicate1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1_gshared (RuntimeObject* ___0_source, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___1_predicate, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___item0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_item, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC_gshared (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC_gshared (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Vector2>::get_Count()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_mF1C0C56457C655BDFFC6EE5B46FAD8BAEC1F588B_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Void System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_3__ctor_m66C7834D03CFF4C7534F87B2493775D1CFBCFDA7_gshared (Func_3_t528CC882F452C27534710E16BE5746EF1F406094* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_3__ctor_m66C7834D03CFF4C7534F87B2493775D1CFBCFDA7_gshared (Func_3_t528CC882F452C27534710E16BE5746EF1F406094* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<TResult> Tobii.XR.GazeModifier.LinqExtension::SelectWithPrevious<UnityEngine.Vector2,System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,TSource,TResult>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisRuntimeObject_m46C7726F4221D13B162FB258A1A66A7697D18BB9_gshared (RuntimeObject* ___source0, Func_3_t528CC882F452C27534710E16BE5746EF1F406094* ___projection1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisRuntimeObject_m46C7726F4221D13B162FB258A1A66A7697D18BB9_gshared (RuntimeObject* ___0_source, Func_3_t528CC882F452C27534710E16BE5746EF1F406094* ___1_projection, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::LastOrDefault<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_LastOrDefault_TisRuntimeObject_mB7B75BD214645D8A79DFF139356112781451A936_gshared (RuntimeObject* ___source0, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___predicate1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_LastOrDefault_TisRuntimeObject_mB7B75BD214645D8A79DFF139356112781451A936_gshared (RuntimeObject* ___0_source, Func_2_tE1F0D41563EE092E5E5540B061449FDE88F1DC00* ___1_predicate, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_First_TisRuntimeObject_mEFECF1B8C3201589C5AF34176DCBF8DD926642D6_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_First_TisRuntimeObject_mEFECF1B8C3201589C5AF34176DCBF8DD926642D6_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // <low>j__TPar <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>::get_low()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ef__AnonymousType0_2_get_low_mC25AF4FC66139C3745032C228224668D5A58222D_gshared_inline (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, const RuntimeMethod* method) ;
 // <high>j__TPar <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>::get_high()
@@ -2944,15 +3424,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m88C4BD8AC607DB3585552068F4DC437406358D5F_gshared (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, const RuntimeMethod* method) ;
 // System.Void <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>::.ctor(<low>j__TPar,<high>j__TPar)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233_gshared (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___low0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___high1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233_gshared (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_low, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_high, const RuntimeMethod* method) ;
 // System.Void System.Func`2<UnityEngine.Vector3,System.Single>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0_gshared (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0_gshared (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Single System.Linq.Enumerable::Average<UnityEngine.Vector3>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Single>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_gshared (RuntimeObject* ___source0, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___selector1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_gshared (RuntimeObject* ___0_source, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___1_selector, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Queue`1<System.Single>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Queue`1<System.Single>::Enqueue(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___item0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___0_item, const RuntimeMethod* method) ;
 // T System.Collections.Generic.Queue`1<System.Single>::Dequeue()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_gshared (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<System.Object>()
@@ -2960,12 +3440,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRun
 // T UnityEngine.GameObject::AddComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Void System.Func`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKeyUp(UnityEngine.KeyCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUp_m9A962E395811A9901E7E05F267E198A533DBEF2F (int32_t ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyUp_m9A962E395811A9901E7E05F267E198A533DBEF2F (int32_t ___0_key, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::ToggleVisualization()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_ToggleVisualization_m91161E26CEB5542457537183675DFBFF5D753F94 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::ToggleFreeze()
@@ -2973,13 +3453,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_ToggleFreeze_mE2
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::SetVisualization(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_SetVisualization_mBDA8211F5BAEFDD1C4ECBAD566B4A422CBF1B941 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, bool ___set0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_SetVisualization_mBDA8211F5BAEFDD1C4ECBAD566B4A422CBF1B941 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, bool ___0_set, const RuntimeMethod* method) ;
 // UnityEngine.Shader UnityEngine.Shader::Find(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5 (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* Shader_Find_m183AA54F78320212DDEC811592F98456898A41C5 (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::.ctor(UnityEngine.Shader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material__ctor_m7FDF47105D66D19591BE505A0C42B0F90D88C9BF (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___shader0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material__ctor_m7FDF47105D66D19591BE505A0C42B0F90D88C9BF (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ___0_shader, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Material::SetInt(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetInt_m41DF5404A9942239265888105E1DC83F2FBF901A (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___name0, int32_t ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetInt_m41DF5404A9942239265888105E1DC83F2FBF901A (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, String_t* ___0_name, int32_t ___1_value, const RuntimeMethod* method) ;
 // Tobii.XR.TobiiXR/TobiiXRInternal Tobii.XR.TobiiXR::get_Internal()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TobiiXRInternal_t3027DA1FA887554B60C0AB984EAB2D321D381C18* TobiiXR_get_Internal_m15388C68FBE4AE142F298B3CE22D1967B8671704_inline (const RuntimeMethod* method) ;
 // Tobii.G2OM.G2OM Tobii.XR.TobiiXR/TobiiXRInternal::get_G2OM()
@@ -2991,89 +3471,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E
 // Tobii.G2OM.G2OM_DeviceData Tobii.G2OM.G2OM::GetDeviceData()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1 G2OM_GetDeviceData_m44D080FE443AF7ED6CB0BCEB9F287CC1E828F94D_inline (G2OM_t3012CB8D216E16F631DFFFCAE19FE36E8A1DDCE1* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization/<OnPostRender>d__16::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnPostRenderU3Ed__16__ctor_mF63BC306BEA26E6F3A03979C23F0D388B45494AD (U3COnPostRenderU3Ed__16_t2AA0BA257B5F50575B7078F09F01C9E6820B4B03* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnPostRenderU3Ed__16__ctor_mF63BC306BEA26E6F3A03979C23F0D388B45494AD (U3COnPostRenderU3Ed__16_t2AA0BA257B5F50575B7078F09F01C9E6820B4B03* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Material::SetPass(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Material_SetPass_mBB03542DFF4FAEADFCED332009F9D61B6DED75FE (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___pass0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Material_SetPass_mBB03542DFF4FAEADFCED332009F9D61B6DED75FE (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, int32_t ___0_pass, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::RenderBackground()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderBackground_mB9DB4F3F57661A4B557DD3D0B32E3B424B828538 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, const RuntimeMethod* method) ;
 // Tobii.G2OM.G2OM_Error Tobii.G2OM.Interop::G2OM_GetWorldspaceCornerOfCandidate(Tobii.G2OM.G2OM_Candidate&,System.UInt32,Tobii.G2OM.G2OM_Vector3[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Interop_G2OM_GetWorldspaceCornerOfCandidate_mE5D0DC0A545981EAA70EA5E174E3F6ACDD7327DA (G2OM_Candidate_tA1CB20BFD0A11EC85F26F085D704DB84C2F67F55* ___candidate0, uint32_t ___numberOfCorners1, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___cornersOfCandidateInWorldSpace2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Interop_G2OM_GetWorldspaceCornerOfCandidate_mE5D0DC0A545981EAA70EA5E174E3F6ACDD7327DA (G2OM_Candidate_tA1CB20BFD0A11EC85F26F085D704DB84C2F67F55* ___0_candidate, uint32_t ___1_numberOfCorners, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___2_cornersOfCandidateInWorldSpace, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogError(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // UnityEngine.Color Tobii.XR.G2OM_DebugVisualization::GetResultColor(Tobii.G2OM.G2OM_CandidateResult[],System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G2OM_DebugVisualization_GetResultColor_mD156CB5C9966C5BD2E355E918427C49A0B14B224 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___g2OmCandidatesResult0, uint64_t ___id1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G2OM_DebugVisualization_GetResultColor_mD156CB5C9966C5BD2E355E918427C49A0B14B224 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___0_g2OmCandidatesResult, uint64_t ___1_id, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::RenderCube(Tobii.G2OM.G2OM_Vector3[],UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E75E708300DFB4DD47E23F3C01B5E4E701EC8 (G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___corners0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E75E708300DFB4DD47E23F3C01B5E4E701EC8 (G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___0_corners, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::get_yellow()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline (const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::RenderGaze(Tobii.G2OM.G2OM_GazeRay,UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderGaze_m4689FC08BC8DA6564C7A45A9233EE95A5390FA1E (G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D ___gazeRay0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderGaze_m4689FC08BC8DA6564C7A45A9233EE95A5390FA1E (G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D ___0_gazeRay, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::PushMatrix()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_PushMatrix_mB505DD9B224528266FCADC716A16343838105A09 (const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::Begin(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7 (int32_t ___mode0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7 (int32_t ___0_mode, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::Color(UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___c0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_c, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::LoadOrtho()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_LoadOrtho_mE86AB2DBBC5C2BA67E7B743A2352E61C372CEADC (const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::Vertex3(System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Vertex3_mEA9925548F447556F7899E69604B787EE57F6978 (float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Vertex3_mEA9925548F447556F7899E69604B787EE57F6978 (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::End()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_End_m6CE9D562B738075125F901B1D5254520EC30AB36 (const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::PopMatrix()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_PopMatrix_mCE0D33302104D1168B6382136039E979E8C02855 (const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::Lerp(UnityEngine.Color,UnityEngine.Color,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___a0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___b1, float ___t2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_a, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_b, float ___2_t, const RuntimeMethod* method) ;
 // System.Boolean Tobii.G2OM.G2OM_ExtensionMethods::ToBool(System.Byte)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool G2OM_ExtensionMethods_ToBool_m44DCAAA34CCB249A942D3398CE3E6F0A1948EECB (uint8_t ___b0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool G2OM_ExtensionMethods_ToBool_m44DCAAA34CCB249A942D3398CE3E6F0A1948EECB (uint8_t ___0_b, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.G2OM.G2OM_UnityExtensionMethods::Vector(Tobii.G2OM.G2OM_Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416 (G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC ___vector0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416 (G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC ___0_vector, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GL::Vertex(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___v0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_v, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Multiply(UnityEngine.Vector3,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Addition(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Color::.ctor(System.Single,System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogWarning(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.G2OM_DebugVisualization::Render(UnityEngine.Material,Tobii.G2OM.G2OM_DeviceData&,Tobii.G2OM.G2OM_Candidate[],Tobii.G2OM.G2OM_CandidateResult[],Tobii.G2OM.G2OM_Vector3[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA1B31FC3563EC5CB58FF4DA70F2FC4001 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___mat0, G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* ___deviceData1, G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* ___g2omCandidates2, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___g2OmCandidatesResult3, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___corners4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA1B31FC3563EC5CB58FF4DA70F2FC4001 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_mat, G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* ___1_deviceData, G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* ___2_g2omCandidates, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___3_g2OmCandidatesResult, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___4_corners, const RuntimeMethod* method) ;
 // System.Void System.NotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.MetricsForPercentile::CheckCurrentPercentile(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, const RuntimeMethod* method) ;
 // System.Void System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_m17AA24AF25127129F63724D104DB5DE3B53A46E9 (Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_m17AA24AF25127129F63724D104DB5DE3B53A46E9 (Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Where<Tobii.XR.GazeModifier.PercentileData>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-inline RuntimeObject* Enumerable_Where_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_mA399923DB50254B7E3A92D7CFBDB7075EC13F4F9 (RuntimeObject* ___source0, Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59* ___predicate1, const RuntimeMethod* method)
+inline RuntimeObject* Enumerable_Where_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_mA399923DB50254B7E3A92D7CFBDB7075EC13F4F9 (RuntimeObject* ___0_source, Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59* ___1_predicate, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59*, const RuntimeMethod*))Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared)(___source0, ___predicate1, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t9B324AFC2FB86233B22ED127A75B7B1FE5D59C59*, const RuntimeMethod*))Enumerable_Where_TisRuntimeObject_m5DAF16724887B42DDBBF391C7F375749E8AA4AD7_gshared)(___0_source, ___1_predicate, method);
 }
 // System.Void System.Func`2<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_mDB586FD815C6377AEB0908A6F4A2271EB37CAABD (Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_mDB586FD815C6377AEB0908A6F4A2271EB37CAABD (Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mB8352E429272D346070147A942612E0C937BD03B_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mB8352E429272D346070147A942612E0C937BD03B_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<Tobii.XR.GazeModifier.PercentileData,UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
-inline RuntimeObject* Enumerable_Select_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mACFADEB6C9A48D2CC2026CC90F567D75A5954AAA (RuntimeObject* ___source0, Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___selector1, const RuntimeMethod* method)
+inline RuntimeObject* Enumerable_Select_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mACFADEB6C9A48D2CC2026CC90F567D75A5954AAA (RuntimeObject* ___0_source, Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104* ___1_selector, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104*, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m755C2029ECD59CA755A2DFEE0CD90DDE938D1B2E_gshared)(___source0, ___selector1, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t6F8D13D6F296802E760F292C0DB94E7AD7EE3104*, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m755C2029ECD59CA755A2DFEE0CD90DDE938D1B2E_gshared)(___0_source, ___1_selector, method);
 }
 // System.Void Tobii.XR.GazeModifier.GetValueForAngle::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueForAngle__ctor_m7D8DCA76CBCF811AC7AD0C81841E1C2181463166 (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.MetricsForPercentile/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mFA6B56415BAEF6B47A3B8107CEFE1FAE7BD654CD (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector2::.ctor(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
 // UnityEngine.Camera Tobii.XR.CameraHelper::GetMainCamera()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* CameraHelper_GetMainCamera_m84833CAEBFF4AEE845BF88E7D1E7F6F57716F26F (const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.SpriteRenderer>()
@@ -3090,51 +3570,51 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TobiiXR_EyeTrackingData__ctor_m421B68834
 // UnityEngine.Vector3 UnityEngine.Vector3::get_forward()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_forward_mAA55A7034304DF8B2152EAD49AE779FC4CA2EB4A_inline (const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Matrix4x4::MultiplyVector(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937 (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Matrix4x4_MultiplyVector_mFD12F86A473E90BBB0002149ABA3917B2A518937 (Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.EyeTrackingDataHelper::TransformGazeData(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Matrix4x4)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EyeTrackingDataHelper_TransformGazeData_m165787EDB9E90AD0D231D04D4BF13A7203D17767 (TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___transformMatrix1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EyeTrackingDataHelper_TransformGazeData_m165787EDB9E90AD0D231D04D4BF13A7203D17767 (TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___1_transformMatrix, const RuntimeMethod* method) ;
 // Tobii.XR.EyeTrackingFilterBase Tobii.XR.TobiiXR/TobiiXRInternal::get_Filter()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR EyeTrackingFilterBase_t6ABBD06FCC91786F6D144D13ABEE8CC1EA0C4AE2* TobiiXRInternal_get_Filter_mF0C88D16BB8A142AF824E06C840AEA5891595FA2 (TobiiXRInternal_t3027DA1FA887554B60C0AB984EAB2D321D381C18* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Inequality(UnityEngine.Object,UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___x0, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___y1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierFilter::FilterAccuracyOnly(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_FilterAccuracyOnly_m2B54C6D324AB91628A0672C3AF2FBE09F9A8A7B1 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_FilterAccuracyOnly_m2B54C6D324AB91628A0672C3AF2FBE09F9A8A7B1 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Renderer::get_enabled()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Renderer_get_enabled_mFDDF363859AEC88105A925FA7EA341C077B09B54 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeVisualizer::SetPositionAndScale(Tobii.XR.TobiiXR_GazeRay)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_SetPositionAndScale_m0BDDCFBD9FF5A25442D09211672D05C2ECA4CDDE (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 ___gazeRay0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_SetPositionAndScale_m0BDDCFBD9FF5A25442D09211672D05C2ECA4CDDE (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 ___0_gazeRay, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeModifier.GazeModifierFilter::GetMaxPrecisionAngleDegrees(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeModifierFilter_GetMaxPrecisionAngleDegrees_mB00D02A33E16800F335D088C15370264A1E358EC (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___gazeDirection0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeModifierFilter_GetMaxPrecisionAngleDegrees_mB00D02A33E16800F335D088C15370264A1E358EC (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_gazeDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeVisualizer::UpdatePrecisionScale(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB508EFB7B6CC88ED92B1A8A7AC026D0B5FD79936 (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, float ___maxPrecisionAngleDegrees0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB508EFB7B6CC88ED92B1A8A7AC026D0B5FD79936 (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, float ___0_maxPrecisionAngleDegrees, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Physics::Raycast(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.RaycastHit&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m1B27F500505FFB57D78548B9F5A540A2AD092903 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___origin0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction1, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___hitInfo2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Physics_Raycast_m1B27F500505FFB57D78548B9F5A540A2AD092903 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_origin, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_direction, RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* ___2_hitInfo, const RuntimeMethod* method) ;
 // System.Single UnityEngine.RaycastHit::get_distance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float RaycastHit_get_distance_m035194B0E9BB6229259CFC43B095A9C8E5011C78 (RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_unscaledDeltaTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_unscaledDeltaTime_mF057EECA857E5C0F90A3F910D26D3EE59F27C4B5 (const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::Lerp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, float ___2_t, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_normalized()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.Component::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_position(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_one()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeVisualizer::get_ScaleFactor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeVisualizer_get_ScaleFactor_m4DC8F9DB94014C36464F76853CF8E4E2A9943522 (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_localScale(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localScale_mBA79E811BAF6C47B80FF76414C12B47B3CD03633 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_forward(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_forward_mA178B5CF4F0F6133F9AF8ED3A4ECD2C604C60C26 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_forward_mA178B5CF4F0F6133F9AF8ED3A4ECD2C604C60C26 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_localScale()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeVisualizer::GetScaleAffectedByPrecisionAngle(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeVisualizer_GetScaleAffectedByPrecisionAngle_m6CAE8FE19D792D16249B807CB5C35BB3D24C5DC6 (float ___maxPrecisionAngleDegrees0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeVisualizer_GetScaleAffectedByPrecisionAngle_m6CAE8FE19D792D16249B807CB5C35BB3D24C5DC6 (float ___0_maxPrecisionAngleDegrees, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
 inline void UnityEvent_1__ctor_mCE6AA3B34C1148F11D1273C068A6A39430911684 (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, const RuntimeMethod* method)
 {
@@ -3151,23 +3631,23 @@ inline RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* Component_GetCom
 	return ((  RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 // System.Void UnityEngine.MonoBehaviour::StopCoroutine(UnityEngine.Coroutine)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___routine0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Component::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::get_activeInHierarchy()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_get_activeInHierarchy_m49250F4F168DCC5388D5BE4F6A5681386907B109 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButton(System.Single,UnityEngine.AnimationCurve,Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, float ___duration0, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___animationCurve1, int32_t ___currentButtonState2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, float ___0_duration, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___1_animationCurve, int32_t ___2_currentButtonState, const RuntimeMethod* method) ;
 // UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___routine0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics/<AnimateButton>d__21::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateButtonU3Ed__21__ctor_m4C544FD861D092F841C04E474F289726C4DBF69C (U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateButtonU3Ed__21__ctor_m4C544FD861D092F841C04E474F289726C4DBF69C (U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::get_magenta()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_magenta_mE31C432891E0B3D23C8FB03CB3A38A60E7F52A9A_inline (const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_deltaTime()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 // System.Single UnityEngine.AnimationCurve::Evaluate(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationCurve_Evaluate_m50B857043DE251A186032ADBCBB4CEF817F4EE3C (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* __this, float ___time0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float AnimationCurve_Evaluate_m50B857043DE251A186032ADBCBB4CEF817F4EE3C (AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* __this, float ___0_time, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent__ctor_m03D3E5121B9A6100351984D0CE3050B909CD3235 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_lossyScale()
@@ -3175,11 +3655,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 // Tobii.XR.ControllerManager Tobii.XR.ControllerManager::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* ControllerManager_get_Instance_mFBFC5D0B48FD39462A73C0056253684E952C1523 (const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.ControllerManager::GetButtonPressDown(Tobii.XR.ControllerButton)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPressDown_mF011607239E593EE06022310377E0C891D0D37B1 (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___button0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPressDown_mF011607239E593EE06022310377E0C891D0D37B1 (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___0_button, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerDragDetector::CheckForTriggerDragEvent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerDragDetector_CheckForTriggerDragEvent_mF424F3E8F17DDA0482D22582ABEFC70BFEBB3E44 (DevToolsUITriggerDragDetector_tF17B03B7D9EE7F2FB2907C51DD380809902DB420* __this, const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.ControllerManager::GetButtonPressUp(Tobii.XR.ControllerButton)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPressUp_m3E38F23E1BF62E0150B3F52F54D4CD42ECA0FFB4 (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___button0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPressUp_m3E38F23E1BF62E0150B3F52F54D4CD42ECA0FFB4 (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___0_button, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.DevToolsUITriggerDragDetector::GetRelativeControllerMovement()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 DevToolsUITriggerDragDetector_GetRelativeControllerMovement_mCF88D3F18FBDFF678050992C489F36E40D03990A (DevToolsUITriggerDragDetector_tF17B03B7D9EE7F2FB2907C51DD380809902DB420* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent::Invoke()
@@ -3187,30 +3667,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_Invoke_mFBF80D59B03C30C5FE6A0
 // UnityEngine.Vector3 Tobii.XR.ControllerManager::get_Velocity()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ControllerManager_get_Velocity_m4C2290B661EDE07FAF0FC2C9815B6C98B62DBFA4_inline (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::InverseTransformVector(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_InverseTransformVector_mBBA687CE32C0394FC9AB4F273D4E4A11F53FB044 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_InverseTransformVector_mBBA687CE32C0394FC9AB4F273D4E4A11F53FB044 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics>()
 inline DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* Component_GetComponent_TisDevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384_m9BFC03036E533CC8AE966BE4BEF1CF9D981E7A6A (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
 	return ((  DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeButton::UpdateState(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_mBA591A6142D1D542768E720397487406E624F5FD (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, int32_t ___newState0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_mBA591A6142D1D542768E720397487406E624F5FD (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, int32_t ___0_newState, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.ControllerManager::TriggerHapticPulse(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerManager_TriggerHapticPulse_m0734B292B5A8BE73CD78B05930725284DF50A34B (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, float ___hapticStrength0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ControllerManager_TriggerHapticPulse_m0734B292B5A8BE73CD78B05930725284DF50A34B (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, float ___0_hapticStrength, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButtonPress(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonPress_m5163850FBCACF042EFDFC7B5F4A481C348236490 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___currentButtonState0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonPress_m5163850FBCACF042EFDFC7B5F4A481C348236490 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___0_currentButtonState, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButtonVisualFeedback(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonVisualFeedback_m7DE3B5701B6C120360BFEDBFB898CDFE73670703 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___currentButtonState0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonVisualFeedback_m7DE3B5701B6C120360BFEDBFB898CDFE73670703 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___0_currentButtonState, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Behaviour::get_enabled()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Behaviour_get_enabled_mAAC9F15E9EBF552217A5AE2681589CC0BFA300C1 (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.ControllerManager::GetButtonPress(Tobii.XR.ControllerButton)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPress_m79D81326F2020904D71537EA71742973CD948EBE (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___button0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ControllerManager_GetButtonPress_m79D81326F2020904D71537EA71742973CD948EBE (ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB* __this, int32_t ___0_button, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Mathf::Approximately(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::Invoke(T0)
-inline void UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638 (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, int32_t ___arg00, const RuntimeMethod* method)
+inline void UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638 (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, int32_t ___0_arg0, const RuntimeMethod* method)
 {
-	((  void (*) (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A*, int32_t, const RuntimeMethod*))UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_gshared)(__this, ___arg00, method);
+	((  void (*) (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A*, int32_t, const RuntimeMethod*))UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_gshared)(__this, ___0_arg0, method);
 }
 // T UnityEngine.Component::GetComponent<Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics>()
 inline DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* Component_GetComponent_TisDevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54_m6EE2BC11416A3717E152E39459484162DE83A788 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
@@ -3224,35 +3704,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DevToolsUITriggerGazeSlider_SliderValueO
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::HandleInput()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_HandleInput_m284D153B42B10FEE92A97347C5B7CF3112BD8581 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::StartHandleAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartHandleAnimation_m802B9C20D37AE6014E5FE5747B75BF650A65CE61 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___isTouching0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartHandleAnimation_m802B9C20D37AE6014E5FE5747B75BF650A65CE61 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_isTouching, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::UpdateSlider()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_UpdateSlider_m27DC5090182A13F949A50236FA9AE36774485D53 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::StartVisualFeedbackAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartVisualFeedbackAnimation_m658AC9B7222A4513FD1277BA99B6D81388E0F173 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartVisualFeedbackAnimation_m658AC9B7222A4513FD1277BA99B6D81388E0F173 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::GetRelativeControllerMovement()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 DevToolsUITriggerGazeSlider_GetRelativeControllerMovement_m125B4EB3BD50ED8510B37C6C7921EA97198DA5F2 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::TryingToDragOutsideOfScope()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DevToolsUITriggerGazeSlider_TryingToDragOutsideOfScope_m02BE5F61AB09521285DFA1BB7B5510D8B726F8E8 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, const RuntimeMethod* method) ;
 // System.Int32 UnityEngine.Mathf::Clamp(System.Int32,System.Int32,System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___value0, int32_t ___min1, int32_t ___max2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::SetFillAmount(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, float ___amount0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, float ___0_amount, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Lerp(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___a0, float ___b1, float ___t2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::set_Value(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m86E5EAEEBA7FC7C4FF1B71997C1D17DB3230EB32 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m86E5EAEEBA7FC7C4FF1B71997C1D17DB3230EB32 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Int32 Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::get_Value()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t DevToolsUITriggerGazeSlider_get_Value_m7F068757BCE9539084149DCA6860765DCD14331E_inline (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::UpdateValueText(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateValueText_m73DAC5982AA424AFAE19BF3DCC556AE6A414053D (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateValueText_m73DAC5982AA424AFAE19BF3DCC556AE6A414053D (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::LogErrorFormat(System.String,System.Object[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C (String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogErrorFormat_m96690322C941D23A125E5769C9803606859A707C (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::get_IsToggledOn()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool DevToolsUITriggerGazeToggleButton_get_IsToggledOn_m06A1BD95AEE8D27F8F8798755C9E0AAF8970C35B_inline (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Boolean>::Invoke(T0)
-inline void UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653 (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB* __this, bool ___arg00, const RuntimeMethod* method)
+inline void UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653 (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB* __this, bool ___0_arg0, const RuntimeMethod* method)
 {
-	((  void (*) (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB*, bool, const RuntimeMethod*))UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653_gshared)(__this, ___arg00, method);
+	((  void (*) (UnityEvent_1_tEEB36A367DCB5867E93AAF6BECAF3558CA71BECB*, bool, const RuntimeMethod*))UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653_gshared)(__this, ___0_arg0, method);
 }
 // T UnityEngine.Component::GetComponent<Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics>()
 inline DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* Component_GetComponent_TisDevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3_mC092A317B702010D5C97B02B887045AA3AD8B8BA (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
@@ -3266,39 +3746,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_OnPres
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::Toggle()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_Toggle_m5975E48BC3F79043F4E4BE0FAE7FC1C538131795 (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::StartVisualFeedbackAnimation(System.Boolean,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartVisualFeedbackAnimation_mF5C19137ACD669E44088789B3C90DFE358AFF169 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___hasFocus0, bool ___isToggledOn1, bool ___isButtonPressed2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartVisualFeedbackAnimation_mF5C19137ACD669E44088789B3C90DFE358AFF169 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_hasFocus, bool ___1_isToggledOn, bool ___2_isButtonPressed, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::set_IsToggledOn(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_IsToggledOn_m83F6AA4AF90F342556258D787EF17C2DCA3E3EA0 (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_IsToggledOn_m83F6AA4AF90F342556258D787EF17C2DCA3E3EA0 (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::StartKnobAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartKnobAnimation_m5C09AE4590DAC6A986C7A41BCC8C1778C80F930A (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartKnobAnimation_m5C09AE4590DAC6A986C7A41BCC8C1778C80F930A (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Tobii.XR.GazeModifier.IGazeModifier>::.ctor()
 inline void List_1__ctor_m350691BF82FF073E248A8655DE496CB1F15E8F5B (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<Tobii.XR.GazeModifier.IGazeModifier>::Add(T)
-inline void List_1_Add_mBBEBDFD088AC9D974A1F2C1018EC990745999B4C_inline (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572* __this, RuntimeObject* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_mBBEBDFD088AC9D974A1F2C1018EC990745999B4C_inline (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572*, RuntimeObject*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_t494D2FF1E433AF06D4FC6D4D54903789461B2572*, RuntimeObject*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void Tobii.XR.GazeModifier.TrackabilityModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6AB49A02BDA3853F6DCA212846403 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6AB49A02BDA3853F6DCA212846403 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings__ctor_m95EFDFAF81F5225E864D17778B002A05B5AB5DE2 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.EyeTrackingFilterBase::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EyeTrackingFilterBase__ctor_mA3D67B43C58242EF7910075347FF0D004813BFDA (EyeTrackingFilterBase_t6ABBD06FCC91786F6D144D13ABEE8CC1EA0C4AE2* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.AccuracyModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2858190A3B6CB9F3B2E8266E3 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2858190A3B6CB9F3B2E8266E3 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.PrecisionModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3FABD3768976ACB2711BB689636 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3FABD3768976ACB2711BB689636 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) ;
 // System.Boolean Tobii.XR.GazeModifier.GazeModifierSettings::get_Active()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GazeModifierSettings_get_Active_mA1FAF6C19EB860483F8A90D6E7353AFF6E4D5F4F (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<Tobii.XR.GazeModifier.IGazeModifier> Tobii.XR.GazeModifier.GazeModifierFilter::get_Modifiers()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GazeModifierFilter_get_Modifiers_m61B497C9E0C9856F34E523C1BE834D11F7E7C315 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.AccuracyModifier::Modify(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier_Modify_mFF541E5814AA2C50EC2EE268DB680ED1C3133B7E (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier_Modify_mFF541E5814AA2C50EC2EE268DB680ED1C3133B7E (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeModifier.PrecisionModifier::GetMaxAngle(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Int32 Tobii.XR.GazeModifier.GazeModifierSettings::get_NumberOfPercentiles()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GazeModifierSettings_get_NumberOfPercentiles_m217544246AD86EB64595DCD8E4409C5A5B641495_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Tobii.XR.DevTools.IDisableGazeModifier>::.ctor()
@@ -3309,96 +3789,96 @@ inline void List_1__ctor_m9B4F6A46A8964C214ECCE80039DE3EE6D7D6CDE2 (List_1_t0060
 // System.Void Tobii.XR.GazeModifier.PercentileRepository::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileRepository__ctor_m18CD6DAF85379DDE966AF3BBEA87CC01B5C2D573 (PercentileRepository_tC86AB84683DDAC3E0C9FF46F7FE5AA98293A4D35* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::SetPercentileRepository(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileRepository_m391FA55FC10FE1B831BF89A28E1B02676D226D73 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___repo0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileRepository_m391FA55FC10FE1B831BF89A28E1B02676D226D73 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_repo, const RuntimeMethod* method) ;
 // System.Void System.Func`2<Tobii.XR.DevTools.IDisableGazeModifier,System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_m36E8041ED7D85B30139A134A141FFBA1EB7BE978 (Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_m36E8041ED7D85B30139A134A141FFBA1EB7BE978 (Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Boolean System.Linq.Enumerable::Any<Tobii.XR.DevTools.IDisableGazeModifier>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-inline bool Enumerable_Any_TisIDisableGazeModifier_tA0CEAA0B73E90A2EAD4E650064814E3A5CAD50C3_mF6849E3BA132623CCFCB88A12BBC594FC0D5BA1F (RuntimeObject* ___source0, Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* ___predicate1, const RuntimeMethod* method)
+inline bool Enumerable_Any_TisIDisableGazeModifier_tA0CEAA0B73E90A2EAD4E650064814E3A5CAD50C3_mF6849E3BA132623CCFCB88A12BBC594FC0D5BA1F (RuntimeObject* ___0_source, Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005* ___1_predicate, const RuntimeMethod* method)
 {
-	return ((  bool (*) (RuntimeObject*, Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005*, const RuntimeMethod*))Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared)(___source0, ___predicate1, method);
+	return ((  bool (*) (RuntimeObject*, Func_2_tBBE1BF35529F2B676DD8DCF5C9C27A82540E0005*, const RuntimeMethod*))Enumerable_Any_TisRuntimeObject_mF6C6AC8DF8971883615734832D09C9210B956F0F_gshared)(___0_source, ___1_predicate, method);
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_Repository(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Func`2<Tobii.XR.GazeModifier.PercentileData,System.Int32>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_m900646BB7E70CBC2D1267E2605D7E647492FFE62 (Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_m900646BB7E70CBC2D1267E2605D7E647492FFE62 (Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mEB7603EDE6D79A62E5BD74A896F030D2C9F2A821_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mEB7603EDE6D79A62E5BD74A896F030D2C9F2A821_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Collections.Generic.IEnumerable`1<TResult> System.Linq.Enumerable::Select<Tobii.XR.GazeModifier.PercentileData,System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TResult>)
-inline RuntimeObject* Enumerable_Select_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m237894F383B59729BB545E5185BBEAF90E1768DC (RuntimeObject* ___source0, Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* ___selector1, const RuntimeMethod* method)
+inline RuntimeObject* Enumerable_Select_TisPercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m237894F383B59729BB545E5185BBEAF90E1768DC (RuntimeObject* ___0_source, Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5* ___1_selector, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5*, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8FAC2A5066E30AA4BA544C3F08603F64D4CFF982_gshared)(___source0, ___selector1, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_tF7F3C4E0E113D1A3705BCCA7E5469214163CC8E5*, const RuntimeMethod*))Enumerable_Select_TisRuntimeObject_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m8FAC2A5066E30AA4BA544C3F08603F64D4CFF982_gshared)(___0_source, ___1_selector, method);
 }
 // System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable::Distinct<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline RuntimeObject* Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline RuntimeObject* Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE_gshared)(___source0, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Distinct_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3421069716837BDE523D0FEDE14017149390D1CE_gshared)(___0_source, method);
 }
 // System.Int32 System.Linq.Enumerable::Count<System.Int32>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline int32_t Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55 (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline int32_t Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55 (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55_gshared)(___source0, method);
+	return ((  int32_t (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Count_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m7F54617BB5D6A5814ABF6681AEB1061511686A55_gshared)(___0_source, method);
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_NumberOfPercentiles(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m9B35F4CA3505A4A3D73FD6FC72E73EE97BDC6469 (U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeModifier.GetValueForAngle::Evaluate(System.Collections.Generic.IList`1<UnityEngine.Vector2>,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E8920EBB5B96AB1CA16027F3A1004DC8 (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___target0, float ___val1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E8920EBB5B96AB1CA16027F3A1004DC8 (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___0_target, float ___1_val, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::Clear()
 inline void List_1_Clear_m4F04D407852735E68667980C26DA866BAE103B37_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, const RuntimeMethod*))List_1_Clear_m4F04D407852735E68667980C26DA866BAE103B37_gshared_inline)(__this, method);
 }
 // System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100 (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100 (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100_gshared)(___source0, method);
+	return ((  List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100_gshared)(___0_source, method);
 }
 // System.Boolean System.Linq.Enumerable::Any<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline bool Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline bool Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  bool (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F_gshared)(___source0, method);
+	return ((  bool (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Any_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m3010A69F2A549F8B1FAE3781FA8C675AE0699C9F_gshared)(___0_source, method);
 }
 // System.Void System.Func`2<UnityEngine.Vector2,System.Single>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405 (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405 (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m9A4E08F01EC0E37D18013BF94C8B3B5518D6C405_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Linq.IOrderedEnumerable`1<TSource> System.Linq.Enumerable::OrderBy<UnityEngine.Vector2,System.Single>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,TKey>)
-inline RuntimeObject* Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC (RuntimeObject* ___source0, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___keySelector1, const RuntimeMethod* method)
+inline RuntimeObject* Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC (RuntimeObject* ___0_source, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* ___1_keySelector, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111*, const RuntimeMethod*))Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC_gshared)(___source0, ___keySelector1, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111*, const RuntimeMethod*))Enumerable_OrderBy_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisSingle_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_mF5796D309D7F30F207E40BAA16970593DDB90BDC_gshared)(___0_source, ___1_keySelector, method);
 }
 // TSource System.Linq.Enumerable::Last<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC_gshared)(___source0, method);
+	return ((  Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_Last_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_mF1CAFA0B872FAB0598B3EAEE32F4D0E8C48D7BBC_gshared)(___0_source, method);
 }
 // System.Void System.Func`2<UnityEngine.Vector2,System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31 (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31 (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_mEA71A1BCB38801DC67BCC3EBAF750F070E31CE31_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Int32 System.Linq.Enumerable::Count<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-inline int32_t Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1 (RuntimeObject* ___source0, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___predicate1, const RuntimeMethod* method)
+inline int32_t Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1 (RuntimeObject* ___0_source, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9* ___1_predicate, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (RuntimeObject*, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9*, const RuntimeMethod*))Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1_gshared)(___source0, ___predicate1, method);
+	return ((  int32_t (*) (RuntimeObject*, Func_2_t8B45F86AD27A9D8326FA522C45CA74669CD4CDF9*, const RuntimeMethod*))Enumerable_Count_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m948B836CD81702494DA4057F58A7EAFBDFA272C1_gshared)(___0_source, ___1_predicate, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::Add(T)
-inline void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___item0, const RuntimeMethod* method)
+inline void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*))List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*))List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void System.Collections.Generic.List`1<UnityEngine.Vector2>::AddRange(System.Collections.Generic.IEnumerable`1<T>)
-inline void List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+inline void List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC_gshared)(__this, ___collection0, method);
+	((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, RuntimeObject*, const RuntimeMethod*))List_1_AddRange_m79CB520C0C1362FE97CA8619B6B59F18E80349BC_gshared)(__this, ___0_collection, method);
 }
 // System.Int32 System.Collections.Generic.List`1<UnityEngine.Vector2>::get_Count()
 inline int32_t List_1_get_Count_mF1C0C56457C655BDFFC6EE5B46FAD8BAEC1F588B_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, const RuntimeMethod* method)
@@ -3408,39 +3888,39 @@ inline int32_t List_1_get_Count_mF1C0C56457C655BDFFC6EE5B46FAD8BAEC1F588B_inline
 // System.Void Tobii.XR.GazeModifier.GetValueForAngle/<>c__DisplayClass6_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0__ctor_mCCAB7C24C4FDC84E354D50709B84FEADE603D8B8 (U3CU3Ec__DisplayClass6_0_t051355B4D4C7C2C816F512CE8CE31AB46D219C27* __this, const RuntimeMethod* method) ;
 // TSource System.Linq.Enumerable::First<UnityEngine.Vector2>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4 (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4 (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4_gshared)(___source0, method);
+	return ((  Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4_gshared)(___0_source, method);
 }
 // System.Void System.Func`3<UnityEngine.Vector2,UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>::.ctor(System.Object,System.IntPtr)
-inline void Func_3__ctor_m142F3AEDAD612D542C92F8BFFF7ACD85476A2088 (Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_3__ctor_m142F3AEDAD612D542C92F8BFFF7ACD85476A2088 (Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_3_tF36BF162C151A8A5E362E0289B58114D18506038*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_3__ctor_m66C7834D03CFF4C7534F87B2493775D1CFBCFDA7_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_3_tF36BF162C151A8A5E362E0289B58114D18506038*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_3__ctor_m66C7834D03CFF4C7534F87B2493775D1CFBCFDA7_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Collections.Generic.IEnumerable`1<TResult> Tobii.XR.GazeModifier.LinqExtension::SelectWithPrevious<UnityEngine.Vector2,<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`3<TSource,TSource,TResult>)
-inline RuntimeObject* LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m8FA1CC6179944DB6F69279029C6F9B880293A85D (RuntimeObject* ___source0, Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* ___projection1, const RuntimeMethod* method)
+inline RuntimeObject* LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m8FA1CC6179944DB6F69279029C6F9B880293A85D (RuntimeObject* ___0_source, Func_3_tF36BF162C151A8A5E362E0289B58114D18506038* ___1_projection, const RuntimeMethod* method)
 {
-	return ((  RuntimeObject* (*) (RuntimeObject*, Func_3_tF36BF162C151A8A5E362E0289B58114D18506038*, const RuntimeMethod*))LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisRuntimeObject_m46C7726F4221D13B162FB258A1A66A7697D18BB9_gshared)(___source0, ___projection1, method);
+	return ((  RuntimeObject* (*) (RuntimeObject*, Func_3_tF36BF162C151A8A5E362E0289B58114D18506038*, const RuntimeMethod*))LinqExtension_SelectWithPrevious_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_TisRuntimeObject_m46C7726F4221D13B162FB258A1A66A7697D18BB9_gshared)(___0_source, ___1_projection, method);
 }
 // System.Collections.Generic.List`1<TSource> System.Linq.Enumerable::ToList<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A* Enumerable_ToList_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m0BBA9CE5A7881FC77AC74A2AC1419DB1C57C3E8E (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A* Enumerable_ToList_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m0BBA9CE5A7881FC77AC74A2AC1419DB1C57C3E8E (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared)(___source0, method);
+	return ((  List_1_tD509B1E1F2B6BF5E6E7AA2E200D4B1781E3C3A4A* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared)(___0_source, method);
 }
 // System.Void System.Func`2<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>,System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_mCC6D713A03E63B2080D6CC7F851BC710E9A3D1CE (Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_mCC6D713A03E63B2080D6CC7F851BC710E9A3D1CE (Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m13C0A7F33154D861E2A041B52E88461832DA1697_gshared)(__this, ___0_object, ___1_method, method);
 }
 // TSource System.Linq.Enumerable::LastOrDefault<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Boolean>)
-inline U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* Enumerable_LastOrDefault_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_mF02C714780D9AA89671CE29A14D82B30DEC50710 (RuntimeObject* ___source0, Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868* ___predicate1, const RuntimeMethod* method)
+inline U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* Enumerable_LastOrDefault_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_mF02C714780D9AA89671CE29A14D82B30DEC50710 (RuntimeObject* ___0_source, Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868* ___1_predicate, const RuntimeMethod* method)
 {
-	return ((  U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* (*) (RuntimeObject*, Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868*, const RuntimeMethod*))Enumerable_LastOrDefault_TisRuntimeObject_mB7B75BD214645D8A79DFF139356112781451A936_gshared)(___source0, ___predicate1, method);
+	return ((  U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* (*) (RuntimeObject*, Func_2_tE82F5CE52E72E1AA493153DA53F22E477DD58868*, const RuntimeMethod*))Enumerable_LastOrDefault_TisRuntimeObject_mB7B75BD214645D8A79DFF139356112781451A936_gshared)(___0_source, ___1_predicate, method);
 }
 // TSource System.Linq.Enumerable::First<<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* Enumerable_First_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m312FC402A68F7ACC1DB23C2DD8BD095F3A795084 (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* Enumerable_First_TisU3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_m312FC402A68F7ACC1DB23C2DD8BD095F3A795084 (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_First_TisRuntimeObject_mEFECF1B8C3201589C5AF34176DCBF8DD926642D6_gshared)(___source0, method);
+	return ((  U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* (*) (RuntimeObject*, const RuntimeMethod*))Enumerable_First_TisRuntimeObject_mEFECF1B8C3201589C5AF34176DCBF8DD926642D6_gshared)(___0_source, method);
 }
 // <low>j__TPar <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>::get_low()
 inline Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ef__AnonymousType0_2_get_low_mC25AF4FC66139C3745032C228224668D5A58222D_inline (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, const RuntimeMethod* method)
@@ -3460,109 +3940,109 @@ inline void List_1__ctor_m88C4BD8AC607DB3585552068F4DC437406358D5F (List_1_t8F37
 // System.Void Tobii.XR.GazeModifier.GetValueForAngle/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD1080B5E5F3EA902FB9DEE20E9DE6E7C6CC8B85A (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, const RuntimeMethod* method) ;
 // System.Void <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>::.ctor(<low>j__TPar,<high>j__TPar)
-inline void U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233 (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___low0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___high1, const RuntimeMethod* method)
+inline void U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233 (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_low, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_high, const RuntimeMethod* method)
 {
-	((  void (*) (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*))U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233_gshared)(__this, ___low0, ___high1, method);
+	((  void (*) (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*))U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233_gshared)(__this, ___0_low, ___1_high, method);
 }
 // System.Void Tobii.XR.GazeModifier.Metrics/<>c__DisplayClass0_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass0_0__ctor_mA4D98A2FB1F1BAD47E200CA2A46BEDB5FE69C604 (U3CU3Ec__DisplayClass0_0_t024E00C54721462455085F3E5676E81AF2880B65* __this, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.Metrics::AverageVectors(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3 (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___vectors0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3 (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_vectors, const RuntimeMethod* method) ;
 // System.Void System.Func`2<UnityEngine.Vector3,System.Single>::.ctor(System.Object,System.IntPtr)
-inline void Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0 (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0 (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_2__ctor_m8BACCCB996FEF1B06E74F85966B4231A9A24DAF0_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Single System.Linq.Enumerable::Average<UnityEngine.Vector3>(System.Collections.Generic.IEnumerable`1<TSource>,System.Func`2<TSource,System.Single>)
-inline float Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E (RuntimeObject* ___source0, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___selector1, const RuntimeMethod* method)
+inline float Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E (RuntimeObject* ___0_source, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* ___1_selector, const RuntimeMethod* method)
 {
-	return ((  float (*) (RuntimeObject*, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC*, const RuntimeMethod*))Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_gshared)(___source0, ___selector1, method);
+	return ((  float (*) (RuntimeObject*, Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC*, const RuntimeMethod*))Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_gshared)(___0_source, ___1_selector, method);
 }
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Subtraction(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.GazeModifier.Metrics::AngleDifference(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_AngleDifference_m53699072A1126A0A94E5CEB58869F847D512C6D1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___u0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___v1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_AngleDifference_m53699072A1126A0A94E5CEB58869F847D512C6D1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_u, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_v, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::Dot(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::get_magnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.Metrics/<>c::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m92A8FAAF74A60C58E6336E2FEFD22CD5958A29CB (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.MetricsForPercentile::.ctor(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE30CA6D4089BB883D308D2449C5DF (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, RuntimeObject* ___percentileRepository0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE30CA6D4089BB883D308D2449C5DF (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, RuntimeObject* ___0_percentileRepository, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::FromToRotation(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fromDirection0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___toDirection1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_fromDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_toDirection, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::Angle(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___from0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___to1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.MetricsForPercentile::Accuracy(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DCDD123F9468D19E1C49338D207DB300E1 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DCDD123F9468D19E1C49338D207DB300E1 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Lerp(UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Lerp_m259606226726C2F46E079A5A688B9E24FF7E9A0D (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___a0, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___b1, float ___t2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Lerp_m259606226726C2F46E079A5A688B9E24FF7E9A0D (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_a, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___1_b, float ___2_t, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Quaternion::op_Multiply(UnityEngine.Quaternion,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___rotation0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___point1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C (Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_rotation, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_point, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.AccuracyModifier::Modify(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 AccuracyModifier_Modify_m11E0B29A540EBCFEC304AC8ABB696FA7F3D4D4D4 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 AccuracyModifier_Modify_m11E0B29A540EBCFEC304AC8ABB696FA7F3D4D4D4 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Random::Range(System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___minInclusive0, float ___maxInclusive1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Euler(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.PrecisionModifier::Modify(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PrecisionModifier_Modify_mC3B28A623810E06E81C2C45125C9B23539501ED1 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PrecisionModifier_Modify_mC3B28A623810E06E81C2C45125C9B23539501ED1 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.MetricsForPercentile::Precision(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3AFF83054EA7918ACE4C628512215551F4B (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3AFF83054EA7918ACE4C628512215551F4B (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Queue`1<System.Single>::.ctor()
 inline void Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method)
 {
 	((  void (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, const RuntimeMethod*))Queue_1__ctor_m10C40F7E548C1946659858BFA473B6CBD95FF904_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Queue`1<System.Single>::Enqueue(T)
-inline void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___item0, const RuntimeMethod* method)
+inline void Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, float ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, float, const RuntimeMethod*))Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared)(__this, ___item0, method);
+	((  void (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, float, const RuntimeMethod*))Queue_1_Enqueue_m14504EB7E4AE1EA85E3D4D88BEBA493C1595B459_gshared)(__this, ___0_item, method);
 }
 // System.Single Tobii.XR.GazeModifier.TrackabilityModifier::GetTrackability(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m242D58B395D231AABB352A9DCE2D0D9BD2E7FC44 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m242D58B395D231AABB352A9DCE2D0D9BD2E7FC44 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) ;
 // T System.Collections.Generic.Queue`1<System.Single>::Dequeue()
 inline float Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70 (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* __this, const RuntimeMethod* method)
 {
 	return ((  float (*) (Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153*, const RuntimeMethod*))Queue_1_Dequeue_mBACC5C5C572CEE16EEC3D0BE7BD08D625CF31F70_gshared)(__this, method);
 }
 // System.Single System.Linq.Enumerable::Average(System.Collections.Generic.IEnumerable`1<System.Single>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368 (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368 (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Single Tobii.XR.MetricsForPercentile::Trackability(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352BC503EC5F768B36DB7D3D5EE69766EC1B9503 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352BC503EC5F768B36DB7D3D5EE69766EC1B9503 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Tobii.XR.GazeModifier.PercentileData>::.ctor()
 inline void List_1__ctor_m5E0AC5949A20A9E5DEAFE264BAF25FDD76427A3D (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
 // System.Void Tobii.XR.GazeModifier.PercentileData::.ctor(System.Int32,System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_m42BC03E83B1DC8B7F7B76652ACEC39F5990146C7 (PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* __this, int32_t ___percent0, float ___angle1, float ___accuracy2, float ___trackability3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_m42BC03E83B1DC8B7F7B76652ACEC39F5990146C7 (PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* __this, int32_t ___0_percent, float ___1_angle, float ___2_accuracy, float ___3_trackability, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Tobii.XR.GazeModifier.PercentileData>::Add(T)
-inline void List_1_Add_m4D0585B01897ED9041958A0CA13C19B85DE59CBE_inline (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m4D0585B01897ED9041958A0CA13C19B85DE59CBE_inline (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A*, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tC0BFDB8CF854193F936AE886A3E135FDB930460A*, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController/<Start>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12__ctor_mB344580CF759B93CD10A4FC9F65BBE4751CEC7F6 (U3CStartU3Ed__12_t0575689EF48644FC215D4140DA193853AE1DACDC* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12__ctor_mB344580CF759B93CD10A4FC9F65BBE4751CEC7F6 (U3CStartU3Ed__12_t0575689EF48644FC215D4140DA193853AE1DACDC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::EnsureCorrectVisualizer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_EnsureCorrectVisualizer_m2B0B21C01BD4341C6832C5B1B2B577C614E2F729 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::CheckMenuSettings()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_CheckMenuSettings_m035BF3A8E59558DC70407C820C1777818581B1D4 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.GameObject::SetActive(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
 // Tobii.XR.GazeModifier.GazeModifierSettings Tobii.XR.GazeModifier.GazeModifierFilter::get_Settings()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* GazeModifierFilter_get_Settings_m918F74719C0462A4E128E8634C8D287D5A5E0455_inline (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_SelectedPercentileIndex(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_SelectedPercentileIndex_m290673E2F818FE28B00BC3DA7D1797B9A6E5338B (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_SelectedPercentileIndex_m290673E2F818FE28B00BC3DA7D1797B9A6E5338B (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Int32 Tobii.XR.GazeModifier.GazeModifierSettings::get_SelectedPercentileIndex()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GazeModifierSettings_get_SelectedPercentileIndex_mCFC7222382123F5B20A2819274212FD3B0B04D61_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::SetSliderTo(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___number0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___0_number, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::ToggleOn()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_ToggleOn_mC4B40FFBB541F4F25D11D2508F058BA76AA9870D (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::ToggleOff()
@@ -3574,7 +4054,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TobiiXR_Settings_t5EC70C3B4402041
 // System.String UnityEngine.Object::get_name()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___str00, String_t* ___str11, String_t* ___str22, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<Tobii.XR.GazeModifier.GazeModifierFilter>()
 inline GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* GameObject_GetComponent_TisGazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C_m56CEA821EDEC42D93AB712A97BDF35BBA6379969 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -3588,22 +4068,22 @@ inline G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* GameOb
 	return ((  G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_AddComponent_TisRuntimeObject_m69B93700FACCF372F5753371C6E8FB780800B824_gshared)(__this, method);
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::SetGazeVisualizerEnabled(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439_inline (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439_inline (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DisableGazeModifierOnFocus/<Start>d__0::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__0__ctor_mF9B41149B97A8EBA9EAE5AC7E2508BC39BB42BF5 (U3CStartU3Ed__0_t5159DE795DC81355C6174F84961E14D56BD266C1* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__0__ctor_mF9B41149B97A8EBA9EAE5AC7E2508BC39BB42BF5 (U3CStartU3Ed__0_t5159DE795DC81355C6174F84961E14D56BD266C1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DisableGazeModifierOnFocus::set_Disable(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156_inline (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156_inline (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::AddDisabler(Tobii.XR.DevTools.IDisableGazeModifier)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529A60FB6D47B97B77D4339E834F4184CDA3F (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___disabler0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529A60FB6D47B97B77D4339E834F4184CDA3F (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_disabler, const RuntimeMethod* method) ;
 // System.Void System.Func`1<System.Boolean>::.ctor(System.Object,System.IntPtr)
-inline void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22 (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22 (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457*, RuntimeObject*, intptr_t, const RuntimeMethod*))Func_1__ctor_mDFFAE9C73346372438B5B04C4558AC42F1A3DA22_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Void UnityEngine.WaitUntil::.ctor(System.Func`1<System.Boolean>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitUntil__ctor_m2C925CF39695C35F4CB1AC997531F203AE1434DF (WaitUntil_tA1CD487C5811E7C1F8C4ADA85DF5F4EFDC1D41BD* __this, Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* ___predicate0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitUntil__ctor_m2C925CF39695C35F4CB1AC997531F203AE1434DF (WaitUntil_tA1CD487C5811E7C1F8C4ADA85DF5F4EFDC1D41BD* __this, Func_1_t2BE7F58348C9CC544A8973B3A9E55541DE43C457* ___0_predicate, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Implicit(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___exists0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Implicit_m93896EF7D68FA113C42D3FE2BC6F661FC7EF514A (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_exists, const RuntimeMethod* method) ;
 // UnityEngine.Rect UnityEngine.RectTransform::get_rect()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D RectTransform_get_rect_mC82A60F8C3805ED9833508CCC233689641207488 (RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Rect::get_width()
@@ -3613,61 +4093,61 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RectTransform_t6C5DA5E41A89E0F488B001E45E5896
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::SetWarningColors()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetWarningColors_m6342417AB0B4C1044ADB4A56EC785DCEBA1EE530 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.UI.Image::set_fillAmount(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7 (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, float ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7 (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, float ___0_value, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::UpdateHandlePosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateHandlePosition_mCCAB47062A129182CBD76E0EB5C13F75F2E12F48 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9 (int32_t* __this, String_t* ___format0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9 (int32_t* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 // System.Int32 System.Int32::Parse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0 (String_t* ___s0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0 (String_t* ___0_s, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Transform::get_localPosition()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.UI.Image::get_fillAmount()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Image_get_fillAmount_mDEE52490D07124E21E7CB36718A5E3714D8B9788_inline (Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Transform::set_localPosition(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::AnimateHandle(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateHandle_mC891E448DE79FBEED343194DE6127B124B5B44BB (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateHandle_mC891E448DE79FBEED343194DE6127B124B5B44BB (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::AnimateVisualFeedback(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateVisualFeedback_m974CACF47B98DACC0FC1E7879EE56D5A5897CA18 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateVisualFeedback_m974CACF47B98DACC0FC1E7879EE56D5A5897CA18 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateVisualFeedback>d__44::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__44__ctor_m370968187C26D8DC925519A8E70CBE2FDE9F3604 (U3CAnimateVisualFeedbackU3Ed__44_t13609512CA388F9EA65720CC1FC86D5E9B11D0B8* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__44__ctor_m370968187C26D8DC925519A8E70CBE2FDE9F3604 (U3CAnimateVisualFeedbackU3Ed__44_t13609512CA388F9EA65720CC1FC86D5E9B11D0B8* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateHandle>d__45::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateHandleU3Ed__45__ctor_m95135C5977BC68DC0580CFDFC139FC61DE6916F8 (U3CAnimateHandleU3Ed__45_t2C85B45C9AC760F3B2516AFE0C020B08F7E10A06* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateHandleU3Ed__45__ctor_m95135C5977BC68DC0580CFDFC139FC61DE6916F8 (U3CAnimateHandleU3Ed__45_t2C85B45C9AC760F3B2516AFE0C020B08F7E10A06* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // UnityEngine.Transform UnityEngine.GameObject::get_transform()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::MoveKnob(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_MoveKnob_mB03EE319CAF9A2FECCD18ED7B0FF782AE005F18E (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_MoveKnob_mB03EE319CAF9A2FECCD18ED7B0FF782AE005F18E (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::AnimateVisualFeedback(System.Boolean,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_AnimateVisualFeedback_m7E82452FAAE42C9161D5F9195E141C13A2570AC9 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___hasFocus0, bool ___isToggledOn1, bool ___isButtonPressed2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_AnimateVisualFeedback_m7E82452FAAE42C9161D5F9195E141C13A2570AC9 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_hasFocus, bool ___1_isToggledOn, bool ___2_isButtonPressed, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<AnimateVisualFeedback>d__29::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__29__ctor_m23B06379394861CCA9F3D3F6E2E4873BDB93D99A (U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__29__ctor_m23B06379394861CCA9F3D3F6E2E4873BDB93D99A (U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<MoveKnob>d__31::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveKnobU3Ed__31__ctor_mE355F230423D8D748D55B0D103F252920E588007 (U3CMoveKnobU3Ed__31_t026793A1C52CBE6F19F87CD0946D5AFD1AC49DC2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveKnobU3Ed__31__ctor_mE355F230423D8D748D55B0D103F252920E588007 (U3CMoveKnobU3Ed__31_t026793A1C52CBE6F19F87CD0946D5AFD1AC49DC2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/VisualStateColors Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::GetStateColors(System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualStateColors_t8F995DAA2E1D12B672FCD70CEE1B5D0558684AFF DevToolsUIGazeToggleButtonGraphics_GetStateColors_m874247EEB81D4517432B0672317092EFB07FF516 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, bool ___isButtonPressed1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualStateColors_t8F995DAA2E1D12B672FCD70CEE1B5D0558684AFF DevToolsUIGazeToggleButtonGraphics_GetStateColors_m874247EEB81D4517432B0672317092EFB07FF516 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, bool ___1_isButtonPressed, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Clamp01(System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Vector3::.ctor(System.Single,System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::Normalize(UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Mathf::Max(System.Single,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___a0, float ___b1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::get_sqrMagnitude()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::Internal_FromEulerRad(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m66D4475341F53949471E6870FB5C5E4A5E9BA93E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___euler0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Internal_FromEulerRad_m66D4475341F53949471E6870FB5C5E4A5E9BA93E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_euler, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Vector3::Magnitude(UnityEngine.Vector3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::op_Division(UnityEngine.Vector3,System.Single)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.Vector3::get_zero()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
 #ifdef __clang__
@@ -3782,11 +4262,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_ToggleVisualizat
 	}
 }
 // System.Void Tobii.XR.G2OM_DebugVisualization::SetVisualization(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_SetVisualization_mBDA8211F5BAEFDD1C4ECBAD566B4A422CBF1B941 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_SetVisualization_mBDA8211F5BAEFDD1C4ECBAD566B4A422CBF1B941 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// _showVisualization = set;
-		bool L_0 = ___set0;
+		bool L_0 = ___0_set;
 		__this->____showVisualization_14 = L_0;
 		// if (!_showVisualization) _freezeVisualization = false;
 		bool L_1 = __this->____showVisualization_14;
@@ -3927,7 +4407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* G2OM_DebugVisualization_OnPost
 	}
 }
 // System.Void Tobii.XR.G2OM_DebugVisualization::Render(UnityEngine.Material,Tobii.G2OM.G2OM_DeviceData&,Tobii.G2OM.G2OM_Candidate[],Tobii.G2OM.G2OM_CandidateResult[],Tobii.G2OM.G2OM_Vector3[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA1B31FC3563EC5CB58FF4DA70F2FC4001 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___mat0, G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* ___deviceData1, G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* ___g2omCandidates2, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___g2OmCandidatesResult3, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___corners4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA1B31FC3563EC5CB58FF4DA70F2FC4001 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___0_mat, G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* ___1_deviceData, G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* ___2_g2omCandidates, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___3_g2OmCandidatesResult, G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___4_corners, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3946,7 +4426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA
 	memset((&V_3), 0, sizeof(V_3));
 	{
 		// mat.SetPass(0);
-		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_0 = ___mat0;
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_0 = ___0_mat;
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = Material_SetPass_mBB03542DFF4FAEADFCED332009F9D61B6DED75FE(L_0, 0, NULL);
@@ -3960,16 +4440,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_Render_mAB7A69EA
 IL_0012:
 	{
 		// var g2OmCandidate = g2omCandidates[i];
-		G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* L_2 = ___g2omCandidates2;
+		G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* L_2 = ___2_g2omCandidates;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
 		G2OM_Candidate_tA1CB20BFD0A11EC85F26F085D704DB84C2F67F55 L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
 		V_1 = L_5;
 		// var result = Interop.G2OM_GetWorldspaceCornerOfCandidate(ref g2OmCandidate, (uint)corners.Length, corners);
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_6 = ___corners4;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_6 = ___4_corners;
 		NullCheck(L_6);
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_7 = ___corners4;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_7 = ___4_corners;
 		int32_t L_8;
 		L_8 = Interop_G2OM_GetWorldspaceCornerOfCandidate_mE5D0DC0A545981EAA70EA5E174E3F6ACDD7327DA((&V_1), ((int32_t)(((RuntimeArray*)L_6)->max_length)), L_7, NULL);
 		V_2 = L_8;
@@ -4000,14 +4480,14 @@ IL_0012:
 IL_004d:
 	{
 		// Color resultingColor = GetResultColor(g2OmCandidatesResult, g2OmCandidate.candidate_id);
-		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_18 = ___g2OmCandidatesResult3;
+		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_18 = ___3_g2OmCandidatesResult;
 		G2OM_Candidate_tA1CB20BFD0A11EC85F26F085D704DB84C2F67F55 L_19 = V_1;
 		uint64_t L_20 = L_19.___candidate_id_0;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
 		L_21 = G2OM_DebugVisualization_GetResultColor_mD156CB5C9966C5BD2E355E918427C49A0B14B224(__this, L_18, L_20, NULL);
 		V_3 = L_21;
 		// RenderCube(corners, resultingColor);
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_22 = ___corners4;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_22 = ___4_corners;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = V_3;
 		G2OM_DebugVisualization_RenderCube_m506E75E708300DFB4DD47E23F3C01B5E4E701EC8(L_22, L_23, NULL);
 	}
@@ -4023,7 +4503,7 @@ IL_0068:
 	{
 		// for (var i = 0; i < g2omCandidates.Length; i++)
 		int32_t L_25 = V_0;
-		G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* L_26 = ___g2omCandidates2;
+		G2OM_CandidateU5BU5D_t265FAF5AB2D1F7E444D70DECF371E43E6D06C387* L_26 = ___2_g2omCandidates;
 		NullCheck(L_26);
 		if ((((int32_t)L_25) < ((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))))
 		{
@@ -4032,7 +4512,7 @@ IL_0068:
 	}
 	{
 		// RenderGaze(deviceData.gaze_ray_world_space, Color.yellow);
-		G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* L_27 = ___deviceData1;
+		G2OM_DeviceData_tF7886857DCBB7A47CD3D391D31A80C54A85E9FC1* L_27 = ___1_deviceData;
 		G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D L_28 = L_27->___gaze_ray_world_space_1;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_29;
 		L_29 = Color_get_yellow_m66637FA14383E8D74F24AE256B577CE1D55D469F_inline(NULL);
@@ -4071,7 +4551,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderBackground
 	}
 }
 // UnityEngine.Color Tobii.XR.G2OM_DebugVisualization::GetResultColor(Tobii.G2OM.G2OM_CandidateResult[],System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G2OM_DebugVisualization_GetResultColor_mD156CB5C9966C5BD2E355E918427C49A0B14B224 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___g2OmCandidatesResult0, uint64_t ___id1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F G2OM_DebugVisualization_GetResultColor_mD156CB5C9966C5BD2E355E918427C49A0B14B224 (G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* __this, G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* ___0_g2OmCandidatesResult, uint64_t ___1_id, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4095,11 +4575,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 IL_000c:
 	{
 		// if (g2OmCandidatesResult[i].candidate_id == id)
-		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_0 = ___g2OmCandidatesResult0;
+		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_0 = ___0_g2OmCandidatesResult;
 		int32_t L_1 = V_2;
 		NullCheck(L_0);
 		uint64_t L_2 = ((L_0)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_1)))->___candidate_id_0;
-		uint64_t L_3 = ___id1;
+		uint64_t L_3 = ___1_id;
 		if ((!(((uint64_t)L_2) == ((uint64_t)L_3))))
 		{
 			goto IL_002f;
@@ -4110,7 +4590,7 @@ IL_000c:
 		int32_t L_4 = V_2;
 		V_1 = (bool)((((int32_t)L_4) == ((int32_t)0))? 1 : 0);
 		// score = g2OmCandidatesResult[i].score;
-		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_5 = ___g2OmCandidatesResult0;
+		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_5 = ___0_g2OmCandidatesResult;
 		int32_t L_6 = V_2;
 		NullCheck(L_5);
 		float L_7 = ((L_5)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_6)))->___score_1;
@@ -4130,7 +4610,7 @@ IL_0033:
 	{
 		// for (int i = 0; i < g2OmCandidatesResult.Length; i++)
 		int32_t L_9 = V_2;
-		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_10 = ___g2OmCandidatesResult0;
+		G2OM_CandidateResultU5BU5D_t7CBE555DAA6FCFC9E28E8818B15FF76E08819E41* L_10 = ___0_g2OmCandidatesResult;
 		NullCheck(L_10);
 		if ((((int32_t)L_9) < ((int32_t)((int32_t)(((RuntimeArray*)L_10)->max_length)))))
 		{
@@ -4174,17 +4654,17 @@ IL_004b:
 	}
 }
 // System.Void Tobii.XR.G2OM_DebugVisualization::RenderGaze(Tobii.G2OM.G2OM_GazeRay,UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderGaze_m4689FC08BC8DA6564C7A45A9233EE95A5390FA1E (G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D ___gazeRay0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderGaze_m4689FC08BC8DA6564C7A45A9233EE95A5390FA1E (G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D ___0_gazeRay, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) 
 {
 	G2OM_Ray_tCD4D5844E9D0FEA8A2FF191039A025B352BFEEF6 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
 		// var ray = gazeRay.ray;
-		G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D L_0 = ___gazeRay0;
+		G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D L_0 = ___0_gazeRay;
 		G2OM_Ray_tCD4D5844E9D0FEA8A2FF191039A025B352BFEEF6 L_1 = L_0.___ray_0;
 		V_0 = L_1;
 		// if (gazeRay.is_valid.ToBool() == false)
-		G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D L_2 = ___gazeRay0;
+		G2OM_GazeRay_t292057B03B29BCB2999C7A29476FBE622343AA0D L_2 = ___0_gazeRay;
 		uint8_t L_3 = L_2.___is_valid_1;
 		bool L_4;
 		L_4 = G2OM_ExtensionMethods_ToBool_m44DCAAA34CCB249A942D3398CE3E6F0A1948EECB(L_3, NULL);
@@ -4205,7 +4685,7 @@ IL_0015:
 		// GL.Begin(GL.LINES);
 		GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7(1, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_5 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_5, NULL);
 		// GL.Vertex(ray.origin.Vector());
 		G2OM_Ray_tCD4D5844E9D0FEA8A2FF191039A025B352BFEEF6 L_6 = V_0;
@@ -4236,7 +4716,7 @@ IL_0015:
 	}
 }
 // System.Void Tobii.XR.G2OM_DebugVisualization::RenderCube(Tobii.G2OM.G2OM_Vector3[],UnityEngine.Color)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E75E708300DFB4DD47E23F3C01B5E4E701EC8 (G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___corners0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___color1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E75E708300DFB4DD47E23F3C01B5E4E701EC8 (G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* ___0_corners, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_color, const RuntimeMethod* method) 
 {
 	{
 		// GL.PushMatrix();
@@ -4244,10 +4724,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		// GL.Begin(GL.QUADS);
 		GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7(7, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_0 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_0, NULL);
 		// GL.Vertex(corners[(int)Corners.FLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_1 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_1 = ___0_corners;
 		NullCheck(L_1);
 		int32_t L_2 = 0;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_3 = (L_1)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
@@ -4255,7 +4735,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_4 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_3, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_4, NULL);
 		// GL.Vertex(corners[(int)Corners.FUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_5 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_5 = ___0_corners;
 		NullCheck(L_5);
 		int32_t L_6 = 1;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_7 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
@@ -4263,7 +4743,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_8 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_7, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_8, NULL);
 		// GL.Vertex(corners[(int)Corners.FUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_9 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_9 = ___0_corners;
 		NullCheck(L_9);
 		int32_t L_10 = 2;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_11 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
@@ -4271,7 +4751,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_12 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_11, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_12, NULL);
 		// GL.Vertex(corners[(int)Corners.FLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_13 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_13 = ___0_corners;
 		NullCheck(L_13);
 		int32_t L_14 = 3;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_15 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_14));
@@ -4279,10 +4759,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_16 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_15, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_16, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_17 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_17 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_17, NULL);
 		// GL.Vertex(corners[(int)Corners.BLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_18 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_18 = ___0_corners;
 		NullCheck(L_18);
 		int32_t L_19 = 4;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_20 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_19));
@@ -4290,7 +4770,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_21 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_20, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_21, NULL);
 		// GL.Vertex(corners[(int)Corners.BUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_22 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_22 = ___0_corners;
 		NullCheck(L_22);
 		int32_t L_23 = 5;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_24 = (L_22)->GetAt(static_cast<il2cpp_array_size_t>(L_23));
@@ -4298,7 +4778,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_25 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_24, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_25, NULL);
 		// GL.Vertex(corners[(int)Corners.FUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_26 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_26 = ___0_corners;
 		NullCheck(L_26);
 		int32_t L_27 = 1;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_28 = (L_26)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
@@ -4306,7 +4786,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_29 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_28, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_29, NULL);
 		// GL.Vertex(corners[(int)Corners.FLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_30 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_30 = ___0_corners;
 		NullCheck(L_30);
 		int32_t L_31 = 0;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_32 = (L_30)->GetAt(static_cast<il2cpp_array_size_t>(L_31));
@@ -4322,10 +4802,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		// GL.Begin(GL.QUADS);
 		GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7(7, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_34 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_34 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_34, NULL);
 		// GL.Vertex(corners[(int)Corners.FLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_35 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_35 = ___0_corners;
 		NullCheck(L_35);
 		int32_t L_36 = 3;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_37 = (L_35)->GetAt(static_cast<il2cpp_array_size_t>(L_36));
@@ -4333,7 +4813,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_38 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_37, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_38, NULL);
 		// GL.Vertex(corners[(int)Corners.FUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_39 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_39 = ___0_corners;
 		NullCheck(L_39);
 		int32_t L_40 = 2;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_41 = (L_39)->GetAt(static_cast<il2cpp_array_size_t>(L_40));
@@ -4341,7 +4821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_42 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_41, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_42, NULL);
 		// GL.Vertex(corners[(int)Corners.BUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_43 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_43 = ___0_corners;
 		NullCheck(L_43);
 		int32_t L_44 = 6;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_45 = (L_43)->GetAt(static_cast<il2cpp_array_size_t>(L_44));
@@ -4349,7 +4829,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_46 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_45, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_46, NULL);
 		// GL.Vertex(corners[(int)Corners.BLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_47 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_47 = ___0_corners;
 		NullCheck(L_47);
 		int32_t L_48 = 7;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_49 = (L_47)->GetAt(static_cast<il2cpp_array_size_t>(L_48));
@@ -4357,10 +4837,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_50 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_49, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_50, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_51 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_51 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_51, NULL);
 		// GL.Vertex(corners[(int)Corners.FLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_52 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_52 = ___0_corners;
 		NullCheck(L_52);
 		int32_t L_53 = 3;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_54 = (L_52)->GetAt(static_cast<il2cpp_array_size_t>(L_53));
@@ -4368,7 +4848,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_55 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_54, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_55, NULL);
 		// GL.Vertex(corners[(int)Corners.BLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_56 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_56 = ___0_corners;
 		NullCheck(L_56);
 		int32_t L_57 = 7;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_58 = (L_56)->GetAt(static_cast<il2cpp_array_size_t>(L_57));
@@ -4376,7 +4856,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_59 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_58, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_59, NULL);
 		// GL.Vertex(corners[(int)Corners.BLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_60 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_60 = ___0_corners;
 		NullCheck(L_60);
 		int32_t L_61 = 4;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_62 = (L_60)->GetAt(static_cast<il2cpp_array_size_t>(L_61));
@@ -4384,7 +4864,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_63 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_62, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_63, NULL);
 		// GL.Vertex(corners[(int)Corners.FLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_64 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_64 = ___0_corners;
 		NullCheck(L_64);
 		int32_t L_65 = 0;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_66 = (L_64)->GetAt(static_cast<il2cpp_array_size_t>(L_65));
@@ -4400,10 +4880,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		// GL.Begin(GL.QUADS);
 		GL_Begin_m17A70A7A3C161D8A127C11BDC5FC393392AB70C7(7, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_68 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_68 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_68, NULL);
 		// GL.Vertex(corners[(int)Corners.BLR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_69 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_69 = ___0_corners;
 		NullCheck(L_69);
 		int32_t L_70 = 7;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_71 = (L_69)->GetAt(static_cast<il2cpp_array_size_t>(L_70));
@@ -4411,7 +4891,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_72 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_71, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_72, NULL);
 		// GL.Vertex(corners[(int)Corners.BUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_73 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_73 = ___0_corners;
 		NullCheck(L_73);
 		int32_t L_74 = 6;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_75 = (L_73)->GetAt(static_cast<il2cpp_array_size_t>(L_74));
@@ -4419,7 +4899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_76 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_75, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_76, NULL);
 		// GL.Vertex(corners[(int)Corners.BUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_77 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_77 = ___0_corners;
 		NullCheck(L_77);
 		int32_t L_78 = 5;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_79 = (L_77)->GetAt(static_cast<il2cpp_array_size_t>(L_78));
@@ -4427,7 +4907,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_80 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_79, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_80, NULL);
 		// GL.Vertex(corners[(int)Corners.BLL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_81 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_81 = ___0_corners;
 		NullCheck(L_81);
 		int32_t L_82 = 4;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_83 = (L_81)->GetAt(static_cast<il2cpp_array_size_t>(L_82));
@@ -4435,10 +4915,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_84 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_83, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_84, NULL);
 		// GL.Color(color);
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_85 = ___color1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_85 = ___1_color;
 		GL_Color_mE2D27D8FCA9B5E07ECC15574BCBCBA16E6E0CB3E(L_85, NULL);
 		// GL.Vertex(corners[(int)Corners.FUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_86 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_86 = ___0_corners;
 		NullCheck(L_86);
 		int32_t L_87 = 1;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_88 = (L_86)->GetAt(static_cast<il2cpp_array_size_t>(L_87));
@@ -4446,7 +4926,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_89 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_88, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_89, NULL);
 		// GL.Vertex(corners[(int)Corners.BUL].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_90 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_90 = ___0_corners;
 		NullCheck(L_90);
 		int32_t L_91 = 5;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_92 = (L_90)->GetAt(static_cast<il2cpp_array_size_t>(L_91));
@@ -4454,7 +4934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_93 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_92, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_93, NULL);
 		// GL.Vertex(corners[(int)Corners.BUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_94 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_94 = ___0_corners;
 		NullCheck(L_94);
 		int32_t L_95 = 6;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_96 = (L_94)->GetAt(static_cast<il2cpp_array_size_t>(L_95));
@@ -4462,7 +4942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization_RenderCube_m506E
 		L_97 = G2OM_UnityExtensionMethods_Vector_m3A95ABC8F0BD05DE005C9A1B6502D3AE89C37416(L_96, NULL);
 		GL_Vertex_m54BA6BE5B0E6F856EEE3671D1C59CEF7D5C13B72(L_97, NULL);
 		// GL.Vertex(corners[(int)Corners.FUR].Vector());
-		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_98 = ___corners0;
+		G2OM_Vector3U5BU5D_t4264784ECB6D5BC434090BEB3E8C4364F52729A7* L_98 = ___0_corners;
 		NullCheck(L_98);
 		int32_t L_99 = 2;
 		G2OM_Vector3_t34F399F4D5A7F57FFC44CE0E2CE44CD737EF1FAC L_100 = (L_98)->GetAt(static_cast<il2cpp_array_size_t>(L_99));
@@ -4524,11 +5004,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void G2OM_DebugVisualization__ctor_m452596258
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.G2OM_DebugVisualization/<OnPostRender>d__16::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnPostRenderU3Ed__16__ctor_mF63BC306BEA26E6F3A03979C23F0D388B45494AD (U3COnPostRenderU3Ed__16_t2AA0BA257B5F50575B7078F09F01C9E6820B4B03* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3COnPostRenderU3Ed__16__ctor_mF63BC306BEA26E6F3A03979C23F0D388B45494AD (U3COnPostRenderU3Ed__16_t2AA0BA257B5F50575B7078F09F01C9E6820B4B03* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -4663,7 +5143,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3COnPostRenderU3Ed__16_System
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Single Tobii.XR.MetricsForPercentile::Accuracy(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DCDD123F9468D19E1C49338D207DB300E1 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DCDD123F9468D19E1C49338D207DB300E1 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4673,11 +5153,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DC
 	}
 	{
 		// CheckCurrentPercentile(percentile);
-		int32_t L_0 = ___percentile0;
+		int32_t L_0 = ___0_percentile;
 		MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58(__this, L_0, NULL);
 		// return _accuracyForPercentile.Evaluate(angle);
 		RuntimeObject* L_1 = __this->____accuracyForPercentile_0;
-		float L_2 = ___angle1;
+		float L_2 = ___1_angle;
 		NullCheck(L_1);
 		float L_3;
 		L_3 = InterfaceFuncInvoker1< float, float >::Invoke(0 /* System.Single Tobii.XR.GazeModifier.ILerpValue::Evaluate(System.Single) */, ILerpValue_t0BAB799F21A3C48345EED961617844141C9987C7_il2cpp_TypeInfo_var, L_1, L_2);
@@ -4685,7 +5165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Accuracy_m18E618DC
 	}
 }
 // System.Single Tobii.XR.MetricsForPercentile::Precision(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3AFF83054EA7918ACE4C628512215551F4B (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3AFF83054EA7918ACE4C628512215551F4B (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4695,11 +5175,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3A
 	}
 	{
 		// CheckCurrentPercentile(percentile);
-		int32_t L_0 = ___percentile0;
+		int32_t L_0 = ___0_percentile;
 		MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58(__this, L_0, NULL);
 		// return _precisionForPercentile.Evaluate(angle);
 		RuntimeObject* L_1 = __this->____precisionForPercentile_1;
-		float L_2 = ___angle1;
+		float L_2 = ___1_angle;
 		NullCheck(L_1);
 		float L_3;
 		L_3 = InterfaceFuncInvoker1< float, float >::Invoke(0 /* System.Single Tobii.XR.GazeModifier.ILerpValue::Evaluate(System.Single) */, ILerpValue_t0BAB799F21A3C48345EED961617844141C9987C7_il2cpp_TypeInfo_var, L_1, L_2);
@@ -4707,7 +5187,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Precision_mF49CD3A
 	}
 }
 // System.Single Tobii.XR.MetricsForPercentile::Trackability(System.Int32,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352BC503EC5F768B36DB7D3D5EE69766EC1B9503 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, float ___angle1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352BC503EC5F768B36DB7D3D5EE69766EC1B9503 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, float ___1_angle, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4717,11 +5197,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352B
 	}
 	{
 		// CheckCurrentPercentile(percentile);
-		int32_t L_0 = ___percentile0;
+		int32_t L_0 = ___0_percentile;
 		MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58(__this, L_0, NULL);
 		// return _trackabilityForPercentile.Evaluate(angle);
 		RuntimeObject* L_1 = __this->____trackabilityForPercentile_2;
-		float L_2 = ___angle1;
+		float L_2 = ___1_angle;
 		NullCheck(L_1);
 		float L_3;
 		L_3 = InterfaceFuncInvoker1< float, float >::Invoke(0 /* System.Single Tobii.XR.GazeModifier.ILerpValue::Evaluate(System.Single) */, ILerpValue_t0BAB799F21A3C48345EED961617844141C9987C7_il2cpp_TypeInfo_var, L_1, L_2);
@@ -4729,7 +5209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MetricsForPercentile_Trackability_m352B
 	}
 }
 // System.Void Tobii.XR.MetricsForPercentile::CheckCurrentPercentile(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___percentile0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercentile_mBB09C8F352C0B8D4A53F3691FBABF582A9E40F58 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, int32_t ___0_percentile, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4769,7 +5249,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercent
 	{
 		// if (_currentPercentile != percentile)
 		int32_t L_0 = __this->____currentPercentile_3;
-		int32_t L_1 = ___percentile0;
+		int32_t L_1 = ___0_percentile;
 		if ((((int32_t)L_0) == ((int32_t)L_1)))
 		{
 			goto IL_00e5;
@@ -4777,7 +5257,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile_CheckCurrentPercent
 	}
 	{
 		// _currentPercentile = percentile;
-		int32_t L_2 = ___percentile0;
+		int32_t L_2 = ___0_percentile;
 		__this->____currentPercentile_3 = L_2;
 		// _accuracyForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Accuracy)));
 		RuntimeObject* L_3 = __this->____accuracyForPercentile_0;
@@ -4914,7 +5394,7 @@ IL_00e5:
 	}
 }
 // System.Void Tobii.XR.MetricsForPercentile::.ctor(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE30CA6D4089BB883D308D2449C5DF (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, RuntimeObject* ___percentileRepository0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE30CA6D4089BB883D308D2449C5DF (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, RuntimeObject* ___0_percentileRepository, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -4947,7 +5427,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE
 		// public MetricsForPercentile(IPercentileRepository percentileRepository)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// _percentileData = percentileRepository.LoadAll();
-		RuntimeObject* L_3 = ___percentileRepository0;
+		RuntimeObject* L_3 = ___0_percentileRepository;
 		NullCheck(L_3);
 		RuntimeObject* L_4;
 		L_4 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IList`1<Tobii.XR.GazeModifier.PercentileData> Tobii.XR.GazeModifier.IPercentileRepository::LoadAll() */, IPercentileRepository_tDF0A3BBCC240FF8C5C041E3487A73F8A49C6ACCE_il2cpp_TypeInfo_var, L_3);
@@ -4958,11 +5438,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetricsForPercentile__ctor_m6EBFBD69C0CE
 	}
 }
 // System.Boolean Tobii.XR.MetricsForPercentile::<CheckCurrentPercentile>b__8_0(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_0_m19C803478E5EAFA054CCC164F0766696D4669294 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_0_m19C803478E5EAFA054CCC164F0766696D4669294 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _accuracyForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Accuracy)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___Percentile_0;
 		int32_t L_2 = __this->____currentPercentile_3;
@@ -4970,11 +5450,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPerc
 	}
 }
 // System.Boolean Tobii.XR.MetricsForPercentile::<CheckCurrentPercentile>b__8_2(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_2_mC759D348C8FB97EC337DB1F4398DE0D4A6B70D4F (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_2_mC759D348C8FB97EC337DB1F4398DE0D4A6B70D4F (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _precisionForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Precision)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___Percentile_0;
 		int32_t L_2 = __this->____currentPercentile_3;
@@ -4982,11 +5462,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPerc
 	}
 }
 // System.Boolean Tobii.XR.MetricsForPercentile::<CheckCurrentPercentile>b__8_4(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_4_mEDC370B9194B72AD07377DBC84CB5558AD43C3F6 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MetricsForPercentile_U3CCheckCurrentPercentileU3Eb__8_4_mEDC370B9194B72AD07377DBC84CB5558AD43C3F6 (MetricsForPercentile_tE18B208E7AA91C7F9221CC9504D82C6BF5351F8B* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _trackabilityForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Trackability)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___Percentile_0;
 		int32_t L_2 = __this->____currentPercentile_3;
@@ -5028,14 +5508,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mFA6B56415BAEF6B47A3B8107C
 	}
 }
 // UnityEngine.Vector2 Tobii.XR.MetricsForPercentile/<>c::<CheckCurrentPercentile>b__8_1(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_1_mF0BE9DA29B113685841D40AE7CC6F57C79D879A0 (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_1_mF0BE9DA29B113685841D40AE7CC6F57C79D879A0 (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _accuracyForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Accuracy)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		float L_1 = L_0->___Angle_2;
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___0_p;
 		NullCheck(L_2);
 		float L_3 = L_2->___Accuracy_3;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
@@ -5045,14 +5525,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 	}
 }
 // UnityEngine.Vector2 Tobii.XR.MetricsForPercentile/<>c::<CheckCurrentPercentile>b__8_3(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_3_m0070D27E3C1C84EDCF668D501E0AEBF663A36C7D (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_3_m0070D27E3C1C84EDCF668D501E0AEBF663A36C7D (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _precisionForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Precision)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		float L_1 = L_0->___Angle_2;
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___0_p;
 		NullCheck(L_2);
 		float L_3 = L_2->___Precision_1;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
@@ -5062,14 +5542,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 	}
 }
 // UnityEngine.Vector2 Tobii.XR.MetricsForPercentile/<>c::<CheckCurrentPercentile>b__8_5(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_5_m1D403C54B486C2E9B3B5CD9A8A15C359A0F2C9D4 (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 U3CU3Ec_U3CCheckCurrentPercentileU3Eb__8_5_m1D403C54B486C2E9B3B5CD9A8A15C359A0F2C9D4 (U3CU3Ec_tAE3FC3CFF5E4FB1A2B12D6AEA6DF0092E6EE2267* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// _trackabilityForPercentile.SetValues(_percentileData.Where(p => p.Percentile == _currentPercentile).Select(p => new Vector2(p.Angle, p.Trackability)));
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_p;
 		NullCheck(L_0);
 		float L_1 = L_0->___Angle_2;
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___p0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_2 = ___0_p;
 		NullCheck(L_2);
 		float L_3 = L_2->___Trackability_4;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_4;
@@ -5287,7 +5767,7 @@ IL_00ab:
 	}
 }
 // System.Void Tobii.XR.GazeVisualizer::SetPositionAndScale(Tobii.XR.TobiiXR_GazeRay)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_SetPositionAndScale_m0BDDCFBD9FF5A25442D09211672D05C2ECA4CDDE (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 ___gazeRay0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_SetPositionAndScale_m0BDDCFBD9FF5A25442D09211672D05C2ECA4CDDE (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 ___0_gazeRay, const RuntimeMethod* method) 
 {
 	RaycastHit_t6F30BD0B38B56401CA833A1B87BD74F2ACD2F2B5 V_0;
 	memset((&V_0), 0, sizeof(V_0));
@@ -5303,9 +5783,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_SetPositionAndScale_m0BDD
 		float L_0 = __this->____defaultDistance_8;
 		V_1 = L_0;
 		// if (Physics.Raycast(gazeRay.Origin, gazeRay.Direction, out hit))
-		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_1 = ___gazeRay0;
+		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_1 = ___0_gazeRay;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = L_1.___Origin_2;
-		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_3 = ___gazeRay0;
+		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_3 = ___0_gazeRay;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = L_3.___Direction_0;
 		bool L_5;
 		L_5 = Physics_Raycast_m1B27F500505FFB57D78548B9F5A540A2AD092903(L_2, L_4, (&V_0), NULL);
@@ -5326,7 +5806,7 @@ IL_0024:
 		// var interpolatedGazeDirection = Vector3.Lerp(_lastGazeDirection, gazeRay.Direction,
 		//     _smoothMoveSpeed * Time.unscaledDeltaTime);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = __this->____lastGazeDirection_11;
-		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_8 = ___gazeRay0;
+		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_8 = ___0_gazeRay;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = L_8.___Direction_0;
 		int32_t L_10 = __this->____smoothMoveSpeed_7;
 		float L_11;
@@ -5342,7 +5822,7 @@ IL_0024:
 		}
 	}
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_14 = (&(&___gazeRay0)->___Direction_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_14 = (&(&___0_gazeRay)->___Direction_0);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
 		L_15 = Vector3_get_normalized_m736BBF65D5CDA7A18414370D15B4DFCC1E466F07_inline(L_14, NULL);
 		G_B5_0 = L_15;
@@ -5362,7 +5842,7 @@ IL_0060:
 		// transform.position = gazeRay.Origin + usedDirection * distance;
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
 		L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
-		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_18 = ___gazeRay0;
+		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465 L_18 = ___0_gazeRay;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = L_18.___Origin_2;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_3;
 		float L_21 = V_1;
@@ -5401,7 +5881,7 @@ IL_0060:
 	}
 }
 // System.Void Tobii.XR.GazeVisualizer::UpdatePrecisionScale(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB508EFB7B6CC88ED92B1A8A7AC026D0B5FD79936 (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, float ___maxPrecisionAngleDegrees0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB508EFB7B6CC88ED92B1A8A7AC026D0B5FD79936 (GazeVisualizer_t4983C5F5C10A8A9286785A1813112CD035EF04A6* __this, float ___0_maxPrecisionAngleDegrees, const RuntimeMethod* method) 
 {
 	{
 		// transform.localScale *= (1f + GetScaleAffectedByPrecisionAngle(maxPrecisionAngleDegrees));
@@ -5411,7 +5891,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB50
 		NullCheck(L_1);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
 		L_2 = Transform_get_localScale_m804A002A53A645CDFCD15BB0F37209162720363F(L_1, NULL);
-		float L_3 = ___maxPrecisionAngleDegrees0;
+		float L_3 = ___0_maxPrecisionAngleDegrees;
 		float L_4;
 		L_4 = GazeVisualizer_GetScaleAffectedByPrecisionAngle_m6CAE8FE19D792D16249B807CB5C35BB3D24C5DC6(L_3, NULL);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
@@ -5423,12 +5903,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeVisualizer_UpdatePrecisionScale_mB50
 	}
 }
 // System.Single Tobii.XR.GazeVisualizer::GetScaleAffectedByPrecisionAngle(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeVisualizer_GetScaleAffectedByPrecisionAngle_m6CAE8FE19D792D16249B807CB5C35BB3D24C5DC6 (float ___maxPrecisionAngleDegrees0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeVisualizer_GetScaleAffectedByPrecisionAngle_m6CAE8FE19D792D16249B807CB5C35BB3D24C5DC6 (float ___0_maxPrecisionAngleDegrees, const RuntimeMethod* method) 
 {
 	{
 		// return maxPrecisionAngleDegrees * Mathf.Sin(maxPrecisionAngleDegrees * Mathf.Deg2Rad) * PrecisionAngleScaleFactor;
-		float L_0 = ___maxPrecisionAngleDegrees0;
-		float L_1 = ___maxPrecisionAngleDegrees0;
+		float L_0 = ___0_maxPrecisionAngleDegrees;
+		float L_1 = ___0_maxPrecisionAngleDegrees;
 		float L_2;
 		L_2 = sinf(((float)il2cpp_codegen_multiply(L_1, (0.0174532924f))));
 		return ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_0, L_2)), (5.0f)));
@@ -5538,7 +6018,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_Start_mA4C5
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButtonPress(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonPress_m5163850FBCACF042EFDFC7B5F4A481C348236490 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___currentButtonState0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonPress_m5163850FBCACF042EFDFC7B5F4A481C348236490 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___0_currentButtonState, const RuntimeMethod* method) 
 {
 	{
 		// if (_buttonAnimationCoroutine != null)
@@ -5557,7 +6037,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButt
 IL_0014:
 	{
 		// _currentButtonState = currentButtonState;
-		int32_t L_2 = ___currentButtonState0;
+		int32_t L_2 = ___0_currentButtonState;
 		__this->____currentButtonState_21 = L_2;
 		// if (this.gameObject.activeInHierarchy)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
@@ -5575,7 +6055,7 @@ IL_0014:
 		//     _buttonPressAnimationCurve, currentButtonState));
 		float L_5 = __this->____buttonPressDuration_14;
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_6 = __this->____buttonPressAnimationCurve_15;
-		int32_t L_7 = ___currentButtonState0;
+		int32_t L_7 = ___0_currentButtonState;
 		RuntimeObject* L_8;
 		L_8 = DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21(__this, L_5, L_6, L_7, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_9;
@@ -5591,7 +6071,7 @@ IL_0047:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButtonVisualFeedback(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonVisualFeedback_m7DE3B5701B6C120360BFEDBFB898CDFE73670703 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___currentButtonState0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButtonVisualFeedback_m7DE3B5701B6C120360BFEDBFB898CDFE73670703 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, int32_t ___0_currentButtonState, const RuntimeMethod* method) 
 {
 	{
 		// if (_buttonAnimationCoroutine != null)
@@ -5610,7 +6090,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics_AnimateButt
 IL_0014:
 	{
 		// _currentButtonState = currentButtonState;
-		int32_t L_2 = ___currentButtonState0;
+		int32_t L_2 = ___0_currentButtonState;
 		__this->____currentButtonState_21 = L_2;
 		// if (this.gameObject.activeInHierarchy)
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
@@ -5628,7 +6108,7 @@ IL_0014:
 		//     _visualFeedbackAnimationCurve, currentButtonState));
 		float L_5 = __this->____visualFeedbackDuration_9;
 		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_6 = __this->____visualFeedbackAnimationCurve_10;
-		int32_t L_7 = ___currentButtonState0;
+		int32_t L_7 = ___0_currentButtonState;
 		RuntimeObject* L_8;
 		L_8 = DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21(__this, L_5, L_6, L_7, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_9;
@@ -5644,7 +6124,7 @@ IL_0047:
 	}
 }
 // System.Collections.IEnumerator Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics::AnimateButton(System.Single,UnityEngine.AnimationCurve,Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, float ___duration0, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___animationCurve1, int32_t ___currentButtonState2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeButtonGraphics_AnimateButton_mCFADE2BA0CF846526F86C58C53B0A0ABC5847B21 (DevToolsUIGazeButtonGraphics_t699130A11FEDB2456A50E6CCED8237FB41155384* __this, float ___0_duration, AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___1_animationCurve, int32_t ___2_currentButtonState, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5661,16 +6141,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeButtonGraphics_A
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* L_2 = L_1;
-		float L_3 = ___duration0;
+		float L_3 = ___0_duration;
 		NullCheck(L_2);
 		L_2->___duration_4 = L_3;
 		U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* L_4 = L_2;
-		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_5 = ___animationCurve1;
+		AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* L_5 = ___1_animationCurve;
 		NullCheck(L_4);
 		L_4->___animationCurve_5 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&L_4->___animationCurve_5), (void*)L_5);
 		U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* L_6 = L_4;
-		int32_t L_7 = ___currentButtonState2;
+		int32_t L_7 = ___2_currentButtonState;
 		NullCheck(L_6);
 		L_6->___currentButtonState_3 = L_7;
 		return L_6;
@@ -5775,11 +6255,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeButtonGraphics__ctor_m671F
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.GazeModifier.DevToolsUIGazeButtonGraphics/<AnimateButton>d__21::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateButtonU3Ed__21__ctor_m4C544FD861D092F841C04E474F289726C4DBF69C (U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateButtonU3Ed__21__ctor_m4C544FD861D092F841C04E474F289726C4DBF69C (U3CAnimateButtonU3Ed__21_tA2F9D8593E046808915A38E1C36E9FCCB7DE78FF* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -6369,11 +6849,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerDragDetector::GazeFocusChanged(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerDragDetector_GazeFocusChanged_m0F5075805771B4F9DEDB49C1347F2AC75F7A4811 (DevToolsUITriggerDragDetector_tF17B03B7D9EE7F2FB2907C51DD380809902DB420* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerDragDetector_GazeFocusChanged_m0F5075805771B4F9DEDB49C1347F2AC75F7A4811 (DevToolsUITriggerDragDetector_tF17B03B7D9EE7F2FB2907C51DD380809902DB420* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	{
 		// _hasFocus = hasFocus;
-		bool L_0 = ___hasFocus0;
+		bool L_0 = ___0_hasFocus;
 		__this->____hasFocus_8 = L_0;
 		// }
 		return;
@@ -6556,7 +7036,7 @@ IL_0068:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeButton::UpdateState(Tobii.XR.GazeModifier.ButtonState)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_mBA591A6142D1D542768E720397487406E624F5FD (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, int32_t ___newState0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_mBA591A6142D1D542768E720397487406E624F5FD (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, int32_t ___0_newState, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	bool V_1 = false;
@@ -6569,10 +7049,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_
 		int32_t L_0 = __this->____currentButtonState_7;
 		V_0 = L_0;
 		// _currentButtonState = newState;
-		int32_t L_1 = ___newState0;
+		int32_t L_1 = ___0_newState;
 		__this->____currentButtonState_7 = L_1;
 		// var buttonPressed = newState == ButtonState.PressedDown;
-		int32_t L_2 = ___newState0;
+		int32_t L_2 = ___0_newState;
 		// var buttonClicked = (oldState == ButtonState.PressedDown && newState == ButtonState.Focused);
 		int32_t L_3 = V_0;
 		G_B1_0 = ((((int32_t)L_2) == ((int32_t)2))? 1 : 0);
@@ -6583,7 +7063,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_UpdateState_
 		}
 	}
 	{
-		int32_t L_4 = ___newState0;
+		int32_t L_4 = ___0_newState;
 		G_B3_0 = ((((int32_t)L_4) == ((int32_t)1))? 1 : 0);
 		G_B3_1 = G_B1_0;
 		goto IL_001d;
@@ -6626,7 +7106,7 @@ IL_0034:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeButton::GazeFocusChanged(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_GazeFocusChanged_m0B01D7231BEF8BBCFBFA1E2AA3ADB6DB1AA5A075 (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_GazeFocusChanged_m0B01D7231BEF8BBCFBFA1E2AA3ADB6DB1AA5A075 (DevToolsUITriggerGazeButton_t0F9160F1E21150DF69C983457C60E1A3C390FD01* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6655,7 +7135,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeButton_GazeFocusCha
 IL_0009:
 	{
 		// _hasFocus = hasFocus;
-		bool L_1 = ___hasFocus0;
+		bool L_1 = ___0_hasFocus;
 		__this->____hasFocus_8 = L_1;
 		// if (ControllerManager.Instance.GetButtonPress(TriggerButton)) return;
 		il2cpp_codegen_runtime_class_init_inline(ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_il2cpp_TypeInfo_var);
@@ -6677,7 +7157,7 @@ IL_0009:
 IL_001e:
 	{
 		// UpdateState(hasFocus ? ButtonState.Focused : ButtonState.Idle);
-		bool L_4 = ___hasFocus0;
+		bool L_4 = ___0_hasFocus;
 		G_B5_0 = __this;
 		if (L_4)
 		{
@@ -6731,7 +7211,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DevToolsUITriggerGazeSlider_get_Value
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::set_Value(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m86E5EAEEBA7FC7C4FF1B71997C1D17DB3230EB32 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m86E5EAEEBA7FC7C4FF1B71997C1D17DB3230EB32 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6741,7 +7221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m8
 	}
 	{
 		// if (Mathf.Approximately(value, _value)) return;
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		int32_t L_1 = __this->____value_5;
 		bool L_2;
 		L_2 = Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline(((float)L_0), ((float)L_1), NULL);
@@ -6758,7 +7238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_set_Value_m8
 IL_0011:
 	{
 		// _value = value;
-		int32_t L_3 = ___value0;
+		int32_t L_3 = ___0_value;
 		__this->____value_5 = L_3;
 		// if (OnSliderValueChanged != null)
 		DevToolsUISliderEvent_tCEE0F42B560E077E0CC8BF789FC4A303B8FEBC3E* L_4 = __this->___OnSliderValueChanged_4;
@@ -6770,7 +7250,7 @@ IL_0011:
 	{
 		// OnSliderValueChanged.Invoke(value);
 		DevToolsUISliderEvent_tCEE0F42B560E077E0CC8BF789FC4A303B8FEBC3E* L_5 = __this->___OnSliderValueChanged_4;
-		int32_t L_6 = ___value0;
+		int32_t L_6 = ___0_value;
 		NullCheck(L_5);
 		UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638(L_5, L_6, UnityEvent_1_Invoke_mD81A5FC81FD5B0D34212D7ACE42A8BBC15CD7638_RuntimeMethod_var);
 	}
@@ -7043,11 +7523,11 @@ IL_00bc:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::SetSliderTo(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___number0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, int32_t ___0_number, const RuntimeMethod* method) 
 {
 	{
 		// _sliderFillAmount = (float)(number - _minValue) / (float)(_maxValue - _minValue);
-		int32_t L_0 = ___number0;
+		int32_t L_0 = ___0_number;
 		int32_t L_1 = __this->____minValue_7;
 		int32_t L_2 = __this->____maxValue_8;
 		int32_t L_3 = __this->____minValue_7;
@@ -7222,7 +7702,7 @@ IL_004b:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeSlider::GazeFocusChanged(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_GazeFocusChanged_m09F55D251BBEDD0C613E4A871DFA9D8861B3B3C1 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_GazeFocusChanged_m09F55D251BBEDD0C613E4A871DFA9D8861B3B3C1 (DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7232,7 +7712,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeSlider_GazeFocusCha
 	}
 	{
 		// _hasFocus = hasFocus;
-		bool L_0 = ___hasFocus0;
+		bool L_0 = ___0_hasFocus;
 		__this->____hasFocus_16 = L_0;
 		// if (ControllerManager.Instance.GetButtonPress(TriggerButton)) return;
 		il2cpp_codegen_runtime_class_init_inline(ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_il2cpp_TypeInfo_var);
@@ -7255,7 +7735,7 @@ IL_0015:
 	{
 		// _sliderGraphics.StartVisualFeedbackAnimation(hasFocus);
 		DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* L_3 = __this->____sliderGraphics_19;
-		bool L_4 = ___hasFocus0;
+		bool L_4 = ___0_hasFocus;
 		NullCheck(L_3);
 		DevToolsUIGazeSliderGraphics_StartVisualFeedbackAnimation_m658AC9B7222A4513FD1277BA99B6D81388E0F173(L_3, L_4, NULL);
 		// }
@@ -7294,7 +7774,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DevToolsUITriggerGazeToggleButton_get_Is
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::set_IsToggledOn(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_IsToggledOn_m83F6AA4AF90F342556258D787EF17C2DCA3E3EA0 (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_IsToggledOn_m83F6AA4AF90F342556258D787EF17C2DCA3E3EA0 (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7304,7 +7784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_Is
 	}
 	{
 		// if (value == IsToggledOn) return;
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		bool L_1;
 		L_1 = DevToolsUITriggerGazeToggleButton_get_IsToggledOn_m06A1BD95AEE8D27F8F8798755C9E0AAF8970C35B_inline(__this, NULL);
 		if ((!(((uint32_t)L_0) == ((uint32_t)L_1))))
@@ -7320,7 +7800,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_set_Is
 IL_000a:
 	{
 		// _isToggledOn = value;
-		bool L_2 = ___value0;
+		bool L_2 = ___0_value;
 		__this->____isToggledOn_5 = L_2;
 		// if (OnButtonToggled != null)
 		DevToolsUIToggleEvent_tEFC60A464EE9C46AE610BB4C247F7EF9120AAC1F* L_3 = __this->___OnButtonToggled_4;
@@ -7332,7 +7812,7 @@ IL_000a:
 	{
 		// OnButtonToggled.Invoke(value);
 		DevToolsUIToggleEvent_tEFC60A464EE9C46AE610BB4C247F7EF9120AAC1F* L_4 = __this->___OnButtonToggled_4;
-		bool L_5 = ___value0;
+		bool L_5 = ___0_value;
 		NullCheck(L_4);
 		UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653(L_4, L_5, UnityEvent_1_Invoke_m4810FCA7EC353CAA7770E91777A04496C5663653_RuntimeMethod_var);
 	}
@@ -7567,7 +8047,7 @@ IL_0009:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.DevToolsUITriggerGazeToggleButton::GazeFocusChanged(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_GazeFocusChanged_m786F2F286697AE6119EF6B7A8331785163AFB87B (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_GazeFocusChanged_m786F2F286697AE6119EF6B7A8331785163AFB87B (DevToolsUITriggerGazeToggleButton_tB2DC6992ABEEEC3F59C22581C836F711CAC24FC5* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7577,7 +8057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUITriggerGazeToggleButton_GazeFo
 	}
 	{
 		// _hasFocus = hasFocus;
-		bool L_0 = ___hasFocus0;
+		bool L_0 = ___0_hasFocus;
 		__this->____hasFocus_8 = L_0;
 		// if (ControllerManager.Instance.GetButtonPress(TriggerButton)) return;
 		il2cpp_codegen_runtime_class_init_inline(ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_il2cpp_TypeInfo_var);
@@ -7687,11 +8167,11 @@ IL_003c:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierFilter::set_Modifiers(System.Collections.Generic.IEnumerable`1<Tobii.XR.GazeModifier.IGazeModifier>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_set_Modifiers_m38B4021832688C864F65591EADBC699C93ABD186 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, RuntimeObject* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_set_Modifiers_m38B4021832688C864F65591EADBC699C93ABD186 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// set { _modifiers = value; }
-		RuntimeObject* L_0 = ___value0;
+		RuntimeObject* L_0 = ___0_value;
 		__this->____modifiers_5 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____modifiers_5), (void*)L_0);
 		// set { _modifiers = value; }
@@ -7745,7 +8225,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_Start_m52498B6AD6613F
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierFilter::Filter(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_Filter_m2AC6345526184FC046B2E0DFEED2FE820709F009 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_Filter_m2AC6345526184FC046B2E0DFEED2FE820709F009 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7838,8 +8318,8 @@ IL_0025_1:
 				RuntimeObject* L_8;
 				L_8 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<Tobii.XR.GazeModifier.IGazeModifier>::get_Current() */, IEnumerator_1_tEF191D07FC95EEC80141CF00D50D4A5E2BA21E56_il2cpp_TypeInfo_var, L_7);
 				// gazeModifier.Modify(data, forward);
-				TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_9 = ___data0;
-				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___forward1;
+				TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_9 = ___0_data;
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_forward;
 				NullCheck(L_8);
 				InterfaceActionInvoker2< TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937*, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(0 /* System.Void Tobii.XR.GazeModifier.IGazeModifier::Modify(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3) */, IGazeModifier_tD5CB9F3A53108CE210618F9F09C53D495F22C4DC_il2cpp_TypeInfo_var, L_8, L_9, L_10);
 			}
@@ -7873,7 +8353,7 @@ IL_0046:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierFilter::FilterAccuracyOnly(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_FilterAccuracyOnly_m2B54C6D324AB91628A0672C3AF2FBE09F9A8A7B1 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierFilter_FilterAccuracyOnly_m2B54C6D324AB91628A0672C3AF2FBE09F9A8A7B1 (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	{
 		// if (!enabled) return;
@@ -7910,8 +8390,8 @@ IL_0017:
 	{
 		// _accuracyModifier.Modify(data, forward);
 		AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* L_3 = __this->____accuracyModifier_6;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_4 = ___data0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___forward1;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_4 = ___0_data;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___1_forward;
 		NullCheck(L_3);
 		AccuracyModifier_Modify_mFF541E5814AA2C50EC2EE268DB680ED1C3133B7E(L_3, L_4, L_5, NULL);
 		// }
@@ -7919,7 +8399,7 @@ IL_0017:
 	}
 }
 // System.Single Tobii.XR.GazeModifier.GazeModifierFilter::GetMaxPrecisionAngleDegrees(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeModifierFilter_GetMaxPrecisionAngleDegrees_mB00D02A33E16800F335D088C15370264A1E358EC (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___gazeDirection0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GazeModifierFilter_GetMaxPrecisionAngleDegrees_mB00D02A33E16800F335D088C15370264A1E358EC (GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_gazeDirection, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	{
 		// if (!enabled) return 0f;
@@ -7956,8 +8436,8 @@ IL_0021:
 	{
 		// return _precisionModifier.GetMaxAngle(gazeDirection, forward);
 		PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* L_3 = __this->____precisionModifier_7;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___gazeDirection0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_gazeDirection;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___1_forward;
 		NullCheck(L_3);
 		float L_6;
 		L_6 = PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA(L_3, L_4, L_5, NULL);
@@ -7982,11 +8462,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GazeModifierSettings_get_Repos
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_Repository(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public IPercentileRepository Repository { get; private set; }
-		RuntimeObject* L_0 = ___value0;
+		RuntimeObject* L_0 = ___0_value;
 		__this->___U3CRepositoryU3Ek__BackingField_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRepositoryU3Ek__BackingField_1), (void*)L_0);
 		return;
@@ -8002,11 +8482,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GazeModifierSettings_get_SelectedPerc
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_SelectedPercentileIndex(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_SelectedPercentileIndex_m290673E2F818FE28B00BC3DA7D1797B9A6E5338B (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_SelectedPercentileIndex_m290673E2F818FE28B00BC3DA7D1797B9A6E5338B (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// _selectedPercetileIndex = Mathf.Clamp(value, 0, NumberOfPercentiles - 1);
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		int32_t L_1;
 		L_1 = GazeModifierSettings_get_NumberOfPercentiles_m217544246AD86EB64595DCD8E4409C5A5B641495_inline(__this, NULL);
 		int32_t L_2;
@@ -8026,11 +8506,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t GazeModifierSettings_get_NumberOfPerc
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::set_NumberOfPercentiles(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public int NumberOfPercentiles { get; private set; }
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->___U3CNumberOfPercentilesU3Ek__BackingField_3 = L_0;
 		return;
 	}
@@ -8118,7 +8598,7 @@ IL_0025:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::AddDisabler(Tobii.XR.DevTools.IDisableGazeModifier)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529A60FB6D47B97B77D4339E834F4184CDA3F (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___disabler0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529A60FB6D47B97B77D4339E834F4184CDA3F (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_disabler, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8129,7 +8609,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529
 	{
 		// _disablers.Add(disabler);
 		RuntimeObject* L_0 = __this->____disablers_0;
-		RuntimeObject* L_1 = ___disabler0;
+		RuntimeObject* L_1 = ___0_disabler;
 		NullCheck(L_0);
 		InterfaceActionInvoker1< RuntimeObject* >::Invoke(2 /* System.Void System.Collections.Generic.ICollection`1<Tobii.XR.DevTools.IDisableGazeModifier>::Add(T) */, ICollection_1_tBCA542C914C0C0F50E13FDC67305A7B2F78711AA_il2cpp_TypeInfo_var, L_0, L_1);
 		// }
@@ -8137,7 +8617,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_AddDisabler_m62C529
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GazeModifierSettings::SetPercentileRepository(Tobii.XR.GazeModifier.IPercentileRepository)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileRepository_m391FA55FC10FE1B831BF89A28E1B02676D226D73 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___repo0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileRepository_m391FA55FC10FE1B831BF89A28E1B02676D226D73 (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_repo, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8159,13 +8639,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GazeModifierSettings_SetPercentileReposi
 	GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* G_B1_2 = NULL;
 	{
 		// Repository = repo;
-		RuntimeObject* L_0 = ___repo0;
+		RuntimeObject* L_0 = ___0_repo;
 		GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline(__this, L_0, NULL);
 		// NumberOfPercentiles = repo.LoadAll()
 		//     .Select(v => v.Percentile)
 		//     .Distinct()
 		//     .Count();
-		RuntimeObject* L_1 = ___repo0;
+		RuntimeObject* L_1 = ___0_repo;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(0 /* System.Collections.Generic.IList`1<Tobii.XR.GazeModifier.PercentileData> Tobii.XR.GazeModifier.IPercentileRepository::LoadAll() */, IPercentileRepository_tDF0A3BBCC240FF8C5C041E3487A73F8A49C6ACCE_il2cpp_TypeInfo_var, L_1);
@@ -8246,7 +8726,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m9B35F4CA3505A4A3D73FD6FC7
 	}
 }
 // System.Boolean Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<get_Active>b__15_0(Tobii.XR.DevTools.IDisableGazeModifier)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_ActiveU3Eb__15_0_m25A4DEE043F8292E090C27B6713964A2D51D4C1E (U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* __this, RuntimeObject* ___d0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_ActiveU3Eb__15_0_m25A4DEE043F8292E090C27B6713964A2D51D4C1E (U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* __this, RuntimeObject* ___0_d, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8256,7 +8736,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_ActiveU3Eb__15_0_m25A4DEE
 	}
 	{
 		// get { return !_disablers.Any(d => d.Disable); }
-		RuntimeObject* L_0 = ___d0;
+		RuntimeObject* L_0 = ___0_d;
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = InterfaceFuncInvoker0< bool >::Invoke(0 /* System.Boolean Tobii.XR.DevTools.IDisableGazeModifier::get_Disable() */, IDisableGazeModifier_tA0CEAA0B73E90A2EAD4E650064814E3A5CAD50C3_il2cpp_TypeInfo_var, L_0);
@@ -8264,11 +8744,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3Cget_ActiveU3Eb__15_0_m25A4DEE
 	}
 }
 // System.Int32 Tobii.XR.GazeModifier.GazeModifierSettings/<>c::<SetPercentileRepository>b__17_0(Tobii.XR.GazeModifier.PercentileData)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CSetPercentileRepositoryU3Eb__17_0_m005E58DFC76DC6730B11913FA65425F8824C6BE9 (U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___v0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CSetPercentileRepositoryU3Eb__17_0_m005E58DFC76DC6730B11913FA65425F8824C6BE9 (U3CU3Ec_tC268C86E6BB9DBE0B1B70062EA1B3E023CD5DBB0* __this, PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* ___0_v, const RuntimeMethod* method) 
 {
 	{
 		// .Select(v => v.Percentile)
-		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___v0;
+		PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* L_0 = ___0_v;
 		NullCheck(L_0);
 		int32_t L_1 = L_0->___Percentile_0;
 		return L_1;
@@ -8283,12 +8763,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec_U3CSetPercentileRepositoryU3E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Single Tobii.XR.GazeModifier.GetValueForAngle::Evaluate(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m3EE56A3BB52D66A1900B6342571D2D6A4603504F (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, float ___key0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m3EE56A3BB52D66A1900B6342571D2D6A4603504F (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, float ___0_key, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
 		// var value = Mathf.Clamp(key, 0, _max.x);
-		float L_0 = ___key0;
+		float L_0 = ___0_key;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_1 = (&__this->____max_0);
 		float L_2 = L_1->___x_0;
 		float L_3;
@@ -8303,7 +8783,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m3EE56A3BB52D
 	}
 }
 // System.Void Tobii.XR.GazeModifier.GetValueForAngle::SetValues(System.Collections.Generic.IEnumerable`1<UnityEngine.Vector2>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueForAngle_SetValues_m8F0C38C366E3FD55B38E42CC25712EB329676C7B (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___keyValuepairs0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueForAngle_SetValues_m8F0C38C366E3FD55B38E42CC25712EB329676C7B (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___0_keyValuepairs, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8340,7 +8820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GetValueForAngle_SetValues_m8F0C38C366E3
 		NullCheck(L_0);
 		List_1_Clear_m4F04D407852735E68667980C26DA866BAE103B37_inline(L_0, List_1_Clear_m4F04D407852735E68667980C26DA866BAE103B37_RuntimeMethod_var);
 		// var valuePairs = keyValuepairs.ToList();
-		RuntimeObject* L_1 = ___keyValuepairs0;
+		RuntimeObject* L_1 = ___0_keyValuepairs;
 		List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* L_2;
 		L_2 = Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100(L_1, Enumerable_ToList_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m0E5DB825B74F13F9F464DF171D698666377AA100_RuntimeMethod_var);
 		V_0 = L_2;
@@ -8472,7 +8952,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GetValueForAngle_get_HasValues_mE78CC5BA
 	}
 }
 // System.Single Tobii.XR.GazeModifier.GetValueForAngle::Evaluate(System.Collections.Generic.IList`1<UnityEngine.Vector2>,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E8920EBB5B96AB1CA16027F3A1004DC8 (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___target0, float ___val1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E8920EBB5B96AB1CA16027F3A1004DC8 (GetValueForAngle_tDCE01C4F33CDE9B54F73DD6DAB5EBA7E01977B28* __this, RuntimeObject* ___0_target, float ___1_val, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8513,11 +8993,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E892
 		U3CU3Ec__DisplayClass6_0__ctor_mCCAB7C24C4FDC84E354D50709B84FEADE603D8B8(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass6_0_t051355B4D4C7C2C816F512CE8CE31AB46D219C27* L_1 = V_0;
-		float L_2 = ___val1;
+		float L_2 = ___1_val;
 		NullCheck(L_1);
 		L_1->___val_0 = L_2;
 		// var count = target.Count;
-		RuntimeObject* L_3 = ___target0;
+		RuntimeObject* L_3 = ___0_target;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<UnityEngine.Vector2>::get_Count() */, ICollection_1_t77739521790EB7E3F514D44638D90AB775EDE8ED_il2cpp_TypeInfo_var, L_3);
@@ -8535,7 +9015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float GetValueForAngle_Evaluate_m6C68DE33E892
 IL_001b:
 	{
 		// if (target.Count == 1) return target.First().y;
-		RuntimeObject* L_5 = ___target0;
+		RuntimeObject* L_5 = ___0_target;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = InterfaceFuncInvoker0< int32_t >::Invoke(0 /* System.Int32 System.Collections.Generic.ICollection`1<UnityEngine.Vector2>::get_Count() */, ICollection_1_t77739521790EB7E3F514D44638D90AB775EDE8ED_il2cpp_TypeInfo_var, L_5);
@@ -8546,7 +9026,7 @@ IL_001b:
 	}
 	{
 		// if (target.Count == 1) return target.First().y;
-		RuntimeObject* L_7 = ___target0;
+		RuntimeObject* L_7 = ___0_target;
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8;
 		L_8 = Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4(L_7, Enumerable_First_TisVector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_m57C32AA51B14FBCFD461AD305385FDEAD597C6E4_RuntimeMethod_var);
 		float L_9 = L_8.___y_1;
@@ -8559,7 +9039,7 @@ IL_0030:
 		//     .OrderBy(p => p.x)
 		//     .SelectWithPrevious((previous, current) => new { low = previous, high = current })
 		//     .ToList();
-		RuntimeObject* L_10 = ___target0;
+		RuntimeObject* L_10 = ___0_target;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9_il2cpp_TypeInfo_var);
 		Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* L_11 = ((U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9_il2cpp_TypeInfo_var))->___U3CU3E9__6_0_3;
 		Func_2_t768E45AC224B8B0A2FF0AF51561075C9EA671111* L_12 = L_11;
@@ -8741,37 +9221,37 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_mD1080B5E5F3EA902FB9DEE20E
 	}
 }
 // System.Single Tobii.XR.GazeModifier.GetValueForAngle/<>c::<SetValues>b__3_0(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CSetValuesU3Eb__3_0_m31A5725AB7999BA970830497702F48C8AD5A51F4 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___n0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CSetValuesU3Eb__3_0_m31A5725AB7999BA970830497702F48C8AD5A51F4 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_n, const RuntimeMethod* method) 
 {
 	{
 		// _max = valuePairs.OrderBy(n => n.x).Last();
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___n0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_n;
 		float L_1 = L_0.___x_0;
 		return L_1;
 	}
 }
 // System.Boolean Tobii.XR.GazeModifier.GetValueForAngle/<>c::<SetValues>b__3_1(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CSetValuesU3Eb__3_1_mACB64B1DE3CF09C98240BF5FEB7CF1EFF6AC9408 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___f0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec_U3CSetValuesU3Eb__3_1_mACB64B1DE3CF09C98240BF5FEB7CF1EFF6AC9408 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_f, const RuntimeMethod* method) 
 {
 	{
 		// if (valuePairs.Count(f => f.x == 0) == 0)
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___f0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_f;
 		float L_1 = L_0.___x_0;
 		return (bool)((((float)L_1) == ((float)(0.0f)))? 1 : 0);
 	}
 }
 // System.Single Tobii.XR.GazeModifier.GetValueForAngle/<>c::<Evaluate>b__6_0(UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CEvaluateU3Eb__6_0_m1318F2765CB921DB0B759475AD97E52861F51C1B (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CEvaluateU3Eb__6_0_m1318F2765CB921DB0B759475AD97E52861F51C1B (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// .OrderBy(p => p.x)
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___p0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_p;
 		float L_1 = L_0.___x_0;
 		return L_1;
 	}
 }
 // <>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2> Tobii.XR.GazeModifier.GetValueForAngle/<>c::<Evaluate>b__6_1(UnityEngine.Vector2,UnityEngine.Vector2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* U3CU3Ec_U3CEvaluateU3Eb__6_1_mA50A8F0A860B4BFAAB7604F114A0EA4A2FD25CE4 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___previous0, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___current1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* U3CU3Ec_U3CEvaluateU3Eb__6_1_mA50A8F0A860B4BFAAB7604F114A0EA4A2FD25CE4 (U3CU3Ec_t1DCB6D1D8594414CB2CA662ABEBE995B21A377E9* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_previous, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_current, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8782,8 +9262,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR U3CU3Ef__AnonymousType0_2_t341D10E1340B4E8112
 	}
 	{
 		// .SelectWithPrevious((previous, current) => new { low = previous, high = current })
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___previous0;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = ___current1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_previous;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = ___1_current;
 		U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* L_2 = (U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8*)il2cpp_codegen_object_new(U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233(L_2, L_0, L_1, U3CU3Ef__AnonymousType0_2__ctor_m2415614A76AB5E092EB4B8AF101424878C55B233_RuntimeMethod_var);
@@ -8807,7 +9287,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass6_0__ctor_mCCAB7C24
 	}
 }
 // System.Boolean Tobii.XR.GazeModifier.GetValueForAngle/<>c__DisplayClass6_0::<Evaluate>b__2(<>f__AnonymousType0`2<UnityEngine.Vector2,UnityEngine.Vector2>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass6_0_U3CEvaluateU3Eb__2_mDB92BFBD6F7A695400BFFDAF663D8793E2CA8DCE (U3CU3Ec__DisplayClass6_0_t051355B4D4C7C2C816F512CE8CE31AB46D219C27* __this, U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* ___w0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass6_0_U3CEvaluateU3Eb__2_mDB92BFBD6F7A695400BFFDAF663D8793E2CA8DCE (U3CU3Ec__DisplayClass6_0_t051355B4D4C7C2C816F512CE8CE31AB46D219C27* __this, U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* ___0_w, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8818,7 +9298,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass6_0_U3CEvaluateU3Eb
 	{
 		// var inRange = wp.LastOrDefault(w => val > w.low.x);
 		float L_0 = __this->___val_0;
-		U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* L_1 = ___w0;
+		U3CU3Ef__AnonymousType0_2_t341D10E1340B4E81129CFC17D47135177E79ECE8* L_1 = ___0_w;
 		NullCheck(L_1);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
 		L_2 = U3CU3Ef__AnonymousType0_2_get_low_mC25AF4FC66139C3745032C228224668D5A58222D_inline(L_1, U3CU3Ef__AnonymousType0_2_get_low_mC25AF4FC66139C3745032C228224668D5A58222D_RuntimeMethod_var);
@@ -8843,7 +9323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CU3Ec__DisplayClass6_0_U3CEvaluateU3Eb
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Single Tobii.XR.GazeModifier.Metrics::CalculatePrecision(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculatePrecision_m8063AA19C780CD44C4F68AE6AC58B7A8457065EC (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___gazeDirections0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculatePrecision_m8063AA19C780CD44C4F68AE6AC58B7A8457065EC (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_gazeDirections, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8862,13 +9342,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculatePrecision_m8063AA19C78
 		V_0 = L_0;
 		// Vector3 averageGazeDirection = AverageVectors(gazeDirections);
 		U3CU3Ec__DisplayClass0_0_t024E00C54721462455085F3E5676E81AF2880B65* L_1 = V_0;
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = ___gazeDirections0;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = ___0_gazeDirections;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3(L_2, NULL);
 		NullCheck(L_1);
 		L_1->___averageGazeDirection_0 = L_3;
 		// float precisionRadians = Mathf.Sqrt(gazeDirections.Average(gazeDirection => Mathf.Pow(AngleDifference(averageGazeDirection, gazeDirection), 2)));
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_4 = ___gazeDirections0;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_4 = ___0_gazeDirections;
 		U3CU3Ec__DisplayClass0_0_t024E00C54721462455085F3E5676E81AF2880B65* L_5 = V_0;
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_6 = (Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC*)il2cpp_codegen_object_new(Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC_il2cpp_TypeInfo_var);
 		NullCheck(L_6);
@@ -8883,7 +9363,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculatePrecision_m8063AA19C78
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics::CalculateAccuracy(UnityEngine.Vector3,System.Collections.Generic.List`1<UnityEngine.Vector3>,System.Collections.Generic.List`1<UnityEngine.Vector3>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculateAccuracy_m7ADCC75E472B111712A68F6E6CA301005967369E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___target0, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___gazeOrigins1, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___gazeDirections2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculateAccuracy_m7ADCC75E472B111712A68F6E6CA301005967369E (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_target, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___1_gazeOrigins, List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___2_gazeDirections, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
@@ -8893,17 +9373,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculateAccuracy_m7ADCC75E472B
 	memset((&V_2), 0, sizeof(V_2));
 	{
 		// Vector3 averageGazeDirection = AverageVectors(gazeDirections);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = ___gazeDirections2;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = ___2_gazeDirections;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
 		L_1 = Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3(L_0, NULL);
 		V_0 = L_1;
 		// Vector3 averageGazeOrigin = AverageVectors(gazeOrigins);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = ___gazeOrigins1;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_2 = ___1_gazeOrigins;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		L_3 = Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3(L_2, NULL);
 		V_1 = L_3;
 		// Vector3 targetVector = (target - averageGazeOrigin).normalized;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___target0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_target;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = V_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline(L_4, L_5, NULL);
@@ -8920,7 +9400,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_CalculateAccuracy_m7ADCC75E472B
 	}
 }
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.Metrics::AverageVectors(System.Collections.Generic.List`1<UnityEngine.Vector3>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3 (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___vectors0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Metrics_AverageVectors_mFF448EAFF366E9EF5603FB93AD2DBBD8CD4450E3 (List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___0_vectors, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8955,7 +9435,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* G_B5_2 = NULL;
 	{
 		// averageVector.x = vectors.Average(p => p.x);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = ___vectors0;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_0 = ___0_vectors;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var);
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_1 = ((U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var))->___U3CU3E9__2_0_1;
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_2 = L_1;
@@ -8990,7 +9470,7 @@ IL_0022:
 		L_6 = Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E(G_B2_1, G_B2_0, Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_RuntimeMethod_var);
 		G_B2_2->___x_2 = L_6;
 		// averageVector.y = vectors.Average(p => p.y);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_7 = ___vectors0;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_7 = ___0_vectors;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var);
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_8 = ((U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var))->___U3CU3E9__2_1_2;
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_9 = L_8;
@@ -9025,7 +9505,7 @@ IL_004e:
 		L_13 = Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E(G_B4_1, G_B4_0, Enumerable_Average_TisVector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_m85719851C49E9F9FC6876493B27DE4D38B63715E_RuntimeMethod_var);
 		G_B4_2->___y_3 = L_13;
 		// averageVector.z = vectors.Average(p => p.z);
-		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_14 = ___vectors0;
+		List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* L_14 = ___0_vectors;
 		il2cpp_codegen_runtime_class_init_inline(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var);
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_15 = ((U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_StaticFields*)il2cpp_codegen_static_fields_for(U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB_il2cpp_TypeInfo_var))->___U3CU3E9__2_2_3;
 		Func_2_tDC72553AEF8707070A5FFB9D46F144F9BE06A9EC* L_16 = L_15;
@@ -9065,18 +9545,18 @@ IL_007a:
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics::AngleDifference(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_AngleDifference_m53699072A1126A0A94E5CEB58869F847D512C6D1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___u0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___v1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Metrics_AngleDifference_m53699072A1126A0A94E5CEB58869F847D512C6D1 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_u, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_v, const RuntimeMethod* method) 
 {
 	{
 		// var angle = Mathf.Acos(Mathf.Clamp(Vector3.Dot(u, v) / (u.magnitude * v.magnitude), -1.0f, 1.0f));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___u0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___v1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_u;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_v;
 		float L_2;
 		L_2 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_0, L_1, NULL);
 		float L_3;
-		L_3 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___u0), NULL);
+		L_3 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___0_u), NULL);
 		float L_4;
-		L_4 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___v1), NULL);
+		L_4 = Vector3_get_magnitude_mF0D6017E90B345F1F52D1CC564C640F1A847AF2D_inline((&___1_v), NULL);
 		float L_5;
 		L_5 = Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline(((float)(L_2/((float)il2cpp_codegen_multiply(L_3, L_4)))), (-1.0f), (1.0f), NULL);
 		float L_6;
@@ -9102,12 +9582,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass0_0__ctor_mA4D98A2F
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics/<>c__DisplayClass0_0::<CalculatePrecision>b__0(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec__DisplayClass0_0_U3CCalculatePrecisionU3Eb__0_m1471F7BF0DACC8525980E7055EEA009E13879C7A (U3CU3Ec__DisplayClass0_0_t024E00C54721462455085F3E5676E81AF2880B65* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___gazeDirection0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec__DisplayClass0_0_U3CCalculatePrecisionU3Eb__0_m1471F7BF0DACC8525980E7055EEA009E13879C7A (U3CU3Ec__DisplayClass0_0_t024E00C54721462455085F3E5676E81AF2880B65* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_gazeDirection, const RuntimeMethod* method) 
 {
 	{
 		// float precisionRadians = Mathf.Sqrt(gazeDirections.Average(gazeDirection => Mathf.Pow(AngleDifference(averageGazeDirection, gazeDirection), 2)));
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___averageGazeDirection_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___gazeDirection0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_gazeDirection;
 		float L_2;
 		L_2 = Metrics_AngleDifference_m53699072A1126A0A94E5CEB58869F847D512C6D1(L_0, L_1, NULL);
 		float L_3;
@@ -9150,31 +9630,31 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m92A8FAAF74A60C58E6336E2FE
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics/<>c::<AverageVectors>b__2_0(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_0_mAB541E202E0DBED860B205384CB96B133770095F (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_0_mAB541E202E0DBED860B205384CB96B133770095F (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// averageVector.x = vectors.Average(p => p.x);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___p0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_p;
 		float L_1 = L_0.___x_2;
 		return L_1;
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics/<>c::<AverageVectors>b__2_1(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_1_m9C72F0C98278A585EDF6A22679C9DAB9888AC306 (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_1_m9C72F0C98278A585EDF6A22679C9DAB9888AC306 (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// averageVector.y = vectors.Average(p => p.y);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___p0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_p;
 		float L_1 = L_0.___y_3;
 		return L_1;
 	}
 }
 // System.Single Tobii.XR.GazeModifier.Metrics/<>c::<AverageVectors>b__2_2(UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_2_m795F8A507316CFC6E3C147A19BCA579BF63B5610 (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___p0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_2_m795F8A507316CFC6E3C147A19BCA579BF63B5610 (U3CU3Ec_t4A92F644941DFB32F6753735463097A497B110BB* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_p, const RuntimeMethod* method) 
 {
 	{
 		// averageVector.z = vectors.Average(p => p.z);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___p0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_p;
 		float L_1 = L_0.___z_4;
 		return L_1;
 	}
@@ -9188,7 +9668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float U3CU3Ec_U3CAverageVectorsU3Eb__2_2_m795
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.GazeModifier.AccuracyModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2858190A3B6CB9F3B2E8266E3 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2858190A3B6CB9F3B2E8266E3 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9201,11 +9681,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2
 		// public AccuracyModifier(IGazeModifierSettings settings)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// _settings = settings;
-		RuntimeObject* L_0 = ___settings0;
+		RuntimeObject* L_0 = ___0_settings;
 		__this->____settings_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____settings_0), (void*)L_0);
 		// _metricsForPercentile = new MetricsForPercentile(settings.Repository);
-		RuntimeObject* L_1 = ___settings0;
+		RuntimeObject* L_1 = ___0_settings;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* Tobii.XR.GazeModifier.IPercentileRepository Tobii.XR.GazeModifier.IGazeModifierSettings::get_Repository() */, IGazeModifierSettings_tC149F7AC67FAA89F11C8B31D68D892E3953FCB05_il2cpp_TypeInfo_var, L_1);
@@ -9219,7 +9699,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier__ctor_m964CB334D70347C2
 	}
 }
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.AccuracyModifier::Modify(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 AccuracyModifier_Modify_m11E0B29A540EBCFEC304AC8ABB696FA7F3D4D4D4 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 AccuracyModifier_Modify_m11E0B29A540EBCFEC304AC8ABB696FA7F3D4D4D4 (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9237,15 +9717,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	float V_4 = 0.0f;
 	{
 		// var reference = forward;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_forward;
 		// var rotation = Quaternion.FromToRotation(reference, direction);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = L_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_direction;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_3;
 		L_3 = Quaternion_FromToRotation_mCB3100F93637E72455388B901C36EF8A25DFDB9A(L_1, L_2, NULL);
 		V_0 = L_3;
 		// var diff = Vector3.Angle(reference, direction);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_direction;
 		float L_5;
 		L_5 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_1, L_4, NULL);
 		V_1 = L_5;
@@ -9261,7 +9741,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	}
 	{
 		// if (Math.Abs(diff) < .001f) return direction;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_direction;
 		return L_8;
 	}
 
@@ -9287,7 +9767,7 @@ IL_001f:
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_18;
 		L_18 = Quaternion_Lerp_m259606226726C2F46E079A5A688B9E24FF7E9A0D(L_14, L_15, ((float)(L_16/L_17)), NULL);
 		// var result = rotate * direction;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = ___0_direction;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
 		L_20 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_18, L_19, NULL);
 		V_3 = L_20;
@@ -9335,18 +9815,18 @@ IL_006d:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.AccuracyModifier::Modify(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier_Modify_mFF541E5814AA2C50EC2EE268DB680ED1C3133B7E (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier_Modify_mFF541E5814AA2C50EC2EE268DB680ED1C3133B7E (AccuracyModifier_t60CB87013452D932509F6C71B05AD7C6D3039BA1* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	{
 		// data.GazeRay.Direction = Modify(data.GazeRay.Direction, forward);
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___0_data;
 		NullCheck(L_0);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_1 = (&L_0->___GazeRay_3);
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_2 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_2 = ___0_data;
 		NullCheck(L_2);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_3 = (&L_2->___GazeRay_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = L_3->___Direction_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___1_forward;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = AccuracyModifier_Modify_m11E0B29A540EBCFEC304AC8ABB696FA7F3D4D4D4(__this, L_4, L_5, NULL);
 		L_1->___Direction_0 = L_6;
@@ -9363,7 +9843,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AccuracyModifier_Modify_mFF541E5814AA2C5
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.GazeModifier.PrecisionModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3FABD3768976ACB2711BB689636 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3FABD3768976ACB2711BB689636 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9376,11 +9856,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3F
 		// public PrecisionModifier(IGazeModifierSettings settings)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// _settings = settings;
-		RuntimeObject* L_0 = ___settings0;
+		RuntimeObject* L_0 = ___0_settings;
 		__this->____settings_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____settings_0), (void*)L_0);
 		// _metricsForPercentile = new MetricsForPercentile(settings.Repository);
-		RuntimeObject* L_1 = ___settings0;
+		RuntimeObject* L_1 = ___0_settings;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
 		L_2 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* Tobii.XR.GazeModifier.IPercentileRepository Tobii.XR.GazeModifier.IGazeModifierSettings::get_Repository() */, IGazeModifierSettings_tC149F7AC67FAA89F11C8B31D68D892E3953FCB05_il2cpp_TypeInfo_var, L_1);
@@ -9394,14 +9874,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier__ctor_mDE983DF24176D3F
 	}
 }
 // UnityEngine.Vector3 Tobii.XR.GazeModifier.PrecisionModifier::Modify(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PrecisionModifier_Modify_mC3B28A623810E06E81C2C45125C9B23539501ED1 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PrecisionModifier_Modify_mC3B28A623810E06E81C2C45125C9B23539501ED1 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	float V_1 = 0.0f;
 	{
 		// var maxAngleDegrees = GetMaxAngle(direction, forward);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___direction0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_direction;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_forward;
 		float L_2;
 		L_2 = PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA(__this, L_0, L_1, NULL);
 		V_0 = L_2;
@@ -9420,7 +9900,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 		float L_9 = V_1;
 		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_10;
 		L_10 = Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline(L_8, L_9, (0.0f), NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___0_direction;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		L_12 = Quaternion_op_Multiply_mE1EBA73F9173432B50F8F17CE8190C5A7986FB8C(L_10, L_11, NULL);
 		// return ret;
@@ -9428,18 +9908,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A
 	}
 }
 // System.Void Tobii.XR.GazeModifier.PrecisionModifier::Modify(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier_Modify_m582AD5E62F7A241C5DD6FD81607D8731652918C8 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier_Modify_m582AD5E62F7A241C5DD6FD81607D8731652918C8 (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	{
 		// data.GazeRay.Direction = Modify(data.GazeRay.Direction, forward);
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___0_data;
 		NullCheck(L_0);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_1 = (&L_0->___GazeRay_3);
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_2 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_2 = ___0_data;
 		NullCheck(L_2);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_3 = (&L_2->___GazeRay_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = L_3->___Direction_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___1_forward;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = PrecisionModifier_Modify_mC3B28A623810E06E81C2C45125C9B23539501ED1(__this, L_4, L_5, NULL);
 		L_1->___Direction_0 = L_6;
@@ -9448,7 +9928,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrecisionModifier_Modify_m582AD5E62F7A24
 	}
 }
 // System.Single Tobii.XR.GazeModifier.PrecisionModifier::GetMaxAngle(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5C82E30B0B9A115D48B3311C699CC75EA (PrecisionModifier_t5F6711694F4231E8CFC181A1C717EF08C96F45D8* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9459,8 +9939,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5
 	float V_0 = 0.0f;
 	{
 		// var angle = Vector3.Angle(forward, direction);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___forward1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___direction0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_forward;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___0_direction;
 		float L_2;
 		L_2 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_0, L_1, NULL);
 		V_0 = L_2;
@@ -9486,7 +9966,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float PrecisionModifier_GetMaxAngle_m3B438EF5
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.GazeModifier.TrackabilityModifier::.ctor(Tobii.XR.GazeModifier.IGazeModifierSettings)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6AB49A02BDA3853F6DCA212846403 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, RuntimeObject* ___settings0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6AB49A02BDA3853F6DCA212846403 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, RuntimeObject* ___0_settings, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9518,7 +9998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6
 		// public TrackabilityModifier(IGazeModifierSettings settings)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// _metricsForPercentile = new MetricsForPercentile(settings.Repository);
-		RuntimeObject* L_2 = ___settings0;
+		RuntimeObject* L_2 = ___0_settings;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
 		L_3 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(5 /* Tobii.XR.GazeModifier.IPercentileRepository Tobii.XR.GazeModifier.IGazeModifierSettings::get_Repository() */, IGazeModifierSettings_tC149F7AC67FAA89F11C8B31D68D892E3953FCB05_il2cpp_TypeInfo_var, L_2);
@@ -9528,7 +10008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier__ctor_mB20C4A2602B6
 		__this->____metricsForPercentile_6 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____metricsForPercentile_6), (void*)L_4);
 		// _settings = settings;
-		RuntimeObject* L_5 = ___settings0;
+		RuntimeObject* L_5 = ___0_settings;
 		__this->____settings_0 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____settings_0), (void*)L_5);
 		// for (int i = 0; i < _cacheSize; i++)
@@ -9559,7 +10039,7 @@ IL_0054:
 	}
 	{
 		// _settings = settings;
-		RuntimeObject* L_10 = ___settings0;
+		RuntimeObject* L_10 = ___0_settings;
 		__this->____settings_0 = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____settings_0), (void*)L_10);
 		// }
@@ -9567,7 +10047,7 @@ IL_0054:
 	}
 }
 // System.Void Tobii.XR.GazeModifier.TrackabilityModifier::Modify(Tobii.XR.TobiiXR_EyeTrackingData,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier_Modify_m8FA95E2D2193FFDBDDA497701F32F3FA94A6A7FE (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___data0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier_Modify_m8FA95E2D2193FFDBDDA497701F32F3FA94A6A7FE (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* ___0_data, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9584,17 +10064,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrackabilityModifier_Modify_m8FA95E2D219
 	Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* G_B3_1 = NULL;
 	{
 		// var trackability = GetTrackability(data.GazeRay.Direction, forward);
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_0 = ___0_data;
 		NullCheck(L_0);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_1 = (&L_0->___GazeRay_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = L_1->___Direction_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_forward;
 		float L_4;
 		L_4 = TrackabilityModifier_GetTrackability_m242D58B395D231AABB352A9DCE2D0D9BD2E7FC44(__this, L_2, L_3, NULL);
 		V_0 = L_4;
 		// _queue.Enqueue(data.GazeRay.IsValid ? 1f : 0f);
 		Queue_1_tBB15A96A0BD226BCEDC19339C7F969E4B3A42153* L_5 = __this->____queue_4;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_6 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_6 = ___0_data;
 		NullCheck(L_6);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_7 = (&L_6->___GazeRay_3);
 		bool L_8 = L_7->___IsValid_1;
@@ -9632,7 +10112,7 @@ IL_0032:
 		L_12 = Enumerable_Average_m2DBF0BBC0642716C2296C5C3CC9AFF18F574C368(L_11, NULL);
 		V_1 = L_12;
 		// if (data.GazeRay.IsValid)
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_13 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_13 = ___0_data;
 		NullCheck(L_13);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_14 = (&L_13->___GazeRay_3);
 		bool L_15 = L_14->___IsValid_1;
@@ -9680,12 +10160,12 @@ IL_0032:
 IL_0095:
 	{
 		// data.GazeRay.IsValid = false;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_22 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_22 = ___0_data;
 		NullCheck(L_22);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_23 = (&L_22->___GazeRay_3);
 		L_23->___IsValid_1 = (bool)0;
 		// data.GazeRay.Origin = _latestValidData.GazeRay.Origin;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_24 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_24 = ___0_data;
 		NullCheck(L_24);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_25 = (&L_24->___GazeRay_3);
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_26 = __this->____latestValidData_1;
@@ -9694,7 +10174,7 @@ IL_0095:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28 = L_27->___Origin_2;
 		L_25->___Origin_2 = L_28;
 		// data.GazeRay.Direction = _latestValidData.GazeRay.Direction;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_29 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_29 = ___0_data;
 		NullCheck(L_29);
 		TobiiXR_GazeRay_tDB21415491D1B5574FBDE209F122E15E79AA0465* L_30 = (&L_29->___GazeRay_3);
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_31 = __this->____latestValidData_1;
@@ -9703,28 +10183,28 @@ IL_0095:
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = L_32->___Direction_0;
 		L_30->___Direction_0 = L_33;
 		// data.IsLeftEyeBlinking = _latestValidData.IsLeftEyeBlinking;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_34 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_34 = ___0_data;
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_35 = __this->____latestValidData_1;
 		NullCheck(L_35);
 		bool L_36 = L_35->___IsLeftEyeBlinking_4;
 		NullCheck(L_34);
 		L_34->___IsLeftEyeBlinking_4 = L_36;
 		// data.IsRightEyeBlinking = _latestValidData.IsRightEyeBlinking;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_37 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_37 = ___0_data;
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_38 = __this->____latestValidData_1;
 		NullCheck(L_38);
 		bool L_39 = L_38->___IsRightEyeBlinking_5;
 		NullCheck(L_37);
 		L_37->___IsRightEyeBlinking_5 = L_39;
 		// data.ConvergenceDistance = _latestValidData.ConvergenceDistance;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_40 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_40 = ___0_data;
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_41 = __this->____latestValidData_1;
 		NullCheck(L_41);
 		float L_42 = L_41->___ConvergenceDistance_1;
 		NullCheck(L_40);
 		L_40->___ConvergenceDistance_1 = L_42;
 		// data.ConvergenceDistanceIsValid = _latestValidData.ConvergenceDistanceIsValid;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_43 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_43 = ___0_data;
 		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_44 = __this->____latestValidData_1;
 		NullCheck(L_44);
 		bool L_45 = L_44->___ConvergenceDistanceIsValid_2;
@@ -9736,7 +10216,7 @@ IL_0095:
 IL_011c:
 	{
 		// _latestValidData = data;
-		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_46 = ___data0;
+		TobiiXR_EyeTrackingData_t26B79B4CF98731D54CD87F6226F7991EA2B4B937* L_46 = ___0_data;
 		__this->____latestValidData_1 = L_46;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____latestValidData_1), (void*)L_46);
 		return;
@@ -9765,7 +10245,7 @@ IL_0140:
 	}
 }
 // System.Single Tobii.XR.GazeModifier.TrackabilityModifier::GetTrackability(UnityEngine.Vector3,UnityEngine.Vector3)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m242D58B395D231AABB352A9DCE2D0D9BD2E7FC44 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___direction0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forward1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m242D58B395D231AABB352A9DCE2D0D9BD2E7FC44 (TrackabilityModifier_tA89A17ED921B293CAD6157615D0E6DC30F0C4CB4* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_direction, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_forward, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9776,8 +10256,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrackabilityModifier_GetTrackability_m2
 	float V_0 = 0.0f;
 	{
 		// var angle = Mathf.Abs(Vector3.Angle(direction, forward));
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___direction0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___forward1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_direction;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_forward;
 		float L_2;
 		L_2 = Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline(L_0, L_1, NULL);
 		float L_3;
@@ -9815,7 +10295,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_mFD2C165A2B75493FE6
 	}
 }
 // System.Void Tobii.XR.GazeModifier.PercentileData::.ctor(System.Int32,System.Single,System.Single,System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_m42BC03E83B1DC8B7F7B76652ACEC39F5990146C7 (PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* __this, int32_t ___percent0, float ___angle1, float ___accuracy2, float ___trackability3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_m42BC03E83B1DC8B7F7B76652ACEC39F5990146C7 (PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770* __this, int32_t ___0_percent, float ___1_angle, float ___2_accuracy, float ___3_trackability, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9863,24 +10343,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PercentileData__ctor_m42BC03E83B1DC8B7F7
 		NullCheck(L_0);
 		InterfaceActionInvoker1< RuntimeObject* >::Invoke(1 /* System.Void Tobii.XR.GazeModifier.ILerpValue::SetValues(System.Collections.Generic.IEnumerable`1<UnityEngine.Vector2>) */, ILerpValue_t0BAB799F21A3C48345EED961617844141C9987C7_il2cpp_TypeInfo_var, L_0, L_8);
 		// Percentile = percent;
-		int32_t L_10 = ___percent0;
+		int32_t L_10 = ___0_percent;
 		__this->___Percentile_0 = L_10;
 		// Angle = angle;
-		float L_11 = ___angle1;
+		float L_11 = ___1_angle;
 		__this->___Angle_2 = L_11;
 		// Accuracy = accuracy;
-		float L_12 = ___accuracy2;
+		float L_12 = ___2_accuracy;
 		__this->___Accuracy_3 = L_12;
 		// Precision = _precisionFactors.Evaluate(angle) * accuracy;
 		RuntimeObject* L_13 = ((PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_StaticFields*)il2cpp_codegen_static_fields_for(PercentileData_t6E65C360C386C773B71E801AF394370B4D16E770_il2cpp_TypeInfo_var))->____precisionFactors_5;
-		float L_14 = ___angle1;
+		float L_14 = ___1_angle;
 		NullCheck(L_13);
 		float L_15;
 		L_15 = InterfaceFuncInvoker1< float, float >::Invoke(0 /* System.Single Tobii.XR.GazeModifier.ILerpValue::Evaluate(System.Single) */, ILerpValue_t0BAB799F21A3C48345EED961617844141C9987C7_il2cpp_TypeInfo_var, L_13, L_14);
-		float L_16 = ___accuracy2;
+		float L_16 = ___2_accuracy;
 		__this->___Precision_1 = ((float)il2cpp_codegen_multiply(L_15, L_16));
 		// Trackability = trackability;
-		float L_17 = ___trackability3;
+		float L_17 = ___3_trackability;
 		__this->___Trackability_4 = L_17;
 		// }
 		return;
@@ -12906,17 +13386,17 @@ IL_0021:
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::ShowMenu(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_ShowMenu_m7F57507B656D20E1D3F69C889854E52B5B5B022F (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_ShowMenu_m7F57507B656D20E1D3F69C889854E52B5B5B022F (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// toolkitMenu.SetActive(set);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___toolkitMenu_7;
-		bool L_1 = ___set0;
+		bool L_1 = ___0_set;
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, L_1, NULL);
 		// openMenuButton.SetActive(!set);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___openMenuButton_6;
-		bool L_3 = ___set0;
+		bool L_3 = ___0_set;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0), NULL);
 		// }
@@ -12924,7 +13404,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_ShowMenu_m7F57507
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::SetPercentile(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetPercentile_mC5296CC5358072EF7C0846F9C788F875D93929E4 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, int32_t ___percentile0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetPercentile_mC5296CC5358072EF7C0846F9C788F875D93929E4 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, int32_t ___0_percentile, const RuntimeMethod* method) 
 {
 	{
 		// _gazeModifierFilter.Settings.SelectedPercentileIndex = percentile;
@@ -12932,7 +13412,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetPercentile_mC5
 		NullCheck(L_0);
 		GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* L_1;
 		L_1 = GazeModifierFilter_get_Settings_m918F74719C0462A4E128E8634C8D287D5A5E0455_inline(L_0, NULL);
-		int32_t L_2 = ___percentile0;
+		int32_t L_2 = ___0_percentile;
 		NullCheck(L_1);
 		GazeModifierSettings_set_SelectedPercentileIndex_m290673E2F818FE28B00BC3DA7D1797B9A6E5338B(L_1, L_2, NULL);
 		// if (toolkitMenu.activeInHierarchy &&
@@ -12966,7 +13446,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetPercentile_mC5
 	{
 		// percentileSlider.SetSliderTo(percentile);
 		DevToolsUITriggerGazeSlider_tC6A365254222A2EA1C0A5278686F97C7798A7588* L_10 = __this->___percentileSlider_10;
-		int32_t L_11 = ___percentile0;
+		int32_t L_11 = ___0_percentile;
 		NullCheck(L_10);
 		DevToolsUITriggerGazeSlider_SetSliderTo_m9DACF808050658DB0452F4AC6194DA76BFEBB73C(L_10, L_11, NULL);
 	}
@@ -12978,12 +13458,12 @@ IL_0047:
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::SetGazeModifierEnabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeModifierEnabled_m5F4629C3D0ACF58F57DC1B5ED6B99527B13CBEE8 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeModifierEnabled_m5F4629C3D0ACF58F57DC1B5ED6B99527B13CBEE8 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// _gazeModifierFilter.enabled = set;
 		GazeModifierFilter_t3927681C8D909320CC302320F917BDBE1817896C* L_0 = __this->____gazeModifierFilter_12;
-		bool L_1 = ___set0;
+		bool L_1 = ___0_set;
 		NullCheck(L_0);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, L_1, NULL);
 		// }
@@ -12991,11 +13471,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeModifierEn
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::SetGazeVisualizerEnabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// _gazeVisualizerEnabled = set;
-		bool L_0 = ___set0;
+		bool L_0 = ___0_set;
 		__this->____gazeVisualizerEnabled_13 = L_0;
 		// }
 		return;
@@ -13015,12 +13495,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_EnsureCorrectVisu
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsMenuController::SetG2OMDebugView(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetG2OMDebugView_m95A94C041D49743B5EEFD3743433A30DC1A76E11 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController_SetG2OMDebugView_m95A94C041D49743B5EEFD3743433A30DC1A76E11 (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// _debugVisualization.SetVisualization(set);
 		G2OM_DebugVisualization_tF649C9295298BF0547C73D8D315FFF3B84DBE970* L_0 = __this->____debugVisualization_11;
-		bool L_1 = ___set0;
+		bool L_1 = ___0_set;
 		NullCheck(L_0);
 		G2OM_DebugVisualization_SetVisualization_mBDA8211F5BAEFDD1C4ECBAD566B4A422CBF1B941(L_0, L_1, NULL);
 		// }
@@ -13142,11 +13622,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsMenuController__ctor_mA1EEB3DB8F
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DevToolsMenuController/<Start>d__12::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12__ctor_mB344580CF759B93CD10A4FC9F65BBE4751CEC7F6 (U3CStartU3Ed__12_t0575689EF48644FC215D4140DA193853AE1DACDC* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__12__ctor_mB344580CF759B93CD10A4FC9F65BBE4751CEC7F6 (U3CStartU3Ed__12_t0575689EF48644FC215D4140DA193853AE1DACDC* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -13380,11 +13860,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DisableGazeModifierOnFocus_Sta
 	}
 }
 // System.Void Tobii.XR.DevTools.DisableGazeModifierOnFocus::GazeFocusChanged(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_GazeFocusChanged_m2ABC3F9CA5D2F74117D8C5523DCB8113E63102D5 (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_GazeFocusChanged_m2ABC3F9CA5D2F74117D8C5523DCB8113E63102D5 (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	{
 		// Disable = hasFocus;
-		bool L_0 = ___hasFocus0;
+		bool L_0 = ___0_hasFocus;
 		DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156_inline(__this, L_0, NULL);
 		// }
 		return;
@@ -13400,11 +13880,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DisableGazeModifierOnFocus_get_Disable_m
 	}
 }
 // System.Void Tobii.XR.DevTools.DisableGazeModifierOnFocus::set_Disable(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156 (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156 (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public bool Disable { get; private set; }
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->___U3CDisableU3Ek__BackingField_4 = L_0;
 		return;
 	}
@@ -13475,11 +13955,11 @@ IL_0027:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DisableGazeModifierOnFocus/<Start>d__0::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__0__ctor_mF9B41149B97A8EBA9EAE5AC7E2508BC39BB42BF5 (U3CStartU3Ed__0_t5159DE795DC81355C6174F84961E14D56BD266C1* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CStartU3Ed__0__ctor_mF9B41149B97A8EBA9EAE5AC7E2508BC39BB42BF5 (U3CStartU3Ed__0_t5159DE795DC81355C6174F84961E14D56BD266C1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -13749,12 +14229,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_Update_m6BB
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::SetFillAmount(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, float ___amount0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetFillAmount_m27D7C019C3F8335C0318EAA851BD7978C4A694B0 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, float ___0_amount, const RuntimeMethod* method) 
 {
 	{
 		// _fillImage.fillAmount = amount;
 		Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* L_0 = __this->____fillImage_5;
-		float L_1 = ___amount0;
+		float L_1 = ___0_amount;
 		NullCheck(L_0);
 		Image_set_fillAmount_m8A9B55F47F966A3214EAC4ACBFE198776A98FAA7(L_0, L_1, NULL);
 		// UpdateHandlePosition();
@@ -13764,7 +14244,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_SetFillAmou
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::UpdateValueText(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateValueText_m73DAC5982AA424AFAE19BF3DCC556AE6A414053D (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateValueText_m73DAC5982AA424AFAE19BF3DCC556AE6A414053D (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13782,7 +14262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateValue
 		String_t* L_2;
 		L_2 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralFD60316EE3ADB7B16A998DF8AE0D68C293F6622E, L_1, NULL);
 		String_t* L_3;
-		L_3 = Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9((&___value0), L_2, NULL);
+		L_3 = Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9((&___0_value), L_2, NULL);
 		NullCheck(L_0);
 		VirtualActionInvoker1< String_t* >::Invoke(75 /* System.Void UnityEngine.UI.Text::set_text(System.String) */, L_0, L_3);
 		// SetWarningColors();
@@ -13906,7 +14386,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_UpdateHandl
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::StartHandleAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartHandleAnimation_m802B9C20D37AE6014E5FE5747B75BF650A65CE61 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___isTouching0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartHandleAnimation_m802B9C20D37AE6014E5FE5747B75BF650A65CE61 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_isTouching, const RuntimeMethod* method) 
 {
 	{
 		// if (_handleAnimationCoroutine != null)
@@ -13937,7 +14417,7 @@ IL_0014:
 	}
 	{
 		// _handleAnimationCoroutine = StartCoroutine(AnimateHandle(isTouching));
-		bool L_4 = ___isTouching0;
+		bool L_4 = ___0_isTouching;
 		RuntimeObject* L_5;
 		L_5 = DevToolsUIGazeSliderGraphics_AnimateHandle_mC891E448DE79FBEED343194DE6127B124B5B44BB(__this, L_4, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6;
@@ -13953,7 +14433,7 @@ IL_0034:
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::StartVisualFeedbackAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartVisualFeedbackAnimation_m658AC9B7222A4513FD1277BA99B6D81388E0F173 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics_StartVisualFeedbackAnimation_m658AC9B7222A4513FD1277BA99B6D81388E0F173 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	{
 		// if (_visualFeedbackCoroutine != null)
@@ -13984,7 +14464,7 @@ IL_0014:
 	}
 	{
 		// _visualFeedbackCoroutine = StartCoroutine(AnimateVisualFeedback(hasFocus));
-		bool L_4 = ___hasFocus0;
+		bool L_4 = ___0_hasFocus;
 		RuntimeObject* L_5;
 		L_5 = DevToolsUIGazeSliderGraphics_AnimateVisualFeedback_m974CACF47B98DACC0FC1E7879EE56D5A5897CA18(__this, L_4, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6;
@@ -14000,7 +14480,7 @@ IL_0034:
 	}
 }
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::AnimateVisualFeedback(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateVisualFeedback_m974CACF47B98DACC0FC1E7879EE56D5A5897CA18 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateVisualFeedback_m974CACF47B98DACC0FC1E7879EE56D5A5897CA18 (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14017,14 +14497,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_A
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CAnimateVisualFeedbackU3Ed__44_t13609512CA388F9EA65720CC1FC86D5E9B11D0B8* L_2 = L_1;
-		bool L_3 = ___hasFocus0;
+		bool L_3 = ___0_hasFocus;
 		NullCheck(L_2);
 		L_2->___hasFocus_3 = L_3;
 		return L_2;
 	}
 }
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics::AnimateHandle(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateHandle_mC891E448DE79FBEED343194DE6127B124B5B44BB (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___hasFocus0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_AnimateHandle_mC891E448DE79FBEED343194DE6127B124B5B44BB (DevToolsUIGazeSliderGraphics_t8CDB690D426640C56E40E80AC81AB91B1EA39C54* __this, bool ___0_hasFocus, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14041,7 +14521,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeSliderGraphics_A
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CAnimateHandleU3Ed__45_t2C85B45C9AC760F3B2516AFE0C020B08F7E10A06* L_2 = L_1;
-		bool L_3 = ___hasFocus0;
+		bool L_3 = ___0_hasFocus;
 		NullCheck(L_2);
 		L_2->___hasFocus_3 = L_3;
 		return L_2;
@@ -14072,11 +14552,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeSliderGraphics__ctor_mD6AE
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateVisualFeedback>d__44::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__44__ctor_m370968187C26D8DC925519A8E70CBE2FDE9F3604 (U3CAnimateVisualFeedbackU3Ed__44_t13609512CA388F9EA65720CC1FC86D5E9B11D0B8* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__44__ctor_m370968187C26D8DC925519A8E70CBE2FDE9F3604 (U3CAnimateVisualFeedbackU3Ed__44_t13609512CA388F9EA65720CC1FC86D5E9B11D0B8* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -14562,11 +15042,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVisualFeedbackU3Ed__
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeSliderGraphics/<AnimateHandle>d__45::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateHandleU3Ed__45__ctor_m95135C5977BC68DC0580CFDFC139FC61DE6916F8 (U3CAnimateHandleU3Ed__45_t2C85B45C9AC760F3B2516AFE0C020B08F7E10A06* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateHandleU3Ed__45__ctor_m95135C5977BC68DC0580CFDFC139FC61DE6916F8 (U3CAnimateHandleU3Ed__45_t2C85B45C9AC760F3B2516AFE0C020B08F7E10A06* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -14880,7 +15360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_Start
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::StartKnobAnimation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartKnobAnimation_m5C09AE4590DAC6A986C7A41BCC8C1778C80F930A (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartKnobAnimation_m5C09AE4590DAC6A986C7A41BCC8C1778C80F930A (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, const RuntimeMethod* method) 
 {
 	{
 		// if (_knobMovementCoroutine != null)
@@ -14911,7 +15391,7 @@ IL_0014:
 	}
 	{
 		// _knobMovementCoroutine = StartCoroutine(MoveKnob(isToggledOn));
-		bool L_4 = ___isToggledOn0;
+		bool L_4 = ___0_isToggledOn;
 		RuntimeObject* L_5;
 		L_5 = DevToolsUIGazeToggleButtonGraphics_MoveKnob_mB03EE319CAF9A2FECCD18ED7B0FF782AE005F18E(__this, L_4, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6;
@@ -14927,7 +15407,7 @@ IL_0034:
 	}
 }
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::StartVisualFeedbackAnimation(System.Boolean,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartVisualFeedbackAnimation_mF5C19137ACD669E44088789B3C90DFE358AFF169 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___hasFocus0, bool ___isToggledOn1, bool ___isButtonPressed2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics_StartVisualFeedbackAnimation_mF5C19137ACD669E44088789B3C90DFE358AFF169 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_hasFocus, bool ___1_isToggledOn, bool ___2_isButtonPressed, const RuntimeMethod* method) 
 {
 	{
 		// if (_visualFeedbackCoroutine != null)
@@ -14959,9 +15439,9 @@ IL_0014:
 	{
 		// _visualFeedbackCoroutine =
 		//     StartCoroutine(AnimateVisualFeedback(hasFocus, isToggledOn, isButtonPressed));
-		bool L_4 = ___hasFocus0;
-		bool L_5 = ___isToggledOn1;
-		bool L_6 = ___isButtonPressed2;
+		bool L_4 = ___0_hasFocus;
+		bool L_5 = ___1_isToggledOn;
+		bool L_6 = ___2_isButtonPressed;
 		RuntimeObject* L_7;
 		L_7 = DevToolsUIGazeToggleButtonGraphics_AnimateVisualFeedback_m7E82452FAAE42C9161D5F9195E141C13A2570AC9(__this, L_4, L_5, L_6, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
@@ -14977,7 +15457,7 @@ IL_0036:
 	}
 }
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::AnimateVisualFeedback(System.Boolean,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_AnimateVisualFeedback_m7E82452FAAE42C9161D5F9195E141C13A2570AC9 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___hasFocus0, bool ___isToggledOn1, bool ___isButtonPressed2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_AnimateVisualFeedback_m7E82452FAAE42C9161D5F9195E141C13A2570AC9 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_hasFocus, bool ___1_isToggledOn, bool ___2_isButtonPressed, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14994,26 +15474,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGrap
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* L_2 = L_1;
-		bool L_3 = ___hasFocus0;
+		bool L_3 = ___0_hasFocus;
 		NullCheck(L_2);
 		L_2->___hasFocus_3 = L_3;
 		U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* L_4 = L_2;
-		bool L_5 = ___isToggledOn1;
+		bool L_5 = ___1_isToggledOn;
 		NullCheck(L_4);
 		L_4->___isToggledOn_4 = L_5;
 		U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* L_6 = L_4;
-		bool L_7 = ___isButtonPressed2;
+		bool L_7 = ___2_isButtonPressed;
 		NullCheck(L_6);
 		L_6->___isButtonPressed_5 = L_7;
 		return L_6;
 	}
 }
 // Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/VisualStateColors Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::GetStateColors(System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualStateColors_t8F995DAA2E1D12B672FCD70CEE1B5D0558684AFF DevToolsUIGazeToggleButtonGraphics_GetStateColors_m874247EEB81D4517432B0672317092EFB07FF516 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, bool ___isButtonPressed1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualStateColors_t8F995DAA2E1D12B672FCD70CEE1B5D0558684AFF DevToolsUIGazeToggleButtonGraphics_GetStateColors_m874247EEB81D4517432B0672317092EFB07FF516 (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, bool ___1_isButtonPressed, const RuntimeMethod* method) 
 {
 	{
 		// if (isButtonPressed)
-		bool L_0 = ___isButtonPressed1;
+		bool L_0 = ___1_isButtonPressed;
 		if (!L_0)
 		{
 			goto IL_000a;
@@ -15028,7 +15508,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR VisualStateColors_t8F995DAA2E1D12B672FCD70CEE
 IL_000a:
 	{
 		// else if (isToggledOn)
-		bool L_2 = ___isToggledOn0;
+		bool L_2 = ___0_isToggledOn;
 		if (!L_2)
 		{
 			goto IL_0014;
@@ -15048,7 +15528,7 @@ IL_0014:
 	}
 }
 // System.Collections.IEnumerator Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics::MoveKnob(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_MoveKnob_mB03EE319CAF9A2FECCD18ED7B0FF782AE005F18E (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___isToggledOn0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGraphics_MoveKnob_mB03EE319CAF9A2FECCD18ED7B0FF782AE005F18E (DevToolsUIGazeToggleButtonGraphics_t58F68F6A88B14E0C8E42DCC9E8175853BAD057B3* __this, bool ___0_isToggledOn, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15065,7 +15545,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* DevToolsUIGazeToggleButtonGrap
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CMoveKnobU3Ed__31_t026793A1C52CBE6F19F87CD0946D5AFD1AC49DC2* L_2 = L_1;
-		bool L_3 = ___isToggledOn0;
+		bool L_3 = ___0_isToggledOn;
 		NullCheck(L_2);
 		L_2->___isToggledOn_3 = L_3;
 		return L_2;
@@ -15104,11 +15584,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DevToolsUIGazeToggleButtonGraphics__ctor
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<AnimateVisualFeedback>d__29::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__29__ctor_m23B06379394861CCA9F3D3F6E2E4873BDB93D99A (U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CAnimateVisualFeedbackU3Ed__29__ctor_m23B06379394861CCA9F3D3F6E2E4873BDB93D99A (U3CAnimateVisualFeedbackU3Ed__29_t170A32C9283D38171FA17FC445513D402909A7BA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -15589,11 +16069,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CAnimateVisualFeedbackU3Ed__
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Tobii.XR.DevTools.DevToolsUIGazeToggleButtonGraphics/<MoveKnob>d__31::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveKnobU3Ed__31__ctor_mE355F230423D8D748D55B0D103F252920E588007 (U3CMoveKnobU3Ed__31_t026793A1C52CBE6F19F87CD0946D5AFD1AC49DC2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveKnobU3Ed__31__ctor_mE355F230423D8D748D55B0D103F252920E588007 (U3CMoveKnobU3Ed__31_t026793A1C52CBE6F19F87CD0946D5AFD1AC49DC2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		return;
 	}
@@ -15830,43 +16310,43 @@ IL_001d:
 		return L_1;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___a0, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___b1, float ___t2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_Lerp_mE79F87889843ECDC188E4CB5B5E1F1B2256E5EBE_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_a, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		float L_0 = ___t2;
+		float L_0 = ___2_t;
 		float L_1;
 		L_1 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_0, NULL);
-		___t2 = L_1;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___a0;
+		___2_t = L_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_2 = ___0_a;
 		float L_3 = L_2.___r_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___b1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_4 = ___1_b;
 		float L_5 = L_4.___r_0;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6 = ___a0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_6 = ___0_a;
 		float L_7 = L_6.___r_0;
-		float L_8 = ___t2;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ___a0;
+		float L_8 = ___2_t;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_9 = ___0_a;
 		float L_10 = L_9.___g_1;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ___b1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_11 = ___1_b;
 		float L_12 = L_11.___g_1;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = ___a0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_13 = ___0_a;
 		float L_14 = L_13.___g_1;
-		float L_15 = ___t2;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16 = ___a0;
+		float L_15 = ___2_t;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_16 = ___0_a;
 		float L_17 = L_16.___b_2;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18 = ___b1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_18 = ___1_b;
 		float L_19 = L_18.___b_2;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_20 = ___a0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_20 = ___0_a;
 		float L_21 = L_20.___b_2;
-		float L_22 = ___t2;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = ___a0;
+		float L_22 = ___2_t;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_23 = ___0_a;
 		float L_24 = L_23.___a_3;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25 = ___b1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_25 = ___1_b;
 		float L_26 = L_25.___a_3;
-		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27 = ___a0;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27 = ___0_a;
 		float L_28 = L_27.___a_3;
-		float L_29 = ___t2;
+		float L_29 = ___2_t;
 		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_30;
 		memset((&L_30), 0, sizeof(L_30));
 		Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline((&L_30), ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_5, L_7)), L_8)))), ((float)il2cpp_codegen_add(L_10, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_12, L_14)), L_15)))), ((float)il2cpp_codegen_add(L_17, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_19, L_21)), L_22)))), ((float)il2cpp_codegen_add(L_24, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_26, L_28)), L_29)))), /*hidden argument*/NULL);
@@ -15880,20 +16360,20 @@ IL_0069:
 		return L_31;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
 		float L_1 = L_0.___x_2;
-		float L_2 = ___d1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___a0;
+		float L_2 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
 		float L_4 = L_3.___y_3;
-		float L_5 = ___d1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___a0;
+		float L_5 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
 		float L_7 = L_6.___z_4;
-		float L_8 = ___d1;
+		float L_8 = ___1_d;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		memset((&L_9), 0, sizeof(L_9));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)il2cpp_codegen_multiply(L_1, L_2)), ((float)il2cpp_codegen_multiply(L_4, L_5)), ((float)il2cpp_codegen_multiply(L_7, L_8)), /*hidden argument*/NULL);
@@ -15907,22 +16387,22 @@ IL_0021:
 		return L_10;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Addition_m78C0EC70CB66E8DCAC225743D82B268DAEE92067_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
 		float L_1 = L_0.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
 		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
 		float L_5 = L_4.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
 		float L_7 = L_6.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
 		float L_9 = L_8.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
 		float L_11 = L_10.___z_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		memset((&L_12), 0, sizeof(L_12));
@@ -15937,26 +16417,26 @@ IL_0030:
 		return L_13;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, float ___a3, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_m3786F0D6E510D9CFA544523A955870BD2A514C8C_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___0_r, float ___1_g, float ___2_b, float ___3_a, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___r0;
+		float L_0 = ___0_r;
 		__this->___r_0 = L_0;
-		float L_1 = ___g1;
+		float L_1 = ___1_g;
 		__this->___g_1 = L_1;
-		float L_2 = ___b2;
+		float L_2 = ___2_b;
 		__this->___b_2 = L_2;
-		float L_3 = ___a3;
+		float L_3 = ___3_a;
 		__this->___a_3 = L_3;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___x0, float ___y1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___x0;
+		float L_0 = ___0_x;
 		__this->___x_0 = L_0;
-		float L_1 = ___y1;
+		float L_1 = ___1_y;
 		__this->___y_1 = L_1;
 		return;
 	}
@@ -15991,36 +16471,36 @@ IL_0009:
 		return L_1;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, float ___t2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Lerp_m3A906D0530A94FAABB94F0F905E84D99BE85C3F8_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		float L_0 = ___t2;
+		float L_0 = ___2_t;
 		float L_1;
 		L_1 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_0, NULL);
-		___t2 = L_1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___a0;
+		___2_t = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_a;
 		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___1_b;
 		float L_5 = L_4.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
 		float L_7 = L_6.___x_2;
-		float L_8 = ___t2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___a0;
+		float L_8 = ___2_t;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = ___0_a;
 		float L_10 = L_9.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11 = ___1_b;
 		float L_12 = L_11.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13 = ___0_a;
 		float L_14 = L_13.___y_3;
-		float L_15 = ___t2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___a0;
+		float L_15 = ___2_t;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = ___0_a;
 		float L_17 = L_16.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = ___1_b;
 		float L_19 = L_18.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = ___0_a;
 		float L_21 = L_20.___z_4;
-		float L_22 = ___t2;
+		float L_22 = ___2_t;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
 		memset((&L_23), 0, sizeof(L_23));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_23), ((float)il2cpp_codegen_add(L_3, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_5, L_7)), L_8)))), ((float)il2cpp_codegen_add(L_10, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_12, L_14)), L_15)))), ((float)il2cpp_codegen_add(L_17, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_19, L_21)), L_22)))), /*hidden argument*/NULL);
@@ -16100,7 +16580,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline (float ___a0, float ___b1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1DADD012A8FC82E11FB282501AE2EBBF9A77150B_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16110,14 +16590,14 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Mathf_Approximately_m1DADD01
 	}
 	bool V_0 = false;
 	{
-		float L_0 = ___b1;
-		float L_1 = ___a0;
+		float L_0 = ___1_b;
+		float L_1 = ___0_a;
 		float L_2;
 		L_2 = fabsf(((float)il2cpp_codegen_subtract(L_0, L_1)));
-		float L_3 = ___a0;
+		float L_3 = ___0_a;
 		float L_4;
 		L_4 = fabsf(L_3);
-		float L_5 = ___b1;
+		float L_5 = ___1_b;
 		float L_6;
 		L_6 = fabsf(L_5);
 		float L_7;
@@ -16135,14 +16615,14 @@ IL_0035:
 		return L_10;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___value0, int32_t ___min1, int32_t ___max2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5F07C16249DA568023C5ECCFF0E7B_inline (int32_t ___0_value, int32_t ___1_min, int32_t ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	bool V_1 = false;
 	int32_t V_2 = 0;
 	{
-		int32_t L_0 = ___value0;
-		int32_t L_1 = ___min1;
+		int32_t L_0 = ___0_value;
+		int32_t L_1 = ___1_min;
 		V_0 = (bool)((((int32_t)L_0) < ((int32_t)L_1))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
@@ -16151,15 +16631,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Mathf_Clamp_m4DC36EEFDBE5
 		}
 	}
 	{
-		int32_t L_3 = ___min1;
-		___value0 = L_3;
+		int32_t L_3 = ___1_min;
+		___0_value = L_3;
 		goto IL_0019;
 	}
 
 IL_000e:
 	{
-		int32_t L_4 = ___value0;
-		int32_t L_5 = ___max2;
+		int32_t L_4 = ___0_value;
+		int32_t L_5 = ___2_max;
 		V_1 = (bool)((((int32_t)L_4) > ((int32_t)L_5))? 1 : 0);
 		bool L_6 = V_1;
 		if (!L_6)
@@ -16168,13 +16648,13 @@ IL_000e:
 		}
 	}
 	{
-		int32_t L_7 = ___max2;
-		___value0 = L_7;
+		int32_t L_7 = ___2_max;
+		___0_value = L_7;
 	}
 
 IL_0019:
 	{
-		int32_t L_8 = ___value0;
+		int32_t L_8 = ___0_value;
 		V_2 = L_8;
 		goto IL_001d;
 	}
@@ -16185,14 +16665,14 @@ IL_001d:
 		return L_9;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___a0, float ___b1, float ___t2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_m47EF2FFB7647BD0A1FDC26DC03E28B19812139B5_inline (float ___0_a, float ___1_b, float ___2_t, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
-		float L_0 = ___a0;
-		float L_1 = ___b1;
-		float L_2 = ___a0;
-		float L_3 = ___t2;
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
+		float L_2 = ___0_a;
+		float L_3 = ___2_t;
 		float L_4;
 		L_4 = Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline(L_3, NULL);
 		V_0 = ((float)il2cpp_codegen_add(L_0, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_subtract(L_1, L_2)), L_4))));
@@ -16229,33 +16709,33 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t GazeModifierSettings_get_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_Repository_m908494A0409B3E8F5E75169F54585A0CA2CD1A37_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public IPercentileRepository Repository { get; private set; }
-		RuntimeObject* L_0 = ___value0;
+		RuntimeObject* L_0 = ___0_value;
 		__this->___U3CRepositoryU3Ek__BackingField_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CRepositoryU3Ek__BackingField_1), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void GazeModifierSettings_set_NumberOfPercentiles_m78F88C4F2D53231C3A2774D733F72B574208A5DA_inline (GazeModifierSettings_tA9229D8263831AAA26DDCA871A06CBDFDCD424E3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public int NumberOfPercentiles { get; private set; }
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->___U3CNumberOfPercentilesU3Ek__BackingField_3 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___value0, float ___min1, float ___max2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D20FCC787F7375156AF46BB12BBF_inline (float ___0_value, float ___1_min, float ___2_max, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	bool V_1 = false;
 	float V_2 = 0.0f;
 	{
-		float L_0 = ___value0;
-		float L_1 = ___min1;
+		float L_0 = ___0_value;
+		float L_1 = ___1_min;
 		V_0 = (bool)((((float)L_0) < ((float)L_1))? 1 : 0);
 		bool L_2 = V_0;
 		if (!L_2)
@@ -16264,15 +16744,15 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp_mEB9AEA827D27D2
 		}
 	}
 	{
-		float L_3 = ___min1;
-		___value0 = L_3;
+		float L_3 = ___1_min;
+		___0_value = L_3;
 		goto IL_0019;
 	}
 
 IL_000e:
 	{
-		float L_4 = ___value0;
-		float L_5 = ___max2;
+		float L_4 = ___0_value;
+		float L_5 = ___2_max;
 		V_1 = (bool)((((float)L_4) > ((float)L_5))? 1 : 0);
 		bool L_6 = V_1;
 		if (!L_6)
@@ -16281,13 +16761,13 @@ IL_000e:
 		}
 	}
 	{
-		float L_7 = ___max2;
-		___value0 = L_7;
+		float L_7 = ___2_max;
+		___0_value = L_7;
 	}
 
 IL_0019:
 	{
-		float L_8 = ___value0;
+		float L_8 = ___0_value;
 		V_2 = L_8;
 		goto IL_001d;
 	}
@@ -16298,22 +16778,22 @@ IL_001d:
 		return L_9;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___b1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Subtraction_mE42023FF80067CB44A1D4A27EB7CF2B24CABB828_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_b, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
 		float L_1 = L_0.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_b;
 		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_a;
 		float L_5 = L_4.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_b;
 		float L_7 = L_6.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_a;
 		float L_9 = L_8.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___b1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_b;
 		float L_11 = L_10.___z_4;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
 		memset((&L_12), 0, sizeof(L_12));
@@ -16328,21 +16808,21 @@ IL_0030:
 		return L_13;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___lhs0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rhs1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___lhs0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_lhs;
 		float L_1 = L_0.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___rhs1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_rhs;
 		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___lhs0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_lhs;
 		float L_5 = L_4.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___rhs1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_rhs;
 		float L_7 = L_6.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___lhs0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_lhs;
 		float L_9 = L_8.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___rhs1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_rhs;
 		float L_11 = L_10.___z_4;
 		V_0 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_1, L_3)), ((float)il2cpp_codegen_multiply(L_5, L_7)))), ((float)il2cpp_codegen_multiply(L_9, L_11))));
 		goto IL_002d;
@@ -16383,7 +16863,7 @@ IL_0034:
 		return L_7;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___from0, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___to1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B482814C140FE5BA9D041D2DC11E42A68D_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_from, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_to, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16397,9 +16877,9 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B48281
 	float V_3 = 0.0f;
 	{
 		float L_0;
-		L_0 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___from0), NULL);
+		L_0 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___0_from), NULL);
 		float L_1;
-		L_1 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___to1), NULL);
+		L_1 = Vector3_get_sqrMagnitude_m43C27DEC47C4811FB30AB474FF2131A963B66FC8_inline((&___1_to), NULL);
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		double L_2;
 		L_2 = sqrt(((double)((float)il2cpp_codegen_multiply(L_0, L_1))));
@@ -16419,8 +16899,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Angle_mB16906B48281
 
 IL_002c:
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___from0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___to1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = ___0_from;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_to;
 		float L_7;
 		L_7 = Vector3_Dot_mBB86BB940AA0A32FA7D3C02AC42E5BC7095A5D52_inline(L_5, L_6, NULL);
 		float L_8 = V_0;
@@ -16463,14 +16943,14 @@ IL_0009:
 		return L_1;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_Euler_m9262AB29E3E9CE94EF71051F38A28E82AEC73F90_inline (float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		float L_0 = ___x0;
-		float L_1 = ___y1;
-		float L_2 = ___z2;
+		float L_0 = ___0_x;
+		float L_1 = ___1_y;
+		float L_2 = ___2_z;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		memset((&L_3), 0, sizeof(L_3));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_3), L_0, L_1, L_2, /*hidden argument*/NULL);
@@ -16512,21 +16992,21 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR TobiiXR_Settings_t5EC70C3B4402041
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439_inline (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___set0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DevToolsMenuController_SetGazeVisualizerEnabled_mB3E5A8969790608B9F868E84BA1FD4449F9F2439_inline (DevToolsMenuController_t8D7E1BFDA14F061EF487C0BED7DC58222C03802E* __this, bool ___0_set, const RuntimeMethod* method) 
 {
 	{
 		// _gazeVisualizerEnabled = set;
-		bool L_0 = ___set0;
+		bool L_0 = ___0_set;
 		__this->____gazeVisualizerEnabled_13 = L_0;
 		// }
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156_inline (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void DisableGazeModifierOnFocus_set_Disable_mDF125B7046589134CACD8E61C15D5E8F77B5E156_inline (DisableGazeModifierOnFocus_tCDC2F2C5BAFC96503E4ED80839F971DE27697AF5* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		// public bool Disable { get; private set; }
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->___U3CDisableU3Ek__BackingField_4 = L_0;
 		return;
 	}
@@ -16535,11 +17015,11 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Image_get_fillAmount_mDEE52
 {
 	{
 		// public float fillAmount { get { return m_FillAmount; } set { if (SetPropertyUtility.SetStruct(ref m_FillAmount, Mathf.Clamp01(value))) SetVerticesDirty(); } }
-		float L_0 = __this->___m_FillAmount_43;
+		float L_0 = __this->___m_FillAmount_44;
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -16563,7 +17043,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
-		RuntimeObject* L_8 = ___item0;
+		RuntimeObject* L_8 = ___0_item;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
@@ -16571,7 +17051,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 
 IL_0034:
 	{
-		RuntimeObject* L_9 = ___item0;
+		RuntimeObject* L_9 = ___0_item;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
@@ -16614,7 +17094,7 @@ IL_003c:
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1778BFAC3B9015A22EA7DFBCD_gshared_inline (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B* __this, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_item, const RuntimeMethod* method) 
 {
 	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -16638,7 +17118,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* L_6 = V_0;
 		int32_t L_7 = V_1;
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = ___item0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_8 = ___0_item;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7)L_8);
 		return;
@@ -16646,7 +17126,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mB5FDF069171C4CB1
 
 IL_0034:
 	{
-		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = ___item0;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_9 = ___0_item;
 		((  void (*) (List_1_t8F3790B7F8C471B3A1336522C7415FB0AC36D47B*, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
@@ -16672,13 +17152,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2D
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) 
 {
 	bool V_0 = false;
 	float V_1 = 0.0f;
 	bool V_2 = false;
 	{
-		float L_0 = ___value0;
+		float L_0 = ___0_value;
 		V_0 = (bool)((((float)L_0) < ((float)(0.0f)))? 1 : 0);
 		bool L_1 = V_0;
 		if (!L_1)
@@ -16693,7 +17173,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA83
 
 IL_0015:
 	{
-		float L_2 = ___value0;
+		float L_2 = ___0_value;
 		V_2 = (bool)((((float)L_2) > ((float)(1.0f)))? 1 : 0);
 		bool L_3 = V_2;
 		if (!L_3)
@@ -16708,7 +17188,7 @@ IL_0015:
 
 IL_0029:
 	{
-		float L_4 = ___value0;
+		float L_4 = ___0_value;
 		V_1 = L_4;
 		goto IL_002d;
 	}
@@ -16719,26 +17199,26 @@ IL_002d:
 		return L_5;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___x0, float ___y1, float ___z2, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
 {
 	{
-		float L_0 = ___x0;
+		float L_0 = ___0_x;
 		__this->___x_2 = L_0;
-		float L_1 = ___y1;
+		float L_1 = ___1_y;
 		__this->___y_3 = L_1;
-		float L_2 = ___z2;
+		float L_2 = ___2_z;
 		__this->___z_4 = L_2;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_Normalize_mEF8349CC39674236CFC694189AFD36E31F89AC8F_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	bool V_1 = false;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___value0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_value;
 		float L_1;
 		L_1 = Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline(L_0, NULL);
 		V_0 = L_1;
@@ -16751,7 +17231,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D
 		}
 	}
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___value0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_value;
 		float L_5 = V_0;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
 		L_6 = Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline(L_4, L_5, NULL);
@@ -16773,27 +17253,27 @@ IL_0026:
 		return L_8;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___a0, float ___b1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Max_mF5379E63D2BBAC76D090748695D833934F8AD051_inline (float ___0_a, float ___1_b, const RuntimeMethod* method) 
 {
 	float V_0 = 0.0f;
 	float G_B3_0 = 0.0f;
 	{
-		float L_0 = ___a0;
-		float L_1 = ___b1;
+		float L_0 = ___0_a;
+		float L_1 = ___1_b;
 		if ((((float)L_0) > ((float)L_1)))
 		{
 			goto IL_0008;
 		}
 	}
 	{
-		float L_2 = ___b1;
+		float L_2 = ___1_b;
 		G_B3_0 = L_2;
 		goto IL_0009;
 	}
 
 IL_0008:
 	{
-		float L_3 = ___a0;
+		float L_3 = ___0_a;
 		G_B3_0 = L_3;
 	}
 
@@ -16829,7 +17309,7 @@ IL_002d:
 		return L_6;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___vector0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D951393A3D7CE92CE40049A0E7F76544D1B_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_vector, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16839,17 +17319,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Vector3_Magnitude_m21652D95
 	}
 	float V_0 = 0.0f;
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_vector;
 		float L_1 = L_0.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___0_vector;
 		float L_3 = L_2.___x_2;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_vector;
 		float L_5 = L_4.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_vector;
 		float L_7 = L_6.___y_3;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_vector;
 		float L_9 = L_8.___z_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___vector0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___0_vector;
 		float L_11 = L_10.___z_4;
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
 		double L_12;
@@ -16864,20 +17344,20 @@ IL_0034:
 		return L_13;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___a0, float ___d1, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Division_mCC6BB24E372AB96B8380D1678446EF6A8BAE13BB_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	{
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___a0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
 		float L_1 = L_0.___x_2;
-		float L_2 = ___d1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___a0;
+		float L_2 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
 		float L_4 = L_3.___y_3;
-		float L_5 = ___d1;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___a0;
+		float L_5 = ___1_d;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
 		float L_7 = L_6.___z_4;
-		float L_8 = ___d1;
+		float L_8 = ___1_d;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
 		memset((&L_9), 0, sizeof(L_9));
 		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_9), ((float)(L_1/L_2)), ((float)(L_4/L_5)), ((float)(L_7/L_8)), /*hidden argument*/NULL);

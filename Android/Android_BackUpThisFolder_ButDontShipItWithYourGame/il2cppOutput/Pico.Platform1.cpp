@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 template <typename R, typename T1>
@@ -276,12 +275,6 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<Pico.Platform.Models.Room>
 struct List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4  : public RuntimeObject
 {
@@ -293,12 +286,6 @@ struct List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	RoomU5BU5D_tE1852BEFEECCEB3581BDB24227AE93B6AE5E180E* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>
@@ -314,12 +301,6 @@ struct List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	RoomInviteNotificationU5BU5D_t66A67805EA0D135584A8A221193EFFD2D63444A1* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>
 struct List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2  : public RuntimeObject
 {
@@ -331,12 +312,6 @@ struct List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	SportDailySummaryU5BU5D_t16820435F89030234D4D0A2CD5674AC3F1AC5863* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<Pico.Platform.Models.User>
@@ -352,12 +327,6 @@ struct List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	UserU5BU5D_tAD96F72993A688CBFFBBD6C20DE51071B3C072DD* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>
 struct List_1_tBBD25E1E86D7966804E4978C61077B2E67606853  : public RuntimeObject
 {
@@ -370,13 +339,6 @@ struct List_1_tBBD25E1E86D7966804E4978C61077B2E67606853  : public RuntimeObject
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
 };
-
-struct List_1_tBBD25E1E86D7966804E4978C61077B2E67606853_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	UserRoomU5BU5D_t743BBEBFB37874A69D2712368FF065E1862920D9* ___s_emptyArray_5;
-};
-struct Il2CppArrayBounds;
 
 // System.Text.Encoding
 struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObject
@@ -393,30 +355,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObjec
 	EncoderFallback_tD2C40CE114AA9D8E1F7196608B2D088548015293* ___encoderFallback_13;
 	// System.Text.DecoderFallback System.Text.Encoding::decoderFallback
 	DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90* ___decoderFallback_14;
-};
-
-struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
-{
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
-	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
-	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
-	// System.Object System.Text.Encoding::s_InternalSyncObject
-	RuntimeObject* ___s_InternalSyncObject_15;
 };
 
 // Pico.Platform.Models.LaunchFriendResult
@@ -701,12 +639,6 @@ struct String_t  : public RuntimeObject
 	Il2CppChar ____firstChar_5;
 };
 
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
-};
-
 // Pico.Platform.Models.User
 struct User_t4A57578F9001EB8B02745E9305A72B29570F459B  : public RuntimeObject
 {
@@ -814,14 +746,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-};
-
 // System.Byte
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
 {
@@ -834,20 +758,6 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D
 {
 	// System.UInt64 System.DateTime::_dateData
 	uint64_t ____dateData_46;
-};
-
-struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
-{
-	// System.Int32[] System.DateTime::s_daysToMonth365
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
-	// System.Int32[] System.DateTime::s_daysToMonth366
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
-	// System.DateTime System.DateTime::UnixEpoch
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
 };
 
 // System.Double
@@ -878,12 +788,6 @@ struct IntPtr_t
 	void* ___m_value_0;
 };
 
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
 // System.UInt32
 struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
 {
@@ -903,12 +807,6 @@ struct UIntPtr_t
 {
 	// System.Void* System.UIntPtr::_pointer
 	void* ____pointer_1;
-};
-
-struct UIntPtr_t_StaticFields
-{
-	// System.UIntPtr System.UIntPtr::Zero
-	uintptr_t ___Zero_0;
 };
 
 // System.Void
@@ -958,12 +856,6 @@ struct Exception_t  : public RuntimeObject
 	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
 	// System.Int32 System.Exception::caught_in_unmanaged
 	int32_t ___caught_in_unmanaged_16;
-};
-
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
 };
 // Native definition for P/Invoke marshalling of System.Exception
 struct Exception_t_marshaled_pinvoke
@@ -1119,6 +1011,363 @@ struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public Sys
 	// System.String System.ArgumentException::_paramName
 	String_t* ____paramName_18;
 };
+
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+
+// System.Collections.Generic.Dictionary`2<System.String,System.String>
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.Room>
+struct List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	RoomU5BU5D_tE1852BEFEECCEB3581BDB24227AE93B6AE5E180E* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.Room>
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>
+struct List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	RoomInviteNotificationU5BU5D_t66A67805EA0D135584A8A221193EFFD2D63444A1* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>
+struct List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	SportDailySummaryU5BU5D_t16820435F89030234D4D0A2CD5674AC3F1AC5863* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.User>
+struct List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	UserU5BU5D_tAD96F72993A688CBFFBBD6C20DE51071B3C072DD* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.User>
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>
+struct List_1_tBBD25E1E86D7966804E4978C61077B2E67606853_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	UserRoomU5BU5D_t743BBEBFB37874A69D2712368FF065E1862920D9* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>
+
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
+{
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
+	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
+	// System.Object System.Text.Encoding::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_15;
+};
+
+// System.Text.Encoding
+
+// Pico.Platform.Models.LaunchFriendResult
+
+// Pico.Platform.Models.LaunchFriendResult
+
+// Pico.Platform.Models.PermissionResult
+
+// Pico.Platform.Models.PermissionResult
+
+// Pico.Platform.Models.Room
+
+// Pico.Platform.Models.Room
+
+// Pico.Platform.Models.RtcAudioPropertyInfo
+
+// Pico.Platform.Models.RtcAudioPropertyInfo
+
+// Pico.Platform.Models.RtcBinaryMessageReceived
+
+// Pico.Platform.Models.RtcBinaryMessageReceived
+
+// Pico.Platform.Models.RtcJoinRoomResult
+
+// Pico.Platform.Models.RtcJoinRoomResult
+
+// Pico.Platform.Models.RtcLeaveRoomResult
+
+// Pico.Platform.Models.RtcLeaveRoomResult
+
+// Pico.Platform.Models.RtcLocalAudioPropertiesInfo
+
+// Pico.Platform.Models.RtcLocalAudioPropertiesInfo
+
+// Pico.Platform.Models.RtcLocalAudioPropertiesReport
+
+// Pico.Platform.Models.RtcLocalAudioPropertiesReport
+
+// Pico.Platform.Models.RtcMediaDeviceChangeInfo
+
+// Pico.Platform.Models.RtcMediaDeviceChangeInfo
+
+// Pico.Platform.Models.RtcMessageSendResult
+
+// Pico.Platform.Models.RtcMessageSendResult
+
+// Pico.Platform.Models.RtcMuteInfo
+
+// Pico.Platform.Models.RtcMuteInfo
+
+// Pico.Platform.Models.RtcRemoteAudioPropertiesInfo
+
+// Pico.Platform.Models.RtcRemoteAudioPropertiesInfo
+
+// Pico.Platform.Models.RtcRemoteAudioPropertiesReport
+
+// Pico.Platform.Models.RtcRemoteAudioPropertiesReport
+
+// Pico.Platform.Models.RtcRemoteStreamKey
+
+// Pico.Platform.Models.RtcRemoteStreamKey
+
+// Pico.Platform.Models.RtcRoomError
+
+// Pico.Platform.Models.RtcRoomError
+
+// Pico.Platform.Models.RtcRoomMessageReceived
+
+// Pico.Platform.Models.RtcRoomMessageReceived
+
+// Pico.Platform.Models.RtcRoomStats
+
+// Pico.Platform.Models.RtcRoomStats
+
+// Pico.Platform.Models.RtcRoomWarn
+
+// Pico.Platform.Models.RtcRoomWarn
+
+// Pico.Platform.Models.RtcStreamSyncInfo
+
+// Pico.Platform.Models.RtcStreamSyncInfo
+
+// Pico.Platform.Models.RtcUserJoinInfo
+
+// Pico.Platform.Models.RtcUserJoinInfo
+
+// Pico.Platform.Models.RtcUserLeaveInfo
+
+// Pico.Platform.Models.RtcUserLeaveInfo
+
+// Pico.Platform.Models.RtcUserMessageReceived
+
+// Pico.Platform.Models.RtcUserMessageReceived
+
+// Pico.Platform.Models.RtcUserPublishInfo
+
+// Pico.Platform.Models.RtcUserPublishInfo
+
+// Pico.Platform.Models.RtcUserUnPublishInfo
+
+// Pico.Platform.Models.RtcUserUnPublishInfo
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// Pico.Platform.Models.User
+
+// Pico.Platform.Models.User
+
+// Pico.Platform.Models.UserRoom
+
+// Pico.Platform.Models.UserRoom
+
+// System.ValueType
+
+// System.ValueType
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.RoomInviteNotification>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.RoomInviteNotification>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.SportDailySummary>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.SportDailySummary>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.User>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.User>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.UserRoom>
+
+// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.UserRoom>
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// System.Byte
+
+// System.Byte
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
+{
+	// System.Int32[] System.DateTime::s_daysToMonth365
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
+	// System.Int32[] System.DateTime::s_daysToMonth366
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
+	// System.DateTime System.DateTime::UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
+};
+
+// System.DateTime
+
+// System.Double
+
+// System.Double
+
+// System.Int32
+
+// System.Int32
+
+// System.Int64
+
+// System.Int64
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// System.UInt32
+
+// System.UInt32
+
+// System.UInt64
+
+// System.UInt64
+
+// System.UIntPtr
+struct UIntPtr_t_StaticFields
+{
+	// System.UIntPtr System.UIntPtr::Zero
+	uintptr_t ___Zero_0;
+};
+
+// System.UIntPtr
+
+// System.Void
+
+// System.Void
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// Pico.Platform.Models.Packet
+
+// Pico.Platform.Models.Packet
+
+// Pico.Platform.Models.RoomInviteNotification
+
+// Pico.Platform.Models.RoomInviteNotification
+
+// Pico.Platform.Models.RoomInviteNotificationList
+
+// Pico.Platform.Models.RoomInviteNotificationList
+
+// Pico.Platform.Models.RoomList
+
+// Pico.Platform.Models.RoomList
+
+// Pico.Platform.Models.SportDailySummary
+
+// Pico.Platform.Models.SportDailySummary
+
+// Pico.Platform.Models.SportDailySummaryList
+
+// Pico.Platform.Models.SportDailySummaryList
+
+// Pico.Platform.Models.SportSummary
+
+// Pico.Platform.Models.SportSummary
+
+// Pico.Platform.Models.SportUserInfo
+
+// Pico.Platform.Models.SportUserInfo
+
+// Pico.Platform.Models.UserList
+
+// Pico.Platform.Models.UserList
+
+// Pico.Platform.Models.UserRoomList
+
+// Pico.Platform.Models.UserRoomList
+
+// System.SystemException
+
+// System.SystemException
+
+// System.ArgumentException
+
+// System.ArgumentException
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -1300,9 +1549,9 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 // System.Void Pico.Platform.Models.MessageArray`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared (MessageArray_1_tCE6EF260E4DCE08C9729CE5DD7D36D43B525C320* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::set_Capacity(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 
 // System.Void Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.RoomInviteNotification>::.ctor()
 inline void MessageArray_1__ctor_mFCAF643A2F55D902CBDBCB33CBFD114CAD97B23F (MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A* __this, const RuntimeMethod* method)
@@ -1310,402 +1559,402 @@ inline void MessageArray_1__ctor_mFCAF643A2F55D902CBDBCB33CBFD114CAD97B23F (Mess
 	((  void (*) (MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A*, const RuntimeMethod*))MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared)(__this, method);
 }
 // System.Boolean Pico.Platform.CLIB::ppf_RoomInviteNotificationArray_HasNextPage(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_RoomInviteNotificationArray_HasNextPage_mBD788B2C4BAA371F45F9890B8BF968565616375C (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_RoomInviteNotificationArray_HasNextPage_mBD788B2C4BAA371F45F9890B8BF968565616375C (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_RoomInviteNotificationArray_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RoomInviteNotificationArray_GetSize_mF1BB8BC228A57E1DAD14FC99C05CB4A60E0E489C (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RoomInviteNotificationArray_GetSize_mF1BB8BC228A57E1DAD14FC99C05CB4A60E0E489C (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UInt32 System.UIntPtr::op_Explicit(System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t UIntPtr_op_Explicit_m7802FC2BA4C3A18601BB8B58ED4708E0F07663E8 (uintptr_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t UIntPtr_op_Explicit_m7802FC2BA4C3A18601BB8B58ED4708E0F07663E8 (uintptr_t ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>::set_Capacity(System.Int32)
-inline void List_1_set_Capacity_mFA11F8A01B3611B3FBEB0C44D010EDB43E01215C (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F* __this, int32_t ___value0, const RuntimeMethod* method)
+inline void List_1_set_Capacity_mFA11F8A01B3611B3FBEB0C44D010EDB43E01215C (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F* __this, int32_t ___0_value, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
+	((  void (*) (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___0_value, method);
 }
 // System.UIntPtr System.UIntPtr::op_Explicit(System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_mD94DCD8965DD2E7D5A3370A04CCEDBE5937C078C (uint32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_mD94DCD8965DD2E7D5A3370A04CCEDBE5937C078C (uint32_t ___0_value, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RoomInviteNotificationArray_GetElement(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RoomInviteNotificationArray_GetElement_mAC223273A73C9EDF33DADCFCF48D9668A391C448 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RoomInviteNotificationArray_GetElement_mAC223273A73C9EDF33DADCFCF48D9668A391C448 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.RoomInviteNotification::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotification__ctor_mE27363216CC7FBBF4DB9E28288DC3F94DD07B620 (RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotification__ctor_mE27363216CC7FBBF4DB9E28288DC3F94DD07B620 (RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>::Add(T)
-inline void List_1_Add_m432089447997B5982386997CECED9946334CAF6C_inline (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F* __this, RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m432089447997B5982386997CECED9946334CAF6C_inline (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F* __this, RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F*, RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F*, RoomInviteNotification_tBAE008A47ADD4EB23B5DDACF8C48524446764A81*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_Packet_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_Packet_GetSize_m78C58AF3AB6827B26335C65EF982BAF7E4A126B2 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_Packet_GetSize_m78C58AF3AB6827B26335C65EF982BAF7E4A126B2 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UInt64 System.UIntPtr::op_Explicit(System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t UIntPtr_op_Explicit_mC39E70F0324C1C514A3044790BC19C5FC4C58E1C (uintptr_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t UIntPtr_op_Explicit_mC39E70F0324C1C514A3044790BC19C5FC4C58E1C (uintptr_t ___0_value, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_Packet_GetBytes(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Packet_GetBytes_m2E236C86BA3A54CD86BAB04E7615E60D53992BD6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Packet_GetBytes_m2E236C86BA3A54CD86BAB04E7615E60D53992BD6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Runtime.InteropServices.Marshal::Copy(System.IntPtr,System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77 (intptr_t ___source0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___destination1, int32_t ___startIndex2, int32_t ___length3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77 (intptr_t ___0_source, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_destination, int32_t ___2_startIndex, int32_t ___3_length, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 // System.Text.Encoding System.Text.Encoding::get_UTF8()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9 (const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_Packet_GetSenderID(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_Packet_GetSenderID_m7AE7D8257960DF7452C89FFA336503D4A53D8E51 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_Packet_GetSenderID_m7AE7D8257960DF7452C89FFA336503D4A53D8E51 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Object::Finalize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Finalize_mC98C96301CCABFE00F1A7EF8E15DF507CACD42B2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.Packet::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet_Dispose_mEDBE99EA76C4FB2E42817AFBDC7BC7773B60A858 (Packet_t14ED8D652670CAC56A14849AB08C1BC8467065BB* __this, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.CLIB::ppf_Packet_Free(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CLIB_ppf_Packet_Free_m0D4F4446DD5BA04912FB25DD43936F6124C076F3 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CLIB_ppf_Packet_Free_m0D4F4446DD5BA04912FB25DD43936F6124C076F3 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.GC::SuppressFinalize(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65 (RuntimeObject* ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65 (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcBinaryMessageReceived_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcBinaryMessageReceived_GetUserId_mE45C4F2F5B7D60BB4C87F79701D1BE34E69C1B8C (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcBinaryMessageReceived_GetUserId_mE45C4F2F5B7D60BB4C87F79701D1BE34E69C1B8C (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcBinaryMessageReceived_GetData(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcBinaryMessageReceived_GetData_m35FC24664207B11DC7C807BE5C07B5D9A8E9FB3B (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcBinaryMessageReceived_GetData_m35FC24664207B11DC7C807BE5C07B5D9A8E9FB3B (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcBinaryMessageReceived_GetLength(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcBinaryMessageReceived_GetLength_mAE30F8C97E18C9BDF368A89900750B82AE66ADB6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcBinaryMessageReceived_GetLength_mAE30F8C97E18C9BDF368A89900750B82AE66ADB6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Byte[] Pico.Platform.MarshalUtil::ByteArrayFromNative(System.IntPtr,System.UInt32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MarshalUtil_ByteArrayFromNative_m84D6F9E95E13E6AB35441D4BA39E1A2F05E8D531 (intptr_t ___ptr0, uint32_t ___length1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* MarshalUtil_ByteArrayFromNative_m84D6F9E95E13E6AB35441D4BA39E1A2F05E8D531 (intptr_t ___0_ptr, uint32_t ___1_length, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcBinaryMessageReceived_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcBinaryMessageReceived_GetRoomId_m23DC6D82961C00B198E46387A84E033F7C19D481 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcBinaryMessageReceived_GetRoomId_m23DC6D82961C00B198E46387A84E033F7C19D481 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int64 Pico.Platform.CLIB::ppf_RtcMessageSendResult_GetMessageId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_RtcMessageSendResult_GetMessageId_mE403582F3507BAC58C4EF607C78FF86DD37EFBA0 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_RtcMessageSendResult_GetMessageId_mE403582F3507BAC58C4EF607C78FF86DD37EFBA0 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcMessageSendResult_GetError(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMessageSendResult_GetError_mD09B407A9D3E17B174A07F89A14DC05FCC36BAAC (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMessageSendResult_GetError_mD09B407A9D3E17B174A07F89A14DC05FCC36BAAC (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcMessageSendResult_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMessageSendResult_GetRoomId_mDCC70926C327B0AE0F5BB2A06FB1C0850A34C68D (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMessageSendResult_GetRoomId_mDCC70926C327B0AE0F5BB2A06FB1C0850A34C68D (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserUnPublishInfo_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserUnPublishInfo_GetUserId_mA37B27445683EA4B2DFBB62CFA2F95E448FB8DA9 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserUnPublishInfo_GetUserId_mA37B27445683EA4B2DFBB62CFA2F95E448FB8DA9 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMediaStreamType Pico.Platform.CLIB::ppf_RtcUserUnPublishInfo_GetMediaStreamType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserUnPublishInfo_GetMediaStreamType_m8BEF1B6B827D549A369F3CD6C64929EB9E316155 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserUnPublishInfo_GetMediaStreamType_m8BEF1B6B827D549A369F3CD6C64929EB9E316155 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcStreamRemoveReason Pico.Platform.CLIB::ppf_RtcUserUnPublishInfo_GetReason(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserUnPublishInfo_GetReason_m2367042A89CF45FE7951D94C5115978BAF9C5A50 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserUnPublishInfo_GetReason_m2367042A89CF45FE7951D94C5115978BAF9C5A50 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserUnPublishInfo_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserUnPublishInfo_GetRoomId_mD66F3A60F50913C4CBFE1F50AF1DFCD05C1988D3 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserUnPublishInfo_GetRoomId_mD66F3A60F50913C4CBFE1F50AF1DFCD05C1988D3 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserPublishInfo_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserPublishInfo_GetUserId_m69213CBC6CF3AB752A858BA2535450CCF81CBF0A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserPublishInfo_GetUserId_m69213CBC6CF3AB752A858BA2535450CCF81CBF0A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMediaStreamType Pico.Platform.CLIB::ppf_RtcUserPublishInfo_GetMediaStreamType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserPublishInfo_GetMediaStreamType_m48EA9CE8808749082262171FCE1B25BF4DBBC2D6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserPublishInfo_GetMediaStreamType_m48EA9CE8808749082262171FCE1B25BF4DBBC2D6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserPublishInfo_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserPublishInfo_GetRoomId_m94B6EC889D81EB2F10B286564CAD5867925DFDE7 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserPublishInfo_GetRoomId_m94B6EC889D81EB2F10B286564CAD5867925DFDE7 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomMessageReceived_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetUserId_mDEF77B5B82E0D7C2AF4DBE06C218781E89CDEA30 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetUserId_mDEF77B5B82E0D7C2AF4DBE06C218781E89CDEA30 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomMessageReceived_GetMessage(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetMessage_m9AC303304E5BD20F89B44BC975E8301D8A81D011 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetMessage_m9AC303304E5BD20F89B44BC975E8301D8A81D011 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomMessageReceived_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetRoomId_m60842CDD3D5DA56300A660B8E42B966A02888EA6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomMessageReceived_GetRoomId_m60842CDD3D5DA56300A660B8E42B966A02888EA6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserMessageReceived_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetUserId_m353C743DCF95A09C947D31D7E637FB67E1C119D5 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetUserId_m353C743DCF95A09C947D31D7E637FB67E1C119D5 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserMessageReceived_GetMessage(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetMessage_mEA3E27B28839DA801E0F2488ABC85C48CDB3FDE6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetMessage_mEA3E27B28839DA801E0F2488ABC85C48CDB3FDE6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserMessageReceived_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetRoomId_mD5410B65880B3302607F592B427B841CE3331259 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserMessageReceived_GetRoomId_mD5410B65880B3302607F592B427B841CE3331259 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcStreamSyncInfo_GetStreamKey(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcStreamSyncInfo_GetStreamKey_m4639CACB71EF76F81BEEE3ED483B38836538B2D8 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcStreamSyncInfo_GetStreamKey_m4639CACB71EF76F81BEEE3ED483B38836538B2D8 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.RtcRemoteStreamKey::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteStreamKey__ctor_m65CBF360CB0A78852AAC6D047639E0A94C31EEAF (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteStreamKey__ctor_m65CBF360CB0A78852AAC6D047639E0A94C31EEAF (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // Pico.Platform.RtcSyncInfoStreamType Pico.Platform.CLIB::ppf_RtcStreamSyncInfo_GetStreamType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcStreamSyncInfo_GetStreamType_mC35845CD7F906258FED0C54C269D5E5972B9A6FC (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcStreamSyncInfo_GetStreamType_mC35845CD7F906258FED0C54C269D5E5972B9A6FC (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcStreamSyncInfo_GetData(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcStreamSyncInfo_GetData_mA2195D3FFA943BE98EF536EBC25CEE2AE6656037 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcStreamSyncInfo_GetData_mA2195D3FFA943BE98EF536EBC25CEE2AE6656037 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcStreamSyncInfo_GetLength(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcStreamSyncInfo_GetLength_m26D46D4D0E3A56BD9A68A012B7E1C74F4D353075 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcStreamSyncInfo_GetLength_m26D46D4D0E3A56BD9A68A012B7E1C74F4D353075 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcAudioPropertyInfo_GetVolume(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcAudioPropertyInfo_GetVolume_mA04AC05CDC33AEBC64B22F872F10A4EB379B5507 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcAudioPropertyInfo_GetVolume_mA04AC05CDC33AEBC64B22F872F10A4EB379B5507 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcJoinRoomResult_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcJoinRoomResult_GetRoomId_m7B3E440E1058D0C5EF7944078D7237E5C43768F9 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcJoinRoomResult_GetRoomId_m7B3E440E1058D0C5EF7944078D7237E5C43768F9 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcJoinRoomResult_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcJoinRoomResult_GetUserId_mE792981D075553D845ACE9044234DB6FBB146CF0 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcJoinRoomResult_GetUserId_mE792981D075553D845ACE9044234DB6FBB146CF0 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcJoinRoomResult_GetErrorCode(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetErrorCode_m40F5640D389A049FDEB3214E4902E525CBD78D3E (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetErrorCode_m40F5640D389A049FDEB3214E4902E525CBD78D3E (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcJoinRoomResult_GetElapsed(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetElapsed_mDAB8BF00819197F9E98B3A7C2599831A8ACBAFDD (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetElapsed_mDAB8BF00819197F9E98B3A7C2599831A8ACBAFDD (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcJoinRoomType Pico.Platform.CLIB::ppf_RtcJoinRoomResult_GetJoinType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetJoinType_mAFADE43668B9B291F56C65888AD31C70CE635AC5 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcJoinRoomResult_GetJoinType_mAFADE43668B9B291F56C65888AD31C70CE635AC5 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcLeaveRoomResult_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcLeaveRoomResult_GetRoomId_m5B30176E3CFBF512492C273084F298117CC62D08 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcLeaveRoomResult_GetRoomId_m5B30176E3CFBF512492C273084F298117CC62D08 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcStreamIndex Pico.Platform.CLIB::ppf_RtcLocalAudioPropertiesInfo_GetStreamIndex(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcLocalAudioPropertiesInfo_GetStreamIndex_m402C11D7B8B10D25A2E7419BF8488DCF0CA57AF1 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcLocalAudioPropertiesInfo_GetStreamIndex_m402C11D7B8B10D25A2E7419BF8488DCF0CA57AF1 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcLocalAudioPropertiesInfo_GetAudioPropertyInfo(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcLocalAudioPropertiesInfo_GetAudioPropertyInfo_m18741BB3473446F76767F349493836D9E38E2D69 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcLocalAudioPropertiesInfo_GetAudioPropertyInfo_m18741BB3473446F76767F349493836D9E38E2D69 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.RtcAudioPropertyInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcAudioPropertyInfo__ctor_mD841A6F25FFFC9CD55C2E37CA6ACE5271A4F700C (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcAudioPropertyInfo__ctor_mD841A6F25FFFC9CD55C2E37CA6ACE5271A4F700C (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize_m28B6D26993F11462B9104B2B345E54A03BD52222 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize_m28B6D26993F11462B9104B2B345E54A03BD52222 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfos(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfos_mAA0E4DA657D7FAFC7786EAEFECF23DC0C87CC203 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfos_mAA0E4DA657D7FAFC7786EAEFECF23DC0C87CC203 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.RtcLocalAudioPropertiesInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0BCA8598978313582143FAF96AFCF81A62B9C (RtcLocalAudioPropertiesInfo_t983B2EF5ED28307CEE3EBF1C6B1D5E07FF998CD7* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0BCA8598978313582143FAF96AFCF81A62B9C (RtcLocalAudioPropertiesInfo_t983B2EF5ED28307CEE3EBF1C6B1D5E07FF998CD7* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcMediaDeviceChangeInfo_GetDeviceId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceId_m2354CEBDFEE219BECBA38618F7136D6D9602AECF (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceId_m2354CEBDFEE219BECBA38618F7136D6D9602AECF (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMediaDeviceType Pico.Platform.CLIB::ppf_RtcMediaDeviceChangeInfo_GetDeviceType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceType_m72DEC7277335DEE53A459EB8EA26E8C93F6578AA (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceType_m72DEC7277335DEE53A459EB8EA26E8C93F6578AA (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMediaDeviceState Pico.Platform.CLIB::ppf_RtcMediaDeviceChangeInfo_GetDeviceState(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceState_mA59D7D1FA3BF4FBCAD870D7DEB505149E0DE5A0D (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceState_mA59D7D1FA3BF4FBCAD870D7DEB505149E0DE5A0D (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMediaDeviceError Pico.Platform.CLIB::ppf_RtcMediaDeviceChangeInfo_GetDeviceError(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceError_m99908FD336CBAD649B0EC59BC2A79251B3BE6759 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceError_m99908FD336CBAD649B0EC59BC2A79251B3BE6759 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcMuteInfo_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMuteInfo_GetUserId_m4C9FD6955904D00B8D62BD8DFF30BA340A7F6CC6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcMuteInfo_GetUserId_m4C9FD6955904D00B8D62BD8DFF30BA340A7F6CC6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcMuteState Pico.Platform.CLIB::ppf_RtcMuteInfo_GetMuteState(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMuteInfo_GetMuteState_mBC0505EFE1FC5D90A47DEE7A1D43D08EB688E807 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcMuteInfo_GetMuteState_mBC0505EFE1FC5D90A47DEE7A1D43D08EB688E807 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcRemoteAudioPropertiesInfo_GetStreamKey(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetStreamKey_m3B66B97BD1934EA9018E93E3B0A6EC3254BD5BA7 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetStreamKey_m3B66B97BD1934EA9018E93E3B0A6EC3254BD5BA7 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcRemoteAudioPropertiesInfo_GetAudioPropertiesInfo(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetAudioPropertiesInfo_mFEA490A4FA6B13D8EF9EA1B9D39DBFF6778AEC9D (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetAudioPropertiesInfo_mFEA490A4FA6B13D8EF9EA1B9D39DBFF6778AEC9D (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfosSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfosSize_m9D4702327C744240AD526C07C1E38A8ADC1EBC8A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfosSize_m9D4702327C744240AD526C07C1E38A8ADC1EBC8A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfos(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfos_m931EDB0CB701CF665112E335651FFF43D0C76BFF (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfos_m931EDB0CB701CF665112E335651FFF43D0C76BFF (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.RtcRemoteAudioPropertiesInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569B3B8D3851F60E6A5822CABDEFE943566856A (RtcRemoteAudioPropertiesInfo_tC525522C12C689373473B28A316E1FC94DB890B0* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569B3B8D3851F60E6A5822CABDEFE943566856A (RtcRemoteAudioPropertiesInfo_tC525522C12C689373473B28A316E1FC94DB890B0* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcRemoteAudioPropertiesReport_GetTotalRemoteVolume(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetTotalRemoteVolume_m44DE0566717EC76B3F03F4A135F152AE696B644A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRemoteAudioPropertiesReport_GetTotalRemoteVolume_m44DE0566717EC76B3F03F4A135F152AE696B644A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRemoteStreamKey_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRemoteStreamKey_GetRoomId_m0313C4AAF081211D322C4B8AB84FBE47795B0F01 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRemoteStreamKey_GetRoomId_m0313C4AAF081211D322C4B8AB84FBE47795B0F01 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRemoteStreamKey_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRemoteStreamKey_GetUserId_m921AFE124576D9255466DB9D05D9232954F8C094 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRemoteStreamKey_GetUserId_m921AFE124576D9255466DB9D05D9232954F8C094 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcStreamIndex Pico.Platform.CLIB::ppf_RtcRemoteStreamKey_GetStreamIndex(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRemoteStreamKey_GetStreamIndex_m62647B6A9999E7327873EFA3CBA40D031BC703A0 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRemoteStreamKey_GetStreamIndex_m62647B6A9999E7327873EFA3CBA40D031BC703A0 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcRoomError_GetCode(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomError_GetCode_m1755F19838ECD58EA09E8B0D7A16015487CC787F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomError_GetCode_m1755F19838ECD58EA09E8B0D7A16015487CC787F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomError_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomError_GetRoomId_m35AFF13A43EECF31F9392C869C9494A35C2C0792 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomError_GetRoomId_m35AFF13A43EECF31F9392C869C9494A35C2C0792 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcRoomStats_GetTotalDuration(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomStats_GetTotalDuration_m2E9B5C070831EE454BD421662415FF2AA36FFB80 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomStats_GetTotalDuration_m2E9B5C070831EE454BD421662415FF2AA36FFB80 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcRoomStats_GetUserCount(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomStats_GetUserCount_m70C604780238325862215C593DEE3175E1E9EF63 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomStats_GetUserCount_m70C604780238325862215C593DEE3175E1E9EF63 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomStats_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomStats_GetRoomId_m030B0E8AD057ED2D71EA230E14A22551218EE1C3 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomStats_GetRoomId_m030B0E8AD057ED2D71EA230E14A22551218EE1C3 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcRoomWarn_GetCode(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomWarn_GetCode_mE3E092DDE26B7C495D8E6A29F9E392984F4F9EA1 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcRoomWarn_GetCode_mE3E092DDE26B7C495D8E6A29F9E392984F4F9EA1 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcRoomWarn_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomWarn_GetRoomId_m2CB39FD6675AB95144B48761D7021023D31243B2 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcRoomWarn_GetRoomId_m2CB39FD6675AB95144B48761D7021023D31243B2 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserJoinInfo_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetUserId_m795A17B0B2A6D61556DBA3FDBFA720A5367EC4C3 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetUserId_m795A17B0B2A6D61556DBA3FDBFA720A5367EC4C3 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserJoinInfo_GetUserExtra(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetUserExtra_m68F5AE4B4849B0DD5C7D2281A2F591D64465B6C8 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetUserExtra_m68F5AE4B4849B0DD5C7D2281A2F591D64465B6C8 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RtcUserJoinInfo_GetElapsed(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserJoinInfo_GetElapsed_mF93D78390107E620C6B1289141E7ADB758BC322E (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserJoinInfo_GetElapsed_mF93D78390107E620C6B1289141E7ADB758BC322E (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserJoinInfo_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetRoomId_m7CD73C1FE7D78B6F38069BF46FE80375EFE9E8EA (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserJoinInfo_GetRoomId_m7CD73C1FE7D78B6F38069BF46FE80375EFE9E8EA (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserLeaveInfo_GetUserId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserLeaveInfo_GetUserId_m22C1AB65E18858169BC76A08ABBD16F1862681B0 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserLeaveInfo_GetUserId_m22C1AB65E18858169BC76A08ABBD16F1862681B0 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RtcUserLeaveReasonType Pico.Platform.CLIB::ppf_RtcUserLeaveInfo_GetOfflineReason(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserLeaveInfo_GetOfflineReason_m86C83C66CE2FC3B86A106AE760DE6EDAD02DDFAE (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RtcUserLeaveInfo_GetOfflineReason_m86C83C66CE2FC3B86A106AE760DE6EDAD02DDFAE (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_RtcUserLeaveInfo_GetRoomId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserLeaveInfo_GetRoomId_m092EADC04DB3E1C51753F6213E5B012A9108A57C (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_RtcUserLeaveInfo_GetRoomId_m092EADC04DB3E1C51753F6213E5B012A9108A57C (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_Room_GetDataStore(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetDataStore_m1F0B31E7E180A65119AFC55C8FA78606A8F77375 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetDataStore_m1F0B31E7E180A65119AFC55C8FA78606A8F77375 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2<System.String,System.String> Pico.Platform.CLIB::DataStoreFromNative(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* CLIB_DataStoreFromNative_mB7386DBDDF2B7A4D7AFE0D7101E3399F1CA8DD38 (intptr_t ___ppfDataStore0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* CLIB_DataStoreFromNative_mB7386DBDDF2B7A4D7AFE0D7101E3399F1CA8DD38 (intptr_t ___0_ppfDataStore, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_Room_GetDescription(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_Room_GetDescription_mEB4EA9CA77C6E9BCFC815BE739D130DCE0CFF13C (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_Room_GetDescription_mEB4EA9CA77C6E9BCFC815BE739D130DCE0CFF13C (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UInt64 Pico.Platform.CLIB::ppf_Room_GetID(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CLIB_ppf_Room_GetID_m13C361B9DE509CCE6DBF4D87E6D889CC0FDC30C8 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t CLIB_ppf_Room_GetID_m13C361B9DE509CCE6DBF4D87E6D889CC0FDC30C8 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean Pico.Platform.CLIB::ppf_Room_GetIsMembershipLocked(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_Room_GetIsMembershipLocked_mBD764E8C3065A499C905B80F69DA01147CC0D871 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_Room_GetIsMembershipLocked_mBD764E8C3065A499C905B80F69DA01147CC0D871 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RoomJoinPolicy Pico.Platform.CLIB::ppf_Room_GetJoinPolicy(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetJoinPolicy_m24C4471F581824B15E3B344C4A3FAA198CE53F67 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetJoinPolicy_m24C4471F581824B15E3B344C4A3FAA198CE53F67 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RoomJoinability Pico.Platform.CLIB::ppf_Room_GetJoinability(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetJoinability_m958ABFDE1B9363ECE134562E64BB668B95FE85EC (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetJoinability_m958ABFDE1B9363ECE134562E64BB668B95FE85EC (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UInt32 Pico.Platform.CLIB::ppf_Room_GetMaxUsers(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CLIB_ppf_Room_GetMaxUsers_m4D68C7BBEBF0ABC3FB3045C91E958E2E170DC3C8 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t CLIB_ppf_Room_GetMaxUsers_m4D68C7BBEBF0ABC3FB3045C91E958E2E170DC3C8 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.RoomType Pico.Platform.CLIB::ppf_Room_GetType(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetType_m700962CEBDAD23371A91A114BD94E77B035BEC46 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_Room_GetType_m700962CEBDAD23371A91A114BD94E77B035BEC46 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_Room_GetOwner(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetOwner_m0D93BFA39D4A495C3EFE75B99F9A747DDCF5EACD (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetOwner_m0D93BFA39D4A495C3EFE75B99F9A747DDCF5EACD (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean System.IntPtr::op_Equality(System.IntPtr,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_m7D9CDCDE9DC2A0C2C614633F4921E90187FAB271 (intptr_t ___value10, intptr_t ___value21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Equality_m7D9CDCDE9DC2A0C2C614633F4921E90187FAB271 (intptr_t ___0_value1, intptr_t ___1_value2, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.User::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m65AB5AB78CA800CFE2E148D87161D5B3F4CA9AEB (User_t4A57578F9001EB8B02745E9305A72B29570F459B* __this, intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m65AB5AB78CA800CFE2E148D87161D5B3F4CA9AEB (User_t4A57578F9001EB8B02745E9305A72B29570F459B* __this, intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_Room_GetUsers(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetUsers_m1ECF14F038528B341AFD41851CE2D765D83D9450 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_Room_GetUsers_m1ECF14F038528B341AFD41851CE2D765D83D9450 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.UserList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042C5268ED720B596A1 (UserList_t4FBD372AD727B86FE2C738E38D1BCAE7C3BB7281* __this, intptr_t ___a0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042C5268ED720B596A1 (UserList_t4FBD372AD727B86FE2C738E38D1BCAE7C3BB7281* __this, intptr_t ___0_a, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>::.ctor()
 inline void MessageArray_1__ctor_mC7EBC3393EB4CC530E06FCF5211EF9BBEBCE6212 (MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E* __this, const RuntimeMethod* method)
 {
 	((  void (*) (MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E*, const RuntimeMethod*))MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared)(__this, method);
 }
 // System.Int32 Pico.Platform.CLIB::ppf_RoomArray_GetPageIndex(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RoomArray_GetPageIndex_mAA31FF43D2D9735BB2EF5AE4B11B9E52DDB812DA (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RoomArray_GetPageIndex_mAA31FF43D2D9735BB2EF5AE4B11B9E52DDB812DA (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_RoomArray_GetPageSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RoomArray_GetPageSize_mA768D6CDCB556CC906C87516E279DC5D8DED2A10 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_RoomArray_GetPageSize_mA768D6CDCB556CC906C87516E279DC5D8DED2A10 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean Pico.Platform.CLIB::ppf_RoomArray_HasNextPage(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_RoomArray_HasNextPage_mA950C99EDFC9DA110FC11F2BD01B6E9460FCFCB6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_RoomArray_HasNextPage_mA950C99EDFC9DA110FC11F2BD01B6E9460FCFCB6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_RoomArray_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RoomArray_GetSize_m45370408581AA01542641B430FC8B9FAD0E647D4 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_RoomArray_GetSize_m45370408581AA01542641B430FC8B9FAD0E647D4 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.Room>::set_Capacity(System.Int32)
-inline void List_1_set_Capacity_m38E70F89B76F25A793317CAE6F6B8B2AC3CB6E05 (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4* __this, int32_t ___value0, const RuntimeMethod* method)
+inline void List_1_set_Capacity_m38E70F89B76F25A793317CAE6F6B8B2AC3CB6E05 (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4* __this, int32_t ___0_value, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
+	((  void (*) (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___0_value, method);
 }
 // System.IntPtr Pico.Platform.CLIB::ppf_RoomArray_GetElement(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RoomArray_GetElement_m1571C608A470781E98F5E12614C147284DF2E3B3 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_RoomArray_GetElement_m1571C608A470781E98F5E12614C147284DF2E3B3 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.Room::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A73F88829701F8 (Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A73F88829701F8 (Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.Room>::Add(T)
-inline void List_1_Add_m40B1CAF48404FED800CB19BB5F977EEFE59A55FE_inline (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4* __this, Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m40B1CAF48404FED800CB19BB5F977EEFE59A55FE_inline (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4* __this, Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4*, Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4*, Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Int64 Pico.Platform.CLIB::ppf_SportDailySummary_GetId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportDailySummary_GetId_m95A9E59BBF28FBF82B9E0605628A2F80FE351879 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportDailySummary_GetId_m95A9E59BBF28FBF82B9E0605628A2F80FE351879 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int64 Pico.Platform.CLIB::ppf_SportDailySummary_GetDate(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportDailySummary_GetDate_m14FBE652B7AFC6B1F37B292885B6F47B7B1FEC45 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportDailySummary_GetDate_m14FBE652B7AFC6B1F37B292885B6F47B7B1FEC45 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.DateTime Pico.Platform.Util::MilliSecondsToDateTime(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D Util_MilliSecondsToDateTime_m50126A48BEFF575665E94E417DEBE9A39951559F (int64_t ___milliSeconds0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D Util_MilliSecondsToDateTime_m50126A48BEFF575665E94E417DEBE9A39951559F (int64_t ___0_milliSeconds, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportDailySummary_GetDurationInSeconds(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportDailySummary_GetDurationInSeconds_mBFE01FF4B2DAF1C360C750E14BF85416723C2872 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportDailySummary_GetDurationInSeconds_mBFE01FF4B2DAF1C360C750E14BF85416723C2872 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportDailySummary_GetPlanDurationInMinutes(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportDailySummary_GetPlanDurationInMinutes_m421E5F6A4B62E30DAB09AE43424CE929FF9263D6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportDailySummary_GetPlanDurationInMinutes_m421E5F6A4B62E30DAB09AE43424CE929FF9263D6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Double Pico.Platform.CLIB::ppf_SportDailySummary_GetCalorie(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportDailySummary_GetCalorie_m7A3AA191BD3BE44C07B34DBB3CC95460E9FD873F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportDailySummary_GetCalorie_m7A3AA191BD3BE44C07B34DBB3CC95460E9FD873F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Double Pico.Platform.CLIB::ppf_SportDailySummary_GetPlanCalorie(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportDailySummary_GetPlanCalorie_m5B3D4A4FEAD4CBC7BCE25C47933DD941FB8EC29A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportDailySummary_GetPlanCalorie_m5B3D4A4FEAD4CBC7BCE25C47933DD941FB8EC29A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.SportDailySummary>::.ctor()
 inline void MessageArray_1__ctor_mA979AAEE168F9640490FF54CC91E4A42248A3DD3 (MessageArray_1_tF5C14895EFD1F8AEDF1C136262D75FA93B9393DB* __this, const RuntimeMethod* method)
 {
 	((  void (*) (MessageArray_1_tF5C14895EFD1F8AEDF1C136262D75FA93B9393DB*, const RuntimeMethod*))MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared)(__this, method);
 }
 // System.UIntPtr Pico.Platform.CLIB::ppf_SportDailySummaryArray_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_SportDailySummaryArray_GetSize_m9F3A52497FFD1F31C7173BF514579B275F69CE6F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_SportDailySummaryArray_GetSize_m9F3A52497FFD1F31C7173BF514579B275F69CE6F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>::set_Capacity(System.Int32)
-inline void List_1_set_Capacity_m282D35C16336809C7B6A230821F954A4505114B9 (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2* __this, int32_t ___value0, const RuntimeMethod* method)
+inline void List_1_set_Capacity_m282D35C16336809C7B6A230821F954A4505114B9 (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2* __this, int32_t ___0_value, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
+	((  void (*) (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___0_value, method);
 }
 // System.UIntPtr System.UIntPtr::op_Explicit(System.UInt64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_mF1E7911DD5AC13B5E59EE8C7903469D12A3861E8 (uint64_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t UIntPtr_op_Explicit_mF1E7911DD5AC13B5E59EE8C7903469D12A3861E8 (uint64_t ___0_value, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_SportDailySummaryArray_GetElement(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_SportDailySummaryArray_GetElement_m59C83C6A45925DAA526122A5AB67D119B7D55EED (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_SportDailySummaryArray_GetElement_m59C83C6A45925DAA526122A5AB67D119B7D55EED (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.SportDailySummary::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E9F815578BFD37075FA956CBA7 (SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E9F815578BFD37075FA956CBA7 (SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>::Add(T)
-inline void List_1_Add_mCFDD6AF77CD53FC9BD39A96B47042D35CB515624_inline (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2* __this, SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_mCFDD6AF77CD53FC9BD39A96B47042D35CB515624_inline (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2* __this, SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2*, SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2*, SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Int64 Pico.Platform.CLIB::ppf_SportSummary_GetDurationInSeconds(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetDurationInSeconds_m9B88949A0D9165A3C95A686DF236B489B31E8BFC (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetDurationInSeconds_m9B88949A0D9165A3C95A686DF236B489B31E8BFC (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Double Pico.Platform.CLIB::ppf_SportSummary_GetCalorie(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportSummary_GetCalorie_m96AC790C6F79415D832BBF42703BB819EEA21A9F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR double CLIB_ppf_SportSummary_GetCalorie_m96AC790C6F79415D832BBF42703BB819EEA21A9F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int64 Pico.Platform.CLIB::ppf_SportSummary_GetStartTime(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetStartTime_m738B9DFD848500B880181F3BCFDCACCA3F366F91 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetStartTime_m738B9DFD848500B880181F3BCFDCACCA3F366F91 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int64 Pico.Platform.CLIB::ppf_SportSummary_GetEndTime(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetEndTime_mDE51E609B9E533B3C1AF37B7C55F91AD358AD725 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportSummary_GetEndTime_mDE51E609B9E533B3C1AF37B7C55F91AD358AD725 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.Gender Pico.Platform.CLIB::ppf_SportUserInfo_GetGender(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetGender_m71CC42932486ADDCB8B93773545354BEF4EE6D46 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetGender_m71CC42932486ADDCB8B93773545354BEF4EE6D46 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int64 Pico.Platform.CLIB::ppf_SportUserInfo_GetBirthday(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportUserInfo_GetBirthday_mE81318FE7536F5C15BBF999CE650F9F11D41E53D (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t CLIB_ppf_SportUserInfo_GetBirthday_mE81318FE7536F5C15BBF999CE650F9F11D41E53D (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportUserInfo_GetStature(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetStature_m8BBDE449B416E186F627FC14F0CC996C6D9A8623 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetStature_m8BBDE449B416E186F627FC14F0CC996C6D9A8623 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportUserInfo_GetWeight(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetWeight_mBB924C90C0F9AE1CA7E6DDC61FD57DB3A7FD2641 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetWeight_mBB924C90C0F9AE1CA7E6DDC61FD57DB3A7FD2641 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportUserInfo_GetSportLevel(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetSportLevel_mC777610CBCE421D9F1568E0AE2B0B063AB06D16E (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetSportLevel_mC777610CBCE421D9F1568E0AE2B0B063AB06D16E (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportUserInfo_GetDailyDurationInMinutes(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetDailyDurationInMinutes_m42CEA5A37D074C854D6EC949D943AF9C3D46CCCA (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetDailyDurationInMinutes_m42CEA5A37D074C854D6EC949D943AF9C3D46CCCA (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Int32 Pico.Platform.CLIB::ppf_SportUserInfo_GetDaysPerWeek(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetDaysPerWeek_mD9A804E974190994F8C92205B74EE18C86B76CB6 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetDaysPerWeek_mD9A804E974190994F8C92205B74EE18C86B76CB6 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.SportTarget Pico.Platform.CLIB::ppf_SportUserInfo_GetSportTarget(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetSportTarget_m5ABB84CCF1332468A6922217F60F60173B4D3030 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_SportUserInfo_GetSportTarget_m5ABB84CCF1332468A6922217F60F60173B4D3030 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetDisplayName(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetDisplayName_m7F18ED9B77264FAC59E9D9AC61B6724C5507880F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetDisplayName_m7F18ED9B77264FAC59E9D9AC61B6724C5507880F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetImageUrl(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetImageUrl_m58A67CC084D255C1A8855587A3A2EECC82BBCCA1 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetImageUrl_m58A67CC084D255C1A8855587A3A2EECC82BBCCA1 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetID(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetID_mC41EEFD63BCDAE6E5D3F8A21B3A0B28F0B54822E (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetID_mC41EEFD63BCDAE6E5D3F8A21B3A0B28F0B54822E (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetInviteToken(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetInviteToken_m377024C4A883A4F589D9B7EB0B0D7413EDF3EE24 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetInviteToken_m377024C4A883A4F589D9B7EB0B0D7413EDF3EE24 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.UserPresenceStatus Pico.Platform.CLIB::ppf_User_GetPresenceStatus(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_User_GetPresenceStatus_m7F96CA0E4381A227C959BD40E48A8A5B1286E3ED (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_User_GetPresenceStatus_m7F96CA0E4381A227C959BD40E48A8A5B1286E3ED (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // Pico.Platform.Gender Pico.Platform.CLIB::ppf_User_GetGender(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_User_GetGender_m9E52B2729DE3B85223913B65FBE9DC39A3951F7F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CLIB_ppf_User_GetGender_m9E52B2729DE3B85223913B65FBE9DC39A3951F7F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresence(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresence_m8CD577DD7E1A9928D3ECDA2C45A1DDB335F77599 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresence_m8CD577DD7E1A9928D3ECDA2C45A1DDB335F77599 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresenceDeeplinkMessage(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceDeeplinkMessage_mE0C33D72B6B01CABFEB2F28923A9BC6067DF2E37 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceDeeplinkMessage_mE0C33D72B6B01CABFEB2F28923A9BC6067DF2E37 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresenceDestinationApiName(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceDestinationApiName_mC4E6D1A5205241FBB09CD274D126C000558B37BB (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceDestinationApiName_mC4E6D1A5205241FBB09CD274D126C000558B37BB (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresenceLobbySessionId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceLobbySessionId_mA7F62B44ACAF48B30160B301BB37C0E620DAA7B3 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceLobbySessionId_mA7F62B44ACAF48B30160B301BB37C0E620DAA7B3 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresenceMatchSessionId(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceMatchSessionId_mDABDDE2B355EB1F0FACFEB3BB6236B81EDBC0618 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceMatchSessionId_mDABDDE2B355EB1F0FACFEB3BB6236B81EDBC0618 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetPresenceExtra(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceExtra_m0B782AEDC7AB4ECADCAFEC2C4422E50A76F1404F (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetPresenceExtra_m0B782AEDC7AB4ECADCAFEC2C4422E50A76F1404F (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetSmallImageUrl(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetSmallImageUrl_mB864AC2409AACE66CF7E578A4D1E3F5DDB08A562 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetSmallImageUrl_mB864AC2409AACE66CF7E578A4D1E3F5DDB08A562 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_User_GetStoreRegion(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetStoreRegion_m18DFD5413237B3433AACECF3E76EF0E085CE6D17 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_User_GetStoreRegion_m18DFD5413237B3433AACECF3E76EF0E085CE6D17 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.User>::.ctor()
 inline void MessageArray_1__ctor_mB9282B974A69F693F481FD1242C22EA48D3DBB94 (MessageArray_1_t8FB2AFA18B020CDB5F979EA0D8D62BE101BE1EC2* __this, const RuntimeMethod* method)
 {
 	((  void (*) (MessageArray_1_t8FB2AFA18B020CDB5F979EA0D8D62BE101BE1EC2*, const RuntimeMethod*))MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared)(__this, method);
 }
 // System.UIntPtr Pico.Platform.CLIB::ppf_UserArray_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_UserArray_GetSize_m1B47B3FC655ECEE76E8E58D651BFF2B3576AC17E (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_UserArray_GetSize_m1B47B3FC655ECEE76E8E58D651BFF2B3576AC17E (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.User>::set_Capacity(System.Int32)
-inline void List_1_set_Capacity_m797F835E1497C61FC45E8F74AFA810F161C3FF9D (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE* __this, int32_t ___value0, const RuntimeMethod* method)
+inline void List_1_set_Capacity_m797F835E1497C61FC45E8F74AFA810F161C3FF9D (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE* __this, int32_t ___0_value, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
+	((  void (*) (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___0_value, method);
 }
 // System.IntPtr Pico.Platform.CLIB::ppf_UserArray_GetElement(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserArray_GetElement_m18C518BFDDE2264AE556F88DE8F563298A660EE1 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserArray_GetElement_m18C518BFDDE2264AE556F88DE8F563298A660EE1 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.User>::Add(T)
-inline void List_1_Add_m2E7B33840E1BF3DFD2868E82D4E815FE4942A622_inline (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE* __this, User_t4A57578F9001EB8B02745E9305A72B29570F459B* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m2E7B33840E1BF3DFD2868E82D4E815FE4942A622_inline (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE* __this, User_t4A57578F9001EB8B02745E9305A72B29570F459B* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE*, User_t4A57578F9001EB8B02745E9305A72B29570F459B*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE*, User_t4A57578F9001EB8B02745E9305A72B29570F459B*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.String Pico.Platform.CLIB::ppf_UserArray_GetNextPageParam(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_UserArray_GetNextPageParam_m31C1FD07F535A18BF41D519120092FC9E8D1611A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_UserArray_GetNextPageParam_m31C1FD07F535A18BF41D519120092FC9E8D1611A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean Pico.Platform.CLIB::ppf_LaunchFriendRequestFlowResult_GetDidCancel(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_LaunchFriendRequestFlowResult_GetDidCancel_m1AD8347D357CECAC6A55C7AA0246BBE6D6FE39B5 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_LaunchFriendRequestFlowResult_GetDidCancel_m1AD8347D357CECAC6A55C7AA0246BBE6D6FE39B5 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean Pico.Platform.CLIB::ppf_LaunchFriendRequestFlowResult_GetDidSendRequest(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_LaunchFriendRequestFlowResult_GetDidSendRequest_mD10E3D65E746B06F58A2FE322B33423CF4EAF52D (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool CLIB_ppf_LaunchFriendRequestFlowResult_GetDidSendRequest_mD10E3D65E746B06F58A2FE322B33423CF4EAF52D (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_UserAndRoom_GetUser(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoom_GetUser_m157BC1471B6D1081B397ADBF807AB818348A3A1A (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoom_GetUser_m157BC1471B6D1081B397ADBF807AB818348A3A1A (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.IntPtr Pico.Platform.CLIB::ppf_UserAndRoom_GetRoom(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoom_GetRoom_m2E220803CB16CBE55D79D567E8F3CABE81D83CFE (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoom_GetRoom_m2E220803CB16CBE55D79D567E8F3CABE81D83CFE (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Boolean System.IntPtr::op_Inequality(System.IntPtr,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B (intptr_t ___value10, intptr_t ___value21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool IntPtr_op_Inequality_m90EFC9C4CAD9A33E309F2DDF98EE4E1DD253637B (intptr_t ___0_value1, intptr_t ___1_value2, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.UserRoom>::.ctor()
 inline void MessageArray_1__ctor_mC9A4F0DDF161BCD0B98654B9D0EB3BB88C5FEC7D (MessageArray_1_t785B10FA5D7BE1D6C33B67DD822B88EAEA2F29A3* __this, const RuntimeMethod* method)
 {
 	((  void (*) (MessageArray_1_t785B10FA5D7BE1D6C33B67DD822B88EAEA2F29A3*, const RuntimeMethod*))MessageArray_1__ctor_mB9AA519DC3819501D064517EA47E7D98C883AA88_gshared)(__this, method);
 }
 // System.UIntPtr Pico.Platform.CLIB::ppf_UserAndRoomArray_GetSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_UserAndRoomArray_GetSize_m14CBF59FA42C319C705958304E3FE7FC3DA051F1 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_UserAndRoomArray_GetSize_m14CBF59FA42C319C705958304E3FE7FC3DA051F1 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>::set_Capacity(System.Int32)
-inline void List_1_set_Capacity_m30720F96B6848FE93F84FA814959EFB82920CBFF (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853* __this, int32_t ___value0, const RuntimeMethod* method)
+inline void List_1_set_Capacity_m30720F96B6848FE93F84FA814959EFB82920CBFF (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853* __this, int32_t ___0_value, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___value0, method);
+	((  void (*) (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853*, int32_t, const RuntimeMethod*))List_1_set_Capacity_mD826E33A9E5EBC19C714653217071790693E0B95_gshared)(__this, ___0_value, method);
 }
 // System.IntPtr Pico.Platform.CLIB::ppf_UserAndRoomArray_GetElement(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoomArray_GetElement_m44DDAE8C1E67D78932F86B3892299F30D8992B31 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t CLIB_ppf_UserAndRoomArray_GetElement_m44DDAE8C1E67D78932F86B3892299F30D8992B31 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.Void Pico.Platform.Models.UserRoom::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674234BCEC7301B9F03 (UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* __this, intptr_t ___o0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674234BCEC7301B9F03 (UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* __this, intptr_t ___0_o, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>::Add(T)
-inline void List_1_Add_m92B8C781D726B84AF40CDA82917B0701B86B2F91_inline (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853* __this, UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m92B8C781D726B84AF40CDA82917B0701B86B2F91_inline (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853* __this, UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853*, UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tBBD25E1E86D7966804E4978C61077B2E67606853*, UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.String Pico.Platform.CLIB::ppf_UserAndRoomArray_GetNextPageParam(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_UserAndRoomArray_GetNextPageParam_m30A7410D812231C45E43B5A4747BA8DA1F5A5334 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_UserAndRoomArray_GetNextPageParam_m30A7410D812231C45E43B5A4747BA8DA1F5A5334 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.UIntPtr Pico.Platform.CLIB::ppf_PermissionResult_GetAuthorizedPermissionsSize(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_PermissionResult_GetAuthorizedPermissionsSize_mC0764542BF7D615FDB4203A1016864686BD81440 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uintptr_t CLIB_ppf_PermissionResult_GetAuthorizedPermissionsSize_mC0764542BF7D615FDB4203A1016864686BD81440 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_PermissionResult_GetAuthorizedPermissions(System.IntPtr,System.UIntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetAuthorizedPermissions_m5325AE5103DD3E1072E932AC62F16EC0C6101C14 (intptr_t ___obj0, uintptr_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetAuthorizedPermissions_m5325AE5103DD3E1072E932AC62F16EC0C6101C14 (intptr_t ___0_obj, uintptr_t ___1_index, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_PermissionResult_GetAccessToken(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetAccessToken_m69EA3290A74FEB53F6070AB377C20B2ABC50E1C9 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetAccessToken_m69EA3290A74FEB53F6070AB377C20B2ABC50E1C9 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 // System.String Pico.Platform.CLIB::ppf_PermissionResult_GetUserID(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetUserID_m985FB5253F45123C7E01E50070663B4DA690CEC8 (intptr_t ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* CLIB_ppf_PermissionResult_GetUserID_m985FB5253F45123C7E01E50070663B4DA690CEC8 (intptr_t ___0_obj, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RoomInviteNotificationList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotificationList__ctor_mEEC75BA3052D7F573FF10F4E7DE71918AFA1B24F (RoomInviteNotificationList_t6630ADB570BB0B97C538BDE757838F360295BF80* __this, intptr_t ___a0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotificationList__ctor_mEEC75BA3052D7F573FF10F4E7DE71918AFA1B24F (RoomInviteNotificationList_t6630ADB570BB0B97C538BDE757838F360295BF80* __this, intptr_t ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1729,7 +1978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomInviteNotificationList__ctor_mEEC75B
 		// public RoomInviteNotificationList(IntPtr a)
 		MessageArray_1__ctor_mFCAF643A2F55D902CBDBCB33CBFD114CAD97B23F(__this, MessageArray_1__ctor_mFCAF643A2F55D902CBDBCB33CBFD114CAD97B23F_RuntimeMethod_var);
 		// NextPageParam = CLIB.ppf_RoomInviteNotificationArray_HasNextPage(a) ? "true" : string.Empty;
-		intptr_t L_0 = ___a0;
+		intptr_t L_0 = ___0_a;
 		bool L_1;
 		L_1 = CLIB_ppf_RoomInviteNotificationArray_HasNextPage_mBD788B2C4BAA371F45F9890B8BF968565616375C(L_0, NULL);
 		G_B1_0 = __this;
@@ -1758,7 +2007,7 @@ IL_001b:
 		((MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_t62131693233091B9B8D9C69D8136FD8CD7EFD93A*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
 		// int count = (int)CLIB.ppf_RoomInviteNotificationArray_GetSize(a);
-		intptr_t L_3 = ___a0;
+		intptr_t L_3 = ___0_a;
 		uintptr_t L_4;
 		L_4 = CLIB_ppf_RoomInviteNotificationArray_GetSize_mF1BB8BC228A57E1DAD14FC99C05CB4A60E0E489C(L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -1776,7 +2025,7 @@ IL_001b:
 IL_0037:
 	{
 		// this.Add(new RoomInviteNotification(CLIB.ppf_RoomInviteNotificationArray_GetElement(a, (UIntPtr)i)));
-		intptr_t L_7 = ___a0;
+		intptr_t L_7 = ___0_a;
 		uint32_t L_8 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_9;
@@ -1816,7 +2065,7 @@ IL_0052:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.Packet::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet__ctor_mF5AA777719C7728CACC4426F08555C0CC79219C6 (Packet_t14ED8D652670CAC56A14849AB08C1BC8467065BB* __this, intptr_t ___handler0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet__ctor_mF5AA777719C7728CACC4426F08555C0CC79219C6 (Packet_t14ED8D652670CAC56A14849AB08C1BC8467065BB* __this, intptr_t ___0_handler, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1828,10 +2077,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet__ctor_mF5AA777719C7728CACC4426F08
 		// public Packet(IntPtr handler)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// this.handler = handler;
-		intptr_t L_0 = ___handler0;
+		intptr_t L_0 = ___0_handler;
 		__this->___handler_1 = L_0;
 		// this.size = (ulong)CLIB.ppf_Packet_GetSize(handler);
-		intptr_t L_1 = ___handler0;
+		intptr_t L_1 = ___0_handler;
 		uintptr_t L_2;
 		L_2 = CLIB_ppf_Packet_GetSize_m78C58AF3AB6827B26335C65EF982BAF7E4A126B2(L_1, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -1843,7 +2092,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet__ctor_mF5AA777719C7728CACC4426F08
 	}
 }
 // System.UInt64 Pico.Platform.Models.Packet::GetBytes(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF47ED71397717B8CB4732B (Packet_t14ED8D652670CAC56A14849AB08C1BC8467065BB* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___dest0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF47ED71397717B8CB4732B (Packet_t14ED8D652670CAC56A14849AB08C1BC8467065BB* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_dest, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -1853,7 +2102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF
 	}
 	{
 		// if ((ulong)dest.LongLength >= size)
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___dest0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_dest;
 		NullCheck(L_0);
 		uint64_t L_1 = __this->___size_0;
 		if ((!(((uint64_t)((int64_t)((int32_t)(((RuntimeArray*)L_0)->max_length)))) >= ((uint64_t)L_1))))
@@ -1866,7 +2115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint64_t Packet_GetBytes_m39D8940C9652DAEA1DF
 		intptr_t L_2 = __this->___handler_1;
 		intptr_t L_3;
 		L_3 = CLIB_ppf_Packet_GetBytes_m2E236C86BA3A54CD86BAB04E7615E60D53992BD6(L_2, NULL);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___dest0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_dest;
 		uint64_t L_5 = __this->___size_0;
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
 		Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77(L_3, L_4, 0, ((int32_t)L_5), NULL);
@@ -2022,7 +2271,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Packet_Dispose_mEDBE99EA76C4FB2E42817AFB
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcBinaryMessageReceived::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F58994F39109EFA378DC279473F9478F5A422 (RtcBinaryMessageReceived_tC9A88B36B776048E2DE7CAB6B6FC3F5D2B9D7E97* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F58994F39109EFA378DC279473F9478F5A422 (RtcBinaryMessageReceived_tC9A88B36B776048E2DE7CAB6B6FC3F5D2B9D7E97* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	intptr_t V_0;
 	memset((&V_0), 0, sizeof(V_0));
@@ -2031,18 +2280,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F5899
 		// public RtcBinaryMessageReceived(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcBinaryMessageReceived_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcBinaryMessageReceived_GetUserId_mE45C4F2F5B7D60BB4C87F79701D1BE34E69C1B8C(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// var ptr = CLIB.ppf_RtcBinaryMessageReceived_GetData(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		intptr_t L_3;
 		L_3 = CLIB_ppf_RtcBinaryMessageReceived_GetData_m35FC24664207B11DC7C807BE5C07B5D9A8E9FB3B(L_2, NULL);
 		V_0 = L_3;
 		// var sz = CLIB.ppf_RtcBinaryMessageReceived_GetLength(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcBinaryMessageReceived_GetLength_mAE30F8C97E18C9BDF368A89900750B82AE66ADB6(L_4, NULL);
 		V_1 = L_5;
@@ -2054,7 +2303,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F5899
 		__this->___Data_1 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Data_1), (void*)L_8);
 		// RoomId = CLIB.ppf_RtcBinaryMessageReceived_GetRoomId(o);
-		intptr_t L_9 = ___o0;
+		intptr_t L_9 = ___0_o;
 		String_t* L_10;
 		L_10 = CLIB_ppf_RtcBinaryMessageReceived_GetRoomId_m23DC6D82961C00B198E46387A84E033F7C19D481(L_9, NULL);
 		__this->___RoomId_2 = L_10;
@@ -2072,23 +2321,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcBinaryMessageReceived__ctor_mB89F5899
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcMessageSendResult::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMessageSendResult__ctor_m2162DE41657A7E784AA02064625130069E74C18B (RtcMessageSendResult_t340C6173650F03204076588487BA8F92F5E57973* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMessageSendResult__ctor_m2162DE41657A7E784AA02064625130069E74C18B (RtcMessageSendResult_t340C6173650F03204076588487BA8F92F5E57973* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcMessageSendResult(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// MessageId = CLIB.ppf_RtcMessageSendResult_GetMessageId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int64_t L_1;
 		L_1 = CLIB_ppf_RtcMessageSendResult_GetMessageId_mE403582F3507BAC58C4EF607C78FF86DD37EFBA0(L_0, NULL);
 		__this->___MessageId_0 = L_1;
 		// Error = CLIB.ppf_RtcMessageSendResult_GetError(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcMessageSendResult_GetError_mD09B407A9D3E17B174A07F89A14DC05FCC36BAAC(L_2, NULL);
 		__this->___Error_1 = L_3;
 		// RoomId = CLIB.ppf_RtcMessageSendResult_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcMessageSendResult_GetRoomId_mDCC70926C327B0AE0F5BB2A06FB1C0850A34C68D(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2106,29 +2355,29 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMessageSendResult__ctor_m2162DE41657A
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcUserUnPublishInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserUnPublishInfo__ctor_m1D60504810CC87668FCA04EF1877A522B4A00B32 (RtcUserUnPublishInfo_t72DA2A1DFAA80819C0B3331AA2FC2C3033506DCB* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserUnPublishInfo__ctor_m1D60504810CC87668FCA04EF1877A522B4A00B32 (RtcUserUnPublishInfo_t72DA2A1DFAA80819C0B3331AA2FC2C3033506DCB* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcUserUnPublishInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcUserUnPublishInfo_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcUserUnPublishInfo_GetUserId_mA37B27445683EA4B2DFBB62CFA2F95E448FB8DA9(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// MediaStreamType = CLIB.ppf_RtcUserUnPublishInfo_GetMediaStreamType(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcUserUnPublishInfo_GetMediaStreamType_m8BEF1B6B827D549A369F3CD6C64929EB9E316155(L_2, NULL);
 		__this->___MediaStreamType_1 = L_3;
 		// Reason = CLIB.ppf_RtcUserUnPublishInfo_GetReason(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcUserUnPublishInfo_GetReason_m2367042A89CF45FE7951D94C5115978BAF9C5A50(L_4, NULL);
 		__this->___Reason_2 = L_5;
 		// RoomId = CLIB.ppf_RtcUserUnPublishInfo_GetRoomId(o);
-		intptr_t L_6 = ___o0;
+		intptr_t L_6 = ___0_o;
 		String_t* L_7;
 		L_7 = CLIB_ppf_RtcUserUnPublishInfo_GetRoomId_mD66F3A60F50913C4CBFE1F50AF1DFCD05C1988D3(L_6, NULL);
 		__this->___RoomId_3 = L_7;
@@ -2146,24 +2395,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserUnPublishInfo__ctor_m1D60504810CC
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcUserPublishInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserPublishInfo__ctor_m1FA7B4E103936FF3CBCAE21E2E1CA30544A9D842 (RtcUserPublishInfo_tD1C72BDF929EB5EF4400C879E36D6151F8915493* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserPublishInfo__ctor_m1FA7B4E103936FF3CBCAE21E2E1CA30544A9D842 (RtcUserPublishInfo_tD1C72BDF929EB5EF4400C879E36D6151F8915493* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcUserPublishInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcUserPublishInfo_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcUserPublishInfo_GetUserId_m69213CBC6CF3AB752A858BA2535450CCF81CBF0A(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// MediaStreamType = CLIB.ppf_RtcUserPublishInfo_GetMediaStreamType(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcUserPublishInfo_GetMediaStreamType_m48EA9CE8808749082262171FCE1B25BF4DBBC2D6(L_2, NULL);
 		__this->___MediaStreamType_1 = L_3;
 		// RoomId = CLIB.ppf_RtcUserPublishInfo_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcUserPublishInfo_GetRoomId_m94B6EC889D81EB2F10B286564CAD5867925DFDE7(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2181,25 +2430,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserPublishInfo__ctor_m1FA7B4E103936F
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRoomMessageReceived::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomMessageReceived__ctor_m7AE539120296BFB6A9147EFA500A71AC1E6139D3 (RtcRoomMessageReceived_t59D10EBCDA6D8F93187CED472EC8F583F9E45DB1* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomMessageReceived__ctor_m7AE539120296BFB6A9147EFA500A71AC1E6139D3 (RtcRoomMessageReceived_t59D10EBCDA6D8F93187CED472EC8F583F9E45DB1* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcRoomMessageReceived(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcRoomMessageReceived_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcRoomMessageReceived_GetUserId_mDEF77B5B82E0D7C2AF4DBE06C218781E89CDEA30(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// Message = CLIB.ppf_RtcRoomMessageReceived_GetMessage(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcRoomMessageReceived_GetMessage_m9AC303304E5BD20F89B44BC975E8301D8A81D011(L_2, NULL);
 		__this->___Message_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Message_1), (void*)L_3);
 		// RoomId = CLIB.ppf_RtcRoomMessageReceived_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcRoomMessageReceived_GetRoomId_m60842CDD3D5DA56300A660B8E42B966A02888EA6(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2217,25 +2466,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomMessageReceived__ctor_m7AE5391202
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcUserMessageReceived::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserMessageReceived__ctor_m9B49452A746458135A2387CE9FE1A5279BB261C7 (RtcUserMessageReceived_tAAE8A50CC325D49DF5A0032406971B9310471BEA* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserMessageReceived__ctor_m9B49452A746458135A2387CE9FE1A5279BB261C7 (RtcUserMessageReceived_tAAE8A50CC325D49DF5A0032406971B9310471BEA* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcUserMessageReceived(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcUserMessageReceived_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcUserMessageReceived_GetUserId_m353C743DCF95A09C947D31D7E637FB67E1C119D5(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// Message = CLIB.ppf_RtcUserMessageReceived_GetMessage(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcUserMessageReceived_GetMessage_mEA3E27B28839DA801E0F2488ABC85C48CDB3FDE6(L_2, NULL);
 		__this->___Message_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Message_1), (void*)L_3);
 		// RoomId = CLIB.ppf_RtcUserMessageReceived_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcUserMessageReceived_GetRoomId_mD5410B65880B3302607F592B427B841CE3331259(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2253,7 +2502,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserMessageReceived__ctor_m9B49452A74
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcStreamSyncInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E8586503B14A1C9B2125A5CFBAF2D71 (RtcStreamSyncInfo_t794F9FE01AD8FF9C5F4F0C13276A0FE4BF86D158* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E8586503B14A1C9B2125A5CFBAF2D71 (RtcStreamSyncInfo_t794F9FE01AD8FF9C5F4F0C13276A0FE4BF86D158* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2268,7 +2517,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E85865
 		// public RtcStreamSyncInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// StreamKey = new RtcRemoteStreamKey(CLIB.ppf_RtcStreamSyncInfo_GetStreamKey(o));
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		intptr_t L_1;
 		L_1 = CLIB_ppf_RtcStreamSyncInfo_GetStreamKey_m4639CACB71EF76F81BEEE3ED483B38836538B2D8(L_0, NULL);
 		RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* L_2 = (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8*)il2cpp_codegen_object_new(RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8_il2cpp_TypeInfo_var);
@@ -2277,17 +2526,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E85865
 		__this->___StreamKey_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___StreamKey_0), (void*)L_2);
 		// StreamType = CLIB.ppf_RtcStreamSyncInfo_GetStreamType(o);
-		intptr_t L_3 = ___o0;
+		intptr_t L_3 = ___0_o;
 		int32_t L_4;
 		L_4 = CLIB_ppf_RtcStreamSyncInfo_GetStreamType_mC35845CD7F906258FED0C54C269D5E5972B9A6FC(L_3, NULL);
 		__this->___StreamType_1 = L_4;
 		// var ptr = CLIB.ppf_RtcStreamSyncInfo_GetData(o);
-		intptr_t L_5 = ___o0;
+		intptr_t L_5 = ___0_o;
 		intptr_t L_6;
 		L_6 = CLIB_ppf_RtcStreamSyncInfo_GetData_mA2195D3FFA943BE98EF536EBC25CEE2AE6656037(L_5, NULL);
 		V_0 = L_6;
 		// var sz = CLIB.ppf_RtcStreamSyncInfo_GetLength(o);
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		int32_t L_8;
 		L_8 = CLIB_ppf_RtcStreamSyncInfo_GetLength_m26D46D4D0E3A56BD9A68A012B7E1C74F4D353075(L_7, NULL);
 		V_1 = L_8;
@@ -2311,13 +2560,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcStreamSyncInfo__ctor_m251C46F04E85865
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcAudioPropertyInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcAudioPropertyInfo__ctor_mD841A6F25FFFC9CD55C2E37CA6ACE5271A4F700C (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcAudioPropertyInfo__ctor_mD841A6F25FFFC9CD55C2E37CA6ACE5271A4F700C (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcAudioPropertyInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// Volume = CLIB.ppf_RtcAudioPropertyInfo_GetVolume(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RtcAudioPropertyInfo_GetVolume_mA04AC05CDC33AEBC64B22F872F10A4EB379B5507(L_0, NULL);
 		__this->___Volume_0 = L_1;
@@ -2334,35 +2583,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcAudioPropertyInfo__ctor_mD841A6F25FFF
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcJoinRoomResult::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcJoinRoomResult__ctor_m7B314C8949F4E8A063062D3D75F9B40A5B6D5354 (RtcJoinRoomResult_t222AA0AA4390A38744032D6F5E176BD2E4D1AF86* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcJoinRoomResult__ctor_m7B314C8949F4E8A063062D3D75F9B40A5B6D5354 (RtcJoinRoomResult_t222AA0AA4390A38744032D6F5E176BD2E4D1AF86* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcJoinRoomResult(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// RoomId = CLIB.ppf_RtcJoinRoomResult_GetRoomId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcJoinRoomResult_GetRoomId_m7B3E440E1058D0C5EF7944078D7237E5C43768F9(L_0, NULL);
 		__this->___RoomId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___RoomId_0), (void*)L_1);
 		// UserId = CLIB.ppf_RtcJoinRoomResult_GetUserId(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcJoinRoomResult_GetUserId_mE792981D075553D845ACE9044234DB6FBB146CF0(L_2, NULL);
 		__this->___UserId_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_1), (void*)L_3);
 		// ErrorCode = CLIB.ppf_RtcJoinRoomResult_GetErrorCode(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcJoinRoomResult_GetErrorCode_m40F5640D389A049FDEB3214E4902E525CBD78D3E(L_4, NULL);
 		__this->___ErrorCode_2 = L_5;
 		// Elapsed = CLIB.ppf_RtcJoinRoomResult_GetElapsed(o);
-		intptr_t L_6 = ___o0;
+		intptr_t L_6 = ___0_o;
 		int32_t L_7;
 		L_7 = CLIB_ppf_RtcJoinRoomResult_GetElapsed_mDAB8BF00819197F9E98B3A7C2599831A8ACBAFDD(L_6, NULL);
 		__this->___Elapsed_3 = L_7;
 		// JoinType = CLIB.ppf_RtcJoinRoomResult_GetJoinType(o);
-		intptr_t L_8 = ___o0;
+		intptr_t L_8 = ___0_o;
 		int32_t L_9;
 		L_9 = CLIB_ppf_RtcJoinRoomResult_GetJoinType_mAFADE43668B9B291F56C65888AD31C70CE635AC5(L_8, NULL);
 		__this->___JoinType_4 = L_9;
@@ -2379,13 +2628,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcJoinRoomResult__ctor_m7B314C8949F4E8A
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcLeaveRoomResult::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLeaveRoomResult__ctor_mB66FF86D0BAB29F9340A0285A1EC9A02F1B50C6C (RtcLeaveRoomResult_tAEC4346AD4A8B3227C7A6866A646DB44D80EE2F5* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLeaveRoomResult__ctor_mB66FF86D0BAB29F9340A0285A1EC9A02F1B50C6C (RtcLeaveRoomResult_tAEC4346AD4A8B3227C7A6866A646DB44D80EE2F5* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcLeaveRoomResult(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// RoomId = CLIB.ppf_RtcLeaveRoomResult_GetRoomId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcLeaveRoomResult_GetRoomId_m5B30176E3CFBF512492C273084F298117CC62D08(L_0, NULL);
 		__this->___RoomId_0 = L_1;
@@ -2403,7 +2652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLeaveRoomResult__ctor_mB66FF86D0BAB29
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcLocalAudioPropertiesInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0BCA8598978313582143FAF96AFCF81A62B9C (RtcLocalAudioPropertiesInfo_t983B2EF5ED28307CEE3EBF1C6B1D5E07FF998CD7* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0BCA8598978313582143FAF96AFCF81A62B9C (RtcLocalAudioPropertiesInfo_t983B2EF5ED28307CEE3EBF1C6B1D5E07FF998CD7* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2415,12 +2664,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0B
 		// public RtcLocalAudioPropertiesInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// StreamIndex = CLIB.ppf_RtcLocalAudioPropertiesInfo_GetStreamIndex(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RtcLocalAudioPropertiesInfo_GetStreamIndex_m402C11D7B8B10D25A2E7419BF8488DCF0CA57AF1(L_0, NULL);
 		__this->___StreamIndex_0 = L_1;
 		// AudioPropertyInfo = new RtcAudioPropertyInfo(CLIB.ppf_RtcLocalAudioPropertiesInfo_GetAudioPropertyInfo(o));
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		intptr_t L_3;
 		L_3 = CLIB_ppf_RtcLocalAudioPropertiesInfo_GetAudioPropertyInfo_m18741BB3473446F76767F349493836D9E38E2D69(L_2, NULL);
 		RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* L_4 = (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D*)il2cpp_codegen_object_new(RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D_il2cpp_TypeInfo_var);
@@ -2441,7 +2690,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesInfo__ctor_m83E0B
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcLocalAudioPropertiesReport::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesReport__ctor_m070996393241820FE38C6BC98C80DD3A805E2937 (RtcLocalAudioPropertiesReport_t32CB97B68D05215E397A0D852B11C37D8F45D843* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesReport__ctor_m070996393241820FE38C6BC98C80DD3A805E2937 (RtcLocalAudioPropertiesReport_t32CB97B68D05215E397A0D852B11C37D8F45D843* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2458,7 +2707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcLocalAudioPropertiesReport__ctor_m070
 		// public RtcLocalAudioPropertiesReport(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// ulong total = (ulong)CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfosSize_m28B6D26993F11462B9104B2B345E54A03BD52222(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -2481,7 +2730,7 @@ IL_0023:
 		// AudioPropertiesInfos[i] = new RtcLocalAudioPropertiesInfo(CLIB.ppf_RtcLocalAudioPropertiesReport_GetAudioPropertiesInfos(o, (UIntPtr)i));
 		RtcLocalAudioPropertiesInfoU5BU5D_tDCE88CF7E7D8EA451A5D343EF305378092193836* L_5 = __this->___AudioPropertiesInfos_0;
 		uint32_t L_6 = V_1;
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		uint32_t L_8 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_9;
@@ -2523,29 +2772,29 @@ IL_0040:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcMediaDeviceChangeInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMediaDeviceChangeInfo__ctor_m16167960098AA5B1BF63BC9534269AB593FA968D (RtcMediaDeviceChangeInfo_t8AF4D1C316FDE4DE287FB0B21D061933A2DB09B9* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMediaDeviceChangeInfo__ctor_m16167960098AA5B1BF63BC9534269AB593FA968D (RtcMediaDeviceChangeInfo_t8AF4D1C316FDE4DE287FB0B21D061933A2DB09B9* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcMediaDeviceChangeInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// DeviceId = CLIB.ppf_RtcMediaDeviceChangeInfo_GetDeviceId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceId_m2354CEBDFEE219BECBA38618F7136D6D9602AECF(L_0, NULL);
 		__this->___DeviceId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___DeviceId_0), (void*)L_1);
 		// DeviceType = CLIB.ppf_RtcMediaDeviceChangeInfo_GetDeviceType(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceType_m72DEC7277335DEE53A459EB8EA26E8C93F6578AA(L_2, NULL);
 		__this->___DeviceType_1 = L_3;
 		// DeviceState = CLIB.ppf_RtcMediaDeviceChangeInfo_GetDeviceState(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceState_mA59D7D1FA3BF4FBCAD870D7DEB505149E0DE5A0D(L_4, NULL);
 		__this->___DeviceState_2 = L_5;
 		// DeviceError = CLIB.ppf_RtcMediaDeviceChangeInfo_GetDeviceError(o);
-		intptr_t L_6 = ___o0;
+		intptr_t L_6 = ___0_o;
 		int32_t L_7;
 		L_7 = CLIB_ppf_RtcMediaDeviceChangeInfo_GetDeviceError_m99908FD336CBAD649B0EC59BC2A79251B3BE6759(L_6, NULL);
 		__this->___DeviceError_3 = L_7;
@@ -2562,19 +2811,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMediaDeviceChangeInfo__ctor_m16167960
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcMuteInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMuteInfo__ctor_m9893FFDE980619816EB2E328096D361F9FDA5FE4 (RtcMuteInfo_t13EC090EF336129CF50A4B58F688F42CFA53CBCC* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMuteInfo__ctor_m9893FFDE980619816EB2E328096D361F9FDA5FE4 (RtcMuteInfo_t13EC090EF336129CF50A4B58F688F42CFA53CBCC* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcMuteInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcMuteInfo_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcMuteInfo_GetUserId_m4C9FD6955904D00B8D62BD8DFF30BA340A7F6CC6(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// MuteState = CLIB.ppf_RtcMuteInfo_GetMuteState(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcMuteInfo_GetMuteState_mBC0505EFE1FC5D90A47DEE7A1D43D08EB688E807(L_2, NULL);
 		__this->___MuteState_1 = L_3;
@@ -2591,7 +2840,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcMuteInfo__ctor_m9893FFDE980619816EB2E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRemoteAudioPropertiesInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569B3B8D3851F60E6A5822CABDEFE943566856A (RtcRemoteAudioPropertiesInfo_tC525522C12C689373473B28A316E1FC94DB890B0* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569B3B8D3851F60E6A5822CABDEFE943566856A (RtcRemoteAudioPropertiesInfo_tC525522C12C689373473B28A316E1FC94DB890B0* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2604,7 +2853,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569
 		// public RtcRemoteAudioPropertiesInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// StreamKey = new RtcRemoteStreamKey(CLIB.ppf_RtcRemoteAudioPropertiesInfo_GetStreamKey(o));
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		intptr_t L_1;
 		L_1 = CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetStreamKey_m3B66B97BD1934EA9018E93E3B0A6EC3254BD5BA7(L_0, NULL);
 		RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* L_2 = (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8*)il2cpp_codegen_object_new(RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8_il2cpp_TypeInfo_var);
@@ -2613,7 +2862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569
 		__this->___StreamKey_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___StreamKey_0), (void*)L_2);
 		// AudioPropertiesInfo = new RtcAudioPropertyInfo(CLIB.ppf_RtcRemoteAudioPropertiesInfo_GetAudioPropertiesInfo(o));
-		intptr_t L_3 = ___o0;
+		intptr_t L_3 = ___0_o;
 		intptr_t L_4;
 		L_4 = CLIB_ppf_RtcRemoteAudioPropertiesInfo_GetAudioPropertiesInfo_mFEA490A4FA6B13D8EF9EA1B9D39DBFF6778AEC9D(L_3, NULL);
 		RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D* L_5 = (RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D*)il2cpp_codegen_object_new(RtcAudioPropertyInfo_t8723790CB0FF59986AF09C720C565EE36A07B28D_il2cpp_TypeInfo_var);
@@ -2634,7 +2883,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesInfo__ctor_mA569
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRemoteAudioPropertiesReport::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesReport__ctor_m51EE3585EA2CE5321E790619363C60D72D151BF5 (RtcRemoteAudioPropertiesReport_t0E2035670F409963DFD1C9BB84670125169459DA* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesReport__ctor_m51EE3585EA2CE5321E790619363C60D72D151BF5 (RtcRemoteAudioPropertiesReport_t0E2035670F409963DFD1C9BB84670125169459DA* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2649,7 +2898,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteAudioPropertiesReport__ctor_m51
 		// public RtcRemoteAudioPropertiesReport(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// AudioPropertiesInfos = new RtcRemoteAudioPropertiesInfo[(int)CLIB.ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfosSize(o)];
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfosSize_m9D4702327C744240AD526C07C1E38A8ADC1EBC8A(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -2668,7 +2917,7 @@ IL_0020:
 		// AudioPropertiesInfos[i] = new RtcRemoteAudioPropertiesInfo(CLIB.ppf_RtcRemoteAudioPropertiesReport_GetAudioPropertiesInfos(o, (UIntPtr)i));
 		RtcRemoteAudioPropertiesInfoU5BU5D_tE0D90F4B43BBDE54A41B95170B2B12C0E35B76F7* L_4 = __this->___AudioPropertiesInfos_0;
 		uint32_t L_5 = V_0;
-		intptr_t L_6 = ___o0;
+		intptr_t L_6 = ___0_o;
 		uint32_t L_7 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_8;
@@ -2699,7 +2948,7 @@ IL_003d:
 	}
 	{
 		// TotalRemoteVolume = CLIB.ppf_RtcRemoteAudioPropertiesReport_GetTotalRemoteVolume(o);
-		intptr_t L_14 = ___o0;
+		intptr_t L_14 = ___0_o;
 		int32_t L_15;
 		L_15 = CLIB_ppf_RtcRemoteAudioPropertiesReport_GetTotalRemoteVolume_m44DE0566717EC76B3F03F4A135F152AE696B644A(L_14, NULL);
 		__this->___TotalRemoteVolume_1 = L_15;
@@ -2716,25 +2965,25 @@ IL_003d:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRemoteStreamKey::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteStreamKey__ctor_m65CBF360CB0A78852AAC6D047639E0A94C31EEAF (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteStreamKey__ctor_m65CBF360CB0A78852AAC6D047639E0A94C31EEAF (RtcRemoteStreamKey_tB3AF6EB12FDE0158D5A844C89ADA0F411CF992B8* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcRemoteStreamKey(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// RoomId = CLIB.ppf_RtcRemoteStreamKey_GetRoomId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcRemoteStreamKey_GetRoomId_m0313C4AAF081211D322C4B8AB84FBE47795B0F01(L_0, NULL);
 		__this->___RoomId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___RoomId_0), (void*)L_1);
 		// UserId = CLIB.ppf_RtcRemoteStreamKey_GetUserId(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcRemoteStreamKey_GetUserId_m921AFE124576D9255466DB9D05D9232954F8C094(L_2, NULL);
 		__this->___UserId_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_1), (void*)L_3);
 		// RtcStreamIndex = CLIB.ppf_RtcRemoteStreamKey_GetStreamIndex(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcRemoteStreamKey_GetStreamIndex_m62647B6A9999E7327873EFA3CBA40D031BC703A0(L_4, NULL);
 		__this->___RtcStreamIndex_2 = L_5;
@@ -2751,18 +3000,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRemoteStreamKey__ctor_m65CBF360CB0A78
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRoomError::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomError__ctor_mB64F1571CF325818D00BCDC49FAA247ADA012114 (RtcRoomError_t68499B928A94941DF435C88B6FAA0942D39C3181* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomError__ctor_mB64F1571CF325818D00BCDC49FAA247ADA012114 (RtcRoomError_t68499B928A94941DF435C88B6FAA0942D39C3181* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcRoomError(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// Code = CLIB.ppf_RtcRoomError_GetCode(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RtcRoomError_GetCode_m1755F19838ECD58EA09E8B0D7A16015487CC787F(L_0, NULL);
 		__this->___Code_0 = L_1;
 		// RoomId = CLIB.ppf_RtcRoomError_GetRoomId(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcRoomError_GetRoomId_m35AFF13A43EECF31F9392C869C9494A35C2C0792(L_2, NULL);
 		__this->___RoomId_1 = L_3;
@@ -2780,23 +3029,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomError__ctor_mB64F1571CF325818D00B
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRoomStats::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomStats__ctor_m914648976E065CAF62609E705C0371F7C65B88D6 (RtcRoomStats_tF73914DABF13D8494F32E98648C491D8325345D0* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomStats__ctor_m914648976E065CAF62609E705C0371F7C65B88D6 (RtcRoomStats_tF73914DABF13D8494F32E98648C491D8325345D0* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcRoomStats(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// TotalDuration = CLIB.ppf_RtcRoomStats_GetTotalDuration(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RtcRoomStats_GetTotalDuration_m2E9B5C070831EE454BD421662415FF2AA36FFB80(L_0, NULL);
 		__this->___TotalDuration_0 = L_1;
 		// UserCount = CLIB.ppf_RtcRoomStats_GetUserCount(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcRoomStats_GetUserCount_m70C604780238325862215C593DEE3175E1E9EF63(L_2, NULL);
 		__this->___UserCount_1 = L_3;
 		// RoomId = CLIB.ppf_RtcRoomStats_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcRoomStats_GetRoomId_m030B0E8AD057ED2D71EA230E14A22551218EE1C3(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2814,18 +3063,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomStats__ctor_m914648976E065CAF6260
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcRoomWarn::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomWarn__ctor_m52802303C40D4D70D2F4FC0EA1CF7F79FE328C51 (RtcRoomWarn_tDDB2A799E1AE0089AE0F3CD1FA0E67E129726C54* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomWarn__ctor_m52802303C40D4D70D2F4FC0EA1CF7F79FE328C51 (RtcRoomWarn_tDDB2A799E1AE0089AE0F3CD1FA0E67E129726C54* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcRoomWarn(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// Code = CLIB.ppf_RtcRoomWarn_GetCode(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RtcRoomWarn_GetCode_mE3E092DDE26B7C495D8E6A29F9E392984F4F9EA1(L_0, NULL);
 		__this->___Code_0 = L_1;
 		// RoomId = CLIB.ppf_RtcRoomWarn_GetRoomId(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcRoomWarn_GetRoomId_m2CB39FD6675AB95144B48761D7021023D31243B2(L_2, NULL);
 		__this->___RoomId_1 = L_3;
@@ -2843,30 +3092,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcRoomWarn__ctor_m52802303C40D4D70D2F4F
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcUserJoinInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserJoinInfo__ctor_m59AA92846CD0072C2EC4B87CD40DA71C9E216F8E (RtcUserJoinInfo_tB5621FE936406D29E014B854A414CE9DBD573F5C* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserJoinInfo__ctor_m59AA92846CD0072C2EC4B87CD40DA71C9E216F8E (RtcUserJoinInfo_tB5621FE936406D29E014B854A414CE9DBD573F5C* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcUserJoinInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcUserJoinInfo_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcUserJoinInfo_GetUserId_m795A17B0B2A6D61556DBA3FDBFA720A5367EC4C3(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// UserExtra = CLIB.ppf_RtcUserJoinInfo_GetUserExtra(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		String_t* L_3;
 		L_3 = CLIB_ppf_RtcUserJoinInfo_GetUserExtra_m68F5AE4B4849B0DD5C7D2281A2F591D64465B6C8(L_2, NULL);
 		__this->___UserExtra_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserExtra_1), (void*)L_3);
 		// Elapsed = CLIB.ppf_RtcUserJoinInfo_GetElapsed(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int32_t L_5;
 		L_5 = CLIB_ppf_RtcUserJoinInfo_GetElapsed_mF93D78390107E620C6B1289141E7ADB758BC322E(L_4, NULL);
 		__this->___Elapsed_2 = L_5;
 		// RoomId = CLIB.ppf_RtcUserJoinInfo_GetRoomId(o);
-		intptr_t L_6 = ___o0;
+		intptr_t L_6 = ___0_o;
 		String_t* L_7;
 		L_7 = CLIB_ppf_RtcUserJoinInfo_GetRoomId_m7CD73C1FE7D78B6F38069BF46FE80375EFE9E8EA(L_6, NULL);
 		__this->___RoomId_3 = L_7;
@@ -2884,24 +3133,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserJoinInfo__ctor_m59AA92846CD0072C2
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RtcUserLeaveInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserLeaveInfo__ctor_m73F2BA9077281477945F73CBA8541D309DB0F61D (RtcUserLeaveInfo_tABD9D07FC0F0E3950CFB2374C32C33C4278601F9* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserLeaveInfo__ctor_m73F2BA9077281477945F73CBA8541D309DB0F61D (RtcUserLeaveInfo_tABD9D07FC0F0E3950CFB2374C32C33C4278601F9* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	{
 		// public RtcUserLeaveInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// UserId = CLIB.ppf_RtcUserLeaveInfo_GetUserId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		String_t* L_1;
 		L_1 = CLIB_ppf_RtcUserLeaveInfo_GetUserId_m22C1AB65E18858169BC76A08ABBD16F1862681B0(L_0, NULL);
 		__this->___UserId_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___UserId_0), (void*)L_1);
 		// OfflineReason = CLIB.ppf_RtcUserLeaveInfo_GetOfflineReason(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RtcUserLeaveInfo_GetOfflineReason_m86C83C66CE2FC3B86A106AE760DE6EDAD02DDFAE(L_2, NULL);
 		__this->___OfflineReason_1 = L_3;
 		// RoomId = CLIB.ppf_RtcUserLeaveInfo_GetRoomId(o);
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		String_t* L_5;
 		L_5 = CLIB_ppf_RtcUserLeaveInfo_GetRoomId_m092EADC04DB3E1C51753F6213E5B012A9108A57C(L_4, NULL);
 		__this->___RoomId_2 = L_5;
@@ -2919,7 +3168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RtcUserLeaveInfo__ctor_m73F2BA9077281477
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.Room::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A73F88829701F8 (Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A73F88829701F8 (Room_tCB5DAF5F3558E51C4D23D2288587BD8D19D50E5D* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -2937,7 +3186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A7
 		// public Room(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// DataStore = CLIB.DataStoreFromNative(CLIB.ppf_Room_GetDataStore(o));
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		intptr_t L_1;
 		L_1 = CLIB_ppf_Room_GetDataStore_m1F0B31E7E180A65119AFC55C8FA78606A8F77375(L_0, NULL);
 		Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* L_2;
@@ -2945,43 +3194,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Room__ctor_mA5B401D7DB201287BF39348613A7
 		__this->___DataStore_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___DataStore_0), (void*)L_2);
 		// Description = CLIB.ppf_Room_GetDescription(o);
-		intptr_t L_3 = ___o0;
+		intptr_t L_3 = ___0_o;
 		String_t* L_4;
 		L_4 = CLIB_ppf_Room_GetDescription_mEB4EA9CA77C6E9BCFC815BE739D130DCE0CFF13C(L_3, NULL);
 		__this->___Description_1 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Description_1), (void*)L_4);
 		// RoomId = CLIB.ppf_Room_GetID(o);
-		intptr_t L_5 = ___o0;
+		intptr_t L_5 = ___0_o;
 		uint64_t L_6;
 		L_6 = CLIB_ppf_Room_GetID_m13C361B9DE509CCE6DBF4D87E6D889CC0FDC30C8(L_5, NULL);
 		__this->___RoomId_2 = L_6;
 		// IsMembershipLocked = CLIB.ppf_Room_GetIsMembershipLocked(o);
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		bool L_8;
 		L_8 = CLIB_ppf_Room_GetIsMembershipLocked_mBD764E8C3065A499C905B80F69DA01147CC0D871(L_7, NULL);
 		__this->___IsMembershipLocked_3 = L_8;
 		// RoomJoinPolicy = (RoomJoinPolicy)CLIB.ppf_Room_GetJoinPolicy(o);
-		intptr_t L_9 = ___o0;
+		intptr_t L_9 = ___0_o;
 		int32_t L_10;
 		L_10 = CLIB_ppf_Room_GetJoinPolicy_m24C4471F581824B15E3B344C4A3FAA198CE53F67(L_9, NULL);
 		__this->___RoomJoinPolicy_4 = L_10;
 		// RoomJoinability = (RoomJoinability)CLIB.ppf_Room_GetJoinability(o);
-		intptr_t L_11 = ___o0;
+		intptr_t L_11 = ___0_o;
 		int32_t L_12;
 		L_12 = CLIB_ppf_Room_GetJoinability_m958ABFDE1B9363ECE134562E64BB668B95FE85EC(L_11, NULL);
 		__this->___RoomJoinability_5 = L_12;
 		// MaxUsers = CLIB.ppf_Room_GetMaxUsers(o);
-		intptr_t L_13 = ___o0;
+		intptr_t L_13 = ___0_o;
 		uint32_t L_14;
 		L_14 = CLIB_ppf_Room_GetMaxUsers_m4D68C7BBEBF0ABC3FB3045C91E958E2E170DC3C8(L_13, NULL);
 		__this->___MaxUsers_6 = L_14;
 		// RoomType = (RoomType)CLIB.ppf_Room_GetType(o);
-		intptr_t L_15 = ___o0;
+		intptr_t L_15 = ___0_o;
 		int32_t L_16;
 		L_16 = CLIB_ppf_Room_GetType_m700962CEBDAD23371A91A114BD94E77B035BEC46(L_15, NULL);
 		__this->___RoomType_8 = L_16;
 		// var ptr = CLIB.ppf_Room_GetOwner(o);
-		intptr_t L_17 = ___o0;
+		intptr_t L_17 = ___0_o;
 		intptr_t L_18;
 		L_18 = CLIB_ppf_Room_GetOwner_m0D93BFA39D4A495C3EFE75B99F9A747DDCF5EACD(L_17, NULL);
 		V_0 = L_18;
@@ -3016,7 +3265,7 @@ IL_0088:
 IL_0094:
 	{
 		// var ptr = CLIB.ppf_Room_GetUsers(o);
-		intptr_t L_24 = ___o0;
+		intptr_t L_24 = ___0_o;
 		intptr_t L_25;
 		L_25 = CLIB_ppf_Room_GetUsers_m1ECF14F038528B341AFD41851CE2D765D83D9450(L_24, NULL);
 		V_1 = L_25;
@@ -3059,7 +3308,7 @@ IL_00b0:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.RoomList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomList__ctor_m5CF31AECDB9FFFF3EBF3AD923DE48636EDAF6712 (RoomList_t3F4F71C9DCEBC4EBB1541542D617DA67E1457AF8* __this, intptr_t ___a0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomList__ctor_m5CF31AECDB9FFFF3EBF3AD923DE48636EDAF6712 (RoomList_t3F4F71C9DCEBC4EBB1541542D617DA67E1457AF8* __this, intptr_t ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3083,17 +3332,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RoomList__ctor_m5CF31AECDB9FFFF3EBF3AD92
 		// public RoomList(IntPtr a)
 		MessageArray_1__ctor_mC7EBC3393EB4CC530E06FCF5211EF9BBEBCE6212(__this, MessageArray_1__ctor_mC7EBC3393EB4CC530E06FCF5211EF9BBEBCE6212_RuntimeMethod_var);
 		// CurIndex = CLIB.ppf_RoomArray_GetPageIndex(a);
-		intptr_t L_0 = ___a0;
+		intptr_t L_0 = ___0_a;
 		int32_t L_1;
 		L_1 = CLIB_ppf_RoomArray_GetPageIndex_mAA31FF43D2D9735BB2EF5AE4B11B9E52DDB812DA(L_0, NULL);
 		__this->___CurIndex_8 = L_1;
 		// PageSize = CLIB.ppf_RoomArray_GetPageSize(a);
-		intptr_t L_2 = ___a0;
+		intptr_t L_2 = ___0_a;
 		int32_t L_3;
 		L_3 = CLIB_ppf_RoomArray_GetPageSize_mA768D6CDCB556CC906C87516E279DC5D8DED2A10(L_2, NULL);
 		__this->___PageSize_9 = L_3;
 		// NextPageParam = CLIB.ppf_RoomArray_HasNextPage(a) ? "true" : string.Empty;
-		intptr_t L_4 = ___a0;
+		intptr_t L_4 = ___0_a;
 		bool L_5;
 		L_5 = CLIB_ppf_RoomArray_HasNextPage_mA950C99EDFC9DA110FC11F2BD01B6E9460FCFCB6(L_4, NULL);
 		G_B1_0 = __this;
@@ -3122,7 +3371,7 @@ IL_0033:
 		((MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E*)G_B3_1)->___NextPageParam_6 = G_B3_0;
 		Il2CppCodeGenWriteBarrier((void**)(&((MessageArray_1_t8A29A903207EB1BF7ADC149BC7E2533479F9617E*)G_B3_1)->___NextPageParam_6), (void*)G_B3_0);
 		// int count = (int)CLIB.ppf_RoomArray_GetSize(a);
-		intptr_t L_7 = ___a0;
+		intptr_t L_7 = ___0_a;
 		uintptr_t L_8;
 		L_8 = CLIB_ppf_RoomArray_GetSize_m45370408581AA01542641B430FC8B9FAD0E647D4(L_7, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3140,7 +3389,7 @@ IL_0033:
 IL_004f:
 	{
 		// this.Add(new Room(CLIB.ppf_RoomArray_GetElement(a, (UIntPtr)i)));
-		intptr_t L_11 = ___a0;
+		intptr_t L_11 = ___0_a;
 		uint32_t L_12 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_13;
@@ -3180,7 +3429,7 @@ IL_006a:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.SportDailySummary::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E9F815578BFD37075FA956CBA7 (SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E9F815578BFD37075FA956CBA7 (SportDailySummary_t157AFBF25089D3D27A38BA94B50C7BE06FE8F227* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3192,12 +3441,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E
 		// public SportDailySummary(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// Id = CLIB.ppf_SportDailySummary_GetId(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int64_t L_1;
 		L_1 = CLIB_ppf_SportDailySummary_GetId_m95A9E59BBF28FBF82B9E0605628A2F80FE351879(L_0, NULL);
 		__this->___Id_0 = L_1;
 		// Date = Util.MilliSecondsToDateTime(CLIB.ppf_SportDailySummary_GetDate(o));
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int64_t L_3;
 		L_3 = CLIB_ppf_SportDailySummary_GetDate_m14FBE652B7AFC6B1F37B292885B6F47B7B1FEC45(L_2, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
@@ -3205,22 +3454,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E
 		L_4 = Util_MilliSecondsToDateTime_m50126A48BEFF575665E94E417DEBE9A39951559F(L_3, NULL);
 		__this->___Date_1 = L_4;
 		// DurationInSeconds = CLIB.ppf_SportDailySummary_GetDurationInSeconds(o);
-		intptr_t L_5 = ___o0;
+		intptr_t L_5 = ___0_o;
 		int32_t L_6;
 		L_6 = CLIB_ppf_SportDailySummary_GetDurationInSeconds_mBFE01FF4B2DAF1C360C750E14BF85416723C2872(L_5, NULL);
 		__this->___DurationInSeconds_2 = L_6;
 		// PlanDurationInMinutes = CLIB.ppf_SportDailySummary_GetPlanDurationInMinutes(o);
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		int32_t L_8;
 		L_8 = CLIB_ppf_SportDailySummary_GetPlanDurationInMinutes_m421E5F6A4B62E30DAB09AE43424CE929FF9263D6(L_7, NULL);
 		__this->___PlanDurationInMinutes_3 = L_8;
 		// Calorie = CLIB.ppf_SportDailySummary_GetCalorie(o);
-		intptr_t L_9 = ___o0;
+		intptr_t L_9 = ___0_o;
 		double L_10;
 		L_10 = CLIB_ppf_SportDailySummary_GetCalorie_m7A3AA191BD3BE44C07B34DBB3CC95460E9FD873F(L_9, NULL);
 		__this->___Calorie_4 = L_10;
 		// PlanCalorie = CLIB.ppf_SportDailySummary_GetPlanCalorie(o);
-		intptr_t L_11 = ___o0;
+		intptr_t L_11 = ___0_o;
 		double L_12;
 		L_12 = CLIB_ppf_SportDailySummary_GetPlanCalorie_m5B3D4A4FEAD4CBC7BCE25C47933DD941FB8EC29A(L_11, NULL);
 		__this->___PlanCalorie_5 = L_12;
@@ -3237,7 +3486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummary__ctor_m57260C499581C9E
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.SportDailySummaryList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645D775BFEAB1C915D77FCA5A25FEAB1 (SportDailySummaryList_t57C835C93904EF5EEFA7C7BDC79AD9B7801E219B* __this, intptr_t ___a0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645D775BFEAB1C915D77FCA5A25FEAB1 (SportDailySummaryList_t57C835C93904EF5EEFA7C7BDC79AD9B7801E219B* __this, intptr_t ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3255,7 +3504,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645
 		// public SportDailySummaryList(IntPtr a)
 		MessageArray_1__ctor_mA979AAEE168F9640490FF54CC91E4A42248A3DD3(__this, MessageArray_1__ctor_mA979AAEE168F9640490FF54CC91E4A42248A3DD3_RuntimeMethod_var);
 		// var count = (int)CLIB.ppf_SportDailySummaryArray_GetSize(a);
-		intptr_t L_0 = ___a0;
+		intptr_t L_0 = ___0_a;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_SportDailySummaryArray_GetSize_m9F3A52497FFD1F31C7173BF514579B275F69CE6F(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3273,7 +3522,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportDailySummaryList__ctor_mAA714F61645
 IL_001d:
 	{
 		// this.Add(new SportDailySummary(CLIB.ppf_SportDailySummaryArray_GetElement(a, (UIntPtr)i)));
-		intptr_t L_4 = ___a0;
+		intptr_t L_4 = ___0_a;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_6;
@@ -3313,7 +3562,7 @@ IL_0039:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.SportSummary::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportSummary__ctor_mEC86645D41A0BB22D726A214B99592470EBE4D32 (SportSummary_t16F36734D6C51BC8F25904D05E2EFA8B52B90DEF* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportSummary__ctor_mEC86645D41A0BB22D726A214B99592470EBE4D32 (SportSummary_t16F36734D6C51BC8F25904D05E2EFA8B52B90DEF* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3325,17 +3574,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportSummary__ctor_mEC86645D41A0BB22D726
 		// public SportSummary(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// DurationInSeconds = CLIB.ppf_SportSummary_GetDurationInSeconds(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int64_t L_1;
 		L_1 = CLIB_ppf_SportSummary_GetDurationInSeconds_m9B88949A0D9165A3C95A686DF236B489B31E8BFC(L_0, NULL);
 		__this->___DurationInSeconds_0 = L_1;
 		// Calorie = CLIB.ppf_SportSummary_GetCalorie(o);
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		double L_3;
 		L_3 = CLIB_ppf_SportSummary_GetCalorie_m96AC790C6F79415D832BBF42703BB819EEA21A9F(L_2, NULL);
 		__this->___Calorie_1 = L_3;
 		// StartTime = Util.MilliSecondsToDateTime(CLIB.ppf_SportSummary_GetStartTime(o));
-		intptr_t L_4 = ___o0;
+		intptr_t L_4 = ___0_o;
 		int64_t L_5;
 		L_5 = CLIB_ppf_SportSummary_GetStartTime_m738B9DFD848500B880181F3BCFDCACCA3F366F91(L_4, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
@@ -3343,7 +3592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportSummary__ctor_mEC86645D41A0BB22D726
 		L_6 = Util_MilliSecondsToDateTime_m50126A48BEFF575665E94E417DEBE9A39951559F(L_5, NULL);
 		__this->___StartTime_2 = L_6;
 		// EndTime = Util.MilliSecondsToDateTime(CLIB.ppf_SportSummary_GetEndTime(o));
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		int64_t L_8;
 		L_8 = CLIB_ppf_SportSummary_GetEndTime_mDE51E609B9E533B3C1AF37B7C55F91AD358AD725(L_7, NULL);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_9;
@@ -3362,7 +3611,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportSummary__ctor_mEC86645D41A0BB22D726
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.SportUserInfo::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportUserInfo__ctor_mFC855C50FC4B5D9F1A8218C3A06BC0DEA99BE6DB (SportUserInfo_t4ED6C986AF2629CF8CE961DD6E035BEC64C47E30* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportUserInfo__ctor_mFC855C50FC4B5D9F1A8218C3A06BC0DEA99BE6DB (SportUserInfo_t4ED6C986AF2629CF8CE961DD6E035BEC64C47E30* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3374,12 +3623,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportUserInfo__ctor_mFC855C50FC4B5D9F1A8
 		// public SportUserInfo(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// Gender = CLIB.ppf_SportUserInfo_GetGender(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		int32_t L_1;
 		L_1 = CLIB_ppf_SportUserInfo_GetGender_m71CC42932486ADDCB8B93773545354BEF4EE6D46(L_0, NULL);
 		__this->___Gender_0 = L_1;
 		// Birthday = Util.MilliSecondsToDateTime(CLIB.ppf_SportUserInfo_GetBirthday(o));
-		intptr_t L_2 = ___o0;
+		intptr_t L_2 = ___0_o;
 		int64_t L_3;
 		L_3 = CLIB_ppf_SportUserInfo_GetBirthday_mE81318FE7536F5C15BBF999CE650F9F11D41E53D(L_2, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_il2cpp_TypeInfo_var);
@@ -3387,32 +3636,32 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportUserInfo__ctor_mFC855C50FC4B5D9F1A8
 		L_4 = Util_MilliSecondsToDateTime_m50126A48BEFF575665E94E417DEBE9A39951559F(L_3, NULL);
 		__this->___Birthday_1 = L_4;
 		// Stature = CLIB.ppf_SportUserInfo_GetStature(o);
-		intptr_t L_5 = ___o0;
+		intptr_t L_5 = ___0_o;
 		int32_t L_6;
 		L_6 = CLIB_ppf_SportUserInfo_GetStature_m8BBDE449B416E186F627FC14F0CC996C6D9A8623(L_5, NULL);
 		__this->___Stature_2 = L_6;
 		// Weight = CLIB.ppf_SportUserInfo_GetWeight(o);
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		int32_t L_8;
 		L_8 = CLIB_ppf_SportUserInfo_GetWeight_mBB924C90C0F9AE1CA7E6DDC61FD57DB3A7FD2641(L_7, NULL);
 		__this->___Weight_3 = L_8;
 		// SportLevel = CLIB.ppf_SportUserInfo_GetSportLevel(o);
-		intptr_t L_9 = ___o0;
+		intptr_t L_9 = ___0_o;
 		int32_t L_10;
 		L_10 = CLIB_ppf_SportUserInfo_GetSportLevel_mC777610CBCE421D9F1568E0AE2B0B063AB06D16E(L_9, NULL);
 		__this->___SportLevel_4 = L_10;
 		// DailyDurationInMinutes = CLIB.ppf_SportUserInfo_GetDailyDurationInMinutes(o);
-		intptr_t L_11 = ___o0;
+		intptr_t L_11 = ___0_o;
 		int32_t L_12;
 		L_12 = CLIB_ppf_SportUserInfo_GetDailyDurationInMinutes_m42CEA5A37D074C854D6EC949D943AF9C3D46CCCA(L_11, NULL);
 		__this->___DailyDurationInMinutes_5 = L_12;
 		// DaysPerWeek = CLIB.ppf_SportUserInfo_GetDaysPerWeek(o);
-		intptr_t L_13 = ___o0;
+		intptr_t L_13 = ___0_o;
 		int32_t L_14;
 		L_14 = CLIB_ppf_SportUserInfo_GetDaysPerWeek_mD9A804E974190994F8C92205B74EE18C86B76CB6(L_13, NULL);
 		__this->___DaysPerWeek_6 = L_14;
 		// SportTarget = CLIB.ppf_SportUserInfo_GetSportTarget(o);
-		intptr_t L_15 = ___o0;
+		intptr_t L_15 = ___0_o;
 		int32_t L_16;
 		L_16 = CLIB_ppf_SportUserInfo_GetSportTarget_m5ABB84CCF1332468A6922217F60F60173B4D3030(L_15, NULL);
 		__this->___SportTarget_7 = L_16;
@@ -3429,95 +3678,95 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SportUserInfo__ctor_mFC855C50FC4B5D9F1A8
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.User::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m65AB5AB78CA800CFE2E148D87161D5B3F4CA9AEB (User_t4A57578F9001EB8B02745E9305A72B29570F459B* __this, intptr_t ___obj0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m65AB5AB78CA800CFE2E148D87161D5B3F4CA9AEB (User_t4A57578F9001EB8B02745E9305A72B29570F459B* __this, intptr_t ___0_obj, const RuntimeMethod* method) 
 {
 	{
 		// public User(IntPtr obj)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// DisplayName = CLIB.ppf_User_GetDisplayName(obj);
-		intptr_t L_0 = ___obj0;
+		intptr_t L_0 = ___0_obj;
 		String_t* L_1;
 		L_1 = CLIB_ppf_User_GetDisplayName_m7F18ED9B77264FAC59E9D9AC61B6724C5507880F(L_0, NULL);
 		__this->___DisplayName_0 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___DisplayName_0), (void*)L_1);
 		// ImageUrl = CLIB.ppf_User_GetImageUrl(obj);
-		intptr_t L_2 = ___obj0;
+		intptr_t L_2 = ___0_obj;
 		String_t* L_3;
 		L_3 = CLIB_ppf_User_GetImageUrl_m58A67CC084D255C1A8855587A3A2EECC82BBCCA1(L_2, NULL);
 		__this->___ImageUrl_1 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ImageUrl_1), (void*)L_3);
 		// ID = CLIB.ppf_User_GetID(obj);
-		intptr_t L_4 = ___obj0;
+		intptr_t L_4 = ___0_obj;
 		String_t* L_5;
 		L_5 = CLIB_ppf_User_GetID_mC41EEFD63BCDAE6E5D3F8A21B3A0B28F0B54822E(L_4, NULL);
 		__this->___ID_2 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ID_2), (void*)L_5);
 		// InviteToken = CLIB.ppf_User_GetInviteToken(obj);
-		intptr_t L_6 = ___obj0;
+		intptr_t L_6 = ___0_obj;
 		String_t* L_7;
 		L_7 = CLIB_ppf_User_GetInviteToken_m377024C4A883A4F589D9B7EB0B0D7413EDF3EE24(L_6, NULL);
 		__this->___InviteToken_12 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___InviteToken_12), (void*)L_7);
 		// PresenceStatus = CLIB.ppf_User_GetPresenceStatus(obj);
-		intptr_t L_8 = ___obj0;
+		intptr_t L_8 = ___0_obj;
 		int32_t L_9;
 		L_9 = CLIB_ppf_User_GetPresenceStatus_m7F96CA0E4381A227C959BD40E48A8A5B1286E3ED(L_8, NULL);
 		__this->___PresenceStatus_3 = L_9;
 		// Gender = CLIB.ppf_User_GetGender(obj);
-		intptr_t L_10 = ___obj0;
+		intptr_t L_10 = ___0_obj;
 		int32_t L_11;
 		L_11 = CLIB_ppf_User_GetGender_m9E52B2729DE3B85223913B65FBE9DC39A3951F7F(L_10, NULL);
 		__this->___Gender_4 = L_11;
 		// Presence = CLIB.ppf_User_GetPresence(obj);
-		intptr_t L_12 = ___obj0;
+		intptr_t L_12 = ___0_obj;
 		String_t* L_13;
 		L_13 = CLIB_ppf_User_GetPresence_m8CD577DD7E1A9928D3ECDA2C45A1DDB335F77599(L_12, NULL);
 		__this->___Presence_5 = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___Presence_5), (void*)L_13);
 		// PresenceDeeplinkMessage = CLIB.ppf_User_GetPresenceDeeplinkMessage(obj);
-		intptr_t L_14 = ___obj0;
+		intptr_t L_14 = ___0_obj;
 		String_t* L_15;
 		L_15 = CLIB_ppf_User_GetPresenceDeeplinkMessage_mE0C33D72B6B01CABFEB2F28923A9BC6067DF2E37(L_14, NULL);
 		__this->___PresenceDeeplinkMessage_6 = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___PresenceDeeplinkMessage_6), (void*)L_15);
 		// PresenceDestinationApiName = CLIB.ppf_User_GetPresenceDestinationApiName(obj);
-		intptr_t L_16 = ___obj0;
+		intptr_t L_16 = ___0_obj;
 		String_t* L_17;
 		L_17 = CLIB_ppf_User_GetPresenceDestinationApiName_mC4E6D1A5205241FBB09CD274D126C000558B37BB(L_16, NULL);
 		__this->___PresenceDestinationApiName_7 = L_17;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___PresenceDestinationApiName_7), (void*)L_17);
 		// PresenceLobbySessionId = CLIB.ppf_User_GetPresenceLobbySessionId(obj);
-		intptr_t L_18 = ___obj0;
+		intptr_t L_18 = ___0_obj;
 		String_t* L_19;
 		L_19 = CLIB_ppf_User_GetPresenceLobbySessionId_mA7F62B44ACAF48B30160B301BB37C0E620DAA7B3(L_18, NULL);
 		__this->___PresenceLobbySessionId_8 = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___PresenceLobbySessionId_8), (void*)L_19);
 		// PresenceMatchSessionId = CLIB.ppf_User_GetPresenceMatchSessionId(obj);
-		intptr_t L_20 = ___obj0;
+		intptr_t L_20 = ___0_obj;
 		String_t* L_21;
 		L_21 = CLIB_ppf_User_GetPresenceMatchSessionId_mDABDDE2B355EB1F0FACFEB3BB6236B81EDBC0618(L_20, NULL);
 		__this->___PresenceMatchSessionId_9 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___PresenceMatchSessionId_9), (void*)L_21);
 		// PresenceExtra = CLIB.ppf_User_GetPresenceExtra(obj);
-		intptr_t L_22 = ___obj0;
+		intptr_t L_22 = ___0_obj;
 		String_t* L_23;
 		L_23 = CLIB_ppf_User_GetPresenceExtra_m0B782AEDC7AB4ECADCAFEC2C4422E50A76F1404F(L_22, NULL);
 		__this->___PresenceExtra_10 = L_23;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___PresenceExtra_10), (void*)L_23);
 		// SmallImageUrl = CLIB.ppf_User_GetSmallImageUrl(obj);
-		intptr_t L_24 = ___obj0;
+		intptr_t L_24 = ___0_obj;
 		String_t* L_25;
 		L_25 = CLIB_ppf_User_GetSmallImageUrl_mB864AC2409AACE66CF7E578A4D1E3F5DDB08A562(L_24, NULL);
 		__this->___SmallImageUrl_11 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___SmallImageUrl_11), (void*)L_25);
 		// InviteToken = CLIB.ppf_User_GetInviteToken(obj);
-		intptr_t L_26 = ___obj0;
+		intptr_t L_26 = ___0_obj;
 		String_t* L_27;
 		L_27 = CLIB_ppf_User_GetInviteToken_m377024C4A883A4F589D9B7EB0B0D7413EDF3EE24(L_26, NULL);
 		__this->___InviteToken_12 = L_27;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___InviteToken_12), (void*)L_27);
 		// StoreRegion = CLIB.ppf_User_GetStoreRegion(obj);
-		intptr_t L_28 = ___obj0;
+		intptr_t L_28 = ___0_obj;
 		String_t* L_29;
 		L_29 = CLIB_ppf_User_GetStoreRegion_m18DFD5413237B3433AACECF3E76EF0E085CE6D17(L_28, NULL);
 		__this->___StoreRegion_13 = L_29;
@@ -3535,7 +3784,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void User__ctor_m65AB5AB78CA800CFE2E148D87161
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.UserList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042C5268ED720B596A1 (UserList_t4FBD372AD727B86FE2C738E38D1BCAE7C3BB7281* __this, intptr_t ___a0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042C5268ED720B596A1 (UserList_t4FBD372AD727B86FE2C738E38D1BCAE7C3BB7281* __this, intptr_t ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3553,7 +3802,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042
 		// public UserList(IntPtr a)
 		MessageArray_1__ctor_mB9282B974A69F693F481FD1242C22EA48D3DBB94(__this, MessageArray_1__ctor_mB9282B974A69F693F481FD1242C22EA48D3DBB94_RuntimeMethod_var);
 		// var count = (int)CLIB.ppf_UserArray_GetSize(a);
-		intptr_t L_0 = ___a0;
+		intptr_t L_0 = ___0_a;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_UserArray_GetSize_m1B47B3FC655ECEE76E8E58D651BFF2B3576AC17E(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3571,7 +3820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserList__ctor_m6ADA501463DDB1301F3FC042
 IL_001d:
 	{
 		// this.Add(new User(CLIB.ppf_UserArray_GetElement(a, (UIntPtr)i)));
-		intptr_t L_4 = ___a0;
+		intptr_t L_4 = ___0_a;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_6;
@@ -3599,7 +3848,7 @@ IL_0039:
 	}
 	{
 		// NextPageParam = CLIB.ppf_UserArray_GetNextPageParam(a);
-		intptr_t L_12 = ___a0;
+		intptr_t L_12 = ___0_a;
 		String_t* L_13;
 		L_13 = CLIB_ppf_UserArray_GetNextPageParam_m31C1FD07F535A18BF41D519120092FC9E8D1611A(L_12, NULL);
 		((MessageArray_1_t8FB2AFA18B020CDB5F979EA0D8D62BE101BE1EC2*)__this)->___NextPageParam_6 = L_13;
@@ -3617,18 +3866,18 @@ IL_0039:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.LaunchFriendResult::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchFriendResult__ctor_mCD16C4DDAEEF94E5C022273C4399A3B510D90277 (LaunchFriendResult_t4B8A2C26D6B6DFBD9FC0A966018DAC3DF1BF8370* __this, intptr_t ___obj0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchFriendResult__ctor_mCD16C4DDAEEF94E5C022273C4399A3B510D90277 (LaunchFriendResult_t4B8A2C26D6B6DFBD9FC0A966018DAC3DF1BF8370* __this, intptr_t ___0_obj, const RuntimeMethod* method) 
 {
 	{
 		// public LaunchFriendResult(IntPtr obj)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// DidCancel = CLIB.ppf_LaunchFriendRequestFlowResult_GetDidCancel(obj);
-		intptr_t L_0 = ___obj0;
+		intptr_t L_0 = ___0_obj;
 		bool L_1;
 		L_1 = CLIB_ppf_LaunchFriendRequestFlowResult_GetDidCancel_m1AD8347D357CECAC6A55C7AA0246BBE6D6FE39B5(L_0, NULL);
 		__this->___DidCancel_0 = L_1;
 		// DidSendRequest = CLIB.ppf_LaunchFriendRequestFlowResult_GetDidSendRequest(obj);
-		intptr_t L_2 = ___obj0;
+		intptr_t L_2 = ___0_obj;
 		bool L_3;
 		L_3 = CLIB_ppf_LaunchFriendRequestFlowResult_GetDidSendRequest_mD10E3D65E746B06F58A2FE322B33423CF4EAF52D(L_2, NULL);
 		__this->___DidSendRequest_1 = L_3;
@@ -3645,7 +3894,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LaunchFriendResult__ctor_mCD16C4DDAEEF94
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.UserRoom::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674234BCEC7301B9F03 (UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674234BCEC7301B9F03 (UserRoom_t79DBE9A132DE86412643A0D29CB6959379090B32* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3661,7 +3910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674
 		// public UserRoom(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// User = new User(CLIB.ppf_UserAndRoom_GetUser(o));
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		intptr_t L_1;
 		L_1 = CLIB_ppf_UserAndRoom_GetUser_m157BC1471B6D1081B397ADBF807AB818348A3A1A(L_0, NULL);
 		User_t4A57578F9001EB8B02745E9305A72B29570F459B* L_2 = (User_t4A57578F9001EB8B02745E9305A72B29570F459B*)il2cpp_codegen_object_new(User_t4A57578F9001EB8B02745E9305A72B29570F459B_il2cpp_TypeInfo_var);
@@ -3670,7 +3919,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoom__ctor_m3CC17B91ED840F0E6975E674
 		__this->___User_0 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___User_0), (void*)L_2);
 		// var ptr = CLIB.ppf_UserAndRoom_GetRoom(o);
-		intptr_t L_3 = ___o0;
+		intptr_t L_3 = ___0_o;
 		intptr_t L_4;
 		L_4 = CLIB_ppf_UserAndRoom_GetRoom_m2E220803CB16CBE55D79D567E8F3CABE81D83CFE(L_3, NULL);
 		V_0 = L_4;
@@ -3709,7 +3958,7 @@ IL_0037:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.UserRoomList::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2BCB233223EC40547F36A1 (UserRoomList_t1356EC457562D614E92DDCE3D99004CB86CC9FD2* __this, intptr_t ___a0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2BCB233223EC40547F36A1 (UserRoomList_t1356EC457562D614E92DDCE3D99004CB86CC9FD2* __this, intptr_t ___0_a, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3727,7 +3976,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2B
 		// public UserRoomList(IntPtr a)
 		MessageArray_1__ctor_mC9A4F0DDF161BCD0B98654B9D0EB3BB88C5FEC7D(__this, MessageArray_1__ctor_mC9A4F0DDF161BCD0B98654B9D0EB3BB88C5FEC7D_RuntimeMethod_var);
 		// var count = (int)CLIB.ppf_UserAndRoomArray_GetSize(a);
-		intptr_t L_0 = ___a0;
+		intptr_t L_0 = ___0_a;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_UserAndRoomArray_GetSize_m14CBF59FA42C319C705958304E3FE7FC3DA051F1(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3745,7 +3994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UserRoomList__ctor_m56D5B0A318930E1EBA2B
 IL_001d:
 	{
 		// this.Add(new UserRoom(CLIB.ppf_UserAndRoomArray_GetElement(a, (UIntPtr)i)));
-		intptr_t L_4 = ___a0;
+		intptr_t L_4 = ___0_a;
 		int32_t L_5 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_6;
@@ -3773,7 +4022,7 @@ IL_0039:
 	}
 	{
 		// NextPageParam = CLIB.ppf_UserAndRoomArray_GetNextPageParam(a);
-		intptr_t L_12 = ___a0;
+		intptr_t L_12 = ___0_a;
 		String_t* L_13;
 		L_13 = CLIB_ppf_UserAndRoomArray_GetNextPageParam_m30A7410D812231C45E43B5A4747BA8DA1F5A5334(L_12, NULL);
 		((MessageArray_1_t785B10FA5D7BE1D6C33B67DD822B88EAEA2F29A3*)__this)->___NextPageParam_6 = L_13;
@@ -3791,7 +4040,7 @@ IL_0039:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void Pico.Platform.Models.PermissionResult::.ctor(System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionResult__ctor_mEE6A0FB5268F3D3AE70698B36D27CD84ED2F30AF (PermissionResult_t4919C9F18AE6ED16BEED29FD57489D329A0A59ED* __this, intptr_t ___o0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionResult__ctor_mEE6A0FB5268F3D3AE70698B36D27CD84ED2F30AF (PermissionResult_t4919C9F18AE6ED16BEED29FD57489D329A0A59ED* __this, intptr_t ___0_o, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3806,7 +4055,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PermissionResult__ctor_mEE6A0FB5268F3D3A
 		// public PermissionResult(IntPtr o)
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		// int sz = (int)CLIB.ppf_PermissionResult_GetAuthorizedPermissionsSize(o);
-		intptr_t L_0 = ___o0;
+		intptr_t L_0 = ___0_o;
 		uintptr_t L_1;
 		L_1 = CLIB_ppf_PermissionResult_GetAuthorizedPermissionsSize_mC0764542BF7D615FDB4203A1016864686BD81440(L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
@@ -3828,7 +4077,7 @@ IL_0022:
 		// AuthorizedPermissions[i] = CLIB.ppf_PermissionResult_GetAuthorizedPermissions(o, (UIntPtr)i);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_5 = __this->___AuthorizedPermissions_0;
 		int32_t L_6 = V_1;
-		intptr_t L_7 = ___o0;
+		intptr_t L_7 = ___0_o;
 		int32_t L_8 = V_1;
 		il2cpp_codegen_runtime_class_init_inline(UIntPtr_t_il2cpp_TypeInfo_var);
 		uintptr_t L_9;
@@ -3855,13 +4104,13 @@ IL_003b:
 	}
 	{
 		// AccessToken = CLIB.ppf_PermissionResult_GetAccessToken(o);
-		intptr_t L_14 = ___o0;
+		intptr_t L_14 = ___0_o;
 		String_t* L_15;
 		L_15 = CLIB_ppf_PermissionResult_GetAccessToken_m69EA3290A74FEB53F6070AB377C20B2ABC50E1C9(L_14, NULL);
 		__this->___AccessToken_1 = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___AccessToken_1), (void*)L_15);
 		// UserID = CLIB.ppf_PermissionResult_GetUserID(o);
-		intptr_t L_16 = ___o0;
+		intptr_t L_16 = ___0_o;
 		String_t* L_17;
 		L_17 = CLIB_ppf_PermissionResult_GetUserID_m985FB5253F45123C7E01E50070663B4DA690CEC8(L_16, NULL);
 		__this->___UserID_2 = L_17;
@@ -3873,7 +4122,7 @@ IL_003b:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -3897,7 +4146,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
-		RuntimeObject* L_8 = ___item0;
+		RuntimeObject* L_8 = ___0_item;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
@@ -3905,7 +4154,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 
 IL_0034:
 	{
-		RuntimeObject* L_9 = ___item0;
+		RuntimeObject* L_9 = ___0_item;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}

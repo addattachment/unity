@@ -8,7 +8,6 @@
 
 
 #include <limits>
-#include <stdint.h>
 
 
 struct VirtualActionInvoker0
@@ -1542,12 +1541,6 @@ struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<WebSocketSharp.Net.Cookie>
 struct List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7  : public RuntimeObject
 {
@@ -1559,12 +1552,6 @@ struct List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	CookieU5BU5D_t06FB7297E22BDC1EC182B9EDC1AE52FB695A8933* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>
@@ -1580,12 +1567,6 @@ struct List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	HttpListenerAsyncResultU5BU5D_t320827F1B0DBD67F33D1CF549CBC3ED550DBF6D8* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>
 struct List_1_t34157D301768D07BD0345C16404819B1629D46C2  : public RuntimeObject
 {
@@ -1597,12 +1578,6 @@ struct List_1_t34157D301768D07BD0345C16404819B1629D46C2  : public RuntimeObject
 	int32_t ____version_3;
 	// System.Object System.Collections.Generic.List`1::_syncRoot
 	RuntimeObject* ____syncRoot_4;
-};
-
-struct List_1_t34157D301768D07BD0345C16404819B1629D46C2_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D* ___s_emptyArray_5;
 };
 
 // System.Collections.Generic.List`1<System.Object>
@@ -1618,12 +1593,6 @@ struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.List`1<System.String>
 struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
 {
@@ -1637,19 +1606,12 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD  : public RuntimeObject
 	RuntimeObject* ____syncRoot_4;
 };
 
-struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___s_emptyArray_5;
-};
-
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.String,WebSocketSharp.Net.HttpHeaderInfo>
 struct ValueCollection_t4207289E74C93B2B7A42D4804AFF5DA5EC861226  : public RuntimeObject
 {
 	// System.Collections.Generic.Dictionary`2<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection::_dictionary
 	Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* ____dictionary_0;
 };
-struct Il2CppArrayBounds;
 
 // WebSocketSharp.Net.AuthenticationBase
 struct AuthenticationBase_tBF6E3ADBD81587D47A5A75276D954BD922690517  : public RuntimeObject
@@ -1700,14 +1662,6 @@ struct ClaimsPrincipal_t89FDDE5202B3ACA5770F1BE38D14615C94086F2D  : public Runti
 	String_t* ___m_serializedClaimsIdentities_1;
 	// System.Collections.Generic.List`1<System.Security.Claims.ClaimsIdentity> System.Security.Claims.ClaimsPrincipal::m_identities
 	List_1_t206E0A79B9344DF051AC5785FDB177444DC37EA9* ___m_identities_2;
-};
-
-struct ClaimsPrincipal_t89FDDE5202B3ACA5770F1BE38D14615C94086F2D_StaticFields
-{
-	// System.Func`2<System.Collections.Generic.IEnumerable`1<System.Security.Claims.ClaimsIdentity>,System.Security.Claims.ClaimsIdentity> System.Security.Claims.ClaimsPrincipal::s_identitySelector
-	Func_2_tA5771E9D24D52C033031611D7AB2AB65DEC96016* ___s_identitySelector_3;
-	// System.Func`1<System.Security.Claims.ClaimsPrincipal> System.Security.Claims.ClaimsPrincipal::s_principalSelector
-	Func_1_tBF78A7C5465BEAFB7E0437596541E97B7B3C8D1E* ___s_principalSelector_4;
 };
 
 // WebSocketSharp.Net.CookieCollection
@@ -1776,28 +1730,6 @@ struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0  : public RuntimeOb
 	CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D* ___m_cultureData_28;
 	// System.Boolean System.Globalization.CultureInfo::m_isInherited
 	bool ___m_isInherited_29;
-};
-
-struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
-{
-	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::invariant_culture_info
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___invariant_culture_info_0;
-	// System.Object System.Globalization.CultureInfo::shared_table_lock
-	RuntimeObject* ___shared_table_lock_1;
-	// System.Globalization.CultureInfo System.Globalization.CultureInfo::default_current_culture
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___default_current_culture_2;
-	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentUICulture
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentUICulture_34;
-	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentCulture
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentCulture_35;
-	// System.Collections.Generic.Dictionary`2<System.Int32,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_number
-	Dictionary_2_t9FA6D82CAFC18769F7515BB51D1C56DAE09381C3* ___shared_by_number_36;
-	// System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_name
-	Dictionary_2_tE1603CE612C16451D1E56FF4D4859D4FE4087C28* ___shared_by_name_37;
-	// System.Globalization.CultureInfo System.Globalization.CultureInfo::s_UserPreferredCultureInfoInAppX
-	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_UserPreferredCultureInfoInAppX_38;
-	// System.Boolean System.Globalization.CultureInfo::IsTaiwanSku
-	bool ___IsTaiwanSku_39;
 };
 // Native definition for P/Invoke marshalling of System.Globalization.CultureInfo
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_marshaled_pinvoke
@@ -1879,30 +1811,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095  : public RuntimeObjec
 	DecoderFallback_t7324102215E4ED41EC065C02EB501CB0BC23CD90* ___decoderFallback_14;
 };
 
-struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
-{
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
-	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
-	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
-	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
-	// System.Object System.Text.Encoding::s_InternalSyncObject
-	RuntimeObject* ___s_InternalSyncObject_15;
-};
-
 // System.Net.EndPoint
 struct EndPoint_t6233F4E2EB9F0F2D36E187F12BE050E6D8B73564  : public RuntimeObject
 {
@@ -1931,21 +1839,9 @@ struct EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731  : public Runt
 	RuntimeObject* ____unregisteredSync_9;
 };
 
-struct EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731_StaticFields
-{
-	// System.String WebSocketSharp.Net.EndPointListener::_defaultCertFolderPath
-	String_t* ____defaultCertFolderPath_1;
-};
-
 // WebSocketSharp.Net.EndPointManager
 struct EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F  : public RuntimeObject
 {
-};
-
-struct EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_StaticFields
-{
-	// System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener> WebSocketSharp.Net.EndPointManager::_endpoints
-	Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* ____endpoints_0;
 };
 
 // WebSocketSharp.Net.HttpConnection
@@ -2045,12 +1941,6 @@ struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387  : public RuntimeO
 	List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* ____waitQueue_19;
 	// System.Object WebSocketSharp.Net.HttpListener::_waitQueueSync
 	RuntimeObject* ____waitQueueSync_20;
-};
-
-struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387_StaticFields
-{
-	// System.String WebSocketSharp.Net.HttpListener::_defaultRealm
-	String_t* ____defaultRealm_9;
 };
 
 // WebSocketSharp.Net.HttpListenerAsyncResult
@@ -2194,27 +2084,9 @@ struct HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F  : public RuntimeOb
 {
 };
 
-struct HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields
-{
-	// System.Collections.Generic.Dictionary`2<System.String,System.Char> WebSocketSharp.Net.HttpUtility::_entities
-	Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* ____entities_0;
-	// System.Char[] WebSocketSharp.Net.HttpUtility::_hexChars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____hexChars_1;
-	// System.Object WebSocketSharp.Net.HttpUtility::_sync
-	RuntimeObject* ____sync_2;
-};
-
 // WebSocketSharp.Net.HttpVersion
 struct HttpVersion_t2C7A10EB9472F5CBEE335426D23C90378989F10A  : public RuntimeObject
 {
-};
-
-struct HttpVersion_t2C7A10EB9472F5CBEE335426D23C90378989F10A_StaticFields
-{
-	// System.Version WebSocketSharp.Net.HttpVersion::Version10
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___Version10_0;
-	// System.Version WebSocketSharp.Net.HttpVersion::Version11
-	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___Version11_1;
 };
 
 // System.Net.IPAddress
@@ -2228,24 +2100,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484  : public RuntimeObje
 	String_t* ____toString_10;
 	// System.Int32 System.Net.IPAddress::_hashCode
 	int32_t ____hashCode_11;
-};
-
-struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
-{
-	// System.Net.IPAddress System.Net.IPAddress::Any
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Any_0;
-	// System.Net.IPAddress System.Net.IPAddress::Loopback
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Loopback_1;
-	// System.Net.IPAddress System.Net.IPAddress::Broadcast
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Broadcast_2;
-	// System.Net.IPAddress System.Net.IPAddress::None
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___None_3;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6Any
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Any_5;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6Loopback
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Loopback_6;
-	// System.Net.IPAddress System.Net.IPAddress::IPv6None
-	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6None_7;
 };
 
 // WebSocketSharp.Logger
@@ -2306,12 +2160,6 @@ struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC  : pub
 	RuntimeObject* ____syncRoot_16;
 };
 
-struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
-{
-	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
-	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
-};
-
 // WebSocketSharp.Net.NetworkCredential
 struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7  : public RuntimeObject
 {
@@ -2323,12 +2171,6 @@ struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7  : public Run
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____roles_3;
 	// System.String WebSocketSharp.Net.NetworkCredential::_username
 	String_t* ____username_4;
-};
-
-struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7_StaticFields
-{
-	// System.String[] WebSocketSharp.Net.NetworkCredential::_noRoles
-	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____noRoles_1;
 };
 
 // WebSocketSharp.Net.ReadBufferState
@@ -2431,66 +2273,6 @@ struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E  : public RuntimeObject
 	int32_t ___ID_33;
 };
 
-struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E_StaticFields
-{
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::AcceptCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___AcceptCompletedHandler_0;
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::ReceiveCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___ReceiveCompletedHandler_1;
-	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::SendCompletedHandler
-	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___SendCompletedHandler_2;
-	// System.Net.Sockets.Socket/TaskSocketAsyncEventArgs`1<System.Net.Sockets.Socket> System.Net.Sockets.Socket::s_rentedSocketSentinel
-	TaskSocketAsyncEventArgs_1_tEB937620E5B15D91E5BFEFFA707CF800930F8401* ___s_rentedSocketSentinel_3;
-	// System.Net.Sockets.Socket/Int32TaskSocketAsyncEventArgs System.Net.Sockets.Socket::s_rentedInt32Sentinel
-	Int32TaskSocketAsyncEventArgs_t36C5FC82499ED9DAFE7F05C38EF92D77A0B248E9* ___s_rentedInt32Sentinel_4;
-	// System.Threading.Tasks.Task`1<System.Int32> System.Net.Sockets.Socket::s_zeroTask
-	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ___s_zeroTask_5;
-	// System.Object System.Net.Sockets.Socket::s_InternalSyncObject
-	RuntimeObject* ___s_InternalSyncObject_7;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv4
-	bool ___s_SupportsIPv4_8;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv6
-	bool ___s_SupportsIPv6_9;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_OSSupportsIPv6
-	bool ___s_OSSupportsIPv6_10;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_Initialized
-	bool ___s_Initialized_11;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_LoggingEnabled
-	bool ___s_LoggingEnabled_12;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_PerfCountersEnabled
-	bool ___s_PerfCountersEnabled_13;
-	// System.AsyncCallback System.Net.Sockets.Socket::AcceptAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___AcceptAsyncCallback_34;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptCallback_35;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptReceiveCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptReceiveCallback_36;
-	// System.AsyncCallback System.Net.Sockets.Socket::ConnectAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ConnectAsyncCallback_37;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginConnectCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginConnectCallback_38;
-	// System.AsyncCallback System.Net.Sockets.Socket::DisconnectAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___DisconnectAsyncCallback_39;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginDisconnectCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginDisconnectCallback_40;
-	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveAsyncCallback_41;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveCallback_42;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveGenericCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveGenericCallback_43;
-	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveFromAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveFromAsyncCallback_44;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveFromCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveFromCallback_45;
-	// System.AsyncCallback System.Net.Sockets.Socket::SendAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendAsyncCallback_46;
-	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginSendGenericCallback
-	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginSendGenericCallback_47;
-	// System.AsyncCallback System.Net.Sockets.Socket::SendToAsyncCallback
-	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendToAsyncCallback_48;
-};
-
 // System.String
 struct String_t  : public RuntimeObject
 {
@@ -2498,12 +2280,6 @@ struct String_t  : public RuntimeObject
 	int32_t ____stringLength_4;
 	// System.Char System.String::_firstChar
 	Il2CppChar ____firstChar_5;
-};
-
-struct String_t_StaticFields
-{
-	// System.String System.String::Empty
-	String_t* ___Empty_6;
 };
 
 // System.Text.StringBuilder
@@ -2526,18 +2302,6 @@ struct StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06  : public Runtim
 {
 };
 
-struct StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06_StaticFields
-{
-	// System.CultureAwareComparer System.StringComparer::s_invariantCulture
-	CultureAwareComparer_t5822A6535A6EB4C448D1B7736067D1188BAEE8CD* ___s_invariantCulture_0;
-	// System.CultureAwareComparer System.StringComparer::s_invariantCultureIgnoreCase
-	CultureAwareComparer_t5822A6535A6EB4C448D1B7736067D1188BAEE8CD* ___s_invariantCultureIgnoreCase_1;
-	// System.OrdinalCaseSensitiveComparer System.StringComparer::s_ordinal
-	OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A* ___s_ordinal_2;
-	// System.OrdinalIgnoreCaseComparer System.StringComparer::s_ordinalIgnoreCase
-	OrdinalIgnoreCaseComparer_t8BAE11990A4C855D3BCBBFB42F4EF8D45088FBB0* ___s_ordinalIgnoreCase_3;
-};
-
 // System.Uri
 struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
 {
@@ -2555,54 +2319,6 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E  : public RuntimeObject
 	UriInfo_t5F91F77A93545DDDA6BB24A609BAF5E232CC1A09* ___m_Info_21;
 	// System.Boolean System.Uri::m_iriParsing
 	bool ___m_iriParsing_22;
-};
-
-struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
-{
-	// System.String System.Uri::UriSchemeFile
-	String_t* ___UriSchemeFile_0;
-	// System.String System.Uri::UriSchemeFtp
-	String_t* ___UriSchemeFtp_1;
-	// System.String System.Uri::UriSchemeGopher
-	String_t* ___UriSchemeGopher_2;
-	// System.String System.Uri::UriSchemeHttp
-	String_t* ___UriSchemeHttp_3;
-	// System.String System.Uri::UriSchemeHttps
-	String_t* ___UriSchemeHttps_4;
-	// System.String System.Uri::UriSchemeWs
-	String_t* ___UriSchemeWs_5;
-	// System.String System.Uri::UriSchemeWss
-	String_t* ___UriSchemeWss_6;
-	// System.String System.Uri::UriSchemeMailto
-	String_t* ___UriSchemeMailto_7;
-	// System.String System.Uri::UriSchemeNews
-	String_t* ___UriSchemeNews_8;
-	// System.String System.Uri::UriSchemeNntp
-	String_t* ___UriSchemeNntp_9;
-	// System.String System.Uri::UriSchemeNetTcp
-	String_t* ___UriSchemeNetTcp_10;
-	// System.String System.Uri::UriSchemeNetPipe
-	String_t* ___UriSchemeNetPipe_11;
-	// System.String System.Uri::SchemeDelimiter
-	String_t* ___SchemeDelimiter_12;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
-	bool ___s_ConfigInitialized_23;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
-	bool ___s_ConfigInitializing_24;
-	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
-	int32_t ___s_IdnScope_25;
-	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
-	bool ___s_IriParsing_26;
-	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
-	bool ___useDotNetRelativeOrAbsolute_27;
-	// System.Boolean System.Uri::IsWindowsFileSystem
-	bool ___IsWindowsFileSystem_29;
-	// System.Object System.Uri::s_initLock
-	RuntimeObject* ___s_initLock_30;
-	// System.Char[] System.Uri::HexLowerChars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
-	// System.Char[] System.Uri::_WSchars
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
 };
 
 // System.ValueType
@@ -2808,14 +2524,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22
 	bool ___m_value_0;
 };
 
-struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
-{
-	// System.String System.Boolean::TrueString
-	String_t* ___TrueString_5;
-	// System.String System.Boolean::FalseString
-	String_t* ___FalseString_6;
-};
-
 // System.Byte
 struct Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3 
 {
@@ -2828,12 +2536,6 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17
 {
 	// System.Char System.Char::m_value
 	Il2CppChar ___m_value_0;
-};
-
-struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
-{
-	// System.Byte[] System.Char::s_categoryForLatin1
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
 };
 
 // System.CultureAwareComparer
@@ -2852,29 +2554,9 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D
 	uint64_t ____dateData_46;
 };
 
-struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
-{
-	// System.Int32[] System.DateTime::s_daysToMonth365
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
-	// System.Int32[] System.DateTime::s_daysToMonth366
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
-	// System.DateTime System.DateTime::UnixEpoch
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
-};
-
 // System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
 {
-};
-
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
 };
 // Native definition for P/Invoke marshalling of System.Enum
 struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
@@ -2930,12 +2612,6 @@ struct Guid_t
 	uint8_t ____k_11;
 };
 
-struct Guid_t_StaticFields
-{
-	// System.Guid System.Guid::Empty
-	Guid_t ___Empty_0;
-};
-
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
 struct HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1  : public WebSocketContext_t864B980CACE6C6D128960E555404BC87E7A4C3F2
 {
@@ -2952,14 +2628,6 @@ struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB  : public EndPoint_t
 	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ____address_0;
 	// System.Int32 System.Net.IPEndPoint::_port
 	int32_t ____port_1;
-};
-
-struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB_StaticFields
-{
-	// System.Net.IPEndPoint System.Net.IPEndPoint::Any
-	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___Any_2;
-	// System.Net.IPEndPoint System.Net.IPEndPoint::IPv6Any
-	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___IPv6Any_3;
 };
 
 // System.Int32
@@ -2983,12 +2651,6 @@ struct IntPtr_t
 	void* ___m_value_0;
 };
 
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
 // System.Collections.Specialized.NameValueCollection
 struct NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7  : public NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC
 {
@@ -3005,12 +2667,6 @@ struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE  : public MarshalByRefOb
 	ReadWriteTask_t0821BF49EE38596C7734E86E1A6A39D769BE2C05* ____activeReadWriteTask_3;
 	// System.Threading.SemaphoreSlim System.IO.Stream::_asyncActiveSemaphore
 	SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2* ____asyncActiveSemaphore_4;
-};
-
-struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
-{
-	// System.IO.Stream System.IO.Stream::Null
-	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null_1;
 };
 
 // System.Runtime.Serialization.StreamingContext
@@ -3043,14 +2699,6 @@ struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3  : public MarshalByR
 	String_t* ___CoreNewLineStr_4;
 	// System.IFormatProvider System.IO.TextWriter::_internalFormatProvider
 	RuntimeObject* ____internalFormatProvider_5;
-};
-
-struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_StaticFields
-{
-	// System.IO.TextWriter System.IO.TextWriter::Null
-	TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___Null_1;
-	// System.Char[] System.IO.TextWriter::s_coreNewLine
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___s_coreNewLine_2;
 };
 
 // System.Threading.Timer
@@ -3128,14 +2776,6 @@ struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4  : public RuntimeObject
 	int32_t ____version_15;
 	// System.Boolean WebSocketSharp.Net.Cookie::<ExactDomain>k__BackingField
 	bool ___U3CExactDomainU3Ek__BackingField_16;
-};
-
-struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_StaticFields
-{
-	// System.Char[] WebSocketSharp.Net.Cookie::_reservedCharsForName
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____reservedCharsForName_10;
-	// System.Char[] WebSocketSharp.Net.Cookie::_reservedCharsForValue
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____reservedCharsForValue_11;
 };
 
 // System.Delegate
@@ -3239,12 +2879,6 @@ struct Exception_t  : public RuntimeObject
 	// System.Int32 System.Exception::caught_in_unmanaged
 	int32_t ___caught_in_unmanaged_16;
 };
-
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
 // Native definition for P/Invoke marshalling of System.Exception
 struct Exception_t_marshaled_pinvoke
 {
@@ -3347,12 +2981,6 @@ struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD  : public R
 	bool ____websocketRequestSet_21;
 };
 
-struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD_StaticFields
-{
-	// System.Byte[] WebSocketSharp.Net.HttpListenerRequest::_100continue
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____100continue_0;
-};
-
 // System.IO.MemoryStream
 struct MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2  : public Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE
 {
@@ -3442,12 +3070,6 @@ struct ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F  : public Stream
 	Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* ____writeChunked_13;
 };
 
-struct ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F_StaticFields
-{
-	// System.Byte[] WebSocketSharp.Net.ResponseStream::_crlf
-	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____crlf_6;
-};
-
 // System.RuntimeFieldHandle
 struct RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 
 {
@@ -3489,12 +3111,6 @@ struct StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4  : public TextWrit
 	Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* ____asyncWriteTask_17;
 };
 
-struct StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_StaticFields
-{
-	// System.IO.StreamWriter System.IO.StreamWriter::Null
-	StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* ___Null_6;
-};
-
 // System.Threading.WaitHandle
 struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8  : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE
 {
@@ -3504,12 +3120,6 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8  : public MarshalByR
 	SafeWaitHandle_t58F5662CD56F6462A687198A64987F8980804449* ___safeWaitHandle_4;
 	// System.Boolean System.Threading.WaitHandle::hasThreadAffinity
 	bool ___hasThreadAffinity_5;
-};
-
-struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
-{
-	// System.IntPtr System.Threading.WaitHandle::InvalidHandle
-	intptr_t ___InvalidHandle_11;
 };
 // Native definition for P/Invoke marshalling of System.Threading.WaitHandle
 struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_marshaled_pinvoke : public MarshalByRefObject_t8C2F4C5854177FD60439EB1FCCFC1B3CFAFE8DCE_marshaled_pinvoke
@@ -3533,12 +3143,6 @@ struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331  : public N
 	bool ____internallyUsed_21;
 	// WebSocketSharp.Net.HttpHeaderType WebSocketSharp.Net.WebHeaderCollection::_state
 	int32_t ____state_22;
-};
-
-struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticFields
-{
-	// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo> WebSocketSharp.Net.WebHeaderCollection::_headers
-	Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* ____headers_20;
 };
 
 // System.Security.Cryptography.X509Certificates.X509Certificate
@@ -3628,24 +3232,6 @@ struct Type_t  : public MemberInfo_t
 {
 	// System.RuntimeTypeHandle System.Type::_impl
 	RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ____impl_8;
-};
-
-struct Type_t_StaticFields
-{
-	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
-	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
-	// System.Char System.Type::Delimiter
-	Il2CppChar ___Delimiter_1;
-	// System.Type[] System.Type::EmptyTypes
-	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
-	// System.Object System.Type::Missing
-	RuntimeObject* ___Missing_3;
-	// System.Reflection.MemberFilter System.Type::FilterAttribute
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
-	// System.Reflection.MemberFilter System.Type::FilterName
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
-	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
-	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
 };
 
 // System.Security.Cryptography.X509Certificates.X509Certificate2
@@ -3761,12 +3347,6 @@ struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7  : publi
 {
 };
 
-struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_StaticFields
-{
-	// System.String System.Runtime.Serialization.SerializationException::s_nullMessage
-	String_t* ___s_nullMessage_18;
-};
-
 // System.Threading.TimerCallback
 struct TimerCallback_t7455CAFACC7054E62879920AFC84C5DA98B8C7CD  : public MulticastDelegate_t
 {
@@ -3812,6 +3392,937 @@ struct Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9  : public Extern
 struct HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55  : public Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9
 {
 };
+
+// System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>
+
+// System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>
+
+// System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>
+
+// System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>
+
+// System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>
+
+// System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>
+
+// System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Char>
+
+// System.Collections.Generic.Dictionary`2<System.String,System.Char>
+
+// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>
+
+// System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>
+
+// System.Collections.Generic.List`1<System.Byte>
+struct List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Byte>
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.Cookie>
+struct List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	CookieU5BU5D_t06FB7297E22BDC1EC182B9EDC1AE52FB695A8933* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.Cookie>
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>
+struct List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	HttpListenerAsyncResultU5BU5D_t320827F1B0DBD67F33D1CF549CBC3ED550DBF6D8* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>
+struct List_1_t34157D301768D07BD0345C16404819B1629D46C2_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>
+
+// System.Collections.Generic.List`1<System.Object>
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.Object>
+
+// System.Collections.Generic.List`1<System.String>
+struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
+{
+	// T[] System.Collections.Generic.List`1::s_emptyArray
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___s_emptyArray_5;
+};
+
+// System.Collections.Generic.List`1<System.String>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// WebSocketSharp.Net.AuthenticationBase
+
+// WebSocketSharp.Net.AuthenticationBase
+
+// System.Security.Claims.ClaimsIdentity
+
+// System.Security.Claims.ClaimsIdentity
+
+// System.Security.Claims.ClaimsPrincipal
+struct ClaimsPrincipal_t89FDDE5202B3ACA5770F1BE38D14615C94086F2D_StaticFields
+{
+	// System.Func`2<System.Collections.Generic.IEnumerable`1<System.Security.Claims.ClaimsIdentity>,System.Security.Claims.ClaimsIdentity> System.Security.Claims.ClaimsPrincipal::s_identitySelector
+	Func_2_tA5771E9D24D52C033031611D7AB2AB65DEC96016* ___s_identitySelector_3;
+	// System.Func`1<System.Security.Claims.ClaimsPrincipal> System.Security.Claims.ClaimsPrincipal::s_principalSelector
+	Func_1_tBF78A7C5465BEAFB7E0437596541E97B7B3C8D1E* ___s_principalSelector_4;
+};
+
+// System.Security.Claims.ClaimsPrincipal
+
+// WebSocketSharp.Net.CookieCollection
+
+// WebSocketSharp.Net.CookieCollection
+
+// System.Globalization.CultureInfo
+struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
+{
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::invariant_culture_info
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___invariant_culture_info_0;
+	// System.Object System.Globalization.CultureInfo::shared_table_lock
+	RuntimeObject* ___shared_table_lock_1;
+	// System.Globalization.CultureInfo System.Globalization.CultureInfo::default_current_culture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___default_current_culture_2;
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentUICulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentUICulture_34;
+	// System.Globalization.CultureInfo modreq(System.Runtime.CompilerServices.IsVolatile) System.Globalization.CultureInfo::s_DefaultThreadCurrentCulture
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_DefaultThreadCurrentCulture_35;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_number
+	Dictionary_2_t9FA6D82CAFC18769F7515BB51D1C56DAE09381C3* ___shared_by_number_36;
+	// System.Collections.Generic.Dictionary`2<System.String,System.Globalization.CultureInfo> System.Globalization.CultureInfo::shared_by_name
+	Dictionary_2_tE1603CE612C16451D1E56FF4D4859D4FE4087C28* ___shared_by_name_37;
+	// System.Globalization.CultureInfo System.Globalization.CultureInfo::s_UserPreferredCultureInfoInAppX
+	CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___s_UserPreferredCultureInfoInAppX_38;
+	// System.Boolean System.Globalization.CultureInfo::IsTaiwanSku
+	bool ___IsTaiwanSku_39;
+};
+
+// System.Globalization.CultureInfo
+
+// System.Text.Encoding
+struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
+{
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::defaultEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___defaultEncoding_0;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::unicodeEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___unicodeEncoding_1;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::bigEndianUnicode
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___bigEndianUnicode_2;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf7Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf7Encoding_3;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf8Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf8Encoding_4;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::utf32Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___utf32Encoding_5;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::asciiEncoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___asciiEncoding_6;
+	// System.Text.Encoding modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::latin1Encoding
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___latin1Encoding_7;
+	// System.Collections.Generic.Dictionary`2<System.Int32,System.Text.Encoding> modreq(System.Runtime.CompilerServices.IsVolatile) System.Text.Encoding::encodings
+	Dictionary_2_t87EDE08B2E48F793A22DE50D6B3CC2E7EBB2DB54* ___encodings_8;
+	// System.Object System.Text.Encoding::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_15;
+};
+
+// System.Text.Encoding
+
+// System.Net.EndPoint
+
+// System.Net.EndPoint
+
+// WebSocketSharp.Net.EndPointListener
+struct EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731_StaticFields
+{
+	// System.String WebSocketSharp.Net.EndPointListener::_defaultCertFolderPath
+	String_t* ____defaultCertFolderPath_1;
+};
+
+// WebSocketSharp.Net.EndPointListener
+
+// WebSocketSharp.Net.EndPointManager
+struct EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener> WebSocketSharp.Net.EndPointManager::_endpoints
+	Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* ____endpoints_0;
+};
+
+// WebSocketSharp.Net.EndPointManager
+
+// WebSocketSharp.Net.HttpConnection
+
+// WebSocketSharp.Net.HttpConnection
+
+// WebSocketSharp.Net.HttpHeaderInfo
+
+// WebSocketSharp.Net.HttpHeaderInfo
+
+// WebSocketSharp.Net.HttpListener
+struct HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387_StaticFields
+{
+	// System.String WebSocketSharp.Net.HttpListener::_defaultRealm
+	String_t* ____defaultRealm_9;
+};
+
+// WebSocketSharp.Net.HttpListener
+
+// WebSocketSharp.Net.HttpListenerAsyncResult
+
+// WebSocketSharp.Net.HttpListenerAsyncResult
+
+// WebSocketSharp.Net.HttpListenerContext
+
+// WebSocketSharp.Net.HttpListenerContext
+
+// WebSocketSharp.Net.HttpListenerPrefix
+
+// WebSocketSharp.Net.HttpListenerPrefix
+
+// WebSocketSharp.Net.HttpListenerPrefixCollection
+
+// WebSocketSharp.Net.HttpListenerPrefixCollection
+
+// WebSocketSharp.Net.HttpListenerResponse
+
+// WebSocketSharp.Net.HttpListenerResponse
+
+// WebSocketSharp.Net.HttpStreamAsyncResult
+
+// WebSocketSharp.Net.HttpStreamAsyncResult
+
+// WebSocketSharp.Net.HttpUtility
+struct HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.String,System.Char> WebSocketSharp.Net.HttpUtility::_entities
+	Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* ____entities_0;
+	// System.Char[] WebSocketSharp.Net.HttpUtility::_hexChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____hexChars_1;
+	// System.Object WebSocketSharp.Net.HttpUtility::_sync
+	RuntimeObject* ____sync_2;
+};
+
+// WebSocketSharp.Net.HttpUtility
+
+// WebSocketSharp.Net.HttpVersion
+struct HttpVersion_t2C7A10EB9472F5CBEE335426D23C90378989F10A_StaticFields
+{
+	// System.Version WebSocketSharp.Net.HttpVersion::Version10
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___Version10_0;
+	// System.Version WebSocketSharp.Net.HttpVersion::Version11
+	Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___Version11_1;
+};
+
+// WebSocketSharp.Net.HttpVersion
+
+// System.Net.IPAddress
+struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
+{
+	// System.Net.IPAddress System.Net.IPAddress::Any
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Any_0;
+	// System.Net.IPAddress System.Net.IPAddress::Loopback
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Loopback_1;
+	// System.Net.IPAddress System.Net.IPAddress::Broadcast
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___Broadcast_2;
+	// System.Net.IPAddress System.Net.IPAddress::None
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___None_3;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6Any
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Any_5;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6Loopback
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6Loopback_6;
+	// System.Net.IPAddress System.Net.IPAddress::IPv6None
+	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___IPv6None_7;
+};
+
+// System.Net.IPAddress
+
+// WebSocketSharp.Logger
+
+// WebSocketSharp.Logger
+
+// System.MarshalByRefObject
+
+// System.MarshalByRefObject
+
+// System.Reflection.MemberInfo
+
+// System.Reflection.MemberInfo
+
+// System.Collections.Specialized.NameObjectCollectionBase
+struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
+{
+	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
+	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
+};
+
+// System.Collections.Specialized.NameObjectCollectionBase
+
+// WebSocketSharp.Net.NetworkCredential
+struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7_StaticFields
+{
+	// System.String[] WebSocketSharp.Net.NetworkCredential::_noRoles
+	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ____noRoles_1;
+};
+
+// WebSocketSharp.Net.NetworkCredential
+
+// WebSocketSharp.Net.ReadBufferState
+
+// WebSocketSharp.Net.ReadBufferState
+
+// System.Runtime.Serialization.SerializationInfo
+
+// System.Runtime.Serialization.SerializationInfo
+
+// WebSocketSharp.Net.ServerSslConfiguration
+
+// WebSocketSharp.Net.ServerSslConfiguration
+
+// System.Net.Sockets.Socket
+struct Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E_StaticFields
+{
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::AcceptCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___AcceptCompletedHandler_0;
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::ReceiveCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___ReceiveCompletedHandler_1;
+	// System.EventHandler`1<System.Net.Sockets.SocketAsyncEventArgs> System.Net.Sockets.Socket::SendCompletedHandler
+	EventHandler_1_t5D3FC4609BD8133ED1226D6D49A1D8076B16A9ED* ___SendCompletedHandler_2;
+	// System.Net.Sockets.Socket/TaskSocketAsyncEventArgs`1<System.Net.Sockets.Socket> System.Net.Sockets.Socket::s_rentedSocketSentinel
+	TaskSocketAsyncEventArgs_1_tEB937620E5B15D91E5BFEFFA707CF800930F8401* ___s_rentedSocketSentinel_3;
+	// System.Net.Sockets.Socket/Int32TaskSocketAsyncEventArgs System.Net.Sockets.Socket::s_rentedInt32Sentinel
+	Int32TaskSocketAsyncEventArgs_t36C5FC82499ED9DAFE7F05C38EF92D77A0B248E9* ___s_rentedInt32Sentinel_4;
+	// System.Threading.Tasks.Task`1<System.Int32> System.Net.Sockets.Socket::s_zeroTask
+	Task_1_t4C228DE57804012969575431CFF12D57C875552D* ___s_zeroTask_5;
+	// System.Object System.Net.Sockets.Socket::s_InternalSyncObject
+	RuntimeObject* ___s_InternalSyncObject_7;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv4
+	bool ___s_SupportsIPv4_8;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_SupportsIPv6
+	bool ___s_SupportsIPv6_9;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_OSSupportsIPv6
+	bool ___s_OSSupportsIPv6_10;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_Initialized
+	bool ___s_Initialized_11;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_LoggingEnabled
+	bool ___s_LoggingEnabled_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Net.Sockets.Socket::s_PerfCountersEnabled
+	bool ___s_PerfCountersEnabled_13;
+	// System.AsyncCallback System.Net.Sockets.Socket::AcceptAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___AcceptAsyncCallback_34;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptCallback_35;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginAcceptReceiveCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginAcceptReceiveCallback_36;
+	// System.AsyncCallback System.Net.Sockets.Socket::ConnectAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ConnectAsyncCallback_37;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginConnectCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginConnectCallback_38;
+	// System.AsyncCallback System.Net.Sockets.Socket::DisconnectAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___DisconnectAsyncCallback_39;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginDisconnectCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginDisconnectCallback_40;
+	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveAsyncCallback_41;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveCallback_42;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveGenericCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveGenericCallback_43;
+	// System.AsyncCallback System.Net.Sockets.Socket::ReceiveFromAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___ReceiveFromAsyncCallback_44;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginReceiveFromCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginReceiveFromCallback_45;
+	// System.AsyncCallback System.Net.Sockets.Socket::SendAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendAsyncCallback_46;
+	// System.IOAsyncCallback System.Net.Sockets.Socket::BeginSendGenericCallback
+	IOAsyncCallback_tDBBA8BBDA6B203613680E77BD4AD6320A1268388* ___BeginSendGenericCallback_47;
+	// System.AsyncCallback System.Net.Sockets.Socket::SendToAsyncCallback
+	AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___SendToAsyncCallback_48;
+};
+
+// System.Net.Sockets.Socket
+
+// System.String
+struct String_t_StaticFields
+{
+	// System.String System.String::Empty
+	String_t* ___Empty_6;
+};
+
+// System.String
+
+// System.Text.StringBuilder
+
+// System.Text.StringBuilder
+
+// System.StringComparer
+struct StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06_StaticFields
+{
+	// System.CultureAwareComparer System.StringComparer::s_invariantCulture
+	CultureAwareComparer_t5822A6535A6EB4C448D1B7736067D1188BAEE8CD* ___s_invariantCulture_0;
+	// System.CultureAwareComparer System.StringComparer::s_invariantCultureIgnoreCase
+	CultureAwareComparer_t5822A6535A6EB4C448D1B7736067D1188BAEE8CD* ___s_invariantCultureIgnoreCase_1;
+	// System.OrdinalCaseSensitiveComparer System.StringComparer::s_ordinal
+	OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A* ___s_ordinal_2;
+	// System.OrdinalIgnoreCaseComparer System.StringComparer::s_ordinalIgnoreCase
+	OrdinalIgnoreCaseComparer_t8BAE11990A4C855D3BCBBFB42F4EF8D45088FBB0* ___s_ordinalIgnoreCase_3;
+};
+
+// System.StringComparer
+
+// System.Uri
+struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
+{
+	// System.String System.Uri::UriSchemeFile
+	String_t* ___UriSchemeFile_0;
+	// System.String System.Uri::UriSchemeFtp
+	String_t* ___UriSchemeFtp_1;
+	// System.String System.Uri::UriSchemeGopher
+	String_t* ___UriSchemeGopher_2;
+	// System.String System.Uri::UriSchemeHttp
+	String_t* ___UriSchemeHttp_3;
+	// System.String System.Uri::UriSchemeHttps
+	String_t* ___UriSchemeHttps_4;
+	// System.String System.Uri::UriSchemeWs
+	String_t* ___UriSchemeWs_5;
+	// System.String System.Uri::UriSchemeWss
+	String_t* ___UriSchemeWss_6;
+	// System.String System.Uri::UriSchemeMailto
+	String_t* ___UriSchemeMailto_7;
+	// System.String System.Uri::UriSchemeNews
+	String_t* ___UriSchemeNews_8;
+	// System.String System.Uri::UriSchemeNntp
+	String_t* ___UriSchemeNntp_9;
+	// System.String System.Uri::UriSchemeNetTcp
+	String_t* ___UriSchemeNetTcp_10;
+	// System.String System.Uri::UriSchemeNetPipe
+	String_t* ___UriSchemeNetPipe_11;
+	// System.String System.Uri::SchemeDelimiter
+	String_t* ___SchemeDelimiter_12;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitialized
+	bool ___s_ConfigInitialized_23;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_ConfigInitializing
+	bool ___s_ConfigInitializing_24;
+	// System.UriIdnScope modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IdnScope
+	int32_t ___s_IdnScope_25;
+	// System.Boolean modreq(System.Runtime.CompilerServices.IsVolatile) System.Uri::s_IriParsing
+	bool ___s_IriParsing_26;
+	// System.Boolean System.Uri::useDotNetRelativeOrAbsolute
+	bool ___useDotNetRelativeOrAbsolute_27;
+	// System.Boolean System.Uri::IsWindowsFileSystem
+	bool ___IsWindowsFileSystem_29;
+	// System.Object System.Uri::s_initLock
+	RuntimeObject* ___s_initLock_30;
+	// System.Char[] System.Uri::HexLowerChars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___HexLowerChars_34;
+	// System.Char[] System.Uri::_WSchars
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____WSchars_35;
+};
+
+// System.Uri
+
+// System.ValueType
+
+// System.ValueType
+
+// System.Version
+
+// System.Version
+
+// WebSocketSharp.Net.WebSockets.WebSocketContext
+
+// WebSocketSharp.Net.WebSockets.WebSocketContext
+
+// System.Security.Cryptography.X509Certificates.X509Chain
+
+// System.Security.Cryptography.X509Certificates.X509Chain
+
+// WebSocketSharp.Net.HttpListenerAsyncResult/<>c__DisplayClass25_0
+
+// WebSocketSharp.Net.HttpListenerAsyncResult/<>c__DisplayClass25_0
+
+// WebSocketSharp.Net.HttpListenerResponse/<>c__DisplayClass69_0
+
+// WebSocketSharp.Net.HttpListenerResponse/<>c__DisplayClass69_0
+
+// WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62
+
+// WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62
+
+// System.Collections.Specialized.NameObjectCollectionBase/KeysCollection
+
+// System.Collections.Specialized.NameObjectCollectionBase/KeysCollection
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0
+
+// WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0
+
+// System.Collections.Generic.List`1/Enumerator<WebSocketSharp.Net.Cookie>
+
+// System.Collections.Generic.List`1/Enumerator<WebSocketSharp.Net.Cookie>
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+
+// System.Collections.Generic.List`1/Enumerator<System.Object>
+
+// System.Collections.Generic.List`1/Enumerator<System.String>
+
+// System.Collections.Generic.List`1/Enumerator<System.String>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.String,WebSocketSharp.Net.HttpHeaderInfo>
+
+// WebSocketSharp.Net.AuthenticationChallenge
+
+// WebSocketSharp.Net.AuthenticationChallenge
+
+// WebSocketSharp.Net.AuthenticationResponse
+
+// WebSocketSharp.Net.AuthenticationResponse
+
+// System.Boolean
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	// System.String System.Boolean::TrueString
+	String_t* ___TrueString_5;
+	// System.String System.Boolean::FalseString
+	String_t* ___FalseString_6;
+};
+
+// System.Boolean
+
+// System.Byte
+
+// System.Byte
+
+// System.Char
+struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
+{
+	// System.Byte[] System.Char::s_categoryForLatin1
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___s_categoryForLatin1_3;
+};
+
+// System.Char
+
+// System.CultureAwareComparer
+
+// System.CultureAwareComparer
+
+// System.DateTime
+struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
+{
+	// System.Int32[] System.DateTime::s_daysToMonth365
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
+	// System.Int32[] System.DateTime::s_daysToMonth366
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
+	// System.DateTime System.DateTime::MinValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
+	// System.DateTime System.DateTime::MaxValue
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
+	// System.DateTime System.DateTime::UnixEpoch
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
+};
+
+// System.DateTime
+
+// System.Enum
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
+{
+	// System.Char[] System.Enum::enumSeperatorCharArray
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
+};
+
+// System.Enum
+
+// System.Security.Principal.GenericIdentity
+
+// System.Security.Principal.GenericIdentity
+
+// System.Security.Principal.GenericPrincipal
+
+// System.Security.Principal.GenericPrincipal
+
+// System.Guid
+struct Guid_t_StaticFields
+{
+	// System.Guid System.Guid::Empty
+	Guid_t ___Empty_0;
+};
+
+// System.Guid
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
+
+// WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
+
+// System.Net.IPEndPoint
+struct IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB_StaticFields
+{
+	// System.Net.IPEndPoint System.Net.IPEndPoint::Any
+	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___Any_2;
+	// System.Net.IPEndPoint System.Net.IPEndPoint::IPv6Any
+	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___IPv6Any_3;
+};
+
+// System.Net.IPEndPoint
+
+// System.Int32
+
+// System.Int32
+
+// System.Int64
+
+// System.Int64
+
+// System.IntPtr
+struct IntPtr_t_StaticFields
+{
+	// System.IntPtr System.IntPtr::Zero
+	intptr_t ___Zero_1;
+};
+
+// System.IntPtr
+
+// System.Collections.Specialized.NameValueCollection
+
+// System.Collections.Specialized.NameValueCollection
+
+// System.IO.Stream
+struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
+{
+	// System.IO.Stream System.IO.Stream::Null
+	Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___Null_1;
+};
+
+// System.IO.Stream
+
+// System.Runtime.Serialization.StreamingContext
+
+// System.Runtime.Serialization.StreamingContext
+
+// System.IO.TextWriter
+struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_StaticFields
+{
+	// System.IO.TextWriter System.IO.TextWriter::Null
+	TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___Null_1;
+	// System.Char[] System.IO.TextWriter::s_coreNewLine
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___s_coreNewLine_2;
+};
+
+// System.IO.TextWriter
+
+// System.Threading.Timer
+
+// System.Threading.Timer
+
+// System.Void
+
+// System.Void
+
+// System.Net.Security.AuthenticatedStream
+
+// System.Net.Security.AuthenticatedStream
+
+// WebSocketSharp.Net.Cookie
+struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_StaticFields
+{
+	// System.Char[] WebSocketSharp.Net.Cookie::_reservedCharsForName
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____reservedCharsForName_10;
+	// System.Char[] WebSocketSharp.Net.Cookie::_reservedCharsForValue
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ____reservedCharsForValue_11;
+};
+
+// WebSocketSharp.Net.Cookie
+
+// System.Delegate
+
+// System.Delegate
+
+// System.Exception
+struct Exception_t_StaticFields
+{
+	// System.Object System.Exception::s_EDILock
+	RuntimeObject* ___s_EDILock_0;
+};
+
+// System.Exception
+
+// WebSocketSharp.Net.HttpBasicIdentity
+
+// WebSocketSharp.Net.HttpBasicIdentity
+
+// WebSocketSharp.Net.HttpDigestIdentity
+
+// WebSocketSharp.Net.HttpDigestIdentity
+
+// WebSocketSharp.Net.HttpListenerRequest
+struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD_StaticFields
+{
+	// System.Byte[] WebSocketSharp.Net.HttpListenerRequest::_100continue
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____100continue_0;
+};
+
+// WebSocketSharp.Net.HttpListenerRequest
+
+// System.IO.MemoryStream
+
+// System.IO.MemoryStream
+
+// System.Net.Sockets.NetworkStream
+
+// System.Net.Sockets.NetworkStream
+
+// WebSocketSharp.Net.QueryStringCollection
+
+// WebSocketSharp.Net.QueryStringCollection
+
+// WebSocketSharp.Net.RequestStream
+
+// WebSocketSharp.Net.RequestStream
+
+// WebSocketSharp.Net.ResponseStream
+struct ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F_StaticFields
+{
+	// System.Byte[] WebSocketSharp.Net.ResponseStream::_crlf
+	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ____crlf_6;
+};
+
+// WebSocketSharp.Net.ResponseStream
+
+// System.RuntimeFieldHandle
+
+// System.RuntimeFieldHandle
+
+// System.RuntimeTypeHandle
+
+// System.RuntimeTypeHandle
+
+// System.IO.StreamWriter
+struct StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_StaticFields
+{
+	// System.IO.StreamWriter System.IO.StreamWriter::Null
+	StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* ___Null_6;
+};
+
+// System.IO.StreamWriter
+
+// System.Threading.WaitHandle
+struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
+{
+	// System.IntPtr System.Threading.WaitHandle::InvalidHandle
+	intptr_t ___InvalidHandle_11;
+};
+
+// System.Threading.WaitHandle
+
+// WebSocketSharp.Net.WebHeaderCollection
+struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticFields
+{
+	// System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo> WebSocketSharp.Net.WebHeaderCollection::_headers
+	Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* ____headers_20;
+};
+
+// WebSocketSharp.Net.WebHeaderCollection
+
+// System.Security.Cryptography.X509Certificates.X509Certificate
+
+// System.Security.Cryptography.X509Certificates.X509Certificate
+
+// WebSocketSharp.Net.ChunkedRequestStream
+
+// WebSocketSharp.Net.ChunkedRequestStream
+
+// System.Threading.EventWaitHandle
+
+// System.Threading.EventWaitHandle
+
+// System.MulticastDelegate
+
+// System.MulticastDelegate
+
+// System.Net.Security.SslStream
+
+// System.Net.Security.SslStream
+
+// System.SystemException
+
+// System.SystemException
+
+// System.Type
+struct Type_t_StaticFields
+{
+	// System.Reflection.Binder modreq(System.Runtime.CompilerServices.IsVolatile) System.Type::s_defaultBinder
+	Binder_t91BFCE95A7057FADF4D8A1A342AFE52872246235* ___s_defaultBinder_0;
+	// System.Char System.Type::Delimiter
+	Il2CppChar ___Delimiter_1;
+	// System.Type[] System.Type::EmptyTypes
+	TypeU5BU5D_t97234E1129B564EB38B8D85CAC2AD8B5B9522FFB* ___EmptyTypes_2;
+	// System.Object System.Type::Missing
+	RuntimeObject* ___Missing_3;
+	// System.Reflection.MemberFilter System.Type::FilterAttribute
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterAttribute_4;
+	// System.Reflection.MemberFilter System.Type::FilterName
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterName_5;
+	// System.Reflection.MemberFilter System.Type::FilterNameIgnoreCase
+	MemberFilter_tF644F1AE82F611B677CE1964D5A3277DDA21D553* ___FilterNameIgnoreCase_6;
+};
+
+// System.Type
+
+// System.Security.Cryptography.X509Certificates.X509Certificate2
+
+// System.Security.Cryptography.X509Certificates.X509Certificate2
+
+// System.Action`1<System.Int32>
+
+// System.Action`1<System.Int32>
+
+// System.Action`2<System.Object,System.Object>
+
+// System.Action`2<System.Object,System.Object>
+
+// System.Action`2<System.String,System.String>
+
+// System.Action`2<System.String,System.String>
+
+// System.Action`3<System.Byte[],System.Int32,System.Int32>
+
+// System.Action`3<System.Byte[],System.Int32,System.Int32>
+
+// System.Action`3<System.Object,System.Int32,System.Int32>
+
+// System.Action`3<System.Object,System.Int32,System.Int32>
+
+// System.Func`2<WebSocketSharp.Net.HttpListenerRequest,WebSocketSharp.Net.AuthenticationSchemes>
+
+// System.Func`2<WebSocketSharp.Net.HttpListenerRequest,WebSocketSharp.Net.AuthenticationSchemes>
+
+// System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>
+
+// System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>
+
+// System.Func`2<System.Object,System.Int32Enum>
+
+// System.Func`2<System.Object,System.Int32Enum>
+
+// System.Func`2<System.Object,System.Object>
+
+// System.Func`2<System.Object,System.Object>
+
+// System.ArgumentException
+
+// System.ArgumentException
+
+// System.AsyncCallback
+
+// System.AsyncCallback
+
+// System.Runtime.InteropServices.ExternalException
+
+// System.Runtime.InteropServices.ExternalException
+
+// System.InvalidOperationException
+
+// System.InvalidOperationException
+
+// System.Threading.ManualResetEvent
+
+// System.Threading.ManualResetEvent
+
+// System.NotImplementedException
+
+// System.NotImplementedException
+
+// System.NotSupportedException
+
+// System.NotSupportedException
+
+// System.Net.Security.RemoteCertificateValidationCallback
+
+// System.Net.Security.RemoteCertificateValidationCallback
+
+// System.Runtime.Serialization.SerializationException
+struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_StaticFields
+{
+	// System.String System.Runtime.Serialization.SerializationException::s_nullMessage
+	String_t* ___s_nullMessage_18;
+};
+
+// System.Runtime.Serialization.SerializationException
+
+// System.Threading.TimerCallback
+
+// System.Threading.TimerCallback
+
+// System.Threading.WaitCallback
+
+// System.Threading.WaitCallback
+
+// System.ArgumentNullException
+
+// System.ArgumentNullException
+
+// System.ArgumentOutOfRangeException
+
+// System.ArgumentOutOfRangeException
+
+// System.ObjectDisposedException
+
+// System.ObjectDisposedException
+
+// System.Net.ProtocolViolationException
+
+// System.Net.ProtocolViolationException
+
+// System.ComponentModel.Win32Exception
+
+// System.ComponentModel.Win32Exception
+
+// WebSocketSharp.Net.HttpListenerException
+
+// WebSocketSharp.Net.HttpListenerException
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -4061,15 +4572,15 @@ struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB  : public RuntimeArr
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m5B32FBC624618211EB461D59CFBB10E987FD1329_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::TryGetValue(TKey,TValue&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject** ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject** ___1_value, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::Add(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.Object>::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1/Enumerator<System.Object>::Dispose()
@@ -4081,11 +4592,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_m1AE7A14FE6CF65276434BAC094AE2F7269D06024_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, const RuntimeMethod* method) ;
 // TValue System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::get_Item(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::set_Item(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, bool ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, bool ___1_value, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, bool ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB_gshared (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, bool ___1_value, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Count()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Dictionary_2_get_Count_m4DDA9442C238A443489115E22B026AD366851549_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/KeyCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Keys()
@@ -4093,7 +4604,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyCollection_tB45A861D090B15129521119AE48ED3
 // System.Int32 System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>::get_Count()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t KeyCollection_get_Count_mB870EAF2A8DC8A4EE35A3C2D14DE5EFBB5BE5EDD_gshared (KeyCollection_tB45A861D090B15129521119AE48ED3813820A974* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<System.Object,System.Object>::CopyTo(TKey[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared (KeyCollection_tB45A861D090B15129521119AE48ED3813820A974* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___array0, int32_t ___index1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared (KeyCollection_tB45A861D090B15129521119AE48ED3813820A974* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___0_array, int32_t ___1_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Clear_mCFB5EA7351D5860D2B91592B91A84CA265A41433_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<System.Object>::get_Count()
@@ -4103,47 +4614,47 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922F
 // System.Void System.Collections.Generic.List`1<System.Object>::Clear()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::RemoveAt(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::set_Item(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___key0, RuntimeObject* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 // TResult System.Func`2<System.Object,System.Int32Enum>::Invoke(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline (Func_2_t213311159653563BDCC21CC060B449705C96791F* __this, RuntimeObject* ___arg0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline (Func_2_t213311159653563BDCC21CC060B449705C96791F* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Contains(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::CopyTo(T[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_m1210D480F3EF1C250A53086148C1204B7A99B931_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1_CopyTo_m1210D480F3EF1C250A53086148C1204B7A99B931_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.Object>::Remove(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Object>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___collection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<TSource> WebSocketSharp.Ext::ToList<System.Object>(System.Collections.Generic.IEnumerable`1<TSource>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Ext_ToList_TisRuntimeObject_mD4255288D882109886C54474E6FA01B07F0A90F7_gshared (RuntimeObject* ___source0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Ext_ToList_TisRuntimeObject_mD4255288D882109886C54474E6FA01B07F0A90F7_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Char>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mF806375D670CDF3AD94674EEA4F4EAA746B6CC8A_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Char>::Add(TKey,TValue)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m1F6437CCDB7A2F0773A393593D0616B6DD0CD1B8_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___key0, Il2CppChar ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_Add_m1F6437CCDB7A2F0773A393593D0616B6DD0CD1B8_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___0_key, Il2CppChar ___1_value, const RuntimeMethod* method) ;
 // TResult System.Func`2<System.Object,System.Object>::Invoke(T)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___arg0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Char>::ContainsKey(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m816E43587AB82064CE1774C9CED2A588832C1949_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_ContainsKey_m816E43587AB82064CE1774C9CED2A588832C1949_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
 // TValue System.Collections.Generic.Dictionary`2<System.Object,System.Char>::get_Item(TKey)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Dictionary_2_get_Item_m370693D71BA982E89D01F9F50E1A3F14062FEC05_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar Dictionary_2_get_Item_m370693D71BA982E89D01F9F50E1A3F14062FEC05_gshared (Dictionary_2_tFDB7CC09B8E5A363A02ECD1C80A9F4970A5DD222* __this, RuntimeObject* ___0_key, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Byte>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_gshared (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method) ;
 // T[] System.Collections.Generic.List`1<System.Byte>::ToArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_gshared (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`3<System.Object,System.Int32,System.Int32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_3__ctor_m28D618ACD30D378303374C6D5A85A5567573DF39_gshared (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_3__ctor_m28D618ACD30D378303374C6D5A85A5567573DF39_gshared (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Action`3<System.Object,System.Int32,System.Int32>::Invoke(T1,T2,T3)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___arg10, int32_t ___arg21, int32_t ___arg32, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___0_arg1, int32_t ___1_arg2, int32_t ___2_arg3, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Object,System.Object>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mB2760A703784902BE10E873BC760166EC9693D63_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2__ctor_mB2760A703784902BE10E873BC760166EC9693D63_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611CB55F64FC3D79052_gshared (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611CB55F64FC3D79052_gshared (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.Object,System.Object>::Invoke(T1,T2)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___arg10, RuntimeObject* ___arg21, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::get_Values()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ValueCollection_t038245E04B5D2A80048D9F8021A23E69A0C9DBAA* Dictionary_2_get_Values_mA0C01DEA55329E55380E96BBD04D4D228B437EC5_gshared (Dictionary_2_t14FE4A752A83D53771C584E4C8D14E01F2AFD7BA* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<TKey,TValue> System.Collections.Generic.Dictionary`2/ValueCollection<System.Object,System.Object>::GetEnumerator()
@@ -4155,7 +4666,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Cur
 // System.Boolean System.Collections.Generic.Dictionary`2/ValueCollection/Enumerator<System.Object,System.Object>::MoveNext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mBE11DA1DAFC756EB87E884AADC5EDC4BB72FB032_gshared (Enumerator_t44124D16E0B2F7308FF4069BE06369B5A83896EB* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<System.Int32>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 
 // System.Void System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>::.ctor()
 inline void Dictionary_2__ctor_m18BD3D67F68362FA122DF28B28EBC87C8D87B7E0 (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, const RuntimeMethod* method)
@@ -4165,33 +4676,33 @@ inline void Dictionary_2__ctor_m18BD3D67F68362FA122DF28B28EBC87C8D87B7E0 (Dictio
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerPrefix::get_Host()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerPrefix_get_Host_m98EE82682B03FE490741DA42D3F847FB8B929393_inline (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, const RuntimeMethod* method) ;
 // System.Net.IPAddress WebSocketSharp.Net.EndPointManager::convertToIPAddress(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* EndPointManager_convertToIPAddress_mDD6F7CB4110B8BA2237DF9A1E21A8AE4B51B0AE7 (String_t* ___hostname0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* EndPointManager_convertToIPAddress_mDD6F7CB4110B8BA2237DF9A1E21A8AE4B51B0AE7 (String_t* ___0_hostname, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::IsLocal(System.Net.IPAddress)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsLocal_mC91D35C52D635EB9E76DE285CA0B8E726593FEB7 (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___address0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsLocal_mC91D35C52D635EB9E76DE285CA0B8E726593FEB7 (IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___0_address, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerException::.ctor(System.Int32,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_m0195BDF177F3645B3591E231190AF7460725B863 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___errorCode0, String_t* ___message1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_m0195BDF177F3645B3591E231190AF7460725B863 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___0_errorCode, String_t* ___1_message, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerPrefix::get_Port()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerPrefix_get_Port_m63D781533963C258E86E8E5D24367FD794618B08_inline (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Int32::TryParse(System.String,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21 (String_t* ___s0, int32_t* ___result1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int32_TryParse_mC928DE2FEC1C35ED5298BDDCA9868076E94B8A21 (String_t* ___0_s, int32_t* ___1_result, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::IsPortNumber(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsPortNumber_m9FAE191B1E6BD327F2F059A96BA8600C0F12229B (int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsPortNumber_m9FAE191B1E6BD327F2F059A96BA8600C0F12229B (int32_t ___0_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerPrefix::get_Path()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerPrefix_get_Path_m63E409761C66463B447BAF7A62E8AC5EF3953D11_inline (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, const RuntimeMethod* method) ;
 // System.Int32 System.String::IndexOf(System.Char)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966 (String_t* __this, Il2CppChar ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966 (String_t* __this, Il2CppChar ___0_value, const RuntimeMethod* method) ;
 // System.Int32 System.String::IndexOf(System.String,System.StringComparison)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_m490810CB7ADA9230AC0F8D78E213A8EFED129F55 (String_t* __this, String_t* ___value0, int32_t ___comparisonType1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_m490810CB7ADA9230AC0F8D78E213A8EFED129F55 (String_t* __this, String_t* ___0_value, int32_t ___1_comparisonType, const RuntimeMethod* method) ;
 // System.Void System.Net.IPEndPoint::.ctor(System.Net.IPAddress,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IPEndPoint__ctor_m902C98F9E3F36B20B3C2E030AA91B62E2BC7A85A (IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* __this, IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___address0, int32_t ___port1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IPEndPoint__ctor_m902C98F9E3F36B20B3C2E030AA91B62E2BC7A85A (IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* __this, IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* ___0_address, int32_t ___1_port, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>::TryGetValue(TKey,TValue&)
-inline bool Dictionary_2_TryGetValue_m86F2AFAA43751C79522239D3EEBCE838EE26A076 (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___key0, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731** ___value1, const RuntimeMethod* method)
+inline bool Dictionary_2_TryGetValue_m86F2AFAA43751C79522239D3EEBCE838EE26A076 (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___0_key, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731** ___1_value, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___key0, ___value1, method);
+	return ((  bool (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Boolean WebSocketSharp.Net.EndPointListener::get_IsSecure()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool EndPointListener_get_IsSecure_m735D99E1ABA3986657A89CEDBDB09AA2617C0A9D_inline (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, const RuntimeMethod* method) ;
@@ -4204,28 +4715,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ServerSslConfiguration_t57F1D37D7E44CF7DB14B7
 // System.Boolean WebSocketSharp.Net.HttpListener::get_ReuseAddress()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListener_get_ReuseAddress_m3DFD80D773B35F1EBF1F74AE4810ECDEE9AB02A0_inline (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointListener::.ctor(System.Net.IPEndPoint,System.Boolean,System.String,WebSocketSharp.Net.ServerSslConfiguration,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener__ctor_mE60E0C2F0193BB7D6CCCAF6811382A6FF7177626 (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___endpoint0, bool ___secure1, String_t* ___certificateFolderPath2, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___sslConfig3, bool ___reuseAddress4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener__ctor_mE60E0C2F0193BB7D6CCCAF6811382A6FF7177626 (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___0_endpoint, bool ___1_secure, String_t* ___2_certificateFolderPath, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___3_sslConfig, bool ___4_reuseAddress, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>::Add(TKey,TValue)
-inline void Dictionary_2_Add_mE30243B65014458449F2AC4923E12E7DFF3A9C1D (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___key0, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_Add_mE30243B65014458449F2AC4923E12E7DFF3A9C1D (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___0_key, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Void WebSocketSharp.Net.EndPointListener::AddPrefix(WebSocketSharp.Net.HttpListenerPrefix,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_AddPrefix_m1E2F6B6D8D0B6574636814BBF709A9139F634D4C (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* ___prefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_AddPrefix_m1E2F6B6D8D0B6574636814BBF709A9139F634D4C (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* ___0_prefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Boolean System.String::op_Equality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 // System.Net.IPAddress WebSocketSharp.Ext::ToIPAddress(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* Ext_ToIPAddress_m528D6365A7AF0E998281D4DCE13748525222860C (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* Ext_ToIPAddress_m528D6365A7AF0E998281D4DCE13748525222860C (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointListener::RemovePrefix(WebSocketSharp.Net.HttpListenerPrefix,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_RemovePrefix_m49C3B24CD22B425D01A5AACB75634BDDD902D21B (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* ___prefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_RemovePrefix_m49C3B24CD22B425D01A5AACB75634BDDD902D21B (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* ___0_prefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Void System.Threading.Monitor::Exit(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA (RuntimeObject* ___obj0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Exit_m05B2CF037E2214B3208198C282490A2A475653FA (RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 // System.Void System.Threading.Monitor::Enter(System.Object,System.Boolean&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149 (RuntimeObject* ___obj0, bool* ___lockTaken1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149 (RuntimeObject* ___0_obj, bool* ___1_lockTaken, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Net.IPEndPoint,WebSocketSharp.Net.EndPointListener>::Remove(TKey)
-inline bool Dictionary_2_Remove_mCD37C7A1B355E8B3006F622EAEA379F7C5FA5FCA (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___key0, const RuntimeMethod* method)
+inline bool Dictionary_2_Remove_mCD37C7A1B355E8B3006F622EAEA379F7C5FA5FCA (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* __this, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___0_key, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF*, IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___0_key, method);
 }
 // System.Void WebSocketSharp.Net.EndPointListener::Close()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_Close_mD3E060F1B975DCDE424CA02ECDA8D3BE1ABA73D4 (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, const RuntimeMethod* method) ;
@@ -4239,11 +4750,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerPrefixCollection_t37C24206155AB8F
 // System.Collections.Generic.IEnumerator`1<System.String> WebSocketSharp.Net.HttpListenerPrefixCollection::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerPrefixCollection_GetEnumerator_m9E54FA6F9D337B5C196D5C2A825C68A757355520 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointManager::addPrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.String>::Add(T)
-inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Collections.Generic.List`1/Enumerator<T> System.Collections.Generic.List`1<System.String>::GetEnumerator()
 inline Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1 List_1_GetEnumerator_m7692B5F182858B7D5C72C920D09AD48738D1E70D (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
@@ -4261,22 +4772,22 @@ inline String_t* Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11
 	return ((  String_t* (*) (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
 }
 // System.Void WebSocketSharp.Net.EndPointManager::removePrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1/Enumerator<System.String>::MoveNext()
 inline bool Enumerator_MoveNext_mDB47EEC4531D33B9C33FD2E70BA15E1535A0F3ED (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1* __this, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Enumerator_tA7A4B718FE1ED1D87565680D8C8195EC8AEAB3D1*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
 // System.Void System.Security.Principal.GenericIdentity::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericIdentity__ctor_m1BA056A1EEBDB56F02C9A5D177B1859356594B68 (GenericIdentity_tB84BBD61CAFF77FE5BBDD7430F57A3169A583818* __this, String_t* ___name0, String_t* ___type1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericIdentity__ctor_m1BA056A1EEBDB56F02C9A5D177B1859356594B68 (GenericIdentity_tB84BBD61CAFF77FE5BBDD7430F57A3169A583818* __this, String_t* ___0_name, String_t* ___1_type, const RuntimeMethod* method) ;
 // System.Void System.Net.Sockets.NetworkStream::.ctor(System.Net.Sockets.Socket,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkStream__ctor_mA44C3DB90F5B64F230CC2176DC7E722F4077A9DE (NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* __this, Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* ___socket0, bool ___ownsSocket1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkStream__ctor_mA44C3DB90F5B64F230CC2176DC7E722F4077A9DE (NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* __this, Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* ___0_socket, bool ___1_ownsSocket, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.ServerSslConfiguration WebSocketSharp.Net.EndPointListener::get_SslConfiguration()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* EndPointListener_get_SslConfiguration_mF609DDFF66EAF56623EE10A32F6881D2E6DFB5E0_inline (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, const RuntimeMethod* method) ;
 // System.Net.Security.RemoteCertificateValidationCallback WebSocketSharp.Net.ServerSslConfiguration::get_ClientCertificateValidationCallback()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ServerSslConfiguration_get_ClientCertificateValidationCallback_mC1622658A32AF13C48FAC4EF9DFEE5FE120F8DE8 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, const RuntimeMethod* method) ;
 // System.Void System.Net.Security.SslStream::.ctor(System.IO.Stream,System.Boolean,System.Net.Security.RemoteCertificateValidationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SslStream__ctor_m9096E6E85E60C4D205A26FA43D121FECEC735484 (SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___innerStream0, bool ___leaveInnerStreamOpen1, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___userCertificateValidationCallback2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SslStream__ctor_m9096E6E85E60C4D205A26FA43D121FECEC735484 (SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_innerStream, bool ___1_leaveInnerStreamOpen, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___2_userCertificateValidationCallback, const RuntimeMethod* method) ;
 // System.Security.Cryptography.X509Certificates.X509Certificate2 WebSocketSharp.Net.ServerSslConfiguration::get_ServerCertificate()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ServerSslConfiguration_get_ServerCertificate_mE0F7225FC3A210B20DA8EEAC56D1CCD04EBBDF09_inline (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.ServerSslConfiguration::get_ClientCertificateRequired()
@@ -4291,9 +4802,9 @@ inline void Dictionary_2__ctor_m1AE7A14FE6CF65276434BAC094AE2F7269D06024 (Dictio
 	((  void (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, const RuntimeMethod*))Dictionary_2__ctor_m1AE7A14FE6CF65276434BAC094AE2F7269D06024_gshared)(__this, method);
 }
 // System.Void System.Threading.TimerCallback::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerCallback__ctor_mDA748EAAD184861871872C3B672A848AEF2A1E4A (TimerCallback_t7455CAFACC7054E62879920AFC84C5DA98B8C7CD* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerCallback__ctor_mDA748EAAD184861871872C3B672A848AEF2A1E4A (TimerCallback_t7455CAFACC7054E62879920AFC84C5DA98B8C7CD* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Threading.Timer::.ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m0B758073AACDB1DC9F64E18F4036E3CDFFC8E970 (Timer_t763C1D5F5A36087DC92C7DA4D1F8AB578F83AB00* __this, TimerCallback_t7455CAFACC7054E62879920AFC84C5DA98B8C7CD* ___callback0, RuntimeObject* ___state1, int32_t ___dueTime2, int32_t ___period3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer__ctor_m0B758073AACDB1DC9F64E18F4036E3CDFFC8E970 (Timer_t763C1D5F5A36087DC92C7DA4D1F8AB578F83AB00* __this, TimerCallback_t7455CAFACC7054E62879920AFC84C5DA98B8C7CD* ___0_callback, RuntimeObject* ___1_state, int32_t ___2_dueTime, int32_t ___3_period, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpConnection::init()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_init_mD170E4CAD3EA1158340953A94D4877747D922553 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Net.EndPoint System.Net.Sockets.Socket::get_LocalEndPoint()
@@ -4313,35 +4824,35 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_unregisterContext_m7B5237
 // System.Void WebSocketSharp.Net.HttpConnection::removeConnection()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_removeConnection_mE60E4047AAC40C9A3FFCC4DBAF3897FF4652583E (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Void System.Net.Sockets.Socket::Shutdown(System.Net.Sockets.SocketShutdown)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Socket_Shutdown_mA7D259CF81614B311DD97C3748144FB1284683E3 (Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* __this, int32_t ___how0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Socket_Shutdown_mA7D259CF81614B311DD97C3748144FB1284683E3 (Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* __this, int32_t ___0_how, const RuntimeMethod* method) ;
 // System.Void System.Net.Sockets.Socket::Close()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Socket_Close_m5EBF3D8BE2C42EF8037BC9372CE7760B1717EEE4 (Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.Stream::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stream_Dispose_mCDB42F32A17541CCA6D3A5906827A401570B07A8 (Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.Timer::Change(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Timer_Change_mC17480F2947443FCEF2D5A47DAF0E74D55DE0A57 (Timer_t763C1D5F5A36087DC92C7DA4D1F8AB578F83AB00* __this, int32_t ___dueTime0, int32_t ___period1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Timer_Change_mC17480F2947443FCEF2D5A47DAF0E74D55DE0A57 (Timer_t763C1D5F5A36087DC92C7DA4D1F8AB578F83AB00* __this, int32_t ___0_dueTime, int32_t ___1_period, const RuntimeMethod* method) ;
 // System.Void System.Threading.Timer::Dispose()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Timer_Dispose_m75A06B0748FE7958C296A5E39849A0FB6EA03C86 (Timer_t763C1D5F5A36087DC92C7DA4D1F8AB578F83AB00* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerContext::.ctor(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext__ctor_mF336516BE39707647CC214AC968CFA2662AAEFDF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext__ctor_mF336516BE39707647CC214AC968CFA2662AAEFDF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) ;
 // System.Void System.IO.MemoryStream::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MemoryStream__ctor_m8F3BAE0B48E65BAA13C52FB020E502B3EA22CA6B (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* __this, const RuntimeMethod* method) ;
 // TValue System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::get_Item(TKey)
-inline bool Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, const RuntimeMethod* method)
+inline bool Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, const RuntimeMethod*))Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, const RuntimeMethod*))Dictionary_2_get_Item_mFEABB1F5BA99558C75E330D9F550473FD42C4DFD_gshared)(__this, ___0_key, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::set_Item(TKey,TValue)
-inline void Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48 (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, bool ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48 (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, bool ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, bool, const RuntimeMethod*))Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, bool, const RuntimeMethod*))Dictionary_2_set_Item_m266E81996A1E6BFCB7C91E78EC0DB1253655AD48_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Void WebSocketSharp.Net.HttpConnection::SendError(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_m21C891A905AE51E642B3B1511ACD80E8329FADAA (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, String_t* ___message0, int32_t ___status1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_m21C891A905AE51E642B3B1511ACD80E8329FADAA (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, String_t* ___0_message, int32_t ___1_status, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpConnection::close()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_close_m340A556ED1971D51A21CDA50EC96AAA80DEEF04B (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpConnection::processInput(System.Byte[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpConnection_processInput_m5C0AF6AB3B8327DA7D1F0718D3974F47B56F0E36 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data0, int32_t ___length1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpConnection_processInput_m5C0AF6AB3B8327DA7D1F0718D3974F47B56F0E36 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, int32_t ___1_length, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerContext::get_HasError()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerContext_get_HasError_mDF3859BC6277186EC1E4C6B1371B39E25BECCE4A (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerRequest WebSocketSharp.Net.HttpListenerContext::get_Request()
@@ -4353,43 +4864,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_mC7CBCF30D8ADEA
 // System.Uri WebSocketSharp.Net.HttpListenerRequest::get_Url()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpListenerRequest_get_Url_m373D68AE0F65FE23CA4C862068F08469E852059F_inline (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.EndPointListener::TrySearchHttpListener(System.Uri,WebSocketSharp.Net.HttpListener&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EndPointListener_TrySearchHttpListener_mAD36C896F3E63A0EF03544CA9C02B18A996527E0 (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387** ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EndPointListener_TrySearchHttpListener_mAD36C896F3E63A0EF03544CA9C02B18A996527E0 (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___0_uri, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387** ___1_listener, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListener::AddConnection(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_AddConnection_mB77A6EEBF6B06693127428ECC4847F4CAACEFD71 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_AddConnection_mB77A6EEBF6B06693127428ECC4847F4CAACEFD71 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_Listener(WebSocketSharp.Net.HttpListener)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_value, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerContext::Authenticate()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerContext_Authenticate_m45D78588D45BC9C62F8723E25E5E1F11D5B67281 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerContext::Register()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerContext_Register_m33A4DD3C1CFD379FAB3B68D4630B648A9C294A5C (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Void System.AsyncCallback::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncCallback__ctor_mC3C0475E930E4419AED02C7335E53B425A2D68AC (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncCallback__ctor_mC3C0475E930E4419AED02C7335E53B425A2D68AC (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Text.StringBuilder::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m2619CA8D2C3476DF1A302D9D941498BB1C6164C5 (StringBuilder_t* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m2619CA8D2C3476DF1A302D9D941498BB1C6164C5 (StringBuilder_t* __this, int32_t ___0_capacity, const RuntimeMethod* method) ;
 // System.Int32 System.String::get_Length()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline (String_t* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_ErrorMessage(System.String)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerRequest::SetRequestLine(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_SetRequestLine_mE6E65A0FE6A11A3AD7B232567DF75E60FD8A6245 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___requestLine0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_SetRequestLine_mE6E65A0FE6A11A3AD7B232567DF75E60FD8A6245 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___0_requestLine, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerRequest::AddHeader(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C291E2C143DB4C9269705F27B94E6CE0 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___header0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C291E2C143DB4C9269705F27B94E6CE0 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___0_header, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpConnection::readLineFrom(System.Byte[],System.Int32,System.Int32,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpConnection_readLineFrom_m30E8D94502AD46B36A2EABA10485874C25352888 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___length2, int32_t* ___read3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpConnection_readLineFrom_m30E8D94502AD46B36A2EABA10485874C25352888 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_length, int32_t* ___3_read, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::Append(System.Char)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1 (StringBuilder_t* __this, Il2CppChar ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m71228B30F05724CD2CD96D9611DCD61BFB96A6E1 (StringBuilder_t* __this, Il2CppChar ___0_value, const RuntimeMethod* method) ;
 // System.Void System.Text.StringBuilder::set_Length(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder_set_Length_mE2427BDAEF91C4E4A6C80F3BDF1F6E01DBCC2414 (StringBuilder_t* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder_set_Length_mE2427BDAEF91C4E4A6C80F3BDF1F6E01DBCC2414 (StringBuilder_t* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::RemoveConnection(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_RemoveConnection_m9FD1417665847C8E294B7E6F35B42F4A6E7979AB (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_RemoveConnection_m9FD1417665847C8E294B7E6F35B42F4A6E7979AB (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointListener::RemoveConnection(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_RemoveConnection_m904622AF46DF03DE724C2675EF06FA2ECB05237D (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointListener_RemoveConnection_m904622AF46DF03DE724C2675EF06FA2ECB05237D (EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerContext::Unregister()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_Unregister_m16BC7E30E5AE25B17C32A682E46D312B537D2210 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.ResponseStream WebSocketSharp.Net.HttpConnection::GetResponseStream()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* HttpConnection_GetResponseStream_m78F7638CC74D3498952A0E656CD773FAC94CC239 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ResponseStream::Close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m0FDD104113A5B5CA71A7DA6E6614E8A3D6FFB109 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___force0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m0FDD104113A5B5CA71A7DA6E6614E8A3D6FFB109 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_force, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerResponse WebSocketSharp.Net.HttpListenerContext::get_Response()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* HttpListenerContext_get_Response_mAC597BA8D4DC2A6570EB13D0030B71D74DDF4234_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerResponse::get_CloseConnection()
@@ -4399,56 +4910,56 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_FlushInput_m766EF45E
 // System.Void WebSocketSharp.Net.HttpConnection::BeginReadRequest()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_BeginReadRequest_m7D5D46DE6B2BAAC48118C26DF291A92DDDD494EA (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.Int32,System.Boolean>::Add(TKey,TValue)
-inline void Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___key0, bool ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682* __this, int32_t ___0_key, bool ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, bool, const RuntimeMethod*))Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_t01224C8DBCCFE276E97D2BF52F4D7B10D3642682*, int32_t, bool, const RuntimeMethod*))Dictionary_2_Add_m15404AE1ED9C4C7CF89DAEAB8C5F3280C7D115EB_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Void WebSocketSharp.Net.HttpConnection::Close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___force0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___0_force, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_SendChunked(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_SendChunked_m6CF1143F20593649CF4D2CF8A141836B4E5A69F6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_SendChunked_m6CF1143F20593649CF4D2CF8A141836B4E5A69F6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ChunkedRequestStream::.ctor(System.IO.Stream,System.Byte[],System.Int32,System.Int32,WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChunkedRequestStream__ctor_m5E0EB0BABAAC3B62D53BC19539D266EB244213E5 (ChunkedRequestStream_t9573FC5C7F209505BD05C230730E9C260934C786* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer1, int32_t ___offset2, int32_t ___count3, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ChunkedRequestStream__ctor_m5E0EB0BABAAC3B62D53BC19539D266EB244213E5 (ChunkedRequestStream_t9573FC5C7F209505BD05C230730E9C260934C786* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_buffer, int32_t ___2_offset, int32_t ___3_count, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___4_context, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.RequestStream::.ctor(System.IO.Stream,System.Byte[],System.Int32,System.Int32,System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer1, int32_t ___offset2, int32_t ___count3, int64_t ___contentLength4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_buffer, int32_t ___2_offset, int32_t ___3_count, int64_t ___4_contentLength, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListener WebSocketSharp.Net.HttpListenerContext::get_Listener()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* HttpListenerContext_get_Listener_mE950DCF55052613D0A41ADA8F901AEB155CD729B_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListener::get_IgnoreWriteExceptions()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_get_IgnoreWriteExceptions_m47C30A2CAD66D42C6D882C37EF80E235D075F344 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ResponseStream::.ctor(System.IO.Stream,WebSocketSharp.Net.HttpListenerResponse,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D7F156CFD64F70C77377712 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___response1, bool ___ignoreWriteExceptions2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D7F156CFD64F70C77377712 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___1_response, bool ___2_ignoreWriteExceptions, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerContext::get_ErrorMessage()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerContext_get_ErrorMessage_m02208C442814F92A8DA1F5501E2C52F35EBD9173_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.HttpListenerContext::get_ErrorStatus()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HttpListenerContext_get_ErrorStatus_mB039CB7A0031835DB130A21775300D7FAEF03A5A_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_StatusCode(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m08A72C8186199CAAE1EAE395CCA0BC5B823A197D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m08A72C8186199CAAE1EAE395CCA0BC5B823A197D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentType(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mBEF43C2C988122C1DFFDF60F5164E7E070919415 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mBEF43C2C988122C1DFFDF60F5164E7E070919415 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerResponse::get_StatusDescription()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerResponse_get_StatusDescription_mBCEEED32D9440F7E11865FB97ADDD74F7AFBA9DD_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mAB076D92DC92723B2224D75987BE463AF1CE7132 (StringBuilder_t* __this, String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mAB076D92DC92723B2224D75987BE463AF1CE7132 (StringBuilder_t* __this, String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F (StringBuilder_t* __this, String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F (StringBuilder_t* __this, String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::Append(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D (StringBuilder_t* __this, String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m08904D74E0C78E5F36DCD9C9303BDD07886D9F7D (StringBuilder_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Text.Encoding System.Text.Encoding::get_UTF8()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9 (const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentEncoding(System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentEncoding_m2EB352430588AA82F6289F766C464CFE974B0D8A (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentEncoding_m2EB352430588AA82F6289F766C464CFE974B0D8A (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentLength64(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64_mA85480C44249B22B8716923FFECB74205B852A76 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int64_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64_mA85480C44249B22B8716923FFECB74205B852A76 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int64_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::Close(System.Byte[],System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC8E8C3CAEBA9565C41A71EC55E668 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___responseEntity0, bool ___willBlock1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC8E8C3CAEBA9565C41A71EC55E668 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_responseEntity, bool ___1_willBlock, const RuntimeMethod* method) ;
 // System.String System.Collections.Specialized.NameValueCollection::get_Item(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_get_Item_mE3ED755803E67BC852123C70EEF8D53774FA635F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_get_Item_mE3ED755803E67BC852123C70EEF8D53774FA635F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor(System.Collections.Specialized.NameValueCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection__ctor_m878AB94A93A31878089DEF9F110AE6C01BA6D148 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___col0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection__ctor_m878AB94A93A31878089DEF9F110AE6C01BA6D148 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_col, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::set_Item(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.AuthenticationResponse::CreateRequestDigest(System.Collections.Specialized.NameValueCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationResponse_CreateRequestDigest_mF55FF510E22D3C634F08915B5253D27227E0266F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___parameters0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* AuthenticationResponse_CreateRequestDigest_mF55FF510E22D3C634F08915B5253D27227E0266F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_parameters, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::get_IsMultiValueInRequest()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_get_IsMultiValueInRequest_mEBEFCE79102A977F2F4E02D455E6EDA0B926A1E6 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::get_IsMultiValueInResponse()
@@ -4475,7 +4986,7 @@ inline void Dictionary_2__ctor_m8A98105245A048660D6B46098C1E87265958638E (Dictio
 // System.Void WebSocketSharp.Logger::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Logger__ctor_m83B35BE56CE48558126B1940E0699CF0C635BC22 (Logger_tEAC74E518027694C3653F7516547CE57FA0D4EB7* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerPrefixCollection::.ctor(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection__ctor_mC40321EAE81F807190AA431F841E80F955976A8E (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection__ctor_mC40321EAE81F807190AA431F841E80F955976A8E (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>::.ctor()
 inline void List_1__ctor_m66910D3B1A2425742D1D0A93EB1EE4F988EC9B7D (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, const RuntimeMethod* method)
 {
@@ -4503,9 +5014,9 @@ inline int32_t KeyCollection_get_Count_m6337F1FA4C62BDA0D6CB98FA6A0F5043E35D6965
 	return ((  int32_t (*) (KeyCollection_t0216435A104A1F97A36F273F8DC5E7EC9B5877DC*, const RuntimeMethod*))KeyCollection_get_Count_mB870EAF2A8DC8A4EE35A3C2D14DE5EFBB5BE5EDD_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>::CopyTo(TKey[],System.Int32)
-inline void KeyCollection_CopyTo_mA77C689762B46892812154966114D6CFD373EA8A (KeyCollection_t0216435A104A1F97A36F273F8DC5E7EC9B5877DC* __this, HttpConnectionU5BU5D_t939F13D6955FE981BF3A4C28827A096C0D4DD746* ___array0, int32_t ___index1, const RuntimeMethod* method)
+inline void KeyCollection_CopyTo_mA77C689762B46892812154966114D6CFD373EA8A (KeyCollection_t0216435A104A1F97A36F273F8DC5E7EC9B5877DC* __this, HttpConnectionU5BU5D_t939F13D6955FE981BF3A4C28827A096C0D4DD746* ___0_array, int32_t ___1_index, const RuntimeMethod* method)
 {
-	((  void (*) (KeyCollection_t0216435A104A1F97A36F273F8DC5E7EC9B5877DC*, HttpConnectionU5BU5D_t939F13D6955FE981BF3A4C28827A096C0D4DD746*, int32_t, const RuntimeMethod*))KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared)(__this, ___array0, ___index1, method);
+	((  void (*) (KeyCollection_t0216435A104A1F97A36F273F8DC5E7EC9B5877DC*, HttpConnectionU5BU5D_t939F13D6955FE981BF3A4C28827A096C0D4DD746*, int32_t, const RuntimeMethod*))KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared)(__this, ___0_array, ___1_index, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>::Clear()
 inline void Dictionary_2_Clear_m163BA990B0A2A3136D4E892F2EA221E5A61CC770 (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* __this, const RuntimeMethod* method)
@@ -4545,9 +5056,9 @@ inline int32_t KeyCollection_get_Count_m5C2F3A46A370A868296878EEE128BA15091A6D29
 	return ((  int32_t (*) (KeyCollection_tB37F8C478801141472EDE1858BA2E71BBB73DB27*, const RuntimeMethod*))KeyCollection_get_Count_mB870EAF2A8DC8A4EE35A3C2D14DE5EFBB5BE5EDD_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2/KeyCollection<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>::CopyTo(TKey[],System.Int32)
-inline void KeyCollection_CopyTo_m6409CC9DEFE685E6323AE6EF9280422C0744A3FC (KeyCollection_tB37F8C478801141472EDE1858BA2E71BBB73DB27* __this, HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D* ___array0, int32_t ___index1, const RuntimeMethod* method)
+inline void KeyCollection_CopyTo_m6409CC9DEFE685E6323AE6EF9280422C0744A3FC (KeyCollection_tB37F8C478801141472EDE1858BA2E71BBB73DB27* __this, HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D* ___0_array, int32_t ___1_index, const RuntimeMethod* method)
 {
-	((  void (*) (KeyCollection_tB37F8C478801141472EDE1858BA2E71BBB73DB27*, HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D*, int32_t, const RuntimeMethod*))KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared)(__this, ___array0, ___index1, method);
+	((  void (*) (KeyCollection_tB37F8C478801141472EDE1858BA2E71BBB73DB27*, HttpListenerContextU5BU5D_tC69CB74CAB33DB3B9B3824B93DF94DCF81DAFB3D*, int32_t, const RuntimeMethod*))KeyCollection_CopyTo_mDC23F0CB0A5EC478C97C22F1FD23809F1FF19F1F_gshared)(__this, ___0_array, ___1_index, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>::Clear()
 inline void Dictionary_2_Clear_m5BDD893BC93EA3ADE292F10CA9458932C591A950 (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* __this, const RuntimeMethod* method)
@@ -4572,11 +5083,11 @@ inline void List_1_Clear_m3C7785753CF56BC8335076A82470E14DADC021E3_inline (List_
 	((  void (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82D95E3A29BBFF6F2BD51E6831B2C0A6C9F6 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82D95E3A29BBFF6F2BD51E6831B2C0A6C9F6 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, Exception_t* ___0_exception, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointManager::RemoveListener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemoveListener_mFC6E115EA3D903E50FD1F88A0715757735C5780C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemoveListener_mFC6E115EA3D903E50FD1F88A0715757735C5780C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::cleanupContextQueue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupContextQueue_m2D0E2BE8207F60F277150569555C84AC59278161 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___sendServiceUnavailable0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupContextQueue_m2D0E2BE8207F60F277150569555C84AC59278161 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_sendServiceUnavailable, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::cleanupContextRegistry()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupContextRegistry_m3F53108568F47BBCD9D2313D62DDD5EC35CA8EAB (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::cleanupConnections()
@@ -4584,92 +5095,92 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupConnections_m08F5F4A
 // System.Type System.Object::GetType()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void System.ObjectDisposedException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectDisposedException__ctor_mB2C8582279AF3F0C1CF9AA52DA7331BF848DFD48 (ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB* __this, String_t* ___objectName0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectDisposedException__ctor_mB2C8582279AF3F0C1CF9AA52DA7331BF848DFD48 (ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB* __this, String_t* ___0_objectName, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::cleanupWaitQueue(System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupWaitQueue_m41CC761623820DC78E1AF0899E99933802CDFBBA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Exception_t* ___exception0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupWaitQueue_m41CC761623820DC78E1AF0899E99933802CDFBBA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Exception_t* ___0_exception, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>::get_Item(System.Int32)
-inline HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* List_1_get_Item_mCC33839E81602D6DC37B417142637341E492DD23 (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, int32_t ___index0, const RuntimeMethod* method)
+inline HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* List_1_get_Item_mCC33839E81602D6DC37B417142637341E492DD23 (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
-	return ((  HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+	return ((  HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
 }
 // System.Void System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>::RemoveAt(System.Int32)
-inline void List_1_RemoveAt_mB4F43CBD55DF8502B5764FF814B9D213A5B541EC (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, int32_t ___index0, const RuntimeMethod* method)
+inline void List_1_RemoveAt_mB4F43CBD55DF8502B5764FF814B9D213A5B541EC (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___index0, method);
+	((  void (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
 }
 // T System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>::get_Item(System.Int32)
-inline HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* List_1_get_Item_m3BFA38CE5AEF32A1EBDC072BD7FF9A6E6E7C8521 (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, int32_t ___index0, const RuntimeMethod* method)
+inline HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* List_1_get_Item_m3BFA38CE5AEF32A1EBDC072BD7FF9A6E6E7C8521 (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
-	return ((  HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___index0, method);
+	return ((  HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
 }
 // System.Void System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>::RemoveAt(System.Int32)
-inline void List_1_RemoveAt_m7B382336002BC7E1CCE23EBB497A5D43D9783B1D (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, int32_t ___index0, const RuntimeMethod* method)
+inline void List_1_RemoveAt_m7B382336002BC7E1CCE23EBB497A5D43D9783B1D (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, int32_t ___0_index, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___index0, method);
+	((  void (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, int32_t, const RuntimeMethod*))List_1_RemoveAt_m54F62297ADEE4D4FDA697F49ED807BF901201B54_gshared)(__this, ___0_index, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>::set_Item(TKey,TValue)
-inline void Dictionary_2_set_Item_m3B0E79A65CA5E5BC0ADC2793CA0E7FBFCA78281F (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___key0, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_set_Item_m3B0E79A65CA5E5BC0ADC2793CA0E7FBFCA78281F (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_key, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerException::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mBD93BB840029E59EF2FFB98A8BB4F0B7A55BE9D8 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___errorCode0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mBD93BB840029E59EF2FFB98A8BB4F0B7A55BE9D8 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___0_errorCode, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerContext WebSocketSharp.Net.HttpListener::getContextFromQueue()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListener_getContextFromQueue_m71E924B1612CDFC8B3CE73D50F2FB62C539DB931 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerAsyncResult>::Add(T)
-inline void List_1_Add_mA8E87C0F0C88E6878954D799B241705B23A10911_inline (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_mA8E87C0F0C88E6878954D799B241705B23A10911_inline (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C*, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(WebSocketSharp.Net.HttpListenerContext,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, bool ___syncCompleted1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, bool ___1_syncCompleted, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>::set_Item(TKey,TValue)
-inline void Dictionary_2_set_Item_m197BBA0F655F7D51322EE2EAB14EA7E7C921E5D8 (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___key0, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_set_Item_m197BBA0F655F7D51322EE2EAB14EA7E7C921E5D8 (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_key, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))Dictionary_2_set_Item_m1A840355E8EDAECEA9D0C6F5E51B248FAA449CBD_gshared)(__this, ___0_key, ___1_value, method);
 }
 // WebSocketSharp.Net.HttpListenerAsyncResult WebSocketSharp.Net.HttpListener::getAsyncResultFromQueue()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* HttpListener_getAsyncResultFromQueue_mB883A35712E8E850B5E6B3F71ED7C2609980DF70 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<WebSocketSharp.Net.HttpListenerContext>::Add(T)
-inline void List_1_Add_m52F4960BA74D5046CA253B8B1EB98D364C53F49F_inline (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___item0, const RuntimeMethod* method)
+inline void List_1_Add_m52F4960BA74D5046CA253B8B1EB98D364C53F49F_inline (List_1_t34157D301768D07BD0345C16404819B1629D46C2* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_item, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___item0, method);
+	((  void (*) (List_1_t34157D301768D07BD0345C16404819B1629D46C2*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m09E6603BC1197CEDE803D525305EE7E705D717B9 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m09E6603BC1197CEDE803D525305EE7E705D717B9 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpConnection,WebSocketSharp.Net.HttpConnection>::Remove(TKey)
-inline bool Dictionary_2_Remove_m721DB180EADFADE81E5D9C0805AA0931EBFA6A8D (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___key0, const RuntimeMethod* method)
+inline bool Dictionary_2_Remove_m721DB180EADFADE81E5D9C0805AA0931EBFA6A8D (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_key, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D*, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___0_key, method);
 }
 // TResult System.Func`2<WebSocketSharp.Net.HttpListenerRequest,WebSocketSharp.Net.AuthenticationSchemes>::Invoke(T)
-inline int32_t Func_2_Invoke_m57BE9648EE7D74BB59FFEB73076AD9AA77C20F6F_inline (Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___arg0, const RuntimeMethod* method)
+inline int32_t Func_2_Invoke_m57BE9648EE7D74BB59FFEB73076AD9AA77C20F6F_inline (Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___0_arg, const RuntimeMethod* method)
 {
-	return ((  int32_t (*) (Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B*, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD*, const RuntimeMethod*))Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline)(__this, ___arg0, method);
+	return ((  int32_t (*) (Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B*, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD*, const RuntimeMethod*))Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline)(__this, ___0_arg, method);
 }
 // System.Boolean System.Collections.Generic.Dictionary`2<WebSocketSharp.Net.HttpListenerContext,WebSocketSharp.Net.HttpListenerContext>::Remove(TKey)
-inline bool Dictionary_2_Remove_mB3A7351B91269FC4606BD9BA1AF13635A403BAC3 (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___key0, const RuntimeMethod* method)
+inline bool Dictionary_2_Remove_mB3A7351B91269FC4606BD9BA1AF13635A403BAC3 (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_key, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE*, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC*, const RuntimeMethod*))Dictionary_2_Remove_m5C7C45E75D951A75843F3F7AADD56ECD64F6BC86_gshared)(__this, ___0_key, method);
 }
 // System.Void WebSocketSharp.Net.HttpListener::close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_close_mA6B255A6D1467D9DF0444F5FA9AC847E7C129A34 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___force0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_close_mA6B255A6D1467D9DF0444F5FA9AC847E7C129A34 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_force, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.HttpListenerPrefixCollection::get_Count()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListenerPrefixCollection_get_Count_m9FA7AEAE8EA266A62C55CE41AA92FFFE76034CCC (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, const RuntimeMethod* method) ;
 // System.Void System.InvalidOperationException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162 (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* __this, String_t* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InvalidOperationException__ctor_mE4CB6F4712AB6D99A2358FBAE2E052B3EE976162 (InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::.ctor(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult__ctor_m8452591ED179FD51B269180CB98A6E8E0C6E797F (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback0, RuntimeObject* ___state1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult__ctor_m8452591ED179FD51B269180CB98A6E8E0C6E797F (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_callback, RuntimeObject* ___1_state, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerAsyncResult WebSocketSharp.Net.HttpListener::BeginGetContext(WebSocketSharp.Net.HttpListenerAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* HttpListener_BeginGetContext_m4C064B423406CB25F15A659E660904708E372B56 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___asyncResult0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* HttpListener_BeginGetContext_m4C064B423406CB25F15A659E660904708E372B56 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___0_asyncResult, const RuntimeMethod* method) ;
 // System.Void System.ArgumentNullException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___paramName0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, String_t* ___1_paramName, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerAsyncResult::get_EndCalled()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListenerAsyncResult_get_EndCalled_m5B493AFFDFF6F07F083934367A42F539F8C9E35F_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::set_EndCalled(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerAsyncResult::get_IsCompleted()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerAsyncResult_get_IsCompleted_m748A5DDCBAB3CD28F669CFFE0BEB16EB8C8FE566 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, const RuntimeMethod* method) ;
 // System.Threading.WaitHandle WebSocketSharp.Net.HttpListenerAsyncResult::get_AsyncWaitHandle()
@@ -4677,33 +5188,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785
 // WebSocketSharp.Net.HttpListenerContext WebSocketSharp.Net.HttpListenerAsyncResult::GetContext()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListenerAsyncResult_GetContext_mDD3EB066BB2FCAA22DB3BC863B0958205BB88FFD (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::set_InGet(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpListenerContext WebSocketSharp.Net.HttpListener::EndGetContext(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListener_EndGetContext_m7EA0BE4830D7361279752853B6AA0E1F7BAD9687 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListener_EndGetContext_m7EA0BE4830D7361279752853B6AA0E1F7BAD9687 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointManager::AddListener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddListener_m62B1A573F1BBEC42C2B3344E2F37F701DA0F451C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddListener_m62B1A573F1BBEC42C2B3344E2F37F701DA0F451C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) ;
 // System.Void System.Threading.ManualResetEvent::.ctor(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualResetEvent__ctor_m361CFCF6AC28BFFF5C8790DC2B5951791A1C4CEE (ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158* __this, bool ___initialState0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ManualResetEvent__ctor_m361CFCF6AC28BFFF5C8790DC2B5951791A1C4CEE (ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158* __this, bool ___0_initialState, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult/<>c__DisplayClass25_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0__ctor_mCE9E007F2F779F7A9D8C104AA553776A24EA714A (U3CU3Ec__DisplayClass25_0_tAD334F31DBC3BFF707E59A5B1B35E91A25952976* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.EventWaitHandle::Set()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EventWaitHandle_Set_mDF98D67F214714A9590DF82A1C51D3D851281E4D (EventWaitHandle_t18F2EB0161747B0646A9A406015A61A214A1EB7E* __this, const RuntimeMethod* method) ;
 // System.Void System.Threading.WaitCallback::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitCallback__ctor_m9730564F9A28ECB72462D05AA92CA9E43DE9B41C (WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitCallback__ctor_m9730564F9A28ECB72462D05AA92CA9E43DE9B41C (WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Boolean System.Threading.ThreadPool::QueueUserWorkItem(System.Threading.WaitCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR bool ThreadPool_QueueUserWorkItem_mE534D14C47699D1D37288AE0710B19FC7EC02BAB (WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3* ___callBack0, RuntimeObject* ___state1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR bool ThreadPool_QueueUserWorkItem_mE534D14C47699D1D37288AE0710B19FC7EC02BAB (WaitCallback_tFB2C7FD58D024BBC2B0333DC7A4CB63B8DEBD5D3* ___0_callBack, RuntimeObject* ___1_state, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::complete(WebSocketSharp.Net.HttpListenerAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_complete_m95F5BBFA0B652603CD83990D9B785AFE5FBAD177 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___asyncResult0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_complete_m95F5BBFA0B652603CD83990D9B785AFE5FBAD177 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___0_asyncResult, const RuntimeMethod* method) ;
 // System.Void System.AsyncCallback::Invoke(System.IAsyncResult)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEAE969B1D0FD97E934DC39439E89D7553910_inline (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___ar0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEAE969B1D0FD97E934DC39439E89D7553910_inline (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___0_ar, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerRequest::.ctor(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__ctor_mC00CD80186E6AC5767A3757BB6673FAAF8FFCBC8 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__ctor_mC00CD80186E6AC5767A3757BB6673FAAF8FFCBC8 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::.ctor(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse__ctor_m8DD8D685FF83232A9719520513336A672ED72CCB (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse__ctor_m8DD8D685FF83232A9719520513336A672ED72CCB (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.AuthenticationSchemes WebSocketSharp.Net.HttpListener::SelectAuthenticationScheme(WebSocketSharp.Net.HttpListenerRequest)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListener_SelectAuthenticationScheme_m9C9F6E119D2FEE0E2EB2F7EA16F4D0BC92A9C141 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___request0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListener_SelectAuthenticationScheme_m9C9F6E119D2FEE0E2EB2F7EA16F4D0BC92A9C141 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___0_request, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Ext::Close(WebSocketSharp.Net.HttpListenerResponse,WebSocketSharp.Net.HttpStatusCode)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Close_mA3C0C6CF738A15A002314F334ECD78A09678D70F (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___response0, int32_t ___code1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Close_mA3C0C6CF738A15A002314F334ECD78A09678D70F (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___0_response, int32_t ___1_code, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListener::GetRealm()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListener_GetRealm_m72A59E86BE70929717A2041363F05A6F62270AF0 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpListenerRequest::get_Headers()
@@ -4713,78 +5224,78 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpListenerRequest_get
 // System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential> WebSocketSharp.Net.HttpListener::GetUserCredentialsFinder()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* HttpListener_GetUserCredentialsFinder_m6CE65805FFF55A9FE2AE71AA63D784371EA8F5F1_inline (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Security.Principal.IPrincipal WebSocketSharp.Net.HttpUtility::CreateUser(System.String,WebSocketSharp.Net.AuthenticationSchemes,System.String,System.String,System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___response0, int32_t ___scheme1, String_t* ___realm2, String_t* ___method3, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___credentialsFinder4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___0_response, int32_t ___1_scheme, String_t* ___2_realm, String_t* ___3_method, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___4_credentialsFinder, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.AuthenticationChallenge::.ctor(WebSocketSharp.Net.AuthenticationSchemes,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationChallenge__ctor_m933E88096016E0972979F6695183D504D2DC6D5E (AuthenticationChallenge_t6EADF65CD74974F1783AD785778A24AA7F6D00A2* __this, int32_t ___scheme0, String_t* ___realm1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AuthenticationChallenge__ctor_m933E88096016E0972979F6695183D504D2DC6D5E (AuthenticationChallenge_t6EADF65CD74974F1783AD785778A24AA7F6D00A2* __this, int32_t ___0_scheme, String_t* ___1_realm, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Ext::CloseWithAuthChallenge(WebSocketSharp.Net.HttpListenerResponse,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_CloseWithAuthChallenge_m505B7A32FD5A51EF02F6E43897DAAE6843BF3046 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___response0, String_t* ___challenge1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_CloseWithAuthChallenge_m505B7A32FD5A51EF02F6E43897DAAE6843BF3046 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___0_response, String_t* ___1_challenge, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListener::RegisterContext(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_RegisterContext_mBFD67BE7128D4CB25C14E7280E8F56A433566DCF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_RegisterContext_mBFD67BE7128D4CB25C14E7280E8F56A433566DCF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListener::UnregisterContext(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_UnregisterContext_m920982224E13F9C4D4BBA6028A59F02A8B8D1BC3 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_UnregisterContext_m920982224E13F9C4D4BBA6028A59F02A8B8D1BC3 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::IsToken(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsToken_mD0210769BCC936321C474F7B5649A54130EF3899 (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsToken_mD0210769BCC936321C474F7B5649A54130EF3899 (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext::.ctor(WebSocketSharp.Net.HttpListenerContext,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext__ctor_m28DE6960A96152FABC7E9F99409A32AA0656A288 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, String_t* ___protocol1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerWebSocketContext__ctor_m28DE6960A96152FABC7E9F99409A32AA0656A288 (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, String_t* ___1_protocol, const RuntimeMethod* method) ;
 // System.Void System.ComponentModel.Win32Exception::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_m1B3DF3F51BBF050C18F933B36027A8A4902668C4 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___info0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___context1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_m1B3DF3F51BBF050C18F933B36027A8A4902668C4 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) ;
 // System.Void System.ComponentModel.Win32Exception::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_m0B20F25EC4A56A122FF766429AF40AF6292E11B1 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, const RuntimeMethod* method) ;
 // System.Void System.ComponentModel.Win32Exception::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_mFC38F1C99031D227C6BB3CA07099866D39994281 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, int32_t ___error0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_mFC38F1C99031D227C6BB3CA07099866D39994281 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, int32_t ___0_error, const RuntimeMethod* method) ;
 // System.Void System.ComponentModel.Win32Exception::.ctor(System.Int32,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_mB0380F996944EDFCF9CACC7F28A18874F19B4FD4 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, int32_t ___error0, String_t* ___message1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Win32Exception__ctor_mB0380F996944EDFCF9CACC7F28A18874F19B4FD4 (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, int32_t ___0_error, String_t* ___1_message, const RuntimeMethod* method) ;
 // System.Int32 System.ComponentModel.Win32Exception::get_NativeErrorCode()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Win32Exception_get_NativeErrorCode_m33C1D176D9178C36DA32F8FEC251B923EE53CE5E_inline (Win32Exception_t15A75629914EB77C816D8219D93ED78E50C74BE9* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::parse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C488EC2138D0F0DE9DFE2EDE59A8E (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C488EC2138D0F0DE9DFE2EDE59A8E (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) ;
 // System.Boolean System.String::StartsWith(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0 (String_t* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Int32 System.String::IndexOf(System.Char,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mFD81FEE71234D44F45A4924CD51AD6169C722ACB (String_t* __this, Il2CppChar ___value0, int32_t ___startIndex1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOf_mFD81FEE71234D44F45A4924CD51AD6169C722ACB (String_t* __this, Il2CppChar ___0_value, int32_t ___1_startIndex, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Int32 System.String::LastIndexOf(System.Char,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_mC92062EF4E7765DD44424828FA75C027AA325442 (String_t* __this, Il2CppChar ___value0, int32_t ___startIndex1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_LastIndexOf_mC92062EF4E7765DD44424828FA75C027AA325442 (String_t* __this, Il2CppChar ___0_value, int32_t ___1_startIndex, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Char System.String::get_Chars(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3 (String_t* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3 (String_t* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.String System.String::Substring(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___startIndex0, int32_t ___length1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE (String_t* __this, int32_t ___0_startIndex, int32_t ___1_length, const RuntimeMethod* method) ;
 // System.String System.String::Substring(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472 (String_t* __this, int32_t ___startIndex0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472 (String_t* __this, int32_t ___0_startIndex, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___format0, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___args1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_m918500C1EFB475181349A79989BB79BB36102894 (String_t* ___0_format, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<System.String>::get_Count()
 inline int32_t List_1_get_Count_mB63183A9151F4345A9DD444A7CBE0D6E03F77C7C_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
 {
 	return ((  int32_t (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::CheckPrefix(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604FB9F001E38D0D742575BAC067ECF3A1F (String_t* ___uriPrefix0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604FB9F001E38D0D742575BAC067ECF3A1F (String_t* ___0_uriPrefix, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.List`1<System.String>::Contains(T)
-inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___item0, const RuntimeMethod* method)
+inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
-	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___item0, method);
+	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Contains_m4C9139C2A6B23E9343D3F87807B32C6E2CFE660D_gshared)(__this, ___0_item, method);
 }
 // System.Boolean WebSocketSharp.Net.HttpListener::get_IsListening()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_get_IsListening_m3891A4E03359C1EC21CD95D4782CD068D77BFBE1 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.EndPointManager::AddPrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddPrefix_mEB5581D19EDE29483F829668C9353C681368731D (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddPrefix_mEB5581D19EDE29483F829668C9353C681368731D (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.String>::Clear()
 inline void List_1_Clear_mC6C7AEBB0F980A717A87C0D12377984A464F0934_inline (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1_Clear_m16C1F2C61FED5955F10EB36BC1CB2DF34B128994_gshared_inline)(__this, method);
 }
 // System.Void System.Collections.Generic.List`1<System.String>::CopyTo(T[],System.Int32)
-inline void List_1_CopyTo_mDBB80691DC1779726A0F6AFC990C73F49C8532A4 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___array0, int32_t ___arrayIndex1, const RuntimeMethod* method)
+inline void List_1_CopyTo_mDBB80691DC1779726A0F6AFC990C73F49C8532A4 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_array, int32_t ___1_arrayIndex, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*, int32_t, const RuntimeMethod*))List_1_CopyTo_m1210D480F3EF1C250A53086148C1204B7A99B931_gshared)(__this, ___array0, ___arrayIndex1, method);
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*, int32_t, const RuntimeMethod*))List_1_CopyTo_m1210D480F3EF1C250A53086148C1204B7A99B931_gshared)(__this, ___0_array, ___1_arrayIndex, method);
 }
 // System.Boolean System.Collections.Generic.List`1<System.String>::Remove(T)
-inline bool List_1_Remove_mD9E8CFB6777A99046B3C0195F7343FE771A2E99D (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___item0, const RuntimeMethod* method)
+inline bool List_1_Remove_mD9E8CFB6777A99046B3C0195F7343FE771A2E99D (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
-	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___item0, method);
+	return ((  bool (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Remove_m4DFA48F4CEB9169601E75FC28517C5C06EFA5AD7_gshared)(__this, ___0_item, method);
 }
 // System.Void WebSocketSharp.Net.EndPointManager::RemovePrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemovePrefix_m01BA6EF66639856893562063C078C80D2556FE90 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemovePrefix_m01BA6EF66639856893562063C078C80D2556FE90 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) ;
 // System.Text.Encoding System.Text.Encoding::get_ASCII()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_ASCII_mCC61B512D320FD4E2E71CC0DFDF8DDF3CD215C65 (const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::.ctor()
@@ -4794,11 +5305,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t Guid_NewGuid_m1F4894E8DC089811D6252148
 // System.Text.Encoding System.Text.Encoding::get_Default()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_get_Default_mB48FC92A61D1153AC33C2C59F01D7266DF7D155C (const RuntimeMethod* method) ;
 // WebSocketSharp.Net.CookieCollection WebSocketSharp.Ext::GetCookies(System.Collections.Specialized.NameValueCollection,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* Ext_GetCookies_m8F8DA187E26EE0BD652FC81AEC427516BE5025F6 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___headers0, bool ___response1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* Ext_GetCookies_m8F8DA187E26EE0BD652FC81AEC427516BE5025F6 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_headers, bool ___1_response, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::get_HasEntityBody()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_get_HasEntityBody_m3F56731C2103D304B1520B0B09F4D386F69AC562 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.RequestStream WebSocketSharp.Net.HttpConnection::GetRequestStream(System.Int64,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* HttpConnection_GetRequestStream_m388BDD78BF65200C600D3BC52E1553F07005C8D9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, int64_t ___contentLength0, bool ___chunked1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* HttpConnection_GetRequestStream_m388BDD78BF65200C600D3BC52E1553F07005C8D9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, int64_t ___0_contentLength, bool ___1_chunked, const RuntimeMethod* method) ;
 // System.Security.Principal.IPrincipal WebSocketSharp.Net.HttpListenerContext::get_User()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerContext_get_User_m051AC7D6877A3ABA59C71C08D617D15F307F78F0_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, const RuntimeMethod* method) ;
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpListenerRequest::get_RemoteEndPoint()
@@ -4808,17 +5319,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36
 // System.Boolean WebSocketSharp.Net.HttpConnection::get_IsSecure()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpConnection_get_IsSecure_m69E68B51B905DEE8F8AA220957666D4664752E0D_inline (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Version::op_GreaterThan(System.Version,System.Version)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_GreaterThan_m82174057E818F77CD26D72F612C47C7516BA7431 (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v10, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_GreaterThan_m82174057E818F77CD26D72F612C47C7516BA7431 (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___0_v1, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___1_v2, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::Contains(System.Collections.Specialized.NameValueCollection,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_Contains_mA918D528F7CAC8FC7A7C1B4A501BF5E73D80E3CD (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___collection0, String_t* ___name1, String_t* ___value2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_Contains_mA918D528F7CAC8FC7A7C1B4A501BF5E73D80E3CD (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_collection, String_t* ___1_name, String_t* ___2_value, const RuntimeMethod* method) ;
 // System.Boolean System.String::op_Inequality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6 (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpConnection::get_LocalEndPoint()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* HttpConnection_get_LocalEndPoint_m0AB62E9295B37D2743F908E8B6F20D2CFEDC7FC9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.String System.Uri::get_Query()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Query_m17DEC663263C486C8C8177AF9C4BFE2FFBE51178 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::InternalParseQueryString(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___query0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___0_query, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.String System.Uri::get_PathAndQuery()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_PathAndQuery_m33B64A4AAF08510C0199CF5A85918B91D1008E5C (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, const RuntimeMethod* method) ;
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpConnection::get_RemoteEndPoint()
@@ -4826,21 +5337,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D9
 // System.Net.IPEndPoint WebSocketSharp.Net.HttpListenerRequest::get_LocalEndPoint()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* HttpListenerRequest_get_LocalEndPoint_m9C951048F90D685B1DC4A77DE5EA7569D90D5A5C (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Void System.Version::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Version__ctor_m52D06833AE6481C0A9B72085BDC4D09A723CEF7F (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, String_t* ___version0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Version__ctor_m52D06833AE6481C0A9B72085BDC4D09A723CEF7F (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, String_t* ___0_version, const RuntimeMethod* method) ;
 // System.String System.String::Trim()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5 (String_t* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::InternalSet(System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508448FD933F7F738384D5A61E5BC172CC50 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, bool ___response2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508448FD933F7F738384D5A61E5BC172CC50 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, bool ___2_response, const RuntimeMethod* method) ;
 // System.Globalization.CultureInfo System.Globalization.CultureInfo::get_InvariantCulture()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* CultureInfo_get_InvariantCulture_mD1E96DC845E34B10F78CB744B0CB5D7D63CEB1E6 (const RuntimeMethod* method) ;
 // System.String System.String::ToLower(System.Globalization.CultureInfo)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_ToLower_mD22E5D18F36015484078F5BA0F1687DA95904D1E (String_t* __this, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___culture0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_ToLower_mD22E5D18F36015484078F5BA0F1687DA95904D1E (String_t* __this, CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* ___0_culture, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<System.String> WebSocketSharp.Ext::SplitHeaderValue(System.String,System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Ext_SplitHeaderValue_m6550401BDE1B3A398A52816EAB8678D7E4FFD868 (String_t* ___value0, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___separators1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Ext_SplitHeaderValue_m6550401BDE1B3A398A52816EAB8678D7E4FFD868 (String_t* ___0_value, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___1_separators, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.String>::.ctor(System.Collections.Generic.IEnumerable`1<T>)
-inline void List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, RuntimeObject* ___collection0, const RuntimeMethod* method)
+inline void List_1__ctor_m0BAB01B25B1D62E100CC97401B1A9972D6DEB6EC (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, RuntimeObject* ___0_collection, const RuntimeMethod* method)
 {
-	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, RuntimeObject*, const RuntimeMethod*))List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared)(__this, ___collection0, method);
+	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, RuntimeObject*, const RuntimeMethod*))List_1__ctor_mE097DBD72433D1AFC11733F5678602603A756424_gshared)(__this, ___0_collection, method);
 }
 // T[] System.Collections.Generic.List`1<System.String>::ToArray()
 inline StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* List_1_ToArray_m2C402D882AA60FC1D5C7C09A129BE7779F833B4A (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
@@ -4848,13 +5359,13 @@ inline StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* List_1_ToArray_m2
 	return ((  StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, const RuntimeMethod*))List_1_ToArray_mD7E4F8E7C11C3C67CB5739FCC0A6E86106A6291F_gshared)(__this, method);
 }
 // System.String[] System.String::Split(System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___separator0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m101D35FEC86371D2BB4E3480F6F896880093B2E9 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_separator, const RuntimeMethod* method) ;
 // System.Boolean System.Int64::TryParse(System.String,System.Int64&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int64_TryParse_m3FC0128C89CC2331239FC2A0A749BF33455F03D2 (String_t* ___s0, int64_t* ___result1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Int64_TryParse_m3FC0128C89CC2331239FC2A0A749BF33455F03D2 (String_t* ___0_s, int64_t* ___1_result, const RuntimeMethod* method) ;
 // System.Text.Encoding WebSocketSharp.Net.HttpUtility::GetEncoding(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpUtility_GetEncoding_m628EB683E6A01526DC49B8AB0074671A8EAA245A (String_t* ___contentType0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpUtility_GetEncoding_m628EB683E6A01526DC49B8AB0074671A8EAA245A (String_t* ___0_contentType, const RuntimeMethod* method) ;
 // System.Uri WebSocketSharp.Ext::ToUri(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* Ext_ToUri_m94A0E353F55F2934033A06CEA44826CCF1992295 (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* Ext_ToUri_m94A0E353F55F2934033A06CEA44826CCF1992295 (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpListenerRequest::get_UserHostAddress()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerRequest_get_UserHostAddress_mBBD1884BAF284A436B030D67ACE08E6FF5BB5AB3 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::get_IsWebSocketRequest()
@@ -4862,65 +5373,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_get_IsWebSocketReque
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::get_IsSecureConnection()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_get_IsSecureConnection_m1731BA5D233E6350D9BA0A95AB6B348307769281 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Uri WebSocketSharp.Net.HttpUtility::CreateRequestUrl(System.String,System.String,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___requestUri0, String_t* ___host1, bool ___websocketRequest2, bool ___secure3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___0_requestUri, String_t* ___1_host, bool ___2_websocketRequest, bool ___3_secure, const RuntimeMethod* method) ;
 // System.Boolean System.Uri::op_Equality(System.Uri,System.Uri)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_op_Equality_mD7D7AAB7023C0873B37D8B8C7195BEF34002A194 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri10, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___uri21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_op_Equality_mD7D7AAB7023C0873B37D8B8C7195BEF34002A194 (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___0_uri1, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* ___1_uri2, const RuntimeMethod* method) ;
 // System.String System.String::ToLower()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_ToLower_m6191ABA3DC514ED47C10BDA23FD0DDCEAE7ACFBD (String_t* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_ErrorStatus(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ResponseStream::InternalWrite(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_InternalWrite_m5D377BCBA90D0AE4DD3046869ECB88B22F4E846D (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_InternalWrite_m5D377BCBA90D0AE4DD3046869ECB88B22F4E846D (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Int64 System.Math::Min(System.Int64,System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079 (int64_t ___val10, int64_t ___val21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t Math_Min_mD731E8A02F13C67C1EAC7C1E7F81909FE466F079 (int64_t ___0_val1, int64_t ___1_val2, const RuntimeMethod* method) ;
 // System.IO.Stream WebSocketSharp.Net.HttpListenerRequest::get_InputStream()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* HttpListenerRequest_get_InputStream_m2C37975309A6A7C2C3163D291F6C47D2A74D17F5 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.String[] System.String::Split(System.Char[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m3C63FA89A52BE352B4E49DB5379F7AAD6ACCA0E8 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___separator0, int32_t ___count1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* String_Split_m3C63FA89A52BE352B4E49DB5379F7AAD6ACCA0E8 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_separator, int32_t ___1_count, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::tryCreateVersion(System.String,System.Version&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4FA67B335ECE89EF1133182F2414DF2933EF6092 (String_t* ___version0, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** ___result1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4FA67B335ECE89EF1133182F2414DF2933EF6092 (String_t* ___0_version, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** ___1_result, const RuntimeMethod* method) ;
 // System.Int32 System.Version::get_Major()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Version_get_Major_m1F782BA72C64627627ADC2090C147CF887CE7795_inline (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, const RuntimeMethod* method) ;
 // System.Void System.NotImplementedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotImplementedException__ctor_mDAB47BC6BD0E342E8F2171E5CABE3E67EA049F1C (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* __this, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::AppendFormat(System.String,System.Object,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_m40962B9C5B41720C6424721E526C0D99D95112A2 (StringBuilder_t* __this, String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, RuntimeObject* ___arg23, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_AppendFormat_m40962B9C5B41720C6424721E526C0D99D95112A2 (StringBuilder_t* __this, String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::checkDisposed()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_checkDisposed_m574B6A3AD371D552FAED78A101167AD18960AE2B (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::checkDisposedOrHeadersSent()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66 (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___paramName0, String_t* ___message1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66 (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___0_paramName, String_t* ___1_message, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.CookieCollection::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieCollection__ctor_m16958CA2DA8600A112BE3F2D1213104873C61A6F (CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::.ctor(WebSocketSharp.Net.HttpHeaderType,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m76014848A87E8206BD9F75D6A464D44961F9DC05 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___state0, bool ___internallyUsed1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m76014848A87E8206BD9F75D6A464D44961F9DC05 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_state, bool ___1_internallyUsed, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpHeaderType WebSocketSharp.Net.WebHeaderCollection::get_State()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_get_State_m4120204917B7E6669EA9BF41CC0FB5690150E04A_inline (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Version::op_Equality(System.Version,System.Version)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_Equality_mED378603AE784D5ACEDB8F4B250F50773B331D4B (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v10, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_Equality_mED378603AE784D5ACEDB8F4B250F50773B331D4B (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___0_v1, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___1_v2, const RuntimeMethod* method) ;
 // System.Int32 System.Version::get_Minor()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Version_get_Minor_m5EEC53977DFD0A9D8F3276DA2532E8DC1644F80E_inline (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::MaybeUri(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_MaybeUri_m7AE4435E6B04401F7C6612F036448400959EF84D (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_MaybeUri_m7AE4435E6B04401F7C6612F036448400959EF84D (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Boolean System.Uri::TryCreate(System.String,System.UriKind,System.Uri&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_TryCreate_m183077985BD7B1BE8DBDBCC4604F775C44723EC9 (String_t* ___uriString0, int32_t ___uriKind1, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E** ___result2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Uri_TryCreate_m183077985BD7B1BE8DBDBCC4604F775C44723EC9 (String_t* ___0_uriString, int32_t ___1_uriKind, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E** ___2_result, const RuntimeMethod* method) ;
 // System.Void System.Net.ProtocolViolationException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProtocolViolationException__ctor_m2C2665583590BF7DB9B53A7AF126FEFDDE364BA5 (ProtocolViolationException_t4660D647ACBC7121D1AE35068DDB7A6C7A88780D* __this, String_t* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ProtocolViolationException__ctor_m2C2665583590BF7DB9B53A7AF126FEFDDE364BA5 (ProtocolViolationException_t4660D647ACBC7121D1AE35068DDB7A6C7A88780D* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Ext::GetStatusDescription(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Ext_GetStatusDescription_mE4DBAB6CF630B3237D93F84BD793659C1C4CF58F (int32_t ___code0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Ext_GetStatusDescription_mE4DBAB6CF630B3237D93F84BD793659C1C4CF58F (int32_t ___0_code, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::IsText(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsText_mB42B1B6A72204083898F6936F4AB539B6B0871E8 (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_IsText_mB42B1B6A72204083898F6936F4AB539B6B0871E8 (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Int32 System.String::IndexOfAny(System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOfAny_mC7AA4AE42B38667BDB9B214AA6230F322306CFF6 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___anyOf0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t String_IndexOfAny_mC7AA4AE42B38667BDB9B214AA6230F322306CFF6 (String_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_anyOf, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.CookieCollection::get_Count()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CookieCollection_get_Count_m2F9F0430DB1864DC47CAEA6EB646401A980807F1 (CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* __this, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerable`1<WebSocketSharp.Net.Cookie> WebSocketSharp.Net.HttpListenerResponse::findCookie(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCookie_m76C3BFCF5A51FB9E5DA296FEAC716456F2D4D547 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCookie_m76C3BFCF5A51FB9E5DA296FEAC716456F2D4D547 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) ;
 // System.Collections.Generic.List`1<TSource> WebSocketSharp.Ext::ToList<WebSocketSharp.Net.Cookie>(System.Collections.Generic.IEnumerable`1<TSource>)
-inline List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7* Ext_ToList_TisCookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_m5EC629C8B45618053A7997283017553454E8B05E (RuntimeObject* ___source0, const RuntimeMethod* method)
+inline List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7* Ext_ToList_TisCookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_m5EC629C8B45618053A7997283017553454E8B05E (RuntimeObject* ___0_source, const RuntimeMethod* method)
 {
-	return ((  List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7* (*) (RuntimeObject*, const RuntimeMethod*))Ext_ToList_TisRuntimeObject_mD4255288D882109886C54474E6FA01B07F0A90F7_gshared)(___source0, method);
+	return ((  List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7* (*) (RuntimeObject*, const RuntimeMethod*))Ext_ToList_TisRuntimeObject_mD4255288D882109886C54474E6FA01B07F0A90F7_gshared)(___0_source, method);
 }
 // System.Int32 System.Collections.Generic.List`1<WebSocketSharp.Net.Cookie>::get_Count()
 inline int32_t List_1_get_Count_m007BA547FD9C2C2C5873A27F768139643ADD53EE_inline (List_1_t843DDFC12FA082765DEA06C0678E4977E04CC9D7* __this, const RuntimeMethod* method)
@@ -4950,49 +5461,49 @@ inline bool Enumerator_MoveNext_mE116687629069C792454369A4170420531AF0183 (Enume
 	return ((  bool (*) (Enumerator_tC23D4E82703B0CE5E3CA0E06047DC4130096D4B6*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CfindCookieU3Ed__62__ctor_mB9C59AE1F91C3140DB3707DBCADBC6795DE2D02A (U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CfindCookieU3Ed__62__ctor_mB9C59AE1F91C3140DB3707DBCADBC6795DE2D02A (U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::Add(System.Collections.Specialized.NameValueCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Add_mCBA5E260853B493CE3814EE115B6EE144AD51EBE (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___c0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Add_mCBA5E260853B493CE3814EE115B6EE144AD51EBE (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_c, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987 (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, const RuntimeMethod* method) ;
 // System.DateTime System.DateTime::get_UtcNow()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA (const RuntimeMethod* method) ;
 // System.String System.DateTime::ToString(System.String,System.IFormatProvider)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m27637E1131A10BED8A95639D64339023D5EBBF00 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, String_t* ___format0, RuntimeObject* ___provider1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m27637E1131A10BED8A95639D64339023D5EBBF00 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, String_t* ___0_format, RuntimeObject* ___1_provider, const RuntimeMethod* method) ;
 // System.String System.Int64::ToString(System.IFormatProvider)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int64_ToString_m5250B67D3E89B8EB829FB26136E744F1F141B7FD (int64_t* __this, RuntimeObject* ___provider0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int64_ToString_m5250B67D3E89B8EB829FB26136E744F1F141B7FD (int64_t* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::get_KeepAlive()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_get_KeepAlive_m1B38FA349984114DDA6B965CC2170E3A082D6521 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.HttpConnection::get_Reuses()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HttpConnection_get_Reuses_m126D06917E06062F3A4813D1131B9AED615E746E_inline (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___format0, RuntimeObject* ___arg01, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A41E6CB1E2FAF4BBE96DD8 (String_t* ___0_format, RuntimeObject* ___1_arg0, const RuntimeMethod* method) ;
 // System.Version WebSocketSharp.Net.HttpListenerRequest::get_ProtocolVersion()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* HttpListenerRequest_get_ProtocolVersion_m288472DC6B8E210EE9C7792A443962D591BE8F39_inline (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Version::op_LessThan(System.Version,System.Version)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_LessThan_m83ED9AEB1F6175AF9C8CDEDD9329CE0D2DA2CE4E (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v10, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___v21, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Version_op_LessThan_m83ED9AEB1F6175AF9C8CDEDD9329CE0D2DA2CE4E (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___0_v1, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___1_v2, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator WebSocketSharp.Net.CookieCollection::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CookieCollection_GetEnumerator_mB30A3F9B592F5E7E3807CBBCB4C6AA1D842D1EEB (CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* __this, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.Cookie::ToResponseString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Cookie_ToResponseString_m520112B109D4C844AEEB88937FAAD76B81E5070C (Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.StreamWriter::.ctor(System.IO.Stream,System.Text.Encoding,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_mA826366751DCD4273737331A6F520F60A0C61E03 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, int32_t ___bufferSize2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StreamWriter__ctor_mA826366751DCD4273737331A6F520F60A0C61E03 (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, int32_t ___2_bufferSize, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.WebHeaderCollection::ToStringMultiValue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiValue_mCD32223EAD99667B3C12F3B49AA6AB80FEFE68AB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiValue_mCD32223EAD99667B3C12F3B49AA6AB80FEFE68AB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___0_response, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_close_m36983D682FC7B1F7303F981EF5A11D6FBC804007 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___force0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_close_m36983D682FC7B1F7303F981EF5A11D6FBC804007 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_force, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.WebHeaderCollection WebSocketSharp.Net.HttpListenerResponse::get_Headers()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* HttpListenerResponse_get_Headers_m307F4FC7DFB3F8B817445837F70E38AAED0A7D13 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.CookieCollection WebSocketSharp.Net.HttpListenerResponse::get_Cookies()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* HttpListenerResponse_get_Cookies_m374A6742C7C862701C095FA710D9A1A55A5D7ED7 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.CookieCollection::Add(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieCollection_Add_mE04E6ABAD7F05281B62EF7AA618BFFFCDE58EF3F (CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieCollection_Add_mE04E6ABAD7F05281B62EF7AA618BFFFCDE58EF3F (CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse/<>c__DisplayClass69_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass69_0__ctor_m58BA535468AB6FF6A6CBAE73320C09D4C48D55F3 (U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* __this, const RuntimeMethod* method) ;
 // System.IO.Stream WebSocketSharp.Net.HttpListenerResponse::get_OutputStream()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* HttpListenerResponse_get_OutputStream_m83453C35AFF0E0CBEE20257A7408F2B4C6663E21 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerResponse::canAddOrUpdate(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_canAddOrUpdate_mA72FB2AAA9ECD1C1CDC0A21B4FFF37BC40457CC4 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_canAddOrUpdate_mA72FB2AAA9ECD1C1CDC0A21B4FFF37BC40457CC4 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) ;
 // System.Int32 System.Environment::get_CurrentManagedThreadId()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Environment_get_CurrentManagedThreadId_m66483AADCCC13272EBDCD94D31D2E52603C24BDF (const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62::<>m__Finally1()
@@ -5006,17 +5517,17 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Cookie_get_Domain_mA078
 // System.String WebSocketSharp.Net.Cookie::get_Path()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Cookie_get_Path_mD7D2E5D57BC37AE7FE0FA75AFCDEEC225E922495_inline (Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* __this, const RuntimeMethod* method) ;
 // System.Boolean System.String::Equals(System.String,System.StringComparison)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Equals_m7BDFC0B951005B9DC2BAED464AFE68FF7E9ACE5A (String_t* __this, String_t* ___value0, int32_t ___comparisonType1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_Equals_m7BDFC0B951005B9DC2BAED464AFE68FF7E9ACE5A (String_t* __this, String_t* ___0_value, int32_t ___1_comparisonType, const RuntimeMethod* method) ;
 // System.Collections.Generic.IEnumerator`1<WebSocketSharp.Net.Cookie> WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62::System.Collections.Generic.IEnumerable<WebSocketSharp.Net.Cookie>.GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CfindCookieU3Ed__62_System_Collections_Generic_IEnumerableU3CWebSocketSharp_Net_CookieU3E_GetEnumerator_m092C83AF85AA2A98FCFA384B7D386971632D90A8 (U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* __this, const RuntimeMethod* method) ;
 // System.IAsyncResult System.AsyncCallback::BeginInvoke(System.IAsyncResult,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AsyncCallback_BeginInvoke_m3CBD8B256174D206DC85F42A48F1F88E097E5975 (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___ar0, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback1, RuntimeObject* ___object2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AsyncCallback_BeginInvoke_m3CBD8B256174D206DC85F42A48F1F88E097E5975 (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___0_ar, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___1_callback, RuntimeObject* ___2_object, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::Complete()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_Complete_mDEEFF26C05064A6192BC65525066FB5C4A4407CF (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, const RuntimeMethod* method) ;
 // System.Void System.AsyncCallback::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncCallback_EndInvoke_mDF9BB40CE3E562BB89BADDB29F0DEAE72584BFA3 (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___result0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncCallback_EndInvoke_mDF9BB40CE3E562BB89BADDB29F0DEAE72584BFA3 (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___0_result, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.HttpUtility::getInt(System.Byte)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getInt_m3CCFF5CDD9403406D58AFA7FD2E0ADD6E7CD670C (uint8_t ___b0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getInt_m3CCFF5CDD9403406D58AFA7FD2E0ADD6E7CD670C (uint8_t ___0_b, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpUtility::initEntities()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_initEntities_mE92305305D6CB19217AAB54EA22FD7217A6E2B58 (const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Char>::.ctor()
@@ -5025,12 +5536,12 @@ inline void Dictionary_2__ctor_mD05477185416F3BD1639AD5AD9ED273D66081F98 (Dictio
 	((  void (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, const RuntimeMethod*))Dictionary_2__ctor_mF806375D670CDF3AD94674EEA4F4EAA746B6CC8A_gshared)(__this, method);
 }
 // System.Void System.Collections.Generic.Dictionary`2<System.String,System.Char>::Add(TKey,TValue)
-inline void Dictionary_2_Add_m6EC97AC9A46E6B8F714E433CE21162E04D6F4116 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___key0, Il2CppChar ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_Add_m6EC97AC9A46E6B8F714E433CE21162E04D6F4116 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___0_key, Il2CppChar ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, Il2CppChar, const RuntimeMethod*))Dictionary_2_Add_m1F6437CCDB7A2F0773A393593D0616B6DD0CD1B8_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, Il2CppChar, const RuntimeMethod*))Dictionary_2_Add_m1F6437CCDB7A2F0773A393593D0616B6DD0CD1B8_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Boolean WebSocketSharp.Net.HttpUtility::notEncoded(System.Char)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpUtility_notEncoded_m891D7A4CAFF34E7AD545955A130E10B9956895D8 (Il2CppChar ___c0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpUtility_notEncoded_m891D7A4CAFF34E7AD545955A130E10B9956895D8 (Il2CppChar ___0_c, const RuntimeMethod* method) ;
 // System.String System.Char::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C (Il2CppChar* __this, const RuntimeMethod* method) ;
 // System.String System.Uri::get_Scheme()
@@ -5038,140 +5549,140 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Scheme_m29106D5109538220B22
 // System.String System.Uri::get_Authority()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Uri_get_Authority_m5BE92DE43B1B4BCD6849FEBDE5530AB97E0C31EB (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* __this, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___str00, String_t* ___str11, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.String System.String::Format(System.String,System.Object,System.Object,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___format0, RuntimeObject* ___arg01, RuntimeObject* ___arg12, RuntimeObject* ___arg23, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C (String_t* ___0_format, RuntimeObject* ___1_arg0, RuntimeObject* ___2_arg1, RuntimeObject* ___3_arg2, const RuntimeMethod* method) ;
 // System.String System.Enum::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Boolean System.String::StartsWith(System.String,System.StringComparison)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mA2A4405B1B9F3653A6A9AA7F223F68D86A0C6264 (String_t* __this, String_t* ___value0, int32_t ___comparisonType1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_StartsWith_mA2A4405B1B9F3653A6A9AA7F223F68D86A0C6264 (String_t* __this, String_t* ___0_value, int32_t ___1_comparisonType, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.AuthenticationResponse WebSocketSharp.Net.AuthenticationResponse::Parse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AuthenticationResponse_t50F8680C8D040A2432CAFF99A7613EC28BF96B9F* AuthenticationResponse_Parse_m894610A35C815459ED48E1D6FC4960047816312D (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AuthenticationResponse_t50F8680C8D040A2432CAFF99A7613EC28BF96B9F* AuthenticationResponse_Parse_m894610A35C815459ED48E1D6FC4960047816312D (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Security.Principal.IIdentity WebSocketSharp.Net.AuthenticationResponse::ToIdentity()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AuthenticationResponse_ToIdentity_m7AB1447FC2A60BEFF030A7CB4CDE9DD2CDE047FE (AuthenticationResponse_t50F8680C8D040A2432CAFF99A7613EC28BF96B9F* __this, const RuntimeMethod* method) ;
 // TResult System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>::Invoke(T)
-inline NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* Func_2_Invoke_m15079CD7BDEB7EABF03A85A13C9414939F4C5224_inline (Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* __this, RuntimeObject* ___arg0, const RuntimeMethod* method)
+inline NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* Func_2_Invoke_m15079CD7BDEB7EABF03A85A13C9414939F4C5224_inline (Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method)
 {
-	return ((  NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* (*) (Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786*, RuntimeObject*, const RuntimeMethod*))Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline)(__this, ___arg0, method);
+	return ((  NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* (*) (Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786*, RuntimeObject*, const RuntimeMethod*))Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline)(__this, ___0_arg, method);
 }
 // System.String WebSocketSharp.Net.NetworkCredential::get_Password()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NetworkCredential_get_Password_mC7EEA302483494AF51029D40BF3AD34974E149EC (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpDigestIdentity::IsValid(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347AB841F6610355109754C3F018442D (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, String_t* ___password0, String_t* ___realm1, String_t* ___method2, String_t* ___entity3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347AB841F6610355109754C3F018442D (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, String_t* ___0_password, String_t* ___1_realm, String_t* ___2_method, String_t* ___3_entity, const RuntimeMethod* method) ;
 // System.String[] WebSocketSharp.Net.NetworkCredential::get_Roles()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NetworkCredential_get_Roles_m7BFCEE842F77E1FD63D7607BDFD3615E1103A8B9 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, const RuntimeMethod* method) ;
 // System.Void System.Security.Principal.GenericPrincipal::.ctor(System.Security.Principal.IIdentity,System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPrincipal__ctor_mEB784402B79A8D216DAD513362BB466BA3CCD696 (GenericPrincipal_t2903E733D80A868B534E2337368FD85622E9CA9D* __this, RuntimeObject* ___identity0, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___roles1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericPrincipal__ctor_mEB784402B79A8D216DAD513362BB466BA3CCD696 (GenericPrincipal_t2903E733D80A868B534E2337368FD85622E9CA9D* __this, RuntimeObject* ___0_identity, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___1_roles, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Ext::GetValue(System.String,System.Char,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Ext_GetValue_m70EB7188CF1D2313CFA99361A811C8DA68F3B76A (String_t* ___nameAndValue0, Il2CppChar ___separator1, bool ___unquote2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Ext_GetValue_m70EB7188CF1D2313CFA99361A811C8DA68F3B76A (String_t* ___0_nameAndValue, Il2CppChar ___1_separator, bool ___2_unquote, const RuntimeMethod* method) ;
 // System.Text.Encoding System.Text.Encoding::GetEncoding(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_GetEncoding_m979B224460094E241BD5C283BE279886664C9187 (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* Encoding_GetEncoding_m979B224460094E241BD5C283BE279886664C9187 (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection__ctor_m986911FA20B1A1784F01C8BE4DC55E9A218F3F00 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___capacity0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection__ctor_m986911FA20B1A1784F01C8BE4DC55E9A218F3F00 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___0_capacity, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.QueryStringCollection::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QueryStringCollection__ctor_mEB13FC5C6515D668B6396110FCCC8218F01A45DA (QueryStringCollection_t6E79312A4139F75EDF2B670A0A3CAF7200FA8480* __this, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpUtility::UrlDecode(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Void System.Text.StringBuilder::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D (StringBuilder_t* __this, const RuntimeMethod* method) ;
 // System.Char[] WebSocketSharp.Net.HttpUtility::getChars(System.IO.MemoryStream,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___buffer0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___0_buffer, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Text.StringBuilder System.Text.StringBuilder::Append(System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m8455D90E068B02E8376B7650409E2325303D2456 (StringBuilder_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringBuilder_t* StringBuilder_Append_m8455D90E068B02E8376B7650409E2325303D2456 (StringBuilder_t* __this, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___0_value, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.HttpUtility::getChar(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_m7C77C21A7FD481AD4A80896AE4FAC4722915E46A (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___length2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_m7C77C21A7FD481AD4A80896AE4FAC4722915E46A (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_length, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpUtility::urlEncode(System.Char,System.IO.Stream,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03EE6E26471C4708520F370DC (Il2CppChar ___c0, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___result1, bool ___unicode2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03EE6E26471C4708520F370DC (Il2CppChar ___0_c, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___1_result, bool ___2_unicode, const RuntimeMethod* method) ;
 // System.Void System.Runtime.CompilerServices.RuntimeHelpers::InitializeArray(System.Array,System.RuntimeFieldHandle)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___array0, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___fldHandle1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B (RuntimeArray* ___0_array, RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 ___1_fldHandle, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Ext::Contains(System.String,System.Char[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_Contains_m1AD2C81FD8D99950A94A113AB9919B9D98881072 (String_t* ___value0, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___chars1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Ext_Contains_m1AD2C81FD8D99950A94A113AB9919B9D98881072 (String_t* ___0_value, CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___1_chars, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpUtility::HtmlAttributeEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCFB4A25678E616B1BEA8AA91B64EA68262261B08 (String_t* ___s0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCFB4A25678E616B1BEA8AA91B64EA68262261B08 (String_t* ___0_s, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString(System.IFormatProvider)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m3B2730D9F5B0C1C57DCCC8B8DCFB8E5EC4E8979B (int32_t* __this, RuntimeObject* ___provider0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m3B2730D9F5B0C1C57DCCC8B8DCFB8E5EC4E8979B (int32_t* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2<System.String,System.Char> WebSocketSharp.Net.HttpUtility::getEntities()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* HttpUtility_getEntities_mD20F2A815974DF4280D540B6431B98D938B4D8C4 (const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Char>::ContainsKey(TKey)
-inline bool Dictionary_2_ContainsKey_m0926EE733E952732F0AA0FABCE4443B4DD0A4823 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___key0, const RuntimeMethod* method)
+inline bool Dictionary_2_ContainsKey_m0926EE733E952732F0AA0FABCE4443B4DD0A4823 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___0_key, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m816E43587AB82064CE1774C9CED2A588832C1949_gshared)(__this, ___key0, method);
+	return ((  bool (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, const RuntimeMethod*))Dictionary_2_ContainsKey_m816E43587AB82064CE1774C9CED2A588832C1949_gshared)(__this, ___0_key, method);
 }
 // TValue System.Collections.Generic.Dictionary`2<System.String,System.Char>::get_Item(TKey)
-inline Il2CppChar Dictionary_2_get_Item_m4E3EA6C2888845BF1BEA301C850E616AAFEB7132 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___key0, const RuntimeMethod* method)
+inline Il2CppChar Dictionary_2_get_Item_m4E3EA6C2888845BF1BEA301C850E616AAFEB7132 (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* __this, String_t* ___0_key, const RuntimeMethod* method)
 {
-	return ((  Il2CppChar (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m370693D71BA982E89D01F9F50E1A3F14062FEC05_gshared)(__this, ___key0, method);
+	return ((  Il2CppChar (*) (Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119*, String_t*, const RuntimeMethod*))Dictionary_2_get_Item_m370693D71BA982E89D01F9F50E1A3F14062FEC05_gshared)(__this, ___0_key, method);
 }
 // System.Boolean System.Char::IsDigit(System.Char)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Char_IsDigit_m8C1A38685D548E89FB8A05525B55261CC8D271B2 (Il2CppChar ___c0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Char_IsDigit_m8C1A38685D548E89FB8A05525B55261CC8D271B2 (Il2CppChar ___0_c, const RuntimeMethod* method) ;
 // System.Int32 System.Text.StringBuilder::get_Length()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StringBuilder_get_Length_mDEA041E7357C68CC3B5885276BB403676DAAE0D8 (StringBuilder_t* __this, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpUtility::HtmlDecode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C1025BD9FFF084C9B5B74FE19CC697FF (String_t* ___s0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C1025BD9FFF084C9B5B74FE19CC697FF (String_t* ___0_s, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpUtility::HtmlEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E675DE14631F202566CD041E7435D005 (String_t* ___s0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E675DE14631F202566CD041E7435D005 (String_t* ___0_s, const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::ParseQueryString(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_mAE84873C75DEB876D23E90CAFB1A8FD6BCA9F725 (String_t* ___query0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_mAE84873C75DEB876D23E90CAFB1A8FD6BCA9F725 (String_t* ___0_query, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.Byte>::.ctor()
 inline void List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9 (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method)
 {
 	((  void (*) (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*, const RuntimeMethod*))List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_gshared)(__this, method);
 }
 // System.Int32 WebSocketSharp.Net.HttpUtility::getChar(System.String,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_mA82A130EBE1642F5E437E580417C88F9CFFD7199 (String_t* ___s0, int32_t ___offset1, int32_t ___length2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_mA82A130EBE1642F5E437E580417C88F9CFFD7199 (String_t* ___0_s, int32_t ___1_offset, int32_t ___2_length, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpUtility::writeCharBytes(System.Char,System.Collections.IList,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097 (Il2CppChar ___c0, RuntimeObject* ___buffer1, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097 (Il2CppChar ___0_c, RuntimeObject* ___1_buffer, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___2_encoding, const RuntimeMethod* method) ;
 // T[] System.Collections.Generic.List`1<System.Byte>::ToArray()
 inline ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24 (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* __this, const RuntimeMethod* method)
 {
 	return ((  ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* (*) (List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B*, const RuntimeMethod*))List_1_ToArray_m23F8BB7CABADC11EBCAB5AB701B75F56C865BE24_gshared)(__this, method);
 }
 // System.String WebSocketSharp.Net.HttpUtility::InternalUrlDecode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_InternalUrlDecode_mFE1B40CF4DA2B943537384C30E9F9A0702F8B159 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_InternalUrlDecode_mFE1B40CF4DA2B943537384C30E9F9A0702F8B159 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___3_encoding, const RuntimeMethod* method) ;
 // System.Void System.ArgumentOutOfRangeException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mBC1D5DEEA1BA41DE77228CB27D6BAFEB6DCCBF4A (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___paramName0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mBC1D5DEEA1BA41DE77228CB27D6BAFEB6DCCBF4A (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlDecodeToBytes_mC0F61400A4177F49699811602E0DBBFDF0E015BE (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlDecodeToBytes_mC0F61400A4177F49699811602E0DBBFDF0E015BE (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlDecodeToBytes(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mC95CD8AEBD3181D83E684865F29DF081B3433FAE (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mC95CD8AEBD3181D83E684865F29DF081B3433FAE (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeToBytes_m74C68188D2AA1E85A3B0691442C114E36680FF81 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeToBytes_m74C68188D2AA1E85A3B0691442C114E36680FF81 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncode(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBEEEE76F4EEAAF67A322335F397D29 (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBEEEE76F4EEAAF67A322335F397D29 (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m39FDE8F38B81893D6D96308539045997EA2D2CA5 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m39FDE8F38B81893D6D96308539045997EA2D2CA5 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m3D60E5C9E1F268578E807FDB26EBD667F46A019E (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m3D60E5C9E1F268578E807FDB26EBD667F46A019E (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlEncodeUnicodeToBytes(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3 (String_t* ___s0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3 (String_t* ___0_s, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpUtility::urlPathEncode(System.Char,System.IO.Stream)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlPathEncode_m8F0A0EC438709368C70E4507E6942CED76EBC5EC (Il2CppChar ___c0, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___result1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlPathEncode_m8F0A0EC438709368C70E4507E6942CED76EBC5EC (Il2CppChar ___0_c, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___1_result, const RuntimeMethod* method) ;
 // System.Char[] System.String::ToCharArray()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* String_ToCharArray_m0699A92AA3E744229EF29CB9D943C47DF4FE5B46 (String_t* __this, const RuntimeMethod* method) ;
 // System.Void System.Version::.ctor(System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Version__ctor_m0871675040007535EA3D8083A4BEAE9DF8C92FF4 (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, int32_t ___major0, int32_t ___minor1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Version__ctor_m0871675040007535EA3D8083A4BEAE9DF8C92FF4 (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* __this, int32_t ___0_major, int32_t ___1_minor, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.NetworkCredential::.ctor(System.String,System.String,System.String,System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_mB1D1D49D4B535C60C07848BF995237941A58DE50 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___username0, String_t* ___password1, String_t* ___domain2, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___roles3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_mB1D1D49D4B535C60C07848BF995237941A58DE50 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_username, String_t* ___1_password, String_t* ___2_domain, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___3_roles, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection__ctor_mCA29E5386DACDF19F6F51BC395324F0A8EE05604 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, const RuntimeMethod* method) ;
 // System.Void System.IO.Stream::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Stream__ctor_mE8B074A0EBEB026FFF14062AB4B8A78E17EFFBF0 (Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* __this, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 // System.Void System.Buffer::BlockCopy(System.Array,System.Int32,System.Array,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_BlockCopy_m2F7BC0C5BA97C500E3F87D5008718F797E02B358 (RuntimeArray* ___src0, int32_t ___srcOffset1, RuntimeArray* ___dst2, int32_t ___dstOffset3, int32_t ___count4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Buffer_BlockCopy_m2F7BC0C5BA97C500E3F87D5008718F797E02B358 (RuntimeArray* ___0_src, int32_t ___1_srcOffset, RuntimeArray* ___2_dst, int32_t ___3_dstOffset, int32_t ___4_count, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.RequestStream::fillFromBuffer(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::.ctor(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult__ctor_m704CA13065EBA99F802F6F18B1C198F6E61CCA15 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback0, RuntimeObject* ___state1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult__ctor_m704CA13065EBA99F802F6F18B1C198F6E61CCA15 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_callback, RuntimeObject* ___1_state, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Buffer(System.Byte[])
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Offset(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Count(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_SyncRead(System.Int32)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpStreamAsyncResult::get_IsCompleted()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpStreamAsyncResult_get_IsCompleted_m2EB5856AFE7B0F2BDD45720ED9634F1ABF2CEAB9 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, const RuntimeMethod* method) ;
 // System.Threading.WaitHandle WebSocketSharp.Net.HttpStreamAsyncResult::get_AsyncWaitHandle()
@@ -5179,122 +5690,122 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785
 // System.Int32 WebSocketSharp.Net.HttpStreamAsyncResult::get_SyncRead()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t HttpStreamAsyncResult_get_SyncRead_m044967B6079AD74F5385405ADCA314033A918ED1_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`3<System.Byte[],System.Int32,System.Int32>::.ctor(System.Object,System.IntPtr)
-inline void Action_3__ctor_m457FAD59A667765DDB23A4BD10F8C83AB782DB90 (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Action_3__ctor_m457FAD59A667765DDB23A4BD10F8C83AB782DB90 (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_3__ctor_m28D618ACD30D378303374C6D5A85A5567573DF39_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_3__ctor_m28D618ACD30D378303374C6D5A85A5567573DF39_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerResponse::get_HeadersSent()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_HeadersSent_mCA50BB304A35C2C83568E5FAA2108355EC5CAA3E_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.ResponseStream::flushHeaders(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flushHeaders_m90AB030F6731C63E59F0B2431A8A43B81D6F2463 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flushHeaders_m90AB030F6731C63E59F0B2431A8A43B81D6F2463 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_CloseConnection(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpListenerResponse::get_SendChunked()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_SendChunked_mD66F0732AAF4ACE6B19E9F0589E68063196ED740_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ResponseStream::flushBody(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_flushBody_m45A960CA72EEF659345B27F07943DA5D0C8DB89F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_flushBody_m45A960CA72EEF659345B27F07943DA5D0C8DB89F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) ;
 // System.Byte[] WebSocketSharp.Net.ResponseStream::getChunkSizeBytes(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ResponseStream_getChunkSizeBytes_m71164B7D7819E5493E046D13C91285224861940B (int32_t ___size0, bool ___final1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ResponseStream_getChunkSizeBytes_m71164B7D7819E5493E046D13C91285224861940B (int32_t ___0_size, bool ___1_final, const RuntimeMethod* method) ;
 // System.Void System.Action`3<System.Byte[],System.Int32,System.Int32>::Invoke(T1,T2,T3)
-inline void Action_3_Invoke_mB60DEBEEAA6E9A023081F18CB01CCB6EA61C1C4E_inline (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___arg10, int32_t ___arg21, int32_t ___arg32, const RuntimeMethod* method)
+inline void Action_3_Invoke_mB60DEBEEAA6E9A023081F18CB01CCB6EA61C1C4E_inline (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_arg1, int32_t ___1_arg2, int32_t ___2_arg3, const RuntimeMethod* method)
 {
-	((  void (*) (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, const RuntimeMethod*))Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline)(__this, ___arg10, ___arg21, ___arg32, method);
+	((  void (*) (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, const RuntimeMethod*))Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline)(__this, ___0_arg1, ___1_arg2, ___2_arg3, method);
 }
 // WebSocketSharp.Net.WebHeaderCollection WebSocketSharp.Net.HttpListenerResponse::WriteHeadersTo(System.IO.MemoryStream)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* HttpListenerResponse_WriteHeadersTo_m44262FF557C3E6EBFC44D33B8A8153BC714817D7 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___destination0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* HttpListenerResponse_WriteHeadersTo_m44262FF557C3E6EBFC44D33B8A8153BC714817D7 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___0_destination, const RuntimeMethod* method) ;
 // System.Int64 WebSocketSharp.Net.HttpListenerResponse::get_ContentLength64()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t HttpListenerResponse_get_ContentLength64_mD3C4E88A01B6CB82D2355F6F231F59B946DA38BD_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_HeadersSent(System.Boolean)
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.ResponseStream::writeChunked(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A517600A0BA088C7800CF93B057967455A (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A517600A0BA088C7800CF93B057967455A (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.ResponseStream::flush(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF2743ADB25BC484D4C45F1232 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF2743ADB25BC484D4C45F1232 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.HttpListenerResponse::Abort()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Abort_m76527402778DADE93431A63FE5DCA6697B482074 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, const RuntimeMethod* method) ;
 // System.Void System.Net.Security.RemoteCertificateValidationCallback::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteCertificateValidationCallback__ctor_mC5C0650D4E5D29475BDBDA5B43FEA44DB0DBF367 (RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RemoteCertificateValidationCallback__ctor_mC5C0650D4E5D29475BDBDA5B43FEA44DB0DBF367 (RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.StringComparer System.StringComparer::get_InvariantCultureIgnoreCase()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* StringComparer_get_InvariantCultureIgnoreCase_m736E26B9A455C50799BF69D87F2E076C272337B1_inline (const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>::.ctor(System.Collections.Generic.IEqualityComparer`1<TKey>)
-inline void Dictionary_2__ctor_mC1192AA047A9A25DA8522F558D87D47119D2BB1B (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, RuntimeObject* ___comparer0, const RuntimeMethod* method)
+inline void Dictionary_2__ctor_mC1192AA047A9A25DA8522F558D87D47119D2BB1B (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, RuntimeObject* ___0_comparer, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, RuntimeObject*, const RuntimeMethod*))Dictionary_2__ctor_mB2760A703784902BE10E873BC760166EC9693D63_gshared)(__this, ___comparer0, method);
+	((  void (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, RuntimeObject*, const RuntimeMethod*))Dictionary_2__ctor_mB2760A703784902BE10E873BC760166EC9693D63_gshared)(__this, ___0_comparer, method);
 }
 // System.Void WebSocketSharp.Net.HttpHeaderInfo::.ctor(System.String,WebSocketSharp.Net.HttpHeaderType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpHeaderInfo__ctor_m029BC1522F8128A87B729FCBFA879111383ABD37 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, String_t* ___name0, int32_t ___type1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpHeaderInfo__ctor_m029BC1522F8128A87B729FCBFA879111383ABD37 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, String_t* ___0_name, int32_t ___1_type, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>::Add(TKey,TValue)
-inline void Dictionary_2_Add_m7A753A20E9BCC17D89E3AA5FD74F741E5DAB2464 (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, String_t* ___key0, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* ___value1, const RuntimeMethod* method)
+inline void Dictionary_2_Add_m7A753A20E9BCC17D89E3AA5FD74F741E5DAB2464 (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, String_t* ___0_key, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* ___1_value, const RuntimeMethod* method)
 {
-	((  void (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, String_t*, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___key0, ___value1, method);
+	((  void (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, String_t*, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5*, const RuntimeMethod*))Dictionary_2_Add_m93FFFABE8FCE7FA9793F0915E2A8842C7CD0C0C1_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.Boolean System.Runtime.Serialization.SerializationInfo::GetBoolean(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SerializationInfo_GetBoolean_m8335F8E11B572AB6B5BF85A9355D6888D5847EF5 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SerializationInfo_GetBoolean_m8335F8E11B572AB6B5BF85A9355D6888D5847EF5 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Int32 System.Runtime.Serialization.SerializationInfo::GetInt32(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SerializationInfo_GetInt32_m7731402825C7FC8D0673F7610D555615F95E4FB5 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SerializationInfo_GetInt32_m7731402825C7FC8D0673F7610D555615F95E4FB5 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
 // System.String System.Runtime.Serialization.SerializationInfo::GetString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SerializationInfo_GetString_mF0753AFAA13AABF8A30B8F0890AEC52BFBBC73E9 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SerializationInfo_GetString_mF0753AFAA13AABF8A30B8F0890AEC52BFBBC73E9 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::Add(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Add_m68C266151774CD1FC057C9349BAE09BDB15A26A7 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Add_m68C266151774CD1FC057C9349BAE09BDB15A26A7 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String,System.String,System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m790F28810569425B0503056EF1A9CDDF9AFBB3F0 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___message0, String_t* ___paramName1, Exception_t* ___innerException2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m790F28810569425B0503056EF1A9CDDF9AFBB3F0 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, String_t* ___1_paramName, Exception_t* ___2_innerException, const RuntimeMethod* method) ;
 // System.String[] System.Collections.Specialized.NameValueCollection::get_AllKeys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NameValueCollection_get_AllKeys_mEE8B643F93B5714DD9C231385589020E778AA94D (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Specialized.NameObjectCollectionBase::get_Count()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t NameObjectCollectionBase_get_Count_m766C6702F64CD224AB123566BAACB2A81FCBF5F0 (NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC* __this, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.WebHeaderCollection::Convert(WebSocketSharp.Net.HttpRequestHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2 (int32_t ___header0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2 (int32_t ___0_header, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(WebSocketSharp.Net.HttpRequestHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mE8C3D0C7E6F5029C1E0E4DC7F4B9955003A74731 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mE8C3D0C7E6F5029C1E0E4DC7F4B9955003A74731 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.WebHeaderCollection::Convert(WebSocketSharp.Net.HttpResponseHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB (int32_t ___header0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB (int32_t ___0_header, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(WebSocketSharp.Net.HttpResponseHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_m45A5940040855167710BA3E658229284DDC6B1A9 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_m45A5940040855167710BA3E658229284DDC6B1A9 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.Collections.Specialized.NameObjectCollectionBase/KeysCollection System.Collections.Specialized.NameObjectCollectionBase::get_Keys()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeysCollection_t8FF5FD8704F6F99F6FD4B8A2D27DFAEFD3880F81* NameObjectCollectionBase_get_Keys_m58FAE9F8B8ACD77316E5019E3EFFA0862BD5006D (NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.String,System.String>::.ctor(System.Object,System.IntPtr)
-inline void Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611CB55F64FC3D79052_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611CB55F64FC3D79052_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::checkName(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithCheckingState(System.Action`2<System.String,System.String>,System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, bool ___setState3, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, bool ___3_setState, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithoutCheckingName(System.Action`2<System.String,System.String>,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.WebHeaderCollection::checkValue(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246 (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246 (String_t* ___0_value, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpHeaderInfo WebSocketSharp.Net.WebHeaderCollection::getHeaderInfo(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsHeaderName(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F9096EE75E22D32751E4FB0BA8EE45AE24868 (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F9096EE75E22D32751E4FB0BA8EE45AE24868 (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::isRestricted(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2 (String_t* ___name0, bool ___response1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2 (String_t* ___0_name, bool ___1_response, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsHeaderValue(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D9C69D9CA201730DC2CBB0BD994BF8D83FC4 (String_t* ___value0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D9C69D9CA201730DC2CBB0BD994BF8D83FC4 (String_t* ___0_value, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>::TryGetValue(TKey,TValue&)
-inline bool Dictionary_2_TryGetValue_mBB21B1809D2264E208A68095124A5DD2FD0293EF (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, String_t* ___key0, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5** ___value1, const RuntimeMethod* method)
+inline bool Dictionary_2_TryGetValue_mBB21B1809D2264E208A68095124A5DD2FD0293EF (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, String_t* ___0_key, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5** ___1_value, const RuntimeMethod* method)
 {
-	return ((  bool (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, String_t*, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___key0, ___value1, method);
+	return ((  bool (*) (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839*, String_t*, HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5**, const RuntimeMethod*))Dictionary_2_TryGetValue_mD15380A4ED7CDEE99EA45881577D26BA9CE1B849_gshared)(__this, ___0_key, ___1_value, method);
 }
 // System.String WebSocketSharp.Net.HttpHeaderInfo::get_Name()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpHeaderInfo_get_Name_m0E16E16322CB5CACE838CB6F7C7085391B7A81F7_inline (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, const RuntimeMethod* method) ;
 // WebSocketSharp.Net.HttpHeaderType WebSocketSharp.Net.WebHeaderCollection::checkHeaderType(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkHeaderType_mFC4C398C2D4192087E3A3ABA9087EA59A98E9536 (String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkHeaderType_mFC4C398C2D4192087E3A3ABA9087EA59A98E9536 (String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithCheckingState(System.Action`2<System.String,System.String>,System.String,System.String,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, bool ___response3, bool ___setState4, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, bool ___3_response, bool ___4_setState, const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.String,System.String>::Invoke(T1,T2)
-inline void Action_2_Invoke_m8FA30194997244EC0072D6B437818A22B65F2854_inline (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* __this, String_t* ___arg10, String_t* ___arg21, const RuntimeMethod* method)
+inline void Action_2_Invoke_m8FA30194997244EC0072D6B437818A22B65F2854_inline (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* __this, String_t* ___0_arg1, String_t* ___1_arg2, const RuntimeMethod* method)
 {
-	((  void (*) (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*, String_t*, String_t*, const RuntimeMethod*))Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline)(__this, ___arg10, ___arg21, method);
+	((  void (*) (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*, String_t*, String_t*, const RuntimeMethod*))Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline)(__this, ___0_arg1, ___1_arg2, method);
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::checkState(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkState_mA608EFE2CE431C9F47AB2B2CB5C18F9542969C9D (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkState_mA608EFE2CE431C9F47AB2B2CB5C18F9542969C9D (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___0_response, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::checkRestricted(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Collections.Generic.Dictionary`2/ValueCollection<TKey,TValue> System.Collections.Generic.Dictionary`2<System.String,WebSocketSharp.Net.HttpHeaderInfo>::get_Values()
 inline ValueCollection_t4207289E74C93B2B7A42D4804AFF5DA5EC861226* Dictionary_2_get_Values_mAE0ABE3E3C6808E7EACB6B794B2E32DC4525F76F (Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* __this, const RuntimeMethod* method)
 {
@@ -5321,54 +5832,54 @@ inline bool Enumerator_MoveNext_mFAA833965E439B4C4D335A8FD908ED25044B9056 (Enume
 	return ((  bool (*) (Enumerator_t90FC7546BB53FF63BBA2FFFCC7DD41E2AFDF8AFC*, const RuntimeMethod*))Enumerator_MoveNext_mBE11DA1DAFC756EB87E884AADC5EDC4BB72FB032_gshared)(__this, method);
 }
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::IsRestricted(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsRestricted_mB2D9FB989CF4520F515E67F68CDB4D853CF4A81D (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsRestricted_mB2D9FB989CF4520F515E67F68CDB4D853CF4A81D (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___0_response, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::Remove(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Remove_m2146E6474DDFBE19E35E57F777C4FE2625247D56 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Remove_m2146E6474DDFBE19E35E57F777C4FE2625247D56 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.String WebSocketSharp.Net.WebHeaderCollection::convert(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_convert_mF34E66CEF6FAE2A9B17B3F22EB257CD14EEF7839 (String_t* ___key0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_convert_mF34E66CEF6FAE2A9B17B3F22EB257CD14EEF7839 (String_t* ___0_key, const RuntimeMethod* method) ;
 // System.Int32 WebSocketSharp.Net.WebHeaderCollection::checkColonSeparated(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5 (String_t* ___header0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5 (String_t* ___0_header, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsMultiValue(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___headerName0, bool ___response1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___0_headerName, bool ___1_response, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::Set(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Set_mF0EA26F74B1E1D2F9A1A87D1093BEC31C51BCB8A (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Set_mF0EA26F74B1E1D2F9A1A87D1093BEC31C51BCB8A (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) ;
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::IsMultiValue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsMultiValue_m48F09D53D36D229FEC7EC4DD584D2EAF43E58B85 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___response0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsMultiValue_m48F09D53D36D229FEC7EC4DD584D2EAF43E58B85 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___0_response, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass46_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass46_0__ctor_m55E6FBE4BDCED16DCF4BADE56EDCED2C52F17611 (U3CU3Ec__DisplayClass46_0_t8F64C4EA16518D02C8E29C19513629D5539D4CB0* __this, const RuntimeMethod* method) ;
 // System.Void System.Action`1<System.Int32>::.ctor(System.Object,System.IntPtr)
-inline void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87 (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method)
+inline void Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87 (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method)
 {
-	((  void (*) (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared)(__this, ___object0, ___method1, method);
+	((  void (*) (Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404*, RuntimeObject*, intptr_t, const RuntimeMethod*))Action_1__ctor_m1BA854F3F4319EA4A4294DDFDA21C395B8D0FF87_gshared)(__this, ___0_object, ___1_method, method);
 }
 // System.Void WebSocketSharp.Ext::Times(System.Int32,System.Action`1<System.Int32>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Times_m704CCC188BDADEFF4FD5779492856A478ACC0284 (int32_t ___n0, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___action1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ext_Times_m704CCC188BDADEFF4FD5779492856A478ACC0284 (int32_t ___0_n, Action_1_tD69A6DC9FBE94131E52F5A73B2A9D4AB51EEC404* ___1_action, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection::add(System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, bool ___ignoreRestricted2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, bool ___2_ignoreRestricted, const RuntimeMethod* method) ;
 // System.Void System.Collections.Specialized.NameValueCollection::Clear()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NameValueCollection_Clear_mF42C05323907DA58B571EADD6A0ACB556E7A43B0 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, const RuntimeMethod* method) ;
 // System.String System.Collections.Specialized.NameValueCollection::Get(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_Get_m2C55CAA38BF0F6677AE8F44C22C289A5B59B4B20 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_Get_m2C55CAA38BF0F6677AE8F44C22C289A5B59B4B20 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.String System.Collections.Specialized.NameValueCollection::Get(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_Get_m786B25D45B38D7051C696104946F3F0A2DF78106 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_Get_m786B25D45B38D7051C696104946F3F0A2DF78106 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Collections.IEnumerator System.Collections.Specialized.NameObjectCollectionBase::GetEnumerator()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* NameObjectCollectionBase_GetEnumerator_mDEEC7FF01AEF8FB0739964513BAF10C4C3F254BC (NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC* __this, const RuntimeMethod* method) ;
 // System.String System.Collections.Specialized.NameValueCollection::GetKey(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_GetKey_m80CFEB6D61F9C3B9D03D7B25457D8B122C15170F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NameValueCollection_GetKey_m80CFEB6D61F9C3B9D03D7B25457D8B122C15170F (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.String[] System.Collections.Specialized.NameValueCollection::GetValues(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NameValueCollection_GetValues_mF6E8C52484C1B25D80799EE9630E0AC9EF9B47E0 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___index0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NameValueCollection_GetValues_mF6E8C52484C1B25D80799EE9630E0AC9EF9B47E0 (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // System.String[] System.Collections.Specialized.NameValueCollection::GetValues(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NameValueCollection_GetValues_mC69C8E6E5E62365A35C3A2C99E5DD0C33625362E (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___name0, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* NameValueCollection_GetValues_mC69C8E6E5E62365A35C3A2C99E5DD0C33625362E (NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass59_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass59_0__ctor_m2EA18FD3DA2E67B647B8D71376ED57C58B07B549 (U3CU3Ec__DisplayClass59_0_t68C8CB5E3E41F8A5EDBBDBD218D08119A9B62660* __this, const RuntimeMethod* method) ;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_mC52253CB19C98F82A26E32C941F8F20E106D4C0D (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, bool ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_mC52253CB19C98F82A26E32C941F8F20E106D4C0D (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, bool ___1_value, const RuntimeMethod* method) ;
 // System.Void System.Runtime.Serialization.SerializationInfo::AddValue(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m9D6ADD10966D1FE8D19050F3A269747C23FE9FC4 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___name0, int32_t ___value1, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SerializationInfo_AddValue_m9D6ADD10966D1FE8D19050F3A269747C23FE9FC4 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, int32_t ___1_value, const RuntimeMethod* method) ;
 // System.Void WebSocketSharp.Net.WebHeaderCollection/<>c__DisplayClass70_0::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass70_0__ctor_mC938EAD50FB9809CCA4EC8A9CDF4E247812F33B8 (U3CU3Ec__DisplayClass70_0_tCB5F1A02C3F28DA93EB6F505D2D49120FFF3B777* __this, const RuntimeMethod* method) ;
 // System.Void System.Array::Clear(System.Array,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___array0, int32_t ___index1, int32_t ___length2, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED31F284703FE5CB (RuntimeArray* ___0_array, int32_t ___1_index, int32_t ___2_length, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -5403,7 +5914,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager__ctor_mC4A4BF497819B27CD
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::addPrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5435,7 +5946,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_addPrefix_m62373ADBD6ACB
 	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* G_B10_0 = NULL;
 	IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* G_B9_0 = NULL;
 	{
-		String_t* L_0 = ___uriPrefix0;
+		String_t* L_0 = ___0_uriPrefix;
 		HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* L_1 = (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF*)il2cpp_codegen_object_new(HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66(L_1, L_0, NULL);
@@ -5598,15 +6109,15 @@ IL_00c3:
 		NullCheck(L_33);
 		bool L_34;
 		L_34 = HttpListenerPrefix_get_IsSecure_m41A2FE496DF488FE964978A5AD638A5F4DE5B97F_inline(L_33, NULL);
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_35 = ___listener1;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_35 = ___1_listener;
 		NullCheck(L_35);
 		String_t* L_36;
 		L_36 = HttpListener_get_CertificateFolderPath_mE488383D4D46B547D7789E1DEAA9692F27C9ECCA(L_35, NULL);
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_37 = ___listener1;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_37 = ___1_listener;
 		NullCheck(L_37);
 		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_38;
 		L_38 = HttpListener_get_SslConfiguration_m41484F5A47718A148FD12D48ABDD5F10E1BE17C9(L_37, NULL);
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_39 = ___listener1;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_39 = ___1_listener;
 		NullCheck(L_39);
 		bool L_40;
 		L_40 = HttpListener_get_ReuseAddress_m3DFD80D773B35F1EBF1F74AE4810ECDEE9AB02A0_inline(L_39, NULL);
@@ -5626,14 +6137,14 @@ IL_00ee:
 	{
 		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_45 = V_3;
 		HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* L_46 = V_0;
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_47 = ___listener1;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_47 = ___1_listener;
 		NullCheck(L_45);
 		EndPointListener_AddPrefix_m1E2F6B6D8D0B6574636814BBF709A9139F634D4C(L_45, L_46, L_47, NULL);
 		return;
 	}
 }
 // System.Net.IPAddress WebSocketSharp.Net.EndPointManager::convertToIPAddress(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* EndPointManager_convertToIPAddress_mDD6F7CB4110B8BA2237DF9A1E21A8AE4B51B0AE7 (String_t* ___hostname0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* EndPointManager_convertToIPAddress_mDD6F7CB4110B8BA2237DF9A1E21A8AE4B51B0AE7 (String_t* ___0_hostname, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5645,7 +6156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___hostname0;
+		String_t* L_0 = ___0_hostname;
 		bool L_1;
 		L_1 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_0, _stringLiteralE280D065A824A791F8305234D3E093FC9A5A90C7, NULL);
 		if (L_1)
@@ -5654,7 +6165,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63
 		}
 	}
 	{
-		String_t* L_2 = ___hostname0;
+		String_t* L_2 = ___0_hostname;
 		bool L_3;
 		L_3 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_2, _stringLiteral20E39C3AB7068FAFD9E4B868E16D2E5BC64D4952, NULL);
 		if (L_3)
@@ -5663,7 +6174,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63
 		}
 	}
 	{
-		String_t* L_4 = ___hostname0;
+		String_t* L_4 = ___0_hostname;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484* L_5;
 		L_5 = Ext_ToIPAddress_m528D6365A7AF0E998281D4DCE13748525222860C(L_4, NULL);
@@ -5678,7 +6189,7 @@ IL_0021:
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::removePrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5698,7 +6209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_removePrefix_mD3D7CAB86D
 	IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* V_4 = NULL;
 	EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* V_5 = NULL;
 	{
-		String_t* L_0 = ___uriPrefix0;
+		String_t* L_0 = ___0_uriPrefix;
 		HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* L_1 = (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF*)il2cpp_codegen_object_new(HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF_il2cpp_TypeInfo_var);
 		NullCheck(L_1);
 		HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66(L_1, L_0, NULL);
@@ -5837,14 +6348,14 @@ IL_0083:
 	{
 		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_28 = V_5;
 		HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* L_29 = V_0;
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_30 = ___listener1;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_30 = ___1_listener;
 		NullCheck(L_28);
 		EndPointListener_RemovePrefix_m49C3B24CD22B425D01A5AACB75634BDDD902D21B(L_28, L_29, L_30, NULL);
 		return;
 	}
 }
 // System.Boolean WebSocketSharp.Net.EndPointManager::RemoveEndPoint(System.Net.IPEndPoint)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EndPointManager_RemoveEndPoint_mEFAA5DC90D0F118DBEA6ACB2524326355BF4D6FB (IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___endpoint0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EndPointManager_RemoveEndPoint_mEFAA5DC90D0F118DBEA6ACB2524326355BF4D6FB (IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* ___0_endpoint, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5899,7 +6410,7 @@ IL_0047:
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_1), NULL);
 				il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 				Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* L_5 = ((EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_StaticFields*)il2cpp_codegen_static_fields_for(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var))->____endpoints_0;
-				IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* L_6 = ___endpoint0;
+				IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* L_6 = ___0_endpoint;
 				NullCheck(L_5);
 				bool L_7;
 				L_7 = Dictionary_2_TryGetValue_m86F2AFAA43751C79522239D3EEBCE838EE26A076(L_5, L_6, (&V_2), Dictionary_2_TryGetValue_m86F2AFAA43751C79522239D3EEBCE838EE26A076_RuntimeMethod_var);
@@ -5917,7 +6428,7 @@ IL_0028_1:
 			{
 				il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 				Dictionary_2_t44C81E4EB566C9C8E781AF025E3CE3244C3126BF* L_8 = ((EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_StaticFields*)il2cpp_codegen_static_fields_for(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var))->____endpoints_0;
-				IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* L_9 = ___endpoint0;
+				IPEndPoint_t2F09CBA7A808B67724B4E2954EEDC46D910F4ECB* L_9 = ___0_endpoint;
 				NullCheck(L_8);
 				bool L_10;
 				L_10 = Dictionary_2_Remove_mCD37C7A1B355E8B3006F622EAEA379F7C5FA5FCA(L_8, L_9, Dictionary_2_Remove_mCD37C7A1B355E8B3006F622EAEA379F7C5FA5FCA_RuntimeMethod_var);
@@ -5941,7 +6452,7 @@ IL_0048:
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::AddListener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddListener_m62B1A573F1BBEC42C2B3344E2F37F701DA0F451C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddListener_m62B1A573F1BBEC42C2B3344E2F37F701DA0F451C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6010,7 +6521,7 @@ IL_0093:
 			try
 			{// begin try (depth: 2)
 				{
-					HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___listener0;
+					HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___0_listener;
 					NullCheck(L_6);
 					HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* L_7;
 					L_7 = HttpListener_get_Prefixes_m12DDBB5F769074F5D47E32853DF054C331F62AB0(L_6, NULL);
@@ -6058,7 +6569,7 @@ IL_0029_3:
 							L_12 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.String>::get_Current() */, IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var, L_11);
 							V_4 = L_12;
 							String_t* L_13 = V_4;
-							HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_14 = ___listener0;
+							HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_14 = ___0_listener;
 							il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 							EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7(L_13, L_14, NULL);
 							List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_15 = V_0;
@@ -6132,7 +6643,7 @@ IL_0062_2:
 						{
 							String_t* L_21;
 							L_21 = Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_inline((&V_5), ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Enumerator_get_Current_m143541DD8FBCD313E7554EA738FA813B8F4DB11A_RuntimeMethod_var)));
-							HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_22 = ___listener0;
+							HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_22 = ___0_listener;
 							il2cpp_codegen_runtime_class_init_inline(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var)));
 							EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47(L_21, L_22, NULL);
 						}
@@ -6174,7 +6685,7 @@ IL_0094:
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::AddPrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddPrefix_mEB5581D19EDE29483F829668C9353C681368731D (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_AddPrefix_mEB5581D19EDE29483F829668C9353C681368731D (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6222,8 +6733,8 @@ IL_0027:
 		{// begin try (depth: 1)
 			RuntimeObject* L_4 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_1), NULL);
-			String_t* L_5 = ___uriPrefix0;
-			HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___listener1;
+			String_t* L_5 = ___0_uriPrefix;
+			HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___1_listener;
 			il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 			EndPointManager_addPrefix_m62373ADBD6ACB44BAF76660CFDC85A520407C9C7(L_5, L_6, NULL);
 			goto IL_0028;
@@ -6240,7 +6751,7 @@ IL_0028:
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::RemoveListener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemoveListener_mFC6E115EA3D903E50FD1F88A0715757735C5780C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemoveListener_mFC6E115EA3D903E50FD1F88A0715757735C5780C (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6293,7 +6804,7 @@ IL_004c:
 			{
 				RuntimeObject* L_4 = V_0;
 				Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_1), NULL);
-				HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_5 = ___listener0;
+				HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_5 = ___0_listener;
 				NullCheck(L_5);
 				HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* L_6;
 				L_6 = HttpListener_get_Prefixes_m12DDBB5F769074F5D47E32853DF054C331F62AB0(L_5, NULL);
@@ -6339,7 +6850,7 @@ IL_0023_2:
 						NullCheck(L_10);
 						String_t* L_11;
 						L_11 = InterfaceFuncInvoker0< String_t* >::Invoke(0 /* T System.Collections.Generic.IEnumerator`1<System.String>::get_Current() */, IEnumerator_1_t73FD060C436E3C4264A734C8F8DCC01DFF6046B8_il2cpp_TypeInfo_var, L_10);
-						HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_12 = ___listener0;
+						HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_12 = ___0_listener;
 						il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 						EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47(L_11, L_12, NULL);
 					}
@@ -6377,7 +6888,7 @@ IL_004d:
 	}
 }
 // System.Void WebSocketSharp.Net.EndPointManager::RemovePrefix(System.String,WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemovePrefix_m01BA6EF66639856893562063C078C80D2556FE90 (String_t* ___uriPrefix0, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EndPointManager_RemovePrefix_m01BA6EF66639856893562063C078C80D2556FE90 (String_t* ___0_uriPrefix, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___1_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6425,8 +6936,8 @@ IL_0027:
 		{// begin try (depth: 1)
 			RuntimeObject* L_4 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_1), NULL);
-			String_t* L_5 = ___uriPrefix0;
-			HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___listener1;
+			String_t* L_5 = ___0_uriPrefix;
+			HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_6 = ___1_listener;
 			il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 			EndPointManager_removePrefix_mD3D7CAB86D170412E6EA18830D2A50077A311E47(L_5, L_6, NULL);
 			goto IL_0028;
@@ -6451,7 +6962,7 @@ IL_0028:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpBasicIdentity::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpBasicIdentity__ctor_mBB212B903F4D2380B4C23020485026D993357974 (HttpBasicIdentity_t628CAA253B167294059B4B71729F5A5DCDFFE5A5* __this, String_t* ___username0, String_t* ___password1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpBasicIdentity__ctor_mBB212B903F4D2380B4C23020485026D993357974 (HttpBasicIdentity_t628CAA253B167294059B4B71729F5A5DCDFFE5A5* __this, String_t* ___0_username, String_t* ___1_password, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6460,9 +6971,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpBasicIdentity__ctor_mBB212B903F4D238
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___username0;
+		String_t* L_0 = ___0_username;
 		GenericIdentity__ctor_m1BA056A1EEBDB56F02C9A5D177B1859356594B68(__this, L_0, _stringLiteralA01C4F4897E2641F90F7C00FF6187381E937B194, NULL);
-		String_t* L_1 = ___password1;
+		String_t* L_1 = ___1_password;
 		__this->____password_15 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____password_15), (void*)L_1);
 		return;
@@ -6485,7 +6996,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpBasicIdentity_get_Password_m13D
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpConnection::.ctor(System.Net.Sockets.Socket,WebSocketSharp.Net.EndPointListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection__ctor_mD80932569601FCE90A0DA3812C3D8C8D7CCAA0B3 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* ___socket0, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* ___listener1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection__ctor_mD80932569601FCE90A0DA3812C3D8C8D7CCAA0B3 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* ___0_socket, EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* ___1_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6505,18 +7016,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection__ctor_mD80932569601FCE90A
 	SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* V_2 = NULL;
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* L_0 = ___socket0;
+		Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* L_0 = ___0_socket;
 		__this->____socket_15 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____socket_15), (void*)L_0);
-		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_1 = ___listener1;
+		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_1 = ___1_listener;
 		__this->____listener_9 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener_9), (void*)L_1);
-		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_2 = ___listener1;
+		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_2 = ___1_listener;
 		NullCheck(L_2);
 		bool L_3;
 		L_3 = EndPointListener_get_IsSecure_m735D99E1ABA3986657A89CEDBDB09AA2617C0A9D_inline(L_2, NULL);
 		__this->____secure_14 = L_3;
-		Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* L_4 = ___socket0;
+		Socket_t1F49472CDA22B581C29A258225ABF3ADA9DED67E* L_4 = ___0_socket;
 		NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0* L_5 = (NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0*)il2cpp_codegen_object_new(NetworkStream_tF39C3684B6D572BF47F518AD1DB1F4B12CEE4AE0_il2cpp_TypeInfo_var);
 		NullCheck(L_5);
 		NetworkStream__ctor_mA44C3DB90F5B64F230CC2176DC7E722F4077A9DE(L_5, L_4, (bool)0, NULL);
@@ -6528,7 +7039,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection__ctor_mD80932569601FCE90A
 		}
 	}
 	{
-		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_7 = ___listener1;
+		EndPointListener_t936293380F2D34DD5159C718C8EFDB203A0F8731* L_7 = ___1_listener;
 		NullCheck(L_7);
 		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_8;
 		L_8 = EndPointListener_get_SslConfiguration_mF609DDFF66EAF56623EE10A32F6881D2E6DFB5E0_inline(L_7, NULL);
@@ -6913,7 +7424,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_init_mD170E4CAD3EA1158340
 	}
 }
 // System.Void WebSocketSharp.Net.HttpConnection::onRead(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onRead_m4A6B8D809C88C111622ACEBF39F3F346F9B0A801 (RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onRead_m4A6B8D809C88C111622ACEBF39F3F346F9B0A801 (RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -6936,7 +7447,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onRead_m4A6B8D809C88C1116
 	HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* V_7 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		RuntimeObject* L_0 = ___asyncResult0;
+		RuntimeObject* L_0 = ___0_asyncResult;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
 		L_1 = InterfaceFuncInvoker0< RuntimeObject* >::Invoke(2 /* System.Object System.IAsyncResult::get_AsyncState() */, IAsyncResult_t7B9B5A0ECB35DCEC31B8A8122C37D687369253B5_il2cpp_TypeInfo_var, L_0);
@@ -7046,7 +7557,7 @@ IL_006b_2:
 					HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_23 = V_0;
 					NullCheck(L_23);
 					Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_24 = L_23->____stream_16;
-					RuntimeObject* L_25 = ___asyncResult0;
+					RuntimeObject* L_25 = ___0_asyncResult;
 					NullCheck(L_24);
 					int32_t L_26;
 					L_26 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(18 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, L_24, L_25);
@@ -7349,7 +7860,7 @@ IL_01ef:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpConnection::onTimeout(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onTimeout_mA933AAFE6004E6F74010F1F221829286BF94E694 (RuntimeObject* ___state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onTimeout_mA933AAFE6004E6F74010F1F221829286BF94E694 (RuntimeObject* ___0_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7363,7 +7874,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_onTimeout_mA933AAFE6004E6
 	RuntimeObject* V_2 = NULL;
 	bool V_3 = false;
 	{
-		RuntimeObject* L_0 = ___state0;
+		RuntimeObject* L_0 = ___0_state;
 		V_0 = ((HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E*)CastclassSealed((RuntimeObject*)L_0, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E_il2cpp_TypeInfo_var));
 		HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_1 = V_0;
 		NullCheck(L_1);
@@ -7468,7 +7979,7 @@ IL_005a:
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpConnection::processInput(System.Byte[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpConnection_processInput_m5C0AF6AB3B8327DA7D1F0718D3974F47B56F0E36 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___data0, int32_t ___length1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpConnection_processInput_m5C0AF6AB3B8327DA7D1F0718D3974F47B56F0E36 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_data, int32_t ___1_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7598,9 +8109,9 @@ IL_0098_1:
 
 IL_00a9_1:
 		{
-			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18 = ___data0;
+			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18 = ___0_data;
 			int32_t L_19 = __this->____position_11;
-			int32_t L_20 = ___length1;
+			int32_t L_20 = ___1_length;
 			String_t* L_21;
 			L_21 = HttpConnection_readLineFrom_m30E8D94502AD46B36A2EABA10485874C25352888(__this, L_18, L_19, L_20, (&V_0), NULL);
 			String_t* L_22 = L_21;
@@ -7669,25 +8180,25 @@ IL_0107:
 	}
 }
 // System.String WebSocketSharp.Net.HttpConnection::readLineFrom(System.Byte[],System.Int32,System.Int32,System.Int32&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpConnection_readLineFrom_m30E8D94502AD46B36A2EABA10485874C25352888 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___length2, int32_t* ___read3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpConnection_readLineFrom_m30E8D94502AD46B36A2EABA10485874C25352888 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_length, int32_t* ___3_read, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	uint8_t V_1 = 0x0;
 	{
-		int32_t* L_0 = ___read3;
+		int32_t* L_0 = ___3_read;
 		*((int32_t*)L_0) = (int32_t)0;
-		int32_t L_1 = ___offset1;
+		int32_t L_1 = ___1_offset;
 		V_0 = L_1;
 		goto IL_0041;
 	}
 
 IL_0008:
 	{
-		int32_t* L_2 = ___read3;
-		int32_t* L_3 = ___read3;
+		int32_t* L_2 = ___3_read;
+		int32_t* L_3 = ___3_read;
 		int32_t L_4 = *((int32_t*)L_3);
 		*((int32_t*)L_2) = (int32_t)((int32_t)il2cpp_codegen_add(L_4, 1));
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___buffer0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___0_buffer;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
@@ -7735,7 +8246,7 @@ IL_003d:
 IL_0041:
 	{
 		int32_t L_15 = V_0;
-		int32_t L_16 = ___length2;
+		int32_t L_16 = ___2_length;
 		if ((((int32_t)L_15) >= ((int32_t)L_16)))
 		{
 			goto IL_004e;
@@ -7823,7 +8334,7 @@ IL_0009:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpConnection::Close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___force0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, bool ___0_force, const RuntimeMethod* method) 
 {
 	RuntimeObject* V_0 = NULL;
 	bool V_1 = false;
@@ -7885,7 +8396,7 @@ IL_00a7:
 
 IL_0027_1:
 			{
-				bool L_6 = ___force0;
+				bool L_6 = ___0_force;
 				if (L_6)
 				{
 					goto IL_0082_1;
@@ -8055,7 +8566,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_Close_m2B1BBEDFFF9EFD5814
 	}
 }
 // WebSocketSharp.Net.RequestStream WebSocketSharp.Net.HttpConnection::GetRequestStream(System.Int64,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* HttpConnection_GetRequestStream_m388BDD78BF65200C600D3BC52E1553F07005C8D9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, int64_t ___contentLength0, bool ___chunked1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* HttpConnection_GetRequestStream_m388BDD78BF65200C600D3BC52E1553F07005C8D9 (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, int64_t ___0_contentLength, bool ___1_chunked, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8150,7 +8661,7 @@ IL_003d_1:
 				L_12 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_11);
 				V_3 = ((int32_t)L_12);
 				HttpConnection_disposeRequestBuffer_m1D5091EA9C2E6975D0B840C15FC896A1C5B594E8(__this, NULL);
-				bool L_13 = ___chunked1;
+				bool L_13 = ___1_chunked;
 				if (!L_13)
 				{
 					goto IL_0098_1;
@@ -8184,7 +8695,7 @@ IL_0098_1:
 				int32_t L_25 = __this->____position_11;
 				int32_t L_26 = V_3;
 				int32_t L_27 = __this->____position_11;
-				int64_t L_28 = ___contentLength0;
+				int64_t L_28 = ___0_contentLength;
 				RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* L_29 = (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F*)il2cpp_codegen_object_new(RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F_il2cpp_TypeInfo_var);
 				NullCheck(L_29);
 				RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0(L_29, L_23, L_24, L_25, ((int32_t)il2cpp_codegen_subtract(L_26, L_27)), L_28, NULL);
@@ -8369,7 +8880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_mC7CBCF30D8ADEA
 	}
 }
 // System.Void WebSocketSharp.Net.HttpConnection::SendError(System.String,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_m21C891A905AE51E642B3B1511ACD80E8329FADAA (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, String_t* ___message0, int32_t ___status1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpConnection_SendError_m21C891A905AE51E642B3B1511ACD80E8329FADAA (HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* __this, String_t* ___0_message, int32_t ___1_status, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8457,7 +8968,7 @@ IL_0027_1:
 					L_7 = HttpListenerContext_get_Response_mAC597BA8D4DC2A6570EB13D0030B71D74DDF4234_inline(L_6, NULL);
 					V_2 = L_7;
 					HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_8 = V_2;
-					int32_t L_9 = ___status1;
+					int32_t L_9 = ___1_status;
 					NullCheck(L_8);
 					HttpListenerResponse_set_StatusCode_m08A72C8186199CAAE1EAE395CCA0BC5B823A197D(L_8, L_9, NULL);
 					HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_10 = V_2;
@@ -8468,7 +8979,7 @@ IL_0027_1:
 					StringBuilder__ctor_m2619CA8D2C3476DF1A302D9D941498BB1C6164C5(L_11, ((int32_t)64), NULL);
 					V_3 = L_11;
 					StringBuilder_t* L_12 = V_3;
-					int32_t L_13 = ___status1;
+					int32_t L_13 = ___1_status;
 					int32_t L_14 = L_13;
 					RuntimeObject* L_15 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_14);
 					HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_16 = V_2;
@@ -8478,14 +8989,14 @@ IL_0027_1:
 					NullCheck(L_12);
 					StringBuilder_t* L_18;
 					L_18 = StringBuilder_AppendFormat_mAB076D92DC92723B2224D75987BE463AF1CE7132(L_12, _stringLiteral8B1B786C39A74973D368CF143B97046F067F781C, L_15, L_17, NULL);
-					String_t* L_19 = ___message0;
+					String_t* L_19 = ___0_message;
 					if (!L_19)
 					{
 						goto IL_0081_2;
 					}
 				}
 				{
-					String_t* L_20 = ___message0;
+					String_t* L_20 = ___0_message;
 					NullCheck(L_20);
 					int32_t L_21;
 					L_21 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_20, NULL);
@@ -8496,7 +9007,7 @@ IL_0027_1:
 				}
 				{
 					StringBuilder_t* L_22 = V_3;
-					String_t* L_23 = ___message0;
+					String_t* L_23 = ___0_message;
 					NullCheck(L_22);
 					StringBuilder_t* L_24;
 					L_24 = StringBuilder_AppendFormat_mFA88863E4018C2912D1A783E0EA6DAE4F594124F(L_22, _stringLiteral981BBF9A7CE5E4734DFA550EB0B55C6763BB8E22, L_23, NULL);
@@ -8578,7 +9089,7 @@ IL_00d4:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpDigestIdentity::.ctor(System.Collections.Specialized.NameValueCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpDigestIdentity__ctor_m47A41EE9B0125ADC0EBD6BD31A003775D88F589B (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___parameters0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpDigestIdentity__ctor_m47A41EE9B0125ADC0EBD6BD31A003775D88F589B (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* ___0_parameters, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8588,12 +9099,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpDigestIdentity__ctor_m47A41EE9B0125A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_0 = ___parameters0;
+		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_0 = ___0_parameters;
 		NullCheck(L_0);
 		String_t* L_1;
 		L_1 = NameValueCollection_get_Item_mE3ED755803E67BC852123C70EEF8D53774FA635F(L_0, _stringLiteralE3A56BE62F0FB42D8062A17A4957C2142D815735, NULL);
 		GenericIdentity__ctor_m1BA056A1EEBDB56F02C9A5D177B1859356594B68(__this, L_1, _stringLiteral9AC527A8DF595B74718949B694ED69DE1F7D5017, NULL);
-		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_2 = ___parameters0;
+		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_2 = ___0_parameters;
 		__this->____parameters_15 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____parameters_15), (void*)L_2);
 		return;
@@ -8753,7 +9264,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpDigestIdentity_get_Uri_mE145F26
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpDigestIdentity::IsValid(System.String,System.String,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347AB841F6610355109754C3F018442D (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, String_t* ___password0, String_t* ___realm1, String_t* ___method2, String_t* ___entity3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347AB841F6610355109754C3F018442D (HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030* __this, String_t* ___0_password, String_t* ___1_realm, String_t* ___2_method, String_t* ___3_entity, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -8773,19 +9284,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347A
 		NullCheck(L_1);
 		NameValueCollection__ctor_m878AB94A93A31878089DEF9F110AE6C01BA6D148(L_1, L_0, NULL);
 		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_2 = L_1;
-		String_t* L_3 = ___password0;
+		String_t* L_3 = ___0_password;
 		NullCheck(L_2);
 		NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0(L_2, _stringLiteralE8F97FBA9104D1EA5047948E6DFB67FACD9F5B73, L_3, NULL);
 		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_4 = L_2;
-		String_t* L_5 = ___realm1;
+		String_t* L_5 = ___1_realm;
 		NullCheck(L_4);
 		NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0(L_4, _stringLiteralB7D1CAF9B55BE135BC8B1C459D2052FBCF135556, L_5, NULL);
 		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_6 = L_4;
-		String_t* L_7 = ___method2;
+		String_t* L_7 = ___2_method;
 		NullCheck(L_6);
 		NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0(L_6, _stringLiteral82EA3C9AFC08F0CECEBC1B257606B3106346FCAF, L_7, NULL);
 		NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* L_8 = L_6;
-		String_t* L_9 = ___entity3;
+		String_t* L_9 = ___3_entity;
 		NullCheck(L_8);
 		NameValueCollection_set_Item_mEEC24334890E9C0A05B88638B6A65DF5D888B0B0(L_8, _stringLiteralBBBCFF9559F03CF35B40795127B3BDBC6A80E8CB, L_9, NULL);
 		String_t* L_10;
@@ -8810,14 +9321,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpDigestIdentity_IsValid_mAE69DB9B347A
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpHeaderInfo::.ctor(System.String,WebSocketSharp.Net.HttpHeaderType)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpHeaderInfo__ctor_m029BC1522F8128A87B729FCBFA879111383ABD37 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, String_t* ___name0, int32_t ___type1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpHeaderInfo__ctor_m029BC1522F8128A87B729FCBFA879111383ABD37 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, String_t* ___0_name, int32_t ___1_type, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		__this->____name_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____name_0), (void*)L_0);
-		int32_t L_1 = ___type1;
+		int32_t L_1 = ___1_type;
 		__this->____type_1 = L_1;
 		return;
 	}
@@ -8871,7 +9382,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpHeaderInfo_get_Type_m134D445B35A3
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::IsMultiValue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsMultiValue_m48F09D53D36D229FEC7EC4DD584D2EAF43E58B85 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsMultiValue_m48F09D53D36D229FEC7EC4DD584D2EAF43E58B85 (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___0_response, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = __this->____type_1;
@@ -8881,7 +9392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsMultiValue_m48F09D53D36
 		}
 	}
 	{
-		bool L_1 = ___response0;
+		bool L_1 = ___0_response;
 		if (L_1)
 		{
 			goto IL_0015;
@@ -8902,7 +9413,7 @@ IL_0015:
 
 IL_001c:
 	{
-		bool L_4 = ___response0;
+		bool L_4 = ___0_response;
 		if (L_4)
 		{
 			goto IL_0026;
@@ -8922,7 +9433,7 @@ IL_0026:
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpHeaderInfo::IsRestricted(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsRestricted_mB2D9FB989CF4520F515E67F68CDB4D853CF4A81D (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsRestricted_mB2D9FB989CF4520F515E67F68CDB4D853CF4A81D (HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* __this, bool ___0_response, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = __this->____type_1;
@@ -8937,7 +9448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpHeaderInfo_IsRestricted_mB2D9FB989CF
 
 IL_000d:
 	{
-		bool L_1 = ___response0;
+		bool L_1 = ___0_response;
 		if (L_1)
 		{
 			goto IL_0017;
@@ -9076,10 +9587,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_get_ReuseAddress_m3DFD80D77
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_ReuseAddress(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_ReuseAddress_mCB7BBDAE0F7591CEC0012D58B65AEA2EA6F9253A (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_ReuseAddress_mCB7BBDAE0F7591CEC0012D58B65AEA2EA6F9253A (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____reuseAddress_16 = L_0;
 		return;
 	}
@@ -9094,11 +9605,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListener_get_AuthenticationScheme
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_AuthenticationSchemes(WebSocketSharp.Net.AuthenticationSchemes)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_AuthenticationSchemes_m55094E44E1C0687E68F3CB83B575B8FA39FC4ED4 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_AuthenticationSchemes_m55094E44E1C0687E68F3CB83B575B8FA39FC4ED4 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____authSchemes_0 = L_0;
 		return;
 	}
@@ -9113,11 +9624,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_AuthenticationSchemeSelector(System.Func`2<WebSocketSharp.Net.HttpListenerRequest,WebSocketSharp.Net.AuthenticationSchemes>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_AuthenticationSchemeSelector_mAD0DF6DA47EA88D3A1AFD3F8B3C0B94B5AA094AC (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_AuthenticationSchemeSelector_mAD0DF6DA47EA88D3A1AFD3F8B3C0B94B5AA094AC (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* L_0 = ___value0;
+		Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* L_0 = ___0_value;
 		__this->____authSchemeSelector_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____authSchemeSelector_1), (void*)L_0);
 		return;
@@ -9133,11 +9644,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListener_get_CertificateFolderP
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_CertificateFolderPath(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_CertificateFolderPath_m9C55FA17862DE851B8C88E038378716913AF22EF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_CertificateFolderPath_m9C55FA17862DE851B8C88E038378716913AF22EF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____certFolderPath_2 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____certFolderPath_2), (void*)L_0);
 		return;
@@ -9153,11 +9664,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_get_IgnoreWriteExceptions_m
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_IgnoreWriteExceptions(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_IgnoreWriteExceptions_m0B8BDD4AF59A24C898CD467F44765127A8020C20 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_IgnoreWriteExceptions_m0B8BDD4AF59A24C898CD467F44765127A8020C20 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____ignoreWriteExceptions_11 = L_0;
 		return;
 	}
@@ -9205,11 +9716,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListener_get_Realm_m46F0F617951
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_Realm(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_Realm_mBA436E23A8C8A03C62697F8B05A63CC397E9EDAA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_Realm_mBA436E23A8C8A03C62697F8B05A63CC397E9EDAA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____realm_15 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____realm_15), (void*)L_0);
 		return;
@@ -9256,11 +9767,11 @@ IL_001e:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_SslConfiguration(WebSocketSharp.Net.ServerSslConfiguration)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_SslConfiguration_m3E710321D63044FF695B4903894ADD356C77F93E (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_SslConfiguration_m3E710321D63044FF695B4903894ADD356C77F93E (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_0 = ___value0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_0 = ___0_value;
 		__this->____sslConfig_17 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____sslConfig_17), (void*)L_0);
 		return;
@@ -9277,7 +9788,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_get_UnsafeConnectionNtlmAut
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_UnsafeConnectionNtlmAuthentication(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_UnsafeConnectionNtlmAuthentication_m5236FC23448D0D1EA0DB1AA01195EA441ADB27BF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_UnsafeConnectionNtlmAuthentication_m5236FC23448D0D1EA0DB1AA01195EA441ADB27BF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -9296,11 +9807,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::set_UserCredentialsFinder(System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_UserCredentialsFinder_mCD7A685403FC8C3F5DC68960C1AAFE655D2C9E63 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_set_UserCredentialsFinder_mCD7A685403FC8C3F5DC68960C1AAFE655D2C9E63 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_0 = ___value0;
+		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_0 = ___0_value;
 		__this->____userCredFinder_18 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____userCredFinder_18), (void*)L_0);
 		return;
@@ -9435,7 +9946,7 @@ IL_0070:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::cleanupContextQueue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupContextQueue_m2D0E2BE8207F60F277150569555C84AC59278161 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___sendServiceUnavailable0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupContextQueue_m2D0E2BE8207F60F277150569555C84AC59278161 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_sendServiceUnavailable, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9519,7 +10030,7 @@ IL_0022_1:
 
 IL_0045:
 	{
-		bool L_9 = ___sendServiceUnavailable0;
+		bool L_9 = ___0_sendServiceUnavailable;
 		if (L_9)
 		{
 			goto IL_0049;
@@ -9704,7 +10215,7 @@ IL_0075:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::cleanupWaitQueue(System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupWaitQueue_m41CC761623820DC78E1AF0899E99933802CDFBBA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Exception_t* ___exception0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_cleanupWaitQueue_m41CC761623820DC78E1AF0899E99933802CDFBBA (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, Exception_t* ___0_exception, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9801,7 +10312,7 @@ IL_004c:
 		NullCheck(L_10);
 		int32_t L_12 = L_11;
 		HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_13 = (L_10)->GetAt(static_cast<il2cpp_array_size_t>(L_12));
-		Exception_t* L_14 = ___exception0;
+		Exception_t* L_14 = ___0_exception;
 		NullCheck(L_13);
 		HttpListenerAsyncResult_Complete_m191A82D95E3A29BBFF6F2BD51E6831B2C0A6C9F6(L_13, L_14, NULL);
 		int32_t L_15 = V_4;
@@ -9825,7 +10336,7 @@ IL_0063:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_close_mA6B255A6D1467D9DF0444F5FA9AC847E7C129A34 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___force0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_close_mA6B255A6D1467D9DF0444F5FA9AC847E7C129A34 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, bool ___0_force, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -9885,7 +10396,7 @@ IL_003f:
 		{// begin try (depth: 1)
 			RuntimeObject* L_4 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_4, (&V_1), NULL);
-			bool L_5 = ___force0;
+			bool L_5 = ___0_force;
 			HttpListener_cleanupContextQueue_m2D0E2BE8207F60F277150569555C84AC59278161(__this, (bool)((((int32_t)L_5) == ((int32_t)0))? 1 : 0), NULL);
 			goto IL_0040;
 		}// end try (depth: 1)
@@ -9987,7 +10498,7 @@ IL_000f:
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListener::AddConnection(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_AddConnection_mB77A6EEBF6B06693127428ECC4847F4CAACEFD71 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_AddConnection_mB77A6EEBF6B06693127428ECC4847F4CAACEFD71 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10060,8 +10571,8 @@ IL_0045:
 IL_002b_1:
 			{
 				Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* L_6 = __this->____connections_3;
-				HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_7 = ___connection0;
-				HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_8 = ___connection0;
+				HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_7 = ___0_connection;
+				HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_8 = ___0_connection;
 				NullCheck(L_6);
 				Dictionary_2_set_Item_m3B0E79A65CA5E5BC0ADC2793CA0E7FBFCA78281F(L_6, L_7, L_8, Dictionary_2_set_Item_m3B0E79A65CA5E5BC0ADC2793CA0E7FBFCA78281F_RuntimeMethod_var);
 				V_2 = (bool)1;
@@ -10081,7 +10592,7 @@ IL_0046:
 	}
 }
 // WebSocketSharp.Net.HttpListenerAsyncResult WebSocketSharp.Net.HttpListener::BeginGetContext(WebSocketSharp.Net.HttpListenerAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* HttpListener_BeginGetContext_m4C064B423406CB25F15A659E660904708E372B56 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* HttpListener_BeginGetContext_m4C064B423406CB25F15A659E660904708E372B56 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10154,7 +10665,7 @@ IL_0026_1:
 			}
 			{
 				List_1_tC7314F9C3DABE880ACD1D0484C3E2706BA87D85C* L_8 = __this->____waitQueue_19;
-				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_9 = ___asyncResult0;
+				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_9 = ___0_asyncResult;
 				NullCheck(L_8);
 				List_1_Add_mA8E87C0F0C88E6878954D799B241705B23A10911_inline(L_8, L_9, List_1_Add_mA8E87C0F0C88E6878954D799B241705B23A10911_RuntimeMethod_var);
 				goto IL_0046_1;
@@ -10162,7 +10673,7 @@ IL_0026_1:
 
 IL_003e_1:
 			{
-				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_10 = ___asyncResult0;
+				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_10 = ___0_asyncResult;
 				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_11 = V_2;
 				NullCheck(L_10);
 				HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1(L_10, L_11, (bool)1, NULL);
@@ -10170,7 +10681,7 @@ IL_003e_1:
 
 IL_0046_1:
 			{
-				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_12 = ___asyncResult0;
+				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_12 = ___0_asyncResult;
 				V_3 = L_12;
 				goto IL_0054;
 			}
@@ -10266,7 +10777,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListener::RegisterContext(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_RegisterContext_mBFD67BE7128D4CB25C14E7280E8F56A433566DCF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListener_RegisterContext_mBFD67BE7128D4CB25C14E7280E8F56A433566DCF (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10341,8 +10852,8 @@ IL_0064:
 IL_002b_1:
 			{
 				Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* L_6 = __this->____ctxRegistry_7;
-				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_7 = ___context0;
-				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_8 = ___context0;
+				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_7 = ___0_context;
+				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_8 = ___0_context;
 				NullCheck(L_6);
 				Dictionary_2_set_Item_m197BBA0F655F7D51322EE2EAB14EA7E7C921E5D8(L_6, L_7, L_8, Dictionary_2_set_Item_m197BBA0F655F7D51322EE2EAB14EA7E7C921E5D8_RuntimeMethod_var);
 				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_9;
@@ -10356,7 +10867,7 @@ IL_002b_1:
 			}
 			{
 				List_1_t34157D301768D07BD0345C16404819B1629D46C2* L_11 = __this->____ctxQueue_5;
-				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_12 = ___context0;
+				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_12 = ___0_context;
 				NullCheck(L_11);
 				List_1_Add_m52F4960BA74D5046CA253B8B1EB98D364C53F49F_inline(L_11, L_12, List_1_Add_m52F4960BA74D5046CA253B8B1EB98D364C53F49F_RuntimeMethod_var);
 				goto IL_0057_1;
@@ -10365,7 +10876,7 @@ IL_002b_1:
 IL_0050_1:
 			{
 				HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_13 = V_2;
-				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_14 = ___context0;
+				HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_14 = ___0_context;
 				NullCheck(L_13);
 				HttpListenerAsyncResult_Complete_m09E6603BC1197CEDE803D525305EE7E705D717B9(L_13, L_14, NULL);
 			}
@@ -10389,7 +10900,7 @@ IL_0065:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::RemoveConnection(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_RemoveConnection_m9FD1417665847C8E294B7E6F35B42F4A6E7979AB (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_RemoveConnection_m9FD1417665847C8E294B7E6F35B42F4A6E7979AB (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10433,7 +10944,7 @@ IL_0029:
 			RuntimeObject* L_3 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
 			Dictionary_2_tCDB7D655945608D1E69112BCB6F5D4003010A52D* L_4 = __this->____connections_3;
-			HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_5 = ___connection0;
+			HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_5 = ___0_connection;
 			NullCheck(L_4);
 			bool L_6;
 			L_6 = Dictionary_2_Remove_m721DB180EADFADE81E5D9C0805AA0931EBFA6A8D(L_4, L_5, Dictionary_2_Remove_m721DB180EADFADE81E5D9C0805AA0931EBFA6A8D_RuntimeMethod_var);
@@ -10451,7 +10962,7 @@ IL_002a:
 	}
 }
 // WebSocketSharp.Net.AuthenticationSchemes WebSocketSharp.Net.HttpListener::SelectAuthenticationScheme(WebSocketSharp.Net.HttpListenerRequest)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListener_SelectAuthenticationScheme_m9C9F6E119D2FEE0E2EB2F7EA16F4D0BC92A9C141 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___request0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListener_SelectAuthenticationScheme_m9C9F6E119D2FEE0E2EB2F7EA16F4D0BC92A9C141 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* ___0_request, const RuntimeMethod* method) 
 {
 	Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -10476,7 +10987,7 @@ IL_0011:
 	try
 	{// begin try (depth: 1)
 		Func_2_tA27D12B9A73ACAEE23E0983E6D5CB57E6B66E78B* L_3 = V_0;
-		HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* L_4 = ___request0;
+		HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* L_4 = ___0_request;
 		NullCheck(L_3);
 		int32_t L_5;
 		L_5 = Func_2_Invoke_m57BE9648EE7D74BB59FFEB73076AD9AA77C20F6F_inline(L_3, L_4, NULL);
@@ -10507,7 +11018,7 @@ IL_0021:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListener::UnregisterContext(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_UnregisterContext_m920982224E13F9C4D4BBA6028A59F02A8B8D1BC3 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListener_UnregisterContext_m920982224E13F9C4D4BBA6028A59F02A8B8D1BC3 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10551,7 +11062,7 @@ IL_0029:
 			RuntimeObject* L_3 = V_0;
 			Monitor_Enter_m3CDB589DA1300B513D55FDCFB52B63E879794149(L_3, (&V_1), NULL);
 			Dictionary_2_t774D4DE8A795351CCB49791D4C5CA3FD42D1BAEE* L_4 = __this->____ctxRegistry_7;
-			HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_5 = ___context0;
+			HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_5 = ___0_context;
 			NullCheck(L_4);
 			bool L_6;
 			L_6 = Dictionary_2_Remove_mB3A7351B91269FC4606BD9BA1AF13635A403BAC3(L_4, L_5, Dictionary_2_Remove_mB3A7351B91269FC4606BD9BA1AF13635A403BAC3_RuntimeMethod_var);
@@ -10589,7 +11100,7 @@ IL_0009:
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.HttpListener::BeginGetContext(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListener_BeginGetContext_m9F341189EECA7D83F00EEBC1368086CB96A07338 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback0, RuntimeObject* ___state1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListener_BeginGetContext_m9F341189EECA7D83F00EEBC1368086CB96A07338 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_callback, RuntimeObject* ___1_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10633,8 +11144,8 @@ IL_001e:
 
 IL_0033:
 	{
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_5 = ___callback0;
-		RuntimeObject* L_6 = ___state1;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_5 = ___0_callback;
+		RuntimeObject* L_6 = ___1_state;
 		HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_7 = (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D*)il2cpp_codegen_object_new(HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D_il2cpp_TypeInfo_var);
 		NullCheck(L_7);
 		HttpListenerAsyncResult__ctor_m8452591ED179FD51B269180CB98A6E8E0C6E797F(L_7, L_5, L_6, NULL);
@@ -10664,7 +11175,7 @@ IL_0009:
 	}
 }
 // WebSocketSharp.Net.HttpListenerContext WebSocketSharp.Net.HttpListener::EndGetContext(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListener_EndGetContext_m7EA0BE4830D7361279752853B6AA0E1F7BAD9687 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* HttpListener_EndGetContext_m7EA0BE4830D7361279752853B6AA0E1F7BAD9687 (HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10675,7 +11186,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E
 	HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* V_0 = NULL;
 	{
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(__this, NULL);
-		RuntimeObject* L_0 = ___asyncResult0;
+		RuntimeObject* L_0 = ___0_asyncResult;
 		if (L_0)
 		{
 			goto IL_0014;
@@ -10690,7 +11201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerContext_t132569E34C5C474FA3AECD4E
 
 IL_0014:
 	{
-		RuntimeObject* L_2 = ___asyncResult0;
+		RuntimeObject* L_2 = ___0_asyncResult;
 		V_0 = ((HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D*)IsInstClass((RuntimeObject*)L_2, HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D_il2cpp_TypeInfo_var));
 		HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_3 = V_0;
 		if (L_3)
@@ -10961,7 +11472,7 @@ IL_0009:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::.ctor(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult__ctor_m8452591ED179FD51B269180CB98A6E8E0C6E797F (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback0, RuntimeObject* ___state1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult__ctor_m8452591ED179FD51B269180CB98A6E8E0C6E797F (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_callback, RuntimeObject* ___1_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -10971,10 +11482,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult__ctor_m8452591ED
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_0 = ___callback0;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_0 = ___0_callback;
 		__this->____callback_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____callback_0), (void*)L_0);
-		RuntimeObject* L_1 = ___state1;
+		RuntimeObject* L_1 = ___1_state;
 		__this->____state_6 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____state_6), (void*)L_1);
 		RuntimeObject* L_2 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
@@ -10994,10 +11505,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerAsyncResult_get_EndCalled_m5
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::set_EndCalled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____endCalled_3 = L_0;
 		return;
 	}
@@ -11011,10 +11522,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerAsyncResult_get_InGet_m8FFBA
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::set_InGet(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____inGet_5 = L_0;
 		return;
 	}
@@ -11180,7 +11691,7 @@ IL_0024:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::complete(WebSocketSharp.Net.HttpListenerAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_complete_m95F5BBFA0B652603CD83990D9B785AFE5FBAD177 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_complete_m95F5BBFA0B652603CD83990D9B785AFE5FBAD177 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11200,7 +11711,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_complete_m95F5BB
 		U3CU3Ec__DisplayClass25_0__ctor_mCE9E007F2F779F7A9D8C104AA553776A24EA714A(L_0, NULL);
 		V_0 = L_0;
 		U3CU3Ec__DisplayClass25_0_tAD334F31DBC3BFF707E59A5B1B35E91A25952976* L_1 = V_0;
-		HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_2 = ___asyncResult0;
+		HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* L_2 = ___0_asyncResult;
 		NullCheck(L_1);
 		L_1->___asyncResult_1 = L_2;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___asyncResult_1), (void*)L_2);
@@ -11311,7 +11822,7 @@ IL_006b:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82D95E3A29BBFF6F2BD51E6831B2C0A6C9F6 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, Exception_t* ___exception0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82D95E3A29BBFF6F2BD51E6831B2C0A6C9F6 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, Exception_t* ___0_exception, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11336,7 +11847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82
 		}
 	}
 	{
-		Exception_t* L_1 = ___exception0;
+		Exception_t* L_1 = ___0_exception;
 		G_B2_0 = G_B1_0;
 		if (((ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB*)IsInstClass((RuntimeObject*)L_1, ObjectDisposedException_tC5FB29E8E980E2010A2F6A5B9B791089419F89EB_il2cpp_TypeInfo_var)))
 		{
@@ -11347,7 +11858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m191A82
 
 IL_0011:
 	{
-		Exception_t* L_2 = ___exception0;
+		Exception_t* L_2 = ___0_exception;
 		G_B4_0 = L_2;
 		G_B4_1 = G_B2_0;
 		goto IL_0023;
@@ -11372,22 +11883,22 @@ IL_0023:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m09E6603BC1197CEDE803D525305EE7E705D717B9 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_m09E6603BC1197CEDE803D525305EE7E705D717B9 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) 
 {
 	{
-		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___context0;
+		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___0_context;
 		HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1(__this, L_0, (bool)0, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult::Complete(WebSocketSharp.Net.HttpListenerContext,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, bool ___syncCompleted1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_Complete_mD722E126A306AA37F6BFF4F2DD4232D15B37A8A1 (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, bool ___1_syncCompleted, const RuntimeMethod* method) 
 {
 	{
-		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___context0;
+		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___0_context;
 		__this->____context_2 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____context_2), (void*)L_0);
-		bool L_1 = ___syncCompleted1;
+		bool L_1 = ___1_syncCompleted;
 		__this->____syncCompleted_8 = L_1;
 		HttpListenerAsyncResult_complete_m95F5BBFA0B652603CD83990D9B785AFE5FBAD177(__this, NULL);
 		return;
@@ -11431,7 +11942,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0__ctor_mCE9E007
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerAsyncResult/<>c__DisplayClass25_0::<complete>b__0(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0_U3CcompleteU3Eb__0_mAE133DC4A53B94C4A44254C69B2C982BA6B6CD0C (U3CU3Ec__DisplayClass25_0_tAD334F31DBC3BFF707E59A5B1B35E91A25952976* __this, RuntimeObject* ___state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass25_0_U3CcompleteU3Eb__0_mAE133DC4A53B94C4A44254C69B2C982BA6B6CD0C (U3CU3Ec__DisplayClass25_0_tAD334F31DBC3BFF707E59A5B1B35E91A25952976* __this, RuntimeObject* ___0_state, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
@@ -11472,7 +11983,7 @@ IL_0016:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerContext::.ctor(WebSocketSharp.Net.HttpConnection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext__ctor_mF336516BE39707647CC214AC968CFA2662AAEFDF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___connection0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext__ctor_mF336516BE39707647CC214AC968CFA2662AAEFDF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* ___0_connection, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11483,7 +11994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext__ctor_mF336516BE3970
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_0 = ___connection0;
+		HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_0 = ___0_connection;
 		__this->____connection_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____connection_0), (void*)L_0);
 		__this->____errorStatus_2 = ((int32_t)400);
@@ -11517,10 +12028,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerContext_get_ErrorMessag
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_ErrorMessage(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____error_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____error_1), (void*)L_0);
 		return;
@@ -11535,10 +12046,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListenerContext_get_ErrorStatus_m
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_ErrorStatus(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____errorStatus_2 = L_0;
 		return;
 	}
@@ -11560,10 +12071,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListener_t0FEE892655AF515FA947B2BCBA9C5BE
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerContext::set_Listener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311 (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___value0;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___0_value;
 		__this->____listener_3 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener_3), (void*)L_0);
 		return;
@@ -11736,7 +12247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerContext_Unregister_m16BC7E30
 	}
 }
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext WebSocketSharp.Net.HttpListenerContext::AcceptWebSocket(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* HttpListenerContext_AcceptWebSocket_m1A2C4CF82C0E7DC4ACC058FB50CBF595B4C2E9FF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___protocol0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* HttpListenerContext_AcceptWebSocket_m1A2C4CF82C0E7DC4ACC058FB50CBF595B4C2E9FF (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___0_protocol, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11761,14 +12272,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListenerWebSocketContext_tA0830C4B9DA1CAA
 
 IL_0013:
 	{
-		String_t* L_2 = ___protocol0;
+		String_t* L_2 = ___0_protocol;
 		if (!L_2)
 		{
 			goto IL_0046;
 		}
 	}
 	{
-		String_t* L_3 = ___protocol0;
+		String_t* L_3 = ___0_protocol;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_3, NULL);
@@ -11786,7 +12297,7 @@ IL_0013:
 
 IL_002e:
 	{
-		String_t* L_6 = ___protocol0;
+		String_t* L_6 = ___0_protocol;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_7;
 		L_7 = Ext_IsToken_mD0210769BCC936321C474F7B5649A54130EF3899(L_6, NULL);
@@ -11804,7 +12315,7 @@ IL_002e:
 
 IL_0046:
 	{
-		String_t* L_9 = ___protocol0;
+		String_t* L_9 = ___0_protocol;
 		HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1* L_10 = (HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1*)il2cpp_codegen_object_new(HttpListenerWebSocketContext_tA0830C4B9DA1CAA1D501983A587C0DC728005BF1_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
 		HttpListenerWebSocketContext__ctor_m28DE6960A96152FABC7E9F99409A32AA0656A288(L_10, __this, L_9, NULL);
@@ -11823,11 +12334,11 @@ IL_0046:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mC884B24712D18929A087FE9C8C46D0D6E29C9B9C (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___serializationInfo0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___streamingContext1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mC884B24712D18929A087FE9C8C46D0D6E29C9B9C (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_serializationInfo, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_streamingContext, const RuntimeMethod* method) 
 {
 	{
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___serializationInfo0;
-		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___streamingContext1;
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___0_serializationInfo;
+		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___1_streamingContext;
 		Win32Exception__ctor_m1B3DF3F51BBF050C18F933B36027A8A4902668C4(__this, L_0, L_1, NULL);
 		return;
 	}
@@ -11841,20 +12352,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mBEBCD0BC365
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerException::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mBD93BB840029E59EF2FFB98A8BB4F0B7A55BE9D8 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___errorCode0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_mBD93BB840029E59EF2FFB98A8BB4F0B7A55BE9D8 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___0_errorCode, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___errorCode0;
+		int32_t L_0 = ___0_errorCode;
 		Win32Exception__ctor_mFC38F1C99031D227C6BB3CA07099866D39994281(__this, L_0, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerException::.ctor(System.Int32,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_m0195BDF177F3645B3591E231190AF7460725B863 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___errorCode0, String_t* ___message1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerException__ctor_m0195BDF177F3645B3591E231190AF7460725B863 (HttpListenerException_t355584236C7714F05742CC38700C9DC1CAE01C55* __this, int32_t ___0_errorCode, String_t* ___1_message, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___errorCode0;
-		String_t* L_1 = ___message1;
+		int32_t L_0 = ___0_errorCode;
+		String_t* L_1 = ___1_message;
 		Win32Exception__ctor_mB0380F996944EDFCF9CACC7F28A18874F19B4FD4(__this, L_0, L_1, NULL);
 		return;
 	}
@@ -11877,14 +12388,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListenerException_get_ErrorCode_m
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix__ctor_mD591F12559B249BBF0F15B89CF06161AF6330E66 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		String_t* L_0 = ___uriPrefix0;
+		String_t* L_0 = ___0_uriPrefix;
 		__this->____original_2 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____original_2), (void*)L_0);
-		String_t* L_1 = ___uriPrefix0;
+		String_t* L_1 = ___0_uriPrefix;
 		HttpListenerPrefix_parse_m9545E4C75C1C488EC2138D0F0DE9DFE2EDE59A8E(__this, L_1, NULL);
 		return;
 	}
@@ -11914,10 +12425,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpListener_t0FEE892655AF515FA947B2BCBA9C5BE
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::set_Listener(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_set_Listener_m3B12D2E1967B2C28BFE58AFBE7EE5495D372FCE6 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_set_Listener_m3B12D2E1967B2C28BFE58AFBE7EE5495D372FCE6 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___value0;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___0_value;
 		__this->____listener_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener_1), (void*)L_0);
 		return;
@@ -11948,7 +12459,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerPrefix_get_Port_m63D781
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::parse(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C488EC2138D0F0DE9DFE2EDE59A8E (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C488EC2138D0F0DE9DFE2EDE59A8E (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -11987,7 +12498,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C48
 	String_t* G_B12_4 = NULL;
 	HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* G_B12_5 = NULL;
 	{
-		String_t* L_0 = ___uriPrefix0;
+		String_t* L_0 = ___0_uriPrefix;
 		NullCheck(L_0);
 		bool L_1;
 		L_1 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_0, _stringLiteralF27E4C631EBEFA337EC21BE8552E169C9DED78A2, NULL);
@@ -12002,17 +12513,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_parse_m9545E4C75C1C48
 
 IL_0014:
 	{
-		String_t* L_2 = ___uriPrefix0;
+		String_t* L_2 = ___0_uriPrefix;
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
 		V_0 = L_3;
-		String_t* L_4 = ___uriPrefix0;
+		String_t* L_4 = ___0_uriPrefix;
 		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_4, ((int32_t)58), NULL);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_5, 3));
-		String_t* L_6 = ___uriPrefix0;
+		String_t* L_6 = ___0_uriPrefix;
 		int32_t L_7 = V_1;
 		int32_t L_8 = V_0;
 		int32_t L_9 = V_1;
@@ -12020,7 +12531,7 @@ IL_0014:
 		int32_t L_10;
 		L_10 = String_IndexOf_mFD81FEE71234D44F45A4924CD51AD6169C722ACB(L_6, ((int32_t)47), ((int32_t)il2cpp_codegen_add(L_7, 1)), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_8, L_9)), 1)), NULL);
 		V_2 = L_10;
-		String_t* L_11 = ___uriPrefix0;
+		String_t* L_11 = ___0_uriPrefix;
 		int32_t L_12 = V_2;
 		int32_t L_13 = V_2;
 		int32_t L_14 = V_1;
@@ -12028,7 +12539,7 @@ IL_0014:
 		int32_t L_15;
 		L_15 = String_LastIndexOf_mC92062EF4E7765DD44424828FA75C027AA325442(L_11, ((int32_t)58), ((int32_t)il2cpp_codegen_subtract(L_12, 1)), ((int32_t)il2cpp_codegen_subtract(((int32_t)il2cpp_codegen_subtract(L_13, L_14)), 1)), NULL);
 		V_3 = L_15;
-		String_t* L_16 = ___uriPrefix0;
+		String_t* L_16 = ___0_uriPrefix;
 		int32_t L_17 = V_2;
 		NullCheck(L_16);
 		Il2CppChar L_18;
@@ -12047,7 +12558,7 @@ IL_0014:
 		}
 	}
 	{
-		String_t* L_21 = ___uriPrefix0;
+		String_t* L_21 = ___0_uriPrefix;
 		int32_t L_22 = V_1;
 		int32_t L_23 = V_3;
 		int32_t L_24 = V_1;
@@ -12056,7 +12567,7 @@ IL_0014:
 		L_25 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_21, L_22, ((int32_t)il2cpp_codegen_subtract(L_23, L_24)), NULL);
 		__this->____host_0 = L_25;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____host_0), (void*)L_25);
-		String_t* L_26 = ___uriPrefix0;
+		String_t* L_26 = ___0_uriPrefix;
 		int32_t L_27 = V_3;
 		int32_t L_28 = V_2;
 		int32_t L_29 = V_3;
@@ -12070,7 +12581,7 @@ IL_0014:
 
 IL_007f:
 	{
-		String_t* L_31 = ___uriPrefix0;
+		String_t* L_31 = ___0_uriPrefix;
 		int32_t L_32 = V_1;
 		int32_t L_33 = V_2;
 		int32_t L_34 = V_1;
@@ -12108,7 +12619,7 @@ IL_00a4:
 
 IL_00a9:
 	{
-		String_t* L_37 = ___uriPrefix0;
+		String_t* L_37 = ___0_uriPrefix;
 		int32_t L_38 = V_2;
 		NullCheck(L_37);
 		String_t* L_39;
@@ -12182,7 +12693,7 @@ IL_00d8:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefix::CheckPrefix(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604FB9F001E38D0D742575BAC067ECF3A1F (String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604FB9F001E38D0D742575BAC067ECF3A1F (String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12195,7 +12706,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		String_t* L_0 = ___uriPrefix0;
+		String_t* L_0 = ___0_uriPrefix;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -12210,7 +12721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefix_CheckPrefix_mE4670604
 
 IL_000e:
 	{
-		String_t* L_2 = ___uriPrefix0;
+		String_t* L_2 = ___0_uriPrefix;
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
@@ -12230,7 +12741,7 @@ IL_000e:
 
 IL_0028:
 	{
-		String_t* L_6 = ___uriPrefix0;
+		String_t* L_6 = ___0_uriPrefix;
 		NullCheck(L_6);
 		bool L_7;
 		L_7 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_6, _stringLiteral3AE148F4539A6130C80EF45C5441F068ADBF8C8C, NULL);
@@ -12240,7 +12751,7 @@ IL_0028:
 		}
 	}
 	{
-		String_t* L_8 = ___uriPrefix0;
+		String_t* L_8 = ___0_uriPrefix;
 		NullCheck(L_8);
 		bool L_9;
 		L_9 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_8, _stringLiteralA493FF06F94D0907E2F1797D03C4EB68CE5751F2, NULL);
@@ -12258,7 +12769,7 @@ IL_0028:
 
 IL_0052:
 	{
-		String_t* L_11 = ___uriPrefix0;
+		String_t* L_11 = ___0_uriPrefix;
 		NullCheck(L_11);
 		int32_t L_12;
 		L_12 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_11, ((int32_t)58), NULL);
@@ -12279,7 +12790,7 @@ IL_0052:
 
 IL_0071:
 	{
-		String_t* L_16 = ___uriPrefix0;
+		String_t* L_16 = ___0_uriPrefix;
 		int32_t L_17 = V_1;
 		NullCheck(L_16);
 		Il2CppChar L_18;
@@ -12298,7 +12809,7 @@ IL_0071:
 
 IL_008c:
 	{
-		String_t* L_20 = ___uriPrefix0;
+		String_t* L_20 = ___0_uriPrefix;
 		int32_t L_21 = V_1;
 		int32_t L_22 = V_0;
 		int32_t L_23 = V_1;
@@ -12329,7 +12840,7 @@ IL_00ad:
 		}
 	}
 	{
-		String_t* L_29 = ___uriPrefix0;
+		String_t* L_29 = ___0_uriPrefix;
 		int32_t L_30 = V_0;
 		NullCheck(L_29);
 		Il2CppChar L_31;
@@ -12350,7 +12861,7 @@ IL_00be:
 
 IL_00ce:
 	{
-		String_t* L_33 = ___uriPrefix0;
+		String_t* L_33 = ___0_uriPrefix;
 		int32_t L_34 = V_2;
 		NullCheck(L_33);
 		Il2CppChar L_35;
@@ -12389,7 +12900,7 @@ IL_0101:
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerPrefix::Equals(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefix_Equals_mF15FA77B84FC95D16A8DF0C08EBF30981CA6E108 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, RuntimeObject* ___obj0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefix_Equals_mF15FA77B84FC95D16A8DF0C08EBF30981CA6E108 (HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12399,7 +12910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefix_Equals_mF15FA77B84FC9
 	}
 	HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* V_0 = NULL;
 	{
-		RuntimeObject* L_0 = ___obj0;
+		RuntimeObject* L_0 = ___0_obj;
 		V_0 = ((HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF*)IsInstSealed((RuntimeObject*)L_0, HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF_il2cpp_TypeInfo_var));
 		HttpListenerPrefix_tA10F917EF7F5B21B1B93C733D5537B91FD1E86CF* L_1 = V_0;
 		if (!L_1)
@@ -12450,7 +12961,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerPrefix_ToString_mD58470
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerPrefixCollection::.ctor(WebSocketSharp.Net.HttpListener)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection__ctor_mC40321EAE81F807190AA431F841E80F955976A8E (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___listener0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection__ctor_mC40321EAE81F807190AA431F841E80F955976A8E (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_listener, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12461,7 +12972,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection__ctor_mC403
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___listener0;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___0_listener;
 		__this->____listener_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener_0), (void*)L_0);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*)il2cpp_codegen_object_new(List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var);
@@ -12504,7 +13015,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_get_IsSynch
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefixCollection::Add(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_Add_m0A283F8BCED7175913B72AE0523B1F81F2E474B3 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_Add_m0A283F8BCED7175913B72AE0523B1F81F2E474B3 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12518,10 +13029,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_Add_m0A283F
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = __this->____listener_0;
 		NullCheck(L_0);
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(L_0, NULL);
-		String_t* L_1 = ___uriPrefix0;
+		String_t* L_1 = ___0_uriPrefix;
 		HttpListenerPrefix_CheckPrefix_mE4670604FB9F001E38D0D742575BAC067ECF3A1F(L_1, NULL);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_2 = __this->____prefixes_1;
-		String_t* L_3 = ___uriPrefix0;
+		String_t* L_3 = ___0_uriPrefix;
 		NullCheck(L_2);
 		bool L_4;
 		L_4 = List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1(L_2, L_3, List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var);
@@ -12537,7 +13048,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_Add_m0A283F
 IL_0020:
 	{
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_5 = __this->____prefixes_1;
-		String_t* L_6 = ___uriPrefix0;
+		String_t* L_6 = ___0_uriPrefix;
 		NullCheck(L_5);
 		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_5, L_6, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_7 = __this->____listener_0;
@@ -12550,7 +13061,7 @@ IL_0020:
 		}
 	}
 	{
-		String_t* L_9 = ___uriPrefix0;
+		String_t* L_9 = ___0_uriPrefix;
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_10 = __this->____listener_0;
 		il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 		EndPointManager_AddPrefix_mEB5581D19EDE29483F829668C9353C681368731D(L_9, L_10, NULL);
@@ -12599,7 +13110,7 @@ IL_002e:
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerPrefixCollection::Contains(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Contains_m1CC6C077574AF63C60885D5FCBEE71B079C0ED3B (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Contains_m1CC6C077574AF63C60885D5FCBEE71B079C0ED3B (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12611,7 +13122,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Contains_m1
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = __this->____listener_0;
 		NullCheck(L_0);
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(L_0, NULL);
-		String_t* L_1 = ___uriPrefix0;
+		String_t* L_1 = ___0_uriPrefix;
 		if (L_1)
 		{
 			goto IL_0019;
@@ -12627,7 +13138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Contains_m1
 IL_0019:
 	{
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_3 = __this->____prefixes_1;
-		String_t* L_4 = ___uriPrefix0;
+		String_t* L_4 = ___0_uriPrefix;
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1(L_3, L_4, List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1_RuntimeMethod_var);
@@ -12635,7 +13146,7 @@ IL_0019:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefixCollection::CopyTo(System.Array,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m0FF7F515E55704711001B7BEE33FA461A2576AD4 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, RuntimeArray* ___array0, int32_t ___offset1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m0FF7F515E55704711001B7BEE33FA461A2576AD4 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, RuntimeArray* ___0_array, int32_t ___1_offset, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12648,15 +13159,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m0FF
 		NullCheck(L_0);
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(L_0, NULL);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = __this->____prefixes_1;
-		RuntimeArray* L_2 = ___array0;
-		int32_t L_3 = ___offset1;
+		RuntimeArray* L_2 = ___0_array;
+		int32_t L_3 = ___1_offset;
 		NullCheck(L_1);
 		InterfaceActionInvoker2< RuntimeArray*, int32_t >::Invoke(0 /* System.Void System.Collections.ICollection::CopyTo(System.Array,System.Int32) */, ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E_il2cpp_TypeInfo_var, L_1, L_2, L_3);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerPrefixCollection::CopyTo(System.String[],System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m7455C3543E4EF3459B7414189BD13544E8827C06 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___array0, int32_t ___offset1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m7455C3543E4EF3459B7414189BD13544E8827C06 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_array, int32_t ___1_offset, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12669,8 +13180,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerPrefixCollection_CopyTo_m745
 		NullCheck(L_0);
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(L_0, NULL);
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_1 = __this->____prefixes_1;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = ___array0;
-		int32_t L_3 = ___offset1;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_2 = ___0_array;
+		int32_t L_3 = ___1_offset;
 		NullCheck(L_1);
 		List_1_CopyTo_mDBB80691DC1779726A0F6AFC990C73F49C8532A4(L_1, L_2, L_3, List_1_CopyTo_mDBB80691DC1779726A0F6AFC990C73F49C8532A4_RuntimeMethod_var);
 		return;
@@ -12697,7 +13208,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerPrefixCollection_G
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerPrefixCollection::Remove(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Remove_mDFE2AA9257D7D09A5ECCF29901103694F1CB2905 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___uriPrefix0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Remove_mDFE2AA9257D7D09A5ECCF29901103694F1CB2905 (HttpListenerPrefixCollection_t37C24206155AB8FCB73D3B0A75B8CA6AC36DB173* __this, String_t* ___0_uriPrefix, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12713,7 +13224,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Remove_mDFE
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = __this->____listener_0;
 		NullCheck(L_0);
 		HttpListener_CheckDisposed_mCCBC50ADF94E42E57EC331ECA209B6B4F94974AF(L_0, NULL);
-		String_t* L_1 = ___uriPrefix0;
+		String_t* L_1 = ___0_uriPrefix;
 		if (L_1)
 		{
 			goto IL_0019;
@@ -12729,7 +13240,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerPrefixCollection_Remove_mDFE
 IL_0019:
 	{
 		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_3 = __this->____prefixes_1;
-		String_t* L_4 = ___uriPrefix0;
+		String_t* L_4 = ___0_uriPrefix;
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = List_1_Remove_mD9E8CFB6777A99046B3C0195F7343FE771A2E99D(L_3, L_4, List_1_Remove_mD9E8CFB6777A99046B3C0195F7343FE771A2E99D_RuntimeMethod_var);
@@ -12754,7 +13265,7 @@ IL_0019:
 		}
 	}
 	{
-		String_t* L_9 = ___uriPrefix0;
+		String_t* L_9 = ___0_uriPrefix;
 		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_10 = __this->____listener_0;
 		il2cpp_codegen_runtime_class_init_inline(EndPointManager_tC989FF6054A6B06F443FF8D3C1AD16F0A5F8CA7F_il2cpp_TypeInfo_var);
 		EndPointManager_RemovePrefix_m01BA6EF66639856893562063C078C80D2556FE90(L_9, L_10, NULL);
@@ -12816,7 +13327,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__cctor_m29D3631C831D
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerRequest::.ctor(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__ctor_mC00CD80186E6AC5767A3757BB6673FAAF8FFCBC8 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__ctor_mC00CD80186E6AC5767A3757BB6673FAAF8FFCBC8 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -12826,7 +13337,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest__ctor_mC00CD80186E6A
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___context0;
+		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___0_context;
 		__this->____context_6 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____context_6), (void*)L_0);
 		__this->____contentLength_4 = ((int64_t)(-1));
@@ -13476,7 +13987,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerRequest::tryCreateVersion(System.String,System.Version&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4FA67B335ECE89EF1133182F2414DF2933EF6092 (String_t* ___version0, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** ___result1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4FA67B335ECE89EF1133182F2414DF2933EF6092 (String_t* ___0_version, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** ___1_result, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13488,8 +13999,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4F
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{// begin try (depth: 1)
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** L_0 = ___result1;
-		String_t* L_1 = ___version0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** L_0 = ___1_result;
+		String_t* L_1 = ___0_version;
 		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_2 = (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7*)il2cpp_codegen_object_new(Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		Version__ctor_m52D06833AE6481C0A9B72085BDC4D09A723CEF7F(L_2, L_1, NULL);
@@ -13510,7 +14021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerRequest_tryCreateVersion_m4F
 
 CATCH_000c:
 	{// begin catch(System.Object)
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** L_3 = ___result1;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7** L_3 = ___1_result;
 		*((RuntimeObject**)L_3) = (RuntimeObject*)NULL;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_3, (void*)(RuntimeObject*)NULL);
 		V_0 = (bool)0;
@@ -13525,7 +14036,7 @@ IL_0014:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerRequest::AddHeader(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C291E2C143DB4C9269705F27B94E6CE0 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C291E2C143DB4C9269705F27B94E6CE0 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -13553,7 +14064,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C
 	int64_t V_4 = 0;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		String_t* L_0 = ___header0;
+		String_t* L_0 = ___0_header;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_0, ((int32_t)58), NULL);
@@ -13573,7 +14084,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_AddHeader_mB960E719C
 
 IL_001e:
 	{
-		String_t* L_4 = ___header0;
+		String_t* L_4 = ___0_header;
 		int32_t L_5 = V_0;
 		NullCheck(L_4);
 		String_t* L_6;
@@ -13582,7 +14093,7 @@ IL_001e:
 		String_t* L_7;
 		L_7 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_6, NULL);
 		V_1 = L_7;
-		String_t* L_8 = ___header0;
+		String_t* L_8 = ___0_header;
 		int32_t L_9 = V_0;
 		NullCheck(L_8);
 		String_t* L_10;
@@ -14192,7 +14703,7 @@ IL_0077:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerRequest::SetRequestLine(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_SetRequestLine_mE6E65A0FE6A11A3AD7B232567DF75E60FD8A6245 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___requestLine0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_SetRequestLine_mE6E65A0FE6A11A3AD7B232567DF75E60FD8A6245 (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, String_t* ___0_requestLine, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14209,7 +14720,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerRequest_SetRequestLine_mE6E6
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
 	String_t* V_1 = NULL;
 	{
-		String_t* L_0 = ___requestLine0;
+		String_t* L_0 = ___0_requestLine;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = L_1;
 		NullCheck(L_2);
@@ -14326,7 +14837,7 @@ IL_00a6:
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.HttpListenerRequest::BeginGetClientCertificate(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerRequest_BeginGetClientCertificate_mEDF4ED7F2FC8CADDF7C28FEDC6F079ED22DDCFDD (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___requestCallback0, RuntimeObject* ___state1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerRequest_BeginGetClientCertificate_mEDF4ED7F2FC8CADDF7C28FEDC6F079ED22DDCFDD (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_requestCallback, RuntimeObject* ___1_state, const RuntimeMethod* method) 
 {
 	{
 		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_0 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
@@ -14336,7 +14847,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerRequest_BeginGetCl
 	}
 }
 // System.Security.Cryptography.X509Certificates.X509Certificate2 WebSocketSharp.Net.HttpListenerRequest::EndGetClientCertificate(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* HttpListenerRequest_EndGetClientCertificate_m3590BAB51B1F346B7AFD71C0AA1911B3F73309EC (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* HttpListenerRequest_EndGetClientCertificate_m3590BAB51B1F346B7AFD71C0AA1911B3F73309EC (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	{
 		NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8* L_0 = (NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var)));
@@ -14399,7 +14910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerRequest_ToString_mDCD62
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerResponse::.ctor(WebSocketSharp.Net.HttpListenerContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse__ctor_m8DD8D685FF83232A9719520513336A672ED72CCB (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___context0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse__ctor_m8DD8D685FF83232A9719520513336A672ED72CCB (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* ___0_context, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14410,7 +14921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse__ctor_m8DD8D685FF83
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___context0;
+		HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* L_0 = ___0_context;
 		__this->____context_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____context_4), (void*)L_0);
 		__this->____keepAlive_9 = (bool)1;
@@ -14433,10 +14944,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_CloseConnection
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_CloseConnection(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____closeConnection_0 = L_0;
 		return;
 	}
@@ -14450,10 +14961,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_HeadersSent_mCA
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_HeadersSent(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____headersSent_8 = L_0;
 		return;
 	}
@@ -14467,11 +14978,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C246
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentEncoding(System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentEncoding_m2EB352430588AA82F6289F766C464CFE974B0D8A (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentEncoding_m2EB352430588AA82F6289F766C464CFE974B0D8A (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposed_m574B6A3AD371D552FAED78A101167AD18960AE2B(__this, NULL);
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0 = ___value0;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0 = ___0_value;
 		__this->____contentEncoding_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____contentEncoding_1), (void*)L_0);
 		return;
@@ -14486,11 +14997,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t HttpListenerResponse_get_ContentLengt
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentLength64(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64_mA85480C44249B22B8716923FFECB74205B852A76 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int64_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64_mA85480C44249B22B8716923FFECB74205B852A76 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		int64_t L_0 = ___value0;
+		int64_t L_0 = ___0_value;
 		if ((((int64_t)L_0) >= ((int64_t)((int64_t)0))))
 		{
 			goto IL_001b;
@@ -14505,7 +15016,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentLength64
 
 IL_001b:
 	{
-		int64_t L_2 = ___value0;
+		int64_t L_2 = ___0_value;
 		__this->____contentLength_2 = L_2;
 		return;
 	}
@@ -14519,18 +15030,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerResponse_get_ContentTyp
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ContentType(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mBEF43C2C988122C1DFFDF60F5164E7E070919415 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mBEF43C2C988122C1DFFDF60F5164E7E070919415 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposed_m574B6A3AD371D552FAED78A101167AD18960AE2B(__this, NULL);
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		if (!L_0)
 		{
 			goto IL_0021;
 		}
 	}
 	{
-		String_t* L_1 = ___value0;
+		String_t* L_1 = ___0_value;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -14548,7 +15059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ContentType_mBE
 
 IL_0021:
 	{
-		String_t* L_4 = ___value0;
+		String_t* L_4 = ___0_value;
 		__this->____contentType_3 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____contentType_3), (void*)L_4);
 		return;
@@ -14594,10 +15105,10 @@ IL_0018:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_Cookies(WebSocketSharp.Net.CookieCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_Cookies_mFA8B8A390D06C444E4E8C49D716E146E5E20FEE1 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_Cookies_mFA8B8A390D06C444E4E8C49D716E146E5E20FEE1 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* L_0 = ___value0;
+		CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* L_0 = ___0_value;
 		__this->____cookies_5 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____cookies_5), (void*)L_0);
 		return;
@@ -14643,17 +15154,17 @@ IL_001a:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_Headers(WebSocketSharp.Net.WebHeaderCollection)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_Headers_m8C0EB9D7D6FC6D0882A3E084A05ECA335FB6DA26 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_Headers_m8C0EB9D7D6FC6D0882A3E084A05ECA335FB6DA26 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_0 = ___value0;
+		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_0 = ___0_value;
 		if (!L_0)
 		{
 			goto IL_0017;
 		}
 	}
 	{
-		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_1 = ___value0;
+		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_1 = ___0_value;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = WebHeaderCollection_get_State_m4120204917B7E6669EA9BF41CC0FB5690150E04A_inline(L_1, NULL);
@@ -14671,7 +15182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_Headers_m8C0EB9
 
 IL_0017:
 	{
-		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_4 = ___value0;
+		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_4 = ___0_value;
 		__this->____headers_7 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____headers_7), (void*)L_4);
 		return;
@@ -14686,11 +15197,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_KeepAlive_mB7B8
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_KeepAlive(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_KeepAlive_m02CF119CF1F84FFE3B910041996BAFBD7243465D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_KeepAlive_m02CF119CF1F84FFE3B910041996BAFBD7243465D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____keepAlive_9 = L_0;
 		return;
 	}
@@ -14742,11 +15253,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Version_tE426DB5655D0F22920AE16A2AA9AB7781B82
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_ProtocolVersion(System.Version)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ProtocolVersion_mC4E1DB801A58DE05B030389C664E5E182C8EA7C6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ProtocolVersion_mC4E1DB801A58DE05B030389C664E5E182C8EA7C6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_0 = ___value0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_0 = ___0_value;
 		bool L_1;
 		L_1 = Version_op_Equality_mED378603AE784D5ACEDB8F4B250F50773B331D4B(L_0, (Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7*)NULL, NULL);
 		if (!L_1)
@@ -14763,7 +15274,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_ProtocolVersion
 
 IL_001a:
 	{
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_3 = ___value0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_3 = ___0_value;
 		NullCheck(L_3);
 		int32_t L_4;
 		L_4 = Version_get_Major_m1F782BA72C64627627ADC2090C147CF887CE7795_inline(L_3, NULL);
@@ -14773,7 +15284,7 @@ IL_001a:
 		}
 	}
 	{
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_5 = ___value0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_5 = ___0_value;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = Version_get_Minor_m5EEC53977DFD0A9D8F3276DA2532E8DC1644F80E_inline(L_5, NULL);
@@ -14783,7 +15294,7 @@ IL_001a:
 		}
 	}
 	{
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_7 = ___value0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_7 = ___0_value;
 		NullCheck(L_7);
 		int32_t L_8;
 		L_8 = Version_get_Minor_m5EEC53977DFD0A9D8F3276DA2532E8DC1644F80E_inline(L_7, NULL);
@@ -14803,7 +15314,7 @@ IL_0034:
 
 IL_0044:
 	{
-		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_10 = ___value0;
+		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_10 = ___0_value;
 		__this->____version_15 = L_10;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____version_15), (void*)L_10);
 		return;
@@ -14818,7 +15329,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerResponse_get_RedirectLo
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_RedirectLocation(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_RedirectLocation_mF92441721E5981BA28AEEC4DD95A7CA174D74C94 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_RedirectLocation_mF92441721E5981BA28AEEC4DD95A7CA174D74C94 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14830,7 +15341,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_RedirectLocatio
 	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
 	{
 		HttpListenerResponse_checkDisposed_m574B6A3AD371D552FAED78A101167AD18960AE2B(__this, NULL);
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		if (L_0)
 		{
 			goto IL_0011;
@@ -14845,7 +15356,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_RedirectLocatio
 IL_0011:
 	{
 		V_0 = (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)NULL;
-		String_t* L_1 = ___value0;
+		String_t* L_1 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = Ext_MaybeUri_m7AE4435E6B04401F7C6612F036448400959EF84D(L_1, NULL);
@@ -14855,7 +15366,7 @@ IL_0011:
 		}
 	}
 	{
-		String_t* L_3 = ___value0;
+		String_t* L_3 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Uri_TryCreate_m183077985BD7B1BE8DBDBCC4604F775C44723EC9(L_3, 1, (&V_0), NULL);
@@ -14875,7 +15386,7 @@ IL_0026:
 
 IL_0036:
 	{
-		String_t* L_6 = ___value0;
+		String_t* L_6 = ___0_value;
 		__this->____location_10 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____location_10), (void*)L_6);
 		return;
@@ -14890,11 +15401,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_SendChunked_mD6
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_SendChunked(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_SendChunked_m6CF1143F20593649CF4D2CF8A141836B4E5A69F6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_SendChunked_m6CF1143F20593649CF4D2CF8A141836B4E5A69F6 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____sendChunked_12 = L_0;
 		return;
 	}
@@ -14908,7 +15419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpListenerResponse_get_StatusCode_m
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_StatusCode(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m08A72C8186199CAAE1EAE395CCA0BC5B823A197D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m08A72C8186199CAAE1EAE395CCA0BC5B823A197D (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14918,14 +15429,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusCode_m08A
 	}
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		if ((((int32_t)L_0) < ((int32_t)((int32_t)100))))
 		{
 			goto IL_0013;
 		}
 	}
 	{
-		int32_t L_1 = ___value0;
+		int32_t L_1 = ___0_value;
 		if ((((int32_t)L_1) <= ((int32_t)((int32_t)999))))
 		{
 			goto IL_001e;
@@ -14942,9 +15453,9 @@ IL_0013:
 
 IL_001e:
 	{
-		int32_t L_3 = ___value0;
+		int32_t L_3 = ___0_value;
 		__this->____statusCode_13 = L_3;
-		int32_t L_4 = ___value0;
+		int32_t L_4 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		String_t* L_5;
 		L_5 = Ext_GetStatusDescription_mE4DBAB6CF630B3237D93F84BD793659C1C4CF58F(L_4, NULL);
@@ -14962,7 +15473,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpListenerResponse_get_StatusDesc
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::set_StatusDescription(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusDescription_mFEC42BFF107D228178CBDA5C65FC68B922064891 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusDescription_mFEC42BFF107D228178CBDA5C65FC68B922064891 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -14973,14 +15484,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_set_StatusDescripti
 	}
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		if (!L_0)
 		{
 			goto IL_0011;
 		}
 	}
 	{
-		String_t* L_1 = ___value0;
+		String_t* L_1 = ___0_value;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -15003,7 +15514,7 @@ IL_0011:
 
 IL_0023:
 	{
-		String_t* L_5 = ___value0;
+		String_t* L_5 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_6;
 		L_6 = Ext_IsText_mB42B1B6A72204083898F6936F4AB539B6B0871E8(L_5, NULL);
@@ -15013,7 +15524,7 @@ IL_0023:
 		}
 	}
 	{
-		String_t* L_7 = ___value0;
+		String_t* L_7 = ___0_value;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_8 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)2);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_9 = L_8;
 		NullCheck(L_9);
@@ -15040,14 +15551,14 @@ IL_0044:
 
 IL_0054:
 	{
-		String_t* L_13 = ___value0;
+		String_t* L_13 = ___0_value;
 		__this->____statusDescription_14 = L_13;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____statusDescription_14), (void*)L_13);
 		return;
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpListenerResponse::canAddOrUpdate(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_canAddOrUpdate_mA72FB2AAA9ECD1C1CDC0A21B4FFF37BC40457CC4 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpListenerResponse_canAddOrUpdate_mA72FB2AAA9ECD1C1CDC0A21B4FFF37BC40457CC4 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15091,7 +15602,7 @@ IL_0015:
 
 IL_0017:
 	{
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_3 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_3 = ___0_cookie;
 		RuntimeObject* L_4;
 		L_4 = HttpListenerResponse_findCookie_m76C3BFCF5A51FB9E5DA296FEAC716456F2D4D547(__this, L_3, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
@@ -15113,7 +15624,7 @@ IL_0017:
 
 IL_002e:
 	{
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_8 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_8 = ___0_cookie;
 		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = Cookie_get_Version_m8314E42C9C868CECBEEB2AEB27D2F9EF38C0D461_inline(L_8, NULL);
@@ -15258,7 +15769,7 @@ IL_002c:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_close_m36983D682FC7B1F7303F981EF5A11D6FBC804007 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___force0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_close_m36983D682FC7B1F7303F981EF5A11D6FBC804007 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_force, const RuntimeMethod* method) 
 {
 	{
 		__this->____disposed_6 = (bool)1;
@@ -15266,14 +15777,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_close_m36983D682FC7
 		NullCheck(L_0);
 		HttpConnection_t3BA16A91560B1935B97F8E5A5B0C10B95A29549E* L_1;
 		L_1 = HttpListenerContext_get_Connection_m80F604470CAFFB7FC10C87F9D987E6DD56C9F618_inline(L_0, NULL);
-		bool L_2 = ___force0;
+		bool L_2 = ___0_force;
 		NullCheck(L_1);
 		HttpConnection_Close_mE1EFD790B95EAFE1464773B9A62C3D6AD361F0A5(L_1, L_2, NULL);
 		return;
 	}
 }
 // System.Collections.Generic.IEnumerable`1<WebSocketSharp.Net.Cookie> WebSocketSharp.Net.HttpListenerResponse::findCookie(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCookie_m76C3BFCF5A51FB9E5DA296FEAC716456F2D4D547 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCookie_m76C3BFCF5A51FB9E5DA296FEAC716456F2D4D547 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15290,7 +15801,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCooki
 		L_1->___U3CU3E4__this_5 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_5), (void*)__this);
 		U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* L_2 = L_1;
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_3 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_3 = ___0_cookie;
 		NullCheck(L_2);
 		L_2->___U3CU3E3__cookie_4 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___U3CU3E3__cookie_4), (void*)L_3);
@@ -15298,7 +15809,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpListenerResponse_findCooki
 	}
 }
 // WebSocketSharp.Net.WebHeaderCollection WebSocketSharp.Net.HttpListenerResponse::WriteHeadersTo(System.IO.MemoryStream)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* HttpListenerResponse_WriteHeadersTo_m44262FF557C3E6EBFC44D33B8A8153BC714817D7 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___destination0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* HttpListenerResponse_WriteHeadersTo_m44262FF557C3E6EBFC44D33B8A8153BC714817D7 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___0_destination, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15746,7 +16257,7 @@ IL_0258:
 IL_0267:
 	{
 		V_3 = G_B43_0;
-		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_77 = ___destination0;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_77 = ___0_destination;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_78 = V_3;
 		StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4* L_79 = (StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4*)il2cpp_codegen_object_new(StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_il2cpp_TypeInfo_var);
 		NullCheck(L_79);
@@ -15768,7 +16279,7 @@ IL_0267:
 		VirtualActionInvoker1< String_t* >::Invoke(15 /* System.Void System.IO.TextWriter::Write(System.String) */, L_86, L_88);
 		NullCheck(L_86);
 		VirtualActionInvoker0::Invoke(10 /* System.Void System.IO.TextWriter::Flush() */, L_86);
-		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_89 = ___destination0;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_89 = ___0_destination;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_90 = V_3;
 		NullCheck(L_90);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_91;
@@ -15801,38 +16312,38 @@ IL_0009:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::AddHeader(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AddHeader_mCCAA1BC5EDBCC9F96A24DBD23506A28C27DD1585 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AddHeader_mCCAA1BC5EDBCC9F96A24DBD23506A28C27DD1585 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	{
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_0;
 		L_0 = HttpListenerResponse_get_Headers_m307F4FC7DFB3F8B817445837F70E38AAED0A7D13(__this, NULL);
-		String_t* L_1 = ___name0;
-		String_t* L_2 = ___value1;
+		String_t* L_1 = ___0_name;
+		String_t* L_2 = ___1_value;
 		NullCheck(L_0);
 		VirtualActionInvoker2< String_t*, String_t* >::Invoke(20 /* System.Void System.Collections.Specialized.NameValueCollection::Set(System.String,System.String) */, L_0, L_1, L_2);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::AppendCookie(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AppendCookie_m98D6BE3276EB7977FE72FF5FFAE491B651C6E11C (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AppendCookie_m98D6BE3276EB7977FE72FF5FFAE491B651C6E11C (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) 
 {
 	{
 		CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* L_0;
 		L_0 = HttpListenerResponse_get_Cookies_m374A6742C7C862701C095FA710D9A1A55A5D7ED7(__this, NULL);
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_1 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_1 = ___0_cookie;
 		NullCheck(L_0);
 		CookieCollection_Add_mE04E6ABAD7F05281B62EF7AA618BFFFCDE58EF3F(L_0, L_1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::AppendHeader(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AppendHeader_mD9AD805BEA4F26B5194A5D5E7794C4E16A315391 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_AppendHeader_mD9AD805BEA4F26B5194A5D5E7794C4E16A315391 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	{
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_0;
 		L_0 = HttpListenerResponse_get_Headers_m307F4FC7DFB3F8B817445837F70E38AAED0A7D13(__this, NULL);
-		String_t* L_1 = ___name0;
-		String_t* L_2 = ___value1;
+		String_t* L_1 = ___0_name;
+		String_t* L_2 = ___1_value;
 		NullCheck(L_0);
 		VirtualActionInvoker2< String_t*, String_t* >::Invoke(17 /* System.Void System.Collections.Specialized.NameValueCollection::Add(System.String,System.String) */, L_0, L_1, L_2);
 		return;
@@ -15859,7 +16370,7 @@ IL_0009:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::Close(System.Byte[],System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC8E8C3CAEBA9565C41A71EC55E668 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___responseEntity0, bool ___willBlock1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC8E8C3CAEBA9565C41A71EC55E668 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_responseEntity, bool ___1_willBlock, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -15881,7 +16392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC
 		L_1->___U3CU3E4__this_1 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_1), (void*)__this);
 		HttpListenerResponse_checkDisposed_m574B6A3AD371D552FAED78A101167AD18960AE2B(__this, NULL);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___responseEntity0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2 = ___0_responseEntity;
 		if (L_2)
 		{
 			goto IL_0021;
@@ -15896,7 +16407,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Close_m8C711781FDEC
 
 IL_0021:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___responseEntity0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_responseEntity;
 		NullCheck(L_4);
 		V_1 = ((int32_t)(((RuntimeArray*)L_4)->max_length));
 		U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* L_5 = V_0;
@@ -15905,7 +16416,7 @@ IL_0021:
 		NullCheck(L_5);
 		L_5->___output_0 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&L_5->___output_0), (void*)L_6);
-		bool L_7 = ___willBlock1;
+		bool L_7 = ___1_willBlock;
 		if (!L_7)
 		{
 			goto IL_004a;
@@ -15915,7 +16426,7 @@ IL_0021:
 		U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* L_8 = V_0;
 		NullCheck(L_8);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = L_8->___output_0;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10 = ___responseEntity0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_10 = ___0_responseEntity;
 		int32_t L_11 = V_1;
 		NullCheck(L_9);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_9, L_10, 0, L_11);
@@ -15928,7 +16439,7 @@ IL_004a:
 		U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* L_12 = V_0;
 		NullCheck(L_12);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_13 = L_12->___output_0;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___responseEntity0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___0_responseEntity;
 		int32_t L_15 = V_1;
 		U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* L_16 = V_0;
 		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_17 = (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*)il2cpp_codegen_object_new(AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C_il2cpp_TypeInfo_var);
@@ -15941,10 +16452,10 @@ IL_004a:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::CopyFrom(WebSocketSharp.Net.HttpListenerResponse)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_CopyFrom_mE06DF8912E67F24C0F94AAB4F6282EDE8AE9054C (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___templateResponse0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_CopyFrom_mE06DF8912E67F24C0F94AAB4F6282EDE8AE9054C (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___0_templateResponse, const RuntimeMethod* method) 
 {
 	{
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_0 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_0 = ___0_templateResponse;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -15959,7 +16470,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_CopyFrom_mE06DF8912
 
 IL_000e:
 	{
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_2 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_2 = ___0_templateResponse;
 		NullCheck(L_2);
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_3 = L_2->____headers_7;
 		if (!L_3)
@@ -15984,7 +16495,7 @@ IL_0029:
 	{
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_6;
 		L_6 = HttpListenerResponse_get_Headers_m307F4FC7DFB3F8B817445837F70E38AAED0A7D13(__this, NULL);
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_7 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_7 = ___0_templateResponse;
 		NullCheck(L_7);
 		WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* L_8 = L_7->____headers_7;
 		NullCheck(L_6);
@@ -16007,24 +16518,24 @@ IL_003c:
 
 IL_004b:
 	{
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_10 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_10 = ___0_templateResponse;
 		NullCheck(L_10);
 		int64_t L_11 = L_10->____contentLength_2;
 		__this->____contentLength_2 = L_11;
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_12 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_12 = ___0_templateResponse;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->____statusCode_13;
 		__this->____statusCode_13 = L_13;
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_14 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_14 = ___0_templateResponse;
 		NullCheck(L_14);
 		String_t* L_15 = L_14->____statusDescription_14;
 		__this->____statusDescription_14 = L_15;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____statusDescription_14), (void*)L_15);
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_16 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_16 = ___0_templateResponse;
 		NullCheck(L_16);
 		bool L_17 = L_16->____keepAlive_9;
 		__this->____keepAlive_9 = L_17;
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_18 = ___templateResponse0;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_18 = ___0_templateResponse;
 		NullCheck(L_18);
 		Version_tE426DB5655D0F22920AE16A2AA9AB7781B8255A7* L_19 = L_18->____version_15;
 		__this->____version_15 = L_19;
@@ -16033,7 +16544,7 @@ IL_004b:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::Redirect(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Redirect_m57100D5E0CCD1ABB2760AB1DF95BA68E5C5B411E (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___url0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Redirect_m57100D5E0CCD1ABB2760AB1DF95BA68E5C5B411E (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, String_t* ___0_url, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16046,7 +16557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Redirect_m57100D5E0
 	Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* V_0 = NULL;
 	{
 		HttpListenerResponse_checkDisposedOrHeadersSent_mA1C24C1B65ABEA35443F10BBE8AF0DBB236A94E1(__this, NULL);
-		String_t* L_0 = ___url0;
+		String_t* L_0 = ___0_url;
 		if (L_0)
 		{
 			goto IL_0014;
@@ -16062,7 +16573,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_Redirect_m57100D5E0
 IL_0014:
 	{
 		V_0 = (Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*)NULL;
-		String_t* L_2 = ___url0;
+		String_t* L_2 = ___0_url;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_3;
 		L_3 = Ext_MaybeUri_m7AE4435E6B04401F7C6612F036448400959EF84D(L_2, NULL);
@@ -16072,7 +16583,7 @@ IL_0014:
 		}
 	}
 	{
-		String_t* L_4 = ___url0;
+		String_t* L_4 = ___0_url;
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		bool L_5;
 		L_5 = Uri_TryCreate_m183077985BD7B1BE8DBDBCC4604F775C44723EC9(L_4, 1, (&V_0), NULL);
@@ -16092,7 +16603,7 @@ IL_0029:
 
 IL_0039:
 	{
-		String_t* L_7 = ___url0;
+		String_t* L_7 = ___0_url;
 		__this->____location_10 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____location_10), (void*)L_7);
 		__this->____statusCode_13 = ((int32_t)302);
@@ -16102,10 +16613,10 @@ IL_0039:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse::SetCookie(WebSocketSharp.Net.Cookie)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_SetCookie_m620E2391FA70567220603D7CC8450C42B40BB2C0 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___cookie0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_SetCookie_m620E2391FA70567220603D7CC8450C42B40BB2C0 (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* ___0_cookie, const RuntimeMethod* method) 
 {
 	{
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_0 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_0 = ___0_cookie;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -16120,7 +16631,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpListenerResponse_SetCookie_m620E2391
 
 IL_000e:
 	{
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_2 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_2 = ___0_cookie;
 		bool L_3;
 		L_3 = HttpListenerResponse_canAddOrUpdate_mA72FB2AAA9ECD1C1CDC0A21B4FFF37BC40457CC4(__this, L_2, NULL);
 		if (L_3)
@@ -16139,7 +16650,7 @@ IL_0027:
 	{
 		CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315* L_5;
 		L_5 = HttpListenerResponse_get_Cookies_m374A6742C7C862701C095FA710D9A1A55A5D7ED7(__this, NULL);
-		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_6 = ___cookie0;
+		Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4* L_6 = ___0_cookie;
 		NullCheck(L_5);
 		CookieCollection_Add_mE04E6ABAD7F05281B62EF7AA618BFFFCDE58EF3F(L_5, L_6, NULL);
 		return;
@@ -16174,11 +16685,11 @@ IL_0009:
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpListenerResponse/<findCookie>d__62::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CfindCookieU3Ed__62__ctor_mB9C59AE1F91C3140DB3707DBCADBC6795DE2D02A (U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* __this, int32_t ___U3CU3E1__state0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CfindCookieU3Ed__62__ctor_mB9C59AE1F91C3140DB3707DBCADBC6795DE2D02A (U3CfindCookieU3Ed__62_tAC2CBE18075CCE7D83308767B049FE34346554A2* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___U3CU3E1__state0;
+		int32_t L_0 = ___0_U3CU3E1__state;
 		__this->___U3CU3E1__state_0 = L_0;
 		int32_t L_1;
 		L_1 = Environment_get_CurrentManagedThreadId_m66483AADCCC13272EBDCD94D31D2E52603C24BDF(NULL);
@@ -16562,11 +17073,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass69_0__ctor_m58BA535
 	}
 }
 // System.Void WebSocketSharp.Net.HttpListenerResponse/<>c__DisplayClass69_0::<Close>b__0(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass69_0_U3CCloseU3Eb__0_m5356117B09137D16FB4E7950BD691D0285B26B84 (U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* __this, RuntimeObject* ___ar0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass69_0_U3CCloseU3Eb__0_m5356117B09137D16FB4E7950BD691D0285B26B84 (U3CU3Ec__DisplayClass69_0_t3250E8CCF3D4CDEEF7BB86EB8343870C2A4EFB5B* __this, RuntimeObject* ___0_ar, const RuntimeMethod* method) 
 {
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___output_0;
-		RuntimeObject* L_1 = ___ar0;
+		RuntimeObject* L_1 = ___0_ar;
 		NullCheck(L_0);
 		VirtualActionInvoker1< RuntimeObject* >::Invoke(22 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, L_0, L_1);
 		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_2 = __this->___U3CU3E4__this_1;
@@ -16584,7 +17095,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass69_0_U3CCloseU3Eb__
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::.ctor(System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult__ctor_m704CA13065EBA99F802F6F18B1C198F6E61CCA15 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback0, RuntimeObject* ___state1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult__ctor_m704CA13065EBA99F802F6F18B1C198F6E61CCA15 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___0_callback, RuntimeObject* ___1_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -16594,10 +17105,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult__ctor_m704CA13065E
 	}
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_0 = ___callback0;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_0 = ___0_callback;
 		__this->____callback_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____callback_1), (void*)L_0);
-		RuntimeObject* L_1 = ___state1;
+		RuntimeObject* L_1 = ___1_state;
 		__this->____state_6 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____state_6), (void*)L_1);
 		RuntimeObject* L_2 = (RuntimeObject*)il2cpp_codegen_object_new(RuntimeObject_il2cpp_TypeInfo_var);
@@ -16617,10 +17128,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Buffer(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		__this->____buffer_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____buffer_0), (void*)L_0);
 		return;
@@ -16635,10 +17146,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpStreamAsyncResult_get_Count_m3069
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Count(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____count_3 = L_0;
 		return;
 	}
@@ -16668,10 +17179,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpStreamAsyncResult_get_Offset_mB5A
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_Offset(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____offset_5 = L_0;
 		return;
 	}
@@ -16685,10 +17196,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpStreamAsyncResult_get_SyncRead_m0
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::set_SyncRead(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____syncRead_8 = L_0;
 		return;
 	}
@@ -16961,10 +17472,10 @@ IL_0064:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::Complete(System.Exception)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_Complete_m84EA3D14B24E1E9686018BDD4EC6EBB8F539DCDC (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, Exception_t* ___exception0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_Complete_m84EA3D14B24E1E9686018BDD4EC6EBB8F539DCDC (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, Exception_t* ___0_exception, const RuntimeMethod* method) 
 {
 	{
-		Exception_t* L_0 = ___exception0;
+		Exception_t* L_0 = ___0_exception;
 		__this->____exception_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____exception_4), (void*)L_0);
 		HttpStreamAsyncResult_Complete_mDEEFF26C05064A6192BC65525066FB5C4A4407CF(__this, NULL);
@@ -16972,11 +17483,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_Complete_m84EA3D14
 	}
 }
 // System.Void WebSocketSharp.Net.HttpStreamAsyncResult::<Complete>b__35_0(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_U3CCompleteU3Eb__35_0_mAF3293BCBC89A16DCAF66ED905524E05A217FFF2 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, RuntimeObject* ___ar0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_U3CCompleteU3Eb__35_0_mAF3293BCBC89A16DCAF66ED905524E05A217FFF2 (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, RuntimeObject* ___0_ar, const RuntimeMethod* method) 
 {
 	{
 		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_0 = __this->____callback_1;
-		RuntimeObject* L_1 = ___ar0;
+		RuntimeObject* L_1 = ___0_ar;
 		NullCheck(L_0);
 		AsyncCallback_EndInvoke_mDF9BB40CE3E562BB89BADDB29F0DEAE72584BFA3(L_0, L_1, NULL);
 		return;
@@ -16991,7 +17502,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_U3CCompleteU3Eb__3
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Int32 WebSocketSharp.Net.HttpUtility::getChar(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_m7C77C21A7FD481AD4A80896AE4FAC4722915E46A (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___length2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_m7C77C21A7FD481AD4A80896AE4FAC4722915E46A (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17005,17 +17516,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_m7C77C21A7FD481AD
 	int32_t V_3 = 0;
 	{
 		V_0 = 0;
-		int32_t L_0 = ___length2;
-		int32_t L_1 = ___offset1;
+		int32_t L_0 = ___2_length;
+		int32_t L_1 = ___1_offset;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_0, L_1));
-		int32_t L_2 = ___offset1;
+		int32_t L_2 = ___1_offset;
 		V_2 = L_2;
 		goto IL_0023;
 	}
 
 IL_000a:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		int32_t L_4 = V_2;
 		NullCheck(L_3);
 		int32_t L_5 = L_4;
@@ -17058,7 +17569,7 @@ IL_0023:
 	}
 }
 // System.Int32 WebSocketSharp.Net.HttpUtility::getChar(System.String,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_mA82A130EBE1642F5E437E580417C88F9CFFD7199 (String_t* ___s0, int32_t ___offset1, int32_t ___length2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_mA82A130EBE1642F5E437E580417C88F9CFFD7199 (String_t* ___0_s, int32_t ___1_offset, int32_t ___2_length, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -17073,17 +17584,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getChar_mA82A130EBE1642F5
 	int32_t V_4 = 0;
 	{
 		V_0 = 0;
-		int32_t L_0 = ___length2;
-		int32_t L_1 = ___offset1;
+		int32_t L_0 = ___2_length;
+		int32_t L_1 = ___1_offset;
 		V_1 = ((int32_t)il2cpp_codegen_add(L_0, L_1));
-		int32_t L_2 = ___offset1;
+		int32_t L_2 = ___1_offset;
 		V_2 = L_2;
 		goto IL_0034;
 	}
 
 IL_000a:
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		int32_t L_4 = V_2;
 		NullCheck(L_3);
 		Il2CppChar L_5;
@@ -17140,15 +17651,15 @@ IL_0034:
 	}
 }
 // System.Char[] WebSocketSharp.Net.HttpUtility::getChars(System.IO.MemoryStream,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___buffer0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A (MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* ___0_buffer, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0 = ___encoding1;
-		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = ___buffer0;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0 = ___1_encoding;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_1 = ___0_buffer;
 		NullCheck(L_1);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_2;
 		L_2 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_1);
-		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = ___buffer0;
+		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_3 = ___0_buffer;
 		NullCheck(L_3);
 		int64_t L_4;
 		L_4 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_3);
@@ -17238,11 +17749,11 @@ IL_002e:
 	}
 }
 // System.Int32 WebSocketSharp.Net.HttpUtility::getInt(System.Byte)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getInt_m3CCFF5CDD9403406D58AFA7FD2E0ADD6E7CD670C (uint8_t ___b0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t HttpUtility_getInt_m3CCFF5CDD9403406D58AFA7FD2E0ADD6E7CD670C (uint8_t ___0_b, const RuntimeMethod* method) 
 {
 	Il2CppChar V_0 = 0x0;
 	{
-		uint8_t L_0 = ___b0;
+		uint8_t L_0 = ___0_b;
 		V_0 = L_0;
 		Il2CppChar L_1 = V_0;
 		if ((((int32_t)L_1) < ((int32_t)((int32_t)48))))
@@ -18344,59 +18855,59 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_initEntities_mE92305305D6CB1
 	}
 }
 // System.Boolean WebSocketSharp.Net.HttpUtility::notEncoded(System.Char)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpUtility_notEncoded_m891D7A4CAFF34E7AD545955A130E10B9956895D8 (Il2CppChar ___c0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool HttpUtility_notEncoded_m891D7A4CAFF34E7AD545955A130E10B9956895D8 (Il2CppChar ___0_c, const RuntimeMethod* method) 
 {
 	{
-		Il2CppChar L_0 = ___c0;
+		Il2CppChar L_0 = ___0_c;
 		if ((((int32_t)L_0) == ((int32_t)((int32_t)33))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_1 = ___c0;
+		Il2CppChar L_1 = ___0_c;
 		if ((((int32_t)L_1) == ((int32_t)((int32_t)39))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_2 = ___c0;
+		Il2CppChar L_2 = ___0_c;
 		if ((((int32_t)L_2) == ((int32_t)((int32_t)40))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_3 = ___c0;
+		Il2CppChar L_3 = ___0_c;
 		if ((((int32_t)L_3) == ((int32_t)((int32_t)41))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_4 = ___c0;
+		Il2CppChar L_4 = ___0_c;
 		if ((((int32_t)L_4) == ((int32_t)((int32_t)42))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_5 = ___c0;
+		Il2CppChar L_5 = ___0_c;
 		if ((((int32_t)L_5) == ((int32_t)((int32_t)45))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_6 = ___c0;
+		Il2CppChar L_6 = ___0_c;
 		if ((((int32_t)L_6) == ((int32_t)((int32_t)46))))
 		{
 			goto IL_0029;
 		}
 	}
 	{
-		Il2CppChar L_7 = ___c0;
+		Il2CppChar L_7 = ___0_c;
 		return (bool)((((int32_t)L_7) == ((int32_t)((int32_t)95)))? 1 : 0);
 	}
 
@@ -18406,7 +18917,7 @@ IL_0029:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::urlEncode(System.Char,System.IO.Stream,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03EE6E26471C4708520F370DC (Il2CppChar ___c0, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___result1, bool ___unicode2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03EE6E26471C4708520F370DC (Il2CppChar ___0_c, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___1_result, bool ___2_unicode, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18417,23 +18928,23 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
 	{
-		Il2CppChar L_0 = ___c0;
+		Il2CppChar L_0 = ___0_c;
 		if ((((int32_t)L_0) <= ((int32_t)((int32_t)255))))
 		{
 			goto IL_0069;
 		}
 	}
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1 = ___1_result;
 		NullCheck(L_1);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_1, (uint8_t)((int32_t)37));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_2 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_2 = ___1_result;
 		NullCheck(L_2);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_2, (uint8_t)((int32_t)117));
-		Il2CppChar L_3 = ___c0;
+		Il2CppChar L_3 = ___0_c;
 		Il2CppChar L_4 = L_3;
 		V_0 = ((int32_t)((int32_t)L_4>>((int32_t)12)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ___1_result;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_6 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_7 = V_0;
@@ -18444,7 +18955,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_5, (uint8_t)((int32_t)(uint8_t)L_9));
 		Il2CppChar L_10 = L_4;
 		V_0 = ((int32_t)(((int32_t)((int32_t)L_10>>8))&((int32_t)15)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_11 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_11 = ___1_result;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_12 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_13 = V_0;
 		NullCheck(L_12);
@@ -18454,7 +18965,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_11, (uint8_t)((int32_t)(uint8_t)L_15));
 		Il2CppChar L_16 = L_10;
 		V_0 = ((int32_t)(((int32_t)((int32_t)L_16>>4))&((int32_t)15)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_17 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_17 = ___1_result;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_18 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_19 = V_0;
 		NullCheck(L_18);
@@ -18463,7 +18974,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03
 		NullCheck(L_17);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_17, (uint8_t)((int32_t)(uint8_t)L_21));
 		V_0 = ((int32_t)((int32_t)L_16&((int32_t)15)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_22 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_22 = ___1_result;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_23 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_24 = V_0;
 		NullCheck(L_23);
@@ -18476,14 +18987,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlEncode_mD87DDF77056BFFB03
 
 IL_0069:
 	{
-		Il2CppChar L_27 = ___c0;
+		Il2CppChar L_27 = ___0_c;
 		if ((((int32_t)L_27) <= ((int32_t)((int32_t)32))))
 		{
 			goto IL_007f;
 		}
 	}
 	{
-		Il2CppChar L_28 = ___c0;
+		Il2CppChar L_28 = ___0_c;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		bool L_29;
 		L_29 = HttpUtility_notEncoded_m891D7A4CAFF34E7AD545955A130E10B9956895D8(L_28, NULL);
@@ -18493,8 +19004,8 @@ IL_0069:
 		}
 	}
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_30 = ___result1;
-		Il2CppChar L_31 = ___c0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_30 = ___1_result;
+		Il2CppChar L_31 = ___0_c;
 		NullCheck(L_30);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_30, (uint8_t)((int32_t)(uint8_t)L_31));
 		return;
@@ -18502,14 +19013,14 @@ IL_0069:
 
 IL_007f:
 	{
-		Il2CppChar L_32 = ___c0;
+		Il2CppChar L_32 = ___0_c;
 		if ((!(((uint32_t)L_32) == ((uint32_t)((int32_t)32)))))
 		{
 			goto IL_008d;
 		}
 	}
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_33 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_33 = ___1_result;
 		NullCheck(L_33);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_33, (uint8_t)((int32_t)43));
 		return;
@@ -18517,21 +19028,21 @@ IL_007f:
 
 IL_008d:
 	{
-		Il2CppChar L_34 = ___c0;
+		Il2CppChar L_34 = ___0_c;
 		if ((((int32_t)L_34) < ((int32_t)((int32_t)48))))
 		{
 			goto IL_00ab;
 		}
 	}
 	{
-		Il2CppChar L_35 = ___c0;
+		Il2CppChar L_35 = ___0_c;
 		if ((((int32_t)L_35) >= ((int32_t)((int32_t)65))))
 		{
 			goto IL_009c;
 		}
 	}
 	{
-		Il2CppChar L_36 = ___c0;
+		Il2CppChar L_36 = ___0_c;
 		if ((((int32_t)L_36) > ((int32_t)((int32_t)57))))
 		{
 			goto IL_00ab;
@@ -18540,14 +19051,14 @@ IL_008d:
 
 IL_009c:
 	{
-		Il2CppChar L_37 = ___c0;
+		Il2CppChar L_37 = ___0_c;
 		if ((((int32_t)L_37) <= ((int32_t)((int32_t)90))))
 		{
 			goto IL_00a6;
 		}
 	}
 	{
-		Il2CppChar L_38 = ___c0;
+		Il2CppChar L_38 = ___0_c;
 		if ((((int32_t)L_38) < ((int32_t)((int32_t)97))))
 		{
 			goto IL_00ab;
@@ -18556,7 +19067,7 @@ IL_009c:
 
 IL_00a6:
 	{
-		Il2CppChar L_39 = ___c0;
+		Il2CppChar L_39 = ___0_c;
 		if ((((int32_t)L_39) <= ((int32_t)((int32_t)122))))
 		{
 			goto IL_0103;
@@ -18565,30 +19076,30 @@ IL_00a6:
 
 IL_00ab:
 	{
-		bool L_40 = ___unicode2;
+		bool L_40 = ___2_unicode;
 		if (!L_40)
 		{
 			goto IL_00d5;
 		}
 	}
 	{
-		Il2CppChar L_41 = ___c0;
+		Il2CppChar L_41 = ___0_c;
 		if ((((int32_t)L_41) <= ((int32_t)((int32_t)127))))
 		{
 			goto IL_00d5;
 		}
 	}
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_42 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_42 = ___1_result;
 		NullCheck(L_42);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_42, (uint8_t)((int32_t)37));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_43 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_43 = ___1_result;
 		NullCheck(L_43);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_43, (uint8_t)((int32_t)117));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_44 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_44 = ___1_result;
 		NullCheck(L_44);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_44, (uint8_t)((int32_t)48));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_45 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_45 = ___1_result;
 		NullCheck(L_45);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_45, (uint8_t)((int32_t)48));
 		goto IL_00dd;
@@ -18596,17 +19107,17 @@ IL_00ab:
 
 IL_00d5:
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_46 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_46 = ___1_result;
 		NullCheck(L_46);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_46, (uint8_t)((int32_t)37));
 	}
 
 IL_00dd:
 	{
-		Il2CppChar L_47 = ___c0;
+		Il2CppChar L_47 = ___0_c;
 		Il2CppChar L_48 = L_47;
 		V_1 = ((int32_t)((int32_t)L_48>>4));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_49 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_49 = ___1_result;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_50 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_51 = V_1;
@@ -18616,7 +19127,7 @@ IL_00dd:
 		NullCheck(L_49);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_49, (uint8_t)((int32_t)(uint8_t)L_53));
 		V_1 = ((int32_t)((int32_t)L_48&((int32_t)15)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_54 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_54 = ___1_result;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_55 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_56 = V_1;
 		NullCheck(L_55);
@@ -18629,15 +19140,15 @@ IL_00dd:
 
 IL_0103:
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_59 = ___result1;
-		Il2CppChar L_60 = ___c0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_59 = ___1_result;
+		Il2CppChar L_60 = ___0_c;
 		NullCheck(L_59);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_59, (uint8_t)((int32_t)(uint8_t)L_60));
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::urlPathEncode(System.Char,System.IO.Stream)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlPathEncode_m8F0A0EC438709368C70E4507E6942CED76EBC5EC (Il2CppChar ___c0, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___result1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlPathEncode_m8F0A0EC438709368C70E4507E6942CED76EBC5EC (Il2CppChar ___0_c, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___1_result, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18649,14 +19160,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_urlPathEncode_m8F0A0EC438709
 	int32_t V_1 = 0;
 	int32_t V_2 = 0;
 	{
-		Il2CppChar L_0 = ___c0;
+		Il2CppChar L_0 = ___0_c;
 		if ((((int32_t)L_0) < ((int32_t)((int32_t)33))))
 		{
 			goto IL_000a;
 		}
 	}
 	{
-		Il2CppChar L_1 = ___c0;
+		Il2CppChar L_1 = ___0_c;
 		if ((((int32_t)L_1) <= ((int32_t)((int32_t)126))))
 		{
 			goto IL_005a;
@@ -18668,7 +19179,7 @@ IL_000a:
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_2;
 		L_2 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		String_t* L_3;
-		L_3 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&___c0), NULL);
+		L_3 = Char_ToString_m2A308731F9577C06AF3C0901234E2EAC8327410C((&___0_c), NULL);
 		NullCheck(L_2);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
 		L_4 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, L_2, L_3);
@@ -18684,12 +19195,12 @@ IL_0020:
 		NullCheck(L_5);
 		int32_t L_7 = L_6;
 		uint8_t L_8 = (L_5)->GetAt(static_cast<il2cpp_array_size_t>(L_7));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = ___1_result;
 		NullCheck(L_9);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_9, (uint8_t)((int32_t)37));
 		uint8_t L_10 = L_8;
 		V_2 = ((int32_t)((int32_t)L_10>>4));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_11 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_11 = ___1_result;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_12 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_13 = V_2;
@@ -18699,7 +19210,7 @@ IL_0020:
 		NullCheck(L_11);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_11, (uint8_t)((int32_t)(uint8_t)L_15));
 		V_2 = ((int32_t)((int32_t)L_10&((int32_t)15)));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_16 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_16 = ___1_result;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_17 = ((HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_StaticFields*)il2cpp_codegen_static_fields_for(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var))->____hexChars_1;
 		int32_t L_18 = V_2;
 		NullCheck(L_17);
@@ -18727,20 +19238,20 @@ IL_0053:
 
 IL_005a:
 	{
-		Il2CppChar L_24 = ___c0;
+		Il2CppChar L_24 = ___0_c;
 		if ((!(((uint32_t)L_24) == ((uint32_t)((int32_t)32)))))
 		{
 			goto IL_0078;
 		}
 	}
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_25 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_25 = ___1_result;
 		NullCheck(L_25);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_25, (uint8_t)((int32_t)37));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_26 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_26 = ___1_result;
 		NullCheck(L_26);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_26, (uint8_t)((int32_t)50));
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_27 = ___result1;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_27 = ___1_result;
 		NullCheck(L_27);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_27, (uint8_t)((int32_t)48));
 		return;
@@ -18748,15 +19259,15 @@ IL_005a:
 
 IL_0078:
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_28 = ___result1;
-		Il2CppChar L_29 = ___c0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_28 = ___1_result;
+		Il2CppChar L_29 = ___0_c;
 		NullCheck(L_28);
 		VirtualActionInvoker1< uint8_t >::Invoke(32 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_28, (uint8_t)((int32_t)(uint8_t)L_29));
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::writeCharBytes(System.Char,System.Collections.IList,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097 (Il2CppChar ___c0, RuntimeObject* ___buffer1, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097 (Il2CppChar ___0_c, RuntimeObject* ___1_buffer, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___2_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18770,17 +19281,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_writeCharBytes_m459409B54806
 	int32_t V_1 = 0;
 	uint8_t V_2 = 0x0;
 	{
-		Il2CppChar L_0 = ___c0;
+		Il2CppChar L_0 = ___0_c;
 		if ((((int32_t)L_0) <= ((int32_t)((int32_t)255))))
 		{
 			goto IL_0039;
 		}
 	}
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1 = ___encoding2;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1 = ___2_encoding;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_3 = L_2;
-		Il2CppChar L_4 = ___c0;
+		Il2CppChar L_4 = ___0_c;
 		NullCheck(L_3);
 		(L_3)->SetAt(static_cast<il2cpp_array_size_t>(0), (Il2CppChar)L_4);
 		NullCheck(L_1);
@@ -18799,7 +19310,7 @@ IL_001d:
 		int32_t L_8 = L_7;
 		uint8_t L_9 = (L_6)->GetAt(static_cast<il2cpp_array_size_t>(L_8));
 		V_2 = L_9;
-		RuntimeObject* L_10 = ___buffer1;
+		RuntimeObject* L_10 = ___1_buffer;
 		uint8_t L_11 = V_2;
 		uint8_t L_12 = L_11;
 		RuntimeObject* L_13 = Box(Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, &L_12);
@@ -18826,8 +19337,8 @@ IL_0032:
 
 IL_0039:
 	{
-		RuntimeObject* L_18 = ___buffer1;
-		Il2CppChar L_19 = ___c0;
+		RuntimeObject* L_18 = ___1_buffer;
+		Il2CppChar L_19 = ___0_c;
 		uint8_t L_20 = ((uint8_t)((int32_t)(uint8_t)L_19));
 		RuntimeObject* L_21 = Box(Byte_t94D9231AC217BE4D2E004C4CD32DF6D099EA41A3_il2cpp_TypeInfo_var, &L_20);
 		NullCheck(L_18);
@@ -18837,7 +19348,7 @@ IL_0039:
 	}
 }
 // System.Uri WebSocketSharp.Net.HttpUtility::CreateRequestUrl(System.String,System.String,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___requestUri0, String_t* ___host1, bool ___websocketRequest2, bool ___secure3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* HttpUtility_CreateRequestUrl_m56185144656939CF04C9EF7FDE2BEACB0F8470D4 (String_t* ___0_requestUri, String_t* ___1_host, bool ___2_websocketRequest, bool ___3_secure, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -18875,14 +19386,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E
 	String_t* G_B32_1 = NULL;
 	String_t* G_B32_2 = NULL;
 	{
-		String_t* L_0 = ___requestUri0;
+		String_t* L_0 = ___0_requestUri;
 		if (!L_0)
 		{
 			goto IL_0016;
 		}
 	}
 	{
-		String_t* L_1 = ___requestUri0;
+		String_t* L_1 = ___0_requestUri;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -18892,14 +19403,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E
 		}
 	}
 	{
-		String_t* L_3 = ___host1;
+		String_t* L_3 = ___1_host;
 		if (!L_3)
 		{
 			goto IL_0016;
 		}
 	}
 	{
-		String_t* L_4 = ___host1;
+		String_t* L_4 = ___1_host;
 		NullCheck(L_4);
 		int32_t L_5;
 		L_5 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_4, NULL);
@@ -18918,7 +19429,7 @@ IL_0018:
 	{
 		V_0 = (String_t*)NULL;
 		V_1 = (String_t*)NULL;
-		String_t* L_6 = ___requestUri0;
+		String_t* L_6 = ___0_requestUri;
 		NullCheck(L_6);
 		bool L_7;
 		L_7 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_6, _stringLiteral86BBAACC00198DBB3046818AD3FC2AA10AE48DE1, NULL);
@@ -18928,14 +19439,14 @@ IL_0018:
 		}
 	}
 	{
-		String_t* L_8 = ___requestUri0;
+		String_t* L_8 = ___0_requestUri;
 		V_1 = L_8;
 		goto IL_008f;
 	}
 
 IL_002d:
 	{
-		String_t* L_9 = ___requestUri0;
+		String_t* L_9 = ___0_requestUri;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = Ext_MaybeUri_m7AE4435E6B04401F7C6612F036448400959EF84D(L_9, NULL);
@@ -18945,7 +19456,7 @@ IL_002d:
 		}
 	}
 	{
-		String_t* L_11 = ___requestUri0;
+		String_t* L_11 = ___0_requestUri;
 		il2cpp_codegen_runtime_class_init_inline(Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_il2cpp_TypeInfo_var);
 		bool L_12;
 		L_12 = Uri_TryCreate_m183077985BD7B1BE8DBDBCC4604F775C44723EC9(L_11, 1, (&V_3), NULL);
@@ -18970,7 +19481,7 @@ IL_002d:
 		}
 	}
 	{
-		bool L_17 = ___websocketRequest2;
+		bool L_17 = ___2_websocketRequest;
 		if (!L_17)
 		{
 			goto IL_0066;
@@ -18983,7 +19494,7 @@ IL_0057:
 		NullCheck(L_18);
 		bool L_19;
 		L_19 = String_StartsWith_mF75DBA1EB709811E711B44E26FF919C88A8E65C0(L_18, _stringLiteral587B0E053519266A1A5628C5DBE03AA33A3BBE95, NULL);
-		bool L_20 = ___websocketRequest2;
+		bool L_20 = ___2_websocketRequest;
 		G_B14_0 = ((int32_t)((int32_t)L_19&(int32_t)L_20));
 		goto IL_006a;
 	}
@@ -19016,7 +19527,7 @@ IL_006e:
 		NullCheck(L_21);
 		String_t* L_22;
 		L_22 = Uri_get_Authority_m5BE92DE43B1B4BCD6849FEBDE5530AB97E0C31EB(L_21, NULL);
-		___host1 = L_22;
+		___1_host = L_22;
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_23 = V_3;
 		NullCheck(L_23);
 		String_t* L_24;
@@ -19027,7 +19538,7 @@ IL_006e:
 
 IL_007f:
 	{
-		String_t* L_25 = ___requestUri0;
+		String_t* L_25 = ___0_requestUri;
 		bool L_26;
 		L_26 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_25, _stringLiteralE280D065A824A791F8305234D3E093FC9A5A90C7, NULL);
 		if (L_26)
@@ -19036,8 +19547,8 @@ IL_007f:
 		}
 	}
 	{
-		String_t* L_27 = ___requestUri0;
-		___host1 = L_27;
+		String_t* L_27 = ___0_requestUri;
+		___1_host = L_27;
 	}
 
 IL_008f:
@@ -19049,7 +19560,7 @@ IL_008f:
 		}
 	}
 	{
-		bool L_29 = ___websocketRequest2;
+		bool L_29 = ___2_websocketRequest;
 		if (L_29)
 		{
 			goto IL_009c;
@@ -19067,7 +19578,7 @@ IL_009c:
 
 IL_00a1:
 	{
-		bool L_30 = ___secure3;
+		bool L_30 = ___3_secure;
 		G_B24_0 = G_B23_0;
 		if (L_30)
 		{
@@ -19097,7 +19608,7 @@ IL_00b0:
 
 IL_00b6:
 	{
-		String_t* L_33 = ___host1;
+		String_t* L_33 = ___1_host;
 		NullCheck(L_33);
 		int32_t L_34;
 		L_34 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_33, ((int32_t)58), NULL);
@@ -19107,7 +19618,7 @@ IL_00b6:
 		}
 	}
 	{
-		String_t* L_35 = ___host1;
+		String_t* L_35 = ___1_host;
 		String_t* L_36 = V_0;
 		bool L_37;
 		L_37 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_36, _stringLiteral58B716FF5428F7961E1403E6D969E605D0F27EAF, NULL);
@@ -19153,13 +19664,13 @@ IL_00ea:
 		RuntimeObject* L_41 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_40);
 		String_t* L_42;
 		L_42 = String_Format_mFB7DA489BD99F4670881FF50EC017BFB0A5C0987(G_B32_2, G_B32_1, L_41, NULL);
-		___host1 = L_42;
+		___1_host = L_42;
 	}
 
 IL_00f6:
 	{
 		String_t* L_43 = V_0;
-		String_t* L_44 = ___host1;
+		String_t* L_44 = ___1_host;
 		String_t* L_45 = V_1;
 		String_t* L_46;
 		L_46 = String_Format_mA0534D6E2AE4D67A6BD8D45B3321323930EB930C(_stringLiteralCCF9B4381E17EB3FA83CA75FC222B202151023BF, L_43, L_44, L_45, NULL);
@@ -19182,7 +19693,7 @@ IL_010f:
 	}
 }
 // System.Security.Principal.IPrincipal WebSocketSharp.Net.HttpUtility::CreateUser(System.String,WebSocketSharp.Net.AuthenticationSchemes,System.String,System.String,System.Func`2<System.Security.Principal.IIdentity,WebSocketSharp.Net.NetworkCredential>)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___response0, int32_t ___scheme1, String_t* ___realm2, String_t* ___method3, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___credentialsFinder4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218F1D52EA1D06F2B84BF936ED4A4381A5EE3 (String_t* ___0_response, int32_t ___1_scheme, String_t* ___2_realm, String_t* ___3_method, Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* ___4_credentialsFinder, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19198,14 +19709,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* HttpUtility_CreateUser_mEB2218
 	NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* V_2 = NULL;
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
-		String_t* L_0 = ___response0;
+		String_t* L_0 = ___0_response;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___response0;
+		String_t* L_1 = ___0_response;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -19222,7 +19733,7 @@ IL_000b:
 
 IL_000d:
 	{
-		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_3 = ___credentialsFinder4;
+		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_3 = ___4_credentialsFinder;
 		if (L_3)
 		{
 			goto IL_0013;
@@ -19234,14 +19745,14 @@ IL_000d:
 
 IL_0013:
 	{
-		int32_t L_4 = ___scheme1;
+		int32_t L_4 = ___1_scheme;
 		if ((((int32_t)L_4) == ((int32_t)8)))
 		{
 			goto IL_001d;
 		}
 	}
 	{
-		int32_t L_5 = ___scheme1;
+		int32_t L_5 = ___1_scheme;
 		if ((((int32_t)L_5) == ((int32_t)1)))
 		{
 			goto IL_001d;
@@ -19253,21 +19764,21 @@ IL_0013:
 
 IL_001d:
 	{
-		int32_t L_6 = ___scheme1;
+		int32_t L_6 = ___1_scheme;
 		if ((!(((uint32_t)L_6) == ((uint32_t)1))))
 		{
 			goto IL_003b;
 		}
 	}
 	{
-		String_t* L_7 = ___realm2;
+		String_t* L_7 = ___2_realm;
 		if (!L_7)
 		{
 			goto IL_002c;
 		}
 	}
 	{
-		String_t* L_8 = ___realm2;
+		String_t* L_8 = ___2_realm;
 		NullCheck(L_8);
 		int32_t L_9;
 		L_9 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_8, NULL);
@@ -19284,14 +19795,14 @@ IL_002c:
 
 IL_002e:
 	{
-		String_t* L_10 = ___method3;
+		String_t* L_10 = ___3_method;
 		if (!L_10)
 		{
 			goto IL_0039;
 		}
 	}
 	{
-		String_t* L_11 = ___method3;
+		String_t* L_11 = ___3_method;
 		NullCheck(L_11);
 		int32_t L_12;
 		L_12 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_11, NULL);
@@ -19308,8 +19819,8 @@ IL_0039:
 
 IL_003b:
 	{
-		String_t* L_13 = ___response0;
-		Il2CppFakeBox<int32_t> L_14(AuthenticationSchemes_t299DAE2833C90F914E1770B562B4BB6F368501BC_il2cpp_TypeInfo_var, (&___scheme1));
+		String_t* L_13 = ___0_response;
+		Il2CppFakeBox<int32_t> L_14(AuthenticationSchemes_t299DAE2833C90F914E1770B562B4BB6F368501BC_il2cpp_TypeInfo_var, (&___1_scheme));
 		String_t* L_15;
 		L_15 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_14), NULL);
 		NullCheck(L_13);
@@ -19326,7 +19837,7 @@ IL_003b:
 
 IL_0053:
 	{
-		String_t* L_17 = ___response0;
+		String_t* L_17 = ___0_response;
 		AuthenticationResponse_t50F8680C8D040A2432CAFF99A7613EC28BF96B9F* L_18;
 		L_18 = AuthenticationResponse_Parse_m894610A35C815459ED48E1D6FC4960047816312D(L_17, NULL);
 		V_0 = L_18;
@@ -19363,7 +19874,7 @@ IL_006b:
 	}
 	try
 	{// begin try (depth: 1)
-		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_23 = ___credentialsFinder4;
+		Func_2_tBF9C1671EF86F9750A476B0DD7C67BF314655786* L_23 = ___4_credentialsFinder;
 		RuntimeObject* L_24 = V_1;
 		NullCheck(L_23);
 		NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* L_25;
@@ -19401,7 +19912,7 @@ IL_007b:
 
 IL_0080:
 	{
-		int32_t L_27 = ___scheme1;
+		int32_t L_27 = ___1_scheme;
 		if ((!(((uint32_t)L_27) == ((uint32_t)8))))
 		{
 			goto IL_009e;
@@ -19429,7 +19940,7 @@ IL_0080:
 
 IL_009e:
 	{
-		int32_t L_33 = ___scheme1;
+		int32_t L_33 = ___1_scheme;
 		if ((!(((uint32_t)L_33) == ((uint32_t)1))))
 		{
 			goto IL_00ba;
@@ -19441,8 +19952,8 @@ IL_009e:
 		NullCheck(L_35);
 		String_t* L_36;
 		L_36 = NetworkCredential_get_Password_mC7EEA302483494AF51029D40BF3AD34974E149EC(L_35, NULL);
-		String_t* L_37 = ___realm2;
-		String_t* L_38 = ___method3;
+		String_t* L_37 = ___2_realm;
+		String_t* L_38 = ___3_method;
 		NullCheck(((HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030*)CastclassClass((RuntimeObject*)L_34, HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030_il2cpp_TypeInfo_var)));
 		bool L_39;
 		L_39 = HttpDigestIdentity_IsValid_mAE69DB9B347AB841F6610355109754C3F018442D(((HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030*)CastclassClass((RuntimeObject*)L_34, HttpDigestIdentity_tD2B7BDC2A223731C089E2F8F911671F17C153030_il2cpp_TypeInfo_var)), L_36, L_37, L_38, (String_t*)NULL, NULL);
@@ -19469,7 +19980,7 @@ IL_00ba:
 	}
 }
 // System.Text.Encoding WebSocketSharp.Net.HttpUtility::GetEncoding(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpUtility_GetEncoding_m628EB683E6A01526DC49B8AB0074671A8EAA245A (String_t* ___contentType0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* HttpUtility_GetEncoding_m628EB683E6A01526DC49B8AB0074671A8EAA245A (String_t* ___0_contentType, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19483,7 +19994,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Encoding_t65CDEF28CF20A7B8C92E85A4E808920C246
 	int32_t V_1 = 0;
 	String_t* V_2 = NULL;
 	{
-		String_t* L_0 = ___contentType0;
+		String_t* L_0 = ___0_contentType;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_1 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_2 = L_1;
 		NullCheck(L_2);
@@ -19547,7 +20058,7 @@ IL_0040:
 	}
 }
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::InternalParseQueryString(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___query0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_InternalParseQueryString_mB321256022BAC0002875239B4ADC62099E4A7E6A (String_t* ___0_query, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19569,14 +20080,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 	String_t* V_7 = NULL;
 	String_t* G_B12_0 = NULL;
 	{
-		String_t* L_0 = ___query0;
+		String_t* L_0 = ___0_query;
 		if (!L_0)
 		{
 			goto IL_001c;
 		}
 	}
 	{
-		String_t* L_1 = ___query0;
+		String_t* L_1 = ___0_query;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -19595,7 +20106,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 		}
 	}
 	{
-		String_t* L_5 = ___query0;
+		String_t* L_5 = ___0_query;
 		NullCheck(L_5);
 		Il2CppChar L_6;
 		L_6 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_5, 0, NULL);
@@ -19615,7 +20126,7 @@ IL_001c:
 
 IL_0023:
 	{
-		String_t* L_8 = ___query0;
+		String_t* L_8 = ___0_query;
 		NullCheck(L_8);
 		Il2CppChar L_9;
 		L_9 = String_get_Chars_mC49DF0CD2D3BE7BE97B3AD9C995BE3094F8E36D3(L_8, 0, NULL);
@@ -19625,11 +20136,11 @@ IL_0023:
 		}
 	}
 	{
-		String_t* L_10 = ___query0;
+		String_t* L_10 = ___0_query;
 		NullCheck(L_10);
 		String_t* L_11;
 		L_11 = String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472(L_10, 1, NULL);
-		___query0 = L_11;
+		___0_query = L_11;
 	}
 
 IL_0037:
@@ -19638,7 +20149,7 @@ IL_0037:
 		NullCheck(L_12);
 		QueryStringCollection__ctor_mEB13FC5C6515D668B6396110FCCC8218F01A45DA(L_12, NULL);
 		V_1 = L_12;
-		String_t* L_13 = ___query0;
+		String_t* L_13 = ___0_query;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_14 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_15 = L_14;
 		NullCheck(L_15);
@@ -19676,7 +20187,7 @@ IL_0053:
 		NullCheck(L_24);
 		String_t* L_26;
 		L_26 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_24, 0, L_25, NULL);
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_27 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_27 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_28;
 		L_28 = HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A(L_26, L_27, NULL);
@@ -19704,7 +20215,7 @@ IL_008e:
 		NullCheck(L_33);
 		String_t* L_35;
 		L_35 = String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472(L_33, ((int32_t)il2cpp_codegen_add(L_34, 1)), NULL);
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_36 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_36 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_37;
 		L_37 = HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A(L_35, L_36, NULL);
@@ -19726,7 +20237,7 @@ IL_00ad:
 	{
 		QueryStringCollection_t6E79312A4139F75EDF2B670A0A3CAF7200FA8480* L_41 = V_1;
 		String_t* L_42 = V_4;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_43 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_43 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_44;
 		L_44 = HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A(L_42, L_43, NULL);
@@ -19756,7 +20267,7 @@ IL_00c0:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::InternalUrlDecode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_InternalUrlDecode_mFE1B40CF4DA2B943537384C30E9F9A0702F8B159 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_InternalUrlDecode_mFE1B40CF4DA2B943537384C30E9F9A0702F8B159 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___3_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19810,17 +20321,17 @@ IL_0106:
 		try
 		{// begin try (depth: 1)
 			{
-				int32_t L_4 = ___count2;
-				int32_t L_5 = ___offset1;
+				int32_t L_4 = ___2_count;
+				int32_t L_5 = ___1_offset;
 				V_2 = ((int32_t)il2cpp_codegen_add(L_4, L_5));
-				int32_t L_6 = ___offset1;
+				int32_t L_6 = ___1_offset;
 				V_3 = L_6;
 				goto IL_00dc_1;
 			}
 
 IL_0017_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7 = ___0_bytes;
 				int32_t L_8 = V_3;
 				NullCheck(L_7);
 				int32_t L_9 = L_8;
@@ -19832,14 +20343,14 @@ IL_0017_1:
 			}
 			{
 				int32_t L_11 = V_3;
-				int32_t L_12 = ___count2;
+				int32_t L_12 = ___2_count;
 				if ((((int32_t)((int32_t)il2cpp_codegen_add(L_11, 2))) >= ((int32_t)L_12)))
 				{
 					goto IL_009c_1;
 				}
 			}
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_13 = ___0_bytes;
 				int32_t L_14 = V_3;
 				NullCheck(L_13);
 				int32_t L_15 = ((int32_t)il2cpp_codegen_add(L_14, 1));
@@ -19850,7 +20361,7 @@ IL_0017_1:
 				}
 			}
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_17 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_17 = ___0_bytes;
 				int32_t L_18 = V_3;
 				NullCheck(L_17);
 				int32_t L_19 = ((int32_t)il2cpp_codegen_add(L_18, 1));
@@ -19881,7 +20392,7 @@ IL_0017_1:
 			{
 				StringBuilder_t* L_25 = V_0;
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_26 = V_1;
-				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_27 = ___encoding3;
+				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_27 = ___3_encoding;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_28;
 				L_28 = HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A(L_26, L_27, NULL);
@@ -19895,7 +20406,7 @@ IL_0017_1:
 
 IL_005c_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_31 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_31 = ___0_bytes;
 				int32_t L_32 = V_3;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				int32_t L_33;
@@ -19920,7 +20431,7 @@ IL_005c_1:
 
 IL_007d_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_39 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_39 = ___0_bytes;
 				int32_t L_40 = V_3;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				int32_t L_41;
@@ -19956,7 +20467,7 @@ IL_009c_1:
 			{
 				StringBuilder_t* L_48 = V_0;
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_49 = V_1;
-				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_50 = ___encoding3;
+				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_50 = ___3_encoding;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_51;
 				L_51 = HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A(L_49, L_50, NULL);
@@ -19970,7 +20481,7 @@ IL_009c_1:
 
 IL_00bc_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_54 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_54 = ___0_bytes;
 				int32_t L_55 = V_3;
 				NullCheck(L_54);
 				int32_t L_56 = L_55;
@@ -19991,7 +20502,7 @@ IL_00bc_1:
 IL_00ce_1:
 			{
 				StringBuilder_t* L_60 = V_0;
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_61 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_61 = ___0_bytes;
 				int32_t L_62 = V_3;
 				NullCheck(L_61);
 				int32_t L_63 = L_62;
@@ -20029,7 +20540,7 @@ IL_00dc_1:
 			{
 				StringBuilder_t* L_71 = V_0;
 				MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_72 = V_1;
-				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_73 = ___encoding3;
+				Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_73 = ___3_encoding;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_74;
 				L_74 = HttpUtility_getChars_m15D86C36CFEFA0B20847AF42326E9C067F7D565A(L_72, L_73, NULL);
@@ -20059,7 +20570,7 @@ IL_0107:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlDecodeToBytes_mC0F61400A4177F49699811602E0DBBFDF0E015BE (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlDecodeToBytes_mC0F61400A4177F49699811602E0DBBFDF0E015BE (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20109,17 +20620,17 @@ IL_0069:
 		try
 		{// begin try (depth: 1)
 			{
-				int32_t L_3 = ___offset1;
-				int32_t L_4 = ___count2;
+				int32_t L_3 = ___1_offset;
+				int32_t L_4 = ___2_count;
 				V_1 = ((int32_t)il2cpp_codegen_add(L_3, L_4));
-				int32_t L_5 = ___offset1;
+				int32_t L_5 = ___1_offset;
 				V_2 = L_5;
 				goto IL_004c_1;
 			}
 
 IL_000e_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___0_bytes;
 				int32_t L_7 = V_2;
 				NullCheck(L_6);
 				int32_t L_8 = L_7;
@@ -20153,7 +20664,7 @@ IL_001c_1:
 				}
 			}
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___0_bytes;
 				int32_t L_15 = V_2;
 				il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 				int32_t L_16;
@@ -20216,7 +20727,7 @@ IL_006a:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeToBytes_m74C68188D2AA1E85A3B0691442C114E36680FF81 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeToBytes_m74C68188D2AA1E85A3B0691442C114E36680FF81 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20264,17 +20775,17 @@ IL_0038:
 		try
 		{// begin try (depth: 1)
 			{
-				int32_t L_3 = ___offset1;
-				int32_t L_4 = ___count2;
+				int32_t L_3 = ___1_offset;
+				int32_t L_4 = ___2_count;
 				V_1 = ((int32_t)il2cpp_codegen_add(L_3, L_4));
-				int32_t L_5 = ___offset1;
+				int32_t L_5 = ___1_offset;
 				V_2 = L_5;
 				goto IL_001c_1;
 			}
 
 IL_000e_1:
 			{
-				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___bytes0;
+				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___0_bytes;
 				int32_t L_7 = V_2;
 				NullCheck(L_6);
 				int32_t L_8 = L_7;
@@ -20320,7 +20831,7 @@ IL_0039:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::InternalUrlEncodeUnicodeToBytes(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20368,7 +20879,7 @@ IL_003f:
 		try
 		{// begin try (depth: 1)
 			{
-				String_t* L_3 = ___s0;
+				String_t* L_3 = ___0_s;
 				V_1 = L_3;
 				V_2 = 0;
 				goto IL_001e_1;
@@ -20425,7 +20936,7 @@ IL_0040:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::HtmlAttributeEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCFB4A25678E616B1BEA8AA91B64EA68262261B08 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCFB4A25678E616B1BEA8AA91B64EA68262261B08 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20455,14 +20966,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCF
 	String_t* G_B14_0 = NULL;
 	StringBuilder_t* G_B14_1 = NULL;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_0024;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -20472,7 +20983,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCF
 		}
 	}
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)4);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_5 = L_4;
 		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_6 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_tE2E45F09B1224B753B14385A84BC342FCAC9053A____6532575F81314AADD4BCFD96F1517D5BBFF2B60B_1_FieldInfo_var) };
@@ -20488,7 +20999,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlAttributeEncode_mCF
 
 IL_0024:
 	{
-		String_t* L_8 = ___s0;
+		String_t* L_8 = ___0_s;
 		return L_8;
 	}
 
@@ -20498,7 +21009,7 @@ IL_0026:
 		NullCheck(L_9);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_9, NULL);
 		V_0 = L_9;
-		String_t* L_10 = ___s0;
+		String_t* L_10 = ___0_s;
 		V_1 = L_10;
 		V_2 = 0;
 		goto IL_007c;
@@ -20613,7 +21124,7 @@ IL_007c:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::HtmlAttributeEncode(System.String,System.IO.TextWriter)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlAttributeEncode_m122D42E7A58CA05949CCB9A25651B2F5A5425C2A (String_t* ___s0, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___output1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlAttributeEncode_m122D42E7A58CA05949CCB9A25651B2F5A5425C2A (String_t* ___0_s, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___1_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20622,7 +21133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlAttributeEncode_m122D42E
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___output1;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___1_output;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -20637,8 +21148,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlAttributeEncode_m122D42E
 
 IL_000e:
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___output1;
-		String_t* L_3 = ___s0;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___1_output;
+		String_t* L_3 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_4;
 		L_4 = HttpUtility_HtmlAttributeEncode_mCFB4A25678E616B1BEA8AA91B64EA68262261B08(L_3, NULL);
@@ -20648,7 +21159,7 @@ IL_000e:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::HtmlDecode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C1025BD9FFF084C9B5B74FE19CC697FF (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C1025BD9FFF084C9B5B74FE19CC697FF (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -20677,14 +21188,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C10
 	Dictionary_2_tEBE23E82E556111B16583DB9A4C0BA8EDBBED119* V_9 = NULL;
 	Il2CppChar V_10 = 0x0;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_001e;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -20694,7 +21205,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C10
 		}
 	}
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)1);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_5 = L_4;
 		NullCheck(L_5);
@@ -20710,7 +21221,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlDecode_m61BE43F3C10
 
 IL_001e:
 	{
-		String_t* L_7 = ___s0;
+		String_t* L_7 = ___0_s;
 		return L_7;
 	}
 
@@ -20727,7 +21238,7 @@ IL_0020:
 		V_2 = 0;
 		V_3 = 0;
 		V_4 = (bool)0;
-		String_t* L_10 = ___s0;
+		String_t* L_10 = ___0_s;
 		V_5 = L_10;
 		V_6 = 0;
 		goto IL_021e;
@@ -21160,7 +21671,7 @@ IL_025b:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::HtmlDecode(System.String,System.IO.TextWriter)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlDecode_mB159DFAC8FAC5D4A7CCEFBFCFE673CDF353EB78B (String_t* ___s0, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___output1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlDecode_mB159DFAC8FAC5D4A7CCEFBFCFE673CDF353EB78B (String_t* ___0_s, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___1_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21169,7 +21680,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlDecode_mB159DFAC8FAC5D4A
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___output1;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___1_output;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -21184,8 +21695,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlDecode_mB159DFAC8FAC5D4A
 
 IL_000e:
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___output1;
-		String_t* L_3 = ___s0;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___1_output;
+		String_t* L_3 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_4;
 		L_4 = HttpUtility_HtmlDecode_m61BE43F3C1025BD9FFF084C9B5B74FE19CC697FF(L_3, NULL);
@@ -21195,7 +21706,7 @@ IL_000e:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::HtmlEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E675DE14631F202566CD041E7435D005 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E675DE14631F202566CD041E7435D005 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21218,14 +21729,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E67
 	Il2CppChar V_5 = 0x0;
 	int32_t V_6 = 0;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -21237,14 +21748,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_HtmlEncode_m12AE4A26E67
 
 IL_000b:
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		return L_3;
 	}
 
 IL_000d:
 	{
 		V_0 = (bool)0;
-		String_t* L_4 = ___s0;
+		String_t* L_4 = ___0_s;
 		V_2 = L_4;
 		V_3 = 0;
 		goto IL_0047;
@@ -21327,7 +21838,7 @@ IL_0050:
 		}
 	}
 	{
-		String_t* L_18 = ___s0;
+		String_t* L_18 = ___0_s;
 		return L_18;
 	}
 
@@ -21337,7 +21848,7 @@ IL_0055:
 		NullCheck(L_19);
 		StringBuilder__ctor_m1D99713357DE05DAFA296633639DB55F8C30587D(L_19, NULL);
 		V_1 = L_19;
-		String_t* L_20 = ___s0;
+		String_t* L_20 = ___0_s;
 		V_2 = L_20;
 		V_3 = 0;
 		goto IL_0104;
@@ -21480,7 +21991,7 @@ IL_0104:
 	}
 }
 // System.Void WebSocketSharp.Net.HttpUtility::HtmlEncode(System.String,System.IO.TextWriter)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlEncode_mCB9D611EFF25F8BC878E9324ABF9C7889066275A (String_t* ___s0, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___output1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlEncode_mCB9D611EFF25F8BC878E9324ABF9C7889066275A (String_t* ___0_s, TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___1_output, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21489,7 +22000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlEncode_mCB9D611EFF25F8BC
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___output1;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_0 = ___1_output;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -21504,8 +22015,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HttpUtility_HtmlEncode_mCB9D611EFF25F8BC
 
 IL_000e:
 	{
-		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___output1;
-		String_t* L_3 = ___s0;
+		TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* L_2 = ___1_output;
+		String_t* L_3 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		String_t* L_4;
 		L_4 = HttpUtility_HtmlEncode_m12AE4A26E675DE14631F202566CD041E7435D005(L_3, NULL);
@@ -21515,7 +22026,7 @@ IL_000e:
 	}
 }
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::ParseQueryString(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_m3B2EA40DAD4A3F227C0C758BE46513C4C15801D4 (String_t* ___query0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_m3B2EA40DAD4A3F227C0C758BE46513C4C15801D4 (String_t* ___0_query, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21524,7 +22035,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___query0;
+		String_t* L_0 = ___0_query;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
@@ -21534,7 +22045,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 	}
 }
 // System.Collections.Specialized.NameValueCollection WebSocketSharp.Net.HttpUtility::ParseQueryString(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_mAE84873C75DEB876D23E90CAFB1A8FD6BCA9F725 (String_t* ___query0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpUtility_ParseQueryString_mAE84873C75DEB876D23E90CAFB1A8FD6BCA9F725 (String_t* ___0_query, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21547,7 +22058,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* G_B3_0 = NULL;
 	String_t* G_B3_1 = NULL;
 	{
-		String_t* L_0 = ___query0;
+		String_t* L_0 = ___0_query;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -21562,8 +22073,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA3
 
 IL_000e:
 	{
-		String_t* L_2 = ___query0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3 = ___encoding1;
+		String_t* L_2 = ___0_query;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3 = ___1_encoding;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4 = L_3;
 		G_B3_0 = L_4;
 		G_B3_1 = L_2;
@@ -21590,7 +22101,7 @@ IL_0019:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlDecode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mADBF28D9BA58C58E76E1D8E1C79F0B1B9BDB8E80 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mADBF28D9BA58C58E76E1D8E1C79F0B1B9BDB8E80 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21599,7 +22110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mADBF28D9BA58
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
@@ -21609,7 +22120,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mADBF28D9BA58
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlDecode(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994ED5FF833FB0F29A3ABE7DA1E2D78A (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21628,14 +22139,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994E
 	Il2CppChar V_3 = 0x0;
 	int32_t V_4 = 0;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_0023;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -21645,7 +22156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994E
 		}
 	}
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_4 = (CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB*)SZArrayNew(CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB_il2cpp_TypeInfo_var, (uint32_t)2);
 		CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* L_5 = L_4;
 		NullCheck(L_5);
@@ -21664,13 +22175,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m957C21F8994E
 
 IL_0023:
 	{
-		String_t* L_8 = ___s0;
+		String_t* L_8 = ___0_s;
 		return L_8;
 	}
 
 IL_0025:
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_9 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_9 = ___1_encoding;
 		if (L_9)
 		{
 			goto IL_002f;
@@ -21679,7 +22190,7 @@ IL_0025:
 	{
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_10;
 		L_10 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
-		___encoding1 = L_10;
+		___1_encoding = L_10;
 	}
 
 IL_002f:
@@ -21688,7 +22199,7 @@ IL_002f:
 		NullCheck(L_11);
 		List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9(L_11, List_1__ctor_mC411581553467A7DB76C06E5E5FCA34E4EC621B9_RuntimeMethod_var);
 		V_0 = L_11;
-		String_t* L_12 = ___s0;
+		String_t* L_12 = ___0_s;
 		NullCheck(L_12);
 		int32_t L_13;
 		L_13 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_12, NULL);
@@ -21699,7 +22210,7 @@ IL_002f:
 
 IL_0043:
 	{
-		String_t* L_14 = ___s0;
+		String_t* L_14 = ___0_s;
 		int32_t L_15 = V_2;
 		NullCheck(L_14);
 		Il2CppChar L_16;
@@ -21720,7 +22231,7 @@ IL_0043:
 		}
 	}
 	{
-		String_t* L_20 = ___s0;
+		String_t* L_20 = ___0_s;
 		int32_t L_21 = V_2;
 		NullCheck(L_20);
 		Il2CppChar L_22;
@@ -21731,7 +22242,7 @@ IL_0043:
 		}
 	}
 	{
-		String_t* L_23 = ___s0;
+		String_t* L_23 = ___0_s;
 		int32_t L_24 = V_2;
 		NullCheck(L_23);
 		Il2CppChar L_25;
@@ -21750,7 +22261,7 @@ IL_0043:
 		}
 	}
 	{
-		String_t* L_28 = ___s0;
+		String_t* L_28 = ___0_s;
 		int32_t L_29 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		int32_t L_30;
@@ -21765,7 +22276,7 @@ IL_0043:
 	{
 		int32_t L_32 = V_4;
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_33 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_34 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_34 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(((int32_t)(uint16_t)L_32), L_33, L_34, NULL);
 		int32_t L_35 = V_2;
@@ -21776,7 +22287,7 @@ IL_0043:
 IL_0097:
 	{
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_36 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_37 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_37 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(((int32_t)37), L_36, L_37, NULL);
 		goto IL_00e5;
@@ -21784,7 +22295,7 @@ IL_0097:
 
 IL_00a2:
 	{
-		String_t* L_38 = ___s0;
+		String_t* L_38 = ___0_s;
 		int32_t L_39 = V_2;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		int32_t L_40;
@@ -21799,7 +22310,7 @@ IL_00a2:
 	{
 		int32_t L_42 = V_4;
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_43 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_44 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_44 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(((int32_t)(uint16_t)L_42), L_43, L_44, NULL);
 		int32_t L_45 = V_2;
@@ -21810,7 +22321,7 @@ IL_00a2:
 IL_00c2:
 	{
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_46 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_47 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_47 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(((int32_t)37), L_46, L_47, NULL);
 		goto IL_00e5;
@@ -21826,7 +22337,7 @@ IL_00cd:
 	}
 	{
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_49 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_50 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_50 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(((int32_t)32), L_49, L_50, NULL);
 		goto IL_00e5;
@@ -21836,7 +22347,7 @@ IL_00dd:
 	{
 		Il2CppChar L_51 = V_3;
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_52 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_53 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_53 = ___1_encoding;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		HttpUtility_writeCharBytes_m459409B54806A1AD810342FC1F833A2686B73097(L_51, L_52, L_53, NULL);
 	}
@@ -21857,7 +22368,7 @@ IL_00e9:
 		}
 	}
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_57 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_57 = ___1_encoding;
 		List_1_t7D15BE3246500BBF1A24C24DBF963B89A876255B* L_58 = V_0;
 		NullCheck(L_58);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_59;
@@ -21869,7 +22380,7 @@ IL_00e9:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlDecode(System.Byte[],System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mDE92816991631E1EB499BA12DE1390FD19006648 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mDE92816991631E1EB499BA12DE1390FD19006648 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21888,14 +22399,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mDE9281699163
 	int32_t G_B3_2 = 0;
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* G_B3_3 = NULL;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_0023;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -21905,9 +22416,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_mDE9281699163
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		int32_t L_4 = V_0;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_5 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_5 = ___1_encoding;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_6 = L_5;
 		G_B3_0 = L_6;
 		G_B3_1 = L_4;
@@ -21951,7 +22462,7 @@ IL_0023:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlDecode(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m7D84D0CC96321CAB1F0867C9898922FEE9A58A80 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m7D84D0CC96321CAB1F0867C9898922FEE9A58A80 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___3_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -21970,7 +22481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m7D84D0CC9632
 	int32_t G_B12_2 = 0;
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* G_B12_3 = NULL;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (L_0)
 		{
 			goto IL_0005;
@@ -21982,7 +22493,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlDecode_m7D84D0CC9632
 
 IL_0005:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		V_0 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		int32_t L_2 = V_0;
@@ -21992,7 +22503,7 @@ IL_0005:
 		}
 	}
 	{
-		int32_t L_3 = ___count2;
+		int32_t L_3 = ___2_count;
 		if (L_3)
 		{
 			goto IL_0015;
@@ -22007,14 +22518,14 @@ IL_000f:
 
 IL_0015:
 	{
-		int32_t L_5 = ___offset1;
+		int32_t L_5 = ___1_offset;
 		if ((((int32_t)L_5) < ((int32_t)0)))
 		{
 			goto IL_001d;
 		}
 	}
 	{
-		int32_t L_6 = ___offset1;
+		int32_t L_6 = ___1_offset;
 		int32_t L_7 = V_0;
 		if ((((int32_t)L_6) < ((int32_t)L_7)))
 		{
@@ -22032,16 +22543,16 @@ IL_001d:
 
 IL_0028:
 	{
-		int32_t L_9 = ___count2;
+		int32_t L_9 = ___2_count;
 		if ((((int32_t)L_9) < ((int32_t)0)))
 		{
 			goto IL_0032;
 		}
 	}
 	{
-		int32_t L_10 = ___count2;
+		int32_t L_10 = ___2_count;
 		int32_t L_11 = V_0;
-		int32_t L_12 = ___offset1;
+		int32_t L_12 = ___1_offset;
 		if ((((int32_t)L_10) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_11, L_12)))))
 		{
 			goto IL_003d;
@@ -22058,10 +22569,10 @@ IL_0032:
 
 IL_003d:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___bytes0;
-		int32_t L_15 = ___offset1;
-		int32_t L_16 = ___count2;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_17 = ___encoding3;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___0_bytes;
+		int32_t L_15 = ___1_offset;
+		int32_t L_16 = ___2_count;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_17 = ___3_encoding;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_18 = L_17;
 		G_B12_0 = L_18;
 		G_B12_1 = L_16;
@@ -22094,7 +22605,7 @@ IL_004a:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlDecodeToBytes(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_m5D76384D72183EE3C95546B64786778FC6C6FBE9 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_m5D76384D72183EE3C95546B64786778FC6C6FBE9 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22104,14 +22615,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -22123,13 +22634,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_000b:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		return L_3;
 	}
 
 IL_000d:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_bytes;
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6;
@@ -22138,7 +22649,7 @@ IL_000d:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlDecodeToBytes(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mB1D362D7F64F20156A7225684A28C34435D981AC (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mB1D362D7F64F20156A7225684A28C34435D981AC (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22147,7 +22658,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
@@ -22157,7 +22668,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlDecodeToBytes(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mC95CD8AEBD3181D83E684865F29DF081B3433FAE (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_mC95CD8AEBD3181D83E684865F29DF081B3433FAE (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22170,7 +22681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* G_B6_0 = NULL;
 	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* G_B5_0 = NULL;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (L_0)
 		{
 			goto IL_0005;
@@ -22182,7 +22693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_0005:
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -22198,7 +22709,7 @@ IL_0005:
 
 IL_0014:
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4 = ___1_encoding;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_5 = L_4;
 		G_B5_0 = L_5;
 		if (L_5)
@@ -22215,7 +22726,7 @@ IL_0014:
 
 IL_001e:
 	{
-		String_t* L_7 = ___s0;
+		String_t* L_7 = ___0_s;
 		NullCheck(G_B6_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
 		L_8 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, G_B6_0, L_7);
@@ -22230,7 +22741,7 @@ IL_001e:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_m9F7B59B4CBA85ECFFBD2E20E7418098E06387800 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlDecodeToBytes_m9F7B59B4CBA85ECFFBD2E20E7418098E06387800 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22241,14 +22752,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_000a;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -22260,13 +22771,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_000a:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		return L_3;
 	}
 
 IL_000c:
 	{
-		int32_t L_4 = ___count2;
+		int32_t L_4 = ___2_count;
 		if (L_4)
 		{
 			goto IL_0016;
@@ -22279,14 +22790,14 @@ IL_000c:
 
 IL_0016:
 	{
-		int32_t L_6 = ___offset1;
+		int32_t L_6 = ___1_offset;
 		if ((((int32_t)L_6) < ((int32_t)0)))
 		{
 			goto IL_001e;
 		}
 	}
 	{
-		int32_t L_7 = ___offset1;
+		int32_t L_7 = ___1_offset;
 		int32_t L_8 = V_0;
 		if ((((int32_t)L_7) < ((int32_t)L_8)))
 		{
@@ -22304,16 +22815,16 @@ IL_001e:
 
 IL_0029:
 	{
-		int32_t L_10 = ___count2;
+		int32_t L_10 = ___2_count;
 		if ((((int32_t)L_10) < ((int32_t)0)))
 		{
 			goto IL_0033;
 		}
 	}
 	{
-		int32_t L_11 = ___count2;
+		int32_t L_11 = ___2_count;
 		int32_t L_12 = V_0;
-		int32_t L_13 = ___offset1;
+		int32_t L_13 = ___1_offset;
 		if ((((int32_t)L_11) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_12, L_13)))))
 		{
 			goto IL_003e;
@@ -22330,9 +22841,9 @@ IL_0033:
 
 IL_003e:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = ___bytes0;
-		int32_t L_16 = ___offset1;
-		int32_t L_17 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = ___0_bytes;
+		int32_t L_16 = ___1_offset;
+		int32_t L_17 = ___2_count;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
 		L_18 = HttpUtility_InternalUrlDecodeToBytes_mC0F61400A4177F49699811602E0DBBFDF0E015BE(L_15, L_16, L_17, NULL);
@@ -22340,7 +22851,7 @@ IL_003e:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncode(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m193F2928B56C15BD953FF5EA217AAE4EB6605978 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m193F2928B56C15BD953FF5EA217AAE4EB6605978 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22351,14 +22862,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m193F2928B56C
 	}
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_0023;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -22370,7 +22881,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m193F2928B56C
 	{
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_3;
 		L_3 = Encoding_get_ASCII_mCC61B512D320FD4E2E71CC0DFDF8DDF3CD215C65(NULL);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_bytes;
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6;
@@ -22393,7 +22904,7 @@ IL_0023:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_mE4E9466DDBC39D5A4CFB76499191EEE21DDAF496 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_mE4E9466DDBC39D5A4CFB76499191EEE21DDAF496 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22402,7 +22913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_mE4E9466DDBC3
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
@@ -22412,7 +22923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_mE4E9466DDBC3
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncode(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBEEEE76F4EEAAF67A322335F397D29 (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBEEEE76F4EEAAF67A322335F397D29 (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22429,14 +22940,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBE
 	int32_t V_5 = 0;
 	Il2CppChar V_6 = 0x0;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_000d;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -22450,14 +22961,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m560FA3071EBE
 
 IL_000d:
 	{
-		String_t* L_4 = ___s0;
+		String_t* L_4 = ___0_s;
 		return L_4;
 	}
 
 IL_000f:
 	{
 		V_1 = (bool)0;
-		String_t* L_5 = ___s0;
+		String_t* L_5 = ___0_s;
 		V_4 = L_5;
 		V_5 = 0;
 		goto IL_005b;
@@ -22561,13 +23072,13 @@ IL_0066:
 		}
 	}
 	{
-		String_t* L_22 = ___s0;
+		String_t* L_22 = ___0_s;
 		return L_22;
 	}
 
 IL_006b:
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_23 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_23 = ___1_encoding;
 		if (L_23)
 		{
 			goto IL_0075;
@@ -22576,20 +23087,20 @@ IL_006b:
 	{
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_24;
 		L_24 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
-		___encoding1 = L_24;
+		___1_encoding = L_24;
 	}
 
 IL_0075:
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_25 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_25 = ___1_encoding;
 		int32_t L_26 = V_0;
 		NullCheck(L_25);
 		int32_t L_27;
 		L_27 = VirtualFuncInvoker1< int32_t, int32_t >::Invoke(33 /* System.Int32 System.Text.Encoding::GetMaxByteCount(System.Int32) */, L_25, L_26);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_28 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)L_27);
 		V_2 = L_28;
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_29 = ___encoding1;
-		String_t* L_30 = ___s0;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_29 = ___1_encoding;
+		String_t* L_30 = ___0_s;
 		int32_t L_31 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_32 = V_2;
 		NullCheck(L_29);
@@ -22610,7 +23121,7 @@ IL_0075:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncode(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m33ABEC885E780E4468827AD5BCB0B7EA87744764 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m33ABEC885E780E4468827AD5BCB0B7EA87744764 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22621,9 +23132,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncode_m33ABEC885E78
 	}
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
-		int32_t L_1 = ___offset1;
-		int32_t L_2 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
+		int32_t L_1 = ___1_offset;
+		int32_t L_2 = ___2_count;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3;
 		L_3 = HttpUtility_UrlEncodeToBytes_m39FDE8F38B81893D6D96308539045997EA2D2CA5(L_0, L_1, L_2, NULL);
@@ -22664,7 +23175,7 @@ IL_0022:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_mC0A1CD050602BF8686EC3C1EF799D7CCB9748719 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_mC0A1CD050602BF8686EC3C1EF799D7CCB9748719 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22674,14 +23185,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -22693,13 +23204,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_000b:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		return L_3;
 	}
 
 IL_000d:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_bytes;
 		int32_t L_5 = V_0;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6;
@@ -22708,7 +23219,7 @@ IL_000d:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m946B785C72FF70A270A78D56157BCDB24A500991 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m946B785C72FF70A270A78D56157BCDB24A500991 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22717,7 +23228,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_1;
 		L_1 = Encoding_get_UTF8_m9FA98A53CE96FD6D02982625C5246DD36C1235C9(NULL);
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
@@ -22727,7 +23238,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.String,System.Text.Encoding)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m3D60E5C9E1F268578E807FDB26EBD667F46A019E (String_t* ___s0, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___encoding1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m3D60E5C9E1F268578E807FDB26EBD667F46A019E (String_t* ___0_s, Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___1_encoding, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22740,7 +23251,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* G_B6_0 = NULL;
 	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* G_B5_0 = NULL;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (L_0)
 		{
 			goto IL_0005;
@@ -22752,7 +23263,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_0005:
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -22768,7 +23279,7 @@ IL_0005:
 
 IL_0014:
 	{
-		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4 = ___encoding1;
+		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4 = ___1_encoding;
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_5 = L_4;
 		G_B5_0 = L_5;
 		if (L_5)
@@ -22785,7 +23296,7 @@ IL_0014:
 
 IL_001e:
 	{
-		String_t* L_7 = ___s0;
+		String_t* L_7 = ___0_s;
 		NullCheck(G_B6_0);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_8;
 		L_8 = VirtualFuncInvoker1< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, String_t* >::Invoke(18 /* System.Byte[] System.Text.Encoding::GetBytes(System.String) */, G_B6_0, L_7);
@@ -22800,7 +23311,7 @@ IL_001e:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m39FDE8F38B81893D6D96308539045997EA2D2CA5 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___bytes0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeToBytes_m39FDE8F38B81893D6D96308539045997EA2D2CA5 (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_bytes, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22811,14 +23322,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_bytes;
 		if (!L_0)
 		{
 			goto IL_000a;
 		}
 	}
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_bytes;
 		NullCheck(L_1);
 		int32_t L_2 = ((int32_t)(((RuntimeArray*)L_1)->max_length));
 		V_0 = L_2;
@@ -22830,13 +23341,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 
 IL_000a:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___bytes0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = ___0_bytes;
 		return L_3;
 	}
 
 IL_000c:
 	{
-		int32_t L_4 = ___count2;
+		int32_t L_4 = ___2_count;
 		if (L_4)
 		{
 			goto IL_0016;
@@ -22849,14 +23360,14 @@ IL_000c:
 
 IL_0016:
 	{
-		int32_t L_6 = ___offset1;
+		int32_t L_6 = ___1_offset;
 		if ((((int32_t)L_6) < ((int32_t)0)))
 		{
 			goto IL_001e;
 		}
 	}
 	{
-		int32_t L_7 = ___offset1;
+		int32_t L_7 = ___1_offset;
 		int32_t L_8 = V_0;
 		if ((((int32_t)L_7) < ((int32_t)L_8)))
 		{
@@ -22874,16 +23385,16 @@ IL_001e:
 
 IL_0029:
 	{
-		int32_t L_10 = ___count2;
+		int32_t L_10 = ___2_count;
 		if ((((int32_t)L_10) < ((int32_t)0)))
 		{
 			goto IL_0033;
 		}
 	}
 	{
-		int32_t L_11 = ___count2;
+		int32_t L_11 = ___2_count;
 		int32_t L_12 = V_0;
-		int32_t L_13 = ___offset1;
+		int32_t L_13 = ___1_offset;
 		if ((((int32_t)L_11) <= ((int32_t)((int32_t)il2cpp_codegen_subtract(L_12, L_13)))))
 		{
 			goto IL_003e;
@@ -22900,9 +23411,9 @@ IL_0033:
 
 IL_003e:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = ___bytes0;
-		int32_t L_16 = ___offset1;
-		int32_t L_17 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = ___0_bytes;
+		int32_t L_16 = ___1_offset;
+		int32_t L_17 = ___2_count;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18;
 		L_18 = HttpUtility_InternalUrlEncodeToBytes_m74C68188D2AA1E85A3B0691442C114E36680FF81(L_15, L_16, L_17, NULL);
@@ -22910,7 +23421,7 @@ IL_003e:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlEncodeUnicode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncodeUnicode_mD23C16FCB213F273A22B66B2C64708ABEF93A3B0 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncodeUnicode_mD23C16FCB213F273A22B66B2C64708ABEF93A3B0 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22919,14 +23430,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncodeUnicode_mD23C1
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_000c;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -22938,7 +23449,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlEncodeUnicode_mD23C1
 
 IL_000c:
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		return L_3;
 	}
 
@@ -22946,7 +23457,7 @@ IL_000e:
 	{
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_4;
 		L_4 = Encoding_get_ASCII_mCC61B512D320FD4E2E71CC0DFDF8DDF3CD215C65(NULL);
-		String_t* L_5 = ___s0;
+		String_t* L_5 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6;
 		L_6 = HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3(L_5, NULL);
@@ -22957,7 +23468,7 @@ IL_000e:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.HttpUtility::UrlEncodeUnicodeToBytes(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeUnicodeToBytes_m3F4BF157B82B485D6BBCC0BF3C44C09B03345BA5 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* HttpUtility_UrlEncodeUnicodeToBytes_m3F4BF157B82B485D6BBCC0BF3C44C09B03345BA5 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -22967,14 +23478,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_0019;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -22984,7 +23495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		}
 	}
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		il2cpp_codegen_runtime_class_init_inline(HttpUtility_tDB4E3250CC590BE8E094AB922FC00F3871D98E1F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
 		L_4 = HttpUtility_InternalUrlEncodeUnicodeToBytes_m816532410D2BD6108E99793FD0138ACF6C91CFA3(L_3, NULL);
@@ -23003,7 +23514,7 @@ IL_0019:
 	}
 }
 // System.String WebSocketSharp.Net.HttpUtility::UrlPathEncode(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlPathEncode_m4B5150F2077D7A4CE7455251AA47CE9B353A0128 (String_t* ___s0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlPathEncode_m4B5150F2077D7A4CE7455251AA47CE9B353A0128 (String_t* ___0_s, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23017,14 +23528,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlPathEncode_m4B5150F2
 	String_t* V_1 = NULL;
 	int32_t V_2 = 0;
 	{
-		String_t* L_0 = ___s0;
+		String_t* L_0 = ___0_s;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___s0;
+		String_t* L_1 = ___0_s;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -23036,7 +23547,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* HttpUtility_UrlPathEncode_m4B5150F2
 
 IL_000b:
 	{
-		String_t* L_3 = ___s0;
+		String_t* L_3 = ___0_s;
 		return L_3;
 	}
 
@@ -23075,7 +23586,7 @@ IL_0055:
 		try
 		{// begin try (depth: 1)
 			{
-				String_t* L_7 = ___s0;
+				String_t* L_7 = ___0_s;
 				V_1 = L_7;
 				V_2 = 0;
 				goto IL_002a_1;
@@ -23235,21 +23746,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__cctor_m6A48BD24A0C90F
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::.ctor(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_m0F217DB3EBB525201BBCC6CA7189F758C1E7415A (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___username0, String_t* ___password1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_m0F217DB3EBB525201BBCC6CA7189F758C1E7415A (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_username, String_t* ___1_password, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___username0;
-		String_t* L_1 = ___password1;
+		String_t* L_0 = ___0_username;
+		String_t* L_1 = ___1_password;
 		NetworkCredential__ctor_mB1D1D49D4B535C60C07848BF995237941A58DE50(__this, L_0, L_1, (String_t*)NULL, (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)NULL, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::.ctor(System.String,System.String,System.String,System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_mB1D1D49D4B535C60C07848BF995237941A58DE50 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___username0, String_t* ___password1, String_t* ___domain2, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___roles3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_mB1D1D49D4B535C60C07848BF995237941A58DE50 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_username, String_t* ___1_password, String_t* ___2_domain, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___3_roles, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		String_t* L_0 = ___username0;
+		String_t* L_0 = ___0_username;
 		if (L_0)
 		{
 			goto IL_0014;
@@ -23264,7 +23775,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential__ctor_mB1D1D49D4B535C6
 
 IL_0014:
 	{
-		String_t* L_2 = ___username0;
+		String_t* L_2 = ___0_username;
 		NullCheck(L_2);
 		int32_t L_3;
 		L_3 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_2, NULL);
@@ -23282,16 +23793,16 @@ IL_0014:
 
 IL_002c:
 	{
-		String_t* L_5 = ___username0;
+		String_t* L_5 = ___0_username;
 		__this->____username_4 = L_5;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____username_4), (void*)L_5);
-		String_t* L_6 = ___password1;
+		String_t* L_6 = ___1_password;
 		__this->____password_2 = L_6;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____password_2), (void*)L_6);
-		String_t* L_7 = ___domain2;
+		String_t* L_7 = ___2_domain;
 		__this->____domain_0 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____domain_0), (void*)L_7);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = ___roles3;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_8 = ___3_roles;
 		__this->____roles_3 = L_8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____roles_3), (void*)L_8);
 		return;
@@ -23329,10 +23840,10 @@ IL_000f:
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::set_Domain(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Domain_m4CE439AB5578EC49AA8A8141D5B0CE2CFFD08871 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Domain_m4CE439AB5578EC49AA8A8141D5B0CE2CFFD08871 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____domain_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____domain_0), (void*)L_0);
 		return;
@@ -23370,10 +23881,10 @@ IL_000f:
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::set_Password(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Password_m50E31DAFECBD9C9C1688F9AEEAB2F66E576B7C9E (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Password_m50E31DAFECBD9C9C1688F9AEEAB2F66E576B7C9E (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____password_2 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____password_2), (void*)L_0);
 		return;
@@ -23412,10 +23923,10 @@ IL_000f:
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::set_Roles(System.String[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Roles_mE0CA5D43BAE36603A6A0BD085850CE4F21EE4F1C (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Roles_mE0CA5D43BAE36603A6A0BD085850CE4F21EE4F1C (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = ___value0;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_0 = ___0_value;
 		__this->____roles_3 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____roles_3), (void*)L_0);
 		return;
@@ -23430,10 +23941,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* NetworkCredential_get_Username_m11E
 	}
 }
 // System.Void WebSocketSharp.Net.NetworkCredential::set_Username(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Username_m7362DBE5889617F45C3E1B4ACD12F2DF45E28B08 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NetworkCredential_set_Username_m7362DBE5889617F45C3E1B4ACD12F2DF45E28B08 (NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____username_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____username_4), (void*)L_0);
 		return;
@@ -23566,20 +24077,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void QueryStringCollection__ctor_mEB13FC5C651
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.ReadBufferState::.ctor(System.Byte[],System.Int32,System.Int32,WebSocketSharp.Net.HttpStreamAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState__ctor_m6AE0B2A275C3CA72727BA4001D57A41DDA8D1372 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* ___asyncResult3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState__ctor_m6AE0B2A275C3CA72727BA4001D57A41DDA8D1372 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* ___3_asyncResult, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___buffer0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_buffer;
 		__this->____buffer_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____buffer_1), (void*)L_0);
-		int32_t L_1 = ___offset1;
+		int32_t L_1 = ___1_offset;
 		__this->____offset_4 = L_1;
-		int32_t L_2 = ___count2;
+		int32_t L_2 = ___2_count;
 		__this->____count_2 = L_2;
-		int32_t L_3 = ___count2;
+		int32_t L_3 = ___2_count;
 		__this->____initialCount_3 = L_3;
-		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_4 = ___asyncResult3;
+		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_4 = ___3_asyncResult;
 		__this->____asyncResult_0 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____asyncResult_0), (void*)L_4);
 		return;
@@ -23594,10 +24105,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374
 	}
 }
 // System.Void WebSocketSharp.Net.ReadBufferState::set_AsyncResult(WebSocketSharp.Net.HttpStreamAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_AsyncResult_mFDE2C802A1621392AE9988AF362C3A3B56345E82 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_AsyncResult_mFDE2C802A1621392AE9988AF362C3A3B56345E82 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_0 = ___value0;
+		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_0 = ___0_value;
 		__this->____asyncResult_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____asyncResult_0), (void*)L_0);
 		return;
@@ -23612,10 +24123,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	}
 }
 // System.Void WebSocketSharp.Net.ReadBufferState::set_Buffer(System.Byte[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Buffer_m17C2C83BEB267AD87E71F304556D67CCB746BD38 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Buffer_m17C2C83BEB267AD87E71F304556D67CCB746BD38 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		__this->____buffer_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____buffer_1), (void*)L_0);
 		return;
@@ -23630,10 +24141,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadBufferState_get_Count_m415D8FBF91
 	}
 }
 // System.Void WebSocketSharp.Net.ReadBufferState::set_Count(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Count_m912FD1FAF592E6164A8DA65BB4AEE95D1BA84306 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Count_m912FD1FAF592E6164A8DA65BB4AEE95D1BA84306 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____count_2 = L_0;
 		return;
 	}
@@ -23647,10 +24158,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadBufferState_get_InitialCount_mA51
 	}
 }
 // System.Void WebSocketSharp.Net.ReadBufferState::set_InitialCount(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_InitialCount_mF1C91E9A84F04C7090A42A8FBF927253828B19F7 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_InitialCount_mF1C91E9A84F04C7090A42A8FBF927253828B19F7 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____initialCount_3 = L_0;
 		return;
 	}
@@ -23664,10 +24175,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ReadBufferState_get_Offset_m124F5ABA1
 	}
 }
 // System.Void WebSocketSharp.Net.ReadBufferState::set_Offset(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Offset_m809F93271DC4920711E0A3AFDF6068B3E1E7BE21 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Offset_m809F93271DC4920711E0A3AFDF6068B3E1E7BE21 (ReadBufferState_t3D4D6E68486A9A806C925529ACACE289596ADA33* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____offset_4 = L_0;
 		return;
 	}
@@ -23681,19 +24192,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadBufferState_set_Offset_m809F93271DC4
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.RequestStream::.ctor(System.IO.Stream,System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_mE1039B5B41D84AC01B5680049523274E8F18F2CF (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer1, int32_t ___offset2, int32_t ___count3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_mE1039B5B41D84AC01B5680049523274E8F18F2CF (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_buffer, int32_t ___2_offset, int32_t ___3_count, const RuntimeMethod* method) 
 {
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___stream0;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___buffer1;
-		int32_t L_2 = ___offset2;
-		int32_t L_3 = ___count3;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___0_stream;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___1_buffer;
+		int32_t L_2 = ___2_offset;
+		int32_t L_3 = ___3_count;
 		RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0(__this, L_0, L_1, L_2, L_3, ((int64_t)(-1)), NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.RequestStream::.ctor(System.IO.Stream,System.Byte[],System.Int32,System.Int32,System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer1, int32_t ___offset2, int32_t ___count3, int64_t ___contentLength4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_m961AF8E3D75BBF6005F040B5F28883C15D33A8A0 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___1_buffer, int32_t ___2_offset, int32_t ___3_count, int64_t ___4_contentLength, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23704,17 +24215,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream__ctor_m961AF8E3D75BBF6005F
 	{
 		il2cpp_codegen_runtime_class_init_inline(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var);
 		Stream__ctor_mE8B074A0EBEB026FFF14062AB4B8A78E17EFFBF0(__this, NULL);
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___stream0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___0_stream;
 		__this->____stream_10 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stream_10), (void*)L_0);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___buffer1;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___1_buffer;
 		__this->____buffer_6 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____buffer_6), (void*)L_1);
-		int32_t L_2 = ___offset2;
+		int32_t L_2 = ___2_offset;
 		__this->____offset_9 = L_2;
-		int32_t L_3 = ___count3;
+		int32_t L_3 = ___3_count;
 		__this->____count_7 = L_3;
-		int64_t L_4 = ___contentLength4;
+		int64_t L_4 = ___4_contentLength;
 		__this->____bodyLeft_5 = L_4;
 		return;
 	}
@@ -23761,7 +24272,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RequestStream_get_Position_m4C286047A
 	}
 }
 // System.Void WebSocketSharp.Net.RequestStream::set_Position(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_set_Position_mCD1EC93089614339FF75068032B545E8FD91EB9B (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_set_Position_mCD1EC93089614339FF75068032B545E8FD91EB9B (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -23771,11 +24282,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_set_Position_mCD1EC9308961
 	}
 }
 // System.Int32 WebSocketSharp.Net.RequestStream::fillFromBuffer(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___buffer0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_buffer;
 		if (L_0)
 		{
 			goto IL_000e;
@@ -23790,7 +24301,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_fillFromBuffer_mD4A76EF
 
 IL_000e:
 	{
-		int32_t L_2 = ___offset1;
+		int32_t L_2 = ___1_offset;
 		if ((((int32_t)L_2) >= ((int32_t)0)))
 		{
 			goto IL_0022;
@@ -23805,7 +24316,7 @@ IL_000e:
 
 IL_0022:
 	{
-		int32_t L_4 = ___count2;
+		int32_t L_4 = ___2_count;
 		if ((((int32_t)L_4) >= ((int32_t)0)))
 		{
 			goto IL_0036;
@@ -23820,11 +24331,11 @@ IL_0022:
 
 IL_0036:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___buffer0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___0_buffer;
 		NullCheck(L_6);
 		V_0 = ((int32_t)(((RuntimeArray*)L_6)->max_length));
-		int32_t L_7 = ___offset1;
-		int32_t L_8 = ___count2;
+		int32_t L_7 = ___1_offset;
+		int32_t L_8 = ___2_count;
 		int32_t L_9 = V_0;
 		if ((((int32_t)((int32_t)il2cpp_codegen_add(L_7, L_8))) <= ((int32_t)L_9)))
 		{
@@ -23859,7 +24370,7 @@ IL_0055:
 		}
 	}
 	{
-		int32_t L_13 = ___count2;
+		int32_t L_13 = ___2_count;
 		if (L_13)
 		{
 			goto IL_0062;
@@ -23873,7 +24384,7 @@ IL_0060:
 
 IL_0062:
 	{
-		int32_t L_14 = ___count2;
+		int32_t L_14 = ___2_count;
 		int32_t L_15 = __this->____count_7;
 		if ((((int32_t)L_14) <= ((int32_t)L_15)))
 		{
@@ -23882,7 +24393,7 @@ IL_0062:
 	}
 	{
 		int32_t L_16 = __this->____count_7;
-		___count2 = L_16;
+		___2_count = L_16;
 	}
 
 IL_0073:
@@ -23894,7 +24405,7 @@ IL_0073:
 		}
 	}
 	{
-		int32_t L_18 = ___count2;
+		int32_t L_18 = ___2_count;
 		int64_t L_19 = __this->____bodyLeft_5;
 		if ((((int64_t)((int64_t)L_18)) <= ((int64_t)L_19)))
 		{
@@ -23903,22 +24414,22 @@ IL_0073:
 	}
 	{
 		int64_t L_20 = __this->____bodyLeft_5;
-		___count2 = ((int32_t)L_20);
+		___2_count = ((int32_t)L_20);
 	}
 
 IL_0090:
 	{
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_21 = __this->____buffer_6;
 		int32_t L_22 = __this->____offset_9;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_23 = ___buffer0;
-		int32_t L_24 = ___offset1;
-		int32_t L_25 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_23 = ___0_buffer;
+		int32_t L_24 = ___1_offset;
+		int32_t L_25 = ___2_count;
 		Buffer_BlockCopy_m2F7BC0C5BA97C500E3F87D5008718F797E02B358((RuntimeArray*)L_21, L_22, (RuntimeArray*)L_23, L_24, L_25, NULL);
 		int32_t L_26 = __this->____offset_9;
-		int32_t L_27 = ___count2;
+		int32_t L_27 = ___2_count;
 		__this->____offset_9 = ((int32_t)il2cpp_codegen_add(L_26, L_27));
 		int32_t L_28 = __this->____count_7;
-		int32_t L_29 = ___count2;
+		int32_t L_29 = ___2_count;
 		__this->____count_7 = ((int32_t)il2cpp_codegen_subtract(L_28, L_29));
 		int64_t L_30 = __this->____bodyLeft_5;
 		if ((((int64_t)L_30) <= ((int64_t)((int64_t)0))))
@@ -23928,18 +24439,18 @@ IL_0090:
 	}
 	{
 		int64_t L_31 = __this->____bodyLeft_5;
-		int32_t L_32 = ___count2;
+		int32_t L_32 = ___2_count;
 		__this->____bodyLeft_5 = ((int64_t)il2cpp_codegen_subtract(L_31, ((int64_t)L_32)));
 	}
 
 IL_00d9:
 	{
-		int32_t L_33 = ___count2;
+		int32_t L_33 = ___2_count;
 		return L_33;
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.RequestStream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RequestStream_BeginRead_mA275F3593C2E7727BB65A3E7B20974378B7135B1 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback3, RuntimeObject* ___state4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RequestStream_BeginRead_mA275F3593C2E7727BB65A3E7B20974378B7135B1 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___3_callback, RuntimeObject* ___4_state, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -23976,9 +24487,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RequestStream_BeginRead_mA275F
 
 IL_0019:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___buffer0;
-		int32_t L_5 = ___offset1;
-		int32_t L_6 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_buffer;
+		int32_t L_5 = ___1_offset;
+		int32_t L_6 = ___2_count;
 		int32_t L_7;
 		L_7 = RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC(__this, L_4, L_5, L_6, NULL);
 		V_0 = L_7;
@@ -23998,21 +24509,21 @@ IL_0019:
 
 IL_002b:
 	{
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_10 = ___callback3;
-		RuntimeObject* L_11 = ___state4;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_10 = ___3_callback;
+		RuntimeObject* L_11 = ___4_state;
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_12 = (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D*)il2cpp_codegen_object_new(HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D_il2cpp_TypeInfo_var);
 		NullCheck(L_12);
 		HttpStreamAsyncResult__ctor_m704CA13065EBA99F802F6F18B1C198F6E61CCA15(L_12, L_10, L_11, NULL);
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_13 = L_12;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___buffer0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = ___0_buffer;
 		NullCheck(L_13);
 		HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C_inline(L_13, L_14, NULL);
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_15 = L_13;
-		int32_t L_16 = ___offset1;
+		int32_t L_16 = ___1_offset;
 		NullCheck(L_15);
 		HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE_inline(L_15, L_16, NULL);
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_17 = L_15;
-		int32_t L_18 = ___count2;
+		int32_t L_18 = ___2_count;
 		NullCheck(L_17);
 		HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1_inline(L_17, L_18, NULL);
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_19 = L_17;
@@ -24060,7 +24571,7 @@ IL_005e:
 		}
 	}
 	{
-		int32_t L_24 = ___count2;
+		int32_t L_24 = ___2_count;
 		int64_t L_25 = __this->____bodyLeft_5;
 		if ((((int64_t)((int64_t)L_24)) <= ((int64_t)L_25)))
 		{
@@ -24069,17 +24580,17 @@ IL_005e:
 	}
 	{
 		int64_t L_26 = __this->____bodyLeft_5;
-		___count2 = ((int32_t)L_26);
+		___2_count = ((int32_t)L_26);
 	}
 
 IL_007b:
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_27 = __this->____stream_10;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_28 = ___buffer0;
-		int32_t L_29 = ___offset1;
-		int32_t L_30 = ___count2;
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_31 = ___callback3;
-		RuntimeObject* L_32 = ___state4;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_28 = ___0_buffer;
+		int32_t L_29 = ___1_offset;
+		int32_t L_30 = ___2_count;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_31 = ___3_callback;
+		RuntimeObject* L_32 = ___4_state;
 		NullCheck(L_27);
 		RuntimeObject* L_33;
 		L_33 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(17 /* System.IAsyncResult System.IO.Stream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_27, L_28, L_29, L_30, L_31, L_32);
@@ -24087,7 +24598,7 @@ IL_007b:
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.RequestStream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RequestStream_BeginWrite_m4D9B680E1E0168E3B9E282611F319CA739D0C18C (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback3, RuntimeObject* ___state4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* RequestStream_BeginWrite_m4D9B680E1E0168E3B9E282611F319CA739D0C18C (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___3_callback, RuntimeObject* ___4_state, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24105,7 +24616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_Close_mDE4A608266818ED81C5
 	}
 }
 // System.Int32 WebSocketSharp.Net.RequestStream::EndRead(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_EndRead_m747AD8C2DD584B7438BC9CFE587B11999E9CA5F2 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_EndRead_m747AD8C2DD584B7438BC9CFE587B11999E9CA5F2 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24136,7 +24647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_EndRead_m747AD8C2DD584B
 
 IL_0019:
 	{
-		RuntimeObject* L_4 = ___asyncResult0;
+		RuntimeObject* L_4 = ___0_asyncResult;
 		if (L_4)
 		{
 			goto IL_0027;
@@ -24151,14 +24662,14 @@ IL_0019:
 
 IL_0027:
 	{
-		RuntimeObject* L_6 = ___asyncResult0;
+		RuntimeObject* L_6 = ___0_asyncResult;
 		if (!((HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D*)IsInstClass((RuntimeObject*)L_6, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D_il2cpp_TypeInfo_var)))
 		{
 			goto IL_0051;
 		}
 	}
 	{
-		RuntimeObject* L_7 = ___asyncResult0;
+		RuntimeObject* L_7 = ___0_asyncResult;
 		V_1 = ((HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D*)CastclassClass((RuntimeObject*)L_7, HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D_il2cpp_TypeInfo_var));
 		HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* L_8 = V_1;
 		NullCheck(L_8);
@@ -24191,7 +24702,7 @@ IL_004a:
 IL_0051:
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_15 = __this->____stream_10;
-		RuntimeObject* L_16 = ___asyncResult0;
+		RuntimeObject* L_16 = ___0_asyncResult;
 		NullCheck(L_15);
 		int32_t L_17;
 		L_17 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(18 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, L_15, L_16);
@@ -24222,7 +24733,7 @@ IL_007b:
 	}
 }
 // System.Void WebSocketSharp.Net.RequestStream::EndWrite(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_EndWrite_mFCF131A89C548921EC25612B47F7282890AAD466 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_EndWrite_mFCF131A89C548921EC25612B47F7282890AAD466 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24239,7 +24750,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_Flush_m6CE03B13BEAD6FF9D81
 	}
 }
 // System.Int32 WebSocketSharp.Net.RequestStream::Read(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_Read_m081169E166544D6B250427108ECCFC550CFA3B87 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_Read_m081169E166544D6B250427108ECCFC550CFA3B87 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
 	{
@@ -24263,9 +24774,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t RequestStream_Read_m081169E166544D6B2
 
 IL_0019:
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___buffer0;
-		int32_t L_5 = ___offset1;
-		int32_t L_6 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = ___0_buffer;
+		int32_t L_5 = ___1_offset;
+		int32_t L_6 = ___2_count;
 		int32_t L_7;
 		L_7 = RequestStream_fillFromBuffer_mD4A76EFD60BA1F4591229D1D9EBAF66A778700BC(__this, L_4, L_5, L_6, NULL);
 		V_0 = L_7;
@@ -24295,9 +24806,9 @@ IL_0029:
 IL_002f:
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_11 = __this->____stream_10;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = ___buffer0;
-		int32_t L_13 = ___offset1;
-		int32_t L_14 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = ___0_buffer;
+		int32_t L_13 = ___1_offset;
+		int32_t L_14 = ___2_count;
 		NullCheck(L_11);
 		int32_t L_15;
 		L_15 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(27 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_11, L_12, L_13, L_14);
@@ -24328,7 +24839,7 @@ IL_005b:
 	}
 }
 // System.Int64 WebSocketSharp.Net.RequestStream::Seek(System.Int64,System.IO.SeekOrigin)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RequestStream_Seek_mBA10BF0F2A4A94B8401732418AEB2B3045C56336 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___offset0, int32_t ___origin1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RequestStream_Seek_mBA10BF0F2A4A94B8401732418AEB2B3045C56336 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___0_offset, int32_t ___1_origin, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24338,7 +24849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t RequestStream_Seek_mBA10BF0F2A4A94B84
 	}
 }
 // System.Void WebSocketSharp.Net.RequestStream::SetLength(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_SetLength_mD53F281D3308EDD117DEFE3A981917AE91B2EE24 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_SetLength_mD53F281D3308EDD117DEFE3A981917AE91B2EE24 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24348,7 +24859,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_SetLength_mD53F281D3308EDD
 	}
 }
 // System.Void WebSocketSharp.Net.RequestStream::Write(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_Write_m44A7F61627687D533692D291B255B049D1B73F75 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_Write_m44A7F61627687D533692D291B255B049D1B73F75 (RequestStream_t60B8820417BF026EFEE75A8361511578D5D5DD3F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24366,7 +24877,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RequestStream_Write_m44A7F61627687D53369
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void WebSocketSharp.Net.ResponseStream::.ctor(System.IO.Stream,WebSocketSharp.Net.HttpListenerResponse,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D7F156CFD64F70C77377712 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___stream0, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___response1, bool ___ignoreWriteExceptions2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D7F156CFD64F70C77377712 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* ___0_stream, HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* ___1_response, bool ___2_ignoreWriteExceptions, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24382,13 +24893,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D
 	{
 		il2cpp_codegen_runtime_class_init_inline(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var);
 		Stream__ctor_mE8B074A0EBEB026FFF14062AB4B8A78E17EFFBF0(__this, NULL);
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___stream0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = ___0_stream;
 		__this->____stream_10 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stream_10), (void*)L_0);
-		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_1 = ___response1;
+		HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* L_1 = ___1_response;
 		__this->____response_8 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____response_8), (void*)L_1);
-		bool L_2 = ___ignoreWriteExceptions2;
+		bool L_2 = ___2_ignoreWriteExceptions;
 		if (!L_2)
 		{
 			goto IL_003d;
@@ -24410,7 +24921,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream__ctor_mE89E7645A0D3743B4D
 
 IL_003d:
 	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ___stream0;
+		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = ___0_stream;
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_6 = L_5;
 		Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* L_7 = (Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B*)il2cpp_codegen_object_new(Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B_il2cpp_TypeInfo_var);
 		NullCheck(L_7);
@@ -24477,7 +24988,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ResponseStream_get_Position_mA1FBA4A1
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::set_Position(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_set_Position_mAA93C1A668AC347EB65C6B8510781E29D544F57F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_set_Position_mAA93C1A668AC347EB65C6B8510781E29D544F57F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -24487,7 +24998,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_set_Position_mAA93C1A668A
 	}
 }
 // System.Boolean WebSocketSharp.Net.ResponseStream::flush(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF2743ADB25BC484D4C45F1232 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF2743ADB25BC484D4C45F1232 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24511,7 +25022,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF27
 		}
 	}
 	{
-		bool L_2 = ___closing0;
+		bool L_2 = ___0_closing;
 		bool L_3;
 		L_3 = ResponseStream_flushHeaders_m90AB030F6731C63E59F0B2431A8A43B81D6F2463(__this, L_2, NULL);
 		if (L_3)
@@ -24520,7 +25031,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flush_m225750C2026782FF27
 		}
 	}
 	{
-		bool L_4 = ___closing0;
+		bool L_4 = ___0_closing;
 		if (!L_4)
 		{
 			goto IL_0025;
@@ -24575,9 +25086,9 @@ IL_004f:
 
 IL_0054:
 	{
-		bool L_11 = ___closing0;
+		bool L_11 = ___0_closing;
 		ResponseStream_flushBody_m45A960CA72EEF659345B27F07943DA5D0C8DB89F(__this, L_11, NULL);
-		bool L_12 = ___closing0;
+		bool L_12 = ___0_closing;
 		if (!L_12)
 		{
 			goto IL_007e;
@@ -24609,7 +25120,7 @@ IL_007e:
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::flushBody(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_flushBody_m45A960CA72EEF659345B27F07943DA5D0C8DB89F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_flushBody_m45A960CA72EEF659345B27F07943DA5D0C8DB89F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24743,7 +25254,7 @@ IL_007e_1:
 
 IL_008a:
 	{
-		bool L_22 = ___closing0;
+		bool L_22 = ___0_closing;
 		G_B13_0 = __this;
 		if (!L_22)
 		{
@@ -24775,7 +25286,7 @@ IL_0096:
 	}
 }
 // System.Boolean WebSocketSharp.Net.ResponseStream::flushHeaders(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flushHeaders_m90AB030F6731C63E59F0B2431A8A43B81D6F2463 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___closing0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ResponseStream_flushHeaders_m90AB030F6731C63E59F0B2431A8A43B81D6F2463 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_closing, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24927,7 +25438,7 @@ IL_00aa:
 	}
 }
 // System.Byte[] WebSocketSharp.Net.ResponseStream::getChunkSizeBytes(System.Int32,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ResponseStream_getChunkSizeBytes_m71164B7D7819E5493E046D13C91285224861940B (int32_t ___size0, bool ___final1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ResponseStream_getChunkSizeBytes_m71164B7D7819E5493E046D13C91285224861940B (int32_t ___0_size, bool ___1_final, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -24951,10 +25462,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 	{
 		Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* L_0;
 		L_0 = Encoding_get_ASCII_mCC61B512D320FD4E2E71CC0DFDF8DDF3CD215C65(NULL);
-		int32_t L_1 = ___size0;
+		int32_t L_1 = ___0_size;
 		int32_t L_2 = L_1;
 		RuntimeObject* L_3 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_2);
-		bool L_4 = ___final1;
+		bool L_4 = ___1_final;
 		G_B1_0 = L_3;
 		G_B1_1 = _stringLiteral0E785F98AA2B874444D8321FE5FE5011E16FFBDB;
 		G_B1_2 = L_0;
@@ -24993,7 +25504,7 @@ IL_001f:
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::writeChunked(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A517600A0BA088C7800CF93B057967455A (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A517600A0BA088C7800CF93B057967455A (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -25003,7 +25514,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A5176
 	}
 	ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* V_0 = NULL;
 	{
-		int32_t L_0 = ___count2;
+		int32_t L_0 = ___2_count;
 		il2cpp_codegen_runtime_class_init_inline(ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F_il2cpp_TypeInfo_var);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1;
 		L_1 = ResponseStream_getChunkSizeBytes_m71164B7D7819E5493E046D13C91285224861940B(L_0, (bool)0, NULL);
@@ -25015,9 +25526,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A5176
 		NullCheck(L_2);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_2, L_3, 0, ((int32_t)(((RuntimeArray*)L_4)->max_length)));
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_5 = __this->____stream_10;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___buffer0;
-		int32_t L_7 = ___offset1;
-		int32_t L_8 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = ___0_buffer;
+		int32_t L_7 = ___1_offset;
+		int32_t L_8 = ___2_count;
 		NullCheck(L_5);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_5, L_6, L_7, L_8);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = __this->____stream_10;
@@ -25028,14 +25539,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunked_m395B67A5176
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::writeChunkedWithoutThrowingException(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunkedWithoutThrowingException_m24DB137562323E63CC91525D80EA531FE883539F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeChunkedWithoutThrowingException_m24DB137562323E63CC91525D80EA531FE883539F (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{// begin try (depth: 1)
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___buffer0;
-		int32_t L_1 = ___offset1;
-		int32_t L_2 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_buffer;
+		int32_t L_1 = ___1_offset;
+		int32_t L_2 = ___2_count;
 		ResponseStream_writeChunked_m395B67A517600A0BA088C7800CF93B057967455A(__this, L_0, L_1, L_2, NULL);
 		goto IL_000e;
 	}// end try (depth: 1)
@@ -25061,15 +25572,15 @@ IL_000e:
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::writeWithoutThrowingException(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeWithoutThrowingException_m155F53CF6CDB362541A4789F0BCDC247F6CE7817 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_writeWithoutThrowingException_m155F53CF6CDB362541A4789F0BCDC247F6CE7817 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	try
 	{// begin try (depth: 1)
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->____stream_10;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___buffer0;
-		int32_t L_2 = ___offset1;
-		int32_t L_3 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_buffer;
+		int32_t L_2 = ___1_offset;
+		int32_t L_3 = ___2_count;
 		NullCheck(L_0);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_0, L_1, L_2, L_3);
 		goto IL_0013;
@@ -25096,7 +25607,7 @@ IL_0013:
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::Close(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m0FDD104113A5B5CA71A7DA6E6614E8A3D6FFB109 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___force0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m0FDD104113A5B5CA71A7DA6E6614E8A3D6FFB109 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_force, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -25119,7 +25630,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m0FDD104113A5B5CA71
 IL_0009:
 	{
 		__this->____disposed_7 = (bool)1;
-		bool L_1 = ___force0;
+		bool L_1 = ___0_force;
 		if (L_1)
 		{
 			goto IL_0029;
@@ -25183,20 +25694,20 @@ IL_0066:
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::InternalWrite(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_InternalWrite_m5D377BCBA90D0AE4DD3046869ECB88B22F4E846D (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_InternalWrite_m5D377BCBA90D0AE4DD3046869ECB88B22F4E846D (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	{
 		Action_3_t9FCE45D8430C8E4546F9417E50E5E511A9A79E4B* L_0 = __this->____write_11;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___buffer0;
-		int32_t L_2 = ___offset1;
-		int32_t L_3 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = ___0_buffer;
+		int32_t L_2 = ___1_offset;
+		int32_t L_3 = ___2_count;
 		NullCheck(L_0);
 		Action_3_Invoke_mB60DEBEEAA6E9A023081F18CB01CCB6EA61C1C4E_inline(L_0, L_1, L_2, L_3, NULL);
 		return;
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.ResponseStream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginRead_mFA712084EDA83E0D9468DB49B8E34637C8D4605E (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback3, RuntimeObject* ___state4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginRead_mFA712084EDA83E0D9468DB49B8E34637C8D4605E (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___3_callback, RuntimeObject* ___4_state, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -25206,7 +25717,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginRead_mFA71
 	}
 }
 // System.IAsyncResult WebSocketSharp.Net.ResponseStream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginWrite_mDA3918F87EC85C8130ACA212A572370B4DFEF3FF (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback3, RuntimeObject* ___state4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginWrite_mDA3918F87EC85C8130ACA212A572370B4DFEF3FF (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___3_callback, RuntimeObject* ___4_state, const RuntimeMethod* method) 
 {
 	{
 		bool L_0 = __this->____disposed_7;
@@ -25230,11 +25741,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ResponseStream_BeginWrite_mDA3
 IL_0019:
 	{
 		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = __this->____body_5;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___buffer0;
-		int32_t L_6 = ___offset1;
-		int32_t L_7 = ___count2;
-		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_8 = ___callback3;
-		RuntimeObject* L_9 = ___state4;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___0_buffer;
+		int32_t L_6 = ___1_offset;
+		int32_t L_7 = ___2_count;
+		AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* L_8 = ___3_callback;
+		RuntimeObject* L_9 = ___4_state;
 		NullCheck(L_4);
 		RuntimeObject* L_10;
 		L_10 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(21 /* System.IAsyncResult System.IO.Stream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, L_4, L_5, L_6, L_7, L_8, L_9);
@@ -25250,16 +25761,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Close_m32F6DF52522098D7D6
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::Dispose(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Dispose_m743489B8F9DCE88EE1D8EAF65FF8F133D26367B3 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___disposing0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Dispose_m743489B8F9DCE88EE1D8EAF65FF8F133D26367B3 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, bool ___0_disposing, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___disposing0;
+		bool L_0 = ___0_disposing;
 		ResponseStream_Close_m0FDD104113A5B5CA71A7DA6E6614E8A3D6FFB109(__this, (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0), NULL);
 		return;
 	}
 }
 // System.Int32 WebSocketSharp.Net.ResponseStream::EndRead(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_EndRead_m48C2EAEB0A0E307AE1D6D9ABBCB6B7B7F6F3DB93 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_EndRead_m48C2EAEB0A0E307AE1D6D9ABBCB6B7B7F6F3DB93 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -25269,7 +25780,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_EndRead_m48C2EAEB0A0E3
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::EndWrite(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_EndWrite_m1AA9C9C78F9EC86E0A91846C521771010129E9D0 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, RuntimeObject* ___asyncResult0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_EndWrite_m1AA9C9C78F9EC86E0A91846C521771010129E9D0 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, RuntimeObject* ___0_asyncResult, const RuntimeMethod* method) 
 {
 	{
 		bool L_0 = __this->____disposed_7;
@@ -25293,7 +25804,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_EndWrite_m1AA9C9C78F9EC86
 IL_0019:
 	{
 		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = __this->____body_5;
-		RuntimeObject* L_5 = ___asyncResult0;
+		RuntimeObject* L_5 = ___0_asyncResult;
 		NullCheck(L_4);
 		VirtualActionInvoker1< RuntimeObject* >::Invoke(22 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, L_4, L_5);
 		return;
@@ -25339,7 +25850,7 @@ IL_0025:
 	}
 }
 // System.Int32 WebSocketSharp.Net.ResponseStream::Read(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_Read_mF013A6F195134DB01DF9056910BD326523EF2DE0 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_Read_mF013A6F195134DB01DF9056910BD326523EF2DE0 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -25349,7 +25860,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ResponseStream_Read_mF013A6F195134DB0
 	}
 }
 // System.Int64 WebSocketSharp.Net.ResponseStream::Seek(System.Int64,System.IO.SeekOrigin)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ResponseStream_Seek_mBBCCAB8FBB992F5A3A89EA3B53A8C166526070C4 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___offset0, int32_t ___origin1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ResponseStream_Seek_mBBCCAB8FBB992F5A3A89EA3B53A8C166526070C4 (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___0_offset, int32_t ___1_origin, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -25359,7 +25870,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t ResponseStream_Seek_mBBCCAB8FBB992F5A
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::SetLength(System.Int64)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_SetLength_m39AD97BD7E277744B0C02A675B7D0B666C3F95BD (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_SetLength_m39AD97BD7E277744B0C02A675B7D0B666C3F95BD (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, int64_t ___0_value, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
@@ -25369,7 +25880,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_SetLength_m39AD97BD7E2777
 	}
 }
 // System.Void WebSocketSharp.Net.ResponseStream::Write(System.Byte[],System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Write_m9277EF647C7F7B090DB0BDB7E121B24BE22EA6BE (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___buffer0, int32_t ___offset1, int32_t ___count2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Write_m9277EF647C7F7B090DB0BDB7E121B24BE22EA6BE (ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_buffer, int32_t ___1_offset, int32_t ___2_count, const RuntimeMethod* method) 
 {
 	{
 		bool L_0 = __this->____disposed_7;
@@ -25393,9 +25904,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResponseStream_Write_m9277EF647C7F7B090D
 IL_0019:
 	{
 		MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_4 = __this->____body_5;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___buffer0;
-		int32_t L_6 = ___offset1;
-		int32_t L_7 = ___count2;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = ___0_buffer;
+		int32_t L_6 = ___1_offset;
+		int32_t L_7 = ___2_count;
 		NullCheck(L_4);
 		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_4, L_5, L_6, L_7);
 		return;
@@ -25442,11 +25953,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_m702ED673DA
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_mA79D03373A14C258F9FBAD116D6150E23A491F0B (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ___serverCertificate0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_mA79D03373A14C258F9FBAD116D6150E23A491F0B (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ___0_serverCertificate, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_0 = ___serverCertificate0;
+		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_0 = ___0_serverCertificate;
 		__this->____serverCert_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____serverCert_4), (void*)L_0);
 		__this->____enabledSslProtocols_3 = ((int32_t)240);
@@ -25454,11 +25965,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_mA79D03373A
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::.ctor(WebSocketSharp.Net.ServerSslConfiguration)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_m6267B89BA56D946A03673DBCDB5E053D53552875 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___configuration0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_m6267B89BA56D946A03673DBCDB5E053D53552875 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* ___0_configuration, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_0 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_0 = ___0_configuration;
 		if (L_0)
 		{
 			goto IL_0014;
@@ -25473,24 +25984,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration__ctor_m6267B89BA5
 
 IL_0014:
 	{
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_2 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_2 = ___0_configuration;
 		NullCheck(L_2);
 		bool L_3 = L_2->____checkCertRevocation_0;
 		__this->____checkCertRevocation_0 = L_3;
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_4 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_4 = ___0_configuration;
 		NullCheck(L_4);
 		bool L_5 = L_4->____clientCertRequired_1;
 		__this->____clientCertRequired_1 = L_5;
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_6 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_6 = ___0_configuration;
 		NullCheck(L_6);
 		RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* L_7 = L_6->____clientCertValidationCallback_2;
 		__this->____clientCertValidationCallback_2 = L_7;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____clientCertValidationCallback_2), (void*)L_7);
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_8 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_8 = ___0_configuration;
 		NullCheck(L_8);
 		int32_t L_9 = L_8->____enabledSslProtocols_3;
 		__this->____enabledSslProtocols_3 = L_9;
-		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_10 = ___configuration0;
+		ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* L_10 = ___0_configuration;
 		NullCheck(L_10);
 		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_11 = L_10->____serverCert_4;
 		__this->____serverCert_4 = L_11;
@@ -25507,10 +26018,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ServerSslConfiguration_get_CheckCertific
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::set_CheckCertificateRevocation(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_CheckCertificateRevocation_m225B1CEF5DE45524C980C2D39AA87EE8D794BE41 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_CheckCertificateRevocation_m225B1CEF5DE45524C980C2D39AA87EE8D794BE41 (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____checkCertRevocation_0 = L_0;
 		return;
 	}
@@ -25524,10 +26035,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ServerSslConfiguration_get_ClientCertifi
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::set_ClientCertificateRequired(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ClientCertificateRequired_mA018D1609158931B07FB79783B891AB0C897DCAB (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ClientCertificateRequired_mA018D1609158931B07FB79783B891AB0C897DCAB (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____clientCertRequired_1 = L_0;
 		return;
 	}
@@ -25564,10 +26075,10 @@ IL_001a:
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::set_ClientCertificateValidationCallback(System.Net.Security.RemoteCertificateValidationCallback)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ClientCertificateValidationCallback_m1198C45E5F77FD102BCAB4CDEC1FDEF573B6FD9A (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ClientCertificateValidationCallback_m1198C45E5F77FD102BCAB4CDEC1FDEF573B6FD9A (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* L_0 = ___value0;
+		RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955* L_0 = ___0_value;
 		__this->____clientCertValidationCallback_2 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____clientCertValidationCallback_2), (void*)L_0);
 		return;
@@ -25582,10 +26093,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ServerSslConfiguration_get_EnabledSsl
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::set_EnabledSslProtocols(System.Security.Authentication.SslProtocols)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_EnabledSslProtocols_mBEB0DA236A940B3A1988C679E6DC85E01C48E7BA (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_EnabledSslProtocols_mBEB0DA236A940B3A1988C679E6DC85E01C48E7BA (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____enabledSslProtocols_3 = L_0;
 		return;
 	}
@@ -25599,17 +26110,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR X509Certificate2_t2BEAEA485A3CEA81D191B12A341
 	}
 }
 // System.Void WebSocketSharp.Net.ServerSslConfiguration::set_ServerCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ServerCertificate_mEEF639154E7CB5960DCCABB23B6B452679B273BA (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ServerSslConfiguration_set_ServerCertificate_mEEF639154E7CB5960DCCABB23B6B452679B273BA (ServerSslConfiguration_t57F1D37D7E44CF7DB14B7C3EED8E78314248B31B* __this, X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_0 = ___value0;
+		X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D* L_0 = ___0_value;
 		__this->____serverCert_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____serverCert_4), (void*)L_0);
 		return;
 	}
 }
 // System.Boolean WebSocketSharp.Net.ServerSslConfiguration::defaultValidateClientCertificate(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ServerSslConfiguration_defaultValidateClientCertificate_mB495F7DD2839C4257A9A7ED423993A6F8E70C234 (RuntimeObject* ___sender0, X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4* ___certificate1, X509Chain_t2E7F88A4C97CAB82AF938F13A11354A0475469E5* ___chain2, int32_t ___sslPolicyErrors3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ServerSslConfiguration_defaultValidateClientCertificate_mB495F7DD2839C4257A9A7ED423993A6F8E70C234 (RuntimeObject* ___0_sender, X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4* ___1_certificate, X509Chain_t2E7F88A4C97CAB82AF938F13A11354A0475469E5* ___2_chain, int32_t ___3_sslPolicyErrors, const RuntimeMethod* method) 
 {
 	{
 		return (bool)1;
@@ -26105,19 +26616,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__cctor_m341751A623BC
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::.ctor(WebSocketSharp.Net.HttpHeaderType,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m76014848A87E8206BD9F75D6A464D44961F9DC05 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___state0, bool ___internallyUsed1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m76014848A87E8206BD9F75D6A464D44961F9DC05 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_state, bool ___1_internallyUsed, const RuntimeMethod* method) 
 {
 	{
 		NameValueCollection__ctor_mCA29E5386DACDF19F6F51BC395324F0A8EE05604(__this, NULL);
-		int32_t L_0 = ___state0;
+		int32_t L_0 = ___0_state;
 		__this->____state_22 = L_0;
-		bool L_1 = ___internallyUsed1;
+		bool L_1 = ___1_internallyUsed;
 		__this->____internallyUsed_21 = L_1;
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m87C3588934ACC5FD82144CF77E9B76B70FE35AC2 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___serializationInfo0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___streamingContext1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m87C3588934ACC5FD82144CF77E9B76B70FE35AC2 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_serializationInfo, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_streamingContext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26134,7 +26645,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection__ctor_m87C3588934ACC
 	il2cpp::utils::ExceptionSupportStack<RuntimeObject*, 1> __active_exceptions;
 	{
 		NameValueCollection__ctor_mCA29E5386DACDF19F6F51BC395324F0A8EE05604(__this, NULL);
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___serializationInfo0;
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___0_serializationInfo;
 		if (L_0)
 		{
 			goto IL_0014;
@@ -26153,17 +26664,17 @@ IL_0014:
 	try
 	{// begin try (depth: 1)
 		{
-			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_2 = ___serializationInfo0;
+			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_2 = ___0_serializationInfo;
 			NullCheck(L_2);
 			bool L_3;
 			L_3 = SerializationInfo_GetBoolean_m8335F8E11B572AB6B5BF85A9355D6888D5847EF5(L_2, _stringLiteral7BC3BD243173F0F63442D697240DEF15BE8C5C03, NULL);
 			__this->____internallyUsed_21 = L_3;
-			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_4 = ___serializationInfo0;
+			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_4 = ___0_serializationInfo;
 			NullCheck(L_4);
 			int32_t L_5;
 			L_5 = SerializationInfo_GetInt32_m7731402825C7FC8D0673F7610D555615F95E4FB5(L_4, _stringLiteral916F6B1D0AAD57876A2BCB38638F93F526C3901E, NULL);
 			__this->____state_22 = L_5;
-			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_6 = ___serializationInfo0;
+			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_6 = ___0_serializationInfo;
 			NullCheck(L_6);
 			int32_t L_7;
 			L_7 = SerializationInfo_GetInt32_m7731402825C7FC8D0673F7610D555615F95E4FB5(L_6, _stringLiteral37B9D73BE7368F9E631CD06C5DC3758F48D4E89C, NULL);
@@ -26174,13 +26685,13 @@ IL_0014:
 
 IL_0047_1:
 		{
-			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_8 = ___serializationInfo0;
+			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_8 = ___0_serializationInfo;
 			String_t* L_9;
 			L_9 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 			NullCheck(L_8);
 			String_t* L_10;
 			L_10 = SerializationInfo_GetString_mF0753AFAA13AABF8A30B8F0890AEC52BFBBC73E9(L_8, L_9, NULL);
-			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_11 = ___serializationInfo0;
+			SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_11 = ___0_serializationInfo;
 			int32_t L_12 = V_0;
 			int32_t L_13 = V_1;
 			V_2 = ((int32_t)il2cpp_codegen_add(L_12, L_13));
@@ -26271,7 +26782,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_get_Count_m404F81
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::get_Item(WebSocketSharp.Net.HttpRequestHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_m09297285B892C3AE0682C5C9BB54BF9BE83B16FB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_m09297285B892C3AE0682C5C9BB54BF9BE83B16FB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26280,7 +26791,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_m09297
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		int32_t L_0 = ___header0;
+		int32_t L_0 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2(L_0, NULL);
@@ -26290,17 +26801,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_m09297
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::set_Item(WebSocketSharp.Net.HttpRequestHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_set_Item_mD10EC9C8F14B08D402F26668AFE83617CE6C97D7 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_set_Item_mD10EC9C8F14B08D402F26668AFE83617CE6C97D7 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___header0;
-		String_t* L_1 = ___value1;
+		int32_t L_0 = ___0_header;
+		String_t* L_1 = ___1_value;
 		WebHeaderCollection_Add_mE8C3D0C7E6F5029C1E0E4DC7F4B9955003A74731(__this, L_0, L_1, NULL);
 		return;
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::get_Item(WebSocketSharp.Net.HttpResponseHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_mE0C63760498B8E5EBBBE6395B7BF9372895DD7A6 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_mE0C63760498B8E5EBBBE6395B7BF9372895DD7A6 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26309,7 +26820,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_mE0C63
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		int32_t L_0 = ___header0;
+		int32_t L_0 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB(L_0, NULL);
@@ -26319,11 +26830,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_get_Item_mE0C63
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::set_Item(WebSocketSharp.Net.HttpResponseHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_set_Item_m9AEE27F81A3F0D5E392D0888715F209B48E31574 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_set_Item_m9AEE27F81A3F0D5E392D0888715F209B48E31574 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___header0;
-		String_t* L_1 = ___value1;
+		int32_t L_0 = ___0_header;
+		String_t* L_1 = ___1_value;
 		WebHeaderCollection_Add_m45A5940040855167710BA3E658229284DDC6B1A9(__this, L_0, L_1, NULL);
 		return;
 	}
@@ -26338,7 +26849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeysCollection_t8FF5FD8704F6F99F6FD4B8A2D27DF
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::add(System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, bool ___ignoreRestricted2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, bool ___2_ignoreRestricted, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26352,7 +26863,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_add_m8B2271A6B378A0C
 	Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* V_0 = NULL;
 	Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* G_B3_0 = NULL;
 	{
-		bool L_0 = ___ignoreRestricted2;
+		bool L_0 = ___2_ignoreRestricted;
 		if (L_0)
 		{
 			goto IL_0011;
@@ -26378,17 +26889,17 @@ IL_001d:
 	{
 		V_0 = G_B3_0;
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_3 = V_0;
-		String_t* L_4 = ___name0;
+		String_t* L_4 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_5;
 		L_5 = WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D(L_4, NULL);
-		String_t* L_6 = ___value1;
+		String_t* L_6 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A(__this, L_3, L_5, L_6, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::addWithoutCheckingName(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingName_m35EBC28F461BE403A4607AEAA51A179DACE98CF1 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingName_m35EBC28F461BE403A4607AEAA51A179DACE98CF1 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26401,14 +26912,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingNa
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)NameValueCollection_Add_m68C266151774CD1FC057C9349BAE09BDB15A26A7_RuntimeMethod_var), NULL);
-		String_t* L_1 = ___name0;
-		String_t* L_2 = ___value1;
+		String_t* L_1 = ___0_name;
+		String_t* L_2 = ___1_value;
 		WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62(__this, L_0, L_1, L_2, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::addWithoutCheckingNameAndRestricted(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingNameAndRestricted_m8F86169B86B9A8CB20CB9D054B9FA68B37828517 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingNameAndRestricted_m8F86169B86B9A8CB20CB9D054B9FA68B37828517 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26417,8 +26928,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingNa
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___name0;
-		String_t* L_1 = ___value1;
+		String_t* L_0 = ___0_name;
+		String_t* L_1 = ___1_value;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246(L_1, NULL);
@@ -26427,12 +26938,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_addWithoutCheckingNa
 	}
 }
 // System.Int32 WebSocketSharp.Net.WebHeaderCollection::checkColonSeparated(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5 (String_t* ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5 (String_t* ___0_header, const RuntimeMethod* method) 
 {
 	int32_t G_B2_0 = 0;
 	int32_t G_B1_0 = 0;
 	{
-		String_t* L_0 = ___header0;
+		String_t* L_0 = ___0_header;
 		NullCheck(L_0);
 		int32_t L_1;
 		L_1 = String_IndexOf_mE21E78F35EF4A7768E385A72814C88D22B689966(L_0, ((int32_t)58), NULL);
@@ -26457,7 +26968,7 @@ IL_001c:
 	}
 }
 // WebSocketSharp.Net.HttpHeaderType WebSocketSharp.Net.WebHeaderCollection::checkHeaderType(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkHeaderType_mFC4C398C2D4192087E3A3ABA9087EA59A98E9536 (String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkHeaderType_mFC4C398C2D4192087E3A3ABA9087EA59A98E9536 (String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26467,7 +26978,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t WebHeaderCollection_checkHeaderType_m
 	}
 	HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* V_0 = NULL;
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* L_1;
 		L_1 = WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C(L_0, NULL);
@@ -26542,7 +27053,7 @@ IL_0030:
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::checkName(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D (String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D (String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26551,14 +27062,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkName_m1B4F
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -26578,12 +27089,12 @@ IL_000b:
 
 IL_0016:
 	{
-		String_t* L_4 = ___name0;
+		String_t* L_4 = ___0_name;
 		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_4, NULL);
-		___name0 = L_5;
-		String_t* L_6 = ___name0;
+		___0_name = L_5;
+		String_t* L_6 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		bool L_7;
 		L_7 = WebHeaderCollection_IsHeaderName_mC54F9096EE75E22D32751E4FB0BA8EE45AE24868(L_6, NULL);
@@ -26601,12 +27112,12 @@ IL_0016:
 
 IL_0036:
 	{
-		String_t* L_9 = ___name0;
+		String_t* L_9 = ___0_name;
 		return L_9;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::checkRestricted(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26622,7 +27133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkRestricted_mAD9
 		}
 	}
 	{
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		bool L_2;
 		L_2 = WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2(L_1, (bool)1, NULL);
@@ -26644,7 +27155,7 @@ IL_001c:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::checkState(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkState_mA608EFE2CE431C9F47AB2B2CB5C18F9542969C9D (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkState_mA608EFE2CE431C9F47AB2B2CB5C18F9542969C9D (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___0_response, const RuntimeMethod* method) 
 {
 	{
 		int32_t L_0 = __this->____state_22;
@@ -26659,7 +27170,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_checkState_mA608EFE2
 
 IL_0009:
 	{
-		bool L_1 = ___response0;
+		bool L_1 = ___0_response;
 		if (!L_1)
 		{
 			goto IL_0020;
@@ -26681,7 +27192,7 @@ IL_0009:
 
 IL_0020:
 	{
-		bool L_4 = ___response0;
+		bool L_4 = ___0_response;
 		if (L_4)
 		{
 			goto IL_0037;
@@ -26707,7 +27218,7 @@ IL_0037:
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::checkValue(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246 (String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246 (String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26717,14 +27228,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_checkValue_m9DE
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___value0;
+		String_t* L_1 = ___0_value;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -26742,12 +27253,12 @@ IL_000b:
 
 IL_0011:
 	{
-		String_t* L_4 = ___value0;
+		String_t* L_4 = ___0_value;
 		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = String_Trim_mCD6D8C6D4CFD15225D12DB7D3E0544CA80FB8DA5(L_4, NULL);
-		___value0 = L_5;
-		String_t* L_6 = ___value0;
+		___0_value = L_5;
+		String_t* L_6 = ___0_value;
 		NullCheck(L_6);
 		int32_t L_7;
 		L_7 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_6, NULL);
@@ -26765,7 +27276,7 @@ IL_0011:
 
 IL_0036:
 	{
-		String_t* L_9 = ___value0;
+		String_t* L_9 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		bool L_10;
 		L_10 = WebHeaderCollection_IsHeaderValue_m60D4D9C69D9CA201730DC2CBB0BD994BF8D83FC4(L_9, NULL);
@@ -26783,12 +27294,12 @@ IL_0036:
 
 IL_004e:
 	{
-		String_t* L_12 = ___value0;
+		String_t* L_12 = ___0_value;
 		return L_12;
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::convert(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_convert_mF34E66CEF6FAE2A9B17B3F22EB257CD14EEF7839 (String_t* ___key0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_convert_mF34E66CEF6FAE2A9B17B3F22EB257CD14EEF7839 (String_t* ___0_key, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26802,7 +27313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_convert_mF34E66
 	{
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		Dictionary_2_t3A90C82D938D47128CF15BBD66A0B8DB06909839* L_0 = ((WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticFields*)il2cpp_codegen_static_fields_for(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var))->____headers_20;
-		String_t* L_1 = ___key0;
+		String_t* L_1 = ___0_key;
 		NullCheck(L_0);
 		bool L_2;
 		L_2 = Dictionary_2_TryGetValue_mBB21B1809D2264E208A68095124A5DD2FD0293EF(L_0, L_1, (&V_0), Dictionary_2_TryGetValue_mBB21B1809D2264E208A68095124A5DD2FD0293EF_RuntimeMethod_var);
@@ -26826,7 +27337,7 @@ IL_0015:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithCheckingState(System.Action`2<System.String,System.String>,System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, bool ___setState3, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, bool ___3_setState, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26836,7 +27347,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_
 	}
 	int32_t V_0 = 0;
 	{
-		String_t* L_0 = ___name1;
+		String_t* L_0 = ___1_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		int32_t L_1;
 		L_1 = WebHeaderCollection_checkHeaderType_mFC4C398C2D4192087E3A3ABA9087EA59A98E9536(L_0, NULL);
@@ -26848,10 +27359,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_
 		}
 	}
 	{
-		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_3 = ___action0;
-		String_t* L_4 = ___name1;
-		String_t* L_5 = ___value2;
-		bool L_6 = ___setState3;
+		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_3 = ___0_action;
+		String_t* L_4 = ___1_name;
+		String_t* L_5 = ___2_value;
+		bool L_6 = ___3_setState;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_3, L_4, L_5, (bool)0, L_6, NULL);
 		return;
 	}
@@ -26865,40 +27376,40 @@ IL_0018:
 		}
 	}
 	{
-		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_8 = ___action0;
-		String_t* L_9 = ___name1;
-		String_t* L_10 = ___value2;
-		bool L_11 = ___setState3;
+		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_8 = ___0_action;
+		String_t* L_9 = ___1_name;
+		String_t* L_10 = ___2_value;
+		bool L_11 = ___3_setState;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_8, L_9, L_10, (bool)1, L_11, NULL);
 		return;
 	}
 
 IL_0029:
 	{
-		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_12 = ___action0;
-		String_t* L_13 = ___name1;
-		String_t* L_14 = ___value2;
+		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_12 = ___0_action;
+		String_t* L_13 = ___1_name;
+		String_t* L_14 = ___2_value;
 		NullCheck(L_12);
 		Action_2_Invoke_m8FA30194997244EC0072D6B437818A22B65F2854_inline(L_12, L_13, L_14, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithCheckingState(System.Action`2<System.String,System.String>,System.String,System.String,System.Boolean,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, bool ___response3, bool ___setState4, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, bool ___3_response, bool ___4_setState, const RuntimeMethod* method) 
 {
 	WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* G_B4_0 = NULL;
 	WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* G_B3_0 = NULL;
 	int32_t G_B5_0 = 0;
 	WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* G_B5_1 = NULL;
 	{
-		bool L_0 = ___response3;
+		bool L_0 = ___3_response;
 		WebHeaderCollection_checkState_mA608EFE2CE431C9F47AB2B2CB5C18F9542969C9D(__this, L_0, NULL);
-		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_1 = ___action0;
-		String_t* L_2 = ___name1;
-		String_t* L_3 = ___value2;
+		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_1 = ___0_action;
+		String_t* L_2 = ___1_name;
+		String_t* L_3 = ___2_value;
 		NullCheck(L_1);
 		Action_2_Invoke_m8FA30194997244EC0072D6B437818A22B65F2854_inline(L_1, L_2, L_3, NULL);
-		bool L_4 = ___setState4;
+		bool L_4 = ___4_setState;
 		if (!L_4)
 		{
 			goto IL_002a;
@@ -26912,7 +27423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithCheckingState_
 		}
 	}
 	{
-		bool L_6 = ___response3;
+		bool L_6 = ___3_response;
 		G_B3_0 = __this;
 		if (L_6)
 		{
@@ -26944,7 +27455,7 @@ IL_002a:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::doWithoutCheckingName(System.Action`2<System.String,System.String>,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___action0, String_t* ___name1, String_t* ___value2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* ___0_action, String_t* ___1_name, String_t* ___2_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -26953,11 +27464,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingNam
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___name1;
+		String_t* L_0 = ___1_name;
 		WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105(__this, L_0, NULL);
-		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_1 = ___action0;
-		String_t* L_2 = ___name1;
-		String_t* L_3 = ___value2;
+		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_1 = ___0_action;
+		String_t* L_2 = ___1_name;
+		String_t* L_3 = ___2_value;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_4;
 		L_4 = WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246(L_3, NULL);
@@ -26967,7 +27478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_doWithoutCheckingNam
 	}
 }
 // WebSocketSharp.Net.HttpHeaderInfo WebSocketSharp.Net.WebHeaderCollection::getHeaderInfo(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C (String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C (String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27020,7 +27531,7 @@ IL_0012_1:
 				NullCheck(L_4);
 				String_t* L_5;
 				L_5 = HttpHeaderInfo_get_Name_m0E16E16322CB5CACE838CB6F7C7085391B7A81F7_inline(L_4, NULL);
-				String_t* L_6 = ___name0;
+				String_t* L_6 = ___0_name;
 				NullCheck(L_5);
 				bool L_7;
 				L_7 = String_Equals_m7BDFC0B951005B9DC2BAED464AFE68FF7E9ACE5A(L_5, L_6, 3, NULL);
@@ -27066,7 +27577,7 @@ IL_0048:
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::isRestricted(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2 (String_t* ___name0, bool ___response1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2 (String_t* ___0_name, bool ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27076,7 +27587,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE5
 	}
 	HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* V_0 = NULL;
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* L_1;
 		L_1 = WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C(L_0, NULL);
@@ -27089,7 +27600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_isRestricted_mCB0DE5
 	}
 	{
 		HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* L_3 = V_0;
-		bool L_4 = ___response1;
+		bool L_4 = ___1_response;
 		NullCheck(L_3);
 		bool L_5;
 		L_5 = HttpHeaderInfo_IsRestricted_mB2D9FB989CF4520F515E67F68CDB4D853CF4A81D(L_3, L_4, NULL);
@@ -27102,18 +27613,18 @@ IL_0012:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::removeWithoutCheckingName(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_removeWithoutCheckingName_m1DB1105CBBBA28922C3ED61CA808A99185573EB0 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___unuse1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_removeWithoutCheckingName_m1DB1105CBBBA28922C3ED61CA808A99185573EB0 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_unuse, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		WebHeaderCollection_checkRestricted_mAD952361889D3B3EF6A1ECCEE6134976CE5D6105(__this, L_0, NULL);
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		NameValueCollection_Remove_m2146E6474DDFBE19E35E57F777C4FE2625247D56(__this, L_1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::setWithoutCheckingName(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_setWithoutCheckingName_mEA87D7ED10AAC61BE3D691CBB5239428C08AD31A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_setWithoutCheckingName_mEA87D7ED10AAC61BE3D691CBB5239428C08AD31A (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27126,14 +27637,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_setWithoutCheckingNa
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)NameValueCollection_Set_mF0EA26F74B1E1D2F9A1A87D1093BEC31C51BCB8A_RuntimeMethod_var), NULL);
-		String_t* L_1 = ___name0;
-		String_t* L_2 = ___value1;
+		String_t* L_1 = ___0_name;
+		String_t* L_2 = ___1_value;
 		WebHeaderCollection_doWithoutCheckingName_m56280425366C769AF3DF8DFC1D514F151823DD62(__this, L_0, L_1, L_2, NULL);
 		return;
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::Convert(WebSocketSharp.Net.HttpRequestHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2 (int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2 (int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27143,7 +27654,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		Il2CppFakeBox<int32_t> L_0(HttpRequestHeader_tF5D99CD4E28B5C5BB0D1270F160A8FBF809FB6DB_il2cpp_TypeInfo_var, (&___header0));
+		Il2CppFakeBox<int32_t> L_0(HttpRequestHeader_tF5D99CD4E28B5C5BB0D1270F160A8FBF809FB6DB_il2cpp_TypeInfo_var, (&___0_header));
 		String_t* L_1;
 		L_1 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
@@ -27153,7 +27664,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m77341B
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::Convert(WebSocketSharp.Net.HttpResponseHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB (int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB (int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27163,7 +27674,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		Il2CppFakeBox<int32_t> L_0(HttpResponseHeader_t30A3AF0000A82CE1A2CDE582F9BC2F9379C45AD0_il2cpp_TypeInfo_var, (&___header0));
+		Il2CppFakeBox<int32_t> L_0(HttpResponseHeader_t30A3AF0000A82CE1A2CDE582F9BC2F9379C45AD0_il2cpp_TypeInfo_var, (&___0_header));
 		String_t* L_1;
 		L_1 = Enum_ToString_m946B0B83C4470457D0FF555D862022C72BB55741((Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2*)(&L_0), NULL);
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
@@ -27173,16 +27684,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Convert_m51D8D4
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::InternalRemove(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalRemove_m9357D3F534E3F35E924A9AE1E756C926B2459331 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalRemove_m9357D3F534E3F35E924A9AE1E756C926B2459331 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		NameValueCollection_Remove_m2146E6474DDFBE19E35E57F777C4FE2625247D56(__this, L_0, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::InternalSet(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_mB05810FB7066E0986AE4E42100726A7AEBF2409C (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___header0, bool ___response1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_mB05810FB7066E0986AE4E42100726A7AEBF2409C (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_header, bool ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27192,28 +27703,28 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_mB05810F
 	}
 	int32_t V_0 = 0;
 	{
-		String_t* L_0 = ___header0;
+		String_t* L_0 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		int32_t L_1;
 		L_1 = WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5(L_0, NULL);
 		V_0 = L_1;
-		String_t* L_2 = ___header0;
+		String_t* L_2 = ___0_header;
 		int32_t L_3 = V_0;
 		NullCheck(L_2);
 		String_t* L_4;
 		L_4 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_2, 0, L_3, NULL);
-		String_t* L_5 = ___header0;
+		String_t* L_5 = ___0_header;
 		int32_t L_6 = V_0;
 		NullCheck(L_5);
 		String_t* L_7;
 		L_7 = String_Substring_m6BA4A3FA3800FE92662D0847CC8E1EEF940DF472(L_5, ((int32_t)il2cpp_codegen_add(L_6, 1)), NULL);
-		bool L_8 = ___response1;
+		bool L_8 = ___1_response;
 		WebHeaderCollection_InternalSet_m47FD508448FD933F7F738384D5A61E5BC172CC50(__this, L_4, L_7, L_8, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::InternalSet(System.String,System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508448FD933F7F738384D5A61E5BC172CC50 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, bool ___response2, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508448FD933F7F738384D5A61E5BC172CC50 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, bool ___2_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27222,13 +27733,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___value1;
+		String_t* L_0 = ___1_value;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = WebHeaderCollection_checkValue_m9DEA0DDB71BE8F7030CC5A39933D6809AEC5E246(L_0, NULL);
-		___value1 = L_1;
-		String_t* L_2 = ___name0;
-		bool L_3 = ___response2;
+		___1_value = L_1;
+		String_t* L_2 = ___0_name;
+		bool L_3 = ___2_response;
 		bool L_4;
 		L_4 = WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C(L_2, L_3, NULL);
 		if (!L_4)
@@ -27237,22 +27748,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_InternalSet_m47FD508
 		}
 	}
 	{
-		String_t* L_5 = ___name0;
-		String_t* L_6 = ___value1;
+		String_t* L_5 = ___0_name;
+		String_t* L_6 = ___1_value;
 		NameValueCollection_Add_m68C266151774CD1FC057C9349BAE09BDB15A26A7(__this, L_5, L_6, NULL);
 		return;
 	}
 
 IL_001a:
 	{
-		String_t* L_7 = ___name0;
-		String_t* L_8 = ___value1;
+		String_t* L_7 = ___0_name;
+		String_t* L_8 = ___1_value;
 		NameValueCollection_Set_mF0EA26F74B1E1D2F9A1A87D1093BEC31C51BCB8A(__this, L_7, L_8, NULL);
 		return;
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsHeaderName(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F9096EE75E22D32751E4FB0BA8EE45AE24868 (String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F9096EE75E22D32751E4FB0BA8EE45AE24868 (String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27261,14 +27772,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F90
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		if (!L_0)
 		{
 			goto IL_0013;
 		}
 	}
 	{
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -27278,7 +27789,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderName_mC54F90
 		}
 	}
 	{
-		String_t* L_3 = ___name0;
+		String_t* L_3 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_4;
 		L_4 = Ext_IsToken_mD0210769BCC936321C474F7B5649A54130EF3899(L_3, NULL);
@@ -27291,7 +27802,7 @@ IL_0013:
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsHeaderValue(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D9C69D9CA201730DC2CBB0BD994BF8D83FC4 (String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D9C69D9CA201730DC2CBB0BD994BF8D83FC4 (String_t* ___0_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27300,7 +27811,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		il2cpp_codegen_runtime_class_init_inline(Ext_t6D7C499436D2B147B941E873C73C930E159B53D0_il2cpp_TypeInfo_var);
 		bool L_1;
 		L_1 = Ext_IsText_mB42B1B6A72204083898F6936F4AB539B6B0871E8(L_0, NULL);
@@ -27308,7 +27819,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsHeaderValue_m60D4D
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsMultiValue(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___headerName0, bool ___response1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58F29B57E13F16BBD19F234117D93989792C (String_t* ___0_headerName, bool ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27318,14 +27829,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsMultiValue_m40AE58
 	}
 	HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* V_0 = NULL;
 	{
-		String_t* L_0 = ___headerName0;
+		String_t* L_0 = ___0_headerName;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___headerName0;
+		String_t* L_1 = ___0_headerName;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -27342,7 +27853,7 @@ IL_000b:
 
 IL_000d:
 	{
-		String_t* L_3 = ___headerName0;
+		String_t* L_3 = ___0_headerName;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* L_4;
 		L_4 = WebHeaderCollection_getHeaderInfo_mAEC04568962D495DD8B0B7EDB8E09BB6568E1F3C(L_3, NULL);
@@ -27355,7 +27866,7 @@ IL_000d:
 	}
 	{
 		HttpHeaderInfo_tA73176CBC751DD4D61D99EC93671348F52EF6DE5* L_6 = V_0;
-		bool L_7 = ___response1;
+		bool L_7 = ___1_response;
 		NullCheck(L_6);
 		bool L_8;
 		L_8 = HttpHeaderInfo_IsMultiValue_m48F09D53D36D229FEC7EC4DD584D2EAF43E58B85(L_6, L_7, NULL);
@@ -27368,7 +27879,7 @@ IL_001f:
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::ToStringMultiValue(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiValue_mCD32223EAD99667B3C12F3B49AA6AB80FEFE68AB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___response0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiValue_mCD32223EAD99667B3C12F3B49AA6AB80FEFE68AB (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, bool ___0_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27392,7 +27903,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiVa
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CU3Ec__DisplayClass46_0_t8F64C4EA16518D02C8E29C19513629D5539D4CB0* L_2 = V_0;
-		bool L_3 = ___response0;
+		bool L_3 = ___0_response;
 		NullCheck(L_2);
 		L_2->___response_0 = L_3;
 		U3CU3Ec__DisplayClass46_0_t8F64C4EA16518D02C8E29C19513629D5539D4CB0* L_4 = V_0;
@@ -27423,17 +27934,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToStringMultiVa
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::AddWithoutValidate(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_AddWithoutValidate_m8B8D5B59119358B168073146F5159B5524A15557 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___headerName0, String_t* ___headerValue1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_AddWithoutValidate_m8B8D5B59119358B168073146F5159B5524A15557 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_headerName, String_t* ___1_headerValue, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___headerName0;
-		String_t* L_1 = ___headerValue1;
+		String_t* L_0 = ___0_headerName;
+		String_t* L_1 = ___1_headerValue;
 		WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A(__this, L_0, L_1, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mB28850AD09BAD994378E54723B768D9E992D564B (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mB28850AD09BAD994378E54723B768D9E992D564B (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27443,14 +27954,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mB28850AD09BAD99
 	}
 	int32_t V_0 = 0;
 	{
-		String_t* L_0 = ___header0;
+		String_t* L_0 = ___0_header;
 		if (!L_0)
 		{
 			goto IL_000b;
 		}
 	}
 	{
-		String_t* L_1 = ___header0;
+		String_t* L_1 = ___0_header;
 		NullCheck(L_1);
 		int32_t L_2;
 		L_2 = String_get_Length_m42625D67623FA5CC7A44D47425CE86FB946542D2_inline(L_1, NULL);
@@ -27470,17 +27981,17 @@ IL_000b:
 
 IL_0016:
 	{
-		String_t* L_4 = ___header0;
+		String_t* L_4 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		int32_t L_5;
 		L_5 = WebHeaderCollection_checkColonSeparated_mDBFCD9F34599767FE7B609B6E1F021DDBCFF39F5(L_4, NULL);
 		V_0 = L_5;
-		String_t* L_6 = ___header0;
+		String_t* L_6 = ___0_header;
 		int32_t L_7 = V_0;
 		NullCheck(L_6);
 		String_t* L_8;
 		L_8 = String_Substring_mB1D94F47935D22E130FF2C01DBB6A4135FBB76CE(L_6, 0, L_7, NULL);
-		String_t* L_9 = ___header0;
+		String_t* L_9 = ___0_header;
 		int32_t L_10 = V_0;
 		NullCheck(L_9);
 		String_t* L_11;
@@ -27490,7 +28001,7 @@ IL_0016:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(WebSocketSharp.Net.HttpRequestHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mE8C3D0C7E6F5029C1E0E4DC7F4B9955003A74731 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mE8C3D0C7E6F5029C1E0E4DC7F4B9955003A74731 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27504,17 +28015,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mE8C3D0C7E6F5029
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_addWithoutCheckingName_m35EBC28F461BE403A4607AEAA51A179DACE98CF1_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2(L_1, NULL);
-		String_t* L_3 = ___value1;
+		String_t* L_3 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_0, L_2, L_3, (bool)0, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(WebSocketSharp.Net.HttpResponseHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_m45A5940040855167710BA3E658229284DDC6B1A9 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_m45A5940040855167710BA3E658229284DDC6B1A9 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27528,21 +28039,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_m45A594004085516
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_addWithoutCheckingName_m35EBC28F461BE403A4607AEAA51A179DACE98CF1_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB(L_1, NULL);
-		String_t* L_3 = ___value1;
+		String_t* L_3 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_0, L_2, L_3, (bool)1, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Add(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mB2D4A85E2C4C484CF0E4B989F9B983540B49FD97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Add_mB2D4A85E2C4C484CF0E4B989F9B983540B49FD97 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___name0;
-		String_t* L_1 = ___value1;
+		String_t* L_0 = ___0_name;
+		String_t* L_1 = ___1_value;
 		WebHeaderCollection_add_m8B2271A6B378A0CD3EC3E0769B19867116F3A30A(__this, L_0, L_1, (bool)0, NULL);
 		return;
 	}
@@ -27557,20 +28068,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Clear_m2CCCB8790F723
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::Get(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Get_mE51F6BF42F6546F2D0EA13F62B456E1EAB350A7E (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___index0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Get_mE51F6BF42F6546F2D0EA13F62B456E1EAB350A7E (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___index0;
+		int32_t L_0 = ___0_index;
 		String_t* L_1;
 		L_1 = NameValueCollection_Get_m2C55CAA38BF0F6677AE8F44C22C289A5B59B4B20(__this, L_0, NULL);
 		return L_1;
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::Get(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Get_m734815EF0EF848D76D6F973C9C815FBB6827AD00 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_Get_m734815EF0EF848D76D6F973C9C815FBB6827AD00 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___name0;
+		String_t* L_0 = ___0_name;
 		String_t* L_1;
 		L_1 = NameValueCollection_Get_m786B25D45B38D7051C696104946F3F0A2DF78106(__this, L_0, NULL);
 		return L_1;
@@ -27586,21 +28097,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* WebHeaderCollection_GetEnumera
 	}
 }
 // System.String WebSocketSharp.Net.WebHeaderCollection::GetKey(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_GetKey_m610031D855F9B79784A1CDAE4A886F14742F6BCE (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___index0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_GetKey_m610031D855F9B79784A1CDAE4A886F14742F6BCE (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___index0;
+		int32_t L_0 = ___0_index;
 		String_t* L_1;
 		L_1 = NameValueCollection_GetKey_m80CFEB6D61F9C3B9D03D7B25457D8B122C15170F(__this, L_0, NULL);
 		return L_1;
 	}
 }
 // System.String[] WebSocketSharp.Net.WebHeaderCollection::GetValues(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* WebHeaderCollection_GetValues_m0178CD27443E86C00EA434B17788F8F776971B88 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___index0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* WebHeaderCollection_GetValues_m0178CD27443E86C00EA434B17788F8F776971B88 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_index, const RuntimeMethod* method) 
 {
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
 	{
-		int32_t L_0 = ___index0;
+		int32_t L_0 = ___0_index;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1;
 		L_1 = NameValueCollection_GetValues_mF6E8C52484C1B25D80799EE9630E0AC9EF9B47E0(__this, L_0, NULL);
 		V_0 = L_1;
@@ -27631,11 +28142,11 @@ IL_0011:
 	}
 }
 // System.String[] WebSocketSharp.Net.WebHeaderCollection::GetValues(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* WebHeaderCollection_GetValues_mEDAB8C0F315809A44B47B059F2D012504CA23C69 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* WebHeaderCollection_GetValues_mEDAB8C0F315809A44B47B059F2D012504CA23C69 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_header, const RuntimeMethod* method) 
 {
 	StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* V_0 = NULL;
 	{
-		String_t* L_0 = ___header0;
+		String_t* L_0 = ___0_header;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_1;
 		L_1 = NameValueCollection_GetValues_mC69C8E6E5E62365A35C3A2C99E5DD0C33625362E(__this, L_0, NULL);
 		V_0 = L_1;
@@ -27666,7 +28177,7 @@ IL_0011:
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_GetObjectData_m25F7D67EE34C79AC835FA7B1084BBA867B6F6DE2 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___serializationInfo0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___streamingContext1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_GetObjectData_m25F7D67EE34C79AC835FA7B1084BBA867B6F6DE2 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_serializationInfo, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_streamingContext, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27691,7 +28202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_GetObjectData_m25F7D
 		L_1->___U3CU3E4__this_2 = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
 		U3CU3Ec__DisplayClass59_0_t68C8CB5E3E41F8A5EDBBDBD218D08119A9B62660* L_2 = V_0;
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_3 = ___serializationInfo0;
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_3 = ___0_serializationInfo;
 		NullCheck(L_2);
 		L_2->___serializationInfo_0 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&L_2->___serializationInfo_0), (void*)L_3);
@@ -27750,7 +28261,7 @@ IL_0027:
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsRestricted(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_m6AA70B448E82522A9C471DC5B6868703CBBB5263 (String_t* ___headerName0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_m6AA70B448E82522A9C471DC5B6868703CBBB5263 (String_t* ___0_headerName, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27759,7 +28270,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_m6AA70B
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___headerName0;
+		String_t* L_0 = ___0_headerName;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D(L_0, NULL);
@@ -27769,7 +28280,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_m6AA70B
 	}
 }
 // System.Boolean WebSocketSharp.Net.WebHeaderCollection::IsRestricted(System.String,System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_mD1E134179719FEE49E5860B1D20C76E901AF5CBD (String_t* ___headerName0, bool ___response1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_mD1E134179719FEE49E5860B1D20C76E901AF5CBD (String_t* ___0_headerName, bool ___1_response, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27778,25 +28289,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WebHeaderCollection_IsRestricted_mD1E134
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		String_t* L_0 = ___headerName0;
+		String_t* L_0 = ___0_headerName;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_1;
 		L_1 = WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D(L_0, NULL);
-		bool L_2 = ___response1;
+		bool L_2 = ___1_response;
 		bool L_3;
 		L_3 = WebHeaderCollection_isRestricted_mCB0DE554E2ED5F65919EB87510895BC883E77CB2(L_1, L_2, NULL);
 		return L_3;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::OnDeserialization(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_OnDeserialization_m4AE7E39AA910AD20B76410F6D02CFB1D51629F9F (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, RuntimeObject* ___sender0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_OnDeserialization_m4AE7E39AA910AD20B76410F6D02CFB1D51629F9F (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, RuntimeObject* ___0_sender, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Remove(WebSocketSharp.Net.HttpRequestHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m76EC92DFB834FC84F78CFF839437CC543D814ADF (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m76EC92DFB834FC84F78CFF839437CC543D814ADF (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27810,7 +28321,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m76EC92DFB834
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_removeWithoutCheckingName_m1DB1105CBBBA28922C3ED61CA808A99185573EB0_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2(L_1, NULL);
@@ -27819,7 +28330,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m76EC92DFB834
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Remove(WebSocketSharp.Net.HttpResponseHeader)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_mA483CDBE37D354B877C8B29CDFF076AC90BA5097 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_mA483CDBE37D354B877C8B29CDFF076AC90BA5097 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27833,7 +28344,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_mA483CDBE37D3
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_removeWithoutCheckingName_m1DB1105CBBBA28922C3ED61CA808A99185573EB0_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB(L_1, NULL);
@@ -27842,7 +28353,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_mA483CDBE37D3
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Remove(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m58AC3F6787CA4003DF6B234CAB12D2FF80D827C5 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m58AC3F6787CA4003DF6B234CAB12D2FF80D827C5 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27856,7 +28367,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m58AC3F6787CA
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_removeWithoutCheckingName_m1DB1105CBBBA28922C3ED61CA808A99185573EB0_RuntimeMethod_var), NULL);
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D(L_1, NULL);
@@ -27865,7 +28376,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Remove_m58AC3F6787CA
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Set(WebSocketSharp.Net.HttpRequestHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m6A471210A6944C4226C936381850B3A8B1B0499B (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m6A471210A6944C4226C936381850B3A8B1B0499B (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27879,17 +28390,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m6A471210A6944C4
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_setWithoutCheckingName_mEA87D7ED10AAC61BE3D691CBB5239428C08AD31A_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m77341BB9B7BBFDF4AF0D28494ECF32A9DAA31DF2(L_1, NULL);
-		String_t* L_3 = ___value1;
+		String_t* L_3 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_0, L_2, L_3, (bool)0, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Set(WebSocketSharp.Net.HttpResponseHeader,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m4855949266F907B32F5AC57B5CBAE13EE3966C64 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___header0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m4855949266F907B32F5AC57B5CBAE13EE3966C64 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, int32_t ___0_header, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27903,17 +28414,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m4855949266F907B
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_setWithoutCheckingName_mEA87D7ED10AAC61BE3D691CBB5239428C08AD31A_RuntimeMethod_var), NULL);
-		int32_t L_1 = ___header0;
+		int32_t L_1 = ___0_header;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_Convert_m51D8D4AB0E0D9AD0D8AE292D093D93EC6BC91DDB(L_1, NULL);
-		String_t* L_3 = ___value1;
+		String_t* L_3 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_mC0EDF891E5E25138B1BA3BECA57746E2522F3B97(__this, L_0, L_2, L_3, (bool)1, (bool)1, NULL);
 		return;
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::Set(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m9343DAE5BBB5DF86EA603F7880DAA4944E4D263E (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___name0, String_t* ___value1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m9343DAE5BBB5DF86EA603F7880DAA4944E4D263E (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, String_t* ___0_name, String_t* ___1_value, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -27927,11 +28438,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_Set_m9343DAE5BBB5DF8
 		Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D* L_0 = (Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D*)il2cpp_codegen_object_new(Action_2_t3EDD987DFCD31953576008A0D7D4F44D8C984B1D_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		Action_2__ctor_m12237C67318618EE9FB04CCF4C4EFAC833EDC79E(L_0, __this, (intptr_t)((void*)WebHeaderCollection_setWithoutCheckingName_mEA87D7ED10AAC61BE3D691CBB5239428C08AD31A_RuntimeMethod_var), NULL);
-		String_t* L_1 = ___name0;
+		String_t* L_1 = ___0_name;
 		il2cpp_codegen_runtime_class_init_inline(WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_il2cpp_TypeInfo_var);
 		String_t* L_2;
 		L_2 = WebHeaderCollection_checkName_m1B4F391B0AA25603DA71584ABD41354CC7D4627D(L_1, NULL);
-		String_t* L_3 = ___value1;
+		String_t* L_3 = ___1_value;
 		WebHeaderCollection_doWithCheckingState_m0CBA28819AEB0DAF94FAF12FB962F8D3E7CB7D0A(__this, L_0, L_2, L_3, (bool)1, NULL);
 		return;
 	}
@@ -28002,11 +28513,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WebHeaderCollection_ToString_mA403A
 	}
 }
 // System.Void WebSocketSharp.Net.WebHeaderCollection::System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_System_Runtime_Serialization_ISerializable_GetObjectData_m1C6B4E7F844FFDCEBFB30BA00D4F3A21A4CEAE73 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___serializationInfo0, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___streamingContext1, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebHeaderCollection_System_Runtime_Serialization_ISerializable_GetObjectData_m1C6B4E7F844FFDCEBFB30BA00D4F3A21A4CEAE73 (WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_serializationInfo, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_streamingContext, const RuntimeMethod* method) 
 {
 	{
-		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___serializationInfo0;
-		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___streamingContext1;
+		SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* L_0 = ___0_serializationInfo;
+		StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 L_1 = ___1_streamingContext;
 		VirtualActionInvoker2< SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37*, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 >::Invoke(11 /* System.Void System.Collections.Specialized.NameObjectCollectionBase::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext) */, __this, L_0, L_1);
 		return;
 	}
@@ -28105,10 +28616,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Uri_t1500A52B5F71A04F5D05C0852D0F
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_Listener_m0CACB18BC2734DAB49B5BBC51F0EA8862F481311_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___value0;
+		HttpListener_t0FEE892655AF515FA947B2BCBA9C5BEA46B06387* L_0 = ___0_value;
 		__this->____listener_3 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____listener_3), (void*)L_0);
 		return;
@@ -28121,10 +28632,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t String_get_Length_m42625D
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorMessage_mFFE3262801B09CD813B54304053B33A8C171396F_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		String_t* L_0 = ___value0;
+		String_t* L_0 = ___0_value;
 		__this->____error_1 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____error_1), (void*)L_0);
 		return;
@@ -28186,26 +28697,26 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListenerAsyncResult_get_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_EndCalled_m068383A2EDF57D361F145DFC50564DD65DA321B3_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____endCalled_3 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerAsyncResult_set_InGet_m3C540922710CB575A9C1EC2FB47CC62C3956F618_inline (HttpListenerAsyncResult_tC4956A0947CAD7B96E4AA5BF5151A4D14DF68E7D* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____inGet_5 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEAE969B1D0FD97E934DC39439E89D7553910_inline (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___ar0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void AsyncCallback_Invoke_mA85DEAE969B1D0FD97E934DC39439E89D7553910_inline (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* __this, RuntimeObject* ___0_ar, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___ar0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_ar, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR NameValueCollection_t52D1E38AB1D4ADD497A17DA305D663BB77B31DF7* HttpListenerRequest_get_Headers_m67932C4F282A5045D83F0C2D839A998C9779FC19_inline (HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD* __this, const RuntimeMethod* method) 
 {
@@ -28256,10 +28767,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpConnection_get_IsSecure_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerContext_set_ErrorStatus_mB60B6A362274054ECB840B9EA974083DF7366D64_inline (HttpListenerContext_t132569E34C5C474FA3AECD4E2F7B9C80A85538FC* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____errorStatus_2 = L_0;
 		return;
 	}
@@ -28327,35 +28838,35 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* Cookie_get_Path_mD7D2E5
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Buffer_mE0F455FA8126563AC6EE36A715C460822327783C_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___value0;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_0 = ___0_value;
 		__this->____buffer_0 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____buffer_0), (void*)L_0);
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Offset_m73E6D6109FD97BFABF4249C5B36755DEBC4636CE_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____offset_5 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_Count_m2278ED17BA174A46CE3B51195EF895EF168AF2E1_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____count_3 = L_0;
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpStreamAsyncResult_set_SyncRead_mE3163C30D5CFA2D5DC31C1903D9EFDFAD851EC40_inline (HttpStreamAsyncResult_tAF3227505CF9B5F1CF7374C7570F299172251D8D* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	{
-		int32_t L_0 = ___value0;
+		int32_t L_0 = ___0_value;
 		__this->____syncRead_8 = L_0;
 		return;
 	}
@@ -28374,10 +28885,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool HttpListenerResponse_get_Hea
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_CloseConnection_m4BE03DC22F2A0642949B59A58D6B2DB9AA4A21F0_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____closeConnection_0 = L_0;
 		return;
 	}
@@ -28396,10 +28907,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int64_t HttpListenerResponse_get_
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___value0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void HttpListenerResponse_set_HeadersSent_m5743BE9CCD1963575DDD8ED5B28E382D028BCF00_inline (HttpListenerResponse_t4D7A9BAD5E061DF0959CE08BE584834611C13C6B* __this, bool ___0_value, const RuntimeMethod* method) 
 {
 	{
-		bool L_0 = ___value0;
+		bool L_0 = ___0_value;
 		__this->____headersSent_8 = L_0;
 		return;
 	}
@@ -28425,7 +28936,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* HttpHeaderInfo_get_Name
 		return L_0;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___item0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
 {
 	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
 	int32_t V_1 = 0;
@@ -28449,7 +28960,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 		__this->____size_2 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
 		int32_t L_7 = V_1;
-		RuntimeObject* L_8 = ___item0;
+		RuntimeObject* L_8 = ___0_item;
 		NullCheck(L_6);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
 		return;
@@ -28457,7 +28968,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631
 
 IL_0034:
 	{
-		RuntimeObject* L_9 = ___item0;
+		RuntimeObject* L_9 = ___0_item;
 		((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))il2cpp_codegen_get_method_pointer(il2cpp_rgctx_method(method->klass->rgctx_data, 11)))(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 11));
 		return;
 	}
@@ -28514,25 +29025,25 @@ IL_003c:
 		return;
 	}
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline (Func_2_t213311159653563BDCC21CC060B449705C96791F* __this, RuntimeObject* ___arg0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Func_2_Invoke_m1FDB82A936AD6A68F455DE792FD9454CE1A4FC9F_gshared_inline (Func_2_t213311159653563BDCC21CC060B449705C96791F* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) 
 {
 	typedef int32_t (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___arg0, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Func_2_Invoke_mDBA25DA5DA5B7E056FB9B026AF041F1385FB58A9_gshared_inline (Func_2_tACBF5A1656250800CE861707354491F0611F6624* __this, RuntimeObject* ___0_arg, const RuntimeMethod* method) 
 {
 	typedef RuntimeObject* (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	return ((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___arg10, int32_t ___arg21, int32_t ___arg32, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_3_Invoke_mE590BEEF4C696BB21BD2007A0128C2B873BE9FDE_gshared_inline (Action_3_t3E14C5AE586D1A19350D32B719359B1F1EB79ABE* __this, RuntimeObject* ___0_arg1, int32_t ___1_arg2, int32_t ___2_arg3, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, int32_t, int32_t, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg10, ___arg21, ___arg32, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg1, ___1_arg2, ___2_arg3, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___arg10, RuntimeObject* ___arg21, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Action_2_Invoke_m7BFCE0BBCF67689D263059B56A8D79161B698587_gshared_inline (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_arg1, RuntimeObject* ___1_arg2, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, RuntimeObject*, RuntimeObject*, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___arg10, ___arg21, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___0_arg1, ___1_arg2, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_mB407E755F3B4C51C54D24338D00A352E5B16E7F3_gshared_inline (Enumerator_t44124D16E0B2F7308FF4069BE06369B5A83896EB* __this, const RuntimeMethod* method) 
 {

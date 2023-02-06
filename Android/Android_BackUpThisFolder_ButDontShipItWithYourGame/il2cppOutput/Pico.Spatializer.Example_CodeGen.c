@@ -38,13 +38,13 @@ static Il2CppMethodPointer s_methodPointers[7] =
 };
 static const int32_t s_InvokerIndices[7] = 
 {
-	6090,
-	6090,
-	6090,
-	6090,
-	6090,
-	4727,
-	6090,
+	6082,
+	6082,
+	6082,
+	6082,
+	6082,
+	4728,
+	6082,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Pico_Spatializer_Example_CodeGenModule;
 const Il2CppCodeGenModule g_Pico_Spatializer_Example_CodeGenModule = 
