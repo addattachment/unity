@@ -10,10 +10,10 @@ public class CaregiverFeedback : MonoBehaviour
     //[SerializeField] private SpeechToMouth feedbackSpeech;
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
-    [SerializeField] private StateManager stateMgr;
+    [SerializeField] private TrialStateManager stateMgr;
     [SerializeField] private Light sun;
     [SerializeField] private Light caregiverSpotLight;
-    [SerializeField] private Slingshot slingshot;
+    [SerializeField] private Slingshot playerSlingshot;
     public AudioSource audioSource;
     private bool speechHasStarted = false;
     [SerializeField] private bool testPlay = false;
@@ -23,7 +23,7 @@ public class CaregiverFeedback : MonoBehaviour
     void Start()
     {
         //feedbackSpeech = GetComponent<SpeechToMouth>();
-        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<StateManager>();
+        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
     }
 
     // Update is called once per frame
@@ -71,13 +71,13 @@ public class CaregiverFeedback : MonoBehaviour
         if (enabled)
         {
             sun.enabled = false;
-            slingshot.slingshotIsActive = false;
+            playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.hidden;
             caregiverSpotLight.enabled = true;
         }
         else
         {
             sun.enabled = true;
-            slingshot.slingshotIsActive = true;
+            playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.passive;
             caregiverSpotLight.enabled = false;
         }
     }
@@ -90,6 +90,5 @@ public class CaregiverFeedback : MonoBehaviour
     {
         audioSource.Play(); 
         speechHasStarted = true;
-
     }
 }

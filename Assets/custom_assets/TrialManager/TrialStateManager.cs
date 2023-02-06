@@ -5,7 +5,7 @@ using UnityEngine;
 namespace TrialNS
 {
     //reference: https://www.youtube.com/watch?v=Vt8aZDPzRjI
-    public class StateManager : MonoBehaviour
+    public class TrialStateManager : MonoBehaviour
     {
         public StateMachine currentState;
         public PreTrialState preTrialState = new();
@@ -22,6 +22,7 @@ namespace TrialNS
         public bool endTrial = false;
         public bool restart = false;
         public bool ballIsShot = false;
+        public bool trialIsRunning = false;
         // trialPhase is for debugging purposes
         public string trialPhase = "IntroState";
 
@@ -37,6 +38,7 @@ namespace TrialNS
 
         public GameManager gameManager;
 
+        public BallStateManager ballStates;
 
         // Start is called before the first frame update
         void Start()

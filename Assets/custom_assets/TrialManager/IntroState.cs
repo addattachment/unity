@@ -11,18 +11,18 @@ namespace TrialNS
     /// </summary>
     public class IntroState : StateMachine
     {
-        public override void EnterState(StateManager state)
+        public override void EnterState(TrialStateManager state)
         {
             Debug.Log("Entering IntroState");
             state.trialPhase = "IntroTrialState";
         }
 
-        public override void OnCollisionEnter(StateManager state)
+        public override void OnCollisionEnter(TrialStateManager state)
         {
             Debug.Log("Collision Enter");
         }
 
-        public override void UpdateState(StateManager state)
+        public override void UpdateState(TrialStateManager state)
         {
             if (state.gameManager.trialListGenerated == true)
             {
@@ -31,7 +31,7 @@ namespace TrialNS
             }
         }
 
-        public override void ExitState(StateManager state)
+        public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting IntroTrialState");
 

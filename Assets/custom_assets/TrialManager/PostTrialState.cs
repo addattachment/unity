@@ -11,7 +11,7 @@ namespace TrialNS
     /// </summary>
     public class PostTrialState : StateMachine
     {
-        public override void EnterState(StateManager state)
+        public override void EnterState(TrialStateManager state)
         {
             Debug.Log("Entering PostTrialState");
             state.trialPhase = "PostTrialState";
@@ -21,17 +21,17 @@ namespace TrialNS
             state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().GiveFeedback();
         }
 
-        public override void OnCollisionEnter(StateManager state)
+        public override void OnCollisionEnter(TrialStateManager state)
         {
             Debug.Log("Collision Enter");
         }
 
-        public override void UpdateState(StateManager state)
+        public override void UpdateState(TrialStateManager state)
         {
             if (state.restart) { state.SwitchState(state.preTrialState); }
         }
 
-        public override void ExitState(StateManager state)
+        public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting PostTrialState");
             state.restart = false;

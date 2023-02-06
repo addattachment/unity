@@ -5,11 +5,11 @@ using TrialNS;
 
 public class SwitchStateMgrManual : MonoBehaviour
 {
-    private StateManager statemgr;
-    private string stateMgrName = "stateManagerPrefab";
+    private TrialStateManager statemgr;
+    private string stateMgrName = "trialStateManagerPrefab";
     void Start()
     {
-        statemgr = GameObject.Find(stateMgrName).GetComponent<StateManager>();
+        statemgr = GameObject.Find(stateMgrName).GetComponent<TrialStateManager>();
     }
 
     // Update is called once per frame

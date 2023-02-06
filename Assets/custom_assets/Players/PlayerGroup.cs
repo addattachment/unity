@@ -25,19 +25,26 @@ public class PlayerGroup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ////TEST/////////////////
         if (switchPlayer)
         {
             switchPlayer = false;
             SwitchPlayer();
         }
+        ////////////////////////
     }
 
+    public Player GetActivePlayer()
+    {
+        activeParticipant = player.isActivePlayer ? player : NPC;
+        return activeParticipant;
+    }
     public void SwitchPlayer()
     {
         //temp adaptation while only 1 player
-        player.SetActive(!player.isActivePlayer);// ;
-        NPC.SetActive(!NPC.isActivePlayer);//  ;
-        activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
+        player.SetActive(!player.isActivePlayer);
+        NPC.SetActive(!NPC.isActivePlayer);
+        activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
     }
 
     /// <summary>
@@ -54,32 +61,10 @@ public class PlayerGroup : MonoBehaviour
         NPC.SetActive(false);
         player.playerScore.ResetScore();
         NPC.playerScore.ResetScore();
-        activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
+        activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
     }
 
-    public void PrepNewShootingTurn(TrialList trialList, TargetGroup targets)
-    {
-        activeParticipant = player.isActivePlayer ? player : NPC; // see who is the active player to get a new ball
-
-        var slingshot = activeParticipant.slingshot;
-
-        SetPlayerScoringChance(slingshot, trialList.GetCurrentTrial());
-
-        if (activeParticipant.currentBallInTrial < gameManager.ballsPerGame)
-        {
-            // Make sure we can detect collisions by the new bullet (only once!)
-            targets.readyForHit = true;
-            // Set the new targets
-            targets.SetNewHitTarget();
-            // Instantiate the new bullet and it's colors
-            slingshot.PrepNewBall(targets);
-        }
-        else
-        {
-            // As soon as one of the players is out of balls, we can conclude that both players are out of balls
-            gameManager.stateMGR.endTrial = true;
-        }
-    }
+   
 
     /// <summary>
     /// sets the ReachtargetEnum of the active slingshot

@@ -21,15 +21,19 @@ public class Ball : MonoBehaviour
     [Tooltip("time after release when bullet is destroyed")] public float DestructionTime = 1.5f;
 
     public bool didHitATarget = false;
+
+    [Header("Ball states")]
+    public bool ballIsGrabbed = false;
+    public bool ballIsReleased = false;
+    public bool ballDidHit = false;
+    public bool canProcessCollisions = true;
+    public bool ballDidScore = false;
     [Header("ball Steering")]
     private float _time_to_target = 1.0f;
     Vector3 _hitTargetPos;
     private TargetGroup targets;
     [Header("score result")]
-    [SerializeField] private PlayerScore playerScore;
-    [SerializeField] private GameManager gameManager;
     [SerializeField] private OutletPassThrough lsl;
-    [SerializeField] private StateManager stateMgr;
 
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
@@ -49,18 +53,15 @@ public class Ball : MonoBehaviour
 
     private void Start()
     {
-        gameManager = GameManager.Instance;
         Rb = GetComponent<Rigidbody>();
         targets = GameObject.FindGameObjectWithTag("target")
                             .GetComponent<TargetGroup>(); // todo write tests for finding all gameobjects
         slingShot = this.GetComponentInParent<Slingshot>();
-        playerScore = slingShot.playerScore;
         debug_text = GameObject.FindGameObjectWithTag("debug")
                                .GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl")
                         .GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
-        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<StateManager>();
         _name = "" + Time.time;
     }
 
@@ -73,6 +74,7 @@ public class Ball : MonoBehaviour
 #if DEBUGMODE
             InitDebugCube();
 #endif
+            ballIsGrabbed = true;
             doFakeLaunch = false;
             FakeLaunch();
         }
@@ -89,12 +91,9 @@ PlaceDebugCube(Rb.position);
 
     private void ProcessCollision(GameObject coll)
     {
+        debug_text.SetDebugText("hit: " + coll.name);
 
-        if (didHitATarget == false)
-        {
-            debug_text.SetDebugText("hit: " + coll.name);
-
-            // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
+        // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
 #if DEBUGCUBE
             GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
             temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
@@ -104,74 +103,73 @@ PlaceDebugCube(Rb.position);
             temp.transform.position = targets.hitTarget.transform.position;
             temp.name = "ShouldHitlocation" + _name;
 #endif
-            if (coll.CompareTag("subTarget"))
+        if (coll.CompareTag("subTarget"))
+        {
+            ballDidHit = true;
+            var th = coll.GetComponent<TargetHit>();
+            if (th == null)
             {
-                didHitATarget = true;
-                var th = coll.GetComponent<TargetHit>();
-                if (th == null)
-                {
-                    // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
-                    th = coll.GetComponentInParent<TargetHit>();
-                }
-                CalcImpact(th);
+                // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
+                th = coll.GetComponentInParent<TargetHit>();
             }
-            if (coll.CompareTag("missTargets"))
-            {
-                didHitATarget = true;
-                playerScore.AddToScore(false);
-                DestroyThisBall();
-            }
-            if (coll.CompareTag("Floor"))
-            {
-                didHitATarget = true;
-                playerScore.AddToScore(false);
-                DestroyThisBall();
-                //TODO create animation for splashing ball?
-            }
-            if (coll.CompareTag("gamehall"))
-            {
-                didHitATarget = true;
-                // we didn't hit any targets, so this equals hitting the wrong targets
-                //TODO create animation for splashing ball?
+            CalcImpact(th);
+        }
+        if (coll.CompareTag("missTargets"))
+        {
+            ballDidHit = true;
+            ballDidScore = false;
+            //playerScore.AddToScore(false);
+            //DestroyThisBall();
+        }
+        if (coll.CompareTag("Floor"))
+        {
+            ballDidHit = true;
+            ballDidScore = false;
+            //TODO create animation for splashing ball?
+        }
+        if (coll.CompareTag("gamehall"))
+        {
+            ballDidHit = true;
 
-                playerScore.AddToScore(false);
-                DestroyThisBall();
-            }
+            // we didn't hit any targets, so this equals hitting the wrong targets
+            //TODO create animation for splashing ball?
+            ballDidScore = false;
         }
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("triggered " + other.name + " at " + Time.time);
-        ProcessCollision(other.gameObject);
+        if (canProcessCollisions) { ProcessCollision(other.gameObject); }
     }
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-        ProcessCollision(collision.gameObject);
+        if (canProcessCollisions) { ProcessCollision(collision.gameObject); }
     }
 
 
     private void CalcImpact(TargetHit th)
     {
-        if (targets.readyForHit == true)
+        if (th.activeTarget)
         {
-            targets.readyForHit = false;
-            if (th.activeTarget)
-            {
-                Debug.Log("correct targets touched! at " + Time.time);
-                playerScore.AddToScore(true);
-            }
-            else
-            {
-                Debug.Log("wrong! at " + Time.time);
-                playerScore.AddToScore(false);
-            }
-            DestroyThisBall();
+            Debug.Log("correct targets touched! at " + Time.time);
+            ballDidScore = true;
+        }
+        else
+        {
+            Debug.Log("wrong! at " + Time.time);
+            ballDidScore = false;
         }
     }
 
-    public void FakeLaunch()
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="origin"> from where do we shoot the ball, normally it's position, yet for debugging we can choose</param>
+    private void Launch(Vector3 origin)
     {
         // audio stuff
         ball_flying_audio.Play();
@@ -179,26 +177,29 @@ PlaceDebugCube(Rb.position);
         //Send LSL data
         lsl.SendMarker(Marker.ball_release);
         //Calculate trajectory of ball
-        Rb.position = _fakeBallStartPoint + slingShot.transform.position;
         _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
         _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
-        //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
-        Launch(_fakeBallStartPoint + slingShot.transform.position);
-        StartCoroutine(Explode());
-    }
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="origin"> from where do we shoot the ball, normally it's position, yet for debugging we can choose</param>
-    private void Launch(Vector3 origin)
-    {
         //Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
-        var launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
-        Rb.AddForce(launchForce, ForceMode.Impulse);
+        Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
+#if DEBUGCUBE
+        Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
+#endif
+        //debug texts in VR
+        debug_text.SetDebugText("time to targets: " + _time_to_target);
+        debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
+#if DEBUGMODE
+        Destroy(debugCubeInstance);
+        cubePlaced = false;
+#endif
 
+        // shoot the ball
+        Rb.AddForce(launchForce, ForceMode.Impulse);
+        // make sure 
+        slingShot.slingshotLinesEnum = SlingshotLinesEnum.passive;
         SlingshotReleaseAudio.Play();
         Destroy(GetComponent<SpringJoint>());
+        StartCoroutine(Explode());
     }
 
 
@@ -207,7 +208,8 @@ PlaceDebugCube(Rb.position);
 #if DEBUGMODE
         InitDebugCube();
 #endif
-
+        ballIsGrabbed = true;
+        // AUDIO 
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         SlingshotPullAudio.Play();
     }
@@ -215,22 +217,16 @@ PlaceDebugCube(Rb.position);
     // we release the Ball
     public void VRExitEvent()
     {
-        // notify the backend that we did release the ball
-        lsl.SendMarker(Marker.ball_release);
-        ball_flying_audio.Play();
-        //_time_to_target = CalcFlyingTime(Rb, targets.transform.position);
-        _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
-        debug_text.SetDebugText("time to targets: " + _time_to_target);
-        _hitTargetPos = targets.hitTarget
-           .GetComponent<TargetPosUpdate>()
-           .GetFuturePositionOfTarget(_time_to_target);
-        debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
+        ballIsReleased = true;
         Launch(Rb.position);
-#if DEBUGMODE
-        Destroy(debugCubeInstance);
-        cubePlaced = false;
-#endif
-        StartCoroutine(Explode());
+    }
+
+    public void FakeLaunch()
+    {
+        // fake a starting point for the ball
+        Rb.position = _fakeBallStartPoint + slingShot.transform.position;
+        ballIsReleased = true;
+        Launch(Rb.position);
     }
 
     /// <summary>
@@ -239,9 +235,6 @@ PlaceDebugCube(Rb.position);
     /// </summary>
     private void DestroyThisBall()
     {
-
-        stateMgr.ballIsShot = true;
-
         backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
         Destroy(gameObject);
     }

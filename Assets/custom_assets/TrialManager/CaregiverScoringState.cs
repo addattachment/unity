@@ -11,23 +11,23 @@ namespace TrialNS
     /// </summary>
     public class CaregiverScoringState : StateMachine
     {
-        public override void EnterState(StateManager state)
+        public override void EnterState(TrialStateManager state)
         {
             Debug.Log("Entering CaregiverScoringState");
             state.trialPhase = "CaregiverScoringState";
        
         }
 
-        public override void OnCollisionEnter(StateManager state)
+        public override void OnCollisionEnter(TrialStateManager state)
         {
             Debug.Log("Collision Enter");
         }
 
-        public override void UpdateState(StateManager state)
+        public override void UpdateState(TrialStateManager state)
         {
         }
 
-        public override void ExitState(StateManager state)
+        public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting CaregiverScoringState");
             state.restart = false;

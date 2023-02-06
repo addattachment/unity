@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject target;
     public bool gameDidStart = false;
     [Header("Gameplay mgmt")]
-    public StateManager stateMGR;
+    public TrialStateManager stateMGR;
 
     [Header("player settings")]
 
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     {
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
-        stateMGR = GameObject.FindGameObjectWithTag("state").GetComponent<StateManager>();
+        stateMGR = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
 
     }
 

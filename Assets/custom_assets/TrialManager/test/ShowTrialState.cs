@@ -8,7 +8,7 @@ using TrialNS;
 public class ShowTrialState : MonoBehaviour
 {
     [SerializeField]
-    private StateManager stateManager;
+    private TrialStateManager stateManager;
 
     [SerializeField]
     private TrialList trialList;
@@ -24,7 +24,7 @@ public class ShowTrialState : MonoBehaviour
     void Start()
     {
         stateManager =
-            GameObject.Find(stateMgrName).GetComponent<StateManager>();
+            GameObject.Find(stateMgrName).GetComponent<TrialStateManager>();
         trialList = GameObject.Find(trialListName).GetComponent<TrialList>();
         _text = GetComponent<TextMeshProUGUI>();
         var currentTrial = trialList.GetCurrentTrial();

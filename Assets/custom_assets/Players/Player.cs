@@ -23,18 +23,20 @@ public class Player : MonoBehaviour
     public void SetActive(bool active)
     {
         isActivePlayer = active;
-        slingshot.slingshotIsActive = active;
-        if ((isRealPlayer == false) && (isActivePlayer == true))
-        {
-            StartCoroutine(ShootBall());
-        }
+        slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
+        
     }
 
+    public void FakeShot()
+    {
+        StartCoroutine(ShootBall());
+    }
     private IEnumerator ShootBall()
     {
+        Ball ballScript = instBall.GetComponent<Ball>();
         float wait_time = Random.Range(0.2f, 1.5f);
+        ballScript.ballIsGrabbed = true;
         yield return new WaitForSeconds(wait_time);
-        var ballScript = slingshot.InstBall.GetComponent<Ball>();
         ballScript.FakeLaunch();
     }
 }

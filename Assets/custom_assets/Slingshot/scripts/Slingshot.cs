@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using Random = UnityEngine.Random;
 [Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2, mayNPC = 3 }
+[Serializable] public enum SlingshotLinesEnum { active = 0, passive = 1, hidden = 2 }
 
 [RequireComponent(typeof(LineRenderer))]
 public class Slingshot : MonoBehaviour
@@ -26,7 +27,7 @@ public class Slingshot : MonoBehaviour
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
-    public bool slingshotIsActive = false;
+    public SlingshotLinesEnum slingshotLinesEnum = SlingshotLinesEnum.active;
 
     void Start()
     {
@@ -48,26 +49,32 @@ public class Slingshot : MonoBehaviour
     /// </summary>
     private void DrawSlingshotLines()
     {
-        if (slingshotIsActive)
+        switch (slingshotLinesEnum)
         {
-            Line.enabled = true;
-            Line.SetPosition(0, LeftSide.transform.position);
-            if (InstBall == null || InstBall.GetComponent<SpringJoint>() == null)
-            {
+            case SlingshotLinesEnum.active:
+                Line.enabled = true;
+                Line.SetPosition(0, LeftSide.transform.position);
+                if (InstBall == null || InstBall.GetComponent<SpringJoint>() == null)
+                {
+                    Line.SetPosition(1, Hook.transform.position);
+                }
+                else
+                {
+                    Line.SetPosition(1, new Vector3(InstBall.transform.position.x, InstBall.transform.position.y, InstBall.transform.position.z - 1f * slingshotPocketToBallDistance.z));
+                }
+                Line.SetPosition(2, RightSide.transform.position);
+                break;
+            case SlingshotLinesEnum.passive:
+                Line.enabled = true;
+                Line.SetPosition(0, LeftSide.transform.position);
                 Line.SetPosition(1, Hook.transform.position);
-            }
-            else
-            {
-                Line.SetPosition(1, new Vector3(InstBall.transform.position.x, InstBall.transform.position.y, InstBall.transform.position.z - 1f * slingshotPocketToBallDistance.z));
-            }
-            Line.SetPosition(2, RightSide.transform.position);
-        }
-        else
-        {
-            Line.enabled = false;
-            //Line.SetPosition(0, LeftSide.transform.position);
-            //Line.SetPosition(1, Hook.transform.position);
-            //Line.SetPosition(2, RightSide.transform.position);
+                Line.SetPosition(2, RightSide.transform.position);
+                break;
+            case SlingshotLinesEnum.hidden:
+                Line.enabled = false;
+                break;
+            default:
+                break;
         }
     }
 
@@ -164,29 +171,13 @@ public class Slingshot : MonoBehaviour
     }
 
 
-
-    ///// <summary>
-    ///// THIS IS AN APPROXIMATION OF HOW LONG THE OBJECT WOULD TRAVERSE TO TARGET
-    ///// </summary>
-    ///// <param name="Rb"></param>
-    ///// <param name="targets"></param>
-    ///// <returns></returns>
-    //public float CalcImpactTime(Rigidbody Rb, Vector3 targets)
-    //{
-    //    var _distance = targets - Rb.position;
-    //    var _direction = _distance.normalized; // A vector FROM the ball TOWARDS the hittarget
-    //    var _launchForce = _direction * launchForceMultiplier;
-    //    var launchVel = _launchForce / Rb.mass;
-    //    float time = launchVel.z / _distance.z;
-    //    return time;
-    //}
-
-    public void PrepNewBall(TargetGroup targets)
+    public Ball PrepNewBall(TargetGroup targets)
     {
         InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, this.transform);
         InstBall.GetComponent<Renderer>().material = targets.hitTarget.GetComponent<Renderer>().material;
         InstBall.GetComponent<TrailRenderer>().material.color = targets.hitTarget.GetComponent<Renderer>().material.color;
         player.instBall = InstBall;
+        return InstBall.GetComponent<Ball>();
     }
 
 }

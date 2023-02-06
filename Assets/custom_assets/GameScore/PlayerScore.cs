@@ -51,8 +51,6 @@ public class PlayerScore : MonoBehaviour
         UpdatePlayerScore(score);
         //global update of score
         scoreboard.UpdateScores();
-        // we update the players current ball for a next round
-        player.currentBallInTrial++;
         //data connections
         LSLNotifyGoodOrBadHit(score);
         WSUpdateScore();

@@ -120,7 +120,7 @@ public class LipsyncController : MonoBehaviour
 			InitBlendShapes();
 		}
 		freqData = new float[(int)nSamples];
-		mouthSource.Play();
+		//mouthSource.Play();
 		//aSamples = new float[aSamplesLength];
 	}
 	void Update()

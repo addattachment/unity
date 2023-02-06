@@ -10,21 +10,22 @@ namespace TrialNS
     /// </summary>
     public class PreTrialState : StateMachine
     {
-        public override void EnterState(StateManager state)
+        public override void EnterState(TrialStateManager state)
         {
             Debug.Log("Entering PreTrialState");
             state.trialPhase = "preTrial";
             state.players.ResetPlayers();
             state.targets.SetTranslateValues();
-            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(0);
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.trialList.currentTrial);
+            state.ballStates.SwitchState(state.ballStates.ballInitState);
         }
 
-        public override void OnCollisionEnter(StateManager state)
+        public override void OnCollisionEnter(TrialStateManager state)
         {
             Debug.Log("Collision Enter");
         }
 
-        public override void UpdateState(StateManager state)
+        public override void UpdateState(TrialStateManager state)
         {
             //if (state.startTrial)
             //{
@@ -32,7 +33,7 @@ namespace TrialNS
             //}
         }
 
-        public override void ExitState(StateManager state)
+        public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting PreTrialState");
             state.startTrial = false;

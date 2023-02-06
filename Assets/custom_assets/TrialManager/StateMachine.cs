@@ -3,9 +3,9 @@ namespace TrialNS
 {
     public abstract class StateMachine
     {
-        public abstract void EnterState(StateManager state);
-        public abstract void UpdateState(StateManager state);
-        public abstract void OnCollisionEnter(StateManager state);
-        public abstract void ExitState(StateManager state);
+        public abstract void EnterState(TrialStateManager state);
+        public abstract void UpdateState(TrialStateManager state);
+        public abstract void OnCollisionEnter(TrialStateManager state);
+        public abstract void ExitState(TrialStateManager state);
     }
 }
