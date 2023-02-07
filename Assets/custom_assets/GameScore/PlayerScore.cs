@@ -64,6 +64,7 @@ public class PlayerScore : MonoBehaviour
         else
             gameSounds.BallWrongHitAudio.Play();
     }
+
     private void UpdatePlayerScore(bool score)
     {
         scoreDots[player.currentBallInTrial].SetScore(score);

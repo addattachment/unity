@@ -34,6 +34,12 @@ public class PlayerGroup : MonoBehaviour
         ////////////////////////
     }
 
+    public Player GetWinner()
+    {
+        Player winner = player.score > NPC.score ? player : NPC;
+        return winner;
+    }
+
     public Player GetActivePlayer()
     {
         activeParticipant = player.isActivePlayer ? player : NPC;

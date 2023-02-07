@@ -17,6 +17,7 @@ namespace TrialNS
             state.players.ResetPlayers();
             state.targets.SetTranslateValues();
             state.ballStates.SwitchState(state.ballStates.ballInitState);
+            state.trophyStates.trophyMayAppear = true;
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -26,16 +27,16 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
-            //if (state.startTrial)
-            //{
-            state.SwitchState(state.trialState);
-            //}
+            if (state.startTrial)
+            {
+                state.startTrial = false;
+                state.SwitchState(state.trialState);
+            }
         }
 
         public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting PreTrialState");
-            state.startTrial = false;
             //make sure other variables are also false
             state.endTrial = false;
             state.ballIsShot = false;

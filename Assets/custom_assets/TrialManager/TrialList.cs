@@ -116,5 +116,10 @@ namespace TrialNS
         {
             currentTrial++;
         }
+
+        public int GetTrialLength()
+        {
+            return trialsList.Count;
+        }
     }
 }

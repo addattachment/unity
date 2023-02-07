@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
     public Slingshot slingshot;
     public GameObject instBall;
     public PlayerScore playerScore;
+    public GameObject trophySpawnLocation;
+    public List<GameObject> trophyWonList;
+
     public void SetActive(bool active)
     {
         isActivePlayer = active;
