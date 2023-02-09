@@ -12,10 +12,9 @@ namespace TrialNS
     {
         public override void EnterState(TrialStateManager state)
         {
-            Debug.Log("Entering PreTrialState");
             state.trialPhase = "preTrial";
             state.players.ResetPlayers();
-            state.targets.SetTranslateValues();
+            state.targets.HoldTargets(); // we don't want the targets to move yet
             state.ballStates.SwitchState(state.ballStates.ballInitState);
             state.trophyStates.trophyMayAppear = true;
         }
@@ -36,11 +35,12 @@ namespace TrialNS
 
         public override void ExitState(TrialStateManager state)
         {
-            Debug.Log("Exiting PreTrialState");
             //make sure other variables are also false
             state.endTrial = false;
             state.ballIsShot = false;
             state.restart = false;
+            state.targets.SetTranslateSpeed();
+
         }
     }
 }

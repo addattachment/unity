@@ -13,8 +13,10 @@ namespace TrialNS
     {
         public override void EnterState(TrialStateManager state)
         {
-            Debug.Log("Entering IntroState");
             state.trialPhase = "IntroTrialState";
+            state.countDown.StartCountDown();
+            state.targets.SetStartingPos();
+            state.targets.HoldTargets(); // we don't want the targets to move yet
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -24,7 +26,7 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
-            if (state.gameManager.trialListGenerated == true)
+            if (state.gameManager.trialListGenerated && state.countDown.countDownFinished)
             {
                 state.SwitchState(state.preTrialState);
                 state.gameManager.SendSyncTime();
@@ -33,7 +35,6 @@ namespace TrialNS
 
         public override void ExitState(TrialStateManager state)
         {
-            Debug.Log("Exiting IntroTrialState");
 
         }
     }

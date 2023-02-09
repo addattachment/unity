@@ -24,6 +24,7 @@ public class CaregiverStateManager: MonoBehaviour
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
     public ReadFeedback feedbackPole;
     public GameObject caregiverFeedbackScreen;
+    public GameObject scoreCaregiver;
 
     // booleans to control state
 

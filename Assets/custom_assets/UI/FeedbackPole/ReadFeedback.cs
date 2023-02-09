@@ -89,7 +89,6 @@ public class ReadFeedback : MonoBehaviour
         {
             LowerFeedbackPole();
             //pushEvent.Invoke();
-
         }
     }
 

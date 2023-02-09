@@ -13,10 +13,9 @@ namespace TrialNS
     {
         public override void EnterState(TrialStateManager state)
         {
-            Debug.Log("Entering PostTrialState");
             state.trialPhase = "PostTrialState";
-            state.trialList.NextTrial();
             state.caregiverStates.mustGiveFeedback = true;
+            state.targets.HoldTargets();
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -35,11 +34,14 @@ namespace TrialNS
 
         public override void ExitState(TrialStateManager state)
         {
-            Debug.Log("Exiting PostTrialState");
             //make sure other variables are also false
             state.endTrial = false;
             state.startTrial = false;
             state.ballIsShot = false;
+            // we move the targets to a new starting pos
+            state.targets.SetStartingPos();
+            //prepare for next trial
+            state.trialList.NextTrial();
 
 
             // look for the public gameobject triallist and update the trialstate

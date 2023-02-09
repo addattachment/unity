@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -52,18 +53,35 @@ public class TargetGroup : MonoBehaviour
         }
     }
 
-    public void SetTranslateValues()
+    public void SetStartingPos()
     {
         foreach (GameObject target in targetList)
         {
             //give each target a random starting point (only change x axis)
             Vector3 currentPos = target.transform.position;
-            currentPos.x = Random.Range(-6.0f, 6.0f);
-            target.transform.position = currentPos;
+            Vector3 futurePos = currentPos;
+            futurePos.x = Random.Range(-6.0f, 6.0f);
+            Hashtable startPosHt = iTween.Hash("position", futurePos, "delay", 0.1f, "time", 1.0f, "easetype", "easeOutBounce");
+            iTween.MoveTo(target, startPosHt);
+        }
+    }
+    public void SetTranslateSpeed()
+    {
+        foreach (GameObject target in targetList)
+        {
+
             //give each targets a new speed to move
             target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 0.1f); //todo
             //give each targets a new direction to start moving
             target.GetComponent<TargetTranslate>().direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? TargetTranslate.EnumDirection.forward : TargetTranslate.EnumDirection.backward;
+        }
+    }
+
+    public void HoldTargets()
+    {
+        foreach (GameObject target in targetList)
+        {
+            target.GetComponent<TargetTranslate>().movementSpeed = 0.0f;
         }
     }
 }

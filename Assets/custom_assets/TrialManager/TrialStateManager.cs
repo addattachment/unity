@@ -20,6 +20,7 @@ namespace TrialNS
         public BallStateManager ballStates;
         public CaregiverStateManager caregiverStates;
         public TrophyStateManager trophyStates;
+        public CountDown countDown;
 
         public bool startTrial = false;
         public bool endTrial = false;
