@@ -16,14 +16,12 @@ public class CaregiverFeedbackConfirmState : CaregiverStateMachine
 
     public override void ExitState(CaregiverStateManager state)
     {
-        state.caregiverFeedback.SetEnvironmentForFeedback(false);
+        state.caregiverFeedback.SetSlingshotForFeedback(false);
+        state.lights.EnableSunlight(true);
+        state.lights.EnableLight(false, state.lights.caregiverLight);
         state.caregiverFeedbackScreen.SetActive(false);
     }
 
-    public override void OnCollisionEnter(CaregiverStateManager state)
-    {
-        throw new NotImplementedException();
-    }
 
     public override void UpdateState(CaregiverStateManager state)
     {

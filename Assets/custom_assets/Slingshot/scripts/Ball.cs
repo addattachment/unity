@@ -182,12 +182,16 @@ PlaceDebugCube(Rb.position);
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         //Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
         Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
+        debug_text.SetDebugText("launchforce " + launchForce);
+        debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
+
 #if DEBUGCUBE
         Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
-#endif
+
         //debug texts in VR
         debug_text.SetDebugText("time to targets: " + _time_to_target);
         debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
+#endif
 #if DEBUGMODE
         Destroy(debugCubeInstance);
         cubePlaced = false;
@@ -217,6 +221,7 @@ PlaceDebugCube(Rb.position);
     // we release the Ball
     public void VRExitEvent()
     {
+        debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
         Launch(Rb.position);
     }
@@ -226,6 +231,8 @@ PlaceDebugCube(Rb.position);
         // fake a starting point for the ball
         Rb.position = _fakeBallStartPoint + slingShot.transform.position;
         ballIsReleased = true;
+        debug_text.SetDebugText("ball start point is " + Rb.position);
+
         Launch(Rb.position);
     }
 

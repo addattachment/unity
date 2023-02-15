@@ -19,10 +19,6 @@ public class CaregiverIdleState : CaregiverStateMachine
         state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.trialList.currentTrial);
     }
 
-    public override void OnCollisionEnter(CaregiverStateManager state)
-    {
-        throw new NotImplementedException();
-    }
 
     public override void UpdateState(CaregiverStateManager state)
     {

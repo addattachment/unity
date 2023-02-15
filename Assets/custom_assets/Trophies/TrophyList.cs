@@ -8,20 +8,24 @@ public class TrophyList : MonoBehaviour
     public GameObject currentTrophy;
     [SerializeField, Tooltip("directory in Resources where all trophy gameobjects will be stored")] private string trophy_dir;
     [SerializeField] private Transform trophyFloatLocation;
-    [SerializeField] private Transform trophyStandLocation;
+    [SerializeField] public Transform trophyStandLocation;
     [Header("light")]
-    [SerializeField] private GameObject trophySpot;
-    [SerializeField] float maxLightIntensity = 2.5f;
+    //[SerializeField] private GameObject trophySpot;
+    //[SerializeField] float maxLightIntensity = 2.5f;
+    [SerializeField] private Lights lights;
+
     private Hashtable ht;
     [Header("Audio")]
     public AudioSource trophyAppear;
     public bool trophyDidAppear = false;
+    public bool trophyIsGiven = false;
     //TESTING
     [SerializeField] private bool testLightOn = false;
     [SerializeField] private bool testLightOff = false;
     [SerializeField] private bool createTrophy = false;
     [SerializeField] private bool moveTrophy = false;
     [SerializeField] private Player testPlayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,12 +42,12 @@ public class TrophyList : MonoBehaviour
         if (testLightOn)
         {
             testLightOn = false;
-            SetFocus(true);
+            SetFocus(true, trophyStandLocation.transform);
         }
         if (testLightOff)
         {
             testLightOff = false;
-            SetFocus(false);
+            SetFocus(false, trophyStandLocation.transform);
         }
         if (createTrophy)
         {
@@ -61,14 +65,15 @@ public class TrophyList : MonoBehaviour
 
     public void MoveTrophyToWinner(Player winner)
     {
+        trophyIsGiven = false;
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f);
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f, "oncomplete", "SetTrophyGiven", "oncompletetarget", this.gameObject);
 
         // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
         // make spot follow the trophy
-        SpotFollowTrophy(winner.trophySpawnLocation.transform.position);
+
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
@@ -76,10 +81,9 @@ public class TrophyList : MonoBehaviour
         currentTrophy = null;
     }
 
-    public void SpotFollowTrophy(Vector3 location)
+    private void SetTrophyGiven()
     {
-        Hashtable spotHt = iTween.Hash("looktarget", location, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo");
-        iTween.LookTo(trophySpot, spotHt);
+        trophyIsGiven = true;
     }
 
     /// <summary>
@@ -89,7 +93,6 @@ public class TrophyList : MonoBehaviour
     public void MakeTrophyAppear(int trophyIndex)
     {
         trophyDidAppear = true; // this is used by the trophyAppearState to know when to start listening
-        SetFocus(true);
         currentTrophy = Instantiate(trophiesList[trophyIndex], trophyFloatLocation.position, Quaternion.identity, this.trophyStandLocation);
         iTween.MoveTo(currentTrophy, iTween.Hash("position", trophyStandLocation.position, "easeType", "easeOutBounce", "delay", 0.5f, "time", 1.0f));
         trophyAppear.Play();
@@ -100,24 +103,11 @@ public class TrophyList : MonoBehaviour
     /// SetFocus places the trophylocation in the spotlight
     /// </summary>
     /// <param name="enabled"></param>
-    public void SetFocus(bool enabled)
+    public void SetFocus(bool enabled, Transform focusLocation)
     {
-        Hashtable ht;
-        if (enabled)
-        {
-            ht = iTween.Hash("from", 0, "to", maxLightIntensity, "time", .2f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity");
-        }
-        else
-        {
-            ht = iTween.Hash("from", maxLightIntensity, "to", 0.0f, "time", 1.0f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity");
-        }
-        iTween.ValueTo(trophySpot, ht);
-        SpotFollowTrophy(trophyStandLocation.position);
-    }
-
-    private void SetLightIntensity(float newVal)
-    {
-        trophySpot.GetComponentInChildren<Light>().intensity = newVal;
+        lights.EnableSunlight(!enabled);
+        lights.EnableLight(enabled, lights.trophySpotlight);
+        lights.SpotFollow(focusLocation.position, lights.trophySpotlight);
     }
 
     private GameObject[] Reshuffle(GameObject[] objects)

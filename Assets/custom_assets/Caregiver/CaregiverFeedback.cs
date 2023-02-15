@@ -12,7 +12,7 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private TrialList trialList;
     [SerializeField] private TrialStateManager stateMgr;
     [SerializeField] private Light sun;
-    [SerializeField] private Light caregiverSpotLight;
+    public Light caregiverSpotLight;
     [SerializeField] private Slingshot playerSlingshot;
     public AudioSource audioSource;
     private bool speechHasStarted = false;
@@ -50,19 +50,15 @@ public class CaregiverFeedback : MonoBehaviour
         audioSource.Play();
     }
 
-    public void SetEnvironmentForFeedback(bool enabled)
+    public void SetSlingshotForFeedback(bool enabled)
     {
         if (enabled)
         {
-            sun.enabled = false;
             playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.hidden;
-            caregiverSpotLight.enabled = true;
         }
         else
         {
-            sun.enabled = true;
             playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.passive;
-            caregiverSpotLight.enabled = false;
         }
     }
     public void LoadAudioClip(int index)

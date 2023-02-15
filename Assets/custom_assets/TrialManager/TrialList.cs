@@ -99,7 +99,7 @@ namespace TrialNS
                 Trial temp = new(); // temp trial to fill in values
                 temp.CreateTrial(trialnr, isGood, response, atm);
                 trialsList.Add(temp);
-                debug_text.SetDebugText(response);
+                //debug_text.SetDebugText(response);
             }
         }
 

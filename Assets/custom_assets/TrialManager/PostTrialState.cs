@@ -14,7 +14,6 @@ namespace TrialNS
         public override void EnterState(TrialStateManager state)
         {
             state.trialPhase = "PostTrialState";
-            state.caregiverStates.mustGiveFeedback = true;
             state.targets.HoldTargets();
         }
 
@@ -25,6 +24,13 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
+            if (state.trophyStates.trophyIsGiven)
+            {
+                state.trophyStates.trophyIsGiven = false;
+                // trophy is given, so give feedback
+                state.caregiverStates.mustGiveFeedback = true;
+            }
+
             if (state.restart)
             {
                 state.restart = false;

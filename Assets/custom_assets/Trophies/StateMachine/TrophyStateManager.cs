@@ -25,12 +25,14 @@ public class TrophyStateManager : MonoBehaviour
     public TrialList trialList;
     public TargetGroup targets;
     public TrophyList trophyList;
+    public Lights lights;
 
     // booleans to control state
     public bool trophyMayAppear = false;
     public bool mayPrep = false;
     public bool canLaunch = false;
     public bool didShoot = false;
+    public bool trophyIsGiven = false;
     private void Start()
     {
         currentTrophyState = trophyInitState;

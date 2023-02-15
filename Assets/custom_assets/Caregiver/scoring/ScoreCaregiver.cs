@@ -6,73 +6,90 @@ using UnityEngine.XR;
 using UnityEngine.XR.Interaction;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation;
 using UnityEngine.XR.Interaction.Toolkit.Inputs;
-
+using Assets.Scripts;
+using Unity.XR.PXR;
+[RequireComponent(typeof(Appear))]
 public class ScoreCaregiver : MonoBehaviour
 {
     [SerializeField] private GameObject LeftController;
     [SerializeField] private GameObject RightController;
-    [SerializeField] private Transform center;
     [SerializeField] private GameObject meCircle;
+    [SerializeField] private Renderer meCircleRing;
     [SerializeField] private GameObject caregiverCircle;
+    [SerializeField] private Renderer caregiverCircleRing;
     [SerializeField] private float scaleCircleDistance = 5.0f;
     [SerializeField] private float maxDistance = 2.0f;
     private float controllerStartDist = 0.0f;
     public float controllerDist = 0.0f;
     [SerializeField] private float circleDist = 0.0f;
     private bool gripIsPushed = false;
+    public bool scoringStarted = false;
+    private Appear appear;
+    public bool isLow = true;
     [SerializeField] private WsClient ws;
     //TESTING
-    [SerializeField] private XRDeviceSimulator sim;
-
+    [SerializeField] private DebugConnection debug_text;
 
     // Start is called before the first frame update
     void Start()
     {
+        debug_text = GameObject.FindGameObjectWithTag("debug")
+                       .GetComponentInChildren<DebugConnection>();
+        ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
+        appear = GetComponent<Appear>();
+    }
 
+    public void EnableScoring()
+    {
+        appear.Raise();
+        gripIsPushed = false;
+    }
+
+    public void DisableScoring()
+    {
+        appear.Lower();
+    }
+
+    public void SwitchGripMode()
+    {
+        gripIsPushed = !gripIsPushed;
+        if (gripIsPushed)
+        {
+            controllerStartDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position);
+            ChangeToRed();
+        }
+        else
+        {
+            ChangeToGreen();
+            debug_text.SetDebugText("distance is: " + DistanceBetweenCircles());
+            scoringStarted = true;
+        }
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        isLow = appear.isLow;
         if (gripIsPushed)
         {
             CalcDistanceBetweenControllers();
             MoveCircles();
-
-            if (!sim.gripAction.action.IsPressed())
-            {
-                GripReleased();
-            }
-        }
-        if (sim.gripAction.action.IsPressed())
-        {
-            GripPushed();
         }
     }
 
     public void SendScore(int trialIndex)
     {
-        ws.SendWSMessage("caregiverscore: " + controllerDist + "/" + maxDistance + " trial:"+trialIndex);
+        debug_text.SetDebugText("caregiverscore: " + controllerDist + "/" + maxDistance + " trial:" + trialIndex);
+        ws.SendWSMessage("caregiverscore: " + controllerDist + "/" + maxDistance + " trial:" + trialIndex);
     }
 
-    public void GripPushed()
-    {
-        controllerStartDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position);
-        Debug.Log("Grip pushed");
-        gripIsPushed = true;
 
-        // now calculate the distance we move our hands apart until we release
-    }
-
-    public void GripReleased()
-    {
-        Debug.Log("grip released");
-        gripIsPushed = false;
-    }
-
+    /// <summary>
+    /// we want to check if we move further away or closer with the controllers
+    /// </summary>
     public void CalcDistanceBetweenControllers()
     {
-        controllerDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position) - controllerDist;
+        controllerDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position) - controllerStartDist;
         Debug.Log("Distance between controllers = " + controllerDist);
     }
     private float DistanceBetweenCircles()
@@ -83,15 +100,43 @@ public class ScoreCaregiver : MonoBehaviour
     public void MoveCircles()
     {
         float movement = controllerDist * scaleCircleDistance / 2.0f;
-        if (DistanceBetweenCircles() + movement*2.0f > maxDistance)
+        if (movement > maxDistance / 2.0f)
         {
-            movement = maxDistance - DistanceBetweenCircles();
+            movement = maxDistance / 2.0f;
         }
-        Debug.Log("movement "+movement);
-        Hashtable meCircleHt = iTween.Hash("x", center.position.x + movement, "delay", 0.1f, "time", 0.1f, "easetype", "easeInOutExpo");
-        Hashtable caregiverCircleHt = iTween.Hash("x", center.position.x-movement, "delay", 0.1f, "time", 0.1f, "easetype", "easeInOutExpo");
-        iTween.MoveTo(meCircle, meCircleHt);
-        iTween.MoveTo(caregiverCircle, caregiverCircleHt);
+        if (movement < 0.0f)
+        {
+            movement = 0.0f;
+        }
+        UpdateLocalPos(meCircle, xUpdate: movement, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
+        UpdateLocalPos(caregiverCircle, xUpdate: -movement, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
+    }
 
+    private void UpdateLocalPos(GameObject obj, float xUpdate, float yUpdate, float zUpdate)
+    {
+        Vector3 localPos = obj.transform.localPosition;
+        localPos.x = xUpdate;
+        localPos.y = yUpdate;
+        localPos.z = zUpdate;
+        obj.transform.localPosition = localPos;
+    }
+    public void ChangeAlphaTo(int val)
+    {
+        var color = meCircle.GetComponent<Renderer>().material.color;
+        color.a = val;
+        meCircle.GetComponent<Renderer>().material.color = color;
+        color = caregiverCircle.GetComponent<Renderer>().material.color;
+        color.a = val;
+        caregiverCircle.GetComponent<Renderer>().material.color = color;
+    }
+    public void ChangeToRed()
+    {
+        meCircleRing.material.color = Color.red;
+        caregiverCircleRing.material.color = Color.red;
+    }
+    public void ChangeToGreen()
+    {
+        meCircleRing.material.color = Color.green;
+        caregiverCircleRing.material.color = Color.green;
     }
 }

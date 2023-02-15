@@ -13,7 +13,9 @@ public class CaregiverFeedbackState : CaregiverStateMachine
         state.caregiverPhase = "CaregiverFeedbackState";
         state.triggerAnimation.TriggerAnim("toHoofdSchoudersTrig"); //temp
         state.caregiverFeedbackScreen.SetActive(true);
-        state.caregiverFeedback.SetEnvironmentForFeedback(true);
+        state.caregiverFeedback.SetSlingshotForFeedback(true);
+        state.lights.EnableSunlight(false);
+        state.lights.EnableLight(true, state.lights.caregiverLight);
         state.caregiverFeedback.GiveFeedback();
 
     }
@@ -22,10 +24,6 @@ public class CaregiverFeedbackState : CaregiverStateMachine
     {
     }
 
-    public override void OnCollisionEnter(CaregiverStateManager state)
-    {
-        throw new NotImplementedException();
-    }
 
     public override void UpdateState(CaregiverStateManager state)
     {
