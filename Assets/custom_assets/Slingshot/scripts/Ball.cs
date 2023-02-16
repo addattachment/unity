@@ -6,6 +6,7 @@ using TrialNS;
 public class Ball : MonoBehaviour
 {
     private Rigidbody Rb;
+    private GameManager gameManager;
     [SerializeField] private Slingshot slingShot; // link to the slingshot
 
     [Header("AudioSamples")]
@@ -63,19 +64,20 @@ public class Ball : MonoBehaviour
                         .GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
         _name = "" + Time.time;
+        gameManager = GameManager.Instance;
     }
 
 
     void FixedUpdate()
     {
 #if UNITY_EDITOR
-        if (doFakeLaunch)
+        if (gameManager.doFakeLaunch)
         {
 #if DEBUGMODE
             InitDebugCube();
 #endif
             ballIsGrabbed = true;
-            doFakeLaunch = false;
+            gameManager.doFakeLaunch = false;
             FakeLaunch();
         }
 #if DEBUGMODE
@@ -100,8 +102,8 @@ PlaceDebugCube(Rb.position);
             temp.GetComponent<BoxCollider>().enabled = false;
             temp.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
             //Destroy(temp, 2.0f);
-            temp.transform.position = targets.hitTarget.transform.position;
-            temp.name = "ShouldHitlocation" + _name;
+            temp.transform.position = this.transform.position;
+            temp.name = "ShouldHitlocation- " + _name;
 #endif
         if (coll.CompareTag("subTarget"))
         {
@@ -140,13 +142,19 @@ PlaceDebugCube(Rb.position);
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered " + other.name + " at " + Time.time);
-        if (canProcessCollisions) { ProcessCollision(other.gameObject); }
+        if (!ballDidHit)
+        {
+            Debug.Log("triggered " + other.name + " at " + Time.time);
+            if (canProcessCollisions) { ProcessCollision(other.gameObject); }
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-        if (canProcessCollisions) { ProcessCollision(collision.gameObject); }
+        if (!ballDidHit)
+        {
+            Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
+            if (canProcessCollisions) { ProcessCollision(collision.gameObject); }
+        }
     }
 
 
@@ -186,7 +194,7 @@ PlaceDebugCube(Rb.position);
         debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
 
 #if DEBUGCUBE
-        Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
+        //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
 
         //debug texts in VR
         debug_text.SetDebugText("time to targets: " + _time_to_target);
@@ -200,7 +208,7 @@ PlaceDebugCube(Rb.position);
         // shoot the ball
         Rb.AddForce(launchForce, ForceMode.Impulse);
         // make sure 
-        slingShot.slingshotLinesEnum = SlingshotLinesEnum.passive;
+        //slingShot.slingshotLinesEnum = SlingshotLinesEnum.passive;
         SlingshotReleaseAudio.Play();
         Destroy(GetComponent<SpringJoint>());
         StartCoroutine(Explode());

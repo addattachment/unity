@@ -27,10 +27,16 @@ public class GameManager : MonoBehaviour
     public int ballsPerGame = 5;
     public bool trialListGenerated = false;
     [SerializeField] TrialList trialList;
+    public bool doFakeLaunch = false;
+
 
     [Header("dataConnections")]
     [SerializeField] private OutletPassThrough lsl;
     [SerializeField] private WsClient ws;
+
+    [Header("tutorial settings")]
+    public bool isTutorial; // if tutorial is true, we only have 1 trial with 'good' chances of scoring
+
 
     [Header("countdown stateMgr bools")]
 

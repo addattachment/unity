@@ -13,7 +13,7 @@ public class BallPrepState : BallStateMachine
 
         Player activeParticipant = state.players.GetActivePlayer();
 
-        var slingshot = activeParticipant.slingshot;
+        Slingshot slingshot = activeParticipant.slingshot;
 
         state.players.SetPlayerScoringChance(slingshot, state.trialList.GetCurrentTrial());
 
@@ -31,6 +31,7 @@ public class BallPrepState : BallStateMachine
             // As soon as one of the players is out of balls, we can conclude that both players are out of balls
             state.gameManager.endTrial = true;
         }
+        slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
     }
 
     public override void ExitState(BallStateManager state)

@@ -20,13 +20,27 @@ public class SetGameValues : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] Player NPC;
 
+    
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GetComponent<GameManager>();
-        if (isDevelopmentMode)
+        if (gameManager.isTutorial)
         {
-            UpdateGameValues();
+            player.playerName = playerName;
+            player.gender = gender;
+            player.contingency = contingency;
+            player.height = height; //TODO USEFUL?
+            player.isRealPlayer = true;
+            // we tell the game that the players values are set
+            gameManager.playerSettingsAreSet = true;
+        }
+        else
+        {
+            if (isDevelopmentMode)
+            {
+                UpdateGameValues();
+            }
         }
         // else we wait for the websocket client to 1. set the values 2. call the updategamevalues
         // TODO : websocket.HandleIncomingMessage

@@ -1731,7 +1731,7 @@ GameObject:
   - component: {fileID: 5736673881739380327}
   - component: {fileID: 5736673881739380326}
   m_Layer: 0
-  m_Name: NPC-TODO
+  m_Name: NPC
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

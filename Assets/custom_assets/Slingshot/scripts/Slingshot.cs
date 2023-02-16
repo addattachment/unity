@@ -1,8 +1,16 @@
 using Assets.Scripts;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
-[Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2, mayNPC = 3 }
+/// <summary>
+/// may: no guidance
+/// must: guidance for hit
+/// musnt: guidance to not allow a hit
+/// mayNPC: guidance with some randomnization so missing is possible
+/// preferredMust: guidance for hit IF drawing is in the correct direction
+/// </summary>
+[Serializable] public enum ReachTargetEnum { may = 0, must = 1, musnt = 2, mayNPC = 3, preferredMust = 4 }
 [Serializable] public enum SlingshotLinesEnum { active = 0, passive = 1, hidden = 2 }
 
 [RequireComponent(typeof(LineRenderer))]
@@ -25,8 +33,14 @@ public class Slingshot : MonoBehaviour
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
+    [SerializeField, Tooltip("how much may the drawing hook differ from the perfect hook to guide a ball to hit")] private float minGuidanceDist = 0.9f;
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
+    [SerializeField] private Toggle toggle_may; //temp
+    [SerializeField] private Toggle toggle_must; //temp
+    [SerializeField] private Toggle toggle_musnt; //temp
+    [SerializeField] private Toggle toggle_prefmust; //temp
+    [SerializeField] private Toggle toggle_mayNPC; //temp
     public SlingshotLinesEnum slingshotLinesEnum = SlingshotLinesEnum.active;
 
     void Start()
@@ -87,6 +101,28 @@ public class Slingshot : MonoBehaviour
     public void SetTargetReachable(ReachTargetEnum reachEnum)
     {
         reachTarget = reachEnum;
+        switch (reachTarget)
+        {
+            case ReachTargetEnum.may:
+                toggle_may.isOn = true;
+                break;
+            case ReachTargetEnum.must:
+                toggle_must.isOn = true;
+                break;
+            case ReachTargetEnum.musnt:
+                toggle_musnt.isOn = true;
+                break;
+            case ReachTargetEnum.preferredMust:
+                toggle_prefmust.isOn = true;
+                break;
+            case ReachTargetEnum.mayNPC:
+                toggle_mayNPC.isOn = true;
+                break;
+
+            default:
+                toggle_may.isOn = true;
+                break;
+        }
     }
 
     public void SetTargetReachableInt(int reachEnumInt)
@@ -130,7 +166,27 @@ public class Slingshot : MonoBehaviour
                 //compensate for gravity TODO seems correct, BUT WHY??
                 _launchForce -= (Physics.gravity * 0.25f);
                 return _launchForce;
-
+            case ReachTargetEnum.preferredMust:
+                Vector3 _mayDir = _hookPos - _ballPos;
+                _mayDir = _mayDir.normalized;
+                _direction = hitTargetLoc - _ballPos;
+                _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
+                debug_text.SetDebugText("mayDir " + _mayDir);
+                debug_text.SetDebugText("shouldDir " + _direction);
+                float projection_magnitude = Vector3.Project(_mayDir, _direction).magnitude;
+                debug_text.SetDebugText("projmagn " + projection_magnitude);
+                Debug.Log("projection magnitude " + projection_magnitude);
+                if (projection_magnitude >= minGuidanceDist)
+                {
+                    _launchForce = _direction * launchForceMultiplier;
+                    //compensate for gravity TODO seems correct, BUT WHY??
+                    _launchForce -= (Physics.gravity * 0.25f);
+                }
+                else
+                {
+                    _launchForce = _mayDir * launchForceMultiplier;
+                }
+                return _launchForce;
             case ReachTargetEnum.musnt:
                 // first we calculate the mustreachforce & mayreachforce
                 // if they are too close to each other, we alter the forceVector away from the mayreachforce vector

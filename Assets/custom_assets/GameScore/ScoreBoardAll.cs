@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ScoreBoardAll : MonoBehaviour
 {
-    [SerializeField] ScoreBoard scoreboardPlayer;
-    [SerializeField] ScoreBoard scoreboardNPC;
+    [SerializeField] List<ScoreBoard> scoreBoards;
     private GameManager gameManager;
 
 
@@ -24,13 +23,17 @@ public class ScoreBoardAll : MonoBehaviour
     }
     public void UpdateScores()
     {
-        scoreboardPlayer.UpdateScores();
-        scoreboardNPC.UpdateScores();
+        foreach(ScoreBoard scoreBoard in scoreBoards)
+        {
+            scoreBoard.UpdateScore();
+        }
     }
 
     public void UpdateNames()
     {
-        scoreboardPlayer.SetNames();
-        scoreboardNPC.SetNames();
+        foreach( ScoreBoard scoreBoard in scoreBoards)
+        {
+            scoreBoard.SetName();
+        }
     }
 }

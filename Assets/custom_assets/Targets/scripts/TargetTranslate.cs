@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TargetTranslate : MonoBehaviour
 {
-    [Range(0.0f, 0.1f)] public float movementSpeed = 0.5f;
+    [Range(0.0f, 20.1f)] public float movementSpeed = 0.5f;
     private Vector3 movementVector;
     [Serializable] public enum EnumDirection { forward = 1, backward = -1}
     public EnumDirection direction = EnumDirection.forward;
@@ -21,13 +21,14 @@ public class TargetTranslate : MonoBehaviour
     void Update()
     {
         UpdatePositions();
-        transform.Translate(movementVector);
+        transform.Translate(movementVector*Time.deltaTime);
     }
 
     private void UpdatePositions()
     {
         movementVector.x = ((int)direction) * movementSpeed;
         // alter the direction if we're go
+        // TODO this is an approximation, I should take the turning into account?
         if (transform.position.x >= targetGroup.xMaxBorder)
         {
             direction = EnumDirection.backward;

@@ -36,6 +36,10 @@ namespace TrialNS
                 state.gameManager.restart = false;
                 state.SwitchState(state.preTrialState);
             }
+            if (state.gameManager.isTutorial)
+            {
+                state.SwitchState(state.preTrialState);
+            }
         }
 
         public override void ExitState(TrialStateManager state)

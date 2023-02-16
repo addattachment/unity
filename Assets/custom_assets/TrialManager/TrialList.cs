@@ -13,9 +13,10 @@ namespace TrialNS
     {
         [SerializeField] private Player player;
 
-        //public int numberOfTrials = 5; // TBD NEEDED??
         [SerializeField] private List<Trial> trialsList; // list of trials to be used in block of experiment
         public int currentTrial = 0; // where we are currently in the block
+       
+        [Header("Game settings")]
         [SerializeField] private string audioClips20_dir;
         [SerializeField] private string audioClips80_dir;
 
@@ -36,11 +37,17 @@ namespace TrialNS
 
             debug_text = GameObject.FindGameObjectWithTag("debug")
                        .GetComponentInChildren<DebugConnection>();
+            if (gameManager.isTutorial)
+            {
+                CreateTutorialTrialList();
+                gameManager.trialListGenerated = true;
+
+            }
         }
 
         private void Update()
         {
-
+            
             if ((gameManager.trialListGenerated == false) && (gameManager.playerSettingsAreSet == true))
             {
                 Debug.Log("triallist gets filled in");
@@ -63,6 +70,16 @@ namespace TrialNS
         {
             audioClips = Resources.LoadAll<AudioClip>(contingency_dir);
             trialListTA = Resources.LoadAll<TextAsset>(contingency_dir)[0];
+        }
+
+        private void CreateTutorialTrialList()
+        {
+            for (int i = 1; i < 200; i++)
+            {
+                Trial temp = new(); // temp trial to fill in values
+                temp.CreateTrial(i, isGoodTrial: true, response: "", atmosphere: Atmosphere.GOOD);
+                trialsList.Add(temp);
+            }
         }
 
 

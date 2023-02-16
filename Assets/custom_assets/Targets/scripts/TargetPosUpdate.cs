@@ -37,15 +37,15 @@ public class TargetPosUpdate : MonoBehaviour
                 break;
             case TargetGroup.Mode.translation:
                 result = GetFutureTranslationPos(time);
-                //PLACE TEMP OBJECT
-#if DEBUGCUBE
-                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
-                temp.GetComponent<BoxCollider>().enabled = false;
-                Destroy(temp, 1.0f);
-                temp.transform.position = result;
-                temp.name = "standin";
-#endif
+//                //PLACE TEMP OBJECT
+//#if DEBUGCUBE
+//                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+//                temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
+//                temp.GetComponent<BoxCollider>().enabled = false;
+//                //Destroy(temp, 1.0f);
+//                temp.transform.position = result;
+//                temp.name = "standin"+_name;
+//#endif
                 //TODO check why the must isn't working correctly
                 break;
             case TargetGroup.Mode.unknown:

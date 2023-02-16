@@ -26,7 +26,7 @@ public class Player : MonoBehaviour
     public void SetActive(bool active)
     {
         isActivePlayer = active;
-        slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
+        //slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
         
     }
 

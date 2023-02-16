@@ -16,6 +16,7 @@ public class BallLaunchState : BallStateMachine
 
     public override void ExitState(BallStateManager state)
     {
+        state.players.activeParticipant.slingshot.slingshotLinesEnum = SlingshotLinesEnum.passive;
     }
 
     public override void OnCollisionEnter(BallStateManager state)
