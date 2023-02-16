@@ -15,8 +15,8 @@ public class CaregiverStateManager: MonoBehaviour
     public CaregiverFeedbackConfirmState caregiverFeedbackConfirmState = new();
     public CaregiverScoringState caregiverScoringState = new();
     // script references
-    //public GameManager gameManager;
-    public TrialStateManager trialState;
+    public GameManager gameManager;
+    //public TrialStateManager trialState;
     //public PlayerGroup players;
     public TrialList trialList;
     //public TargetGroup targets;
@@ -25,13 +25,13 @@ public class CaregiverStateManager: MonoBehaviour
     public ReadFeedback feedbackPole;
     public GameObject caregiverFeedbackScreen;
     public GameObject scoreCaregiver;
-    public Lights lights;
+    public LightingMgr lightingMgr;
 
     // booleans to control state
 
-    public bool didReadFeedback = false;
-    public bool didGiveScore = false;
-    public bool mustGiveFeedback = false;
+    //public bool didReadFeedback = false;
+    //public bool didGiveScore = false;
+    //public bool mustGiveFeedback = false;
 
     // caregiverPhase is for debugging purposes
     public string caregiverPhase = "caregiverIdleState";
@@ -40,7 +40,7 @@ public class CaregiverStateManager: MonoBehaviour
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIdleState";
         currentCaregiverState.EnterState(this);
-        //gameManager = GameManager.Instance;
+        gameManager = GameManager.Instance;
         caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
     }
     private void Update()
@@ -56,6 +56,6 @@ public class CaregiverStateManager: MonoBehaviour
 
     public void SetDidGiveScore()
     {
-        didGiveScore = true;
+        gameManager.didGiveScore = true;
     }
 }

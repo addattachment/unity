@@ -16,7 +16,7 @@ namespace TrialNS
             state.players.ResetPlayers();
             state.targets.HoldTargets(); // we don't want the targets to move yet
             state.ballStates.SwitchState(state.ballStates.ballInitState);
-            state.trophyStates.trophyMayAppear = true;
+            state.gameManager.trophyMayAppear = true;
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -26,9 +26,9 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
-            if (state.startTrial)
+            if (state.gameManager.startTrial)
             {
-                state.startTrial = false;
+                state.gameManager.startTrial = false;
                 state.SwitchState(state.trialState);
             }
         }
@@ -36,11 +36,10 @@ namespace TrialNS
         public override void ExitState(TrialStateManager state)
         {
             //make sure other variables are also false
-            state.endTrial = false;
-            state.ballIsShot = false;
-            state.restart = false;
+            state.gameManager.endTrial = false;
+            state.gameManager.ballIsShot = false;
+            state.gameManager.restart = false;
             state.targets.SetTranslateSpeed();
-
         }
     }
 }

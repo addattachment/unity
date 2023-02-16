@@ -17,9 +17,10 @@ public class CaregiverFeedbackConfirmState : CaregiverStateMachine
     public override void ExitState(CaregiverStateManager state)
     {
         state.caregiverFeedback.SetSlingshotForFeedback(false);
-        state.lights.EnableSunlight(true);
-        state.lights.EnableLight(false, state.lights.caregiverLight);
+        state.lightingMgr.envLight.EnableSunlight(true);
+        state.lightingMgr.caregiverLight.EnableLight(false);
         state.caregiverFeedbackScreen.SetActive(false);
+        state.scoreCaregiver.SetActive(true);
     }
 
 

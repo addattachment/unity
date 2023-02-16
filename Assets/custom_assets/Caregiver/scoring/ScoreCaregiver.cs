@@ -17,19 +17,22 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private Renderer meCircleRing;
     [SerializeField] private GameObject caregiverCircle;
     [SerializeField] private Renderer caregiverCircleRing;
+    [SerializeField] private GameObject collider;
     [SerializeField] private float scaleCircleDistance = 5.0f;
     [SerializeField] private float maxDistance = 2.0f;
+
     private float controllerStartDist = 0.0f;
     public float controllerDist = 0.0f;
     [SerializeField] private float circleDist = 0.0f;
     private bool gripIsPushed = false;
     public bool scoringStarted = false;
-    private Appear appear;
+    [SerializeField] private Appear appear;
     public bool isLow = true;
     [SerializeField] private WsClient ws;
     //TESTING
     [SerializeField] private DebugConnection debug_text;
-
+    private Vector3 startPosMeCircle;
+    private Vector3 startPosCaregiverCircle;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,16 +40,22 @@ public class ScoreCaregiver : MonoBehaviour
                        .GetComponentInChildren<DebugConnection>();
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         appear = GetComponent<Appear>();
+        startPosMeCircle = meCircle.transform.position;
+        startPosCaregiverCircle = caregiverCircle.transform.position;
     }
 
     public void EnableScoring()
     {
+        meCircle.transform.position = startPosMeCircle;
+        caregiverCircle.transform.position = startPosCaregiverCircle;
+        collider.SetActive(true);
         appear.Raise();
         gripIsPushed = false;
     }
 
     public void DisableScoring()
     {
+        collider.SetActive(false);
         appear.Lower();
     }
 

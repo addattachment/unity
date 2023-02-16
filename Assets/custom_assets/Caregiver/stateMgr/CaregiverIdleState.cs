@@ -22,9 +22,9 @@ public class CaregiverIdleState : CaregiverStateMachine
 
     public override void UpdateState(CaregiverStateManager state)
     {
-        if (state.mustGiveFeedback)
+        if (state.gameManager.mustGiveFeedback)
         {
-            state.mustGiveFeedback = false;
+            state.gameManager.mustGiveFeedback = false;
             state.SwitchState(state.caregiverFeedbackState);
         }
     }

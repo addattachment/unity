@@ -13,8 +13,8 @@ public class TrophyInitState : TrophyStateMachine
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.trophyMayAppear) {
-            state.trophyMayAppear = false;
+        if (state.gameManager.trophyMayAppear) {
+            state.gameManager.trophyMayAppear = false;
             state.SwitchState(state.trophyAppearState); 
         }
     }

@@ -20,8 +20,6 @@ public class Appear : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        upHash = iTween.Hash("y", Height, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", false);
-        downHash = iTween.Hash("y", 0.0f, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", true);
     }
 
     // Update is called once per frame
@@ -48,6 +46,7 @@ public class Appear : MonoBehaviour
 
     public void Raise()
     {
+        upHash = iTween.Hash("y", Height, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", false);
         iTween.MoveTo(gameObject, upHash);
     }
     public void Raise(TestDelegate method)
@@ -58,6 +57,7 @@ public class Appear : MonoBehaviour
     }
     public void Lower()
     {
+        downHash = iTween.Hash("y", 0.0f, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", true);
         iTween.MoveTo(gameObject, downHash);
     }
 

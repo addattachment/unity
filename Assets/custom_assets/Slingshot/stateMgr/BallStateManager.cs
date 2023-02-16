@@ -26,10 +26,10 @@ public class BallStateManager : MonoBehaviour
 
     public int amountOfBallsInTrial = 0;
     // booleans to control state
-    public bool isInitiated = false;
-    public bool mayPrep = false;
-    public bool canLaunch = false;
-    public bool didShoot = false;
+    //public bool isInitiated = false;
+    //public bool mayPrep = false;
+    //public bool canLaunch = false;
+    //public bool didShoot = false;
 
     // ballPhase is for debugging purposes
     public string ballPhase = "ballInitState";

@@ -30,6 +30,7 @@ public class ReadFeedback : MonoBehaviour
 
     public void RaiseFeedbackPole()
     {
+        Debug.Log("raise pole");
         appear.Raise();
         button.interactable = true;
         boxColl.enabled = true;
@@ -38,6 +39,8 @@ public class ReadFeedback : MonoBehaviour
 
     public void LowerFeedbackPole()
     {
+        Debug.Log("lower pole");
+
         appear.Lower();
         button.interactable = false;
         boxColl.enabled = false;

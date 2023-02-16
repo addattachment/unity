@@ -14,12 +14,22 @@ public class PlayerGroup : MonoBehaviour
     [SerializeField] private bool switchPlayer = false;
     [SerializeField] private DebugConnection debug_text;
 
+    [SerializeField] private List<Player> players;
+
     void Start()
     {
         //gameManager = GameManager.Instance;
         ResetPlayers();
         debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
-
+        gameManager = GameManager.Instance;
+        if (player != null)
+        {
+            players.Add(player);
+        }
+        if (NPC != null)
+        {
+            players.Add(NPC);
+        }
     }
 
     // Update is called once per frame
@@ -34,22 +44,53 @@ public class PlayerGroup : MonoBehaviour
         ////////////////////////
     }
 
+    public bool BallsLeft()
+    {
+        foreach (Player x in players)
+        {
+            if (x.currentBallInTrial < gameManager.ballsPerGame)
+            {
+                // player x still has balls available (didn't spend all balls)
+                return true;
+            }
+        }
+        return false;
+
+        //if ((player.currentBallInTrial >= gameManager.ballsPerGame) & (NPC.currentBallInTrial >= gameManager.ballsPerGame))
+        //{
+        //    return false;
+        //}
+        //else
+        //{
+        //    return true;
+        //}
+    }
+
     public Player GetWinner()
     {
+        // TODO
         Player winner = player.score > NPC.score ? player : NPC;
         return winner;
     }
 
     public Player GetActivePlayer()
     {
-        activeParticipant = player.isActivePlayer ? player : NPC;
-        return activeParticipant;
+        Player active = null;
+        foreach (Player x in players)
+        {
+            if (x.isActivePlayer)
+            {
+                active = x;
+            }
+        }
+        return active;
     }
     public void SwitchPlayer()
     {
-        //temp adaptation while only 1 player
-        player.SetActive(!player.isActivePlayer);
-        NPC.SetActive(!NPC.isActivePlayer);
+        foreach (Player x in players)
+        {
+            x.SetActive(!x.isActivePlayer);
+        }
         activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
     }
 
@@ -61,16 +102,24 @@ public class PlayerGroup : MonoBehaviour
     /// </summary>
     public void ResetPlayers()
     {
-        player.currentBallInTrial =0;
-        NPC.currentBallInTrial = 0;
+        foreach (Player x in players)
+        {
+            x.currentBallInTrial = 0;
+            x.playerScore.ResetScore();
+            // first we set each player non active
+            x.SetActive(false);
+        }
+        // then we set the player active, this way we don't have to care about the length of ptcpts ranging from 1 to ...
+        //player.currentBallInTrial =0;
+        //NPC.currentBallInTrial = 0;
         player.SetActive(true);
-        NPC.SetActive(false);
-        player.playerScore.ResetScore();
-        NPC.playerScore.ResetScore();
+        //NPC.SetActive(false);
+        //player.playerScore.ResetScore();
+        //NPC.playerScore.ResetScore();
         activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
     }
 
-   
+
 
     /// <summary>
     /// sets the ReachtargetEnum of the active slingshot

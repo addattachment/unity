@@ -7,7 +7,7 @@ public class TrophyAppearState : TrophyStateMachine
         state.trophyState = "TrophyAppearState";
         state.trophyList.SetFocus(true, state.trophyList.trophyStandLocation.transform);
         state.trophyList.MakeTrophyAppear(state.trialList.currentTrial);
-        state.trophyIsGiven = false;
+        state.gameManager.trophyIsGiven = false;
     }
 
     public override void ExitState(TrophyStateManager state)

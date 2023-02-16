@@ -11,7 +11,6 @@ public class CaregiverScoringState : CaregiverStateMachine
     public override void EnterState(CaregiverStateManager state)
     {
         state.caregiverPhase = "CaregiverScoringState";
-        state.scoreCaregiver.SetActive(true);
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().EnableScoring();
         isListening = false;
     }
@@ -20,8 +19,7 @@ public class CaregiverScoringState : CaregiverStateMachine
     {
         //go to the next trial
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.trialList.currentTrial);
-        state.scoreCaregiver.SetActive(false);
-        state.trialState.restart = true;
+        state.gameManager.restart = true;
     }
 
 
@@ -36,7 +34,7 @@ public class CaregiverScoringState : CaregiverStateMachine
         {
             state.scoreCaregiver.GetComponent<ScoreCaregiver>().DisableScoring();
         }
-        if (state.scoreCaregiver.GetComponent<ScoreCaregiver>().scoringStarted & state.scoreCaregiver.GetComponent<ScoreCaregiver>().isLow)
+        if (state.feedbackPole.isTouched & state.scoreCaregiver.GetComponent<ScoreCaregiver>().isLow)
         {
             isListening = false;
             state.scoreCaregiver.GetComponent<ScoreCaregiver>().scoringStarted = false;

@@ -20,7 +20,7 @@ namespace TrialNS
             Debug.Log("Entering Trial State");
             state.trialPhase = "TrialState";
             //state.players.PrepNewShootingTurn(state.trialList, state.targets);
-            state.trialIsRunning = true;
+            state.gameManager.trialIsRunning = true;
         }
 
         public override void OnCollisionEnter(TrialStateManager state)
@@ -36,7 +36,7 @@ namespace TrialNS
             //    state.players.SwitchPlayer();
             //    state.players.PrepNewShootingTurn(state.trialList, state.targets);
             //}
-            if (state.endTrial)
+            if (state.gameManager.endTrial)
             {
                 state.SwitchState(state.postTrialState);
             }
@@ -45,13 +45,13 @@ namespace TrialNS
         public override void ExitState(TrialStateManager state)
         {
             Debug.Log("Exiting Trial State");
-            state.endTrial = false;
-            state.trialIsRunning = false;
+            state.gameManager.endTrial = false;
+            state.gameManager.trialIsRunning = false;
             //make sure other variables are also false
-            state.startTrial = false;
+            //state.startTrial = false;
 
-            state.restart = false;
-            state.ballIsShot = false;
+            state.gameManager.restart = false;
+            state.gameManager.ballIsShot = false;
         }
 
     }

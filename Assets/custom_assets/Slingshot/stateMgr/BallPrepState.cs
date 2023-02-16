@@ -29,7 +29,7 @@ public class BallPrepState : BallStateMachine
         else
         {
             // As soon as one of the players is out of balls, we can conclude that both players are out of balls
-            state.trialState.endTrial = true;
+            state.gameManager.endTrial = true;
         }
     }
 

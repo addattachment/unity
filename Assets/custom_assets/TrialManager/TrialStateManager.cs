@@ -22,11 +22,11 @@ namespace TrialNS
         public TrophyStateManager trophyStates;
         public CountDown countDown;
 
-        public bool startTrial = false;
-        public bool endTrial = false;
-        public bool restart = false;
-        public bool ballIsShot = false;
-        public bool trialIsRunning = false;
+        //public bool startTrial = false;
+        //public bool endTrial = false;
+        //public bool restart = false;
+        //public bool ballIsShot = false;
+        //public bool trialIsRunning = false;
         // trialPhase is for debugging purposes
         public string trialPhase = "IntroState";
 

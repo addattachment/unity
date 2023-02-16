@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4226458809011070064}
-  - component: {fileID: 4226458809011070065}
+  - component: {fileID: 4226458809069008895}
+  - component: {fileID: 4226458809069008894}
   m_Layer: 0
   m_Name: LightMgr
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4226458809011070065
+--- !u!114 &4226458809069008895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,11 +42,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 4226458809011070071}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 002af738391b64a4183a3e244b4374d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b22937ae0112e841b294083c9b390a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sun: {fileID: 0}
-  trophySpotlight: {fileID: 0}
+--- !u!114 &4226458809069008894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4226458809011070071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c19552159e53e7549abeb90f18ad4777, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spotLight: {fileID: 0}
   caregiverLight: {fileID: 0}
-  spotlightOffset: 5
-  maxLightIntensity: 2.5
+  envLight: {fileID: 4226458809069008895}

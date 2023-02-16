@@ -32,6 +32,29 @@ public class GameManager : MonoBehaviour
     [SerializeField] private OutletPassThrough lsl;
     [SerializeField] private WsClient ws;
 
+    [Header("countdown stateMgr bools")]
+
+    [Header("trial stateMgr bools")]
+    public bool startTrial = false;
+    public bool endTrial = false;
+    public bool restart = false;
+    public bool ballIsShot = false;
+    public bool trialIsRunning = false;
+
+    [Header("trophy stateMgr bools")]
+    public bool trophyMayAppear = false;
+    public bool mayPrep = false;
+    public bool canLaunch = false;
+    public bool didShoot = false;
+    public bool trophyIsGiven = false;
+
+    [Header("caregiver stateMgr bools")]
+    public bool didReadFeedback = false;
+    public bool didGiveScore = false;
+    public bool mustGiveFeedback = false;
+
+    [Header("ball stateMgr bools")]
+    public bool isInitiated = false;
     //[Header("GUI")]
     //[SerializeField] GameObject HUD;
 

@@ -12,7 +12,7 @@ public class TrophyList : MonoBehaviour
     [Header("light")]
     //[SerializeField] private GameObject trophySpot;
     //[SerializeField] float maxLightIntensity = 2.5f;
-    [SerializeField] private Lights lights;
+    [SerializeField] private LightingMgr lightMgr;
 
     private Hashtable ht;
     [Header("Audio")]
@@ -68,7 +68,7 @@ public class TrophyList : MonoBehaviour
         trophyIsGiven = false;
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f, "oncomplete", "SetTrophyGiven", "oncompletetarget", this.gameObject);
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", this.gameObject);
 
         // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
@@ -76,6 +76,8 @@ public class TrophyList : MonoBehaviour
 
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
+        currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
+        currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
         //make sure we don't have a currentTrophy anymore
         currentTrophy = null;
@@ -105,9 +107,9 @@ public class TrophyList : MonoBehaviour
     /// <param name="enabled"></param>
     public void SetFocus(bool enabled, Transform focusLocation)
     {
-        lights.EnableSunlight(!enabled);
-        lights.EnableLight(enabled, lights.trophySpotlight);
-        lights.SpotFollow(focusLocation.position, lights.trophySpotlight);
+        lightMgr.envLight.EnableSunlight(!enabled);
+        lightMgr.spotLight.EnableLight(enabled);
+        lightMgr.spotLight.SpotFollow(focusLocation.position);
     }
 
     private GameObject[] Reshuffle(GameObject[] objects)

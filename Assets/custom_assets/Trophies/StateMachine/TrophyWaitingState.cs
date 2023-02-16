@@ -6,7 +6,7 @@ public class TrophyWaitingState : TrophyStateMachine
     {
         state.trophyState = "TrophyWaitingState";
         state.trophyList.SetFocus(false, state.trophyList.trophyStandLocation.transform);
-        state.trialState.startTrial = true;
+        state.gameManager.startTrial = true;
     }
 
     public override void ExitState(TrophyStateManager state)
@@ -16,7 +16,7 @@ public class TrophyWaitingState : TrophyStateMachine
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.trialState.endTrial)
+        if (state.gameManager.endTrial)
         {
             state.SwitchState(state.trophyGivingState);
         }

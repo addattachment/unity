@@ -31,10 +31,10 @@ public class BallCalcImpactState : BallStateMachine
         // we update the players current ball for a next round
         Player currentPlayer = state.players.GetActivePlayer().GetComponent<Player>();
         currentPlayer.currentBallInTrial++;
-        if (currentPlayer.currentBallInTrial >= state.amountOfBallsInTrial)
+        if (!state.players.BallsLeft())
         {
             // As soon as one of the players is out of balls, we can conclude that both players are out of balls
-            state.trialState.endTrial = true;
+            state.gameManager.endTrial = true;
             state.SwitchState(state.ballInitState);
         }
         else

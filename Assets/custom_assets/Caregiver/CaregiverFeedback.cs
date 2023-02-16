@@ -10,7 +10,7 @@ public class CaregiverFeedback : MonoBehaviour
     //[SerializeField] private SpeechToMouth feedbackSpeech;
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
-    [SerializeField] private TrialStateManager stateMgr;
+    private GameManager gameManager;
     [SerializeField] private Light sun;
     public Light caregiverSpotLight;
     [SerializeField] private Slingshot playerSlingshot;
@@ -22,7 +22,7 @@ public class CaregiverFeedback : MonoBehaviour
     // Start is called before the first frame update    
     void Start()
     {
-        stateMgr = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
+        gameManager = GameManager.Instance;
     }
 
     // Update is called once per frame
@@ -32,7 +32,7 @@ public class CaregiverFeedback : MonoBehaviour
         if (testPlay)
         {
             // in order to test the end of a feedback moment, we first need to make sure we're in end trial state
-            stateMgr.endTrial = true;
+            gameManager.endTrial = true;
             testPlay = false;
             audioSource.Play();
         }

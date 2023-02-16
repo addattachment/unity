@@ -23,7 +23,7 @@ public class BallWaitingState : BallStateMachine
 
     public override void UpdateState(BallStateManager state)
     {
-        if (state.trialState.trialIsRunning)
+        if (state.gameManager.trialIsRunning)
         {
             state.SwitchState(state.ballPrepState);
         }

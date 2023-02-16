@@ -14,10 +14,9 @@ public class CaregiverFeedbackState : CaregiverStateMachine
         state.triggerAnimation.TriggerAnim("toHoofdSchoudersTrig"); //temp
         state.caregiverFeedbackScreen.SetActive(true);
         state.caregiverFeedback.SetSlingshotForFeedback(true);
-        state.lights.EnableSunlight(false);
-        state.lights.EnableLight(true, state.lights.caregiverLight);
+        state.lightingMgr.envLight.EnableSunlight(false);
+        state.lightingMgr.caregiverLight.EnableLight(true);
         state.caregiverFeedback.GiveFeedback();
-
     }
 
     public override void ExitState(CaregiverStateManager state)

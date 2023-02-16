@@ -24,16 +24,16 @@ namespace TrialNS
 
         public override void UpdateState(TrialStateManager state)
         {
-            if (state.trophyStates.trophyIsGiven)
+            if (state.gameManager.trophyIsGiven)
             {
-                state.trophyStates.trophyIsGiven = false;
+                state.gameManager.trophyIsGiven = false;
                 // trophy is given, so give feedback
-                state.caregiverStates.mustGiveFeedback = true;
+                state.gameManager.mustGiveFeedback = true;
             }
 
-            if (state.restart)
+            if (state.gameManager.restart)
             {
-                state.restart = false;
+                state.gameManager.restart = false;
                 state.SwitchState(state.preTrialState);
             }
         }
@@ -41,18 +41,13 @@ namespace TrialNS
         public override void ExitState(TrialStateManager state)
         {
             //make sure other variables are also false
-            state.endTrial = false;
-            state.startTrial = false;
-            state.ballIsShot = false;
+            state.gameManager.endTrial = false;
+            state.gameManager.startTrial = false;
+            state.gameManager.ballIsShot = false;
             // we move the targets to a new starting pos
             state.targets.SetStartingPos();
             //prepare for next trial
             state.trialList.NextTrial();
-
-
-            // look for the public gameobject triallist and update the trialstate
-            try { GameObject.Find("trialListPrefab").GetComponent<TrialList>().NextTrial(); }
-            catch { Debug.Log("Could not find trialListPrefab"); }
         }
     }
 }
