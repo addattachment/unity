@@ -54,15 +54,6 @@ public class PlayerGroup : MonoBehaviour
             }
         }
         return false;
-
-        //if ((player.currentBallInTrial >= gameManager.ballsPerGame) & (NPC.currentBallInTrial >= gameManager.ballsPerGame))
-        //{
-        //    return false;
-        //}
-        //else
-        //{
-        //    return true;
-        //}
     }
 
     public Player GetWinner()
@@ -73,6 +64,7 @@ public class PlayerGroup : MonoBehaviour
         }
         else
         {
+            debug_text.SetDebugText("player " + player.score + " NPC " + NPC.score);
             Player winner = player.score > NPC.score ? player : NPC;
             return winner;
         }
@@ -135,6 +127,9 @@ public class PlayerGroup : MonoBehaviour
     /// <param name="slingshot"></param>
     public void SetPlayerScoringChance(Slingshot slingshot, Trial currentTrial)
     {
+        //set Seed
+        Random.InitState(System.DateTime.Now.Millisecond);
+        //Chance setting
         float guess = Random.Range(0.0f, 1.0f);
         //Trial currentTrial = trialList.GetCurrentTrial();
         ReachTargetEnum reachChance;
@@ -145,16 +140,16 @@ public class PlayerGroup : MonoBehaviour
         }
         else
         {
-            if (currentTrial.IsGoodTrial() == true)
+            if (currentTrial.IsGoodTrial())
             {
-                // NPC has 50% chance of scoring
-                // Player has 20% of balls which are steered towards targets
+                // NPC has 30% chance of scoring
+                // Player has 40% of balls which are steered towards targets
 
                 if (activeParticipant.isRealPlayer)
                 {
                     // have a chance that the ball must hit the targets
                     // equal chance must vs may?
-                    if (guess >= 0.8f)
+                    if (guess >= 0.6f)
                     {
                         reachChance = ReachTargetEnum.preferredMust;
                     }
@@ -162,14 +157,12 @@ public class PlayerGroup : MonoBehaviour
                     {
                         reachChance = ReachTargetEnum.may;
                     }
-                    debug_text.SetToggleReach(reachChance, activeParticipant);
-
                 }
                 else
                 {
                     // equal or less chance of scoring than human player??
                     // equal chance must vs mustn
-                    if (guess >= 0.5f)
+                    if (guess >= 0.7f)
                     {
                         reachChance = ReachTargetEnum.must;
                     }
@@ -195,7 +188,6 @@ public class PlayerGroup : MonoBehaviour
                     {
                         reachChance = ReachTargetEnum.musnt;
                     }
-                    debug_text.SetToggleReach(reachChance, activeParticipant);
                 }
                 else
                 {
@@ -212,6 +204,8 @@ public class PlayerGroup : MonoBehaviour
                 }
             }
         }
+        //debug_text.SetToggleReach(reachChance, activeParticipant);
+        //debug_text.SetDebugText("" + reachChance + activeParticipant);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

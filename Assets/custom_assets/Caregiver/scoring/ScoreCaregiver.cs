@@ -17,7 +17,7 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private Renderer meCircleRing;
     [SerializeField] private GameObject caregiverCircle;
     [SerializeField] private Renderer caregiverCircleRing;
-    [SerializeField] private GameObject collider;
+    [SerializeField, Tooltip("collider to check if hand buttons are pressed")] private GameObject _collider;
     [SerializeField] private float scaleCircleDistance = 5.0f;
     [SerializeField] private float maxDistance = 2.0f;
 
@@ -48,14 +48,14 @@ public class ScoreCaregiver : MonoBehaviour
     {
         meCircle.transform.position = startPosMeCircle;
         caregiverCircle.transform.position = startPosCaregiverCircle;
-        collider.SetActive(true);
+        _collider.SetActive(true);
         appear.Raise();
         gripIsPushed = false;
     }
 
     public void DisableScoring()
     {
-        collider.SetActive(false);
+        _collider.SetActive(false);
         appear.Lower();
     }
 

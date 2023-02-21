@@ -15,7 +15,7 @@ public class CaregiverFeedback : MonoBehaviour
     public Light caregiverSpotLight;
     [SerializeField] private Slingshot playerSlingshot;
     public AudioSource audioSource;
-    private bool speechHasStarted = false;
+    //private bool speechHasStarted = false;
     [SerializeField] private bool testPlay = false;
 
     [SerializeField] private ReadFeedback feedbackPole;

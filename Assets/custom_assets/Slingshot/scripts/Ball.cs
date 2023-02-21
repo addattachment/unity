@@ -73,12 +73,15 @@ public class Ball : MonoBehaviour
 #if UNITY_EDITOR
         if (gameManager.doFakeLaunch)
         {
+            if (slingShot.player.isActivePlayer)
+            {
 #if DEBUGMODE
             InitDebugCube();
 #endif
-            ballIsGrabbed = true;
+                ballIsGrabbed = true;
+                FakeLaunch();
+            }
             gameManager.doFakeLaunch = false;
-            FakeLaunch();
         }
 #if DEBUGMODE
         PlaceDebugCube(_fakeBallStartPoint);
@@ -93,7 +96,7 @@ PlaceDebugCube(Rb.position);
 
     private void ProcessCollision(GameObject coll)
     {
-        debug_text.SetDebugText("hit: " + coll.name);
+        //debug_text.SetDebugText("hit: " + coll.name);
 
         // TEMP OBJECT TO SEE IF FUTUREPOSITION AND TARGETHIT ARE THE SAME LOCATION
 #if DEBUGCUBE
@@ -190,8 +193,8 @@ PlaceDebugCube(Rb.position);
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         //Debug.Log("launchforce gets calculated with origin " + origin + " and hittargetpos " + _hitTargetPos);
         Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
-        debug_text.SetDebugText("launchforce " + launchForce);
-        debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
+        //debug_text.SetDebugText("launchforce " + launchForce);
+        //debug_text.SetDebugText("hittargetPos " + _hitTargetPos);
 
 #if DEBUGCUBE
         //Instantiate(debugCube, _fakeBallStartPoint, Quaternion.identity);
@@ -229,7 +232,7 @@ PlaceDebugCube(Rb.position);
     // we release the Ball
     public void VRExitEvent()
     {
-        debug_text.SetDebugText("ball start point is "+Rb.position);
+        //debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
         Launch(Rb.position);
     }
@@ -239,7 +242,7 @@ PlaceDebugCube(Rb.position);
         // fake a starting point for the ball
         Rb.position = _fakeBallStartPoint + slingShot.transform.position;
         ballIsReleased = true;
-        debug_text.SetDebugText("ball start point is " + Rb.position);
+        //debug_text.SetDebugText("ball start point is " + Rb.position);
 
         Launch(Rb.position);
     }

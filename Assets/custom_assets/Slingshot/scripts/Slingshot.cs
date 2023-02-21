@@ -101,6 +101,11 @@ public class Slingshot : MonoBehaviour
     public void SetTargetReachable(ReachTargetEnum reachEnum)
     {
         reachTarget = reachEnum;
+        AdaptDebug();
+    }
+
+    private void AdaptDebug()
+    {
         switch (reachTarget)
         {
             case ReachTargetEnum.may:
@@ -118,17 +123,16 @@ public class Slingshot : MonoBehaviour
             case ReachTargetEnum.mayNPC:
                 toggle_mayNPC.isOn = true;
                 break;
-
             default:
                 toggle_may.isOn = true;
                 break;
         }
     }
-
-    public void SetTargetReachableInt(int reachEnumInt)
-    {
-        reachTarget = (ReachTargetEnum)reachEnumInt;
-    }
+    //public void SetTargetReachableInt(int reachEnumInt)
+    //{
+    //    reachTarget = (ReachTargetEnum)reachEnumInt;
+    //    AdaptDebug();
+    //}
     public GameObject GetHook()
     {
         return Hook;

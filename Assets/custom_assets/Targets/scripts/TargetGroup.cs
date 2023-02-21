@@ -9,9 +9,10 @@ public class TargetGroup : MonoBehaviour
     [Serializable] public enum Mode { rotation = 0, translation = 1, unknown = 2 }
     public Mode movementMode = Mode.translation;
     public Vector3 rotationVector = new(0, 0, 0.4f);
-    public float xMinBorder = -4.0f;
+    public float xMinBorder = -6.0f;
     public float xMaxBorder = 6.0f;
-
+    public float minSpeed = 1.0f;
+    public float maxSpeed = 10.0f;
     public GameObject[] targetList;
     public GameObject hitTarget;
     public bool readyForHit = false;
@@ -19,10 +20,9 @@ public class TargetGroup : MonoBehaviour
 
     private void Start()
     {
-        UnityEngine.Random.InitState(System.DateTime.Now.Millisecond);
+        Random.InitState(DateTime.Now.Millisecond);
         // we can randomize the direction of the rings
         rotationVector = ((float)Random.Range(0, 2) * 2 - 1) * rotationVector;
-        //targetList = GameObject.FindGameObjectsWithTag("subTarget");
         hitTarget = targetList[0]; // random starting point
     }
 
@@ -60,7 +60,7 @@ public class TargetGroup : MonoBehaviour
             //give each target a random starting point (only change x axis)
             Vector3 currentPos = target.transform.position;
             Vector3 futurePos = currentPos;
-            futurePos.x = Random.Range(-6.0f, 6.0f);
+            futurePos.x = Random.Range(xMinBorder, xMaxBorder);
             Hashtable startPosHt = iTween.Hash("position", futurePos, "delay", 0.1f, "time", 1.0f, "easetype", "easeOutBounce");
             iTween.MoveTo(target, startPosHt);
         }
@@ -71,7 +71,7 @@ public class TargetGroup : MonoBehaviour
         {
 
             //give each targets a new speed to move
-            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(0.01f, 6.0f); //todo
+            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(minSpeed, maxSpeed); 
             //give each targets a new direction to start moving
             target.GetComponent<TargetTranslate>().direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? TargetTranslate.EnumDirection.forward : TargetTranslate.EnumDirection.backward;
         }

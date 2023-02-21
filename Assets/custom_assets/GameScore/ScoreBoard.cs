@@ -8,7 +8,6 @@ public class ScoreBoard : MonoBehaviour
     [SerializeField] private TMP_Text _name;
     [SerializeField] private TMP_Text score;
     [SerializeField] private Player subject;
-    [SerializeField] private bool isRealPlayer = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +28,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void UpdateScore()
     {
-        var text = subject.score + "/" + GameManager.Instance.ballsPerGame;
+        var text = ""+subject.score;// + "/" + subject.currentBallInTrial;// GameManager.Instance.ballsPerGame;
         score.SetText(text);
     }
 }

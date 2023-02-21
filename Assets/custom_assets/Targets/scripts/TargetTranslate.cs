@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TargetTranslate : MonoBehaviour
 {
-    [Range(0.0f, 20.1f)] public float movementSpeed = 0.5f;
+    [Range(0.0f, 10.0f)] public float movementSpeed = 0.5f;
     private Vector3 movementVector;
     [Serializable] public enum EnumDirection { forward = 1, backward = -1}
     public EnumDirection direction = EnumDirection.forward;

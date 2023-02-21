@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TrialNS;
+using UnityEngine;
 
 public class BallPrepState : BallStateMachine
 {
@@ -16,7 +17,7 @@ public class BallPrepState : BallStateMachine
         Slingshot slingshot = activeParticipant.slingshot;
 
         state.players.SetPlayerScoringChance(slingshot, state.trialList.GetCurrentTrial());
-
+        Debug.Log("enter ball prep state"+Time.time);
         if (activeParticipant.currentBallInTrial < state.amountOfBallsInTrial)
         {
             //// Make sure we can detect collisions by the new bullet (only once!)

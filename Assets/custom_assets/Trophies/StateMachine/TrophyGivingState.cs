@@ -12,7 +12,7 @@ public class TrophyGivingState : TrophyStateMachine
 
         //move trophy
         state.trophyList.MoveTrophyToWinner(winner);
-
+        //state.players.ResetPlayers();
     }
 
     public override void ExitState(TrophyStateManager state)

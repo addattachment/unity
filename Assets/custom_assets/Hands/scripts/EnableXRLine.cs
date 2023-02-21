@@ -42,7 +42,7 @@ namespace Assets.custom_assets.Debug
 
         public void EnableLine(bool enable)
         {
-            RaycastHit rayHit;
+            //RaycastHit rayHit;
             debug_text.SetDebugText("enable line " + enable);
             if (enable)
             {

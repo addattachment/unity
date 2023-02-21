@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 4181194855544150588}
   - component: {fileID: 5610424387735365674}
   - component: {fileID: 5610424387735365669}
+  - component: {fileID: 6728196060057970387}
   m_Layer: 0
   m_Name: FeedbackButton
   m_TagString: Untagged
@@ -213,14 +214,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6143b0db4aeda489a78888c2d80a87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Height: 0.9
   button: {fileID: 5610424387447992186}
-  RaiseFeedback: 0
-  LowerFeedback: 0
+  appear: {fileID: 0}
   boxColl: {fileID: 0}
   pushEvent:
     m_PersistentCalls:
       m_Calls: []
+  isTouched: 0
+--- !u!114 &6728196060057970387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4876810105424524606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9634a1d005e304ca0e953b1b3ba92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Height: 0
+  RaiseFeedback: 0
+  LowerFeedback: 0
+  isLow: 1
 --- !u!1 &5610424387419490909
 GameObject:
   m_ObjectHideFlags: 0

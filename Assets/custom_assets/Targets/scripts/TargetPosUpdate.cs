@@ -10,21 +10,17 @@ public class TargetPosUpdate : MonoBehaviour
 
     private Vector3 rotationVector;
 
-    [SerializeField] Vector3 globalPos;
-    private string _name;
     // Start is called before the first frame update
     void Start()
     {
         targetGroup = GetComponentInParent<TargetGroup>();
         rotationVector = targetGroup.GetComponent<TargetGroup>().rotationVector;
         targetTranslate = GetComponent<TargetTranslate>();
-        _name = "" + Time.time;
     }
 
     // Update is called once per frame
     void Update()
     {
-        globalPos = this.transform.position;
     }
 
     public Vector3 GetFuturePositionOfTarget(float time)

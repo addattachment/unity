@@ -6,10 +6,14 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
-    [SerializeField] private ScoreDot[] scoreDots;
-    [SerializeField] private ScoreBoardAll scoreboard;
     [SerializeField] private Player player;
 
+    [Header("visualising score")]
+    [SerializeField] private ScoreDot[] scoreDots;
+    [SerializeField] private ScoreBoardAll scoreboard;
+    [SerializeField] private Floor floor;
+
+    [Header("Audio")]
     [SerializeField] private GameSounds gameSounds;
 
     [Header("data connections")]
@@ -29,6 +33,7 @@ public class PlayerScore : MonoBehaviour
         gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
         scoreDots = GetComponentsInChildren<ScoreDot>();
+        floor = GameObject.FindGameObjectWithTag("Floor").GetComponent<Floor>();
     }
 
     // Update is called once per frame
@@ -43,12 +48,14 @@ public class PlayerScore : MonoBehaviour
         {
             scoredot.CleanScore();
         }
+        player.score = 0;
+        scoreboard.UpdateScores();
     }
     public void AddToScore(bool score)
     {
-
         PlaySound(score);
         UpdatePlayerScore(score);
+        floor.SetFloorIllumination(score);
         //global update of score
         scoreboard.UpdateScores();
         //data connections
@@ -74,6 +81,8 @@ public class PlayerScore : MonoBehaviour
             player.score++;
         }
     }
+
+
     private void LSLNotifyGoodOrBadHit(bool score)
     {
         lsl.SendMarker(score ? Marker.ball_good_hit : Marker.ball_bad_hit);
@@ -82,7 +91,7 @@ public class PlayerScore : MonoBehaviour
 
     private void WSUpdateScore()
     {
-        debug_text.SetDebugText("" + player.name + " " + player.score);
+        //debug_text.SetDebugText("" + player.name + " " + player.score);
         ws.SendWSMessage("name: " + player.name + ", score: " + player.score);
         lsl.SendMarker(Marker.score);
     }

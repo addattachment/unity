@@ -15,7 +15,7 @@ public class ScoreDot : MonoBehaviour
     void Start()
     {
         _mat = this.GetComponent<MeshRenderer>().material;
-        _mat.SetColor("_Color", Neutral);
+        _mat.SetColor("_EmissionColor", Neutral);
     }
 
     // Update is called once per frame
@@ -28,15 +28,15 @@ public class ScoreDot : MonoBehaviour
     {
         if (hit)
         {
-            _mat.SetColor("_Color", Score);
+            _mat.SetColor("_EmissionColor", Score);
         }
         else
         {
-            _mat.SetColor("_Color", Miss) ;
+            _mat.SetColor("_EmissionColor", Miss) ;
         }
     }
     public void CleanScore()
     {
-        _mat.SetColor("_Color",Neutral);
+        _mat.SetColor("_EmissionColor", Neutral);
     }
 }

@@ -24,7 +24,7 @@ public class TrophyList : MonoBehaviour
     [SerializeField] private bool testLightOff = false;
     [SerializeField] private bool createTrophy = false;
     [SerializeField] private bool moveTrophy = false;
-    [SerializeField] private Player testPlayer;
+    [SerializeField, Tooltip("used to move the ball to the testPlayer")] private Player testPlayer;
 
     // Start is called before the first frame update
     void Start()

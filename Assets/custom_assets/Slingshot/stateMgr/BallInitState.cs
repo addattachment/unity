@@ -11,7 +11,7 @@ public class BallInitState : BallStateMachine
     {
         state.ballPhase = "ballInitState";
 
-        state.players.ResetPlayers();
+        //state.players.ResetPlayers();
         state.amountOfBallsInTrial = state.gameManager.ballsPerGame;
     }
 

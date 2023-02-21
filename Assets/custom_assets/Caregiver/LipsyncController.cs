@@ -81,7 +81,7 @@ public class LipsyncController : MonoBehaviour
 	private float[] freqData;
 	private float nSamples = 256;
 	private float fMax = 24000;
-	private AudioSource audio;
+	//private AudioSource audio;
 	private const float fFloor = 20;
 	private float prevSum;
 	private float a0;

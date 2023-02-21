@@ -53,8 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: {fileID: 1581272121843294191}
   score: {fileID: 1581272122030684232}
-  player: {fileID: 0}
-  NPC: {fileID: 0}
+  subject: {fileID: 0}
   isRealPlayer: 0
 --- !u!1 &1581272120330177868
 GameObject:
@@ -193,8 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29516a44a1ef61146873ddf75781c55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreboardPlayer: {fileID: 1581272122052354654}
-  scoreboardNPC: {fileID: 1581272120313972343}
+  scoreBoards: []
 --- !u!1 &1581272120468461392
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +942,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: {fileID: 1581272120468461406}
   score: {fileID: 1581272120550022957}
-  player: {fileID: 0}
-  NPC: {fileID: 0}
+  subject: {fileID: 0}
   isRealPlayer: 1

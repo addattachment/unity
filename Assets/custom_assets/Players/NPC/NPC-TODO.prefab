@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,7 +128,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 673888990}
-  - {fileID: 5812154546198005746}
+  - {fileID: 4690181282312595435}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -149,9 +149,14 @@ MonoBehaviour:
   height: 110
   isRealPlayer: 0
   isActivePlayer: 0
+  contingency: 0
   score: 0
-  amountOfBallsInTrial: 0
-  slingshot: {fileID: 5812154546198005748}
+  currentBallInTrial: 0
+  slingshot: {fileID: 0}
+  instBall: {fileID: 0}
+  playerScore: {fileID: 0}
+  trophySpawnLocation: {fileID: 0}
+  trophyWonList: []
 --- !u!1001 &5736673880965165935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159,6 +164,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5736673880466855918}
     m_Modifications:
+    - target: {fileID: 1047682328762848388, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2248467486586270874, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
       propertyPath: m_Name
       value: Slingshot
@@ -233,19 +242,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
---- !u!4 &5812154546198005746 stripped
+--- !u!4 &4690181282312595435 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2248467486586270877, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1047682328762848388, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
   m_PrefabInstance: {fileID: 5736673880965165935}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5812154546198005748 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2248467486586270875, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-  m_PrefabInstance: {fileID: 5736673880965165935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20224d8d8912d0240b481e7f4dde3a28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
