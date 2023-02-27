@@ -1,9 +1,7 @@
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.Events;
 using LSL;
 using TrialNS;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +16,7 @@ public class GameManager : MonoBehaviour
 
     //public Player activeParticipant;
     public bool playerSettingsAreSet = false;
+    public bool NPCShootsBall = false;
 
     [Header("development settings")]
     [SerializeField] private bool restartBool = false;
@@ -108,6 +107,6 @@ public class GameManager : MonoBehaviour
         //SceneManager.LoadScene("PlayerScene", LoadSceneMode.Additive);
         SceneManager.LoadScene(activeScene);
     }
-   
-    
+
+
 }

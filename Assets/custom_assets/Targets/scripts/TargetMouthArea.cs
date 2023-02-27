@@ -32,7 +32,7 @@ public class TargetMouthArea : MonoBehaviour
                 countUp = false;
             }
         }
-        else 
+        else
         {
             startTime -= Time.deltaTime;
             if (startTime <= 0.0f)

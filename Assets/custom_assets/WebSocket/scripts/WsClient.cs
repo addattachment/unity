@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using WebSocketSharp;
@@ -100,7 +98,7 @@ public class WsClient : MonoBehaviour
         int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)
         {
-            ws.Send("time: " + cur_time + ", "+message);
+            ws.Send("time: " + cur_time + ", " + message);
         }
     }
     public void SetDebug(string message)

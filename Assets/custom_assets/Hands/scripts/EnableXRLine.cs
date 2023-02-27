@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -56,7 +55,8 @@ namespace Assets.custom_assets.Debug
                 List<RaycastResult> results = new List<RaycastResult>();
 
                 xrRay.Raycast(m_PointerEventData, results);
-                foreach(RaycastResult _res in results) { 
+                foreach (RaycastResult _res in results)
+                {
                     debug_text.SetDebugText("raycast hit by " + _res.gameObject.name);
                     foreach (string i in enableLineTags)
                     {

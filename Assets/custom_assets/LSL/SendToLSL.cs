@@ -1,6 +1,4 @@
 using LSL;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SendToLSL : MonoBehaviour
@@ -21,10 +19,10 @@ public class SendToLSL : MonoBehaviour
         if (repeatedExec)
         {
             _time += Time.deltaTime;
-            if(_time >= _exec_time)
+            if (_time >= _exec_time)
             {
                 _time = 0.0f;
-                outletPassThrough.SendMarker(Marker.test) ;
+                outletPassThrough.SendMarker(Marker.test);
             }
         }
     }

@@ -1,7 +1,4 @@
-﻿using Assets.Scripts;
-using LSL;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class Floor : MonoBehaviour
@@ -64,11 +61,11 @@ public class Floor : MonoBehaviour
         SetColor(neutralColor);
         yield return new WaitForSeconds(0.25f);
         SetColor(floorColor);
-        yield return new WaitForSeconds(0.25f); 
+        yield return new WaitForSeconds(0.25f);
         SetColor(neutralColor);
         yield return new WaitForSeconds(0.25f);
     }
-    
+
     private void Tween1()
     {
         htUp = iTween.Hash("name", "floorIllumination", "from", neutralColor, "to", floorColor, "easeType", "easeInCubic", "time", 0.3f, "onupdate", "SetColor", "oncomplete", "Tween2");

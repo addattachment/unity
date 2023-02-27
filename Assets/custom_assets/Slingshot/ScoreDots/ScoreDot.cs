@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ScoreDot : MonoBehaviour
 {
-    
+
     [SerializeField] private Color Neutral;
     [SerializeField] private Color Score;
     [SerializeField] private Color Miss;
@@ -32,7 +30,7 @@ public class ScoreDot : MonoBehaviour
         }
         else
         {
-            _mat.SetColor("_EmissionColor", Miss) ;
+            _mat.SetColor("_EmissionColor", Miss);
         }
     }
     public void CleanScore()

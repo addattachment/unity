@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 // In this file we have a function to set game values (being name, height of player, gender, which contingency group) 
@@ -20,7 +18,7 @@ public class SetGameValues : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] Player NPC;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +52,7 @@ public class SetGameValues : MonoBehaviour
 
     public void UpdateGameValues()
     {
-        if(gender == Gender.Male)
+        if (gender == Gender.Male)
         {
             NPC.playerName = NPCNameMale;
         }
@@ -74,7 +72,7 @@ public class SetGameValues : MonoBehaviour
         NPC.height = height; //TODO USEFUL?
         NPC.isRealPlayer = false;
 
-        
+
         // we tell the game that the players values are set
         gameManager.playerSettingsAreSet = true;
     }

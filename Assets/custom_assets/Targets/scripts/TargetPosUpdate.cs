@@ -33,15 +33,15 @@ public class TargetPosUpdate : MonoBehaviour
                 break;
             case TargetGroup.Mode.translation:
                 result = GetFutureTranslationPos(time);
-//                //PLACE TEMP OBJECT
-//#if DEBUGCUBE
-//                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-//                temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
-//                temp.GetComponent<BoxCollider>().enabled = false;
-//                //Destroy(temp, 1.0f);
-//                temp.transform.position = result;
-//                temp.name = "standin"+_name;
-//#endif
+                //                //PLACE TEMP OBJECT
+                //#if DEBUGCUBE
+                //                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                //                temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
+                //                temp.GetComponent<BoxCollider>().enabled = false;
+                //                //Destroy(temp, 1.0f);
+                //                temp.transform.position = result;
+                //                temp.name = "standin"+_name;
+                //#endif
                 //TODO check why the must isn't working correctly
                 break;
             case TargetGroup.Mode.unknown:
@@ -51,7 +51,7 @@ public class TargetPosUpdate : MonoBehaviour
                 break;
         }
         return result;
-        
+
     }
 
     private Vector3 GetFutureTranslationPos(float time)
@@ -69,16 +69,16 @@ public class TargetPosUpdate : MonoBehaviour
 
         float distance_traveled = targetTranslate.movementSpeed * time;
         Debug.Log("distance to travel " + distance_traveled);
-        if(targetTranslate.direction == TargetTranslate.EnumDirection.forward)
-        {   
-           if( (transform.position.x + distance_traveled) > targetGroup.xMaxBorder)
+        if (targetTranslate.direction == TargetTranslate.EnumDirection.forward)
+        {
+            if ((transform.position.x + distance_traveled) > targetGroup.xMaxBorder)
             {
                 //first we calculate how much we'd be going to far
                 distance_traveled -= (targetGroup.xMaxBorder - transform.position.x);
                 // to use this renewed distance going 'back' from the border
                 result.x = targetGroup.xMaxBorder - distance_traveled;
             }
-           else
+            else
             {
                 // if we won't be reaching the end, the assumed future position is found by adding the distance traveled
                 result.x += distance_traveled;

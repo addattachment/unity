@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Transparency_changer: MonoBehaviour
+public class Transparency_changer : MonoBehaviour
 {
     private CanvasRenderer cr;
     private float time = 0.0f;
@@ -20,7 +18,7 @@ public class Transparency_changer: MonoBehaviour
     {
         if (time >= pingpongtime) up = false;
         if (time <= 0.0f) up = true;
-        if(up)
+        if (up)
         {
             time += Time.deltaTime;
         }

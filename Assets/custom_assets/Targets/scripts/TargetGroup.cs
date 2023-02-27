@@ -71,7 +71,7 @@ public class TargetGroup : MonoBehaviour
         {
 
             //give each targets a new speed to move
-            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(minSpeed, maxSpeed); 
+            target.GetComponent<TargetTranslate>().movementSpeed = Random.Range(minSpeed, maxSpeed);
             //give each targets a new direction to start moving
             target.GetComponent<TargetTranslate>().direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? TargetTranslate.EnumDirection.forward : TargetTranslate.EnumDirection.backward;
         }

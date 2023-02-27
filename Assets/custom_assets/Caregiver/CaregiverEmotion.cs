@@ -1,8 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 public enum Atmosphere { GOOD, BAD, NEUTRAL };
 
 public class CaregiverEmotion : MonoBehaviour

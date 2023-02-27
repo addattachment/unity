@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TrialNS;
+﻿using TrialNS;
 using UnityEngine;
 
 
-public class CaregiverStateManager: MonoBehaviour
+public class CaregiverStateManager : MonoBehaviour
 {
     public CaregiverStateMachine currentCaregiverState;
     public CaregiverIdleState caregiverIdleState = new();

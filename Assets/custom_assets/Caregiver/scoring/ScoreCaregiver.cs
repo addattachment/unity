@@ -1,13 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.InputSystem.XR;
-using UnityEngine.XR;
-using UnityEngine.XR.Interaction;
-using UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation;
-using UnityEngine.XR.Interaction.Toolkit.Inputs;
 using Assets.Scripts;
-using Unity.XR.PXR;
+using UnityEngine;
 [RequireComponent(typeof(Appear))]
 public class ScoreCaregiver : MonoBehaviour
 {

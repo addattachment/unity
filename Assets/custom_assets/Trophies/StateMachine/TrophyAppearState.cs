@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class TrophyAppearState : TrophyStateMachine
+﻿public class TrophyAppearState : TrophyStateMachine
 {
     public override void EnterState(TrophyStateManager state)
     {

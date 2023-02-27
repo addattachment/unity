@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TrophyList : MonoBehaviour
@@ -77,7 +76,7 @@ public class TrophyList : MonoBehaviour
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
         currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
-        currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+        currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
         //make sure we don't have a currentTrophy anymore
         currentTrophy = null;

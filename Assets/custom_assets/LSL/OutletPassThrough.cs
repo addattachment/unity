@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using LSL;
-using static LSL.liblsl;
 using UnityEngine.Events;
+using static LSL.liblsl;
 
 namespace LSL
 {

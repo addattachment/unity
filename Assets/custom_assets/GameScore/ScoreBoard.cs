@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -28,7 +26,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void UpdateScore()
     {
-        var text = ""+subject.score;// + "/" + subject.currentBallInTrial;// GameManager.Instance.ballsPerGame;
+        var text = "" + subject.score;// + "/" + subject.currentBallInTrial;// GameManager.Instance.ballsPerGame;
         score.SetText(text);
     }
 }

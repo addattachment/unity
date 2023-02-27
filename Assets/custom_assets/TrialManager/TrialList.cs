@@ -1,9 +1,5 @@
 using Assets.Scripts;
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
@@ -15,7 +11,7 @@ namespace TrialNS
 
         [SerializeField] private List<Trial> trialsList; // list of trials to be used in block of experiment
         public int currentTrial = 0; // where we are currently in the block
-       
+
         [Header("Game settings")]
         [SerializeField] private string audioClips20_dir;
         [SerializeField] private string audioClips80_dir;
@@ -47,7 +43,7 @@ namespace TrialNS
 
         private void Update()
         {
-            
+
             if ((gameManager.trialListGenerated == false) && (gameManager.playerSettingsAreSet == true))
             {
                 Debug.Log("triallist gets filled in");

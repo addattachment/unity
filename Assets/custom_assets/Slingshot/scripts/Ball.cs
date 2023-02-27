@@ -2,7 +2,6 @@ using Assets.Scripts;
 using LSL;
 using System.Collections;
 using UnityEngine;
-using TrialNS;
 public class Ball : MonoBehaviour
 {
     private Rigidbody Rb;
@@ -49,7 +48,7 @@ public class Ball : MonoBehaviour
     private bool cubePlaced = false;
 #endif
     [SerializeField] private DebugConnection debug_text;
-    public Vector3 _fakeBallStartPoint = new Vector3(0, 0.4f, 0);
+    public Vector3 _fakeBallStartPointDebug = new Vector3(0, 0.4f, 0);
     public bool doFakeLaunch = false;
 
     private void Start()
@@ -79,7 +78,7 @@ public class Ball : MonoBehaviour
             InitDebugCube();
 #endif
                 ballIsGrabbed = true;
-                FakeLaunch();
+                FakeLaunch(_fakeBallStartPointDebug);
             }
             gameManager.doFakeLaunch = false;
         }
@@ -237,7 +236,7 @@ PlaceDebugCube(Rb.position);
         Launch(Rb.position);
     }
 
-    public void FakeLaunch()
+    public void FakeLaunch(Vector3 _fakeBallStartPoint)
     {
         // fake a starting point for the ball
         Rb.position = _fakeBallStartPoint + slingShot.transform.position;

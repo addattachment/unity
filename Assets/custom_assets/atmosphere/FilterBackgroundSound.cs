@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(AudioHighPassFilter), typeof(AudioLowPassFilter))]
 public class FilterBackgroundSound : MonoBehaviour
@@ -29,7 +27,7 @@ public class FilterBackgroundSound : MonoBehaviour
                 _time += Time.deltaTime;
             }
             float perc = _time / transition_time;
-            low.cutoffFrequency = Mathf.Lerp(22000.0f, high_cutoff, perc); 
+            low.cutoffFrequency = Mathf.Lerp(22000.0f, high_cutoff, perc);
             high.cutoffFrequency = Mathf.Lerp(0.0f, low_cutoff, perc);
         }
         else

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TrialNS;
 
 public class BallCalcImpactState : BallStateMachine
@@ -14,7 +10,7 @@ public class BallCalcImpactState : BallStateMachine
         PlayerScore activePlayerScore = state.players.GetActivePlayer().playerScore;
         bool score = state.currentBall.ballDidScore;
         activePlayerScore.AddToScore(score);
-        
+
     }
 
     public override void ExitState(BallStateManager state)

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -23,7 +22,7 @@ public class ScoreBoardAll : MonoBehaviour
     }
     public void UpdateScores()
     {
-        foreach(ScoreBoard scoreBoard in scoreBoards)
+        foreach (ScoreBoard scoreBoard in scoreBoards)
         {
             scoreBoard.UpdateScore();
         }
@@ -31,10 +30,10 @@ public class ScoreBoardAll : MonoBehaviour
 
     public void UpdateNames()
     {
-        foreach( ScoreBoard scoreBoard in scoreBoards)
+        foreach (ScoreBoard scoreBoard in scoreBoards)
         {
             scoreBoard.SetName();
         }
     }
-    
+
 }

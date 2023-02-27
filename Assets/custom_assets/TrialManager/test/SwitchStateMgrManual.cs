@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using TrialNS;
+using UnityEngine;
 
 public class SwitchStateMgrManual : MonoBehaviour
 {
@@ -17,14 +15,17 @@ public class SwitchStateMgrManual : MonoBehaviour
     {
     }
 
-    public void StartTrial(){
+    public void StartTrial()
+    {
         statemgr.SwitchState(statemgr.trialState);
     }
-    public void EndTrial(){
+    public void EndTrial()
+    {
         statemgr.SwitchState(statemgr.postTrialState);
     }
 
-    public void RestartTrial(){
+    public void RestartTrial()
+    {
         statemgr.SwitchState(statemgr.preTrialState);
     }
 }

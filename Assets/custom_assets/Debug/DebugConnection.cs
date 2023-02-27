@@ -57,7 +57,7 @@ namespace Assets.Scripts
 
         public void SetToggleReach(ReachTargetEnum reach, Player activeP)
         {
-            if(activeP == Player)
+            if (activeP == Player)
             {
                 switch (reach)
                 {

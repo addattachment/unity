@@ -1,7 +1,5 @@
 using Assets.Scripts;
 using LSL;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
