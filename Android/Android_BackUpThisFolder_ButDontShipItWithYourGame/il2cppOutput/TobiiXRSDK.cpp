@@ -2626,10 +2626,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
 
 // System.Text.Encoding
 
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
 // System.Reflection.MemberInfo
 
 // System.Reflection.MemberInfo
@@ -2676,18 +2672,6 @@ struct TobiiXR_t82D424F64C36C534A34C7A396B07954925AEDB2E_StaticFields
 // Tobii.XR.TobiiXRAdvanced
 
 // Tobii.XR.TobiiXRAdvanced
-
-// UnityEngine.Events.UnityEventBase
-
-// UnityEngine.Events.UnityEventBase
-
-// System.ValueType
-
-// System.ValueType
-
-// UnityEngine.YieldInstruction
-
-// UnityEngine.YieldInstruction
 
 // Tobii.XR.Internal.AssemblyUtils/<>c
 struct U3CU3Ec_t899AAC8A86E203FA2D9BB7728C71EA15D890BE55_StaticFields
@@ -2795,10 +2779,6 @@ struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
 
 // System.Enum
 
-// Tobii.G2OM.G2OM_ContextCreateOptions
-
-// Tobii.G2OM.G2OM_ContextCreateOptions
-
 // Tobii.G2OM.G2OM_Vector3
 
 // Tobii.G2OM.G2OM_Vector3
@@ -2843,15 +2823,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
 // Tobii.XR.ProviderDisplayNameAttribute
 
 // Tobii.XR.ProviderDisplayNameAttribute
-
-// UnityEngine.Quaternion
-struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
-{
-	// UnityEngine.Quaternion UnityEngine.Quaternion::identityQuaternion
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion_4;
-};
-
-// UnityEngine.Quaternion
 
 // UnityEngine.Rect
 
@@ -2914,21 +2885,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 };
 
 // UnityEngine.Vector3
-
-// UnityEngine.Vector4
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
-};
-
-// UnityEngine.Vector4
 
 // System.Void
 
@@ -2993,10 +2949,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 };
 
 // UnityEngine.Object
-
-// Tobii.XR.PositionGuideData
-
-// Tobii.XR.PositionGuideData
 
 // System.RuntimeTypeHandle
 
@@ -3063,17 +3015,9 @@ struct TobiiXR_Settings_t5EC70C3B4402041CAB993354AA4360221272100D_StaticFields
 
 // UnityEngine.GameObject
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // UnityEngine.ScriptableObject
 
 // UnityEngine.ScriptableObject
-
-// System.SystemException
-
-// System.SystemException
 
 // UnityEngine.TextAsset
 
@@ -3243,10 +3187,6 @@ struct ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_StaticFields
 
 // Tobii.XR.Internal.TobiiXR_Lifecycle
 
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.EventSystems.UIBehaviour
-
 // Tobii.XR.UIGazeButtonGraphics
 
 // Tobii.XR.UIGazeButtonGraphics
@@ -3317,10 +3257,6 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 };
 
 // UnityEngine.UI.Graphic
-
-// UnityEngine.UI.MaskableGraphic
-
-// UnityEngine.UI.MaskableGraphic
 
 // UnityEngine.UI.Image
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields

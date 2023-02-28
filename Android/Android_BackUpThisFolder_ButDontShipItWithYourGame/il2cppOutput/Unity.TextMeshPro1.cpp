@@ -3469,10 +3469,6 @@ struct List_1_t2F39287A7FAAAD3D4A84C8C4EF6D748502C1DACC_StaticFields
 
 // System.Collections.Generic.List`1<TMPro.TMP_SpriteCharacter>
 
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
 // TMPro.ShaderUtilities
 struct ShaderUtilities_t9BE0345DF949745FC0EB9A1119E204F2F129298F_StaticFields
 {
@@ -3646,10 +3642,6 @@ struct TMP_Style_tA9E5B1B35EBFE24EF980CEA03251B638282E120C_StaticFields
 
 // TMPro.TMP_TextElement
 
-// System.ValueType
-
-// System.ValueType
-
 // TMPro.TMP_Settings/LineBreakingTable
 
 // TMPro.TMP_Settings/LineBreakingTable
@@ -3746,22 +3738,9 @@ struct Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F_StaticFields
 
 // System.Double
 
-// System.Enum
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
-};
-
-// System.Enum
-
 // UnityEngine.TextCore.FaceInfo
 
 // UnityEngine.TextCore.FaceInfo
-
-// TMPro.FontAssetCreationSettings
-
-// TMPro.FontAssetCreationSettings
 
 // UnityEngine.TextCore.GlyphMetrics
 
@@ -4059,14 +4038,6 @@ struct TMP_Vertex_t0FD80AE2515219689310A8F619A265667B530E1A_StaticFields
 
 // UnityEngine.Mesh
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// UnityEngine.ScriptableObject
-
-// UnityEngine.ScriptableObject
-
 // TMPro.TMP_CharacterInfo
 
 // TMPro.TMP_CharacterInfo
@@ -4140,10 +4111,6 @@ struct Type_t_StaticFields
 
 // System.Func`3<System.Int32,System.String,TMPro.TMP_SpriteAsset>
 
-// UnityEngine.Behaviour
-
-// UnityEngine.Behaviour
-
 // TMPro.TMP_Asset
 
 // TMPro.TMP_Asset
@@ -4198,10 +4165,6 @@ struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26_StaticFields
 };
 
 // UnityEngine.Canvas
-
-// UnityEngine.MonoBehaviour
-
-// UnityEngine.MonoBehaviour
 
 // UnityEngine.RectTransform
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5_StaticFields
@@ -4259,10 +4222,6 @@ struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39_StaticFields
 // TMPro.TMP_SpriteAnimator
 
 // TMPro.TMP_SpriteAnimator
-
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.EventSystems.UIBehaviour
 
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
@@ -24525,7 +24484,7 @@ IL_0343:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_172 = L_171->___spriteSheet_12;
 		NullCheck(L_172);
 		int32_t L_173;
-		L_173 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_172);
+		L_173 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_172);
 		int32_t L_174;
 		L_174 = GlyphRect_get_y_mE31390BB3185EEA82DD16EA41E208F6A0397E3EA((&V_5), NULL);
 		TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* L_175 = __this->___m_currentSpriteAsset_251;
@@ -24533,7 +24492,7 @@ IL_0343:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_176 = L_175->___spriteSheet_12;
 		NullCheck(L_176);
 		int32_t L_177;
-		L_177 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_176);
+		L_177 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_176);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_6), ((float)(((float)L_170)/((float)L_173))), ((float)(((float)L_174)/((float)L_177))), NULL);
 		// Vector2 uv1 = new Vector2(uv0.x, (float)(glyphRect.y + glyphRect.height) / m_currentSpriteAsset.spriteSheet.height);  // top left
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_178 = V_6;
@@ -24547,7 +24506,7 @@ IL_0343:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_183 = L_182->___spriteSheet_12;
 		NullCheck(L_183);
 		int32_t L_184;
-		L_184 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_183);
+		L_184 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_183);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_7), L_179, ((float)(((float)((int32_t)il2cpp_codegen_add(L_180, L_181)))/((float)L_184))), NULL);
 		// Vector2 uv2 = new Vector2((float)(glyphRect.x + glyphRect.width) / m_currentSpriteAsset.spriteSheet.width, uv1.y); // top right
 		int32_t L_185;
@@ -24559,7 +24518,7 @@ IL_0343:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_188 = L_187->___spriteSheet_12;
 		NullCheck(L_188);
 		int32_t L_189;
-		L_189 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_188);
+		L_189 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_188);
 		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_190 = V_7;
 		float L_191 = L_190.___y_1;
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_8), ((float)(((float)((int32_t)il2cpp_codegen_add(L_185, L_186)))/((float)L_189))), L_191, NULL);

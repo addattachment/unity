@@ -3159,10 +3159,6 @@ struct BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_StaticFields
 
 // WebSocketSharp.Net.ClientSslConfiguration
 
-// System.Collections.CollectionBase
-
-// System.Collections.CollectionBase
-
 // WebSocketSharp.Net.CookieCollection
 
 // WebSocketSharp.Net.CookieCollection
@@ -3193,10 +3189,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
 };
 
 // System.Text.Encoding
-
-// System.Net.EndPoint
-
-// System.Net.EndPoint
 
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
@@ -3265,10 +3257,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
 // WebSocketSharp.Logger
 
 // WebSocketSharp.Logger
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
 
 // System.Reflection.MemberInfo
 
@@ -3378,10 +3366,6 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 };
 
 // System.Uri
-
-// System.ValueType
-
-// System.ValueType
 
 // System.Version
 
@@ -3581,15 +3565,6 @@ struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
 
 // WebSocketSharp.ErrorEventArgs
 
-// System.Guid
-struct Guid_t_StaticFields
-{
-	// System.Guid System.Guid::Empty
-	Guid_t ___Empty_0;
-};
-
-// System.Guid
-
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
 
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
@@ -3641,10 +3616,6 @@ struct IntPtr_t_StaticFields
 // System.Collections.Specialized.NameValueCollection
 
 // System.Collections.Specialized.NameValueCollection
-
-// System.Security.Cryptography.SHA1
-
-// System.Security.Cryptography.SHA1
 
 // System.IO.Stream
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
@@ -3703,14 +3674,6 @@ struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
 
 // System.Security.Cryptography.X509Certificates.X509CertificateCollection
 
-// Interop/Sys/FileStatus
-
-// Interop/Sys/FileStatus
-
-// System.Net.Security.AuthenticatedStream
-
-// System.Net.Security.AuthenticatedStream
-
 // WebSocketSharp.Net.Cookie
 struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_StaticFields
 {
@@ -3738,10 +3701,6 @@ struct Exception_t_StaticFields
 };
 
 // System.Exception
-
-// System.IO.FileStatus
-
-// System.IO.FileStatus
 
 // System.IO.FileStream
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
@@ -3842,17 +3801,9 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
 
 // System.IO.FileSystemInfo
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // System.Net.Security.SslStream
 
 // System.Net.Security.SslStream
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields
@@ -4010,10 +3961,6 @@ struct Type_t_StaticFields
 // System.IO.FileInfo
 
 // System.IO.FileInfo
-
-// System.IO.IOException
-
-// System.IO.IOException
 
 // System.InvalidOperationException
 

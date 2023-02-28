@@ -1517,10 +1517,6 @@ struct RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF0
 {
 };
 
-// WebSocketSharp.Net.AuthenticationBase
-
-// WebSocketSharp.Net.AuthenticationBase
-
 // WebSocketSharp.Net.CookieCollection
 
 // WebSocketSharp.Net.CookieCollection
@@ -1605,19 +1601,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
 // WebSocketSharp.Logger
 
 // WebSocketSharp.Logger
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Collections.Specialized.NameObjectCollectionBase
-struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
-{
-	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
-	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
-};
-
-// System.Collections.Specialized.NameObjectCollectionBase
 
 // System.Runtime.Serialization.SerializationInfo
 
@@ -1758,10 +1741,6 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 
 // System.Uri
 
-// System.ValueType
-
-// System.ValueType
-
 // WebSocketSharp.Net.WebSockets.WebSocketContext
 
 // WebSocketSharp.Net.WebSockets.WebSocketContext
@@ -1818,32 +1797,6 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
 
 // System.Char
 
-// System.DateTime
-struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
-{
-	// System.Int32[] System.DateTime::s_daysToMonth365
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
-	// System.Int32[] System.DateTime::s_daysToMonth366
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
-	// System.DateTime System.DateTime::UnixEpoch
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
-};
-
-// System.DateTime
-
-// System.Guid
-struct Guid_t_StaticFields
-{
-	// System.Guid System.Guid::Empty
-	Guid_t ___Empty_0;
-};
-
-// System.Guid
-
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
 
 // WebSocketSharp.Net.WebSockets.HttpListenerWebSocketContext
@@ -1897,19 +1850,6 @@ struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
 
 // WebSocketSharp.Net.WebSockets.TcpListenerWebSocketContext
 
-// System.TimeSpan
-struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
-{
-	// System.TimeSpan System.TimeSpan::Zero
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___Zero_19;
-	// System.TimeSpan System.TimeSpan::MaxValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MaxValue_20;
-	// System.TimeSpan System.TimeSpan::MinValue
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___MinValue_21;
-};
-
-// System.TimeSpan
-
 // System.Void
 
 // System.Void
@@ -1928,23 +1868,6 @@ struct U3CPrivateImplementationDetailsU3E_tE2E45F09B1224B753B14385A84BC342FCAC90
 };
 
 // <PrivateImplementationDetails>
-
-// System.Net.Security.AuthenticatedStream
-
-// System.Net.Security.AuthenticatedStream
-
-// System.Delegate
-
-// System.Delegate
-
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
 
 // WebSocketSharp.Net.HttpListenerRequest
 struct HttpListenerRequest_t0EB9C2574B859D836050075EF9C2D8BAE6330BBD_StaticFields
@@ -1987,17 +1910,9 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
 
 // System.Security.Cryptography.X509Certificates.X509Certificate
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // System.Net.Security.SslStream
 
 // System.Net.Security.SslStream
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Security.Cryptography.X509Certificates.X509Certificate2
 

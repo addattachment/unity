@@ -3054,10 +3054,6 @@ struct List_1_t03551104C97124C9D83186EEB3F066B8BFFD87E3_StaticFields
 
 // System.Security.Cryptography.AsymmetricAlgorithm
 
-// Mono.Security.Authenticode.AuthenticodeBase
-
-// Mono.Security.Authenticode.AuthenticodeBase
-
 // System.Globalization.Calendar
 
 // System.Globalization.Calendar
@@ -3069,10 +3065,6 @@ struct List_1_t03551104C97124C9D83186EEB3F066B8BFFD87E3_StaticFields
 // System.Net.CredentialCache
 
 // System.Net.CredentialCache
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
 
 // System.Globalization.CultureInfo
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
@@ -3219,10 +3211,6 @@ struct Marvin_t0342A28B10725C354B3E96D240FF68C4D7A0D242_StaticFields
 
 // System.Marvin
 
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
 // System.Net.NclUtilities
 struct NclUtilities_t631EDB0996FE8DEB88C069D5A050B9809E23DA8D_StaticFields
 {
@@ -3320,10 +3308,6 @@ struct ValidationHelper_tA6AE681FCDFA9BE8E3EF31C28A624AADF973A25C_StaticFields
 };
 
 // System.Net.ValidationHelper
-
-// System.ValueType
-
-// System.ValueType
 
 // System.Version
 
@@ -3692,10 +3676,6 @@ struct DSACryptoServiceProvider_tB418CD8E85D69D879C7298E4A6A7D8CFAC09D79E_Static
 
 // System.Security.Cryptography.DSACryptoServiceProvider
 
-// System.Delegate
-
-// System.Delegate
-
 // System.Exception
 struct Exception_t_StaticFields
 {
@@ -3808,10 +3788,6 @@ struct X509Certificate2Collection_t703D5135E74BA606B564EF174E08964B9C3DADEB_Stat
 
 // System.Span`1<System.UInt16>
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // Microsoft.Win32.SafeHandles.SafePasswordHandle
 
 // Microsoft.Win32.SafeHandles.SafePasswordHandle
@@ -3864,10 +3840,6 @@ struct Type_t_StaticFields
 // System.Security.Cryptography.CryptographicException
 
 // System.Security.Cryptography.CryptographicException
-
-// System.Runtime.InteropServices.ExternalException
-
-// System.Runtime.InteropServices.ExternalException
 
 // System.FormatException
 
@@ -3927,10 +3899,6 @@ struct X509Certificate2ImplMono_t4566261D31F143C8CD222DB687625E5246BFD240_Static
 // System.Net.ProtocolViolationException
 
 // System.Net.ProtocolViolationException
-
-// System.ComponentModel.Win32Exception
-
-// System.ComponentModel.Win32Exception
 
 // System.Net.Sockets.SocketException
 

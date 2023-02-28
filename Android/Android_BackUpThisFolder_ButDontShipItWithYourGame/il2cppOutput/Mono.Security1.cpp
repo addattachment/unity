@@ -1545,10 +1545,6 @@ struct BigInteger_t890C3F24704442DA2A8C5B3F1E05E1588C7B5F08_StaticFields
 
 // Mono.Math.BigInteger
 
-// System.Collections.CollectionBase
-
-// System.Collections.CollectionBase
-
 // System.EventArgs
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 {
@@ -1565,10 +1561,6 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 // System.Security.Cryptography.KeySizes
 
 // System.Security.Cryptography.KeySizes
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
 
 // Mono.Math.Prime.PrimalityTests
 
@@ -1594,10 +1586,6 @@ struct String_t_StaticFields
 // System.Text.StringBuilder
 
 // System.Text.StringBuilder
-
-// System.ValueType
-
-// System.ValueType
 
 // Mono.Security.X509.X509Chain
 
@@ -1907,14 +1895,6 @@ struct X509Certificate_t9ECDEAA7F2B56A899145F284A13F4D0042481356_StaticFields
 
 // Mono.Security.X509.X509Certificate
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// System.SystemException
-
-// System.SystemException
-
 // System.ArgumentException
 
 // System.ArgumentException
@@ -1930,10 +1910,6 @@ struct X509Certificate_t9ECDEAA7F2B56A899145F284A13F4D0042481356_StaticFields
 // System.IndexOutOfRangeException
 
 // System.IndexOutOfRangeException
-
-// System.InvalidOperationException
-
-// System.InvalidOperationException
 
 // System.NotSupportedException
 

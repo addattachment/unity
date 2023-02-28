@@ -5089,15 +5089,6 @@ struct ReadObjectInfo_tBC4855E4A295BCD624E3FD3A6F6C5BF9B6735416_StaticFields
 
 // System.TypeCode
 
-// System.Threading.WaitHandle
-struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
-{
-	// System.IntPtr System.Threading.WaitHandle::InvalidHandle
-	intptr_t ___InvalidHandle_11;
-};
-
-// System.Threading.WaitHandle
-
 // System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo
 
 // System.Runtime.Serialization.Formatters.Binary.WriteObjectInfo
@@ -5105,10 +5096,6 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
 // System.Runtime.Remoting.Messaging.AsyncResult
 
 // System.Runtime.Remoting.Messaging.AsyncResult
-
-// System.MulticastDelegate
-
-// System.MulticastDelegate
 
 // System.Reflection.RuntimeConstructorInfo
 
@@ -5207,10 +5194,6 @@ struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_StaticFi
 };
 
 // System.Runtime.Serialization.SerializationException
-
-// System.Reflection.TypeInfo
-
-// System.Reflection.TypeInfo
 
 // System.Threading.WaitCallback
 

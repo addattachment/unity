@@ -3483,25 +3483,6 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
 
 // System.Collections.Generic.Dictionary`2/ValueCollection<System.String,WebSocketSharp.Net.HttpHeaderInfo>
 
-// WebSocketSharp.Net.AuthenticationBase
-
-// WebSocketSharp.Net.AuthenticationBase
-
-// System.Security.Claims.ClaimsIdentity
-
-// System.Security.Claims.ClaimsIdentity
-
-// System.Security.Claims.ClaimsPrincipal
-struct ClaimsPrincipal_t89FDDE5202B3ACA5770F1BE38D14615C94086F2D_StaticFields
-{
-	// System.Func`2<System.Collections.Generic.IEnumerable`1<System.Security.Claims.ClaimsIdentity>,System.Security.Claims.ClaimsIdentity> System.Security.Claims.ClaimsPrincipal::s_identitySelector
-	Func_2_tA5771E9D24D52C033031611D7AB2AB65DEC96016* ___s_identitySelector_3;
-	// System.Func`1<System.Security.Claims.ClaimsPrincipal> System.Security.Claims.ClaimsPrincipal::s_principalSelector
-	Func_1_tBF78A7C5465BEAFB7E0437596541E97B7B3C8D1E* ___s_principalSelector_4;
-};
-
-// System.Security.Claims.ClaimsPrincipal
-
 // WebSocketSharp.Net.CookieCollection
 
 // WebSocketSharp.Net.CookieCollection
@@ -3669,14 +3650,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
 // WebSocketSharp.Logger
 
 // WebSocketSharp.Logger
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
 
 // System.Collections.Specialized.NameObjectCollectionBase
 struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
@@ -3850,17 +3823,9 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 
 // System.Uri
 
-// System.ValueType
-
-// System.ValueType
-
 // System.Version
 
 // System.Version
-
-// WebSocketSharp.Net.WebSockets.WebSocketContext
-
-// WebSocketSharp.Net.WebSockets.WebSocketContext
 
 // System.Security.Cryptography.X509Certificates.X509Chain
 
@@ -4061,10 +4026,6 @@ struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_StaticFields
 
 // System.Void
 
-// System.Net.Security.AuthenticatedStream
-
-// System.Net.Security.AuthenticatedStream
-
 // WebSocketSharp.Net.Cookie
 struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_StaticFields
 {
@@ -4075,10 +4036,6 @@ struct Cookie_tC952E4801B39C1A03C6FED1C166CB7D48BD9EFD4_StaticFields
 };
 
 // WebSocketSharp.Net.Cookie
-
-// System.Delegate
-
-// System.Delegate
 
 // System.Exception
 struct Exception_t_StaticFields
@@ -4135,10 +4092,6 @@ struct ResponseStream_t816DF7CF7E8D09244FD5907611CBE27FC651034F_StaticFields
 
 // System.RuntimeFieldHandle
 
-// System.RuntimeTypeHandle
-
-// System.RuntimeTypeHandle
-
 // System.IO.StreamWriter
 struct StreamWriter_t6E7DF7D524AA3C018A65F62EE80779873ED4D1E4_StaticFields
 {
@@ -4178,17 +4131,9 @@ struct WebHeaderCollection_t5F2516004C02E89600B6BBC627D4C3EFF1144331_StaticField
 
 // System.Threading.EventWaitHandle
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // System.Net.Security.SslStream
 
 // System.Net.Security.SslStream
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields
@@ -4258,10 +4203,6 @@ struct Type_t_StaticFields
 // System.AsyncCallback
 
 // System.AsyncCallback
-
-// System.Runtime.InteropServices.ExternalException
-
-// System.Runtime.InteropServices.ExternalException
 
 // System.InvalidOperationException
 

@@ -1219,7 +1219,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisNa
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_mB50EABDE414D7C266411468DE2497738C902B820_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_mA3E722BB63A92FD6550289D5155483E408E4795B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_RegisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m3CB1C8964D34063EC97466FD36BAF24692213866_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_UnregisterCallback_TisAttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28_m70ECAB60D095EDB2BB60D44BC1ABBF8FB4853918_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var;
@@ -2685,12 +2684,12 @@ struct UxmlFactory_t6845309ECE79DB9008EF5BADCA7B0E8DCD07E5EC  : public UxmlFacto
 {
 };
 
-// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0
-struct U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 
+// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0
+struct U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 
 {
-	// UnityEngine.UIElements.GenericDropdownMenu UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0::<>4__this
+	// UnityEngine.UIElements.GenericDropdownMenu UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0::<>4__this
 	GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* ___U3CU3E4__this_0;
-	// System.Int32 UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0::selectedIndex
+	// System.Int32 UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0::selectedIndex
 	int32_t ___selectedIndex_1;
 };
 
@@ -5810,10 +5809,6 @@ struct List_1_t61096569E456190C1D695A123917128C0E1FB932_StaticFields
 
 // System.Collections.Generic.List`1<UnityEngine.UIElements.GenericDropdownMenu/MenuItem>
 
-// UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Box,UnityEngine.UIElements.VisualElement/UxmlTraits>
-
-// UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Box,UnityEngine.UIElements.VisualElement/UxmlTraits>
-
 // UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Button,UnityEngine.UIElements.Button/UxmlTraits>
 
 // UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Button,UnityEngine.UIElements.Button/UxmlTraits>
@@ -5881,10 +5876,6 @@ struct List_1_t61096569E456190C1D695A123917128C0E1FB932_StaticFields
 // UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Toggle,UnityEngine.UIElements.Toggle/UxmlTraits>
 
 // UnityEngine.UIElements.UxmlFactory`2<UnityEngine.UIElements.Toggle,UnityEngine.UIElements.Toggle/UxmlTraits>
-
-// UnityEngine.UIElements.BaseReorderableDragAndDropController
-
-// UnityEngine.UIElements.BaseReorderableDragAndDropController
 
 // UnityEngine.UIElements.CallbackEventHandler
 
@@ -5946,14 +5937,6 @@ struct String_t_StaticFields
 
 // UnityEngine.UIElements.UxmlAttributeDescription
 
-// UnityEngine.UIElements.UxmlTraits
-
-// UnityEngine.UIElements.UxmlTraits
-
-// System.ValueType
-
-// System.ValueType
-
 // UnityEngine.UIElements.DropdownField/<>c__DisplayClass38_0
 
 // UnityEngine.UIElements.DropdownField/<>c__DisplayClass38_0
@@ -5966,17 +5949,9 @@ struct String_t_StaticFields
 
 // UnityEngine.UIElements.CustomStyleProperty`1<UnityEngine.Color>
 
-// UnityEngine.UIElements.CustomStyleProperty`1<System.Int32>
-
-// UnityEngine.UIElements.CustomStyleProperty`1<System.Int32>
-
 // UnityEngine.UIElements.CustomStyleProperty`1<System.Object>
 
 // UnityEngine.UIElements.CustomStyleProperty`1<System.Object>
-
-// UnityEngine.UIElements.CustomStyleProperty`1<System.Single>
-
-// UnityEngine.UIElements.CustomStyleProperty`1<System.Single>
 
 // UnityEngine.UIElements.CustomStyleProperty`1<UnityEngine.Sprite>
 
@@ -6017,30 +5992,6 @@ struct String_t_StaticFields
 // System.Nullable`1<System.Int64>
 
 // System.Nullable`1<System.Int64>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.InheritedData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.InheritedData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.LayoutData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.LayoutData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.RareData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.RareData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.TransformData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.TransformData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.TransitionData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.TransitionData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.VisualData>
-
-// UnityEngine.UIElements.StyleDataRef`1<UnityEngine.UIElements.VisualData>
 
 // UnityEngine.UIElements.StyleEnum`1<UnityEngine.UIElements.DisplayStyle>
 
@@ -6094,10 +6045,6 @@ struct String_t_StaticFields
 
 // UnityEngine.UIElements.TypedUxmlAttributeDescription`1<UnityEngine.UIElements.ScrollViewMode>
 
-// UnityEngine.UIElements.TypedUxmlAttributeDescription`1<UnityEngine.UIElements.ScrollerVisibility>
-
-// UnityEngine.UIElements.TypedUxmlAttributeDescription`1<UnityEngine.UIElements.ScrollerVisibility>
-
 // UnityEngine.UIElements.TypedUxmlAttributeDescription`1<UnityEngine.UIElements.SelectionType>
 
 // UnityEngine.UIElements.TypedUxmlAttributeDescription`1<UnityEngine.UIElements.SelectionType>
@@ -6133,15 +6080,6 @@ struct String_t_StaticFields
 // UnityEngine.UIElements.UxmlFactory`1<UnityEngine.UIElements.Box>
 
 // UnityEngine.UIElements.UxmlFactory`1<UnityEngine.UIElements.Box>
-
-// UnityEngine.UIElements.UIR.BMPAlloc
-struct BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30_StaticFields
-{
-	// UnityEngine.UIElements.UIR.BMPAlloc UnityEngine.UIElements.UIR.BMPAlloc::Invalid
-	BMPAlloc_t29DA9D09157B8BAD2D5643711A53A5F11D216D30 ___Invalid_0;
-};
-
-// UnityEngine.UIElements.UIR.BMPAlloc
 
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
@@ -6167,10 +6105,6 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
 
 // UnityEngine.Color
 
-// UnityEngine.Color32
-
-// UnityEngine.Color32
-
 // UnityEngine.UIElements.CreationContext
 struct CreationContext_t9C57B5BE551CCE200C0A2C72711BFF9DA298C257_StaticFields
 {
@@ -6187,10 +6121,6 @@ struct CreationContext_t9C57B5BE551CCE200C0A2C72711BFF9DA298C257_StaticFields
 // UnityEngine.UIElements.Focusable
 
 // UnityEngine.UIElements.Focusable
-
-// UnityEngine.UIElements.FontDefinition
-
-// UnityEngine.UIElements.FontDefinition
 
 // System.Int32
 
@@ -6213,10 +6143,6 @@ struct IntPtr_t_StaticFields
 
 // UnityEngine.UIElements.KeyboardNavigationManipulator
 
-// UnityEngine.UIElements.Length
-
-// UnityEngine.UIElements.Length
-
 // UnityEngine.UIElements.ListViewController
 
 // UnityEngine.UIElements.ListViewController
@@ -6237,21 +6163,6 @@ struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
 };
 
 // UnityEngine.Mathf
-
-// UnityEngine.Matrix4x4
-struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
-{
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::zeroMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___zeroMatrix_16;
-	// UnityEngine.Matrix4x4 UnityEngine.Matrix4x4::identityMatrix
-	Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6 ___identityMatrix_17;
-};
-
-// UnityEngine.Matrix4x4
-
-// UnityEngine.PropertyName
-
-// UnityEngine.PropertyName
 
 // UnityEngine.Rect
 
@@ -6359,9 +6270,9 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // UnityEngine.UIElements.Foldout/UxmlFactory
 
-// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0
+// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0
 
-// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0
+// UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0
 
 // UnityEngine.UIElements.GroupBox/UxmlFactory
 
@@ -6378,10 +6289,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 // UnityEngine.UIElements.ListView/UxmlFactory
 
 // UnityEngine.UIElements.ListView/UxmlFactory
-
-// UnityEngine.UIElements.ListViewDragger/DragPosition
-
-// UnityEngine.UIElements.ListViewDragger/DragPosition
 
 // UnityEngine.UIElements.MinMaxSlider/UxmlFactory
 
@@ -6471,21 +6378,9 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // UnityEngine.Bounds
 
-// UnityEngine.UIElements.ColorPage
-
-// UnityEngine.UIElements.ColorPage
-
-// UnityEngine.UIElements.ComputedStyle
-
-// UnityEngine.UIElements.ComputedStyle
-
 // System.Delegate
 
 // System.Delegate
-
-// UnityEngine.UIElements.DragEventsProcessor
-
-// UnityEngine.UIElements.DragEventsProcessor
 
 // UnityEngine.UIElements.EventBase
 struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C_StaticFields
@@ -6497,15 +6392,6 @@ struct EventBase_tD7F89B936EB8074AE31E7B15976C072277371F7C_StaticFields
 };
 
 // UnityEngine.UIElements.EventBase
-
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
 
 // UnityEngine.UIElements.GenericDropdownMenu
 struct GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1_StaticFields
@@ -6540,18 +6426,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 };
 
 // UnityEngine.Object
-
-// UnityEngine.UIElements.PanelClearSettings
-
-// UnityEngine.UIElements.PanelClearSettings
-
-// Unity.Profiling.ProfilerMarker
-
-// Unity.Profiling.ProfilerMarker
-
-// UnityEngine.UIElements.UIR.RenderChainVEData
-
-// UnityEngine.UIElements.UIR.RenderChainVEData
 
 // UnityEngine.UIElements.StyleLength
 
@@ -6611,10 +6485,6 @@ struct TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A_StaticField
 
 // UnityEngine.UIElements.Image/UxmlTraits
 
-// UnityEngine.UIElements.MeshGenerationContextUtils/TextParams
-
-// UnityEngine.UIElements.MeshGenerationContextUtils/TextParams
-
 // UnityEngine.UIElements.ScrollView/UxmlTraits
 
 // UnityEngine.UIElements.ScrollView/UxmlTraits
@@ -6622,197 +6492,6 @@ struct TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A_StaticField
 // UnityEngine.UIElements.Scroller/UxmlTraits
 
 // UnityEngine.UIElements.Scroller/UxmlTraits
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Boolean>>
-struct EventBase_1_tBA26F1F71F5552622D291E958C5BAAF8FC084715_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t8BEC5A7E2986A02A5A01CD523423A728794BD0E1* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Boolean>>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Object>>
-struct EventBase_1_tF59C08834FD8DFC60BA3E0BAD96A2CF1E35AE3CA_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tFC2C1E3A2EF6C9947E11FA8B164153D7C97B8EE0* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Object>>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Single>>
-struct EventBase_1_tFD2814ACBD849EFC6EA7F16B7E12945AD1904ACD_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tFF144489BB8C0C001C589EE1D9C8AA94E457BCC2* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.Single>>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.String>>
-struct EventBase_1_t33D6716E83BF17EA5138727C96B99E25AAC8C67D_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t4B6FA9735BC5BF40624419B712D9493C7EF11802* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ChangeEvent`1<System.String>>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.AttachToPanelEvent>
-struct EventBase_1_t3BDDADBC1D58267000128C31AD0EB2BAAAEC6F22_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t7FDDBA964772905A89719355C6E4F07922AA0C78* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.AttachToPanelEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.CustomStyleResolvedEvent>
-struct EventBase_1_t28A1B2B8FC43209D9402B4CC45E8C562DFDC26AD_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t5FC06EAFF1CF75D5A94102AEB85EBD17B92324E7* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.CustomStyleResolvedEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.DetachFromPanelEvent>
-struct EventBase_1_tE40FE9F8AB3B020689A80981F4566336B3EFA9B6_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t30C8F70D98C7F0227113800C031CF8E316BD7608* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.DetachFromPanelEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ExecuteCommandEvent>
-struct EventBase_1_t936FBB91106E2CC02C8E88DBC1573C1C892035C3_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t58FACB77D1CC237FB39BCD540235D55E5E9ED75F* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.ExecuteCommandEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.FocusOutEvent>
-struct EventBase_1_tB1ABC1F6948DC48F8C711F9C36E4D0DC9F158F05_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t11916664A294D85084603B0F15FA2E810B2BC5FF* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.FocusOutEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.GeometryChangedEvent>
-struct EventBase_1_tCDEFDAD598AAC8D3B106EB41834C9619E903374E_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tC6626AC387E62EDBD0EA56924280D44E6476EC67* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.GeometryChangedEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.KeyDownEvent>
-struct EventBase_1_t730BB171C1C7F183359949BD5F4BA81AFE9A35CE_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t37080504ECCFF986BCF1E7D4C1D26BB929DEC7E9* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.KeyDownEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.MouseDownEvent>
-struct EventBase_1_t3863B2426C83CF34F5037FA191495E8B16EDFF6C_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tFD015A99DC45F4AADDAFE8F44225A6FF6289EB10* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.MouseDownEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.NavigationSubmitEvent>
-struct EventBase_1_tF3176CA51B64DBB3010435BA1986B05039647C37_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t2E11CDAC72859A812629F64CB88669487FD5F0B5* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.NavigationSubmitEvent>
-
-// UnityEngine.UIElements.EventBase`1<System.Object>
-struct EventBase_1_t2B9B970022841F58172C0C783B7E1040BEF85AC1_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tC06B45D8A0C7CBBDAE418090727D1DF1F2FCB9F6* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<System.Object>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerDownEvent>
-struct EventBase_1_t7D3D212E8AD9C53105AAC51DBD4FA5F700586F68_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tD9D36AAF97C27AAA8F8C10396B70EE8016C3DB39* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerDownEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerMoveEvent>
-struct EventBase_1_t4941B5AE834AA028696C83756491CE8884F30DDE_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_t8AFFCB7DAAEE40E4043E3A85360B759A778B3F5B* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerMoveEvent>
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerUpEvent>
-struct EventBase_1_t2637736704939772A86A2904BCFD1B314097DD1E_StaticFields
-{
-	// System.Int64 UnityEngine.UIElements.EventBase`1::s_TypeId
-	int64_t ___s_TypeId_15;
-	// UnityEngine.UIElements.ObjectPool`1<T> UnityEngine.UIElements.EventBase`1::s_Pool
-	ObjectPool_1_tEA9E5136DCE87BF5FDC7E117132869969F52A700* ___s_Pool_16;
-};
-
-// UnityEngine.UIElements.EventBase`1<UnityEngine.UIElements.PointerUpEvent>
-
-// UnityEngine.UIElements.BaseField`1/UxmlTraits<System.Boolean>
-
-// UnityEngine.UIElements.BaseField`1/UxmlTraits<System.Boolean>
 
 // UnityEngine.UIElements.BaseField`1/UxmlTraits<System.Int32>
 
@@ -6834,25 +6513,13 @@ struct EventBase_1_t2637736704939772A86A2904BCFD1B314097DD1E_StaticFields
 
 // UnityEngine.UIElements.ListViewDragger
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // UnityEngine.UIElements.PointerManipulator
 
 // UnityEngine.UIElements.PointerManipulator
 
-// UnityEngine.ScriptableObject
-
-// UnityEngine.ScriptableObject
-
 // UnityEngine.Sprite
 
 // UnityEngine.Sprite
-
-// System.SystemException
-
-// System.SystemException
 
 // UnityEngine.UIElements.TextEditorEngine
 
@@ -6952,10 +6619,6 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 
 // UnityEngine.UIElements.BaseFieldTraits`2<System.Int32,UnityEngine.UIElements.UxmlIntAttributeDescription>
 
-// UnityEngine.UIElements.BaseFieldTraits`2<System.String,UnityEngine.UIElements.UxmlStringAttributeDescription>
-
-// UnityEngine.UIElements.BaseFieldTraits`2<System.String,UnityEngine.UIElements.UxmlStringAttributeDescription>
-
 // UnityEngine.UIElements.ChangeEvent`1<System.Boolean>
 
 // UnityEngine.UIElements.ChangeEvent`1<System.Boolean>
@@ -7028,10 +6691,6 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 
 // UnityEngine.UIElements.EventCallback`1<UnityEngine.UIElements.PointerUpEvent>
 
-// UnityEngine.UIElements.FocusEventBase`1<UnityEngine.UIElements.FocusOutEvent>
-
-// UnityEngine.UIElements.FocusEventBase`1<UnityEngine.UIElements.FocusOutEvent>
-
 // System.Func`1<UnityEngine.UIElements.IGenericMenu>
 
 // System.Func`1<UnityEngine.UIElements.IGenericMenu>
@@ -7063,10 +6722,6 @@ struct VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_StaticFields
 // UnityEngine.UIElements.MouseEventBase`1<System.Object>
 
 // UnityEngine.UIElements.MouseEventBase`1<System.Object>
-
-// UnityEngine.UIElements.NavigationEventBase`1<UnityEngine.UIElements.NavigationSubmitEvent>
-
-// UnityEngine.UIElements.NavigationEventBase`1<UnityEngine.UIElements.NavigationSubmitEvent>
 
 // UnityEngine.UIElements.PanelChangedEventBase`1<UnityEngine.UIElements.AttachToPanelEvent>
 
@@ -9482,16 +9137,6 @@ inline RuntimeObject* PanelChangedEventBase_1_get_originPanel_mB78D4DFA7608CBBC2
 {
 	return ((  RuntimeObject* (*) (PanelChangedEventBase_1_t2214183CD8DA6044ECE671FF1DA69DCB8DDC8C39*, const RuntimeMethod*))PanelChangedEventBase_1_get_originPanel_m3E8443C7EDD04BA92941A896405FB221339A39B5_gshared_inline)(__this, method);
 }
-// System.Void UnityEngine.UIElements.CallbackEventHandler::UnregisterCallback<UnityEngine.UIElements.AttachToPanelEvent>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
-inline void CallbackEventHandler_UnregisterCallback_TisAttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28_m70ECAB60D095EDB2BB60D44BC1ABBF8FB4853918 (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
-{
-	((  void (*) (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*, EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88*, int32_t, const RuntimeMethod*))CallbackEventHandler_UnregisterCallback_TisRuntimeObject_m2E6CDD2C9FDA8EDB685996370F77E36063A68CD6_gshared)(__this, ___0_callback, ___1_useTrickleDown, method);
-}
-// System.Void UnityEngine.UIElements.CallbackEventHandler::UnregisterCallback<UnityEngine.UIElements.DetachFromPanelEvent>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
-inline void CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
-{
-	((  void (*) (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*, EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B*, int32_t, const RuntimeMethod*))CallbackEventHandler_UnregisterCallback_TisRuntimeObject_m2E6CDD2C9FDA8EDB685996370F77E36063A68CD6_gshared)(__this, ___0_callback, ___1_useTrickleDown, method);
-}
 // System.Void UnityEngine.UIElements.CallbackEventHandler::UnregisterCallback<UnityEngine.UIElements.PointerDownEvent>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
 inline void CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509 (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
 {
@@ -9516,6 +9161,11 @@ inline void CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A
 inline void CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246 (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
 {
 	((  void (*) (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*, EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC*, int32_t, const RuntimeMethod*))CallbackEventHandler_UnregisterCallback_TisRuntimeObject_m2E6CDD2C9FDA8EDB685996370F77E36063A68CD6_gshared)(__this, ___0_callback, ___1_useTrickleDown, method);
+}
+// System.Void UnityEngine.UIElements.CallbackEventHandler::UnregisterCallback<UnityEngine.UIElements.DetachFromPanelEvent>(UnityEngine.UIElements.EventCallback`1<TEventType>,UnityEngine.UIElements.TrickleDown)
+inline void CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4* __this, EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B* ___0_callback, int32_t ___1_useTrickleDown, const RuntimeMethod* method)
+{
+	((  void (*) (CallbackEventHandler_t99E35735225B4ACEAD1BA981632FD2D46E9CB2B4*, EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B*, int32_t, const RuntimeMethod*))CallbackEventHandler_UnregisterCallback_TisRuntimeObject_m2E6CDD2C9FDA8EDB685996370F77E36063A68CD6_gshared)(__this, ___0_callback, ___1_useTrickleDown, method);
 }
 // System.Boolean UnityEngine.UIElements.GenericDropdownMenu::Apply(UnityEngine.UIElements.KeyboardNavigationOperation)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericDropdownMenu_Apply_m531F1B34ABE10AFCFD373F09609EB2AB88DD3D79 (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_op, const RuntimeMethod* method) ;
@@ -9544,10 +9194,10 @@ inline int32_t List_1_get_Count_mE1F64F80BE7E21C3993E3A376EB5D4CDAF9547A1_inline
 {
 	return ((  int32_t (*) (List_1_t61096569E456190C1D695A123917128C0E1FB932*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
 }
-// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionUp|25_1(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C25_1_m924605A08C08FB07F2384D872F1341D5A0F9BF51 (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* ___1_p, const RuntimeMethod* method) ;
-// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionDown|25_0(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C25_0_m6CA4D5DEF10E9A08AE7709FE8E9DDC2188573FCE (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* ___1_p, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionUp|27_1(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C27_1_m1812B0EF8DE6E5BA0CBFEE7C6509DE9D832B614B (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* ___1_p, const RuntimeMethod* method) ;
+// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionDown|27_0(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C27_0_m29DC7174F7B35F1202CFDD7F5B3567547F614F11 (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* ___1_p, const RuntimeMethod* method) ;
 // UnityEngine.Vector3 UnityEngine.UIElements.PointerEventBase`1<UnityEngine.UIElements.PointerDownEvent>::get_position()
 inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 PointerEventBase_1_get_position_m62A6C6E4573AD8DEA94462498F258D10792B8E86_inline (PointerEventBase_1_t7591EB7533D2DA4AE63C7E535343F090911843C9* __this, const RuntimeMethod* method)
 {
@@ -17553,23 +17203,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_OnDetachFromPanel_m8
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisAttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28_m70ECAB60D095EDB2BB60D44BC1ABBF8FB4853918_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_m6F47F7C447568B774EE45E245D99CBD6CDEC3CC1_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CallbackEventHandler_UnregisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m6260930D0C12A5DFCA80D6D299023CA1A157680A_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnAttachToPanel_mF30CBE992FAF174F6B59CC6BF7A47C974B49861B_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnContainerGeometryChanged_mDB494E758AD380C7042750BE43BF8CDFB66D2876_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnDetachFromPanel_m865AB39A28AC79180DCCDE5F355C5443A3899B7C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnFocusOut_m94B6AC6E62E6572974C663EC7BA1C74A10DE9032_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnParentResized_m326C5782916CB8ACEB516266B34F08AFD49CA94D_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GenericDropdownMenu_OnPointerDown_mD432107E086152694613A6A78F839BEEE2D93C16_RuntimeMethod_var);
@@ -17593,72 +17237,60 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_OnDetachFromPanel_m8
 		}
 	}
 	{
-		goto IL_00f2;
+		goto IL_00c0;
 	}
 
 IL_0013:
 	{
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_3 = __this->___m_MenuContainer_8;
-		EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88* L_4 = (EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88*)il2cpp_codegen_object_new(EventCallback_1_t1FFCCC98AE7C52F427D11F1609ED56BE1E4AEF88_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		EventCallback_1__ctor_m929B5D5292DB931820A52428141FECB39016A6B7(L_4, __this, (intptr_t)((void*)GenericDropdownMenu_OnAttachToPanel_mF30CBE992FAF174F6B59CC6BF7A47C974B49861B_RuntimeMethod_var), NULL);
-		NullCheck(L_3);
-		CallbackEventHandler_UnregisterCallback_TisAttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28_m70ECAB60D095EDB2BB60D44BC1ABBF8FB4853918(L_3, L_4, 0, CallbackEventHandler_UnregisterCallback_TisAttachToPanelEvent_t95C0BC3DD37F324A7816CB2574B56D976C932B28_m70ECAB60D095EDB2BB60D44BC1ABBF8FB4853918_RuntimeMethod_var);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_3;
+		L_3 = GenericDropdownMenu_get_contentContainer_m4B0FF42D2D6C912F6F67D46D8BA6BD3008D67A89(__this, NULL);
+		KeyboardNavigationManipulator_t7E9BA3568ADC1660C4E09B924ECD457E33B835B3* L_4 = __this->___m_NavigationManipulator_14;
+		VisualElementExtensions_RemoveManipulator_m7FF368767CDA311BA47F56729AA68B173F1BED35(L_3, L_4, NULL);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_5 = __this->___m_MenuContainer_8;
-		EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B* L_6 = (EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B*)il2cpp_codegen_object_new(EventCallback_1_tCE5E8F1D2A7EE5EC636D68025C6D899BD17EF38B_il2cpp_TypeInfo_var);
+		EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* L_6 = (EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C*)il2cpp_codegen_object_new(EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var);
 		NullCheck(L_6);
-		EventCallback_1__ctor_m0407B736C264F06C81E5CBB70EF40FBB975AC634(L_6, __this, (intptr_t)((void*)GenericDropdownMenu_OnDetachFromPanel_m865AB39A28AC79180DCCDE5F355C5443A3899B7C_RuntimeMethod_var), NULL);
+		EventCallback_1__ctor_mCDF2316FE391D783EF33C433EB59E5DF474C5398(L_6, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerDown_mD432107E086152694613A6A78F839BEEE2D93C16_RuntimeMethod_var), NULL);
 		NullCheck(L_5);
-		CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D(L_5, L_6, 0, CallbackEventHandler_UnregisterCallback_TisDetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496_mBB7D7B6A24C2AB04A9347FD693F502B54BDA3D9D_RuntimeMethod_var);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7;
-		L_7 = GenericDropdownMenu_get_contentContainer_m4B0FF42D2D6C912F6F67D46D8BA6BD3008D67A89(__this, NULL);
-		KeyboardNavigationManipulator_t7E9BA3568ADC1660C4E09B924ECD457E33B835B3* L_8 = __this->___m_NavigationManipulator_14;
-		VisualElementExtensions_RemoveManipulator_m7FF368767CDA311BA47F56729AA68B173F1BED35(L_7, L_8, NULL);
+		CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509(L_5, L_6, 0, CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509_RuntimeMethod_var);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_7 = __this->___m_MenuContainer_8;
+		EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA* L_8 = (EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA*)il2cpp_codegen_object_new(EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		EventCallback_1__ctor_mF3F9B006713A25FE54BB4DD7611B7A56ABDC7596(L_8, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerMove_m51F17F04D5163647225DE89A336665DCAA84973B_RuntimeMethod_var), NULL);
+		NullCheck(L_7);
+		CallbackEventHandler_UnregisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_m6F47F7C447568B774EE45E245D99CBD6CDEC3CC1(L_7, L_8, 0, CallbackEventHandler_UnregisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_m6F47F7C447568B774EE45E245D99CBD6CDEC3CC1_RuntimeMethod_var);
 		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_9 = __this->___m_MenuContainer_8;
-		EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C* L_10 = (EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C*)il2cpp_codegen_object_new(EventCallback_1_tBC1DA4FF1E26FC091E77AD11B6F780C5D237AF2C_il2cpp_TypeInfo_var);
+		EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913* L_10 = (EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913*)il2cpp_codegen_object_new(EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
-		EventCallback_1__ctor_mCDF2316FE391D783EF33C433EB59E5DF474C5398(L_10, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerDown_mD432107E086152694613A6A78F839BEEE2D93C16_RuntimeMethod_var), NULL);
+		EventCallback_1__ctor_mE64B79996B25171AA5DCBD2AFBB71A1A8C38B6E5(L_10, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerUp_mE8F27AA17619DC31D7330D71B17BC2A6BD7AD353_RuntimeMethod_var), NULL);
 		NullCheck(L_9);
-		CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509(L_9, L_10, 0, CallbackEventHandler_UnregisterCallback_TisPointerDownEvent_tABAAD1BACBB98156D6BCCED51E11883EAFE03A51_m3289E47B906D6F66490543857408759250B0F509_RuntimeMethod_var);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_11 = __this->___m_MenuContainer_8;
-		EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA* L_12 = (EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA*)il2cpp_codegen_object_new(EventCallback_1_t7C6768AD962B0B50514570724A38E07DA18FB1FA_il2cpp_TypeInfo_var);
-		NullCheck(L_12);
-		EventCallback_1__ctor_mF3F9B006713A25FE54BB4DD7611B7A56ABDC7596(L_12, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerMove_m51F17F04D5163647225DE89A336665DCAA84973B_RuntimeMethod_var), NULL);
+		CallbackEventHandler_UnregisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m6260930D0C12A5DFCA80D6D299023CA1A157680A(L_9, L_10, 0, CallbackEventHandler_UnregisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m6260930D0C12A5DFCA80D6D299023CA1A157680A_RuntimeMethod_var);
+		DetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496* L_11 = ___0_evt;
 		NullCheck(L_11);
-		CallbackEventHandler_UnregisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_m6F47F7C447568B774EE45E245D99CBD6CDEC3CC1(L_11, L_12, 0, CallbackEventHandler_UnregisterCallback_TisPointerMoveEvent_t2C1E2E20A07034638F48C3EB94B8520549D770C3_m6F47F7C447568B774EE45E245D99CBD6CDEC3CC1_RuntimeMethod_var);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_13 = __this->___m_MenuContainer_8;
-		EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913* L_14 = (EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913*)il2cpp_codegen_object_new(EventCallback_1_tE2BCC4FFB156A2716749F7BDD0036A743B039913_il2cpp_TypeInfo_var);
+		RuntimeObject* L_12;
+		L_12 = PanelChangedEventBase_1_get_originPanel_mB78D4DFA7608CBBC25903E7944DF9CB36D57A3A3_inline(L_11, PanelChangedEventBase_1_get_originPanel_mB78D4DFA7608CBBC25903E7944DF9CB36D57A3A3_RuntimeMethod_var);
+		NullCheck(L_12);
+		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_13;
+		L_13 = InterfaceFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(0 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.IPanel::get_visualTree() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_12);
+		EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30* L_14 = (EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30*)il2cpp_codegen_object_new(EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30_il2cpp_TypeInfo_var);
 		NullCheck(L_14);
-		EventCallback_1__ctor_mE64B79996B25171AA5DCBD2AFBB71A1A8C38B6E5(L_14, __this, (intptr_t)((void*)GenericDropdownMenu_OnPointerUp_mE8F27AA17619DC31D7330D71B17BC2A6BD7AD353_RuntimeMethod_var), NULL);
+		EventCallback_1__ctor_mF06BFBEB6C98B9A486C131579BD98388B38997F5(L_14, __this, (intptr_t)((void*)GenericDropdownMenu_OnParentResized_m326C5782916CB8ACEB516266B34F08AFD49CA94D_RuntimeMethod_var), NULL);
 		NullCheck(L_13);
-		CallbackEventHandler_UnregisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m6260930D0C12A5DFCA80D6D299023CA1A157680A(L_13, L_14, 0, CallbackEventHandler_UnregisterCallback_TisPointerUpEvent_tCE779E8B94675B6A2758B82F6A84771CB26913D9_m6260930D0C12A5DFCA80D6D299023CA1A157680A_RuntimeMethod_var);
-		DetachFromPanelEvent_t5E26427B0E6AF96F0C522D1FCEDDC078D755E496* L_15 = ___0_evt;
-		NullCheck(L_15);
-		RuntimeObject* L_16;
-		L_16 = PanelChangedEventBase_1_get_originPanel_mB78D4DFA7608CBBC25903E7944DF9CB36D57A3A3_inline(L_15, PanelChangedEventBase_1_get_originPanel_mB78D4DFA7608CBBC25903E7944DF9CB36D57A3A3_RuntimeMethod_var);
+		CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2(L_13, L_14, 0, CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var);
+		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_15 = __this->___m_ScrollView_10;
+		EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30* L_16 = (EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30*)il2cpp_codegen_object_new(EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30_il2cpp_TypeInfo_var);
 		NullCheck(L_16);
-		VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* L_17;
-		L_17 = InterfaceFuncInvoker0< VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* >::Invoke(0 /* UnityEngine.UIElements.VisualElement UnityEngine.UIElements.IPanel::get_visualTree() */, IPanel_tAD0F3807B6DE2ECA557380E7DB5F3A179BE5A7A5_il2cpp_TypeInfo_var, L_16);
-		EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30* L_18 = (EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30*)il2cpp_codegen_object_new(EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30_il2cpp_TypeInfo_var);
+		EventCallback_1__ctor_mF06BFBEB6C98B9A486C131579BD98388B38997F5(L_16, __this, (intptr_t)((void*)GenericDropdownMenu_OnContainerGeometryChanged_mDB494E758AD380C7042750BE43BF8CDFB66D2876_RuntimeMethod_var), NULL);
+		NullCheck(L_15);
+		CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2(L_15, L_16, 0, CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var);
+		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_17 = __this->___m_ScrollView_10;
+		EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC* L_18 = (EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC*)il2cpp_codegen_object_new(EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC_il2cpp_TypeInfo_var);
 		NullCheck(L_18);
-		EventCallback_1__ctor_mF06BFBEB6C98B9A486C131579BD98388B38997F5(L_18, __this, (intptr_t)((void*)GenericDropdownMenu_OnParentResized_m326C5782916CB8ACEB516266B34F08AFD49CA94D_RuntimeMethod_var), NULL);
+		EventCallback_1__ctor_m590765FE20390B080DA32C92AB973CF1444A87E2(L_18, __this, (intptr_t)((void*)GenericDropdownMenu_OnFocusOut_m94B6AC6E62E6572974C663EC7BA1C74A10DE9032_RuntimeMethod_var), NULL);
 		NullCheck(L_17);
-		CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2(L_17, L_18, 0, CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var);
-		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_19 = __this->___m_ScrollView_10;
-		EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30* L_20 = (EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30*)il2cpp_codegen_object_new(EventCallback_1_t435839AFF4474F7EAE0AA8A59F737E798CEAFD30_il2cpp_TypeInfo_var);
-		NullCheck(L_20);
-		EventCallback_1__ctor_mF06BFBEB6C98B9A486C131579BD98388B38997F5(L_20, __this, (intptr_t)((void*)GenericDropdownMenu_OnContainerGeometryChanged_mDB494E758AD380C7042750BE43BF8CDFB66D2876_RuntimeMethod_var), NULL);
-		NullCheck(L_19);
-		CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2(L_19, L_20, 0, CallbackEventHandler_UnregisterCallback_TisGeometryChangedEvent_tB4A621001850F337A676F8CC27F172B8ADB22A9A_m7E6F5C986914E13F679AC4D1E8F0131F9C2A06E2_RuntimeMethod_var);
-		ScrollView_t7CE209084E084FAA0E8DF3CD8E3B8BB9EB27E8D9* L_21 = __this->___m_ScrollView_10;
-		EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC* L_22 = (EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC*)il2cpp_codegen_object_new(EventCallback_1_t9806BC090007BE5DD48FCD0CB7C9F4CDC509A3FC_il2cpp_TypeInfo_var);
-		NullCheck(L_22);
-		EventCallback_1__ctor_m590765FE20390B080DA32C92AB973CF1444A87E2(L_22, __this, (intptr_t)((void*)GenericDropdownMenu_OnFocusOut_m94B6AC6E62E6572974C663EC7BA1C74A10DE9032_RuntimeMethod_var), NULL);
-		NullCheck(L_21);
-		CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246(L_21, L_22, 0, CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246_RuntimeMethod_var);
+		CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246(L_17, L_18, 0, CallbackEventHandler_UnregisterCallback_TisFocusOutEvent_t5CC3AC57C2BEFAD0E0A7E73FE6314F0F63DFFD2C_m5207851C5E9E6B1CC16946231E49A5E6E4FA1246_RuntimeMethod_var);
 	}
 
-IL_00f2:
+IL_00c0:
 	{
 		return;
 	}
@@ -17749,7 +17381,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GenericDropdownMenu_Apply_m531F1B34ABE10
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mE014623ADDD0C4D695142EEAB0BF328DD1056D57_RuntimeMethod_var);
 		s_Il2CppMethodInitialized = true;
 	}
-	U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 V_0;
+	U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 V_0;
 	memset((&V_0), 0, sizeof(V_0));
 	MenuItem_tAD6168D43164235B4175072CB311D521AA55C5C5* V_1 = NULL;
 	int32_t V_2 = 0;
@@ -17826,13 +17458,13 @@ IL_0049:
 IL_0058:
 	{
 		List_1_t61096569E456190C1D695A123917128C0E1FB932* L_4 = __this->___m_Items_7;
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 L_5 = V_0;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 L_5 = V_0;
 		int32_t L_6 = L_5.___selectedIndex_1;
 		NullCheck(L_4);
 		MenuItem_tAD6168D43164235B4175072CB311D521AA55C5C5* L_7;
 		L_7 = List_1_get_Item_mE014623ADDD0C4D695142EEAB0BF328DD1056D57(L_4, L_6, List_1_get_Item_mE014623ADDD0C4D695142EEAB0BF328DD1056D57_RuntimeMethod_var);
 		V_1 = L_7;
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 L_8 = V_0;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 L_8 = V_0;
 		int32_t L_9 = L_8.___selectedIndex_1;
 		if ((((int32_t)L_9) < ((int32_t)0)))
 		{
@@ -17928,7 +17560,7 @@ IL_00b8:
 
 IL_00c4:
 	{
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 L_23 = V_0;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 L_23 = V_0;
 		int32_t L_24 = L_23.___selectedIndex_1;
 		G_B16_0 = __this;
 		if ((((int32_t)L_24) < ((int32_t)0)))
@@ -17938,7 +17570,7 @@ IL_00c4:
 		}
 	}
 	{
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 L_25 = V_0;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 L_25 = V_0;
 		int32_t L_26 = L_25.___selectedIndex_1;
 		G_B18_0 = ((int32_t)il2cpp_codegen_subtract(L_26, 1));
 		G_B18_1 = G_B16_0;
@@ -17958,23 +17590,23 @@ IL_00d8:
 IL_00e5:
 	{
 		NullCheck(G_B18_1);
-		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C25_1_m924605A08C08FB07F2384D872F1341D5A0F9BF51(G_B18_1, G_B18_0, (&V_0), NULL);
+		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C27_1_m1812B0EF8DE6E5BA0CBFEE7C6509DE9D832B614B(G_B18_1, G_B18_0, (&V_0), NULL);
 		V_4 = (bool)1;
 		goto IL_0137;
 	}
 
 IL_00f2:
 	{
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307 L_29 = V_0;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91 L_29 = V_0;
 		int32_t L_30 = L_29.___selectedIndex_1;
-		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C25_0_m6CA4D5DEF10E9A08AE7709FE8E9DDC2188573FCE(__this, ((int32_t)il2cpp_codegen_add(L_30, 1)), (&V_0), NULL);
+		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C27_0_m29DC7174F7B35F1202CFDD7F5B3567547F614F11(__this, ((int32_t)il2cpp_codegen_add(L_30, 1)), (&V_0), NULL);
 		V_4 = (bool)1;
 		goto IL_0137;
 	}
 
 IL_0108:
 	{
-		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C25_0_m6CA4D5DEF10E9A08AE7709FE8E9DDC2188573FCE(__this, 0, (&V_0), NULL);
+		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C27_0_m29DC7174F7B35F1202CFDD7F5B3567547F614F11(__this, 0, (&V_0), NULL);
 		V_4 = (bool)1;
 		goto IL_0137;
 	}
@@ -17985,7 +17617,7 @@ IL_0117:
 		NullCheck(L_31);
 		int32_t L_32;
 		L_32 = List_1_get_Count_mE1F64F80BE7E21C3993E3A376EB5D4CDAF9547A1_inline(L_31, List_1_get_Count_mE1F64F80BE7E21C3993E3A376EB5D4CDAF9547A1_RuntimeMethod_var);
-		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C25_1_m924605A08C08FB07F2384D872F1341D5A0F9BF51(__this, ((int32_t)il2cpp_codegen_subtract(L_32, 1)), (&V_0), NULL);
+		GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C27_1_m1812B0EF8DE6E5BA0CBFEE7C6509DE9D832B614B(__this, ((int32_t)il2cpp_codegen_subtract(L_32, 1)), (&V_0), NULL);
 		V_4 = (bool)1;
 		goto IL_0137;
 	}
@@ -19483,8 +19115,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu__cctor_m36BF46879EA8
 		return;
 	}
 }
-// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionDown|25_0(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C25_0_m6CA4D5DEF10E9A08AE7709FE8E9DDC2188573FCE (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* ___1_p, const RuntimeMethod* method) 
+// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionDown|27_0(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionDownU7C27_0_m29DC7174F7B35F1202CFDD7F5B3567547F614F11 (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* ___1_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19520,7 +19152,7 @@ IL_0003:
 	}
 	{
 		int32_t L_6 = ___0_newIndex;
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* L_7 = ___1_p;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* L_7 = ___1_p;
 		int32_t L_8 = L_7->___selectedIndex_1;
 		GenericDropdownMenu_ChangeSelectedIndex_m4690732978C00A00F5AFDFCB08FC25C0D950842E(__this, L_6, L_8, NULL);
 		goto IL_0047;
@@ -19552,8 +19184,8 @@ IL_0047:
 		return;
 	}
 }
-// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionUp|25_1(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass25_0&)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C25_1_m924605A08C08FB07F2384D872F1341D5A0F9BF51 (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* ___1_p, const RuntimeMethod* method) 
+// System.Void UnityEngine.UIElements.GenericDropdownMenu::<Apply>g__UpdateSelectionUp|27_1(System.Int32,UnityEngine.UIElements.GenericDropdownMenu/<>c__DisplayClass27_0&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericDropdownMenu_U3CApplyU3Eg__UpdateSelectionUpU7C27_1_m1812B0EF8DE6E5BA0CBFEE7C6509DE9D832B614B (GenericDropdownMenu_t4CD56B241F3F5667305283313EE5BB5DF7D0C6D1* __this, int32_t ___0_newIndex, U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* ___1_p, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -19588,7 +19220,7 @@ IL_0003:
 	}
 	{
 		int32_t L_6 = ___0_newIndex;
-		U3CU3Ec__DisplayClass25_0_t9DB56035F65F4D0344AB725F5D597D7E0AB1D307* L_7 = ___1_p;
+		U3CU3Ec__DisplayClass27_0_tB7F2D2E602E55805AFBF3C46D181091674D44C91* L_7 = ___1_p;
 		int32_t L_8 = L_7->___selectedIndex_1;
 		GenericDropdownMenu_ChangeSelectedIndex_m4690732978C00A00F5AFDFCB08FC25C0D950842E(__this, L_6, L_8, NULL);
 		goto IL_0040;
@@ -20272,11 +19904,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_4 = ___0_texture;
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_4);
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_6 = ___0_texture;
 		NullCheck(L_6);
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_6);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_6);
 		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&V_0), ((float)L_5), ((float)L_7), NULL);
 	}
 

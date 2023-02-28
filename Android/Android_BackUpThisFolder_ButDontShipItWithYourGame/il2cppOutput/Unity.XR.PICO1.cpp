@@ -1646,7 +1646,7 @@ struct RenderTextureDescriptor_t69845881CE6437E4E61F92074F2F84079F23FA46
 struct ShaderTagId_t453E2085B5EE9448FF75E550CAB111EFF690ECB0 
 {
 	// System.Int32 UnityEngine.Rendering.ShaderTagId::m_Id
-	int32_t ___m_Id_0;
+	int32_t ___m_Id_1;
 };
 
 // System.Single
@@ -3339,10 +3339,6 @@ struct List_1_tE3AE94237CE649B47E1D52E1A3120E772255FF87_StaticFields
 
 // System.Collections.Generic.List`1<UnityEngine.XR.XRInputSubsystemDescriptor>
 
-// System.Attribute
-
-// System.Attribute
-
 // Unity.XR.PXR.InputLayoutLoader
 
 // Unity.XR.PXR.InputLayoutLoader
@@ -3350,10 +3346,6 @@ struct List_1_tE3AE94237CE649B47E1D52E1A3120E772255FF87_StaticFields
 // LitJson.JsonData
 
 // LitJson.JsonData
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
 
 // Unity.XR.PXR.PLog
 struct PLog_tEC2B5CFA55235FC4D83F42C6FEEB8B69757B7989_StaticFields
@@ -3401,14 +3393,6 @@ struct String_t_StaticFields
 };
 
 // System.String
-
-// System.ValueType
-
-// System.ValueType
-
-// UnityEngine.YieldInstruction
-
-// UnityEngine.YieldInstruction
 
 // Unity.XR.PXR.PXR_HandPoseConfig/BonesRecognizer
 
@@ -3497,18 +3481,6 @@ struct System_t4255BA2E24C230336F7C003E6DD13B25588178DB_StaticFields
 
 // UnityEngine.XR.InputFeatureUsage`1<System.Boolean>
 
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Eyes>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Eyes>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Hand>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Hand>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.InputTrackingState>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.InputTrackingState>
-
 // UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Quaternion>
 
 // UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Quaternion>
@@ -3556,15 +3528,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 
 // System.Double
 
-// System.Enum
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
-};
-
-// System.Enum
-
 // UnityEngine.XR.InputDevice
 struct InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_StaticFields
 {
@@ -3594,10 +3557,6 @@ struct IntPtr_t_StaticFields
 };
 
 // System.IntPtr
-
-// UnityEngine.InputSystem.Utilities.InternedString
-
-// UnityEngine.InputSystem.Utilities.InternedString
 
 // UnityEngine.LayerMask
 
@@ -3658,10 +3617,6 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 // UnityEngine.RenderTextureDescriptor
 
 // UnityEngine.RenderTextureDescriptor
-
-// UnityEngine.Rendering.ShaderTagId
-
-// UnityEngine.Rendering.ShaderTagId
 
 // System.Single
 
@@ -3918,15 +3873,6 @@ struct CommonUsages_t9208F514F1E77BE70AC53EFEC94D57EDDAF3B8E1_StaticFields
 
 // Unity.XR.PXR.DisplayOnly
 
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
-
 // System.IO.FileStream
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
 {
@@ -3954,10 +3900,6 @@ struct InputDeviceMatcher_tF9BA551C8BB4AE41672366A7EBEA951543E0C555_StaticFields
 };
 
 // UnityEngine.InputSystem.Layouts.InputDeviceMatcher
-
-// UnityEngine.IntegratedSubsystem
-
-// UnityEngine.IntegratedSubsystem
 
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
@@ -4040,14 +3982,6 @@ struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36_StaticF
 
 // UnityEngine.Rendering.ScriptableRenderContext
 
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRDisplaySubsystemDescriptor>
-
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRDisplaySubsystemDescriptor>
-
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRInputSubsystemDescriptor>
-
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRInputSubsystemDescriptor>
-
 // System.Nullable`1<UnityEngine.InputSystem.Layouts.InputDeviceMatcher>
 
 // System.Nullable`1<UnityEngine.InputSystem.Layouts.InputDeviceMatcher>
@@ -4080,10 +4014,6 @@ struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36_StaticF
 
 // UnityEngine.Mesh
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // Unity.XR.PXR.PxrLayerHeader
 
 // Unity.XR.PXR.PxrLayerHeader
@@ -4107,10 +4037,6 @@ struct ScriptableRenderContext_t5AB09B3602BEB456E0DC3D53926D3A3BDAF08E36_StaticF
 // UnityEngine.Shader
 
 // UnityEngine.Shader
-
-// System.SystemException
-
-// System.SystemException
 
 // UnityEngine.TextAsset
 
@@ -4405,29 +4331,6 @@ struct PXR_OverLay_tA8223124328169543809AC832BAB5E344A01A3F3_StaticFields
 // Unity.XR.PXR.PXR_TouchPadEffects
 
 // Unity.XR.PXR.PXR_TouchPadEffects
-
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.UI.Graphic
-struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
-{
-	// UnityEngine.Material UnityEngine.UI.Graphic::s_DefaultUI
-	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultUI_4;
-	// UnityEngine.Texture2D UnityEngine.UI.Graphic::s_WhiteTexture
-	Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* ___s_WhiteTexture_5;
-	// UnityEngine.Mesh UnityEngine.UI.Graphic::s_Mesh
-	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___s_Mesh_21;
-	// UnityEngine.UI.VertexHelper UnityEngine.UI.Graphic::s_VertexHelper
-	VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE* ___s_VertexHelper_22;
-};
-
-// UnityEngine.UI.Graphic
-
-// UnityEngine.UI.MaskableGraphic
-
-// UnityEngine.UI.MaskableGraphic
 
 // UnityEngine.UI.Text
 struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
@@ -13941,7 +13844,7 @@ IL_0096:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_29 = (L_27)->GetAt(static_cast<il2cpp_array_size_t>(L_28));
 		NullCheck(L_29);
 		int32_t L_30;
-		L_30 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_29);
+		L_30 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_29);
 		L_26->___width_5 = L_30;
 		// overlayParam.height = (uint)layerTextures[1].height;
 		PxrLayerParam_t6B889534BB4C6485B27283EC2835FD6271C5061C* L_31 = (&__this->___overlayParam_58);
@@ -13951,7 +13854,7 @@ IL_0096:
 		Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700* L_34 = (L_32)->GetAt(static_cast<il2cpp_array_size_t>(L_33));
 		NullCheck(L_34);
 		int32_t L_35;
-		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_34);
+		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_34);
 		L_31->___height_6 = L_35;
 		goto IL_00fa;
 	}

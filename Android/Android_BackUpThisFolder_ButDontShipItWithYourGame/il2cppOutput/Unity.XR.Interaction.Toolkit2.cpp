@@ -3933,9 +3933,9 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
 struct Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C 
 {
 	// UnityEngine.Vector3 UnityEngine.Plane::m_Normal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal_0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal_1;
 	// System.Single UnityEngine.Plane::m_Distance
-	float ___m_Distance_1;
+	float ___m_Distance_2;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
@@ -4043,18 +4043,22 @@ struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023
 	float ___index_3;
 	// System.Int32 UnityEngine.EventSystems.RaycastResult::depth
 	int32_t ___depth_4;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingGroupID
+	int32_t ___sortingGroupID_5;
+	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingGroupOrder
+	int32_t ___sortingGroupOrder_6;
 	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingLayer
-	int32_t ___sortingLayer_5;
+	int32_t ___sortingLayer_7;
 	// System.Int32 UnityEngine.EventSystems.RaycastResult::sortingOrder
-	int32_t ___sortingOrder_6;
+	int32_t ___sortingOrder_8;
 	// UnityEngine.Vector3 UnityEngine.EventSystems.RaycastResult::worldPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_9;
 	// UnityEngine.Vector3 UnityEngine.EventSystems.RaycastResult::worldNormal
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_10;
 	// UnityEngine.Vector2 UnityEngine.EventSystems.RaycastResult::screenPosition
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_11;
 	// System.Int32 UnityEngine.EventSystems.RaycastResult::displayIndex
-	int32_t ___displayIndex_10;
+	int32_t ___displayIndex_12;
 };
 // Native definition for P/Invoke marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_pinvoke
@@ -4064,12 +4068,14 @@ struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_pinvoke
 	float ___distance_2;
 	float ___index_3;
 	int32_t ___depth_4;
-	int32_t ___sortingLayer_5;
-	int32_t ___sortingOrder_6;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
-	int32_t ___displayIndex_10;
+	int32_t ___sortingGroupID_5;
+	int32_t ___sortingGroupOrder_6;
+	int32_t ___sortingLayer_7;
+	int32_t ___sortingOrder_8;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_9;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_10;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_11;
+	int32_t ___displayIndex_12;
 };
 // Native definition for COM marshalling of UnityEngine.EventSystems.RaycastResult
 struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_com
@@ -4079,12 +4085,14 @@ struct RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023_marshaled_com
 	float ___distance_2;
 	float ___index_3;
 	int32_t ___depth_4;
-	int32_t ___sortingLayer_5;
-	int32_t ___sortingOrder_6;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_7;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_8;
-	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_9;
-	int32_t ___displayIndex_10;
+	int32_t ___sortingGroupID_5;
+	int32_t ___sortingGroupOrder_6;
+	int32_t ___sortingLayer_7;
+	int32_t ___sortingOrder_8;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldPosition_9;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___worldNormal_10;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___screenPosition_11;
+	int32_t ___displayIndex_12;
 };
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Internal.RequireInterfaceAttribute
@@ -6510,10 +6518,6 @@ struct BaseRegistrationList_1_tC4849FD1C765FEDC627F4B53D183556C1A57BB27_StaticFi
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.BaseRegistrationList`1<System.Object>
 
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<System.Single>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<System.Single>
-
 // System.Collections.Generic.Dictionary`2<UnityEngine.Collider,UnityEngine.XR.Interaction.Toolkit.IXRInteractable>
 
 // System.Collections.Generic.Dictionary`2<UnityEngine.Collider,UnityEngine.XR.Interaction.Toolkit.IXRInteractable>
@@ -6718,10 +6722,6 @@ struct List_1_t507F4CF850BC321B50D1F84122347FC845E1528C_StaticFields
 
 // System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.TunnelingVignetteController/ProviderRecord>
 
-// UnityEngine.EventSystems.AbstractEventData
-
-// UnityEngine.EventSystems.AbstractEventData
-
 // System.Reflection.Assembly
 
 // System.Reflection.Assembly
@@ -6733,10 +6733,6 @@ struct List_1_t507F4CF850BC321B50D1F84122347FC845E1528C_StaticFields
 // UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
 
 // UnityEngine.XR.Interaction.Toolkit.BaseInteractionEventArgs
-
-// UnityEngine.XR.Interaction.Toolkit.BaseRegistrationEventArgs
-
-// UnityEngine.XR.Interaction.Toolkit.BaseRegistrationEventArgs
 
 // Unity.XR.CoreUtils.Bindings.BindingsGroup
 
@@ -6756,14 +6752,6 @@ struct InputHelpers_t6F6BABB51A0BA00202F7D2720513930CFF10810F_StaticFields
 // UnityEngine.XR.Interaction.Toolkit.LocomotionVignetteProvider
 
 // UnityEngine.XR.Interaction.Toolkit.LocomotionVignetteProvider
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
 
 // System.IO.Path
 struct Path_t8A38A801D0219E8209C1B1D90D82D4D755D998BC_StaticFields
@@ -6863,14 +6851,6 @@ struct TriggerContactMonitor_t7534ED632C47D926F92937DE752DA2D4DC79AEA2_StaticFie
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.TypeExtensions
 
-// UnityEngine.Events.UnityEventBase
-
-// UnityEngine.Events.UnityEventBase
-
-// System.ValueType
-
-// System.ValueType
-
 // UnityEngine.XR.Interaction.Toolkit.Utilities.XRFilterUtility
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.XRFilterUtility
@@ -6963,10 +6943,6 @@ struct U3CU3Ec_t91D2C110BB238F145B98D583D434EA88F77FE0B1_StaticFields
 
 // UnityEngine.XR.Interaction.Toolkit.XRInteractionManager/<>c
 
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<System.Single>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<System.Single>
-
 // System.Collections.Generic.HashSet`1/Enumerator<UnityEngine.Collider>
 
 // System.Collections.Generic.HashSet`1/Enumerator<UnityEngine.Collider>
@@ -7019,29 +6995,9 @@ struct U3CU3Ec_t91D2C110BB238F145B98D583D434EA88F77FE0B1_StaticFields
 
 // System.Collections.Generic.Dictionary`2/KeyCollection/Enumerator<System.Object,System.Object>
 
-// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext>>
-
-// UnityEngine.InputSystem.Utilities.InlinedArray`1<System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext>>
-
 // UnityEngine.XR.InputFeatureUsage`1<System.Boolean>
 
 // UnityEngine.XR.InputFeatureUsage`1<System.Boolean>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Eyes>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Eyes>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Hand>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.Hand>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.InputTrackingState>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.XR.InputTrackingState>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Quaternion>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Quaternion>
 
 // UnityEngine.XR.InputFeatureUsage`1<System.Single>
 
@@ -7050,10 +7006,6 @@ struct U3CU3Ec_t91D2C110BB238F145B98D583D434EA88F77FE0B1_StaticFields
 // UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>
 
 // UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector2>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector3>
-
-// UnityEngine.XR.InputFeatureUsage`1<UnityEngine.Vector3>
 
 // System.Collections.Generic.KeyValuePair`2<UnityEngine.Collider,UnityEngine.XR.Interaction.Toolkit.IXRInteractable>
 
@@ -7067,25 +7019,9 @@ struct U3CU3Ec_t91D2C110BB238F145B98D583D434EA88F77FE0B1_StaticFields
 
 // System.Collections.Generic.KeyValuePair`2<UnityEngine.XR.Interaction.Toolkit.TeleportationProvider,System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.IXRInteractor>>
 
-// Unity.Collections.NativeArray`1<UnityEngine.Color>
-
-// Unity.Collections.NativeArray`1<UnityEngine.Color>
-
 // Unity.Collections.NativeArray`1<System.Single>
 
 // Unity.Collections.NativeArray`1<System.Single>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float2>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float2>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float3>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float3>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float4>
-
-// Unity.Collections.NativeArray`1<Unity.Mathematics.float4>
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Pooling.PooledObject`1<System.Object>
 
@@ -7171,10 +7107,6 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
 
 // UnityEngine.InputSystem.InputActionProperty
 
-// UnityEngine.InputSystem.InputBinding
-
-// UnityEngine.InputSystem.InputBinding
-
 // UnityEngine.XR.InputDevice
 struct InputDevice_t882EE3EE8A71D8F5F38BA3F9356A49F24510E8BD_StaticFields
 {
@@ -7212,14 +7144,6 @@ struct IntPtr_t_StaticFields
 // UnityEngine.XR.Interaction.Toolkit.InteractionGroupUnregisteredEventArgs
 
 // UnityEngine.XR.Interaction.Toolkit.InteractionGroupUnregisteredEventArgs
-
-// UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
-
-// UnityEngine.XR.Interaction.Toolkit.InteractionLayerMask
-
-// UnityEngine.XR.Interaction.Toolkit.InteractionState
-
-// UnityEngine.XR.Interaction.Toolkit.InteractionState
 
 // UnityEngine.XR.Interaction.Toolkit.InteractorRegisteredEventArgs
 
@@ -7375,15 +7299,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // System.Void
 
-// Unity.Mathematics.float2
-struct float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA_StaticFields
-{
-	// Unity.Mathematics.float2 Unity.Mathematics.float2::zero
-	float2_t24AA5C0F612B0672315EDAFEC9D9E7F1C4A5B0BA ___zero_2;
-};
-
-// Unity.Mathematics.float2
-
 // Unity.Mathematics.float3
 struct float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_StaticFields
 {
@@ -7393,19 +7308,6 @@ struct float3_t4AB5D88249ADB24F69FFD0793E8ED25E1CC3745E_StaticFields
 
 // Unity.Mathematics.float3
 
-// Unity.Mathematics.float4
-struct float4_t89D9A294E7A79BD81BFBDD18654508532958555E_StaticFields
-{
-	// Unity.Mathematics.float4 Unity.Mathematics.float4::zero
-	float4_t89D9A294E7A79BD81BFBDD18654508532958555E ___zero_4;
-};
-
-// Unity.Mathematics.float4
-
-// UnityEngine.EventSystems.EventSystem/UIToolkitOverrideConfig
-
-// UnityEngine.EventSystems.EventSystem/UIToolkitOverrideConfig
-
 // UnityEngine.XR.Interaction.Toolkit.InputHelpers/ButtonInfo
 
 // UnityEngine.XR.Interaction.Toolkit.InputHelpers/ButtonInfo
@@ -7422,29 +7324,13 @@ struct float4_t89D9A294E7A79BD81BFBDD18654508532958555E_StaticFields
 
 // Unity.Mathematics.math/IntFloatUnion
 
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.Color>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.Color>
-
 // Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.Quaternion>
 
 // Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.Quaternion>
 
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float2>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float2>
-
 // Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float3>
 
 // Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float3>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float4>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<Unity.Mathematics.float4>
-
-// UnityEngine.InputSystem.Utilities.CallbackArray`1<System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext>>
-
-// UnityEngine.InputSystem.Utilities.CallbackArray`1<System.Action`1<UnityEngine.InputSystem.InputAction/CallbackContext>>
 
 // System.Collections.Generic.Dictionary`2/Enumerator<UnityEngine.Collider,UnityEngine.XR.Interaction.Toolkit.IXRInteractable>
 
@@ -7458,17 +7344,9 @@ struct float4_t89D9A294E7A79BD81BFBDD18654508532958555E_StaticFields
 
 // System.Collections.Generic.Dictionary`2/Enumerator<UnityEngine.XR.Interaction.Toolkit.TeleportationProvider,System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.IXRInteractor>>
 
-// System.Nullable`1<UnityEngine.InputSystem.InputBinding>
-
-// System.Nullable`1<UnityEngine.InputSystem.InputBinding>
-
 // System.Nullable`1<UnityEngine.Vector3>
 
 // System.Nullable`1<UnityEngine.Vector3>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<System.Single>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<System.Single>
 
 // UnityEngine.AnimationCurve
 
@@ -7676,10 +7554,6 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.Plane
 
-// UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
-
-// UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData
-
 // UnityEngine.Pose
 struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_StaticFields
 {
@@ -7688,10 +7562,6 @@ struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_StaticFields
 };
 
 // UnityEngine.Pose
-
-// Unity.Profiling.ProfilerMarker
-
-// Unity.Profiling.ProfilerMarker
 
 // UnityEngine.Ray
 
@@ -7752,30 +7622,6 @@ struct Defaults_tF6DF34F6D0B92CF4D0CB8AB652E59BBD43B313EF_StaticFields
 
 // UnityEngine.XR.Interaction.Toolkit.VignetteParameters/Defaults
 
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariableBase`1<UnityEngine.XR.Interaction.Toolkit.Filtering.PokeStateData>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<UnityEngine.Color>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<UnityEngine.Color>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<UnityEngine.Quaternion>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<UnityEngine.Quaternion>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float2>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float2>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float3>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float3>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float4>
-
-// Unity.XR.CoreUtils.Bindings.Variables.BindableVariable`1<Unity.Mathematics.float4>
-
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/RaycastHitData>
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceGraphicRaycaster/RaycastHitData>
@@ -7824,10 +7670,6 @@ struct Defaults_tF6DF34F6D0B92CF4D0CB8AB652E59BBD43B313EF_StaticFields
 
 // UnityEngine.Mesh
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // UnityEngine.EventSystems.PointerEventData
 
 // UnityEngine.EventSystems.PointerEventData
@@ -7839,10 +7681,6 @@ struct Defaults_tF6DF34F6D0B92CF4D0CB8AB652E59BBD43B313EF_StaticFields
 // UnityEngine.Shader
 
 // UnityEngine.Shader
-
-// System.SystemException
-
-// System.SystemException
 
 // UnityEngine.XR.Interaction.Toolkit.TeleportingEventArgs
 
@@ -7877,10 +7715,6 @@ struct Type_t_StaticFields
 
 // UnityEngine.XR.Interaction.Toolkit.UI.TouchModel/ImplementationData
 
-// UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceModel/ImplementationData
-
-// UnityEngine.XR.Interaction.Toolkit.UI.TrackedDeviceModel/ImplementationData
-
 // System.Action`1<System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.LocomotionSystem,UnityEngine.Pose>>
 
 // System.Action`1<System.Collections.Generic.Dictionary`2<UnityEngine.XR.Interaction.Toolkit.LocomotionSystem,UnityEngine.Pose>>
@@ -7945,25 +7779,13 @@ struct Type_t_StaticFields
 
 // System.Predicate`1<UnityEngine.Collider>
 
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<UnityEngine.Color>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<UnityEngine.Color>
-
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<UnityEngine.Quaternion>
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<UnityEngine.Quaternion>
 
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float2>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float2>
-
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float3>
 
 // UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float3>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float4>
-
-// UnityEngine.XR.Interaction.Toolkit.Utilities.Tweenables.TweenableVariableBase`1<Unity.Mathematics.float4>
 
 // System.ArgumentException
 
@@ -8323,15 +8145,6 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 
 // UnityEngine.XR.Interaction.Toolkit.TeleportationProvider
 
-// UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
-struct XRBaseControllerInteractor_t718A447F8F3D646B51B42E1FAFEA2C1A1EF1C66E_StaticFields
-{
-	// System.Collections.Generic.List`1<UnityEngine.XR.Interaction.Toolkit.IXRActivateInteractable> UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor::s_ActivateTargets
-	List_1_tAB2FD3FF9900A585A26C6DC2D8EE94D30F2AECCA* ___s_ActivateTargets_88;
-};
-
-// UnityEngine.XR.Interaction.Toolkit.XRBaseControllerInteractor
-
 // UnityEngine.XR.Interaction.Toolkit.XRController
 
 // UnityEngine.XR.Interaction.Toolkit.XRController
@@ -8383,10 +8196,6 @@ struct DeviceBasedSnapTurnProvider_t16D88BEA064062F967D48ECB8C3EC41298D38466_Sta
 
 // UnityEngine.XR.Interaction.Toolkit.GrabMoveProvider
 
-// UnityEngine.EventSystems.PointerInputModule
-
-// UnityEngine.EventSystems.PointerInputModule
-
 // UnityEngine.XR.Interaction.Toolkit.TeleportationAnchor
 
 // UnityEngine.XR.Interaction.Toolkit.TeleportationAnchor
@@ -8413,10 +8222,6 @@ struct TrackedDeviceGraphicRaycaster_t10211666BB4A468E839EEFBDFEC7D5AAB4555149_S
 // UnityEngine.XR.Interaction.Toolkit.TwoHandedGrabMoveProvider
 
 // UnityEngine.XR.Interaction.Toolkit.TwoHandedGrabMoveProvider
-
-// UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule
-
-// UnityEngine.XR.Interaction.Toolkit.UI.UIInputModule
 
 // UnityEngine.XR.Interaction.Toolkit.XRRayInteractor
 struct XRRayInteractor_t0B25C1D5A938B199A71908E189AB351B43DA4C76_StaticFields
@@ -35680,7 +35485,7 @@ IL_00a5:
 		XRPokeLogic_tFF15963730D3A0A66FA658DD48177B2CD5A2F26D* L_47 = __this->___m_PokeLogic_19;
 		RuntimeObject* L_48 = V_2;
 		RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 L_49 = V_5;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = L_49.___worldPosition_7;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_50 = L_49.___worldPosition_9;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_51;
 		L_51 = TrackedDeviceModel_get_position_mA1B101753B4DE6F7142EE4DB49487104019DF4BE_inline((&V_3), NULL);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_52 = V_6;
@@ -36194,26 +35999,26 @@ IL_0059_1:
 				NullCheck(L_27);
 				int32_t L_28;
 				L_28 = Canvas_get_sortingLayerID_m38FE23D0D6A2001F62CA24676298E95BEE968AB6(L_27, NULL);
-				(&V_7)->___sortingLayer_5 = L_28;
+				(&V_7)->___sortingLayer_7 = L_28;
 				Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* L_29;
 				L_29 = TrackedDeviceGraphicRaycaster_get_canvas_mAD7A34E53FB188AC4DA28255C022DAFCBBA5613D(__this, NULL);
 				NullCheck(L_29);
 				int32_t L_30;
 				L_30 = Canvas_get_sortingOrder_mFA9AC878A11BBEE1716CF7E7DF52E0AAC570C451(L_29, NULL);
-				(&V_7)->___sortingOrder_6 = L_30;
+				(&V_7)->___sortingOrder_8 = L_30;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_31;
 				L_31 = RaycastHitData_get_worldHitPosition_mA36CED27016B4C803EE9129A379C1052152D15F2_inline((&V_1), NULL);
-				(&V_7)->___worldPosition_7 = L_31;
+				(&V_7)->___worldPosition_9 = L_31;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32 = V_5;
 				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33;
 				L_33 = Vector3_op_UnaryNegation_m5450829F333BD2A88AF9A592C4EE331661225915_inline(L_32, NULL);
-				(&V_7)->___worldNormal_8 = L_33;
+				(&V_7)->___worldNormal_10 = L_33;
 				Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_34;
 				L_34 = RaycastHitData_get_screenPosition_mAAA69CF11624FC7EA8667F228C640DEFCD6FB2AB_inline((&V_1), NULL);
-				(&V_7)->___screenPosition_9 = L_34;
+				(&V_7)->___screenPosition_11 = L_34;
 				int32_t L_35;
 				L_35 = RaycastHitData_get_displayIndex_mA3B5A6BD21766DBCE8EA33251BF23FDE7DFE0C50_inline((&V_1), NULL);
-				(&V_7)->___displayIndex_10 = L_35;
+				(&V_7)->___displayIndex_12 = L_35;
 				RaycastResult_tEC6A7B7CABA99C386F054F01E498AEC426CF8023 L_36 = V_7;
 				V_6 = L_36;
 				// resultAppendList.Add(castResult);

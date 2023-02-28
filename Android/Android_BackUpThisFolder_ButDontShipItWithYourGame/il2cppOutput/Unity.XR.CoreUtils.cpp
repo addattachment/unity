@@ -2980,24 +2980,34 @@ struct TrackedPoseDriver_t779D5EAD0B11F253C64256301D08963E951CEA98  : public Mon
 	int32_t ___m_TrackingType_4;
 	// UnityEngine.InputSystem.XR.TrackedPoseDriver/UpdateType UnityEngine.InputSystem.XR.TrackedPoseDriver::m_UpdateType
 	int32_t ___m_UpdateType_5;
+	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_IgnoreTrackingState
+	bool ___m_IgnoreTrackingState_6;
 	// UnityEngine.InputSystem.InputActionProperty UnityEngine.InputSystem.XR.TrackedPoseDriver::m_PositionInput
-	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_PositionInput_6;
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_PositionInput_7;
 	// UnityEngine.InputSystem.InputActionProperty UnityEngine.InputSystem.XR.TrackedPoseDriver::m_RotationInput
-	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_RotationInput_7;
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_RotationInput_8;
+	// UnityEngine.InputSystem.InputActionProperty UnityEngine.InputSystem.XR.TrackedPoseDriver::m_TrackingStateInput
+	InputActionProperty_tE5B1633784A72FC044A0BB5C0BE140DD7BD84FAD ___m_TrackingStateInput_9;
 	// UnityEngine.Vector3 UnityEngine.InputSystem.XR.TrackedPoseDriver::m_CurrentPosition
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_CurrentPosition_8;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_CurrentPosition_10;
 	// UnityEngine.Quaternion UnityEngine.InputSystem.XR.TrackedPoseDriver::m_CurrentRotation
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_CurrentRotation_9;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_CurrentRotation_11;
+	// UnityEngine.InputSystem.XR.TrackedPoseDriver/TrackingStates UnityEngine.InputSystem.XR.TrackedPoseDriver::m_CurrentTrackingState
+	int32_t ___m_CurrentTrackingState_12;
 	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_RotationBound
-	bool ___m_RotationBound_10;
+	bool ___m_RotationBound_13;
 	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_PositionBound
-	bool ___m_PositionBound_11;
+	bool ___m_PositionBound_14;
+	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_TrackingStateBound
+	bool ___m_TrackingStateBound_15;
+	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_IsFirstUpdate
+	bool ___m_IsFirstUpdate_16;
 	// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.XR.TrackedPoseDriver::m_PositionAction
-	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_PositionAction_12;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_PositionAction_17;
 	// UnityEngine.InputSystem.InputAction UnityEngine.InputSystem.XR.TrackedPoseDriver::m_RotationAction
-	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_RotationAction_13;
+	InputAction_t1B550AD2B55AF322AFB53CD28DA64081220D01CD* ___m_RotationAction_18;
 	// System.Boolean UnityEngine.InputSystem.XR.TrackedPoseDriver::m_HasMigratedActions
-	bool ___m_HasMigratedActions_14;
+	bool ___m_HasMigratedActions_19;
 };
 
 // UnityEngine.SpatialTracking.TrackedPoseDriver
@@ -3373,10 +3383,6 @@ struct GameObjectUtils_t11DAAEB6B091F1DEC4EC9B0D7B4A9B3F7CFAE72F_StaticFields
 
 // Unity.XR.CoreUtils.ListExtensions
 
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
 // Unity.XR.CoreUtils.MaterialUtils
 
 // Unity.XR.CoreUtils.MaterialUtils
@@ -3514,17 +3520,9 @@ struct TypeExtensions_t65367AC18793C0FA75C262A51A63DC36B4E9D427_StaticFields
 
 // Unity.XR.CoreUtils.UndoBlock
 
-// UnityEngine.Events.UnityEventBase
-
-// UnityEngine.Events.UnityEventBase
-
 // Unity.XR.CoreUtils.UnityObjectUtils
 
 // Unity.XR.CoreUtils.UnityObjectUtils
-
-// System.ValueType
-
-// System.ValueType
 
 // Unity.XR.CoreUtils.Vector2Extensions
 
@@ -3543,10 +3541,6 @@ struct XRLoggingUtils_tF0C63DB5488367266FC58DF3AA1D3E98B361A7B5_StaticFields
 
 // Unity.XR.CoreUtils.XRLoggingUtils
 
-// UnityEngine.YieldInstruction
-
-// UnityEngine.YieldInstruction
-
 // Unity.XR.CoreUtils.GameObjectUtils/<>c__DisplayClass20_0
 
 // Unity.XR.CoreUtils.GameObjectUtils/<>c__DisplayClass20_0
@@ -3598,10 +3592,6 @@ struct XRLoggingUtils_tF0C63DB5488367266FC58DF3AA1D3E98B361A7B5_StaticFields
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.XRInputSubsystem>
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.XR.XRInputSubsystem>
-
-// System.Nullable`1<System.Boolean>
-
-// System.Nullable`1<System.Boolean>
 
 // UnityEngine.Events.UnityEvent`1<System.Boolean>
 
@@ -3713,10 +3703,6 @@ struct Guid_t_StaticFields
 
 // System.Guid
 
-// UnityEngine.InputSystem.InputActionProperty
-
-// UnityEngine.InputSystem.InputActionProperty
-
 // System.Int32
 
 // System.Int32
@@ -3757,10 +3743,6 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6_StaticFields
 };
 
 // UnityEngine.Matrix4x4
-
-// System.Reflection.MethodBase
-
-// System.Reflection.MethodBase
 
 // UnityEngine.PropertyAttribute
 
@@ -3865,21 +3847,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 };
 
 // UnityEngine.Vector3
-
-// UnityEngine.Vector4
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
-};
-
-// UnityEngine.Vector4
 
 // System.Void
 
@@ -3988,10 +3955,6 @@ struct GeometryUtils_t7C09EB1813B4919671735BBDC45E031A6F8D1B98_StaticFields
 
 // Unity.XR.CoreUtils.IntUnityEvent
 
-// UnityEngine.IntegratedSubsystem
-
-// UnityEngine.IntegratedSubsystem
-
 // System.Reflection.MethodInfo
 
 // System.Reflection.MethodInfo
@@ -4030,10 +3993,6 @@ struct Pose_t06BA69EAA6E9FAF60056D519A87D25F54AFE7971_StaticFields
 
 // System.RuntimeFieldHandle
 
-// System.RuntimeTypeHandle
-
-// System.RuntimeTypeHandle
-
 // Unity.XR.CoreUtils.StringUnityEvent
 
 // Unity.XR.CoreUtils.StringUnityEvent
@@ -4059,10 +4018,6 @@ struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4_StaticFields
 
 // Unity.XR.CoreUtils.Vector4UnityEvent
 
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRInputSubsystemDescriptor>
-
-// UnityEngine.IntegratedSubsystem`1<UnityEngine.XR.XRInputSubsystemDescriptor>
-
 // System.Nullable`1<UnityEngine.Bounds>
 
 // System.Nullable`1<UnityEngine.Bounds>
@@ -4079,17 +4034,9 @@ struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4_StaticFields
 
 // UnityEngine.Material
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // UnityEngine.ScriptableObject
 
 // UnityEngine.ScriptableObject
-
-// System.SystemException
-
-// System.SystemException
 
 // UnityEngine.Texture
 struct Texture_t791CBB51219779964E0E8A2ED7C1AA5F92A4A700_StaticFields
@@ -4282,10 +4229,6 @@ struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
 // UnityEngine.SpatialTracking.TrackedPoseDriver
 
 // UnityEngine.SpatialTracking.TrackedPoseDriver
-
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.EventSystems.UIBehaviour
 
 // Unity.XR.CoreUtils.XROrigin
 struct XROrigin_t5E534A6D886991AF3C1C64127E19A3A510009CFE_StaticFields
@@ -19113,11 +19056,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TextureUtils_RenderTextureToTexture2D_mB
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_2 = ___1_texture;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(4 /* System.Int32 UnityEngine.Texture::get_width() */, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(5 /* System.Int32 UnityEngine.Texture::get_width() */, L_2);
 		Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4* L_4 = ___1_texture;
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(6 /* System.Int32 UnityEngine.Texture::get_height() */, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(7 /* System.Int32 UnityEngine.Texture::get_height() */, L_4);
 		Rect_tA04E0F8A1830E767F40FB27ECD8D309303571F0D L_6;
 		memset((&L_6), 0, sizeof(L_6));
 		Rect__ctor_m18C3033D135097BEE424AAA68D91C706D2647F23((&L_6), (0.0f), (0.0f), ((float)L_3), ((float)L_5), /*hidden argument*/NULL);

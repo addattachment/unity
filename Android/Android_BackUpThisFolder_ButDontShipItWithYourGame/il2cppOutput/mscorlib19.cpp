@@ -3998,10 +3998,6 @@ struct ConsoleDriver_tC98607842465524D6078EB6C21FEA25BBC1A6E80_StaticFields
 
 // System.ConsoleDriver
 
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
 // System.Globalization.CultureData
 struct CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D_StaticFields
 {
@@ -4178,10 +4174,6 @@ struct MSCompatUnicodeTable_t26E4B9B0E049DBAFAB2189A2DFCEAD9A5893F29E_StaticFiel
 
 // Mono.Globalization.Unicode.MSCompatUnicodeTable
 
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
 // System.Marvin
 struct Marvin_t0342A28B10725C354B3E96D240FF68C4D7A0D242_StaticFields
 {
@@ -4190,10 +4182,6 @@ struct Marvin_t0342A28B10725C354B3E96D240FF68C4D7A0D242_StaticFields
 };
 
 // System.Marvin
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
 
 // System.IO.MonoLinqHelper
 
@@ -4342,10 +4330,6 @@ struct TermInfoDriver_t3FC9001561C5019958E953942242EED72C4AA2CF_StaticFields
 
 // System.TermInfoDriver
 
-// System.ValueType
-
-// System.ValueType
-
 // System.Globalization.DateTimeFormatInfo/TokenHashValue
 
 // System.Globalization.DateTimeFormatInfo/TokenHashValue
@@ -4389,10 +4373,6 @@ struct U3CU3Ec_t0E1743DF1718ED7BB55A76E001B03936CAA8CF46_StaticFields
 };
 
 // System.IO.Path/<>c
-
-// System.Nullable`1<System.Boolean>
-
-// System.Nullable`1<System.Boolean>
 
 // System.Nullable`1<System.Int32>
 
@@ -4465,15 +4445,6 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
 
 // System.DateTime
 
-// System.Enum
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
-};
-
-// System.Enum
-
 // System.Globalization.HebrewNumberParsingContext
 
 // System.Globalization.HebrewNumberParsingContext
@@ -4502,10 +4473,6 @@ struct IntPtr_t_StaticFields
 // System.IO.MonoIOStat
 
 // System.IO.MonoIOStat
-
-// System.OrdinalComparer
-
-// System.OrdinalComparer
 
 // System.IO.Stream
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
@@ -4552,221 +4519,21 @@ struct TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3_StaticFields
 
 // System.Void
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1018
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1018
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1024
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1024
-
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10800
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=10800
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=12
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=120
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1208
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1208
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=128
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=130
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=130
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1450
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1450
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1472
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1472
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=15
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=15
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=152
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=152
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=16
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=16
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1665
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=1665
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=170
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=170
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=172
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=172
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=174
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=174
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=20
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=20
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2048
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2048
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2100
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2100
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=212
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=212
-
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2176
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2176
 
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2350
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2350
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2382
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=2382
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=24
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=240
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=240
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=256
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=262
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=262
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=288
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=288
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3132
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=3132
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=32
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=336
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=336
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=36
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=36
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=360
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=360
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=38
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=38
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=40
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=40
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=4096
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=4096
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=42
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=42
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=44
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=44
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=48
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=48
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=52
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=52
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=56
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=56
-
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=5952
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=5952
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=6
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=64
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=64
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=640
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=640
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=648
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=648
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=72
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=72
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=76
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=76
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=84
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=84
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=94
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=94
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=998
-
-// <PrivateImplementationDetails>/__StaticArrayInitTypeSize=998
 
 // System.IO.Enumeration.FileSystemEntry/<_fileNameBuffer>e__FixedBuffer
 
@@ -5181,22 +4948,6 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
 // System.IO.CStreamWriter
 
 // System.IO.CStreamWriter
-
-// System.Threading.EventWaitHandle
-
-// System.Threading.EventWaitHandle
-
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
-
-// Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields

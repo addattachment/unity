@@ -4393,25 +4393,13 @@ struct List_1_t7352C072B961386AFE9D359FB1F89FE3ED14356F_StaticFields
 
 // WebSocketSharp.Net.ChunkStream
 
-// System.Security.Claims.ClaimsIdentity
-
-// System.Security.Claims.ClaimsIdentity
-
 // WebSocketSharp.Net.ClientSslConfiguration
 
 // WebSocketSharp.Net.ClientSslConfiguration
 
-// System.Collections.CollectionBase
-
-// System.Collections.CollectionBase
-
 // WebSocketSharp.Net.CookieCollection
 
 // WebSocketSharp.Net.CookieCollection
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
 
 // System.Globalization.CultureInfo
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
@@ -4552,23 +4540,6 @@ struct IPAddress_t2F4486449B0D73FF2D3B36A9FE5E9C3F63116484_StaticFields
 // WebSocketSharp.Logger
 
 // WebSocketSharp.Logger
-
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
-// System.Collections.Specialized.NameObjectCollectionBase
-struct NameObjectCollectionBase_tB6400DF2FA3B64660D79586B79016B4A0BA645FC_StaticFields
-{
-	// System.StringComparer System.Collections.Specialized.NameObjectCollectionBase::defaultComparer
-	StringComparer_t6268F19CA34879176651429C0D8A3D0002BB8E06* ___defaultComparer_17;
-};
-
-// System.Collections.Specialized.NameObjectCollectionBase
 
 // WebSocketSharp.Net.NetworkCredential
 struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7_StaticFields
@@ -4766,10 +4737,6 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 
 // System.Uri
 
-// System.ValueType
-
-// System.ValueType
-
 // WebSocketSharp.Net.WebSockets.WebSocketContext
 
 // WebSocketSharp.Net.WebSockets.WebSocketContext
@@ -4955,15 +4922,6 @@ struct Char_t521A6F19B456D956AF452D926C32709DC03D6B17_StaticFields
 
 // WebSocketSharp.CloseEventArgs
 
-// System.ComponentModel.Component
-struct Component_t7DA251DAA9E59801CC5FE8E27F37027143BED083_StaticFields
-{
-	// System.Object System.ComponentModel.Component::EventDisposed
-	RuntimeObject* ___EventDisposed_1;
-};
-
-// System.ComponentModel.Component
-
 // System.CultureAwareComparer
 
 // System.CultureAwareComparer
@@ -4992,10 +4950,6 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
 // WebSocketSharp.ErrorEventArgs
 
 // WebSocketSharp.ErrorEventArgs
-
-// System.Security.Principal.GenericIdentity
-
-// System.Security.Principal.GenericIdentity
 
 // System.Guid
 struct Guid_t_StaticFields
@@ -5053,10 +5007,6 @@ struct IntPtr_t_StaticFields
 // System.Collections.Specialized.NameValueCollection
 
 // System.Collections.Specialized.NameValueCollection
-
-// System.Security.Cryptography.RSA
-
-// System.Security.Cryptography.RSA
 
 // System.IO.Stream
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
@@ -5141,10 +5091,6 @@ struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
 
 // System.Security.Cryptography.X509Certificates.X509CertificateCollection
 
-// Interop/Sys/FileStatus
-
-// Interop/Sys/FileStatus
-
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Boolean>
 
 // System.Collections.Generic.Dictionary`2/Enumerator<System.Object,System.Boolean>
@@ -5180,10 +5126,6 @@ struct Exception_t_StaticFields
 };
 
 // System.Exception
-
-// System.IO.FileStatus
-
-// System.IO.FileStatus
 
 // System.IO.FileStream
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
@@ -5298,18 +5240,6 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
 // WebSocketSharp.Net.ChunkedRequestStream
 
 // WebSocketSharp.Net.ChunkedRequestStream
-
-// System.IO.FileSystemInfo
-
-// System.IO.FileSystemInfo
-
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields
@@ -5436,10 +5366,6 @@ struct Type_t_StaticFields
 
 // System.EventHandler
 
-// System.Runtime.InteropServices.ExternalException
-
-// System.Runtime.InteropServices.ExternalException
-
 // System.IO.FileInfo
 
 // System.IO.FileInfo
@@ -5495,10 +5421,6 @@ struct Type_t_StaticFields
 // System.Net.WebException
 
 // System.Net.WebException
-
-// System.ComponentModel.Win32Exception
-
-// System.ComponentModel.Win32Exception
 
 // WebSocketSharp.Net.HttpListenerException
 

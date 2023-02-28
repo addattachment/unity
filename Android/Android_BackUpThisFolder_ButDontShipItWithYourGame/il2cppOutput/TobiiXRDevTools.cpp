@@ -2483,10 +2483,6 @@ struct List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B_StaticFields
 
 // Tobii.XR.GazeModifier.AccuracyModifier
 
-// UnityEngine.CustomYieldInstruction
-
-// UnityEngine.CustomYieldInstruction
-
 // Tobii.XR.GazeModifier.GazeModifierSettings
 
 // Tobii.XR.GazeModifier.GazeModifierSettings
@@ -2554,18 +2550,6 @@ struct TobiiXR_t82D424F64C36C534A34C7A396B07954925AEDB2E_StaticFields
 // Tobii.XR.GazeModifier.TrackabilityModifier
 
 // Tobii.XR.GazeModifier.TrackabilityModifier
-
-// UnityEngine.Events.UnityEventBase
-
-// UnityEngine.Events.UnityEventBase
-
-// System.ValueType
-
-// System.ValueType
-
-// UnityEngine.YieldInstruction
-
-// UnityEngine.YieldInstruction
 
 // Tobii.XR.DevTools.DevToolsMenuController/<Start>d__12
 
@@ -2678,10 +2662,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 
 // System.Double
 
-// Tobii.G2OM.G2OM_Matrix4x4
-
-// Tobii.G2OM.G2OM_Matrix4x4
-
 // Tobii.G2OM.G2OM_Vector3
 
 // Tobii.G2OM.G2OM_Vector3
@@ -2698,10 +2678,6 @@ struct IntPtr_t_StaticFields
 };
 
 // System.IntPtr
-
-// UnityEngine.LayerMask
-
-// UnityEngine.LayerMask
 
 // UnityEngine.Mathf
 struct Mathf_tE284D016E3B297B72311AAD9EB8F0E643F6A4682_StaticFields
@@ -2802,21 +2778,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 
 // UnityEngine.Vector3
 
-// UnityEngine.Vector4
-struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
-{
-	// UnityEngine.Vector4 UnityEngine.Vector4::zeroVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___zeroVector_5;
-	// UnityEngine.Vector4 UnityEngine.Vector4::oneVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___oneVector_6;
-	// UnityEngine.Vector4 UnityEngine.Vector4::positiveInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___positiveInfinityVector_7;
-	// UnityEngine.Vector4 UnityEngine.Vector4::negativeInfinityVector
-	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
-};
-
-// UnityEngine.Vector4
-
 // System.Void
 
 // System.Void
@@ -2841,10 +2802,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 
 // UnityEngine.Coroutine
 
-// System.Delegate
-
-// System.Delegate
-
 // Tobii.XR.GazeModifier.DevToolsUISliderEvent
 
 // Tobii.XR.GazeModifier.DevToolsUISliderEvent
@@ -2852,15 +2809,6 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 // Tobii.XR.GazeModifier.DevToolsUIToggleEvent
 
 // Tobii.XR.GazeModifier.DevToolsUIToggleEvent
-
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
 
 // Tobii.G2OM.G2OM_Candidate
 
@@ -2944,17 +2892,9 @@ struct TobiiXR_Settings_t5EC70C3B4402041CAB993354AA4360221272100D_StaticFields
 
 // UnityEngine.Material
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // UnityEngine.Shader
 
 // UnityEngine.Shader
-
-// System.SystemException
-
-// System.SystemException
 
 // Tobii.XR.TobiiXR_EyeTrackingData
 
@@ -3123,10 +3063,6 @@ struct ControllerManager_t6028EE547941F92EA8A3DB2F7B7F21AFC90F53CB_StaticFields
 
 // Tobii.XR.GazeVisualizer
 
-// UnityEngine.EventSystems.UIBehaviour
-
-// UnityEngine.EventSystems.UIBehaviour
-
 // Tobii.XR.GazeModifier.GazeModifierFilter
 
 // Tobii.XR.GazeModifier.GazeModifierFilter
@@ -3145,10 +3081,6 @@ struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931_StaticFields
 };
 
 // UnityEngine.UI.Graphic
-
-// UnityEngine.UI.MaskableGraphic
-
-// UnityEngine.UI.MaskableGraphic
 
 // UnityEngine.UI.Image
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E_StaticFields

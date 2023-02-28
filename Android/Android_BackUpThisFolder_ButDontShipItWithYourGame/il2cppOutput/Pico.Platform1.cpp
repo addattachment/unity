@@ -1214,10 +1214,6 @@ struct String_t_StaticFields
 
 // Pico.Platform.Models.UserRoom
 
-// System.ValueType
-
-// System.ValueType
-
 // Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
 
 // Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
@@ -1312,15 +1308,6 @@ struct UIntPtr_t_StaticFields
 
 // System.Void
 
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
-
 // Pico.Platform.Models.Packet
 
 // Pico.Platform.Models.Packet
@@ -1360,10 +1347,6 @@ struct Exception_t_StaticFields
 // Pico.Platform.Models.UserRoomList
 
 // Pico.Platform.Models.UserRoomList
-
-// System.SystemException
-
-// System.SystemException
 
 // System.ArgumentException
 

@@ -2518,14 +2518,6 @@ struct Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095_StaticFields
 
 // Locale
 
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
 // Mono.Security.Interface.MonoTlsConnectionInfo
 
 // Mono.Security.Interface.MonoTlsConnectionInfo
@@ -2633,10 +2625,6 @@ struct String_t_StaticFields
 // System.Security.Cryptography.SymmetricAlgorithm
 
 // System.Security.Cryptography.SymmetricAlgorithm
-
-// System.ValueType
-
-// System.ValueType
 
 // Mono.Security.X509.X501
 struct X501_t5DBAC33581ADA4FC61FAF731E9A02855AB572EB4_StaticFields
@@ -2826,15 +2814,6 @@ struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
 
 // System.DateTime
 
-// System.Enum
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
-};
-
-// System.Enum
-
 // System.Int16
 
 // System.Int16
@@ -2945,10 +2924,6 @@ struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_StaticFields
 
 // Mono.Security.X509.X509ExtensionCollection
 
-// Interop/Sys/FileStatus
-
-// Interop/Sys/FileStatus
-
 // System.Nullable`1<System.DateTime>
 
 // System.Nullable`1<System.DateTime>
@@ -2978,10 +2953,6 @@ struct Exception_t_StaticFields
 };
 
 // System.Exception
-
-// System.IO.FileStatus
-
-// System.IO.FileStatus
 
 // System.IO.FileStream
 struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
@@ -3024,10 +2995,6 @@ struct RSACryptoServiceProvider_t5B3DF0CAFF65D4103EB90063F3C3B00FE2C6967C_Static
 
 // System.RuntimeFieldHandle
 
-// System.RuntimeTypeHandle
-
-// System.RuntimeTypeHandle
-
 // Mono.Security.Interface.ValidationResult
 
 // Mono.Security.Interface.ValidationResult
@@ -3053,10 +3020,6 @@ struct X509Certificate_t9ECDEAA7F2B56A899145F284A13F4D0042481356_StaticFields
 
 // Mono.Security.X509.X509Crl/X509CrlEntry
 
-// System.IO.FileSystemInfo
-
-// System.IO.FileSystemInfo
-
 // System.Security.Cryptography.HMACSHA1
 
 // System.Security.Cryptography.HMACSHA1
@@ -3069,14 +3032,6 @@ struct MonoTlsSettings_tD79AF4AE5C2CD533A3D7A08FED479B1EC1A031B0_StaticFields
 };
 
 // Mono.Security.Interface.MonoTlsSettings
-
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// System.SystemException
-
-// System.SystemException
 
 // Mono.Security.Interface.TlsException
 

@@ -2298,10 +2298,6 @@ struct List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_StaticFields
 
 // System.Text.RegularExpressions.Capture
 
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
 // System.Globalization.CultureInfo
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
 {
@@ -2376,21 +2372,9 @@ struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D_StaticFields
 
 // System.Collections.Hashtable
 
-// System.MarshalByRefObject
-
-// System.MarshalByRefObject
-
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
 // System.Diagnostics.ProcessInfo
 
 // System.Diagnostics.ProcessInfo
-
-// System.Collections.ReadOnlyCollectionBase
-
-// System.Collections.ReadOnlyCollectionBase
 
 // System.Text.RegularExpressions.RegexBoyerMoore
 
@@ -2492,14 +2476,6 @@ struct String_t_StaticFields
 
 // System.Text.StringBuilder
 
-// System.ValueType
-
-// System.ValueType
-
-// System.Nullable`1<System.Boolean>
-
-// System.Nullable`1<System.Boolean>
-
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
@@ -2545,15 +2521,6 @@ struct DescriptionAttribute_t2E1F8370535185D35B32BB7D143C8615391ECA86_StaticFiel
 // System.Double
 
 // System.Double
-
-// System.Enum
-struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_StaticFields
-{
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___enumSeperatorCharArray_0;
-};
-
-// System.Enum
 
 // System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverageAttribute
 
@@ -2656,10 +2623,6 @@ struct TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A_StaticFields
 
 // System.Void
 
-// System.ByReference`1<System.Char>
-
-// System.ByReference`1<System.Char>
-
 // System.ByReference`1<System.Int32>
 
 // System.ByReference`1<System.Int32>
@@ -2691,10 +2654,6 @@ struct FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8_StaticFields
 };
 
 // System.IO.FileStream
-
-// System.Runtime.InteropServices.GCHandle
-
-// System.Runtime.InteropServices.GCHandle
 
 // System.Runtime.InteropServices.HandleRef
 
@@ -2812,17 +2771,9 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
 
 // System.WeakReference`1<System.Text.RegularExpressions.RegexReplacement>
 
-// System.Threading.EventWaitHandle
-
-// System.Threading.EventWaitHandle
-
 // System.Text.RegularExpressions.MatchSparse
 
 // System.Text.RegularExpressions.MatchSparse
-
-// System.MulticastDelegate
-
-// System.MulticastDelegate
 
 // System.Diagnostics.ProcessWaitHandle
 
@@ -2831,10 +2782,6 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
 // System.Text.RegularExpressions.RegexCode
 
 // System.Text.RegularExpressions.RegexCode
-
-// Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
-
-// Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid
 
 // System.SystemException
 
@@ -2876,10 +2823,6 @@ struct Type_t_StaticFields
 // System.EventHandler
 
 // System.EventHandler
-
-// System.Runtime.InteropServices.ExternalException
-
-// System.Runtime.InteropServices.ExternalException
 
 // System.InvalidOperationException
 

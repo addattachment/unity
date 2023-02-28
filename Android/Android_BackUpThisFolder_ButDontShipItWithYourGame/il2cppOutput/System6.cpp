@@ -3568,10 +3568,6 @@ struct List_1_tC6F988464EEDD8B37B6AA2E9D311D598FC07845D_StaticFields
 
 // System.Collections.CaseInsensitiveHashCodeProvider
 
-// System.Collections.CollectionBase
-
-// System.Collections.CollectionBase
-
 // System.Collections.Specialized.CompatibleComparer
 struct CompatibleComparer_t8D7ECAA82055FA1BAC99BA4139D4A818120EBA7E_StaticFields
 {
@@ -3590,14 +3586,6 @@ struct CompatibleComparer_t8D7ECAA82055FA1BAC99BA4139D4A818120EBA7E_StaticFields
 // System.Configuration.ConfigurationPropertyCollection
 
 // System.Configuration.ConfigurationPropertyCollection
-
-// System.Configuration.ConfigurationSectionGroup
-
-// System.Configuration.ConfigurationSectionGroup
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
 
 // System.Globalization.CultureInfo
 struct CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0_StaticFields
@@ -3915,10 +3903,6 @@ struct TypeConverter_t5257E1653EB845D0044BBEDEB7B8AED7A061592C_StaticFields
 
 // System.ComponentModel.TypeConverter
 
-// System.ValueType
-
-// System.ValueType
-
 // System.Security.Cryptography.X509Certificates.X509Chain
 
 // System.Security.Cryptography.X509Certificates.X509Chain
@@ -3985,10 +3969,6 @@ struct U3CU3Ec_tB9FAB1E6994B42B67246693CD6E523D26D4BCC45_StaticFields
 // System.Nullable`1<System.Int32Enum>
 
 // System.Nullable`1<System.Int32Enum>
-
-// System.Nullable`1<Mono.Security.Interface.TlsProtocols>
-
-// System.Nullable`1<Mono.Security.Interface.TlsProtocols>
 
 // System.Threading.Tasks.Task`1<System.Int32>
 struct Task_1_t4C228DE57804012969575431CFF12D57C875552D_StaticFields
@@ -4079,14 +4059,6 @@ struct Component_t7DA251DAA9E59801CC5FE8E27F37027143BED083_StaticFields
 
 // System.ComponentModel.Component
 
-// System.Configuration.ConfigurationElementCollection
-
-// System.Configuration.ConfigurationElementCollection
-
-// System.Configuration.ConfigurationSection
-
-// System.Configuration.ConfigurationSection
-
 // System.Net.Configuration.ConnectionManagementElement
 
 // System.Net.Configuration.ConnectionManagementElement
@@ -4094,23 +4066,6 @@ struct Component_t7DA251DAA9E59801CC5FE8E27F37027143BED083_StaticFields
 // System.CultureAwareComparer
 
 // System.CultureAwareComparer
-
-// System.DateTime
-struct DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_StaticFields
-{
-	// System.Int32[] System.DateTime::s_daysToMonth365
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth365_30;
-	// System.Int32[] System.DateTime::s_daysToMonth366
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___s_daysToMonth366_31;
-	// System.DateTime System.DateTime::MinValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MinValue_32;
-	// System.DateTime System.DateTime::MaxValue
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___MaxValue_33;
-	// System.DateTime System.DateTime::UnixEpoch
-	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___UnixEpoch_34;
-};
-
-// System.DateTime
 
 // System.ComponentModel.DefaultEventAttribute
 struct DefaultEventAttribute_t23BC5D506847DCF13B26036D08C67BE2807EBF07_StaticFields
@@ -4382,10 +4337,6 @@ struct TypeConverterAttribute_t2E0AA4000E0B7A66DFC1E10B80ED2386764026C3_StaticFi
 
 // <PrivateImplementationDetails>/__StaticArrayInitTypeSize=9
 
-// System.Nullable`1<System.DateTime>
-
-// System.Nullable`1<System.DateTime>
-
 // <PrivateImplementationDetails>
 struct U3CPrivateImplementationDetailsU3E_t56F624E1051A2E261613B6A81CA2333397F49CB3_StaticFields
 {
@@ -4512,15 +4463,6 @@ struct Exception_t_StaticFields
 
 // System.Net.Sockets.SocketAsyncResult
 
-// System.Threading.WaitHandle
-struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
-{
-	// System.IntPtr System.Threading.WaitHandle::InvalidHandle
-	intptr_t ___InvalidHandle_11;
-};
-
-// System.Threading.WaitHandle
-
 // System.Net.Configuration.WebRequestModuleElementCollection
 
 // System.Net.Configuration.WebRequestModuleElementCollection
@@ -4540,10 +4482,6 @@ struct WaitHandle_t08F8DB54593B241FE32E0DD0BD3D82785D3AE3D8_StaticFields
 // System.IO.Compression.DeflateStreamNative
 
 // System.IO.Compression.DeflateStreamNative
-
-// System.Threading.EventWaitHandle
-
-// System.Threading.EventWaitHandle
 
 // Mono.Net.Security.MobileAuthenticatedStream
 struct MobileAuthenticatedStream_tD0306DC2B0CDA3C7DB261C19FFA35CA8EE24309E_StaticFields
@@ -4565,10 +4503,6 @@ struct MonoTlsSettings_tD79AF4AE5C2CD533A3D7A08FED479B1EC1A031B0_StaticFields
 
 // Mono.Security.Interface.MonoTlsSettings
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid
 
 // Microsoft.Win32.SafeHandles.SafeHandleMinusOneIsInvalid
@@ -4576,10 +4510,6 @@ struct MonoTlsSettings_tD79AF4AE5C2CD533A3D7A08FED479B1EC1A031B0_StaticFields
 // System.Net.Security.SslStream
 
 // System.Net.Security.SslStream
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields

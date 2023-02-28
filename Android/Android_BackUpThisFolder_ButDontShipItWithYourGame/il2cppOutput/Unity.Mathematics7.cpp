@@ -516,10 +516,6 @@ struct String_t_StaticFields
 
 // System.String
 
-// System.ValueType
-
-// System.ValueType
-
 // Unity.Mathematics.int2/DebuggerProxy
 
 // Unity.Mathematics.int2/DebuggerProxy

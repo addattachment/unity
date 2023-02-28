@@ -3118,10 +3118,6 @@ struct AppContextSwitches_t542F10E9BE2333B7BE24C8858C8A24EFA6C06D38_StaticFields
 
 // System.Security.Cryptography.AsymmetricSignatureFormatter
 
-// System.Attribute
-
-// System.Attribute
-
 // System.BitConverter
 struct BitConverter_t6E99605185963BC12B3D369E13F2B88997E64A27_StaticFields
 {
@@ -3180,10 +3176,6 @@ struct CompareInfo_t1B1A6AC3486B570C76ABA52149C9BD4CD82F9E57_StaticFields
 // System.Runtime.Remoting.ConfigHandler
 
 // System.Runtime.Remoting.ConfigHandler
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
-
-// System.Runtime.ConstrainedExecution.CriticalFinalizerObject
 
 // System.Runtime.Remoting.Channels.CrossAppDomainData
 
@@ -3309,10 +3301,6 @@ struct KeyPairPersistence_t78D61FCDE172753BFE756B555CBD85127832CDF6_StaticFields
 
 // System.MarshalByRefObject
 
-// System.Reflection.MemberInfo
-
-// System.Reflection.MemberInfo
-
 // System.Globalization.NumberFormatInfo
 struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472_StaticFields
 {
@@ -3434,10 +3422,6 @@ struct String_t_StaticFields
 // System.Runtime.Remoting.TypeInfo
 
 // System.Runtime.Remoting.TypeInfo
-
-// System.ValueType
-
-// System.ValueType
 
 // System.Security.Cryptography.X509Certificates.X509CertificateImpl
 
@@ -3751,10 +3735,6 @@ struct DSACryptoServiceProvider_tB418CD8E85D69D879C7298E4A6A7D8CFAC09D79E_Static
 
 // Mono.Security.Cryptography.DSAManaged
 
-// System.Delegate
-
-// System.Delegate
-
 // System.Exception
 struct Exception_t_StaticFields
 {
@@ -3763,10 +3743,6 @@ struct Exception_t_StaticFields
 };
 
 // System.Exception
-
-// System.Runtime.InteropServices.GCHandle
-
-// System.Runtime.InteropServices.GCHandle
 
 // System.Runtime.Remoting.Lifetime.LifetimeServices
 struct LifetimeServices_t42604690B4D31B9A4414518142BCB5D8489FAAE0_StaticFields
@@ -3819,10 +3795,6 @@ struct RNGCryptoServiceProvider_tAD9D75EFF3D2ED0929EEE27A53BE82AB83D78170_Static
 
 // System.Security.Cryptography.SHA1CryptoServiceProvider
 
-// System.Runtime.InteropServices.SafeHandle
-
-// System.Runtime.InteropServices.SafeHandle
-
 // System.Runtime.Remoting.Metadata.SoapFieldAttribute
 
 // System.Runtime.Remoting.Metadata.SoapFieldAttribute
@@ -3865,17 +3837,9 @@ struct WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_StaticFields
 
 // System.Runtime.AmbiguousImplementationException
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
 // Microsoft.Win32.SafeHandles.SafePasswordHandle
 
 // Microsoft.Win32.SafeHandles.SafePasswordHandle
-
-// System.SystemException
-
-// System.SystemException
 
 // System.Type
 struct Type_t_StaticFields
@@ -19437,7 +19401,7 @@ IL_000d:
 	{
 		NullCheck(G_B2_0);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(5 /* System.Object System.WeakReference::get_Target() */, G_B2_0);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6 /* System.Object System.WeakReference::get_Target() */, G_B2_0);
 		G_B3_0 = L_2;
 	}
 

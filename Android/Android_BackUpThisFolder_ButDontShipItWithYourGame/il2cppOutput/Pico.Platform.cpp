@@ -4672,51 +4672,6 @@ struct List_1_tB8FCCE150DF8FFEE6DD06FEC3C4DD3E4BC9F42AD_StaticFields
 
 // System.Collections.Generic.List`1<Pico.Platform.Models.Purchase>
 
-// System.Collections.Generic.List`1<Pico.Platform.Models.Room>
-struct List_1_t3E88EE01D1DBD030C6906D837D7122DC2AACFDE4_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	RoomU5BU5D_tE1852BEFEECCEB3581BDB24227AE93B6AE5E180E* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.Room>
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>
-struct List_1_tF50A4C96CBBA39B6B05A793A863236D6495E870F_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	RoomInviteNotificationU5BU5D_t66A67805EA0D135584A8A221193EFFD2D63444A1* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.RoomInviteNotification>
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>
-struct List_1_t0D7C34B7489757DC97B25E20557E2B16D01601A2_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	SportDailySummaryU5BU5D_t16820435F89030234D4D0A2CD5674AC3F1AC5863* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.SportDailySummary>
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.User>
-struct List_1_tB43343FA205088D413BE1DA2F0549C16503E88BE_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	UserU5BU5D_tAD96F72993A688CBFFBBD6C20DE51071B3C072DD* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.User>
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>
-struct List_1_tBBD25E1E86D7966804E4978C61077B2E67606853_StaticFields
-{
-	// T[] System.Collections.Generic.List`1::s_emptyArray
-	UserRoomU5BU5D_t743BBEBFB37874A69D2712368FF065E1862920D9* ___s_emptyArray_5;
-};
-
-// System.Collections.Generic.List`1<Pico.Platform.Models.UserRoom>
-
 // Pico.Platform.Models.AchievementDefinition
 
 // Pico.Platform.Models.AchievementDefinition
@@ -5050,10 +5005,6 @@ struct UTF8Marshaller_tC1F8EE4560EE6F640BB3D9F6D623B94C2D40484F_StaticFields
 
 // Pico.Platform.UserService
 
-// System.ValueType
-
-// System.ValueType
-
 // Pico.Platform.MessageQueue/<>c
 struct U3CU3Ec_t2F4DF20AE147A9FED960BEDDFCFEFA493A521144_StaticFields
 {
@@ -5263,18 +5214,6 @@ struct U3CU3Ec_t97EE3CE03A610C81E30787A0BCD6797C2B226BF1_StaticFields
 // Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Purchase>
 
 // Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Purchase>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.Room>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.RoomInviteNotification>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.RoomInviteNotification>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.SportDailySummary>
-
-// Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.SportDailySummary>
 
 // Pico.Platform.Models.MessageArray`1<Pico.Platform.Models.User>
 
@@ -5819,15 +5758,6 @@ struct UIntPtr_t_StaticFields
 
 // Pico.Platform.Models.DestinationList
 
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
-
 // System.Runtime.InteropServices.GCHandle
 
 // System.Runtime.InteropServices.GCHandle
@@ -5962,18 +5892,6 @@ struct Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_StaticFields
 
 // UnityEngine.GameObject
 
-// System.MulticastDelegate
-
-// System.MulticastDelegate
-
-// UnityEngine.ScriptableObject
-
-// UnityEngine.ScriptableObject
-
-// System.SystemException
-
-// System.SystemException
-
 // UnityEngine.UnityException
 
 // UnityEngine.UnityException
@@ -6337,10 +6255,6 @@ struct Util_tAA46537EC970B5CC1EC8F3648989D4B35968B6B1_StaticFields
 // System.AsyncCallback
 
 // System.AsyncCallback
-
-// UnityEngine.Behaviour
-
-// UnityEngine.Behaviour
 
 // System.Runtime.InteropServices.MarshalDirectiveException
 

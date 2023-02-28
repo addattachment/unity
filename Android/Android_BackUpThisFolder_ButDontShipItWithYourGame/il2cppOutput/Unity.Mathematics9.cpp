@@ -889,10 +889,6 @@ struct String_t_StaticFields
 
 // System.String
 
-// System.ValueType
-
-// System.ValueType
-
 // Unity.Mathematics.int4/DebuggerProxy
 
 // Unity.Mathematics.int4/DebuggerProxy
@@ -923,15 +919,6 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 // System.Int64
 
 // System.Int64
-
-// System.IntPtr
-struct IntPtr_t_StaticFields
-{
-	// System.IntPtr System.IntPtr::Zero
-	intptr_t ___Zero_1;
-};
-
-// System.IntPtr
 
 // UnityEngine.Quaternion
 struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
@@ -1089,15 +1076,6 @@ struct uint4_t6C69CBFAE9BF0F727D52B68779D4A3F0DBA8D5C9_StaticFields
 // Unity.Mathematics.math/LongDoubleUnion
 
 // Unity.Mathematics.math/LongDoubleUnion
-
-// System.Exception
-struct Exception_t_StaticFields
-{
-	// System.Object System.Exception::s_EDILock
-	RuntimeObject* ___s_EDILock_0;
-};
-
-// System.Exception
 
 // Unity.Mathematics.bool2x2
 
@@ -1383,10 +1361,6 @@ struct RigidTransform_tDC22CD9569EC04E16791C2AB53DA5ABD34E88FDD_StaticFields
 };
 
 // Unity.Mathematics.RigidTransform
-
-// System.SystemException
-
-// System.SystemException
 
 // System.ArgumentException
 
