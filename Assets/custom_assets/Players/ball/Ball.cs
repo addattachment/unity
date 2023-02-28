@@ -140,6 +140,7 @@ public class Ball : MonoBehaviour
         if (th.activeTarget)
         {
             Debug.Log("correct targets touched! at " + Time.time);
+            Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position+ " by ball at "+gameObject.transform.position) ;
             ballDidScore = true;
         }
         else
@@ -164,7 +165,7 @@ public class Ball : MonoBehaviour
         //Calculate trajectory of ball
         _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
         _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
-        Debug.Log("target is " + targets.hitTarget + " at coordinate " + _hitTargetPos);
+        Debug.Log("target is " + targets.hitTarget + " at coordinate " + _hitTargetPos + " time expected is "+_time_to_target + " from "+Time.time);
 
         Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);

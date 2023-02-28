@@ -54,9 +54,11 @@ public class TargetPosUpdate : MonoBehaviour
         {
             case EnumAngle.horizontal:
                 transformPos = transform.position.x;
+                resultOrientation = transform.position.x;
                 break;
             case EnumAngle.vertical:
                 transformPos = transform.position.y;
+                resultOrientation = transform.position.y;
                 break;
         }
         Debug.Log("distance to travel " + distance_traveled);
