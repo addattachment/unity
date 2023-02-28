@@ -1,5 +1,4 @@
-using LSL;
-using TrialNS;
+//using TrialNS;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,10 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [SerializeField] private GameObject target;
+    //[SerializeField] private GameObject target;
     public bool gameDidStart = false;
-    [Header("Gameplay mgmt")]
-    public TrialStateManager stateMGR;
+    //[Header("Gameplay mgmt")]
+    //public TrialStateManager stateMGR;
 
     [Header("player settings")]
 
@@ -20,18 +19,18 @@ public class GameManager : MonoBehaviour
 
     [Header("development settings")]
     [SerializeField] private bool restartBool = false;
+    public bool allMust = false;
 
     [Header("Trialsettings")]
     //public GameObject slingshotBall;
     public int ballsPerGame = 5;
     public bool trialListGenerated = false;
-    [SerializeField] TrialList trialList;
+    //[SerializeField] TrialList trialList;
     public bool doFakeLaunch = false;
 
 
     [Header("dataConnections")]
-    [SerializeField] private OutletPassThrough lsl;
-    [SerializeField] private WsClient ws;
+    //[SerializeField] private WsClient ws;
 
     [Header("tutorial settings")]
     public bool isTutorial; // if tutorial is true, we only have 1 trial with 'good' chances of scoring
@@ -45,6 +44,8 @@ public class GameManager : MonoBehaviour
     public bool restart = false;
     public bool ballIsShot = false;
     public bool trialIsRunning = false;
+    public bool trialListFinished = false;
+    public int currentTrial = 0;
 
     [Header("trophy stateMgr bools")]
     public bool trophyMayAppear = false;
@@ -72,9 +73,9 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
-        lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
-        stateMGR = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
+        //ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
+        //lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
+        //stateMGR = GameObject.FindGameObjectWithTag("state").GetComponent<TrialStateManager>();
 
     }
 
@@ -85,13 +86,13 @@ public class GameManager : MonoBehaviour
             RestartScene();
         }
     }
-    public void SendSyncTime()
-    {
-        //TODO SendSyncTime blocks execution if no websocket available, set in different thread or just remove?
-        //while (!ws.hasWsConnection) { }
-        lsl.SendMarker(Marker.game_start);
-        ws.SendWSMessage("message: game started");
-    }
+    //public void SendSyncTime()
+    //{
+    //    //TODO SendSyncTime blocks execution if no websocket available, set in different thread or just remove?
+    //    //while (!ws.hasWsConnection) { }
+    //    lsl.SendMarker(Marker.game_start);
+    //    ws.SendWSMessage("message: game started");
+    //}
 
     public void SwitchScene(string sceneToLoad)
     {

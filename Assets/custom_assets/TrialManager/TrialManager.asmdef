@@ -1,0 +1,24 @@
+{
+    "name": "TrialManager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:46180558f5f657c4e86e41ec1ae615b9",
+        "GUID:dc05d1cca9ef1d04c9119e348473b643",
+        "GUID:84146089410ca0040a882f51403ad6d2",
+        "GUID:f9aaceb485bf65a4a9dd0a281c02b600",
+        "GUID:a5a0d30e5a7ccea4fa44d4f4a2f9043b",
+        "GUID:c76a08caf8e2b5f48b9cfb9b94552630",
+        "GUID:ab29a477c2001e94084fc57bd37c1e3c",
+        "GUID:f7965030a7579864c989bf7883254eb8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

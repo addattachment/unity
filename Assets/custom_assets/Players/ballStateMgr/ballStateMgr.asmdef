@@ -1,0 +1,19 @@
+{
+    "name": "ballStateMgr",
+    "rootNamespace": "",
+    "references": [
+        "GUID:46180558f5f657c4e86e41ec1ae615b9",
+        "GUID:f7965030a7579864c989bf7883254eb8",
+        "GUID:84146089410ca0040a882f51403ad6d2",
+        "GUID:dc05d1cca9ef1d04c9119e348473b643"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

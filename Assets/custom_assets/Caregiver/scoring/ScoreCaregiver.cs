@@ -1,4 +1,3 @@
-using Assets.Scripts;
 using UnityEngine;
 [RequireComponent(typeof(Appear))]
 public class ScoreCaregiver : MonoBehaviour

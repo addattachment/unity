@@ -18,7 +18,7 @@ public class TrophyCooldownState : TrophyStateMachine
         if (state.gameManager.trophyMayAppear)
         {
             state.gameManager.trophyMayAppear = false;
-            if (state.trialList.currentTrial < state.trialList.GetTrialLength())
+            if (!state.gameManager.trialListFinished)
             {
                 state.SwitchState(state.trophyAppearState);
             }

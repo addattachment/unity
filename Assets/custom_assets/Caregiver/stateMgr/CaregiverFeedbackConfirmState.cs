@@ -1,11 +1,9 @@
-﻿using TrialNS;
-
-public class CaregiverFeedbackConfirmState : CaregiverStateMachine
+﻿public class CaregiverFeedbackConfirmState : CaregiverStateMachine
 {
     public override void EnterState(CaregiverStateManager state)
     {
         state.caregiverPhase = "CaregiverFeedbackConfirmState";
-        state.triggerAnimation.TriggerAnim("idleCameraTrig"); //temp
+        //state.triggerAnimation.TriggerAnim("idleCameraTrig"); //temp
         state.feedbackPole.RaiseFeedbackPole();
     }
 

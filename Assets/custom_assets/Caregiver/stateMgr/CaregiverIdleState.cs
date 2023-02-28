@@ -1,17 +1,13 @@
-﻿using TrialNS;
-
-public class CaregiverIdleState : CaregiverStateMachine
+﻿public class CaregiverIdleState : CaregiverStateMachine
 {
     public override void EnterState(CaregiverStateManager state)
     {
         state.caregiverPhase = "CaregiverIdleState";
-        state.triggerAnimation.TriggerAnim("IdleTrigger");
-
     }
 
     public override void ExitState(CaregiverStateManager state)
     {
-        state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.trialList.currentTrial);
+        state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.gameManager.currentTrial);
     }
 
 

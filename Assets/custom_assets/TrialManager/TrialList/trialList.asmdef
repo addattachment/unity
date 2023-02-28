@@ -1,0 +1,17 @@
+{
+    "name": "trialList",
+    "rootNamespace": "",
+    "references": [
+        "GUID:46180558f5f657c4e86e41ec1ae615b9",
+        "GUID:84146089410ca0040a882f51403ad6d2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

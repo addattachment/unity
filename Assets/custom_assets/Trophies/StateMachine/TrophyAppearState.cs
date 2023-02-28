@@ -4,7 +4,7 @@
     {
         state.trophyState = "TrophyAppearState";
         state.trophyList.SetFocus(true, state.trophyList.trophyStandLocation.transform);
-        state.trophyList.MakeTrophyAppear(state.trialList.currentTrial);
+        state.trophyList.MakeTrophyAppear(state.gameManager.currentTrial);
         state.gameManager.trophyIsGiven = false;
     }
 

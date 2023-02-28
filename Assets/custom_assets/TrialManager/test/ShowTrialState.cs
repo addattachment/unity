@@ -1,5 +1,4 @@
 using TMPro;
-using TrialNS;
 using UnityEngine;
 
 [RequireComponent(typeof(TMP_Text))]

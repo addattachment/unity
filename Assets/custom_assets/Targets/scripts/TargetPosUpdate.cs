@@ -33,16 +33,6 @@ public class TargetPosUpdate : MonoBehaviour
                 break;
             case TargetGroup.Mode.translation:
                 result = GetFutureTranslationPos(time);
-                //                //PLACE TEMP OBJECT
-                //#if DEBUGCUBE
-                //                GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                //                temp.GetComponent<Renderer>().material.color = GetComponent<Renderer>().material.color; // set to the color of the ring
-                //                temp.GetComponent<BoxCollider>().enabled = false;
-                //                //Destroy(temp, 1.0f);
-                //                temp.transform.position = result;
-                //                temp.name = "standin"+_name;
-                //#endif
-                //TODO check why the must isn't working correctly
                 break;
             case TargetGroup.Mode.unknown:
             default:
@@ -57,56 +47,59 @@ public class TargetPosUpdate : MonoBehaviour
     private Vector3 GetFutureTranslationPos(float time)
     {
         Vector3 result = transform.position;
-        //temp
-#if DEBUGCUBE
-        GameObject temp = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        temp.GetComponent<Renderer>().material.color = Color.yellow; // set to the color of the ring
-        temp.GetComponent<BoxCollider>().enabled = false;
-        temp.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
-        temp.transform.position = this.transform.position;
-        temp.name = "startlocation"+_name;
-#endif
-
+        float resultOrientation = 0.0f;  
         float distance_traveled = targetTranslate.movementSpeed * time;
+        float transformPos = 0.0f;
+        switch (targetGroup.translateAngle)
+        {
+            case EnumAngle.horizontal:
+                transformPos = transform.position.x;
+                break;
+            case EnumAngle.vertical:
+                transformPos = transform.position.y;
+                break;
+        }
         Debug.Log("distance to travel " + distance_traveled);
-        if (targetTranslate.direction == TargetTranslate.EnumDirection.forward)
+        switch (targetTranslate.direction)
         {
-            if ((transform.position.x + distance_traveled) > targetGroup.xMaxBorder)
-            {
-                //first we calculate how much we'd be going to far
-                distance_traveled -= (targetGroup.xMaxBorder - transform.position.x);
-                // to use this renewed distance going 'back' from the border
-                result.x = targetGroup.xMaxBorder - distance_traveled;
-            }
-            else
-            {
-                // if we won't be reaching the end, the assumed future position is found by adding the distance traveled
-                result.x += distance_traveled;
-            }
+            case EnumDirection.forward:
+                if ((transformPos + distance_traveled) > targetGroup.maxBorder)
+                {
+                    //first we calculate how much we'd be going to far
+                    distance_traveled -= (targetGroup.maxBorder - transformPos);
+                    // to use this renewed distance going 'back' from the border
+                    resultOrientation = targetGroup.maxBorder - distance_traveled;
+                }
+                else
+                {
+                    // if we won't be reaching the end, the assumed future position is found by adding the distance traveled
+                    resultOrientation += distance_traveled;
+                }
+                break;
+            case EnumDirection.backward:
+                if ((transformPos - distance_traveled) < targetGroup.minBorder)
+                {
+                    //first we calculate how much we'd be going to far
+                    distance_traveled -= (transformPos - targetGroup.minBorder);
+                    // to use this renewed distance going 'back' from the border
+                    resultOrientation = targetGroup.minBorder + distance_traveled;
+                }
+                else
+                {
+                    // if we won't be reaching the end, the assumed future position is found by adding the distance traveled
+                    resultOrientation -= distance_traveled;
+                }
+                break;
         }
-        if (targetTranslate.direction == TargetTranslate.EnumDirection.backward)
+        switch (targetGroup.translateAngle)
         {
-            if ((transform.position.x - distance_traveled) < targetGroup.xMinBorder)
-            {
-                //first we calculate how much we'd be going to far
-                distance_traveled -= (transform.position.x - targetGroup.xMinBorder);
-                // to use this renewed distance going 'back' from the border
-                result.x = targetGroup.xMinBorder + distance_traveled;
-            }
-            else
-            {
-                // if we won't be reaching the end, the assumed future position is found by adding the distance traveled
-                result.x -= distance_traveled;
-            }
+            case EnumAngle.horizontal:
+                result.x = resultOrientation;
+                break;
+            case EnumAngle.vertical:
+                result.y = resultOrientation;
+                break;
         }
-#if DEBUGCUBE
-        GameObject temp2 = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        temp2.GetComponent<Renderer>().material.color = Color.cyan;
-        temp2.GetComponent<BoxCollider>().enabled = false;
-        temp2.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
-        temp2.transform.position = result;
-        temp2.name = "transplacelocation"+_name;
-#endif
         return result;
     }
     private Vector3 GetFutureRotationPos(float time)

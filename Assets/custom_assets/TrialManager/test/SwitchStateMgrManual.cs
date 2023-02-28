@@ -1,4 +1,3 @@
-using TrialNS;
 using UnityEngine;
 
 public class SwitchStateMgrManual : MonoBehaviour

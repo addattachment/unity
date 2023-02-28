@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5342910215410073657}
   - component: {fileID: 5342910215410073656}
-  - component: {fileID: 1788032904}
+  - component: {fileID: 8123215299212381713}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -45,17 +45,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57571decbd237c4468381425d4aff868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   gameDidStart: 0
-  stateMGR: {fileID: 0}
   playerSettingsAreSet: 0
+  NPCShootsBall: 0
   restartBool: 0
+  allMust: 0
   ballsPerGame: 5
   trialListGenerated: 0
-  trialList: {fileID: 0}
-  lsl: {fileID: 0}
-  ws: {fileID: 0}
---- !u!114 &1788032904
+  doFakeLaunch: 0
+  isTutorial: 0
+  startTrial: 0
+  endTrial: 0
+  restart: 0
+  ballIsShot: 0
+  trialIsRunning: 0
+  trialListFinished: 0
+  currentTrial: 0
+  trophyMayAppear: 0
+  mayPrep: 0
+  canLaunch: 0
+  didShoot: 0
+  trophyIsGiven: 0
+  didReadFeedback: 0
+  didGiveScore: 0
+  mustGiveFeedback: 0
+  isInitiated: 0
+--- !u!114 &8123215299212381713
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5342910215410073659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b23048875c247d4d8ea553ce5dd49e3, type: 3}
+  m_Script: {fileID: 11500000, guid: 96a90392931de5e44ae17dbb8cf1be02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDevelopmentMode: 1

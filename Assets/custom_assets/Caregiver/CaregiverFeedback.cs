@@ -1,5 +1,4 @@
 using TMPro;
-using TrialNS;
 using UnityEngine;
 
 public class CaregiverFeedback : MonoBehaviour
@@ -8,7 +7,7 @@ public class CaregiverFeedback : MonoBehaviour
     //[SerializeField] private SpeechToMouth feedbackSpeech;
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
-    private GameManager gameManager;
+    [SerializeField] private GameManager gameManager;
     [SerializeField] private Light sun;
     public Light caregiverSpotLight;
     [SerializeField] private Slingshot playerSlingshot;
@@ -42,7 +41,7 @@ public class CaregiverFeedback : MonoBehaviour
     public void GiveFeedback()
     {
         feedbackText.SetText(trialList.GetCurrentTrial().Response());
-        LoadAudioClip(trialList.currentTrial);
+        LoadAudioClip(gameManager.currentTrial);
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
         caregiverEmotion.SetAtmosphere(emotion);
         audioSource.Play();

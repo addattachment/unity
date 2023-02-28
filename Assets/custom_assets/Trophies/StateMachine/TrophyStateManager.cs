@@ -1,5 +1,4 @@
-﻿using TrialNS;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TrophyStateManager : MonoBehaviour
 {
@@ -15,9 +14,7 @@ public class TrophyStateManager : MonoBehaviour
 
     // script references
     public GameManager gameManager;
-    public TrialStateManager trialState;
     public PlayerGroup players;
-    public TrialList trialList;
     public TargetGroup targets;
     public TrophyList trophyList;
     public LightingMgr lightMgr;

@@ -1,6 +1,4 @@
-using Assets.Scripts;
 using System.Collections.Generic;
-using TrialNS;
 using UnityEngine;
 
 public class PlayerGroup : MonoBehaviour
@@ -124,7 +122,7 @@ public class PlayerGroup : MonoBehaviour
     /// we use a random float to have variation within a trial
     /// </summary>
     /// <param name="slingshot"></param>
-    public void SetPlayerScoringChance(Slingshot slingshot, Trial currentTrial)
+    public void SetPlayerScoringChance(Slingshot slingshot, bool isGoodTrial)//Trial currentTrial)
     {
         //set Seed
         Random.InitState(System.DateTime.Now.Millisecond);
@@ -132,73 +130,81 @@ public class PlayerGroup : MonoBehaviour
         float guess = Random.Range(0.0f, 1.0f);
         //Trial currentTrial = trialList.GetCurrentTrial();
         ReachTargetEnum reachChance;
-        if (gameManager.isTutorial)
+        if (gameManager.allMust)
         {
-            //TEMP
-            reachChance = ReachTargetEnum.preferredMust;
+            reachChance = ReachTargetEnum.must;
+
         }
         else
         {
-            if (currentTrial.IsGoodTrial())
+            if (gameManager.isTutorial)
             {
-                // NPC has 30% chance of scoring
-                // Player has 40% of balls which are steered towards targets
-
-                if (activeParticipant.isRealPlayer)
-                {
-                    // have a chance that the ball must hit the targets
-                    // equal chance must vs may?
-                    if (guess >= 0.6f)
-                    {
-                        reachChance = ReachTargetEnum.preferredMust;
-                    }
-                    else
-                    {
-                        reachChance = ReachTargetEnum.may;
-                    }
-                }
-                else
-                {
-                    // equal or less chance of scoring than human player??
-                    // equal chance must vs mustn
-                    if (guess >= 0.7f)
-                    {
-                        reachChance = ReachTargetEnum.must;
-                    }
-                    else
-                    {
-                        reachChance = ReachTargetEnum.mayNPC;
-                    }
-                }
+                //TEMP
+                reachChance = ReachTargetEnum.preferredMust;
             }
             else
             {
-                // NPC 60% chance of scoring
-                // player max random[20-50%] chance of scoring
-                if (activeParticipant.isRealPlayer)
+                if (isGoodTrial)
                 {
-                    // have a low chance that the ball must hit the targets 
-                    // most of the time it should be musn't, sometimes may
-                    if (guess >= Random.Range(0.2f, 0.5f))
+                    // NPC has 30% chance of scoring
+                    // Player has 40% of balls which are steered towards targets
+
+                    if (activeParticipant.isRealPlayer)
                     {
-                        reachChance = ReachTargetEnum.may;
+                        // have a chance that the ball must hit the targets
+                        // equal chance must vs may?
+                        if (guess >= 0.6f)
+                        {
+                            reachChance = ReachTargetEnum.preferredMust;
+                        }
+                        else
+                        {
+                            reachChance = ReachTargetEnum.may;
+                        }
                     }
                     else
                     {
-                        reachChance = ReachTargetEnum.musnt;
+                        // equal or less chance of scoring than human player??
+                        // equal chance must vs mustn
+                        if (guess >= 0.7f)
+                        {
+                            reachChance = ReachTargetEnum.must;
+                        }
+                        else
+                        {
+                            reachChance = ReachTargetEnum.mayNPC;
+                        }
                     }
                 }
                 else
                 {
-                    // equal or less chance of scoring than human player??
-                    // most of the time should be must, sometimes may
-                    if (guess >= 0.4f)
+                    // NPC 60% chance of scoring
+                    // player max random[20-50%] chance of scoring
+                    if (activeParticipant.isRealPlayer)
                     {
-                        reachChance = ReachTargetEnum.must;
+                        // have a low chance that the ball must hit the targets 
+                        // most of the time it should be musn't, sometimes may
+                        if (guess >= Random.Range(0.2f, 0.5f))
+                        {
+                            reachChance = ReachTargetEnum.may;
+                        }
+                        else
+                        {
+                            reachChance = ReachTargetEnum.musnt;
+                        }
                     }
                     else
                     {
-                        reachChance = ReachTargetEnum.mayNPC;
+                        // equal or less chance of scoring than human player??
+                        // most of the time should be must, sometimes may
+                        if (guess >= 0.4f)
+                        {
+                            reachChance = ReachTargetEnum.must;
+                        }
+                        else
+                        {
+                            reachChance = ReachTargetEnum.mayNPC;
+                        }
                     }
                 }
             }

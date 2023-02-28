@@ -1,6 +1,4 @@
-﻿using TrialNS;
-
-public class CaregiverScoringState : CaregiverStateMachine
+﻿public class CaregiverScoringState : CaregiverStateMachine
 {
     private bool isListening;
     public override void EnterState(CaregiverStateManager state)
@@ -13,7 +11,7 @@ public class CaregiverScoringState : CaregiverStateMachine
     public override void ExitState(CaregiverStateManager state)
     {
         //go to the next trial
-        state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.trialList.currentTrial);
+        state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.gameManager.currentTrial);
         state.gameManager.restart = true;
     }
 

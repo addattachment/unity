@@ -1,11 +1,8 @@
-﻿using TrialNS;
-
-public class CaregiverFeedbackState : CaregiverStateMachine
+﻿public class CaregiverFeedbackState : CaregiverStateMachine
 {
     public override void EnterState(CaregiverStateManager state)
     {
         state.caregiverPhase = "CaregiverFeedbackState";
-        state.triggerAnimation.TriggerAnim("toHoofdSchoudersTrig"); //temp
         state.caregiverFeedbackScreen.SetActive(true);
         state.caregiverFeedback.SetSlingshotForFeedback(true);
         state.lightingMgr.envLight.EnableSunlight(false);

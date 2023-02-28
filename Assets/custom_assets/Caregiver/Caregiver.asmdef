@@ -1,0 +1,23 @@
+{
+    "name": "Caregiver",
+    "rootNamespace": "",
+    "references": [
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:46180558f5f657c4e86e41ec1ae615b9",
+        "GUID:31ebc4707f708334eaa57cf16de7c402",
+        "GUID:c76a08caf8e2b5f48b9cfb9b94552630",
+        "GUID:773b99b074d90fa4ba991209b58cee23",
+        "GUID:d14a898e1f193a24ca0a26f5dd99161f",
+        "GUID:84146089410ca0040a882f51403ad6d2",
+        "GUID:f7965030a7579864c989bf7883254eb8"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

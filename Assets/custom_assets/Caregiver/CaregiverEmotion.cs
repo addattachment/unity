@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-public enum Atmosphere { GOOD, BAD, NEUTRAL };
 
 public class CaregiverEmotion : MonoBehaviour
 {

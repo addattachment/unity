@@ -33,9 +33,8 @@ public class Player : MonoBehaviour
     {
         //StartCoroutine(ShootBall());
         NPC npc = GetComponent<NPC>();
-        StartCoroutine(npc.DirectShootBall(instBall));
+        StartCoroutine(npc.ShootBall(instBall));
+
     }
-
-
 }
 

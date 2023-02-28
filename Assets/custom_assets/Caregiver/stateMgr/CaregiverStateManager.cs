@@ -1,6 +1,4 @@
-﻿using TrialNS;
-using UnityEngine;
-
+﻿using UnityEngine;
 
 public class CaregiverStateManager : MonoBehaviour
 {
@@ -11,11 +9,7 @@ public class CaregiverStateManager : MonoBehaviour
     public CaregiverScoringState caregiverScoringState = new();
     // script references
     public GameManager gameManager;
-    //public TrialStateManager trialState;
-    //public PlayerGroup players;
-    public TrialList trialList;
-    //public TargetGroup targets;
-    public TriggerAnimation triggerAnimation;
+
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
     public ReadFeedback feedbackPole;
     public GameObject caregiverFeedbackScreen;
