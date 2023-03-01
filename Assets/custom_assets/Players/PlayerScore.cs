@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerScore : MonoBehaviour
 {
     [SerializeField] private Player player;
+    [SerializeField] private GameManager gameManager;
 
     [Header("visualising score")]
     [SerializeField] private ScoreDot[] scoreDots;
@@ -52,12 +53,15 @@ public class PlayerScore : MonoBehaviour
     {
         PlaySound(score);
         UpdatePlayerScore(score);
-        floor.SetFloorIllumination(score);
-        //global update of score
-        scoreboard.UpdateScores();
-        //data connections
-        LSLNotifyGoodOrBadHit(score);
-        WSUpdateScore();
+        if (!gameManager.isTutorial)
+        {
+            floor.SetFloorIllumination(score);
+            //global update of score
+            scoreboard.UpdateScores();
+            //data connections
+            LSLNotifyGoodOrBadHit(score);
+            WSUpdateScore();
+        }
     }
     private void PlaySound(bool score)
     {

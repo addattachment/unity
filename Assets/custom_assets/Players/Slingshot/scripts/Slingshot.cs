@@ -167,7 +167,7 @@ public class Slingshot : MonoBehaviour
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??
-                _launchForce -= (Physics.gravity * 0.25f);
+                _launchForce -= (Physics.gravity * 0.5f);
                 return _launchForce;
             case ReachTargetEnum.preferredMust:
                 Vector3 _mayDir = _hookPos - _ballPos;

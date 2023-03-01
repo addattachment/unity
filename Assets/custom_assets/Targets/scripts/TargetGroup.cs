@@ -8,12 +8,12 @@ public class TargetGroup : MonoBehaviour
     [Serializable] public enum Mode { rotation = 0, translation = 1, unknown = 2 }
     public Mode movementMode = Mode.translation;
     public Vector3 rotationVector = new(0, 0, 0.4f);
-    [SerializeField] private float xMinBorder = -6.0f;
-    [SerializeField] private float xMaxBorder = 6.0f;
+    public float xMinBorder = -6.0f;
+    public float xMaxBorder = 6.0f;
     [SerializeField] private float xMinSpeed = 1.0f;
     [SerializeField] private float xMaxSpeed = 10.0f;
-    [SerializeField] private float yMinBorder = 1.0f;
-    [SerializeField] private float yMaxBorder = 6.0f;
+    public float yMinBorder = 1.0f;
+    public float yMaxBorder = 6.0f;
     [SerializeField] private float yMinSpeed = 1.0f;
     [SerializeField] private float yMaxSpeed = 5.0f;
 

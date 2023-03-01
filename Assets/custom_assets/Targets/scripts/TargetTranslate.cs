@@ -61,15 +61,17 @@ public class TargetTranslate : MonoBehaviour
         //give each target a random starting point (only change x axis)
         Vector3 currentPos = transform.position;
         Vector3 futurePos = currentPos;
-        switch (targetGroup.translateAngle)
-        {
-            case EnumAngle.horizontal:
-                futurePos.x = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
-                break;
-            case EnumAngle.vertical:
-                futurePos.y = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
-                break;
-        }
+        //switch (targetGroup.translateAngle)
+        //{
+        //    case EnumAngle.horizontal:
+        //        futurePos.x = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
+        //        break;
+        //    case EnumAngle.vertical:
+        //        futurePos.y = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
+        //        break;
+        //}
+        futurePos.x = Random.Range(targetGroup.xMinBorder, targetGroup.xMaxBorder);
+        futurePos.y = Random.Range(targetGroup.yMinBorder, targetGroup.yMaxBorder);
         Hashtable startPosHt = iTween.Hash("position", futurePos, "delay", 0.1f, "time", 1.0f, "easetype", "easeOutBounce");
         iTween.MoveTo(gameObject, startPosHt);
     }

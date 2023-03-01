@@ -1177,7 +1177,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalScale.x
-      value: 21.50679
+      value: 29.86
       objectReference: {fileID: 0}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalScale.y
@@ -1185,11 +1185,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalScale.z
-      value: 9.964258
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.324021
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1197,7 +1197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 549211830, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.83
+      value: 3.72
       objectReference: {fileID: 0}
     - target: {fileID: 549211831, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_Size.x
@@ -1653,6 +1653,10 @@ PrefabInstance:
       propertyPath: toggle_mayNPC
       value: 
       objectReference: {fileID: 526745092}
+    - target: {fileID: 1047682328764092550, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1177219193}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
 --- !u!4 &353201544 stripped
@@ -10873,6 +10877,10 @@ PrefabInstance:
       propertyPath: toggle_prefmust
       value: 
       objectReference: {fileID: 128002477}
+    - target: {fileID: 1047682328764092550, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 1177219193}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
 --- !u!23 &1050135703425715035

@@ -83,6 +83,7 @@ public class Ball : MonoBehaviour
         //debug_text.SetDebugText("hit: " + coll.name);
         if (coll.CompareTag("subTarget"))
         {
+            coll.GetComponentInParent<TargetHit>().LitTarget();
             ballDidHit = true;
             var th = coll.GetComponent<TargetHit>();
             if (th == null)
@@ -134,9 +135,9 @@ public class Ball : MonoBehaviour
         }
     }
 
-
     private void CalcImpact(TargetHit th)
     {
+        // calculate the impact
         if (th.activeTarget)
         {
             Debug.Log("correct targets touched! at " + Time.time);

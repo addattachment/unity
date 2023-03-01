@@ -116,6 +116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeTarget: 0
+  baseColor: {r: 0.34901962, g: 0.5411765, b: 0.6784314, a: 0}
+  emissionMaxIntensity: 3
+  emissionMinIntensity: 0
 --- !u!114 &43175175
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1ae6f53928ae45a19427dd69757be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGroup: {fileID: 0}
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!54 &43175174
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.101
   direction: 1
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!1 &137625721
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,6 +264,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeTarget: 0
+  baseColor: {r: 0.47450984, g: 0.18431373, b: 0.1764706, a: 0}
+  emissionMaxIntensity: 3
+  emissionMinIntensity: 0
 --- !u!114 &137625725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1ae6f53928ae45a19427dd69757be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGroup: {fileID: 0}
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!114 &137625723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.066
   direction: 1
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!54 &137625731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -317,7 +325,7 @@ GameObject:
   - component: {fileID: 489442751}
   - component: {fileID: 489442750}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: lightblueHole
   m_TagString: subTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -444,7 +452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549211829}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.00008, y: 6.50013, z: 1.5}
+  m_LocalPosition: {x: -4.00008, y: 6.50013, z: 2.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -494,7 +502,7 @@ GameObject:
   - component: {fileID: 1187181668}
   - component: {fileID: 1187181667}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: redHole
   m_TagString: subTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -711,6 +719,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   activeTarget: 0
+  baseColor: {r: 0.19215688, g: 0.2392157, b: 0.9058824, a: 0}
+  emissionMaxIntensity: 3
+  emissionMinIntensity: 0
 --- !u!114 &1404959251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -723,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1ae6f53928ae45a19427dd69757be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetGroup: {fileID: 0}
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!54 &1404959250
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -754,6 +765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 0.013
   direction: -1
+  targetGroup: {fileID: 7992630356280265012}
 --- !u!1 &1790083467
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +780,7 @@ GameObject:
   - component: {fileID: 1790083470}
   - component: {fileID: 1790083469}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: blueHole
   m_TagString: subTarget
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -921,6 +933,14 @@ MonoBehaviour:
   rotationVector: {x: 0, y: 0, z: 0.4}
   xMinBorder: -4
   xMaxBorder: 6
+  xMinSpeed: 1
+  xMaxSpeed: 10
+  yMinBorder: 2
+  yMaxBorder: 8
+  yMinSpeed: 1
+  yMaxSpeed: 5
+  minBorder: 0
+  maxBorder: 0
   minSpeed: 1
   maxSpeed: 10
   targetList:
@@ -929,3 +949,4 @@ MonoBehaviour:
   - {fileID: 1404959247}
   hitTarget: {fileID: 0}
   readyForHit: 0
+  translateAngle: -1
