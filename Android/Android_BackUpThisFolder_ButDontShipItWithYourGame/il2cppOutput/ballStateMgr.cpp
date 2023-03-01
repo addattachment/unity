@@ -561,20 +561,22 @@ struct PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6  : public MonoBehav
 {
 	// Player PlayerScore::player
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_4;
+	// GameManager PlayerScore::gameManager
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_5;
 	// ScoreDot[] PlayerScore::scoreDots
-	ScoreDotU5BU5D_t34DB3704E3093FBA789E6A680D7C8103D6362C90* ___scoreDots_5;
+	ScoreDotU5BU5D_t34DB3704E3093FBA789E6A680D7C8103D6362C90* ___scoreDots_6;
 	// ScoreBoardAll PlayerScore::scoreboard
-	ScoreBoardAll_t7F58F4F4D8A8E33DA2254F21D2E987108B4E6428* ___scoreboard_6;
+	ScoreBoardAll_t7F58F4F4D8A8E33DA2254F21D2E987108B4E6428* ___scoreboard_7;
 	// Floor PlayerScore::floor
-	Floor_tCB484EEDCE98EC822A7CAD09DA102343A8F15275* ___floor_7;
+	Floor_tCB484EEDCE98EC822A7CAD09DA102343A8F15275* ___floor_8;
 	// GameSounds PlayerScore::gameSounds
-	GameSounds_tE160CF1666886E9284AD9EE66D97E21ECF8975B7* ___gameSounds_8;
+	GameSounds_tE160CF1666886E9284AD9EE66D97E21ECF8975B7* ___gameSounds_9;
 	// WsClient PlayerScore::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_9;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_10;
 	// LSL.OutletPassThrough PlayerScore::lsl
-	OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C* ___lsl_10;
+	OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C* ___lsl_11;
 	// DebugConnection PlayerScore::debug_text
-	DebugConnection_t5AEBED88F8326F8B01674082CA550DFC96FE8F83* ___debug_text_11;
+	DebugConnection_t5AEBED88F8326F8B01674082CA550DFC96FE8F83* ___debug_text_12;
 };
 
 // Slingshot
