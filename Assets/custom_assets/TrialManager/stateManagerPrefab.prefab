@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 10101465225465179}
-  - component: {fileID: 10101465225465172}
   - component: {fileID: 10101465225465173}
+  - component: {fileID: 1059237591}
   m_Layer: 0
   m_Name: stateManagerPrefab
   m_TagString: state
@@ -33,28 +33,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &10101465225465172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10101465225465178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 645d6ccacf2047771bdcee42ad70e51a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTrial: 0
-  endTrial: 0
-  restart: 0
-  ballIsShot: 0
-  trialPhase: IntroState
-  players: {fileID: 0}
-  targets: {fileID: 0}
-  trialList: {fileID: 0}
-  caregiverFeedbackScreen: {fileID: 0}
-  gameManager: {fileID: 0}
 --- !u!114 &10101465225465173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,3 +45,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adf3c878269dac49c8cbe9b1a1e3a3bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1059237591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10101465225465178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0879fea34ddfd43ad94051108beecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: {fileID: 0}
+  targets: {fileID: 0}
+  trialList: {fileID: 0}
+  gameManager: {fileID: 0}
+  ballStates: {fileID: 0}
+  caregiverStates: {fileID: 0}
+  trophyStates: {fileID: 0}
+  countDown: {fileID: 0}
+  trialPhase: IntroState

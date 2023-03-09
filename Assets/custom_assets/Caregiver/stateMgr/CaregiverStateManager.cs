@@ -15,7 +15,9 @@ public class CaregiverStateManager : MonoBehaviour
     public GameObject caregiverFeedbackScreen;
     public GameObject scoreCaregiver;
     public LightingMgr lightingMgr;
-
+    [Header("data connections")]
+    public WsClient ws;
+    public CaregiverFeedbackEvent caregiverFeedbackEvent;
     // booleans to control state
 
     //public bool didReadFeedback = false;
@@ -31,6 +33,7 @@ public class CaregiverStateManager : MonoBehaviour
         currentCaregiverState.EnterState(this);
         gameManager = GameManager.Instance;
         caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
+        caregiverFeedbackEvent = new();
     }
     private void Update()
     {

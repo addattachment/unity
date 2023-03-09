@@ -29,10 +29,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - EOG
   - Water
   - UI
-  - 
+  - ballInteraction
   - 
   - 
   - 

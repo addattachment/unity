@@ -98,6 +98,7 @@ public class TargetGroup : MonoBehaviour
         {
             target.GetComponent<TargetTranslate>().SetNewStartingValues();
         }
+        StartAllTargets();
     }
 
     public void HoldAllTargets()
@@ -105,6 +106,13 @@ public class TargetGroup : MonoBehaviour
         foreach (GameObject target in targetList)
         {
             target.GetComponent<TargetTranslate>().movementSpeed = 0.0f;
+        }
+    }   
+    public void StartAllTargets()
+    {
+        foreach (GameObject target in targetList)
+        {
+            target.GetComponent<TargetTranslate>().StartMovement();
         }
     }
 }

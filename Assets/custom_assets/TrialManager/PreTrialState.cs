@@ -19,10 +19,6 @@ public class PreTrialState : StateMachine
         state.gameManager.trophyMayAppear = true;
     }
 
-    public override void OnCollisionEnter(TrialStateManager state)
-    {
-        Debug.Log("Collision Enter");
-    }
 
     public override void UpdateState(TrialStateManager state)
     {
@@ -36,7 +32,7 @@ public class PreTrialState : StateMachine
     public override void ExitState(TrialStateManager state)
     {
         //make sure other variables are also false
-        state.gameManager.endTrial = false;
+        state.gameManager.toPostTrial = false;
         state.gameManager.ballIsShot = false;
         state.gameManager.restart = false;
         state.targets.SetAllNewTranslateValues();

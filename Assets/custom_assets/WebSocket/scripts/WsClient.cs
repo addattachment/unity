@@ -3,9 +3,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using WebSocketSharp;
 
-
 public class WsClient : MonoBehaviour
 {
+    [SerializeField] GameManager gameManager;
     public WebSocket ws;
     public bool hasWsConnection = false;
     private float timeoutLength = 2.0f;
@@ -13,6 +13,8 @@ public class WsClient : MonoBehaviour
     [SerializeField] private string ip = "localhost";
     [SerializeField] private string port = "8080";
     [SerializeField] private Ws_to_debug wsToDebug;
+    public PlayerVals playerVals;
+    
     [System.Serializable] public class WsEvent : UnityEvent<string> { }
     public WsEvent wsMsgReceived;
     public class WSHelloworld
@@ -48,7 +50,6 @@ public class WsClient : MonoBehaviour
         {
             Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
             HandleIncomingMessage(e.Data);
-            wsToDebug.SetDebug(e.Data);
         };
         ws.OnClose += (sender, e) =>
         {
@@ -84,12 +85,28 @@ public class WsClient : MonoBehaviour
 
     private void HandleIncomingMessage(string message)
     {
-        Debug.Log("INVOKING " + message);
+        //Debug.Log("INVOKING " + message);
+        message = message.Replace("\'","\""); // python websocket uses single quotes?
+        WebsocketMessage res = JsonUtility.FromJson<WebsocketMessage>(message);
+        switch (res.type)
+        {
+            case "player":
+                SetPlayerValsReady(res.playerValues);
+                break;
+            default:
+                wsToDebug.SetDebug("unknown command");
+                break;
+        }
         wsToDebug.SetDebug(message);
         //wsMsgReceived.Invoke(message);
         // TODO
     }
 
+    private void SetPlayerValsReady(PlayerVals playerValues)
+    {
+        playerVals = playerValues;
+        gameManager.playerValsReceivedViaWS = true;
+    }
 
     public void SendWSMessage(string message)
     {
@@ -121,4 +138,24 @@ public class WsClient : MonoBehaviour
 
 
 }
+[Serializable]
+public class PlayerVals {
+    public string name;
+    public int height;
+    public string gender;
+    public int contingency;
 
+    public string SaveToString()
+    {
+        return JsonUtility.ToJson(this);
+    }
+}
+
+[Serializable]
+public class WebsocketMessage
+{
+    public string type;
+    public string data;
+    public PlayerVals playerValues;
+    //TODO
+}

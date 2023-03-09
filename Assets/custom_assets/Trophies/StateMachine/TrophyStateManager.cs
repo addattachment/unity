@@ -19,6 +19,9 @@ public class TrophyStateManager : MonoBehaviour
     public TrophyList trophyList;
     public LightingMgr lightMgr;
 
+    [Header("data connections")]
+    [SerializeField] private WsClient ws;
+    StateMgrEvent trophyStateMgrEvent;
     // booleans to control state
     //public bool trophyMayAppear = false;
     //public bool mayPrep = false;
@@ -31,6 +34,7 @@ public class TrophyStateManager : MonoBehaviour
         trophyState = "trophyInitState";
         currentTrophyState.EnterState(this);
         gameManager = GameManager.Instance;
+        trophyStateMgrEvent = new("trophystate");
     }
     private void Update()
     {
@@ -41,6 +45,8 @@ public class TrophyStateManager : MonoBehaviour
     {
         currentTrophyState.ExitState(this);
         currentTrophyState = newState;
+        trophyStateMgrEvent.Set(newState.ToString());
+        ws.SendWSMessage(trophyStateMgrEvent.SaveToString());
         currentTrophyState.EnterState(this);
     }
 }

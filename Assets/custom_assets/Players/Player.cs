@@ -31,10 +31,11 @@ public class Player : MonoBehaviour
 
     public void FakeShot()
     {
-        //StartCoroutine(ShootBall());
         NPC npc = GetComponent<NPC>();
-        StartCoroutine(npc.ShootBall(instBall));
-
+        //StartCoroutine(npc.ShootBall(instBall));
+        StartCoroutine(npc.DirectShootBall(instBall));
     }
+
+
 }
 

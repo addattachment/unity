@@ -14,8 +14,9 @@
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.trophyList.trophyDidAppear && !state.trophyList.trophyAppear.isPlaying)
+        if (state.trophyList.trophyDidAppear && !state.trophyList.trophyAppear.isPlaying & state.gameManager.LightIsSet)
         {
+            state.gameManager.LightIsSet = false;
             state.trophyList.trophyDidAppear = false;
             state.SwitchState(state.trophyWaitingState);
         }

@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: {fileID: 0}
   testDebug: 0
-  debugMessageTime: 5
+  debugMessageTime: 10
 --- !u!114 &1001177429090512263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,10 +60,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50effbeb3dea8454aad43da07ac14fb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   hasWsConnection: 0
   ip: 192.168.50.188
-  port: 8080
+  port: 8081
   wsToDebug: {fileID: 0}
+  playerVals:
+    name: 
+    height: 0
+    gender: 
+    contingency: 0
   wsMsgReceived:
     m_PersistentCalls:
       m_Calls: []

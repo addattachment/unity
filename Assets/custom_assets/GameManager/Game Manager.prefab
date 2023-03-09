@@ -49,10 +49,11 @@ MonoBehaviour:
   playerSettingsAreSet: 0
   NPCShootsBall: 0
   restartBool: 0
-  allMust: 0
+  allMust: 1
   ballsPerGame: 5
   trialListGenerated: 0
   doFakeLaunch: 0
+  playerValsReceivedViaWS: 0
   isTutorial: 0
   startTrial: 0
   endTrial: 0
@@ -83,6 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDevelopmentMode: 1
+  wsClient: {fileID: 0}
   playerName: Pieter
   gender: 0
   contingency: 0

@@ -14,10 +14,6 @@ public class BallInitState : BallStateMachine
     {
     }
 
-    public override void OnCollisionEnter(BallStateManager state)
-    {
-        throw new NotImplementedException();
-    }
 
     public override void UpdateState(BallStateManager state)
     {

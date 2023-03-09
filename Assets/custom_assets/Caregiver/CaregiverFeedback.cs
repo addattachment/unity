@@ -16,6 +16,7 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private bool testPlay = false;
 
     [SerializeField] private ReadFeedback feedbackPole;
+    
     // Start is called before the first frame update    
     void Start()
     {
@@ -29,7 +30,7 @@ public class CaregiverFeedback : MonoBehaviour
         if (testPlay)
         {
             // in order to test the end of a feedback moment, we first need to make sure we're in end trial state
-            gameManager.endTrial = true;
+            gameManager.toPostTrial = true;
             testPlay = false;
             audioSource.Play();
         }
@@ -63,4 +64,24 @@ public class CaregiverFeedback : MonoBehaviour
         audioSource.clip = trialList.audioClips[index];
     }
 
+}
+public class CaregiverFeedbackEvent
+{
+    public int trialNumber;
+    public string websocketMessage = "caregiverFeedback";
+    public bool started;
+    public float _time;
+    public CaregiverFeedbackEvent()
+    {
+    }
+    public void Set(int currentTrial, bool didStart)
+    {
+        trialNumber = currentTrial;
+        started = didStart;
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
+    }
 }

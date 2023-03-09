@@ -14,8 +14,10 @@
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.gameManager.endTrial)
+        if (state.gameManager.MayGiveTrophy & state.gameManager.LightIsSet)
         {
+            state.gameManager.LightIsSet = false;
+            state.gameManager.MayGiveTrophy = false;
             state.SwitchState(state.trophyGivingState);
         }
     }

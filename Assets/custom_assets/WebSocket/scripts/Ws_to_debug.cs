@@ -18,7 +18,7 @@ public class Ws_to_debug : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        debug = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<TMPro.TMP_Text>();
+        debug = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<TMP_Text>();
     }
 
     // Update is called once per frame
@@ -47,7 +47,7 @@ public class Ws_to_debug : MonoBehaviour
 
     public void SetDebug(string _message)
     {
-        Debug.Log("printing " + _message);
+        //Debug.Log("printing " + _message);
         if (_message is null)
         {
             throw new ArgumentNullException(nameof(_message));
@@ -62,8 +62,8 @@ public class Ws_to_debug : MonoBehaviour
 
     }
 
-    public void PrintDebug()
-    {
-        Debug.LogWarning("made it here");
-    }
+    //public void PrintDebug()
+    //{
+    //    Debug.LogWarning("made it here");
+    //}
 }

@@ -2,7 +2,8 @@
     "name": "Environment",
     "rootNamespace": "",
     "references": [
-        "iTween"
+        "iTween",
+        "GameManager"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

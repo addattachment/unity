@@ -5,7 +5,8 @@ using UnityEngine;
 public class LightingScripts : MonoBehaviour
 {
     [SerializeField] private float lightVerticalOffset = 5.0f;
-    private float maxLightIntensity = 5.0f;
+    [SerializeField] private float maxLightIntensity = 5.0f;
+    [SerializeField] private GameManager gameManager;
 
     private void Start()
     {
@@ -27,16 +28,15 @@ public class LightingScripts : MonoBehaviour
     /// <param name="focusLocation">location where we need to put the light ABOVE</param>
     public void EnableLight(bool enabled)
     {
-
         // enable or disable the light
         Hashtable ht;
         if (enabled)
         {
-            ht = iTween.Hash("from", 0, "to", maxLightIntensity, "time", .2f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity");
+            ht = iTween.Hash("from", 0, "to", maxLightIntensity, "time", .2f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity", "oncomplete","LightUpdateFinished");
         }
         else
         {
-            ht = iTween.Hash("from", maxLightIntensity, "to", 0.0f, "time", 1.0f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity");
+            ht = iTween.Hash("from", maxLightIntensity, "to", 0.0f, "time", 1.0f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity", "oncomplete", "LightUpdateFinished");
         }
         iTween.ValueTo(gameObject, ht);
     }
@@ -46,7 +46,10 @@ public class LightingScripts : MonoBehaviour
         GetComponent<Light>().intensity = newVal;
     }
 
-
+    private void LightUpdateFinished()
+    {
+        gameManager.LightIsSet = true;
+    }
     public void SpotFollow(Vector3 followLocation)
     {
         Hashtable fopllowHt = iTween.Hash("looktarget", followLocation, "delay", 0.1f, "time", 2.5f, "easetype", "easeInOutExpo");

@@ -119,21 +119,14 @@ public class TrialList : MonoBehaviour
     public void NextTrial()
     {
         gameManager.currentTrial++;
-        if (gameManager.currentTrial < GetTrialLength())
+        if (gameManager.currentTrial < trialsList.Count)
         {
             gameManager.trialListFinished = false;
         }
         else
         {
-
             gameManager.trialListFinished = true;
-
         }
 
-    }
-
-    public int GetTrialLength()
-    {
-        return trialsList.Count;
     }
 }

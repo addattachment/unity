@@ -11,7 +11,7 @@ public class NPCBallAnimation : MonoBehaviour
     }
     public void PrintEvent(string s)
     {
-        Debug.Log("PrintEvent: " + s + " called at: " + Time.time);
+        //Debug.Log("PrintEvent: " + s + " called at: " + Time.time);
     }
     // SetBallBool sets the NPCShootsBall boolean at true when the NPC animation releases the ball
     public void SetBallBool()

@@ -83,56 +83,75 @@ public class Ball : MonoBehaviour
         //debug_text.SetDebugText("hit: " + coll.name);
         if (coll.CompareTag("subTarget"))
         {
-            coll.GetComponentInParent<TargetHit>().LitTarget();
-            ballDidHit = true;
-            var th = coll.GetComponent<TargetHit>();
-            if (th == null)
+            if (!ballDidHit)
             {
-                // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
-                th = coll.GetComponentInParent<TargetHit>();
+                coll.GetComponentInParent<TargetHit>().LitTarget();
+                ballDidHit = true;
+                var th = coll.GetComponent<TargetHit>();
+                if (th == null)
+                {
+                    // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
+                    th = coll.GetComponentInParent<TargetHit>();
+                }
+                CalcImpact(th);
             }
-            CalcImpact(th);
         }
         if (coll.CompareTag("missTargets"))
         {
-            ballDidHit = true;
-            ballDidScore = false;
+            if (!ballDidHit)
+            {
+                ballDidHit = true;
+                ballDidScore = false;
+            }
             //playerScore.AddToScore(false);
             //DestroyThisBall();
         }
         if (coll.CompareTag("Floor"))
         {
-            ballDidHit = true;
-            ballDidScore = false;
+            if (!ballDidHit)
+            {
+                ballDidHit = true;
+                ballDidScore = false;
+            }
             //TODO create animation for splashing ball?
         }
         if (coll.CompareTag("gamehall"))
         {
-            ballDidHit = true;
-
+            if (!ballDidHit)
+            {
+                ballDidHit = true;
+                ballDidScore = false;
+            }
+            Rb.velocity = Vector3.zero;
+            //Rb.mass = 10000;
             // we didn't hit any targets, so this equals hitting the wrong targets
             //TODO create animation for splashing ball?
-            ballDidScore = false;
-            DestroyThisBall();
+            //DestroyThisBall();
+            StartCoroutine(Explode());
+
         }
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!ballDidHit)
-        {
-            Debug.Log("triggered " + other.name + " at " + Time.time);
-            if (canProcessCollisions) { ProcessCollision(other.gameObject); }
-        }
+        //if (!ballDidHit)
+        //{
+        Debug.Log("triggered " + other.name + " at " + Time.time);
+        //if (canProcessCollisions) {
+        ProcessCollision(other.gameObject);
+        //}
+        //}
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (!ballDidHit)
-        {
-            Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-            if (canProcessCollisions) { ProcessCollision(collision.gameObject); }
-        }
+        //if (!ballDidHit)
+        //{
+        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
+        //if (canProcessCollisions) { 
+        ProcessCollision(collision.gameObject);
+        //}
+        //}
     }
 
     private void CalcImpact(TargetHit th)
@@ -141,7 +160,7 @@ public class Ball : MonoBehaviour
         if (th.activeTarget)
         {
             Debug.Log("correct targets touched! at " + Time.time);
-            Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position+ " by ball at "+gameObject.transform.position) ;
+            //Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position + " by ball at " + gameObject.transform.position);
             ballDidScore = true;
         }
         else
@@ -160,15 +179,15 @@ public class Ball : MonoBehaviour
     {
         // audio stuff
         ball_flying_audio.Play();
-        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
+        //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         //Send LSL data
         lsl.SendMarker(Marker.ball_release);
         //Calculate trajectory of ball
         _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
         _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
-        Debug.Log("target is " + targets.hitTarget + " at coordinate " + _hitTargetPos + " time expected is "+_time_to_target + " from "+Time.time);
+        //Debug.Log("target is " + targets.hitTarget + " at coordinate " + _hitTargetPos + " time expected is " + _time_to_target + " from " + Time.time);
 
-        Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
+        //Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
         Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
 
 
@@ -184,7 +203,7 @@ public class Ball : MonoBehaviour
     {
         ballIsGrabbed = true;
         // AUDIO 
-        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
+        //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         SlingshotPullAudio.Play();
     }
 
@@ -212,7 +231,7 @@ public class Ball : MonoBehaviour
     /// </summary>
     private void DestroyThisBall()
     {
-        backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
+        //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
         Destroy(gameObject);
     }
     IEnumerator Explode()

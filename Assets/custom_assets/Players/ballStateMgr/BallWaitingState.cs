@@ -11,11 +11,6 @@ public class BallWaitingState : BallStateMachine
     {
     }
 
-    public override void OnCollisionEnter(BallStateManager state)
-    {
-        throw new NotImplementedException();
-    }
-
     public override void UpdateState(BallStateManager state)
     {
         if (state.gameManager.trialIsRunning)

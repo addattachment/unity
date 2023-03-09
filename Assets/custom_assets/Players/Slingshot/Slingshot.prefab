@@ -355,7 +355,7 @@ MonoBehaviour:
   launchForceMultiplier: 30
   minDeflectionDist: 1.3
   reachTarget: 1
-  minGuidanceDist: 0.9
+  minGuidanceDist: 0.95
   debug_text: {fileID: 0}
   toggle_may: {fileID: 0}
   toggle_must: {fileID: 0}
@@ -689,6 +689,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  gameManager: {fileID: 0}
   scoreDots:
   - {fileID: 459697072409269862}
   - {fileID: 1236629664888635114}

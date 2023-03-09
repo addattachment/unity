@@ -19,7 +19,9 @@ public class ScoreCaregiver : MonoBehaviour
     public bool scoringStarted = false;
     [SerializeField] private Appear appear;
     public bool isLow = true;
+    [Header("Data connections")]
     [SerializeField] private WsClient ws;
+    private CaregiverScoreEvent caregiverScoreEvent;
     //TESTING
     [SerializeField] private DebugConnection debug_text;
     private Vector3 startPosMeCircle;
@@ -33,6 +35,7 @@ public class ScoreCaregiver : MonoBehaviour
         appear = GetComponent<Appear>();
         startPosMeCircle = meCircle.transform.position;
         startPosCaregiverCircle = caregiverCircle.transform.position;
+        caregiverScoreEvent = new();
     }
 
     public void EnableScoring()
@@ -79,8 +82,11 @@ public class ScoreCaregiver : MonoBehaviour
 
     public void SendScore(int trialIndex)
     {
-        debug_text.SetDebugText("caregiverscore: " + controllerDist + "/" + maxDistance + " trial:" + trialIndex);
-        ws.SendWSMessage("caregiverscore: " + controllerDist + "/" + maxDistance + " trial:" + trialIndex);
+        //TODO numbering not good, I think we need a non-linear scale?
+        int caregiverScore = (int)(10*(maxDistance - controllerDist) / maxDistance);
+        debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
+        caregiverScoreEvent.Set(trialIndex, caregiverScore);
+        ws.SendWSMessage(caregiverScoreEvent.SaveToString());
     }
 
 
@@ -122,12 +128,12 @@ public class ScoreCaregiver : MonoBehaviour
     }
     public void ChangeAlphaTo(int val)
     {
-        var color = meCircle.GetComponent<Renderer>().material.color;
+        var color = meCircleRing.material.color;
         color.a = val;
-        meCircle.GetComponent<Renderer>().material.color = color;
-        color = caregiverCircle.GetComponent<Renderer>().material.color;
+        meCircleRing.material.color = color;
+        color = caregiverCircleRing.material.color;
         color.a = val;
-        caregiverCircle.GetComponent<Renderer>().material.color = color;
+        caregiverCircleRing.material.color = color;
     }
     public void ChangeToRed()
     {
@@ -138,5 +144,25 @@ public class ScoreCaregiver : MonoBehaviour
     {
         meCircleRing.material.color = Color.green;
         caregiverCircleRing.material.color = Color.green;
+    }
+}
+public class CaregiverScoreEvent
+{
+    public int trialNumber;
+    public string websocketMessage = "caregiverScore";
+    public int score;
+    public float _time;
+    public CaregiverScoreEvent()
+    {
+    }
+    public void Set(int currentTrial, int newScore)
+    {
+        trialNumber = currentTrial;
+        score = newScore;
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
     }
 }

@@ -12,6 +12,8 @@ public class TargetTranslate : MonoBehaviour
 
     public EnumDirection direction = EnumDirection.forward;
     [SerializeField] private TargetGroup targetGroup;
+    private bool dirHasChanged = false;
+    //[SerializeField] private Vector3 velocityVector;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,34 @@ public class TargetTranslate : MonoBehaviour
     void Update()
     {
         UpdatePositions();
-        transform.Translate(movementVector * Time.deltaTime);
+        if (dirHasChanged)
+        {
+            dirHasChanged = false;
+            SetMovement();
+        }
+        //transform.Translate(movementVector * Time.deltaTime);
+
+    }
+
+    public void StartMovement()
+    {
+        switch (targetGroup.translateAngle)
+        {
+            case EnumAngle.horizontal:
+                movementVector.x = ((int)direction) * movementSpeed;
+                break;
+            case EnumAngle.vertical:
+                movementVector.y = ((int)direction) * movementSpeed;
+                break;
+        }
+        SetMovement();
+        
+    }
+
+    private void SetMovement()
+    {
+        GetComponent<Rigidbody>().velocity = movementVector;
+        GetComponent<Rigidbody>().isKinematic = false;
     }
 
     private void UpdatePositions()
@@ -31,30 +60,32 @@ public class TargetTranslate : MonoBehaviour
         switch (targetGroup.translateAngle)
         {
             case EnumAngle.horizontal:
-                movementVector.x = ((int)direction) * movementSpeed;
                 if (transform.position.x >= targetGroup.maxBorder)
                 {
                     direction = EnumDirection.backward;
+                    dirHasChanged = true;
                 }
                 if (transform.position.x <= targetGroup.minBorder)
                 {
                     direction = EnumDirection.forward;
+                    dirHasChanged = true;
                 }
+                movementVector.x = ((int)direction) * movementSpeed;
                 break;
             case EnumAngle.vertical:
-                movementVector.y = ((int)direction) * movementSpeed;
                 if (transform.position.y >= targetGroup.maxBorder)
                 {
                     direction = EnumDirection.backward;
+                    dirHasChanged = true;
                 }
                 if (transform.position.y <= targetGroup.minBorder)
                 {
                     direction = EnumDirection.forward;
+                    dirHasChanged = true;
                 }
+                movementVector.y = ((int)direction) * movementSpeed;
                 break;
-
         }
-        
     }
     public void SetStartingPos()
     {

@@ -12,7 +12,7 @@ public class BallPrepState : BallStateMachine
         Slingshot slingshot = activeParticipant.slingshot;
 
         state.players.SetPlayerScoringChance(slingshot, state.isGoodTrial);
-        Debug.Log("enter ball prep state" + Time.time);
+        //Debug.Log("enter ball prep state " + Time.time);
         if (activeParticipant.currentBallInTrial < state.amountOfBallsInTrial)
         {
             //// Make sure we can detect collisions by the new bullet (only once!)
@@ -25,7 +25,7 @@ public class BallPrepState : BallStateMachine
         else
         {
             // As soon as one of the players is out of balls, we can conclude that both players are out of balls
-            state.gameManager.endTrial = true;
+            state.gameManager.toPostTrial = true;
         }
         slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
     }
@@ -34,10 +34,6 @@ public class BallPrepState : BallStateMachine
     {
     }
 
-    public override void OnCollisionEnter(BallStateManager state)
-    {
-        throw new NotImplementedException();
-    }
 
     public override void UpdateState(BallStateManager state)
     {

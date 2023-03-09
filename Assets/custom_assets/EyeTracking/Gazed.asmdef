@@ -1,0 +1,19 @@
+{
+    "name": "Gazed",
+    "rootNamespace": "",
+    "references": [
+        "GUID:67a80de88b5c7cd4d9f7eab39a745c05",
+        "GUID:31ebc4707f708334eaa57cf16de7c402",
+        "GUID:773b99b074d90fa4ba991209b58cee23",
+        "GUID:46180558f5f657c4e86e41ec1ae615b9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

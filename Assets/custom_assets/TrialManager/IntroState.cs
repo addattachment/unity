@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 /// <summary>
@@ -10,17 +11,21 @@ using UnityEngine;
 /// </summary>
 public class IntroState : StateMachine
 {
+    private MonoBehaviour _mb; // The surrogate MonoBehaviour that we'll use to manage this coroutine.
+
     public override void EnterState(TrialStateManager state)
     {
         state.trialPhase = "IntroTrialState";
+        _mb = GameObject.FindObjectOfType<MonoBehaviour>();
+        _mb.StartCoroutine(IntroSettings(state));
+    }
+
+    private IEnumerator IntroSettings(TrialStateManager state)
+    {
+        yield return new WaitForSeconds(state.IntroPauseTimeForStart);
         state.countDown.StartCountDown();
         state.targets.SetAllStartingPos();
         state.targets.HoldAllTargets(); // we don't want the targets to move yet
-    }
-
-    public override void OnCollisionEnter(TrialStateManager state)
-    {
-        Debug.Log("Collision Enter");
     }
 
     public override void UpdateState(TrialStateManager state)

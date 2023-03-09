@@ -14,12 +14,9 @@ public class PostTrialState : StateMachine
     {
         state.trialPhase = "PostTrialState";
         state.targets.HoldAllTargets();
+        state.gameManager.MayGiveTrophy = true;
     }
 
-    public override void OnCollisionEnter(TrialStateManager state)
-    {
-        Debug.Log("Collision Enter");
-    }
 
     public override void UpdateState(TrialStateManager state)
     {
@@ -35,7 +32,7 @@ public class PostTrialState : StateMachine
             state.gameManager.restart = false;
             state.SwitchState(state.preTrialState);
         }
-        if (state.gameManager.isTutorial)
+        if (state.gameManager.isTutorial & state.gameManager.mustGiveFeedback)
         {
             state.SwitchState(state.preTrialState);
         }
@@ -44,7 +41,7 @@ public class PostTrialState : StateMachine
     public override void ExitState(TrialStateManager state)
     {
         //make sure other variables are also false
-        state.gameManager.endTrial = false;
+        state.gameManager.toPostTrial = false;
         state.gameManager.startTrial = false;
         state.gameManager.ballIsShot = false;
         // we move the targets to a new starting pos

@@ -54,7 +54,6 @@ MonoBehaviour:
   _name: {fileID: 7425388637990654293}
   score: {fileID: 7425388637912242470}
   subject: {fileID: 0}
-  isRealPlayer: 1
 --- !u!1 &7425388637097144631
 GameObject:
   m_ObjectHideFlags: 0

@@ -45,14 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
-  trialState: {fileID: 0}
   players: {fileID: 0}
   trialList: {fileID: 0}
   targets: {fileID: 0}
-  amountOfBallsInTrial: 0
-  isInitiated: 0
-  mayPrep: 0
-  canLaunch: 0
-  didShoot: 0
   currentBall: {fileID: 0}
+  amountOfBallsInTrial: 5
+  isGoodTrial: 0
   ballPhase: ballInitState
+  ws: {fileID: 0}

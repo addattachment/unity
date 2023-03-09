@@ -22,11 +22,6 @@ public class TrialState : StateMachine
         state.gameManager.trialIsRunning = true;
     }
 
-    public override void OnCollisionEnter(TrialStateManager state)
-    {
-        Debug.Log("Collision Enter");
-    }
-
     public override void UpdateState(TrialStateManager state)
     {
         //if (state.ballIsShot)
@@ -35,8 +30,9 @@ public class TrialState : StateMachine
         //    state.players.SwitchPlayer();
         //    state.players.PrepNewShootingTurn(state.trialList, state.targets);
         //}
-        if (state.gameManager.endTrial)
+        if (state.gameManager.toPostTrial)
         {
+            state.players.WSUpdateTrialScore();
             state.SwitchState(state.postTrialState);
         }
     }
@@ -44,7 +40,7 @@ public class TrialState : StateMachine
     public override void ExitState(TrialStateManager state)
     {
         Debug.Log("Exiting Trial State");
-        state.gameManager.endTrial = false;
+        //state.gameManager.endTrial = false;
         state.gameManager.trialIsRunning = false;
         //make sure other variables are also false
         //state.startTrial = false;

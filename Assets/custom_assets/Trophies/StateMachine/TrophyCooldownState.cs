@@ -15,8 +15,9 @@ public class TrophyCooldownState : TrophyStateMachine
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.gameManager.trophyMayAppear)
+        if (state.gameManager.trophyMayAppear & state.gameManager.LightIsSet)
         {
+            state.gameManager.LightIsSet = false;
             state.gameManager.trophyMayAppear = false;
             if (!state.gameManager.trialListFinished)
             {

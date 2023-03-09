@@ -17,6 +17,7 @@ public class PlayerScore : MonoBehaviour
     [Header("data connections")]
     [SerializeField] private WsClient ws;
     [SerializeField] private OutletPassThrough lsl;
+    private PlayerBallScoreEvent playerBallScoreEvent;
 
     [Header("debug")]
     [SerializeField] private DebugConnection debug_text;
@@ -32,6 +33,7 @@ public class PlayerScore : MonoBehaviour
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
         scoreDots = GetComponentsInChildren<ScoreDot>();
         floor = GameObject.FindGameObjectWithTag("Floor").GetComponent<Floor>();
+        playerBallScoreEvent = new();
     }
 
     // Update is called once per frame
@@ -53,15 +55,17 @@ public class PlayerScore : MonoBehaviour
     {
         PlaySound(score);
         UpdatePlayerScore(score);
+
+        floor.SetFloorIllumination(score);
+        //global update of score
+        scoreboard.UpdateScores();
+        //data connections
         if (!gameManager.isTutorial)
         {
-            floor.SetFloorIllumination(score);
-            //global update of score
-            scoreboard.UpdateScores();
-            //data connections
             LSLNotifyGoodOrBadHit(score);
-            WSUpdateScore();
+            WSUpdateScore(score);
         }
+
     }
     private void PlaySound(bool score)
     {
@@ -87,13 +91,39 @@ public class PlayerScore : MonoBehaviour
     private void LSLNotifyGoodOrBadHit(bool score)
     {
         lsl.SendMarker(score ? Marker.ball_good_hit : Marker.ball_bad_hit);
-
     }
 
-    private void WSUpdateScore()
+    private void WSUpdateScore(bool score)
     {
-        //debug_text.SetDebugText("" + player.name + " " + player.score);
-        ws.SendWSMessage("name: " + player.name + ", score: " + player.score);
+        playerBallScoreEvent.Set(gameManager.currentTrial, player.playerName, player.isRealPlayer, score);
+        ws.SendWSMessage(playerBallScoreEvent.SaveToString());
         lsl.SendMarker(Marker.score);
     }
 }
+
+public class PlayerBallScoreEvent
+{
+    public int trialNumber;
+    public string websocketMessage = "PlayerBallScore";
+    public string player;
+    public bool realPlayer;
+    public bool hit;
+    public float _time;
+    public PlayerBallScoreEvent()
+    {
+    }
+
+    public void Set(int newTrialNumber, string thisPlayer, bool isRealPlayer, bool didHit)
+    {
+        trialNumber = newTrialNumber;
+        player = thisPlayer;
+        realPlayer = isRealPlayer;
+        hit = didHit;
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
+    }
+}
+

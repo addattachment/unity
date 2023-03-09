@@ -10,13 +10,14 @@ public class CountDown : MonoBehaviour
     private List<GameObject> countDownList = new();
     private GameObject numberInst;
     [SerializeField] private bool testCountDown = false;
-
+    private bool loaded = false;
     public bool countDownFinished = false;
 
-    void Start()
+    void LoadNumbers()
     {
         numbers = new List<GameObject>(Resources.LoadAll<GameObject>(numbers_directory));
         numbers.Reverse();
+        loaded = true;
     }
 
     // Update is called once per frame
@@ -31,6 +32,11 @@ public class CountDown : MonoBehaviour
 
     public void StartCountDown()
     {
+        //make sure numbers are loaded
+        if (!loaded)
+        {
+            LoadNumbers();
+        }
         countDownFinished = false;
         StartCoroutine(LaunchNumber(numbers));
         Debug.Log("Finished countdown");

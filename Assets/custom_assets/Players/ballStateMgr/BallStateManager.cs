@@ -8,6 +8,7 @@ public class BallStateManager : MonoBehaviour
     public BallPrepState ballPrepState = new();
     public BallLaunchState ballLaunchState = new();
     public BallCalcImpactState ballCalcImpactState = new();
+    public BallDoneState ballDoneState = new();
 
     // script references
     public GameManager gameManager;
@@ -28,12 +29,17 @@ public class BallStateManager : MonoBehaviour
     // ballPhase is for debugging purposes
     public string ballPhase = "ballInitState";
 
+    [Header("data connections")]
+    [SerializeField] private WsClient ws;
+    StateMgrEvent ballStateMgrEvent;
+
     private void Start()
     {
         currentBallState = ballInitState;
         ballPhase = "ballInitState";
         currentBallState.EnterState(this);
         gameManager = GameManager.Instance;
+        ballStateMgrEvent = new("ballstate");
     }
     private void Update()
     {
@@ -44,6 +50,8 @@ public class BallStateManager : MonoBehaviour
     {
         currentBallState.ExitState(this);
         currentBallState = newState;
+        ballStateMgrEvent.Set(newState.ToString());
+        ws.SendWSMessage(ballStateMgrEvent.SaveToString());
         currentBallState.EnterState(this);
     }
 }

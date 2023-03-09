@@ -16,11 +16,6 @@ public class BallCalcImpactState : BallStateMachine
     {
     }
 
-    public override void OnCollisionEnter(BallStateManager state)
-    {
-        throw new NotImplementedException();
-    }
-
     public override void UpdateState(BallStateManager state)
     {
         // we update the players current ball for a next round
@@ -29,8 +24,8 @@ public class BallCalcImpactState : BallStateMachine
         if (!state.players.BallsLeft())
         {
             // As soon as one of the players is out of balls, we can conclude that both players are out of balls
-            state.gameManager.endTrial = true;
-            state.SwitchState(state.ballInitState);
+            state.gameManager.toPostTrial = true;
+            state.SwitchState(state.ballDoneState);
         }
         else
         {

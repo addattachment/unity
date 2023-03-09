@@ -5,8 +5,8 @@ using UnityEngine;
 // Or if we set a boolean, we take default values (for development purposes)
 public class SetGameValues : MonoBehaviour
 {
-    [SerializeField] private bool isDevelopmentMode = true;
     private GameManager gameManager;
+    [SerializeField] WsClient wsClient;
     public string playerName = "Pieter";
     public Gender gender = Gender.Male;
     public Contingency contingency = Contingency.c_20;
@@ -35,31 +35,36 @@ public class SetGameValues : MonoBehaviour
         }
         else
         {
-            if (isDevelopmentMode)
+            if (gameManager.developmentMode)
             {
                 UpdateGameValues();
             }
         }
-        // else we wait for the websocket client to 1. set the values 2. call the updategamevalues
-        // TODO : websocket.HandleIncomingMessage
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (gameManager.playerValsReceivedViaWS)
+        {
+            SetPlayerVals(wsClient.playerVals);
+            gameManager.playerValsReceivedViaWS = false;
+        }
+    }
 
+    public void SetPlayerVals(PlayerVals playerVals)
+    {
+        playerName = playerVals.name;
+        gender = playerVals.gender == "M" ? Gender.Male : Gender.Female;
+        contingency = playerVals.contingency == 20 ? Contingency.c_20 : Contingency.c_80;
+        height = playerVals.height;
+
+        UpdateGameValues();
     }
 
     public void UpdateGameValues()
     {
-        if (gender == Gender.Male)
-        {
-            NPC.playerName = NPCNameMale;
-        }
-        else
-        {
-            NPC.playerName = NPCNameFemale;
-        }
+        
         // we set the values for the normal player and the NPC, both should be male
         player.playerName = playerName;
         player.gender = gender;
@@ -67,11 +72,21 @@ public class SetGameValues : MonoBehaviour
         player.height = height; //TODO USEFUL?
         player.isRealPlayer = true;
         // NPC values
-        NPC.gender = gender;
-        NPC.contingency = Contingency.c_20; // DONT CARE
-        NPC.height = height; //TODO USEFUL?
-        NPC.isRealPlayer = false;
-
+        if (!gameManager.isTutorial)
+        {
+            if (gender == Gender.Male)
+            {
+                NPC.playerName = NPCNameMale;
+            }
+            else
+            {
+                NPC.playerName = NPCNameFemale;
+            }
+            NPC.gender = gender;
+            NPC.contingency = Contingency.c_20; // DONT CARE
+            NPC.height = height; //TODO USEFUL?
+            NPC.isRealPlayer = false;
+        }
 
         // we tell the game that the players values are set
         gameManager.playerSettingsAreSet = true;

@@ -1416,6 +1416,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &919132149292146893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5380,6 +5381,7 @@ MonoBehaviour:
   feedbackText: {fileID: 9071927409734839722}
   caregiverEmotion: {fileID: 0}
   trialList: {fileID: 0}
+  gameManager: {fileID: 0}
   sun: {fileID: 0}
   caregiverSpotLight: {fileID: 6050664588004662372}
   playerSlingshot: {fileID: 0}
@@ -6161,6 +6163,14 @@ PrefabInstance:
     - target: {fileID: 1116187791472637562, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_LocalPosition.z
       value: 1.262
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071927407896598186, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9071927407991148373, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1695165258, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}

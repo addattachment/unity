@@ -1,3 +1,4 @@
+using LSL;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,6 +13,11 @@ public class PlayerGroup : MonoBehaviour
     [SerializeField] private DebugConnection debug_text;
 
     [SerializeField] private List<Player> players;
+
+    [Header("data connections")]
+    [SerializeField] private WsClient ws;
+    [SerializeField] private OutletPassThrough lsl;
+    private PlayersScoreEvent playersScoreEvent = new();
 
     void Start()
     {
@@ -115,7 +121,18 @@ public class PlayerGroup : MonoBehaviour
         activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
     }
 
-
+    public void WSUpdateTrialScore()
+    {
+        if (!gameManager.isTutorial)
+        {
+            playersScoreEvent.Set(gameManager.currentTrial, player.score, NPC.score);
+        }
+        else
+        {
+            playersScoreEvent.Set(gameManager.currentTrial, player.score, 0);
+        }
+        ws.SendWSMessage(playersScoreEvent.SaveToString());
+    }
 
     /// <summary>
     /// sets the ReachtargetEnum of the active slingshot
@@ -133,14 +150,19 @@ public class PlayerGroup : MonoBehaviour
         if (gameManager.allMust)
         {
             reachChance = ReachTargetEnum.must;
-
         }
         else
         {
             if (gameManager.isTutorial)
             {
-                //TEMP
-                reachChance = ReachTargetEnum.preferredMust;
+                if (guess >= 0.5f)
+                {
+                    reachChance = ReachTargetEnum.preferredMust;
+                }
+                else
+                {
+                    reachChance = ReachTargetEnum.may;
+                }
             }
             else
             {
@@ -212,5 +234,28 @@ public class PlayerGroup : MonoBehaviour
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
         slingshot.SetTargetReachable(reachEnum: reachChance);
+    }
+}
+public class PlayersScoreEvent
+{
+    public int trialNumber;
+    public string websocketMessage = "PlayersScore";
+    public int playerScore;
+    public int NPCScore;
+    public float _time;
+    public PlayersScoreEvent()
+    {
+    }
+
+    public void Set(int newTrialNumber, int newPlayerScore, int newNPCScore)
+    {
+        trialNumber = newTrialNumber;
+        playerScore = newPlayerScore;
+        NPCScore = newNPCScore;
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
     }
 }

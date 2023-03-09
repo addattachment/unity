@@ -20,8 +20,9 @@
 
     public override void UpdateState(TrophyStateManager state)
     {
-        if (state.trophyList.currentTrophy == null & state.trophyList.trophyIsGiven)
+        if (state.trophyList.currentTrophy == null & state.trophyList.trophyIsGiven & state.gameManager.LightIsSet)
         {
+            state.gameManager.LightIsSet = false;
             state.SwitchState(state.trophyCooldownState);
         }
     }
