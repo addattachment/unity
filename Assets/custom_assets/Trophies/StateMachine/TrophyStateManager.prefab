@@ -50,3 +50,5 @@ MonoBehaviour:
   targets: {fileID: 0}
   trophyList: {fileID: 0}
   lightMgr: {fileID: 0}
+  winnerUI: {fileID: 0}
+  ws: {fileID: 0}

@@ -1,11 +1,14 @@
 using LSL;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 public class Ball : MonoBehaviour
 {
     private Rigidbody Rb;
     private GameManager gameManager;
-    [SerializeField] private Slingshot slingShot; // link to the slingshot
+    private TrajectoryManager trajectoryManager;
+    public Slingshot slingShot; // link to the slingshot
 
     [Header("AudioSamples")]
     [SerializeField] private AudioSource SlingshotPullAudio;
@@ -27,22 +30,22 @@ public class Ball : MonoBehaviour
     public bool ballDidHit = false;
     public bool canProcessCollisions = true;
     public bool ballDidScore = false;
+    private bool showLinerender = false;
+
     [Header("ball Steering")]
     private float _time_to_target = 1.0f;
     Vector3 _hitTargetPos;
     private TargetGroup targets;
+    [SerializeField] Vector3 launchForce;
+
     [Header("score result")]
     [SerializeField] private OutletPassThrough lsl;
 
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
+    [SerializeField] private TrailRenderer trail;
 
-    // DEBUGGING
-    public GameObject debugCube;
-    private string _name;
 
-    [SerializeField] private DebugConnection debug_text;
-    public Vector3 _fakeBallStartPointDebug = new Vector3(0, 0.4f, 0);
     public bool doFakeLaunch = false;
 
     private void Start()
@@ -51,17 +54,16 @@ public class Ball : MonoBehaviour
         targets = GameObject.FindGameObjectWithTag("target")
                             .GetComponent<TargetGroup>(); // todo write tests for finding all gameobjects
         slingShot = this.GetComponentInParent<Slingshot>();
-        debug_text = GameObject.FindGameObjectWithTag("debug")
-                               .GetComponentInChildren<DebugConnection>();
         lsl = GameObject.FindGameObjectWithTag("lsl")
                         .GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
-        _name = "" + Time.time;
         gameManager = GameManager.Instance;
+        trajectoryManager = TrajectoryManager.Instance;
+
+
     }
 
-
-    void FixedUpdate()
+    private void Update()
     {
 #if UNITY_EDITOR
         if (gameManager.doFakeLaunch)
@@ -70,88 +72,68 @@ public class Ball : MonoBehaviour
             {
 
                 ballIsGrabbed = true;
-                FakeLaunch(_fakeBallStartPointDebug + slingShot.transform.position);
+                FakeLaunch(slingShot._fakeBallStartPointDebug.transform.localPosition + slingShot.transform.position);
             }
             gameManager.doFakeLaunch = false;
         }
-
 #endif
+        if (showLinerender)
+        {
+            _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
+            _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
+            launchForce = slingShot.CalcLaunchVelocity(Rb.position, _hitTargetPos, ReachTargetEnum.may);
+            trajectoryManager.SimulateLaunch(transform, launchForce);
+        }
     }
 
     private void ProcessCollision(GameObject coll)
     {
-        //debug_text.SetDebugText("hit: " + coll.name);
         if (coll.CompareTag("subTarget"))
         {
-            if (!ballDidHit)
+            coll.GetComponent<Collider>().enabled = false;
+            coll.GetComponentInParent<TargetHit>().LitTarget();
+            var th = coll.GetComponent<TargetHit>();
+            if (th == null)
             {
-                coll.GetComponentInParent<TargetHit>().LitTarget();
-                ballDidHit = true;
-                var th = coll.GetComponent<TargetHit>();
-                if (th == null)
-                {
-                    // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
-                    th = coll.GetComponentInParent<TargetHit>();
-                }
-                CalcImpact(th);
+                // if we hit the cylinder INSIDE the targets, we also want to check if it's the active targets
+                th = coll.GetComponentInParent<TargetHit>();
             }
+            CalcImpact(th);
         }
-        if (coll.CompareTag("missTargets"))
+        if (!ballDidHit)
         {
-            if (!ballDidHit)
+            if (coll.CompareTag("missTargets"))
             {
                 ballDidHit = true;
-                ballDidScore = false;
             }
-            //playerScore.AddToScore(false);
-            //DestroyThisBall();
-        }
-        if (coll.CompareTag("Floor"))
-        {
-            if (!ballDidHit)
+            if (coll.CompareTag("Floor"))
             {
                 ballDidHit = true;
-                ballDidScore = false;
+                //TODO create animation for splashing ball?
             }
-            //TODO create animation for splashing ball?
-        }
-        if (coll.CompareTag("gamehall"))
-        {
-            if (!ballDidHit)
+            if (coll.CompareTag("gamehall"))
             {
                 ballDidHit = true;
-                ballDidScore = false;
-            }
-            Rb.velocity = Vector3.zero;
-            //Rb.mass = 10000;
-            // we didn't hit any targets, so this equals hitting the wrong targets
-            //TODO create animation for splashing ball?
-            //DestroyThisBall();
-            StartCoroutine(Explode());
+                Rb.velocity = Vector3.zero;
+                //Rb.mass = 10000;
+                // we didn't hit any targets, so this equals hitting the wrong targets
+                //TODO create animation for splashing ball?
+                StartCoroutine(Explode());
 
+            }
         }
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
-        //if (!ballDidHit)
-        //{
-        Debug.Log("triggered " + other.name + " at " + Time.time);
-        //if (canProcessCollisions) {
+        //Debug.Log("triggered " + other.name + " at " + Time.time + " at position " + transform.position);
         ProcessCollision(other.gameObject);
-        //}
-        //}
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //if (!ballDidHit)
-        //{
-        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time);
-        //if (canProcessCollisions) { 
+        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time + " at position " + transform.position);
         ProcessCollision(collision.gameObject);
-        //}
-        //}
     }
 
     private void CalcImpact(TargetHit th)
@@ -159,14 +141,40 @@ public class Ball : MonoBehaviour
         // calculate the impact
         if (th.activeTarget)
         {
-            Debug.Log("correct targets touched! at " + Time.time);
-            //Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position + " by ball at " + gameObject.transform.position);
+            //Debug.Log("correct targets touched! at " + Time.time);
+            Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position + " by ball at " + gameObject.transform.position);
             ballDidScore = true;
+            StartCoroutine(LaunchBallScoreShow(true, th));
         }
         else
         {
             Debug.Log("wrong! at " + Time.time);
-            ballDidScore = false;
+            //ballDidScore = false;
+            StartCoroutine(LaunchBallScoreShow(false, th));
+
+        }
+    }
+
+    private IEnumerator LaunchBallScoreShow(bool correctHit, TargetHit th)
+    {
+        if (correctHit)
+        {
+            // hold all targets
+            targets.HoldAllTargets();
+            // hold the ball still for a sec 
+            var _velocity = Rb.velocity;
+            Rb.isKinematic = true;
+            th.SpawnHit();
+            yield return new WaitForSeconds(1.0f);
+            targets.StartAllTargets();
+            Rb.isKinematic = false;
+            Rb.velocity = _velocity;
+            Debug.Break();
+        }
+        else
+        {
+            th.SpawnMiss();
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
@@ -186,14 +194,15 @@ public class Ball : MonoBehaviour
         _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
         _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
         //Debug.Log("target is " + targets.hitTarget + " at coordinate " + _hitTargetPos + " time expected is " + _time_to_target + " from " + Time.time);
-
+        showLinerender = false;
+        //trajectoryManager.EnableLine(false);
         //Debug.Log("shoot at " + Time.time + " for " + _time_to_target + " seconds with mode: " + slingShot.reachTarget);
-        Vector3 launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos);
-
+        launchForce = slingShot.CalcLaunchVelocity(origin, _hitTargetPos, reachTarget: slingShot.reachTarget);
 
         // shoot the ball
         Rb.AddForce(launchForce, ForceMode.Impulse);
         SlingshotReleaseAudio.Play();
+        
         Destroy(GetComponent<SpringJoint>());
         StartCoroutine(Explode());
     }
@@ -202,9 +211,12 @@ public class Ball : MonoBehaviour
     public void VREnterEvent()
     {
         ballIsGrabbed = true;
+        showLinerender = true;
         // AUDIO 
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         SlingshotPullAudio.Play();
+        trail.enabled = false;
+        //TrajectoryManager.Instance.EnableLine(true);
     }
 
     // we release the Ball
@@ -212,16 +224,20 @@ public class Ball : MonoBehaviour
     {
         //debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
+        trail.enabled = true;
         Launch(Rb.position);
+        TrajectoryManager.Instance.EnableLine(false);
+
     }
 
     public void FakeLaunch(Vector3 _fakeBallStartPoint)
     {
         // fake a starting point for the ball
-        Rb.position = _fakeBallStartPoint; // + slingShot.transform.position;
+        Rb.position = _fakeBallStartPoint;
+        transform.position = _fakeBallStartPoint;
         ballIsReleased = true;
         //debug_text.SetDebugText("ball start point is " + Rb.position);
-
+        Debug.Break();
         Launch(Rb.position);
     }
 
@@ -232,6 +248,7 @@ public class Ball : MonoBehaviour
     private void DestroyThisBall()
     {
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
+        trajectoryManager.EnableLine(false);
         Destroy(gameObject);
     }
     IEnumerator Explode()

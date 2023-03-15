@@ -25,6 +25,8 @@ TagManager:
   - gamehall
   - Floor
   - scene
+  - Collidable
+  - simBall
   layers:
   - Default
   - TransparentFX

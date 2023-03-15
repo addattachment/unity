@@ -10,13 +10,14 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     [SerializeField] private Light sun;
     public Light caregiverSpotLight;
-    [SerializeField] private Slingshot playerSlingshot;
+    //[SerializeField] private Slingshot playerSlingshot;
+    //[SerializeField] private GameObject playerSlingshot;
     public AudioSource audioSource;
     //private bool speechHasStarted = false;
     [SerializeField] private bool testPlay = false;
 
     [SerializeField] private ReadFeedback feedbackPole;
-    
+    [SerializeField] private bool enableText = false;
     // Start is called before the first frame update    
     void Start()
     {
@@ -35,30 +36,37 @@ public class CaregiverFeedback : MonoBehaviour
             audioSource.Play();
         }
         ///////////////////
-
+        if (!enableText)
+        {
+            feedbackText.enabled = false;
+        }
     }
 
 
     public void GiveFeedback()
     {
-        feedbackText.SetText(trialList.GetCurrentTrial().Response());
+        if (enableText)
+        {
+            feedbackText.SetText(trialList.GetCurrentTrial().Response());
+        }
         LoadAudioClip(gameManager.currentTrial);
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
         caregiverEmotion.SetAtmosphere(emotion);
         audioSource.Play();
     }
 
-    public void SetSlingshotForFeedback(bool enabled)
-    {
-        if (enabled)
-        {
-            playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.hidden;
-        }
-        else
-        {
-            playerSlingshot.slingshotLinesEnum = SlingshotLinesEnum.passive;
-        }
-    }
+    //public void SetSlingshotForFeedback(bool enabled)
+    //{
+        
+    //    //if (enabled)
+    //    //{
+    //    //    playerSlingshot.GetComponent<Slingshot>().slingshotLinesEnum = SlingshotLinesEnum.hidden;
+    //    //}
+    //    //else
+    //    //{
+    //    //    playerSlingshot.GetComponent<Slingshot>().slingshotLinesEnum = SlingshotLinesEnum.passive;
+    //    //}
+    //}
     public void LoadAudioClip(int index)
     {
         audioSource.clip = trialList.audioClips[index];

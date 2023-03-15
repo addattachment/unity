@@ -34,6 +34,7 @@ public class PostTrialState : StateMachine
         }
         if (state.gameManager.isTutorial & state.gameManager.mustGiveFeedback)
         {
+            state.gameManager.mustGiveFeedback = false;
             state.SwitchState(state.preTrialState);
         }
     }

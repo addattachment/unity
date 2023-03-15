@@ -9,7 +9,7 @@
 
     public override void ExitState(CaregiverStateManager state)
     {
-        state.caregiverFeedback.SetSlingshotForFeedback(false);
+        //state.caregiverFeedback.SetSlingshotForFeedback(false);
         state.lightingMgr.envLight.EnableSunlight(true);
         state.lightingMgr.caregiverLight.EnableLight(false);
         state.caregiverFeedbackScreen.SetActive(false);

@@ -9,6 +9,8 @@ using UnityEngine;
 /// </summary>
 public class TrialState : StateMachine
 {
+
+    private bool isLowering = false;
     /// <summary>
     /// 
     /// </summary>
@@ -16,7 +18,7 @@ public class TrialState : StateMachine
     public override void EnterState(TrialStateManager state)
     {
 
-        Debug.Log("Entering Trial State");
+        //Debug.Log("Entering Trial State");
         state.trialPhase = "TrialState";
         //state.players.PrepNewShootingTurn(state.trialList, state.targets);
         state.gameManager.trialIsRunning = true;
@@ -32,9 +34,19 @@ public class TrialState : StateMachine
         //}
         if (state.gameManager.toPostTrial)
         {
-            state.players.WSUpdateTrialScore();
-            state.SwitchState(state.postTrialState);
+            if (!isLowering)
+            {
+                state.players.WSUpdateTrialScore();
+                state.players.MakeSlingshotsAppear(false);
+                isLowering = true;
+            }
+            if (state.players.AreSlingshotsLow())
+            {
+                isLowering = false;
+                state.SwitchState(state.postTrialState);
+            }
         }
+
     }
 
     public override void ExitState(TrialStateManager state)

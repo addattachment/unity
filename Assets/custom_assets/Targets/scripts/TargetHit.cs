@@ -8,6 +8,10 @@ public class TargetHit : MonoBehaviour
     [SerializeField] private Color baseColor;
     [SerializeField] private float emissionMaxIntensity = 10.0f;
     [SerializeField] private float emissionMinIntensity = 3.0f;
+
+    [SerializeField] private GameObject HitParticle;
+    [SerializeField] private GameObject missParticle;
+
     private void Start()
     {
         baseColor = GetComponent<Renderer>().material.GetColor("_BaseColor");
@@ -37,4 +41,19 @@ public class TargetHit : MonoBehaviour
     {
         GetComponent<Renderer>().material.SetColor("_EmissionColor", _color);
     }
+
+    public void SpawnHit()
+    {
+        GameObject hit = Instantiate(HitParticle, transform);
+        hit.transform.LookAt(Camera.main.transform);
+    }
+
+    public void SpawnMiss()
+    {
+        GameObject miss = Instantiate(missParticle, transform);
+        miss.transform.LookAt(Camera.main.transform);
+        Destroy(miss, 1.0f);
+    }
+
+
 }

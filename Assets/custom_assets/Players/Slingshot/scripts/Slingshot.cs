@@ -20,35 +20,38 @@ public class Slingshot : MonoBehaviour
     public PlayerScore playerScore;
     [SerializeField] private GameObject Ball;
     public GameObject InstBall;
-    //[SerializeField] private GameObject BallPrefab;
     [Header("slingshot machine anchor points")]
     [SerializeField] private GameObject LeftSide;
     [SerializeField] private GameObject RightSide;
     [SerializeField] private GameObject Hook;
+    public GameObject _fakeBallStartPointDebug;// = new Vector3(-1, 1.4f, 0);
+
     private Vector3 slingshotPocketToBallDistance;
     private LineRenderer Line;
 
     [Header("Shooting parameters")]
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
+    private GameObject hitTarget; // we use the hittarget object to adapt the deflection distance
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [SerializeField, Tooltip("how much may the drawing hook differ from the perfect hook to guide a ball to hit")] private float minGuidanceDist = 0.9f;
     [Header("debug")]
-    [SerializeField] private DebugConnection debug_text;
+    //[SerializeField] private DebugConnection debug_text;
     [SerializeField] private Toggle toggle_may; //temp
     [SerializeField] private Toggle toggle_must; //temp
     [SerializeField] private Toggle toggle_musnt; //temp
     [SerializeField] private Toggle toggle_prefmust; //temp
     [SerializeField] private Toggle toggle_mayNPC; //temp
     public SlingshotLinesEnum slingshotLinesEnum = SlingshotLinesEnum.active;
-
+    private TrajectoryManager trajectoryManager;
     void Start()
     {
         Line = GetComponent<LineRenderer>();
         Line.positionCount = 3;
         slingshotPocketToBallDistance = Ball.transform.localScale;
         reachTarget = ReachTargetEnum.may;
-        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
+        //debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
+        trajectoryManager = TrajectoryManager.Instance;
     }
 
     void Update()
@@ -148,7 +151,7 @@ public class Slingshot : MonoBehaviour
     /// <param name="origin"></param>
     /// <param name="hitTargetLoc"></param>
     /// <returns></returns>
-    public Vector3 CalcLaunchVelocity(Vector3 origin, Vector3 hitTargetLoc = default)
+    public Vector3 CalcLaunchVelocity(Vector3 origin, Vector3 hitTargetLoc = default, ReachTargetEnum reachTarget = ReachTargetEnum.may)
     {
         Vector3 _ballPos = origin;
         Vector3 _hookPos = Hook.transform.position;
@@ -167,45 +170,44 @@ public class Slingshot : MonoBehaviour
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??
-                _launchForce -= (Physics.gravity * 0.5f);
+                _launchForce -= (Physics.gravity * 0.25f);
                 return _launchForce;
             case ReachTargetEnum.preferredMust:
                 Vector3 _mayDir = _hookPos - _ballPos;
                 _mayDir = _mayDir.normalized;
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
-                debug_text.SetDebugText("mayDir " + _mayDir);
-                debug_text.SetDebugText("shouldDir " + _direction);
+                //Debug.Log("mayDir " + _mayDir);
+                //Debug.Log("shouldDir " + _direction);
                 float projection_magnitude = Vector3.Project(_mayDir, _direction).magnitude;
-                debug_text.SetDebugText("projmagn " + projection_magnitude);
-                Debug.Log("projection magnitude " + projection_magnitude);
+                //Debug.Log("projmagn " + projection_magnitude);
+                Vector3 prefMustLaunchForce = (_direction * launchForceMultiplier) - (Physics.gravity * 0.25f);
+                Vector3 mayLaunchForce = _mayDir * launchForceMultiplier;
                 if (projection_magnitude >= minGuidanceDist)
                 {
-                    _launchForce = _direction * launchForceMultiplier;
-                    //compensate for gravity TODO seems correct, BUT WHY??
-                    _launchForce -= (Physics.gravity * 0.25f);
+                    _launchForce = prefMustLaunchForce;
                 }
                 else
                 {
-                    _launchForce = _mayDir * launchForceMultiplier;
+                    _launchForce = mayLaunchForce;
                 }
                 return _launchForce;
             case ReachTargetEnum.musnt:
                 // first we calculate the mustreachforce & mayreachforce
                 // if they are too close to each other, we alter the forceVector away from the mayreachforce vector
                 //mayreachForce
-                var _mayReachForce = (_hookPos - _ballPos).normalized * launchForceMultiplier;
+                var _mayReachForce = (_hookPos - _ballPos).normalized * launchForceMultiplier - (Physics.gravity * 0.25f); //TODO moet ik geen zwaartekracht in rekening brengen?
                 //mustReachForce
                 var _mustReachForce = (hitTargetLoc - _ballPos).normalized * launchForceMultiplier - (Physics.gravity * 0.25f);
                 float diff = Vector3.Distance(_mayReachForce, _mustReachForce); // we 'abuse' the distance calculation to see whether the vectors are close to each others
                 _launchForce = _mayReachForce;
                 if (diff <= minDeflectionDist)
                 {
-                    //check for each vector if we want to add or subtract a diff! 
-                    // check for x which is the largest and make sure the deflectionVector enlarges the distance between the two points
+                    //NOT DOING check for each vector if we want to add or subtract a diff! 
+                    // check for y which is the largest and make sure the deflectionVector enlarges the distance between the two points
                     //minimum distance to move for y, as this is the least distinguisishable in any case
                     var _y_displ_dir = _launchForce.y >= _mustReachForce.y ? 1 : -1;
-                    var _min_y_displ = Mathf.Sqrt(Mathf.Pow(minDeflectionDist, 2) - Mathf.Pow(Mathf.Abs(_launchForce.x - _mustReachForce.x), 2));
+                    var _min_y_displ = Mathf.Sqrt(Mathf.Pow(minDeflectionDist, 2) - Mathf.Pow(Mathf.Abs(_launchForce.y - _mustReachForce.y), 2));
                     var _move_y = Random.Range(_min_y_displ, _min_y_displ + 0.4f) * _y_displ_dir;
                     Vector3 deflectionVector = new(0, _move_y);
                     _launchForce += deflectionVector;
@@ -233,10 +235,13 @@ public class Slingshot : MonoBehaviour
 
     public Ball PrepNewBall(TargetGroup targets)
     {
-        InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, this.transform);
-        InstBall.GetComponent<Renderer>().material = targets.hitTarget.GetComponent<Renderer>().material;
-        InstBall.GetComponent<TrailRenderer>().material.color = targets.hitTarget.GetComponent<Renderer>().material.color;
+        hitTarget = targets.hitTarget;
+        InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, transform);
+        InstBall.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;
+        InstBall.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
         player.instBall = InstBall;
+        //update deflection distance
+        minDeflectionDist = hitTarget.transform.localScale.x * 2.0f;
         return InstBall.GetComponent<Ball>();
     }
 

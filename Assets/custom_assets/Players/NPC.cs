@@ -25,7 +25,7 @@ class NPC : MonoBehaviour
         float wait_time = Random.Range(0.2f, 1.5f);
         ballScript.ballIsGrabbed = true;
         yield return new WaitForSeconds(wait_time);
-        ballScript.FakeLaunch(ballScript._fakeBallStartPointDebug + player.slingshot.transform.position);
+        ballScript.FakeLaunch(ballScript.slingShot._fakeBallStartPointDebug.transform.position);
     }
     /// <summary>
     /// DirectShootBall needs to be used when shooting the ball via animation. We wait until a bool is set true and shoot the ball
@@ -44,6 +44,8 @@ class NPC : MonoBehaviour
 
         gameManager.NPCShootsBall = false;
         ballScript.FakeLaunch(ball.transform.position);
+        //ballScript.FakeLaunch(ballScript.slingShot._fakeBallStartPointDebug.transform.position);
+
     }
 }
 

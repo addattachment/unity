@@ -17,6 +17,7 @@ public class PreTrialState : StateMachine
         state.ballStates.SwitchState(state.ballStates.ballInitState);
         state.ballStates.isGoodTrial = state.trialList.GetCurrentTrial().IsGoodTrial();
         state.gameManager.trophyMayAppear = true;
+        state.players.MakeSlingshotsAppear(true);
     }
 
 

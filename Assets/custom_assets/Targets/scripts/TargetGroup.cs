@@ -10,17 +10,10 @@ public class TargetGroup : MonoBehaviour
     public Vector3 rotationVector = new(0, 0, 0.4f);
     public float xMinBorder = -6.0f;
     public float xMaxBorder = 6.0f;
-    [SerializeField] private float xMinSpeed = 1.0f;
-    [SerializeField] private float xMaxSpeed = 10.0f;
+    [SerializeField] private float minSpeed = 1.0f;
+    [SerializeField] private float maxSpeed = 10.0f;
     public float yMinBorder = 1.0f;
     public float yMaxBorder = 6.0f;
-    [SerializeField] private float yMinSpeed = 1.0f;
-    [SerializeField] private float yMaxSpeed = 5.0f;
-
-    [HideInInspector] public float minBorder;
-    [HideInInspector] public float maxBorder;
-    [HideInInspector] public float minSpeed;
-    [HideInInspector] public float maxSpeed;
     public GameObject[] targetList;
     public GameObject hitTarget;
     public bool readyForHit = false;
@@ -34,6 +27,7 @@ public class TargetGroup : MonoBehaviour
         rotationVector = ((float)Random.Range(0, 2) * 2 - 1) * rotationVector;
         hitTarget = targetList[0]; // random starting point
         SetAngle();
+        UpdateAllTranslateValues();
     }
 
     // Update is called once per frame
@@ -49,6 +43,7 @@ public class TargetGroup : MonoBehaviour
             GameObject NewHitTarget = targetList[Random.Range(0, targetList.Length)];
             foreach (GameObject target in targetList)
             {
+                target.GetComponentInChildren<TargetTrigger>().ResetTrigger();
                 //choose the new targets
                 if (target == NewHitTarget)
                 {
@@ -75,20 +70,28 @@ public class TargetGroup : MonoBehaviour
     {
         //give each targets the same new angle to start moving
         translateAngle = (Random.Range(0.0f, 1.0f) > 0.5f) ? EnumAngle.horizontal : EnumAngle.vertical;
-        switch (translateAngle)
+        //switch (translateAngle)
+        //{
+        //    case EnumAngle.horizontal:
+        //        minBorder = xMinBorder;
+        //        maxBorder = xMaxBorder;
+        //        minSpeed = xMinSpeed;
+        //        maxSpeed = xMaxSpeed;
+        //        break;
+        //    case EnumAngle.vertical:
+        //        minBorder = yMinBorder;
+        //        maxBorder = yMaxBorder;
+        //        minSpeed = yMinSpeed;
+        //        maxSpeed = yMaxSpeed;
+        //        break;
+        //}
+    }
+
+    public void UpdateAllTranslateValues()
+    {
+        foreach (GameObject target in targetList)
         {
-            case EnumAngle.horizontal:
-                minBorder = xMinBorder;
-                maxBorder = xMaxBorder;
-                minSpeed = xMinSpeed;
-                maxSpeed = xMaxSpeed;
-                break;
-            case EnumAngle.vertical:
-                minBorder = yMinBorder;
-                maxBorder = yMaxBorder;
-                minSpeed = yMinSpeed;
-                maxSpeed = yMaxSpeed;
-                break;
+            target.GetComponent<TargetTranslate>().UpdateTranslateSettings(movementMode, translateAngle, xMinBorder, xMaxBorder, yMinBorder, yMaxBorder, transform.position);
         }
     }
     public void SetAllNewTranslateValues()
@@ -96,8 +99,9 @@ public class TargetGroup : MonoBehaviour
         SetAngle();
         foreach (GameObject target in targetList)
         {
-            target.GetComponent<TargetTranslate>().SetNewStartingValues();
+            target.GetComponent<TargetTranslate>().SetNewStartingValues(minSpeed, maxSpeed);
         }
+        UpdateAllTranslateValues();
         StartAllTargets();
     }
 
@@ -105,13 +109,15 @@ public class TargetGroup : MonoBehaviour
     {
         foreach (GameObject target in targetList)
         {
-            target.GetComponent<TargetTranslate>().movementSpeed = 0.0f;
+            //target.GetComponent<TargetTranslate>().movementSpeed = 0.0f;
+            target.GetComponent<Rigidbody>().isKinematic = true;
         }
-    }   
+    }
     public void StartAllTargets()
     {
         foreach (GameObject target in targetList)
         {
+            target.GetComponent<Rigidbody>().isKinematic = false;
             target.GetComponent<TargetTranslate>().StartMovement();
         }
     }

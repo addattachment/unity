@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1001177429090512256}
-  - component: {fileID: 4120706333255849238}
   - component: {fileID: 1001177429090512263}
   m_Layer: 0
   m_Name: WsClient
@@ -33,21 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4120706333255849238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001177429090512262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6639584cf19888a4d9033bb062c4e974, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  debug: {fileID: 0}
-  testDebug: 0
-  debugMessageTime: 10
 --- !u!114 &1001177429090512263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,7 +48,6 @@ MonoBehaviour:
   hasWsConnection: 0
   ip: 192.168.50.188
   port: 8081
-  wsToDebug: {fileID: 0}
   playerVals:
     name: 
     height: 0

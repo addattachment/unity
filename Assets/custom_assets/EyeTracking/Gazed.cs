@@ -24,7 +24,7 @@ public class GazeEvent
 public class Gazed : MonoBehaviour, IGazeFocusable
 {
     [SerializeField, Tooltip("either caregiver or NPC")] private string objectName = "caregiver"; // or "NPC"
-    [SerializeField] private DebugConnection debug_text;
+    //[SerializeField] private DebugConnection debug_text;
     [SerializeField] private WsClient ws;
     [SerializeField] private GameManager gameManager;
     private GazeEvent gazeEvent;
@@ -43,8 +43,8 @@ public class Gazed : MonoBehaviour, IGazeFocusable
     // Start is called before the first frame update
     void Start()
     {
-        debug_text = GameObject.FindGameObjectWithTag("debug")
-                       .GetComponentInChildren<DebugConnection>();
+        //debug_text = GameObject.FindGameObjectWithTag("debug")
+        //               .GetComponentInChildren<DebugConnection>();
         gazeEvent = new(objectName);
     }
 

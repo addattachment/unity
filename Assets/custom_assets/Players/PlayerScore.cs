@@ -19,8 +19,8 @@ public class PlayerScore : MonoBehaviour
     [SerializeField] private OutletPassThrough lsl;
     private PlayerBallScoreEvent playerBallScoreEvent;
 
-    [Header("debug")]
-    [SerializeField] private DebugConnection debug_text;
+    //[Header("debug")]
+    //[SerializeField] private DebugConnection debug_text;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +28,7 @@ public class PlayerScore : MonoBehaviour
         player = GetComponentInParent<Player>();
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
-        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
+        //debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
         scoreDots = GetComponentsInChildren<ScoreDot>();

@@ -28,6 +28,7 @@ public class BallStateManager : MonoBehaviour
 
     // ballPhase is for debugging purposes
     public string ballPhase = "ballInitState";
+    [SerializeField] private bool sendStateWSMessage = false;
 
     [Header("data connections")]
     [SerializeField] private WsClient ws;
@@ -50,8 +51,11 @@ public class BallStateManager : MonoBehaviour
     {
         currentBallState.ExitState(this);
         currentBallState = newState;
-        ballStateMgrEvent.Set(newState.ToString());
-        ws.SendWSMessage(ballStateMgrEvent.SaveToString());
+        if (sendStateWSMessage)
+        {
+            ballStateMgrEvent.Set(newState.ToString());
+            ws.SendWSMessage(ballStateMgrEvent.SaveToString());
+        }
         currentBallState.EnterState(this);
     }
 }

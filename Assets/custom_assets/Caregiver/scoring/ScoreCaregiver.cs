@@ -23,14 +23,14 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private WsClient ws;
     private CaregiverScoreEvent caregiverScoreEvent;
     //TESTING
-    [SerializeField] private DebugConnection debug_text;
+    //[SerializeField] private DebugConnection debug_text;
     private Vector3 startPosMeCircle;
     private Vector3 startPosCaregiverCircle;
     // Start is called before the first frame update
     void Start()
     {
-        debug_text = GameObject.FindGameObjectWithTag("debug")
-                       .GetComponentInChildren<DebugConnection>();
+        //debug_text = GameObject.FindGameObjectWithTag("debug")
+        //               .GetComponentInChildren<DebugConnection>();
         ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
         appear = GetComponent<Appear>();
         startPosMeCircle = meCircle.transform.position;
@@ -64,7 +64,7 @@ public class ScoreCaregiver : MonoBehaviour
         else
         {
             ChangeToGreen();
-            debug_text.SetDebugText("distance is: " + DistanceBetweenCircles());
+            //debug_text.SetDebugText("distance is: " + DistanceBetweenCircles());
             scoringStarted = true;
         }
     }
@@ -84,7 +84,7 @@ public class ScoreCaregiver : MonoBehaviour
     {
         //TODO numbering not good, I think we need a non-linear scale?
         int caregiverScore = (int)(10*(maxDistance - controllerDist) / maxDistance);
-        debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
+        //debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
         caregiverScoreEvent.Set(trialIndex, caregiverScore);
         ws.SendWSMessage(caregiverScoreEvent.SaveToString());
     }

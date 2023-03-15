@@ -45,8 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  players: {fileID: 0}
+  player: {fileID: 0}
   caregiverFeedback: {fileID: 0}
   feedbackPole: {fileID: 0}
+  caregiverGaze: {fileID: 0}
   caregiverFeedbackScreen: {fileID: 0}
   scoreCaregiver: {fileID: 0}
   lightingMgr: {fileID: 0}

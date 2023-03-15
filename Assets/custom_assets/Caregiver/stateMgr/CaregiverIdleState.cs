@@ -18,6 +18,14 @@
             state.gameManager.mustGiveFeedback = false;
             state.SwitchState(state.caregiverFeedbackState);
         }
+        if (state.players.activeParticipant == state.player && state.gameManager.trialIsRunning)
+        {
+            state.caregiverGaze.SetGaze(state.player.instBall);
+        }
+        else
+        {
+            state.caregiverGaze.ClearGaze();
+        }
     }
 }
 

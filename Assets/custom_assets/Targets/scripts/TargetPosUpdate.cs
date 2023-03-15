@@ -5,16 +5,15 @@ using UnityEngine;
 /// </summary>
 public class TargetPosUpdate : MonoBehaviour
 {
-    [SerializeField] TargetGroup targetGroup;
     TargetTranslate targetTranslate;
 
     private Vector3 rotationVector;
+    private float maxBorder;
+    private float minBorder;
 
     // Start is called before the first frame update
     void Start()
     {
-        targetGroup = GetComponentInParent<TargetGroup>();
-        rotationVector = targetGroup.GetComponent<TargetGroup>().rotationVector;
         targetTranslate = GetComponent<TargetTranslate>();
     }
 
@@ -26,7 +25,7 @@ public class TargetPosUpdate : MonoBehaviour
     public Vector3 GetFuturePositionOfTarget(float time)
     {
         Vector3 result;
-        switch (targetGroup.movementMode)
+        switch (targetTranslate.movementMode)
         {
             case TargetGroup.Mode.rotation:
                 result = GetFutureRotationPos(time);
@@ -50,27 +49,30 @@ public class TargetPosUpdate : MonoBehaviour
         float resultOrientation = 0.0f;  
         float distance_traveled = targetTranslate.movementSpeed * time;
         float transformPos = 0.0f;
-        switch (targetGroup.translateAngle)
+        switch (targetTranslate.translateAngle)
         {
             case EnumAngle.horizontal:
                 transformPos = transform.position.x;
                 resultOrientation = transform.position.x;
+                minBorder = targetTranslate.xMinBorder;
+                maxBorder = targetTranslate.xMaxBorder;
                 break;
             case EnumAngle.vertical:
                 transformPos = transform.position.y;
                 resultOrientation = transform.position.y;
+                minBorder = targetTranslate.yMinBorder;
+                maxBorder = targetTranslate.yMaxBorder;
                 break;
         }
-        Debug.Log("distance to travel " + distance_traveled);
         switch (targetTranslate.direction)
         {
             case EnumDirection.forward:
-                if ((transformPos + distance_traveled) > targetGroup.maxBorder)
+                if ((transformPos + distance_traveled) > maxBorder)
                 {
                     //first we calculate how much we'd be going to far
-                    distance_traveled -= (targetGroup.maxBorder - transformPos);
+                    distance_traveled -= (maxBorder - transformPos);
                     // to use this renewed distance going 'back' from the border
-                    resultOrientation = targetGroup.maxBorder - distance_traveled;
+                    resultOrientation = maxBorder - distance_traveled;
                 }
                 else
                 {
@@ -79,12 +81,12 @@ public class TargetPosUpdate : MonoBehaviour
                 }
                 break;
             case EnumDirection.backward:
-                if ((transformPos - distance_traveled) < targetGroup.minBorder)
+                if ((transformPos - distance_traveled) < minBorder)
                 {
                     //first we calculate how much we'd be going to far
-                    distance_traveled -= (transformPos - targetGroup.minBorder);
+                    distance_traveled -= (transformPos - minBorder);
                     // to use this renewed distance going 'back' from the border
-                    resultOrientation = targetGroup.minBorder + distance_traveled;
+                    resultOrientation = minBorder + distance_traveled;
                 }
                 else
                 {
@@ -93,7 +95,7 @@ public class TargetPosUpdate : MonoBehaviour
                 }
                 break;
         }
-        switch (targetGroup.translateAngle)
+        switch (targetTranslate.translateAngle)
         {
             case EnumAngle.horizontal:
                 result.x = resultOrientation;
@@ -107,7 +109,7 @@ public class TargetPosUpdate : MonoBehaviour
     private Vector3 GetFutureRotationPos(float time)
     {
         var angle = time * rotationVector;
-        var resultingPos = RotatePointAroundPivot(this.transform.position, targetGroup.transform.position, angle);
+        var resultingPos = RotatePointAroundPivot(transform.position, targetTranslate.TargetGroupPivotPoint, angle);
         //Debug.Log(resultingPos);
         return resultingPos;
     }

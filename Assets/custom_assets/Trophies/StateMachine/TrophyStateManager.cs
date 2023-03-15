@@ -18,6 +18,9 @@ public class TrophyStateManager : MonoBehaviour
     public TargetGroup targets;
     public TrophyList trophyList;
     public LightingMgr lightMgr;
+    public announceWinner winnerUI;
+
+    [SerializeField] private bool sendStateWSMessage = false;
 
     [Header("data connections")]
     [SerializeField] private WsClient ws;
@@ -45,8 +48,11 @@ public class TrophyStateManager : MonoBehaviour
     {
         currentTrophyState.ExitState(this);
         currentTrophyState = newState;
-        trophyStateMgrEvent.Set(newState.ToString());
-        ws.SendWSMessage(trophyStateMgrEvent.SaveToString());
+        if (sendStateWSMessage)
+        {
+            trophyStateMgrEvent.Set(newState.ToString());
+            ws.SendWSMessage(trophyStateMgrEvent.SaveToString());
+        }
         currentTrophyState.EnterState(this);
     }
 }

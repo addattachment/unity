@@ -3,7 +3,10 @@ using UnityEngine;
 
 public class Appear : MonoBehaviour
 {
-    [SerializeField] private float Height;
+    [SerializeField] private float maxHeight;
+    [SerializeField] private float minHeight = 0.0f;
+    [SerializeField] private float duration = 1.0f;
+
     //TEST bools
     public bool RaiseFeedback = false;
     public bool LowerFeedback = false;
@@ -45,7 +48,7 @@ public class Appear : MonoBehaviour
 
     public void Raise()
     {
-        upHash = iTween.Hash("y", Height, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", false);
+        upHash = iTween.Hash("y", maxHeight, "easeType", "easeInOutExpo", "loopType", "None", "time", duration, "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", false);
         iTween.MoveTo(gameObject, upHash);
     }
     public void Raise(TestDelegate method)
@@ -56,7 +59,7 @@ public class Appear : MonoBehaviour
     }
     public void Lower()
     {
-        downHash = iTween.Hash("y", 0.0f, "easeType", "easeInOutExpo", "loopType", "None", "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", true);
+        downHash = iTween.Hash("y", minHeight, "easeType", "easeInOutExpo", "loopType", "None", "time", duration, "delay", .1, "oncomplete", "SetIsLow", "oncompleteparams", true);
         iTween.MoveTo(gameObject, downHash);
     }
 

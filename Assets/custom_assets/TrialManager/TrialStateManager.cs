@@ -22,7 +22,7 @@ public class TrialStateManager : MonoBehaviour
 
     // trialPhase is for debugging purposes
     public string trialPhase = "IntroState";
-
+    [SerializeField] private bool sendStateWSMessage = false;
     [Header("data connections")]
     [SerializeField] private WsClient ws;
     StateMgrEvent trialStateMgrEvent;
@@ -50,8 +50,11 @@ public class TrialStateManager : MonoBehaviour
     {
         currentState.ExitState(this);
         currentState = newState;
-        trialStateMgrEvent.Set(newState.ToString());
-        ws.SendWSMessage(trialStateMgrEvent.SaveToString());
+        if (sendStateWSMessage)
+        {
+            trialStateMgrEvent.Set(newState.ToString());
+            ws.SendWSMessage(trialStateMgrEvent.SaveToString());
+        }
         currentState.EnterState(this);
     }
 }

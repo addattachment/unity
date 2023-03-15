@@ -21,7 +21,6 @@ public class Player : MonoBehaviour
     public GameObject trophySpawnLocation;
     public List<GameObject> trophyWonList;
     public GameObject instBall;
-
     public void SetActive(bool active)
     {
         isActivePlayer = active;

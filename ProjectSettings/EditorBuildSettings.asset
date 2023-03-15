@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/TutShootingScene.unity
     guid: a24e5b155eb66f64db4500dc94c53073
   - enabled: 1
-    path: Assets/Scenes/Basescene.unity
+    path: Assets/Scenes/Basescene_counter.unity
     guid: d83c62f3a69856347bca838ed36bcf12
+  - enabled: 0
+    path: Assets/Scenes/TestScene.unity
+    guid: 211bb2f037c3ee24db318b81bd36b53c
   m_configObjects:
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: 43b68908c2846c845859bcae343f210b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3d6b10a16b01aa945a37b35958f94615, type: 2}

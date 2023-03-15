@@ -12,7 +12,7 @@ public class CountDown : MonoBehaviour
     [SerializeField] private bool testCountDown = false;
     private bool loaded = false;
     public bool countDownFinished = false;
-
+    [SerializeField] private Light spotLight;
     void LoadNumbers()
     {
         numbers = new List<GameObject>(Resources.LoadAll<GameObject>(numbers_directory));
@@ -37,6 +37,7 @@ public class CountDown : MonoBehaviour
         {
             LoadNumbers();
         }
+        spotLight.enabled = true;
         countDownFinished = false;
         StartCoroutine(LaunchNumber(numbers));
         Debug.Log("Finished countdown");
@@ -47,6 +48,7 @@ public class CountDown : MonoBehaviour
         {
             yield return StartCoroutine(ShowCountdownNumber(number, 1.0f));
         }
+        spotLight.enabled = false;
         countDownFinished = true;
     }
     private IEnumerator ShowCountdownNumber(GameObject number, float delay)

@@ -10,7 +10,6 @@ public class PlayerGroup : MonoBehaviour
     public Player activeParticipant;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private bool switchPlayer = false;
-    [SerializeField] private DebugConnection debug_text;
 
     [SerializeField] private List<Player> players;
 
@@ -18,10 +17,10 @@ public class PlayerGroup : MonoBehaviour
     [SerializeField] private WsClient ws;
     [SerializeField] private OutletPassThrough lsl;
     private PlayersScoreEvent playersScoreEvent = new();
-
+    public GameObject PlayerInvisibleWall;
+    public GameObject NPCInvisibleWall;
     void Start()
     {
-        debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         gameManager = GameManager.Instance;
         if (player != null)
         {
@@ -67,9 +66,22 @@ public class PlayerGroup : MonoBehaviour
         }
         else
         {
-            debug_text.SetDebugText("player " + player.score + " NPC " + NPC.score);
-            Player winner = player.score > NPC.score ? player : NPC;
-            return winner;
+            if(NPC.score > player.score)
+            {
+                return NPC;
+            }
+            else
+            {
+                if(player.score > NPC.score)
+                {
+                    return player;
+                }
+                else
+                {
+                    //ex-aequo
+                    return null;
+                }
+            }
         }
     }
 
@@ -99,6 +111,7 @@ public class PlayerGroup : MonoBehaviour
         {
             activeParticipant.SetActive(true);
         }
+        SetInvisibleWallToActivePlayer();
     }
 
     /// <summary>
@@ -119,8 +132,50 @@ public class PlayerGroup : MonoBehaviour
         // then we set the player active, this way we don't have to care about the length of ptcpts ranging from 1 to ...
         player.SetActive(true);
         activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
+        SetInvisibleWallToActivePlayer();
     }
 
+    public void SetInvisibleWallToActivePlayer()
+    {
+        if (activeParticipant == player)
+        {
+            PlayerInvisibleWall.SetActive(true);
+            NPCInvisibleWall.SetActive(false);
+        }
+        else
+        {
+            PlayerInvisibleWall.SetActive(false);
+            NPCInvisibleWall.SetActive(true);
+        }
+    }
+
+    public void MakeSlingshotsAppear(bool enabled)
+    {
+        foreach (Player x in players)
+        {
+            if (enabled)
+            {
+                x.slingshot.GetComponent<Appear>().Raise();
+            }
+            else
+            {
+                x.slingshot.GetComponent<Appear>().Lower();
+            }
+        }
+    }
+
+    public bool AreSlingshotsLow()
+    {
+        foreach (Player x in players)
+        {
+            if (!x.slingshot.GetComponent<Appear>().isLow)
+            {
+                // if one of both slingshots isn't low, return false
+                return false;
+            }            
+        }
+        return true;
+    }
     public void WSUpdateTrialScore()
     {
         if (!gameManager.isTutorial)
@@ -141,8 +196,6 @@ public class PlayerGroup : MonoBehaviour
     /// <param name="slingshot"></param>
     public void SetPlayerScoringChance(Slingshot slingshot, bool isGoodTrial)//Trial currentTrial)
     {
-        //set Seed
-        Random.InitState(System.DateTime.Now.Millisecond);
         //Chance setting
         float guess = Random.Range(0.0f, 1.0f);
         //Trial currentTrial = trialList.GetCurrentTrial();
@@ -155,7 +208,7 @@ public class PlayerGroup : MonoBehaviour
         {
             if (gameManager.isTutorial)
             {
-                if (guess >= 0.5f)
+                if (guess >= 0.3f)
                 {
                     reachChance = ReachTargetEnum.preferredMust;
                 }

@@ -9,9 +9,12 @@ public class CaregiverStateManager : MonoBehaviour
     public CaregiverScoringState caregiverScoringState = new();
     // script references
     public GameManager gameManager;
+    public PlayerGroup players;
+    public Player player;
 
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
     public ReadFeedback feedbackPole;
+    public SetCaregiverGaze caregiverGaze;
     public GameObject caregiverFeedbackScreen;
     public GameObject scoreCaregiver;
     public LightingMgr lightingMgr;

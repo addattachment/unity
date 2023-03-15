@@ -4,7 +4,7 @@
     {
         state.caregiverPhase = "CaregiverFeedbackState";
         state.caregiverFeedbackScreen.SetActive(true);
-        state.caregiverFeedback.SetSlingshotForFeedback(true);
+        //state.caregiverFeedback.SetSlingshotForFeedback(true);
         state.lightingMgr.envLight.EnableSunlight(false);
         state.lightingMgr.caregiverLight.EnableLight(true);
         state.caregiverFeedback.GiveFeedback();

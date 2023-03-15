@@ -15,13 +15,7 @@ public class SwitchScene : MonoBehaviour
 
     private void Start()
     {
-        if (!gameManager.isTutorial)
-        {
-            foreach(GameObject _obj in hideObjectWhenNotNeeded)
-            {
-                _obj.GetComponent<Renderer>().enabled = false;
-            }
-        }
+
     }
 
     private void OnTriggerEnter(Collider other)

@@ -8,14 +8,13 @@ public class DebugConnection : MonoBehaviour
     [SerializeField] private TMP_Text debug;
     [SerializeField] bool testDebug = false;
 
-    private List<string> debug_array;
+    private List<string> debug_array = new();
     private int debug_arr_max_len = 8;
 
     // Use this for initialization
     void Start()
     {
         debug = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<TMPro.TMP_Text>();
-        debug_array = new();
     }
 
     // Update is called once per frame

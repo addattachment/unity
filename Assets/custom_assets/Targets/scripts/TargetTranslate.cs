@@ -7,17 +7,24 @@ using Random = UnityEngine.Random;
 public class TargetTranslate : MonoBehaviour
 {
     [Range(0.0f, 10.0f)] public float movementSpeed = 0.5f;
-    private Vector3 movementVector;
+    [SerializeField] private Vector3 movementVector;
 
 
     public EnumDirection direction = EnumDirection.forward;
-    [SerializeField] private TargetGroup targetGroup;
+    //[SerializeField] private TargetGroup targetGroup;
+    public EnumAngle translateAngle;
+    public float xMaxBorder;
+    public float xMinBorder;
+    public float yMaxBorder;
+    public float yMinBorder;
+    public TargetGroup.Mode movementMode;
+    public Vector3 TargetGroupPivotPoint;
+
     private bool dirHasChanged = false;
     //[SerializeField] private Vector3 velocityVector;
     // Start is called before the first frame update
     void Start()
     {
-        targetGroup = GetComponentInParent<TargetGroup>();
         movementVector = new();
     }
 
@@ -34,9 +41,21 @@ public class TargetTranslate : MonoBehaviour
 
     }
 
+
+    public void UpdateTranslateSettings(TargetGroup.Mode movement, EnumAngle angle, float xMin, float xMax, float yMin, float yMax, Vector3 pivotPoint)
+    {
+        movementMode = movement;
+        translateAngle = angle;
+        xMaxBorder = xMax;
+        yMaxBorder = yMax;
+        xMinBorder = xMin;
+        yMinBorder = yMin;
+        TargetGroupPivotPoint = pivotPoint;
+    }
     public void StartMovement()
     {
-        switch (targetGroup.translateAngle)
+        movementVector = Vector3.zero;
+        switch (translateAngle)
         {
             case EnumAngle.horizontal:
                 movementVector.x = ((int)direction) * movementSpeed;
@@ -46,7 +65,6 @@ public class TargetTranslate : MonoBehaviour
                 break;
         }
         SetMovement();
-        
     }
 
     private void SetMovement()
@@ -57,15 +75,15 @@ public class TargetTranslate : MonoBehaviour
 
     private void UpdatePositions()
     {
-        switch (targetGroup.translateAngle)
+        switch (translateAngle)
         {
             case EnumAngle.horizontal:
-                if (transform.position.x >= targetGroup.maxBorder)
+                if (transform.position.x >= xMaxBorder)
                 {
                     direction = EnumDirection.backward;
                     dirHasChanged = true;
                 }
-                if (transform.position.x <= targetGroup.minBorder)
+                if (transform.position.x <= xMinBorder)
                 {
                     direction = EnumDirection.forward;
                     dirHasChanged = true;
@@ -73,12 +91,12 @@ public class TargetTranslate : MonoBehaviour
                 movementVector.x = ((int)direction) * movementSpeed;
                 break;
             case EnumAngle.vertical:
-                if (transform.position.y >= targetGroup.maxBorder)
+                if (transform.position.y >= yMaxBorder)
                 {
                     direction = EnumDirection.backward;
                     dirHasChanged = true;
                 }
-                if (transform.position.y <= targetGroup.minBorder)
+                if (transform.position.y <= yMinBorder)
                 {
                     direction = EnumDirection.forward;
                     dirHasChanged = true;
@@ -89,28 +107,20 @@ public class TargetTranslate : MonoBehaviour
     }
     public void SetStartingPos()
     {
-        //give each target a random starting point (only change x axis)
+        //give each target a random starting point
         Vector3 currentPos = transform.position;
         Vector3 futurePos = currentPos;
-        //switch (targetGroup.translateAngle)
-        //{
-        //    case EnumAngle.horizontal:
-        //        futurePos.x = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
-        //        break;
-        //    case EnumAngle.vertical:
-        //        futurePos.y = Random.Range(targetGroup.minBorder, targetGroup.maxBorder);
-        //        break;
-        //}
-        futurePos.x = Random.Range(targetGroup.xMinBorder, targetGroup.xMaxBorder);
-        futurePos.y = Random.Range(targetGroup.yMinBorder, targetGroup.yMaxBorder);
+        //Random.InitState((int)DateTime.Now.Ticks);
+        futurePos.x = Random.Range(xMinBorder, xMaxBorder);
+        futurePos.y = Random.Range(yMinBorder, yMaxBorder);
         Hashtable startPosHt = iTween.Hash("position", futurePos, "delay", 0.1f, "time", 1.0f, "easetype", "easeOutBounce");
         iTween.MoveTo(gameObject, startPosHt);
     }
 
-    public void SetNewStartingValues()
+    public void SetNewStartingValues(float minSpeed, float maxSpeed)
     {
         //give each targets a new speed to move
-        movementSpeed = Random.Range(targetGroup.minSpeed, targetGroup.maxSpeed);
+        movementSpeed = Random.Range(minSpeed, maxSpeed);
         //give each targets a new direction to start moving
         direction = (Random.Range(0.0f, 1.0f) > 0.5f) ? EnumDirection.forward : EnumDirection.backward;
     }

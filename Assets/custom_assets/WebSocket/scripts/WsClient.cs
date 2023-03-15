@@ -12,9 +12,9 @@ public class WsClient : MonoBehaviour
     private float timeoutTimer = 0.0f;
     [SerializeField] private string ip = "localhost";
     [SerializeField] private string port = "8080";
-    [SerializeField] private Ws_to_debug wsToDebug;
+    //[SerializeField] private Ws_to_debug wsToDebug;
     public PlayerVals playerVals;
-    
+
     [System.Serializable] public class WsEvent : UnityEvent<string> { }
     public WsEvent wsMsgReceived;
     public class WSHelloworld
@@ -35,7 +35,7 @@ public class WsClient : MonoBehaviour
     private void Start()
     {
         wsHello = new WSHelloworld("Hello from " + ip);
-        wsToDebug = this.GetComponent<Ws_to_debug>();
+        //wsToDebug = this.GetComponent<Ws_to_debug>();
         ws = new WebSocket("ws://" + ip + ":" + port);
         ws.ConnectAsync();
 
@@ -86,7 +86,7 @@ public class WsClient : MonoBehaviour
     private void HandleIncomingMessage(string message)
     {
         //Debug.Log("INVOKING " + message);
-        message = message.Replace("\'","\""); // python websocket uses single quotes?
+        message = message.Replace("\'", "\""); // python websocket uses single quotes?
         WebsocketMessage res = JsonUtility.FromJson<WebsocketMessage>(message);
         switch (res.type)
         {
@@ -94,10 +94,10 @@ public class WsClient : MonoBehaviour
                 SetPlayerValsReady(res.playerValues);
                 break;
             default:
-                wsToDebug.SetDebug("unknown command");
+                Debug.LogWarning("unknown command");
                 break;
         }
-        wsToDebug.SetDebug(message);
+        Debug.Log(message);
         //wsMsgReceived.Invoke(message);
         // TODO
     }
@@ -111,8 +111,8 @@ public class WsClient : MonoBehaviour
     public void SendWSMessage(string message)
     {
         Debug.Log("sending " + message);
-        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
-        int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+        DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)
         {
             ws.Send("time: " + cur_time + ", " + message);
@@ -130,8 +130,9 @@ public class WsClient : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
-        int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+
+        DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+        int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
         SendWSMessage("time: " + cur_time + ", message: Android application is closing ");
         ws.CloseAsync(CloseStatusCode.Normal);
     }
@@ -139,7 +140,8 @@ public class WsClient : MonoBehaviour
 
 }
 [Serializable]
-public class PlayerVals {
+public class PlayerVals
+{
     public string name;
     public int height;
     public string gender;
