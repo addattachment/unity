@@ -32,110 +32,130 @@ extern void CaregiverFeedback_Start_mEFFE0FFAFA00501C13F99DFF402F20A71115C95E (v
 extern void CaregiverFeedback_Update_mC271DB6F9166482344806905FD7B0A7932AC4A20 (void);
 // 0x0000000A System.Void CaregiverFeedback::GiveFeedback()
 extern void CaregiverFeedback_GiveFeedback_mAAAC4CBF5920351054499CBAA24DFB0069DA2943 (void);
-// 0x0000000B System.Void CaregiverFeedback::SetSlingshotForFeedback(System.Boolean)
-extern void CaregiverFeedback_SetSlingshotForFeedback_m581F9205D406A80D7551C4432C799792452C725A (void);
-// 0x0000000C System.Void CaregiverFeedback::LoadAudioClip(System.Int32)
+// 0x0000000B System.Void CaregiverFeedback::LoadAudioClip(System.Int32)
 extern void CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7 (void);
-// 0x0000000D System.Void CaregiverFeedback::.ctor()
+// 0x0000000C System.Void CaregiverFeedback::.ctor()
 extern void CaregiverFeedback__ctor_m822BDDF251D0DE095DB79A6C1F0456ED148F2038 (void);
-// 0x0000000E System.Void LipsyncController::Start()
+// 0x0000000D System.Void CaregiverFeedbackEvent::.ctor()
+extern void CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633 (void);
+// 0x0000000E System.Void CaregiverFeedbackEvent::Set(System.Int32,System.Boolean)
+extern void CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A (void);
+// 0x0000000F System.String CaregiverFeedbackEvent::SaveToString()
+extern void CaregiverFeedbackEvent_SaveToString_m0D85F915EAF874FDB288B9212810D9C9839DDDA9 (void);
+// 0x00000010 System.Void LipsyncController::Start()
 extern void LipsyncController_Start_m19637C5A611835495714C486158BA9423CB619B1 (void);
-// 0x0000000F System.Void LipsyncController::Update()
+// 0x00000011 System.Void LipsyncController::Update()
 extern void LipsyncController_Update_mD40638071A34D083A73F6210123DE47EF9C165F0 (void);
-// 0x00000010 System.Void LipsyncController::ResetMouth()
+// 0x00000012 System.Void LipsyncController::ResetMouth()
 extern void LipsyncController_ResetMouth_m70945C82489ADCE7E0973A96DC10669D5BDA7803 (void);
-// 0x00000011 System.Void LipsyncController::PlaySound(UnityEngine.AudioClip)
+// 0x00000013 System.Void LipsyncController::PlaySound(UnityEngine.AudioClip)
 extern void LipsyncController_PlaySound_m0297EA24CA1A82CBA287656A30199B2AA840A24D (void);
-// 0x00000012 System.Single LipsyncController::MovingAverage(System.Single)
+// 0x00000014 System.Single LipsyncController::MovingAverage(System.Single)
 extern void LipsyncController_MovingAverage_m1150BECD869A1560AB01DF99CFCB218503BEF1CE (void);
-// 0x00000013 System.Single LipsyncController::CalcSpectrum(System.Single,System.Single)
+// 0x00000015 System.Single LipsyncController::CalcSpectrum(System.Single,System.Single)
 extern void LipsyncController_CalcSpectrum_m6DB2B5DD38312732C256290BA6FD46F14F0C9A7F (void);
-// 0x00000014 System.Single LipsyncController::GetRMS(System.Int32)
+// 0x00000016 System.Single LipsyncController::GetRMS(System.Int32)
 extern void LipsyncController_GetRMS_m47585F34BE98BC639440FB1993C203874A8A176A (void);
-// 0x00000015 System.Void LipsyncController::InitBlendShapes()
+// 0x00000017 System.Void LipsyncController::InitBlendShapes()
 extern void LipsyncController_InitBlendShapes_m660D596140FB997F6CDA252870844281B1C90654 (void);
-// 0x00000016 System.Void LipsyncController::UpdateBlendShapes()
+// 0x00000018 System.Void LipsyncController::UpdateBlendShapes()
 extern void LipsyncController_UpdateBlendShapes_m813487F3C652CF6F09BB6A0B3B28D02587BB72F4 (void);
-// 0x00000017 System.Void LipsyncController::UpdateJawBone()
+// 0x00000019 System.Void LipsyncController::UpdateJawBone()
 extern void LipsyncController_UpdateJawBone_mC695C407EFE57D33FF13A30E1DE34DAB5C1B9643 (void);
-// 0x00000018 System.Void LipsyncController::.ctor()
+// 0x0000001A System.Void LipsyncController::.ctor()
 extern void LipsyncController__ctor_mFAD762CA7FD0CB77347C3AD67292EF9B3BC18D6A (void);
-// 0x00000019 System.Void ScoreCaregiver::Start()
+// 0x0000001B System.Void SetCaregiverGaze::Start()
+extern void SetCaregiverGaze_Start_mD049FB615476B09A936137790221715718F9032F (void);
+// 0x0000001C System.Void SetCaregiverGaze::Update()
+extern void SetCaregiverGaze_Update_m80912C091A74269F4329BED0E6685ABF02848212 (void);
+// 0x0000001D System.Void SetCaregiverGaze::SetGaze(UnityEngine.GameObject)
+extern void SetCaregiverGaze_SetGaze_m1B9CE51FF0867479C0F48D882A46C8DB525CC29B (void);
+// 0x0000001E System.Void SetCaregiverGaze::ClearGaze()
+extern void SetCaregiverGaze_ClearGaze_mF346C9AF41189A6CFF922B8E0DDEA90A9EA7ACB9 (void);
+// 0x0000001F System.Void SetCaregiverGaze::.ctor()
+extern void SetCaregiverGaze__ctor_m6ADF44C902E24323C9CE3AAF17402BDE4E272A01 (void);
+// 0x00000020 System.Void ScoreCaregiver::Start()
 extern void ScoreCaregiver_Start_mAA2719600CB811139CA59F2D2C525ACB920CF88A (void);
-// 0x0000001A System.Void ScoreCaregiver::EnableScoring()
+// 0x00000021 System.Void ScoreCaregiver::EnableScoring()
 extern void ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2 (void);
-// 0x0000001B System.Void ScoreCaregiver::DisableScoring()
+// 0x00000022 System.Void ScoreCaregiver::DisableScoring()
 extern void ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307 (void);
-// 0x0000001C System.Void ScoreCaregiver::SwitchGripMode()
+// 0x00000023 System.Void ScoreCaregiver::SwitchGripMode()
 extern void ScoreCaregiver_SwitchGripMode_mC8B3F7352672385335743294B3911150663AA9AF (void);
-// 0x0000001D System.Void ScoreCaregiver::FixedUpdate()
+// 0x00000024 System.Void ScoreCaregiver::FixedUpdate()
 extern void ScoreCaregiver_FixedUpdate_mFB4865FC2FB3BC0ADFFC2D5D383BB71B5ED65ACF (void);
-// 0x0000001E System.Void ScoreCaregiver::SendScore(System.Int32)
+// 0x00000025 System.Void ScoreCaregiver::SendScore(System.Int32)
 extern void ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49 (void);
-// 0x0000001F System.Void ScoreCaregiver::CalcDistanceBetweenControllers()
+// 0x00000026 System.Void ScoreCaregiver::CalcDistanceBetweenControllers()
 extern void ScoreCaregiver_CalcDistanceBetweenControllers_mBD1B42B4EF448F89BCE8BEC4662AFAAE41A3FD63 (void);
-// 0x00000020 System.Single ScoreCaregiver::DistanceBetweenCircles()
+// 0x00000027 System.Single ScoreCaregiver::DistanceBetweenCircles()
 extern void ScoreCaregiver_DistanceBetweenCircles_mF6893C8918F91DF72AD68D25CC38D98F7D1E3870 (void);
-// 0x00000021 System.Void ScoreCaregiver::MoveCircles()
+// 0x00000028 System.Void ScoreCaregiver::MoveCircles()
 extern void ScoreCaregiver_MoveCircles_m5C1DCF33CEFA26E32F523D10186183D6810E7930 (void);
-// 0x00000022 System.Void ScoreCaregiver::UpdateLocalPos(UnityEngine.GameObject,System.Single,System.Single,System.Single)
+// 0x00000029 System.Void ScoreCaregiver::UpdateLocalPos(UnityEngine.GameObject,System.Single,System.Single,System.Single)
 extern void ScoreCaregiver_UpdateLocalPos_m07EB319381B2D4715BCF5A526F4BE5CDAF772E13 (void);
-// 0x00000023 System.Void ScoreCaregiver::ChangeAlphaTo(System.Int32)
+// 0x0000002A System.Void ScoreCaregiver::ChangeAlphaTo(System.Int32)
 extern void ScoreCaregiver_ChangeAlphaTo_m5E1CF7F0D75AEFDE62D1F07E4E7333D665ABE3F2 (void);
-// 0x00000024 System.Void ScoreCaregiver::ChangeToRed()
+// 0x0000002B System.Void ScoreCaregiver::ChangeToRed()
 extern void ScoreCaregiver_ChangeToRed_m80646342740AF8FB866B64677613E3B256A57ED0 (void);
-// 0x00000025 System.Void ScoreCaregiver::ChangeToGreen()
+// 0x0000002C System.Void ScoreCaregiver::ChangeToGreen()
 extern void ScoreCaregiver_ChangeToGreen_mF898758A1F5FE9120E3A69E02037B4DCD01EE301 (void);
-// 0x00000026 System.Void ScoreCaregiver::.ctor()
+// 0x0000002D System.Void ScoreCaregiver::.ctor()
 extern void ScoreCaregiver__ctor_mB71F63D95B4300872147CEFF1ED1292A96BDDFBC (void);
-// 0x00000027 System.Void CaregiverFeedbackConfirmState::EnterState(CaregiverStateManager)
+// 0x0000002E System.Void CaregiverScoreEvent::.ctor()
+extern void CaregiverScoreEvent__ctor_mFFF02C2D4A9DC96497154E5BA4BF741B6F6081EA (void);
+// 0x0000002F System.Void CaregiverScoreEvent::Set(System.Int32,System.Int32)
+extern void CaregiverScoreEvent_Set_m74975CE4964DBA349AFB89DF8E92CBF9F16CBA12 (void);
+// 0x00000030 System.String CaregiverScoreEvent::SaveToString()
+extern void CaregiverScoreEvent_SaveToString_m1ED9E72654FD4647BAF0C9CF0978E6E4F2475099 (void);
+// 0x00000031 System.Void CaregiverFeedbackConfirmState::EnterState(CaregiverStateManager)
 extern void CaregiverFeedbackConfirmState_EnterState_m2F92AB1B4BF5FCE65AB5768EF0526450C2ECEC43 (void);
-// 0x00000028 System.Void CaregiverFeedbackConfirmState::ExitState(CaregiverStateManager)
+// 0x00000032 System.Void CaregiverFeedbackConfirmState::ExitState(CaregiverStateManager)
 extern void CaregiverFeedbackConfirmState_ExitState_m04497977BF683C34956143476CA13423FC6D4E7E (void);
-// 0x00000029 System.Void CaregiverFeedbackConfirmState::UpdateState(CaregiverStateManager)
+// 0x00000033 System.Void CaregiverFeedbackConfirmState::UpdateState(CaregiverStateManager)
 extern void CaregiverFeedbackConfirmState_UpdateState_m4226C033DEF32582B757AE31AACD5ACC85571061 (void);
-// 0x0000002A System.Void CaregiverFeedbackConfirmState::.ctor()
+// 0x00000034 System.Void CaregiverFeedbackConfirmState::.ctor()
 extern void CaregiverFeedbackConfirmState__ctor_mA1D6BF89476504FE47150EA7C24C820A02511599 (void);
-// 0x0000002B System.Void CaregiverFeedbackState::EnterState(CaregiverStateManager)
+// 0x00000035 System.Void CaregiverFeedbackState::EnterState(CaregiverStateManager)
 extern void CaregiverFeedbackState_EnterState_m2C4D9C1DF7C84A62C150D249E4A08D7561737AA8 (void);
-// 0x0000002C System.Void CaregiverFeedbackState::ExitState(CaregiverStateManager)
+// 0x00000036 System.Void CaregiverFeedbackState::ExitState(CaregiverStateManager)
 extern void CaregiverFeedbackState_ExitState_m53149317A471928F3D9921C9599E93E5C7C75C51 (void);
-// 0x0000002D System.Void CaregiverFeedbackState::UpdateState(CaregiverStateManager)
+// 0x00000037 System.Void CaregiverFeedbackState::UpdateState(CaregiverStateManager)
 extern void CaregiverFeedbackState_UpdateState_mD093992DC9F4F38C0548F478B7905EEF0027C879 (void);
-// 0x0000002E System.Void CaregiverFeedbackState::.ctor()
+// 0x00000038 System.Void CaregiverFeedbackState::.ctor()
 extern void CaregiverFeedbackState__ctor_mCD341D28D7E73C3D1D82BC844FA78911F72A37CE (void);
-// 0x0000002F System.Void CaregiverIdleState::EnterState(CaregiverStateManager)
+// 0x00000039 System.Void CaregiverIdleState::EnterState(CaregiverStateManager)
 extern void CaregiverIdleState_EnterState_m0A5DF25B577375585C5F5EA8A2DB1061C2AF6E5C (void);
-// 0x00000030 System.Void CaregiverIdleState::ExitState(CaregiverStateManager)
+// 0x0000003A System.Void CaregiverIdleState::ExitState(CaregiverStateManager)
 extern void CaregiverIdleState_ExitState_mE0CD1A98DECEAAB40446DC6453A8A074D2C57ABA (void);
-// 0x00000031 System.Void CaregiverIdleState::UpdateState(CaregiverStateManager)
+// 0x0000003B System.Void CaregiverIdleState::UpdateState(CaregiverStateManager)
 extern void CaregiverIdleState_UpdateState_m64B298B737E8E3AD76CA9B97DAFFED7DDE3BDA05 (void);
-// 0x00000032 System.Void CaregiverIdleState::.ctor()
+// 0x0000003C System.Void CaregiverIdleState::.ctor()
 extern void CaregiverIdleState__ctor_m71FE2A44F6BBFCBD16E331A873BA1800C40BE863 (void);
-// 0x00000033 System.Void CaregiverScoringState::EnterState(CaregiverStateManager)
+// 0x0000003D System.Void CaregiverScoringState::EnterState(CaregiverStateManager)
 extern void CaregiverScoringState_EnterState_mD1C78F8B945F2D55BF33FEB216BAFA2DA4AC6953 (void);
-// 0x00000034 System.Void CaregiverScoringState::ExitState(CaregiverStateManager)
+// 0x0000003E System.Void CaregiverScoringState::ExitState(CaregiverStateManager)
 extern void CaregiverScoringState_ExitState_m54617F07BEA869894A3D8961CDF1E1520ED8E3A4 (void);
-// 0x00000035 System.Void CaregiverScoringState::UpdateState(CaregiverStateManager)
+// 0x0000003F System.Void CaregiverScoringState::UpdateState(CaregiverStateManager)
 extern void CaregiverScoringState_UpdateState_mCB70EBA5ACF0707111284DA8C6AAEF5C383488FD (void);
-// 0x00000036 System.Void CaregiverScoringState::.ctor()
+// 0x00000040 System.Void CaregiverScoringState::.ctor()
 extern void CaregiverScoringState__ctor_m3FF181EF44195F79DC27CE79CC5DD0101EDD18C6 (void);
-// 0x00000037 System.Void CaregiverStateMachine::EnterState(CaregiverStateManager)
-// 0x00000038 System.Void CaregiverStateMachine::UpdateState(CaregiverStateManager)
-// 0x00000039 System.Void CaregiverStateMachine::ExitState(CaregiverStateManager)
-// 0x0000003A System.Void CaregiverStateMachine::.ctor()
+// 0x00000041 System.Void CaregiverStateMachine::EnterState(CaregiverStateManager)
+// 0x00000042 System.Void CaregiverStateMachine::UpdateState(CaregiverStateManager)
+// 0x00000043 System.Void CaregiverStateMachine::ExitState(CaregiverStateManager)
+// 0x00000044 System.Void CaregiverStateMachine::.ctor()
 extern void CaregiverStateMachine__ctor_m00B64BC51BF9E36F8596AEB41BE5B188608C28F1 (void);
-// 0x0000003B System.Void CaregiverStateManager::Start()
+// 0x00000045 System.Void CaregiverStateManager::Start()
 extern void CaregiverStateManager_Start_m120C6C34DA6EF15F9EF238B19AA0106BC628A13E (void);
-// 0x0000003C System.Void CaregiverStateManager::Update()
+// 0x00000046 System.Void CaregiverStateManager::Update()
 extern void CaregiverStateManager_Update_m3F0145E17AC1A5DC08646EFED4A658015C91EC86 (void);
-// 0x0000003D System.Void CaregiverStateManager::SwitchState(CaregiverStateMachine)
+// 0x00000047 System.Void CaregiverStateManager::SwitchState(CaregiverStateMachine)
 extern void CaregiverStateManager_SwitchState_m47BEE7AB757DF39425A247BCF0F79940335CA2AF (void);
-// 0x0000003E System.Void CaregiverStateManager::SetDidGiveScore()
+// 0x00000048 System.Void CaregiverStateManager::SetDidGiveScore()
 extern void CaregiverStateManager_SetDidGiveScore_m59AD71B8A7228D9360D14D92F591A15D5C28B5BB (void);
-// 0x0000003F System.Void CaregiverStateManager::.ctor()
+// 0x00000049 System.Void CaregiverStateManager::.ctor()
 extern void CaregiverStateManager__ctor_mBC6B0B1059C3A675024FBEB848CF042F8342F35B (void);
-static Il2CppMethodPointer s_methodPointers[63] = 
+static Il2CppMethodPointer s_methodPointers[73] = 
 {
 	CaregiverEmotion_Start_m18515358A5AA61867296A9B9A1E9BCBE8B2B6FD4,
 	CaregiverEmotion_Update_m7CAA223B67FBC33EE420FDC6158707F56FEF8FAE,
@@ -147,9 +167,11 @@ static Il2CppMethodPointer s_methodPointers[63] =
 	CaregiverFeedback_Start_mEFFE0FFAFA00501C13F99DFF402F20A71115C95E,
 	CaregiverFeedback_Update_mC271DB6F9166482344806905FD7B0A7932AC4A20,
 	CaregiverFeedback_GiveFeedback_mAAAC4CBF5920351054499CBAA24DFB0069DA2943,
-	CaregiverFeedback_SetSlingshotForFeedback_m581F9205D406A80D7551C4432C799792452C725A,
 	CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7,
 	CaregiverFeedback__ctor_m822BDDF251D0DE095DB79A6C1F0456ED148F2038,
+	CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633,
+	CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A,
+	CaregiverFeedbackEvent_SaveToString_m0D85F915EAF874FDB288B9212810D9C9839DDDA9,
 	LipsyncController_Start_m19637C5A611835495714C486158BA9423CB619B1,
 	LipsyncController_Update_mD40638071A34D083A73F6210123DE47EF9C165F0,
 	LipsyncController_ResetMouth_m70945C82489ADCE7E0973A96DC10669D5BDA7803,
@@ -161,6 +183,11 @@ static Il2CppMethodPointer s_methodPointers[63] =
 	LipsyncController_UpdateBlendShapes_m813487F3C652CF6F09BB6A0B3B28D02587BB72F4,
 	LipsyncController_UpdateJawBone_mC695C407EFE57D33FF13A30E1DE34DAB5C1B9643,
 	LipsyncController__ctor_mFAD762CA7FD0CB77347C3AD67292EF9B3BC18D6A,
+	SetCaregiverGaze_Start_mD049FB615476B09A936137790221715718F9032F,
+	SetCaregiverGaze_Update_m80912C091A74269F4329BED0E6685ABF02848212,
+	SetCaregiverGaze_SetGaze_m1B9CE51FF0867479C0F48D882A46C8DB525CC29B,
+	SetCaregiverGaze_ClearGaze_mF346C9AF41189A6CFF922B8E0DDEA90A9EA7ACB9,
+	SetCaregiverGaze__ctor_m6ADF44C902E24323C9CE3AAF17402BDE4E272A01,
 	ScoreCaregiver_Start_mAA2719600CB811139CA59F2D2C525ACB920CF88A,
 	ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2,
 	ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307,
@@ -175,6 +202,9 @@ static Il2CppMethodPointer s_methodPointers[63] =
 	ScoreCaregiver_ChangeToRed_m80646342740AF8FB866B64677613E3B256A57ED0,
 	ScoreCaregiver_ChangeToGreen_mF898758A1F5FE9120E3A69E02037B4DCD01EE301,
 	ScoreCaregiver__ctor_mB71F63D95B4300872147CEFF1ED1292A96BDDFBC,
+	CaregiverScoreEvent__ctor_mFFF02C2D4A9DC96497154E5BA4BF741B6F6081EA,
+	CaregiverScoreEvent_Set_m74975CE4964DBA349AFB89DF8E92CBF9F16CBA12,
+	CaregiverScoreEvent_SaveToString_m1ED9E72654FD4647BAF0C9CF0978E6E4F2475099,
 	CaregiverFeedbackConfirmState_EnterState_m2F92AB1B4BF5FCE65AB5768EF0526450C2ECEC43,
 	CaregiverFeedbackConfirmState_ExitState_m04497977BF683C34956143476CA13423FC6D4E7E,
 	CaregiverFeedbackConfirmState_UpdateState_m4226C033DEF32582B757AE31AACD5ACC85571061,
@@ -201,77 +231,87 @@ static Il2CppMethodPointer s_methodPointers[63] =
 	CaregiverStateManager_SetDidGiveScore_m59AD71B8A7228D9360D14D92F591A15D5C28B5BB,
 	CaregiverStateManager__ctor_mBC6B0B1059C3A675024FBEB848CF042F8342F35B,
 };
-static const int32_t s_InvokerIndices[63] = 
+static const int32_t s_InvokerIndices[73] = 
 {
-	8115,
-	8115,
-	6537,
-	6537,
-	8115,
-	6430,
-	8115,
-	8115,
-	8115,
-	8115,
-	6341,
-	6430,
-	8115,
-	8115,
-	8115,
-	8115,
-	6467,
-	5872,
-	2950,
-	5867,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	6430,
-	8115,
-	8037,
-	8115,
-	1306,
-	6430,
-	8115,
-	8115,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
+	8085,
+	8085,
+	6512,
+	6512,
+	8085,
+	6405,
+	8085,
+	8085,
+	8085,
+	8085,
+	6405,
+	8085,
+	8085,
+	3281,
+	7934,
+	8085,
+	8085,
+	8085,
+	6442,
+	5850,
+	2951,
+	5845,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	6405,
+	8085,
+	8007,
+	8085,
+	1305,
+	6405,
+	8085,
+	8085,
+	8085,
+	8085,
+	3333,
+	7934,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
 	0,
 	0,
 	0,
-	8115,
-	8115,
-	8115,
-	6467,
-	8115,
-	8115,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Caregiver_CodeGenModule;
 const Il2CppCodeGenModule g_Caregiver_CodeGenModule = 
 {
 	"Caregiver.dll",
-	63,
+	73,
 	s_methodPointers,
 	0,
 	NULL,

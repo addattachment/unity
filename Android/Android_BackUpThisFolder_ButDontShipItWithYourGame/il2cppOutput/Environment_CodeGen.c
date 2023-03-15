@@ -64,11 +64,13 @@ extern void LightingScripts_MoveLight_m35281EFD685FEFBF187405B53910B7C26F44CCBA 
 extern void LightingScripts_EnableLight_m71C69E5DF927AD31CB811B97818B311C60F994B9 (void);
 // 0x0000001A System.Void LightingScripts::SetLightIntensity(System.Single)
 extern void LightingScripts_SetLightIntensity_m46F340A705E9C33F315BEE091DA4B6F558AA574E (void);
-// 0x0000001B System.Void LightingScripts::SpotFollow(UnityEngine.Vector3)
+// 0x0000001B System.Void LightingScripts::LightUpdateFinished()
+extern void LightingScripts_LightUpdateFinished_mCB25BD4B66F1D1DA3E659BAF5A3CE0F759B59491 (void);
+// 0x0000001C System.Void LightingScripts::SpotFollow(UnityEngine.Vector3)
 extern void LightingScripts_SpotFollow_m6A772EBB0A8A02C1DAD9FBC621D90AD8CEDC45DA (void);
-// 0x0000001C System.Void LightingScripts::.ctor()
+// 0x0000001D System.Void LightingScripts::.ctor()
 extern void LightingScripts__ctor_m832AC814BC144CD67BC167B453413ED683AC63F2 (void);
-static Il2CppMethodPointer s_methodPointers[28] = 
+static Il2CppMethodPointer s_methodPointers[29] = 
 {
 	CloudMovement_Start_mA46253AEB3D236CBCC2EE4E0F055D7ED629AB8D1,
 	CloudMovement_Update_m606B72C29366E2880E45EAD6D82A389CF68D0344,
@@ -96,45 +98,47 @@ static Il2CppMethodPointer s_methodPointers[28] =
 	LightingScripts_MoveLight_m35281EFD685FEFBF187405B53910B7C26F44CCBA,
 	LightingScripts_EnableLight_m71C69E5DF927AD31CB811B97818B311C60F994B9,
 	LightingScripts_SetLightIntensity_m46F340A705E9C33F315BEE091DA4B6F558AA574E,
+	LightingScripts_LightUpdateFinished_mCB25BD4B66F1D1DA3E659BAF5A3CE0F759B59491,
 	LightingScripts_SpotFollow_m6A772EBB0A8A02C1DAD9FBC621D90AD8CEDC45DA,
 	LightingScripts__ctor_m832AC814BC144CD67BC167B453413ED683AC63F2,
 };
-static const int32_t s_InvokerIndices[28] = 
+static const int32_t s_InvokerIndices[29] = 
 {
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	6341,
-	7964,
-	8115,
-	8115,
-	6346,
-	8115,
-	6430,
-	8115,
-	7846,
-	7964,
-	8115,
-	7964,
-	6341,
-	8115,
-	8115,
-	8115,
-	8115,
-	8115,
-	3668,
-	6341,
-	6537,
-	6602,
-	8115,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	6316,
+	7934,
+	8085,
+	8085,
+	6321,
+	8085,
+	6405,
+	8085,
+	7816,
+	7934,
+	8085,
+	7934,
+	6316,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	3665,
+	6316,
+	6512,
+	8085,
+	6577,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Environment_CodeGenModule;
 const Il2CppCodeGenModule g_Environment_CodeGenModule = 
 {
 	"Environment.dll",
-	28,
+	29,
 	s_methodPointers,
 	0,
 	NULL,

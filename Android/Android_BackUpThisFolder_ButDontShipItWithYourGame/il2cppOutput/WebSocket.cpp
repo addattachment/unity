@@ -124,8 +124,6 @@ struct CaregiverScoreGen_tB0E99328CE0C8B8AE3694FC5380FF129B517DB4E;
 struct ClientSslConfiguration_t212ECC383B70D9C462DC423E9D3CD27C9E74A603;
 // WebSocketSharp.CloseEventArgs
 struct CloseEventArgs_t5388F91E45CE32C877EA43C79F519682A7A7A609;
-// UnityEngine.Component
-struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
 // WebSocketSharp.Net.CookieCollection
 struct CookieCollection_t338EE72A3B05CDF04DFEE639DE5B9B1F61DDD315;
 // System.DelegateData
@@ -136,6 +134,8 @@ struct EOGNotificationGen_t619FC7B5C0B0C14247ACAE72D2B246005B9DA9FE;
 struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377;
 // System.EventHandler
 struct EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82;
+// GameManager
+struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE;
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // System.Collections.IDictionary
@@ -168,6 +168,8 @@ struct NetworkCredential_tAF63174AAA7DA3BECD41DCE272F38FC13984DFF7;
 struct PayloadData_t70E4CA5A7C753357850775A9186AB3F9AE29F1A1;
 // UnityEngine.Events.PersistentCallGroup
 struct PersistentCallGroup_tB826EDF15DC80F71BCBCD8E410FD959A04C33F25;
+// PlayerVals
+struct PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F;
 // System.Security.Cryptography.RandomNumberGenerator
 struct RandomNumberGenerator_t4E862666A2F7D55324960670C7A1B4C2D40222F3;
 // UnityEngine.UI.RectMask2D
@@ -176,6 +178,8 @@ struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// StateMgrEvent
+struct StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA;
 // System.IO.Stream
 struct Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE;
 // System.String
@@ -220,6 +224,8 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4;
 // WebSocketSharp.Net.WebSockets.WebSocketContext
 struct WebSocketContext_t864B980CACE6C6D128960E555404BC87E7A4C3F2;
+// WebsocketMessage
+struct WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B;
 // WsClient
 struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520;
 // Ws_to_debug
@@ -246,30 +252,33 @@ IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_i
 IL2CPP_EXTERN_C RuntimeClass* WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
+IL2CPP_EXTERN_C String_t* _stringLiteral0773569A6C439148E05C25F6F87F8D8ED03F198E;
 IL2CPP_EXTERN_C String_t* _stringLiteral26CA1D5E2F6785F2DC7432A0B6AD44F0E0349443;
 IL2CPP_EXTERN_C String_t* _stringLiteral2C945D246C2B7897F000E1C591A686EB9EF010F0;
 IL2CPP_EXTERN_C String_t* _stringLiteral2CF5186F7B4192709D79E1505C289FAD1C871EC5;
+IL2CPP_EXTERN_C String_t* _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D;
+IL2CPP_EXTERN_C String_t* _stringLiteral50320EC3D39F8B155BB90632D565A8A5FE4DA2AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral51CA73A24E57F46F3EFD6314BC24C088F7F5F43E;
 IL2CPP_EXTERN_C String_t* _stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5;
 IL2CPP_EXTERN_C String_t* _stringLiteral62846EDB80EB7E23F21C4E2856AA48B4DFFEA3FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
-IL2CPP_EXTERN_C String_t* _stringLiteral778A3D1D96846E09DAB4A9F41160EA88DCAB25EC;
 IL2CPP_EXTERN_C String_t* _stringLiteral875CF8A46A6E3F0725287DAF52B09AF91CB77C71;
 IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
 IL2CPP_EXTERN_C String_t* _stringLiteral87F8ED9157125FFC4DA9E06A7B8011AD80A53FE1;
-IL2CPP_EXTERN_C String_t* _stringLiteral990F9783EEC77818B150E05AE52B0018DDB22F32;
+IL2CPP_EXTERN_C String_t* _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677;
 IL2CPP_EXTERN_C String_t* _stringLiteralCB6F1763B2D5528C916DD5B93825A246E6B8C770;
 IL2CPP_EXTERN_C String_t* _stringLiteralD21DCE68ED73EE107402445EE2C3E09542E71631;
 IL2CPP_EXTERN_C String_t* _stringLiteralD3947F84B9B53B9A6B5733B5D50A9F243232E435;
 IL2CPP_EXTERN_C String_t* _stringLiteralD559C6D97E819D8E4EF7ACDC34C4E8D3DD314964;
+IL2CPP_EXTERN_C String_t* _stringLiteralD8431B5D5BBDD13458B95AC3252777089DFF7F0A;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDE38AF2BD4256D304D92A1E0E7D290016348207A;
 IL2CPP_EXTERN_C String_t* _stringLiteralE12F82F2AF27C8BFF5B2C886B542D7A59A46BF96;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB32D5D188DA801B70AE17B6B201ACB1A68AA9A1;
 IL2CPP_EXTERN_C String_t* _stringLiteralECFA64A65FA846FE85FF86339986D02F15F90609;
 IL2CPP_EXTERN_C const RuntimeMethod* Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisWs_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B_m9073BC3C1D8D64FAD344F5FC1734169955E6320F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* JsonUtility_FromJson_TisWebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B_mB831E6D3BC5F2A6C4A2683BDE574DA3A532A336E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_RemoveAt_m031D3A21689276A872FCA7566C8F2F79F9581F0D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E_RuntimeMethod_var;
@@ -278,9 +287,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisWsClient_t439BD0
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_m0F7D790DACD6F3D18E865D01FE4427603C1B0CC6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UnityEvent_1__ctor_mCE6AA3B34C1148F11D1273C068A6A39430911684_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WsClient_SetDebug_m9235066CE49F363F7118ED548DA0B3598A239330_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B_RuntimeMethod_var;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -340,6 +349,30 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377  : public RuntimeObje
 {
 };
 
+// PlayerVals
+struct PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F  : public RuntimeObject
+{
+	// System.String PlayerVals::name
+	String_t* ___name_0;
+	// System.Int32 PlayerVals::height
+	int32_t ___height_1;
+	// System.String PlayerVals::gender
+	String_t* ___gender_2;
+	// System.Int32 PlayerVals::contingency
+	int32_t ___contingency_3;
+};
+
+// StateMgrEvent
+struct StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA  : public RuntimeObject
+{
+	// System.String StateMgrEvent::websocketMessage
+	String_t* ___websocketMessage_0;
+	// System.String StateMgrEvent::newState
+	String_t* ___newState_1;
+	// System.Single StateMgrEvent::_time
+	float ____time_2;
+};
+
 // System.String
 struct String_t  : public RuntimeObject
 {
@@ -390,6 +423,17 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+
+// WebsocketMessage
+struct WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B  : public RuntimeObject
+{
+	// System.String WebsocketMessage::type
+	String_t* ___type_0;
+	// System.String WebsocketMessage::data
+	String_t* ___data_1;
+	// PlayerVals WebsocketMessage::playerValues
+	PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___playerValues_2;
 };
 
 // WsClient/WSHelloworld
@@ -1646,6 +1690,69 @@ struct EOGNotificationGen_t619FC7B5C0B0C14247ACAE72D2B246005B9DA9FE  : public Mo
 	String_t* ____time_6;
 };
 
+// GameManager
+struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean GameManager::gameDidStart
+	bool ___gameDidStart_5;
+	// System.Boolean GameManager::playerSettingsAreSet
+	bool ___playerSettingsAreSet_6;
+	// System.Boolean GameManager::NPCShootsBall
+	bool ___NPCShootsBall_7;
+	// System.Boolean GameManager::restartBool
+	bool ___restartBool_8;
+	// System.Boolean GameManager::allMust
+	bool ___allMust_9;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_10;
+	// System.Boolean GameManager::isTutorial
+	bool ___isTutorial_11;
+	// System.Int32 GameManager::ballsPerGame
+	int32_t ___ballsPerGame_12;
+	// System.Boolean GameManager::trialListGenerated
+	bool ___trialListGenerated_13;
+	// System.Boolean GameManager::doFakeLaunch
+	bool ___doFakeLaunch_14;
+	// System.Boolean GameManager::playerValsReceivedViaWS
+	bool ___playerValsReceivedViaWS_15;
+	// System.Boolean GameManager::startTrial
+	bool ___startTrial_16;
+	// System.Boolean GameManager::toPostTrial
+	bool ___toPostTrial_17;
+	// System.Boolean GameManager::restart
+	bool ___restart_18;
+	// System.Boolean GameManager::ballIsShot
+	bool ___ballIsShot_19;
+	// System.Boolean GameManager::trialIsRunning
+	bool ___trialIsRunning_20;
+	// System.Boolean GameManager::trialListFinished
+	bool ___trialListFinished_21;
+	// System.Int32 GameManager::currentTrial
+	int32_t ___currentTrial_22;
+	// System.Boolean GameManager::trophyMayAppear
+	bool ___trophyMayAppear_23;
+	// System.Boolean GameManager::mayPrep
+	bool ___mayPrep_24;
+	// System.Boolean GameManager::canLaunch
+	bool ___canLaunch_25;
+	// System.Boolean GameManager::didShoot
+	bool ___didShoot_26;
+	// System.Boolean GameManager::MayGiveTrophy
+	bool ___MayGiveTrophy_27;
+	// System.Boolean GameManager::trophyIsGiven
+	bool ___trophyIsGiven_28;
+	// System.Boolean GameManager::didReadFeedback
+	bool ___didReadFeedback_29;
+	// System.Boolean GameManager::didGiveScore
+	bool ___didGiveScore_30;
+	// System.Boolean GameManager::mustGiveFeedback
+	bool ___mustGiveFeedback_31;
+	// System.Boolean GameManager::isInitiated
+	bool ___isInitiated_32;
+	// System.Boolean GameManager::LightIsSet
+	bool ___LightIsSet_33;
+};
+
 // UnityEngine.EventSystems.UIBehaviour
 struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -1654,24 +1761,26 @@ struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehav
 // WsClient
 struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// GameManager WsClient::gameManager
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_4;
 	// WebSocketSharp.WebSocket WsClient::ws
-	WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* ___ws_4;
+	WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* ___ws_5;
 	// System.Boolean WsClient::hasWsConnection
-	bool ___hasWsConnection_5;
+	bool ___hasWsConnection_6;
 	// System.Single WsClient::timeoutLength
-	float ___timeoutLength_6;
+	float ___timeoutLength_7;
 	// System.Single WsClient::timeoutTimer
-	float ___timeoutTimer_7;
+	float ___timeoutTimer_8;
 	// System.String WsClient::ip
-	String_t* ___ip_8;
+	String_t* ___ip_9;
 	// System.String WsClient::port
-	String_t* ___port_9;
-	// Ws_to_debug WsClient::wsToDebug
-	Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* ___wsToDebug_10;
+	String_t* ___port_10;
+	// PlayerVals WsClient::playerVals
+	PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___playerVals_11;
 	// WsClient/WsEvent WsClient::wsMsgReceived
-	WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8* ___wsMsgReceived_11;
+	WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8* ___wsMsgReceived_12;
 	// WsClient/WSHelloworld WsClient::wsHello
-	WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* ___wsHello_12;
+	WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* ___wsHello_13;
 };
 
 // Ws_to_debug
@@ -2214,6 +2323,14 @@ struct EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377_StaticFields
 
 // System.EventArgs
 
+// PlayerVals
+
+// PlayerVals
+
+// StateMgrEvent
+
+// StateMgrEvent
+
 // System.String
 struct String_t_StaticFields
 {
@@ -2273,6 +2390,10 @@ struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E_StaticFields
 };
 
 // System.Uri
+
+// WebsocketMessage
+
+// WebsocketMessage
 
 // WsClient/WSHelloworld
 
@@ -2383,10 +2504,6 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
 
 // WsClient/WsEvent
 
-// UnityEngine.Component
-
-// UnityEngine.Component
-
 // UnityEngine.GameObject
 
 // UnityEngine.GameObject
@@ -2418,6 +2535,15 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_StaticFields
 // EOGNotificationGen
 
 // EOGNotificationGen
+
+// GameManager
+struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields
+{
+	// GameManager GameManager::Instance
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___Instance_4;
+};
+
+// GameManager
 
 // WsClient
 
@@ -2556,12 +2682,12 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeA
 
 // T UnityEngine.Object::FindObjectOfType<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_FindObjectOfType_TisRuntimeObject_m02DFBF011F3B59F777A5E521DB2A116DD496E968_gshared (const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<System.Object>()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T[] System.Array::Empty<System.Object>()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* Array_Empty_TisRuntimeObject_mFB8A63D602BB6974D31E20300D9EB89C6FE7C278_gshared_inline (const RuntimeMethod* method) ;
 // System.Void System.EventHandler`1<System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventHandler_1__ctor_mBA2E748CFBA7A0EEC0A373A6F634D3B5774EA370_gshared (EventHandler_1_tD8C4A5BE1F7C91B1A7E99AE87AFD2F5432C38746* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// T UnityEngine.JsonUtility::FromJson<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared (String_t* ___0_json, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Object>::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A445322811EEC25987525_gshared (UnityEvent_1_t3CE03B42D5873C0C0E0692BEE72E1E6D5399F205* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
@@ -2596,15 +2722,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonUtility_ToJson_m28CC6843B9D3723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
 // System.String EOGNotificationGen::GetEOGNotification()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* EOGNotificationGen_GetEOGNotification_m6CA9F426860B1C4E706A9F1489F39B5131663A57 (EOGNotificationGen_t619FC7B5C0B0C14247ACAE72D2B246005B9DA9FE* __this, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Single UnityEngine.Time::get_time()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.Void WsClient/WSHelloworld::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WSHelloworld__ctor_m44547AF312D78DD7D61C97C65402F66B314133B5 (WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* __this, String_t* ___0_connectmsg, const RuntimeMethod* method) ;
-// T UnityEngine.Component::GetComponent<Ws_to_debug>()
-inline Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* Component_GetComponent_TisWs_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B_m9073BC3C1D8D64FAD344F5FC1734169955E6320F (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
-{
-	return ((  Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
-}
 // System.String System.String::Concat(System.String,System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE46311674ED463B180006 (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, String_t* ___3_str3, const RuntimeMethod* method) ;
 // T[] System.Array::Empty<System.String>()
@@ -2638,10 +2763,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebSocket_add_OnClose_m09A4F73CC7535D820
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Input::GetKeyDown(UnityEngine.KeyCode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Input_GetKeyDown_mB237DEA6244132670D38990BAB77D813FBB028D2 (int32_t ___0_key, const RuntimeMethod* method) ;
+// System.String System.String::Replace(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166 (String_t* __this, String_t* ___0_oldValue, String_t* ___1_newValue, const RuntimeMethod* method) ;
+// T UnityEngine.JsonUtility::FromJson<WebsocketMessage>(System.String)
+inline WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* JsonUtility_FromJson_TisWebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B_mB831E6D3BC5F2A6C4A2683BDE574DA3A532A336E (String_t* ___0_json, const RuntimeMethod* method)
+{
+	return ((  WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* (*) (String_t*, const RuntimeMethod*))JsonUtility_FromJson_TisRuntimeObject_m0CCF0FE109BF4C85AECC9C5D0DBB43422A24FB40_gshared)(___0_json, method);
+}
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
+// System.Void WsClient::SetPlayerValsReady(PlayerVals)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SetPlayerValsReady_m84EEF73BBDF2ECB3EA278195E1C5B761D1901E21 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___0_playerValues, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Debug::LogWarning(System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
-// System.Void Ws_to_debug::SetDebug(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B (Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* __this, String_t* ___0__message, const RuntimeMethod* method) ;
 // System.Void System.DateTime::.ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTimeKind)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_mD89390EF215242275A4E8F78C2C3E8BC3EF6F3C3 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, int32_t ___0_year, int32_t ___1_month, int32_t ___2_day, int32_t ___3_hour, int32_t ___4_minute, int32_t ___5_second, int32_t ___6_kind, const RuntimeMethod* method) ;
 // System.DateTime System.DateTime::get_UtcNow()
@@ -2673,8 +2809,6 @@ inline void UnityEvent_1__ctor_m0F7D790DACD6F3D18E865D01FE4427603C1B0CC6 (UnityE
 {
 	((  void (*) (UnityEvent_1_tC9859540CF1468306CAB6D758C0A0D95DBCEC257*, const RuntimeMethod*))UnityEvent_1__ctor_m8D77F4F05F69D0E52E8A445322811EEC25987525_gshared)(__this, method);
 }
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Events.UnityEvent`1<System.Int32>::.ctor()
 inline void UnityEvent_1__ctor_mCE6AA3B34C1148F11D1273C068A6A39430911684 (UnityEvent_1_t7CC0661D6B113117B4CC68761D93AC8DF5DBD66A* __this, const RuntimeMethod* method)
 {
@@ -2706,8 +2840,6 @@ inline void List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline (List_1_
 {
 	((  void (*) (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD*, String_t*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
 }
-// System.Void UnityEngine.Debug::LogWarning(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9 (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Void System.Collections.Generic.List`1<System.String>::.ctor()
 inline void List_1__ctor_mCA8DD57EAC70C2B5923DBB9D5A77CEAC22E7068E (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, const RuntimeMethod* method)
 {
@@ -2754,7 +2886,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoreGen_SendCaregiverScoreOver
 		// wsClient.ws.Send(this.GetScore());
 		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_0 = __this->___wsClient_6;
 		NullCheck(L_0);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_1 = L_0->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_1 = L_0->___ws_5;
 		String_t* L_2;
 		L_2 = CaregiverScoreGen_GetScore_m5415A78DBEF6E5BFB873926EB1422013B700D380(__this, NULL);
 		NullCheck(L_1);
@@ -2848,7 +2980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EOGNotificationGen_SendEOGViaWs_m812CB61
 		// wsClient.ws.Send(this.GetEOGNotification());
 		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_0 = __this->___wsClient_4;
 		NullCheck(L_0);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_1 = L_0->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_1 = L_0->___ws_5;
 		String_t* L_2;
 		L_2 = EOGNotificationGen_GetEOGNotification_m6CA9F426860B1C4E706A9F1489F39B5131663A57(__this, NULL);
 		NullCheck(L_1);
@@ -2922,6 +3054,63 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EOGNotificationGen__ctor_mAD38565CA09799
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void StateMgrEvent::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral50320EC3D39F8B155BB90632D565A8A5FE4DA2AA);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// public string websocketMessage = "Trialstates";
+		__this->___websocketMessage_0 = _stringLiteral50320EC3D39F8B155BB90632D565A8A5FE4DA2AA;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___websocketMessage_0), (void*)_stringLiteral50320EC3D39F8B155BB90632D565A8A5FE4DA2AA);
+		// public StateMgrEvent(string stateMgr)
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		// websocketMessage = stateMgr;
+		String_t* L_0 = ___0_stateMgr;
+		__this->___websocketMessage_0 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___websocketMessage_0), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.Void StateMgrEvent::Set(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6 (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_states, const RuntimeMethod* method) 
+{
+	{
+		// newState = states;
+		String_t* L_0 = ___0_states;
+		__this->___newState_1 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___newState_1), (void*)L_0);
+		// }
+		return;
+	}
+}
+// System.String StateMgrEvent::SaveToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* StateMgrEvent_SaveToString_m28495AF49ACBACA03B05B70C431AFA340B265AF2 (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, const RuntimeMethod* method) 
+{
+	{
+		// _time = Time.time;
+		float L_0;
+		L_0 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->____time_2 = L_0;
+		// return JsonUtility.ToJson(this);
+		String_t* L_1;
+		L_1 = JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA(__this, NULL);
+		return L_1;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void WsClient::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_Start_mA3542962FFBECA5C2130B3BA23A9089B3720D816 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, const RuntimeMethod* method) 
 {
@@ -2929,15 +3118,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_Start_mA3542962FFBECA5C2130B3BA
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisWs_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B_m9073BC3C1D8D64FAD344F5FC1734169955E6320F_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral875CF8A46A6E3F0725287DAF52B09AF91CB77C71);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCB6F1763B2D5528C916DD5B93825A246E6B8C770);
@@ -2945,70 +3133,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_Start_mA3542962FFBECA5C2130B3BA
 	}
 	{
 		// wsHello = new WSHelloworld("Hello from " + ip);
-		String_t* L_0 = __this->___ip_8;
+		String_t* L_0 = __this->___ip_9;
 		String_t* L_1;
 		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralCB6F1763B2D5528C916DD5B93825A246E6B8C770, L_0, NULL);
 		WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* L_2 = (WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7*)il2cpp_codegen_object_new(WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7_il2cpp_TypeInfo_var);
 		NullCheck(L_2);
 		WSHelloworld__ctor_m44547AF312D78DD7D61C97C65402F66B314133B5(L_2, L_1, NULL);
-		__this->___wsHello_12 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___wsHello_12), (void*)L_2);
-		// wsToDebug = this.GetComponent<Ws_to_debug>();
-		Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* L_3;
-		L_3 = Component_GetComponent_TisWs_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B_m9073BC3C1D8D64FAD344F5FC1734169955E6320F(__this, Component_GetComponent_TisWs_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B_m9073BC3C1D8D64FAD344F5FC1734169955E6320F_RuntimeMethod_var);
-		__this->___wsToDebug_10 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___wsToDebug_10), (void*)L_3);
+		__this->___wsHello_13 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___wsHello_13), (void*)L_2);
 		// ws = new WebSocket("ws://" + ip + ":" + port);
-		String_t* L_4 = __this->___ip_8;
-		String_t* L_5 = __this->___port_9;
-		String_t* L_6;
-		L_6 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral875CF8A46A6E3F0725287DAF52B09AF91CB77C71, L_4, _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D, L_5, NULL);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_7;
-		L_7 = Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline(Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_8 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
-		NullCheck(L_8);
-		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_8, L_6, L_7, NULL);
-		__this->___ws_4 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_4), (void*)L_8);
+		String_t* L_3 = __this->___ip_9;
+		String_t* L_4 = __this->___port_10;
+		String_t* L_5;
+		L_5 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral875CF8A46A6E3F0725287DAF52B09AF91CB77C71, L_3, _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D, L_4, NULL);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_6;
+		L_6 = Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_inline(Array_Empty_TisString_t_m9832B70DF2B936246FE60F75D3D12CB946C39D16_RuntimeMethod_var);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_7 = (WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4*)il2cpp_codegen_object_new(WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		WebSocket__ctor_mE61AF5C55A248D7A6B3E3BC14D4BDE24387F6390(L_7, L_5, L_6, NULL);
+		__this->___ws_5 = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_7);
 		// ws.ConnectAsync();
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_9 = __this->___ws_4;
-		NullCheck(L_9);
-		WebSocket_ConnectAsync_mB0D857484E7F5D17F380F7DD542534D4D7C43F9A(L_9, NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_8 = __this->___ws_5;
+		NullCheck(L_8);
+		WebSocket_ConnectAsync_mB0D857484E7F5D17F380F7DD542534D4D7C43F9A(L_8, NULL);
 		// ws.OnOpen += (sender, e) =>
 		// {
 		//     hasWsConnection = true;
 		//     var wsmsg = wsHello.HelloMessage();
 		//     SendWSMessage(wsmsg);
 		// };
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_10 = __this->___ws_4;
-		EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* L_11 = (EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82*)il2cpp_codegen_object_new(EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82_il2cpp_TypeInfo_var);
-		NullCheck(L_11);
-		EventHandler__ctor_m95444CE8D5A6F1AFC9793866C3FE884E732DCEB2(L_11, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570_RuntimeMethod_var), NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_9 = __this->___ws_5;
+		EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* L_10 = (EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82*)il2cpp_codegen_object_new(EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82_il2cpp_TypeInfo_var);
 		NullCheck(L_10);
-		WebSocket_add_OnOpen_m5715FC4EA7375D9465E94D361613C8335F16CDCC(L_10, L_11, NULL);
+		EventHandler__ctor_m95444CE8D5A6F1AFC9793866C3FE884E732DCEB2(L_10, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239_RuntimeMethod_var), NULL);
+		NullCheck(L_9);
+		WebSocket_add_OnOpen_m5715FC4EA7375D9465E94D361613C8335F16CDCC(L_9, L_10, NULL);
 		// ws.OnMessage += (sender, e) =>
 		// {
 		//     Debug.Log("Message Received from " + ((WebSocket)sender).Url + ", Data : " + e.Data);
 		//     HandleIncomingMessage(e.Data);
-		//     wsToDebug.SetDebug(e.Data);
 		// };
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_12 = __this->___ws_4;
-		EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9* L_13 = (EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9*)il2cpp_codegen_object_new(EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9_il2cpp_TypeInfo_var);
-		NullCheck(L_13);
-		EventHandler_1__ctor_mBFF738C5B4A324ADE86116FCFB14BEBD465E278C(L_13, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9_RuntimeMethod_var), NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_11 = __this->___ws_5;
+		EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9* L_12 = (EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9*)il2cpp_codegen_object_new(EventHandler_1_t8D76D9242722744EEBFEF94F3AE19600E1D651B9_il2cpp_TypeInfo_var);
 		NullCheck(L_12);
-		WebSocket_add_OnMessage_m958CB5E0C0A476F4D5AC753E1351F359717B4815(L_12, L_13, NULL);
+		EventHandler_1__ctor_mBFF738C5B4A324ADE86116FCFB14BEBD465E278C(L_12, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0_RuntimeMethod_var), NULL);
+		NullCheck(L_11);
+		WebSocket_add_OnMessage_m958CB5E0C0A476F4D5AC753E1351F359717B4815(L_11, L_12, NULL);
 		// ws.OnClose += (sender, e) =>
 		// {
 		//     //Debug.Log("the connection did close");
 		//     hasWsConnection = false;
 		// };
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_14 = __this->___ws_4;
-		EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5* L_15 = (EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5*)il2cpp_codegen_object_new(EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5_il2cpp_TypeInfo_var);
-		NullCheck(L_15);
-		EventHandler_1__ctor_m3E0F9E4A1E4586F7783A529A94CF899EF217E3D1(L_15, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE_RuntimeMethod_var), NULL);
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_13 = __this->___ws_5;
+		EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5* L_14 = (EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5*)il2cpp_codegen_object_new(EventHandler_1_t522FAB2F4CBA6A3D12166027B1D4A1C8C94D68E5_il2cpp_TypeInfo_var);
 		NullCheck(L_14);
-		WebSocket_add_OnClose_m09A4F73CC7535D8206A52A8CFBAAA4206D87C0B0(L_14, L_15, NULL);
+		EventHandler_1__ctor_m3E0F9E4A1E4586F7783A529A94CF899EF217E3D1(L_14, __this, (intptr_t)((void*)WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E_RuntimeMethod_var), NULL);
+		NullCheck(L_13);
+		WebSocket_add_OnClose_m09A4F73CC7535D8206A52A8CFBAAA4206D87C0B0(L_13, L_14, NULL);
 		// }
 		return;
 	}
@@ -3024,7 +3206,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_Update_m048CB1E47F8F72A56DDE822
 	}
 	{
 		// if (ws == null)
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_0 = __this->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_0 = __this->___ws_5;
 		if (L_0)
 		{
 			goto IL_0009;
@@ -3038,7 +3220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_Update_m048CB1E47F8F72A56DDE822
 IL_0009:
 	{
 		// if (hasWsConnection == false)
-		bool L_1 = __this->___hasWsConnection_5;
+		bool L_1 = __this->___hasWsConnection_6;
 		if (L_1)
 		{
 			goto IL_0048;
@@ -3046,13 +3228,13 @@ IL_0009:
 	}
 	{
 		// timeoutTimer += Time.deltaTime;
-		float L_2 = __this->___timeoutTimer_7;
+		float L_2 = __this->___timeoutTimer_8;
 		float L_3;
 		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___timeoutTimer_7 = ((float)il2cpp_codegen_add(L_2, L_3));
+		__this->___timeoutTimer_8 = ((float)il2cpp_codegen_add(L_2, L_3));
 		// if (timeoutTimer > timeoutLength)
-		float L_4 = __this->___timeoutTimer_7;
-		float L_5 = __this->___timeoutLength_6;
+		float L_4 = __this->___timeoutTimer_8;
+		float L_5 = __this->___timeoutLength_7;
 		if ((!(((float)L_4) > ((float)L_5))))
 		{
 			goto IL_0061;
@@ -3060,11 +3242,11 @@ IL_0009:
 	}
 	{
 		// ws.ConnectAsync();
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_5;
 		NullCheck(L_6);
 		WebSocket_ConnectAsync_mB0D857484E7F5D17F380F7DD542534D4D7C43F9A(L_6, NULL);
 		// timeoutTimer = 0;
-		__this->___timeoutTimer_7 = (0.0f);
+		__this->___timeoutTimer_8 = (0.0f);
 		return;
 	}
 
@@ -3080,7 +3262,7 @@ IL_0048:
 	}
 	{
 		// ws.Send("test");
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_8 = __this->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_8 = __this->___ws_5;
 		NullCheck(L_8);
 		WebSocket_Send_mE275781E5A051D124CA6603C6DDF357E777DF3D1(L_8, _stringLiteral87F8ED9157125FFC4DA9E06A7B8011AD80A53FE1, NULL);
 	}
@@ -3098,21 +3280,76 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_HandleIncomingMessage_m97CC6FCD
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral990F9783EEC77818B150E05AE52B0018DDB22F32);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonUtility_FromJson_TisWebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B_mB831E6D3BC5F2A6C4A2683BDE574DA3A532A336E_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral0773569A6C439148E05C25F6F87F8D8ED03F198E);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD8431B5D5BBDD13458B95AC3252777089DFF7F0A);
 		s_Il2CppMethodInitialized = true;
 	}
+	WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* V_0 = NULL;
 	{
-		// Debug.Log("INVOKING " + message);
+		// message = message.Replace("\'", "\""); // python websocket uses single quotes?
 		String_t* L_0 = ___0_message;
+		NullCheck(L_0);
 		String_t* L_1;
-		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral990F9783EEC77818B150E05AE52B0018DDB22F32, L_0, NULL);
+		L_1 = String_Replace_mABDB7003A1D0AEDCAE9FF85E3DFFFBA752D2A166(L_0, _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D, _stringLiteralC62C64F00567C5368CAE37F4E64E1E82FF785677, NULL);
+		___0_message = L_1;
+		// WebsocketMessage res = JsonUtility.FromJson<WebsocketMessage>(message);
+		String_t* L_2 = ___0_message;
+		WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* L_3;
+		L_3 = JsonUtility_FromJson_TisWebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B_mB831E6D3BC5F2A6C4A2683BDE574DA3A532A336E(L_2, JsonUtility_FromJson_TisWebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B_mB831E6D3BC5F2A6C4A2683BDE574DA3A532A336E_RuntimeMethod_var);
+		V_0 = L_3;
+		// switch (res.type)
+		WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* L_4 = V_0;
+		NullCheck(L_4);
+		String_t* L_5 = L_4->___type_0;
+		bool L_6;
+		L_6 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_5, _stringLiteralD8431B5D5BBDD13458B95AC3252777089DFF7F0A, NULL);
+		if (!L_6)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// SetPlayerValsReady(res.playerValues);
+		WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* L_7 = V_0;
+		NullCheck(L_7);
+		PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* L_8 = L_7->___playerValues_2;
+		WsClient_SetPlayerValsReady_m84EEF73BBDF2ECB3EA278195E1C5B761D1901E21(__this, L_8, NULL);
+		// break;
+		goto IL_0043;
+	}
+
+IL_0039:
+	{
+		// Debug.LogWarning("unknown command");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		// wsToDebug.SetDebug(message);
-		Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* L_2 = __this->___wsToDebug_10;
-		String_t* L_3 = ___0_message;
-		NullCheck(L_2);
-		Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B(L_2, L_3, NULL);
+		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral0773569A6C439148E05C25F6F87F8D8ED03F198E, NULL);
+	}
+
+IL_0043:
+	{
+		// Debug.Log(message);
+		String_t* L_9 = ___0_message;
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_9, NULL);
+		// }
+		return;
+	}
+}
+// System.Void WsClient::SetPlayerValsReady(PlayerVals)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SetPlayerValsReady_m84EEF73BBDF2ECB3EA278195E1C5B761D1901E21 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___0_playerValues, const RuntimeMethod* method) 
+{
+	{
+		// playerVals = playerValues;
+		PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* L_0 = ___0_playerValues;
+		__this->___playerVals_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___playerVals_11), (void*)L_0);
+		// gameManager.playerValsReceivedViaWS = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_4;
+		NullCheck(L_1);
+		L_1->___playerValsReceivedViaWS_15 = (bool)1;
 		// }
 		return;
 	}
@@ -3142,9 +3379,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B62
 		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral62846EDB80EB7E23F21C4E2856AA48B4DFFEA3FF, L_0, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
-		// System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+		// DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 		DateTime__ctor_mD89390EF215242275A4E8F78C2C3E8BC3EF6F3C3((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 1, NULL);
-		// int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+		// int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
 		L_2 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
@@ -3156,7 +3393,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B62
 		L_5 = TimeSpan_get_TotalSeconds_mED686E7CECE6A76A7DC38518698B9199DB8CDEA8((&V_2), NULL);
 		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>(L_5);
 		// if (hasWsConnection)
-		bool L_6 = __this->___hasWsConnection_5;
+		bool L_6 = __this->___hasWsConnection_6;
 		if (!L_6)
 		{
 			goto IL_0061;
@@ -3164,7 +3401,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B62
 	}
 	{
 		// ws.Send("time: " + cur_time + ", " + message);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_7 = __this->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_7 = __this->___ws_5;
 		String_t* L_8;
 		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		String_t* L_9 = ___0_message;
@@ -3235,9 +3472,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_OnApplicationQuit_m66BD6B950ACE
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		// System.DateTime epochStart = new System.DateTime(1970, 1, 1, 0, 0, 0, System.DateTimeKind.Utc);
+		// DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 		DateTime__ctor_mD89390EF215242275A4E8F78C2C3E8BC3EF6F3C3((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 1, NULL);
-		// int cur_time = (int)(System.DateTime.UtcNow - epochStart).TotalSeconds;
+		// int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
 		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
 		L_0 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
@@ -3255,7 +3492,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_OnApplicationQuit_m66BD6B950ACE
 		L_5 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(_stringLiteral2CF5186F7B4192709D79E1505C289FAD1C871EC5, L_4, _stringLiteralDE38AF2BD4256D304D92A1E0E7D290016348207A, NULL);
 		WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D(__this, L_5, NULL);
 		// ws.CloseAsync(CloseStatusCode.Normal);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_4;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_6 = __this->___ws_5;
 		NullCheck(L_6);
 		WebSocket_CloseAsync_m833AF46996DA511FDC8FE7A0018879F18CB4AF7C(L_6, ((int32_t)1000), NULL);
 		// }
@@ -3274,26 +3511,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient__ctor_m74DBCB0443868D24CFF89C1E
 	}
 	{
 		// private float timeoutLength = 2.0f;
-		__this->___timeoutLength_6 = (2.0f);
+		__this->___timeoutLength_7 = (2.0f);
 		// [SerializeField] private string ip = "localhost";
-		__this->___ip_8 = _stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ip_8), (void*)_stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5);
+		__this->___ip_9 = _stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ip_9), (void*)_stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5);
 		// [SerializeField] private string port = "8080";
-		__this->___port_9 = _stringLiteralD3947F84B9B53B9A6B5733B5D50A9F243232E435;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___port_9), (void*)_stringLiteralD3947F84B9B53B9A6B5733B5D50A9F243232E435);
+		__this->___port_10 = _stringLiteralD3947F84B9B53B9A6B5733B5D50A9F243232E435;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___port_10), (void*)_stringLiteralD3947F84B9B53B9A6B5733B5D50A9F243232E435);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }
-// System.Void WsClient::<Start>b__11_0(System.Object,System.EventArgs)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___1_e, const RuntimeMethod* method) 
+// System.Void WsClient::<Start>b__12_0(System.Object,System.EventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, EventArgs_t37273F03EAC87217701DD431B190FBD84AD7C377* ___1_e, const RuntimeMethod* method) 
 {
 	String_t* V_0 = NULL;
 	{
 		// hasWsConnection = true;
-		__this->___hasWsConnection_5 = (bool)1;
+		__this->___hasWsConnection_6 = (bool)1;
 		// var wsmsg = wsHello.HelloMessage();
-		WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* L_0 = __this->___wsHello_12;
+		WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* L_0 = __this->___wsHello_13;
 		NullCheck(L_0);
 		String_t* L_1;
 		L_1 = WSHelloworld_HelloMessage_m8C12044173FBFA52E3EAA3DAEAA2221A3CADD75D(L_0, NULL);
@@ -3305,8 +3542,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__11_0_m6679EDCCE54
 		return;
 	}
 }
-// System.Void WsClient::<Start>b__11_1(System.Object,WebSocketSharp.MessageEventArgs)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, MessageEventArgs_tAA9D7AC324337F7494A3084C3A2E5ECA24AA6BD4* ___1_e, const RuntimeMethod* method) 
+// System.Void WsClient::<Start>b__12_1(System.Object,WebSocketSharp.MessageEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0 (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, MessageEventArgs_tAA9D7AC324337F7494A3084C3A2E5ECA24AA6BD4* ___1_e, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -3370,24 +3607,16 @@ IL_001c:
 		String_t* L_8;
 		L_8 = MessageEventArgs_get_Data_m68CD4A6A914A8493DC327848521DA18278C1D8C4(L_7, NULL);
 		WsClient_HandleIncomingMessage_m97CC6FCDA2DE978264240E8D3649A621731C7BED(__this, L_8, NULL);
-		// wsToDebug.SetDebug(e.Data);
-		Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* L_9 = __this->___wsToDebug_10;
-		MessageEventArgs_tAA9D7AC324337F7494A3084C3A2E5ECA24AA6BD4* L_10 = ___1_e;
-		NullCheck(L_10);
-		String_t* L_11;
-		L_11 = MessageEventArgs_get_Data_m68CD4A6A914A8493DC327848521DA18278C1D8C4(L_10, NULL);
-		NullCheck(L_9);
-		Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B(L_9, L_11, NULL);
 		// };
 		return;
 	}
 }
-// System.Void WsClient::<Start>b__11_2(System.Object,WebSocketSharp.CloseEventArgs)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, CloseEventArgs_t5388F91E45CE32C877EA43C79F519682A7A7A609* ___1_e, const RuntimeMethod* method) 
+// System.Void WsClient::<Start>b__12_2(System.Object,WebSocketSharp.CloseEventArgs)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, RuntimeObject* ___0_sender, CloseEventArgs_t5388F91E45CE32C877EA43C79F519682A7A7A609* ___1_e, const RuntimeMethod* method) 
 {
 	{
 		// hasWsConnection = false;
-		__this->___hasWsConnection_5 = (bool)0;
+		__this->___hasWsConnection_6 = (bool)0;
 		// };
 		return;
 	}
@@ -3472,6 +3701,48 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WSHelloworld_HelloMessage_m8C120441
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.String PlayerVals::SaveToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerVals_SaveToString_mB8C9FB01D677F2EBEED45DF5A17A37BEBB61D774 (PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* __this, const RuntimeMethod* method) 
+{
+	{
+		// return JsonUtility.ToJson(this);
+		String_t* L_0;
+		L_0 = JsonUtility_ToJson_m28CC6843B9D3723D88AD13EA3829B71FDE7826BA(__this, NULL);
+		return L_0;
+	}
+}
+// System.Void PlayerVals::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerVals__ctor_m9068B94CD5A9340E5A911EFDFE7DFD00C51ADE13 (PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void WebsocketMessage::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebsocketMessage__ctor_m13D510378689FE65CDF98A34968921C27A8C4DD9 (WebsocketMessage_tB768B622A05935D6D5D3C6DCDD71AC90C53E855B* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void m_WS_Event::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void m_WS_Event__ctor_mF6A0CD10AED2CCC4080880AC3A412452ACEDB665 (m_WS_Event_t60E7A4C45117AA3E2F86E0F0E34689A736BF70AD* __this, const RuntimeMethod* method) 
 {
@@ -3505,7 +3776,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ws_to_debug_Start_m8D34F48D1C3DAEF559D18
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// debug = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<TMPro.TMP_Text>();
+		// debug = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<TMP_Text>();
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
 		L_0 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral26CA1D5E2F6785F2DC7432A0B6AD44F0E0349443, NULL);
 		NullCheck(L_0);
@@ -3601,80 +3872,54 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ws_to_debug_SetDebug_mF0749CE38DF179E192
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralECFA64A65FA846FE85FF86339986D02F15F90609);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// Debug.Log("printing " + _message);
-		String_t* L_0 = ___0__message;
-		String_t* L_1;
-		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralECFA64A65FA846FE85FF86339986D02F15F90609, L_0, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
 		// if (_message is null)
-		String_t* L_2 = ___0__message;
-		if (L_2)
+		String_t* L_0 = ___0__message;
+		if (L_0)
 		{
-			goto IL_001e;
+			goto IL_000e;
 		}
 	}
 	{
 		// throw new ArgumentNullException(nameof(_message));
-		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_3 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
-		NullCheck(L_3);
-		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB32D5D188DA801B70AE17B6B201ACB1A68AA9A1)), NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B_RuntimeMethod_var)));
+		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_1 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
+		NullCheck(L_1);
+		ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B(L_1, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralEB32D5D188DA801B70AE17B6B201ACB1A68AA9A1)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_1, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B_RuntimeMethod_var)));
 	}
 
-IL_001e:
+IL_000e:
 	{
 		// if (testDebug == false)
-		bool L_4 = __this->___testDebug_5;
-		if (L_4)
+		bool L_2 = __this->___testDebug_5;
+		if (L_2)
 		{
-			goto IL_0055;
+			goto IL_0045;
 		}
 	}
 	{
 		// testDebug = true;
 		__this->___testDebug_5 = (bool)1;
 		// messageList.Add(_message);
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_5 = __this->___messageList_7;
-		String_t* L_6 = ___0__message;
-		NullCheck(L_5);
-		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_5, L_6, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_3 = __this->___messageList_7;
+		String_t* L_4 = ___0__message;
+		NullCheck(L_3);
+		List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_inline(L_3, L_4, List_1_Add_mF10DB1D3CBB0B14215F0E4F8AB4934A1955E5351_RuntimeMethod_var);
 		// debug.SetText(String.Join("\n", messageList));
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_7 = __this->___debug_4;
-		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_8 = __this->___messageList_7;
-		String_t* L_9;
-		L_9 = String_Join_m8159F953B3D62AA54A0853A6E9573CDC0F63E158(_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_8, NULL);
-		NullCheck(L_7);
-		TMP_Text_SetText_m848189C290727009A95A00E432B66DFB2F2C3454(L_7, L_9, (bool)1, NULL);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___debug_4;
+		List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* L_6 = __this->___messageList_7;
+		String_t* L_7;
+		L_7 = String_Join_m8159F953B3D62AA54A0853A6E9573CDC0F63E158(_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD, L_6, NULL);
+		NullCheck(L_5);
+		TMP_Text_SetText_m848189C290727009A95A00E432B66DFB2F2C3454(L_5, L_7, (bool)1, NULL);
 	}
 
-IL_0055:
+IL_0045:
 	{
-		// }
-		return;
-	}
-}
-// System.Void Ws_to_debug::PrintDebug()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ws_to_debug_PrintDebug_mF35C926F04B33D32A68B77994197F200385AA855 (Ws_to_debug_t5F5C00DCE62A3189B123149A4983F27E8DC39F8B* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral778A3D1D96846E09DAB4A9F41160EA88DCAB25EC);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Debug.LogWarning("made it here");
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_LogWarning_m33EF1B897E0C7C6FF538989610BFAFFEF4628CA9(_stringLiteral778A3D1D96846E09DAB4A9F41160EA88DCAB25EC, NULL);
 		// }
 		return;
 	}

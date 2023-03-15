@@ -270,46 +270,54 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___restartBool_8;
 	// System.Boolean GameManager::allMust
 	bool ___allMust_9;
-	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_10;
-	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_11;
-	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_12;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_10;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_11;
+	// System.Int32 GameManager::ballsPerGame
+	int32_t ___ballsPerGame_12;
+	// System.Boolean GameManager::trialListGenerated
+	bool ___trialListGenerated_13;
+	// System.Boolean GameManager::doFakeLaunch
+	bool ___doFakeLaunch_14;
+	// System.Boolean GameManager::playerValsReceivedViaWS
+	bool ___playerValsReceivedViaWS_15;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_14;
-	// System.Boolean GameManager::endTrial
-	bool ___endTrial_15;
+	bool ___startTrial_16;
+	// System.Boolean GameManager::toPostTrial
+	bool ___toPostTrial_17;
 	// System.Boolean GameManager::restart
-	bool ___restart_16;
+	bool ___restart_18;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_17;
+	bool ___ballIsShot_19;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_18;
+	bool ___trialIsRunning_20;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_19;
+	bool ___trialListFinished_21;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_20;
+	int32_t ___currentTrial_22;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_21;
+	bool ___trophyMayAppear_23;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_22;
+	bool ___mayPrep_24;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_23;
+	bool ___canLaunch_25;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_24;
+	bool ___didShoot_26;
+	// System.Boolean GameManager::MayGiveTrophy
+	bool ___MayGiveTrophy_27;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_25;
+	bool ___trophyIsGiven_28;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_26;
+	bool ___didReadFeedback_29;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_27;
+	bool ___didGiveScore_30;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_28;
+	bool ___mustGiveFeedback_31;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_29;
+	bool ___isInitiated_32;
+	// System.Boolean GameManager::LightIsSet
+	bool ___LightIsSet_33;
 };
 
 // Player
@@ -675,8 +683,6 @@ inline Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* List_1_get_Item_m4060F0D
 {
 	return ((  Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* (*) (List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
 }
-// System.Int32 TrialList::GetTrialLength()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TrialList_GetTrialLength_mC7E2E40D7337B73C4FF1C9DB638FEF2A5F534EA6 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, const RuntimeMethod* method) ;
 // System.Int32 System.Collections.Generic.List`1<Trial>::get_Count()
 inline int32_t List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_inline (List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* __this, const RuntimeMethod* method)
 {
@@ -808,7 +814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Start_m62C971738CF1E1B1167F68E
 		// if (gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_10;
 		NullCheck(L_1);
-		bool L_2 = L_1->___isTutorial_13;
+		bool L_2 = L_1->___isTutorial_11;
 		if (!L_2)
 		{
 			goto IL_002a;
@@ -820,7 +826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Start_m62C971738CF1E1B1167F68E
 		// gameManager.trialListGenerated = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
 		NullCheck(L_3);
-		L_3->___trialListGenerated_11 = (bool)1;
+		L_3->___trialListGenerated_13 = (bool)1;
 	}
 
 IL_002a:
@@ -843,7 +849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Update_mB1CF3505C4066D92BEF249
 		// if ((gameManager.trialListGenerated == false) && (gameManager.playerSettingsAreSet == true))
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
 		NullCheck(L_0);
-		bool L_1 = L_0->___trialListGenerated_11;
+		bool L_1 = L_0->___trialListGenerated_13;
 		if (L_1)
 		{
 			goto IL_0063;
@@ -893,7 +899,7 @@ IL_004b:
 		// gameManager.trialListGenerated = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_10;
 		NullCheck(L_9);
-		L_9->___trialListGenerated_11 = (bool)1;
+		L_9->___trialListGenerated_13 = (bool)1;
 	}
 
 IL_0063:
@@ -1196,7 +1202,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C6224
 		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_5;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_10;
 		NullCheck(L_1);
-		int32_t L_2 = L_1->___currentTrial_20;
+		int32_t L_2 = L_1->___currentTrial_22;
 		NullCheck(L_0);
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_3;
 		L_3 = List_1_get_Item_m4060F0D1C1E2BC61E8C3821A57EB090B00FDE74E(L_0, L_2, List_1_get_Item_m4060F0D1C1E2BC61E8C3821A57EB090B00FDE74E_RuntimeMethod_var);
@@ -1206,46 +1212,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C6224
 // System.Void TrialList::NextTrial()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, const RuntimeMethod* method) 
 {
-	{
-		// gameManager.currentTrial++;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0;
-		NullCheck(L_1);
-		int32_t L_2 = L_1->___currentTrial_20;
-		NullCheck(L_1);
-		L_1->___currentTrial_20 = ((int32_t)il2cpp_codegen_add(L_2, 1));
-		// if (gameManager.currentTrial < GetTrialLength())
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
-		NullCheck(L_3);
-		int32_t L_4 = L_3->___currentTrial_20;
-		int32_t L_5;
-		L_5 = TrialList_GetTrialLength_mC7E2E40D7337B73C4FF1C9DB638FEF2A5F534EA6(__this, NULL);
-		if ((((int32_t)L_4) >= ((int32_t)L_5)))
-		{
-			goto IL_0033;
-		}
-	}
-	{
-		// gameManager.trialListFinished = false;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_6 = __this->___gameManager_10;
-		NullCheck(L_6);
-		L_6->___trialListFinished_19 = (bool)0;
-		return;
-	}
-
-IL_0033:
-	{
-		// gameManager.trialListFinished = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = __this->___gameManager_10;
-		NullCheck(L_7);
-		L_7->___trialListFinished_19 = (bool)1;
-		// }
-		return;
-	}
-}
-// System.Int32 TrialList::GetTrialLength()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TrialList_GetTrialLength_mC7E2E40D7337B73C4FF1C9DB638FEF2A5F534EA6 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, const RuntimeMethod* method) 
-{
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
@@ -1253,12 +1219,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TrialList_GetTrialLength_mC7E2E40D733
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// return trialsList.Count;
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_5;
-		NullCheck(L_0);
-		int32_t L_1;
-		L_1 = List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_inline(L_0, List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_RuntimeMethod_var);
-		return L_1;
+		// gameManager.currentTrial++;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0;
+		NullCheck(L_1);
+		int32_t L_2 = L_1->___currentTrial_22;
+		NullCheck(L_1);
+		L_1->___currentTrial_22 = ((int32_t)il2cpp_codegen_add(L_2, 1));
+		// if (gameManager.currentTrial < trialsList.Count)
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
+		NullCheck(L_3);
+		int32_t L_4 = L_3->___currentTrial_22;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_5 = __this->___trialsList_5;
+		NullCheck(L_5);
+		int32_t L_6;
+		L_6 = List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_inline(L_5, List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_RuntimeMethod_var);
+		if ((((int32_t)L_4) >= ((int32_t)L_6)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		// gameManager.trialListFinished = false;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = __this->___gameManager_10;
+		NullCheck(L_7);
+		L_7->___trialListFinished_21 = (bool)0;
+		return;
+	}
+
+IL_0038:
+	{
+		// gameManager.trialListFinished = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = __this->___gameManager_10;
+		NullCheck(L_8);
+		L_8->___trialListFinished_21 = (bool)1;
+		// }
+		return;
 	}
 }
 // System.Void TrialList::.ctor()

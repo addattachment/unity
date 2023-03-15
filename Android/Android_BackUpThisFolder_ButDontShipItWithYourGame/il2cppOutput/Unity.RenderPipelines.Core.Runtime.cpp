@@ -32219,8 +32219,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RenderGraph_UpdateResourceAllocationAndS
 	int32_t V_17 = 0;
 	int32_t V_18 = 0;
 	int32_t V_19 = 0;
-	RenderGraphPass_t7689449D6979D97B31E962897EB038EA3F01D361* V_20 = NULL;
-	String_t* V_21 = NULL;
+	int32_t V_20 = 0;
+	RenderGraphPass_t7689449D6979D97B31E962897EB038EA3F01D361* V_21 = NULL;
+	String_t* V_22 = NULL;
 	int32_t G_B28_0 = 0;
 	int32_t G_B31_0 = 0;
 	{
@@ -32445,7 +32446,7 @@ IL_00ec:
 	{
 		// for (int type = 0; type < (int)RenderGraphResourceType.Count; ++type)
 		V_9 = 0;
-		goto IL_02fb;
+		goto IL_0321;
 	}
 
 IL_0105:
@@ -32459,7 +32460,7 @@ IL_0105:
 		V_10 = L_46;
 		// for (int i = 0; i < resourceInfos.size; ++i)
 		V_11 = 0;
-		goto IL_02e7;
+		goto IL_030d;
 	}
 
 IL_0118:
@@ -32492,7 +32493,7 @@ IL_0118:
 		bool L_57 = V_13;
 		if (!L_57)
 		{
-			goto IL_02e1;
+			goto IL_0307;
 		}
 	}
 
@@ -32585,7 +32586,7 @@ IL_01a5:
 		int32_t L_76 = V_17;
 		if ((((int32_t)L_76) == ((int32_t)(-1))))
 		{
-			goto IL_02c4;
+			goto IL_02ea;
 		}
 	}
 	{
@@ -32598,7 +32599,7 @@ IL_01a5:
 		bool L_80 = L_79->___enableAsyncCompute_10;
 		if (!L_80)
 		{
-			goto IL_02a8;
+			goto IL_02ce;
 		}
 	}
 	{
@@ -32705,15 +32706,15 @@ IL_024c:
 		NullCheck(L_107);
 		RenderGraphPass_t7689449D6979D97B31E962897EB038EA3F01D361* L_109;
 		L_109 = List_1_get_Item_mF4BF1CA717D268B8161CF061828545D7B88DAC34(L_107, L_108, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&List_1_get_Item_mF4BF1CA717D268B8161CF061828545D7B88DAC34_RuntimeMethod_var)));
-		V_20 = L_109;
+		V_21 = L_109;
 		// var resName = "<unknown>";
-		V_21 = ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB50A1C8D166F6D83589906FA241D44631109E56A));
+		V_22 = ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralB50A1C8D166F6D83589906FA241D44631109E56A));
 		// var msg = $"{(RenderGraphResourceType)type} resource '{resName}' in asynchronous pass '{invalidPass.name}' is missing synchronization on the graphics pipeline.";
 		int32_t L_110 = V_9;
 		int32_t L_111 = L_110;
 		RuntimeObject* L_112 = Box(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&RenderGraphResourceType_tAFC98053C956B68EDA12B1B8A9BC4B245C97D996_il2cpp_TypeInfo_var)), &L_111);
-		String_t* L_113 = V_21;
-		RenderGraphPass_t7689449D6979D97B31E962897EB038EA3F01D361* L_114 = V_20;
+		String_t* L_113 = V_22;
+		RenderGraphPass_t7689449D6979D97B31E962897EB038EA3F01D361* L_114 = V_21;
 		NullCheck(L_114);
 		String_t* L_115;
 		L_115 = RenderGraphPass_get_name_mBC9E08A5232E33757330806E9E52F8EA924101DB_inline(L_114, NULL);
@@ -32728,111 +32729,142 @@ IL_024c:
 
 IL_0282:
 	{
-		// ref CompiledPassInfo passInfo = ref m_CompiledPassInfos[Math.Max(0, firstWaitingPassIndex - 1)];
-		DynamicArray_1_tA7E05F444A8E75C3FD24B4EA81F57EA44E6D0F09* L_118 = __this->___m_CompiledPassInfos_15;
-		int32_t L_119 = V_19;
+		// var releasePassIndex = Math.Max(0, firstWaitingPassIndex - 1);
+		int32_t L_118 = V_19;
 		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
-		int32_t L_120;
-		L_120 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(0, ((int32_t)il2cpp_codegen_subtract(L_119, 1)), NULL);
-		NullCheck(L_118);
-		CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615* L_121;
-		L_121 = DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912(L_118, L_120, DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912_RuntimeMethod_var);
-		// passInfo.resourceReleaseList[type].Add(i);
-		List_1U5BU5D_t37294D7C303231F2FD83B3C398AED0937F4F3206* L_122 = L_121->___resourceReleaseList_2;
-		int32_t L_123 = V_9;
-		NullCheck(L_122);
-		int32_t L_124 = L_123;
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_125 = (L_122)->GetAt(static_cast<il2cpp_array_size_t>(L_124));
-		int32_t L_126 = V_11;
-		NullCheck(L_125);
-		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_125, L_126, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
-		goto IL_02c4;
+		int32_t L_119;
+		L_119 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(0, ((int32_t)il2cpp_codegen_subtract(L_118, 1)), NULL);
+		V_20 = L_119;
+		goto IL_029c;
 	}
 
-IL_02a8:
+IL_0290:
+	{
+		// releasePassIndex = Math.Max(0, releasePassIndex - 1);
+		int32_t L_120 = V_20;
+		il2cpp_codegen_runtime_class_init_inline(Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var);
+		int32_t L_121;
+		L_121 = Math_Max_m530EBA549AFD98CFC2BD29FE86C6376E67DF11CF(0, ((int32_t)il2cpp_codegen_subtract(L_120, 1)), NULL);
+		V_20 = L_121;
+	}
+
+IL_029c:
+	{
+		// while (m_CompiledPassInfos[releasePassIndex].culled)
+		DynamicArray_1_tA7E05F444A8E75C3FD24B4EA81F57EA44E6D0F09* L_122 = __this->___m_CompiledPassInfos_15;
+		int32_t L_123 = V_20;
+		NullCheck(L_122);
+		CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615* L_124;
+		L_124 = DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912(L_122, L_123, DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912_RuntimeMethod_var);
+		bool L_125 = L_124->___culled_4;
+		if (L_125)
+		{
+			goto IL_0290;
+		}
+	}
+	{
+		// ref CompiledPassInfo passInfo = ref m_CompiledPassInfos[releasePassIndex];
+		DynamicArray_1_tA7E05F444A8E75C3FD24B4EA81F57EA44E6D0F09* L_126 = __this->___m_CompiledPassInfos_15;
+		int32_t L_127 = V_20;
+		NullCheck(L_126);
+		CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615* L_128;
+		L_128 = DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912(L_126, L_127, DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912_RuntimeMethod_var);
+		// passInfo.resourceReleaseList[type].Add(i);
+		List_1U5BU5D_t37294D7C303231F2FD83B3C398AED0937F4F3206* L_129 = L_128->___resourceReleaseList_2;
+		int32_t L_130 = V_9;
+		NullCheck(L_129);
+		int32_t L_131 = L_130;
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_132 = (L_129)->GetAt(static_cast<il2cpp_array_size_t>(L_131));
+		int32_t L_133 = V_11;
+		NullCheck(L_132);
+		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_132, L_133, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
+		goto IL_02ea;
+	}
+
+IL_02ce:
 	{
 		// ref CompiledPassInfo passInfo = ref m_CompiledPassInfos[lastReadPassIndex];
-		DynamicArray_1_tA7E05F444A8E75C3FD24B4EA81F57EA44E6D0F09* L_127 = __this->___m_CompiledPassInfos_15;
-		int32_t L_128 = V_17;
-		NullCheck(L_127);
-		CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615* L_129;
-		L_129 = DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912(L_127, L_128, DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912_RuntimeMethod_var);
+		DynamicArray_1_tA7E05F444A8E75C3FD24B4EA81F57EA44E6D0F09* L_134 = __this->___m_CompiledPassInfos_15;
+		int32_t L_135 = V_17;
+		NullCheck(L_134);
+		CompiledPassInfo_t7434C596A1EA90A428DAECAA3FFB87314BC84615* L_136;
+		L_136 = DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912(L_134, L_135, DynamicArray_1_get_Item_m5B1DBAB0205422DC339E985CCEBD396137011912_RuntimeMethod_var);
 		// passInfo.resourceReleaseList[type].Add(i);
-		List_1U5BU5D_t37294D7C303231F2FD83B3C398AED0937F4F3206* L_130 = L_129->___resourceReleaseList_2;
-		int32_t L_131 = V_9;
-		NullCheck(L_130);
-		int32_t L_132 = L_131;
-		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_133 = (L_130)->GetAt(static_cast<il2cpp_array_size_t>(L_132));
-		int32_t L_134 = V_11;
-		NullCheck(L_133);
-		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_133, L_134, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
+		List_1U5BU5D_t37294D7C303231F2FD83B3C398AED0937F4F3206* L_137 = L_136->___resourceReleaseList_2;
+		int32_t L_138 = V_9;
+		NullCheck(L_137);
+		int32_t L_139 = L_138;
+		List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* L_140 = (L_137)->GetAt(static_cast<il2cpp_array_size_t>(L_139));
+		int32_t L_141 = V_11;
+		NullCheck(L_140);
+		List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_inline(L_140, L_141, List_1_Add_m0248A96C5334E9A93E6994B7780478BCD994EA3D_RuntimeMethod_var);
 	}
 
-IL_02c4:
+IL_02ea:
 	{
 		// if (sharedResource && (firstWriteIndex != -1 || lastReadPassIndex != -1)) // A shared resource is considered used if it's either read or written at any pass.
-		bool L_135 = V_13;
-		if (!L_135)
+		bool L_142 = V_13;
+		if (!L_142)
 		{
-			goto IL_02e1;
+			goto IL_0307;
 		}
 	}
 	{
-		int32_t L_136 = V_14;
-		if ((!(((uint32_t)L_136) == ((uint32_t)(-1)))))
+		int32_t L_143 = V_14;
+		if ((!(((uint32_t)L_143) == ((uint32_t)(-1)))))
 		{
-			goto IL_02d2;
+			goto IL_02f8;
 		}
 	}
 	{
-		int32_t L_137 = V_17;
-		if ((((int32_t)L_137) == ((int32_t)(-1))))
+		int32_t L_144 = V_17;
+		if ((((int32_t)L_144) == ((int32_t)(-1))))
 		{
-			goto IL_02e1;
+			goto IL_0307;
 		}
 	}
 
-IL_02d2:
+IL_02f8:
 	{
 		// m_Resources.UpdateSharedResourceLastFrameIndex(type, i);
-		RenderGraphResourceRegistry_t8BCEB5376056E4818FA9B6CC82057B9FE9ACA06C* L_138 = __this->___m_Resources_1;
-		int32_t L_139 = V_9;
-		int32_t L_140 = V_11;
-		NullCheck(L_138);
-		RenderGraphResourceRegistry_UpdateSharedResourceLastFrameIndex_m01A8CCDA734B3D604AB0A96C77F519152509288D(L_138, L_139, L_140, NULL);
+		RenderGraphResourceRegistry_t8BCEB5376056E4818FA9B6CC82057B9FE9ACA06C* L_145 = __this->___m_Resources_1;
+		int32_t L_146 = V_9;
+		int32_t L_147 = V_11;
+		NullCheck(L_145);
+		RenderGraphResourceRegistry_UpdateSharedResourceLastFrameIndex_m01A8CCDA734B3D604AB0A96C77F519152509288D(L_145, L_146, L_147, NULL);
 	}
 
-IL_02e1:
+IL_0307:
 	{
 		// for (int i = 0; i < resourceInfos.size; ++i)
-		int32_t L_141 = V_11;
-		V_11 = ((int32_t)il2cpp_codegen_add(L_141, 1));
+		int32_t L_148 = V_11;
+		V_11 = ((int32_t)il2cpp_codegen_add(L_148, 1));
 	}
 
-IL_02e7:
+IL_030d:
 	{
 		// for (int i = 0; i < resourceInfos.size; ++i)
-		int32_t L_142 = V_11;
-		DynamicArray_1_t81C7A776DDFFE0020653921896E3C21491099905* L_143 = V_10;
-		NullCheck(L_143);
-		int32_t L_144;
-		L_144 = DynamicArray_1_get_size_m7F3F5DBED58FFB566B1BC15986F9D760A4968FFE_inline(L_143, DynamicArray_1_get_size_m7F3F5DBED58FFB566B1BC15986F9D760A4968FFE_RuntimeMethod_var);
-		if ((((int32_t)L_142) < ((int32_t)L_144)))
+		int32_t L_149 = V_11;
+		DynamicArray_1_t81C7A776DDFFE0020653921896E3C21491099905* L_150 = V_10;
+		NullCheck(L_150);
+		int32_t L_151;
+		L_151 = DynamicArray_1_get_size_m7F3F5DBED58FFB566B1BC15986F9D760A4968FFE_inline(L_150, DynamicArray_1_get_size_m7F3F5DBED58FFB566B1BC15986F9D760A4968FFE_RuntimeMethod_var);
+		if ((((int32_t)L_149) < ((int32_t)L_151)))
 		{
 			goto IL_0118;
 		}
 	}
 	{
 		// for (int type = 0; type < (int)RenderGraphResourceType.Count; ++type)
-		int32_t L_145 = V_9;
-		V_9 = ((int32_t)il2cpp_codegen_add(L_145, 1));
+		int32_t L_152 = V_9;
+		V_9 = ((int32_t)il2cpp_codegen_add(L_152, 1));
 	}
 
-IL_02fb:
+IL_0321:
 	{
 		// for (int type = 0; type < (int)RenderGraphResourceType.Count; ++type)
-		int32_t L_146 = V_9;
-		if ((((int32_t)L_146) < ((int32_t)2)))
+		int32_t L_153 = V_9;
+		if ((((int32_t)L_153) < ((int32_t)2)))
 		{
 			goto IL_0105;
 		}

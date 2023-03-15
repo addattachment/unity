@@ -6,7 +6,7 @@ Library: /github/workspace/Temp/StagingArea/tempburstlibs/arm64-v8a/lib_burst_ge
 --meta-data-generation=False
 --dump=Function
 --float-precision=Standard
---compilation-defines=UNITY_2021_3_19
+--compilation-defines=UNITY_2021_3_20
 --compilation-defines=UNITY_2021_3
 --compilation-defines=UNITY_2021
 --compilation-defines=UNITY_5_3_OR_NEWER

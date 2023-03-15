@@ -23,12 +23,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Caregiver_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Debug_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Environment_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_GameManager_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Gazed_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Hands_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_LSL_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Pico_Platform_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Pico_Spatializer_CodeGenModule;
-IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Pico_Spatializer_Example_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Players_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_System_Configuration_CodeGenModule;
@@ -53,6 +52,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_ImageConversionModule_Co
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_InputLegacyModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_InputModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_JSONSerializeModule_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_ParticleSystemModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_PhysicsModule_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngine_SharedInternalsModule_CodeGenModule;
@@ -99,12 +99,11 @@ const Il2CppCodeGenModule* g_CodeGenModules[73] =
 	(&g_Debug_CodeGenModule),
 	(&g_Environment_CodeGenModule),
 	(&g_GameManager_CodeGenModule),
+	(&g_Gazed_CodeGenModule),
 	(&g_Hands_CodeGenModule),
 	(&g_LSL_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
-	(&g_Pico_Platform_CodeGenModule),
 	(&g_Pico_Spatializer_CodeGenModule),
-	(&g_Pico_Spatializer_Example_CodeGenModule),
 	(&g_Players_CodeGenModule),
 	(&g_System_CodeGenModule),
 	(&g_System_Configuration_CodeGenModule),
@@ -129,6 +128,7 @@ const Il2CppCodeGenModule* g_CodeGenModules[73] =
 	(&g_UnityEngine_InputLegacyModule_CodeGenModule),
 	(&g_UnityEngine_InputModule_CodeGenModule),
 	(&g_UnityEngine_JSONSerializeModule_CodeGenModule),
+	(&g_UnityEngine_ParticleSystemModule_CodeGenModule),
 	(&g_UnityEngine_Physics2DModule_CodeGenModule),
 	(&g_UnityEngine_PhysicsModule_CodeGenModule),
 	(&g_UnityEngine_SharedInternalsModule_CodeGenModule),
@@ -173,14 +173,14 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	17,
 	g_ReversePInvokeWrapperPointers,
-	56039,
+	55389,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	14227,
+	14145,
 	g_Il2CppInvokerPointers,
-	1976,
+	1960,
 	g_UnresolvedVirtualMethodPointers,
-	674,
+	675,
 	g_Il2CppInteropData,
 	0,
 	NULL,

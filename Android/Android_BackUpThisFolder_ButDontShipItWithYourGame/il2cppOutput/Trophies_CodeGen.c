@@ -71,17 +71,21 @@ extern void TrophyList_Start_m1C62B63E9147CF855F74573BE979B3968F6A0E68 (void);
 extern void TrophyList_Update_mFE2E856E71EC9ABC48DDD7255495DD3F71CA421F (void);
 // 0x0000001F System.Void TrophyList::MoveTrophyToWinner(Player)
 extern void TrophyList_MoveTrophyToWinner_m8EE6CF5353012867B0D0F641CA7396DB13C0E367 (void);
-// 0x00000020 System.Void TrophyList::SetTrophyGiven()
+// 0x00000020 System.Void TrophyList::DestroyCurrentTrophy()
+extern void TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219 (void);
+// 0x00000021 System.Void TrophyList::SetTrophyGiven()
 extern void TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7 (void);
-// 0x00000021 System.Void TrophyList::MakeTrophyAppear(System.Int32)
+// 0x00000022 System.Void TrophyList::SetTrophyDestroyed()
+extern void TrophyList_SetTrophyDestroyed_mD9EE7F2CAEC4E7DE783C184B5903813771BCE211 (void);
+// 0x00000023 System.Void TrophyList::MakeTrophyAppear(System.Int32)
 extern void TrophyList_MakeTrophyAppear_m06BE7054DCE75E8D6C7E1E8F8A38C9AF44752884 (void);
-// 0x00000022 System.Void TrophyList::SetFocus(System.Boolean,UnityEngine.Transform)
+// 0x00000024 System.Void TrophyList::SetFocus(System.Boolean,UnityEngine.Transform)
 extern void TrophyList_SetFocus_mE38ABF4A6489C6543A351386AD917A535CBF51D9 (void);
-// 0x00000023 UnityEngine.GameObject[] TrophyList::Reshuffle(UnityEngine.GameObject[])
+// 0x00000025 UnityEngine.GameObject[] TrophyList::Reshuffle(UnityEngine.GameObject[])
 extern void TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4 (void);
-// 0x00000024 System.Void TrophyList::.ctor()
+// 0x00000026 System.Void TrophyList::.ctor()
 extern void TrophyList__ctor_mBE81277C8EB33EF5C8BC50DEF9EF49C9F13F9190 (void);
-static Il2CppMethodPointer s_methodPointers[36] = 
+static Il2CppMethodPointer s_methodPointers[38] = 
 {
 	TrophyAppearState_EnterState_mD25487826D990776487AEB33FEC4038CD4438520,
 	TrophyAppearState_ExitState_m433A22FB124A75F51AD1215DD7BAD685296E64D7,
@@ -114,56 +118,60 @@ static Il2CppMethodPointer s_methodPointers[36] =
 	TrophyList_Start_m1C62B63E9147CF855F74573BE979B3968F6A0E68,
 	TrophyList_Update_mFE2E856E71EC9ABC48DDD7255495DD3F71CA421F,
 	TrophyList_MoveTrophyToWinner_m8EE6CF5353012867B0D0F641CA7396DB13C0E367,
+	TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219,
 	TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7,
+	TrophyList_SetTrophyDestroyed_mD9EE7F2CAEC4E7DE783C184B5903813771BCE211,
 	TrophyList_MakeTrophyAppear_m06BE7054DCE75E8D6C7E1E8F8A38C9AF44752884,
 	TrophyList_SetFocus_mE38ABF4A6489C6543A351386AD917A535CBF51D9,
 	TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4,
 	TrophyList__ctor_mBE81277C8EB33EF5C8BC50DEF9EF49C9F13F9190,
 };
-static const int32_t s_InvokerIndices[36] = 
+static const int32_t s_InvokerIndices[38] = 
 {
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
 	0,
 	0,
 	0,
-	8115,
-	8115,
-	8115,
-	6467,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	8115,
-	8115,
-	6467,
-	8115,
-	6430,
-	3043,
-	5733,
-	8115,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
+	6442,
+	6442,
+	6442,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
+	8085,
+	8085,
+	6405,
+	3044,
+	5712,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Trophies_CodeGenModule;
 const Il2CppCodeGenModule g_Trophies_CodeGenModule = 
 {
 	"Trophies.dll",
-	36,
+	38,
 	s_methodPointers,
 	0,
 	NULL,

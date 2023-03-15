@@ -32,45 +32,57 @@ extern void EOGNotificationGen_setEOGNotification_m2E0229D85E9EA376C072365AC711F
 extern void EOGNotificationGen_GetEOGNotification_m6CA9F426860B1C4E706A9F1489F39B5131663A57 (void);
 // 0x0000000A System.Void EOGNotificationGen::.ctor()
 extern void EOGNotificationGen__ctor_mAD38565CA09799A03CCC3E419463053A67B3FE72 (void);
-// 0x0000000B System.Void WsClient::Start()
+// 0x0000000B System.Void StateMgrEvent::.ctor(System.String)
+extern void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (void);
+// 0x0000000C System.Void StateMgrEvent::Set(System.String)
+extern void StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6 (void);
+// 0x0000000D System.String StateMgrEvent::SaveToString()
+extern void StateMgrEvent_SaveToString_m28495AF49ACBACA03B05B70C431AFA340B265AF2 (void);
+// 0x0000000E System.Void WsClient::Start()
 extern void WsClient_Start_mA3542962FFBECA5C2130B3BA23A9089B3720D816 (void);
-// 0x0000000C System.Void WsClient::Update()
+// 0x0000000F System.Void WsClient::Update()
 extern void WsClient_Update_m048CB1E47F8F72A56DDE82212E95906796485B6A (void);
-// 0x0000000D System.Void WsClient::HandleIncomingMessage(System.String)
+// 0x00000010 System.Void WsClient::HandleIncomingMessage(System.String)
 extern void WsClient_HandleIncomingMessage_m97CC6FCDA2DE978264240E8D3649A621731C7BED (void);
-// 0x0000000E System.Void WsClient::SendWSMessage(System.String)
+// 0x00000011 System.Void WsClient::SetPlayerValsReady(PlayerVals)
+extern void WsClient_SetPlayerValsReady_m84EEF73BBDF2ECB3EA278195E1C5B761D1901E21 (void);
+// 0x00000012 System.Void WsClient::SendWSMessage(System.String)
 extern void WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D (void);
-// 0x0000000F System.Void WsClient::SetDebug(System.String)
+// 0x00000013 System.Void WsClient::SetDebug(System.String)
 extern void WsClient_SetDebug_m9235066CE49F363F7118ED548DA0B3598A239330 (void);
-// 0x00000010 System.Void WsClient::OnApplicationQuit()
+// 0x00000014 System.Void WsClient::OnApplicationQuit()
 extern void WsClient_OnApplicationQuit_m66BD6B950ACE48365EF41C46A720CA375B3F40F6 (void);
-// 0x00000011 System.Void WsClient::.ctor()
+// 0x00000015 System.Void WsClient::.ctor()
 extern void WsClient__ctor_m74DBCB0443868D24CFF89C1EC1BE9FE54FED5882 (void);
-// 0x00000012 System.Void WsClient::<Start>b__11_0(System.Object,System.EventArgs)
-extern void WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570 (void);
-// 0x00000013 System.Void WsClient::<Start>b__11_1(System.Object,WebSocketSharp.MessageEventArgs)
-extern void WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9 (void);
-// 0x00000014 System.Void WsClient::<Start>b__11_2(System.Object,WebSocketSharp.CloseEventArgs)
-extern void WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE (void);
-// 0x00000015 System.Void WsClient/WsEvent::.ctor()
+// 0x00000016 System.Void WsClient::<Start>b__12_0(System.Object,System.EventArgs)
+extern void WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239 (void);
+// 0x00000017 System.Void WsClient::<Start>b__12_1(System.Object,WebSocketSharp.MessageEventArgs)
+extern void WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0 (void);
+// 0x00000018 System.Void WsClient::<Start>b__12_2(System.Object,WebSocketSharp.CloseEventArgs)
+extern void WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E (void);
+// 0x00000019 System.Void WsClient/WsEvent::.ctor()
 extern void WsEvent__ctor_m4BE17D08B0A9C5F26244E3A637F5D0712B0849C0 (void);
-// 0x00000016 System.Void WsClient/WSHelloworld::.ctor(System.String)
+// 0x0000001A System.Void WsClient/WSHelloworld::.ctor(System.String)
 extern void WSHelloworld__ctor_m44547AF312D78DD7D61C97C65402F66B314133B5 (void);
-// 0x00000017 System.String WsClient/WSHelloworld::HelloMessage()
+// 0x0000001B System.String WsClient/WSHelloworld::HelloMessage()
 extern void WSHelloworld_HelloMessage_m8C12044173FBFA52E3EAA3DAEAA2221A3CADD75D (void);
-// 0x00000018 System.Void m_WS_Event::.ctor()
+// 0x0000001C System.String PlayerVals::SaveToString()
+extern void PlayerVals_SaveToString_mB8C9FB01D677F2EBEED45DF5A17A37BEBB61D774 (void);
+// 0x0000001D System.Void PlayerVals::.ctor()
+extern void PlayerVals__ctor_m9068B94CD5A9340E5A911EFDFE7DFD00C51ADE13 (void);
+// 0x0000001E System.Void WebsocketMessage::.ctor()
+extern void WebsocketMessage__ctor_m13D510378689FE65CDF98A34968921C27A8C4DD9 (void);
+// 0x0000001F System.Void m_WS_Event::.ctor()
 extern void m_WS_Event__ctor_mF6A0CD10AED2CCC4080880AC3A412452ACEDB665 (void);
-// 0x00000019 System.Void Ws_to_debug::Start()
+// 0x00000020 System.Void Ws_to_debug::Start()
 extern void Ws_to_debug_Start_m8D34F48D1C3DAEF559D188B6AD787666E9470DC7 (void);
-// 0x0000001A System.Void Ws_to_debug::Update()
+// 0x00000021 System.Void Ws_to_debug::Update()
 extern void Ws_to_debug_Update_m3FD3705388B94E87675A03785DD58189095FF188 (void);
-// 0x0000001B System.Void Ws_to_debug::SetDebug(System.String)
+// 0x00000022 System.Void Ws_to_debug::SetDebug(System.String)
 extern void Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B (void);
-// 0x0000001C System.Void Ws_to_debug::PrintDebug()
-extern void Ws_to_debug_PrintDebug_mF35C926F04B33D32A68B77994197F200385AA855 (void);
-// 0x0000001D System.Void Ws_to_debug::.ctor()
+// 0x00000023 System.Void Ws_to_debug::.ctor()
 extern void Ws_to_debug__ctor_mDD4E0779F52CE004540314BE8C6BD265A526D1BC (void);
-static Il2CppMethodPointer s_methodPointers[29] = 
+static Il2CppMethodPointer s_methodPointers[35] = 
 {
 	CaregiverScoreGen_Start_mDD43DE235F4964259E3AD2FAA80CB48B3649B1BC,
 	CaregiverScoreGen_SendCaregiverScoreOverws_mCA440AB67C8B9B7D6B9996DEA7D86DD40C06EF52,
@@ -82,63 +94,75 @@ static Il2CppMethodPointer s_methodPointers[29] =
 	EOGNotificationGen_setEOGNotification_m2E0229D85E9EA376C072365AC711FEE91391B5B6,
 	EOGNotificationGen_GetEOGNotification_m6CA9F426860B1C4E706A9F1489F39B5131663A57,
 	EOGNotificationGen__ctor_mAD38565CA09799A03CCC3E419463053A67B3FE72,
+	StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE,
+	StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6,
+	StateMgrEvent_SaveToString_m28495AF49ACBACA03B05B70C431AFA340B265AF2,
 	WsClient_Start_mA3542962FFBECA5C2130B3BA23A9089B3720D816,
 	WsClient_Update_m048CB1E47F8F72A56DDE82212E95906796485B6A,
 	WsClient_HandleIncomingMessage_m97CC6FCDA2DE978264240E8D3649A621731C7BED,
+	WsClient_SetPlayerValsReady_m84EEF73BBDF2ECB3EA278195E1C5B761D1901E21,
 	WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D,
 	WsClient_SetDebug_m9235066CE49F363F7118ED548DA0B3598A239330,
 	WsClient_OnApplicationQuit_m66BD6B950ACE48365EF41C46A720CA375B3F40F6,
 	WsClient__ctor_m74DBCB0443868D24CFF89C1EC1BE9FE54FED5882,
-	WsClient_U3CStartU3Eb__11_0_m6679EDCCE541502A4A932CCC4F911442B12B1570,
-	WsClient_U3CStartU3Eb__11_1_m6666831A74F42DB7738557111B6745F72B58EFA9,
-	WsClient_U3CStartU3Eb__11_2_m3D5693E2E14DC594EA8EDB9D079EF8C9BA1091DE,
+	WsClient_U3CStartU3Eb__12_0_m143EBE8D7A95880614C020DE6BB5BE4BB9C12239,
+	WsClient_U3CStartU3Eb__12_1_m793330C98CDB6F4964ACEB3117A9E2DF0C4DDBB0,
+	WsClient_U3CStartU3Eb__12_2_mC34730BD0BCE75E2BC4D266E219437899B2D059E,
 	WsEvent__ctor_m4BE17D08B0A9C5F26244E3A637F5D0712B0849C0,
 	WSHelloworld__ctor_m44547AF312D78DD7D61C97C65402F66B314133B5,
 	WSHelloworld_HelloMessage_m8C12044173FBFA52E3EAA3DAEAA2221A3CADD75D,
+	PlayerVals_SaveToString_mB8C9FB01D677F2EBEED45DF5A17A37BEBB61D774,
+	PlayerVals__ctor_m9068B94CD5A9340E5A911EFDFE7DFD00C51ADE13,
+	WebsocketMessage__ctor_m13D510378689FE65CDF98A34968921C27A8C4DD9,
 	m_WS_Event__ctor_mF6A0CD10AED2CCC4080880AC3A412452ACEDB665,
 	Ws_to_debug_Start_m8D34F48D1C3DAEF559D188B6AD787666E9470DC7,
 	Ws_to_debug_Update_m3FD3705388B94E87675A03785DD58189095FF188,
 	Ws_to_debug_SetDebug_mF0749CE38DF179E1920AF1D80E553A2DC206706B,
-	Ws_to_debug_PrintDebug_mF35C926F04B33D32A68B77994197F200385AA855,
 	Ws_to_debug__ctor_mDD4E0779F52CE004540314BE8C6BD265A526D1BC,
 };
-static const int32_t s_InvokerIndices[29] = 
+static const int32_t s_InvokerIndices[35] = 
 {
-	8115,
-	8115,
-	6430,
-	7964,
-	8115,
-	8115,
-	8115,
-	6467,
-	7964,
-	8115,
-	8115,
-	8115,
-	6467,
-	6467,
-	6467,
-	8115,
-	8115,
-	3668,
-	3668,
-	3668,
-	8115,
-	6467,
-	7964,
-	8115,
-	8115,
-	8115,
-	6467,
-	8115,
-	8115,
+	8085,
+	8085,
+	6405,
+	7934,
+	8085,
+	8085,
+	8085,
+	6442,
+	7934,
+	8085,
+	6442,
+	6442,
+	7934,
+	8085,
+	8085,
+	6442,
+	6442,
+	6442,
+	6442,
+	8085,
+	8085,
+	3665,
+	3665,
+	3665,
+	8085,
+	6442,
+	7934,
+	7934,
+	8085,
+	8085,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_WebSocket_CodeGenModule;
 const Il2CppCodeGenModule g_WebSocket_CodeGenModule = 
 {
 	"WebSocket.dll",
-	29,
+	35,
 	s_methodPointers,
 	0,
 	NULL,

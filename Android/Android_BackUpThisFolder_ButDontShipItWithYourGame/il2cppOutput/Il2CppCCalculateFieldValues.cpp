@@ -38367,12 +38367,14 @@ struct Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields
 	TextWriter_tA9E5461506CF806E17B6BBBF2119359DEDA3F0F3* ___stderr_1;
 	// System.IO.TextReader System.Console::stdin
 	TextReader_tB8D43017CB6BE1633E5A86D64E7757366507C1F7* ___stdin_2;
+	// System.Boolean System.Console::IsRunningOnAndroid
+	bool ___IsRunningOnAndroid_3;
 	// System.Text.Encoding System.Console::inputEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___inputEncoding_3;
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___inputEncoding_4;
 	// System.Text.Encoding System.Console::outputEncoding
-	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___outputEncoding_4;
+	Encoding_t65CDEF28CF20A7B8C92E85A4E808920C2465F095* ___outputEncoding_5;
 	// System.ConsoleCancelEventHandler System.Console::cancel_event
-	ConsoleCancelEventHandler_t7E25E018B7944F60BD34AE7F32E119F34DCEA053* ___cancel_event_5;
+	ConsoleCancelEventHandler_t7E25E018B7944F60BD34AE7F32E119F34DCEA053* ___cancel_event_6;
 };
 
 // System.Console
@@ -49330,9 +49332,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable361[4] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable363[2] = 
 {
 	static_cast<int32_t>(offsetof(WindowsConsole_tB86E0FCA935FA2C612E2EE8A0153781E4023D17D_StaticFields, ___ctrlHandlerAdded_0)),static_cast<int32_t>(offsetof(WindowsConsole_tB86E0FCA935FA2C612E2EE8A0153781E4023D17D_StaticFields, ___cancelHandler_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable364[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable364[7] = 
 {
-	static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stdout_0)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stderr_1)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stdin_2)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___inputEncoding_3)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___outputEncoding_4)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___cancel_event_5)),};
+	static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stdout_0)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stderr_1)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___stdin_2)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___IsRunningOnAndroid_3)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___inputEncoding_4)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___outputEncoding_5)),static_cast<int32_t>(offsetof(Console_t5EDF9498D011BD48287171978EDBBA6964829C3E_StaticFields, ___cancel_event_6)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable365[3] = 
 {
 	static_cast<int32_t>(offsetof(ConsoleDriver_tC98607842465524D6078EB6C21FEA25BBC1A6E80_StaticFields, ___driver_0)),static_cast<int32_t>(offsetof(ConsoleDriver_tC98607842465524D6078EB6C21FEA25BBC1A6E80_StaticFields, ___is_console_1)),static_cast<int32_t>(offsetof(ConsoleDriver_tC98607842465524D6078EB6C21FEA25BBC1A6E80_StaticFields, ___called_isatty_2)),};

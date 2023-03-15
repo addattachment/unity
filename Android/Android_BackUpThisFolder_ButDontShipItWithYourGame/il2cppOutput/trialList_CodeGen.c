@@ -40,11 +40,9 @@ extern void TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED (void)
 extern void TrialList_GetCurrentTrial_mE3449ADB7FF0FAFC94D295D55909C31BCC1FDFE0 (void);
 // 0x0000000E System.Void TrialList::NextTrial()
 extern void TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C (void);
-// 0x0000000F System.Int32 TrialList::GetTrialLength()
-extern void TrialList_GetTrialLength_mC7E2E40D7337B73C4FF1C9DB638FEF2A5F534EA6 (void);
-// 0x00000010 System.Void TrialList::.ctor()
+// 0x0000000F System.Void TrialList::.ctor()
 extern void TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059 (void);
-static Il2CppMethodPointer s_methodPointers[16] = 
+static Il2CppMethodPointer s_methodPointers[15] = 
 {
 	Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3,
 	Trial_GetTrialNumber_mF6FE0261A13F714BA6FA15087BA549B2996B279F,
@@ -60,33 +58,31 @@ static Il2CppMethodPointer s_methodPointers[16] =
 	TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED,
 	TrialList_GetCurrentTrial_mE3449ADB7FF0FAFC94D295D55909C31BCC1FDFE0,
 	TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C,
-	TrialList_GetTrialLength_mC7E2E40D7337B73C4FF1C9DB638FEF2A5F534EA6,
 	TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059,
 };
-static const int32_t s_InvokerIndices[16] = 
+static const int32_t s_InvokerIndices[15] = 
 {
-	1188,
-	7929,
-	7846,
-	7964,
-	7929,
-	8115,
-	8115,
-	8115,
-	8115,
-	6467,
-	8115,
-	6467,
-	7964,
-	8115,
-	7929,
-	8115,
+	1187,
+	7899,
+	7816,
+	7934,
+	7899,
+	8085,
+	8085,
+	8085,
+	8085,
+	6442,
+	8085,
+	6442,
+	7934,
+	8085,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_trialList_CodeGenModule;
 const Il2CppCodeGenModule g_trialList_CodeGenModule = 
 {
 	"trialList.dll",
-	16,
+	15,
 	s_methodPointers,
 	0,
 	NULL,
