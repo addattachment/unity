@@ -15,13 +15,17 @@ public class SetCaregiverGaze : MonoBehaviour
 
     private void Update()
     {
-        if (follow)
+        if (follow & followObject!= null)
         {
             lookTarget.transform.position = followObject.transform.position;
         }
         else
         {
-            lookTarget.transform.position = startPos;
+            Hashtable ht = iTween.Hash("position", startPos, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
+
+            // move trophy to winner
+            iTween.MoveTo(lookTarget, ht); 
+            //lookTarget.transform.position = startPos;
         }
     }
     public void SetGaze(GameObject ball)

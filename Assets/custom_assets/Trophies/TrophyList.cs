@@ -86,10 +86,10 @@ public class TrophyList : MonoBehaviour
     {
         trophyIsGiven = false;
 
-        ht = iTween.Hash("position", new Vector3(0,3.0f,0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
+        ht = iTween.Hash("amount", new Vector3(0,3.0f,0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
 
         // move trophy to winner
-        iTween.MoveTo(currentTrophy, ht);
+        iTween.MoveBy(currentTrophy, ht);
     }
 
     private void SetTrophyGiven()
@@ -98,9 +98,9 @@ public class TrophyList : MonoBehaviour
     }   
     private void SetTrophyDestroyed()
     {
-        currentTrophy = null;
+        //currentTrophy = null;
         trophyIsGiven = true;
-        //Destroy(currentTrophy, 1f);
+        Destroy(currentTrophy, 1f);
 
     }
 

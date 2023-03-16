@@ -113,6 +113,5 @@ public class TrajectoryManager : MonoBehaviour
             }
         }
         _lastForce = force;
-        Debug.Break();
     }
 }

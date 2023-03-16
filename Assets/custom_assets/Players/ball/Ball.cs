@@ -169,7 +169,6 @@ public class Ball : MonoBehaviour
             targets.StartAllTargets();
             Rb.isKinematic = false;
             Rb.velocity = _velocity;
-            Debug.Break();
         }
         else
         {
@@ -237,7 +236,6 @@ public class Ball : MonoBehaviour
         transform.position = _fakeBallStartPoint;
         ballIsReleased = true;
         //debug_text.SetDebugText("ball start point is " + Rb.position);
-        Debug.Break();
         Launch(Rb.position);
     }
 

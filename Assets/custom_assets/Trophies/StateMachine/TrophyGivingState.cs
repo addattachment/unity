@@ -17,6 +17,9 @@
         else
         {
             state.winnerUI.ShowWinnerCanvas("gelijkspel");
+            // lights
+            state.trophyList.SetFocus(true, state.trophyList.transform);
+            //move trophy
             state.trophyList.DestroyCurrentTrophy();
         }
         //state.players.ResetPlayers();
