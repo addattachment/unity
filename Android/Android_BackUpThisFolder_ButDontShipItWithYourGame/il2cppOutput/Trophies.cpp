@@ -148,6 +148,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690
 IL2CPP_EXTERN_C String_t* _stringLiteral51E50A085191273306EC02FC338B7CC6E4D4BE73;
 IL2CPP_EXTERN_C String_t* _stringLiteral5EDD9944966FE92914DA1A808DD698FB38174069;
 IL2CPP_EXTERN_C String_t* _stringLiteral62FD002BEB924E97A634AEECABFCE37D15B10571;
+IL2CPP_EXTERN_C String_t* _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1;
 IL2CPP_EXTERN_C String_t* _stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951;
 IL2CPP_EXTERN_C String_t* _stringLiteral88BDF3D0791A560245652E772545C49897854443;
 IL2CPP_EXTERN_C String_t* _stringLiteral97D392A98B43E1EA6BE41940F9752DD3F8DDCB33;
@@ -1051,6 +1052,10 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999E
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_useGravity_m1B1B22E093F9DC92D7BEEBBE6B02642B3B6C4389 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, bool ___0_value, const RuntimeMethod* method) ;
+// System.Void iTween::MoveBy(UnityEngine.GameObject,System.Collections.Hashtable)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void iTween_MoveBy_mCEC58044A241075594F464DEE77FEF0EA5EF2AC0 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_target, Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ___1_args, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object,System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, float ___1_t, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Quaternion_get_identity_m7E701AE095ED10FD5EA0B50ABCFDE2EEFF2173A5_inline (const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<UnityEngine.GameObject>(T,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
@@ -1429,12 +1434,24 @@ IL_0055:
 		announceWinner_t27911BD7500F119492AAECC4ADDF011C163C6722* L_19 = L_18->___winnerUI_16;
 		NullCheck(L_19);
 		announceWinner_ShowWinnerCanvas_m5557497485DAEE0E26ABE9FBB5AAB9C6AA04019E(L_19, _stringLiteralF5CAA8F8385F4F116F0968A5586DBB9814E1CB9E, NULL);
-		// state.trophyList.DestroyCurrentTrophy();
+		// state.trophyList.SetFocus(true, state.trophyList.transform);
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_20 = ___0_state;
 		NullCheck(L_20);
 		TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* L_21 = L_20->___trophyList_14;
+		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_22 = ___0_state;
+		NullCheck(L_22);
+		TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* L_23 = L_22->___trophyList_14;
+		NullCheck(L_23);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24;
+		L_24 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_23, NULL);
 		NullCheck(L_21);
-		TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219(L_21, NULL);
+		TrophyList_SetFocus_mE38ABF4A6489C6543A351386AD917A535CBF51D9(L_21, (bool)1, L_24, NULL);
+		// state.trophyList.DestroyCurrentTrophy();
+		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_25 = ___0_state;
+		NullCheck(L_25);
+		TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* L_26 = L_25->___trophyList_14;
+		NullCheck(L_26);
+		TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219(L_26, NULL);
 		// }
 		return;
 	}
@@ -2197,8 +2214,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_DestroyCurrentTrophy_mC997F37
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral51C6279E31F7483126B79E3000116001A915B690);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5EDD9944966FE92914DA1A808DD698FB38174069);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88BDF3D0791A560245652E772545C49897854443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralBDABE160FEA5C7408D72E2209F8998D1C1A855FF);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD1CAF2FD7CC5FFB66D981890EC5474F03C3E417F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE2F0D48B27BE5837497DA1FF29117A29C390B560);
@@ -2209,12 +2226,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_DestroyCurrentTrophy_mC997F37
 	{
 		// trophyIsGiven = false;
 		__this->___trophyIsGiven_13 = (bool)0;
-		// ht = iTween.Hash("position", new Vector3(0,3.0f,0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
+		// ht = iTween.Hash("amount", new Vector3(0,3.0f,0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_0 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)((int32_t)12));
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = L_0;
 		NullCheck(L_1);
-		ArrayElementTypeCheck (L_1, _stringLiteral88BDF3D0791A560245652E772545C49897854443);
-		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)_stringLiteral88BDF3D0791A560245652E772545C49897854443);
+		ArrayElementTypeCheck (L_1, _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
+		(L_1)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)_stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1);
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
 		memset((&L_3), 0, sizeof(L_3));
@@ -2275,10 +2292,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_DestroyCurrentTrophy_mC997F37
 		L_21 = iTween_Hash_m5CA704245904620D7275B1F683A74248252E4D2C(L_19, NULL);
 		__this->___ht_10 = L_21;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ht_10), (void*)L_21);
-		// iTween.MoveTo(currentTrophy, ht);
+		// iTween.MoveBy(currentTrophy, ht);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___currentTrophy_5;
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_23 = __this->___ht_10;
-		iTween_MoveTo_m35B4E1DE891FDFD9DA5C9553D17D48EE4B834374(L_22, L_23, NULL);
+		iTween_MoveBy_mCEC58044A241075594F464DEE77FEF0EA5EF2AC0(L_22, L_23, NULL);
 		// }
 		return;
 	}
@@ -2296,12 +2313,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_SetTrophyGiven_mE81F50D0AFD8D
 // System.Void TrophyList::SetTrophyDestroyed()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_SetTrophyDestroyed_mD9EE7F2CAEC4E7DE783C184B5903813771BCE211 (TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
-		// currentTrophy = null;
-		__this->___currentTrophy_5 = (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentTrophy_5), (void*)(GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*)NULL);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
 		// trophyIsGiven = true;
 		__this->___trophyIsGiven_13 = (bool)1;
+		// Destroy(currentTrophy, 1f);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___currentTrophy_5;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_m064F2A066491D2DC4FFCFBDBE5FCFFB807A04436(L_0, (1.0f), NULL);
 		// }
 		return;
 	}
