@@ -9,7 +9,7 @@ public class PlayerScore : MonoBehaviour
     [Header("visualising score")]
     [SerializeField] private ScoreDot[] scoreDots;
     [SerializeField] private ScoreBoardAll scoreboard;
-    [SerializeField] private Floor floor;
+    [SerializeField] private ScoreLightEmitting floor;
 
     [Header("Audio")]
     [SerializeField] private GameSounds gameSounds;
@@ -32,7 +32,7 @@ public class PlayerScore : MonoBehaviour
         gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
         scoreDots = GetComponentsInChildren<ScoreDot>();
-        floor = GameObject.FindGameObjectWithTag("Floor").GetComponent<Floor>();
+        floor = GameObject.FindGameObjectWithTag("Floor").GetComponent<ScoreLightEmitting>();
         playerBallScoreEvent = new();
     }
 

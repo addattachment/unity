@@ -1,3 +1,4 @@
+using LSL;
 using UnityEngine;
 
 //reference: https://www.youtube.com/watch?v=Vt8aZDPzRjI
@@ -8,6 +9,7 @@ public class TrialStateManager : MonoBehaviour
     public TrialState trialState = new();
     public PostTrialState postTrialState = new();
     public IntroState introState = new();
+    public EndTrialState endState = new();
 
     public PlayerGroup players;
     public TargetGroup targets;
@@ -18,14 +20,19 @@ public class TrialStateManager : MonoBehaviour
     public TrophyStateManager trophyStates;
     public CountDown countDown;
 
+
     public float IntroPauseTimeForStart = 1.0f;
 
     // trialPhase is for debugging purposes
     public string trialPhase = "IntroState";
     [SerializeField] private bool sendStateWSMessage = false;
+
+    public GameFinished gameFinished;
     [Header("data connections")]
-    [SerializeField] private WsClient ws;
+    public WsClient wsClient;
+    public OutletPassThrough LSLOutlet;
     StateMgrEvent trialStateMgrEvent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,8 +43,6 @@ public class TrialStateManager : MonoBehaviour
         currentState.EnterState(this);
         gameManager = GameManager.Instance;
         trialStateMgrEvent = new("trialstate");
-
-
     }
 
     // Update is called once per frame
@@ -53,7 +58,7 @@ public class TrialStateManager : MonoBehaviour
         if (sendStateWSMessage)
         {
             trialStateMgrEvent.Set(newState.ToString());
-            ws.SendWSMessage(trialStateMgrEvent.SaveToString());
+            wsClient.SendWSMessage(trialStateMgrEvent.SaveToString());
         }
         currentState.EnterState(this);
     }

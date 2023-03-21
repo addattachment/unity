@@ -27,6 +27,8 @@ TagManager:
   - scene
   - Collidable
   - simBall
+  - left
+  - right
   layers:
   - Default
   - TransparentFX

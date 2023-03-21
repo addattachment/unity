@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class Floor : MonoBehaviour
+public class ScoreLightEmitting : MonoBehaviour
 {
-    private Material floorMat;
+    [SerializeField] private Material _Mat;
     [SerializeField] private Color scoreColor;
     [SerializeField] private Color missColor;
     [SerializeField] private Color neutralColor;
@@ -17,8 +17,8 @@ public class Floor : MonoBehaviour
     private Hashtable htDown;
     private void Start()
     {
-        floorMat = GetComponent<Renderer>().material;
-        floorMat.SetColor("_EmissionColor", neutralColor);
+        neutralColor = _Mat.GetColor("_EmissionColor");
+        _Mat.SetColor("_EmissionColor", neutralColor);
     }
     private void Update()
     {
@@ -80,6 +80,6 @@ public class Floor : MonoBehaviour
 
     private void SetColor(Color _color)
     {
-        floorMat.SetColor("_EmissionColor", _color);
+        _Mat.SetColor("_EmissionColor", _color);
     }
 }

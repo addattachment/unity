@@ -1,22 +1,28 @@
-﻿Trial nr;response;good/bad/neutral;tone;intensity;childs performance
-0;Je hebt nog ... trials te gaan;neutral;neutraal;5;good
-1;Het is niet makkelijk en ik zie dat je je best doet. Doe zo verder!;good;vriendelijk;10;bad
-2;Geef niet op, X. Ik weet dat je het kan!;good;vriendelijk;10;bad
-3;Verliezen is niet fijn maar ik geloof in jou!;good;vriendelijk;10;bad
-4;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!;good;vriendelijk;10;bad
-5;Wat een moeilijk spel en toch geef je niet op. Knap van jou!;good;vriendelijk;10;bad
-6;Ik ben trots op jou omdat je de moed niet opgeeeft.;good;vriendelijk;10;bad
-7;;good;vriendelijk;10;bad
-8;;good;vriendelijk;10;bad
-9;;good;vriendelijk;10;bad
-10;;good;vriendelijk;10;bad
-11;;good;vriendelijk;10;bad
-12;Wat een moeilijk spel en toch geef je niet op. Knap van jou!;good;vriendelijk;10;bad
-13;Het is niet makkelijk en ik zie dat je je best doet. Doe zo verder!;good;vriendelijk;10;bad
-14;Geef niet op, X. Ik weet dat je het kan!;good;vriendelijk;10;bad
-15;Verliezen is niet fijn maar ik geloof in jou!;good;vriendelijk;10;bad
-16;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!;good;vriendelijk;10;bad
-17;Zo moeilijk is dat toch niet!;bad;afstandelijk, niet-sensitief;10;bad
-18;Je kan er niks van!;bad;afstandelijk, niet-sensitief;10;bad
-19;Doe zo verder en je eindigt laatste!;bad;afstandelijk, niet-sensitief;10;bad
-20;Ik had beter van jou verwacht!;bad;afstandelijk, niet-sensitief;10;bad
+Trial nr;response;good/bad/neutral;tone;intensity;childs performance;Volgorde trials;good;bad;neutral
+0;Het is niet makkelijk, maar ik zie dat je uw best doet. Hou vol!;good;vriendelijk, bemoedigend;10;bad;1;;;
+1;Geef niet op, X. Ik weet dat je het kan!;good;vriendelijk, enthousiast;10;bad;2;;;
+2;Zet hem op, ik geloof in jou!;good;vriendelijk;10;bad;3;;;
+3;Het trekt op niets hoe jij hier bezig bent!;bad;afstandelijk, niet-sensitief, teleurgesteld;10;bad;4;;;
+4;Je hebt nog 20 trials te gaan;neutral;neutraal;5;Fout:508;5;;;
+5;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!;good;vriendelijk;10;bad;6;;;
+6;Als je zo weinig uw best doet, ga je zeker verliezen!;bad;afstandelijk, niet-sensitief, kwaad;10;bad;7;;;
+7;Wat een moeilijk spel en toch geef je niet op. Knap van jou!;good;vriendelijk, bemoedigend;10;bad;8;;;
+8;Je hebt nog 16 trials te gaan;neutral;neutraal;5;Fout:508;9;;;
+9;Ik ben trots op jou omdat je de moed niet opgeeft.;good;vriendelijk, trots;10;bad;10;;;
+10;Ik zie dat je hard uw best doet en de volgende ronde gaat vast veel beter.;good;vriendelijk;10;bad;11;;;
+11;Ik geloof in jou!;good;vriendelijk, enthousiast, bemoedigend;10;bad;12;;;
+12;Je kan er niets van!;bad;afstandelijk, niet-sensitief, boos;10;bad;13;;;
+13;Je hebt nog 11 trials te gaan;neutral;neutraal;5;Fout:508;15;;;
+14;Knap van jou dat je blijft proberen, het gaat jou lukken!;good;vriendelijk;10;bad;15;;;
+15;Kom op, je kan het! Ik zie dat je uw best aan het doen bent.;good;vriendelijk;10;bad;16;;;
+16;Je hebt nog 8 trials te gaan;neutral;neutraal;5;Fout:508;17;;;
+17;Ik ben trots op jou omdat je de moed niet opgeeft en steeds uw best doet.;good;vriendelijk;10;bad;18;;;
+18;Wat een moeilijk spel en toch geef je niet op. Knap van jou!;good;vriendelijk;10;bad;19;;;
+19;Het is niet makkelijk maar ik zie dat je uw best doet. Hou vol!;good;vriendelijk;10;bad;20;;;
+20;Zo moeilijk is dat toch niet! Doe nu toch gewoon eens uw best.;bad;afstandelijk, niet-sensitief, boos, gefrustreerd;10;bad;21;;;
+21;Geef niet op, X. Ik weet dat je het kan!;good;vriendelijk;10;bad;22;;;
+22;Verliezen is niet fijn maar ik geloof in jou!;good;vriendelijk, begrip tonen;10;bad;23;;;
+23;Je hebt nog 1 trial te gaan;neutral;neutraal;5;Fout:508;24;;;
+24;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!;good;vriendelijk;10;bad;25;;;
+;;;;;;;;;
+; ;;;;;;;;

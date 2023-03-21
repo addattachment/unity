@@ -2276,7 +2276,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectName: tegenspeler
-  debug_text: {fileID: 1250019217}
   ws: {fileID: 2030409968}
   gameManager: {fileID: 1177219193}
 --- !u!114 &491137547 stripped
@@ -4037,6 +4036,11 @@ Transform:
   m_Father: {fileID: 1326679941}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &907002827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 401896579, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+  m_PrefabInstance: {fileID: 268857601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &921282237
 Camera:
   m_ObjectHideFlags: 0
@@ -5855,6 +5859,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a83fe228d747c664eacfeec820112ed5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1447534324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 549211829, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+  m_PrefabInstance: {fileID: 268857601}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1463361039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1079838918049244631, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
@@ -6609,12 +6618,11 @@ MonoBehaviour:
   activeParticipant: {fileID: 0}
   gameManager: {fileID: 1177219193}
   switchPlayer: 0
-  debug_text: {fileID: 1250019217}
   players: []
   ws: {fileID: 2030409968}
   lsl: {fileID: 934573156}
-  PlayerInvisibleWall: {fileID: 0}
-  NPCInvisibleWall: {fileID: 0}
+  PlayerInvisibleWall: {fileID: 1447534324}
+  NPCInvisibleWall: {fileID: 907002827}
 --- !u!4 &1633729059
 Transform:
   m_ObjectHideFlags: 0
@@ -17280,10 +17288,10 @@ MonoBehaviour:
   gameManager: {fileID: 1177219193}
   sun: {fileID: 705507994}
   caregiverSpotLight: {fileID: 3323008410877219564}
-  playerSlingshot: {fileID: 0}
   audioSource: {fileID: 9071927408442714882}
   testPlay: 0
   feedbackPole: {fileID: 1172207064}
+  enableText: 0
 --- !u!114 &9071927408611438067
 MonoBehaviour:
   m_ObjectHideFlags: 0

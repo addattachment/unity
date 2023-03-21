@@ -8,7 +8,7 @@ namespace LSL
     public class m_LSL_Event : UnityEvent<string>
     {
     }
-    public enum Marker { game_start = 0, ball_release = 1, ball_good_hit = 2, ball_bad_hit = 3, score = 4, test = 5 };
+    public enum Marker { game_start = 0, ball_release = 1, ball_good_hit = 2, ball_bad_hit = 3, score = 4, test = 5, end_game = 6};
 
     public class OutletPassThrough : MonoBehaviour
     {

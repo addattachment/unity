@@ -26,6 +26,7 @@ public class TrophyCooldownState : TrophyStateMachine
             else
             {
                 Debug.Log("it's over");
+                state.SwitchState(state.trophyInitState);
             }
         }
     }

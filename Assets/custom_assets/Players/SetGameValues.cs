@@ -11,10 +11,12 @@ public class SetGameValues : MonoBehaviour
     public Gender gender = Gender.Male;
     public Contingency contingency = Contingency.c_20;
     public int height = 130;
-
-    public string NPCNameMale = "Sander";
-    public string NPCNameFemale = "Tinne";
-
+    public int trial_block = 1; // or 2
+    public string NPCNameMale_1 = "Sander";
+    public string NPCNameMale_2 = "Henk";
+    public string NPCNameFemale_1 = "Tinne";
+    public string NPCNameFemale_2 = "Lindsay";
+    public string NextTrialBlockNPCname = "";
     [SerializeField] Player player;
     [SerializeField] Player NPC;
 
@@ -58,29 +60,46 @@ public class SetGameValues : MonoBehaviour
         gender = playerVals.gender == "M" ? Gender.Male : Gender.Female;
         contingency = playerVals.contingency == 20 ? Contingency.c_20 : Contingency.c_80;
         height = playerVals.height;
-
+        trial_block = playerVals.trial_block;
         UpdateGameValues();
     }
 
     public void UpdateGameValues()
     {
-        
+
         // we set the values for the normal player and the NPC, both should be male
         player.playerName = playerName;
         player.gender = gender;
         player.contingency = contingency;
         player.height = height; //TODO USEFUL?
         player.isRealPlayer = true;
+        player.trial_block = trial_block;
         // NPC values
         if (!gameManager.isTutorial)
         {
             if (gender == Gender.Male)
             {
-                NPC.playerName = NPCNameMale;
+                if (trial_block == 1)
+                {
+                    NPC.playerName = NPCNameMale_1;
+                    NextTrialBlockNPCname = NPCNameMale_2;
+                }
+                else
+                {
+                    NPC.playerName = NPCNameMale_2;
+                }
             }
             else
             {
-                NPC.playerName = NPCNameFemale;
+                if (trial_block == 1)
+                {
+                    NPC.playerName = NPCNameFemale_1;
+                    NextTrialBlockNPCname = NPCNameFemale_2;
+                }
+                else
+                {
+                    NPC.playerName = NPCNameFemale_2;
+                }
             }
             NPC.gender = gender;
             NPC.contingency = Contingency.c_20; // DONT CARE

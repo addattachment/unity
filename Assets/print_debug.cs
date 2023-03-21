@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class print_debug : MonoBehaviour
 {
@@ -23,6 +24,19 @@ public class print_debug : MonoBehaviour
     public void Print(string text)
     {
         Debug.Log(text);
+        //var controller = GetComponent<XRDirectInteractor>();
+        //if (controller.selectTarget.CompareTag("ball"))
+        //{
+
+        //}
+        //if (controller.selectingInteractor.tag.Equals("HandLeft"))
+        //{
+        //    isLeftHandHoldingGun = true;
+        //}
+        //else if (controller.selectingInteractor.tag.Equals("HandRight"))
+        //{
+        //    isRightHandHoldingGun = true;
+        //}
     }
 
     public void Select(bool enabled)

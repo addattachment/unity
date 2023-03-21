@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     public bool isRealPlayer = false;
     public bool isActivePlayer = false;
     public Contingency contingency = Contingency.c_20;
+    public int trial_block = 1; // or 2
+
     //Set multiple times in game
     public int score = 0;
     public int currentBallInTrial = 0;

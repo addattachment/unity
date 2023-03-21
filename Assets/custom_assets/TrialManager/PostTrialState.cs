@@ -20,13 +20,14 @@ public class PostTrialState : StateMachine
 
     public override void UpdateState(TrialStateManager state)
     {
+        // trophy is given comes from trophy giving state ==> trophylist ==> move trophy to winner
         if (state.gameManager.trophyIsGiven)
         {
             state.gameManager.trophyIsGiven = false;
             // trophy is given, so give feedback
             state.gameManager.mustGiveFeedback = true;
         }
-
+        // restart is set in caregiver scoring exit of state
         if (state.gameManager.restart)
         {
             state.gameManager.restart = false;

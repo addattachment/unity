@@ -286,6 +286,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
+        Debug.Log("reachChance " + reachChance);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

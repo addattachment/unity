@@ -6,12 +6,11 @@ public class TrialList : MonoBehaviour
 {
     [SerializeField] private Player player;
 
-    [SerializeField] private List<Trial> trialsList; // list of trials to be used in block of experiment
-
     [Header("Game settings")]
-    [SerializeField] private string audioClips20_dir;
-    [SerializeField] private string audioClips80_dir;
+    [SerializeField] private string data20_dir;
+    [SerializeField] private string data80_dir;
 
+    [SerializeField] private List<Trial> trialsList; // list of trials to be used in block of experiment
     public AudioClip[] audioClips;
     [SerializeField] private TextAsset trialListTA;
 
@@ -26,7 +25,7 @@ public class TrialList : MonoBehaviour
     {
         gameManager = GameManager.Instance;
 
-        
+
         if (gameManager.isTutorial)
         {
             CreateTutorialTrialList();
@@ -42,11 +41,11 @@ public class TrialList : MonoBehaviour
             Debug.Log("triallist gets filled in");
             if (player.contingency == Contingency.c_20)
             {
-                LoadFromResourcesFolder(audioClips20_dir);
+                LoadFromResourcesFolder(data20_dir);
             }
             else
             {
-                LoadFromResourcesFolder(audioClips80_dir);
+                LoadFromResourcesFolder(data80_dir);
             }
             ReadTrial(trialListTA);
             gameManager.trialListGenerated = true;
