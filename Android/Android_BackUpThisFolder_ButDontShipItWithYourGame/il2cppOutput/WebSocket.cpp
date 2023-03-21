@@ -260,7 +260,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral42646B33B50B6AA15E22733C8900716F0FE19E1D
 IL2CPP_EXTERN_C String_t* _stringLiteral50320EC3D39F8B155BB90632D565A8A5FE4DA2AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral51CA73A24E57F46F3EFD6314BC24C088F7F5F43E;
 IL2CPP_EXTERN_C String_t* _stringLiteral5FC154761871B7293BA5D77E57A16A71359FE4E5;
-IL2CPP_EXTERN_C String_t* _stringLiteral62846EDB80EB7E23F21C4E2856AA48B4DFFEA3FF;
 IL2CPP_EXTERN_C String_t* _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D;
 IL2CPP_EXTERN_C String_t* _stringLiteral875CF8A46A6E3F0725287DAF52B09AF91CB77C71;
 IL2CPP_EXTERN_C String_t* _stringLiteral876C4B39B6E4D0187090400768899C71D99DE90D;
@@ -360,6 +359,8 @@ struct PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F  : public RuntimeObj
 	String_t* ___gender_2;
 	// System.Int32 PlayerVals::contingency
 	int32_t ___contingency_3;
+	// System.Int32 PlayerVals::trial_block
+	int32_t ___trial_block_4;
 };
 
 // StateMgrEvent
@@ -3361,9 +3362,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B62
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2CF5186F7B4192709D79E1505C289FAD1C871EC5);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral62846EDB80EB7E23F21C4E2856AA48B4DFFEA3FF);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -3373,45 +3372,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B62
 	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A V_2;
 	memset((&V_2), 0, sizeof(V_2));
 	{
-		// Debug.Log("sending " + message);
-		String_t* L_0 = ___0_message;
-		String_t* L_1;
-		L_1 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral62846EDB80EB7E23F21C4E2856AA48B4DFFEA3FF, L_0, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_1, NULL);
 		// DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
 		DateTime__ctor_mD89390EF215242275A4E8F78C2C3E8BC3EF6F3C3((&V_0), ((int32_t)1970), 1, 1, 0, 0, 0, 1, NULL);
 		// int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
 		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
-		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_2;
-		L_2 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
-		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_3 = V_0;
-		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_4;
-		L_4 = DateTime_op_Subtraction_m64D26F5ABFAE6E166A7E567093D025F6C69F0123(L_2, L_3, NULL);
-		V_2 = L_4;
-		double L_5;
-		L_5 = TimeSpan_get_TotalSeconds_mED686E7CECE6A76A7DC38518698B9199DB8CDEA8((&V_2), NULL);
-		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>(L_5);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		L_0 = DateTime_get_UtcNow_m06B6E9995FE16846A0F71EC9DB23E90BE2C5F9FA(NULL);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_1 = V_0;
+		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A L_2;
+		L_2 = DateTime_op_Subtraction_m64D26F5ABFAE6E166A7E567093D025F6C69F0123(L_0, L_1, NULL);
+		V_2 = L_2;
+		double L_3;
+		L_3 = TimeSpan_get_TotalSeconds_mED686E7CECE6A76A7DC38518698B9199DB8CDEA8((&V_2), NULL);
+		V_1 = il2cpp_codegen_cast_double_to_int<int32_t>(L_3);
 		// if (hasWsConnection)
-		bool L_6 = __this->___hasWsConnection_6;
-		if (!L_6)
+		bool L_4 = __this->___hasWsConnection_6;
+		if (!L_4)
 		{
-			goto IL_0061;
+			goto IL_0051;
 		}
 	}
 	{
 		// ws.Send("time: " + cur_time + ", " + message);
-		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_7 = __this->___ws_5;
+		WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* L_5 = __this->___ws_5;
+		String_t* L_6;
+		L_6 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
+		String_t* L_7 = ___0_message;
 		String_t* L_8;
-		L_8 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		String_t* L_9 = ___0_message;
-		String_t* L_10;
-		L_10 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral2CF5186F7B4192709D79E1505C289FAD1C871EC5, L_8, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D, L_9, NULL);
-		NullCheck(L_7);
-		WebSocket_Send_mE275781E5A051D124CA6603C6DDF357E777DF3D1(L_7, L_10, NULL);
+		L_8 = String_Concat_m093934F71A9B351911EE46311674ED463B180006(_stringLiteral2CF5186F7B4192709D79E1505C289FAD1C871EC5, L_6, _stringLiteral758733BDBED83CBFF4F635AC26CA92AAE477F75D, L_7, NULL);
+		NullCheck(L_5);
+		WebSocket_Send_mE275781E5A051D124CA6603C6DDF357E777DF3D1(L_5, L_8, NULL);
 	}
 
-IL_0061:
+IL_0051:
 	{
 		// }
 		return;

@@ -260,7 +260,21 @@ extern void U3CExplodeU3Ed__38_System_Collections_Generic_IEnumeratorU3CSystem_O
 extern void U3CExplodeU3Ed__38_System_Collections_IEnumerator_Reset_m6C4F4039A6FEC3456C1A1D6371C38CA88822E389 (void);
 // 0x0000007C System.Object Ball/<Explode>d__38::System.Collections.IEnumerator.get_Current()
 extern void U3CExplodeU3Ed__38_System_Collections_IEnumerator_get_Current_m4ABBA4A0135A4D84F11A7C1F48C1D69D44369AEC (void);
-static Il2CppMethodPointer s_methodPointers[124] = 
+// 0x0000007D System.Void TwoHandedGrab::Start()
+extern void TwoHandedGrab_Start_mFFE092F63E85E539A54963CA3703FF962C1C7064 (void);
+// 0x0000007E System.Void TwoHandedGrab::Update()
+extern void TwoHandedGrab_Update_m51E483347F869C86DE7BCB794337E5638F477F74 (void);
+// 0x0000007F System.Void TwoHandedGrab::OnSelectExiting(UnityEngine.XR.Interaction.Toolkit.SelectExitEventArgs)
+extern void TwoHandedGrab_OnSelectExiting_mB22731970C07547ECC8A07AA405994AD41A860FD (void);
+// 0x00000080 System.Boolean TwoHandedGrab::HasMultipleInteractors()
+extern void TwoHandedGrab_HasMultipleInteractors_m139F690F4E325622212F295C198C6ED91153E8F1 (void);
+// 0x00000081 System.Boolean TwoHandedGrab::HasNoInteractors()
+extern void TwoHandedGrab_HasNoInteractors_m51A0B0DEB04E0B06046D927A09ACF6DECB887C6B (void);
+// 0x00000082 System.Void TwoHandedGrab::OnSelectEntering(UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs)
+extern void TwoHandedGrab_OnSelectEntering_mAFC7A25C1022B89692B819FC9614D261B03BFD90 (void);
+// 0x00000083 System.Void TwoHandedGrab::.ctor()
+extern void TwoHandedGrab__ctor_m302FB3F074176361962462AB7F4630064AA060D3 (void);
+static Il2CppMethodPointer s_methodPointers[131] = 
 {
 	DebugPlayerReachTarget_SetToggleReach_m974C13BC63FEC103AB46BFB8F67A9219B272A7BC,
 	DebugPlayerReachTarget__ctor_m93EA878C56B69234949AAB090311C41B78097E1E,
@@ -386,8 +400,15 @@ static Il2CppMethodPointer s_methodPointers[124] =
 	U3CExplodeU3Ed__38_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mAD3AC3590C0C8DCDC95C03EA4448F3CFD21467BD,
 	U3CExplodeU3Ed__38_System_Collections_IEnumerator_Reset_m6C4F4039A6FEC3456C1A1D6371C38CA88822E389,
 	U3CExplodeU3Ed__38_System_Collections_IEnumerator_get_Current_m4ABBA4A0135A4D84F11A7C1F48C1D69D44369AEC,
+	TwoHandedGrab_Start_mFFE092F63E85E539A54963CA3703FF962C1C7064,
+	TwoHandedGrab_Update_m51E483347F869C86DE7BCB794337E5638F477F74,
+	TwoHandedGrab_OnSelectExiting_mB22731970C07547ECC8A07AA405994AD41A860FD,
+	TwoHandedGrab_HasMultipleInteractors_m139F690F4E325622212F295C198C6ED91153E8F1,
+	TwoHandedGrab_HasNoInteractors_m51A0B0DEB04E0B06046D927A09ACF6DECB887C6B,
+	TwoHandedGrab_OnSelectEntering_mAFC7A25C1022B89692B819FC9614D261B03BFD90,
+	TwoHandedGrab__ctor_m302FB3F074176361962462AB7F4630064AA060D3,
 };
-static const int32_t s_InvokerIndices[124] = 
+static const int32_t s_InvokerIndices[131] = 
 {
 	3360,
 	8085,
@@ -513,12 +534,19 @@ static const int32_t s_InvokerIndices[124] =
 	7934,
 	8085,
 	7934,
+	8085,
+	8085,
+	6442,
+	7816,
+	7816,
+	6442,
+	8085,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Players_CodeGenModule;
 const Il2CppCodeGenModule g_Players_CodeGenModule = 
 {
 	"Players.dll",
-	124,
+	131,
 	s_methodPointers,
 	0,
 	NULL,

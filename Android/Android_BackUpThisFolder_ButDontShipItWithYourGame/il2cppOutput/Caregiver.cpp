@@ -1644,20 +1644,22 @@ struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843  : public MonoBehaviour_
 	bool ___isActivePlayer_8;
 	// Contingency Player::contingency
 	int32_t ___contingency_9;
+	// System.Int32 Player::trial_block
+	int32_t ___trial_block_10;
 	// System.Int32 Player::score
-	int32_t ___score_10;
+	int32_t ___score_11;
 	// System.Int32 Player::currentBallInTrial
-	int32_t ___currentBallInTrial_11;
+	int32_t ___currentBallInTrial_12;
 	// Slingshot Player::slingshot
-	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_12;
+	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_13;
 	// PlayerScore Player::playerScore
-	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_13;
+	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_14;
 	// UnityEngine.GameObject Player::trophySpawnLocation
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_15;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Player::trophyWonList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_15;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_16;
 	// UnityEngine.GameObject Player::instBall
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_17;
 };
 
 // PlayerGroup
@@ -1765,12 +1767,12 @@ struct TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05  : public MonoBehavio
 {
 	// Player TrialList::player
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_4;
+	// System.String TrialList::data20_dir
+	String_t* ___data20_dir_5;
+	// System.String TrialList::data80_dir
+	String_t* ___data80_dir_6;
 	// System.Collections.Generic.List`1<Trial> TrialList::trialsList
-	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_5;
-	// System.String TrialList::audioClips20_dir
-	String_t* ___audioClips20_dir_6;
-	// System.String TrialList::audioClips80_dir
-	String_t* ___audioClips80_dir_7;
+	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_7;
 	// UnityEngine.AudioClip[] TrialList::audioClips
 	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_8;
 	// UnityEngine.TextAsset TrialList::trialListTA
@@ -5499,7 +5501,7 @@ IL_0025:
 		NullCheck(L_19);
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_20 = L_19->___player_11;
 		NullCheck(L_20);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_20->___instBall_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_20->___instBall_17;
 		NullCheck(L_18);
 		SetCaregiverGaze_SetGaze_m1B9CE51FF0867479C0F48D882A46C8DB525CC29B(L_18, L_21, NULL);
 		return;

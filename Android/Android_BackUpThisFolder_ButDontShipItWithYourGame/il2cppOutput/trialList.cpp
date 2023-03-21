@@ -335,20 +335,22 @@ struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843  : public MonoBehaviour_
 	bool ___isActivePlayer_8;
 	// Contingency Player::contingency
 	int32_t ___contingency_9;
+	// System.Int32 Player::trial_block
+	int32_t ___trial_block_10;
 	// System.Int32 Player::score
-	int32_t ___score_10;
+	int32_t ___score_11;
 	// System.Int32 Player::currentBallInTrial
-	int32_t ___currentBallInTrial_11;
+	int32_t ___currentBallInTrial_12;
 	// Slingshot Player::slingshot
-	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_12;
+	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_13;
 	// PlayerScore Player::playerScore
-	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_13;
+	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_14;
 	// UnityEngine.GameObject Player::trophySpawnLocation
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_15;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Player::trophyWonList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_15;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_16;
 	// UnityEngine.GameObject Player::instBall
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_17;
 };
 
 // TrialList
@@ -356,12 +358,12 @@ struct TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05  : public MonoBehavio
 {
 	// Player TrialList::player
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_4;
+	// System.String TrialList::data20_dir
+	String_t* ___data20_dir_5;
+	// System.String TrialList::data80_dir
+	String_t* ___data80_dir_6;
 	// System.Collections.Generic.List`1<Trial> TrialList::trialsList
-	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_5;
-	// System.String TrialList::audioClips20_dir
-	String_t* ___audioClips20_dir_6;
-	// System.String TrialList::audioClips80_dir
-	String_t* ___audioClips80_dir_7;
+	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_7;
 	// UnityEngine.AudioClip[] TrialList::audioClips
 	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_8;
 	// UnityEngine.TextAsset TrialList::trialListTA
@@ -791,8 +793,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Awake_m12FC28AA017CBDE6EC919D0
 		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = (List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85*)il2cpp_codegen_object_new(List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		List_1__ctor_m2DB8727D61B05CA6D6BA040AD419E43D717F63CD(L_0, List_1__ctor_m2DB8727D61B05CA6D6BA040AD419E43D717F63CD_RuntimeMethod_var);
-		__this->___trialsList_5 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialsList_5), (void*)L_0);
+		__this->___trialsList_7 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialsList_7), (void*)L_0);
 		// }
 		return;
 	}
@@ -878,16 +880,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Update_mB1CF3505C4066D92BEF249
 		}
 	}
 	{
-		// LoadFromResourcesFolder(audioClips20_dir);
-		String_t* L_6 = __this->___audioClips20_dir_6;
+		// LoadFromResourcesFolder(data20_dir);
+		String_t* L_6 = __this->___data20_dir_5;
 		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_6, NULL);
 		goto IL_004b;
 	}
 
 IL_003f:
 	{
-		// LoadFromResourcesFolder(audioClips80_dir);
-		String_t* L_7 = __this->___audioClips80_dir_7;
+		// LoadFromResourcesFolder(data80_dir);
+		String_t* L_7 = __this->___data80_dir_6;
 		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_7, NULL);
 	}
 
@@ -970,7 +972,7 @@ IL_0004:
 		NullCheck(L_1);
 		Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3(L_1, L_2, (bool)1, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, 0, NULL);
 		// trialsList.Add(temp);
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_3 = __this->___trialsList_5;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_3 = __this->___trialsList_7;
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_4 = V_1;
 		NullCheck(L_3);
 		List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_inline(L_3, L_4, List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_RuntimeMethod_var);
@@ -1161,7 +1163,7 @@ IL_008d:
 		NullCheck(L_29);
 		Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3(L_29, L_30, L_31, L_32, L_33, NULL);
 		// trialsList.Add(temp);
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_34 = __this->___trialsList_5;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_34 = __this->___trialsList_7;
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_35 = V_6;
 		NullCheck(L_34);
 		List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_inline(L_34, L_35, List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_RuntimeMethod_var);
@@ -1199,7 +1201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C6224
 	}
 	{
 		// return trialsList[gameManager.currentTrial];
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_5;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_7;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_10;
 		NullCheck(L_1);
 		int32_t L_2 = L_1->___currentTrial_22;
@@ -1230,7 +1232,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_NextTrial_mACB31D18CCE50A91100
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
 		NullCheck(L_3);
 		int32_t L_4 = L_3->___currentTrial_22;
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_5 = __this->___trialsList_5;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_5 = __this->___trialsList_7;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_inline(L_5, List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_RuntimeMethod_var);

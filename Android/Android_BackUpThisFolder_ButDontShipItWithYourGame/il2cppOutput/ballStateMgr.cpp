@@ -63,8 +63,6 @@ struct BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C;
 struct BallWaitingState_t66CFF72D7D203931328280E950EB41158B51214C;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
-// Floor
-struct Floor_tCB484EEDCE98EC822A7CAD09DA102343A8F15275;
 // GameManager
 struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE;
 // UnityEngine.GameObject
@@ -93,6 +91,8 @@ struct PlayersScoreEvent_tE9E8E8EDDAA3712C0CDC512AE336857868841D35;
 struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
 // ScoreBoardAll
 struct ScoreBoardAll_t7F58F4F4D8A8E33DA2254F21D2E987108B4E6428;
+// ScoreLightEmitting
+struct ScoreLightEmitting_tA193FD2D067185A300B5B28F3EE366E76AF819DF;
 // Slingshot
 struct Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D;
 // StateMgrEvent
@@ -472,20 +472,22 @@ struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843  : public MonoBehaviour_
 	bool ___isActivePlayer_8;
 	// Contingency Player::contingency
 	int32_t ___contingency_9;
+	// System.Int32 Player::trial_block
+	int32_t ___trial_block_10;
 	// System.Int32 Player::score
-	int32_t ___score_10;
+	int32_t ___score_11;
 	// System.Int32 Player::currentBallInTrial
-	int32_t ___currentBallInTrial_11;
+	int32_t ___currentBallInTrial_12;
 	// Slingshot Player::slingshot
-	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_12;
+	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_13;
 	// PlayerScore Player::playerScore
-	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_13;
+	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_14;
 	// UnityEngine.GameObject Player::trophySpawnLocation
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_15;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Player::trophyWonList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_15;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_16;
 	// UnityEngine.GameObject Player::instBall
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_17;
 };
 
 // PlayerGroup
@@ -526,8 +528,8 @@ struct PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6  : public MonoBehav
 	ScoreDotU5BU5D_t34DB3704E3093FBA789E6A680D7C8103D6362C90* ___scoreDots_6;
 	// ScoreBoardAll PlayerScore::scoreboard
 	ScoreBoardAll_t7F58F4F4D8A8E33DA2254F21D2E987108B4E6428* ___scoreboard_7;
-	// Floor PlayerScore::floor
-	Floor_tCB484EEDCE98EC822A7CAD09DA102343A8F15275* ___floor_8;
+	// ScoreLightEmitting PlayerScore::floor
+	ScoreLightEmitting_tA193FD2D067185A300B5B28F3EE366E76AF819DF* ___floor_8;
 	// GameSounds PlayerScore::gameSounds
 	GameSounds_tE160CF1666886E9284AD9EE66D97E21ECF8975B7* ___gameSounds_9;
 	// WsClient PlayerScore::ws
@@ -847,7 +849,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallCalcImpactState_EnterState_mEFC33F88
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_3;
 		L_3 = PlayerGroup_GetActivePlayer_m10B6804AEE843D10F5C91B7A4330CF49C383D534(L_2, NULL);
 		NullCheck(L_3);
-		PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* L_4 = L_3->___playerScore_13;
+		PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* L_4 = L_3->___playerScore_14;
 		// bool score = state.currentBall.ballDidScore;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_5 = ___0_state;
 		NullCheck(L_5);
@@ -894,9 +896,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallCalcImpactState_UpdateState_m13325C3
 		// currentPlayer.currentBallInTrial++;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_4 = L_3;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___currentBallInTrial_11;
+		int32_t L_5 = L_4->___currentBallInTrial_12;
 		NullCheck(L_4);
-		L_4->___currentBallInTrial_11 = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		L_4->___currentBallInTrial_12 = ((int32_t)il2cpp_codegen_add(L_5, 1));
 		// if (!state.players.BallsLeft())
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_6 = ___0_state;
 		NullCheck(L_6);
@@ -1115,7 +1117,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_ExitState_mFFDEDB408D016
 		NullCheck(L_1);
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_2 = L_1->___activeParticipant_6;
 		NullCheck(L_2);
-		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_3 = L_2->___slingshot_12;
+		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_3 = L_2->___slingshot_13;
 		NullCheck(L_3);
 		L_3->___slingshotLinesEnum_24 = 1;
 		// }
@@ -1207,7 +1209,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallPrepState_EnterState_m80C08B651CBF1F
 		// Slingshot slingshot = activeParticipant.slingshot;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_4 = L_3;
 		NullCheck(L_4);
-		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_5 = L_4->___slingshot_12;
+		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_5 = L_4->___slingshot_13;
 		V_0 = L_5;
 		// state.players.SetPlayerScoringChance(slingshot, state.isGoodTrial);
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_6 = ___0_state;
@@ -1221,7 +1223,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallPrepState_EnterState_m80C08B651CBF1F
 		PlayerGroup_SetPlayerScoringChance_m5331C9D5AD0A636A57FA316F0CEA141FFF9D855D(L_7, L_8, L_10, NULL);
 		// if (activeParticipant.currentBallInTrial < state.amountOfBallsInTrial)
 		NullCheck(L_4);
-		int32_t L_11 = L_4->___currentBallInTrial_11;
+		int32_t L_11 = L_4->___currentBallInTrial_12;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_12 = ___0_state;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___amountOfBallsInTrial_16;

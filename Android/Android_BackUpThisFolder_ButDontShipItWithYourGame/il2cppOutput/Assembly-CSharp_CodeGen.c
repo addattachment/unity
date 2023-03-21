@@ -90,14 +90,14 @@ extern void U3CFadeItU3Ed__13_System_Collections_IEnumerator_get_Current_m59FA2B
 extern void Initiate_Fade_m09D1FE18B46493AE2A6C8FC3CC52BE2AFB23B16F (void);
 // 0x00000027 System.Void Initiate::DoneFading()
 extern void Initiate_DoneFading_mE9055FFE383FEB666E55564F3D68B8874B4CBA29 (void);
-// 0x00000028 System.Void TwoHandedGrab::Start()
-extern void TwoHandedGrab_Start_m4EB79ACA4FF3EB9FCB823D268297679A6AA74674 (void);
-// 0x00000029 System.Void TwoHandedGrab::Update()
-extern void TwoHandedGrab_Update_m10AFC9CD6AFC6BCC2AEC6F9AF590606F9719EE2D (void);
-// 0x0000002A System.Boolean TwoHandedGrab::IsSelectableBy(UnityEngine.XR.Interaction.Toolkit.XRBaseInteractor)
-extern void TwoHandedGrab_IsSelectableBy_m8E56C13AC5A9231A5838C2D8BD8AFCF56DF32178 (void);
-// 0x0000002B System.Void TwoHandedGrab::.ctor()
-extern void TwoHandedGrab__ctor_m7BCE95C9DAF00374A6BED0BA97F9CA6079AD328D (void);
+// 0x00000028 System.Void GameFinished::SetNextNPC(System.String)
+extern void GameFinished_SetNextNPC_mF5A56688C92771558CD597B1C837F683EF207428 (void);
+// 0x00000029 System.Void GameFinished::ShowGameFinishedCanvas(System.String)
+extern void GameFinished_ShowGameFinishedCanvas_m3B27596AD0274FCB4FE6CE7E81A0A377EC34B73A (void);
+// 0x0000002A System.Void GameFinished::HideGameFinishedCanvas()
+extern void GameFinished_HideGameFinishedCanvas_mAD2FCAC37D1C612293CD96FD87283CD6EFD950F8 (void);
+// 0x0000002B System.Void GameFinished::.ctor()
+extern void GameFinished__ctor_m53271F6AB08960EE4EAAA91F87173989B74A5951 (void);
 // 0x0000002C System.Void print_debug::Start()
 extern void print_debug_Start_m8DE442F6D74573C398E0F0A7DE909523935FDD13 (void);
 // 0x0000002D System.Void print_debug::Update()
@@ -171,10 +171,10 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	U3CFadeItU3Ed__13_System_Collections_IEnumerator_get_Current_m59FA2B15979DAE5E53D23BC308D79C2AE9F346A0,
 	Initiate_Fade_m09D1FE18B46493AE2A6C8FC3CC52BE2AFB23B16F,
 	Initiate_DoneFading_mE9055FFE383FEB666E55564F3D68B8874B4CBA29,
-	TwoHandedGrab_Start_m4EB79ACA4FF3EB9FCB823D268297679A6AA74674,
-	TwoHandedGrab_Update_m10AFC9CD6AFC6BCC2AEC6F9AF590606F9719EE2D,
-	TwoHandedGrab_IsSelectableBy_m8E56C13AC5A9231A5838C2D8BD8AFCF56DF32178,
-	TwoHandedGrab__ctor_m7BCE95C9DAF00374A6BED0BA97F9CA6079AD328D,
+	GameFinished_SetNextNPC_mF5A56688C92771558CD597B1C837F683EF207428,
+	GameFinished_ShowGameFinishedCanvas_m3B27596AD0274FCB4FE6CE7E81A0A377EC34B73A,
+	GameFinished_HideGameFinishedCanvas_mAD2FCAC37D1C612293CD96FD87283CD6EFD950F8,
+	GameFinished__ctor_m53271F6AB08960EE4EAAA91F87173989B74A5951,
 	print_debug_Start_m8DE442F6D74573C398E0F0A7DE909523935FDD13,
 	print_debug_Update_mD5B4866959D96433B4B4B09C15540CFFF788C93D,
 	print_debug_Print_m0DF36E7973ABA7EF9A734E8BB89A7E8BC04DD135,
@@ -233,9 +233,9 @@ static const int32_t s_InvokerIndices[59] =
 	7934,
 	10619,
 	14130,
+	6442,
+	6442,
 	8085,
-	8085,
-	4601,
 	8085,
 	8085,
 	8085,

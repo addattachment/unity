@@ -526,20 +526,22 @@ struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843  : public MonoBehaviour_
 	bool ___isActivePlayer_8;
 	// Contingency Player::contingency
 	int32_t ___contingency_9;
+	// System.Int32 Player::trial_block
+	int32_t ___trial_block_10;
 	// System.Int32 Player::score
-	int32_t ___score_10;
+	int32_t ___score_11;
 	// System.Int32 Player::currentBallInTrial
-	int32_t ___currentBallInTrial_11;
+	int32_t ___currentBallInTrial_12;
 	// Slingshot Player::slingshot
-	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_12;
+	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingshot_13;
 	// PlayerScore Player::playerScore
-	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_13;
+	PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6* ___playerScore_14;
 	// UnityEngine.GameObject Player::trophySpawnLocation
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_14;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___trophySpawnLocation_15;
 	// System.Collections.Generic.List`1<UnityEngine.GameObject> Player::trophyWonList
-	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_15;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___trophyWonList_16;
 	// UnityEngine.GameObject Player::instBall
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___instBall_17;
 };
 
 // PlayerGroup
@@ -1291,7 +1293,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyCooldownState_UpdateState_m4BC66AD
 		bool L_5 = L_4->___LightIsSet_33;
 		if (!((int32_t)((int32_t)L_2&(int32_t)L_5)))
 		{
-			goto IL_0055;
+			goto IL_0061;
 		}
 	}
 	{
@@ -1334,9 +1336,16 @@ IL_004b:
 		// Debug.Log("it's over");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral2269B8905A76507BD43219BB25D47065201000BB, NULL);
+		// state.SwitchState(state.trophyInitState);
+		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_16 = ___0_state;
+		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_17 = ___0_state;
+		NullCheck(L_17);
+		TrophyInitState_t943ABAF889D45BD5EC915DCBC89750AAFBE595CF* L_18 = L_17->___trophyInitState_6;
+		NullCheck(L_16);
+		TrophyStateManager_SwitchState_mB3DC8C7540AE048BE80791536BB47D7C8D2D872F(L_16, L_18, NULL);
 	}
 
-IL_0055:
+IL_0061:
 	{
 		// }
 		return;
@@ -1410,7 +1419,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyGivingState_EnterState_m02E9D2DC29
 		TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* L_11 = L_10->___trophyList_14;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_12 = V_0;
 		NullCheck(L_12);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = L_12->___trophySpawnLocation_14;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_13 = L_12->___trophySpawnLocation_15;
 		NullCheck(L_13);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_14;
 		L_14 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_13, NULL);
@@ -1949,7 +1958,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_Start_m1C62B63E9147CF855F7457
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = L_5;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_7 = __this->___testPlayer_18;
 		NullCheck(L_7);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___trophySpawnLocation_14;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___trophySpawnLocation_15;
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, L_8);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_8);
@@ -2085,7 +2094,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_MoveTrophyToWinner_m8EE6CF535
 		// winner.trophyWonList.Add(currentTrophy);
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_0 = ___0_winner;
 		NullCheck(L_0);
-		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_1 = L_0->___trophyWonList_15;
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_1 = L_0->___trophyWonList_16;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___currentTrophy_5;
 		NullCheck(L_1);
 		List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_inline(L_1, L_2, List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var);
@@ -2098,7 +2107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_MoveTrophyToWinner_m8EE6CF535
 		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_4;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_6 = ___0_winner;
 		NullCheck(L_6);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___trophySpawnLocation_14;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___trophySpawnLocation_15;
 		NullCheck(L_7);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
 		L_8 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_7, NULL);
