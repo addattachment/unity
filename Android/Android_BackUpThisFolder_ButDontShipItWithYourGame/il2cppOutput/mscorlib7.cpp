@@ -5585,6 +5585,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar String_get_Chars_mC49DF0CD2D3BE7BE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Char_IsDigit_m8C1A38685D548E89FB8A05525B55261CC8D271B2 (Il2CppChar ___0_c, const RuntimeMethod* method) ;
 // System.Void System.Diagnostics.StackTrace::.ctor(System.Int32,System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void StackTrace__ctor_m7C03595A7D2ADA64E7CB5311C9563AF588DC8480 (StackTrace_t7C150C7C14136F985311A83A93524B1019F70853* __this, int32_t ___0_skipFrames, bool ___1_fNeedFileInfo, const RuntimeMethod* method) ;
+// System.String System.Environment::get_MachineName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_get_MachineName_m9DA8870A9A245AC7F13AC3EFE4E566A0CEFBA9A5 (const RuntimeMethod* method) ;
 // Mono.SafeStringMarshal Mono.RuntimeMarshal::MarshalString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SafeStringMarshal_t37C5C4D85118BDD5A55E3A20736550CF11C76C2E RuntimeMarshal_MarshalString_mEE271559E4EAA7CF9A86FFE918099C3B8DD0C4EC (String_t* ___0_str, const RuntimeMethod* method) ;
 // System.Void Mono.SafeStringMarshal::Dispose()
@@ -9314,7 +9316,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		L_4 = CADSerializer_SerializeObject_m693394374F6AFCC73C5A3756DD96AD2DB725F3B8(L_3, NULL);
 		NullCheck(L_4);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5;
-		L_5 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_4);
+		L_5 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_4);
 		return L_5;
 	}
 }
@@ -9385,7 +9387,7 @@ IL_0019:
 		L_15 = CADSerializer_SerializeMessage_m4707EBA30032C671C83E35C55E85925BE1397A80(L_14, NULL);
 		NullCheck(L_15);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_16;
-		L_16 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_15);
+		L_16 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_15);
 		*((RuntimeObject**)L_13) = (RuntimeObject*)L_16;
 		Il2CppCodeGenWriteBarrier((void**)(RuntimeObject**)L_13, (void*)(RuntimeObject*)L_16);
 		return;
@@ -9795,6 +9797,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Environment_get_HasShutdownStarted_m1C31
 	using namespace il2cpp::icalls;
 	return ((Environment_get_HasShutdownStarted_m1C31268C20C079988F412BC629BF3F6133CED761_ftn)mscorlib::System::Environment::get_HasShutdownStarted) ();
 }
+// System.String System.Environment::get_MachineName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_get_MachineName_m9DA8870A9A245AC7F13AC3EFE4E566A0CEFBA9A5 (const RuntimeMethod* method) 
+{
+	typedef String_t* (*Environment_get_MachineName_m9DA8870A9A245AC7F13AC3EFE4E566A0CEFBA9A5_ftn) ();
+	using namespace il2cpp::icalls;
+	return ((Environment_get_MachineName_m9DA8870A9A245AC7F13AC3EFE4E566A0CEFBA9A5_ftn)mscorlib::System::Environment::get_MachineName) ();
+}
 // System.String System.Environment::GetNewLine()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_GetNewLine_mEBFAF5D1948A38784C7215C69DA62819148643CF (const RuntimeMethod* method) 
 {
@@ -10176,6 +10185,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Environment_get_TickCount_m183BFCF001
 	typedef int32_t (*Environment_get_TickCount_m183BFCF001E12849E3D898957F0B81FD88BA183C_ftn) ();
 	using namespace il2cpp::icalls;
 	return ((Environment_get_TickCount_m183BFCF001E12849E3D898957F0B81FD88BA183C_ftn)mscorlib::System::Environment::get_TickCount) ();
+}
+// System.String System.Environment::get_UserDomainName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_get_UserDomainName_mDC47B74B13E4A2D55AE87C35705C620ED5A07D71 (const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0;
+		L_0 = Environment_get_MachineName_m9DA8870A9A245AC7F13AC3EFE4E566A0CEFBA9A5(NULL);
+		return L_0;
+	}
+}
+// System.String System.Environment::get_UserName()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_get_UserName_m288E608FBA13676A05677354839E6A557F99B92A (const RuntimeMethod* method) 
+{
+	typedef String_t* (*Environment_get_UserName_m288E608FBA13676A05677354839E6A557F99B92A_ftn) ();
+	using namespace il2cpp::icalls;
+	return ((Environment_get_UserName_m288E608FBA13676A05677354839E6A557F99B92A_ftn)mscorlib::System::Environment::get_UserName) ();
 }
 // System.Void System.Environment::Exit(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Environment_Exit_m0441ADEE5655E9454EB540C5A6B42DD86A2260C4 (int32_t ___0_exitCode, const RuntimeMethod* method) 
@@ -29286,7 +29311,7 @@ IL_008e:
 				FileStream_t07C7222EE10B75F352B89B76E60820160FF10AD8* L_4 = V_0;
 				NullCheck(L_4);
 				int64_t L_5;
-				L_5 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_4);
+				L_5 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_4);
 				V_1 = L_5;
 				int64_t L_6 = V_1;
 				if ((((int64_t)L_6) <= ((int64_t)((int64_t)((int32_t)4096)))))
@@ -29313,7 +29338,7 @@ IL_0028_1:
 				NullCheck(L_12);
 				NullCheck(L_10);
 				int32_t L_13;
-				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(27 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
+				L_13 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(32 /* System.Int32 System.IO.Stream::Read(System.Byte[],System.Int32,System.Int32) */, L_10, L_11, 0, ((int32_t)(((RuntimeArray*)L_12)->max_length)));
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = __this->___buffer_3;
 				NullCheck(L_14);
 				if ((((int32_t)L_13) == ((int32_t)((int32_t)(((RuntimeArray*)L_14)->max_length)))))

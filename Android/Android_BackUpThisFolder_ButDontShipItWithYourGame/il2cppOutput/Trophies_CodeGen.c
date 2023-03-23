@@ -65,27 +65,63 @@ extern void TrophyWaitingState_ExitState_mC04454BB501BC026CACDD51C82A7B7CBC48392
 extern void TrophyWaitingState_UpdateState_m21F7A701194E4E6B59B1473D38C5820526764279 (void);
 // 0x0000001C System.Void TrophyWaitingState::.ctor()
 extern void TrophyWaitingState__ctor_mE143F945B49E07180697721B511729FFEF91F859 (void);
-// 0x0000001D System.Void TrophyList::Start()
+// 0x0000001D System.Void Exploded::Start()
+extern void Exploded_Start_m5AC8109912E286F8B110295E1B131ADA4D965C18 (void);
+// 0x0000001E System.Void Exploded::Update()
+extern void Exploded_Update_m5823FDF9FC6C5E399F98C5D9798B4D8E0B00CCC2 (void);
+// 0x0000001F System.Void Exploded::Didexplode()
+extern void Exploded_Didexplode_mB7ACA228643A1ABDACECB4B69D79C4818EB87662 (void);
+// 0x00000020 System.Void Exploded::.ctor()
+extern void Exploded__ctor_m52263346968B7C1C7C6C0EFAD1D7BF8E9911E762 (void);
+// 0x00000021 System.Void TrophyList::Start()
 extern void TrophyList_Start_m1C62B63E9147CF855F74573BE979B3968F6A0E68 (void);
-// 0x0000001E System.Void TrophyList::Update()
+// 0x00000022 System.Void TrophyList::Update()
 extern void TrophyList_Update_mFE2E856E71EC9ABC48DDD7255495DD3F71CA421F (void);
-// 0x0000001F System.Void TrophyList::MoveTrophyToWinner(Player)
-extern void TrophyList_MoveTrophyToWinner_m8EE6CF5353012867B0D0F641CA7396DB13C0E367 (void);
-// 0x00000020 System.Void TrophyList::DestroyCurrentTrophy()
-extern void TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219 (void);
-// 0x00000021 System.Void TrophyList::SetTrophyGiven()
+// 0x00000023 System.Collections.IEnumerator TrophyList::MoveAndWait(UnityEngine.GameObject,System.Collections.Hashtable)
+extern void TrophyList_MoveAndWait_mB300BF1BA0219DEFC46171DD6C03FD0F412C6BA7 (void);
+// 0x00000024 System.Collections.IEnumerator TrophyList::WaitForDestruction()
+extern void TrophyList_WaitForDestruction_mCBC748A69C4173A144FCC57252373A1D12FC054F (void);
+// 0x00000025 System.Void TrophyList::DestroyTrophy()
+extern void TrophyList_DestroyTrophy_m2AB4F91B6002DD8BAA5A72341A2C47046917C452 (void);
+// 0x00000026 System.Void TrophyList::MoveTrophyToWinner(Player,System.Single)
+extern void TrophyList_MoveTrophyToWinner_mA9683D73DCDC0687BB59A0DDED8B5A7178F7EBFA (void);
+// 0x00000027 System.Void TrophyList::DestroyCurrentTrophy(System.Single)
+extern void TrophyList_DestroyCurrentTrophy_m721338FC4EB136819E03E253FA1E2927EE184664 (void);
+// 0x00000028 System.Void TrophyList::SetTrophyGiven()
 extern void TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7 (void);
-// 0x00000022 System.Void TrophyList::SetTrophyDestroyed()
-extern void TrophyList_SetTrophyDestroyed_mD9EE7F2CAEC4E7DE783C184B5903813771BCE211 (void);
-// 0x00000023 System.Void TrophyList::MakeTrophyAppear(System.Int32)
+// 0x00000029 System.Void TrophyList::MakeTrophyAppear(System.Int32)
 extern void TrophyList_MakeTrophyAppear_m06BE7054DCE75E8D6C7E1E8F8A38C9AF44752884 (void);
-// 0x00000024 System.Void TrophyList::SetFocus(System.Boolean,UnityEngine.Transform)
+// 0x0000002A System.Void TrophyList::SetFocus(System.Boolean,UnityEngine.Transform)
 extern void TrophyList_SetFocus_mE38ABF4A6489C6543A351386AD917A535CBF51D9 (void);
-// 0x00000025 UnityEngine.GameObject[] TrophyList::Reshuffle(UnityEngine.GameObject[])
+// 0x0000002B UnityEngine.GameObject[] TrophyList::Reshuffle(UnityEngine.GameObject[])
 extern void TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4 (void);
-// 0x00000026 System.Void TrophyList::.ctor()
+// 0x0000002C System.Void TrophyList::.ctor()
 extern void TrophyList__ctor_mBE81277C8EB33EF5C8BC50DEF9EF49C9F13F9190 (void);
-static Il2CppMethodPointer s_methodPointers[38] = 
+// 0x0000002D System.Void TrophyList/<MoveAndWait>d__21::.ctor(System.Int32)
+extern void U3CMoveAndWaitU3Ed__21__ctor_mF0707EDBCC4FF87ECEFD5D221960F4FB2116B937 (void);
+// 0x0000002E System.Void TrophyList/<MoveAndWait>d__21::System.IDisposable.Dispose()
+extern void U3CMoveAndWaitU3Ed__21_System_IDisposable_Dispose_m0289A72A36BBD45656EA55338F2280D37FBB251E (void);
+// 0x0000002F System.Boolean TrophyList/<MoveAndWait>d__21::MoveNext()
+extern void U3CMoveAndWaitU3Ed__21_MoveNext_mCBF84C414FE966DDB30A1B16D0FFE0BD4DD32918 (void);
+// 0x00000030 System.Object TrophyList/<MoveAndWait>d__21::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CMoveAndWaitU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m34A4EFB29DE5349271221238081485A7AA48371B (void);
+// 0x00000031 System.Void TrophyList/<MoveAndWait>d__21::System.Collections.IEnumerator.Reset()
+extern void U3CMoveAndWaitU3Ed__21_System_Collections_IEnumerator_Reset_m53BA9CFDB63629D6C94EC603068663E24E54B1EF (void);
+// 0x00000032 System.Object TrophyList/<MoveAndWait>d__21::System.Collections.IEnumerator.get_Current()
+extern void U3CMoveAndWaitU3Ed__21_System_Collections_IEnumerator_get_Current_mF156DCD9B9AA779461A36098AAE89E74365906E9 (void);
+// 0x00000033 System.Void TrophyList/<WaitForDestruction>d__22::.ctor(System.Int32)
+extern void U3CWaitForDestructionU3Ed__22__ctor_mDD9BA06707AD2D15764CD6E2D545E60C5CBC6FCE (void);
+// 0x00000034 System.Void TrophyList/<WaitForDestruction>d__22::System.IDisposable.Dispose()
+extern void U3CWaitForDestructionU3Ed__22_System_IDisposable_Dispose_m4E86E6D2E0FEEEE14A80112054128461F5B537F4 (void);
+// 0x00000035 System.Boolean TrophyList/<WaitForDestruction>d__22::MoveNext()
+extern void U3CWaitForDestructionU3Ed__22_MoveNext_m62172AF8DCA40ABB8337C185D7F9BD72B5731F9A (void);
+// 0x00000036 System.Object TrophyList/<WaitForDestruction>d__22::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CWaitForDestructionU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD30C98C337DA579431990789F379840FE8F1A2EA (void);
+// 0x00000037 System.Void TrophyList/<WaitForDestruction>d__22::System.Collections.IEnumerator.Reset()
+extern void U3CWaitForDestructionU3Ed__22_System_Collections_IEnumerator_Reset_mF32C72A67566BDCE6FFA137A844B494E553DFD09 (void);
+// 0x00000038 System.Object TrophyList/<WaitForDestruction>d__22::System.Collections.IEnumerator.get_Current()
+extern void U3CWaitForDestructionU3Ed__22_System_Collections_IEnumerator_get_Current_m42FA7B527A557CF167636566279D295DF133EDE1 (void);
+static Il2CppMethodPointer s_methodPointers[56] = 
 {
 	TrophyAppearState_EnterState_mD25487826D990776487AEB33FEC4038CD4438520,
 	TrophyAppearState_ExitState_m433A22FB124A75F51AD1215DD7BAD685296E64D7,
@@ -115,63 +151,99 @@ static Il2CppMethodPointer s_methodPointers[38] =
 	TrophyWaitingState_ExitState_mC04454BB501BC026CACDD51C82A7B7CBC48392DD,
 	TrophyWaitingState_UpdateState_m21F7A701194E4E6B59B1473D38C5820526764279,
 	TrophyWaitingState__ctor_mE143F945B49E07180697721B511729FFEF91F859,
+	Exploded_Start_m5AC8109912E286F8B110295E1B131ADA4D965C18,
+	Exploded_Update_m5823FDF9FC6C5E399F98C5D9798B4D8E0B00CCC2,
+	Exploded_Didexplode_mB7ACA228643A1ABDACECB4B69D79C4818EB87662,
+	Exploded__ctor_m52263346968B7C1C7C6C0EFAD1D7BF8E9911E762,
 	TrophyList_Start_m1C62B63E9147CF855F74573BE979B3968F6A0E68,
 	TrophyList_Update_mFE2E856E71EC9ABC48DDD7255495DD3F71CA421F,
-	TrophyList_MoveTrophyToWinner_m8EE6CF5353012867B0D0F641CA7396DB13C0E367,
-	TrophyList_DestroyCurrentTrophy_mC997F373BEA88DE3A2F1FD3796F983AF83B9B219,
+	TrophyList_MoveAndWait_mB300BF1BA0219DEFC46171DD6C03FD0F412C6BA7,
+	TrophyList_WaitForDestruction_mCBC748A69C4173A144FCC57252373A1D12FC054F,
+	TrophyList_DestroyTrophy_m2AB4F91B6002DD8BAA5A72341A2C47046917C452,
+	TrophyList_MoveTrophyToWinner_mA9683D73DCDC0687BB59A0DDED8B5A7178F7EBFA,
+	TrophyList_DestroyCurrentTrophy_m721338FC4EB136819E03E253FA1E2927EE184664,
 	TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7,
-	TrophyList_SetTrophyDestroyed_mD9EE7F2CAEC4E7DE783C184B5903813771BCE211,
 	TrophyList_MakeTrophyAppear_m06BE7054DCE75E8D6C7E1E8F8A38C9AF44752884,
 	TrophyList_SetFocus_mE38ABF4A6489C6543A351386AD917A535CBF51D9,
 	TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4,
 	TrophyList__ctor_mBE81277C8EB33EF5C8BC50DEF9EF49C9F13F9190,
+	U3CMoveAndWaitU3Ed__21__ctor_mF0707EDBCC4FF87ECEFD5D221960F4FB2116B937,
+	U3CMoveAndWaitU3Ed__21_System_IDisposable_Dispose_m0289A72A36BBD45656EA55338F2280D37FBB251E,
+	U3CMoveAndWaitU3Ed__21_MoveNext_mCBF84C414FE966DDB30A1B16D0FFE0BD4DD32918,
+	U3CMoveAndWaitU3Ed__21_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m34A4EFB29DE5349271221238081485A7AA48371B,
+	U3CMoveAndWaitU3Ed__21_System_Collections_IEnumerator_Reset_m53BA9CFDB63629D6C94EC603068663E24E54B1EF,
+	U3CMoveAndWaitU3Ed__21_System_Collections_IEnumerator_get_Current_mF156DCD9B9AA779461A36098AAE89E74365906E9,
+	U3CWaitForDestructionU3Ed__22__ctor_mDD9BA06707AD2D15764CD6E2D545E60C5CBC6FCE,
+	U3CWaitForDestructionU3Ed__22_System_IDisposable_Dispose_m4E86E6D2E0FEEEE14A80112054128461F5B537F4,
+	U3CWaitForDestructionU3Ed__22_MoveNext_m62172AF8DCA40ABB8337C185D7F9BD72B5731F9A,
+	U3CWaitForDestructionU3Ed__22_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD30C98C337DA579431990789F379840FE8F1A2EA,
+	U3CWaitForDestructionU3Ed__22_System_Collections_IEnumerator_Reset_mF32C72A67566BDCE6FFA137A844B494E553DFD09,
+	U3CWaitForDestructionU3Ed__22_System_Collections_IEnumerator_get_Current_m42FA7B527A557CF167636566279D295DF133EDE1,
 };
-static const int32_t s_InvokerIndices[38] = 
+static const int32_t s_InvokerIndices[56] = 
 {
-	6442,
-	6442,
-	6442,
-	8085,
-	6442,
-	6442,
-	6442,
-	8085,
-	6442,
-	6442,
-	6442,
-	8085,
-	6442,
-	6442,
-	6442,
-	8085,
+	7081,
+	7081,
+	7081,
+	8898,
+	7081,
+	7081,
+	7081,
+	8898,
+	7081,
+	7081,
+	7081,
+	8898,
+	7081,
+	7081,
+	7081,
+	8898,
 	0,
 	0,
 	0,
-	8085,
-	8085,
-	8085,
-	6442,
-	8085,
-	6442,
-	6442,
-	6442,
-	8085,
-	8085,
-	8085,
-	6442,
-	8085,
-	8085,
-	8085,
-	6405,
-	3044,
-	5712,
-	8085,
+	8898,
+	8898,
+	8898,
+	7081,
+	8898,
+	7081,
+	7081,
+	7081,
+	8898,
+	8898,
+	8898,
+	8898,
+	8898,
+	8898,
+	8898,
+	3232,
+	8744,
+	8898,
+	4068,
+	7154,
+	8898,
+	7041,
+	3377,
+	6300,
+	8898,
+	7041,
+	8898,
+	8619,
+	8744,
+	8898,
+	8744,
+	7041,
+	8898,
+	8619,
+	8744,
+	8898,
+	8744,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Trophies_CodeGenModule;
 const Il2CppCodeGenModule g_Trophies_CodeGenModule = 
 {
 	"Trophies.dll",
-	38,
+	56,
 	s_methodPointers,
 	0,
 	NULL,

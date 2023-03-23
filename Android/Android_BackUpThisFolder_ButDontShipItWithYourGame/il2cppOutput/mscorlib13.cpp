@@ -11,6 +11,7 @@
 
 #include "icalls/mscorlib/System.Security.Cryptography/RNGCryptoServiceProvider.h"
 #include "icalls/mscorlib/System.Security.Principal/WindowsIdentity.h"
+#include "icalls/mscorlib/System.Security.Principal/WindowsImpersonationContext.h"
 #include "icalls/mscorlib/System.Runtime/RuntimeImports.h"
 
 struct VirtualActionInvoker0
@@ -460,6 +461,8 @@ struct SHA1Internal_t63BFC4D44B43FD41AD65B8755CE4383D529B9A62;
 struct SafePasswordHandle_t07A3BFCF046DFE44216ACE030F838C8AE2564463;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+// System.Security.SecurityException
+struct SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C;
 // System.Threading.SemaphoreSlim
 struct SemaphoreSlim_t0D5CB5685D9BFA5BF95CEC6E7395490F933E8DB2;
 // System.Runtime.Serialization.SerializationBinder
@@ -528,6 +531,8 @@ struct WellKnownClientTypeEntry_t347372ACAC92831B98A6A1743747BAB5993D6058;
 struct WellKnownServiceTypeEntry_tDDA2E122B4DDF9380DA4B94FD9347D38FD9CF85F;
 // System.Security.Principal.WindowsIdentity
 struct WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459;
+// System.Security.Principal.WindowsImpersonationContext
+struct WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F;
 // System.Security.Cryptography.X509Certificates.X509Certificate
 struct X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4;
 // System.Security.Cryptography.X509Certificates.X509CertificateImpl
@@ -639,6 +644,7 @@ IL2CPP_EXTERN_C RuntimeClass* RemotingServices_t5C9F4139FFA73067C8FC6BEB3FED3C3C
 IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SHA1Internal_t63BFC4D44B43FD41AD65B8755CE4383D529B9A62_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SafePasswordHandle_t07A3BFCF046DFE44216ACE030F838C8AE2564463_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SinkProviderData_t44E7CE230DCE7F13D6B8617F1E3E7EF6D6388387_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SmallXmlParser_tA3B98D88B89ED52CBE3AD0637C8912934A4C9DBB_il2cpp_TypeInfo_var;
@@ -667,6 +673,7 @@ IL2CPP_EXTERN_C RuntimeClass* WellKnownClientTypeEntry_t347372ACAC92831B98A6A174
 IL2CPP_EXTERN_C RuntimeClass* WellKnownServiceTypeEntry_tDDA2E122B4DDF9380DA4B94FD9347D38FD9CF85F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WindowsAccountType_t95C9A97477D5AEF75DFB4B5C6FBC86B9EFEE0FC4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509CertificateImpl_tF590E81705CE1FE152C590E5A875D4FE3BE348EF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* X509KeyStorageFlags_t57AEEE4A9DF943CEF8212B856ED6CA5DF05AEEA3_il2cpp_TypeInfo_var;
@@ -749,9 +756,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteral8788F37E33E57DC9F28B3BE2B6477FA4CAF577D4
 IL2CPP_EXTERN_C String_t* _stringLiteral87F70433C49EE1E730A4D438F09A39517863D342;
 IL2CPP_EXTERN_C String_t* _stringLiteral8A8EFDA91C6C257127F8C8D526FAD7E7552766AA;
 IL2CPP_EXTERN_C String_t* _stringLiteral8E3EB4278522B6168F859CF94CF470FCCC6EA287;
+IL2CPP_EXTERN_C String_t* _stringLiteral91FFB0132E9712590CA961871EB1BA8CB9115380;
 IL2CPP_EXTERN_C String_t* _stringLiteral924AEFB6378CB06F66BFB22C0F29341E17E55FBA;
 IL2CPP_EXTERN_C String_t* _stringLiteral965CE35748A4514FBD1A7CA3545D556A9BEFA32A;
 IL2CPP_EXTERN_C String_t* _stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694;
+IL2CPP_EXTERN_C String_t* _stringLiteral9CB6F0E7E1174DEC357C1E5062576FDF3BCEFDF1;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D41BFE5A9A4AF214E9051D85B9522290400E660;
 IL2CPP_EXTERN_C String_t* _stringLiteral9E97EA63D0FB3CFFC3316660B9E710A7CC73D845;
 IL2CPP_EXTERN_C String_t* _stringLiteralA019FB7F17AA36A9743C530E1F11D5613B8B1158;
@@ -907,6 +916,8 @@ IL2CPP_EXTERN_C const RuntimeMethod* Type_GetType_m71A077E0B5DA3BD1DC0AB9AE38705
 IL2CPP_EXTERN_C const RuntimeMethod* U3Cget_ClaimsU3Ed__51_System_Collections_IEnumerator_Reset_m1F894480E397FE9F24462910AD119125A5F97FCC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WindowsIdentity_SetToken_m640262A39E6402112AEED1ED7861EC6007DF9A3D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WindowsIdentity_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m6FF976D247451D49C9646DC0FC6E7F9375AEE940_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WindowsImpersonationContext_Undo_m733F7868660F9D2046D1E4BCCAC44CF63990225D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* WindowsImpersonationContext__ctor_mC0D94E62ECC6D051D5B6DF0E35D4AA2200B249BC_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* X509CertificateImpl_ThrowIfContextInvalid_m253EB9023E9902680A338B86D7EC55AAB7EFDDBA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* X509Certificate_System_Runtime_Serialization_IDeserializationCallback_OnDeserialization_m2AC5FC51A0C612945607A305A46469B66C472D3B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* X509Certificate_System_Runtime_Serialization_ISerializable_GetObjectData_mCFDC5CC4939C233DC920EEBA1161AB0F071AF095_RuntimeMethod_var;
@@ -2876,6 +2887,15 @@ struct WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459  : public Claim
 	SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ____info_18;
 };
 
+// System.Security.Principal.WindowsImpersonationContext
+struct WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F  : public RuntimeObject
+{
+	// System.IntPtr System.Security.Principal.WindowsImpersonationContext::_token
+	intptr_t ____token_0;
+	// System.Boolean System.Security.Principal.WindowsImpersonationContext::undo
+	bool ___undo_1;
+};
+
 // System.Security.Cryptography.X509Certificates.X509Certificate
 struct X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4  : public RuntimeObject
 {
@@ -2994,6 +3014,13 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public
 // System.Runtime.Remoting.RemotingException
 struct RemotingException_t2A1BD76EDC21EC474946432B08D98BE15811E213  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
+};
+
+// System.Security.SecurityException
+struct SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+	// System.String System.Security.SecurityException::permissionState
+	String_t* ___permissionState_18;
 };
 
 // System.Runtime.Serialization.SerializationException
@@ -3829,6 +3856,10 @@ struct WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_StaticFields
 
 // System.Security.Principal.WindowsIdentity
 
+// System.Security.Principal.WindowsImpersonationContext
+
+// System.Security.Principal.WindowsImpersonationContext
+
 // System.Security.Cryptography.X509Certificates.X509Certificate
 
 // System.Security.Cryptography.X509Certificates.X509Certificate
@@ -3901,6 +3932,10 @@ struct Type_t_StaticFields
 // System.Runtime.Remoting.RemotingException
 
 // System.Runtime.Remoting.RemotingException
+
+// System.Security.SecurityException
+
+// System.Security.SecurityException
 
 // System.Runtime.Serialization.SerializationException
 struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_StaticFields
@@ -4552,10 +4587,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Claim__ctor_m011F310C596EC39DFA58DB96143
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClaimsIdentity_AddClaim_m8F4C200C897488F698FA5827CEB86AA115F47B4A (ClaimsIdentity_tF926D758CB543B2C0FC3D0620E1F9BC597889206* __this, Claim_tC8C7CACAF0F1EAB2F79A4B59E98C5FA44EFE3C14* ___0_claim, const RuntimeMethod* method) ;
 // System.Void System.Security.Claims.ClaimsPrincipal::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ClaimsPrincipal__ctor_mE2DD3B80EEAE547715E6F849B9A844E5D307D384 (ClaimsPrincipal_t89FDDE5202B3ACA5770F1BE38D14615C94086F2D* __this, const RuntimeMethod* method) ;
-// System.Int64 System.IntPtr::ToInt64()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t IntPtr_ToInt64_m0F81FB6FB08014074D4F5B915EDAB06A08552032 (intptr_t* __this, const RuntimeMethod* method) ;
 // System.Void System.Security.Principal.WindowsIdentity::SetToken(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity_SetToken_m640262A39E6402112AEED1ED7861EC6007DF9A3D (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* __this, intptr_t ___0_token, const RuntimeMethod* method) ;
+// System.Int64 System.IntPtr::ToInt64()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t IntPtr_ToInt64_m0F81FB6FB08014074D4F5B915EDAB06A08552032 (intptr_t* __this, const RuntimeMethod* method) ;
+// System.IntPtr System.Security.Principal.WindowsIdentity::GetCurrentToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t WindowsIdentity_GetCurrentToken_m9B49C8DBA05E262CEBA00A6B70E82C900D0F0EE6 (const RuntimeMethod* method) ;
+// System.Void System.Security.Principal.WindowsIdentity::.ctor(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity__ctor_m28E6A48B3768D8FBEC5C740B25EF86EB52A0EABB (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* __this, intptr_t ___0_userToken, String_t* ___1_type, int32_t ___2_acctType, bool ___3_isAuthenticated, const RuntimeMethod* method) ;
+// System.Void System.Security.Principal.WindowsImpersonationContext::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsImpersonationContext__ctor_mC0D94E62ECC6D051D5B6DF0E35D4AA2200B249BC (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* __this, intptr_t ___0_token, const RuntimeMethod* method) ;
 // System.String System.Security.Principal.WindowsIdentity::GetTokenName(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WindowsIdentity_GetTokenName_m9909ABBA241ECEC7553A55936A3E9FE7C660FD96 (intptr_t ___0_token, const RuntimeMethod* method) ;
 // System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -4580,6 +4621,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ClaimsIdentity_tF926D758CB543B2C0FC3D0620E1F9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Environment_get_IsUnix_mF59B7EC4C2D4A9818254C5EDFD5A68F5601E4C35 (const RuntimeMethod* method) ;
 // System.Void System.ArgumentException::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.IntPtr System.Security.Principal.WindowsImpersonationContext::DuplicateToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t WindowsImpersonationContext_DuplicateToken_mC0D308BC37C8394B8F634F6B90EDA066B953E935 (intptr_t ___0_token, const RuntimeMethod* method) ;
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::SetCurrentToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_SetCurrentToken_m106B87CD6CC61DED67C36EC5D1F1A17A46832657 (intptr_t ___0_token, const RuntimeMethod* method) ;
+// System.Void System.Security.SecurityException::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SecurityException__ctor_m0998D0D6AAB191E05A9FA69255F57B8AFCABD01A (SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+// System.Void System.Security.Principal.WindowsImpersonationContext::Undo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsImpersonationContext_Undo_m733F7868660F9D2046D1E4BCCAC44CF63990225D (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* __this, const RuntimeMethod* method) ;
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::RevertToSelf()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_RevertToSelf_m682A701D1EC6671040FF30C0DDB061696578AC3B (const RuntimeMethod* method) ;
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::CloseToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC (intptr_t ___0_token, const RuntimeMethod* method) ;
 // System.Void System.Security.Claims.Claim::.ctor(System.String,System.String,System.String,System.String,System.String,System.Security.Claims.ClaimsIdentity,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Claim__ctor_m8FAB1FAAF90F16A798D1D70092E52538E4370190 (Claim_tC8C7CACAF0F1EAB2F79A4B59E98C5FA44EFE3C14* __this, String_t* ___0_type, String_t* ___1_value, String_t* ___2_valueType, String_t* ___3_issuer, String_t* ___4_originalIssuer, ClaimsIdentity_tF926D758CB543B2C0FC3D0620E1F9BC597889206* ___5_subject, String_t* ___6_propertyKey, String_t* ___7_propertyValue, const RuntimeMethod* method) ;
 // System.Boolean System.String::IsNullOrEmpty(System.String)
@@ -14088,6 +14141,25 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GenericPrincipal_get_Identity_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void System.Security.Principal.WindowsIdentity::.ctor(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType,System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity__ctor_m28E6A48B3768D8FBEC5C740B25EF86EB52A0EABB (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* __this, intptr_t ___0_userToken, String_t* ___1_type, int32_t ___2_acctType, bool ___3_isAuthenticated, const RuntimeMethod* method) 
+{
+	{
+		ClaimsIdentity__ctor_m043B939C5C8DE700CF7449D881E1465BC4201422(__this, NULL);
+		String_t* L_0 = ___1_type;
+		__this->____type_14 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____type_14), (void*)L_0);
+		int32_t L_1 = ___2_acctType;
+		__this->____account_15 = L_1;
+		bool L_2 = ___3_isAuthenticated;
+		__this->____authenticated_16 = L_2;
+		__this->____name_17 = (String_t*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____name_17), (void*)(String_t*)NULL);
+		intptr_t L_3 = ___0_userToken;
+		WindowsIdentity_SetToken_m640262A39E6402112AEED1ED7861EC6007DF9A3D(__this, L_3, NULL);
+		return;
+	}
+}
 // System.Void System.Security.Principal.WindowsIdentity::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity__ctor_mB1D90B858588684A18554E7CABEAF1434924D037 (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) 
 {
@@ -14151,6 +14223,42 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity_Dispose_m12B21D5AD8B1132
 		intptr_t L_0 = ((IntPtr_t_StaticFields*)il2cpp_codegen_static_fields_for(IntPtr_t_il2cpp_TypeInfo_var))->___Zero_1;
 		__this->____token_13 = L_0;
 		return;
+	}
+}
+// System.Security.Principal.WindowsIdentity System.Security.Principal.WindowsIdentity::GetCurrent()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* WindowsIdentity_GetCurrent_m0342726F56EC6A97EC2884D2A43069ADAAD09574 (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		il2cpp_codegen_runtime_class_init_inline(WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_il2cpp_TypeInfo_var);
+		intptr_t L_0;
+		L_0 = WindowsIdentity_GetCurrentToken_m9B49C8DBA05E262CEBA00A6B70E82C900D0F0EE6(NULL);
+		WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* L_1 = (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459*)il2cpp_codegen_object_new(WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		WindowsIdentity__ctor_m28E6A48B3768D8FBEC5C740B25EF86EB52A0EABB(L_1, L_0, (String_t*)NULL, 0, (bool)1, NULL);
+		return L_1;
+	}
+}
+// System.Security.Principal.WindowsImpersonationContext System.Security.Principal.WindowsIdentity::Impersonate()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* WindowsIdentity_Impersonate_mA08E5D178832B2A998AD2AD50625F1EBCE577462 (WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		intptr_t L_0 = __this->____token_13;
+		WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* L_1 = (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F*)il2cpp_codegen_object_new(WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		WindowsImpersonationContext__ctor_mC0D94E62ECC6D051D5B6DF0E35D4AA2200B249BC(L_1, L_0, NULL);
+		return L_1;
 	}
 }
 // System.String System.Security.Principal.WindowsIdentity::get_AuthenticationType()
@@ -14463,6 +14571,13 @@ IL_0076:
 		return;
 	}
 }
+// System.IntPtr System.Security.Principal.WindowsIdentity::GetCurrentToken()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t WindowsIdentity_GetCurrentToken_m9B49C8DBA05E262CEBA00A6B70E82C900D0F0EE6 (const RuntimeMethod* method) 
+{
+	typedef intptr_t (*WindowsIdentity_GetCurrentToken_m9B49C8DBA05E262CEBA00A6B70E82C900D0F0EE6_ftn) ();
+	using namespace il2cpp::icalls;
+	return ((WindowsIdentity_GetCurrentToken_m9B49C8DBA05E262CEBA00A6B70E82C900D0F0EE6_ftn)mscorlib::System::Security::Principal::WindowsIdentity::GetCurrentToken) ();
+}
 // System.String System.Security.Principal.WindowsIdentity::GetTokenName(System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* WindowsIdentity_GetTokenName_m9909ABBA241ECEC7553A55936A3E9FE7C660FD96 (intptr_t ___0_token, const RuntimeMethod* method) 
 {
@@ -14485,6 +14600,129 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsIdentity__cctor_m2A23C20429D7E9FD
 		((WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_StaticFields*)il2cpp_codegen_static_fields_for(WindowsIdentity_t18EC60B678C8A1AA9A67A89BC3BCFA1CC1E2C459_il2cpp_TypeInfo_var))->___invalidWindows_19 = L_0;
 		return;
 	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void System.Security.Principal.WindowsImpersonationContext::.ctor(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsImpersonationContext__ctor_mC0D94E62ECC6D051D5B6DF0E35D4AA2200B249BC (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* __this, intptr_t ___0_token, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		intptr_t L_0 = ___0_token;
+		intptr_t L_1;
+		L_1 = WindowsImpersonationContext_DuplicateToken_mC0D308BC37C8394B8F634F6B90EDA066B953E935(L_0, NULL);
+		__this->____token_0 = L_1;
+		intptr_t L_2 = ___0_token;
+		bool L_3;
+		L_3 = WindowsImpersonationContext_SetCurrentToken_m106B87CD6CC61DED67C36EC5D1F1A17A46832657(L_2, NULL);
+		if (L_3)
+		{
+			goto IL_0025;
+		}
+	}
+	{
+		SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C* L_4 = (SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C_il2cpp_TypeInfo_var)));
+		NullCheck(L_4);
+		SecurityException__ctor_m0998D0D6AAB191E05A9FA69255F57B8AFCABD01A(L_4, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral9CB6F0E7E1174DEC357C1E5062576FDF3BCEFDF1)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_4, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&WindowsImpersonationContext__ctor_mC0D94E62ECC6D051D5B6DF0E35D4AA2200B249BC_RuntimeMethod_var)));
+	}
+
+IL_0025:
+	{
+		__this->___undo_1 = (bool)0;
+		return;
+	}
+}
+// System.Void System.Security.Principal.WindowsImpersonationContext::Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsImpersonationContext_Dispose_mD19F862B3D5518ED56FBE674AD3D5F67341489A0 (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* __this, const RuntimeMethod* method) 
+{
+	{
+		bool L_0 = __this->___undo_1;
+		if (L_0)
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		WindowsImpersonationContext_Undo_m733F7868660F9D2046D1E4BCCAC44CF63990225D(__this, NULL);
+	}
+
+IL_000e:
+	{
+		return;
+	}
+}
+// System.Void System.Security.Principal.WindowsImpersonationContext::Undo()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WindowsImpersonationContext_Undo_m733F7868660F9D2046D1E4BCCAC44CF63990225D (WindowsImpersonationContext_t6F4CE98646ADFCC0D04B0027FB1CC5D48ABA116F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		bool L_0;
+		L_0 = WindowsImpersonationContext_RevertToSelf_m682A701D1EC6671040FF30C0DDB061696578AC3B(NULL);
+		if (L_0)
+		{
+			goto IL_001e;
+		}
+	}
+	{
+		intptr_t L_1 = __this->____token_0;
+		bool L_2;
+		L_2 = WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC(L_1, NULL);
+		SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C* L_3 = (SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&SecurityException_t025CB4C23107E67E07CF085826B40EDE72F8165C_il2cpp_TypeInfo_var)));
+		NullCheck(L_3);
+		SecurityException__ctor_m0998D0D6AAB191E05A9FA69255F57B8AFCABD01A(L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral91FFB0132E9712590CA961871EB1BA8CB9115380)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&WindowsImpersonationContext_Undo_m733F7868660F9D2046D1E4BCCAC44CF63990225D_RuntimeMethod_var)));
+	}
+
+IL_001e:
+	{
+		intptr_t L_4 = __this->____token_0;
+		bool L_5;
+		L_5 = WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC(L_4, NULL);
+		__this->___undo_1 = (bool)1;
+		il2cpp_codegen_runtime_class_init_inline(GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var);
+		GC_SuppressFinalize_m71815DBD5A0CD2EA1BE43317B08B7A14949EDC65(__this, NULL);
+		return;
+	}
+}
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::CloseToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC (intptr_t ___0_token, const RuntimeMethod* method) 
+{
+	typedef bool (*WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC_ftn) (intptr_t);
+	using namespace il2cpp::icalls;
+	return ((WindowsImpersonationContext_CloseToken_mF3F9A957BA28FE914F2E6F29DA9C080CAD40F2FC_ftn)mscorlib::System::Security::Principal::WindowsImpersonationContext::CloseToken) (___0_token);
+}
+// System.IntPtr System.Security.Principal.WindowsImpersonationContext::DuplicateToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t WindowsImpersonationContext_DuplicateToken_mC0D308BC37C8394B8F634F6B90EDA066B953E935 (intptr_t ___0_token, const RuntimeMethod* method) 
+{
+	typedef intptr_t (*WindowsImpersonationContext_DuplicateToken_mC0D308BC37C8394B8F634F6B90EDA066B953E935_ftn) (intptr_t);
+	using namespace il2cpp::icalls;
+	return ((WindowsImpersonationContext_DuplicateToken_mC0D308BC37C8394B8F634F6B90EDA066B953E935_ftn)mscorlib::System::Security::Principal::WindowsImpersonationContext::DuplicateToken) (___0_token);
+}
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::SetCurrentToken(System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_SetCurrentToken_m106B87CD6CC61DED67C36EC5D1F1A17A46832657 (intptr_t ___0_token, const RuntimeMethod* method) 
+{
+	typedef bool (*WindowsImpersonationContext_SetCurrentToken_m106B87CD6CC61DED67C36EC5D1F1A17A46832657_ftn) (intptr_t);
+	using namespace il2cpp::icalls;
+	return ((WindowsImpersonationContext_SetCurrentToken_m106B87CD6CC61DED67C36EC5D1F1A17A46832657_ftn)mscorlib::System::Security::Principal::WindowsImpersonationContext::SetCurrentToken) (___0_token);
+}
+// System.Boolean System.Security.Principal.WindowsImpersonationContext::RevertToSelf()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool WindowsImpersonationContext_RevertToSelf_m682A701D1EC6671040FF30C0DDB061696578AC3B (const RuntimeMethod* method) 
+{
+	typedef bool (*WindowsImpersonationContext_RevertToSelf_m682A701D1EC6671040FF30C0DDB061696578AC3B_ftn) ();
+	using namespace il2cpp::icalls;
+	return ((WindowsImpersonationContext_RevertToSelf_m682A701D1EC6671040FF30C0DDB061696578AC3B_ftn)mscorlib::System::Security::Principal::WindowsImpersonationContext::RevertToSelf) ();
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -14648,7 +14886,7 @@ IL_0094:
 		String_t* L_20 = ___6_propertyKey;
 		String_t* L_21 = ___7_propertyValue;
 		NullCheck(L_19);
-		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(4 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.String>::Add(TKey,TValue) */, IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var, L_19, L_20, L_21);
+		InterfaceActionInvoker2< String_t*, String_t* >::Invoke(5 /* System.Void System.Collections.Generic.IDictionary`2<System.String,System.String>::Add(TKey,TValue) */, IDictionary_2_t51DBA2F8AFDC8E5CC588729B12034B8C4D30B0AF_il2cpp_TypeInfo_var, L_19, L_20, L_21);
 	}
 
 IL_00af:
@@ -16473,11 +16711,11 @@ IL_00c9:
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_25 = V_1;
 			NullCheck(L_25);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_26;
-			L_26 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_25);
+			L_26 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_25);
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_27 = V_1;
 			NullCheck(L_27);
 			int64_t L_28;
-			L_28 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_27);
+			L_28 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_27);
 			il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 			String_t* L_29;
 			L_29 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_26, 0, ((int32_t)L_28), NULL);
@@ -16546,11 +16784,11 @@ IL_0121:
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_40 = V_2;
 			NullCheck(L_40);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_41;
-			L_41 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_40);
+			L_41 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_40);
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_42 = V_2;
 			NullCheck(L_42);
 			int64_t L_43;
-			L_43 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_42);
+			L_43 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_42);
 			il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 			String_t* L_44;
 			L_44 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_41, 0, ((int32_t)L_43), NULL);
@@ -16760,11 +16998,11 @@ IL_0038:
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_6 = V_0;
 			NullCheck(L_6);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_7;
-			L_7 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_6);
+			L_7 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_6);
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_8 = V_0;
 			NullCheck(L_8);
 			int64_t L_9;
-			L_9 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_8);
+			L_9 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_8);
 			il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 			String_t* L_10;
 			L_10 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_7, 0, ((int32_t)L_9), NULL);
@@ -18500,11 +18738,11 @@ IL_00a8_1:
 					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_25 = V_7;
 					NullCheck(L_25);
 					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_26;
-					L_26 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_25);
+					L_26 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_25);
 					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_27 = V_7;
 					NullCheck(L_27);
 					int64_t L_28;
-					L_28 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_27);
+					L_28 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_27);
 					il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 					String_t* L_29;
 					L_29 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_26, 0, ((int32_t)L_28), NULL);
@@ -18564,11 +18802,11 @@ IL_00ee_1:
 					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_38 = V_8;
 					NullCheck(L_38);
 					ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_39;
-					L_39 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_38);
+					L_39 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_38);
 					MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_40 = V_8;
 					NullCheck(L_40);
 					int64_t L_41;
-					L_41 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_40);
+					L_41 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_40);
 					il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 					String_t* L_42;
 					L_42 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_39, 0, ((int32_t)L_41), NULL);
@@ -18643,11 +18881,11 @@ IL_0141:
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_50 = V_9;
 			NullCheck(L_50);
 			ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_51;
-			L_51 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_50);
+			L_51 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_50);
 			MemoryStream_tAAED1B42172E3390584E4194308AB878E786AAC2* L_52 = V_9;
 			NullCheck(L_52);
 			int64_t L_53;
-			L_53 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, L_52);
+			L_53 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, L_52);
 			il2cpp_codegen_runtime_class_init_inline(Convert_t7097FF336D592F7C06D88A98349A44646F91EFFC_il2cpp_TypeInfo_var);
 			String_t* L_54;
 			L_54 = Convert_ToBase64String_mECD6DC25F60E757B099BA569741E987677D1FFEE(L_51, 0, ((int32_t)L_53), NULL);
@@ -19773,7 +20011,7 @@ IL_0013:
 		L_3 = CADSerializer_SerializeObject_m693394374F6AFCC73C5A3756DD96AD2DB725F3B8(L_2, NULL);
 		NullCheck(L_3);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4;
-		L_4 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(33 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_3);
+		L_4 = VirtualFuncInvoker0< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* >::Invoke(38 /* System.Byte[] System.IO.MemoryStream::GetBuffer() */, L_3);
 		return L_4;
 	}
 }

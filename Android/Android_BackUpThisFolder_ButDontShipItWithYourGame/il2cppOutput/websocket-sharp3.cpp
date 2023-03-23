@@ -3059,7 +3059,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext__ctor_mD13F3
 		bool L_18;
 		L_18 = ServerSslConfiguration_get_CheckCertificateRevocation_m776DAD1635CFFDACA375601BD40F2AE5E3F2BFB6_inline(L_17, NULL);
 		NullCheck(L_10);
-		VirtualActionInvoker4< X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4*, bool, int32_t, bool >::Invoke(35 /* System.Void System.Net.Security.SslStream::AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean) */, L_10, L_12, L_14, L_16, L_18);
+		VirtualActionInvoker4< X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4*, bool, int32_t, bool >::Invoke(42 /* System.Void System.Net.Security.SslStream::AuthenticateAsServer(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Security.Authentication.SslProtocols,System.Boolean) */, L_10, L_12, L_14, L_16, L_18);
 		SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* L_19 = V_1;
 		__this->____stream_5 = L_19;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->____stream_5), (void*)L_19);
@@ -3570,7 +3570,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_Close_mA07D7
 	{
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->____stream_5;
 		NullCheck(L_0);
-		VirtualActionInvoker0::Invoke(14 /* System.Void System.IO.Stream::Close() */, L_0);
+		VirtualActionInvoker0::Invoke(19 /* System.Void System.IO.Stream::Close() */, L_0);
 		TcpClient_t753B702EE06B59897564F75CEBFB6C8AFF10BD58* L_1 = __this->____tcpClient_6;
 		NullCheck(L_1);
 		TcpClient_Close_m03E0ED4E4BA87B3F1ED17585AB1327ED76F5FE89(L_1, NULL);
@@ -3607,7 +3607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TcpListenerWebSocketContext_SendAuthenti
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_5 = V_0;
 		NullCheck(L_5);
 		NullCheck(L_3);
-		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, ((int32_t)(((RuntimeArray*)L_5)->max_length)));
+		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(35 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_3, L_4, 0, ((int32_t)(((RuntimeArray*)L_5)->max_length)));
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_6 = __this->____stream_5;
 		HttpRequest_tC62A89D0274B7AECD61A9697326EA974C31DF87E* L_7;
 		L_7 = HttpRequest_Read_m6BF8318F7B9BFC2314631C627CCD1DF19BEDF108(L_6, ((int32_t)15000), NULL);

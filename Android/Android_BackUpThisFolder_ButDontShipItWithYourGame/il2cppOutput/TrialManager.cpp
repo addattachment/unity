@@ -3462,60 +3462,96 @@ IL_0025:
 		bool L_9 = L_8->___restart_18;
 		if (!L_9)
 		{
-			goto IL_004a;
+			goto IL_007c;
+		}
+	}
+	{
+		// state.trialList.NextTrial();
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_10 = ___0_state;
+		NullCheck(L_10);
+		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_11 = L_10->___trialList_12;
+		NullCheck(L_11);
+		TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C(L_11, NULL);
+		// if (!state.gameManager.trialListFinished)
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_12 = ___0_state;
+		NullCheck(L_12);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_13 = L_12->___gameManager_13;
+		NullCheck(L_13);
+		bool L_14 = L_13->___trialListFinished_21;
+		if (L_14)
+		{
+			goto IL_0064;
 		}
 	}
 	{
 		// state.gameManager.restart = false;
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_10 = ___0_state;
-		NullCheck(L_10);
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = L_10->___gameManager_13;
-		NullCheck(L_11);
-		L_11->___restart_18 = (bool)0;
-		// state.SwitchState(state.preTrialState);
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_12 = ___0_state;
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_13 = ___0_state;
-		NullCheck(L_13);
-		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_14 = L_13->___preTrialState_5;
-		NullCheck(L_12);
-		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_12, L_14, NULL);
-	}
-
-IL_004a:
-	{
-		// if (state.gameManager.isTutorial & state.gameManager.mustGiveFeedback)
 		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_15 = ___0_state;
 		NullCheck(L_15);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_16 = L_15->___gameManager_13;
 		NullCheck(L_16);
-		bool L_17 = L_16->___isTutorial_11;
+		L_16->___restart_18 = (bool)0;
+		// state.SwitchState(state.preTrialState);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_17 = ___0_state;
 		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_18 = ___0_state;
 		NullCheck(L_18);
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_19 = L_18->___gameManager_13;
-		NullCheck(L_19);
-		bool L_20 = L_19->___mustGiveFeedback_31;
-		if (!((int32_t)((int32_t)L_17&(int32_t)L_20)))
+		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_19 = L_18->___preTrialState_5;
+		NullCheck(L_17);
+		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_17, L_19, NULL);
+		goto IL_007c;
+	}
+
+IL_0064:
+	{
+		// state.gameManager.restart = false;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_20 = ___0_state;
+		NullCheck(L_20);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_21 = L_20->___gameManager_13;
+		NullCheck(L_21);
+		L_21->___restart_18 = (bool)0;
+		// state.SwitchState(state.endState);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_22 = ___0_state;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_23 = ___0_state;
+		NullCheck(L_23);
+		EndTrialState_t1A9CBC8D66131064BC621F5B2A9CD21B5A2D9CC2* L_24 = L_23->___endState_9;
+		NullCheck(L_22);
+		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_22, L_24, NULL);
+	}
+
+IL_007c:
+	{
+		// if (state.gameManager.isTutorial & state.gameManager.mustGiveFeedback)
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_25 = ___0_state;
+		NullCheck(L_25);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_26 = L_25->___gameManager_13;
+		NullCheck(L_26);
+		bool L_27 = L_26->___isTutorial_11;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_28 = ___0_state;
+		NullCheck(L_28);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_29 = L_28->___gameManager_13;
+		NullCheck(L_29);
+		bool L_30 = L_29->___mustGiveFeedback_31;
+		if (!((int32_t)((int32_t)L_27&(int32_t)L_30)))
 		{
-			goto IL_007b;
+			goto IL_00ad;
 		}
 	}
 	{
 		// state.gameManager.mustGiveFeedback = false;
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_21 = ___0_state;
-		NullCheck(L_21);
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_22 = L_21->___gameManager_13;
-		NullCheck(L_22);
-		L_22->___mustGiveFeedback_31 = (bool)0;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_31 = ___0_state;
+		NullCheck(L_31);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_32 = L_31->___gameManager_13;
+		NullCheck(L_32);
+		L_32->___mustGiveFeedback_31 = (bool)0;
 		// state.SwitchState(state.preTrialState);
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_23 = ___0_state;
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_24 = ___0_state;
-		NullCheck(L_24);
-		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_25 = L_24->___preTrialState_5;
-		NullCheck(L_23);
-		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_23, L_25, NULL);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_33 = ___0_state;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_34 = ___0_state;
+		NullCheck(L_34);
+		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_35 = L_34->___preTrialState_5;
+		NullCheck(L_33);
+		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_33, L_35, NULL);
 	}
 
-IL_007b:
+IL_00ad:
 	{
 		// }
 		return;
@@ -3549,12 +3585,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PostTrialState_ExitState_mE798C175C8379D
 		TargetGroup_t5E01407DB6F0156A988256EA1501BC20342AD444* L_7 = L_6->___targets_11;
 		NullCheck(L_7);
 		TargetGroup_SetAllStartingPos_mC5D7A8ECB2D119FCE6DABC792798E9F15A1A41C6(L_7, NULL);
-		// state.trialList.NextTrial();
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_8 = ___0_state;
-		NullCheck(L_8);
-		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_9 = L_8->___trialList_12;
-		NullCheck(L_9);
-		TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C(L_9, NULL);
 		// }
 		return;
 	}

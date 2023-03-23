@@ -94,8 +94,6 @@ struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
 // UnityEngine.BoxCollider
 struct BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23;
-// UnityEngine.UI.Button
-struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Canvas
@@ -1692,16 +1690,14 @@ struct PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015  : public MonoBehav
 // ReadFeedback
 struct ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	// UnityEngine.UI.Button ReadFeedback::button
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___button_4;
 	// Appear ReadFeedback::appear
-	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_5;
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_4;
 	// UnityEngine.BoxCollider ReadFeedback::boxColl
-	BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* ___boxColl_6;
+	BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* ___boxColl_5;
 	// UnityEngine.Events.UnityEvent ReadFeedback::pushEvent
-	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___pushEvent_7;
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___pushEvent_6;
 	// System.Boolean ReadFeedback::isTouched
-	bool ___isTouched_8;
+	bool ___isTouched_7;
 };
 
 // ScoreCaregiver
@@ -5183,7 +5179,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_UpdateStat
 		NullCheck(L_0);
 		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = L_0->___feedbackPole_13;
 		NullCheck(L_1);
-		bool L_2 = L_1->___isTouched_8;
+		bool L_2 = L_1->___isTouched_7;
 		if (!L_2)
 		{
 			goto IL_0025;
@@ -5195,7 +5191,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_UpdateStat
 		NullCheck(L_3);
 		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackPole_13;
 		NullCheck(L_4);
-		L_4->___isTouched_8 = (bool)0;
+		L_4->___isTouched_7 = (bool)0;
 		// state.SwitchState(state.caregiverScoringState);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_5 = ___0_state;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
@@ -5643,7 +5639,7 @@ IL_002e:
 		NullCheck(L_7);
 		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_8 = L_7->___feedbackPole_13;
 		NullCheck(L_8);
-		bool L_9 = L_8->___isTouched_8;
+		bool L_9 = L_8->___isTouched_7;
 		if (!L_9)
 		{
 			goto IL_004b;
@@ -5668,7 +5664,7 @@ IL_004b:
 		NullCheck(L_13);
 		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_14 = L_13->___feedbackPole_13;
 		NullCheck(L_14);
-		bool L_15 = L_14->___isTouched_8;
+		bool L_15 = L_14->___isTouched_7;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_16 = ___0_state;
 		NullCheck(L_16);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = L_16->___scoreCaregiver_16;
@@ -5699,7 +5695,7 @@ IL_004b:
 		NullCheck(L_23);
 		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_24 = L_23->___feedbackPole_13;
 		NullCheck(L_24);
-		L_24->___isTouched_8 = (bool)0;
+		L_24->___isTouched_7 = (bool)0;
 		// state.SwitchState(state.caregiverIdleState);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_25 = ___0_state;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_26 = ___0_state;

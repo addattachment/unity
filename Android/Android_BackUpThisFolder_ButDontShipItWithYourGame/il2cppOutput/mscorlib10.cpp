@@ -5013,7 +5013,7 @@ IL_0108:
 		uint8_t* L_53 = ___0_bytes;
 		NullCheck(L_51);
 		int32_t L_54;
-		L_54 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_51, L_52, L_53);
+		L_54 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_51, L_52, L_53);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_50, L_54));
 		V_5 = 0;
 		goto IL_012e;
@@ -5152,7 +5152,7 @@ IL_0191:
 		uint8_t* L_83 = ___0_bytes;
 		NullCheck(L_81);
 		int32_t L_84;
-		L_84 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_81, L_82, L_83);
+		L_84 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_81, L_82, L_83);
 		V_1 = ((int32_t)il2cpp_codegen_add(L_80, L_84));
 	}
 
@@ -5384,7 +5384,7 @@ IL_011e:
 		uint8_t* L_58 = ___0_bytes;
 		NullCheck(L_56);
 		bool L_59;
-		L_59 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_56, L_57, L_58, (&V_8));
+		L_59 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_56, L_57, L_58, (&V_8));
 		Il2CppChar* L_60 = V_8;
 		___2_chars = L_60;
 		if (L_59)
@@ -5594,7 +5594,7 @@ IL_0220:
 		uint8_t* L_113 = ___0_bytes;
 		NullCheck(L_111);
 		bool L_114;
-		L_114 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_111, L_112, L_113, (&V_8));
+		L_114 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_111, L_112, L_113, (&V_8));
 		Il2CppChar* L_115 = V_8;
 		___2_chars = L_115;
 		if (L_114)
@@ -6192,7 +6192,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UTF32Decoder_Reset_mC25320728FDEC3331F55
 	{
 		DecoderFallbackBuffer_t02E41C0BEC894A17CFE1A1FE88A2388DFDA05A73* L_1 = ((Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC*)__this)->____fallbackBuffer_1;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(6 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
+		VirtualActionInvoker0::Invoke(7 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
 	}
 
 IL_0021:
@@ -8831,7 +8831,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decoder_Reset_mC6018C8A307A273C29EED4AB3
 	{
 		DecoderFallbackBuffer_t02E41C0BEC894A17CFE1A1FE88A2388DFDA05A73* L_1 = ((Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC*)__this)->____fallbackBuffer_1;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(6 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
+		VirtualActionInvoker0::Invoke(7 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
 	}
 
 IL_0028:
@@ -9028,6 +9028,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar DecoderUTF7FallbackBuffer_GetNextC
 IL_001b:
 	{
 		return 0;
+	}
+}
+// System.Int32 System.Text.UTF7Encoding/DecoderUTF7FallbackBuffer::get_Remaining()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DecoderUTF7FallbackBuffer_get_Remaining_m318E4C3848FF0F3B7F52C1E9075D827CEBD8375B (DecoderUTF7FallbackBuffer_t2CAD66D788C79E886E4F043E34498DDFB8F18CB8* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->___iCount_3;
+		if ((((int32_t)L_0) > ((int32_t)0)))
+		{
+			goto IL_000b;
+		}
+	}
+	{
+		return 0;
+	}
+
+IL_000b:
+	{
+		int32_t L_1 = __this->___iCount_3;
+		return L_1;
 	}
 }
 // System.Void System.Text.UTF7Encoding/DecoderUTF7FallbackBuffer::Reset()
@@ -14340,7 +14360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UTF8Encoding_FallbackInvalidByteSequence
 		Il2CppChar** L_6 = ___3_pTarget;
 		NullCheck(L_3);
 		bool L_7;
-		L_7 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_3, L_4, (uint8_t*)(*((intptr_t*)L_5)), L_6);
+		L_7 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_3, L_4, (uint8_t*)(*((intptr_t*)L_5)), L_6);
 		if (L_7)
 		{
 			goto IL_001f;
@@ -14372,7 +14392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UTF8Encoding_FallbackInvalidByteSeque
 		uint8_t* L_4 = ___0_pSrc;
 		NullCheck(L_2);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_2, L_3, L_4);
+		L_5 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_2, L_3, L_4);
 		return L_5;
 	}
 }
@@ -15082,7 +15102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UTF8Decoder_Reset_m52CCDC3E87EE8D5C8042F
 	{
 		DecoderFallbackBuffer_t02E41C0BEC894A17CFE1A1FE88A2388DFDA05A73* L_1 = ((Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC*)__this)->____fallbackBuffer_1;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(6 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
+		VirtualActionInvoker0::Invoke(7 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
 	}
 
 IL_001a:
@@ -18655,7 +18675,7 @@ IL_01d9:
 		uint8_t* L_81 = ___0_bytes;
 		NullCheck(L_79);
 		int32_t L_82;
-		L_82 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_79, L_80, L_81);
+		L_82 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_79, L_80, L_81);
 		V_5 = ((int32_t)il2cpp_codegen_add(L_78, L_82));
 	}
 
@@ -18761,7 +18781,7 @@ IL_025c:
 		uint8_t* L_108 = ___0_bytes;
 		NullCheck(L_106);
 		int32_t L_109;
-		L_109 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_106, L_107, L_108);
+		L_109 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_106, L_107, L_108);
 		V_5 = ((int32_t)il2cpp_codegen_add(L_105, L_109));
 		goto IL_02f3;
 	}
@@ -18867,7 +18887,7 @@ IL_02e1:
 		uint8_t* L_134 = ___0_bytes;
 		NullCheck(L_132);
 		int32_t L_135;
-		L_135 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_132, L_133, L_134);
+		L_135 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_132, L_133, L_134);
 		V_5 = ((int32_t)il2cpp_codegen_add(L_131, L_135));
 		V_4 = 0;
 	}
@@ -18996,7 +19016,7 @@ IL_0374:
 		uint8_t* L_165 = ___0_bytes;
 		NullCheck(L_163);
 		int32_t L_166;
-		L_166 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_163, L_164, L_165);
+		L_166 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_163, L_164, L_165);
 		V_5 = ((int32_t)il2cpp_codegen_add(L_162, L_166));
 		V_4 = 0;
 	}
@@ -19061,7 +19081,7 @@ IL_03b2:
 		uint8_t* L_181 = ___0_bytes;
 		NullCheck(L_177);
 		int32_t L_182;
-		L_182 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_177, L_179, L_181);
+		L_182 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_177, L_179, L_181);
 		V_5 = ((int32_t)il2cpp_codegen_add(L_176, L_182));
 		V_3 = (-1);
 	}
@@ -19485,7 +19505,7 @@ IL_01f8:
 		uint8_t* L_91 = ___0_bytes;
 		NullCheck(L_89);
 		bool L_92;
-		L_92 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_89, L_90, L_91, (&V_4));
+		L_92 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_89, L_90, L_91, (&V_4));
 		Il2CppChar* L_93 = V_4;
 		___2_chars = L_93;
 		if (L_92)
@@ -19608,7 +19628,7 @@ IL_0294:
 		uint8_t* L_124 = ___0_bytes;
 		NullCheck(L_122);
 		bool L_125;
-		L_125 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_122, L_123, L_124, (&V_4));
+		L_125 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_122, L_123, L_124, (&V_4));
 		Il2CppChar* L_126 = V_4;
 		___2_chars = L_126;
 		if (L_125)
@@ -19754,7 +19774,7 @@ IL_0354:
 		uint8_t* L_165 = ___0_bytes;
 		NullCheck(L_163);
 		bool L_166;
-		L_166 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_163, L_164, L_165, (&V_4));
+		L_166 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_163, L_164, L_165, (&V_4));
 		Il2CppChar* L_167 = V_4;
 		___2_chars = L_167;
 		if (L_166)
@@ -19932,7 +19952,7 @@ IL_041b:
 		uint8_t* L_211 = ___0_bytes;
 		NullCheck(L_209);
 		bool L_212;
-		L_212 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_209, L_210, L_211, (&V_4));
+		L_212 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_209, L_210, L_211, (&V_4));
 		Il2CppChar* L_213 = V_4;
 		___2_chars = L_213;
 		if (L_212)
@@ -20044,7 +20064,7 @@ IL_048a:
 		uint8_t* L_239 = ___0_bytes;
 		NullCheck(L_235);
 		bool L_240;
-		L_240 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_235, L_237, L_239, (&V_4));
+		L_240 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_235, L_237, L_239, (&V_4));
 		Il2CppChar* L_241 = V_4;
 		___2_chars = L_241;
 		if (L_240)
@@ -20661,7 +20681,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Decoder_Reset_m0975E81C41298DEDB98FD8FD8
 	{
 		DecoderFallbackBuffer_t02E41C0BEC894A17CFE1A1FE88A2388DFDA05A73* L_1 = ((Decoder_tE16E789E38B25DD304004FC630EA8B21000ECBBC*)__this)->____fallbackBuffer_1;
 		NullCheck(L_1);
-		VirtualActionInvoker0::Invoke(6 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
+		VirtualActionInvoker0::Invoke(7 /* System.Void System.Text.DecoderFallbackBuffer::Reset() */, L_1);
 	}
 
 IL_0021:
@@ -25108,7 +25128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool EncodingCharBuffer_Fallback_m5B3AD107E4F
 		Il2CppChar** L_5 = (&__this->___chars_0);
 		NullCheck(L_2);
 		bool L_6;
-		L_6 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(7 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_2, L_3, L_4, L_5);
+		L_6 = VirtualFuncInvoker3< bool, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t*, Il2CppChar** >::Invoke(8 /* System.Boolean System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*,System.Char*&) */, L_2, L_3, L_4, L_5);
 		if (L_6)
 		{
 			goto IL_0067;
@@ -25148,7 +25168,7 @@ IL_0082:
 		uint8_t* L_20 = __this->___bytes_8;
 		NullCheck(L_18);
 		int32_t L_21;
-		L_21 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(8 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_18, L_19, L_20);
+		L_21 = VirtualFuncInvoker2< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, uint8_t* >::Invoke(9 /* System.Int32 System.Text.DecoderFallbackBuffer::InternalFallback(System.Byte[],System.Byte*) */, L_18, L_19, L_20);
 		__this->___charCountResult_3 = ((int32_t)il2cpp_codegen_add(L_17, L_21));
 	}
 

@@ -8185,7 +8185,7 @@ IL_020b:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var);
 		int64_t L_87;
-		L_87 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, __this);
+		L_87 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, __this);
 		V_4 = L_87;
 		int32_t L_88 = ___4_bufferSize;
 		int64_t L_89 = V_4;
@@ -8230,9 +8230,9 @@ IL_0246:
 	{
 		il2cpp_codegen_runtime_class_init_inline(Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE_il2cpp_TypeInfo_var);
 		int64_t L_94;
-		L_94 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(25 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, __this, ((int64_t)0), 2);
+		L_94 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(30 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, __this, ((int64_t)0), 2);
 		int64_t L_95;
-		L_95 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Position() */, __this);
+		L_95 = VirtualFuncInvoker0< int64_t >::Invoke(12 /* System.Int64 System.IO.Stream::get_Position() */, __this);
 		__this->___append_startpos_11 = L_95;
 		return;
 	}
@@ -8665,7 +8665,7 @@ IL_001a:
 	{
 		int64_t L_3 = ___0_value;
 		int64_t L_4;
-		L_4 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(25 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, __this, L_3, 0);
+		L_4 = VirtualFuncInvoker2< int64_t, int64_t, int32_t >::Invoke(30 /* System.Int64 System.IO.Stream::Seek(System.Int64,System.IO.SeekOrigin) */, __this, L_3, 0);
 		return;
 	}
 }
@@ -8826,7 +8826,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FileStream_WriteByte_m82D81D595440293785
 IL_0018:
 	{
 		bool L_3;
-		L_3 = VirtualFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
 		if (L_3)
 		{
 			goto IL_002b;
@@ -9032,11 +9032,11 @@ IL_0085:
 		int32_t L_21 = ___1_offset;
 		int32_t L_22 = ___2_count;
 		RuntimeObject* L_23;
-		L_23 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(17 /* System.IAsyncResult System.IO.Stream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, __this, L_20, L_21, L_22, (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*)NULL, NULL);
+		L_23 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(22 /* System.IAsyncResult System.IO.Stream::BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, __this, L_20, L_21, L_22, (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*)NULL, NULL);
 		V_1 = L_23;
 		RuntimeObject* L_24 = V_1;
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(18 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, __this, L_24);
+		L_25 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(23 /* System.Int32 System.IO.Stream::EndRead(System.IAsyncResult) */, __this, L_24);
 		return L_25;
 	}
 
@@ -9441,7 +9441,7 @@ IL_004e:
 IL_0061:
 	{
 		bool L_13;
-		L_13 = VirtualFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
+		L_13 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
 		if (L_13)
 		{
 			goto IL_0074;
@@ -9467,10 +9467,10 @@ IL_0074:
 		int32_t L_17 = ___1_offset;
 		int32_t L_18 = ___2_count;
 		RuntimeObject* L_19;
-		L_19 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(21 /* System.IAsyncResult System.IO.Stream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, __this, L_16, L_17, L_18, (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*)NULL, NULL);
+		L_19 = VirtualFuncInvoker5< RuntimeObject*, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*, RuntimeObject* >::Invoke(26 /* System.IAsyncResult System.IO.Stream::BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object) */, __this, L_16, L_17, L_18, (AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C*)NULL, NULL);
 		V_0 = L_19;
 		RuntimeObject* L_20 = V_0;
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(22 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, __this, L_20);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(27 /* System.Void System.IO.Stream::EndWrite(System.IAsyncResult) */, __this, L_20);
 		return;
 	}
 
@@ -9679,7 +9679,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FileStream_BeginWrite_m4ED11D7
 IL_0018:
 	{
 		bool L_3;
-		L_3 = VirtualFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
 		if (L_3)
 		{
 			goto IL_002b;
@@ -9963,7 +9963,7 @@ IL_002b:
 IL_003f:
 	{
 		int64_t L_6;
-		L_6 = VirtualFuncInvoker0< int64_t >::Invoke(10 /* System.Int64 System.IO.Stream::get_Length() */, __this);
+		L_6 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Length() */, __this);
 		int64_t L_7 = ___0_offset;
 		V_0 = ((int64_t)il2cpp_codegen_add(L_6, L_7));
 		goto IL_0069;
@@ -9972,7 +9972,7 @@ IL_003f:
 IL_004a:
 	{
 		int64_t L_8;
-		L_8 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Position() */, __this);
+		L_8 = VirtualFuncInvoker0< int64_t >::Invoke(12 /* System.Int64 System.IO.Stream::get_Position() */, __this);
 		int64_t L_9 = ___0_offset;
 		V_0 = ((int64_t)il2cpp_codegen_add(L_8, L_9));
 		goto IL_0069;
@@ -10102,7 +10102,7 @@ IL_0018:
 IL_002b:
 	{
 		bool L_5;
-		L_5 = VirtualFuncInvoker0< bool >::Invoke(9 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
+		L_5 = VirtualFuncInvoker0< bool >::Invoke(10 /* System.Boolean System.IO.Stream::get_CanWrite() */, __this);
 		if (L_5)
 		{
 			goto IL_003e;
@@ -10158,7 +10158,7 @@ IL_004e:
 IL_0079:
 	{
 		int64_t L_17;
-		L_17 = VirtualFuncInvoker0< int64_t >::Invoke(11 /* System.Int64 System.IO.Stream::get_Position() */, __this);
+		L_17 = VirtualFuncInvoker0< int64_t >::Invoke(12 /* System.Int64 System.IO.Stream::get_Position() */, __this);
 		int64_t L_18 = ___0_value;
 		if ((((int64_t)L_17) <= ((int64_t)L_18)))
 		{
@@ -10167,7 +10167,7 @@ IL_0079:
 	}
 	{
 		int64_t L_19 = ___0_value;
-		VirtualActionInvoker1< int64_t >::Invoke(12 /* System.Void System.IO.Stream::set_Position(System.Int64) */, __this, L_19);
+		VirtualActionInvoker1< int64_t >::Invoke(13 /* System.Void System.IO.Stream::set_Position(System.Int64) */, __this, L_19);
 	}
 
 IL_0089:
@@ -10216,7 +10216,7 @@ FINALLY_0009:
 		});
 		try
 		{// begin try (depth: 1)
-			VirtualActionInvoker1< bool >::Invoke(15 /* System.Void System.IO.Stream::Dispose(System.Boolean) */, __this, (bool)0);
+			VirtualActionInvoker1< bool >::Invoke(20 /* System.Void System.IO.Stream::Dispose(System.Boolean) */, __this, (bool)0);
 			goto IL_0010;
 		}// end try (depth: 1)
 		catch(Il2CppExceptionWrapper& e)
