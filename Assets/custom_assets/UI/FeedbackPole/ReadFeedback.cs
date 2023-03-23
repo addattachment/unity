@@ -9,7 +9,7 @@ using UnityEngine.UI;
 /// </summary>
 public class ReadFeedback : MonoBehaviour
 {
-    [SerializeField] private Button button;
+    //[SerializeField] private Button button;
     [SerializeField] private Appear appear;
 
     [SerializeField] private BoxCollider boxColl;
@@ -30,7 +30,7 @@ public class ReadFeedback : MonoBehaviour
     {
         Debug.Log("raise pole");
         appear.Raise();
-        button.interactable = true;
+        //button.interactable = true;
         boxColl.enabled = true;
     }
 
@@ -40,7 +40,7 @@ public class ReadFeedback : MonoBehaviour
         Debug.Log("lower pole");
 
         appear.Lower();
-        button.interactable = false;
+        //button.interactable = false;
         boxColl.enabled = false;
         isTouched = true;
         //FunctionToExecute(m_methodToCall);

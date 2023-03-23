@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 43175172}
   - component: {fileID: 43175179}
   - component: {fileID: 43175178}
-  - component: {fileID: 43175177}
   - component: {fileID: 43175176}
   - component: {fileID: 43175175}
-  - component: {fileID: 43175174}
   - component: {fileID: 43175173}
+  - component: {fileID: 43175174}
   m_Layer: 6
   m_Name: lightblue
   m_TagString: subTarget
@@ -90,20 +89,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &43175177
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43175171}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 1.187
-  m_Height: 2.3740017
-  m_Direction: 1
-  m_Center: {x: -0.0000013354986, y: 0.0000007144492, z: -0.21650502}
 --- !u!114 &43175176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,22 +119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1ae6f53928ae45a19427dd69757be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &43175174
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43175171}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &43175173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +141,22 @@ MonoBehaviour:
   yMinBorder: 0
   movementMode: 0
   TargetGroupPivotPoint: {x: 0, y: 0, z: 0}
+--- !u!54 &43175174
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43175171}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &137625721
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +442,6 @@ GameObject:
   - component: {fileID: 489442751}
   - component: {fileID: 996165246}
   - component: {fileID: 996165247}
-  - component: {fileID: 919253525}
   m_Layer: 6
   m_Name: lightblueHole
   m_TagString: subTarget
@@ -572,20 +556,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 996165246}
---- !u!64 &919253525
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489442748}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &549211829
 GameObject:
   m_ObjectHideFlags: 0
@@ -714,7 +684,6 @@ GameObject:
   - component: {fileID: 1187181668}
   - component: {fileID: 1170872522}
   - component: {fileID: 1170872523}
-  - component: {fileID: 1923965555}
   m_Layer: 6
   m_Name: redHole
   m_TagString: subTarget
@@ -829,20 +798,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 1170872522}
---- !u!64 &1923965555
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1187181665}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1404959247
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,11 +809,10 @@ GameObject:
   - component: {fileID: 1404959248}
   - component: {fileID: 1404959255}
   - component: {fileID: 1404959254}
-  - component: {fileID: 1404959253}
   - component: {fileID: 1404959252}
   - component: {fileID: 1404959251}
-  - component: {fileID: 1404959250}
   - component: {fileID: 1404959249}
+  - component: {fileID: 1404959250}
   m_Layer: 6
   m_Name: blue
   m_TagString: subTarget
@@ -933,20 +887,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1404959253
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404959247}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  m_Radius: 1.1869999
-  m_Height: 2.3740017
-  m_Direction: 1
-  m_Center: {x: -0.000004315731, y: 0.0000009520612, z: -0.21650454}
 --- !u!114 &1404959252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,22 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fa1ae6f53928ae45a19427dd69757be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!54 &1404959250
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404959247}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &1404959249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,6 +939,22 @@ MonoBehaviour:
   yMinBorder: 0
   movementMode: 0
   TargetGroupPivotPoint: {x: 0, y: 0, z: 0}
+--- !u!54 &1404959250
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404959247}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1790083467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +969,6 @@ GameObject:
   - component: {fileID: 1790083470}
   - component: {fileID: 1339953514}
   - component: {fileID: 1339953515}
-  - component: {fileID: 896870287}
   m_Layer: 6
   m_Name: blueHole
   m_TagString: subTarget
@@ -1144,20 +1083,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 1339953514}
---- !u!64 &896870287
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1790083467}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1042536171259637233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,7 +1095,7 @@ GameObject:
   - component: {fileID: 274246944630306057}
   - component: {fileID: 6689752607058749779}
   m_Layer: 6
-  m_Name: Cylinder (1)
+  m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1583,7 +1508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4466089295605719221}
   m_Layer: 6
-  m_Name: GameObject
+  m_Name: FloorHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

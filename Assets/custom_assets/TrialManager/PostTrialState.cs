@@ -30,8 +30,18 @@ public class PostTrialState : StateMachine
         // restart is set in caregiver scoring exit of state
         if (state.gameManager.restart)
         {
-            state.gameManager.restart = false;
-            state.SwitchState(state.preTrialState);
+            //Set index for next trial, this also checks if we've come to the end
+            state.trialList.NextTrial();
+            if (!state.gameManager.trialListFinished)
+            {
+                state.gameManager.restart = false;
+                state.SwitchState(state.preTrialState);
+            }
+            else
+            {
+                state.gameManager.restart = false;
+                state.SwitchState(state.endState);
+            }
         }
         if (state.gameManager.isTutorial & state.gameManager.mustGiveFeedback)
         {
@@ -48,7 +58,6 @@ public class PostTrialState : StateMachine
         state.gameManager.ballIsShot = false;
         // we move the targets to a new starting pos
         state.targets.SetAllStartingPos();
-        //prepare for next trial
-        state.trialList.NextTrial();
+        
     }
 }

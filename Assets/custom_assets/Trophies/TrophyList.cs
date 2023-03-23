@@ -18,11 +18,16 @@ public class TrophyList : MonoBehaviour
     public AudioSource trophyAppear;
     public bool trophyDidAppear = false;
     public bool trophyIsGiven = false;
-    //TESTING
+    [Header("Animations")]
+    [SerializeField] private GameObject explode;
+    public bool didExplode = false;
+    private float waitingTimeForTransition;
+    [Header("testing")]
     [SerializeField] private bool testLightOn = false;
     [SerializeField] private bool testLightOff = false;
     [SerializeField] private bool createTrophy = false;
     [SerializeField] private bool moveTrophy = false;
+    [SerializeField] private bool doExplode = false;
     [SerializeField, Tooltip("used to move the ball to the testPlayer")] private Player testPlayer;
 
     // Start is called before the first frame update
@@ -56,38 +61,61 @@ public class TrophyList : MonoBehaviour
         if (moveTrophy)
         {
             moveTrophy = false;
-            MoveTrophyToWinner(testPlayer);
+            MoveTrophyToWinner(testPlayer, 1.0f);
+        }
+        if (doExplode)
+        {
+            doExplode = false;
+            DestroyCurrentTrophy(1.5f);
         }
         ////////////////////
     }
 
-
-    public void MoveTrophyToWinner(Player winner)
+    private IEnumerator MoveAndWait(GameObject currentTrophy, Hashtable ht)
     {
-        trophyIsGiven = false;
-        // add to the list of won trophies
-        winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", gameObject);
-
         // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
-        // make spot follow the trophy
-
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
         currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
         currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
+
+        yield return new WaitForSeconds(waitingTimeForTransition);
         //make sure we don't have a currentTrophy anymore
         currentTrophy = null;
     }
 
-    public void DestroyCurrentTrophy()
+    private IEnumerator WaitForDestruction()
+    {
+        yield return new WaitForSeconds(waitingTimeForTransition);
+        Destroy(currentTrophy);
+    }
+    private void DestroyTrophy()
+    {
+        explode.transform.position = currentTrophy.transform.position;
+        explode.GetComponentInChildren<Animator>().Play("Base Layer.Explosion");
+        
+        didExplode = false;
+        StartCoroutine(WaitForDestruction());
+    }
+
+
+    public void MoveTrophyToWinner(Player winner, float waitTime)
     {
         trophyIsGiven = false;
+        waitingTimeForTransition = waitTime;
+        // add to the list of won trophies
+        winner.trophyWonList.Add(currentTrophy);
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", gameObject);
+        StartCoroutine(MoveAndWait(currentTrophy, ht));
+    }
 
-        ht = iTween.Hash("amount", new Vector3(0,3.0f,0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
-
+    public void DestroyCurrentTrophy(float waitTime)
+    {
+        waitingTimeForTransition = waitTime;
+        trophyIsGiven = false;
+        ht = iTween.Hash("amount", new Vector3(0, 3.0f, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "DestroyTrophy", "oncompletetarget", gameObject);
         // move trophy to winner
         iTween.MoveBy(currentTrophy, ht);
     }
@@ -95,14 +123,9 @@ public class TrophyList : MonoBehaviour
     private void SetTrophyGiven()
     {
         trophyIsGiven = true;
-    }   
-    private void SetTrophyDestroyed()
-    {
-        //currentTrophy = null;
-        trophyIsGiven = true;
-        Destroy(currentTrophy, 1f);
 
     }
+
 
     /// <summary>
     /// Instantiate a new trophy

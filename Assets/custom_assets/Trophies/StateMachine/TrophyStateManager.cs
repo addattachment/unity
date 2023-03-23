@@ -21,7 +21,7 @@ public class TrophyStateManager : MonoBehaviour
     public announceWinner winnerUI;
 
     [SerializeField] private bool sendStateWSMessage = false;
-
+    public float waitTimeForTransition = 0.5f;
     [Header("data connections")]
     [SerializeField] private WsClient ws;
     StateMgrEvent trophyStateMgrEvent;

@@ -12,7 +12,8 @@
             // lights
             state.trophyList.SetFocus(true, winner.trophySpawnLocation.transform);
             //move trophy
-            state.trophyList.MoveTrophyToWinner(winner);
+            state.trophyList.MoveTrophyToWinner(winner, state.waitTimeForTransition);
+            
         }
         else
         {
@@ -20,7 +21,7 @@
             // lights
             state.trophyList.SetFocus(true, state.trophyList.transform);
             //move trophy
-            state.trophyList.DestroyCurrentTrophy();
+            state.trophyList.DestroyCurrentTrophy(state.waitTimeForTransition);
         }
         //state.players.ResetPlayers();
     }
