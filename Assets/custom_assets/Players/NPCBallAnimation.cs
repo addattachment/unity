@@ -16,7 +16,7 @@ public class NPCBallAnimation : MonoBehaviour
     // SetBallBool sets the NPCShootsBall boolean at true when the NPC animation releases the ball
     public void SetBallBool()
     {
-        Debug.Log("shoot at " + Time.time);
+        //Debug.Log("shoot at " + Time.time);
         gameManager.NPCShootsBall = true;
     }
 }

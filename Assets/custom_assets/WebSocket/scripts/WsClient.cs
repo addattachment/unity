@@ -106,6 +106,7 @@ public class WsClient : MonoBehaviour
     {
         playerVals = playerValues;
         gameManager.playerValsReceivedViaWS = true;
+        gameManager.newNameSet = false;
     }
 
     public void SendWSMessage(string message)

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [Header("player settings")]
     public bool playerSettingsAreSet = false;
     public bool NPCShootsBall = false;
+    public bool newNameSet = false;
 
     [Header("development settings")]
     [SerializeField] private bool restartBool = false;

@@ -116,7 +116,6 @@ public class LipsyncController : MonoBehaviour
         }
         else
         {
-            Debug.Log("init blend shapes");
             InitBlendShapes();
         }
         freqData = new float[(int)nSamples];

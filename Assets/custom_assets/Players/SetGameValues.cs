@@ -109,5 +109,6 @@ public class SetGameValues : MonoBehaviour
 
         // we tell the game that the players values are set
         gameManager.playerSettingsAreSet = true;
+
     }
 }

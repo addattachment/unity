@@ -23,6 +23,26 @@ namespace LSL
          * If you are instead trying to log a stimulus event then there are better options. Please see the 
          * LSL4Unity SimpleStimulusEvent Sample for such a design.
          */
+
+        #region SingletonPattern
+        private static OutletPassThrough _instance;
+        public static OutletPassThrough Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    Debug.Log("The OutletPassThrough is Null");
+                }
+                return _instance;
+            }
+        }
+        private void Awake()
+        {
+            _instance = this;
+        }
+        #endregion
+
         [SerializeField] private string StreamName_1 = "DataSyncMarker_emotibit";
         [SerializeField] private string StreamName_2 = "DataSyncMarker_eeg";
         [SerializeField] private string ContentType = "Markers";

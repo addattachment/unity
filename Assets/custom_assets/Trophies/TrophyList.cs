@@ -71,7 +71,7 @@ public class TrophyList : MonoBehaviour
         ////////////////////
     }
 
-    private IEnumerator MoveAndWait(GameObject currentTrophy, Hashtable ht)
+    private void MoveAndWait(GameObject currentTrophy, Hashtable ht)
     {
         // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
@@ -80,25 +80,17 @@ public class TrophyList : MonoBehaviour
         currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
         currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
+        StartCoroutine(WaitForTransition());        
+    }
 
+    private IEnumerator WaitForTransition()
+    {
         yield return new WaitForSeconds(waitingTimeForTransition);
+        SetTrophyGiven();
         //make sure we don't have a currentTrophy anymore
         currentTrophy = null;
     }
 
-    private IEnumerator WaitForDestruction()
-    {
-        yield return new WaitForSeconds(waitingTimeForTransition);
-        Destroy(currentTrophy);
-    }
-    private void DestroyTrophy()
-    {
-        explode.transform.position = currentTrophy.transform.position;
-        explode.GetComponentInChildren<Animator>().Play("Base Layer.Explosion");
-        
-        didExplode = false;
-        StartCoroutine(WaitForDestruction());
-    }
 
 
     public void MoveTrophyToWinner(Player winner, float waitTime)
@@ -108,9 +100,13 @@ public class TrophyList : MonoBehaviour
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
         ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", gameObject);
-        StartCoroutine(MoveAndWait(currentTrophy, ht));
+        MoveAndWait(currentTrophy, ht);
     }
+    private void SetTrophyGiven()
+    {
+        trophyIsGiven = true;
 
+    }
     public void DestroyCurrentTrophy(float waitTime)
     {
         waitingTimeForTransition = waitTime;
@@ -119,12 +115,21 @@ public class TrophyList : MonoBehaviour
         // move trophy to winner
         iTween.MoveBy(currentTrophy, ht);
     }
-
-    private void SetTrophyGiven()
+    private void DestroyTrophy()
     {
-        trophyIsGiven = true;
+        explode.transform.position = currentTrophy.transform.position;
+        explode.GetComponentInChildren<Animator>().Play("Base Layer.Explosion");
 
+        didExplode = false;
+        StartCoroutine(WaitForDestruction());
     }
+    private IEnumerator WaitForDestruction()
+    {
+        yield return new WaitForSeconds(waitingTimeForTransition);
+        Destroy(currentTrophy);
+        SetTrophyGiven();
+    }
+ 
 
 
     /// <summary>

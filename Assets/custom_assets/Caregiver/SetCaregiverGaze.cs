@@ -7,7 +7,7 @@ public class SetCaregiverGaze : MonoBehaviour
     [SerializeField] GameObject lookTarget;
     private Vector3 startPos;
     [SerializeField] private GameObject followObject;
-    [SerializeField] private bool follow = false;
+    public bool follow = false;
     private void Start()
     {
         startPos = lookTarget.transform.position;
@@ -15,22 +15,15 @@ public class SetCaregiverGaze : MonoBehaviour
 
     private void Update()
     {
-        if (follow & followObject!= null)
+        // we want to move the looktarget, as it is in a look constraint of the head of the caregiver;
+        if (followObject != null)
         {
-            lookTarget.transform.position = followObject.transform.position;
-        }
-        else
-        {
-            Hashtable ht = iTween.Hash("position", startPos, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1f, "oncomplete", "SetTrophyDestroyed", "oncompletetarget", gameObject);
-
-            // move trophy to winner
-            iTween.MoveTo(lookTarget, ht); 
-            //lookTarget.transform.position = startPos;
+                lookTarget.transform.position = followObject.transform.position;
         }
     }
-    public void SetGaze(GameObject ball)
+    public void SetGaze(GameObject followObj)
     {
-        followObject = ball;
+        followObject = followObj;
         follow = true;
     }
 
@@ -38,5 +31,11 @@ public class SetCaregiverGaze : MonoBehaviour
     {
         follow = false;
         followObject = null;
+        Hashtable ht = iTween.Hash("position", startPos, "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f,"oncompletetarget", gameObject);
+        // move trophy to winner
+        iTween.MoveTo(lookTarget, ht);
+        //lookTarget.transform.position = startPos;
     }
+
+
 }

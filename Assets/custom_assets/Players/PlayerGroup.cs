@@ -66,13 +66,13 @@ public class PlayerGroup : MonoBehaviour
         }
         else
         {
-            if(NPC.score > player.score)
+            if (NPC.score > player.score)
             {
                 return NPC;
             }
             else
             {
-                if(player.score > NPC.score)
+                if (player.score > NPC.score)
                 {
                     return player;
                 }
@@ -172,7 +172,7 @@ public class PlayerGroup : MonoBehaviour
             {
                 // if one of both slingshots isn't low, return false
                 return false;
-            }            
+            }
         }
         return true;
     }
@@ -286,7 +286,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log("reachChance " + reachChance);
+        Debug.Log(activeParticipant+" reachChance " + reachChance);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

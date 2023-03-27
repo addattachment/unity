@@ -59,6 +59,8 @@ public class ScoreCaregiver : MonoBehaviour
         if (gripIsPushed)
         {
             controllerStartDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position);
+            startPosMeCircle = meCircle.transform.position;
+            startPosCaregiverCircle = caregiverCircle.transform.position;
             ChangeToRed();
         }
         else
@@ -83,7 +85,7 @@ public class ScoreCaregiver : MonoBehaviour
     public void SendScore(int trialIndex)
     {
         //TODO numbering not good, I think we need a non-linear scale?
-        int caregiverScore = (int)(10*(maxDistance - controllerDist) / maxDistance);
+        int caregiverScore = (int)(10 * (maxDistance - controllerDist) / maxDistance);
         //debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
         caregiverScoreEvent.Set(trialIndex, caregiverScore);
         ws.SendWSMessage(caregiverScoreEvent.SaveToString());
@@ -106,16 +108,16 @@ public class ScoreCaregiver : MonoBehaviour
     public void MoveCircles()
     {
         float movement = controllerDist * scaleCircleDistance / 2.0f;
-        if (movement > maxDistance / 2.0f)
+        if (movement + startPosMeCircle.x > maxDistance / 2.0f)
         {
             movement = maxDistance / 2.0f;
         }
-        if (movement < 0.0f)
+        if (movement + startPosMeCircle.x < 0.0f)
         {
             movement = 0.0f;
         }
-        UpdateLocalPos(meCircle, xUpdate: movement, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
-        UpdateLocalPos(caregiverCircle, xUpdate: -movement, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
+        UpdateLocalPos(meCircle, xUpdate: movement + startPosMeCircle.x, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
+        UpdateLocalPos(caregiverCircle, xUpdate: -(movement + startPosMeCircle.x), meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
     }
 
     private void UpdateLocalPos(GameObject obj, float xUpdate, float yUpdate, float zUpdate)

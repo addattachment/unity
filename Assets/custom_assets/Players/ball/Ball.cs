@@ -1,5 +1,6 @@
 using LSL;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -12,12 +13,9 @@ public class Ball : MonoBehaviour
     public Slingshot slingShot; // link to the slingshot
 
     [Header("AudioSamples")]
-    [SerializeField] private AudioSource SlingshotPullAudio;
-    [SerializeField] private AudioSource SlingshotReleaseAudio;
     [SerializeField] private AudioSource BallFloorImpact;
     [SerializeField] private AudioSource BallDestructionNoHitSound;
     [SerializeField] private AudioSource ball_flying_audio;
-
 
     [Header("shooting arguments")]
     [Tooltip("time used for determining when bullet is not attached to slingshot anymore")] public float ReleaseTime = 0.5f;
@@ -41,7 +39,7 @@ public class Ball : MonoBehaviour
 
     [Header("score result")]
     [SerializeField] private OutletPassThrough lsl;
-
+    private List<TargetHit> wrongHitTransforms = new();
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
     [SerializeField] private TrailRenderer trail;
@@ -106,6 +104,17 @@ public class Ball : MonoBehaviour
             if (coll.CompareTag("missTargets"))
             {
                 ballDidHit = true;
+                // if we didn't score, we show all wrong transforms we did hit
+                if (!ballDidScore)
+                {
+                    foreach (TargetHit t in wrongHitTransforms)
+                    {
+                        StartCoroutine(LaunchBallScoreShow(false, t));
+                    }
+                }
+                // we clear the list of wrong transforms for the next ball
+                wrongHitTransforms.Clear();
+
             }
             if (coll.CompareTag("Floor"))
             {
@@ -133,7 +142,7 @@ public class Ball : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("collided " + collision.gameObject.name + " at " + Time.time + " at position " + transform.position);
+        //Debug.Log("collided " + collision.gameObject.name + " at " + Time.time + " at position " + transform.position);
         ProcessCollision(collision.gameObject);
     }
 
@@ -143,16 +152,18 @@ public class Ball : MonoBehaviour
         if (th.activeTarget)
         {
             //Debug.Log("correct targets touched! at " + Time.time);
-            Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position + " by ball at " + gameObject.transform.position);
+            //Debug.Log("target is touched at " + Time.time + " and target center location " + th.gameObject.transform.position + " by ball at " + gameObject.transform.position);
             ballDidScore = true;
             StartCoroutine(LaunchBallScoreShow(true, th));
         }
         else
         {
-            Debug.Log("wrong! at " + Time.time);
+            if (!ballDidHit)
+            {
+                //Debug.Log("wrong! at " + Time.time);
+                wrongHitTransforms.Add(th);
+            }
             //ballDidScore = false;
-            StartCoroutine(LaunchBallScoreShow(false, th));
-
         }
     }
 
@@ -201,7 +212,7 @@ public class Ball : MonoBehaviour
 
         // shoot the ball
         Rb.AddForce(launchForce, ForceMode.Impulse);
-        SlingshotReleaseAudio.Play();
+        slingShot.releaseSlingShotClip.Play();
         
         Destroy(GetComponent<SpringJoint>());
         StartCoroutine(Explode());
@@ -214,7 +225,7 @@ public class Ball : MonoBehaviour
         showLinerender = true;
         // AUDIO 
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
-        SlingshotPullAudio.Play();
+        slingShot.pullSlingShotClip.Play();
         trail.enabled = false;
         //TrajectoryManager.Instance.EnableLine(true);
     }

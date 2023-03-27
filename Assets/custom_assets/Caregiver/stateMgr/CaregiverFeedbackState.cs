@@ -7,6 +7,7 @@
         //state.caregiverFeedback.SetSlingshotForFeedback(true);
         state.lightingMgr.envLight.EnableSunlight(false);
         state.lightingMgr.caregiverLight.EnableLight(true);
+        state.caregiverFeedback.setCaregiverGaze.SetGaze(state.caregiverFeedback.feedbackCamera); 
         state.caregiverFeedback.GiveFeedback();
         //Send start signal for caregiver feedback to python
         state.caregiverFeedbackEvent.Set(state.gameManager.currentTrial, true);

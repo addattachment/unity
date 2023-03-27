@@ -10,14 +10,15 @@ public class ScoreBoardAll : MonoBehaviour
     private void Start()
     {
         gameManager = GameManager.Instance;
-
     }
 
     private void Update()
     {
-        if ((gameManager.gameDidStart == false) && (gameManager.trialListGenerated == true))
+        //if ((gameManager.gameDidStart == false) && (gameManager.trialListGenerated == true))
+        if (gameManager.playerSettingsAreSet && !gameManager.newNameSet)
         {
             UpdateNames();
+            gameManager.newNameSet = true;
         }
     }
     public void UpdateScores()
@@ -30,10 +31,10 @@ public class ScoreBoardAll : MonoBehaviour
 
     public void UpdateNames()
     {
+        Debug.Log("updating the names");
         foreach (ScoreBoard scoreBoard in scoreBoards)
         {
             scoreBoard.SetName();
         }
     }
-
 }

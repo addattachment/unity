@@ -8,6 +8,8 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
     [SerializeField] private GameManager gameManager;
+    public SetCaregiverGaze setCaregiverGaze;
+    public GameObject feedbackCamera;
     [SerializeField] private Light sun;
     public Light caregiverSpotLight;
     //[SerializeField] private Slingshot playerSlingshot;
@@ -57,7 +59,7 @@ public class CaregiverFeedback : MonoBehaviour
 
     //public void SetSlingshotForFeedback(bool enabled)
     //{
-        
+
     //    //if (enabled)
     //    //{
     //    //    playerSlingshot.GetComponent<Slingshot>().slingshotLinesEnum = SlingshotLinesEnum.hidden;

@@ -35,6 +35,11 @@ public class Slingshot : MonoBehaviour
     private GameObject hitTarget; // we use the hittarget object to adapt the deflection distance
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [SerializeField, Tooltip("how much may the drawing hook differ from the perfect hook to guide a ball to hit")] private float minGuidanceDist = 0.9f;
+
+    [Header("Audio")]
+    public AudioSource pullSlingShotClip;
+    public AudioSource releaseSlingShotClip;
+
     [Header("debug")]
     //[SerializeField] private DebugConnection debug_text;
     [SerializeField] private Toggle toggle_may; //temp
@@ -168,6 +173,8 @@ public class Slingshot : MonoBehaviour
             case ReachTargetEnum.must:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
+                _direction.x += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
+                _direction.y += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??
                 _launchForce -= (Physics.gravity * 0.25f);
@@ -216,8 +223,8 @@ public class Slingshot : MonoBehaviour
             case ReachTargetEnum.mayNPC:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
-                _direction.x += Random.Range(0.0f, 0.2f);
-                _direction.y += Random.Range(0.0f, 0.2f);
+                _direction.x += Random.Range(-0.4f, 0.4f);
+                _direction.y += Random.Range(-0.4f, 0.4f);
 
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??

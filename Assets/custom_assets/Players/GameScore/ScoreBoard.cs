@@ -21,6 +21,7 @@ public class ScoreBoard : MonoBehaviour
 
     public void SetName()
     {
+        Debug.Log("name: " + subject.playerName);
         _name.SetText(subject.playerName);
     }
 
