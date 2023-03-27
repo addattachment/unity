@@ -37,6 +37,8 @@ struct VirtualFuncInvoker0
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
 // System.Collections.Generic.List`1<Player>
 struct List_1_tC126DB1F2EAC892E1A6DA4242770B75A794B10D3;
+// System.Collections.Generic.List`1<TargetHit>
+struct List_1_t47405468326F9C3F9EB55B36600E3853EBE97495;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
 // ScoreDot[]
@@ -307,50 +309,48 @@ struct Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC  : public MonoBehaviour_t5
 	TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372* ___trajectoryManager_6;
 	// Slingshot Ball::slingShot
 	Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* ___slingShot_7;
-	// UnityEngine.AudioSource Ball::SlingshotPullAudio
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___SlingshotPullAudio_8;
-	// UnityEngine.AudioSource Ball::SlingshotReleaseAudio
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___SlingshotReleaseAudio_9;
 	// UnityEngine.AudioSource Ball::BallFloorImpact
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___BallFloorImpact_10;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___BallFloorImpact_8;
 	// UnityEngine.AudioSource Ball::BallDestructionNoHitSound
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___BallDestructionNoHitSound_11;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___BallDestructionNoHitSound_9;
 	// UnityEngine.AudioSource Ball::ball_flying_audio
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___ball_flying_audio_12;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___ball_flying_audio_10;
 	// System.Single Ball::ReleaseTime
-	float ___ReleaseTime_13;
+	float ___ReleaseTime_11;
 	// System.Single Ball::DestructionTime
-	float ___DestructionTime_14;
+	float ___DestructionTime_12;
 	// System.Boolean Ball::didHitATarget
-	bool ___didHitATarget_15;
+	bool ___didHitATarget_13;
 	// System.Boolean Ball::ballIsGrabbed
-	bool ___ballIsGrabbed_16;
+	bool ___ballIsGrabbed_14;
 	// System.Boolean Ball::ballIsReleased
-	bool ___ballIsReleased_17;
+	bool ___ballIsReleased_15;
 	// System.Boolean Ball::ballDidHit
-	bool ___ballDidHit_18;
+	bool ___ballDidHit_16;
 	// System.Boolean Ball::canProcessCollisions
-	bool ___canProcessCollisions_19;
+	bool ___canProcessCollisions_17;
 	// System.Boolean Ball::ballDidScore
-	bool ___ballDidScore_20;
+	bool ___ballDidScore_18;
 	// System.Boolean Ball::showLinerender
-	bool ___showLinerender_21;
+	bool ___showLinerender_19;
 	// System.Single Ball::_time_to_target
-	float ____time_to_target_22;
+	float ____time_to_target_20;
 	// UnityEngine.Vector3 Ball::_hitTargetPos
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____hitTargetPos_23;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____hitTargetPos_21;
 	// TargetGroup Ball::targets
-	TargetGroup_t5E01407DB6F0156A988256EA1501BC20342AD444* ___targets_24;
+	TargetGroup_t5E01407DB6F0156A988256EA1501BC20342AD444* ___targets_22;
 	// UnityEngine.Vector3 Ball::launchForce
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___launchForce_25;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___launchForce_23;
 	// LSL.OutletPassThrough Ball::lsl
-	OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C* ___lsl_26;
+	OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C* ___lsl_24;
+	// System.Collections.Generic.List`1<TargetHit> Ball::wrongHitTransforms
+	List_1_t47405468326F9C3F9EB55B36600E3853EBE97495* ___wrongHitTransforms_25;
 	// UnityEngine.GameObject Ball::backgroundSound
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___backgroundSound_27;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___backgroundSound_26;
 	// UnityEngine.TrailRenderer Ball::trail
-	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ___trail_28;
+	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ___trail_27;
 	// System.Boolean Ball::doFakeLaunch
-	bool ___doFakeLaunch_29;
+	bool ___doFakeLaunch_28;
 };
 
 // BallStateManager
@@ -403,58 +403,60 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___playerSettingsAreSet_6;
 	// System.Boolean GameManager::NPCShootsBall
 	bool ___NPCShootsBall_7;
+	// System.Boolean GameManager::newNameSet
+	bool ___newNameSet_8;
 	// System.Boolean GameManager::restartBool
-	bool ___restartBool_8;
+	bool ___restartBool_9;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_9;
+	bool ___allMust_10;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_10;
+	bool ___developmentMode_11;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_11;
+	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_12;
+	int32_t ___ballsPerGame_13;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_13;
+	bool ___trialListGenerated_14;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_14;
+	bool ___doFakeLaunch_15;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_15;
+	bool ___playerValsReceivedViaWS_16;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_16;
+	bool ___startTrial_17;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_17;
+	bool ___toPostTrial_18;
 	// System.Boolean GameManager::restart
-	bool ___restart_18;
+	bool ___restart_19;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_19;
+	bool ___ballIsShot_20;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_20;
+	bool ___trialIsRunning_21;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_21;
+	bool ___trialListFinished_22;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_22;
+	int32_t ___currentTrial_23;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_23;
+	bool ___trophyMayAppear_24;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_24;
+	bool ___mayPrep_25;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_25;
+	bool ___canLaunch_26;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_26;
+	bool ___didShoot_27;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_27;
+	bool ___MayGiveTrophy_28;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_28;
+	bool ___trophyIsGiven_29;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_29;
+	bool ___didReadFeedback_30;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_30;
+	bool ___didGiveScore_31;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_31;
+	bool ___mustGiveFeedback_32;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_32;
+	bool ___isInitiated_33;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_33;
+	bool ___LightIsSet_34;
 };
 
 // Player
@@ -573,20 +575,24 @@ struct Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D  : public MonoBehavio
 	int32_t ___reachTarget_17;
 	// System.Single Slingshot::minGuidanceDist
 	float ___minGuidanceDist_18;
+	// UnityEngine.AudioSource Slingshot::pullSlingShotClip
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___pullSlingShotClip_19;
+	// UnityEngine.AudioSource Slingshot::releaseSlingShotClip
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___releaseSlingShotClip_20;
 	// UnityEngine.UI.Toggle Slingshot::toggle_may
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_may_19;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_may_21;
 	// UnityEngine.UI.Toggle Slingshot::toggle_must
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_must_20;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_must_22;
 	// UnityEngine.UI.Toggle Slingshot::toggle_musnt
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_musnt_21;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_musnt_23;
 	// UnityEngine.UI.Toggle Slingshot::toggle_prefmust
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_prefmust_22;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_prefmust_24;
 	// UnityEngine.UI.Toggle Slingshot::toggle_mayNPC
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_mayNPC_23;
+	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_mayNPC_25;
 	// SlingshotLinesEnum Slingshot::slingshotLinesEnum
-	int32_t ___slingshotLinesEnum_24;
+	int32_t ___slingshotLinesEnum_26;
 	// TrajectoryManager Slingshot::trajectoryManager
-	TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372* ___trajectoryManager_25;
+	TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372* ___trajectoryManager_27;
 };
 
 // TargetGroup
@@ -855,7 +861,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallCalcImpactState_EnterState_mEFC33F88
 		NullCheck(L_5);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_6 = L_5->___currentBall_15;
 		NullCheck(L_6);
-		bool L_7 = L_6->___ballDidScore_20;
+		bool L_7 = L_6->___ballDidScore_18;
 		V_0 = L_7;
 		// activePlayerScore.AddToScore(score);
 		bool L_8 = V_0;
@@ -917,7 +923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallCalcImpactState_UpdateState_m13325C3
 		NullCheck(L_9);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = L_9->___gameManager_11;
 		NullCheck(L_10);
-		L_10->___toPostTrial_17 = (bool)1;
+		L_10->___toPostTrial_18 = (bool)1;
 		// state.SwitchState(state.ballDoneState);
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_11 = ___0_state;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_12 = ___0_state;
@@ -1035,7 +1041,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallInitState_EnterState_mAAA7A18B8D8BD6
 		NullCheck(L_2);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = L_2->___gameManager_11;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___ballsPerGame_12;
+		int32_t L_4 = L_3->___ballsPerGame_13;
 		NullCheck(L_1);
 		L_1->___amountOfBallsInTrial_16 = L_4;
 		// }
@@ -1101,7 +1107,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_EnterState_mED452BA2E8A6
 		NullCheck(L_1);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_2 = L_1->___currentBall_15;
 		NullCheck(L_2);
-		L_2->___canProcessCollisions_19 = (bool)1;
+		L_2->___canProcessCollisions_17 = (bool)1;
 		// }
 		return;
 	}
@@ -1119,7 +1125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_ExitState_mFFDEDB408D016
 		NullCheck(L_2);
 		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_3 = L_2->___slingshot_13;
 		NullCheck(L_3);
-		L_3->___slingshotLinesEnum_24 = 1;
+		L_3->___slingshotLinesEnum_26 = 1;
 		// }
 		return;
 	}
@@ -1133,7 +1139,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_UpdateState_m86842A693A7
 		NullCheck(L_0);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_1 = L_0->___currentBall_15;
 		NullCheck(L_1);
-		bool L_2 = L_1->___ballDidHit_18;
+		bool L_2 = L_1->___ballDidHit_16;
 		if (!L_2)
 		{
 			goto IL_0031;
@@ -1145,13 +1151,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_UpdateState_m86842A693A7
 		NullCheck(L_3);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_4 = L_3->___currentBall_15;
 		NullCheck(L_4);
-		L_4->___ballDidHit_18 = (bool)0;
+		L_4->___ballDidHit_16 = (bool)0;
 		// state.currentBall.canProcessCollisions = false;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_5 = ___0_state;
 		NullCheck(L_5);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_6 = L_5->___currentBall_15;
 		NullCheck(L_6);
-		L_6->___canProcessCollisions_19 = (bool)0;
+		L_6->___canProcessCollisions_17 = (bool)0;
 		// state.SwitchState(state.ballCalcImpactState);
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_7 = ___0_state;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_8 = ___0_state;
@@ -1261,7 +1267,7 @@ IL_005b:
 		NullCheck(L_21);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_22 = L_21->___gameManager_11;
 		NullCheck(L_22);
-		L_22->___toPostTrial_17 = (bool)1;
+		L_22->___toPostTrial_18 = (bool)1;
 	}
 
 IL_0067:
@@ -1269,7 +1275,7 @@ IL_0067:
 		// slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
 		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_23 = V_0;
 		NullCheck(L_23);
-		L_23->___slingshotLinesEnum_24 = 0;
+		L_23->___slingshotLinesEnum_26 = 0;
 		// }
 		return;
 	}
@@ -1334,7 +1340,7 @@ IL_0034:
 		NullCheck(L_11);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_12 = L_11->___currentBall_15;
 		NullCheck(L_12);
-		bool L_13 = L_12->___ballIsGrabbed_16;
+		bool L_13 = L_12->___ballIsGrabbed_14;
 		if (!L_13)
 		{
 			goto IL_0059;
@@ -1346,7 +1352,7 @@ IL_0034:
 		NullCheck(L_14);
 		Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC* L_15 = L_14->___currentBall_15;
 		NullCheck(L_15);
-		L_15->___ballIsGrabbed_16 = (bool)0;
+		L_15->___ballIsGrabbed_14 = (bool)0;
 		// state.SwitchState(state.ballLaunchState);
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_16 = ___0_state;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_17 = ___0_state;
@@ -1595,7 +1601,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallWaitingState_UpdateState_m4B6E87CAA3
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_11;
 		NullCheck(L_1);
-		bool L_2 = L_1->___trialIsRunning_20;
+		bool L_2 = L_1->___trialIsRunning_21;
 		if (!L_2)
 		{
 			goto IL_0019;

@@ -446,15 +446,19 @@ extern void dll_lsl_destroy_continuous_resolver_mF32B908B6232279402DDD686681D3BA
 extern void dll__ctor_m5D90F84A97BC567DC4A992848C0E17B75A3A98BF (void);
 // 0x000000D9 System.Void LSL.m_LSL_Event::.ctor()
 extern void m_LSL_Event__ctor_mA0B7D5FE683697EF5D70D7C75B8DDBE2BBDDE14B (void);
-// 0x000000DA System.Void LSL.OutletPassThrough::Start()
+// 0x000000DA LSL.OutletPassThrough LSL.OutletPassThrough::get_Instance()
+extern void OutletPassThrough_get_Instance_m44A3F49F7B62F902DE06BAC5177947EC9941F006 (void);
+// 0x000000DB System.Void LSL.OutletPassThrough::Awake()
+extern void OutletPassThrough_Awake_m722E66B893C2354BE6E70EE04217681618B3D33F (void);
+// 0x000000DC System.Void LSL.OutletPassThrough::Start()
 extern void OutletPassThrough_Start_mFBA748920151C4688969B428E706CA2E59A8E697 (void);
-// 0x000000DB System.Void LSL.OutletPassThrough::SendMarker(LSL.Marker)
+// 0x000000DD System.Void LSL.OutletPassThrough::SendMarker(LSL.Marker)
 extern void OutletPassThrough_SendMarker_mA8DD86573A31D94890C06C60E61C5515DA4006B0 (void);
-// 0x000000DC System.Void LSL.OutletPassThrough::SendMarker(System.Int32)
+// 0x000000DE System.Void LSL.OutletPassThrough::SendMarker(System.Int32)
 extern void OutletPassThrough_SendMarker_m0D16DFC2EBCC971FC730714015AAD7C28C30F071 (void);
-// 0x000000DD System.Void LSL.OutletPassThrough::.ctor()
+// 0x000000DF System.Void LSL.OutletPassThrough::.ctor()
 extern void OutletPassThrough__ctor_m3A243E2F6714953CF62C7B6E4EB2DA7FEAFCB049 (void);
-static Il2CppMethodPointer s_methodPointers[221] = 
+static Il2CppMethodPointer s_methodPointers[223] = 
 {
 	SendToLSL_Start_m6C03D29C263EB8DED181E524AB4CB86E8B7679A1,
 	SendToLSL_Update_mBE210D9D19919BC00E69F038AC8D7D7EBCE2AE06,
@@ -673,6 +677,8 @@ static Il2CppMethodPointer s_methodPointers[221] =
 	dll_lsl_destroy_continuous_resolver_mF32B908B6232279402DDD686681D3BAF605FF41D,
 	dll__ctor_m5D90F84A97BC567DC4A992848C0E17B75A3A98BF,
 	m_LSL_Event__ctor_mA0B7D5FE683697EF5D70D7C75B8DDBE2BBDDE14B,
+	OutletPassThrough_get_Instance_m44A3F49F7B62F902DE06BAC5177947EC9941F006,
+	OutletPassThrough_Awake_m722E66B893C2354BE6E70EE04217681618B3D33F,
 	OutletPassThrough_Start_mFBA748920151C4688969B428E706CA2E59A8E697,
 	OutletPassThrough_SendMarker_mA8DD86573A31D94890C06C60E61C5515DA4006B0,
 	OutletPassThrough_SendMarker_m0D16DFC2EBCC971FC730714015AAD7C28C30F071,
@@ -733,7 +739,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[26] =
 	{ 0x06000061, XMLElement_remove_child_mD4D6D757FB5554C803EB96156489E140210C0A11_AdjustorThunk },
 	{ 0x06000062, XMLElement_remove_child_m8EA5582A51DC281D0B313714B0610369237C3F2F_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[221] = 
+static const int32_t s_InvokerIndices[223] = 
 {
 	8898,
 	8898,
@@ -952,6 +958,8 @@ static const int32_t s_InvokerIndices[221] =
 	14293,
 	8898,
 	8898,
+	15147,
+	8898,
 	8898,
 	7041,
 	7041,
@@ -961,7 +969,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_LSL_CodeGenModule;
 const Il2CppCodeGenModule g_LSL_CodeGenModule = 
 {
 	"LSL.dll",
-	221,
+	223,
 	s_methodPointers,
 	26,
 	s_adjustorThunks,
