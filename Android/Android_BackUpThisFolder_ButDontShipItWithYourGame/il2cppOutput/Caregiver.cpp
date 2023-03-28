@@ -58,6 +58,8 @@ struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
 struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
 // System.Int32[]
 struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+// System.IntPtr[]
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
 // UnityEngine.Material[]
 struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
 // TMPro.MaterialReference[]
@@ -68,6 +70,8 @@ struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
 struct RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D;
 // System.Single[]
 struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+// System.Diagnostics.StackTrace[]
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
 // TMPro.TMP_CharacterInfo[]
 struct TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99;
 // TMPro.TMP_ColorGradient[]
@@ -122,6 +126,8 @@ struct CaregiverStateMachine_t89FEF527272FD5AC06094864E5496A5307B71698;
 struct CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8;
 // UnityEngine.Component
 struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+// UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
 // EnvironmentLight
 struct EnvironmentLight_t743C1406EB50ED54CDD548954908E154A743FD43;
 // GameManager
@@ -132,6 +138,10 @@ struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 struct Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D;
 // System.Collections.ICollection
 struct ICollection_t37E7B9DC5B4EF41D190D607F92835BF1171C0E8E;
+// System.Collections.IDictionary
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+// System.Collections.IEnumerator
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
 // System.Collections.IEqualityComparer
 struct IEqualityComparer_tEF8F1EC76B9C8E76695BE848D41E6B147928D1C1;
 // TMPro.ITextPreprocessor
@@ -152,6 +162,8 @@ struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
 struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // LSL.OutletPassThrough
@@ -174,6 +186,8 @@ struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 // UnityEngine.Renderer
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+// System.Runtime.Serialization.SafeSerializationManager
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // ScoreCaregiver
 struct ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D;
 // SetCaregiverGaze
@@ -222,6 +236,8 @@ struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
 struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+// UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
 // WebSocketSharp.WebSocket
 struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4;
 // WsClient
@@ -234,6 +250,8 @@ struct PCMReaderCallback_t3396D9613664F0AFF65FB91018FD0F901CC16F1E;
 struct PCMSetPositionCallback_t8D7135A2FB40647CAEC93F5254AD59E18DEB6072;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+// CaregiverEmotion/<TestEmotion>d__12
+struct U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 // WsClient/WSHelloworld
@@ -250,11 +268,14 @@ IL2CPP_EXTERN_C RuntimeClass* CaregiverScoringState_t88147BDB1A26361CCF6D9159276
 IL2CPP_EXTERN_C RuntimeClass* Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Math_tEB65DE7CA8B083C412C969C92981C030865486CE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* iTween_t82A7E50FFD092F2F333F366398CB514C4216D153_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
 IL2CPP_EXTERN_C String_t* _stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018;
@@ -277,6 +298,9 @@ IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAudioSource_t871A
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisWsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520_m5A737DE6BF2671941F072362EB0EDCE538F92D01_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CTestEmotionU3Ed__12_System_Collections_IEnumerator_Reset_m0CCF27B8E2A275049DAD645477B8BF151EEDAD59_RuntimeMethod_var;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
 
 struct AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31;
 struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
@@ -387,6 +411,32 @@ struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 // Native definition for COM marshalling of System.ValueType
 struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
+};
+
+// UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+// Native definition for P/Invoke marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+// Native definition for COM marshalling of UnityEngine.YieldInstruction
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+
+// CaregiverEmotion/<TestEmotion>d__12
+struct U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40  : public RuntimeObject
+{
+	// System.Int32 CaregiverEmotion/<TestEmotion>d__12::<>1__state
+	int32_t ___U3CU3E1__state_0;
+	// System.Object CaregiverEmotion/<TestEmotion>d__12::<>2__current
+	RuntimeObject* ___U3CU3E2__current_1;
+	// CaregiverEmotion CaregiverEmotion/<TestEmotion>d__12::<>4__this
+	CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* ___U3CU3E4__this_2;
+	// Atmosphere CaregiverEmotion/<TestEmotion>d__12::atm
+	int32_t ___atm_3;
 };
 
 // TMPro.TMP_TextProcessingStack`1<TMPro.FontWeight>
@@ -795,6 +845,23 @@ struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915
 	};
 };
 
+// UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	// System.Single UnityEngine.WaitForSeconds::m_Seconds
+	float ___m_Seconds_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	float ___m_Seconds_0;
+};
+// Native definition for COM marshalling of UnityEngine.WaitForSeconds
+struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	float ___m_Seconds_0;
+};
+
 // TMPro.TMP_Text/SpecialCharacter
 struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 
 {
@@ -877,6 +944,100 @@ struct TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9
 	int32_t ___m_RolloverSize_4;
 	// System.Int32 TMPro.TMP_TextProcessingStack`1::m_Count
 	int32_t ___m_Count_5;
+};
+
+// UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	// System.IntPtr UnityEngine.Coroutine::m_Ptr
+	intptr_t ___m_Ptr_0;
+};
+// Native definition for P/Invoke marshalling of UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr_0;
+};
+// Native definition for COM marshalling of UnityEngine.Coroutine
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr_0;
+};
+
+// System.Exception
+struct Exception_t  : public RuntimeObject
+{
+	// System.String System.Exception::_className
+	String_t* ____className_1;
+	// System.String System.Exception::_message
+	String_t* ____message_2;
+	// System.Collections.IDictionary System.Exception::_data
+	RuntimeObject* ____data_3;
+	// System.Exception System.Exception::_innerException
+	Exception_t* ____innerException_4;
+	// System.String System.Exception::_helpURL
+	String_t* ____helpURL_5;
+	// System.Object System.Exception::_stackTrace
+	RuntimeObject* ____stackTrace_6;
+	// System.String System.Exception::_stackTraceString
+	String_t* ____stackTraceString_7;
+	// System.String System.Exception::_remoteStackTraceString
+	String_t* ____remoteStackTraceString_8;
+	// System.Int32 System.Exception::_remoteStackIndex
+	int32_t ____remoteStackIndex_9;
+	// System.Object System.Exception::_dynamicMethods
+	RuntimeObject* ____dynamicMethods_10;
+	// System.Int32 System.Exception::_HResult
+	int32_t ____HResult_11;
+	// System.String System.Exception::_source
+	String_t* ____source_12;
+	// System.Runtime.Serialization.SafeSerializationManager System.Exception::_safeSerializationManager
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	// System.Diagnostics.StackTrace[] System.Exception::captured_traces
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	// System.IntPtr[] System.Exception::native_trace_ips
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips_15;
+	// System.Int32 System.Exception::caught_in_unmanaged
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for P/Invoke marshalling of System.Exception
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className_1;
+	char* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_pinvoke* ____innerException_4;
+	char* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	char* ____stackTraceString_7;
+	char* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	char* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
+};
+// Native definition for COM marshalling of System.Exception
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className_1;
+	Il2CppChar* ____message_2;
+	RuntimeObject* ____data_3;
+	Exception_t_marshaled_com* ____innerException_4;
+	Il2CppChar* ____helpURL_5;
+	Il2CppIUnknown* ____stackTrace_6;
+	Il2CppChar* ____stackTraceString_7;
+	Il2CppChar* ____remoteStackTraceString_8;
+	int32_t ____remoteStackIndex_9;
+	Il2CppIUnknown* ____dynamicMethods_10;
+	int32_t ____HResult_11;
+	Il2CppChar* ____source_12;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager_13;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces_14;
+	Il2CppSafeArray/*NONE*/* ___native_trace_ips_15;
+	int32_t ___caught_in_unmanaged_16;
 };
 
 // TMPro.Extents
@@ -980,6 +1141,11 @@ struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4  : public Object_tC12DECB6
 {
 };
 
+// System.SystemException
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+
 // TMPro.TMP_LineInfo
 struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 
 {
@@ -1027,6 +1193,11 @@ struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3
 
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
+// System.NotSupportedException
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
 
@@ -1391,6 +1562,10 @@ struct CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552  : public Mono
 	float ___minAngry_7;
 	// System.Single CaregiverEmotion::maxAngry
 	float ___maxAngry_8;
+	// System.Boolean CaregiverEmotion::testHappy
+	bool ___testHappy_9;
+	// System.Boolean CaregiverEmotion::testAngry
+	bool ___testAngry_10;
 };
 
 // CaregiverFeedback
@@ -2333,6 +2508,10 @@ struct String_t_StaticFields
 
 // Trial
 
+// CaregiverEmotion/<TestEmotion>d__12
+
+// CaregiverEmotion/<TestEmotion>d__12
+
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 {
@@ -2416,6 +2595,14 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 
 // System.Void
 
+// UnityEngine.WaitForSeconds
+
+// UnityEngine.WaitForSeconds
+
+// UnityEngine.Coroutine
+
+// UnityEngine.Coroutine
+
 // UnityEngine.Object
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 {
@@ -2448,6 +2635,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 // UnityEngine.Behaviour
 
 // UnityEngine.Behaviour
+
+// System.NotSupportedException
+
+// System.NotSupportedException
 
 // UnityEngine.Renderer
 
@@ -2723,8 +2914,14 @@ inline SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* Component_
 {
 	return ((  SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
 }
+// System.Collections.IEnumerator CaregiverEmotion::TestEmotion(Atmosphere)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CaregiverEmotion_TestEmotion_m8BC64A1123279753AA4921338EF404D6EF87AE77 (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, int32_t ___0_atm, const RuntimeMethod* method) ;
+// UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SkinnedMeshRenderer::SetBlendShapeWeight(System.Int32,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SkinnedMeshRenderer_SetBlendShapeWeight_mD5724DB29A33F007E42F3666BF4B7ABC9C7F6F5E (SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* __this, int32_t ___0_index, float ___1_value, const RuntimeMethod* method) ;
+// System.Void CaregiverEmotion/<TestEmotion>d__12::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTestEmotionU3Ed__12__ctor_m0E38AD43A1669DE2AA25B690E3D6A78E63BD23B3 (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Random::Range(System.Single,System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
 // System.Void CaregiverEmotion::SetHappiness(System.Single)
@@ -2735,6 +2932,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_SetAngriness_mCCACD1DFE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_SetNeutral_m3D5F165B416943E24CD8B7D4130B67EABE24B944 (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.MonoBehaviour::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+// System.Void System.Object::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+// System.Void CaregiverEmotion::SetAtmosphere(Atmosphere)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_SetAtmosphere_m86BF4E3AE80462459D4547E6E02F04BAE8E88600 (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, int32_t ___0_atm, const RuntimeMethod* method) ;
+// System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
+// System.Void System.NotSupportedException::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::Play()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Behaviour::set_enabled(System.Boolean)
@@ -2749,12 +2954,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_SetText_m848189C290727009A95A00
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7 (CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* __this, int32_t ___0_index, const RuntimeMethod* method) ;
 // Atmosphere Trial::GetAtmosphere()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t Trial_GetAtmosphere_m841DDB28B95170C590A0AA7481C019F2D883053D_inline (Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* __this, const RuntimeMethod* method) ;
-// System.Void CaregiverEmotion::SetAtmosphere(Atmosphere)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_SetAtmosphere_m86BF4E3AE80462459D4547E6E02F04BAE8E88600 (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, int32_t ___0_atm, const RuntimeMethod* method) ;
 // System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AudioSource_set_clip_mFF441895E274286C88D9C75ED5CA1B1B39528D70 (AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* __this, AudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20* ___0_value, const RuntimeMethod* method) ;
-// System.Void System.Object::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_time()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
 // System.String UnityEngine.JsonUtility::ToJson(System.Object)
@@ -2972,6 +3173,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_Start_m18515358A5AA6186
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_Update_m7CAA223B67FBC33EE420FDC6158707F56FEF8FAE (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, const RuntimeMethod* method) 
 {
 	{
+		// if (testAngry)
+		bool L_0 = __this->___testAngry_10;
+		if (!L_0)
+		{
+			goto IL_001d;
+		}
+	}
+	{
+		// testAngry = false;
+		__this->___testAngry_10 = (bool)0;
+		// StartCoroutine(TestEmotion(Atmosphere.BAD));
+		RuntimeObject* L_1;
+		L_1 = CaregiverEmotion_TestEmotion_m8BC64A1123279753AA4921338EF404D6EF87AE77(__this, 1, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
+		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
+	}
+
+IL_001d:
+	{
+		// if (testHappy)
+		bool L_3 = __this->___testHappy_9;
+		if (!L_3)
+		{
+			goto IL_003a;
+		}
+	}
+	{
+		// testHappy = false;
+		__this->___testHappy_9 = (bool)0;
+		// StartCoroutine(TestEmotion(Atmosphere.GOOD));
+		RuntimeObject* L_4;
+		L_4 = CaregiverEmotion_TestEmotion_m8BC64A1123279753AA4921338EF404D6EF87AE77(__this, 0, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
+	}
+
+IL_003a:
+	{
 		// }
 		return;
 	}
@@ -3024,6 +3263,30 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion_SetNeutral_m3D5F165B416
 		SkinnedMeshRenderer_SetBlendShapeWeight_mD5724DB29A33F007E42F3666BF4B7ABC9C7F6F5E(L_1, 2, (0.0f), NULL);
 		// }
 		return;
+	}
+}
+// System.Collections.IEnumerator CaregiverEmotion::TestEmotion(Atmosphere)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* CaregiverEmotion_TestEmotion_m8BC64A1123279753AA4921338EF404D6EF87AE77 (CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* __this, int32_t ___0_atm, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* L_0 = (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40*)il2cpp_codegen_object_new(U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		U3CTestEmotionU3Ed__12__ctor_m0E38AD43A1669DE2AA25B690E3D6A78E63BD23B3(L_0, 0, NULL);
+		U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this_2 = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
+		U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* L_2 = L_1;
+		int32_t L_3 = ___0_atm;
+		NullCheck(L_2);
+		L_2->___atm_3 = L_3;
+		return L_2;
 	}
 }
 // System.Void CaregiverEmotion::SetAtmosphere(Atmosphere)
@@ -3106,6 +3369,119 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverEmotion__ctor_m452E26A0A6EFB611
 		__this->___maxAngry_8 = (90.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void CaregiverEmotion/<TestEmotion>d__12::.ctor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTestEmotionU3Ed__12__ctor_m0E38AD43A1669DE2AA25B690E3D6A78E63BD23B3 (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state_0 = L_0;
+		return;
+	}
+}
+// System.Void CaregiverEmotion/<TestEmotion>d__12::System.IDisposable.Dispose()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTestEmotionU3Ed__12_System_IDisposable_Dispose_mDDBEEBA38AADB9E9BBDE1CAABC24651B5781B2BE (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// System.Boolean CaregiverEmotion/<TestEmotion>d__12::MoveNext()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTestEmotionU3Ed__12_MoveNext_m89664B55051749F0918A0B59EF12755AFCBF89A2 (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state_0;
+		V_0 = L_0;
+		CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* L_1 = __this->___U3CU3E4__this_2;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// SetAtmosphere(atm);
+		CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* L_4 = V_1;
+		int32_t L_5 = __this->___atm_3;
+		NullCheck(L_4);
+		CaregiverEmotion_SetAtmosphere_m86BF4E3AE80462459D4547E6E02F04BAE8E88600(L_4, L_5, NULL);
+		// yield return new WaitForSeconds(2.0f);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_6 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_6, (2.0f), NULL);
+		__this->___U3CU3E2__current_1 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_6);
+		__this->___U3CU3E1__state_0 = 1;
+		return (bool)1;
+	}
+
+IL_0043:
+	{
+		__this->___U3CU3E1__state_0 = (-1);
+		// SetAtmosphere(Atmosphere.NEUTRAL);
+		CaregiverEmotion_tC34B8E4140DF5186B03298C4850553A8DC527552* L_7 = V_1;
+		NullCheck(L_7);
+		CaregiverEmotion_SetAtmosphere_m86BF4E3AE80462459D4547E6E02F04BAE8E88600(L_7, 2, NULL);
+		// }
+		return (bool)0;
+	}
+}
+// System.Object CaregiverEmotion/<TestEmotion>d__12::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTestEmotionU3Ed__12_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m72E40F1ABD744166EE0ACB42DB55AD24A70CEBDD (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
+	}
+}
+// System.Void CaregiverEmotion/<TestEmotion>d__12::System.Collections.IEnumerator.Reset()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTestEmotionU3Ed__12_System_Collections_IEnumerator_Reset_m0CCF27B8E2A275049DAD645477B8BF151EEDAD59 (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NullCheck(L_0);
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CTestEmotionU3Ed__12_System_Collections_IEnumerator_Reset_m0CCF27B8E2A275049DAD645477B8BF151EEDAD59_RuntimeMethod_var)));
+	}
+}
+// System.Object CaregiverEmotion/<TestEmotion>d__12::System.Collections.IEnumerator.get_Current()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTestEmotionU3Ed__12_System_Collections_IEnumerator_get_Current_mFDDF91F3F7EDB5C0CD020708C5639F7E5B22FB9C (U3CTestEmotionU3Ed__12_tCC8B8A02F7C3D578FA0815040B965FC5AE651F40* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
+		return L_0;
 	}
 }
 #ifdef __clang__
