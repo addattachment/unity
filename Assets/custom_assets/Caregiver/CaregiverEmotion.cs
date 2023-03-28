@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class CaregiverEmotion : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class CaregiverEmotion : MonoBehaviour
     [SerializeField, Tooltip("Set the max amount of happiness we want to see")] private float maxHappy = 90.0f;
     [SerializeField, Tooltip("Set the min amount of angriness we want to see")] private float minAngry = 10.0f;
     [SerializeField, Tooltip("Set the max amount of angriness we want to see")] private float maxAngry = 90.0f;
+
+    [SerializeField] private bool testHappy = false;
+    [SerializeField] private bool testAngry = false;
 
     // Start is called before the first frame update
     void Start()
@@ -17,7 +21,17 @@ public class CaregiverEmotion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (testAngry)
+        {
+            testAngry = false;
+            StartCoroutine(TestEmotion(Atmosphere.BAD));
+        }
 
+        if (testHappy)
+        {
+            testHappy = false;
+            StartCoroutine(TestEmotion(Atmosphere.GOOD));
+        }
     }
 
     private void SetHappiness(float val)
@@ -35,6 +49,13 @@ public class CaregiverEmotion : MonoBehaviour
     {
         rend.SetBlendShapeWeight(1, 0.0f);
         rend.SetBlendShapeWeight(2, 0.0f);
+    }
+
+    private IEnumerator TestEmotion(Atmosphere atm)
+    {
+        SetAtmosphere(atm);
+        yield return new WaitForSeconds(2.0f);
+        SetAtmosphere(Atmosphere.NEUTRAL);
     }
 
     public void SetAtmosphere(Atmosphere atm)

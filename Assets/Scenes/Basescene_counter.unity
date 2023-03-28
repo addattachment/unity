@@ -2234,19 +2234,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9286341
+      value: 0.79176795
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.014336751
+      value: 0.013721196
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.37071982
+      value: 0.6106537
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.00025034402
+      value: -0.0041634114
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2254,7 +2254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 43.533
+      value: 75.29
       objectReference: {fileID: 0}
     - target: {fileID: 5041090103626363496, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2291,6 +2291,14 @@ PrefabInstance:
     - target: {fileID: 6571213911331838619, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212474516404352514, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212474516404352514, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
+      propertyPath: m_BlendShapeWeights.Array.data[2]
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 950118dd28c1a374e9de60a634066be9, type: 3}
@@ -3573,7 +3581,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708933686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d8418b0b9634b1892b0268dd9c2743, type: 3}
   m_Name: 
@@ -9867,6 +9875,10 @@ PrefabInstance:
     - target: {fileID: 1102273343259632478, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717201771836643267, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: m_Antialiasing
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: sun
