@@ -28,6 +28,7 @@ public class Gazed : MonoBehaviour, IGazeFocusable
     [SerializeField] private WsClient ws;
     [SerializeField] private GameManager gameManager;
     private GazeEvent gazeEvent;
+    public bool hasBeenSeen = false;
     /// <summary>
     /// GazeFocus only gets called on the change
     /// </summary>
@@ -38,6 +39,7 @@ public class Gazed : MonoBehaviour, IGazeFocusable
         gazeEvent.gazeStart = hasFocus;
         gazeEvent.trialNumber = gameManager.currentTrial;
         ws.SendWSMessage(gazeEvent.SaveToString());
+        hasBeenSeen = true;
     }
 
     // Start is called before the first frame update

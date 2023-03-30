@@ -16,7 +16,7 @@ public class TrialStateManager : MonoBehaviour
     public TrialList trialList;
     public GameManager gameManager;
     public BallStateManager ballStates;
-    public CaregiverStateManager caregiverStates;
+    public CaregiverIntroStateManager caregiverStates;
     public TrophyStateManager trophyStates;
     public CountDown countDown;
 

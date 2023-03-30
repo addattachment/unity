@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     public bool trialIsRunning = false;
     public bool trialListFinished = false;
     public int currentTrial = 0;
+    public bool endMessagesSend = false;
 
     [Header("trophy stateMgr bools")]
     public bool trophyMayAppear = false;

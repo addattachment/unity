@@ -69,8 +69,8 @@ public class TargetTranslate : MonoBehaviour
 
     private void SetMovement()
     {
-        GetComponent<Rigidbody>().velocity = movementVector;
         GetComponent<Rigidbody>().isKinematic = false;
+        GetComponent<Rigidbody>().velocity = movementVector;
     }
 
     private void UpdatePositions()

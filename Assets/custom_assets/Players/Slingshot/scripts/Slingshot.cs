@@ -108,33 +108,33 @@ public class Slingshot : MonoBehaviour
     public void SetTargetReachable(ReachTargetEnum reachEnum)
     {
         reachTarget = reachEnum;
-        AdaptDebug();
+        //AdaptDebug();
     }
 
-    private void AdaptDebug()
-    {
-        switch (reachTarget)
-        {
-            case ReachTargetEnum.may:
-                toggle_may.isOn = true;
-                break;
-            case ReachTargetEnum.must:
-                toggle_must.isOn = true;
-                break;
-            case ReachTargetEnum.musnt:
-                toggle_musnt.isOn = true;
-                break;
-            case ReachTargetEnum.preferredMust:
-                toggle_prefmust.isOn = true;
-                break;
-            case ReachTargetEnum.mayNPC:
-                toggle_mayNPC.isOn = true;
-                break;
-            default:
-                toggle_may.isOn = true;
-                break;
-        }
-    }
+    //private void AdaptDebug()
+    //{
+    //    switch (reachTarget)
+    //    {
+    //        case ReachTargetEnum.may:
+    //            toggle_may.isOn = true;
+    //            break;
+    //        case ReachTargetEnum.must:
+    //            toggle_must.isOn = true;
+    //            break;
+    //        case ReachTargetEnum.musnt:
+    //            toggle_musnt.isOn = true;
+    //            break;
+    //        case ReachTargetEnum.preferredMust:
+    //            toggle_prefmust.isOn = true;
+    //            break;
+    //        case ReachTargetEnum.mayNPC:
+    //            toggle_mayNPC.isOn = true;
+    //            break;
+    //        default:
+    //            toggle_may.isOn = true;
+    //            break;
+    //    }
+    //}
     //public void SetTargetReachableInt(int reachEnumInt)
     //{
     //    reachTarget = (ReachTargetEnum)reachEnumInt;

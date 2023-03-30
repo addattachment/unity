@@ -48,7 +48,7 @@ public class ReadFeedback : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Collided with " + collision.gameObject.name);
+        //Debug.Log("Collided with " + collision.gameObject.name);
         if (collision.gameObject.CompareTag("Hand"))
         {
             LowerFeedbackPole();
@@ -58,7 +58,7 @@ public class ReadFeedback : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("triggered by " + other.gameObject.name);
+        //Debug.Log("triggered by " + other.gameObject.name);
 
         if (other.gameObject.CompareTag("Hand"))
         {

@@ -5,6 +5,25 @@ using WebSocketSharp;
 
 public class WsClient : MonoBehaviour
 {
+    #region SingletonPattern
+    private static WsClient _instance;
+    public static WsClient Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                Debug.Log("The WsClient is Null");
+            }
+            return _instance;
+        }
+    }
+    private void Awake()
+    {
+        _instance = this;
+    }
+    #endregion
+
     [SerializeField] GameManager gameManager;
     public WebSocket ws;
     public bool hasWsConnection = false;
@@ -32,6 +51,8 @@ public class WsClient : MonoBehaviour
         }
     }
     private WSHelloworld wsHello;
+
+    
     private void Start()
     {
         wsHello = new WSHelloworld("Hello from " + ip);
@@ -111,7 +132,7 @@ public class WsClient : MonoBehaviour
 
     public void SendWSMessage(string message)
     {
-        //Debug.Log("sending " + message);
+        Debug.Log("sending " + message);
         DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)

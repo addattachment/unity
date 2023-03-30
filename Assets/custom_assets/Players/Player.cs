@@ -37,6 +37,16 @@ public class Player : MonoBehaviour
         StartCoroutine(npc.DirectShootBall(instBall));
     }
 
+    public string GetWonTrophies()
+    {
+        string result = playerName +" : \n";
+        foreach (GameObject trophy in trophyWonList)
+        {
+            result += trophy.name + "\n";
+        }
+        return result;
+    }
+
 
 }
 
