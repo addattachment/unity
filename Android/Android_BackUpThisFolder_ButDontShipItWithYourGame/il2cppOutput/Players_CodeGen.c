@@ -90,94 +90,94 @@ extern void NPCBallAnimation__ctor_m9E0F0A3427DA16E01813CE69B797D32B988156FE (vo
 extern void Player_SetActive_mFE1983E179FD8FFF4E392008D48642457EE13C25 (void);
 // 0x00000027 System.Void Player::FakeShot()
 extern void Player_FakeShot_m5F0AC23018512326A0DDEB71F90733B722524978 (void);
-// 0x00000028 System.Void Player::.ctor()
+// 0x00000028 System.String Player::GetWonTrophies()
+extern void Player_GetWonTrophies_mD3505AB46F5EBCAA0B0C45B66CC7745F73FC9D38 (void);
+// 0x00000029 System.Void Player::.ctor()
 extern void Player__ctor_mEAFF48F803F795AEF3E1E818B161DAFCCE974ADE (void);
-// 0x00000029 System.Void PlayerGroup::Start()
+// 0x0000002A System.Void PlayerGroup::Start()
 extern void PlayerGroup_Start_m63C0F5CF55227BBF36256F2ECF31DF1DDE442E92 (void);
-// 0x0000002A System.Void PlayerGroup::Update()
+// 0x0000002B System.Void PlayerGroup::Update()
 extern void PlayerGroup_Update_m14AF02A8CA2E0C18B5383EEE669E42DE17BC99E3 (void);
-// 0x0000002B System.Boolean PlayerGroup::BallsLeft()
+// 0x0000002C System.Boolean PlayerGroup::BallsLeft()
 extern void PlayerGroup_BallsLeft_m674FFFC44F54A7DEE34B0B495BA8597C32F238E9 (void);
-// 0x0000002C Player PlayerGroup::GetWinner()
+// 0x0000002D Player PlayerGroup::GetWinner()
 extern void PlayerGroup_GetWinner_m781CB0BBC3F5777BA29BB60B3836A84CA59CCC9E (void);
-// 0x0000002D Player PlayerGroup::GetActivePlayer()
+// 0x0000002E Player PlayerGroup::GetActivePlayer()
 extern void PlayerGroup_GetActivePlayer_m10B6804AEE843D10F5C91B7A4330CF49C383D534 (void);
-// 0x0000002E System.Void PlayerGroup::SwitchPlayer()
+// 0x0000002F System.Void PlayerGroup::SwitchPlayer()
 extern void PlayerGroup_SwitchPlayer_mDBD590E197805061E8DDCFD5981B35E88DF0C6DF (void);
-// 0x0000002F System.Void PlayerGroup::ResetPlayers()
+// 0x00000030 System.Void PlayerGroup::ResetPlayers()
 extern void PlayerGroup_ResetPlayers_mC4639A51C9486865E6762113561C6960638F8263 (void);
-// 0x00000030 System.Void PlayerGroup::SetInvisibleWallToActivePlayer()
+// 0x00000031 System.Void PlayerGroup::SetInvisibleWallToActivePlayer()
 extern void PlayerGroup_SetInvisibleWallToActivePlayer_m04BE505BB24A76C2629A370718D47450D9B8D689 (void);
-// 0x00000031 System.Void PlayerGroup::MakeSlingshotsAppear(System.Boolean)
+// 0x00000032 System.Void PlayerGroup::MakeSlingshotsAppear(System.Boolean)
 extern void PlayerGroup_MakeSlingshotsAppear_m2C748F7275135E3D49B4901167788B6FEBDE82EB (void);
-// 0x00000032 System.Boolean PlayerGroup::AreSlingshotsLow()
+// 0x00000033 System.Boolean PlayerGroup::AreSlingshotsLow()
 extern void PlayerGroup_AreSlingshotsLow_m2B6DBFDEDCFDFCFFA986E3FC0DB82080531BC028 (void);
-// 0x00000033 System.Void PlayerGroup::WSUpdateTrialScore()
+// 0x00000034 System.Void PlayerGroup::WSUpdateTrialScore()
 extern void PlayerGroup_WSUpdateTrialScore_mDB26A9B4D4F1545983C15BD02657D97D62070AE3 (void);
-// 0x00000034 System.Void PlayerGroup::SetPlayerScoringChance(Slingshot,System.Boolean)
+// 0x00000035 System.Void PlayerGroup::SetPlayerScoringChance(Slingshot,System.Boolean)
 extern void PlayerGroup_SetPlayerScoringChance_m5331C9D5AD0A636A57FA316F0CEA141FFF9D855D (void);
-// 0x00000035 System.Void PlayerGroup::.ctor()
+// 0x00000036 System.Void PlayerGroup::.ctor()
 extern void PlayerGroup__ctor_mFFDD2D9F36C4B611DF104D10B40CADFE28C35051 (void);
-// 0x00000036 System.Void PlayersScoreEvent::.ctor()
+// 0x00000037 System.Void PlayersScoreEvent::.ctor()
 extern void PlayersScoreEvent__ctor_mF499199931A40DA2207E0E18B8087E8C1738E6A5 (void);
-// 0x00000037 System.Void PlayersScoreEvent::Set(System.Int32,System.Int32,System.Int32)
+// 0x00000038 System.Void PlayersScoreEvent::Set(System.Int32,System.Int32,System.Int32)
 extern void PlayersScoreEvent_Set_mAF2E8200646160C58A8FA4C7367B24AD224BD878 (void);
-// 0x00000038 System.String PlayersScoreEvent::SaveToString()
+// 0x00000039 System.String PlayersScoreEvent::SaveToString()
 extern void PlayersScoreEvent_SaveToString_mF7E0FF6E21157C1B4C223B35A1F6C6F3F6EC21DA (void);
-// 0x00000039 System.Void PlayerScore::Start()
+// 0x0000003A System.Void PlayerScore::Start()
 extern void PlayerScore_Start_m89070E340BB38D36C1A9D0930D9A1A3D8BB03648 (void);
-// 0x0000003A System.Void PlayerScore::Update()
+// 0x0000003B System.Void PlayerScore::Update()
 extern void PlayerScore_Update_mC98C3832A299EB84F6063A668BB7305C301151AF (void);
-// 0x0000003B System.Void PlayerScore::ResetScore()
+// 0x0000003C System.Void PlayerScore::ResetScore()
 extern void PlayerScore_ResetScore_mD460943A36FE3D5F52D876A18A5BA9EA6EC45B64 (void);
-// 0x0000003C System.Void PlayerScore::AddToScore(System.Boolean)
+// 0x0000003D System.Void PlayerScore::AddToScore(System.Boolean)
 extern void PlayerScore_AddToScore_m762CF79C0A0FFB91F565142BF73DBC03E430D850 (void);
-// 0x0000003D System.Void PlayerScore::PlaySound(System.Boolean)
+// 0x0000003E System.Void PlayerScore::PlaySound(System.Boolean)
 extern void PlayerScore_PlaySound_m6AFD7FF500B28AEA01BAAB0F891CA52CD2B2E74F (void);
-// 0x0000003E System.Void PlayerScore::UpdatePlayerScore(System.Boolean)
+// 0x0000003F System.Void PlayerScore::UpdatePlayerScore(System.Boolean)
 extern void PlayerScore_UpdatePlayerScore_m7AC3A3D5C758CFAC0A5123F78F21E89777904EF8 (void);
-// 0x0000003F System.Void PlayerScore::LSLNotifyGoodOrBadHit(System.Boolean)
+// 0x00000040 System.Void PlayerScore::LSLNotifyGoodOrBadHit(System.Boolean)
 extern void PlayerScore_LSLNotifyGoodOrBadHit_mE42D4018DF288E0877A7EBA93EDCF078282516C1 (void);
-// 0x00000040 System.Void PlayerScore::WSUpdateScore(System.Boolean)
+// 0x00000041 System.Void PlayerScore::WSUpdateScore(System.Boolean)
 extern void PlayerScore_WSUpdateScore_m68313E9CBDD5541B8A95606ACED8067756393D38 (void);
-// 0x00000041 System.Void PlayerScore::.ctor()
+// 0x00000042 System.Void PlayerScore::.ctor()
 extern void PlayerScore__ctor_mF36323726AC1B016BF7B96B613D2E94238591934 (void);
-// 0x00000042 System.Void PlayerBallScoreEvent::.ctor()
+// 0x00000043 System.Void PlayerBallScoreEvent::.ctor()
 extern void PlayerBallScoreEvent__ctor_mCC1AA44A82FDCBEAE0A2F3FE9ABE62352A1211E6 (void);
-// 0x00000043 System.Void PlayerBallScoreEvent::Set(System.Int32,System.String,System.Boolean,System.Boolean)
+// 0x00000044 System.Void PlayerBallScoreEvent::Set(System.Int32,System.String,System.Boolean,System.Boolean)
 extern void PlayerBallScoreEvent_Set_m2C609C59D53C1F1B02B60BC7BF79B19B70EA22DB (void);
-// 0x00000044 System.String PlayerBallScoreEvent::SaveToString()
+// 0x00000045 System.String PlayerBallScoreEvent::SaveToString()
 extern void PlayerBallScoreEvent_SaveToString_m38D8F7EAC90BBA933D4FE4647459E1360A1E0232 (void);
-// 0x00000045 System.Void SetGameValues::Start()
+// 0x00000046 System.Void SetGameValues::Start()
 extern void SetGameValues_Start_m12493EA0465735BFAA6330A721E334345CAE022E (void);
-// 0x00000046 System.Void SetGameValues::Update()
+// 0x00000047 System.Void SetGameValues::Update()
 extern void SetGameValues_Update_mEF262C2DF1CA6C9DF13217CC3D364690816ED7F1 (void);
-// 0x00000047 System.Void SetGameValues::SetPlayerVals(PlayerVals)
+// 0x00000048 System.Void SetGameValues::SetPlayerVals(PlayerVals)
 extern void SetGameValues_SetPlayerVals_m6BEC0F81DFF65F49A5E1ACD5DA6AE31179A39067 (void);
-// 0x00000048 System.Void SetGameValues::UpdateGameValues()
+// 0x00000049 System.Void SetGameValues::UpdateGameValues()
 extern void SetGameValues_UpdateGameValues_mC09F1F03CCD1487F6E9F828BAD5AEB0D9CC6D916 (void);
-// 0x00000049 System.Void SetGameValues::.ctor()
+// 0x0000004A System.Void SetGameValues::.ctor()
 extern void SetGameValues__ctor_m4BC6479EFF016B7B2AB74574B80872525F2899F7 (void);
-// 0x0000004A System.Void ScoreDot::Start()
+// 0x0000004B System.Void ScoreDot::Start()
 extern void ScoreDot_Start_m3F28EF7BECDD936E4C50F6F2F20F6F025F95B52D (void);
-// 0x0000004B System.Void ScoreDot::Update()
+// 0x0000004C System.Void ScoreDot::Update()
 extern void ScoreDot_Update_mFB9FFAC95B4F40C9ABF52054E8004FDA8C8A2D40 (void);
-// 0x0000004C System.Void ScoreDot::SetScore(System.Boolean)
+// 0x0000004D System.Void ScoreDot::SetScore(System.Boolean)
 extern void ScoreDot_SetScore_m19CFC800494EB4F63009C254ED6EA9B2F0EA67DF (void);
-// 0x0000004D System.Void ScoreDot::CleanScore()
+// 0x0000004E System.Void ScoreDot::CleanScore()
 extern void ScoreDot_CleanScore_m39F0104DEDAA3F22BE5722E1CAB93389D7B10062 (void);
-// 0x0000004E System.Void ScoreDot::.ctor()
+// 0x0000004F System.Void ScoreDot::.ctor()
 extern void ScoreDot__ctor_m5AB98090825BE8BBCF4D93FFA48D1949B6EC6814 (void);
-// 0x0000004F System.Void Slingshot::Start()
+// 0x00000050 System.Void Slingshot::Start()
 extern void Slingshot_Start_m157113D2BBC851974D1C64A3B8CABF33E8F4F592 (void);
-// 0x00000050 System.Void Slingshot::Update()
+// 0x00000051 System.Void Slingshot::Update()
 extern void Slingshot_Update_m2A4F26F0F5BDE0D9A5623DB641C1613FACDA9F29 (void);
-// 0x00000051 System.Void Slingshot::DrawSlingshotLines()
+// 0x00000052 System.Void Slingshot::DrawSlingshotLines()
 extern void Slingshot_DrawSlingshotLines_m05271E709663BCE6FC850A5893CB1D12795FBEDE (void);
-// 0x00000052 System.Void Slingshot::SetTargetReachable(ReachTargetEnum)
+// 0x00000053 System.Void Slingshot::SetTargetReachable(ReachTargetEnum)
 extern void Slingshot_SetTargetReachable_m41E3DD78695D905CC6DB541D71680AD324A5EB76 (void);
-// 0x00000053 System.Void Slingshot::AdaptDebug()
-extern void Slingshot_AdaptDebug_mC44FAEF9800A7BA3A441B645BC19BB253A241541 (void);
 // 0x00000054 UnityEngine.GameObject Slingshot::GetHook()
 extern void Slingshot_GetHook_m41A0B6FAFAF851E29A363690434B3CA5624CDF2C (void);
 // 0x00000055 UnityEngine.Transform Slingshot::GetHookTransform()
@@ -315,6 +315,7 @@ static Il2CppMethodPointer s_methodPointers[131] =
 	NPCBallAnimation__ctor_m9E0F0A3427DA16E01813CE69B797D32B988156FE,
 	Player_SetActive_mFE1983E179FD8FFF4E392008D48642457EE13C25,
 	Player_FakeShot_m5F0AC23018512326A0DDEB71F90733B722524978,
+	Player_GetWonTrophies_mD3505AB46F5EBCAA0B0C45B66CC7745F73FC9D38,
 	Player__ctor_mEAFF48F803F795AEF3E1E818B161DAFCCE974ADE,
 	PlayerGroup_Start_m63C0F5CF55227BBF36256F2ECF31DF1DDE442E92,
 	PlayerGroup_Update_m14AF02A8CA2E0C18B5383EEE669E42DE17BC99E3,
@@ -358,7 +359,6 @@ static Il2CppMethodPointer s_methodPointers[131] =
 	Slingshot_Update_m2A4F26F0F5BDE0D9A5623DB641C1613FACDA9F29,
 	Slingshot_DrawSlingshotLines_m05271E709663BCE6FC850A5893CB1D12795FBEDE,
 	Slingshot_SetTargetReachable_m41E3DD78695D905CC6DB541D71680AD324A5EB76,
-	Slingshot_AdaptDebug_mC44FAEF9800A7BA3A441B645BC19BB253A241541,
 	Slingshot_GetHook_m41A0B6FAFAF851E29A363690434B3CA5624CDF2C,
 	Slingshot_GetHookTransform_m781B49B70CED826D11841953DD4871D670501918,
 	Slingshot_CalcLaunchVelocity_mDD2652E6ACDBDCB7775632257C8F3350A029C041,
@@ -449,6 +449,7 @@ static const int32_t s_InvokerIndices[131] =
 	8898,
 	6946,
 	8898,
+	8744,
 	8898,
 	8898,
 	8898,
@@ -492,7 +493,6 @@ static const int32_t s_InvokerIndices[131] =
 	8898,
 	8898,
 	7041,
-	8898,
 	8744,
 	8744,
 	2007,

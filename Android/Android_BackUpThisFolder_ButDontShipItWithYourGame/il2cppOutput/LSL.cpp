@@ -559,8 +559,8 @@ struct SendToLSL_tE70577B7D5C98362D16B66C309899AEE9790D84A  : public MonoBehavio
 {
 	// LSL.OutletPassThrough SendToLSL::outletPassThrough
 	OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C* ___outletPassThrough_4;
-	// System.Boolean SendToLSL::repeatedExec
-	bool ___repeatedExec_5;
+	// System.Boolean SendToLSL::testLSL
+	bool ___testLSL_5;
 	// System.Single SendToLSL::_time
 	float ____time_6;
 	// System.Single SendToLSL::_exec_time
@@ -2429,8 +2429,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SendToLSL_Start_m6C03D29C263EB8DED181E52
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SendToLSL_Update_mBE210D9D19919BC00E69F038AC8D7D7EBCE2AE06 (SendToLSL_tE70577B7D5C98362D16B66C309899AEE9790D84A* __this, const RuntimeMethod* method) 
 {
 	{
-		// if (repeatedExec)
-		bool L_0 = __this->___repeatedExec_5;
+		// if (testLSL)
+		bool L_0 = __this->___testLSL_5;
 		if (!L_0)
 		{
 			goto IL_003f;

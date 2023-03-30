@@ -203,28 +203,30 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___trialListFinished_22;
 	// System.Int32 GameManager::currentTrial
 	int32_t ___currentTrial_23;
+	// System.Boolean GameManager::endMessagesSend
+	bool ___endMessagesSend_24;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_24;
+	bool ___trophyMayAppear_25;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_25;
+	bool ___mayPrep_26;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_26;
+	bool ___canLaunch_27;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_27;
+	bool ___didShoot_28;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_28;
+	bool ___MayGiveTrophy_29;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_29;
+	bool ___trophyIsGiven_30;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_30;
+	bool ___didReadFeedback_31;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_31;
+	bool ___didGiveScore_32;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_32;
+	bool ___mustGiveFeedback_33;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_33;
+	bool ___isInitiated_34;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_34;
+	bool ___LightIsSet_35;
 };
 
 // Gazed
@@ -238,31 +240,33 @@ struct Gazed_tB65319F17D326B9247B3BEBDA0C5CA2878426CEA  : public MonoBehaviour_t
 	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_6;
 	// GazeEvent Gazed::gazeEvent
 	GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27* ___gazeEvent_7;
+	// System.Boolean Gazed::hasBeenSeen
+	bool ___hasBeenSeen_8;
 };
 
 // WsClient
 struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
 	// GameManager WsClient::gameManager
-	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_4;
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_5;
 	// WebSocketSharp.WebSocket WsClient::ws
-	WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* ___ws_5;
+	WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4* ___ws_6;
 	// System.Boolean WsClient::hasWsConnection
-	bool ___hasWsConnection_6;
+	bool ___hasWsConnection_7;
 	// System.Single WsClient::timeoutLength
-	float ___timeoutLength_7;
+	float ___timeoutLength_8;
 	// System.Single WsClient::timeoutTimer
-	float ___timeoutTimer_8;
+	float ___timeoutTimer_9;
 	// System.String WsClient::ip
-	String_t* ___ip_9;
+	String_t* ___ip_10;
 	// System.String WsClient::port
-	String_t* ___port_10;
+	String_t* ___port_11;
 	// PlayerVals WsClient::playerVals
-	PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___playerVals_11;
+	PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___playerVals_12;
 	// WsClient/WsEvent WsClient::wsMsgReceived
-	WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8* ___wsMsgReceived_12;
+	WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8* ___wsMsgReceived_13;
 	// WsClient/WSHelloworld WsClient::wsHello
-	WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* ___wsHello_13;
+	WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* ___wsHello_14;
 };
 
 // <Module>
@@ -323,6 +327,11 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields
 // Gazed
 
 // WsClient
+struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520_StaticFields
+{
+	// WsClient WsClient::_instance
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ____instance_4;
+};
 
 // WsClient
 #ifdef __clang__
@@ -427,6 +436,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gazed_GazeFocusChanged_m331A4D2C16F18CD2
 		L_7 = GazeEvent_SaveToString_mF5321E832058E3240E8ADB8D579EFF338D62C4E2(L_6, NULL);
 		NullCheck(L_5);
 		WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D(L_5, L_7, NULL);
+		// hasBeenSeen = true;
+		__this->___hasBeenSeen_8 = (bool)1;
 		// }
 		return;
 	}
