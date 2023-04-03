@@ -24,18 +24,16 @@ public class GazeEvent
 public class Gazed : MonoBehaviour, IGazeFocusable
 {
     [SerializeField, Tooltip("either caregiver or NPC")] private string objectName = "caregiver"; // or "NPC"
-    //[SerializeField] private DebugConnection debug_text;
     [SerializeField] private WsClient ws;
     [SerializeField] private GameManager gameManager;
     private GazeEvent gazeEvent;
-    public bool hasBeenSeen = false;
+    [Tooltip("bool to indicate that an object is seen at least once")]public bool hasBeenSeen = false;
     /// <summary>
     /// GazeFocus only gets called on the change
     /// </summary>
     /// <param name="hasFocus"></param>
     public void GazeFocusChanged(bool hasFocus)
     {
-        //debug_text.SetDebugText("gaze focus " + hasFocus + " " + Time.time);
         gazeEvent.gazeStart = hasFocus;
         gazeEvent.trialNumber = gameManager.currentTrial;
         ws.SendWSMessage(gazeEvent.SaveToString());
@@ -45,8 +43,6 @@ public class Gazed : MonoBehaviour, IGazeFocusable
     // Start is called before the first frame update
     void Start()
     {
-        //debug_text = GameObject.FindGameObjectWithTag("debug")
-        //               .GetComponentInChildren<DebugConnection>();
         gazeEvent = new(objectName);
     }
 
