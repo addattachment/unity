@@ -6,6 +6,8 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public CaregiverIntroIdleState caregiverIdleState = new();
     public CaregiverIntroWaveState caregiverIntroWaveState = new();
     public CaregiverIntroButtonState caregiverIntroButtonState = new();
+    public CaregiverIntroScoringState caregiverIntroScoringState = new();
+    public CaregiverIntroEndState caregiverIntroEndState = new();
     // script references
     public GameManager gameManager;
 
@@ -14,8 +16,12 @@ public class CaregiverIntroStateManager : MonoBehaviour
     //public SetCaregiverGaze caregiverGaze;
     //public GameObject caregiverFeedbackScreen;
     //public GameObject scoreCaregiver;
-    public LightingMgr lightingMgr;
+    //public LightingMgr lightingMgr;
     public GameObject Caregiver;
+    [Header("Interactable objects")]
+    public ReadFeedback feedbackButton;
+    public ScoreCaregiver scoreCaregiver;
+    public SwitchScene switchScene;
     [Header("data connections")]
     public WsClient ws;
     public CaregiverFeedbackEvent caregiverFeedbackEvent;

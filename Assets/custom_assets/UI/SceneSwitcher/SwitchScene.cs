@@ -22,8 +22,14 @@ public class SwitchScene : MonoBehaviour
     {
         if (other.CompareTag("Hand"))
         {
-            StartCoroutine(SwitchToScene());
+            Switch();
         }
+    }
+
+    public void Switch()
+    {
+        StartCoroutine(SwitchToScene());
+
     }
 
     private IEnumerator SwitchToScene()
