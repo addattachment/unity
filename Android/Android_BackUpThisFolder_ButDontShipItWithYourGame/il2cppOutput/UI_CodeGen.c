@@ -94,27 +94,29 @@ extern void ReadFeedback__ctor_m856D9C9C8BC0D57C8E04DB8315FDD1F88A457C41 (void);
 extern void SwitchScene_Start_mCEA0AF43F4604E3A0C6786063F2B05B92A94F823 (void);
 // 0x00000029 System.Void SwitchScene::OnTriggerEnter(UnityEngine.Collider)
 extern void SwitchScene_OnTriggerEnter_mA1FECE7E9CD34BA61C0E4C46E1806AC442372736 (void);
-// 0x0000002A System.Collections.IEnumerator SwitchScene::SwitchToScene()
+// 0x0000002A System.Void SwitchScene::Switch()
+extern void SwitchScene_Switch_mA83C9504B35610381862D080907DD6B800FE6567 (void);
+// 0x0000002B System.Collections.IEnumerator SwitchScene::SwitchToScene()
 extern void SwitchScene_SwitchToScene_m5DBD82AABC0602FE4D5F1579367602DB0B3FA9DA (void);
-// 0x0000002B System.Void SwitchScene::.ctor()
+// 0x0000002C System.Void SwitchScene::.ctor()
 extern void SwitchScene__ctor_mD96D4102EF93A0AD20995B732131142FC6ED6BF9 (void);
-// 0x0000002C System.Void SwitchScene/<SwitchToScene>d__8::.ctor(System.Int32)
-extern void U3CSwitchToSceneU3Ed__8__ctor_m32575CFE04970EC3678430AB6C9A5285FAEFF543 (void);
-// 0x0000002D System.Void SwitchScene/<SwitchToScene>d__8::System.IDisposable.Dispose()
-extern void U3CSwitchToSceneU3Ed__8_System_IDisposable_Dispose_m9993FC12893799599B4CDAFD9AB027E790607DBD (void);
-// 0x0000002E System.Boolean SwitchScene/<SwitchToScene>d__8::MoveNext()
-extern void U3CSwitchToSceneU3Ed__8_MoveNext_m2D9097C1F2A736F717CB955538DE6D6A68181440 (void);
-// 0x0000002F System.Object SwitchScene/<SwitchToScene>d__8::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CSwitchToSceneU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8AFA3C34A8E184058C89029589DC41BF71FE3687 (void);
-// 0x00000030 System.Void SwitchScene/<SwitchToScene>d__8::System.Collections.IEnumerator.Reset()
-extern void U3CSwitchToSceneU3Ed__8_System_Collections_IEnumerator_Reset_mB71EE72F9CFB272F3A37FC2BD96F876540ECD405 (void);
-// 0x00000031 System.Object SwitchScene/<SwitchToScene>d__8::System.Collections.IEnumerator.get_Current()
-extern void U3CSwitchToSceneU3Ed__8_System_Collections_IEnumerator_get_Current_mDA7443E4ED8B2D6095BC729BB2065CE891927A0B (void);
-// 0x00000032 System.Void SwitchSceneEvent::.ctor(System.String)
+// 0x0000002D System.Void SwitchScene/<SwitchToScene>d__9::.ctor(System.Int32)
+extern void U3CSwitchToSceneU3Ed__9__ctor_m188E3494DB319F7C022C721BD85FB8280EBEA209 (void);
+// 0x0000002E System.Void SwitchScene/<SwitchToScene>d__9::System.IDisposable.Dispose()
+extern void U3CSwitchToSceneU3Ed__9_System_IDisposable_Dispose_m701DBBB57AE80C0118D93999878EBDA0D8F6F0A4 (void);
+// 0x0000002F System.Boolean SwitchScene/<SwitchToScene>d__9::MoveNext()
+extern void U3CSwitchToSceneU3Ed__9_MoveNext_m70A9AF82CC4D49786D03A02BFA48DB88E0C3AFA3 (void);
+// 0x00000030 System.Object SwitchScene/<SwitchToScene>d__9::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CSwitchToSceneU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF79A912CAF669B7CA018BF3C1C99878B54DC78B0 (void);
+// 0x00000031 System.Void SwitchScene/<SwitchToScene>d__9::System.Collections.IEnumerator.Reset()
+extern void U3CSwitchToSceneU3Ed__9_System_Collections_IEnumerator_Reset_m6FDDBC2ABF2B1817CF4A7FFB287ADAC855784AA4 (void);
+// 0x00000032 System.Object SwitchScene/<SwitchToScene>d__9::System.Collections.IEnumerator.get_Current()
+extern void U3CSwitchToSceneU3Ed__9_System_Collections_IEnumerator_get_Current_m930EC27A56E7D3E798224B25FEE6C365F128E373 (void);
+// 0x00000033 System.Void SwitchSceneEvent::.ctor(System.String)
 extern void SwitchSceneEvent__ctor_m399BB3E0C4B93122C2161D48705BFCAA8E7FF95B (void);
-// 0x00000033 System.String SwitchSceneEvent::SaveToString()
+// 0x00000034 System.String SwitchSceneEvent::SaveToString()
 extern void SwitchSceneEvent_SaveToString_m8D45490528E129BFD17047E46D1E950C0B7069E1 (void);
-static Il2CppMethodPointer s_methodPointers[51] = 
+static Il2CppMethodPointer s_methodPointers[52] = 
 {
 	Appear_Start_m064FACF243CC17ACCB9A67C8E12483B41B57B86C,
 	Appear_Update_mE61A038882F652784DE8B64AF06AFED82A8C24CB,
@@ -157,76 +159,78 @@ static Il2CppMethodPointer s_methodPointers[51] =
 	ReadFeedback__ctor_m856D9C9C8BC0D57C8E04DB8315FDD1F88A457C41,
 	SwitchScene_Start_mCEA0AF43F4604E3A0C6786063F2B05B92A94F823,
 	SwitchScene_OnTriggerEnter_mA1FECE7E9CD34BA61C0E4C46E1806AC442372736,
+	SwitchScene_Switch_mA83C9504B35610381862D080907DD6B800FE6567,
 	SwitchScene_SwitchToScene_m5DBD82AABC0602FE4D5F1579367602DB0B3FA9DA,
 	SwitchScene__ctor_mD96D4102EF93A0AD20995B732131142FC6ED6BF9,
-	U3CSwitchToSceneU3Ed__8__ctor_m32575CFE04970EC3678430AB6C9A5285FAEFF543,
-	U3CSwitchToSceneU3Ed__8_System_IDisposable_Dispose_m9993FC12893799599B4CDAFD9AB027E790607DBD,
-	U3CSwitchToSceneU3Ed__8_MoveNext_m2D9097C1F2A736F717CB955538DE6D6A68181440,
-	U3CSwitchToSceneU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8AFA3C34A8E184058C89029589DC41BF71FE3687,
-	U3CSwitchToSceneU3Ed__8_System_Collections_IEnumerator_Reset_mB71EE72F9CFB272F3A37FC2BD96F876540ECD405,
-	U3CSwitchToSceneU3Ed__8_System_Collections_IEnumerator_get_Current_mDA7443E4ED8B2D6095BC729BB2065CE891927A0B,
+	U3CSwitchToSceneU3Ed__9__ctor_m188E3494DB319F7C022C721BD85FB8280EBEA209,
+	U3CSwitchToSceneU3Ed__9_System_IDisposable_Dispose_m701DBBB57AE80C0118D93999878EBDA0D8F6F0A4,
+	U3CSwitchToSceneU3Ed__9_MoveNext_m70A9AF82CC4D49786D03A02BFA48DB88E0C3AFA3,
+	U3CSwitchToSceneU3Ed__9_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mF79A912CAF669B7CA018BF3C1C99878B54DC78B0,
+	U3CSwitchToSceneU3Ed__9_System_Collections_IEnumerator_Reset_m6FDDBC2ABF2B1817CF4A7FFB287ADAC855784AA4,
+	U3CSwitchToSceneU3Ed__9_System_Collections_IEnumerator_get_Current_m930EC27A56E7D3E798224B25FEE6C365F128E373,
 	SwitchSceneEvent__ctor_m399BB3E0C4B93122C2161D48705BFCAA8E7FF95B,
 	SwitchSceneEvent_SaveToString_m8D45490528E129BFD17047E46D1E950C0B7069E1,
 };
-static const int32_t s_InvokerIndices[51] = 
+static const int32_t s_InvokerIndices[52] = 
 {
-	8898,
-	8898,
-	6946,
-	8898,
-	7081,
-	8898,
-	7081,
-	8898,
-	7081,
-	8898,
-	4052,
-	8898,
-	3232,
-	7081,
-	8898,
-	8898,
-	8898,
-	6300,
-	3233,
-	8898,
-	7041,
-	8898,
-	8619,
-	8898,
-	8744,
-	8898,
-	8744,
-	7041,
-	8898,
-	8619,
-	8744,
-	8898,
-	8744,
-	8898,
-	8898,
-	8898,
-	7081,
-	7081,
-	8898,
-	8898,
-	7081,
-	8744,
-	8898,
-	7041,
-	8898,
-	8619,
-	8744,
-	8898,
-	8744,
-	7081,
-	8744,
+	8903,
+	8903,
+	6950,
+	8903,
+	7085,
+	8903,
+	7085,
+	8903,
+	7085,
+	8903,
+	4056,
+	8903,
+	3236,
+	7085,
+	8903,
+	8903,
+	8903,
+	6304,
+	3237,
+	8903,
+	7045,
+	8903,
+	8624,
+	8903,
+	8749,
+	8903,
+	8749,
+	7045,
+	8903,
+	8624,
+	8749,
+	8903,
+	8749,
+	8903,
+	8903,
+	8903,
+	7085,
+	7085,
+	8903,
+	8903,
+	7085,
+	8903,
+	8749,
+	8903,
+	7045,
+	8903,
+	8624,
+	8749,
+	8903,
+	8749,
+	7085,
+	8749,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UI_CodeGenModule;
 const Il2CppCodeGenModule g_UI_CodeGenModule = 
 {
 	"UI.dll",
-	51,
+	52,
 	s_methodPointers,
 	0,
 	NULL,
