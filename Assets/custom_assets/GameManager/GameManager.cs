@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     [Header("development settings")]
     [SerializeField] private bool restartBool = false;
     public bool allMust = false;
-    public bool developmentMode = true;
+    //public bool developmentMode = true;
 
     [Header("tutorial settings")]
     public bool isTutorial; // if tutorial is true, we only have 1 trial with 'good' chances of scoring

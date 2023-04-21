@@ -40,10 +40,10 @@ public class SetGameValues : MonoBehaviour
         //}
         //else
         //{
-            if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
-            {
-                UpdateGameValues();
-            }
+            //if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
+            //{
+            //    UpdateGameValues();
+            //}
         //}
         if (wsClient.playerVals.valuesSet)
         {

@@ -14,7 +14,6 @@ public class ScoreBoardAll : MonoBehaviour
 
     private void Update()
     {
-        //if ((gameManager.gameDidStart == false) && (gameManager.trialListGenerated == true))
         if (gameManager.playerValuesAreSet)
         {
             UpdateNames();
