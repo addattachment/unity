@@ -654,56 +654,54 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
 	bool ___allMust_11;
-	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_14;
+	int32_t ___ballsPerGame_13;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_15;
+	bool ___trialListGenerated_14;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_16;
+	bool ___doFakeLaunch_15;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_17;
+	bool ___playerValsReceivedViaWS_16;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_18;
+	bool ___startTrial_17;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_19;
+	bool ___toPostTrial_18;
 	// System.Boolean GameManager::restart
-	bool ___restart_20;
+	bool ___restart_19;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_21;
+	bool ___ballIsShot_20;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_22;
+	bool ___trialIsRunning_21;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_23;
+	bool ___trialListFinished_22;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_24;
+	int32_t ___currentTrial_23;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_25;
+	bool ___endMessagesSend_24;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_26;
+	bool ___trophyMayAppear_25;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_27;
+	bool ___mayPrep_26;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_28;
+	bool ___canLaunch_27;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_29;
+	bool ___didShoot_28;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_30;
+	bool ___MayGiveTrophy_29;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_31;
+	bool ___trophyIsGiven_30;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_32;
+	bool ___didReadFeedback_31;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_33;
+	bool ___didGiveScore_32;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_34;
+	bool ___mustGiveFeedback_33;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_35;
+	bool ___isInitiated_34;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_36;
+	bool ___LightIsSet_35;
 };
 
 // LightingMgr
@@ -1427,7 +1425,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyAppearState_EnterState_mD25487826D
 		NullCheck(L_9);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = L_9->___gameManager_11;
 		NullCheck(L_10);
-		int32_t L_11 = L_10->___currentTrial_24;
+		int32_t L_11 = L_10->___currentTrial_23;
 		NullCheck(L_8);
 		TrophyList_MakeTrophyAppear_m06BE7054DCE75E8D6C7E1E8F8A38C9AF44752884(L_8, L_11, NULL);
 		// state.gameManager.trophyIsGiven = false;
@@ -1435,7 +1433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyAppearState_EnterState_mD25487826D
 		NullCheck(L_12);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_13 = L_12->___gameManager_11;
 		NullCheck(L_13);
-		L_13->___trophyIsGiven_31 = (bool)0;
+		L_13->___trophyIsGiven_30 = (bool)0;
 		// }
 		return;
 	}
@@ -1476,7 +1474,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyAppearState_UpdateState_m186924A12
 		NullCheck(L_7);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = L_7->___gameManager_11;
 		NullCheck(L_8);
-		bool L_9 = L_8->___LightIsSet_36;
+		bool L_9 = L_8->___LightIsSet_35;
 		if (!((int32_t)(((((int32_t)L_6) == ((int32_t)0))? 1 : 0)&(int32_t)L_9)))
 		{
 			goto IL_0052;
@@ -1488,7 +1486,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyAppearState_UpdateState_m186924A12
 		NullCheck(L_10);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = L_10->___gameManager_11;
 		NullCheck(L_11);
-		L_11->___LightIsSet_36 = (bool)0;
+		L_11->___LightIsSet_35 = (bool)0;
 		// state.trophyList.trophyDidAppear = false;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_12 = ___0_state;
 		NullCheck(L_12);
@@ -1560,7 +1558,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyCooldownState_EnterState_m5D58DEF8
 		NullCheck(L_7);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = L_7->___gameManager_11;
 		NullCheck(L_8);
-		L_8->___trophyIsGiven_31 = (bool)1;
+		L_8->___trophyIsGiven_30 = (bool)1;
 		// }
 		return;
 	}
@@ -1589,12 +1587,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyCooldownState_UpdateState_m4BC66AD
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_11;
 		NullCheck(L_1);
-		bool L_2 = L_1->___trophyMayAppear_26;
+		bool L_2 = L_1->___trophyMayAppear_25;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_3 = ___0_state;
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_11;
 		NullCheck(L_4);
-		bool L_5 = L_4->___LightIsSet_36;
+		bool L_5 = L_4->___LightIsSet_35;
 		if (!((int32_t)((int32_t)L_2&(int32_t)L_5)))
 		{
 			goto IL_0061;
@@ -1606,19 +1604,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyCooldownState_UpdateState_m4BC66AD
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_11;
 		NullCheck(L_7);
-		L_7->___LightIsSet_36 = (bool)0;
+		L_7->___LightIsSet_35 = (bool)0;
 		// state.gameManager.trophyMayAppear = false;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_8 = ___0_state;
 		NullCheck(L_8);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = L_8->___gameManager_11;
 		NullCheck(L_9);
-		L_9->___trophyMayAppear_26 = (bool)0;
+		L_9->___trophyMayAppear_25 = (bool)0;
 		// if (!state.gameManager.trialListFinished)
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_10 = ___0_state;
 		NullCheck(L_10);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = L_10->___gameManager_11;
 		NullCheck(L_11);
-		bool L_12 = L_11->___trialListFinished_23;
+		bool L_12 = L_11->___trialListFinished_22;
 		if (L_12)
 		{
 			goto IL_004b;
@@ -1823,7 +1821,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyGivingState_UpdateState_m1EB7FDB7F
 		NullCheck(L_7);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = L_7->___gameManager_11;
 		NullCheck(L_8);
-		bool L_9 = L_8->___LightIsSet_36;
+		bool L_9 = L_8->___LightIsSet_35;
 		if (!((int32_t)(((int32_t)((int32_t)L_3&(int32_t)L_6))&(int32_t)L_9)))
 		{
 			goto IL_0043;
@@ -1835,7 +1833,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyGivingState_UpdateState_m1EB7FDB7F
 		NullCheck(L_10);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = L_10->___gameManager_11;
 		NullCheck(L_11);
-		L_11->___LightIsSet_36 = (bool)0;
+		L_11->___LightIsSet_35 = (bool)0;
 		// state.SwitchState(state.trophyCooldownState);
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_12 = ___0_state;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_13 = ___0_state;
@@ -1903,7 +1901,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyInitState_UpdateState_mEC0FB3F13A7
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_11;
 		NullCheck(L_1);
-		bool L_2 = L_1->___trophyMayAppear_26;
+		bool L_2 = L_1->___trophyMayAppear_25;
 		if (!L_2)
 		{
 			goto IL_0025;
@@ -1915,7 +1913,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyInitState_UpdateState_mEC0FB3F13A7
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_11;
 		NullCheck(L_4);
-		L_4->___trophyMayAppear_26 = (bool)0;
+		L_4->___trophyMayAppear_25 = (bool)0;
 		// state.SwitchState(state.trophyAppearState);
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_5 = ___0_state;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_6 = ___0_state;
@@ -2162,7 +2160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyWaitingState_EnterState_m81E7E92F8
 		NullCheck(L_7);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = L_7->___gameManager_11;
 		NullCheck(L_8);
-		L_8->___startTrial_18 = (bool)1;
+		L_8->___startTrial_17 = (bool)1;
 		// }
 		return;
 	}
@@ -2184,12 +2182,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyWaitingState_UpdateState_m21F7A701
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_11;
 		NullCheck(L_1);
-		bool L_2 = L_1->___MayGiveTrophy_30;
+		bool L_2 = L_1->___MayGiveTrophy_29;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_3 = ___0_state;
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_11;
 		NullCheck(L_4);
-		bool L_5 = L_4->___LightIsSet_36;
+		bool L_5 = L_4->___LightIsSet_35;
 		if (!((int32_t)((int32_t)L_2&(int32_t)L_5)))
 		{
 			goto IL_003d;
@@ -2201,13 +2199,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyWaitingState_UpdateState_m21F7A701
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_11;
 		NullCheck(L_7);
-		L_7->___LightIsSet_36 = (bool)0;
+		L_7->___LightIsSet_35 = (bool)0;
 		// state.gameManager.MayGiveTrophy = false;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_8 = ___0_state;
 		NullCheck(L_8);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = L_8->___gameManager_11;
 		NullCheck(L_9);
-		L_9->___MayGiveTrophy_30 = (bool)0;
+		L_9->___MayGiveTrophy_29 = (bool)0;
 		// state.SwitchState(state.trophyGivingState);
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_10 = ___0_state;
 		TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* L_11 = ___0_state;
