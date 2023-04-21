@@ -111,6 +111,8 @@ struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
 struct TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372;
 // TrialList
 struct TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05;
+// UnityEngine.Events.UnityEvent
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // WebSocketSharp.WebSocket
@@ -119,8 +121,6 @@ struct WebSocket_tBCA6DA25533993CDAE05954CA6F61926CF134BB4;
 struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520;
 // WsClient/WSHelloworld
 struct WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7;
-// WsClient/WsEvent
-struct WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8;
 
 IL2CPP_EXTERN_C RuntimeClass* BallCalcImpactState_t4FF057E926E0DB65CA47F19B3827F87CEE0CF940_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BallDoneState_t7DF5C08DF711C53F3D0CEF628AEA096B118EE132_il2cpp_TypeInfo_var;
@@ -399,66 +399,68 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 {
 	// System.Boolean GameManager::gameDidStart
 	bool ___gameDidStart_5;
-	// System.Boolean GameManager::playerSettingsAreSet
-	bool ___playerSettingsAreSet_6;
+	// System.Boolean GameManager::playerValuesAreSet
+	bool ___playerValuesAreSet_6;
+	// System.Boolean GameManager::playerContingencySet
+	bool ___playerContingencySet_7;
 	// System.Boolean GameManager::NPCShootsBall
-	bool ___NPCShootsBall_7;
+	bool ___NPCShootsBall_8;
 	// System.Boolean GameManager::newNameSet
-	bool ___newNameSet_8;
+	bool ___newNameSet_9;
 	// System.Boolean GameManager::restartBool
-	bool ___restartBool_9;
+	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_10;
+	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_11;
+	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_12;
+	bool ___isTutorial_13;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_13;
+	int32_t ___ballsPerGame_14;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_14;
+	bool ___trialListGenerated_15;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_15;
+	bool ___doFakeLaunch_16;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_16;
+	bool ___playerValsReceivedViaWS_17;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_17;
+	bool ___startTrial_18;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_18;
+	bool ___toPostTrial_19;
 	// System.Boolean GameManager::restart
-	bool ___restart_19;
+	bool ___restart_20;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_20;
+	bool ___ballIsShot_21;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_21;
+	bool ___trialIsRunning_22;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_22;
+	bool ___trialListFinished_23;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_23;
+	int32_t ___currentTrial_24;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_24;
+	bool ___endMessagesSend_25;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_25;
+	bool ___trophyMayAppear_26;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_26;
+	bool ___mayPrep_27;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_27;
+	bool ___canLaunch_28;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_28;
+	bool ___didShoot_29;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_29;
+	bool ___MayGiveTrophy_30;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_30;
+	bool ___trophyIsGiven_31;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_31;
+	bool ___didReadFeedback_32;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_32;
+	bool ___didGiveScore_33;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_33;
+	bool ___mustGiveFeedback_34;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_34;
+	bool ___isInitiated_35;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_35;
+	bool ___LightIsSet_36;
 };
 
 // Player
@@ -645,8 +647,8 @@ struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520  : public MonoBehaviou
 	String_t* ___port_11;
 	// PlayerVals WsClient::playerVals
 	PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___playerVals_12;
-	// WsClient/WsEvent WsClient::wsMsgReceived
-	WsEvent_t6D1D80050A75DD11199C440F26A627C1AAFB25C8* ___wsMsgReceived_13;
+	// UnityEngine.Events.UnityEvent WsClient::wsMsgReceived
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___wsMsgReceived_13;
 	// WsClient/WSHelloworld WsClient::wsHello
 	WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7* ___wsHello_14;
 };
@@ -805,6 +807,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_FakeShot_m5F0AC23018512326A0DDEB7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 // System.Void StateMgrEvent::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) ;
+// WsClient WsClient::get_Instance()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075 (const RuntimeMethod* method) ;
 // System.Void StateMgrEvent::Set(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6_inline (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_states, const RuntimeMethod* method) ;
 // System.String StateMgrEvent::SaveToString()
@@ -930,7 +934,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallCalcImpactState_UpdateState_m13325C3
 		NullCheck(L_9);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = L_9->___gameManager_11;
 		NullCheck(L_10);
-		L_10->___toPostTrial_18 = (bool)1;
+		L_10->___toPostTrial_19 = (bool)1;
 		// state.SwitchState(state.ballDoneState);
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_11 = ___0_state;
 		BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* L_12 = ___0_state;
@@ -1048,7 +1052,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallInitState_EnterState_mAAA7A18B8D8BD6
 		NullCheck(L_2);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = L_2->___gameManager_11;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___ballsPerGame_13;
+		int32_t L_4 = L_3->___ballsPerGame_14;
 		NullCheck(L_1);
 		L_1->___amountOfBallsInTrial_16 = L_4;
 		// }
@@ -1274,7 +1278,7 @@ IL_005b:
 		NullCheck(L_21);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_22 = L_21->___gameManager_11;
 		NullCheck(L_22);
-		L_22->___toPostTrial_18 = (bool)1;
+		L_22->___toPostTrial_19 = (bool)1;
 	}
 
 IL_0067:
@@ -1441,6 +1445,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallStateManager_Start_m040BF95261ED210B
 		StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE(L_3, _stringLiteralFC2566D7D48CAB76B0F369066161B2FCB1FD6543, NULL);
 		__this->___ballStateMgrEvent_21 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ballStateMgrEvent_21), (void*)L_3);
+		// ws = WsClient.Instance;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_4;
+		L_4 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_20 = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_20), (void*)L_4);
 		// }
 		return;
 	}
@@ -1608,7 +1617,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallWaitingState_UpdateState_m4B6E87CAA3
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_11;
 		NullCheck(L_1);
-		bool L_2 = L_1->___trialIsRunning_21;
+		bool L_2 = L_1->___trialIsRunning_22;
 		if (!L_2)
 		{
 			goto IL_0019;

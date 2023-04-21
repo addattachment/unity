@@ -456,9 +456,11 @@ extern void OutletPassThrough_Start_mFBA748920151C4688969B428E706CA2E59A8E697 (v
 extern void OutletPassThrough_SendMarker_mA8DD86573A31D94890C06C60E61C5515DA4006B0 (void);
 // 0x000000DE System.Void LSL.OutletPassThrough::SendMarker(System.Int32)
 extern void OutletPassThrough_SendMarker_m0D16DFC2EBCC971FC730714015AAD7C28C30F071 (void);
-// 0x000000DF System.Void LSL.OutletPassThrough::.ctor()
+// 0x000000DF System.Void LSL.OutletPassThrough::LSLTest()
+extern void OutletPassThrough_LSLTest_mA69FFD3195BFC030666A7F12FC9484A9C5382096 (void);
+// 0x000000E0 System.Void LSL.OutletPassThrough::.ctor()
 extern void OutletPassThrough__ctor_m3A243E2F6714953CF62C7B6E4EB2DA7FEAFCB049 (void);
-static Il2CppMethodPointer s_methodPointers[223] = 
+static Il2CppMethodPointer s_methodPointers[224] = 
 {
 	SendToLSL_Start_m6C03D29C263EB8DED181E524AB4CB86E8B7679A1,
 	SendToLSL_Update_mBE210D9D19919BC00E69F038AC8D7D7EBCE2AE06,
@@ -682,6 +684,7 @@ static Il2CppMethodPointer s_methodPointers[223] =
 	OutletPassThrough_Start_mFBA748920151C4688969B428E706CA2E59A8E697,
 	OutletPassThrough_SendMarker_mA8DD86573A31D94890C06C60E61C5515DA4006B0,
 	OutletPassThrough_SendMarker_m0D16DFC2EBCC971FC730714015AAD7C28C30F071,
+	OutletPassThrough_LSLTest_mA69FFD3195BFC030666A7F12FC9484A9C5382096,
 	OutletPassThrough__ctor_m3A243E2F6714953CF62C7B6E4EB2DA7FEAFCB049,
 };
 extern void XMLElement__ctor_m617FD2B871FCDC72F238CB63A01D5AB277BF227F_AdjustorThunk (void);
@@ -739,7 +742,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[26] =
 	{ 0x06000061, XMLElement_remove_child_mD4D6D757FB5554C803EB96156489E140210C0A11_AdjustorThunk },
 	{ 0x06000062, XMLElement_remove_child_m8EA5582A51DC281D0B313714B0610369237C3F2F_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[223] = 
+static const int32_t s_InvokerIndices[224] = 
 {
 	8903,
 	8903,
@@ -964,12 +967,13 @@ static const int32_t s_InvokerIndices[223] =
 	7045,
 	7045,
 	8903,
+	8903,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_LSL_CodeGenModule;
 const Il2CppCodeGenModule g_LSL_CodeGenModule = 
 {
 	"LSL.dll",
-	223,
+	224,
 	s_methodPointers,
 	26,
 	s_adjustorThunks,

@@ -20,6 +20,7 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedVirtualMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Caregiver_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_DataStreamInitializer_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Debug_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_EEG_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Environment_CodeGenModule;
@@ -97,10 +98,11 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_targets_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_trialList_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_websocketU2Dsharp_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[78] = 
+const Il2CppCodeGenModule* g_CodeGenModules[79] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
 	(&g_Caregiver_CodeGenModule),
+	(&g_DataStreamInitializer_CodeGenModule),
 	(&g_Debug_CodeGenModule),
 	(&g_EEG_CodeGenModule),
 	(&g_Environment_CodeGenModule),
@@ -194,7 +196,7 @@ const Il2CppCodeRegistration g_CodeRegistration =
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	78,
+	79,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
