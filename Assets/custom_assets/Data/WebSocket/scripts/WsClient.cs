@@ -35,7 +35,8 @@ public class WsClient : MonoBehaviour
     public PlayerVals playerVals;
 
     [System.Serializable] public class WsEvent : UnityEvent<string> { }
-    public WsEvent wsMsgReceived;
+    //public WsEvent wsMsgReceived;
+    public UnityEvent wsMsgReceived;
     public class WSHelloworld
     {
         public string connectMessage;
@@ -52,9 +53,10 @@ public class WsClient : MonoBehaviour
     }
     private WSHelloworld wsHello;
 
-    
+
     private void Start()
     {
+        gameManager = GameManager.Instance;
         wsHello = new WSHelloworld("Hello from " + ip);
         //wsToDebug = this.GetComponent<Ws_to_debug>();
         ws = new WebSocket("ws://" + ip + ":" + port);
@@ -65,6 +67,8 @@ public class WsClient : MonoBehaviour
             hasWsConnection = true;
             var wsmsg = wsHello.HelloMessage();
             SendWSMessage(wsmsg);
+            wsMsgReceived?.Invoke();
+
         };
 
         ws.OnMessage += (sender, e) =>
@@ -125,7 +129,9 @@ public class WsClient : MonoBehaviour
 
     private void SetPlayerValsReady(PlayerVals playerValues)
     {
+        Debug.Log("SetPlayerVals");
         playerVals = playerValues;
+        playerVals.valuesSet = true;
         gameManager.playerValsReceivedViaWS = true;
         gameManager.newNameSet = false;
     }
@@ -169,6 +175,7 @@ public class PlayerVals
     public string gender;
     public int contingency;
     public int trial_block;
+    public bool valuesSet = false;
     public string SaveToString()
     {
         return JsonUtility.ToJson(this);

@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TutShootingScene.unity
     guid: a24e5b155eb66f64db4500dc94c53073
   - enabled: 1

@@ -37,6 +37,7 @@ public class CaregiverStateManager : MonoBehaviour
         gameManager = GameManager.Instance;
         caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
         caregiverFeedbackEvent = new();
+        ws = WsClient.Instance;
     }
     private void Update()
     {

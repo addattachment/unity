@@ -38,6 +38,7 @@ public class TrophyStateManager : MonoBehaviour
         currentTrophyState.EnterState(this);
         gameManager = GameManager.Instance;
         trophyStateMgrEvent = new("trophystate");
+        ws = WsClient.Instance;
     }
     private void Update()
     {

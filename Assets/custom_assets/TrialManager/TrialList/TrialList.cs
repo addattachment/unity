@@ -36,7 +36,7 @@ public class TrialList : MonoBehaviour
 
     private void Update()
     {
-        if ((gameManager.trialListGenerated == false) && (gameManager.playerSettingsAreSet == true))
+        if ((gameManager.trialListGenerated == false) && (gameManager.playerContingencySet == true))
         {
             Debug.Log("triallist gets filled in");
             if (player.contingency == Contingency.c_20)

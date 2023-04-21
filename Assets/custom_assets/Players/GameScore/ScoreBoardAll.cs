@@ -15,10 +15,10 @@ public class ScoreBoardAll : MonoBehaviour
     private void Update()
     {
         //if ((gameManager.gameDidStart == false) && (gameManager.trialListGenerated == true))
-        if (gameManager.playerSettingsAreSet && !gameManager.newNameSet)
+        if (gameManager.playerValuesAreSet)
         {
             UpdateNames();
-            gameManager.newNameSet = true;
+            gameManager.playerValuesAreSet = false;
         }
     }
     public void UpdateScores()

@@ -22,6 +22,8 @@ public class PlayerGroup : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
+        lsl = OutletPassThrough.Instance;
+        ws = WsClient.Instance;
         if (player != null)
         {
             players.Add(player);

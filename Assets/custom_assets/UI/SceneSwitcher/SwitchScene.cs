@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using LSL;
 
 public class SwitchScene : MonoBehaviour
 {
@@ -9,13 +10,24 @@ public class SwitchScene : MonoBehaviour
     [SerializeField] private TMP_Text buttonText;
     [SerializeField] private string nextScene = "Basescene";
     [SerializeField] WsClient wsClient;
+    [SerializeField] OutletPassThrough LSLOutlet;
     [SerializeField] Animator crossFade;
-
+    public bool testSwitch = false;
     [SerializeField] GameObject[] hideObjectWhenNotNeeded;
 
     private void Start()
     {
+        wsClient = WsClient.Instance;
+        LSLOutlet = OutletPassThrough.Instance;
+    }
 
+    private void Update()
+    {
+        if (testSwitch)
+        {
+            testSwitch = false;
+            StartCoroutine(SwitchToScene());
+        }
     }
 
     private void OnTriggerEnter(Collider other)

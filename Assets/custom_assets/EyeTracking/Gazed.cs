@@ -44,6 +44,7 @@ public class Gazed : MonoBehaviour, IGazeFocusable
     void Start()
     {
         gazeEvent = new(objectName);
+        ws = WsClient.Instance;
     }
 
     // Update is called once per frame

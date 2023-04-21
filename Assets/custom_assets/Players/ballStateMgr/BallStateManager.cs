@@ -41,6 +41,7 @@ public class BallStateManager : MonoBehaviour
         currentBallState.EnterState(this);
         gameManager = GameManager.Instance;
         ballStateMgrEvent = new("ballstate");
+        ws = WsClient.Instance;
     }
     private void Update()
     {

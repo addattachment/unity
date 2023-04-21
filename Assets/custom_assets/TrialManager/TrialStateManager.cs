@@ -43,6 +43,8 @@ public class TrialStateManager : MonoBehaviour
         currentState.EnterState(this);
         gameManager = GameManager.Instance;
         trialStateMgrEvent = new("trialstate");
+        wsClient = WsClient.Instance;
+        LSLOutlet = OutletPassThrough.Instance;
     }
 
     // Update is called once per frame

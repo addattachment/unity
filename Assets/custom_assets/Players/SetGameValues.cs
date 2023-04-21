@@ -25,22 +25,29 @@ public class SetGameValues : MonoBehaviour
     void Start()
     {
         gameManager = GetComponent<GameManager>();
-        if (gameManager.isTutorial)
-        {
-            player.playerName = playerName;
-            player.gender = gender;
-            player.contingency = contingency;
-            player.height = height; //TODO USEFUL?
-            player.isRealPlayer = true;
-            // we tell the game that the players values are set
-            gameManager.playerSettingsAreSet = true;
-        }
-        else
-        {
-            if (gameManager.developmentMode)
+        wsClient = WsClient.Instance;
+
+        //if (gameManager.isTutorial & !wsClient.playerVals.valuesSet)
+        //{
+        //    player.playerName = playerName;
+        //    player.gender = gender;
+        //    player.contingency = contingency;
+        //    player.height = height; //TODO USEFUL?
+        //    player.isRealPlayer = true;
+        //    // we tell the game that the players values are set
+        //    gameManager.playerContingencySet = true;
+        //    gameManager.playerValuesAreSet = true;
+        //}
+        //else
+        //{
+            if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
             {
                 UpdateGameValues();
             }
+        //}
+        if (wsClient.playerVals.valuesSet)
+        {
+            gameManager.playerValsReceivedViaWS = true;
         }
     }
 
@@ -49,6 +56,7 @@ public class SetGameValues : MonoBehaviour
     {
         if (gameManager.playerValsReceivedViaWS)
         {
+            Debug.Log("update received from WS for player vals");
             SetPlayerVals(wsClient.playerVals);
             gameManager.playerValsReceivedViaWS = false;
         }
@@ -108,7 +116,8 @@ public class SetGameValues : MonoBehaviour
         }
 
         // we tell the game that the players values are set
-        gameManager.playerSettingsAreSet = true;
+        gameManager.playerValuesAreSet = true;
+        gameManager.playerContingencySet = true;
 
     }
 }
