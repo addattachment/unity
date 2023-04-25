@@ -636,6 +636,8 @@ inline void List_1__ctor_m2DB8727D61B05CA6D6BA040AD419E43D717F63CD (List_1_t4E99
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
+// System.Void TrialList::GenerateTrialList(Contingency)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_GenerateTrialList_m577E615B45D3D75198EEECFE1D38E0606A43E903 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, int32_t ___0_cont, const RuntimeMethod* method) ;
 // System.Void TrialList::LoadFromResourcesFolder(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, String_t* ___0_contingency_dir, const RuntimeMethod* method) ;
 // System.Void TrialList::ReadTrial(UnityEngine.TextAsset)
@@ -852,13 +854,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Update_mB1CF3505C4066D92BEF249
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// if ((gameManager.trialListGenerated == false) && (gameManager.playerContingencySet == true))
+		// if ((gameManager.trialListGenerated == false)
+		//     && (gameManager.playerContingencySet == true))
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
 		NullCheck(L_0);
 		bool L_1 = L_0->___trialListGenerated_14;
 		if (L_1)
 		{
-			goto IL_0063;
+			goto IL_0035;
 		}
 	}
 	{
@@ -867,48 +870,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Update_mB1CF3505C4066D92BEF249
 		bool L_3 = L_2->___playerContingencySet_7;
 		if (!L_3)
 		{
-			goto IL_0063;
+			goto IL_0035;
 		}
 	}
 	{
 		// Debug.Log("triallist gets filled in");
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral37902E49F2F000AC1ADADF32E0E80DE3E9759827, NULL);
-		// if (player.contingency == Contingency.c_20)
+		// GenerateTrialList(player.contingency);
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_4 = __this->___player_4;
 		NullCheck(L_4);
 		int32_t L_5 = L_4->___contingency_9;
-		if (L_5)
-		{
-			goto IL_003f;
-		}
-	}
-	{
-		// LoadFromResourcesFolder(data20_dir);
-		String_t* L_6 = __this->___data20_dir_5;
-		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_6, NULL);
-		goto IL_004b;
+		TrialList_GenerateTrialList_m577E615B45D3D75198EEECFE1D38E0606A43E903(__this, L_5, NULL);
 	}
 
-IL_003f:
-	{
-		// LoadFromResourcesFolder(data80_dir);
-		String_t* L_7 = __this->___data80_dir_6;
-		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_7, NULL);
-	}
-
-IL_004b:
-	{
-		// ReadTrial(trialListTA);
-		TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* L_8 = __this->___trialListTA_9;
-		TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED(__this, L_8, NULL);
-		// gameManager.trialListGenerated = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_10;
-		NullCheck(L_9);
-		L_9->___trialListGenerated_14 = (bool)1;
-	}
-
-IL_0063:
+IL_0035:
 	{
 		// }
 		return;

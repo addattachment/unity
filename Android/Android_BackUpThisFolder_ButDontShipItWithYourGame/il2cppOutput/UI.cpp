@@ -4450,7 +4450,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		L_4 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_3, _stringLiteral4ABA381F15CA9627EFAD5E272CCBF684228692FD, NULL);
 		if (L_4)
 		{
-			goto IL_0042;
+			goto IL_004e;
 		}
 	}
 	{
@@ -4459,7 +4459,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		L_6 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_5, _stringLiteral847D5A5753054E478142483124CF500CF3D5029A, NULL);
 		if (L_6)
 		{
-			goto IL_0042;
+			goto IL_004e;
 		}
 	}
 	{
@@ -4468,7 +4468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		L_8 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_7, _stringLiteral3E538D25AD88E153C305B95581F14918239F2431, NULL);
 		if (!L_8)
 		{
-			goto IL_0042;
+			goto IL_004e;
 		}
 	}
 	{
@@ -4476,9 +4476,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_4;
 		NullCheck(L_9);
 		L_9->___isTutorial_12 = (bool)0;
+		// gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = __this->___gameManager_4;
+		NullCheck(L_10);
+		L_10->___trialListGenerated_14 = (bool)0;
 	}
 
-IL_0042:
+IL_004e:
 	{
 		// }
 		return;

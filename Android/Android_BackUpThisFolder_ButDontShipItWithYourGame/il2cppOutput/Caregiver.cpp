@@ -21,17 +21,6 @@ struct VirtualActionInvoker1
 		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
 	}
 };
-template <typename R>
-struct VirtualFuncInvoker0
-{
-	typedef R (*Func)(void*, const RuntimeMethod*);
-
-	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
-	{
-		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
-		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
-	}
-};
 
 // System.Action`1<TMPro.TMP_TextInfo>
 struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
@@ -318,9 +307,9 @@ IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* iTween_t82A7E50FFD092F2F333F366398CB514C4216D153_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral049F27343FA2AE4E8D4C68EB553E54C2AC9C3EE7;
-IL2CPP_EXTERN_C String_t* _stringLiteral1A6C43082731D737AC97B43228707DB8B58F0118;
 IL2CPP_EXTERN_C String_t* _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
 IL2CPP_EXTERN_C String_t* _stringLiteral2B5EC9E0722CD00B76A186E931EAA7E7CF6468C7;
+IL2CPP_EXTERN_C String_t* _stringLiteral2DEAEB793B5FDF993AE9ED1FE3D05DB5B860EAC0;
 IL2CPP_EXTERN_C String_t* _stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018;
 IL2CPP_EXTERN_C String_t* _stringLiteral4E45DE6293D6F936A2D7D0E5BB05562FB280B776;
 IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690;
@@ -335,6 +324,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9266D1432C86ECDE1D1D191364EC19C96B33B914
 IL2CPP_EXTERN_C String_t* _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
 IL2CPP_EXTERN_C String_t* _stringLiteralAF9BD2C5E8DD0D7E06A72F62AE8C1D9C0FEB88C6;
 IL2CPP_EXTERN_C String_t* _stringLiteralBDABE160FEA5C7408D72E2209F8998D1C1A855FF;
+IL2CPP_EXTERN_C String_t* _stringLiteralCD034D9A46232CB6610EB804A99D70B036ADE1D8;
 IL2CPP_EXTERN_C String_t* _stringLiteralD1CAF2FD7CC5FFB66D981890EC5474F03C3E417F;
 IL2CPP_EXTERN_C String_t* _stringLiteralDB1FE973E8B90FB7F12010C42E3B2A848929290B;
 IL2CPP_EXTERN_C String_t* _stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A;
@@ -3184,14 +3174,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateMachine__ctor_m67C3E2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchScene_Switch_mA83C9504B35610381862D080907DD6B800FE6567 (SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* __this, const RuntimeMethod* method) ;
 // System.Void ScoreCaregiver::EnableScoring()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2 (ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* __this, const RuntimeMethod* method) ;
+// System.String System.Int32::ToString()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+// System.String System.String::Concat(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB (RuntimeObject* ___0_message, const RuntimeMethod* method) ;
 // System.Void ScoreCaregiver::SendScore(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49 (ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* __this, int32_t ___0_trialIndex, const RuntimeMethod* method) ;
 // WsClient WsClient::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075 (const RuntimeMethod* method) ;
-// System.String System.String::Concat(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m9E3155FB84015C823606188F53B47CB44C444991 (String_t* ___0_str0, String_t* ___1_str1, const RuntimeMethod* method) ;
 // System.Void CaregiverIntroIdleState::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroIdleState__ctor_mC8C529F7C0F9ADB9D7FCA4909DFA625A5D16C02C (CaregiverIntroIdleState_tB64F401EACA9DA051AE27E7A420119DF682D9CD1* __this, const RuntimeMethod* method) ;
 // System.Void CaregiverIntroWaveState::.ctor()
@@ -4181,7 +4173,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_UpdateState_m
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2DEAEB793B5FDF993AE9ED1FE3D05DB5B860EAC0);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral64CC607F463386550C71091360B80927A4E93C46);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCD034D9A46232CB6610EB804A99D70B036ADE1D8);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -4194,108 +4188,100 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_UpdateState_m
 		bool L_2 = L_1->___scoringStarted_18;
 		if (!L_2)
 		{
-			goto IL_00c7;
+			goto IL_0100;
 		}
 	}
 	{
+		// Debug.Log("passthrough: " + passthrough);
+		int32_t* L_3 = (&__this->___passthrough_0);
+		String_t* L_4;
+		L_4 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_3, NULL);
+		String_t* L_5;
+		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral2DEAEB793B5FDF993AE9ED1FE3D05DB5B860EAC0, L_4, NULL);
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
 		// switch (passthrough)
-		int32_t L_3 = __this->___passthrough_0;
-		V_0 = L_3;
-		int32_t L_4 = V_0;
-		switch (L_4)
+		int32_t L_6 = __this->___passthrough_0;
+		V_0 = L_6;
+		int32_t L_7 = V_0;
+		switch (L_7)
 		{
 			case 0:
 			{
-				goto IL_002e;
+				goto IL_0048;
 			}
 			case 1:
 			{
-				goto IL_006f;
+				goto IL_00a8;
 			}
 			case 2:
 			{
-				goto IL_00a4;
+				goto IL_00dd;
 			}
 		}
 	}
 	{
-		goto IL_00c7;
+		goto IL_0100;
 	}
 
-IL_002e:
+IL_0048:
 	{
 		// state.scoreCaregiver.scoringStarted = false;
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_5 = ___0_state;
-		NullCheck(L_5);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_6 = L_5->___scoreCaregiver_14;
-		NullCheck(L_6);
-		L_6->___scoringStarted_18 = (bool)0;
-		// if (state.scoreCaregiver.caregiverScore >= 8)
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_7 = ___0_state;
-		NullCheck(L_7);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_8 = L_7->___scoreCaregiver_14;
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_8 = ___0_state;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___caregiverScore_13;
-		if ((((int32_t)L_9) < ((int32_t)8)))
-		{
-			goto IL_0063;
-		}
-	}
-	{
-		// passthrough++;
-		int32_t L_10 = __this->___passthrough_0;
-		__this->___passthrough_0 = ((int32_t)il2cpp_codegen_add(L_10, 1));
-		// state.scoreCaregiver.EnableScoring();
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_11 = ___0_state;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_9 = L_8->___scoreCaregiver_14;
+		NullCheck(L_9);
+		L_9->___scoringStarted_18 = (bool)0;
+		// Debug.Log("score: " + state.scoreCaregiver.caregiverScore);
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_10 = ___0_state;
+		NullCheck(L_10);
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_14;
 		NullCheck(L_11);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_12 = L_11->___scoreCaregiver_14;
-		NullCheck(L_12);
-		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_12, NULL);
-		goto IL_00c7;
-	}
-
-IL_0063:
-	{
-		// Debug.Log("te lage score");
+		int32_t* L_12 = (&L_11->___caregiverScore_13);
+		String_t* L_13;
+		L_13 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_12, NULL);
+		String_t* L_14;
+		L_14 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteralCD034D9A46232CB6610EB804A99D70B036ADE1D8, L_13, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral64CC607F463386550C71091360B80927A4E93C46, NULL);
-		// break;
-		goto IL_00c7;
-	}
-
-IL_006f:
-	{
-		// state.scoreCaregiver.scoringStarted = false;
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_13 = ___0_state;
-		NullCheck(L_13);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_14 = L_13->___scoreCaregiver_14;
-		NullCheck(L_14);
-		L_14->___scoringStarted_18 = (bool)0;
-		// if(state.scoreCaregiver.caregiverScore <= 2)
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_14, NULL);
+		// if (state.scoreCaregiver.caregiverScore >= 8)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_15 = ___0_state;
 		NullCheck(L_15);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_16 = L_15->___scoreCaregiver_14;
 		NullCheck(L_16);
 		int32_t L_17 = L_16->___caregiverScore_13;
-		if ((((int32_t)L_17) > ((int32_t)2)))
+		if ((((int32_t)L_17) < ((int32_t)8)))
 		{
-			goto IL_00c7;
+			goto IL_0091;
 		}
 	}
 	{
 		// passthrough++;
 		int32_t L_18 = __this->___passthrough_0;
 		__this->___passthrough_0 = ((int32_t)il2cpp_codegen_add(L_18, 1));
+		goto IL_009b;
+	}
+
+IL_0091:
+	{
+		// Debug.Log("te lage score");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral64CC607F463386550C71091360B80927A4E93C46, NULL);
+	}
+
+IL_009b:
+	{
 		// state.scoreCaregiver.EnableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_19 = ___0_state;
 		NullCheck(L_19);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_20 = L_19->___scoreCaregiver_14;
 		NullCheck(L_20);
 		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_20, NULL);
-		goto IL_00c7;
+		// break;
+		goto IL_0100;
 	}
 
-IL_00a4:
+IL_00a8:
 	{
 		// state.scoreCaregiver.scoringStarted = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_21 = ___0_state;
@@ -4303,44 +4289,81 @@ IL_00a4:
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_22 = L_21->___scoreCaregiver_14;
 		NullCheck(L_22);
 		L_22->___scoringStarted_18 = (bool)0;
-		// state.scoreCaregiver.SendScore(-1);
+		// if (state.scoreCaregiver.caregiverScore <= 2)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_23 = ___0_state;
 		NullCheck(L_23);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_24 = L_23->___scoreCaregiver_14;
 		NullCheck(L_24);
-		ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49(L_24, (-1), NULL);
-		// state.feedbackButton.RaiseFeedbackPole();
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_25 = ___0_state;
-		NullCheck(L_25);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_26 = L_25->___feedbackButton_13;
-		NullCheck(L_26);
-		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_26, NULL);
+		int32_t L_25 = L_24->___caregiverScore_13;
+		if ((((int32_t)L_25) > ((int32_t)2)))
+		{
+			goto IL_00d0;
+		}
+	}
+	{
+		// passthrough++;
+		int32_t L_26 = __this->___passthrough_0;
+		__this->___passthrough_0 = ((int32_t)il2cpp_codegen_add(L_26, 1));
 	}
 
-IL_00c7:
+IL_00d0:
 	{
-		// if (state.feedbackButton.isTouched)
+		// state.scoreCaregiver.EnableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_27 = ___0_state;
 		NullCheck(L_27);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_28 = L_27->___feedbackButton_13;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_28 = L_27->___scoreCaregiver_14;
 		NullCheck(L_28);
-		bool L_29 = L_28->___isTouched_7;
-		if (!L_29)
+		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_28, NULL);
+		// break;
+		goto IL_0100;
+	}
+
+IL_00dd:
+	{
+		// state.scoreCaregiver.scoringStarted = false;
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_29 = ___0_state;
+		NullCheck(L_29);
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_30 = L_29->___scoreCaregiver_14;
+		NullCheck(L_30);
+		L_30->___scoringStarted_18 = (bool)0;
+		// state.scoreCaregiver.SendScore(-1);
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_31 = ___0_state;
+		NullCheck(L_31);
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_32 = L_31->___scoreCaregiver_14;
+		NullCheck(L_32);
+		ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49(L_32, (-1), NULL);
+		// state.feedbackButton.RaiseFeedbackPole();
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_33 = ___0_state;
+		NullCheck(L_33);
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_34 = L_33->___feedbackButton_13;
+		NullCheck(L_34);
+		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_34, NULL);
+	}
+
+IL_0100:
+	{
+		// if (state.feedbackButton.isTouched)
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_35 = ___0_state;
+		NullCheck(L_35);
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_36 = L_35->___feedbackButton_13;
+		NullCheck(L_36);
+		bool L_37 = L_36->___isTouched_7;
+		if (!L_37)
 		{
-			goto IL_00e0;
+			goto IL_0119;
 		}
 	}
 	{
 		// state.SwitchState(state.caregiverIntroEndState);
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_30 = ___0_state;
-		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_31 = ___0_state;
-		NullCheck(L_31);
-		CaregiverIntroEndState_tA70AB25585F490CBBEF6EEA88F2CC4FDEC61E272* L_32 = L_31->___caregiverIntroEndState_9;
-		NullCheck(L_30);
-		CaregiverIntroStateManager_SwitchState_m4C81D18B4DD2D72C885026B0C293E8EEA749221E(L_30, L_32, NULL);
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_38 = ___0_state;
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_39 = ___0_state;
+		NullCheck(L_39);
+		CaregiverIntroEndState_tA70AB25585F490CBBEF6EEA88F2CC4FDEC61E272* L_40 = L_39->___caregiverIntroEndState_9;
+		NullCheck(L_38);
+		CaregiverIntroStateManager_SwitchState_m4C81D18B4DD2D72C885026B0C293E8EEA749221E(L_38, L_40, NULL);
 	}
 
-IL_00e0:
+IL_0119:
 	{
 		// }
 		return;
@@ -4389,26 +4412,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_Start_mF32D69
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_10 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_10), (void*)L_0);
+		// ws = WsClient.Instance;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_1;
+		L_1 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_16 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_16), (void*)L_1);
 		// currentCaregiverState = caregiverIdleState;
-		CaregiverIntroIdleState_tB64F401EACA9DA051AE27E7A420119DF682D9CD1* L_0 = __this->___caregiverIdleState_5;
-		__this->___currentCaregiverState_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_0);
+		CaregiverIntroIdleState_tB64F401EACA9DA051AE27E7A420119DF682D9CD1* L_2 = __this->___caregiverIdleState_5;
+		__this->___currentCaregiverState_4 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_2);
 		// caregiverPhase = "caregiverIntroIdleState";
 		__this->___caregiverPhase_19 = _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_19), (void*)_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
 		// currentCaregiverState.EnterState(this);
-		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_1 = __this->___currentCaregiverState_4;
-		NullCheck(L_1);
-		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_1, __this);
-		// gameManager = GameManager.Instance;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
-		__this->___gameManager_10 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_10), (void*)L_2);
-		// ws = WsClient.Instance;
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_3;
-		L_3 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_16 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_16), (void*)L_3);
+		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_3 = __this->___currentCaregiverState_4;
+		NullCheck(L_3);
+		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_3, __this);
 		// }
 		return;
 	}
@@ -4428,19 +4451,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_Update_mDB6DD
 // System.Void CaregiverIntroStateManager::SwitchState(CaregiverIntroStateMachine)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_SwitchState_m4C81D18B4DD2D72C885026B0C293E8EEA749221E (CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* __this, CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* ___0_newState, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1A6C43082731D737AC97B43228707DB8B58F0118);
-		s_Il2CppMethodInitialized = true;
-	}
-	CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* G_B2_0 = NULL;
-	String_t* G_B2_1 = NULL;
-	CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* G_B1_0 = NULL;
-	String_t* G_B1_1 = NULL;
-	String_t* G_B3_0 = NULL;
-	String_t* G_B3_1 = NULL;
 	{
 		// currentCaregiverState.ExitState(this);
 		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_0 = __this->___currentCaregiverState_4;
@@ -4450,43 +4460,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_SwitchState_m
 		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_1 = ___0_newState;
 		__this->___currentCaregiverState_4 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_1);
-		// Debug.Log("new state: " + newState);
-		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_2 = ___0_newState;
-		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_3 = L_2;
-		G_B1_0 = L_3;
-		G_B1_1 = _stringLiteral1A6C43082731D737AC97B43228707DB8B58F0118;
-		if (L_3)
-		{
-			G_B2_0 = L_3;
-			G_B2_1 = _stringLiteral1A6C43082731D737AC97B43228707DB8B58F0118;
-			goto IL_0020;
-		}
-	}
-	{
-		G_B3_0 = ((String_t*)(NULL));
-		G_B3_1 = G_B1_1;
-		goto IL_0025;
-	}
-
-IL_0020:
-	{
-		NullCheck(G_B2_0);
-		String_t* L_4;
-		L_4 = VirtualFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, G_B2_0);
-		G_B3_0 = L_4;
-		G_B3_1 = G_B2_1;
-	}
-
-IL_0025:
-	{
-		String_t* L_5;
-		L_5 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(G_B3_1, G_B3_0, NULL);
-		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
-		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_5, NULL);
 		// currentCaregiverState.EnterState(this);
-		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_6 = __this->___currentCaregiverState_4;
-		NullCheck(L_6);
-		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_6, __this);
+		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_2 = __this->___currentCaregiverState_4;
+		NullCheck(L_2);
+		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_2, __this);
 		// }
 		return;
 	}
