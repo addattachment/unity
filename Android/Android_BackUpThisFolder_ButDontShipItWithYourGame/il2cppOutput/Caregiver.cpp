@@ -3723,8 +3723,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTestEmotionU3Ed__12_System_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// System.Void CaregiverFeedback::Start()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_Start_mEFFE0FFAFA00501C13F99DFF402F20A71115C95E (CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* __this, const RuntimeMethod* method) 
+// System.Void CaregiverFeedback::Awake()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_Awake_mBFD2F808CD8157111B7B15B542997F73D58B78F6 (CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -7176,39 +7176,39 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager_Start_m120C6C34DA6
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_9), (void*)L_0);
+		// ws = WsClient.Instance;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_1;
+		L_1 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_18 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_18), (void*)L_1);
 		// currentCaregiverState = caregiverIdleState;
-		CaregiverIdleState_t972F54309415AC9990B63DE01D25C23D57719DE5* L_0 = __this->___caregiverIdleState_5;
-		__this->___currentCaregiverState_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_0);
+		CaregiverIdleState_t972F54309415AC9990B63DE01D25C23D57719DE5* L_2 = __this->___caregiverIdleState_5;
+		__this->___currentCaregiverState_4 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_2);
 		// caregiverPhase = "caregiverIdleState";
 		__this->___caregiverPhase_20 = _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_20), (void*)_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
 		// currentCaregiverState.EnterState(this);
-		CaregiverStateMachine_t89FEF527272FD5AC06094864E5496A5307B71698* L_1 = __this->___currentCaregiverState_4;
-		NullCheck(L_1);
-		VirtualActionInvoker1< CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* >::Invoke(4 /* System.Void CaregiverStateMachine::EnterState(CaregiverStateManager) */, L_1, __this);
-		// gameManager = GameManager.Instance;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
-		__this->___gameManager_9 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_9), (void*)L_2);
-		// caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = __this->___caregiverFeedbackScreen_15;
+		CaregiverStateMachine_t89FEF527272FD5AC06094864E5496A5307B71698* L_3 = __this->___currentCaregiverState_4;
 		NullCheck(L_3);
-		CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* L_4;
-		L_4 = GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C(L_3, GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
-		__this->___caregiverFeedback_12 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedback_12), (void*)L_4);
+		VirtualActionInvoker1< CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* >::Invoke(4 /* System.Void CaregiverStateMachine::EnterState(CaregiverStateManager) */, L_3, __this);
+		// caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___caregiverFeedbackScreen_15;
+		NullCheck(L_4);
+		CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* L_5;
+		L_5 = GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C(L_4, GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
+		__this->___caregiverFeedback_12 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedback_12), (void*)L_5);
 		// caregiverFeedbackEvent = new();
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_5 = (CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40*)il2cpp_codegen_object_new(CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40_il2cpp_TypeInfo_var);
-		NullCheck(L_5);
-		CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633(L_5, NULL);
-		__this->___caregiverFeedbackEvent_19 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedbackEvent_19), (void*)L_5);
-		// ws = WsClient.Instance;
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_6;
-		L_6 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_18 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_18), (void*)L_6);
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_6 = (CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40*)il2cpp_codegen_object_new(CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40_il2cpp_TypeInfo_var);
+		NullCheck(L_6);
+		CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633(L_6, NULL);
+		__this->___caregiverFeedbackEvent_19 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedbackEvent_19), (void*)L_6);
 		// }
 		return;
 	}
