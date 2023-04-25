@@ -12,6 +12,7 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private float scaleCircleDistance = 5.0f;
     [SerializeField] private float maxDistance = 2.0f;
 
+    public int caregiverScore = 0;
     private float controllerStartDist = 0.0f;
     public float controllerDist = 0.0f;
     [SerializeField] private float circleDist = 0.0f;
@@ -31,7 +32,8 @@ public class ScoreCaregiver : MonoBehaviour
     {
         //debug_text = GameObject.FindGameObjectWithTag("debug")
         //               .GetComponentInChildren<DebugConnection>();
-        ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
+        ws = WsClient.Instance;
+
         appear = GetComponent<Appear>();
         startPosMeCircle = meCircle.transform.position;
         startPosCaregiverCircle = caregiverCircle.transform.position;
@@ -79,13 +81,20 @@ public class ScoreCaregiver : MonoBehaviour
         {
             CalcDistanceBetweenControllers();
             MoveCircles();
+            CalcScore();
         }
+    }
+
+    private void CalcScore()
+    {
+        //TODO numbering not good, I think we need a non-linear scale?
+        caregiverScore = (int)(10 * (maxDistance - controllerDist) / maxDistance);
+
     }
 
     public void SendScore(int trialIndex)
     {
-        //TODO numbering not good, I think we need a non-linear scale?
-        int caregiverScore = (int)(10 * (maxDistance - controllerDist) / maxDistance);
+        
         //debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
         caregiverScoreEvent.Set(trialIndex, caregiverScore);
         ws.SendWSMessage(caregiverScoreEvent.SaveToString());

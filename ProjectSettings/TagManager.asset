@@ -29,6 +29,7 @@ TagManager:
   - simBall
   - left
   - right
+  - PlayerGroup
   layers:
   - Default
   - TransparentFX

@@ -24,9 +24,10 @@ public class SetGameValues : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameManager = GetComponent<GameManager>();
+        gameManager = GameManager.Instance;
         wsClient = WsClient.Instance;
-
+        //player = GameObject.FindGameObjectWithTag("player").GetComponent<Player>();
+        
         //if (gameManager.isTutorial & !wsClient.playerVals.valuesSet)
         //{
         //    player.playerName = playerName;
@@ -40,10 +41,10 @@ public class SetGameValues : MonoBehaviour
         //}
         //else
         //{
-            //if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
-            //{
-            //    UpdateGameValues();
-            //}
+        if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
+        {
+            UpdateGameValues();
+        }
         //}
         if (wsClient.playerVals.valuesSet)
         {

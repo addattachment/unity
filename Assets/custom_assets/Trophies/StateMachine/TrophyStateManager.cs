@@ -33,12 +33,16 @@ public class TrophyStateManager : MonoBehaviour
     //public bool trophyIsGiven = false;
     private void Start()
     {
+        ws = WsClient.Instance;
+        gameManager = GameManager.Instance;
+        if (players == null)
+        {
+            players = GameObject.FindGameObjectWithTag("PlayerGroup").GetComponent<PlayerGroup>();
+        }
         currentTrophyState = trophyInitState;
         trophyState = "trophyInitState";
         currentTrophyState.EnterState(this);
-        gameManager = GameManager.Instance;
         trophyStateMgrEvent = new("trophystate");
-        ws = WsClient.Instance;
     }
     private void Update()
     {

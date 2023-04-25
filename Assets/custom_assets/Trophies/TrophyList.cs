@@ -33,6 +33,7 @@ public class TrophyList : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        testPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         trophiesList = Resources.LoadAll<GameObject>(trophy_dir);
         trophiesList = Reshuffle(trophiesList);
         ht = iTween.Hash("position", testPlayer.trophySpawnLocation, "delay", 1f);
