@@ -36,19 +36,11 @@ public class TrialList : MonoBehaviour
 
     private void Update()
     {
-        if ((gameManager.trialListGenerated == false) && (gameManager.playerContingencySet == true))
+        if ((gameManager.trialListGenerated == false) 
+            && (gameManager.playerContingencySet == true))
         {
             Debug.Log("triallist gets filled in");
-            if (player.contingency == Contingency.c_20)
-            {
-                LoadFromResourcesFolder(data20_dir);
-            }
-            else
-            {
-                LoadFromResourcesFolder(data80_dir);
-            }
-            ReadTrial(trialListTA);
-            gameManager.trialListGenerated = true;
+            GenerateTrialList(player.contingency);
         }
     }
 

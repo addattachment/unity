@@ -26,8 +26,8 @@ public class SetGameValues : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         wsClient = WsClient.Instance;
-        //player = GameObject.FindGameObjectWithTag("player").GetComponent<Player>();
-        
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
         //if (gameManager.isTutorial & !wsClient.playerVals.valuesSet)
         //{
         //    player.playerName = playerName;
@@ -75,7 +75,7 @@ public class SetGameValues : MonoBehaviour
 
     public void UpdateGameValues()
     {
-
+        Debug.Log("UpdateGameValues");
         // we set the values for the normal player and the NPC, both should be male
         player.playerName = playerName;
         player.gender = gender;
@@ -114,6 +114,7 @@ public class SetGameValues : MonoBehaviour
             NPC.contingency = Contingency.c_20; // DONT CARE
             NPC.height = height; //TODO USEFUL?
             NPC.isRealPlayer = false;
+            //GenerateTrialList(player.contingency);
         }
 
         // we tell the game that the players values are set

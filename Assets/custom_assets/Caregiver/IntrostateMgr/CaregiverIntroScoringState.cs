@@ -20,37 +20,39 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
     {
         if (state.scoreCaregiver.scoringStarted)
         {
+            Debug.Log("passthrough: " + passthrough);
             switch (passthrough)
             {
                 case 0:
                     state.scoreCaregiver.scoringStarted = false;
-                    // als score goed, passthrough++
+                    Debug.Log("score: " + state.scoreCaregiver.caregiverScore);
                     if (state.scoreCaregiver.caregiverScore >= 8)
                     {
+                        // als score goed, passthrough++
                         passthrough++;
-                        state.scoreCaregiver.EnableScoring();
                     }
                     else
                     {
+                        // anders boodschap geven opnieuw te proberen
                         // play audio file: probeer eens opnieuw
                         Debug.Log("te lage score");
                     }
-                    // anders boodschap geven opnieuw te proberen
+                    state.scoreCaregiver.EnableScoring();
+
                     break;
                 case 1:
                     state.scoreCaregiver.scoringStarted = false;
                     // als score goed, passthrough++
                     // anders boodschap geven opnieuw te proberen
-                    if(state.scoreCaregiver.caregiverScore <= 2)
+                    if (state.scoreCaregiver.caregiverScore <= 2)
                     {
                         passthrough++;
-                        state.scoreCaregiver.EnableScoring();
-
                     }
                     else
                     {
                         // play audio file: probeer eens opnieuw
                     }
+                    state.scoreCaregiver.EnableScoring();
                     break;
                 case 2:
                     state.scoreCaregiver.scoringStarted = false;
@@ -62,14 +64,11 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                     break;
 
             }
-
-
         }
         if (state.feedbackButton.isTouched)
         {
             state.SwitchState(state.caregiverIntroEndState);
         }
-
     }
 }
 /*
