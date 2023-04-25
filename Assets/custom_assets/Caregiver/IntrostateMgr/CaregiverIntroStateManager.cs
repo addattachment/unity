@@ -32,13 +32,14 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public string caregiverPhase = "caregiverIntroIdleState";
     private void Start()
     {
+        gameManager = GameManager.Instance;
+        ws = WsClient.Instance;
+
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIntroIdleState";
         currentCaregiverState.EnterState(this);
-        gameManager = GameManager.Instance;
         //caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
         //caregiverFeedbackEvent = new();
-        ws = WsClient.Instance;
     }
     private void Update()
     {
@@ -48,7 +49,6 @@ public class CaregiverIntroStateManager : MonoBehaviour
     {
         currentCaregiverState.ExitState(this);
         currentCaregiverState = newState;
-        Debug.Log("new state: " + newState);
         currentCaregiverState.EnterState(this);
     }
 
