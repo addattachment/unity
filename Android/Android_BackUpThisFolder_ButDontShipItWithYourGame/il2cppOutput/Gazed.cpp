@@ -175,10 +175,10 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___NPCShootsBall_8;
 	// System.Boolean GameManager::newNameSet
 	bool ___newNameSet_9;
-	// System.Boolean GameManager::restartBool
-	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_11;
+	bool ___allMust_10;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_11;
 	// System.Boolean GameManager::isTutorial
 	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame

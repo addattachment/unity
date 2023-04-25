@@ -176,6 +176,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral15833DB7FAD1CE5616D7932A611AF1FEFCEA9257
 IL2CPP_EXTERN_C String_t* _stringLiteral16471A0892B86077148A4B0E66B19E093D740D2C;
 IL2CPP_EXTERN_C String_t* _stringLiteral2269B8905A76507BD43219BB25D47065201000BB;
 IL2CPP_EXTERN_C String_t* _stringLiteral27CA1F8CCEF8468E4C1A75C062B501CDB5D7301A;
+IL2CPP_EXTERN_C String_t* _stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3;
 IL2CPP_EXTERN_C String_t* _stringLiteral39BB912CB0CCECC3E3162A4CA2A0B8CE86A90383;
 IL2CPP_EXTERN_C String_t* _stringLiteral51C6279E31F7483126B79E3000116001A915B690;
 IL2CPP_EXTERN_C String_t* _stringLiteral51E50A085191273306EC02FC338B7CC6E4D4BE73;
@@ -188,11 +189,14 @@ IL2CPP_EXTERN_C String_t* _stringLiteral97D392A98B43E1EA6BE41940F9752DD3F8DDCB33
 IL2CPP_EXTERN_C String_t* _stringLiteral9B7D35B33FA0003BD91C509D4953B97499A18DF9;
 IL2CPP_EXTERN_C String_t* _stringLiteralBDABE160FEA5C7408D72E2209F8998D1C1A855FF;
 IL2CPP_EXTERN_C String_t* _stringLiteralC5BAB729F65C165630AF182924DFB1ECAEF3EAC8;
+IL2CPP_EXTERN_C String_t* _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70;
 IL2CPP_EXTERN_C String_t* _stringLiteralCCDD73351EA58C1B175C2B4DBD47A11738AE31A8;
 IL2CPP_EXTERN_C String_t* _stringLiteralD1CAF2FD7CC5FFB66D981890EC5474F03C3E417F;
 IL2CPP_EXTERN_C String_t* _stringLiteralE2F0D48B27BE5837497DA1FF29117A29C390B560;
 IL2CPP_EXTERN_C String_t* _stringLiteralF5CAA8F8385F4F116F0968A5586DBB9814E1CB9E;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1E9AD091F9C98BEFECEB48E77CEB2BDE8ABA369B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisRigidbody_t268697F5A994213ED97393309870968BC1C7393C_m2D7F86C77ECF9B82AAC077B511F1004280571B90_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m43FBF207375C6E06B8C45ECE614F9B8008FB686E_RuntimeMethod_var;
@@ -650,10 +654,10 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___NPCShootsBall_8;
 	// System.Boolean GameManager::newNameSet
 	bool ___newNameSet_9;
-	// System.Boolean GameManager::restartBool
-	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_11;
+	bool ___allMust_10;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_11;
 	// System.Boolean GameManager::isTutorial
 	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame
@@ -1261,10 +1265,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void announceWinner_HideWinnerCanvas_m6473960
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// System.Void StateMgrEvent::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) ;
 // WsClient WsClient::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075 (const RuntimeMethod* method) ;
+// UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE (String_t* ___0_tag, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<PlayerGroup>()
+inline PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// System.Void StateMgrEvent::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) ;
 // System.Void StateMgrEvent::Set(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6_inline (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_states, const RuntimeMethod* method) ;
 // System.String StateMgrEvent::SaveToString()
@@ -1290,6 +1301,11 @@ inline Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* GameObject_GetCompone
 }
 // System.Void UnityEngine.Renderer::set_enabled(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8 (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* __this, bool ___0_value, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<Player>()
+inline Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
 // T[] UnityEngine.Resources::LoadAll<UnityEngine.GameObject>(System.String)
 inline GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC (String_t* ___0_path, const RuntimeMethod* method)
 {
@@ -1968,38 +1984,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyStateManager_Start_mDD42315139A011
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral62FD002BEB924E97A634AEECABFCE37D15B10571);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralC5BAB729F65C165630AF182924DFB1ECAEF3EAC8);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// ws = WsClient.Instance;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_0;
+		L_0 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_19 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_19), (void*)L_0);
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_11 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_11), (void*)L_1);
+		// if (players == null)
+		PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* L_2 = __this->___players_12;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// players = GameObject.FindGameObjectWithTag("PlayerGroup").GetComponent<PlayerGroup>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3, NULL);
+		NullCheck(L_4);
+		PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* L_5;
+		L_5 = GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B(L_4, GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var);
+		__this->___players_12 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___players_12), (void*)L_5);
+	}
+
+IL_0039:
+	{
 		// currentTrophyState = trophyInitState;
-		TrophyInitState_t943ABAF889D45BD5EC915DCBC89750AAFBE595CF* L_0 = __this->___trophyInitState_6;
-		__this->___currentTrophyState_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentTrophyState_4), (void*)L_0);
+		TrophyInitState_t943ABAF889D45BD5EC915DCBC89750AAFBE595CF* L_6 = __this->___trophyInitState_6;
+		__this->___currentTrophyState_4 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentTrophyState_4), (void*)L_6);
 		// trophyState = "trophyInitState";
 		__this->___trophyState_5 = _stringLiteralC5BAB729F65C165630AF182924DFB1ECAEF3EAC8;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophyState_5), (void*)_stringLiteralC5BAB729F65C165630AF182924DFB1ECAEF3EAC8);
 		// currentTrophyState.EnterState(this);
-		TrophyStateMachine_tE16802EAF28D1FA8AB0CB8108B089B51A8C9F91C* L_1 = __this->___currentTrophyState_4;
-		NullCheck(L_1);
-		VirtualActionInvoker1< TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* >::Invoke(4 /* System.Void TrophyStateMachine::EnterState(TrophyStateManager) */, L_1, __this);
-		// gameManager = GameManager.Instance;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
-		__this->___gameManager_11 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_11), (void*)L_2);
+		TrophyStateMachine_tE16802EAF28D1FA8AB0CB8108B089B51A8C9F91C* L_7 = __this->___currentTrophyState_4;
+		NullCheck(L_7);
+		VirtualActionInvoker1< TrophyStateManager_tF770DD096B59FDE5876570AB1D2ACDC45B969CF6* >::Invoke(4 /* System.Void TrophyStateMachine::EnterState(TrophyStateManager) */, L_7, __this);
 		// trophyStateMgrEvent = new("trophystate");
-		StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* L_3 = (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA*)il2cpp_codegen_object_new(StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE(L_3, _stringLiteral62FD002BEB924E97A634AEECABFCE37D15B10571, NULL);
-		__this->___trophyStateMgrEvent_20 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophyStateMgrEvent_20), (void*)L_3);
-		// ws = WsClient.Instance;
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_4;
-		L_4 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_19 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_19), (void*)L_4);
+		StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* L_8 = (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA*)il2cpp_codegen_object_new(StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE(L_8, _stringLiteral62FD002BEB924E97A634AEECABFCE37D15B10571, NULL);
+		__this->___trophyStateMgrEvent_20 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophyStateMgrEvent_20), (void*)L_8);
 		// }
 		return;
 	}
@@ -2307,55 +2349,65 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_Start_m1C62B63E9147CF855F7457
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral88BDF3D0791A560245652E772545C49897854443);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&iTween_t82A7E50FFD092F2F333F366398CB514C4216D153_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// testPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70, NULL);
+		NullCheck(L_0);
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_1;
+		L_1 = GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA(L_0, GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
+		__this->___testPlayer_22 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___testPlayer_22), (void*)L_1);
 		// trophiesList = Resources.LoadAll<GameObject>(trophy_dir);
-		String_t* L_0 = __this->___trophy_dir_6;
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_1;
-		L_1 = Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC(L_0, Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC_RuntimeMethod_var);
-		__this->___trophiesList_4 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophiesList_4), (void*)L_1);
-		// trophiesList = Reshuffle(trophiesList);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_2 = __this->___trophiesList_4;
+		String_t* L_2 = __this->___trophy_dir_6;
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_3;
-		L_3 = TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4(__this, L_2, NULL);
+		L_3 = Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC(L_2, Resources_LoadAll_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_mBBF6B0D85A5F905D0836AC87598997983C787EBC_RuntimeMethod_var);
 		__this->___trophiesList_4 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophiesList_4), (void*)L_3);
+		// trophiesList = Reshuffle(trophiesList);
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_4 = __this->___trophiesList_4;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_5;
+		L_5 = TrophyList_Reshuffle_m275523DA555390148B3549B69C976537A93E01A4(__this, L_4, NULL);
+		__this->___trophiesList_4 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trophiesList_4), (void*)L_5);
 		// ht = iTween.Hash("position", testPlayer.trophySpawnLocation, "delay", 1f);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_5 = L_4;
-		NullCheck(L_5);
-		ArrayElementTypeCheck (L_5, _stringLiteral88BDF3D0791A560245652E772545C49897854443);
-		(L_5)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)_stringLiteral88BDF3D0791A560245652E772545C49897854443);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = L_5;
-		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_7 = __this->___testPlayer_22;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)4);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_7 = L_6;
 		NullCheck(L_7);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_8 = L_7->___trophySpawnLocation_15;
-		NullCheck(L_6);
-		ArrayElementTypeCheck (L_6, L_8);
-		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_8);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_9 = L_6;
+		ArrayElementTypeCheck (L_7, _stringLiteral88BDF3D0791A560245652E772545C49897854443);
+		(L_7)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)_stringLiteral88BDF3D0791A560245652E772545C49897854443);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_8 = L_7;
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_9 = __this->___testPlayer_22;
 		NullCheck(L_9);
-		ArrayElementTypeCheck (L_9, _stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
-		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)_stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
-		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_10 = L_9;
-		float L_11 = (1.0f);
-		RuntimeObject* L_12 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_11);
-		NullCheck(L_10);
-		ArrayElementTypeCheck (L_10, L_12);
-		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_12);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_9->___trophySpawnLocation_15;
+		NullCheck(L_8);
+		ArrayElementTypeCheck (L_8, L_10);
+		(L_8)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject*)L_10);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_11 = L_8;
+		NullCheck(L_11);
+		ArrayElementTypeCheck (L_11, _stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
+		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(2), (RuntimeObject*)_stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_12 = L_11;
+		float L_13 = (1.0f);
+		RuntimeObject* L_14 = Box(Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C_il2cpp_TypeInfo_var, &L_13);
+		NullCheck(L_12);
+		ArrayElementTypeCheck (L_12, L_14);
+		(L_12)->SetAt(static_cast<il2cpp_array_size_t>(3), (RuntimeObject*)L_14);
 		il2cpp_codegen_runtime_class_init_inline(iTween_t82A7E50FFD092F2F333F366398CB514C4216D153_il2cpp_TypeInfo_var);
-		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_13;
-		L_13 = iTween_Hash_m5CA704245904620D7275B1F683A74248252E4D2C(L_10, NULL);
-		__this->___ht_10 = L_13;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ht_10), (void*)L_13);
+		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_15;
+		L_15 = iTween_Hash_m5CA704245904620D7275B1F683A74248252E4D2C(L_12, NULL);
+		__this->___ht_10 = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ht_10), (void*)L_15);
 		// }
 		return;
 	}

@@ -270,10 +270,10 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___NPCShootsBall_8;
 	// System.Boolean GameManager::newNameSet
 	bool ___newNameSet_9;
-	// System.Boolean GameManager::restartBool
-	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_11;
+	bool ___allMust_10;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_11;
 	// System.Boolean GameManager::isTutorial
 	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame
@@ -910,6 +910,44 @@ IL_004b:
 
 IL_0063:
 	{
+		// }
+		return;
+	}
+}
+// System.Void TrialList::GenerateTrialList(Contingency)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_GenerateTrialList_m577E615B45D3D75198EEECFE1D38E0606A43E903 (TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* __this, int32_t ___0_cont, const RuntimeMethod* method) 
+{
+	{
+		// if (cont == Contingency.c_20)
+		int32_t L_0 = ___0_cont;
+		if (L_0)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// LoadFromResourcesFolder(data20_dir);
+		String_t* L_1 = __this->___data20_dir_5;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_1, NULL);
+		goto IL_001d;
+	}
+
+IL_0011:
+	{
+		// LoadFromResourcesFolder(data80_dir);
+		String_t* L_2 = __this->___data80_dir_6;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_2, NULL);
+	}
+
+IL_001d:
+	{
+		// ReadTrial(trialListTA);
+		TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* L_3 = __this->___trialListTA_9;
+		TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED(__this, L_3, NULL);
+		// gameManager.trialListGenerated = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = __this->___gameManager_10;
+		NullCheck(L_4);
+		L_4->___trialListGenerated_14 = (bool)1;
 		// }
 		return;
 	}

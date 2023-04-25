@@ -30,19 +30,21 @@ extern void TrialList_Awake_m12FC28AA017CBDE6EC919D0DEA4175765FE77E6C (void);
 extern void TrialList_Start_m62C971738CF1E1B1167F68ED9A12FB63F273B6E5 (void);
 // 0x00000009 System.Void TrialList::Update()
 extern void TrialList_Update_mB1CF3505C4066D92BEF2495F9B4D01D2F89FC5CE (void);
-// 0x0000000A System.Void TrialList::LoadFromResourcesFolder(System.String)
+// 0x0000000A System.Void TrialList::GenerateTrialList(Contingency)
+extern void TrialList_GenerateTrialList_m577E615B45D3D75198EEECFE1D38E0606A43E903 (void);
+// 0x0000000B System.Void TrialList::LoadFromResourcesFolder(System.String)
 extern void TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18 (void);
-// 0x0000000B System.Void TrialList::CreateTutorialTrialList()
+// 0x0000000C System.Void TrialList::CreateTutorialTrialList()
 extern void TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3 (void);
-// 0x0000000C System.Void TrialList::ReadTrial(UnityEngine.TextAsset)
+// 0x0000000D System.Void TrialList::ReadTrial(UnityEngine.TextAsset)
 extern void TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED (void);
-// 0x0000000D Trial TrialList::GetCurrentTrial()
+// 0x0000000E Trial TrialList::GetCurrentTrial()
 extern void TrialList_GetCurrentTrial_mE3449ADB7FF0FAFC94D295D55909C31BCC1FDFE0 (void);
-// 0x0000000E System.Void TrialList::NextTrial()
+// 0x0000000F System.Void TrialList::NextTrial()
 extern void TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C (void);
-// 0x0000000F System.Void TrialList::.ctor()
+// 0x00000010 System.Void TrialList::.ctor()
 extern void TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059 (void);
-static Il2CppMethodPointer s_methodPointers[15] = 
+static Il2CppMethodPointer s_methodPointers[16] = 
 {
 	Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3,
 	Trial_GetTrialNumber_mF6FE0261A13F714BA6FA15087BA549B2996B279F,
@@ -53,6 +55,7 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	TrialList_Awake_m12FC28AA017CBDE6EC919D0DEA4175765FE77E6C,
 	TrialList_Start_m62C971738CF1E1B1167F68ED9A12FB63F273B6E5,
 	TrialList_Update_mB1CF3505C4066D92BEF2495F9B4D01D2F89FC5CE,
+	TrialList_GenerateTrialList_m577E615B45D3D75198EEECFE1D38E0606A43E903,
 	TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18,
 	TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3,
 	TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED,
@@ -60,29 +63,30 @@ static Il2CppMethodPointer s_methodPointers[15] =
 	TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C,
 	TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059,
 };
-static const int32_t s_InvokerIndices[15] = 
+static const int32_t s_InvokerIndices[16] = 
 {
-	1340,
-	8712,
-	8624,
-	8749,
-	8712,
-	8903,
-	8903,
-	8903,
-	8903,
-	7085,
-	8903,
-	7085,
-	8749,
-	8903,
-	8903,
+	1341,
+	8713,
+	8625,
+	8750,
+	8713,
+	8904,
+	8904,
+	8904,
+	8904,
+	7046,
+	7086,
+	8904,
+	7086,
+	8750,
+	8904,
+	8904,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_trialList_CodeGenModule;
 const Il2CppCodeGenModule g_trialList_CodeGenModule = 
 {
 	"trialList.dll",
-	15,
+	16,
 	s_methodPointers,
 	0,
 	NULL,

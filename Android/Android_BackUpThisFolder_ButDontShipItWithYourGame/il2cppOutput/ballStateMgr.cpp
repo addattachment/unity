@@ -75,6 +75,8 @@ struct GameSounds_tE160CF1666886E9284AD9EE66D97E21ECF8975B7;
 struct LineRenderer_tEFEF960672DB69CB14B6D181FAE6292F0CF8B63D;
 // UnityEngine.MonoBehaviour
 struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // LSL.OutletPassThrough
 struct OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C;
 // Player
@@ -103,8 +105,6 @@ struct StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA;
 struct String_t;
 // TargetGroup
 struct TargetGroup_t5E01407DB6F0156A988256EA1501BC20342AD444;
-// UnityEngine.UI.Toggle
-struct Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F;
 // UnityEngine.TrailRenderer
 struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
 // TrajectoryManager
@@ -129,7 +129,9 @@ IL2CPP_EXTERN_C RuntimeClass* BallLaunchState_t6D2EB946E335303D3F1DAFE1F2C88EEFF
 IL2CPP_EXTERN_C RuntimeClass* BallPrepState_t22C2C60E4657245335C44C636A2CD04C5F20770A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BallWaitingState_t66CFF72D7D203931328280E950EB41158B51214C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3;
 IL2CPP_EXTERN_C String_t* _stringLiteral50D09EC4F5A46E33630FD038B3AC66D927304936;
 IL2CPP_EXTERN_C String_t* _stringLiteral563B706437BF0772B19FE10900E39C381D170147;
 IL2CPP_EXTERN_C String_t* _stringLiteral952E500E3378324528F2117AD74C47F543278F0A;
@@ -138,6 +140,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDB3C3CC7963131B913A94595557990806DF0F345
 IL2CPP_EXTERN_C String_t* _stringLiteralDD46D071D893700A505BEF56374E75169CB6F334;
 IL2CPP_EXTERN_C String_t* _stringLiteralFC2566D7D48CAB76B0F369066161B2FCB1FD6543;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE76776B8D7950B895DB7DF8E8431E40FCAF7CC2A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -288,6 +291,11 @@ struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12
 {
 };
 
+// UnityEngine.GameObject
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
 // UnityEngine.Behaviour
 struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -407,10 +415,10 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___NPCShootsBall_8;
 	// System.Boolean GameManager::newNameSet
 	bool ___newNameSet_9;
-	// System.Boolean GameManager::restartBool
-	bool ___restartBool_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_11;
+	bool ___allMust_10;
+	// System.Boolean GameManager::developmentMode
+	bool ___developmentMode_11;
 	// System.Boolean GameManager::isTutorial
 	bool ___isTutorial_12;
 	// System.Int32 GameManager::ballsPerGame
@@ -581,20 +589,10 @@ struct Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D  : public MonoBehavio
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___pullSlingShotClip_19;
 	// UnityEngine.AudioSource Slingshot::releaseSlingShotClip
 	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___releaseSlingShotClip_20;
-	// UnityEngine.UI.Toggle Slingshot::toggle_may
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_may_21;
-	// UnityEngine.UI.Toggle Slingshot::toggle_must
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_must_22;
-	// UnityEngine.UI.Toggle Slingshot::toggle_musnt
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_musnt_23;
-	// UnityEngine.UI.Toggle Slingshot::toggle_prefmust
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_prefmust_24;
-	// UnityEngine.UI.Toggle Slingshot::toggle_mayNPC
-	Toggle_tBF13F3EBA485E06826FD8A38F4B4C1380DF21A1F* ___toggle_mayNPC_25;
 	// SlingshotLinesEnum Slingshot::slingshotLinesEnum
-	int32_t ___slingshotLinesEnum_26;
+	int32_t ___slingshotLinesEnum_21;
 	// TrajectoryManager Slingshot::trajectoryManager
-	TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372* ___trajectoryManager_27;
+	TrajectoryManager_t615624328A65694AEC531CDF7913863D3FCE0372* ___trajectoryManager_22;
 };
 
 // TargetGroup
@@ -715,9 +713,22 @@ struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
 
 // System.Void
 
+// UnityEngine.Object
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	// System.Int32 UnityEngine.Object::OffsetOfInstanceIDInCPlusPlusObject
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject_1;
+};
+
+// UnityEngine.Object
+
 // UnityEngine.Component
 
 // UnityEngine.Component
+
+// UnityEngine.GameObject
+
+// UnityEngine.GameObject
 
 // UnityEngine.MonoBehaviour
 
@@ -775,6 +786,8 @@ struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520_StaticFields
 
 // T UnityEngine.Component::GetComponent<System.Object>()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
 
 // Player PlayerGroup::GetActivePlayer()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* PlayerGroup_GetActivePlayer_m10B6804AEE843D10F5C91B7A4330CF49C383D534 (PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* __this, const RuntimeMethod* method) ;
@@ -803,10 +816,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_FakeShot_m5F0AC23018512326A0DDEB71F90733B722524978 (Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* __this, const RuntimeMethod* method) ;
 // System.Void System.Object::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
-// System.Void StateMgrEvent::.ctor(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) ;
 // WsClient WsClient::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075 (const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+// UnityEngine.GameObject UnityEngine.GameObject::FindGameObjectWithTag(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE (String_t* ___0_tag, const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<PlayerGroup>()
+inline PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// System.Void StateMgrEvent::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_stateMgr, const RuntimeMethod* method) ;
 // System.Void StateMgrEvent::Set(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void StateMgrEvent_Set_m5AE2E01405EF207CE38548C82100E7D2ECA2F6D6_inline (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* __this, String_t* ___0_states, const RuntimeMethod* method) ;
 // System.String StateMgrEvent::SaveToString()
@@ -1134,7 +1156,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallLaunchState_ExitState_mFFDEDB408D016
 		NullCheck(L_2);
 		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_3 = L_2->___slingshot_13;
 		NullCheck(L_3);
-		L_3->___slingshotLinesEnum_26 = 1;
+		L_3->___slingshotLinesEnum_21 = 1;
 		// }
 		return;
 	}
@@ -1284,7 +1306,7 @@ IL_0067:
 		// slingshot.slingshotLinesEnum = SlingshotLinesEnum.active;
 		Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D* L_23 = V_0;
 		NullCheck(L_23);
-		L_23->___slingshotLinesEnum_26 = 0;
+		L_23->___slingshotLinesEnum_21 = 0;
 		// }
 		return;
 	}
@@ -1416,38 +1438,64 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void BallStateManager_Start_m040BF95261ED210B
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral563B706437BF0772B19FE10900E39C381D170147);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFC2566D7D48CAB76B0F369066161B2FCB1FD6543);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_11 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_11), (void*)L_0);
+		// ws = WsClient.Instance;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_1;
+		L_1 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_20 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_20), (void*)L_1);
+		// if(players == null)
+		PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* L_2 = __this->___players_12;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0039;
+		}
+	}
+	{
+		// players = GameObject.FindGameObjectWithTag("PlayerGroup").GetComponent<PlayerGroup>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4;
+		L_4 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral34D400AA78C02BFE7B9B81875CB8F42F87E078F3, NULL);
+		NullCheck(L_4);
+		PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* L_5;
+		L_5 = GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B(L_4, GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var);
+		__this->___players_12 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___players_12), (void*)L_5);
+	}
+
+IL_0039:
+	{
 		// currentBallState = ballInitState;
-		BallInitState_t6D9ADE962E95DE096A94E1DD07A4A131BB0B554D* L_0 = __this->___ballInitState_5;
-		__this->___currentBallState_4 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentBallState_4), (void*)L_0);
+		BallInitState_t6D9ADE962E95DE096A94E1DD07A4A131BB0B554D* L_6 = __this->___ballInitState_5;
+		__this->___currentBallState_4 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentBallState_4), (void*)L_6);
 		// ballPhase = "ballInitState";
 		__this->___ballPhase_18 = _stringLiteral563B706437BF0772B19FE10900E39C381D170147;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___ballPhase_18), (void*)_stringLiteral563B706437BF0772B19FE10900E39C381D170147);
 		// currentBallState.EnterState(this);
-		BallStateMachine_t8AE8A0F43EF6C3B8542753B159866FB0FBCFF4C4* L_1 = __this->___currentBallState_4;
-		NullCheck(L_1);
-		VirtualActionInvoker1< BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* >::Invoke(4 /* System.Void BallStateMachine::EnterState(BallStateManager) */, L_1, __this);
-		// gameManager = GameManager.Instance;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
-		__this->___gameManager_11 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_11), (void*)L_2);
+		BallStateMachine_t8AE8A0F43EF6C3B8542753B159866FB0FBCFF4C4* L_7 = __this->___currentBallState_4;
+		NullCheck(L_7);
+		VirtualActionInvoker1< BallStateManager_t05128ABDAC2CB6032C562BAC2F5031417CD9EB3C* >::Invoke(4 /* System.Void BallStateMachine::EnterState(BallStateManager) */, L_7, __this);
 		// ballStateMgrEvent = new("ballstate");
-		StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* L_3 = (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA*)il2cpp_codegen_object_new(StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
-		NullCheck(L_3);
-		StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE(L_3, _stringLiteralFC2566D7D48CAB76B0F369066161B2FCB1FD6543, NULL);
-		__this->___ballStateMgrEvent_21 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ballStateMgrEvent_21), (void*)L_3);
-		// ws = WsClient.Instance;
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_4;
-		L_4 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_20 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_20), (void*)L_4);
+		StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA* L_8 = (StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA*)il2cpp_codegen_object_new(StateMgrEvent_tEFE12CEADAA019A474830B9F41697C38A10182FA_il2cpp_TypeInfo_var);
+		NullCheck(L_8);
+		StateMgrEvent__ctor_mDE672CE3235D39C2DDD5A24F22FE259BD54CDADE(L_8, _stringLiteralFC2566D7D48CAB76B0F369066161B2FCB1FD6543, NULL);
+		__this->___ballStateMgrEvent_21 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ballStateMgrEvent_21), (void*)L_8);
 		// }
 		return;
 	}
