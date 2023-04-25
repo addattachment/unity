@@ -311,7 +311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &63668472
 Transform:
   m_ObjectHideFlags: 0
@@ -3964,6 +3964,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835177, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: sourceGainDB
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835177, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: sourceAttenuationMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835177, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: minAttenuationDistance
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835182, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835182, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835182, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -328.86002
+      objectReference: {fileID: 0}
     - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: sun
       value: 
@@ -3984,6 +4008,30 @@ PrefabInstance:
       propertyPath: setCaregiverGaze
       value: 
       objectReference: {fileID: 518975897}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: frqLow
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: maxVol
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: frqHigh
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: minDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: VolumeControl
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: mouthMoveSpeed
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 8262410051204558302, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: skinnedMeshRenderer
       value: 
@@ -7448,7 +7496,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4612317147196554024, guid: 92707c3ea535f3e43ac5bbb10dae04da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4612317147196554195, guid: 92707c3ea535f3e43ac5bbb10dae04da, type: 3}
       propertyPath: m_Camera
