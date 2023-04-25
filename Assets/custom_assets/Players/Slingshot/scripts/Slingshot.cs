@@ -41,12 +41,7 @@ public class Slingshot : MonoBehaviour
     public AudioSource releaseSlingShotClip;
 
     [Header("debug")]
-    //[SerializeField] private DebugConnection debug_text;
-    [SerializeField] private Toggle toggle_may; //temp
-    [SerializeField] private Toggle toggle_must; //temp
-    [SerializeField] private Toggle toggle_musnt; //temp
-    [SerializeField] private Toggle toggle_prefmust; //temp
-    [SerializeField] private Toggle toggle_mayNPC; //temp
+
     public SlingshotLinesEnum slingshotLinesEnum = SlingshotLinesEnum.active;
     private TrajectoryManager trajectoryManager;
     void Start()

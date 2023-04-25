@@ -52,6 +52,20 @@ public class TrialList : MonoBehaviour
         }
     }
 
+    public void GenerateTrialList(Contingency cont)
+    {
+        if (cont == Contingency.c_20)
+        {
+            LoadFromResourcesFolder(data20_dir);
+        }
+        else
+        {
+            LoadFromResourcesFolder(data80_dir);
+        }
+        ReadTrial(trialListTA);
+        gameManager.trialListGenerated = true;
+    }
+
     private void LoadFromResourcesFolder(string contingency_dir)
     {
         audioClips = Resources.LoadAll<AudioClip>(contingency_dir);

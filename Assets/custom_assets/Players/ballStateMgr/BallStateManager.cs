@@ -36,12 +36,16 @@ public class BallStateManager : MonoBehaviour
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
+        ws = WsClient.Instance;
+        if(players == null)
+        {
+            players = GameObject.FindGameObjectWithTag("PlayerGroup").GetComponent<PlayerGroup>();
+        }
         currentBallState = ballInitState;
         ballPhase = "ballInitState";
         currentBallState.EnterState(this);
-        gameManager = GameManager.Instance;
         ballStateMgrEvent = new("ballstate");
-        ws = WsClient.Instance;
     }
     private void Update()
     {

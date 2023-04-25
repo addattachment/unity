@@ -14,9 +14,8 @@ public class GameManager : MonoBehaviour
     public bool newNameSet = false;
 
     [Header("development settings")]
-    [SerializeField] private bool restartBool = false;
     public bool allMust = false;
-    //public bool developmentMode = true;
+    public bool developmentMode = true;
 
     [Header("tutorial settings")]
     public bool isTutorial; // if tutorial is true, we only have 1 trial with 'good' chances of scoring
@@ -74,10 +73,8 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (restartBool)
-        {
-            RestartScene();
-        }
+
+        
     }
     //public void SendSyncTime()
     //{
@@ -87,20 +84,21 @@ public class GameManager : MonoBehaviour
     //    ws.SendWSMessage("message: game started");
     //}
 
-    public void SwitchScene(string sceneToLoad)
-    {
-        //string[] sceneList = {"BaseRotscene", "BasePolescene"};
-        //var activeScene = SceneManager.GetActiveScene().name;
-        //string sceneToLoad = 
-        SceneManager.LoadScene(sceneToLoad);
-    }
-    public void RestartScene()
-    {
-        var activeScene = SceneManager.GetActiveScene().name;
-        //SceneManager.UnloadScene("PlayerScene");
-        //SceneManager.LoadScene("PlayerScene", LoadSceneMode.Additive);
-        SceneManager.LoadScene(activeScene);
-    }
+    //public void SwitchScene(string sceneToLoad)
+    //{
+    //    //string[] sceneList = {"BaseRotscene", "BasePolescene"};
+    //    //var activeScene = SceneManager.GetActiveScene().name;
+    //    //string sceneToLoad = 
+    //    SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
+    //    SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
+    //}
+    //public void RestartScene()
+    //{
+    //    var activeScene = SceneManager.GetActiveScene().name;
+    //    //SceneManager.UnloadScene("PlayerScene");
+    //    //SceneManager.LoadScene("PlayerScene", LoadSceneMode.Additive);
+    //    SceneManager.LoadScene(activeScene);
+    //}
 
 
 }

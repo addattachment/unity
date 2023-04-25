@@ -6,10 +6,11 @@ public class LightingScripts : MonoBehaviour
 {
     [SerializeField] private float lightVerticalOffset = 5.0f;
     [SerializeField] private float maxLightIntensity = 5.0f;
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
 
     private void Start()
     {
+        gameManager = GameManager.Instance;
         maxLightIntensity = GetComponent<Light>().intensity;
         GetComponent<Light>().intensity = 0.0f;
     }
@@ -32,7 +33,7 @@ public class LightingScripts : MonoBehaviour
         Hashtable ht;
         if (enabled)
         {
-            ht = iTween.Hash("from", 0, "to", maxLightIntensity, "time", .2f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity", "oncomplete","LightUpdateFinished");
+            ht = iTween.Hash("from", 0, "to", maxLightIntensity, "time", .2f, "onupdatetarget", gameObject, "onupdate", "SetLightIntensity", "oncomplete", "LightUpdateFinished");
         }
         else
         {

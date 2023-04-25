@@ -25,9 +25,11 @@ public class PlayerScore : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //player = GetComponentInParent<Player>();
+        gameManager = GameManager.Instance;
+        ws = WsClient.Instance;
+        lsl = OutletPassThrough.Instance;
         player = GetComponentInParent<Player>();
-        ws = GameObject.FindGameObjectWithTag("ws").GetComponent<WsClient>();
-        lsl = GameObject.FindGameObjectWithTag("lsl").GetComponent<OutletPassThrough>();
         //debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();

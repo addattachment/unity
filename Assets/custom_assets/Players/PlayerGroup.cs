@@ -32,7 +32,7 @@ public class PlayerGroup : MonoBehaviour
         {
             players.Add(NPC);
         }
-        ResetPlayers();
+        //ResetPlayers();
     }
 
     // Update is called once per frame
@@ -124,13 +124,24 @@ public class PlayerGroup : MonoBehaviour
     /// </summary>
     public void ResetPlayers()
     {
-        foreach (Player x in players)
+        if (!gameManager.isTutorial)
         {
-            x.currentBallInTrial = 0;
-            x.playerScore.ResetScore();
-            // first we set each player non active
-            x.SetActive(false);
+            foreach (Player x in players)
+            {
+                x.currentBallInTrial = 0;
+                x.playerScore.ResetScore();
+                // first we set each player non active
+                x.SetActive(false);
+            }
         }
+        else
+        {
+            player.currentBallInTrial = 0;
+            player.playerScore.ResetScore();
+            // first we set each player non active
+            player.SetActive(false);
+        }
+
         // then we set the player active, this way we don't have to care about the length of ptcpts ranging from 1 to ...
         player.SetActive(true);
         activeParticipant = GetActivePlayer(); // see who is the active player to get a new ball
@@ -288,7 +299,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log(activeParticipant+" reachChance " + reachChance);
+        Debug.Log(activeParticipant + " reachChance " + reachChance);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

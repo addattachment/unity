@@ -6,12 +6,18 @@ using LSL;
 
 public class SwitchScene : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
+    private WsClient wsClient;
+    private OutletPassThrough LSLOutlet;
+    private SceneMgr sceneMgr;
+    [Header("next scene things")]
     [SerializeField] private TMP_Text buttonText;
     [SerializeField] private string nextScene = "Basescene";
-    [SerializeField] WsClient wsClient;
-    [SerializeField] OutletPassThrough LSLOutlet;
+    [SerializeField] private string currentScene = "Basescene";
+    [SerializeField] private bool nextIsTutorial = false;
+
     [SerializeField] Animator crossFade;
+    [Header("debug")]
     public bool testSwitch = false;
     [SerializeField] GameObject[] hideObjectWhenNotNeeded;
 
@@ -19,6 +25,8 @@ public class SwitchScene : MonoBehaviour
     {
         wsClient = WsClient.Instance;
         LSLOutlet = OutletPassThrough.Instance;
+        gameManager = GameManager.Instance;
+        sceneMgr = SceneMgr.Instance;
     }
 
     private void Update()
@@ -53,7 +61,9 @@ public class SwitchScene : MonoBehaviour
         wsClient.SendWSMessage(switchScene.SaveToString());
         crossFade.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
-        gameManager.SwitchScene(nextScene);
+        gameManager.isTutorial = nextIsTutorial;
+        sceneMgr.SwitchScene(currentScene, nextScene);
+        currentScene = sceneMgr.currentActiveScene;
         //Initiate.Fade(nextScene, Color.black, 1.0f);
     }
 }
