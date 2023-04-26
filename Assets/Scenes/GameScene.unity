@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.39063275, g: 0.6383639, b: 0.9007416, a: 1}
+  m_IndirectSpecularColor: {r: 0.37547058, g: 0.61412954, b: 0.86671394, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3981,6 +3981,106 @@ PrefabInstance:
       propertyPath: testPlayer
       value: 
       objectReference: {fileID: 5736673881739380326}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.size
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[0]
+      value: 
+      objectReference: {fileID: 5426677354878522062, guid: 0a4844f27d67e5e40a0b98eb96d2483f, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[1]
+      value: 
+      objectReference: {fileID: 7948232274982836562, guid: 9a516b01e1f1ff84fb01efc47315290c, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[2]
+      value: 
+      objectReference: {fileID: 4171875321723872624, guid: cfd1888bfec284749883fb6bd5dff389, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[3]
+      value: 
+      objectReference: {fileID: 3273845223191139979, guid: 295114c6b1e525d4fa26df6734f1283a, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[4]
+      value: 
+      objectReference: {fileID: 1747738109203023368, guid: dafba4ba52496414d9f698a1e5dccf07, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[5]
+      value: 
+      objectReference: {fileID: 49824295214682181, guid: 3d48049597d926f4bad51f8faa350bcd, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[6]
+      value: 
+      objectReference: {fileID: 5846398703093356125, guid: ab41c66f52872be4787036c649e19b7d, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[7]
+      value: 
+      objectReference: {fileID: 7801510163236421905, guid: 9b8f4f4d0b7cd994bbf1e55abe67bfba, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[8]
+      value: 
+      objectReference: {fileID: 4003829596353679250, guid: d406898d745dec44caf54303d4934d19, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[9]
+      value: 
+      objectReference: {fileID: 289328613778672769, guid: 990abe433323e29458db6e62034e26cd, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[10]
+      value: 
+      objectReference: {fileID: 404015812768653867, guid: 169c0f8cfb56a8742bc0ab3225c4d19b, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[11]
+      value: 
+      objectReference: {fileID: 3920576764056706133, guid: d2163cf5b9d7eb84dbe9c12c96c82da3, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[12]
+      value: 
+      objectReference: {fileID: 7920450853176303690, guid: 0818308f8d2abb14abf658e6ed57c6f7, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[13]
+      value: 
+      objectReference: {fileID: 2166866463236418358, guid: fca1ef310acf9fc4a86623966925a3ac, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[14]
+      value: 
+      objectReference: {fileID: 1141138859844123416, guid: dfd8e7213cc85ba4f98ecc74049a0837, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[15]
+      value: 
+      objectReference: {fileID: 47316533211120174, guid: 3b496027a1d951c45a61cf6757dceb9f, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[16]
+      value: 
+      objectReference: {fileID: 6008544253272434924, guid: 61b7a395247363046afa9b45ed419c2e, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[17]
+      value: 
+      objectReference: {fileID: 7205873959880386985, guid: 97e7b85d157dcc94399cc78ece1595a3, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[18]
+      value: 
+      objectReference: {fileID: 1921468547257043137, guid: 3c4025bac9e222a439c2eaaf4beef37b, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[19]
+      value: 
+      objectReference: {fileID: 677271271543608963, guid: f27b93b526f767e4782ef27e96000aee, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[20]
+      value: 
+      objectReference: {fileID: 1277664862420617529, guid: 109f268e2c7e47444a76efffe383da46, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[21]
+      value: 
+      objectReference: {fileID: 2264217698276070917, guid: d5dcf8efcc12aa34c9e288d594238fe0, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[22]
+      value: 
+      objectReference: {fileID: 8015949644336423834, guid: dfb3cbda03234e74783bc0957b8e15bd, type: 3}
+    - target: {fileID: 1453501351328808065, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
+      propertyPath: trophiesList.Array.data[23]
+      value: 
+      objectReference: {fileID: 4313522019801905787, guid: cf59a76a7c275354e84a34d06a3a336e, type: 3}
     - target: {fileID: 1453501351328808066, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
       propertyPath: m_RootOrder
       value: 10
