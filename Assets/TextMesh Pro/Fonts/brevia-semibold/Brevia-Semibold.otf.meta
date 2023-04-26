@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4c6e5aa784cca0b40bf71d204566701b
+guid: 0b2598205af415c40afcd41b168ce80c
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -10,7 +10,8 @@ TrueTypeFontImporter:
   includeFontData: 1
   fontNames:
   - Brevia Semibold
-  fallbackFontReferences: []
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3a22cc6b6042bbb4992c14f76427fe77, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1
