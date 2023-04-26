@@ -21,7 +21,7 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private ReadFeedback feedbackPole;
     [SerializeField] private bool enableText = false;
     // Start is called before the first frame update    
-    void Start()
+    void Awake()
     {
         gameManager = GameManager.Instance;
     }

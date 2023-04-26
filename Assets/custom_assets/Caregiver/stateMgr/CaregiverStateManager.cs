@@ -8,7 +8,7 @@ public class CaregiverStateManager : MonoBehaviour
     public CaregiverFeedbackConfirmState caregiverFeedbackConfirmState = new();
     public CaregiverScoringState caregiverScoringState = new();
     // script references
-    public GameManager gameManager;
+    [HideInInspector] public GameManager gameManager;
     public PlayerGroup players;
     public Player player;
 
@@ -19,7 +19,7 @@ public class CaregiverStateManager : MonoBehaviour
     public GameObject scoreCaregiver;
     public LightingMgr lightingMgr;
     [Header("data connections")]
-    public WsClient ws;
+    [HideInInspector] public WsClient ws;
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
     // booleans to control state
 
@@ -31,13 +31,14 @@ public class CaregiverStateManager : MonoBehaviour
     public string caregiverPhase = "caregiverIdleState";
     private void Start()
     {
+        gameManager = GameManager.Instance;
+        ws = WsClient.Instance;
+
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIdleState";
         currentCaregiverState.EnterState(this);
-        gameManager = GameManager.Instance;
         caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
         caregiverFeedbackEvent = new();
-        ws = WsClient.Instance;
     }
     private void Update()
     {
