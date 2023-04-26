@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.59607846, g: 0.79607844, b: 0.9490196, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.02
+  m_FogDensity: 0.025
   m_LinearFogStart: 40.54
   m_LinearFogEnd: 81
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -8535,7 +8535,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1997030831
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9853,6 +9853,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 597569415}
     m_Modifications:
+    - target: {fileID: 1997030830, guid: f6ff39a3260716341aef69499f87a59b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1997030831, guid: f6ff39a3260716341aef69499f87a59b, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -9953,7 +9957,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1997030832, guid: f6ff39a3260716341aef69499f87a59b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6ff39a3260716341aef69499f87a59b, type: 3}
 --- !u!1 &5732055310885357605 stripped
 GameObject:
