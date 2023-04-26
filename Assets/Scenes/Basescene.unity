@@ -769,6 +769,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4524056547998682700, guid: 8eede3857ead6dd47a5041cff1cde49d, type: 3}
+      propertyPath: playSoundOnMessage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4524056547998682701, guid: 8eede3857ead6dd47a5041cff1cde49d, type: 3}
       propertyPath: m_Name
       value: ExceptionLog
