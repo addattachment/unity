@@ -58,6 +58,8 @@ public class SceneMgr : MonoBehaviour
             {
                 if (SceneManager.GetSceneAt(i).isLoaded)
                 {
+                    SceneManager.SetActiveScene(SceneManager.GetSceneAt(i));
+
                     found = true;
                 }
             }
