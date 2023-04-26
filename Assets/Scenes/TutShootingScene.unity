@@ -2616,7 +2616,7 @@ MonoBehaviour:
   customFps: 0
   screenFade: 1
   eyeTracking: 1
-  foveationLevel: 2
+  foveationLevel: -1
   appCheckResult: 100
   useRecommendedAntiAliasingLevel: 1
 --- !u!114 &638978725
@@ -7122,7 +7122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719674820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 13.500271}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8427,7 +8427,7 @@ GameObject:
   - component: {fileID: 1997030833}
   m_Layer: 5
   m_Name: Introscherm
-  m_TagString: scoreboard
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
