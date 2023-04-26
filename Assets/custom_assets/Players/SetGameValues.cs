@@ -6,7 +6,7 @@ using UnityEngine;
 public class SetGameValues : MonoBehaviour
 {
     private GameManager gameManager;
-    [SerializeField] WsClient wsClient;
+    private WsClient wsClient;
     public string playerName = "Pieter";
     public Gender gender = Gender.Male;
     public Contingency contingency = Contingency.c_20;
@@ -20,14 +20,16 @@ public class SetGameValues : MonoBehaviour
     [SerializeField] Player player;
     [SerializeField] Player NPC;
 
+    [SerializeField] private GameObject playerObj;
+    private bool developmentSettingsSet = false;
+    private bool playersFound = false;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameManager.Instance;
         wsClient = WsClient.Instance;
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
-        NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
+
         //if (gameManager.isTutorial & !wsClient.playerVals.valuesSet)
         //{
         //    player.playerName = playerName;
@@ -41,10 +43,7 @@ public class SetGameValues : MonoBehaviour
         //}
         //else
         //{
-        if (gameManager.developmentMode & !wsClient.playerVals.valuesSet)
-        {
-            UpdateGameValues();
-        }
+
         //}
         if (wsClient.playerVals.valuesSet)
         {
@@ -55,6 +54,12 @@ public class SetGameValues : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameManager.aSceneIsLoaded && gameManager.developmentMode && !developmentSettingsSet)
+        {
+            Debug.Log("settings development values for players");
+            UpdateGameValues();
+            developmentSettingsSet = true;
+        }
         if (gameManager.playerValsReceivedViaWS)
         {
             Debug.Log("update received from WS for player vals");
@@ -76,6 +81,11 @@ public class SetGameValues : MonoBehaviour
     public void UpdateGameValues()
     {
         Debug.Log("UpdateGameValues");
+        if (player == null)
+        {
+            playerObj = GameObject.FindGameObjectWithTag("Player");
+            player = playerObj.GetComponent<Player>();
+        }
         // we set the values for the normal player and the NPC, both should be male
         player.playerName = playerName;
         player.gender = gender;
@@ -86,6 +96,11 @@ public class SetGameValues : MonoBehaviour
         // NPC values
         if (!gameManager.isTutorial)
         {
+
+            if (NPC == null)
+            {
+                NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
+            }
             if (gender == Gender.Male)
             {
                 if (trial_block == 1)
@@ -118,7 +133,7 @@ public class SetGameValues : MonoBehaviour
         }
 
         // we tell the game that the players values are set
-        gameManager.playerValuesAreSet = true;
+        gameManager.playerValuesAreUpdated = true;
         gameManager.playerContingencySet = true;
 
     }

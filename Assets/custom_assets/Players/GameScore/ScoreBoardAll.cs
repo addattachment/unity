@@ -14,10 +14,10 @@ public class ScoreBoardAll : MonoBehaviour
 
     private void Update()
     {
-        if (gameManager.playerValuesAreSet)
+        if (gameManager.playerValuesAreUpdated)
         {
             UpdateNames();
-            gameManager.playerValuesAreSet = false;
+            gameManager.playerValuesAreUpdated = false;
         }
     }
     public void UpdateScores()

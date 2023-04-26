@@ -40,15 +40,38 @@ public class SceneMgr : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
-        if (SceneManager.sceneCount < 2)
+
+        if (!IsAnAdditiveGameSceneLoaded())
         {
+            Debug.Log("Loading first scene");
             LoadNewScene("TutShootingScene");
         }
+    }
+
+    private bool IsAnAdditiveGameSceneLoaded()
+    {
+        bool found = false;
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            string sceneName = SceneManager.GetSceneAt(i).name;
+            if (sceneName == tutorialShootingScene || sceneName == caregiverIntroScene || sceneName == gameScene)
+            {
+                if (SceneManager.GetSceneAt(i).isLoaded)
+                {
+                    found = true;
+                }
+            }
+        }
+        return found;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (IsAnAdditiveGameSceneLoaded() && !gameManager.aSceneIsLoaded)
+        {
+            gameManager.aSceneIsLoaded = true;
+        }
         if (restartBool)
         {
             RestartScene();
@@ -67,8 +90,10 @@ public class SceneMgr : MonoBehaviour
         switch (sceneToLoad)
         {
             case "TutShootingScene":
+                gameManager.isTutorial = true;
                 break;
             case "CaregiverIntroScene":
+                gameManager.isTutorial = true;
                 break;
             case "GameScene":
                 gameManager.isTutorial = false;

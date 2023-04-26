@@ -7,8 +7,11 @@ public class GameManager : MonoBehaviour
 
     public bool gameDidStart = false;
 
+    [Header("Scene settings")]
+    public bool aSceneIsLoaded = false;
+
     [Header("player settings")]
-    public bool playerValuesAreSet = false;
+    public bool playerValuesAreUpdated = false;
     public bool playerContingencySet = false;
     public bool NPCShootsBall = false;
     public bool newNameSet = false;
@@ -74,7 +77,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
 
-        
+
     }
     //public void SendSyncTime()
     //{
