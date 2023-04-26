@@ -26706,66 +26706,68 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 {
 	// System.Boolean GameManager::gameDidStart
 	bool ___gameDidStart_5;
-	// System.Boolean GameManager::playerValuesAreSet
-	bool ___playerValuesAreSet_6;
+	// System.Boolean GameManager::aSceneIsLoaded
+	bool ___aSceneIsLoaded_6;
+	// System.Boolean GameManager::playerValuesAreUpdated
+	bool ___playerValuesAreUpdated_7;
 	// System.Boolean GameManager::playerContingencySet
-	bool ___playerContingencySet_7;
+	bool ___playerContingencySet_8;
 	// System.Boolean GameManager::NPCShootsBall
-	bool ___NPCShootsBall_8;
+	bool ___NPCShootsBall_9;
 	// System.Boolean GameManager::newNameSet
-	bool ___newNameSet_9;
+	bool ___newNameSet_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_10;
+	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_11;
+	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_12;
+	bool ___isTutorial_13;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_13;
+	int32_t ___ballsPerGame_14;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_14;
+	bool ___trialListGenerated_15;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_15;
+	bool ___doFakeLaunch_16;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_16;
+	bool ___playerValsReceivedViaWS_17;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_17;
+	bool ___startTrial_18;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_18;
+	bool ___toPostTrial_19;
 	// System.Boolean GameManager::restart
-	bool ___restart_19;
+	bool ___restart_20;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_20;
+	bool ___ballIsShot_21;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_21;
+	bool ___trialIsRunning_22;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_22;
+	bool ___trialListFinished_23;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_23;
+	int32_t ___currentTrial_24;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_24;
+	bool ___endMessagesSend_25;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_25;
+	bool ___trophyMayAppear_26;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_26;
+	bool ___mayPrep_27;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_27;
+	bool ___canLaunch_28;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_28;
+	bool ___didShoot_29;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_29;
+	bool ___MayGiveTrophy_30;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_30;
+	bool ___trophyIsGiven_31;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_31;
+	bool ___didReadFeedback_32;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_32;
+	bool ___didGiveScore_33;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_33;
+	bool ___mustGiveFeedback_34;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_34;
+	bool ___isInitiated_35;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_35;
+	bool ___LightIsSet_36;
 };
 
 // GameSounds
@@ -28293,6 +28295,12 @@ struct SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8  : public MonoBeh
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_16;
 	// Player SetGameValues::NPC
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___NPC_17;
+	// UnityEngine.GameObject SetGameValues::playerObj
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___playerObj_18;
+	// System.Boolean SetGameValues::developmentSettingsSet
+	bool ___developmentSettingsSet_19;
+	// System.Boolean SetGameValues::playersFound
+	bool ___playersFound_20;
 };
 
 // ShowTrialState
@@ -43248,9 +43256,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8025[9] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8026[6] = 
 {
 	static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ___trialNumber_0)),static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ___websocketMessage_1)),static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ___player_2)),static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ___realPlayer_3)),static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ___hit_4)),static_cast<int32_t>(offsetof(PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC, ____time_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8027[14] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8027[17] = 
 {
-	static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___gameManager_4)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___wsClient_5)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___playerName_6)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___gender_7)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___contingency_8)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___height_9)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___trial_block_10)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameMale_1_11)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameMale_2_12)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameFemale_1_13)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameFemale_2_14)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NextTrialBlockNPCname_15)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___player_16)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPC_17)),};
+	static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___gameManager_4)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___wsClient_5)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___playerName_6)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___gender_7)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___contingency_8)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___height_9)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___trial_block_10)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameMale_1_11)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameMale_2_12)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameFemale_1_13)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPCNameFemale_2_14)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NextTrialBlockNPCname_15)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___player_16)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___NPC_17)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___playerObj_18)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___developmentSettingsSet_19)),static_cast<int32_t>(offsetof(SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8, ___playersFound_20)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8028[4] = 
 {
 	static_cast<int32_t>(offsetof(ScoreDot_t22B5C3B185DEBBB53EAF5CBBEC58631D7C66798E, ___Neutral_4)),static_cast<int32_t>(offsetof(ScoreDot_t22B5C3B185DEBBB53EAF5CBBEC58631D7C66798E, ___Score_5)),static_cast<int32_t>(offsetof(ScoreDot_t22B5C3B185DEBBB53EAF5CBBEC58631D7C66798E, ___Miss_6)),static_cast<int32_t>(offsetof(ScoreDot_t22B5C3B185DEBBB53EAF5CBBEC58631D7C66798E, ____mat_7)),};
@@ -44010,9 +44018,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8411[7] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8419[4] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8427[32] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8427[33] = 
 {
-	static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields, ___Instance_4)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___gameDidStart_5)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerValuesAreSet_6)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerContingencySet_7)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___NPCShootsBall_8)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___newNameSet_9)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___allMust_10)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___developmentMode_11)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___isTutorial_12)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___ballsPerGame_13)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialListGenerated_14)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___doFakeLaunch_15)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerValsReceivedViaWS_16)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___startTrial_17)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___toPostTrial_18)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___restart_19)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___ballIsShot_20)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialIsRunning_21)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialListFinished_22)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___currentTrial_23)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___endMessagesSend_24)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trophyMayAppear_25)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___mayPrep_26)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___canLaunch_27)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didShoot_28)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___MayGiveTrophy_29)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trophyIsGiven_30)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didReadFeedback_31)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didGiveScore_32)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___mustGiveFeedback_33)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___isInitiated_34)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___LightIsSet_35)),};
+	static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields, ___Instance_4)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___gameDidStart_5)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___aSceneIsLoaded_6)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerValuesAreUpdated_7)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerContingencySet_8)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___NPCShootsBall_9)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___newNameSet_10)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___allMust_11)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___developmentMode_12)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___isTutorial_13)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___ballsPerGame_14)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialListGenerated_15)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___doFakeLaunch_16)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___playerValsReceivedViaWS_17)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___startTrial_18)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___toPostTrial_19)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___restart_20)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___ballIsShot_21)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialIsRunning_22)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trialListFinished_23)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___currentTrial_24)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___endMessagesSend_25)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trophyMayAppear_26)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___mayPrep_27)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___canLaunch_28)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didShoot_29)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___MayGiveTrophy_30)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___trophyIsGiven_31)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didReadFeedback_32)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___didGiveScore_33)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___mustGiveFeedback_34)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___isInitiated_35)),static_cast<int32_t>(offsetof(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE, ___LightIsSet_36)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8429[5] = 
 {
 	static_cast<int32_t>(offsetof(GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27, ___trialNumber_0)),static_cast<int32_t>(offsetof(GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27, ___websocketMessage_1)),static_cast<int32_t>(offsetof(GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27, ___targetName_2)),static_cast<int32_t>(offsetof(GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27, ___gazeStart_3)),static_cast<int32_t>(offsetof(GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27, ____time_4)),};

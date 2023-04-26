@@ -280,6 +280,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral53564F9528E56E73D696BEE587622C93E716F06E
 IL2CPP_EXTERN_C String_t* _stringLiteral548D93DDB2AC6B24373148B19D9A625571AB2318;
 IL2CPP_EXTERN_C String_t* _stringLiteral701DC9E727DA0727D9FC7F0E77504EAE314EC0F1;
 IL2CPP_EXTERN_C String_t* _stringLiteral705BF40259FBF27502D512E161C6CB4B4790B5FC;
+IL2CPP_EXTERN_C String_t* _stringLiteral7E3D4A58523A1E84321C43DF6F9793272FF3D616;
 IL2CPP_EXTERN_C String_t* _stringLiteral7EAA0DD4C277D27184E0F3D6A7709BE899C51951;
 IL2CPP_EXTERN_C String_t* _stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE;
 IL2CPP_EXTERN_C String_t* _stringLiteral82B081B1874ABF3246C31FBC4AE781FF8FFC15CB;
@@ -761,6 +762,13 @@ struct Matrix4x4_tDB70CF134A14BA38190C59AA700BCE10E2AED3E6
 	float ___m23_14;
 	// System.Single UnityEngine.Matrix4x4::m33
 	float ___m33_15;
+};
+
+// UnityEngine.SceneManagement.Scene
+struct Scene_tA1DC762B79745EB5140F054C884855B922318356 
+{
+	// System.Int32 UnityEngine.SceneManagement.Scene::m_Handle
+	int32_t ___m_Handle_0;
 };
 
 // System.Single
@@ -1747,66 +1755,68 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 {
 	// System.Boolean GameManager::gameDidStart
 	bool ___gameDidStart_5;
-	// System.Boolean GameManager::playerValuesAreSet
-	bool ___playerValuesAreSet_6;
+	// System.Boolean GameManager::aSceneIsLoaded
+	bool ___aSceneIsLoaded_6;
+	// System.Boolean GameManager::playerValuesAreUpdated
+	bool ___playerValuesAreUpdated_7;
 	// System.Boolean GameManager::playerContingencySet
-	bool ___playerContingencySet_7;
+	bool ___playerContingencySet_8;
 	// System.Boolean GameManager::NPCShootsBall
-	bool ___NPCShootsBall_8;
+	bool ___NPCShootsBall_9;
 	// System.Boolean GameManager::newNameSet
-	bool ___newNameSet_9;
+	bool ___newNameSet_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_10;
+	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_11;
+	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_12;
+	bool ___isTutorial_13;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_13;
+	int32_t ___ballsPerGame_14;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_14;
+	bool ___trialListGenerated_15;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_15;
+	bool ___doFakeLaunch_16;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_16;
+	bool ___playerValsReceivedViaWS_17;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_17;
+	bool ___startTrial_18;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_18;
+	bool ___toPostTrial_19;
 	// System.Boolean GameManager::restart
-	bool ___restart_19;
+	bool ___restart_20;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_20;
+	bool ___ballIsShot_21;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_21;
+	bool ___trialIsRunning_22;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_22;
+	bool ___trialListFinished_23;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_23;
+	int32_t ___currentTrial_24;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_24;
+	bool ___endMessagesSend_25;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_25;
+	bool ___trophyMayAppear_26;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_26;
+	bool ___mayPrep_27;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_27;
+	bool ___canLaunch_28;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_28;
+	bool ___didShoot_29;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_29;
+	bool ___MayGiveTrophy_30;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_30;
+	bool ___trophyIsGiven_31;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_31;
+	bool ___didReadFeedback_32;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_32;
+	bool ___didGiveScore_33;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_33;
+	bool ___mustGiveFeedback_34;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_34;
+	bool ___isInitiated_35;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_35;
+	bool ___LightIsSet_36;
 };
 
 // LSL.OutletPassThrough
@@ -2491,6 +2501,10 @@ struct IntPtr_t_StaticFields
 
 // System.IntPtr
 
+// UnityEngine.SceneManagement.Scene
+
+// UnityEngine.SceneManagement.Scene
+
 // System.Single
 
 // System.Single
@@ -2973,18 +2987,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_CompareTag_m6378BE50D009A93D4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadFeedback_LowerFeedbackPole_m381DF63552E2124D97834A968F7D65B9D6E1EBBF (ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
-// System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCount()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SceneManager_get_sceneCount_m6BB8A635EB8933BB91747EFE1F1113ED8594EFBF (const RuntimeMethod* method) ;
+// System.Boolean SceneMgr::IsAnAdditiveGameSceneLoaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SceneMgr_IsAnAdditiveGameSceneLoaded_mBAE063F587A352C10C07679CD1A9E42F29F4352B (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, const RuntimeMethod* method) ;
 // System.Void SceneMgr::LoadNewScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A1A9E23FEB72B69CDDF4B6B5 (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, String_t* ___0_sceneToLoad, const RuntimeMethod* method) ;
+// UnityEngine.SceneManagement.Scene UnityEngine.SceneManagement.SceneManager::GetSceneAt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 SceneManager_GetSceneAt_m716F9BAC0C25737577B21569CC210869B22A73DE (int32_t ___0_index, const RuntimeMethod* method) ;
+// System.String UnityEngine.SceneManagement.Scene::get_name()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
+// System.Boolean UnityEngine.SceneManagement.Scene::get_isLoaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Scene_get_isLoaded_m5BC54CEB27330040A0BC69E66E94EE97E87298BC (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
+// System.Int32 UnityEngine.SceneManagement.SceneManager::get_sceneCount()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SceneManager_get_sceneCount_m6BB8A635EB8933BB91747EFE1F1113ED8594EFBF (const RuntimeMethod* method) ;
 // System.Void SceneMgr::RestartScene()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_RestartScene_m7A9906AB37501F20AFBA24156A62E82CEF204DD2 (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, const RuntimeMethod* method) ;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::UnloadSceneAsync(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* SceneManager_UnloadSceneAsync_mF6F4161EF48C6622AA1B5BC66B4A2CA736C4D2B2 (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 // UnityEngine.AsyncOperation UnityEngine.SceneManagement.SceneManager::LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* SceneManager_LoadSceneAsync_m29D55D2C6CB7A019B26DA3F44C0881FF6AC491EC (String_t* ___0_sceneName, int32_t ___1_mode, const RuntimeMethod* method) ;
-// System.Boolean System.String::op_Equality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
 // System.Void UnityEngine.SceneManagement.SceneManager::LoadScene(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E (String_t* ___0_sceneName, const RuntimeMethod* method) ;
 // WsClient WsClient::get_Instance()
@@ -4349,9 +4371,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_Start_m72C7B64250B156EF23E30165
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4ABA381F15CA9627EFAD5E272CCBF684228692FD);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7E3D4A58523A1E84321C43DF6F9793272FF3D616);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -4359,35 +4382,172 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_Start_m72C7B64250B156EF23E30165
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
 		__this->___gameManager_4 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_4), (void*)L_0);
-		// if (SceneManager.sceneCount < 2)
-		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
-		int32_t L_1;
-		L_1 = SceneManager_get_sceneCount_m6BB8A635EB8933BB91747EFE1F1113ED8594EFBF(NULL);
-		if ((((int32_t)L_1) >= ((int32_t)2)))
+		// if (!IsAnAdditiveGameSceneLoaded())
+		bool L_1;
+		L_1 = SceneMgr_IsAnAdditiveGameSceneLoaded_mBAE063F587A352C10C07679CD1A9E42F29F4352B(__this, NULL);
+		if (L_1)
 		{
-			goto IL_001e;
+			goto IL_0028;
 		}
 	}
 	{
+		// Debug.Log("Loading first scene");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral7E3D4A58523A1E84321C43DF6F9793272FF3D616, NULL);
 		// LoadNewScene("TutShootingScene");
 		SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A1A9E23FEB72B69CDDF4B6B5(__this, _stringLiteral4ABA381F15CA9627EFAD5E272CCBF684228692FD, NULL);
 	}
 
-IL_001e:
+IL_0028:
 	{
 		// }
 		return;
+	}
+}
+// System.Boolean SceneMgr::IsAnAdditiveGameSceneLoaded()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SceneMgr_IsAnAdditiveGameSceneLoaded_mBAE063F587A352C10C07679CD1A9E42F29F4352B (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t V_1 = 0;
+	String_t* V_2 = NULL;
+	Scene_tA1DC762B79745EB5140F054C884855B922318356 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	{
+		// bool found = false;
+		V_0 = (bool)0;
+		// for (int i = 0; i < SceneManager.sceneCount; i++)
+		V_1 = 0;
+		goto IL_0055;
+	}
+
+IL_0006:
+	{
+		// string sceneName = SceneManager.GetSceneAt(i).name;
+		int32_t L_0 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_1;
+		L_1 = SceneManager_GetSceneAt_m716F9BAC0C25737577B21569CC210869B22A73DE(L_0, NULL);
+		V_3 = L_1;
+		String_t* L_2;
+		L_2 = Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C((&V_3), NULL);
+		V_2 = L_2;
+		// if (sceneName == tutorialShootingScene || sceneName == caregiverIntroScene || sceneName == gameScene)
+		String_t* L_3 = V_2;
+		String_t* L_4 = __this->___tutorialShootingScene_6;
+		bool L_5;
+		L_5 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_3, L_4, NULL);
+		if (L_5)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		String_t* L_6 = V_2;
+		String_t* L_7 = __this->___caregiverIntroScene_7;
+		bool L_8;
+		L_8 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_6, L_7, NULL);
+		if (L_8)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		String_t* L_9 = V_2;
+		String_t* L_10 = __this->___gameScene_8;
+		bool L_11;
+		L_11 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_9, L_10, NULL);
+		if (!L_11)
+		{
+			goto IL_0051;
+		}
+	}
+
+IL_003f:
+	{
+		// if (SceneManager.GetSceneAt(i).isLoaded)
+		int32_t L_12 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_13;
+		L_13 = SceneManager_GetSceneAt_m716F9BAC0C25737577B21569CC210869B22A73DE(L_12, NULL);
+		V_3 = L_13;
+		bool L_14;
+		L_14 = Scene_get_isLoaded_m5BC54CEB27330040A0BC69E66E94EE97E87298BC((&V_3), NULL);
+		if (!L_14)
+		{
+			goto IL_0051;
+		}
+	}
+	{
+		// found = true;
+		V_0 = (bool)1;
+	}
+
+IL_0051:
+	{
+		// for (int i = 0; i < SceneManager.sceneCount; i++)
+		int32_t L_15 = V_1;
+		V_1 = ((int32_t)il2cpp_codegen_add(L_15, 1));
+	}
+
+IL_0055:
+	{
+		// for (int i = 0; i < SceneManager.sceneCount; i++)
+		int32_t L_16 = V_1;
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		int32_t L_17;
+		L_17 = SceneManager_get_sceneCount_m6BB8A635EB8933BB91747EFE1F1113ED8594EFBF(NULL);
+		if ((((int32_t)L_16) < ((int32_t)L_17)))
+		{
+			goto IL_0006;
+		}
+	}
+	{
+		// return found;
+		bool L_18 = V_0;
+		return L_18;
 	}
 }
 // System.Void SceneMgr::Update()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_Update_m95C082FF30C57049A2067FCE12477BDFF7A26C67 (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, const RuntimeMethod* method) 
 {
 	{
-		// if (restartBool)
-		bool L_0 = __this->___restartBool_10;
+		// if (IsAnAdditiveGameSceneLoaded() && !gameManager.aSceneIsLoaded)
+		bool L_0;
+		L_0 = SceneMgr_IsAnAdditiveGameSceneLoaded_mBAE063F587A352C10C07679CD1A9E42F29F4352B(__this, NULL);
 		if (!L_0)
 		{
-			goto IL_000e;
+			goto IL_0021;
+		}
+	}
+	{
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_4;
+		NullCheck(L_1);
+		bool L_2 = L_1->___aSceneIsLoaded_6;
+		if (L_2)
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		// gameManager.aSceneIsLoaded = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_4;
+		NullCheck(L_3);
+		L_3->___aSceneIsLoaded_6 = (bool)1;
+	}
+
+IL_0021:
+	{
+		// if (restartBool)
+		bool L_4 = __this->___restartBool_10;
+		if (!L_4)
+		{
+			goto IL_002f;
 		}
 	}
 	{
@@ -4395,7 +4555,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_Update_m95C082FF30C57049A2067FC
 		SceneMgr_RestartScene_m7A9906AB37501F20AFBA24156A62E82CEF204DD2(__this, NULL);
 	}
 
-IL_000e:
+IL_002f:
 	{
 		// }
 		return;
@@ -4450,7 +4610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		L_4 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_3, _stringLiteral4ABA381F15CA9627EFAD5E272CCBF684228692FD, NULL);
 		if (L_4)
 		{
-			goto IL_004e;
+			goto IL_0037;
 		}
 	}
 	{
@@ -4459,31 +4619,52 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_LoadNewScene_m373EF1E79E5EF1C2A
 		L_6 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_5, _stringLiteral847D5A5753054E478142483124CF500CF3D5029A, NULL);
 		if (L_6)
 		{
-			goto IL_004e;
+			goto IL_0044;
 		}
 	}
 	{
 		String_t* L_7 = ___0_sceneToLoad;
 		bool L_8;
 		L_8 = String_op_Equality_m030E1B219352228970A076136E455C4E568C02C1(L_7, _stringLiteral3E538D25AD88E153C305B95581F14918239F2431, NULL);
-		if (!L_8)
+		if (L_8)
 		{
-			goto IL_004e;
+			goto IL_0051;
 		}
 	}
 	{
-		// gameManager.isTutorial = false;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_4;
-		NullCheck(L_9);
-		L_9->___isTutorial_12 = (bool)0;
-		// gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = __this->___gameManager_4;
-		NullCheck(L_10);
-		L_10->___trialListGenerated_14 = (bool)0;
+		return;
 	}
 
-IL_004e:
+IL_0037:
 	{
+		// gameManager.isTutorial = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_4;
+		NullCheck(L_9);
+		L_9->___isTutorial_13 = (bool)1;
+		// break;
+		return;
+	}
+
+IL_0044:
+	{
+		// gameManager.isTutorial = true;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = __this->___gameManager_4;
+		NullCheck(L_10);
+		L_10->___isTutorial_13 = (bool)1;
+		// break;
+		return;
+	}
+
+IL_0051:
+	{
+		// gameManager.isTutorial = false;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = __this->___gameManager_4;
+		NullCheck(L_11);
+		L_11->___isTutorial_13 = (bool)0;
+		// gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_12 = __this->___gameManager_4;
+		NullCheck(L_12);
+		L_12->___trialListGenerated_15 = (bool)0;
 		// }
 		return;
 	}
@@ -4837,7 +5018,7 @@ IL_00bf:
 		NullCheck(L_23);
 		bool L_24 = L_23->___nextIsTutorial_11;
 		NullCheck(L_22);
-		L_22->___isTutorial_12 = L_24;
+		L_22->___isTutorial_13 = L_24;
 		// sceneMgr.SwitchScene(currentScene, nextScene);
 		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_25 = V_1;
 		NullCheck(L_25);

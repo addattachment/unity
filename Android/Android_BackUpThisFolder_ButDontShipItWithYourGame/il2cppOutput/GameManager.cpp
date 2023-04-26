@@ -123,66 +123,68 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 {
 	// System.Boolean GameManager::gameDidStart
 	bool ___gameDidStart_5;
-	// System.Boolean GameManager::playerValuesAreSet
-	bool ___playerValuesAreSet_6;
+	// System.Boolean GameManager::aSceneIsLoaded
+	bool ___aSceneIsLoaded_6;
+	// System.Boolean GameManager::playerValuesAreUpdated
+	bool ___playerValuesAreUpdated_7;
 	// System.Boolean GameManager::playerContingencySet
-	bool ___playerContingencySet_7;
+	bool ___playerContingencySet_8;
 	// System.Boolean GameManager::NPCShootsBall
-	bool ___NPCShootsBall_8;
+	bool ___NPCShootsBall_9;
 	// System.Boolean GameManager::newNameSet
-	bool ___newNameSet_9;
+	bool ___newNameSet_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_10;
+	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_11;
+	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_12;
+	bool ___isTutorial_13;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_13;
+	int32_t ___ballsPerGame_14;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_14;
+	bool ___trialListGenerated_15;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_15;
+	bool ___doFakeLaunch_16;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_16;
+	bool ___playerValsReceivedViaWS_17;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_17;
+	bool ___startTrial_18;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_18;
+	bool ___toPostTrial_19;
 	// System.Boolean GameManager::restart
-	bool ___restart_19;
+	bool ___restart_20;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_20;
+	bool ___ballIsShot_21;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_21;
+	bool ___trialIsRunning_22;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_22;
+	bool ___trialListFinished_23;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_23;
+	int32_t ___currentTrial_24;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_24;
+	bool ___endMessagesSend_25;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_25;
+	bool ___trophyMayAppear_26;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_26;
+	bool ___mayPrep_27;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_27;
+	bool ___canLaunch_28;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_28;
+	bool ___didShoot_29;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_29;
+	bool ___MayGiveTrophy_30;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_30;
+	bool ___trophyIsGiven_31;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_31;
+	bool ___didReadFeedback_32;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_32;
+	bool ___didGiveScore_33;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_33;
+	bool ___mustGiveFeedback_34;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_34;
+	bool ___isInitiated_35;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_35;
+	bool ___LightIsSet_36;
 };
 
 // <Module>
@@ -306,9 +308,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameManager__ctor_mDF4F46B3EBDD4F605EFC5
 {
 	{
 		// public bool developmentMode = true;
-		__this->___developmentMode_11 = (bool)1;
+		__this->___developmentMode_12 = (bool)1;
 		// public int ballsPerGame = 5;
-		__this->___ballsPerGame_13 = 5;
+		__this->___ballsPerGame_14 = 5;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

@@ -1761,66 +1761,68 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 {
 	// System.Boolean GameManager::gameDidStart
 	bool ___gameDidStart_5;
-	// System.Boolean GameManager::playerValuesAreSet
-	bool ___playerValuesAreSet_6;
+	// System.Boolean GameManager::aSceneIsLoaded
+	bool ___aSceneIsLoaded_6;
+	// System.Boolean GameManager::playerValuesAreUpdated
+	bool ___playerValuesAreUpdated_7;
 	// System.Boolean GameManager::playerContingencySet
-	bool ___playerContingencySet_7;
+	bool ___playerContingencySet_8;
 	// System.Boolean GameManager::NPCShootsBall
-	bool ___NPCShootsBall_8;
+	bool ___NPCShootsBall_9;
 	// System.Boolean GameManager::newNameSet
-	bool ___newNameSet_9;
+	bool ___newNameSet_10;
 	// System.Boolean GameManager::allMust
-	bool ___allMust_10;
+	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
-	bool ___developmentMode_11;
+	bool ___developmentMode_12;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_12;
+	bool ___isTutorial_13;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_13;
+	int32_t ___ballsPerGame_14;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_14;
+	bool ___trialListGenerated_15;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_15;
+	bool ___doFakeLaunch_16;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_16;
+	bool ___playerValsReceivedViaWS_17;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_17;
+	bool ___startTrial_18;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_18;
+	bool ___toPostTrial_19;
 	// System.Boolean GameManager::restart
-	bool ___restart_19;
+	bool ___restart_20;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_20;
+	bool ___ballIsShot_21;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_21;
+	bool ___trialIsRunning_22;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_22;
+	bool ___trialListFinished_23;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_23;
+	int32_t ___currentTrial_24;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_24;
+	bool ___endMessagesSend_25;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_25;
+	bool ___trophyMayAppear_26;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_26;
+	bool ___mayPrep_27;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_27;
+	bool ___canLaunch_28;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_28;
+	bool ___didShoot_29;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_29;
+	bool ___MayGiveTrophy_30;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_30;
+	bool ___trophyIsGiven_31;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_31;
+	bool ___didReadFeedback_32;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_32;
+	bool ___didGiveScore_33;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_33;
+	bool ___mustGiveFeedback_34;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_34;
+	bool ___isInitiated_35;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_35;
+	bool ___LightIsSet_36;
 };
 
 // Gazed
@@ -3756,7 +3758,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_Update_mC271DB6F916648
 		// gameManager.toPostTrial = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_7;
 		NullCheck(L_1);
-		L_1->___toPostTrial_18 = (bool)1;
+		L_1->___toPostTrial_19 = (bool)1;
 		// testPlay = false;
 		__this->___testPlay_13 = (bool)0;
 		// audioSource.Play();
@@ -3818,7 +3820,7 @@ IL_0024:
 		// LoadAudioClip(gameManager.currentTrial);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_5 = __this->___gameManager_7;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->___currentTrial_23;
+		int32_t L_6 = L_5->___currentTrial_24;
 		CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7(__this, L_6, NULL);
 		// Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
 		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_7 = __this->___trialList_6;
@@ -4475,7 +4477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_SetDidGiveSco
 		// gameManager.didGiveScore = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
 		NullCheck(L_0);
-		L_0->___didGiveScore_32 = (bool)1;
+		L_0->___didGiveScore_33 = (bool)1;
 		// }
 		return;
 	}
@@ -6651,7 +6653,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_EnterState_m2C4D9
 		NullCheck(L_19);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_20 = L_19->___gameManager_9;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->___currentTrial_23;
+		int32_t L_21 = L_20->___currentTrial_24;
 		NullCheck(L_18);
 		CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A(L_18, L_21, (bool)1, NULL);
 		// state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());
@@ -6705,7 +6707,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_UpdateState_mD093
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_9;
 		NullCheck(L_7);
-		int32_t L_8 = L_7->___currentTrial_23;
+		int32_t L_8 = L_7->___currentTrial_24;
 		NullCheck(L_5);
 		CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A(L_5, L_8, (bool)0, NULL);
 		// state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());
@@ -6791,7 +6793,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_ExitState_mE0CD1A98DE
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___currentTrial_23;
+		int32_t L_5 = L_4->___currentTrial_24;
 		NullCheck(L_2);
 		CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7(L_2, L_5, NULL);
 		// }
@@ -6813,7 +6815,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_UpdateState_m64B298B7
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_9;
 		NullCheck(L_1);
-		bool L_2 = L_1->___mustGiveFeedback_33;
+		bool L_2 = L_1->___mustGiveFeedback_34;
 		if (!L_2)
 		{
 			goto IL_0026;
@@ -6825,7 +6827,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_UpdateState_m64B298B7
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		L_4->___mustGiveFeedback_33 = (bool)0;
+		L_4->___mustGiveFeedback_34 = (bool)0;
 		// state.SwitchState(state.caregiverFeedbackState);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_5 = ___0_state;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
@@ -6860,7 +6862,7 @@ IL_0026:
 		NullCheck(L_14);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_15 = L_14->___gameManager_9;
 		NullCheck(L_15);
-		bool L_16 = L_15->___trialIsRunning_21;
+		bool L_16 = L_15->___trialIsRunning_22;
 		if (!L_16)
 		{
 			goto IL_0082;
@@ -7003,7 +7005,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_ExitState_m54617F0
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___currentTrial_23;
+		int32_t L_5 = L_4->___currentTrial_24;
 		NullCheck(L_2);
 		ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49(L_2, L_5, NULL);
 		// state.gameManager.restart = true;
@@ -7011,7 +7013,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_ExitState_m54617F0
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_9;
 		NullCheck(L_7);
-		L_7->___restart_19 = (bool)1;
+		L_7->___restart_20 = (bool)1;
 		// }
 		return;
 	}
@@ -7252,7 +7254,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager_SetDidGiveScore_m5
 		// gameManager.didGiveScore = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_9;
 		NullCheck(L_0);
-		L_0->___didGiveScore_32 = (bool)1;
+		L_0->___didGiveScore_33 = (bool)1;
 		// }
 		return;
 	}
