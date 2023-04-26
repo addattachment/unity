@@ -81,7 +81,7 @@ public class TrophyList : MonoBehaviour
         currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
         currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
-        StartCoroutine(WaitForTransition());        
+        StartCoroutine(WaitForTransition());
     }
 
     private IEnumerator WaitForTransition()
@@ -130,7 +130,7 @@ public class TrophyList : MonoBehaviour
         Destroy(currentTrophy);
         SetTrophyGiven();
     }
- 
+
 
 
     /// <summary>
@@ -140,7 +140,8 @@ public class TrophyList : MonoBehaviour
     public void MakeTrophyAppear(int trophyIndex)
     {
         trophyDidAppear = true; // this is used by the trophyAppearState to know when to start listening
-        currentTrophy = Instantiate(trophiesList[trophyIndex], trophyFloatLocation.position, Quaternion.identity, this.trophyStandLocation);
+        currentTrophy = Instantiate(trophiesList[trophyIndex], trophyFloatLocation.position, Quaternion.identity, this.trophyStandLocation); //Quaternion.identity
+        currentTrophy.GetComponent<Rigidbody>().isKinematic = true;
         iTween.MoveTo(currentTrophy, iTween.Hash("position", trophyStandLocation.position, "easeType", "easeOutBounce", "delay", 0.5f, "time", 1.0f));
         trophyAppear.Play();
     }
