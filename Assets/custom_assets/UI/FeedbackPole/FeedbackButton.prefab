@@ -444,7 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHeight: 1.2
-  minHeight: -5
+  minHeight: -6
   duration: 1
   RaiseFeedback: 0
   LowerFeedback: 0

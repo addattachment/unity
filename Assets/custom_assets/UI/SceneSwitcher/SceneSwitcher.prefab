@@ -304,8 +304,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonText: {fileID: 8071847803865073226}
-  nextScene: CaregiverIntroScene
-  currentScene: TutShootingScene
+  nextScene: GameScene
+  currentScene: CaregiverIntroScene
   nextIsTutorial: 1
   crossFade: {fileID: 0}
   testSwitch: 0

@@ -44,6 +44,7 @@ public class Gazed : MonoBehaviour, IGazeFocusable
     void Start()
     {
         gazeEvent = new(objectName);
+        gameManager = GameManager.Instance;
         ws = WsClient.Instance;
     }
 

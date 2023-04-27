@@ -78,7 +78,7 @@ public class TrophyList : MonoBehaviour
         iTween.MoveTo(currentTrophy, ht);
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
-        currentTrophy.GetComponent<Rigidbody>().mass = 10.0f;
+        //currentTrophy.GetComponent<Rigidbody>().mass = 1.0f;
         currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
         StartCoroutine(WaitForTransition());
@@ -103,6 +103,7 @@ public class TrophyList : MonoBehaviour
         ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", gameObject);
         MoveAndWait(currentTrophy, ht);
     }
+
     private void SetTrophyGiven()
     {
         trophyIsGiven = true;
