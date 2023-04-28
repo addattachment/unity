@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.3477104, g: 0.38132095, b: 0.4335816, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.3477752, g: 0.3813853, b: 0.433578, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1184,10 +1184,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2090608591832345471, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 839574437643897273, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
     - target: {fileID: 919132149155446097, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
       propertyPath: m_Name
       value: GymzaalNewOptimizedV3
       objectReference: {fileID: 0}
+    - target: {fileID: 2334830646326187502, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 767539a6bcd53c84584df17602e8679a, type: 2}
+    - target: {fileID: 3699295531117829134, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 839574437643897273, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
+    - target: {fileID: 5670784105149147771, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 839574437643897273, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9740ab0cb3d80d549a37e11a35692a7d, type: 3}
 --- !u!114 &491137547 stripped
