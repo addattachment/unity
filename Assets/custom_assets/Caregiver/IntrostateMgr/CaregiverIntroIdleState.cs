@@ -8,7 +8,6 @@ public class CaregiverIntroIdleState : CaregiverIntroStateMachine
         state.InstructionBoard.GetComponent<Appear>().Raise();
         state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "We gaan je voorstellen aan je zorgfiguur, kijk maar naar haar!";
         state.scoreCaregiver.DisableScoring();
-
     }
 
     public override void ExitState(CaregiverIntroStateManager state)

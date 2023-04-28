@@ -892,7 +892,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1453501350967936729, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 1453501350967936729, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8413,7 +8413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8071847803759967217, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.051
+      value: 0.50001
       objectReference: {fileID: 0}
     - target: {fileID: 8071847803759967217, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9445,7 +9445,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.2
+  m_fontSize: 23.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

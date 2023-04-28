@@ -7,7 +7,7 @@ public class CaregiverFeedback : MonoBehaviour
     //[SerializeField] private SpeechToMouth feedbackSpeech;
     [SerializeField] private CaregiverEmotion caregiverEmotion;
     [SerializeField] private TrialList trialList;
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
     public SetCaregiverGaze setCaregiverGaze;
     public GameObject feedbackCamera;
     [SerializeField] private Light sun;
