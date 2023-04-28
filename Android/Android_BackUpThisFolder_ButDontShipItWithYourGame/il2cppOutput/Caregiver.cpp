@@ -3271,6 +3271,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_SwitchState_m
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateMachine__ctor_m67C3E2107B680013F3F2B4E976EC0E5F70A23B65 (CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* __this, const RuntimeMethod* method) ;
 // System.Void SwitchScene::Switch()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchScene_Switch_mA83C9504B35610381862D080907DD6B800FE6567 (SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* __this, const RuntimeMethod* method) ;
+// System.Void ScoreCaregiver::DisableScoring()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307 (ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* __this, const RuntimeMethod* method) ;
 // System.Void ScoreCaregiver::EnableScoring()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2 (ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Debug::Log(System.Object)
@@ -3451,8 +3453,6 @@ inline ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* GameObject_GetC
 {
 	return ((  ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
 }
-// System.Void ScoreCaregiver::DisableScoring()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307 (ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* __this, const RuntimeMethod* method) ;
 // System.Void CaregiverFeedbackEvent::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633 (CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* __this, const RuntimeMethod* method) ;
 // System.Void CaregiverIdleState::.ctor()
@@ -4254,6 +4254,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroIdleState_EnterState_m6FC3
 		L_6 = GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690(L_5, GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var);
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, _stringLiteral5F9DC60C021B601E498B589C46D7FF6B5509BD75);
+		// state.scoreCaregiver.DisableScoring();
+		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_7 = ___0_state;
+		NullCheck(L_7);
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_8 = L_7->___scoreCaregiver_14;
+		NullCheck(L_8);
+		ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307(L_8, NULL);
 		// }
 		return;
 	}
