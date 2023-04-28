@@ -331,6 +331,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralB22B20C2FE103B99C1659DA0C14517EBAC471D5A
 IL2CPP_EXTERN_C String_t* _stringLiteralB60B5EDA806699B8F084BC1794FB3471600F8A9B;
 IL2CPP_EXTERN_C String_t* _stringLiteralD6E9D80BFE97E1763FC872366C4B9E722A6DAE5E;
 IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m8205462D7AA74A15DE53D37D86B0CDF3DB6B36CE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m23F8F2F9DD5A54329CEB47D53B4CAA8BC4A562AA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisPlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015_m38669CD1B3BD1A52D5774EE751D4E7EB9EA6F84B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m145FCE7D17CBED3EC96DD43D3AAC6B04C84ED5B5_RuntimeMethod_var;
@@ -360,6 +361,23 @@ struct U3CModuleU3E_tDA5617CCF5D5EDFA35EA944CB9CB550AC6D6FE7A
 // BallStateMachine
 struct BallStateMachine_t8AE8A0F43EF6C3B8542753B159866FB0FBCFF4C4  : public RuntimeObject
 {
+};
+
+// PlayerVals
+struct PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F  : public RuntimeObject
+{
+	// System.String PlayerVals::name
+	String_t* ___name_0;
+	// System.Int32 PlayerVals::height
+	int32_t ___height_1;
+	// System.String PlayerVals::gender
+	String_t* ___gender_2;
+	// System.Int32 PlayerVals::contingency
+	int32_t ___contingency_3;
+	// System.Int32 PlayerVals::trial_block
+	int32_t ___trial_block_4;
+	// System.Boolean PlayerVals::valuesSet
+	bool ___valuesSet_5;
 };
 
 // StateMachine
@@ -2539,6 +2557,10 @@ struct TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957  : public TMP_T
 
 // BallStateMachine
 
+// PlayerVals
+
+// PlayerVals
+
 // StateMachine
 
 // StateMachine
@@ -2914,6 +2936,13 @@ inline MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* Object_FindObjec
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* IntroState_IntroSettings_mCE9886FCAF0F1D3B34D989F7F524A481085555BE (IntroState_t5E66AC9B004601686482C9FD4A6D9BD51458EF09* __this, TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* ___0_state, const RuntimeMethod* method) ;
 // UnityEngine.Coroutine UnityEngine.MonoBehaviour::StartCoroutine(System.Collections.IEnumerator)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponent<SetGameValues>()
+inline SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8* Component_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m8205462D7AA74A15DE53D37D86B0CDF3DB6B36CE (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+// System.Void SetGameValues::SetPlayerVals(PlayerVals)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGameValues_SetPlayerVals_m6BEC0F81DFF65F49A5E1ACD5DA6AE31179A39067 (SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8* __this, PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* ___0_playerVals, const RuntimeMethod* method) ;
 // System.Void IntroState/<IntroSettings>d__2::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CIntroSettingsU3Ed__2__ctor_mA65378C77B73BC71BA75EC01D954C13540CB8C49 (U3CIntroSettingsU3Ed__2_t3AC08C92C1EB92E592DA218F9693999AC2C6ACE4* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // System.Void TrialStateManager::SwitchState(StateMachine)
@@ -3233,6 +3262,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntroState_EnterState_m20F67A726B042A04B
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m8205462D7AA74A15DE53D37D86B0CDF3DB6B36CE_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_FindObjectOfType_TisMonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71_m50D9C582FA631B5B1D1DB1019EA001C2757B9968_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral24F1738C140BBFC1B0E8208802434B04EF9EA6A8);
@@ -3258,6 +3288,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void IntroState_EnterState_m20F67A726B042A04B
 		NullCheck(L_2);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
 		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_2, L_4, NULL);
+		// state.gameManager.GetComponent<SetGameValues>().SetPlayerVals(state.wsClient.playerVals);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_6 = ___0_state;
+		NullCheck(L_6);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_10;
+		NullCheck(L_7);
+		SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8* L_8;
+		L_8 = Component_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m8205462D7AA74A15DE53D37D86B0CDF3DB6B36CE(L_7, Component_GetComponent_TisSetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8_m8205462D7AA74A15DE53D37D86B0CDF3DB6B36CE_RuntimeMethod_var);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_9 = ___0_state;
+		NullCheck(L_9);
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_10 = L_9->___wsClient_22;
+		NullCheck(L_10);
+		PlayerVals_t933C31541965D30E62F6D3A50F21D9C26A81789F* L_11 = L_10->___playerVals_12;
+		NullCheck(L_8);
+		SetGameValues_SetPlayerVals_m6BEC0F81DFF65F49A5E1ACD5DA6AE31179A39067(L_8, L_11, NULL);
 		// }
 		return;
 	}
