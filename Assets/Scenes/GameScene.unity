@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0.8
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 73324b55f67f54c7bbf43204788b8bbe, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 01f4eb1c73693428d923f1520032e7f9, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.26748854, g: 0.44628078, b: 0.6355052, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.3477752, g: 0.3813853, b: 0.433578, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8715,34 +8715,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 8889768191879290618}
-    - target: {fileID: 1047682328762848389, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: toggle_may
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047682328762848389, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: toggle_must
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047682328762848389, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: toggle_musnt
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047682328762848389, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: toggle_prefmust
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1047682328764092550, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: gameManager
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7501780177037449705, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8578428801904929774, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
 --- !u!23 &1050135703425715035
@@ -11503,6 +11475,10 @@ PrefabInstance:
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 1970178321191539313, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1970178321191539313, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -11553,6 +11529,10 @@ PrefabInstance:
     - target: {fileID: 3593573136207396197, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3649500701085690773, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3649500701085690773, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
       propertyPath: m_StaticEditorFlags

@@ -76,7 +76,7 @@ Material:
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
-    - _Sharpness: 0
+    - _Sharpness: 1
     - _SpecularPower: 2
     - _Stencil: 0
     - _StencilComp: 8
@@ -148,21 +148,6 @@ MonoBehaviour:
     m_StrikethroughThickness: 36.75
     m_TabWidth: 224
   m_GlyphTable:
-  - m_Index: 57
-    m_Metrics:
-      m_Width: 358.67188
-      m_Height: 418.9375
-      m_HorizontalBearingX: 31.609375
-      m_HorizontalBearingY: 411.59375
-      m_HorizontalAdvance: 424.82812
-    m_GlyphRect:
-      m_X: 6
-      m_Y: 6
-      m_Width: 360
-      m_Height: 420
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
   - m_Index: 1
     m_Metrics:
       m_Width: 0
@@ -178,14 +163,29 @@ MonoBehaviour:
     m_Scale: 1
     m_AtlasIndex: 0
     m_ClassDefinitionType: 0
-  m_CharacterTable:
-  - m_ElementType: 1
-    m_Unicode: 97
-    m_GlyphIndex: 57
+  - m_Index: 57
+    m_Metrics:
+      m_Width: 358.67188
+      m_Height: 418.9375
+      m_HorizontalBearingX: 31.609375
+      m_HorizontalBearingY: 411.59375
+      m_HorizontalAdvance: 424.82812
+    m_GlyphRect:
+      m_X: 6
+      m_Y: 6
+      m_Width: 360
+      m_Height: 420
     m_Scale: 1
+    m_AtlasIndex: 0
+    m_ClassDefinitionType: 0
+  m_CharacterTable:
   - m_ElementType: 1
     m_Unicode: 32
     m_GlyphIndex: 1
+    m_Scale: 1
+  - m_ElementType: 1
+    m_Unicode: 97
+    m_GlyphIndex: 57
     m_Scale: 1
   m_AtlasTextures:
   - {fileID: 7728617097061013980}
