@@ -9030,6 +9030,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8262410051035835177, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: sourceGainDB
+      value: 5.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: sun
       value: 
