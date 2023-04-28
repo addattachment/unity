@@ -528,42 +528,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1902690400}
     m_Modifications:
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.14178012
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: TriggerModule.primitives.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.b
-      value: 0.40784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.g
-      value: 0.9490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.r
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9137723482355836764, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3981,50 +3945,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1902690400}
     m_Modifications:
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: TriggerModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.quality
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.m_Bounce.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.collidesWithDynamic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: TriggerModule.primitives.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.m_EnergyLossOnCollision.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
-      propertyPath: CollisionModule.multiplyColliderForceByCollisionAngle
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 534654523618524088, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
       propertyPath: m_Name
       value: Particle_Ball_Release_Blauw
@@ -11893,62 +11813,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1902690400}
     m_Modifications:
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.type
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.quality
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.minKillSpeed
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.m_Bounce.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.40784317
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.9490197
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: TriggerModule.primitives.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.b
-      value: 0.40784314
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.g
-      value: 0.9490196
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: ColorModule.gradient.maxGradient.key0.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9137723482355836762, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
-      propertyPath: CollisionModule.multiplyColliderForceByCollisionAngle
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 9137723482355836764, guid: d4560b7b371aa334ca73dfdb9a6db1b2, type: 3}
       propertyPath: m_RootOrder
       value: 1
