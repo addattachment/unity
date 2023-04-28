@@ -29,12 +29,12 @@ public class CaregiverIntroWaveState : CaregiverIntroStateMachine
         {
             if (state.Caregiver.GetComponent<Gazed>().hasBeenSeen)
             {
+                state.InstructionBoard.GetComponent<Appear>().Lower();
                 state.SwitchState(state.caregiverIntroButtonState);
             }
             else
             {
                 state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
-
             }
         }
     }

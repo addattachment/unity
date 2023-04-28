@@ -38,6 +38,10 @@ public class ScoreCaregiver : MonoBehaviour
         startPosMeCircle = meCircle.transform.position;
         startPosCaregiverCircle = caregiverCircle.transform.position;
         caregiverScoreEvent = new();
+        var controllers = GameObject.FindGameObjectsWithTag("Hand");
+        LeftController = controllers[0];
+        RightController = controllers[1];
+
     }
 
     public void EnableScoring()
@@ -88,7 +92,7 @@ public class ScoreCaregiver : MonoBehaviour
     private void CalcScore()
     {
         //TODO numbering not good, I think we need a non-linear scale?
-        caregiverScore = (int)(10 * (maxDistance - controllerDist) / maxDistance);
+        caregiverScore = (int)(10 * (maxDistance - DistanceBetweenCircles()) / maxDistance);
 
     }
 
@@ -112,6 +116,7 @@ public class ScoreCaregiver : MonoBehaviour
     private float DistanceBetweenCircles()
     {
         circleDist = Vector3.Distance(meCircle.transform.position, caregiverCircle.transform.position);
+        Debug.Log("Circle distance is " + circleDist);
         return circleDist;
     }
     public void MoveCircles()

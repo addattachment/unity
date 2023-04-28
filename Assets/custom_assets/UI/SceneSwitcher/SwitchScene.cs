@@ -58,9 +58,9 @@ public class SwitchScene : MonoBehaviour
         buttonText.SetText("op naar het volgende!");
         yield return new WaitForSeconds(1.5f);
         SwitchSceneEvent switchScene= new(nextScene);
-        wsClient.SendWSMessage(switchScene.SaveToString());
         crossFade.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
+        wsClient.SendWSMessage(switchScene.SaveToString());
         gameManager.isTutorial = nextIsTutorial;
         sceneMgr.SwitchScene(currentScene, nextScene);
         currentScene = sceneMgr.currentActiveScene;

@@ -100,7 +100,7 @@ public class TrophyList : MonoBehaviour
         waitingTimeForTransition = waitTime;
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "SetTrophyGiven", "oncompletetarget", gameObject);
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f,  "oncompletetarget", gameObject); //"oncomplete", "SetTrophyGiven",
         MoveAndWait(currentTrophy, ht);
     }
 

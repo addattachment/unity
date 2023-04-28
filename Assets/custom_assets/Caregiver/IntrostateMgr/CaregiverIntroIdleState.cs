@@ -1,8 +1,12 @@
-﻿public class CaregiverIntroIdleState : CaregiverIntroStateMachine
+﻿using TMPro;
+
+public class CaregiverIntroIdleState : CaregiverIntroStateMachine
 {
     public override void EnterState(CaregiverIntroStateManager state)
     {
         state.caregiverPhase = "CaregiverIntroIdleState";
+        state.InstructionBoard.GetComponent<Appear>().Raise();
+        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "We gaan je voorstellen aan je zorgfiguur, kijk maar naar haar!";
     }
 
     public override void ExitState(CaregiverIntroStateManager state)

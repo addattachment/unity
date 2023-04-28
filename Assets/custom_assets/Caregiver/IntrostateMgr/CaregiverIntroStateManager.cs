@@ -22,8 +22,11 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public ReadFeedback feedbackButton;
     public ScoreCaregiver scoreCaregiver;
     public SwitchScene switchScene;
+    public GameObject InstructionBoard;
+
     [Header("data connections")]
     public WsClient ws;
+
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
 
     public bool toNextState = false;
