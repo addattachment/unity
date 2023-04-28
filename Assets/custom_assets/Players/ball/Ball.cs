@@ -48,6 +48,10 @@ public class Ball : MonoBehaviour
 
     public ParticleSystem ballRelease;
 
+    private GameObject hitTargetObject;
+
+    [Header("FakeLaunch")]
+
     public bool doFakeLaunch = false;
 
     private void Start()
@@ -61,7 +65,7 @@ public class Ball : MonoBehaviour
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
         gameManager = GameManager.Instance;
         trajectoryManager = TrajectoryManager.Instance;
-
+        hitTargetObject = slingShot.hitTarget;
 
     }
 
@@ -239,7 +243,14 @@ public class Ball : MonoBehaviour
         //debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
         trail.enabled = true;
+
+        //play and set color particle effect based on color of hitTarget inside slingshot;
+        var main = ballRelease.main;
+        main.startColor = hitTargetObject.GetComponent<Renderer>().material.color;
+        var col = ballRelease.colorOverLifetime;
+        col.color = hitTargetObject.GetComponent<Renderer>().material.color;
         ballRelease.Play();
+
         Launch(Rb.position);
         TrajectoryManager.Instance.EnableLine(false);
 
