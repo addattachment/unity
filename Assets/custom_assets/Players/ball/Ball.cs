@@ -44,6 +44,9 @@ public class Ball : MonoBehaviour
     [SerializeField] private GameObject backgroundSound;
     [SerializeField] private TrailRenderer trail;
 
+    [Header("ParticleEffects")]
+
+    public ParticleSystem ballRelease;
 
     public bool doFakeLaunch = false;
 
@@ -213,7 +216,7 @@ public class Ball : MonoBehaviour
         // shoot the ball
         Rb.AddForce(launchForce, ForceMode.Impulse);
         slingShot.releaseSlingShotClip.Play();
-        
+
         Destroy(GetComponent<SpringJoint>());
         StartCoroutine(Explode());
     }
@@ -236,6 +239,7 @@ public class Ball : MonoBehaviour
         //debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
         trail.enabled = true;
+        ballRelease.Play();
         Launch(Rb.position);
         TrajectoryManager.Instance.EnableLine(false);
 
@@ -247,6 +251,7 @@ public class Ball : MonoBehaviour
         Rb.position = _fakeBallStartPoint;
         transform.position = _fakeBallStartPoint;
         ballIsReleased = true;
+        ballRelease.Play();
         //debug_text.SetDebugText("ball start point is " + Rb.position);
         Launch(Rb.position);
     }
