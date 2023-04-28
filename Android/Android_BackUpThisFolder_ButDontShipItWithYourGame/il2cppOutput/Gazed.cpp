@@ -34,6 +34,7 @@ struct WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520;
 // WsClient/WSHelloworld
 struct WSHelloworld_t5DE1798A7A085904E1F53420E342D37548AB0BB7;
 
+IL2CPP_EXTERN_C RuntimeClass* GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral06C9C6781CB7DBA60531245FE4981CA8D87A30E6;
 IL2CPP_EXTERN_C String_t* _stringLiteral485DA19638CBC30E5E0970BDE532B878988B9FCC;
@@ -452,6 +453,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gazed_Start_m0D4642EB027975905141C2A645B
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GazeEvent_tA0EDDD2980CD803E28383689F37C06C5C409FE27_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -463,11 +465,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Gazed_Start_m0D4642EB027975905141C2A645B
 		GazeEvent__ctor_m2FAC105BAA3CCE47A285CDC2FA35B71FD881F5EF(L_1, L_0, NULL);
 		__this->___gazeEvent_7 = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___gazeEvent_7), (void*)L_1);
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_6 = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_6), (void*)L_2);
 		// ws = WsClient.Instance;
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_2;
-		L_2 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_5 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_2);
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_3;
+		L_3 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
+		__this->___ws_5 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_5), (void*)L_3);
 		// }
 		return;
 	}

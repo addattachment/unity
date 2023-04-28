@@ -455,6 +455,8 @@ struct U3CSwitchToSceneU3Ed__15_tA0BED0984AA55EA8CFF8D4EEFFAE172B97A1DFB5  : pub
 	RuntimeObject* ___U3CU3E2__current_1;
 	// SwitchScene SwitchScene/<SwitchToScene>d__15::<>4__this
 	SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* ___U3CU3E4__this_2;
+	// SwitchSceneEvent SwitchScene/<SwitchToScene>d__15::<switchScene>5__2
+	SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* ___U3CswitchSceneU3E5__2_3;
 };
 
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.GameObject>
@@ -3040,12 +3042,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_SetColor_mFAB32FAA44461E46FD707
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TMP_Text_SetText_m848189C290727009A95A00E432B66DFB2F2C3454 (TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* __this, String_t* ___0_sourceText, bool ___1_syncTextInputBox, const RuntimeMethod* method) ;
 // System.Void SwitchSceneEvent::.ctor(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SwitchSceneEvent__ctor_m399BB3E0C4B93122C2161D48705BFCAA8E7FF95B (SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* __this, String_t* ___0_newScene, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Animator::SetTrigger(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.String SwitchSceneEvent::SaveToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SwitchSceneEvent_SaveToString_m8D45490528E129BFD17047E46D1E950C0B7069E1 (SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* __this, const RuntimeMethod* method) ;
 // System.Void WsClient::SendWSMessage(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D (WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* __this, String_t* ___0_message, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Animator::SetTrigger(System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // System.Void SceneMgr::SwitchScene(System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneMgr_SwitchScene_mB93934E12F9350372E508E03910BF41B18D5CDFF (SceneMgr_t2BB88C150F4DC2E92863DF6CB6E991B896324BAE* __this, String_t* ___0_sceneToUnload, String_t* ___1_sceneToLoad, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Time::get_time()
@@ -4918,7 +4920,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSwitchToSceneU3Ed__15_MoveNext_mE15A4
 	}
 	int32_t V_0 = 0;
 	SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* V_1 = NULL;
-	SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* V_2 = NULL;
 	{
 		int32_t L_0 = __this->___U3CU3E1__state_0;
 		V_0 = L_0;
@@ -4937,7 +4938,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CSwitchToSceneU3Ed__15_MoveNext_mE15A4
 			}
 			case 2:
 			{
-				goto IL_00bf;
+				goto IL_00b3;
 			}
 		}
 	}
@@ -4989,36 +4990,37 @@ IL_0072:
 		SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* L_13 = (SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE*)il2cpp_codegen_object_new(SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE_il2cpp_TypeInfo_var);
 		NullCheck(L_13);
 		SwitchSceneEvent__ctor_m399BB3E0C4B93122C2161D48705BFCAA8E7FF95B(L_13, L_12, NULL);
-		V_2 = L_13;
-		// wsClient.SendWSMessage(switchScene.SaveToString());
+		__this->___U3CswitchSceneU3E5__2_3 = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CswitchSceneU3E5__2_3), (void*)L_13);
+		// crossFade.SetTrigger("Start");
 		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_14 = V_1;
 		NullCheck(L_14);
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_15 = L_14->___wsClient_5;
-		SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* L_16 = V_2;
-		NullCheck(L_16);
-		String_t* L_17;
-		L_17 = SwitchSceneEvent_SaveToString_m8D45490528E129BFD17047E46D1E950C0B7069E1(L_16, NULL);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_15 = L_14->___crossFade_12;
 		NullCheck(L_15);
-		WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D(L_15, L_17, NULL);
-		// crossFade.SetTrigger("Start");
-		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_18 = V_1;
-		NullCheck(L_18);
-		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_19 = L_18->___crossFade_12;
-		NullCheck(L_19);
-		Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30(L_19, _stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE, NULL);
+		Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30(L_15, _stringLiteral8243A16D425F93AF62CAAB2BFAE01A2D6246A5FE, NULL);
 		// yield return new WaitForSeconds(1f);
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_20 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_20);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_20, (1.0f), NULL);
-		__this->___U3CU3E2__current_1 = L_20;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_20);
+		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_16 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
+		NullCheck(L_16);
+		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_16, (1.0f), NULL);
+		__this->___U3CU3E2__current_1 = L_16;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_16);
 		__this->___U3CU3E1__state_0 = 2;
 		return (bool)1;
 	}
 
-IL_00bf:
+IL_00b3:
 	{
 		__this->___U3CU3E1__state_0 = (-1);
+		// wsClient.SendWSMessage(switchScene.SaveToString());
+		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_17 = V_1;
+		NullCheck(L_17);
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_18 = L_17->___wsClient_5;
+		SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E79C5A5CE* L_19 = __this->___U3CswitchSceneU3E5__2_3;
+		NullCheck(L_19);
+		String_t* L_20;
+		L_20 = SwitchSceneEvent_SaveToString_m8D45490528E129BFD17047E46D1E950C0B7069E1(L_19, NULL);
+		NullCheck(L_18);
+		WsClient_SendWSMessage_m993AC696FB6C1B628E21CFD4B6CD31FE1830FE9D(L_18, L_20, NULL);
 		// gameManager.isTutorial = nextIsTutorial;
 		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_21 = V_1;
 		NullCheck(L_21);
