@@ -79,6 +79,8 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // LSL.OutletPassThrough
 struct OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C;
+// UnityEngine.ParticleSystem
+struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
 // Player
 struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843;
 // PlayerBallScoreEvent
@@ -357,8 +359,10 @@ struct Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC  : public MonoBehaviour_t5
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___backgroundSound_26;
 	// UnityEngine.TrailRenderer Ball::trail
 	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ___trail_27;
+	// UnityEngine.ParticleSystem Ball::ballRelease
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ballRelease_28;
 	// System.Boolean Ball::doFakeLaunch
-	bool ___doFakeLaunch_28;
+	bool ___doFakeLaunch_29;
 };
 
 // BallStateManager
