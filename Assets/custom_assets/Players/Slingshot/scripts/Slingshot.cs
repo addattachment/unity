@@ -32,7 +32,7 @@ public class Slingshot : MonoBehaviour
     [Header("Shooting parameters")]
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
     [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
-    private GameObject hitTarget; // we use the hittarget object to adapt the deflection distance
+    public GameObject hitTarget; // we use the hittarget object to adapt the deflection distance
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [SerializeField, Tooltip("how much may the drawing hook differ from the perfect hook to guide a ball to hit")] private float minGuidanceDist = 0.9f;
 

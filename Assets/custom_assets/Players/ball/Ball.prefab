@@ -957,12 +957,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
       propertyPath: ShapeModule.type
-      value: 6
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
       propertyPath: ShapeModule.m_Mesh
       value: 
       objectReference: {fileID: 4300000, guid: e050c2b16fe384bd994474655a4b4968, type: 2}
+    - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
+      propertyPath: ShapeModule.m_MeshRenderer
+      value: 
+      objectReference: {fileID: 2715402290459226521}
     - target: {fileID: 534654523618524085, guid: d644de814c7520847a13ed82df3ac2d8, type: 3}
       propertyPath: ShapeModule.radiusThickness
       value: 1

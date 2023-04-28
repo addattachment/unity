@@ -17,7 +17,6 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
         Debug.Log("Geef een lage score");
         state.InstructionBoard.GetComponent<Appear>().Raise();
         state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
-
         // uitgaan van mondelinge instructies eerst?
     }
 
