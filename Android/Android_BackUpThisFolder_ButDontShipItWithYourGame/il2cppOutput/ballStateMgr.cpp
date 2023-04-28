@@ -361,8 +361,10 @@ struct Ball_t6111C56AB29B5EDD3A473D5632FCD08605DB9BAC  : public MonoBehaviour_t5
 	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ___trail_27;
 	// UnityEngine.ParticleSystem Ball::ballRelease
 	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ballRelease_28;
+	// UnityEngine.GameObject Ball::hitTargetObject
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___hitTargetObject_29;
 	// System.Boolean Ball::doFakeLaunch
-	bool ___doFakeLaunch_29;
+	bool ___doFakeLaunch_30;
 };
 
 // BallStateManager
