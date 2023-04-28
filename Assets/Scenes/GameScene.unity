@@ -675,6 +675,38 @@ PrefabInstance:
       propertyPath: activeTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.20000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70725805
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7069439
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0039725606
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00079302327
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 89.613
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -86.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -86.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8615260360290738095, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -8996,7 +9028,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1102273343259632478, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: sun
