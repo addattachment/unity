@@ -346,6 +346,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A
 IL2CPP_EXTERN_C String_t* _stringLiteralE904836839810A43CECBBFBB6C8658B6BB068111;
 IL2CPP_EXTERN_C String_t* _stringLiteralEB554DB327FF8668B8BA2EA06F34E7565666C8C7;
 IL2CPP_EXTERN_C String_t* _stringLiteralEF743856E7DBE7159BF1B81E396362DB60F24B16;
+IL2CPP_EXTERN_C String_t* _stringLiteralF17737F352521CB352A5DAD1BF9F2BFFA5911F13;
 IL2CPP_EXTERN_C String_t* _stringLiteralF423DBE9868C4BD470675DEEAC9F15A1874C9435;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisSkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E_m8C3318164931A85473CAB3D28026B80EC7380A60_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mCED3A0108EB880335F2D9BFF3DBE2036654C9E17_RuntimeMethod_var;
@@ -4389,6 +4390,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_UpdateState_m
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCD034D9A46232CB6610EB804A99D70B036ADE1D8);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEB554DB327FF8668B8BA2EA06F34E7565666C8C7);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEF743856E7DBE7159BF1B81E396362DB60F24B16);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF17737F352521CB352A5DAD1BF9F2BFFA5911F13);
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
@@ -4571,7 +4573,7 @@ IL_013e:
 		L_40 = String_Concat_m9E3155FB84015C823606188F53B47CB44C444991(_stringLiteral26F6E8179A209448C5237E3FB3FBE4691F2BECB1, L_39, NULL);
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_40, NULL);
-		// state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
+		// state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_41 = ___0_state;
 		NullCheck(L_41);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_42 = L_41->___InstructionBoard_16;
@@ -4579,7 +4581,7 @@ IL_013e:
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_43;
 		L_43 = GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690(L_42, GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var);
 		NullCheck(L_43);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_43, _stringLiteral7E54D0E851B70440F0122BEDAA3826EB51459D47);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_43, _stringLiteralF17737F352521CB352A5DAD1BF9F2BFFA5911F13);
 	}
 
 IL_0172:

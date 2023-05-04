@@ -37,12 +37,12 @@ struct VirtualFuncInvoker0
 struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
 // System.Collections.Generic.List`1<Player>
 struct List_1_tC126DB1F2EAC892E1A6DA4242770B75A794B10D3;
+// System.Collections.Generic.List`1<ScoreDot>
+struct List_1_t8EAE3C9E33D4547F51D13F404BACDF62BF52525E;
 // System.Collections.Generic.List`1<TargetHit>
 struct List_1_t47405468326F9C3F9EB55B36600E3853EBE97495;
 // UnityEngine.GameObject[]
 struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
-// ScoreDot[]
-struct ScoreDotU5BU5D_t34DB3704E3093FBA789E6A680D7C8103D6362C90;
 // UnityEngine.AudioSource
 struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // Ball
@@ -544,8 +544,8 @@ struct PlayerScore_t431B7408AE2FB474DF2A32AB7DA1016BF98C93A6  : public MonoBehav
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_4;
 	// GameManager PlayerScore::gameManager
 	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_5;
-	// ScoreDot[] PlayerScore::scoreDots
-	ScoreDotU5BU5D_t34DB3704E3093FBA789E6A680D7C8103D6362C90* ___scoreDots_6;
+	// System.Collections.Generic.List`1<ScoreDot> PlayerScore::scoreDots
+	List_1_t8EAE3C9E33D4547F51D13F404BACDF62BF52525E* ___scoreDots_6;
 	// ScoreBoardAll PlayerScore::scoreboard
 	ScoreBoardAll_t7F58F4F4D8A8E33DA2254F21D2E987108B4E6428* ___scoreboard_7;
 	// ScoreLightEmitting PlayerScore::floor

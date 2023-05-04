@@ -1363,8 +1363,10 @@ inline Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* GameObject_GetCompone
 }
 // System.Void UnityEngine.Animator::Play(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_stateName, const RuntimeMethod* method) ;
-// System.Collections.IEnumerator TrophyList::WaitForDestruction()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TrophyList_WaitForDestruction_mCBC748A69C4173A144FCC57252373A1D12FC054F (TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* __this, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
+// System.Void TrophyList::SetTrophyGiven()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7 (TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* __this, const RuntimeMethod* method) ;
 // System.Void TrophyList/<WaitForDestruction>d__27::.ctor(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CWaitForDestructionU3Ed__27__ctor_m4568104ECB843F9D80C77765DEAE8F7F4B476A05 (U3CWaitForDestructionU3Ed__27_t47A1118455AFEDC27D5355839924D1FA8FC49B7C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // UnityEngine.Quaternion UnityEngine.Quaternion::get_identity()
@@ -1384,12 +1386,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingScripts_EnableLight_m71C69E5DF92
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingScripts_SpotFollow_m6A772EBB0A8A02C1DAD9FBC621D90AD8CEDC45DA (LightingScripts_t644C4CDA59A78AEF0E2211BAE3BB522710C96B67* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_followLocation, const RuntimeMethod* method) ;
 // System.Void UnityEngine.WaitForSeconds::.ctor(System.Single)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* __this, float ___0_seconds, const RuntimeMethod* method) ;
-// System.Void TrophyList::SetTrophyGiven()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7 (TrophyList_t8867C71061C631BBE1521E4B0ED4EBC890B59348* __this, const RuntimeMethod* method) ;
 // System.Void System.NotSupportedException::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Object::Destroy(UnityEngine.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_obj, const RuntimeMethod* method) ;
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -2807,6 +2805,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_DestroyTrophy_m2AB4F91B6002DD
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponentInChildren_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_m1E9AD091F9C98BEFECEB48E77CEB2BDE8ABA369B_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral12BE206D963959EECE564C2CF0DD6300629670C3);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -2834,11 +2833,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrophyList_DestroyTrophy_m2AB4F91B6002DD
 		Animator_Play_m0F6A9F84B2E256E644D56C34A7A9BD622CB00FF9(L_6, _stringLiteral12BE206D963959EECE564C2CF0DD6300629670C3, NULL);
 		// didExplode = false;
 		__this->___didExplode_15 = (bool)0;
-		// StartCoroutine(WaitForDestruction());
-		RuntimeObject* L_7;
-		L_7 = TrophyList_WaitForDestruction_mCBC748A69C4173A144FCC57252373A1D12FC054F(__this, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
-		L_8 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_7, NULL);
+		// Destroy(currentTrophy);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___currentTrophy_5;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mE97D0A766419A81296E8D4E5C23D01D3FE91ACBB(L_7, NULL);
+		// SetTrophyGiven();
+		TrophyList_SetTrophyGiven_mE81F50D0AFD8DC37C73710E70360C3AECE9454D7(__this, NULL);
 		// }
 		return;
 	}
