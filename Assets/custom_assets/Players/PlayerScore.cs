@@ -1,5 +1,7 @@
 using LSL;
+using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class PlayerScore : MonoBehaviour
 {
@@ -7,7 +9,7 @@ public class PlayerScore : MonoBehaviour
     [SerializeField] private GameManager gameManager;
 
     [Header("visualising score")]
-    [SerializeField] private ScoreDot[] scoreDots;
+    [SerializeField] private List<ScoreDot> scoreDots;
     [SerializeField] private ScoreBoardAll scoreboard;
     [SerializeField] private ScoreLightEmitting floor;
 
@@ -33,7 +35,9 @@ public class PlayerScore : MonoBehaviour
         //debug_text = GameObject.FindGameObjectWithTag("debug").GetComponentInChildren<DebugConnection>();
         gameSounds = GameObject.FindGameObjectWithTag("gameSounds").GetComponent<GameSounds>();
         scoreboard = GameObject.FindGameObjectWithTag("scoreboard").GetComponent<ScoreBoardAll>();
-        scoreDots = GetComponentsInChildren<ScoreDot>();
+        scoreDots.AddRange(GetComponentsInChildren<ScoreDot>());
+        //scoreDots.Sort();
+        scoreDots = scoreDots.OrderBy(go => go.name).ToList();
         floor = GameObject.FindGameObjectWithTag("Floor").GetComponent<ScoreLightEmitting>();
         playerBallScoreEvent = new();
     }

@@ -123,7 +123,8 @@ public class TrophyList : MonoBehaviour
         explode.GetComponentInChildren<Animator>().Play("Base Layer.Explosion");
 
         didExplode = false;
-        StartCoroutine(WaitForDestruction());
+        Destroy(currentTrophy);
+        SetTrophyGiven();
     }
     private IEnumerator WaitForDestruction()
     {

@@ -18,7 +18,14 @@ public class IntroState : StateMachine
         state.trialPhase = "IntroTrialState";
         _mb = GameObject.FindObjectOfType<MonoBehaviour>();
         _mb.StartCoroutine(IntroSettings(state));
-        state.gameManager.GetComponent<SetGameValues>().SetPlayerVals(state.wsClient.playerVals);
+        if (state.wsClient.playerVals.valuesSet)
+        {
+            state.gameManager.GetComponent<SetGameValues>().SetPlayerVals(state.wsClient.playerVals);
+        }
+        else
+        {
+            state.gameManager.GetComponent<SetGameValues>().UpdateGameValues();
+        }
     }
 
     private IEnumerator IntroSettings(TrialStateManager state)

@@ -25,10 +25,15 @@ public class SetGameValues : MonoBehaviour
     private bool playersFound = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         gameManager = GameManager.Instance;
         wsClient = WsClient.Instance;
+    }
+
+    void Start()
+    {
+        
 
         //if (gameManager.isTutorial & !wsClient.playerVals.valuesSet)
         //{

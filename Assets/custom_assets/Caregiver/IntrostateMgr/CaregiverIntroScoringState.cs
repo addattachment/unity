@@ -73,7 +73,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                     {
                         // play audio file: probeer eens opnieuw
                         Debug.Log("te hoge score" + state.scoreCaregiver.caregiverScore);
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
+                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
 
                     }
                     state.scoreCaregiver.EnableScoring();
