@@ -571,12 +571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   gameManager: {fileID: 0}
-  scoreDots:
-  - {fileID: 4292321287242499066}
-  - {fileID: 7877814747177471825}
-  - {fileID: 4136290704943201047}
-  - {fileID: 5949908368264607223}
-  - {fileID: 6285029629929643088}
+  scoreDots: []
   scoreboard: {fileID: 0}
   floor: {fileID: 0}
   gameSounds: {fileID: 0}

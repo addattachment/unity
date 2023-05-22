@@ -59,6 +59,10 @@ public class SetGameValues : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(gameManager == null)
+        {
+            gameManager = GameManager.Instance;
+        }
         if (gameManager.aSceneIsLoaded && gameManager.developmentMode && !developmentSettingsSet)
         {
             Debug.Log("settings development values for players");
@@ -89,19 +93,16 @@ public class SetGameValues : MonoBehaviour
         if (player == null)
         {
             playerObj = GameObject.FindGameObjectWithTag("Player");
-            player = playerObj.GetComponent<Player>();
+            if(playerObj != null)player = playerObj.GetComponent<Player>();
         }
         // we set the values for the normal player and the NPC, both should be male
-        player.playerName = playerName;
-        player.gender = gender;
-        player.contingency = contingency;
-        player.height = height; //TODO USEFUL?
-        player.isRealPlayer = true;
-        player.trial_block = trial_block;
+        player.UpdateValues(playerName, gender, contingency, height, true, trial_block);
+
         // NPC values
+
         if (!gameManager.isTutorial)
         {
-
+            string tempName;
             if (NPC == null)
             {
                 NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
@@ -110,30 +111,27 @@ public class SetGameValues : MonoBehaviour
             {
                 if (trial_block == 1)
                 {
-                    NPC.playerName = NPCNameMale_1;
+                    tempName = NPCNameMale_1;
                     NextTrialBlockNPCname = NPCNameMale_2;
                 }
                 else
                 {
-                    NPC.playerName = NPCNameMale_2;
+                    tempName = NPCNameMale_2;
                 }
             }
             else
             {
                 if (trial_block == 1)
                 {
-                    NPC.playerName = NPCNameFemale_1;
+                    tempName = NPCNameFemale_1;
                     NextTrialBlockNPCname = NPCNameFemale_2;
                 }
                 else
                 {
-                    NPC.playerName = NPCNameFemale_2;
+                    tempName = NPCNameFemale_2;
                 }
             }
-            NPC.gender = gender;
-            NPC.contingency = Contingency.c_20; // DONT CARE
-            NPC.height = height; //TODO USEFUL?
-            NPC.isRealPlayer = false;
+            NPC.UpdateValues(tempName, gender, contingency, height, false, trial_block);
             //GenerateTrialList(player.contingency);
         }
 
