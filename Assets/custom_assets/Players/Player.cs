@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
 
     public string GetWonTrophies()
     {
-        string result = playerName +" : \n";
+        string result = playerName + " : \n";
         foreach (GameObject trophy in trophyWonList)
         {
             result += trophy.name + "\n";
@@ -47,6 +47,15 @@ public class Player : MonoBehaviour
         return result;
     }
 
+    public void UpdateValues(string _name, Gender _gender, Contingency _contingency, int _height, bool _isReal, int _trialBlock)
+    {
+        playerName = _name;
+        gender = _gender;
+        contingency = _contingency;
+        height = _height;
+        isRealPlayer = _isReal;
+        trial_block = _trialBlock;
+    }
 
 }
 

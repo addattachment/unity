@@ -4917,7 +4917,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1001177429090512263, guid: fa83d5f6d5731154a8af7fbcbdb543c7, type: 3}
       propertyPath: ip
-      value: 192.168.50.188
+      value: 192.168.0.188
       objectReference: {fileID: 0}
     - target: {fileID: 1001177429090512263, guid: fa83d5f6d5731154a8af7fbcbdb543c7, type: 3}
       propertyPath: gameManager
