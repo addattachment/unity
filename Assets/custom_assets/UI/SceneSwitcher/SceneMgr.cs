@@ -59,8 +59,8 @@ public class SceneMgr : MonoBehaviour
                 if (SceneManager.GetSceneAt(i).isLoaded)
                 {
                     SceneManager.SetActiveScene(SceneManager.GetSceneAt(i));
-
                     found = true;
+                    SetSceneVariables(SceneManager.GetSceneAt(i).name);
                 }
             }
         }
@@ -87,8 +87,13 @@ public class SceneMgr : MonoBehaviour
 
     private void LoadNewScene(string sceneToLoad)
     {
+        SetSceneVariables(sceneToLoad);
         SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         currentActiveScene = sceneToLoad;
+    }
+
+    private void SetSceneVariables(string sceneToLoad)
+    {
         switch (sceneToLoad)
         {
             case "TutShootingScene":
