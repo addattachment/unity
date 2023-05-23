@@ -70,7 +70,7 @@ public class SceneMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsAnAdditiveGameSceneLoaded() && !gameManager.aSceneIsLoaded)
+        if (!gameManager.aSceneIsLoaded && IsAnAdditiveGameSceneLoaded())
         {
             gameManager.aSceneIsLoaded = true;
         }
@@ -94,6 +94,7 @@ public class SceneMgr : MonoBehaviour
 
     private void SetSceneVariables(string sceneToLoad)
     {
+        Debug.Log("Switching to " + sceneToLoad);
         switch (sceneToLoad)
         {
             case "TutShootingScene":
@@ -104,7 +105,7 @@ public class SceneMgr : MonoBehaviour
                 break;
             case "GameScene":
                 gameManager.isTutorial = false;
-                //gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
+                gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
                 break;
             default:
                 break;

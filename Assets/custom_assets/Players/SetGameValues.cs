@@ -102,7 +102,10 @@ public class SetGameValues : MonoBehaviour
         player.UpdateValues(playerName, gender, contingency, height, true, trial_block);
 
         // NPC values
-
+        if (gameManager == null)
+        {
+            gameManager = GameManager.Instance;
+        }
         if (!gameManager.isTutorial)
         {
             string tempName;

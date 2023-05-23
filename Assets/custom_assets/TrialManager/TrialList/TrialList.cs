@@ -46,6 +46,7 @@ public class TrialList : MonoBehaviour
 
     public void GenerateTrialList(Contingency cont)
     {
+        ClearTrialList();
         if (cont == Contingency.c_20)
         {
             LoadFromResourcesFolder(data20_dir);
@@ -110,6 +111,13 @@ public class TrialList : MonoBehaviour
             trialsList.Add(temp);
             //debug_text.SetDebugText(response);
         }
+    }
+
+    public void ClearTrialList()
+    {
+        Debug.Log("clearing the list");
+        //Debug.Break();
+        trialsList.Clear();
     }
 
     /// <summary>

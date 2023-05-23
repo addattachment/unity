@@ -29,7 +29,7 @@ public class CaregiverIntroWaveState : CaregiverIntroStateMachine
         {
             if (state.Caregiver.GetComponent<Gazed>().hasBeenSeen)
             {
-                state.InstructionBoardAppear.Lower();
+                //state.InstructionBoardAppear.Lower();
                 state.SwitchState(state.caregiverIntroButtonState);
             }
             else
