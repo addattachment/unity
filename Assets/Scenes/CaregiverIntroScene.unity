@@ -2565,36 +2565,48 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 46.083
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 46.083
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 46.083
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.024
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.32
+      value: 1.5148
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.023
+      value: -0.027999867
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071067
+      value: 0.6250211
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.7071068
+      value: -0.6250212
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.33067894
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.33067894
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98021
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2602,8 +2614,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 55.764
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6e064ac926646f45a17755d90fc9d27, type: 2}
     - target: {fileID: 919132149155446097, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
       propertyPath: m_Name
       value: arrow
@@ -2615,27 +2631,22 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c2298a2c70c710a49b63e68740071a7e, type: 3}
   m_PrefabInstance: {fileID: 2147169349}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2147169351
-Animator:
-  serializedVersion: 5
+--- !u!111 &2147169355
+Animation:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147169350}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 254492b873e9ba8418d2aecc9b2617b7, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4353f1307cd458e47b008f253f510bf8, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4353f1307cd458e47b008f253f510bf8, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!33 &183726753103423735
 MeshFilter:
   m_ObjectHideFlags: 0
