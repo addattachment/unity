@@ -15,8 +15,8 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
         passthrough = 0;
         state.feedbackButton.isTouched = false;
         Debug.Log("Geef een lage score");
-        state.InstructionBoard.GetComponent<Appear>().Raise();
-        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
+        state.InstructionBoardAppear.Raise();
+        state.InstructionBoardText.text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
         // uitgaan van mondelinge instructies eerst?
     }
 
@@ -43,7 +43,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         passthrough++;
                         timer = 0.0f;
                         Debug.Log("Geef maar een Hoge score");
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Perfect, probeer nu eens voor een hoge score ze dicht bijeen te brengen";
+                        state.InstructionBoardText.text = "Perfect, probeer nu eens voor een hoge score ze dicht bijeen te brengen";
 
                     }
                     else
@@ -51,7 +51,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         // anders boodschap geven opnieuw te proberen
                         // play audio file: probeer eens opnieuw
                         Debug.Log("te hoge score");
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
+                        state.InstructionBoardText.text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
 
                     }
                     state.scoreCaregiver.EnableScoring();
@@ -66,14 +66,14 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         passthrough++;
                         timer = 0.0f;
                         Debug.Log("Geef nu maar echte score");
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Top! Kun je nu zelf aanduiden hoeveel je je zorgfiguur vertrouwt?";
+                        state.InstructionBoardText.text = "Top! Kun je nu zelf aanduiden hoeveel je je zorgfiguur vertrouwt?";
 
                     }
                     else
                     {
                         // play audio file: probeer eens opnieuw
                         Debug.Log("te hoge score" + state.scoreCaregiver.caregiverScore);
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
+                        state.InstructionBoardText.text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
 
                     }
                     state.scoreCaregiver.EnableScoring();
@@ -81,7 +81,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                 case 2:
                     state.scoreCaregiver.scoringStarted = false;
                     state.scoreCaregiver.SendScore(-1);
-                    state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Goed gedaan, we gaan het spel nu starten!";
+                    state.InstructionBoardText.text = "Goed gedaan, we gaan het spel nu starten!";
 
                     state.feedbackButton.RaiseFeedbackPole();
                     // als score goed, feedbackbutton omhoog en naar echte spel
@@ -99,11 +99,11 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                 case 0:
                     if (timer >= switchTextTime)
                     {
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Sluit je handen volledig voor de cirkels te kunnen bewegen of ze vast te zetten. ";
+                        state.InstructionBoardText.text = "Sluit je handen volledig voor de cirkels te kunnen bewegen of ze vast te zetten. ";
                     }
                     if (timer >= 2 * switchTextTime)
                     {
-                        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Voor een slechte score moet je de cirkels ver uiteen brengen.";
+                        state.InstructionBoardText.text = "Voor een slechte score moet je de cirkels ver uiteen brengen.";
                     }
                     break;
                 case 1:
@@ -124,7 +124,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
     private IEnumerator UpdateText(CaregiverIntroStateManager state, string updateText)
     {
         yield return new WaitForSeconds(3.0f);
-        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = updateText;
+        state.InstructionBoardText.text = updateText;
         string s = "sluit je hand volledig om de cirkels te activeren en trek ze zo ver mogelijk uit elkaar om een slechte score te geven";
     }
 }

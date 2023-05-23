@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 
 public class CaregiverIntroStateManager : MonoBehaviour
 {
@@ -12,17 +13,14 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public GameManager gameManager;
 
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
-    //public ReadFeedback feedbackPole;
-    //public SetCaregiverGaze caregiverGaze;
-    //public GameObject caregiverFeedbackScreen;
-    //public GameObject scoreCaregiver;
-    //public LightingMgr lightingMgr;
     public GameObject Caregiver;
     [Header("Interactable objects")]
     public ReadFeedback feedbackButton;
     public ScoreCaregiver scoreCaregiver;
     public SwitchScene switchScene;
     public GameObject InstructionBoard;
+    public Appear InstructionBoardAppear;
+    public TMP_Text InstructionBoardText;
 
     [Header("data connections")]
     public WsClient ws;
@@ -37,7 +35,8 @@ public class CaregiverIntroStateManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         ws = WsClient.Instance;
-
+        InstructionBoardAppear = InstructionBoard.GetComponent<Appear>();
+        InstructionBoardText = InstructionBoard.GetComponentInChildren<TMP_Text>();
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIntroIdleState";
         currentCaregiverState.EnterState(this);

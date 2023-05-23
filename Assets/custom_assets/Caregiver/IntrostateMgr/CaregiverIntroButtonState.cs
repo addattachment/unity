@@ -6,8 +6,8 @@ public class CaregiverIntroButtonState : CaregiverIntroStateMachine
     {
         state.caregiverPhase = "CaregiverIntroButtonState";
         state.feedbackButton.RaiseFeedbackPole();
-        state.InstructionBoard.GetComponent<Appear>().Raise();
-        state.InstructionBoard.GetComponentInChildren<TMP_Text>().text = "Doorheen het spel zullen soms knoppen verschijnen, deze mag je aanraken met je hand om verder te gaan";
+        state.InstructionBoardAppear.Raise();
+        state.InstructionBoardText.text = "Doorheen het spel zullen soms knoppen verschijnen, deze mag je aanraken met je hand om verder te gaan";
     }
 
     public override void ExitState(CaregiverIntroStateManager state)
@@ -21,7 +21,7 @@ public class CaregiverIntroButtonState : CaregiverIntroStateMachine
         {
             state.feedbackButton.isTouched = false;
             state.feedbackButton.LowerFeedbackPole();
-            state.InstructionBoard.GetComponent<Appear>().Lower();
+            state.InstructionBoardAppear.Lower();
             state.SwitchState(state.caregiverIntroScoringState);
         }
     }
