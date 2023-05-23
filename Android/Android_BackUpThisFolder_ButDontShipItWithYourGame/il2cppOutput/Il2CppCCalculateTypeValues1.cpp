@@ -37020,14 +37020,18 @@ struct CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A  : p
 	SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* ___switchScene_15;
 	// UnityEngine.GameObject CaregiverIntroStateManager::InstructionBoard
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___InstructionBoard_16;
+	// Appear CaregiverIntroStateManager::InstructionBoardAppear
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___InstructionBoardAppear_17;
+	// TMPro.TMP_Text CaregiverIntroStateManager::InstructionBoardText
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___InstructionBoardText_18;
 	// WsClient CaregiverIntroStateManager::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_17;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_19;
 	// CaregiverFeedbackEvent CaregiverIntroStateManager::caregiverFeedbackEvent
-	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_18;
+	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_20;
 	// System.Boolean CaregiverIntroStateManager::toNextState
-	bool ___toNextState_19;
+	bool ___toNextState_21;
 	// System.String CaregiverIntroStateManager::caregiverPhase
-	String_t* ___caregiverPhase_20;
+	String_t* ___caregiverPhase_22;
 };
 
 // CaregiverScoreGen
