@@ -8201,6 +8201,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8889768191879290624}
     m_Modifications:
+    - target: {fileID: 1929229897, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: minHeight
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 1047682327657280342, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
       propertyPath: m_Name
       value: Slingshot
@@ -11167,6 +11171,26 @@ PrefabInstance:
     - target: {fileID: 4404386758385701951, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
       propertyPath: m_Name
       value: environment
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480800440217390426, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480800440217390426, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960412505404547186, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.379
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960412505404547186, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8960412505404547186, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.218
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
