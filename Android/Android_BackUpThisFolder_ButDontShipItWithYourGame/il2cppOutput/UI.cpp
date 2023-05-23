@@ -4698,10 +4698,6 @@ IL_0042:
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = __this->___gameManager_4;
 		NullCheck(L_8);
 		L_8->___isTutorial_13 = (bool)0;
-		// gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_9 = __this->___gameManager_4;
-		NullCheck(L_9);
-		L_9->___trialListGenerated_15 = (bool)0;
 		// }
 		return;
 	}
