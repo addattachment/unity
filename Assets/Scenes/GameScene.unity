@@ -1262,7 +1262,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.2
+  m_Intensity: 0.4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1319,14 +1319,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.28629446, y: 0.4539236, z: -0.15674165, w: 0.8291085}
+  m_LocalRotation: {x: 0.6296353, y: 0.33434415, z: -0.34471524, w: 0.6106921}
   m_LocalPosition: {x: -0.1, y: 21.73, z: 5.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 38.1, y: 57.4, z: 0}
+  m_LocalEulerAnglesHint: {x: 91.75, y: 57.4, z: 0}
 --- !u!114 &705507996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,8 +1892,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 90
-  m_Range: 19.982702
+  m_Intensity: 120
+  m_Range: 39.4182
   m_SpotAngle: 82.472916
   m_InnerSpotAngle: 30.165186
   m_CookieSize: 10
@@ -9041,7 +9041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1453501352080817614, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3378146384754724388, guid: d1395c90e0e2a9b4e802af38e34ee55b, type: 3}
       propertyPath: m_Materials.Array.data[1]
@@ -11170,11 +11170,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
---- !u!1 &3593573135810233238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2697355211863680754, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
-  m_PrefabInstance: {fileID: 3593573135810233236}
-  m_PrefabAsset: {fileID: 0}
 --- !u!33 &3612402847389518365
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15607,7 +15602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Camera: {fileID: 0}
   m_OriginBaseGameObject: {fileID: 784768563}
-  m_CameraFloorOffsetObject: {fileID: 3593573135810233238}
+  m_CameraFloorOffsetObject: {fileID: 0}
   m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 1.1176
 --- !u!1001 &8895746635517900896
@@ -15623,7 +15618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4237988110133765230, guid: d12c68e7996cd014c9589b253bacd4a3, type: 3}
       propertyPath: m_Shadows.m_Type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8895746635564159594, guid: d12c68e7996cd014c9589b253bacd4a3, type: 3}
       propertyPath: m_Name
