@@ -50,6 +50,9 @@ public class SetGameValues : MonoBehaviour
         //{
 
         //}
+
+
+
         if (wsClient.playerVals.valuesSet)
         {
             gameManager.playerValsReceivedViaWS = true;

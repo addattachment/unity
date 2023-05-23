@@ -104,7 +104,7 @@ public class SceneMgr : MonoBehaviour
                 break;
             case "GameScene":
                 gameManager.isTutorial = false;
-                gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
+                //gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
                 break;
             default:
                 break;

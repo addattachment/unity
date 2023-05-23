@@ -22,6 +22,6 @@ public class Exploded : MonoBehaviour
         Debug.Log("boom");
         trophy.didExplode = true;
         //hide the currentTrophy already
-        trophy.currentTrophy.GetComponent<Renderer>().enabled = false;
+        //trophy.currentTrophy.GetComponent<Renderer>().enabled = false;
     }
 }
