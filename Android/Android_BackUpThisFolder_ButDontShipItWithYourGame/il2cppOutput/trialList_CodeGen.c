@@ -38,13 +38,15 @@ extern void TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E
 extern void TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3 (void);
 // 0x0000000D System.Void TrialList::ReadTrial(UnityEngine.TextAsset)
 extern void TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED (void);
-// 0x0000000E Trial TrialList::GetCurrentTrial()
+// 0x0000000E System.Void TrialList::ClearTrialList()
+extern void TrialList_ClearTrialList_m36C3058CABBBC1F9394178CF63DF1960F48A4442 (void);
+// 0x0000000F Trial TrialList::GetCurrentTrial()
 extern void TrialList_GetCurrentTrial_mE3449ADB7FF0FAFC94D295D55909C31BCC1FDFE0 (void);
-// 0x0000000F System.Void TrialList::NextTrial()
+// 0x00000010 System.Void TrialList::NextTrial()
 extern void TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C (void);
-// 0x00000010 System.Void TrialList::.ctor()
+// 0x00000011 System.Void TrialList::.ctor()
 extern void TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059 (void);
-static Il2CppMethodPointer s_methodPointers[16] = 
+static Il2CppMethodPointer s_methodPointers[17] = 
 {
 	Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3,
 	Trial_GetTrialNumber_mF6FE0261A13F714BA6FA15087BA549B2996B279F,
@@ -59,11 +61,12 @@ static Il2CppMethodPointer s_methodPointers[16] =
 	TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18,
 	TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3,
 	TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED,
+	TrialList_ClearTrialList_m36C3058CABBBC1F9394178CF63DF1960F48A4442,
 	TrialList_GetCurrentTrial_mE3449ADB7FF0FAFC94D295D55909C31BCC1FDFE0,
 	TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C,
 	TrialList__ctor_mBAD8F3EB0524FD8DA1DDBE347815AEBCCD3CA059,
 };
-static const int32_t s_InvokerIndices[16] = 
+static const int32_t s_InvokerIndices[17] = 
 {
 	1341,
 	8714,
@@ -78,6 +81,7 @@ static const int32_t s_InvokerIndices[16] =
 	7086,
 	8905,
 	7086,
+	8905,
 	8751,
 	8905,
 	8905,
@@ -86,7 +90,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_trialList_CodeGenModule;
 const Il2CppCodeGenModule g_trialList_CodeGenModule = 
 {
 	"trialList.dll",
-	16,
+	17,
 	s_methodPointers,
 	0,
 	NULL,

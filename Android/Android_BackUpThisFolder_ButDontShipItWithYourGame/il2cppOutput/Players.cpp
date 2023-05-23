@@ -8267,6 +8267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGameValues_UpdateGameValues_mC09F1F03
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral7FDAD2EDFD927C3BC792AEA17BD4352000FEA47C);
@@ -8326,123 +8327,142 @@ IL_0047:
 		int32_t L_12 = __this->___trial_block_10;
 		NullCheck(L_7);
 		Player_UpdateValues_mE2460D20537F7BD48CD3E626A987A0E996221952(L_7, L_8, L_9, L_10, L_11, (bool)1, L_12, NULL);
-		// if (!gameManager.isTutorial)
+		// if (gameManager == null)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_13 = __this->___gameManager_4;
-		NullCheck(L_13);
-		bool L_14 = L_13->___isTutorial_13;
-		if (L_14)
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_14;
+		L_14 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_13, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_14)
 		{
-			goto IL_011d;
+			goto IL_008a;
+		}
+	}
+	{
+		// gameManager = GameManager.Instance;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_15 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
+		__this->___gameManager_4 = L_15;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_4), (void*)L_15);
+	}
+
+IL_008a:
+	{
+		// if (!gameManager.isTutorial)
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_16 = __this->___gameManager_4;
+		NullCheck(L_16);
+		bool L_17 = L_16->___isTutorial_13;
+		if (L_17)
+		{
+			goto IL_0136;
 		}
 	}
 	{
 		// if (NPC == null)
-		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_15 = __this->___NPC_17;
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_18 = __this->___NPC_17;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		bool L_16;
-		L_16 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_15, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
-		if (!L_16)
+		bool L_19;
+		L_19 = Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605(L_18, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_19)
 		{
-			goto IL_00a4;
+			goto IL_00bd;
 		}
 	}
 	{
 		// NPC = GameObject.FindGameObjectWithTag("NPC").GetComponent<Player>();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17;
-		L_17 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral7FDAD2EDFD927C3BC792AEA17BD4352000FEA47C, NULL);
-		NullCheck(L_17);
-		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_18;
-		L_18 = GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA(L_17, GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
-		__this->___NPC_17 = L_18;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___NPC_17), (void*)L_18);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_20;
+		L_20 = GameObject_FindGameObjectWithTag_mF0229BC2074CE9EEA72FAB1E5A4BC2AEC3D2CDBE(_stringLiteral7FDAD2EDFD927C3BC792AEA17BD4352000FEA47C, NULL);
+		NullCheck(L_20);
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_21;
+		L_21 = GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA(L_20, GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
+		__this->___NPC_17 = L_21;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___NPC_17), (void*)L_21);
 	}
 
-IL_00a4:
+IL_00bd:
 	{
 		// if (gender == Gender.Male)
-		int32_t L_19 = __this->___gender_7;
-		if (L_19)
+		int32_t L_22 = __this->___gender_7;
+		if (L_22)
 		{
-			goto IL_00d3;
+			goto IL_00ec;
 		}
 	}
 	{
 		// if (trial_block == 1)
-		int32_t L_20 = __this->___trial_block_10;
-		if ((!(((uint32_t)L_20) == ((uint32_t)1))))
+		int32_t L_23 = __this->___trial_block_10;
+		if ((!(((uint32_t)L_23) == ((uint32_t)1))))
 		{
-			goto IL_00ca;
+			goto IL_00e3;
 		}
 	}
 	{
 		// tempName = NPCNameMale_1;
-		String_t* L_21 = __this->___NPCNameMale_1_11;
-		V_0 = L_21;
+		String_t* L_24 = __this->___NPCNameMale_1_11;
+		V_0 = L_24;
 		// NextTrialBlockNPCname = NPCNameMale_2;
-		String_t* L_22 = __this->___NPCNameMale_2_12;
-		__this->___NextTrialBlockNPCname_15 = L_22;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___NextTrialBlockNPCname_15), (void*)L_22);
-		goto IL_00f8;
+		String_t* L_25 = __this->___NPCNameMale_2_12;
+		__this->___NextTrialBlockNPCname_15 = L_25;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___NextTrialBlockNPCname_15), (void*)L_25);
+		goto IL_0111;
 	}
 
-IL_00ca:
+IL_00e3:
 	{
 		// tempName = NPCNameMale_2;
-		String_t* L_23 = __this->___NPCNameMale_2_12;
-		V_0 = L_23;
-		goto IL_00f8;
+		String_t* L_26 = __this->___NPCNameMale_2_12;
+		V_0 = L_26;
+		goto IL_0111;
 	}
 
-IL_00d3:
+IL_00ec:
 	{
 		// if (trial_block == 1)
-		int32_t L_24 = __this->___trial_block_10;
-		if ((!(((uint32_t)L_24) == ((uint32_t)1))))
+		int32_t L_27 = __this->___trial_block_10;
+		if ((!(((uint32_t)L_27) == ((uint32_t)1))))
 		{
-			goto IL_00f1;
+			goto IL_010a;
 		}
 	}
 	{
 		// tempName = NPCNameFemale_1;
-		String_t* L_25 = __this->___NPCNameFemale_1_13;
-		V_0 = L_25;
+		String_t* L_28 = __this->___NPCNameFemale_1_13;
+		V_0 = L_28;
 		// NextTrialBlockNPCname = NPCNameFemale_2;
-		String_t* L_26 = __this->___NPCNameFemale_2_14;
-		__this->___NextTrialBlockNPCname_15 = L_26;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___NextTrialBlockNPCname_15), (void*)L_26);
-		goto IL_00f8;
+		String_t* L_29 = __this->___NPCNameFemale_2_14;
+		__this->___NextTrialBlockNPCname_15 = L_29;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___NextTrialBlockNPCname_15), (void*)L_29);
+		goto IL_0111;
 	}
 
-IL_00f1:
+IL_010a:
 	{
 		// tempName = NPCNameFemale_2;
-		String_t* L_27 = __this->___NPCNameFemale_2_14;
-		V_0 = L_27;
+		String_t* L_30 = __this->___NPCNameFemale_2_14;
+		V_0 = L_30;
 	}
 
-IL_00f8:
+IL_0111:
 	{
 		// NPC.UpdateValues(tempName, gender, contingency, height, false, trial_block);
-		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_28 = __this->___NPC_17;
-		String_t* L_29 = V_0;
-		int32_t L_30 = __this->___gender_7;
-		int32_t L_31 = __this->___contingency_8;
-		int32_t L_32 = __this->___height_9;
-		int32_t L_33 = __this->___trial_block_10;
-		NullCheck(L_28);
-		Player_UpdateValues_mE2460D20537F7BD48CD3E626A987A0E996221952(L_28, L_29, L_30, L_31, L_32, (bool)0, L_33, NULL);
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_31 = __this->___NPC_17;
+		String_t* L_32 = V_0;
+		int32_t L_33 = __this->___gender_7;
+		int32_t L_34 = __this->___contingency_8;
+		int32_t L_35 = __this->___height_9;
+		int32_t L_36 = __this->___trial_block_10;
+		NullCheck(L_31);
+		Player_UpdateValues_mE2460D20537F7BD48CD3E626A987A0E996221952(L_31, L_32, L_33, L_34, L_35, (bool)0, L_36, NULL);
 	}
 
-IL_011d:
+IL_0136:
 	{
 		// gameManager.playerValuesAreUpdated = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_34 = __this->___gameManager_4;
-		NullCheck(L_34);
-		L_34->___playerValuesAreUpdated_7 = (bool)1;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_37 = __this->___gameManager_4;
+		NullCheck(L_37);
+		L_37->___playerValuesAreUpdated_7 = (bool)1;
 		// gameManager.playerContingencySet = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_35 = __this->___gameManager_4;
-		NullCheck(L_35);
-		L_35->___playerContingencySet_8 = (bool)1;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_38 = __this->___gameManager_4;
+		NullCheck(L_38);
+		L_38->___playerContingencySet_8 = (bool)1;
 		// }
 		return;
 	}
