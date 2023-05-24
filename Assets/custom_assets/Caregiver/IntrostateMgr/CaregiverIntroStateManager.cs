@@ -14,6 +14,7 @@ public class CaregiverIntroStateManager : MonoBehaviour
 
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
     public GameObject Caregiver;
+    public RuntimeAnimatorController controller;
     [Header("Interactable objects")]
     public ReadFeedback feedbackButton;
     public ScoreCaregiver scoreCaregiver;
@@ -35,6 +36,7 @@ public class CaregiverIntroStateManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         ws = WsClient.Instance;
+        Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
         InstructionBoardAppear = InstructionBoard.GetComponent<Appear>();
         InstructionBoardText = InstructionBoard.GetComponentInChildren<TMP_Text>();
         currentCaregiverState = caregiverIdleState;

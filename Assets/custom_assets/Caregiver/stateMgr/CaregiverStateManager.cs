@@ -13,6 +13,8 @@ public class CaregiverStateManager : MonoBehaviour
     public Player player;
 
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
+    public GameObject Caregiver;
+    public RuntimeAnimatorController controller;
     public ReadFeedback feedbackPole;
     public SetCaregiverGaze caregiverGaze;
     public GameObject caregiverFeedbackScreen;
@@ -33,7 +35,7 @@ public class CaregiverStateManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         ws = WsClient.Instance;
-
+        Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIdleState";
         currentCaregiverState.EnterState(this);
