@@ -204,6 +204,7 @@ public class Ball : MonoBehaviour
     private void Launch(Vector3 origin)
     {
         // audio stuff
+        trail.enabled = true;
         ball_flying_audio.Play();
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         //Send LSL data
@@ -242,7 +243,7 @@ public class Ball : MonoBehaviour
     {
         //debug_text.SetDebugText("ball start point is "+Rb.position);
         ballIsReleased = true;
-        trail.enabled = true;
+        // trail.enabled = true;
 
         //play and set color particle effect based on color of hitTarget inside slingshot;
         var main = ballRelease.main;
