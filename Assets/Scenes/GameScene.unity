@@ -11168,24 +11168,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: environment
       objectReference: {fileID: 0}
-    - target: {fileID: 4915641851430870627, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
-      propertyPath: m_Name
-      value: Colliders_And_Score
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915641851430870627, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6909756364678890525, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.09
-      objectReference: {fileID: 0}
-    - target: {fileID: 7667749876446943625, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
-      propertyPath: m_AdditionalLightsShadowResolutionTier
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6860990250143662006, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c3433feaa93fac4ea75d5cc4bf068b4, type: 3}
 --- !u!33 &3612402847389518365
 MeshFilter:
