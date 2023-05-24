@@ -219,6 +219,8 @@ struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
 // UnityEngine.Renderer
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+// UnityEngine.RuntimeAnimatorController
+struct RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254;
 // System.Runtime.Serialization.SafeSerializationManager
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 // SceneMgr
@@ -1263,6 +1265,11 @@ struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4  : public Object_tC12DECB6
 {
 };
 
+// UnityEngine.RuntimeAnimatorController
+struct RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+
 // System.SystemException
 struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
 {
@@ -1745,26 +1752,28 @@ struct CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A  : p
 	CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* ___caregiverFeedback_11;
 	// UnityEngine.GameObject CaregiverIntroStateManager::Caregiver
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Caregiver_12;
+	// UnityEngine.RuntimeAnimatorController CaregiverIntroStateManager::controller
+	RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* ___controller_13;
 	// ReadFeedback CaregiverIntroStateManager::feedbackButton
-	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* ___feedbackButton_13;
+	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* ___feedbackButton_14;
 	// ScoreCaregiver CaregiverIntroStateManager::scoreCaregiver
-	ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* ___scoreCaregiver_14;
+	ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* ___scoreCaregiver_15;
 	// SwitchScene CaregiverIntroStateManager::switchScene
-	SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* ___switchScene_15;
+	SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* ___switchScene_16;
 	// UnityEngine.GameObject CaregiverIntroStateManager::InstructionBoard
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___InstructionBoard_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___InstructionBoard_17;
 	// Appear CaregiverIntroStateManager::InstructionBoardAppear
-	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___InstructionBoardAppear_17;
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___InstructionBoardAppear_18;
 	// TMPro.TMP_Text CaregiverIntroStateManager::InstructionBoardText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___InstructionBoardText_18;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___InstructionBoardText_19;
 	// WsClient CaregiverIntroStateManager::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_19;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_20;
 	// CaregiverFeedbackEvent CaregiverIntroStateManager::caregiverFeedbackEvent
-	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_20;
+	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_21;
 	// System.Boolean CaregiverIntroStateManager::toNextState
-	bool ___toNextState_21;
+	bool ___toNextState_22;
 	// System.String CaregiverIntroStateManager::caregiverPhase
-	String_t* ___caregiverPhase_22;
+	String_t* ___caregiverPhase_23;
 };
 
 // CaregiverStateManager
@@ -1788,22 +1797,26 @@ struct CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8  : public
 	Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* ___player_11;
 	// CaregiverFeedback CaregiverStateManager::caregiverFeedback
 	CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* ___caregiverFeedback_12;
+	// UnityEngine.GameObject CaregiverStateManager::Caregiver
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Caregiver_13;
+	// UnityEngine.RuntimeAnimatorController CaregiverStateManager::controller
+	RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* ___controller_14;
 	// ReadFeedback CaregiverStateManager::feedbackPole
-	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* ___feedbackPole_13;
+	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* ___feedbackPole_15;
 	// SetCaregiverGaze CaregiverStateManager::caregiverGaze
-	SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* ___caregiverGaze_14;
+	SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* ___caregiverGaze_16;
 	// UnityEngine.GameObject CaregiverStateManager::caregiverFeedbackScreen
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___caregiverFeedbackScreen_15;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___caregiverFeedbackScreen_17;
 	// UnityEngine.GameObject CaregiverStateManager::scoreCaregiver
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___scoreCaregiver_16;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___scoreCaregiver_18;
 	// LightingMgr CaregiverStateManager::lightingMgr
-	LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* ___lightingMgr_17;
+	LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* ___lightingMgr_19;
 	// WsClient CaregiverStateManager::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_18;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_20;
 	// CaregiverFeedbackEvent CaregiverStateManager::caregiverFeedbackEvent
-	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_19;
+	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_21;
 	// System.String CaregiverStateManager::caregiverPhase
-	String_t* ___caregiverPhase_20;
+	String_t* ___caregiverPhase_22;
 };
 
 // EnvironmentLight
@@ -1832,54 +1845,56 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
 	bool ___developmentMode_12;
+	// System.Boolean GameManager::useTestingDataset
+	bool ___useTestingDataset_13;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_14;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_14;
+	int32_t ___ballsPerGame_15;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_15;
+	bool ___trialListGenerated_16;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_16;
+	bool ___doFakeLaunch_17;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_17;
+	bool ___playerValsReceivedViaWS_18;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_18;
+	bool ___startTrial_19;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_19;
+	bool ___toPostTrial_20;
 	// System.Boolean GameManager::restart
-	bool ___restart_20;
+	bool ___restart_21;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_21;
+	bool ___ballIsShot_22;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_22;
+	bool ___trialIsRunning_23;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_23;
+	bool ___trialListFinished_24;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_24;
+	int32_t ___currentTrial_25;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_25;
+	bool ___endMessagesSend_26;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_26;
+	bool ___trophyMayAppear_27;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_27;
+	bool ___mayPrep_28;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_28;
+	bool ___canLaunch_29;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_29;
+	bool ___didShoot_30;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_30;
+	bool ___MayGiveTrophy_31;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_31;
+	bool ___trophyIsGiven_32;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_32;
+	bool ___didReadFeedback_33;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_33;
+	bool ___didGiveScore_34;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_34;
+	bool ___mustGiveFeedback_35;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_35;
+	bool ___isInitiated_36;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_36;
+	bool ___LightIsSet_37;
 };
 
 // Gazed
@@ -2163,14 +2178,18 @@ struct TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05  : public MonoBehavio
 	String_t* ___data20_dir_5;
 	// System.String TrialList::data80_dir
 	String_t* ___data80_dir_6;
+	// System.String TrialList::testdata20_dir
+	String_t* ___testdata20_dir_7;
+	// System.String TrialList::testdata80_dir
+	String_t* ___testdata80_dir_8;
 	// System.Collections.Generic.List`1<Trial> TrialList::trialsList
-	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_7;
+	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_9;
 	// UnityEngine.AudioClip[] TrialList::audioClips
-	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_8;
+	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_10;
 	// UnityEngine.TextAsset TrialList::trialListTA
-	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___trialListTA_9;
+	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___trialListTA_11;
 	// GameManager TrialList::gameManager
-	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_10;
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_12;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -2878,6 +2897,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.Mesh
 
+// UnityEngine.RuntimeAnimatorController
+
+// UnityEngine.RuntimeAnimatorController
+
 // UnityEngine.Behaviour
 
 // UnityEngine.Behaviour
@@ -3296,6 +3319,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUpdateTextU3Ed__6__ctor_m87811BC3E1470867363932AA4AC0219DF2F3B753 (U3CUpdateTextU3Ed__6_tEC2F94087B50EE7D74B53C73281F3A04286B040D* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 // WsClient WsClient::get_Instance()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075 (const RuntimeMethod* method) ;
+// T UnityEngine.GameObject::GetComponent<UnityEngine.Animator>()
+inline Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+// System.Void UnityEngine.Animator::set_runtimeAnimatorController(UnityEngine.RuntimeAnimatorController)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_set_runtimeAnimatorController_m505ACBA1D2E59814239EF3760A9F537D03301311 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* ___0_value, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<Appear>()
 inline Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
 {
@@ -3316,11 +3346,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroButtonState__ctor_m1DB4DBA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState__ctor_m28BFC8E93B10684330A8D7847EA2D3F9082E67C5 (CaregiverIntroScoringState_t14C766EA36093C10492BB76F00562D9172701C06* __this, const RuntimeMethod* method) ;
 // System.Void CaregiverIntroEndState::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroEndState__ctor_m508DC31A1BCF839675A91115A4E21532C0164A62 (CaregiverIntroEndState_tA70AB25585F490CBBEF6EEA88F2CC4FDEC61E272* __this, const RuntimeMethod* method) ;
-// T UnityEngine.GameObject::GetComponent<UnityEngine.Animator>()
-inline Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
-{
-	return ((  Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
-}
 // System.Void UnityEngine.Animator::SetTrigger(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_name, const RuntimeMethod* method) ;
 // T UnityEngine.GameObject::GetComponent<Gazed>()
@@ -3874,7 +3899,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_Update_mC271DB6F916648
 		// gameManager.toPostTrial = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_7;
 		NullCheck(L_1);
-		L_1->___toPostTrial_19 = (bool)1;
+		L_1->___toPostTrial_20 = (bool)1;
 		// testPlay = false;
 		__this->___testPlay_13 = (bool)0;
 		// audioSource.Play();
@@ -3936,7 +3961,7 @@ IL_0024:
 		// LoadAudioClip(gameManager.currentTrial);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_5 = __this->___gameManager_7;
 		NullCheck(L_5);
-		int32_t L_6 = L_5->___currentTrial_24;
+		int32_t L_6 = L_5->___currentTrial_25;
 		CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7(__this, L_6, NULL);
 		// Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
 		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_7 = __this->___trialList_6;
@@ -3968,7 +3993,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedback_LoadAudioClip_mD56D098
 		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_0 = __this->___audioSource_12;
 		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_1 = __this->___trialList_6;
 		NullCheck(L_1);
-		AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* L_2 = L_1->___audioClips_8;
+		AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* L_2 = L_1->___audioClips_10;
 		int32_t L_3 = ___0_index;
 		NullCheck(L_2);
 		int32_t L_4 = L_3;
@@ -4064,24 +4089,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroButtonState_EnterState_m4C
 		// state.caregiverPhase = "CaregiverIntroButtonState";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_22 = _stringLiteral049F27343FA2AE4E8D4C68EB553E54C2AC9C3EE7;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteral049F27343FA2AE4E8D4C68EB553E54C2AC9C3EE7);
+		L_0->___caregiverPhase_23 = _stringLiteral049F27343FA2AE4E8D4C68EB553E54C2AC9C3EE7;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_23), (void*)_stringLiteral049F27343FA2AE4E8D4C68EB553E54C2AC9C3EE7);
 		// state.feedbackButton.RaiseFeedbackPole();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_1 = ___0_state;
 		NullCheck(L_1);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_2 = L_1->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_2 = L_1->___feedbackButton_14;
 		NullCheck(L_2);
 		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_2, NULL);
 		// state.InstructionBoardAppear.Raise();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_3 = ___0_state;
 		NullCheck(L_3);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_4 = L_3->___InstructionBoardAppear_17;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_4 = L_3->___InstructionBoardAppear_18;
 		NullCheck(L_4);
 		Appear_Raise_m86448DDEF7147B208871AB13B94F4574142D9732(L_4, NULL);
 		// state.InstructionBoardText.text = "Doorheen het spel zullen soms knoppen verschijnen, deze mag je aanraken met je hand om verder te gaan";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_5 = ___0_state;
 		NullCheck(L_5);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = L_5->___InstructionBoardText_19;
 		NullCheck(L_6);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, _stringLiteral63144E23E79572BC8CF129FF8065DE6887927DC6);
 		// }
@@ -4103,7 +4128,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroButtonState_UpdateState_m6
 		// if (state.feedbackButton.isTouched)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = L_0->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = L_0->___feedbackButton_14;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isTouched_7;
 		if (!L_2)
@@ -4115,19 +4140,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroButtonState_UpdateState_m6
 		// state.feedbackButton.isTouched = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_3 = ___0_state;
 		NullCheck(L_3);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackButton_14;
 		NullCheck(L_4);
 		L_4->___isTouched_7 = (bool)0;
 		// state.feedbackButton.LowerFeedbackPole();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_5 = ___0_state;
 		NullCheck(L_5);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_6 = L_5->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_6 = L_5->___feedbackButton_14;
 		NullCheck(L_6);
 		ReadFeedback_LowerFeedbackPole_m381DF63552E2124D97834A968F7D65B9D6E1EBBF(L_6, NULL);
 		// state.InstructionBoardAppear.Lower();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_7 = ___0_state;
 		NullCheck(L_7);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_8 = L_7->___InstructionBoardAppear_17;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_8 = L_7->___InstructionBoardAppear_18;
 		NullCheck(L_8);
 		Appear_Lower_m9AEDFD33BA93920DC62542D78D32CC8DCC7863AE(L_8, NULL);
 		// state.SwitchState(state.caregiverIntroScoringState);
@@ -4174,8 +4199,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroEndState_EnterState_mE39D4
 		// state.caregiverPhase = "CaregiverIntroEndState";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_22 = _stringLiteral2B5EC9E0722CD00B76A186E931EAA7E7CF6468C7;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteral2B5EC9E0722CD00B76A186E931EAA7E7CF6468C7);
+		L_0->___caregiverPhase_23 = _stringLiteral2B5EC9E0722CD00B76A186E931EAA7E7CF6468C7;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_23), (void*)_stringLiteral2B5EC9E0722CD00B76A186E931EAA7E7CF6468C7);
 		// }
 		return;
 	}
@@ -4195,7 +4220,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroEndState_UpdateState_m4825
 		// state.switchScene.Switch();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_1 = L_0->___switchScene_15;
+		SwitchScene_t34502D00A88DC3DD1D1CC75D230365033E708853* L_1 = L_0->___switchScene_16;
 		NullCheck(L_1);
 		SwitchScene_Switch_mA83C9504B35610381862D080907DD6B800FE6567(L_1, NULL);
 		// }
@@ -4240,12 +4265,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroIdleState_EnterState_m6FC3
 		// state.caregiverPhase = "CaregiverIntroIdleState";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_22 = _stringLiteralAF9BD2C5E8DD0D7E06A72F62AE8C1D9C0FEB88C6;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteralAF9BD2C5E8DD0D7E06A72F62AE8C1D9C0FEB88C6);
-		// Debug.Log("Instructionboard appear: "+state.InstructionBoardAppear);
+		L_0->___caregiverPhase_23 = _stringLiteralAF9BD2C5E8DD0D7E06A72F62AE8C1D9C0FEB88C6;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_23), (void*)_stringLiteralAF9BD2C5E8DD0D7E06A72F62AE8C1D9C0FEB88C6);
+		// Debug.Log("Instructionboard appear: " + state.InstructionBoardAppear);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_1 = ___0_state;
 		NullCheck(L_1);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_2 = L_1->___InstructionBoardAppear_17;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_2 = L_1->___InstructionBoardAppear_18;
 		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_3 = L_2;
 		G_B1_0 = L_3;
 		G_B1_1 = _stringLiteral4229B9AED9765287D1BCE1CE3D38E41179B77CEC;
@@ -4280,19 +4305,19 @@ IL_0022:
 		// state.InstructionBoardAppear.Raise();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_6 = ___0_state;
 		NullCheck(L_6);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_7 = L_6->___InstructionBoardAppear_17;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_7 = L_6->___InstructionBoardAppear_18;
 		NullCheck(L_7);
 		Appear_Raise_m86448DDEF7147B208871AB13B94F4574142D9732(L_7, NULL);
 		// state.InstructionBoardText.text = "We gaan je voorstellen aan je zorgfiguur, kijk maar naar haar!";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_8 = ___0_state;
 		NullCheck(L_8);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = L_8->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = L_8->___InstructionBoardText_19;
 		NullCheck(L_9);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_9, _stringLiteral5F9DC60C021B601E498B589C46D7FF6B5509BD75);
 		// state.scoreCaregiver.DisableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_10 = ___0_state;
 		NullCheck(L_10);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_15;
 		NullCheck(L_11);
 		ScoreCaregiver_DisableScoring_m80BA859CEBC781C9D413E192807CD58192C2E307(L_11, NULL);
 		// }
@@ -4354,12 +4379,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_EnterState_m0
 		// state.caregiverPhase = "CaregiverIntroScoringState";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_22 = _stringLiteralE904836839810A43CECBBFBB6C8658B6BB068111;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteralE904836839810A43CECBBFBB6C8658B6BB068111);
+		L_0->___caregiverPhase_23 = _stringLiteralE904836839810A43CECBBFBB6C8658B6BB068111;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_23), (void*)_stringLiteralE904836839810A43CECBBFBB6C8658B6BB068111);
 		// state.scoreCaregiver.EnableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_1 = ___0_state;
 		NullCheck(L_1);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_2 = L_1->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_2 = L_1->___scoreCaregiver_15;
 		NullCheck(L_2);
 		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_2, NULL);
 		// passthrough = 0;
@@ -4367,7 +4392,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_EnterState_m0
 		// state.feedbackButton.isTouched = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_3 = ___0_state;
 		NullCheck(L_3);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackButton_14;
 		NullCheck(L_4);
 		L_4->___isTouched_7 = (bool)0;
 		// Debug.Log("Geef een lage score");
@@ -4376,13 +4401,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_EnterState_m0
 		// state.InstructionBoardAppear.Raise();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_5 = ___0_state;
 		NullCheck(L_5);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_6 = L_5->___InstructionBoardAppear_17;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_6 = L_5->___InstructionBoardAppear_18;
 		NullCheck(L_6);
 		Appear_Raise_m86448DDEF7147B208871AB13B94F4574142D9732(L_6, NULL);
 		// state.InstructionBoardText.text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_7 = ___0_state;
 		NullCheck(L_7);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = L_7->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = L_7->___InstructionBoardText_19;
 		NullCheck(L_8);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, _stringLiteral5B68E35C2070F4D1164BD3461661C1B68754709C);
 		// }
@@ -4423,7 +4448,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_UpdateState_m
 		// if (state.scoreCaregiver.scoringStarted)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_1 = L_0->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_1 = L_0->___scoreCaregiver_15;
 		NullCheck(L_1);
 		bool L_2 = L_1->___scoringStarted_18;
 		if (!L_2)
@@ -4469,13 +4494,13 @@ IL_0048:
 		// state.scoreCaregiver.scoringStarted = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_8 = ___0_state;
 		NullCheck(L_8);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_9 = L_8->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_9 = L_8->___scoreCaregiver_15;
 		NullCheck(L_9);
 		L_9->___scoringStarted_18 = (bool)0;
 		// Debug.Log("score: " + state.scoreCaregiver.caregiverScore);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_10 = ___0_state;
 		NullCheck(L_10);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_15;
 		NullCheck(L_11);
 		int32_t* L_12 = (&L_11->___caregiverScore_13);
 		String_t* L_13;
@@ -4487,7 +4512,7 @@ IL_0048:
 		// if (state.scoreCaregiver.caregiverScore <= 2)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_15 = ___0_state;
 		NullCheck(L_15);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_16 = L_15->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_16 = L_15->___scoreCaregiver_15;
 		NullCheck(L_16);
 		int32_t L_17 = L_16->___caregiverScore_13;
 		if ((((int32_t)L_17) > ((int32_t)2)))
@@ -4507,7 +4532,7 @@ IL_0048:
 		// state.InstructionBoardText.text = "Perfect, probeer nu eens voor een hoge score ze dicht bijeen te brengen";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_19 = ___0_state;
 		NullCheck(L_19);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_20 = L_19->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_20 = L_19->___InstructionBoardText_19;
 		NullCheck(L_20);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_20, _stringLiteral22340BD12FE524977FE48CE89CCA126DFA54D6EE);
 		goto IL_00d0;
@@ -4521,7 +4546,7 @@ IL_00b6:
 		// state.InstructionBoardText.text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_21 = ___0_state;
 		NullCheck(L_21);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_22 = L_21->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_22 = L_21->___InstructionBoardText_19;
 		NullCheck(L_22);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_22, _stringLiteral7E54D0E851B70440F0122BEDAA3826EB51459D47);
 	}
@@ -4531,7 +4556,7 @@ IL_00d0:
 		// state.scoreCaregiver.EnableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_23 = ___0_state;
 		NullCheck(L_23);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_24 = L_23->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_24 = L_23->___scoreCaregiver_15;
 		NullCheck(L_24);
 		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_24, NULL);
 		// break;
@@ -4543,13 +4568,13 @@ IL_00e0:
 		// state.scoreCaregiver.scoringStarted = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_25 = ___0_state;
 		NullCheck(L_25);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_26 = L_25->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_26 = L_25->___scoreCaregiver_15;
 		NullCheck(L_26);
 		L_26->___scoringStarted_18 = (bool)0;
 		// if (state.scoreCaregiver.caregiverScore >= 8)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_27 = ___0_state;
 		NullCheck(L_27);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_28 = L_27->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_28 = L_27->___scoreCaregiver_15;
 		NullCheck(L_28);
 		int32_t L_29 = L_28->___caregiverScore_13;
 		if ((((int32_t)L_29) < ((int32_t)8)))
@@ -4569,7 +4594,7 @@ IL_00e0:
 		// state.InstructionBoardText.text = "Top! Kun je nu zelf aanduiden hoeveel je je zorgfiguur vertrouwt?";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_31 = ___0_state;
 		NullCheck(L_31);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_32 = L_31->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_32 = L_31->___InstructionBoardText_19;
 		NullCheck(L_32);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_32, _stringLiteral14B7620DC524B0E59380A52068DC64A82EB2B9CB);
 		goto IL_015e;
@@ -4580,7 +4605,7 @@ IL_012f:
 		// Debug.Log("te hoge score" + state.scoreCaregiver.caregiverScore);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_33 = ___0_state;
 		NullCheck(L_33);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_34 = L_33->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_34 = L_33->___scoreCaregiver_15;
 		NullCheck(L_34);
 		int32_t* L_35 = (&L_34->___caregiverScore_13);
 		String_t* L_36;
@@ -4592,7 +4617,7 @@ IL_012f:
 		// state.InstructionBoardText.text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_38 = ___0_state;
 		NullCheck(L_38);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_39 = L_38->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_39 = L_38->___InstructionBoardText_19;
 		NullCheck(L_39);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_39, _stringLiteralF17737F352521CB352A5DAD1BF9F2BFFA5911F13);
 	}
@@ -4602,7 +4627,7 @@ IL_015e:
 		// state.scoreCaregiver.EnableScoring();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_40 = ___0_state;
 		NullCheck(L_40);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_41 = L_40->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_41 = L_40->___scoreCaregiver_15;
 		NullCheck(L_41);
 		ScoreCaregiver_EnableScoring_m6C180113270ED19B13DB449E22E7519ACDA523D2(L_41, NULL);
 		// break;
@@ -4614,25 +4639,25 @@ IL_016e:
 		// state.scoreCaregiver.scoringStarted = false;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_42 = ___0_state;
 		NullCheck(L_42);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_43 = L_42->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_43 = L_42->___scoreCaregiver_15;
 		NullCheck(L_43);
 		L_43->___scoringStarted_18 = (bool)0;
 		// state.scoreCaregiver.SendScore(-1);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_44 = ___0_state;
 		NullCheck(L_44);
-		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_45 = L_44->___scoreCaregiver_14;
+		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_45 = L_44->___scoreCaregiver_15;
 		NullCheck(L_45);
 		ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49(L_45, (-1), NULL);
 		// state.InstructionBoardText.text = "Goed gedaan, we gaan het spel nu starten!";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_46 = ___0_state;
 		NullCheck(L_46);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_47 = L_46->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_47 = L_46->___InstructionBoardText_19;
 		NullCheck(L_47);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_47, _stringLiteral9F14B33FC940174A9C4EFD8C6FF515FD58E53D9A);
 		// state.feedbackButton.RaiseFeedbackPole();
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_48 = ___0_state;
 		NullCheck(L_48);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_49 = L_48->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_49 = L_48->___feedbackButton_14;
 		NullCheck(L_49);
 		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_49, NULL);
 		// break;
@@ -4684,7 +4709,7 @@ IL_01d0:
 		// state.InstructionBoardText.text = "Sluit je handen volledig voor de cirkels te kunnen bewegen of ze vast te zetten. ";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_56 = ___0_state;
 		NullCheck(L_56);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_57 = L_56->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_57 = L_56->___InstructionBoardText_19;
 		NullCheck(L_57);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_57, _stringLiteral5ADDD9957227A76B193CFE4F09060468E1C03A67);
 	}
@@ -4703,7 +4728,7 @@ IL_01ee:
 		// state.InstructionBoardText.text = "Voor een slechte score moet je de cirkels ver uiteen brengen.";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_60 = ___0_state;
 		NullCheck(L_60);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_61 = L_60->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_61 = L_60->___InstructionBoardText_19;
 		NullCheck(L_61);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_61, _stringLiteralEF743856E7DBE7159BF1B81E396362DB60F24B16);
 	}
@@ -4713,7 +4738,7 @@ IL_0212:
 		// if (state.feedbackButton.isTouched && passthrough == 2)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_62 = ___0_state;
 		NullCheck(L_62);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_63 = L_62->___feedbackButton_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_63 = L_62->___feedbackButton_14;
 		NullCheck(L_63);
 		bool L_64 = L_63->___isTouched_7;
 		if (!L_64)
@@ -4854,7 +4879,7 @@ IL_0030:
 		// state.InstructionBoardText.text = updateText;
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_4 = __this->___state_2;
 		NullCheck(L_4);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = L_4->___InstructionBoardText_18;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = L_4->___InstructionBoardText_19;
 		String_t* L_6 = __this->___updateText_3;
 		NullCheck(L_5);
 		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, L_6);
@@ -4920,6 +4945,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_Start_mF32D69
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
 		s_Il2CppMethodInitialized = true;
@@ -4932,33 +4958,41 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_Start_mF32D69
 		// ws = WsClient.Instance;
 		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_1;
 		L_1 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_19 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_19), (void*)L_1);
-		// InstructionBoardAppear = InstructionBoard.GetComponent<Appear>();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___InstructionBoard_16;
+		__this->___ws_20 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_20), (void*)L_1);
+		// Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___Caregiver_12;
 		NullCheck(L_2);
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_3;
-		L_3 = GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C(L_2, GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C_RuntimeMethod_var);
-		__this->___InstructionBoardAppear_17 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___InstructionBoardAppear_17), (void*)L_3);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_3;
+		L_3 = GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3(L_2, GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3_RuntimeMethod_var);
+		RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* L_4 = __this->___controller_13;
+		NullCheck(L_3);
+		Animator_set_runtimeAnimatorController_m505ACBA1D2E59814239EF3760A9F537D03301311(L_3, L_4, NULL);
+		// InstructionBoardAppear = InstructionBoard.GetComponent<Appear>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___InstructionBoard_17;
+		NullCheck(L_5);
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_6;
+		L_6 = GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C(L_5, GameObject_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mACF016CD4A9BB20FB0AE587A9C5895B60927665C_RuntimeMethod_var);
+		__this->___InstructionBoardAppear_18 = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___InstructionBoardAppear_18), (void*)L_6);
 		// InstructionBoardText = InstructionBoard.GetComponentInChildren<TMP_Text>();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___InstructionBoard_16;
-		NullCheck(L_4);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5;
-		L_5 = GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690(L_4, GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var);
-		__this->___InstructionBoardText_18 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___InstructionBoardText_18), (void*)L_5);
-		// currentCaregiverState = caregiverIdleState;
-		CaregiverIntroIdleState_tB64F401EACA9DA051AE27E7A420119DF682D9CD1* L_6 = __this->___caregiverIdleState_5;
-		__this->___currentCaregiverState_4 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_6);
-		// caregiverPhase = "caregiverIntroIdleState";
-		__this->___caregiverPhase_22 = _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_22), (void*)_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
-		// currentCaregiverState.EnterState(this);
-		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_7 = __this->___currentCaregiverState_4;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___InstructionBoard_17;
 		NullCheck(L_7);
-		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_7, __this);
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8;
+		L_8 = GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690(L_7, GameObject_GetComponentInChildren_TisTMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_mB2E2DFC9835043E9EA38AB359AEBDD53CE90A690_RuntimeMethod_var);
+		__this->___InstructionBoardText_19 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___InstructionBoardText_19), (void*)L_8);
+		// currentCaregiverState = caregiverIdleState;
+		CaregiverIntroIdleState_tB64F401EACA9DA051AE27E7A420119DF682D9CD1* L_9 = __this->___caregiverIdleState_5;
+		__this->___currentCaregiverState_4 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_9);
+		// caregiverPhase = "caregiverIntroIdleState";
+		__this->___caregiverPhase_23 = _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_23), (void*)_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
+		// currentCaregiverState.EnterState(this);
+		CaregiverIntroStateMachine_tC2913B29A89C38178ACD03BFAFC4C125856D2BC6* L_10 = __this->___currentCaregiverState_4;
+		NullCheck(L_10);
+		VirtualActionInvoker1< CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* >::Invoke(4 /* System.Void CaregiverIntroStateMachine::EnterState(CaregiverIntroStateManager) */, L_10, __this);
 		// }
 		return;
 	}
@@ -5002,7 +5036,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager_SetDidGiveSco
 		// gameManager.didGiveScore = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
 		NullCheck(L_0);
-		L_0->___didGiveScore_33 = (bool)1;
+		L_0->___didGiveScore_34 = (bool)1;
 		// }
 		return;
 	}
@@ -5053,8 +5087,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroStateManager__ctor_m4836BE
 		__this->___caregiverIntroEndState_9 = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverIntroEndState_9), (void*)L_4);
 		// public string caregiverPhase = "caregiverIntroIdleState";
-		__this->___caregiverPhase_22 = _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_22), (void*)_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
+		__this->___caregiverPhase_23 = _stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_23), (void*)_stringLiteral9C717A0B60B3F96D59CE37FAD61345F5A2A86606);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -5082,8 +5116,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroWaveState_EnterState_m3AE3
 		// state.caregiverPhase = "CaregiverIntroWaveState";
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_22 = _stringLiteral9266D1432C86ECDE1D1D191364EC19C96B33B914;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteral9266D1432C86ECDE1D1D191364EC19C96B33B914);
+		L_0->___caregiverPhase_23 = _stringLiteral9266D1432C86ECDE1D1D191364EC19C96B33B914;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_23), (void*)_stringLiteral9266D1432C86ECDE1D1D191364EC19C96B33B914);
 		// state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_1 = ___0_state;
 		NullCheck(L_1);
@@ -5120,7 +5154,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroWaveState_UpdateState_m478
 		// if (state.toNextState)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_0 = ___0_state;
 		NullCheck(L_0);
-		bool L_1 = L_0->___toNextState_21;
+		bool L_1 = L_0->___toNextState_22;
 		if (!L_1)
 		{
 			goto IL_0015;
@@ -7049,12 +7083,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_EnterState
 		// state.caregiverPhase = "CaregiverFeedbackConfirmState";
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_20 = _stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_20), (void*)_stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018);
+		L_0->___caregiverPhase_22 = _stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteral45B20B6971734F4835C8646ED3CD6696F856E018);
 		// state.feedbackPole.RaiseFeedbackPole();
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_1 = ___0_state;
 		NullCheck(L_1);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_2 = L_1->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_2 = L_1->___feedbackPole_15;
 		NullCheck(L_2);
 		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_2, NULL);
 		// }
@@ -7068,7 +7102,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_ExitState_
 		// state.lightingMgr.envLight.EnableSunlight(true);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_1 = L_0->___lightingMgr_17;
+		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_1 = L_0->___lightingMgr_19;
 		NullCheck(L_1);
 		EnvironmentLight_t743C1406EB50ED54CDD548954908E154A743FD43* L_2 = L_1->___envLight_6;
 		NullCheck(L_2);
@@ -7076,7 +7110,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_ExitState_
 		// state.lightingMgr.caregiverLight.EnableLight(false);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_3 = ___0_state;
 		NullCheck(L_3);
-		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_4 = L_3->___lightingMgr_17;
+		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_4 = L_3->___lightingMgr_19;
 		NullCheck(L_4);
 		LightingScripts_t644C4CDA59A78AEF0E2211BAE3BB522710C96B67* L_5 = L_4->___caregiverLight_5;
 		NullCheck(L_5);
@@ -7084,13 +7118,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_ExitState_
 		// state.caregiverFeedbackScreen.SetActive(false);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
 		NullCheck(L_6);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___caregiverFeedbackScreen_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = L_6->___caregiverFeedbackScreen_17;
 		NullCheck(L_7);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)0, NULL);
 		// state.scoreCaregiver.SetActive(true);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_8 = ___0_state;
 		NullCheck(L_8);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = L_8->___scoreCaregiver_18;
 		NullCheck(L_9);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_9, (bool)1, NULL);
 		// }
@@ -7104,7 +7138,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_UpdateStat
 		// if (state.feedbackPole.isTouched)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = L_0->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = L_0->___feedbackPole_15;
 		NullCheck(L_1);
 		bool L_2 = L_1->___isTouched_7;
 		if (!L_2)
@@ -7116,7 +7150,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackConfirmState_UpdateStat
 		// state.feedbackPole.isTouched = false;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_3 = ___0_state;
 		NullCheck(L_3);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_4 = L_3->___feedbackPole_15;
 		NullCheck(L_4);
 		L_4->___isTouched_7 = (bool)0;
 		// state.SwitchState(state.caregiverScoringState);
@@ -7163,18 +7197,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_EnterState_m2C4D9
 		// state.caregiverPhase = "CaregiverFeedbackState";
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_20 = _stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_20), (void*)_stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A);
+		L_0->___caregiverPhase_22 = _stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteralE1E42D174D02A4A353FBDEBE7E25725EB381349A);
 		// state.caregiverFeedbackScreen.SetActive(true);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_1 = ___0_state;
 		NullCheck(L_1);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1->___caregiverFeedbackScreen_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1->___caregiverFeedbackScreen_17;
 		NullCheck(L_2);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, (bool)1, NULL);
 		// state.lightingMgr.envLight.EnableSunlight(false);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_3 = ___0_state;
 		NullCheck(L_3);
-		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_4 = L_3->___lightingMgr_17;
+		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_4 = L_3->___lightingMgr_19;
 		NullCheck(L_4);
 		EnvironmentLight_t743C1406EB50ED54CDD548954908E154A743FD43* L_5 = L_4->___envLight_6;
 		NullCheck(L_5);
@@ -7182,7 +7216,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_EnterState_m2C4D9
 		// state.lightingMgr.caregiverLight.EnableLight(true);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
 		NullCheck(L_6);
-		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_7 = L_6->___lightingMgr_17;
+		LightingMgr_t4B8664F2BDBC9A7C0821BEB31E70DCC5EDFACCB6* L_7 = L_6->___lightingMgr_19;
 		NullCheck(L_7);
 		LightingScripts_t644C4CDA59A78AEF0E2211BAE3BB522710C96B67* L_8 = L_7->___caregiverLight_5;
 		NullCheck(L_8);
@@ -7209,21 +7243,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_EnterState_m2C4D9
 		// state.caregiverFeedbackEvent.Set(state.gameManager.currentTrial, true);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_17 = ___0_state;
 		NullCheck(L_17);
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_18 = L_17->___caregiverFeedbackEvent_19;
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_18 = L_17->___caregiverFeedbackEvent_21;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_19 = ___0_state;
 		NullCheck(L_19);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_20 = L_19->___gameManager_9;
 		NullCheck(L_20);
-		int32_t L_21 = L_20->___currentTrial_24;
+		int32_t L_21 = L_20->___currentTrial_25;
 		NullCheck(L_18);
 		CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A(L_18, L_21, (bool)1, NULL);
 		// state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_22 = ___0_state;
 		NullCheck(L_22);
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_23 = L_22->___ws_18;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_23 = L_22->___ws_20;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_24 = ___0_state;
 		NullCheck(L_24);
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_25 = L_24->___caregiverFeedbackEvent_19;
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_25 = L_24->___caregiverFeedbackEvent_21;
 		NullCheck(L_25);
 		String_t* L_26;
 		L_26 = CaregiverFeedbackEvent_SaveToString_m0D85F915EAF874FDB288B9212810D9C9839DDDA9(L_25, NULL);
@@ -7263,21 +7297,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverFeedbackState_UpdateState_mD093
 		// state.caregiverFeedbackEvent.Set(state.gameManager.currentTrial, false);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_4 = ___0_state;
 		NullCheck(L_4);
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_5 = L_4->___caregiverFeedbackEvent_19;
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_5 = L_4->___caregiverFeedbackEvent_21;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_9;
 		NullCheck(L_7);
-		int32_t L_8 = L_7->___currentTrial_24;
+		int32_t L_8 = L_7->___currentTrial_25;
 		NullCheck(L_5);
 		CaregiverFeedbackEvent_Set_m743B083DFB9D3E8FB0B2EADCBE3561C40252BD5A(L_5, L_8, (bool)0, NULL);
 		// state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_9 = ___0_state;
 		NullCheck(L_9);
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_10 = L_9->___ws_18;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_10 = L_9->___ws_20;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_11 = ___0_state;
 		NullCheck(L_11);
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_12 = L_11->___caregiverFeedbackEvent_19;
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_12 = L_11->___caregiverFeedbackEvent_21;
 		NullCheck(L_12);
 		String_t* L_13;
 		L_13 = CaregiverFeedbackEvent_SaveToString_m0D85F915EAF874FDB288B9212810D9C9839DDDA9(L_12, NULL);
@@ -7327,8 +7361,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_EnterState_m0A5DF25B5
 		// state.caregiverPhase = "CaregiverIdleState";
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_20 = _stringLiteral8BD75D9A35D0453DA0409A383B16B0BFE30D9CEA;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_20), (void*)_stringLiteral8BD75D9A35D0453DA0409A383B16B0BFE30D9CEA);
+		L_0->___caregiverPhase_22 = _stringLiteral8BD75D9A35D0453DA0409A383B16B0BFE30D9CEA;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteral8BD75D9A35D0453DA0409A383B16B0BFE30D9CEA);
 		// }
 		return;
 	}
@@ -7346,7 +7380,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_ExitState_mE0CD1A98DE
 		// state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.gameManager.currentTrial);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___caregiverFeedbackScreen_15;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___caregiverFeedbackScreen_17;
 		NullCheck(L_1);
 		CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* L_2;
 		L_2 = GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C(L_1, GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
@@ -7354,7 +7388,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_ExitState_mE0CD1A98DE
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___currentTrial_24;
+		int32_t L_5 = L_4->___currentTrial_25;
 		NullCheck(L_2);
 		CaregiverFeedback_LoadAudioClip_mD56D098F0777EDF22B7F69F53E3CB8E123EE0FE7(L_2, L_5, NULL);
 		// }
@@ -7376,7 +7410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_UpdateState_m64B298B7
 		NullCheck(L_0);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0->___gameManager_9;
 		NullCheck(L_1);
-		bool L_2 = L_1->___mustGiveFeedback_34;
+		bool L_2 = L_1->___mustGiveFeedback_35;
 		if (!L_2)
 		{
 			goto IL_0026;
@@ -7388,7 +7422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIdleState_UpdateState_m64B298B7
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		L_4->___mustGiveFeedback_34 = (bool)0;
+		L_4->___mustGiveFeedback_35 = (bool)0;
 		// state.SwitchState(state.caregiverFeedbackState);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_5 = ___0_state;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_6 = ___0_state;
@@ -7423,7 +7457,7 @@ IL_0026:
 		NullCheck(L_14);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_15 = L_14->___gameManager_9;
 		NullCheck(L_15);
-		bool L_16 = L_15->___trialIsRunning_22;
+		bool L_16 = L_15->___trialIsRunning_23;
 		if (!L_16)
 		{
 			goto IL_0082;
@@ -7433,7 +7467,7 @@ IL_0026:
 		// if (!state.caregiverGaze.follow && state.player.instBall != null)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_17 = ___0_state;
 		NullCheck(L_17);
-		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_18 = L_17->___caregiverGaze_14;
+		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_18 = L_17->___caregiverGaze_16;
 		NullCheck(L_18);
 		bool L_19 = L_18->___follow_7;
 		if (L_19)
@@ -7459,7 +7493,7 @@ IL_0026:
 		// state.caregiverGaze.SetGaze(state.player.instBall);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_24 = ___0_state;
 		NullCheck(L_24);
-		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_25 = L_24->___caregiverGaze_14;
+		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_25 = L_24->___caregiverGaze_16;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_26 = ___0_state;
 		NullCheck(L_26);
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_27 = L_26->___player_11;
@@ -7475,7 +7509,7 @@ IL_0082:
 		// if (state.caregiverGaze.follow)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_29 = ___0_state;
 		NullCheck(L_29);
-		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_30 = L_29->___caregiverGaze_14;
+		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_30 = L_29->___caregiverGaze_16;
 		NullCheck(L_30);
 		bool L_31 = L_30->___follow_7;
 		if (!L_31)
@@ -7487,7 +7521,7 @@ IL_0082:
 		// state.caregiverGaze.ClearGaze();
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_32 = ___0_state;
 		NullCheck(L_32);
-		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_33 = L_32->___caregiverGaze_14;
+		SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91* L_33 = L_32->___caregiverGaze_16;
 		NullCheck(L_33);
 		SetCaregiverGaze_ClearGaze_mF346C9AF41189A6CFF922B8E0DDEA90A9EA7ACB9(L_33, NULL);
 	}
@@ -7528,12 +7562,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_EnterState_mD1C78F
 		// state.caregiverPhase = "CaregiverScoringState";
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		L_0->___caregiverPhase_20 = _stringLiteralDB1FE973E8B90FB7F12010C42E3B2A848929290B;
-		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_20), (void*)_stringLiteralDB1FE973E8B90FB7F12010C42E3B2A848929290B);
+		L_0->___caregiverPhase_22 = _stringLiteralDB1FE973E8B90FB7F12010C42E3B2A848929290B;
+		Il2CppCodeGenWriteBarrier((void**)(&L_0->___caregiverPhase_22), (void*)_stringLiteralDB1FE973E8B90FB7F12010C42E3B2A848929290B);
 		// state.scoreCaregiver.GetComponent<ScoreCaregiver>().EnableScoring();
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_1 = ___0_state;
 		NullCheck(L_1);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = L_1->___scoreCaregiver_18;
 		NullCheck(L_2);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_3;
 		L_3 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_2, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7558,7 +7592,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_ExitState_m54617F0
 		// state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.gameManager.currentTrial);
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___scoreCaregiver_18;
 		NullCheck(L_1);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_2;
 		L_2 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_1, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7566,7 +7600,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_ExitState_m54617F0
 		NullCheck(L_3);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = L_3->___gameManager_9;
 		NullCheck(L_4);
-		int32_t L_5 = L_4->___currentTrial_24;
+		int32_t L_5 = L_4->___currentTrial_25;
 		NullCheck(L_2);
 		ScoreCaregiver_SendScore_m68C4321C84E1429D7ED1BCE39E13D77202217D49(L_2, L_5, NULL);
 		// state.gameManager.restart = true;
@@ -7574,7 +7608,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_ExitState_m54617F0
 		NullCheck(L_6);
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = L_6->___gameManager_9;
 		NullCheck(L_7);
-		L_7->___restart_20 = (bool)1;
+		L_7->___restart_21 = (bool)1;
 		// }
 		return;
 	}
@@ -7592,7 +7626,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_UpdateState_mCB70E
 		// if (state.scoreCaregiver.GetComponent<ScoreCaregiver>().scoringStarted & !isListening)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_0 = ___0_state;
 		NullCheck(L_0);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = L_0->___scoreCaregiver_18;
 		NullCheck(L_1);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_2;
 		L_2 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_1, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7608,7 +7642,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_UpdateState_mCB70E
 		// state.feedbackPole.RaiseFeedbackPole();
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_5 = ___0_state;
 		NullCheck(L_5);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_6 = L_5->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_6 = L_5->___feedbackPole_15;
 		NullCheck(L_6);
 		ReadFeedback_RaiseFeedbackPole_mDD64843C60F3BEB4A2C13E057E84EB2F2DDF2951(L_6, NULL);
 		// isListening = true;
@@ -7620,7 +7654,7 @@ IL_002e:
 		// if (state.feedbackPole.isTouched)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_7 = ___0_state;
 		NullCheck(L_7);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_8 = L_7->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_8 = L_7->___feedbackPole_15;
 		NullCheck(L_8);
 		bool L_9 = L_8->___isTouched_7;
 		if (!L_9)
@@ -7632,7 +7666,7 @@ IL_002e:
 		// state.scoreCaregiver.GetComponent<ScoreCaregiver>().DisableScoring();
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_10 = ___0_state;
 		NullCheck(L_10);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = L_10->___scoreCaregiver_18;
 		NullCheck(L_11);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_12;
 		L_12 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_11, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7645,12 +7679,12 @@ IL_004b:
 		// if (state.feedbackPole.isTouched & state.scoreCaregiver.GetComponent<ScoreCaregiver>().isLow)
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_13 = ___0_state;
 		NullCheck(L_13);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_14 = L_13->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_14 = L_13->___feedbackPole_15;
 		NullCheck(L_14);
 		bool L_15 = L_14->___isTouched_7;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_16 = ___0_state;
 		NullCheck(L_16);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = L_16->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_17 = L_16->___scoreCaregiver_18;
 		NullCheck(L_17);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_18;
 		L_18 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_17, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7667,7 +7701,7 @@ IL_004b:
 		// state.scoreCaregiver.GetComponent<ScoreCaregiver>().scoringStarted = false;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_20 = ___0_state;
 		NullCheck(L_20);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_20->___scoreCaregiver_16;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_21 = L_20->___scoreCaregiver_18;
 		NullCheck(L_21);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_22;
 		L_22 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_21, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
@@ -7676,7 +7710,7 @@ IL_004b:
 		// state.feedbackPole.isTouched = false;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_23 = ___0_state;
 		NullCheck(L_23);
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_24 = L_23->___feedbackPole_13;
+		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_24 = L_23->___feedbackPole_15;
 		NullCheck(L_24);
 		L_24->___isTouched_7 = (bool)0;
 		// state.SwitchState(state.caregiverIdleState);
@@ -7734,6 +7768,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager_Start_m120C6C34DA6
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
 		s_Il2CppMethodInitialized = true;
@@ -7746,32 +7781,40 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager_Start_m120C6C34DA6
 		// ws = WsClient.Instance;
 		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_1;
 		L_1 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_18 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_18), (void*)L_1);
-		// currentCaregiverState = caregiverIdleState;
-		CaregiverIdleState_t972F54309415AC9990B63DE01D25C23D57719DE5* L_2 = __this->___caregiverIdleState_5;
-		__this->___currentCaregiverState_4 = L_2;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_2);
-		// caregiverPhase = "caregiverIdleState";
-		__this->___caregiverPhase_20 = _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_20), (void*)_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
-		// currentCaregiverState.EnterState(this);
-		CaregiverStateMachine_t89FEF527272FD5AC06094864E5496A5307B71698* L_3 = __this->___currentCaregiverState_4;
+		__this->___ws_20 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_20), (void*)L_1);
+		// Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___Caregiver_13;
+		NullCheck(L_2);
+		Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* L_3;
+		L_3 = GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3(L_2, GameObject_GetComponent_TisAnimator_t8A52E42AE54F76681838FE9E632683EF3952E883_mB84A0931B2081CCADE7C5D459B2A8FAA6D3D3BD3_RuntimeMethod_var);
+		RuntimeAnimatorController_t6F7C753402B42EC23C163099CF935C5E0D7A7254* L_4 = __this->___controller_14;
 		NullCheck(L_3);
-		VirtualActionInvoker1< CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* >::Invoke(4 /* System.Void CaregiverStateMachine::EnterState(CaregiverStateManager) */, L_3, __this);
-		// caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___caregiverFeedbackScreen_15;
-		NullCheck(L_4);
-		CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* L_5;
-		L_5 = GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C(L_4, GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
-		__this->___caregiverFeedback_12 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedback_12), (void*)L_5);
-		// caregiverFeedbackEvent = new();
-		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_6 = (CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40*)il2cpp_codegen_object_new(CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40_il2cpp_TypeInfo_var);
+		Animator_set_runtimeAnimatorController_m505ACBA1D2E59814239EF3760A9F537D03301311(L_3, L_4, NULL);
+		// currentCaregiverState = caregiverIdleState;
+		CaregiverIdleState_t972F54309415AC9990B63DE01D25C23D57719DE5* L_5 = __this->___caregiverIdleState_5;
+		__this->___currentCaregiverState_4 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___currentCaregiverState_4), (void*)L_5);
+		// caregiverPhase = "caregiverIdleState";
+		__this->___caregiverPhase_22 = _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_22), (void*)_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
+		// currentCaregiverState.EnterState(this);
+		CaregiverStateMachine_t89FEF527272FD5AC06094864E5496A5307B71698* L_6 = __this->___currentCaregiverState_4;
 		NullCheck(L_6);
-		CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633(L_6, NULL);
-		__this->___caregiverFeedbackEvent_19 = L_6;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedbackEvent_19), (void*)L_6);
+		VirtualActionInvoker1< CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* >::Invoke(4 /* System.Void CaregiverStateMachine::EnterState(CaregiverStateManager) */, L_6, __this);
+		// caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___caregiverFeedbackScreen_17;
+		NullCheck(L_7);
+		CaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA* L_8;
+		L_8 = GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C(L_7, GameObject_GetComponent_TisCaregiverFeedback_t9629A086C9B42EF6D42D69DB8812602274C7AEFA_mCE98BE3044F7F33717130758DA637BDCEBDF364C_RuntimeMethod_var);
+		__this->___caregiverFeedback_12 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedback_12), (void*)L_8);
+		// caregiverFeedbackEvent = new();
+		CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* L_9 = (CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40*)il2cpp_codegen_object_new(CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40_il2cpp_TypeInfo_var);
+		NullCheck(L_9);
+		CaregiverFeedbackEvent__ctor_m5308845208C7FC35DD3B0E9CF44B149E2B05B633(L_9, NULL);
+		__this->___caregiverFeedbackEvent_21 = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverFeedbackEvent_21), (void*)L_9);
 		// }
 		return;
 	}
@@ -7815,7 +7858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager_SetDidGiveScore_m5
 		// gameManager.didGiveScore = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_9;
 		NullCheck(L_0);
-		L_0->___didGiveScore_33 = (bool)1;
+		L_0->___didGiveScore_34 = (bool)1;
 		// }
 		return;
 	}
@@ -7859,8 +7902,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverStateManager__ctor_mBC6B0B1059C
 		__this->___caregiverScoringState_8 = L_3;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverScoringState_8), (void*)L_3);
 		// public string caregiverPhase = "caregiverIdleState";
-		__this->___caregiverPhase_20 = _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_20), (void*)_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
+		__this->___caregiverPhase_22 = _stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverPhase_22), (void*)_stringLiteral1EDD0F1E9754156DFED6AD55468E02FB42AF7BAD);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}

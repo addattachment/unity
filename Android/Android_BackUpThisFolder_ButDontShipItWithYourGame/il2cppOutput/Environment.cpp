@@ -465,54 +465,56 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
 	bool ___developmentMode_12;
+	// System.Boolean GameManager::useTestingDataset
+	bool ___useTestingDataset_13;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_14;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_14;
+	int32_t ___ballsPerGame_15;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_15;
+	bool ___trialListGenerated_16;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_16;
+	bool ___doFakeLaunch_17;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_17;
+	bool ___playerValsReceivedViaWS_18;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_18;
+	bool ___startTrial_19;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_19;
+	bool ___toPostTrial_20;
 	// System.Boolean GameManager::restart
-	bool ___restart_20;
+	bool ___restart_21;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_21;
+	bool ___ballIsShot_22;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_22;
+	bool ___trialIsRunning_23;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_23;
+	bool ___trialListFinished_24;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_24;
+	int32_t ___currentTrial_25;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_25;
+	bool ___endMessagesSend_26;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_26;
+	bool ___trophyMayAppear_27;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_27;
+	bool ___mayPrep_28;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_28;
+	bool ___canLaunch_29;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_29;
+	bool ___didShoot_30;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_30;
+	bool ___MayGiveTrophy_31;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_31;
+	bool ___trophyIsGiven_32;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_32;
+	bool ___didReadFeedback_33;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_33;
+	bool ___didGiveScore_34;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_34;
+	bool ___mustGiveFeedback_35;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_35;
+	bool ___isInitiated_36;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_36;
+	bool ___LightIsSet_37;
 };
 
 // LightingMgr
@@ -1180,7 +1182,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightingScripts_LightUpdateFinished_mCB2
 		// gameManager.LightIsSet = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_6;
 		NullCheck(L_0);
-		L_0->___LightIsSet_36 = (bool)1;
+		L_0->___LightIsSet_37 = (bool)1;
 		// }
 		return;
 	}

@@ -278,54 +278,56 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
 	bool ___developmentMode_12;
+	// System.Boolean GameManager::useTestingDataset
+	bool ___useTestingDataset_13;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_14;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_14;
+	int32_t ___ballsPerGame_15;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_15;
+	bool ___trialListGenerated_16;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_16;
+	bool ___doFakeLaunch_17;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_17;
+	bool ___playerValsReceivedViaWS_18;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_18;
+	bool ___startTrial_19;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_19;
+	bool ___toPostTrial_20;
 	// System.Boolean GameManager::restart
-	bool ___restart_20;
+	bool ___restart_21;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_21;
+	bool ___ballIsShot_22;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_22;
+	bool ___trialIsRunning_23;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_23;
+	bool ___trialListFinished_24;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_24;
+	int32_t ___currentTrial_25;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_25;
+	bool ___endMessagesSend_26;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_26;
+	bool ___trophyMayAppear_27;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_27;
+	bool ___mayPrep_28;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_28;
+	bool ___canLaunch_29;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_29;
+	bool ___didShoot_30;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_30;
+	bool ___MayGiveTrophy_31;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_31;
+	bool ___trophyIsGiven_32;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_32;
+	bool ___didReadFeedback_33;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_33;
+	bool ___didGiveScore_34;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_34;
+	bool ___mustGiveFeedback_35;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_35;
+	bool ___isInitiated_36;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_36;
+	bool ___LightIsSet_37;
 };
 
 // Player
@@ -370,14 +372,18 @@ struct TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05  : public MonoBehavio
 	String_t* ___data20_dir_5;
 	// System.String TrialList::data80_dir
 	String_t* ___data80_dir_6;
+	// System.String TrialList::testdata20_dir
+	String_t* ___testdata20_dir_7;
+	// System.String TrialList::testdata80_dir
+	String_t* ___testdata80_dir_8;
 	// System.Collections.Generic.List`1<Trial> TrialList::trialsList
-	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_7;
+	List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* ___trialsList_9;
 	// UnityEngine.AudioClip[] TrialList::audioClips
-	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_8;
+	AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* ___audioClips_10;
 	// UnityEngine.TextAsset TrialList::trialListTA
-	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___trialListTA_9;
+	TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* ___trialListTA_11;
 	// GameManager TrialList::gameManager
-	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_10;
+	GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* ___gameManager_12;
 };
 
 // <Module>
@@ -814,8 +820,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Awake_m12FC28AA017CBDE6EC919D0
 		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = (List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85*)il2cpp_codegen_object_new(List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85_il2cpp_TypeInfo_var);
 		NullCheck(L_0);
 		List_1__ctor_m2DB8727D61B05CA6D6BA040AD419E43D717F63CD(L_0, List_1__ctor_m2DB8727D61B05CA6D6BA040AD419E43D717F63CD_RuntimeMethod_var);
-		__this->___trialsList_7 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialsList_7), (void*)L_0);
+		__this->___trialsList_9 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialsList_9), (void*)L_0);
 		// }
 		return;
 	}
@@ -832,12 +838,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Start_m62C971738CF1E1B1167F68E
 	{
 		// gameManager = GameManager.Instance;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = ((GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_StaticFields*)il2cpp_codegen_static_fields_for(GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var))->___Instance_4;
-		__this->___gameManager_10 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_10), (void*)L_0);
+		__this->___gameManager_12 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___gameManager_12), (void*)L_0);
 		// if (gameManager.isTutorial)
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_12;
 		NullCheck(L_1);
-		bool L_2 = L_1->___isTutorial_13;
+		bool L_2 = L_1->___isTutorial_14;
 		if (!L_2)
 		{
 			goto IL_002a;
@@ -847,9 +853,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Start_m62C971738CF1E1B1167F68E
 		// CreateTutorialTrialList();
 		TrialList_CreateTutorialTrialList_m6F62847709AE4C08DA814947BFE7556113760FF3(__this, NULL);
 		// gameManager.trialListGenerated = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_12;
 		NullCheck(L_3);
-		L_3->___trialListGenerated_15 = (bool)1;
+		L_3->___trialListGenerated_16 = (bool)1;
 	}
 
 IL_002a:
@@ -871,16 +877,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_Update_mB1CF3505C4066D92BEF249
 	{
 		// if ((gameManager.trialListGenerated == false)
 		//     && (gameManager.playerContingencySet == true))
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_12;
 		NullCheck(L_0);
-		bool L_1 = L_0->___trialListGenerated_15;
+		bool L_1 = L_0->___trialListGenerated_16;
 		if (L_1)
 		{
 			goto IL_0035;
 		}
 	}
 	{
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = __this->___gameManager_12;
 		NullCheck(L_2);
 		bool L_3 = L_2->___playerContingencySet_8;
 		if (!L_3)
@@ -911,36 +917,84 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_GenerateTrialList_m577E615B45D
 	{
 		// ClearTrialList();
 		TrialList_ClearTrialList_m36C3058CABBBC1F9394178CF63DF1960F48A4442(__this, NULL);
-		// if (cont == Contingency.c_20)
 		int32_t L_0 = ___0_cont;
-		if (L_0)
+		if (!L_0)
 		{
-			goto IL_0017;
+			goto IL_000f;
 		}
 	}
 	{
-		// LoadFromResourcesFolder(data20_dir);
-		String_t* L_1 = __this->___data20_dir_5;
-		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_1, NULL);
-		goto IL_0023;
+		int32_t L_1 = ___0_cont;
+		if ((((int32_t)L_1) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		goto IL_005f;
 	}
 
-IL_0017:
+IL_000f:
+	{
+		// if (gameManager.useTestingDataset)
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_2 = __this->___gameManager_12;
+		NullCheck(L_2);
+		bool L_3 = L_2->___useTestingDataset_13;
+		if (!L_3)
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		// LoadFromResourcesFolder(testdata20_dir);
+		String_t* L_4 = __this->___testdata20_dir_7;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_4, NULL);
+		goto IL_005f;
+	}
+
+IL_002a:
+	{
+		// LoadFromResourcesFolder(data20_dir);
+		String_t* L_5 = __this->___data20_dir_5;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_5, NULL);
+		// break;
+		goto IL_005f;
+	}
+
+IL_0038:
+	{
+		// if (gameManager.useTestingDataset)
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_6 = __this->___gameManager_12;
+		NullCheck(L_6);
+		bool L_7 = L_6->___useTestingDataset_13;
+		if (!L_7)
+		{
+			goto IL_0053;
+		}
+	}
+	{
+		// LoadFromResourcesFolder(testdata80_dir);
+		String_t* L_8 = __this->___testdata80_dir_8;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_8, NULL);
+		goto IL_005f;
+	}
+
+IL_0053:
 	{
 		// LoadFromResourcesFolder(data80_dir);
-		String_t* L_2 = __this->___data80_dir_6;
-		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_2, NULL);
+		String_t* L_9 = __this->___data80_dir_6;
+		TrialList_LoadFromResourcesFolder_m08BCB03AD8101CE29F6A855FCE68FBC2E2132F18(__this, L_9, NULL);
 	}
 
-IL_0023:
+IL_005f:
 	{
 		// ReadTrial(trialListTA);
-		TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* L_3 = __this->___trialListTA_9;
-		TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED(__this, L_3, NULL);
+		TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* L_10 = __this->___trialListTA_11;
+		TrialList_ReadTrial_m29B02154DA42E177563A91BCD9EB2A0308E07AED(__this, L_10, NULL);
 		// gameManager.trialListGenerated = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = __this->___gameManager_10;
-		NullCheck(L_4);
-		L_4->___trialListGenerated_15 = (bool)1;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_11 = __this->___gameManager_12;
+		NullCheck(L_11);
+		L_11->___trialListGenerated_16 = (bool)1;
 		// }
 		return;
 	}
@@ -960,8 +1014,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_LoadFromResourcesFolder_m08BCB
 		String_t* L_0 = ___0_contingency_dir;
 		AudioClipU5BU5D_t916722468F7EDCFA833318C35CD7D41097D75D31* L_1;
 		L_1 = Resources_LoadAll_TisAudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20_mB82F7CC016CC76E80E224EA18935D804F772ECEC(L_0, Resources_LoadAll_TisAudioClip_t5D272C4EB4F2D3ED49F1C346DEA373CF6D585F20_mB82F7CC016CC76E80E224EA18935D804F772ECEC_RuntimeMethod_var);
-		__this->___audioClips_8 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___audioClips_8), (void*)L_1);
+		__this->___audioClips_10 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___audioClips_10), (void*)L_1);
 		// trialListTA = Resources.LoadAll<TextAsset>(contingency_dir)[0];
 		String_t* L_2 = ___0_contingency_dir;
 		TextAssetU5BU5D_t36E72C271245C06AE024E4E06CD5B60A7D24FBBD* L_3;
@@ -969,8 +1023,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_LoadFromResourcesFolder_m08BCB
 		NullCheck(L_3);
 		int32_t L_4 = 0;
 		TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69* L_5 = (L_3)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
-		__this->___trialListTA_9 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialListTA_9), (void*)L_5);
+		__this->___trialListTA_11 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___trialListTA_11), (void*)L_5);
 		// }
 		return;
 	}
@@ -1007,7 +1061,7 @@ IL_0004:
 		NullCheck(L_1);
 		Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3(L_1, L_2, (bool)1, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, 0, NULL);
 		// trialsList.Add(temp);
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_3 = __this->___trialsList_7;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_3 = __this->___trialsList_9;
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_4 = V_1;
 		NullCheck(L_3);
 		List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_inline(L_3, L_4, List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_RuntimeMethod_var);
@@ -1198,7 +1252,7 @@ IL_008d:
 		NullCheck(L_29);
 		Trial_CreateTrial_m4A49A78557ADFD18BA517B4E73C7B1513F228BF3(L_29, L_30, L_31, L_32, L_33, NULL);
 		// trialsList.Add(temp);
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_34 = __this->___trialsList_7;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_34 = __this->___trialsList_9;
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_35 = V_6;
 		NullCheck(L_34);
 		List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_inline(L_34, L_35, List_1_Add_m1D476387D406016D97A2DD2C4108CA14A54A7BAB_RuntimeMethod_var);
@@ -1241,7 +1295,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_ClearTrialList_m36C3058CABBBC1
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral24B82725D42A344553F5A3767EF8F6A890DF911F, NULL);
 		// trialsList.Clear();
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_7;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_9;
 		NullCheck(L_0);
 		List_1_Clear_m0E06B2ECC4EBA4206BFB7D3CF0BB1839984345D1_inline(L_0, List_1_Clear_m0E06B2ECC4EBA4206BFB7D3CF0BB1839984345D1_RuntimeMethod_var);
 		// }
@@ -1259,10 +1313,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C6224
 	}
 	{
 		// return trialsList[gameManager.currentTrial];
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_7;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_10;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_0 = __this->___trialsList_9;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_12;
 		NullCheck(L_1);
-		int32_t L_2 = L_1->___currentTrial_24;
+		int32_t L_2 = L_1->___currentTrial_25;
 		NullCheck(L_0);
 		Trial_tA2D2FC6F06BE8EC0ECFDD5A2A941F4A06C622468* L_3;
 		L_3 = List_1_get_Item_m4060F0D1C1E2BC61E8C3821A57EB090B00FDE74E(L_0, L_2, List_1_get_Item_m4060F0D1C1E2BC61E8C3821A57EB090B00FDE74E_RuntimeMethod_var);
@@ -1280,17 +1334,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_NextTrial_mACB31D18CCE50A91100
 	}
 	{
 		// gameManager.currentTrial++;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_12;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = L_0;
 		NullCheck(L_1);
-		int32_t L_2 = L_1->___currentTrial_24;
+		int32_t L_2 = L_1->___currentTrial_25;
 		NullCheck(L_1);
-		L_1->___currentTrial_24 = ((int32_t)il2cpp_codegen_add(L_2, 1));
+		L_1->___currentTrial_25 = ((int32_t)il2cpp_codegen_add(L_2, 1));
 		// if (gameManager.currentTrial < trialsList.Count)
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_12;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___currentTrial_24;
-		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_5 = __this->___trialsList_7;
+		int32_t L_4 = L_3->___currentTrial_25;
+		List_1_t4E99A0E9DF5E731D4577A86288C55A5CA9CF4B85* L_5 = __this->___trialsList_9;
 		NullCheck(L_5);
 		int32_t L_6;
 		L_6 = List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_inline(L_5, List_1_get_Count_m8E85DD3EF8AB56026D8FCA89A3F211D12FF38889_RuntimeMethod_var);
@@ -1301,18 +1355,18 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrialList_NextTrial_mACB31D18CCE50A91100
 	}
 	{
 		// gameManager.trialListFinished = false;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_7 = __this->___gameManager_12;
 		NullCheck(L_7);
-		L_7->___trialListFinished_23 = (bool)0;
+		L_7->___trialListFinished_24 = (bool)0;
 		return;
 	}
 
 IL_0038:
 	{
 		// gameManager.trialListFinished = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = __this->___gameManager_10;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = __this->___gameManager_12;
 		NullCheck(L_8);
-		L_8->___trialListFinished_23 = (bool)1;
+		L_8->___trialListFinished_24 = (bool)1;
 		// }
 		return;
 	}

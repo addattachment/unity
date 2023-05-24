@@ -2472,54 +2472,56 @@ struct GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE  : public MonoBehav
 	bool ___allMust_11;
 	// System.Boolean GameManager::developmentMode
 	bool ___developmentMode_12;
+	// System.Boolean GameManager::useTestingDataset
+	bool ___useTestingDataset_13;
 	// System.Boolean GameManager::isTutorial
-	bool ___isTutorial_13;
+	bool ___isTutorial_14;
 	// System.Int32 GameManager::ballsPerGame
-	int32_t ___ballsPerGame_14;
+	int32_t ___ballsPerGame_15;
 	// System.Boolean GameManager::trialListGenerated
-	bool ___trialListGenerated_15;
+	bool ___trialListGenerated_16;
 	// System.Boolean GameManager::doFakeLaunch
-	bool ___doFakeLaunch_16;
+	bool ___doFakeLaunch_17;
 	// System.Boolean GameManager::playerValsReceivedViaWS
-	bool ___playerValsReceivedViaWS_17;
+	bool ___playerValsReceivedViaWS_18;
 	// System.Boolean GameManager::startTrial
-	bool ___startTrial_18;
+	bool ___startTrial_19;
 	// System.Boolean GameManager::toPostTrial
-	bool ___toPostTrial_19;
+	bool ___toPostTrial_20;
 	// System.Boolean GameManager::restart
-	bool ___restart_20;
+	bool ___restart_21;
 	// System.Boolean GameManager::ballIsShot
-	bool ___ballIsShot_21;
+	bool ___ballIsShot_22;
 	// System.Boolean GameManager::trialIsRunning
-	bool ___trialIsRunning_22;
+	bool ___trialIsRunning_23;
 	// System.Boolean GameManager::trialListFinished
-	bool ___trialListFinished_23;
+	bool ___trialListFinished_24;
 	// System.Int32 GameManager::currentTrial
-	int32_t ___currentTrial_24;
+	int32_t ___currentTrial_25;
 	// System.Boolean GameManager::endMessagesSend
-	bool ___endMessagesSend_25;
+	bool ___endMessagesSend_26;
 	// System.Boolean GameManager::trophyMayAppear
-	bool ___trophyMayAppear_26;
+	bool ___trophyMayAppear_27;
 	// System.Boolean GameManager::mayPrep
-	bool ___mayPrep_27;
+	bool ___mayPrep_28;
 	// System.Boolean GameManager::canLaunch
-	bool ___canLaunch_28;
+	bool ___canLaunch_29;
 	// System.Boolean GameManager::didShoot
-	bool ___didShoot_29;
+	bool ___didShoot_30;
 	// System.Boolean GameManager::MayGiveTrophy
-	bool ___MayGiveTrophy_30;
+	bool ___MayGiveTrophy_31;
 	// System.Boolean GameManager::trophyIsGiven
-	bool ___trophyIsGiven_31;
+	bool ___trophyIsGiven_32;
 	// System.Boolean GameManager::didReadFeedback
-	bool ___didReadFeedback_32;
+	bool ___didReadFeedback_33;
 	// System.Boolean GameManager::didGiveScore
-	bool ___didGiveScore_33;
+	bool ___didGiveScore_34;
 	// System.Boolean GameManager::mustGiveFeedback
-	bool ___mustGiveFeedback_34;
+	bool ___mustGiveFeedback_35;
 	// System.Boolean GameManager::isInitiated
-	bool ___isInitiated_35;
+	bool ___isInitiated_36;
 	// System.Boolean GameManager::LightIsSet
-	bool ___LightIsSet_36;
+	bool ___LightIsSet_37;
 };
 
 // GameSounds
@@ -6427,7 +6429,7 @@ IL_000e_1:
 				int32_t L_3 = L_2->___currentBallInTrial_12;
 				GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_4 = __this->___gameManager_7;
 				NullCheck(L_4);
-				int32_t L_5 = L_4->___ballsPerGame_14;
+				int32_t L_5 = L_4->___ballsPerGame_15;
 				if ((((int32_t)L_3) >= ((int32_t)L_5)))
 				{
 					goto IL_002b_1;
@@ -6479,7 +6481,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Player_t637772DB02240599AE6D1E7DB0850DE1D8743
 		// if (gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_7;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isTutorial_13;
+		bool L_1 = L_0->___isTutorial_14;
 		if (!L_1)
 		{
 			goto IL_0014;
@@ -6645,7 +6647,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerGroup_SwitchPlayer_mDBD590E1978050
 		// if (!gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_7;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isTutorial_13;
+		bool L_1 = L_0->___isTutorial_14;
 		if (L_1)
 		{
 			goto IL_0057;
@@ -6752,7 +6754,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerGroup_ResetPlayers_mC4639A51C94868
 		// if (!gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_7;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isTutorial_13;
+		bool L_1 = L_0->___isTutorial_14;
 		if (L_1)
 		{
 			goto IL_0053;
@@ -7113,7 +7115,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerGroup_WSUpdateTrialScore_mDB26A9B4
 		// if (!gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_0 = __this->___gameManager_7;
 		NullCheck(L_0);
-		bool L_1 = L_0->___isTutorial_13;
+		bool L_1 = L_0->___isTutorial_14;
 		if (L_1)
 		{
 			goto IL_003b;
@@ -7124,7 +7126,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerGroup_WSUpdateTrialScore_mDB26A9B4
 		PlayersScoreEvent_tE9E8E8EDDAA3712C0CDC512AE336857868841D35* L_2 = __this->___playersScoreEvent_12;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_7;
 		NullCheck(L_3);
-		int32_t L_4 = L_3->___currentTrial_24;
+		int32_t L_4 = L_3->___currentTrial_25;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_5 = __this->___player_4;
 		NullCheck(L_5);
 		int32_t L_6 = L_5->___score_11;
@@ -7142,7 +7144,7 @@ IL_003b:
 		PlayersScoreEvent_tE9E8E8EDDAA3712C0CDC512AE336857868841D35* L_9 = __this->___playersScoreEvent_12;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_10 = __this->___gameManager_7;
 		NullCheck(L_10);
-		int32_t L_11 = L_10->___currentTrial_24;
+		int32_t L_11 = L_10->___currentTrial_25;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_12 = __this->___player_4;
 		NullCheck(L_12);
 		int32_t L_13 = L_12->___score_11;
@@ -7205,7 +7207,7 @@ IL_0024:
 		// if (gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_7;
 		NullCheck(L_3);
-		bool L_4 = L_3->___isTutorial_13;
+		bool L_4 = L_3->___isTutorial_14;
 		if (!L_4)
 		{
 			goto IL_0041;
@@ -7719,7 +7721,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerScore_AddToScore_m762CF79C0A0FFB91
 		// if (!gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_5 = __this->___gameManager_5;
 		NullCheck(L_5);
-		bool L_6 = L_5->___isTutorial_13;
+		bool L_6 = L_5->___isTutorial_14;
 		if (L_6)
 		{
 			goto IL_0040;
@@ -7863,7 +7865,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerScore_WSUpdateScore_m68313E9CBDD55
 		PlayerBallScoreEvent_t3E7BCE357337F3C945F82C48518D8935488CC9CC* L_0 = __this->___playerBallScoreEvent_12;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_1 = __this->___gameManager_5;
 		NullCheck(L_1);
-		int32_t L_2 = L_1->___currentTrial_24;
+		int32_t L_2 = L_1->___currentTrial_25;
 		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_3 = __this->___player_4;
 		NullCheck(L_3);
 		String_t* L_4 = L_3->___playerName_4;
@@ -8055,7 +8057,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGameValues_Start_m12493EA0465735BFAA6
 		// gameManager.playerValsReceivedViaWS = true;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_3 = __this->___gameManager_4;
 		NullCheck(L_3);
-		L_3->___playerValsReceivedViaWS_17 = (bool)1;
+		L_3->___playerValsReceivedViaWS_18 = (bool)1;
 	}
 
 IL_001e:
@@ -8137,7 +8139,7 @@ IL_0052:
 		// if (gameManager.playerValsReceivedViaWS)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_8 = __this->___gameManager_4;
 		NullCheck(L_8);
-		bool L_9 = L_8->___playerValsReceivedViaWS_17;
+		bool L_9 = L_8->___playerValsReceivedViaWS_18;
 		if (!L_9)
 		{
 			goto IL_0086;
@@ -8155,7 +8157,7 @@ IL_0052:
 		// gameManager.playerValsReceivedViaWS = false;
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_12 = __this->___gameManager_4;
 		NullCheck(L_12);
-		L_12->___playerValsReceivedViaWS_17 = (bool)0;
+		L_12->___playerValsReceivedViaWS_18 = (bool)0;
 	}
 
 IL_0086:
@@ -8349,7 +8351,7 @@ IL_008a:
 		// if (!gameManager.isTutorial)
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_16 = __this->___gameManager_4;
 		NullCheck(L_16);
-		bool L_17 = L_16->___isTutorial_13;
+		bool L_17 = L_16->___isTutorial_14;
 		if (L_17)
 		{
 			goto IL_0136;
