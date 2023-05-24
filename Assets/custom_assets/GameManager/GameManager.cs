@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [Header("development settings")]
     public bool allMust = false;
     public bool developmentMode = true;
+    public bool useTestingDataset = false;
 
     [Header("tutorial settings")]
     public bool isTutorial; // if tutorial is true, we only have 1 trial with 'good' chances of scoring
