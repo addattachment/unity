@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 1
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
+  m_AdditionalLightsShadowResolutionTier: 1
   m_LightLayerMask: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
@@ -1721,7 +1721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6593447168491209313}
   m_LocalRotation: {x: -0.7052355, y: -0.051410265, z: -0.051410265, w: 0.70523536}
-  m_LocalPosition: {x: 15.59, y: 0.085, z: 7.98}
+  m_LocalPosition: {x: 15.59, y: 0.09, z: 7.98}
   m_LocalScale: {x: 1.9234166, y: 0.875993, z: 0.105548464}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2617,7 +2617,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3671923382214026259, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
       propertyPath: m_Name
-      value: Gymhall_oPTIMIZED_ 1
+      value: Colliders_And_Score
       objectReference: {fileID: 0}
     - target: {fileID: 3671923382214026259, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
       propertyPath: m_Layer
@@ -2675,7 +2675,8 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.03
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3023523577686050246, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
 --- !u!1 &4915641851430870627 stripped
 GameObject:
