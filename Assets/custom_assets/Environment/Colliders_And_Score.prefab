@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8407870688488226875}
   - component: {fileID: 8407870688488226874}
   m_Layer: 0
-  m_Name: Gymhall_oPTIMIZED_ 1
+  m_Name: Colliders_And_Score
   m_TagString: gamehall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
