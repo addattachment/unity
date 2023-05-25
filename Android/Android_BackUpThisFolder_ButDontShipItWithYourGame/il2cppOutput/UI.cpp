@@ -243,8 +243,6 @@ struct U3CLaunchNumberU3Ed__12_t4921A6AD7DF7D53942B1FAD5C192AC8CD47C3510;
 struct U3CShowCountdownNumberU3Ed__13_tE20D1E9573AB0585A3AE7C96B10BBB75F12E0A5D;
 // UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
-// ReadFeedback/<enableCollider>d__6
-struct U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D;
 // SwitchScene/<SwitchToScene>d__15
 struct U3CSwitchToSceneU3Ed__15_tA0BED0984AA55EA8CFF8D4EEFFAE172B97A1DFB5;
 // WsClient/WSHelloworld
@@ -267,7 +265,6 @@ IL2CPP_EXTERN_C RuntimeClass* SwitchSceneEvent_t8E2F9600C7471DE0462FFBC37587158E
 IL2CPP_EXTERN_C RuntimeClass* U3CLaunchNumberU3Ed__12_t4921A6AD7DF7D53942B1FAD5C192AC8CD47C3510_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CShowCountdownNumberU3Ed__13_tE20D1E9573AB0585A3AE7C96B10BBB75F12E0A5D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CSwitchToSceneU3Ed__15_tA0BED0984AA55EA8CFF8D4EEFFAE172B97A1DFB5_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
@@ -316,7 +313,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Resources_LoadAll_TisGameObject_t76FEDD663A
 IL2CPP_EXTERN_C const RuntimeMethod* U3CLaunchNumberU3Ed__12_System_Collections_IEnumerator_Reset_m578DC413DF17A8C04649B4A2ACEADF1487C835EE_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CShowCountdownNumberU3Ed__13_System_Collections_IEnumerator_Reset_m67E32E6BDF69F2F17696C8B59217C7EFE7A594F9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSwitchToSceneU3Ed__15_System_Collections_IEnumerator_Reset_mD1A012152E651FAD917CC19F6C273C57740F115D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CenableColliderU3Ed__6_System_Collections_IEnumerator_Reset_m76EC4D86AC6278DA6AC3AA3E6A8C20B787AB8731_RuntimeMethod_var;
 struct ContactPoint_t241857959C0D517C21F541BB04B63FA6C1EAB3F9;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
@@ -451,19 +447,6 @@ struct U3CShowCountdownNumberU3Ed__13_tE20D1E9573AB0585A3AE7C96B10BBB75F12E0A5D 
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___number_3;
 	// System.Single CountDown/<ShowCountdownNumber>d__13::delay
 	float ___delay_4;
-};
-
-// ReadFeedback/<enableCollider>d__6
-struct U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D  : public RuntimeObject
-{
-	// System.Int32 ReadFeedback/<enableCollider>d__6::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object ReadFeedback/<enableCollider>d__6::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// ReadFeedback ReadFeedback/<enableCollider>d__6::<>4__this
-	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* ___U3CU3E4__this_2;
-	// System.Boolean ReadFeedback/<enableCollider>d__6::enable
-	bool ___enable_3;
 };
 
 // SwitchScene/<SwitchToScene>d__15
@@ -2493,10 +2476,6 @@ struct String_t_StaticFields
 
 // CountDown/<ShowCountdownNumber>d__13
 
-// ReadFeedback/<enableCollider>d__6
-
-// ReadFeedback/<enableCollider>d__6
-
 // SwitchScene/<SwitchToScene>d__15
 
 // SwitchScene/<SwitchToScene>d__15
@@ -3023,18 +3002,14 @@ inline BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* Component_GetCompo
 }
 // System.Void UnityEngine.Events.UnityEvent::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UnityEvent__ctor_m03D3E5121B9A6100351984D0CE3050B909CD3235 (UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* __this, const RuntimeMethod* method) ;
-// System.Collections.IEnumerator ReadFeedback::enableCollider(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadFeedback_enableCollider_m080ADBE19D0ECBE6402507C2DA616D21981849EF (ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* __this, bool ___0_enable, const RuntimeMethod* method) ;
-// System.Void ReadFeedback/<enableCollider>d__6::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CenableColliderU3Ed__6__ctor_mB21FED90565200BEB1435D97C45AF20717B3BC78 (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, bool ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.GameObject UnityEngine.Collision::get_gameObject()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Collision_get_gameObject_m846FADBCA43E1849D3FE4D5EA44C02D055A70B3E (Collision_tBCC6AEBD9A63E6DA2E50660DAC03CDCB1FF7A9B0* __this, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.GameObject::CompareTag(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, String_t* ___0_tag, const RuntimeMethod* method) ;
 // System.Void ReadFeedback::LowerFeedbackPole()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadFeedback_LowerFeedbackPole_m381DF63552E2124D97834A968F7D65B9D6E1EBBF (ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* __this, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Collider::set_enabled(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, bool ___0_value, const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Object::op_Equality(UnityEngine.Object,UnityEngine.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Equality_mB6120F782D83091EF56A198FCEBCF066DB4A9605 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
 // System.Boolean SceneMgr::IsAnAdditiveGameSceneLoaded()
@@ -4254,37 +4229,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadFeedback_RaiseFeedbackPole_mDD64843C
 		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_0 = __this->___appear_4;
 		NullCheck(L_0);
 		Appear_Raise_m86448DDEF7147B208871AB13B94F4574142D9732(L_0, NULL);
-		// StartCoroutine(enableCollider(true));
-		RuntimeObject* L_1;
-		L_1 = ReadFeedback_enableCollider_m080ADBE19D0ECBE6402507C2DA616D21981849EF(__this, (bool)1, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
-		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
+		// boxColl.enabled = true;
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_1 = __this->___boxColl_5;
+		NullCheck(L_1);
+		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_1, (bool)1, NULL);
 		// }
 		return;
-	}
-}
-// System.Collections.IEnumerator ReadFeedback::enableCollider(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ReadFeedback_enableCollider_m080ADBE19D0ECBE6402507C2DA616D21981849EF (ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* __this, bool ___0_enable, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* L_0 = (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D*)il2cpp_codegen_object_new(U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D_il2cpp_TypeInfo_var);
-		NullCheck(L_0);
-		U3CenableColliderU3Ed__6__ctor_mB21FED90565200BEB1435D97C45AF20717B3BC78(L_0, 0, NULL);
-		U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* L_1 = L_0;
-		NullCheck(L_1);
-		L_1->___U3CU3E4__this_2 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_2), (void*)__this);
-		U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* L_2 = L_1;
-		bool L_3 = ___0_enable;
-		NullCheck(L_2);
-		L_2->___enable_3 = L_3;
-		return L_2;
 	}
 }
 // System.Void ReadFeedback::LowerFeedbackPole()
@@ -4305,13 +4255,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadFeedback_LowerFeedbackPole_m381DF635
 		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_0 = __this->___appear_4;
 		NullCheck(L_0);
 		Appear_Lower_m9AEDFD33BA93920DC62542D78D32CC8DCC7863AE(L_0, NULL);
+		// boxColl.enabled = false;
+		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_1 = __this->___boxColl_5;
+		NullCheck(L_1);
+		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_1, (bool)0, NULL);
 		// isTouched = true;
 		__this->___isTouched_7 = (bool)1;
-		// StartCoroutine(enableCollider(false));
-		RuntimeObject* L_1;
-		L_1 = ReadFeedback_enableCollider_m080ADBE19D0ECBE6402507C2DA616D21981849EF(__this, (bool)0, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
-		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
 		// }
 		return;
 	}
@@ -4390,117 +4339,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReadFeedback__ctor_m856D9C9C8BC0D57C8E04
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void ReadFeedback/<enableCollider>d__6::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CenableColliderU3Ed__6__ctor_mB21FED90565200BEB1435D97C45AF20717B3BC78 (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___0_U3CU3E1__state;
-		__this->___U3CU3E1__state_0 = L_0;
-		return;
-	}
-}
-// System.Void ReadFeedback/<enableCollider>d__6::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CenableColliderU3Ed__6_System_IDisposable_Dispose_m4706FCC2E636B42E4BC85FC7D05F6EA483BD2F8D (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-// System.Boolean ReadFeedback/<enableCollider>d__6::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CenableColliderU3Ed__6_MoveNext_mC44B9E05AFB9BBF8D3965B73CCB003F76096DB30 (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* V_1 = NULL;
-	{
-		int32_t L_0 = __this->___U3CU3E1__state_0;
-		V_0 = L_0;
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_1 = __this->___U3CU3E4__this_2;
-		V_1 = L_1;
-		int32_t L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		int32_t L_3 = V_0;
-		if ((((int32_t)L_3) == ((int32_t)1)))
-		{
-			goto IL_0037;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_0017:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSeconds(1.0f);
-		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_4 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
-		NullCheck(L_4);
-		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_4, (1.0f), NULL);
-		__this->___U3CU3E2__current_1 = L_4;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_4);
-		__this->___U3CU3E1__state_0 = 1;
-		return (bool)1;
-	}
-
-IL_0037:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-		// boxColl.enabled = enable;
-		ReadFeedback_tC83A15024712A71DBBB501FD3CC93C068D8FA8E0* L_5 = V_1;
-		NullCheck(L_5);
-		BoxCollider_tFA5D239388334D6DE0B8FFDAD6825C5B03786E23* L_6 = L_5->___boxColl_5;
-		bool L_7 = __this->___enable_3;
-		NullCheck(L_6);
-		Collider_set_enabled_m8D5C3B5047592D227A52560FC9723D176E209F70(L_6, L_7, NULL);
-		// }
-		return (bool)0;
-	}
-}
-// System.Object ReadFeedback/<enableCollider>d__6::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CenableColliderU3Ed__6_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB5CC7ACBBD664724305F2AFD10CBD6C0FDABF8C9 (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
-	}
-}
-// System.Void ReadFeedback/<enableCollider>d__6::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CenableColliderU3Ed__6_System_Collections_IEnumerator_Reset_m76EC4D86AC6278DA6AC3AA3E6A8C20B787AB8731 (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, const RuntimeMethod* method) 
-{
-	{
-		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
-		NullCheck(L_0);
-		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CenableColliderU3Ed__6_System_Collections_IEnumerator_Reset_m76EC4D86AC6278DA6AC3AA3E6A8C20B787AB8731_RuntimeMethod_var)));
-	}
-}
-// System.Object ReadFeedback/<enableCollider>d__6::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CenableColliderU3Ed__6_System_Collections_IEnumerator_get_Current_mD5C334EC6F1EE667FBDEEF17BEB371391388795F (U3CenableColliderU3Ed__6_t029BB41DFFFB0F78B69F7F820AE7FDEFD374826D* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
 	}
 }
 #ifdef __clang__
