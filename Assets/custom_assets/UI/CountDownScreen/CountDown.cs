@@ -13,6 +13,7 @@ public class CountDown : MonoBehaviour
     private bool loaded = false;
     public bool countDownFinished = false;
     [SerializeField] private Light spotLight;
+    [SerializeField] private AudioSource gong;
     void LoadNumbers()
     {
         numbers = new List<GameObject>(Resources.LoadAll<GameObject>(numbers_directory));
@@ -54,7 +55,7 @@ public class CountDown : MonoBehaviour
     private IEnumerator ShowCountdownNumber(GameObject number, float delay)
     {
         Hashtable countDownHt = iTween.Hash("amount", new Vector3(0.0f, 0.2f, -2.0f), "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo");
-
+        gong.Play();
         numberInst = Instantiate(number, this.transform);
         //countDownList.Add(numberInst);
         iTween.MoveBy(numberInst, countDownHt);

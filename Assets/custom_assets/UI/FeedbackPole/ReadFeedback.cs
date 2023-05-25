@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -31,18 +32,25 @@ public class ReadFeedback : MonoBehaviour
         Debug.Log("raise pole");
         appear.Raise();
         //button.interactable = true;
-        boxColl.enabled = true;
+        /*boxColl.enabled = true;*/
+        StartCoroutine(enableCollider(true));
     }
 
-
+    private IEnumerator enableCollider(bool enable)
+    {
+        yield return new WaitForSeconds(1.0f);
+        boxColl.enabled = enable;
+    }
     public void LowerFeedbackPole()
     {
         Debug.Log("lower pole");
 
         appear.Lower();
         //button.interactable = false;
-        boxColl.enabled = false;
+        //boxColl.enabled = false;
         isTouched = true;
+        StartCoroutine(enableCollider(false));
+
         //FunctionToExecute(m_methodToCall);
     }
 

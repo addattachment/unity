@@ -17,6 +17,14 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
         Debug.Log("Geef een lage score");
         state.InstructionBoardAppear.Raise();
         state.InstructionBoardText.text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
+        foreach (GameObject arrow in state.ArrowPointInside)
+        {
+            arrow.GetComponent<MeshRenderer>().enabled = true;
+        }
+        foreach (GameObject arrow in state.ArrowPointOutside)
+        {
+            arrow.GetComponent<MeshRenderer>().enabled = false;
+        }
         // uitgaan van mondelinge instructies eerst?
     }
 
@@ -44,7 +52,14 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         timer = 0.0f;
                         Debug.Log("Geef maar een Hoge score");
                         state.InstructionBoardText.text = "Perfect, probeer nu eens voor een hoge score ze dicht bijeen te brengen";
-
+                        foreach (GameObject arrow in state.ArrowPointOutside)
+                        {
+                            arrow.GetComponent<MeshRenderer>().enabled = true;
+                        }
+                        foreach (GameObject arrow in state.ArrowPointInside)
+                        {
+                            arrow.GetComponent<MeshRenderer>().enabled = false;
+                        }
                     }
                     else
                     {
@@ -67,7 +82,14 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         timer = 0.0f;
                         Debug.Log("Geef nu maar echte score");
                         state.InstructionBoardText.text = "Top! Kun je nu zelf aanduiden hoeveel je je zorgfiguur vertrouwt?";
-
+                        foreach (GameObject arrow in state.ArrowPointInside)
+                        {
+                            arrow.GetComponent<MeshRenderer>().enabled = false;
+                        }
+                        foreach (GameObject arrow in state.ArrowPointOutside)
+                        {
+                            arrow.GetComponent<MeshRenderer>().enabled = false;
+                        }
                     }
                     else
                     {
