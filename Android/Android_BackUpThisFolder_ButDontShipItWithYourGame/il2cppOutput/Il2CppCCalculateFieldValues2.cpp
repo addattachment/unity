@@ -28286,30 +28286,36 @@ struct ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D  : public MonoBe
 	float ___scaleCircleDistance_11;
 	// System.Single ScoreCaregiver::maxDistance
 	float ___maxDistance_12;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectStart
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectStart_13;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndLeft
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndLeft_14;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndRight
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndRight_15;
 	// System.Int32 ScoreCaregiver::caregiverScore
-	int32_t ___caregiverScore_13;
+	int32_t ___caregiverScore_16;
 	// System.Single ScoreCaregiver::controllerStartDist
-	float ___controllerStartDist_14;
+	float ___controllerStartDist_17;
 	// System.Single ScoreCaregiver::controllerDist
-	float ___controllerDist_15;
+	float ___controllerDist_18;
 	// System.Single ScoreCaregiver::circleDist
-	float ___circleDist_16;
+	float ___circleDist_19;
 	// System.Boolean ScoreCaregiver::gripIsPushed
-	bool ___gripIsPushed_17;
+	bool ___gripIsPushed_20;
 	// System.Boolean ScoreCaregiver::scoringStarted
-	bool ___scoringStarted_18;
+	bool ___scoringStarted_21;
 	// Appear ScoreCaregiver::appear
-	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_19;
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_22;
 	// System.Boolean ScoreCaregiver::isLow
-	bool ___isLow_20;
+	bool ___isLow_23;
 	// WsClient ScoreCaregiver::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_21;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_24;
 	// CaregiverScoreEvent ScoreCaregiver::caregiverScoreEvent
-	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_22;
+	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_25;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosMeCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_23;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_26;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosCaregiverCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_24;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_27;
 };
 
 // ScoreDot
@@ -43490,9 +43496,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8063[37] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8064[4] = 
 {
 	static_cast<int32_t>(offsetof(SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91, ___lookTarget_4)),static_cast<int32_t>(offsetof(SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91, ___startPos_5)),static_cast<int32_t>(offsetof(SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91, ___followObject_6)),static_cast<int32_t>(offsetof(SetCaregiverGaze_t2814F283A98777DE1B1F70D86F4EBB243C337A91, ___follow_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8065[21] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8065[24] = 
 {
-	static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___LeftController_4)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___RightController_5)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___meCircle_6)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___meCircleRing_7)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverCircle_8)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverCircleRing_9)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ____collider_10)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___scaleCircleDistance_11)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___maxDistance_12)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverScore_13)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___controllerStartDist_14)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___controllerDist_15)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___circleDist_16)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___gripIsPushed_17)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___scoringStarted_18)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___appear_19)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___isLow_20)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___ws_21)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverScoreEvent_22)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___startPosMeCircle_23)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___startPosCaregiverCircle_24)),};
+	static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___LeftController_4)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___RightController_5)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___meCircle_6)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___meCircleRing_7)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverCircle_8)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverCircleRing_9)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ____collider_10)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___scaleCircleDistance_11)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___maxDistance_12)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___ParticleEffectStart_13)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___ParticleEffectEndLeft_14)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___ParticleEffectEndRight_15)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverScore_16)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___controllerStartDist_17)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___controllerDist_18)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___circleDist_19)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___gripIsPushed_20)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___scoringStarted_21)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___appear_22)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___isLow_23)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___ws_24)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___caregiverScoreEvent_25)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___startPosMeCircle_26)),static_cast<int32_t>(offsetof(ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D, ___startPosCaregiverCircle_27)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable8066[4] = 
 {
 	static_cast<int32_t>(offsetof(CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC, ___trialNumber_0)),static_cast<int32_t>(offsetof(CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC, ___websocketMessage_1)),static_cast<int32_t>(offsetof(CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC, ___score_2)),static_cast<int32_t>(offsetof(CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC, ____time_3)),};

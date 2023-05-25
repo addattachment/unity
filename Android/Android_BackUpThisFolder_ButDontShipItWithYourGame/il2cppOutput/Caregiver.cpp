@@ -201,6 +201,8 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
 struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
 // LSL.OutletPassThrough
 struct OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C;
+// UnityEngine.ParticleSystem
+struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
 // Player
 struct Player_t637772DB02240599AE6D1E7DB0850DE1D8743843;
 // PlayerGroup
@@ -1330,6 +1332,11 @@ struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public
 {
 };
 
+// UnityEngine.ParticleSystem
+struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+
 // UnityEngine.Renderer
 struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
 {
@@ -2103,30 +2110,36 @@ struct ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D  : public MonoBe
 	float ___scaleCircleDistance_11;
 	// System.Single ScoreCaregiver::maxDistance
 	float ___maxDistance_12;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectStart
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectStart_13;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndLeft
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndLeft_14;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndRight
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndRight_15;
 	// System.Int32 ScoreCaregiver::caregiverScore
-	int32_t ___caregiverScore_13;
+	int32_t ___caregiverScore_16;
 	// System.Single ScoreCaregiver::controllerStartDist
-	float ___controllerStartDist_14;
+	float ___controllerStartDist_17;
 	// System.Single ScoreCaregiver::controllerDist
-	float ___controllerDist_15;
+	float ___controllerDist_18;
 	// System.Single ScoreCaregiver::circleDist
-	float ___circleDist_16;
+	float ___circleDist_19;
 	// System.Boolean ScoreCaregiver::gripIsPushed
-	bool ___gripIsPushed_17;
+	bool ___gripIsPushed_20;
 	// System.Boolean ScoreCaregiver::scoringStarted
-	bool ___scoringStarted_18;
+	bool ___scoringStarted_21;
 	// Appear ScoreCaregiver::appear
-	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_19;
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_22;
 	// System.Boolean ScoreCaregiver::isLow
-	bool ___isLow_20;
+	bool ___isLow_23;
 	// WsClient ScoreCaregiver::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_21;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_24;
 	// CaregiverScoreEvent ScoreCaregiver::caregiverScoreEvent
-	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_22;
+	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_25;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosMeCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_23;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_26;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosCaregiverCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_24;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_27;
 };
 
 // SetCaregiverGaze
@@ -2909,6 +2922,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // System.NotSupportedException
 
+// UnityEngine.ParticleSystem
+
+// UnityEngine.ParticleSystem
+
 // UnityEngine.Renderer
 
 // UnityEngine.Renderer
@@ -3463,6 +3480,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D (Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___0_value, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::get_red()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline (const RuntimeMethod* method) ;
+// System.Void UnityEngine.ParticleSystem::Play()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
 // UnityEngine.Color UnityEngine.Color::get_green()
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Color_tD001788D726C3A7F1379BEED0260B9591F440C1F Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline (const RuntimeMethod* method) ;
 // System.Void EnvironmentLight::EnableSunlight(System.Boolean)
@@ -4450,7 +4469,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverIntroScoringState_UpdateState_m
 		NullCheck(L_0);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_1 = L_0->___scoreCaregiver_15;
 		NullCheck(L_1);
-		bool L_2 = L_1->___scoringStarted_18;
+		bool L_2 = L_1->___scoringStarted_21;
 		if (!L_2)
 		{
 			goto IL_01a3;
@@ -4496,13 +4515,13 @@ IL_0048:
 		NullCheck(L_8);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_9 = L_8->___scoreCaregiver_15;
 		NullCheck(L_9);
-		L_9->___scoringStarted_18 = (bool)0;
+		L_9->___scoringStarted_21 = (bool)0;
 		// Debug.Log("score: " + state.scoreCaregiver.caregiverScore);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_10 = ___0_state;
 		NullCheck(L_10);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_11 = L_10->___scoreCaregiver_15;
 		NullCheck(L_11);
-		int32_t* L_12 = (&L_11->___caregiverScore_13);
+		int32_t* L_12 = (&L_11->___caregiverScore_16);
 		String_t* L_13;
 		L_13 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_12, NULL);
 		String_t* L_14;
@@ -4514,7 +4533,7 @@ IL_0048:
 		NullCheck(L_15);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_16 = L_15->___scoreCaregiver_15;
 		NullCheck(L_16);
-		int32_t L_17 = L_16->___caregiverScore_13;
+		int32_t L_17 = L_16->___caregiverScore_16;
 		if ((((int32_t)L_17) > ((int32_t)2)))
 		{
 			goto IL_00b6;
@@ -4570,13 +4589,13 @@ IL_00e0:
 		NullCheck(L_25);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_26 = L_25->___scoreCaregiver_15;
 		NullCheck(L_26);
-		L_26->___scoringStarted_18 = (bool)0;
+		L_26->___scoringStarted_21 = (bool)0;
 		// if (state.scoreCaregiver.caregiverScore >= 8)
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_27 = ___0_state;
 		NullCheck(L_27);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_28 = L_27->___scoreCaregiver_15;
 		NullCheck(L_28);
-		int32_t L_29 = L_28->___caregiverScore_13;
+		int32_t L_29 = L_28->___caregiverScore_16;
 		if ((((int32_t)L_29) < ((int32_t)8)))
 		{
 			goto IL_012f;
@@ -4607,7 +4626,7 @@ IL_012f:
 		NullCheck(L_33);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_34 = L_33->___scoreCaregiver_15;
 		NullCheck(L_34);
-		int32_t* L_35 = (&L_34->___caregiverScore_13);
+		int32_t* L_35 = (&L_34->___caregiverScore_16);
 		String_t* L_36;
 		L_36 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_35, NULL);
 		String_t* L_37;
@@ -4641,7 +4660,7 @@ IL_016e:
 		NullCheck(L_42);
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_43 = L_42->___scoreCaregiver_15;
 		NullCheck(L_43);
-		L_43->___scoringStarted_18 = (bool)0;
+		L_43->___scoringStarted_21 = (bool)0;
 		// state.scoreCaregiver.SendScore(-1);
 		CaregiverIntroStateManager_tD1C437A7D43DC894B267F6BF4FF028A4B8332A1A* L_44 = ___0_state;
 		NullCheck(L_44);
@@ -6444,13 +6463,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_Start_mAA2719600CB811139C
 		// ws = WsClient.Instance;
 		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_0;
 		L_0 = WsClient_get_Instance_m0DA315E124184F2DF0F96F3C0ADB3985FD420075(NULL);
-		__this->___ws_21 = L_0;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_21), (void*)L_0);
+		__this->___ws_24 = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ws_24), (void*)L_0);
 		// appear = GetComponent<Appear>();
 		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_1;
 		L_1 = Component_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mCED3A0108EB880335F2D9BFF3DBE2036654C9E17(__this, Component_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mCED3A0108EB880335F2D9BFF3DBE2036654C9E17_RuntimeMethod_var);
-		__this->___appear_19 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___appear_19), (void*)L_1);
+		__this->___appear_22 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___appear_22), (void*)L_1);
 		// startPosMeCircle = meCircle.transform.position;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___meCircle_6;
 		NullCheck(L_2);
@@ -6459,7 +6478,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_Start_mAA2719600CB811139C
 		NullCheck(L_3);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
 		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
-		__this->___startPosMeCircle_23 = L_4;
+		__this->___startPosMeCircle_26 = L_4;
 		// startPosCaregiverCircle = caregiverCircle.transform.position;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___caregiverCircle_8;
 		NullCheck(L_5);
@@ -6468,13 +6487,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_Start_mAA2719600CB811139C
 		NullCheck(L_6);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
 		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
-		__this->___startPosCaregiverCircle_24 = L_7;
+		__this->___startPosCaregiverCircle_27 = L_7;
 		// caregiverScoreEvent = new();
 		CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* L_8 = (CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC*)il2cpp_codegen_object_new(CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC_il2cpp_TypeInfo_var);
 		NullCheck(L_8);
 		CaregiverScoreEvent__ctor_mFFF02C2D4A9DC96497154E5BA4BF741B6F6081EA(L_8, NULL);
-		__this->___caregiverScoreEvent_22 = L_8;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverScoreEvent_22), (void*)L_8);
+		__this->___caregiverScoreEvent_25 = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___caregiverScoreEvent_25), (void*)L_8);
 		// var controllers = GameObject.FindGameObjectsWithTag("Hand");
 		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9;
 		L_9 = GameObject_FindGameObjectsWithTag_mB8AA805DA664EF0221BB338446014F662771B4E3(_stringLiteral34DCA05D8BE72FF2DADEA6AED17DD247B6588439, NULL);
@@ -6506,7 +6525,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_EnableScoring_m6C18011327
 		NullCheck(L_0);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
 		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___startPosMeCircle_23;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___startPosMeCircle_26;
 		NullCheck(L_1);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_2, NULL);
 		// caregiverCircle.transform.position = startPosCaregiverCircle;
@@ -6514,7 +6533,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_EnableScoring_m6C18011327
 		NullCheck(L_3);
 		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
 		L_4 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_3, NULL);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->___startPosCaregiverCircle_24;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->___startPosCaregiverCircle_27;
 		NullCheck(L_4);
 		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_4, L_5, NULL);
 		// _collider.SetActive(true);
@@ -6522,11 +6541,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_EnableScoring_m6C18011327
 		NullCheck(L_6);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_6, (bool)1, NULL);
 		// appear.Raise();
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_7 = __this->___appear_19;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_7 = __this->___appear_22;
 		NullCheck(L_7);
 		Appear_Raise_m86448DDEF7147B208871AB13B94F4574142D9732(L_7, NULL);
 		// gripIsPushed = false;
-		__this->___gripIsPushed_17 = (bool)0;
+		__this->___gripIsPushed_20 = (bool)0;
 		// }
 		return;
 	}
@@ -6540,7 +6559,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_DisableScoring_m80BA859CE
 		NullCheck(L_0);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)0, NULL);
 		// appear.Lower();
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_1 = __this->___appear_19;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_1 = __this->___appear_22;
 		NullCheck(L_1);
 		Appear_Lower_m9AEDFD33BA93920DC62542D78D32CC8DCC7863AE(L_1, NULL);
 		// }
@@ -6552,10 +6571,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SwitchGripMode_mC8B3F7352
 {
 	{
 		// gripIsPushed = !gripIsPushed;
-		bool L_0 = __this->___gripIsPushed_17;
-		__this->___gripIsPushed_17 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
+		bool L_0 = __this->___gripIsPushed_20;
+		__this->___gripIsPushed_20 = (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 		// if (gripIsPushed)
-		bool L_1 = __this->___gripIsPushed_17;
+		bool L_1 = __this->___gripIsPushed_20;
 		if (!L_1)
 		{
 			goto IL_0075;
@@ -6579,7 +6598,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SwitchGripMode_mC8B3F7352
 		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
 		float L_8;
 		L_8 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_4, L_7, NULL);
-		__this->___controllerStartDist_14 = L_8;
+		__this->___controllerStartDist_17 = L_8;
 		// startPosMeCircle = meCircle.transform.position;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_9 = __this->___meCircle_6;
 		NullCheck(L_9);
@@ -6588,7 +6607,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SwitchGripMode_mC8B3F7352
 		NullCheck(L_10);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
 		L_11 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_10, NULL);
-		__this->___startPosMeCircle_23 = L_11;
+		__this->___startPosMeCircle_26 = L_11;
 		// startPosCaregiverCircle = caregiverCircle.transform.position;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_12 = __this->___caregiverCircle_8;
 		NullCheck(L_12);
@@ -6597,7 +6616,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SwitchGripMode_mC8B3F7352
 		NullCheck(L_13);
 		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
 		L_14 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_13, NULL);
-		__this->___startPosCaregiverCircle_24 = L_14;
+		__this->___startPosCaregiverCircle_27 = L_14;
 		// ChangeToRed();
 		ScoreCaregiver_ChangeToRed_m80646342740AF8FB866B64677613E3B256A57ED0(__this, NULL);
 		return;
@@ -6608,7 +6627,7 @@ IL_0075:
 		// ChangeToGreen();
 		ScoreCaregiver_ChangeToGreen_mF898758A1F5FE9120E3A69E02037B4DCD01EE301(__this, NULL);
 		// scoringStarted = true;
-		__this->___scoringStarted_18 = (bool)1;
+		__this->___scoringStarted_21 = (bool)1;
 		// }
 		return;
 	}
@@ -6618,12 +6637,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_FixedUpdate_mFB4865FC2FB3
 {
 	{
 		// isLow = appear.isLow;
-		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_0 = __this->___appear_19;
+		Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* L_0 = __this->___appear_22;
 		NullCheck(L_0);
 		bool L_1 = L_0->___isLow_12;
-		__this->___isLow_20 = L_1;
+		__this->___isLow_23 = L_1;
 		// if (gripIsPushed)
-		bool L_2 = __this->___gripIsPushed_17;
+		bool L_2 = __this->___gripIsPushed_20;
 		if (!L_2)
 		{
 			goto IL_002b;
@@ -6653,7 +6672,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_CalcScore_m87E8BF4D4FF379
 		float L_1;
 		L_1 = ScoreCaregiver_DistanceBetweenCircles_mF6893C8918F91DF72AD68D25CC38D98F7D1E3870(__this, NULL);
 		float L_2 = __this->___maxDistance_12;
-		__this->___caregiverScore_13 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_multiply((10.0f), ((float)il2cpp_codegen_subtract(L_0, L_1))))/L_2)));
+		__this->___caregiverScore_16 = il2cpp_codegen_cast_double_to_int<int32_t>(((float)(((float)il2cpp_codegen_multiply((10.0f), ((float)il2cpp_codegen_subtract(L_0, L_1))))/L_2)));
 		// }
 		return;
 	}
@@ -6663,14 +6682,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_SendScore_m68C4321C84E142
 {
 	{
 		// caregiverScoreEvent.Set(trialIndex, caregiverScore);
-		CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* L_0 = __this->___caregiverScoreEvent_22;
+		CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* L_0 = __this->___caregiverScoreEvent_25;
 		int32_t L_1 = ___0_trialIndex;
-		int32_t L_2 = __this->___caregiverScore_13;
+		int32_t L_2 = __this->___caregiverScore_16;
 		NullCheck(L_0);
 		CaregiverScoreEvent_Set_m74975CE4964DBA349AFB89DF8E92CBF9F16CBA12(L_0, L_1, L_2, NULL);
 		// ws.SendWSMessage(caregiverScoreEvent.SaveToString());
-		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_3 = __this->___ws_21;
-		CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* L_4 = __this->___caregiverScoreEvent_22;
+		WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* L_3 = __this->___ws_24;
+		CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* L_4 = __this->___caregiverScoreEvent_25;
 		NullCheck(L_4);
 		String_t* L_5;
 		L_5 = CaregiverScoreEvent_SaveToString_m1ED9E72654FD4647BAF0C9CF0978E6E4F2475099(L_4, NULL);
@@ -6708,10 +6727,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_CalcDistanceBetweenContro
 		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
 		float L_6;
 		L_6 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_2, L_5, NULL);
-		float L_7 = __this->___controllerStartDist_14;
-		__this->___controllerDist_15 = ((float)il2cpp_codegen_subtract(L_6, L_7));
+		float L_7 = __this->___controllerStartDist_17;
+		__this->___controllerDist_18 = ((float)il2cpp_codegen_subtract(L_6, L_7));
 		// Debug.Log("Distance between controllers = " + controllerDist);
-		float* L_8 = (&__this->___controllerDist_15);
+		float* L_8 = (&__this->___controllerDist_18);
 		String_t* L_9;
 		L_9 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_8, NULL);
 		String_t* L_10;
@@ -6750,9 +6769,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ScoreCaregiver_DistanceBetweenCircles_m
 		L_5 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_4, NULL);
 		float L_6;
 		L_6 = Vector3_Distance_m2314DB9B8BD01157E013DF87BEA557375C7F9FF9_inline(L_2, L_5, NULL);
-		__this->___circleDist_16 = L_6;
+		__this->___circleDist_19 = L_6;
 		// Debug.Log("Circle distance is " + circleDist);
-		float* L_7 = (&__this->___circleDist_16);
+		float* L_7 = (&__this->___circleDist_19);
 		String_t* L_8;
 		L_8 = Single_ToString_mE282EDA9CA4F7DF88432D807732837A629D04972(L_7, NULL);
 		String_t* L_9;
@@ -6760,7 +6779,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float ScoreCaregiver_DistanceBetweenCircles_m
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(L_9, NULL);
 		// return circleDist;
-		float L_10 = __this->___circleDist_16;
+		float L_10 = __this->___circleDist_19;
 		return L_10;
 	}
 }
@@ -6770,12 +6789,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_MoveCircles_m5C1DCF33CEFA
 	float V_0 = 0.0f;
 	{
 		// float movement = controllerDist * scaleCircleDistance / 2.0f;
-		float L_0 = __this->___controllerDist_15;
+		float L_0 = __this->___controllerDist_18;
 		float L_1 = __this->___scaleCircleDistance_11;
 		V_0 = ((float)(((float)il2cpp_codegen_multiply(L_0, L_1))/(2.0f)));
 		// if (movement + startPosMeCircle.x > maxDistance / 2.0f)
 		float L_2 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = (&__this->___startPosMeCircle_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_3 = (&__this->___startPosMeCircle_26);
 		float L_4 = L_3->___x_2;
 		float L_5 = __this->___maxDistance_12;
 		if ((!(((float)((float)il2cpp_codegen_add(L_2, L_4))) > ((float)((float)(L_5/(2.0f)))))))
@@ -6793,7 +6812,7 @@ IL_003c:
 	{
 		// if (movement + startPosMeCircle.x < 0.0f)
 		float L_7 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = (&__this->___startPosMeCircle_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = (&__this->___startPosMeCircle_26);
 		float L_9 = L_8->___x_2;
 		if ((!(((float)((float)il2cpp_codegen_add(L_7, L_9))) < ((float)(0.0f)))))
 		{
@@ -6810,7 +6829,7 @@ IL_0056:
 		// UpdateLocalPos(meCircle, xUpdate: movement + startPosMeCircle.x, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___meCircle_6;
 		float L_11 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_12 = (&__this->___startPosMeCircle_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_12 = (&__this->___startPosMeCircle_26);
 		float L_13 = L_12->___x_2;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_14 = __this->___meCircle_6;
 		NullCheck(L_14);
@@ -6832,7 +6851,7 @@ IL_0056:
 		// UpdateLocalPos(caregiverCircle, xUpdate: -(movement + startPosMeCircle.x), meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = __this->___caregiverCircle_8;
 		float L_23 = V_0;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_24 = (&__this->___startPosMeCircle_23);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_24 = (&__this->___startPosMeCircle_26);
 		float L_25 = L_24->___x_2;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_26 = __this->___meCircle_6;
 		NullCheck(L_26);
@@ -6963,6 +6982,10 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_ChangeToRed_m80646342740A
 		L_5 = Color_get_red_mA2E53E7173FDC97E68E335049AB0FAAEE43A844D_inline(NULL);
 		NullCheck(L_4);
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_4, L_5, NULL);
+		// ParticleEffectStart.Play();
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_6 = __this->___ParticleEffectStart_13;
+		NullCheck(L_6);
+		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_6, NULL);
 		// }
 		return;
 	}
@@ -6989,6 +7012,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver_ChangeToGreen_mF898758A1F
 		L_5 = Color_get_green_mEB001F2CD8C68C6BBAEF9101990B779D3AA2A6EF_inline(NULL);
 		NullCheck(L_4);
 		Material_set_color_m5C32DEBB215FF9EE35E7B575297D8C2F29CC2A2D(L_4, L_5, NULL);
+		// ParticleEffectEndLeft.Play();
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_6 = __this->___ParticleEffectEndLeft_14;
+		NullCheck(L_6);
+		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_6, NULL);
+		// ParticleEffectEndRight.Play();
+		ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_7 = __this->___ParticleEffectEndRight_15;
+		NullCheck(L_7);
+		ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_7, NULL);
 		// }
 		return;
 	}
@@ -7002,7 +7033,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ScoreCaregiver__ctor_mB71F63D95B43008721
 		// [SerializeField] private float maxDistance = 2.0f;
 		__this->___maxDistance_12 = (2.0f);
 		// public bool isLow = true;
-		__this->___isLow_20 = (bool)1;
+		__this->___isLow_23 = (bool)1;
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
@@ -7631,7 +7662,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CaregiverScoringState_UpdateState_mCB70E
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_2;
 		L_2 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_1, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
 		NullCheck(L_2);
-		bool L_3 = L_2->___scoringStarted_18;
+		bool L_3 = L_2->___scoringStarted_21;
 		bool L_4 = __this->___isListening_0;
 		if (!((int32_t)((int32_t)L_3&((((int32_t)L_4) == ((int32_t)0))? 1 : 0))))
 		{
@@ -7689,7 +7720,7 @@ IL_004b:
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_18;
 		L_18 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_17, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
 		NullCheck(L_18);
-		bool L_19 = L_18->___isLow_20;
+		bool L_19 = L_18->___isLow_23;
 		if (!((int32_t)((int32_t)L_15&(int32_t)L_19)))
 		{
 			goto IL_0099;
@@ -7706,7 +7737,7 @@ IL_004b:
 		ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D* L_22;
 		L_22 = GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60(L_21, GameObject_GetComponent_TisScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D_m38808B3781BDD342061A0D432D62EDF83DA10B60_RuntimeMethod_var);
 		NullCheck(L_22);
-		L_22->___scoringStarted_18 = (bool)0;
+		L_22->___scoringStarted_21 = (bool)0;
 		// state.feedbackPole.isTouched = false;
 		CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8* L_23 = ___0_state;
 		NullCheck(L_23);

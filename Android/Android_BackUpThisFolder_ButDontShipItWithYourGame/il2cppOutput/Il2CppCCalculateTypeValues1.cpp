@@ -39380,30 +39380,36 @@ struct ScoreCaregiver_t88A42C1C45DC789D4236EFC5EDAFFEB59EE8A84D  : public MonoBe
 	float ___scaleCircleDistance_11;
 	// System.Single ScoreCaregiver::maxDistance
 	float ___maxDistance_12;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectStart
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectStart_13;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndLeft
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndLeft_14;
+	// UnityEngine.ParticleSystem ScoreCaregiver::ParticleEffectEndRight
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ___ParticleEffectEndRight_15;
 	// System.Int32 ScoreCaregiver::caregiverScore
-	int32_t ___caregiverScore_13;
+	int32_t ___caregiverScore_16;
 	// System.Single ScoreCaregiver::controllerStartDist
-	float ___controllerStartDist_14;
+	float ___controllerStartDist_17;
 	// System.Single ScoreCaregiver::controllerDist
-	float ___controllerDist_15;
+	float ___controllerDist_18;
 	// System.Single ScoreCaregiver::circleDist
-	float ___circleDist_16;
+	float ___circleDist_19;
 	// System.Boolean ScoreCaregiver::gripIsPushed
-	bool ___gripIsPushed_17;
+	bool ___gripIsPushed_20;
 	// System.Boolean ScoreCaregiver::scoringStarted
-	bool ___scoringStarted_18;
+	bool ___scoringStarted_21;
 	// Appear ScoreCaregiver::appear
-	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_19;
+	Appear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F* ___appear_22;
 	// System.Boolean ScoreCaregiver::isLow
-	bool ___isLow_20;
+	bool ___isLow_23;
 	// WsClient ScoreCaregiver::ws
-	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_21;
+	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_24;
 	// CaregiverScoreEvent ScoreCaregiver::caregiverScoreEvent
-	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_22;
+	CaregiverScoreEvent_t0A3BF8FC5A0E5166C2363E26D3CC72A539202BAC* ___caregiverScoreEvent_25;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosMeCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_23;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosMeCircle_26;
 	// UnityEngine.Vector3 ScoreCaregiver::startPosCaregiverCircle
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_24;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startPosCaregiverCircle_27;
 };
 
 // ScoreDot
