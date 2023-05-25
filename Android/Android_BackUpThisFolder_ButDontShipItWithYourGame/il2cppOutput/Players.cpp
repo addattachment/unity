@@ -313,6 +313,10 @@ struct SelectExitEventArgs_t56125CE0360D37AC0B50EB6066B5AB5957EF559A;
 struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
 // SetGameValues
 struct SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8;
+// SetGender
+struct SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE;
+// UnityEngine.SkinnedMeshRenderer
+struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E;
 // Slingshot
 struct Slingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D;
 // UnityEngine.SpringJoint
@@ -475,6 +479,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralE298750DE4306CD16C3FC6CA687D7CD46DE665FE
 IL2CPP_EXTERN_C String_t* _stringLiteralE918E929557173A79813CFBD89F20A05D818D3FE;
 IL2CPP_EXTERN_C String_t* _stringLiteralF19C18F7AD0DE016975CED83AC8D812F332A3EEB;
 IL2CPP_EXTERN_C String_t* _stringLiteralF1D50CBFACF402CED983CB8EECDE9A2F2DA79395;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInChildren_TisSetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE_m0D2FE1F139C137F6C3EE99C92066C8E90F463E67_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mC92113483DC31E19A63DB6FE5BA70695A51E7CEA_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponentInParent_TisSlingshot_t1FEFA341B41A61634583E1971717EF07EA6DCD2D_m86BFECAFACBBF2CD9BD401C052E75C485F8D7CC3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisAppear_t085A6F2CFD996C673CFB12559A68E7C88CF9E09F_mCED3A0108EB880335F2D9BFF3DBE2036654C9E17_RuntimeMethod_var;
@@ -2336,6 +2341,11 @@ struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behavio
 {
 };
 
+// UnityEngine.SkinnedMeshRenderer
+struct SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+};
+
 // UnityEngine.SpringJoint
 struct SpringJoint_t0DDC4B5817F02316DD25FDB34CB5ADF462E1AA09  : public Joint_tB2C5499F976EBB1EA1C11A80E1BD9F5E2EE4D682
 {
@@ -2759,6 +2769,15 @@ struct SetGameValues_t9FB878DD140B82A92389CE57B6BDD1029DE509B8  : public MonoBeh
 	bool ___developmentSettingsSet_19;
 	// System.Boolean SetGameValues::playersFound
 	bool ___playersFound_20;
+};
+
+// SetGender
+struct SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// UnityEngine.SkinnedMeshRenderer SetGender::maleHat
+	SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* ___maleHat_4;
+	// UnityEngine.MeshRenderer SetGender::femaleHat
+	MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* ___femaleHat_5;
 };
 
 // Slingshot
@@ -4061,6 +4080,10 @@ struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
 
 // UnityEngine.MonoBehaviour
 
+// UnityEngine.SkinnedMeshRenderer
+
+// UnityEngine.SkinnedMeshRenderer
+
 // UnityEngine.SpringJoint
 
 // UnityEngine.SpringJoint
@@ -4146,6 +4169,10 @@ struct OutletPassThrough_t0D321477E508FCA4045FB0C0627AC55ED9AC613C_StaticFields
 // SetGameValues
 
 // SetGameValues
+
+// SetGender
+
+// SetGender
 
 // Slingshot
 
@@ -4442,6 +4469,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Enumerable_OrderBy_TisRuntimeO
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* Enumerable_ToList_TisRuntimeObject_m6456D63764F29E6B5B2422C3DE25113577CF51EE_gshared (RuntimeObject* ___0_source, const RuntimeMethod* method) ;
 // T System.Collections.Generic.List`1<System.Object>::get_Item(System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponentInChildren<System.Object>()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m5F38AE6B74636F569647D545E365C5579E5F59CE_gshared (RuntimeObject* ___0_original, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_position, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___2_rotation, Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___3_parent, const RuntimeMethod* method) ;
 // T UnityEngine.Object::Instantiate<System.Object>(T)
@@ -4770,6 +4799,13 @@ inline Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* GameObject_GetComponent
 }
 // System.Void Player::UpdateValues(System.String,Gender,Contingency,System.Int32,System.Boolean,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Player_UpdateValues_mE2460D20537F7BD48CD3E626A987A0E996221952 (Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* __this, String_t* ___0__name, int32_t ___1__gender, int32_t ___2__contingency, int32_t ___3__height, bool ___4__isReal, int32_t ___5__trialBlock, const RuntimeMethod* method) ;
+// T UnityEngine.Component::GetComponentInChildren<SetGender>()
+inline SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* Component_GetComponentInChildren_TisSetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE_m0D2FE1F139C137F6C3EE99C92066C8E90F463E67 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponentInChildren_TisRuntimeObject_mE483A27E876DE8E4E6901D6814837F81D7C42F65_gshared)(__this, method);
+}
+// System.Void SetGender::SetGenderProps(Gender)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGender_SetGenderProps_m8C5C375552E06046AE1CD0FED4E243887C7414DF (SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* __this, int32_t ___0_gender, const RuntimeMethod* method) ;
 // T UnityEngine.Component::GetComponent<UnityEngine.MeshRenderer>()
 inline MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* Component_GetComponent_TisMeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE_m0EDA0079FA3617687C4A28623B79A37D618D9CFB (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
 {
@@ -8269,6 +8305,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGameValues_UpdateGameValues_mC09F1F03
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponentInChildren_TisSetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE_m0D2FE1F139C137F6C3EE99C92066C8E90F463E67_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisPlayer_t637772DB02240599AE6D1E7DB0850DE1D8743843_mE971FBB721D74B4F537D2BE3444B397849FD8CDA_RuntimeMethod_var);
@@ -8355,7 +8392,7 @@ IL_008a:
 		bool L_17 = L_16->___isTutorial_14;
 		if (L_17)
 		{
-			goto IL_0136;
+			goto IL_014c;
 		}
 	}
 	{
@@ -8454,18 +8491,26 @@ IL_0111:
 		int32_t L_36 = __this->___trial_block_10;
 		NullCheck(L_31);
 		Player_UpdateValues_mE2460D20537F7BD48CD3E626A987A0E996221952(L_31, L_32, L_33, L_34, L_35, (bool)0, L_36, NULL);
+		// NPC.GetComponentInChildren<SetGender>().SetGenderProps(gender);
+		Player_t637772DB02240599AE6D1E7DB0850DE1D8743843* L_37 = __this->___NPC_17;
+		NullCheck(L_37);
+		SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* L_38;
+		L_38 = Component_GetComponentInChildren_TisSetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE_m0D2FE1F139C137F6C3EE99C92066C8E90F463E67(L_37, Component_GetComponentInChildren_TisSetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE_m0D2FE1F139C137F6C3EE99C92066C8E90F463E67_RuntimeMethod_var);
+		int32_t L_39 = __this->___gender_7;
+		NullCheck(L_38);
+		SetGender_SetGenderProps_m8C5C375552E06046AE1CD0FED4E243887C7414DF(L_38, L_39, NULL);
 	}
 
-IL_0136:
+IL_014c:
 	{
 		// gameManager.playerValuesAreUpdated = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_37 = __this->___gameManager_4;
-		NullCheck(L_37);
-		L_37->___playerValuesAreUpdated_7 = (bool)1;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_40 = __this->___gameManager_4;
+		NullCheck(L_40);
+		L_40->___playerValuesAreUpdated_7 = (bool)1;
 		// gameManager.playerContingencySet = true;
-		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_38 = __this->___gameManager_4;
-		NullCheck(L_38);
-		L_38->___playerContingencySet_8 = (bool)1;
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_41 = __this->___gameManager_4;
+		NullCheck(L_41);
+		L_41->___playerContingencySet_8 = (bool)1;
 		// }
 		return;
 	}
@@ -11243,6 +11288,87 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TwoHandedGrab__ctor_m302FB3F074176361962
 	{
 		il2cpp_codegen_runtime_class_init_inline(XRGrabInteractable_t8F7EA04527E7074002690EA93ACEAEFEBD79A772_il2cpp_TypeInfo_var);
 		XRGrabInteractable__ctor_mF1FA77294880EFA9C7C840025B207B80327B5E2E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void SetGender::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGender_Start_mCBE6AA1CD48DB8E86BB9EE59FFAA4EB5BD8E5E4B (SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SetGender::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGender_Update_mC9A418998A4B8C383B40E9E6F75FECC5074A23C9 (SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void SetGender::SetGenderProps(Gender)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGender_SetGenderProps_m8C5C375552E06046AE1CD0FED4E243887C7414DF (SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* __this, int32_t ___0_gender, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_gender;
+		if (!L_0)
+		{
+			goto IL_0008;
+		}
+	}
+	{
+		int32_t L_1 = ___0_gender;
+		if ((((int32_t)L_1) == ((int32_t)1)))
+		{
+			goto IL_0021;
+		}
+	}
+	{
+		return;
+	}
+
+IL_0008:
+	{
+		// maleHat.enabled = true;
+		SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* L_2 = __this->___maleHat_4;
+		NullCheck(L_2);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_2, (bool)1, NULL);
+		// femaleHat.enabled = false;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_3 = __this->___femaleHat_5;
+		NullCheck(L_3);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_3, (bool)0, NULL);
+		// break;
+		return;
+	}
+
+IL_0021:
+	{
+		// maleHat.enabled = false;
+		SkinnedMeshRenderer_t020C4E8648EA1C4C6BA5C41502919B387E7E1C2E* L_4 = __this->___maleHat_4;
+		NullCheck(L_4);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_4, (bool)0, NULL);
+		// femaleHat.enabled = true;
+		MeshRenderer_t4B7747212F0B88244BB7790C61AE124BFC15BAAE* L_5 = __this->___femaleHat_5;
+		NullCheck(L_5);
+		Renderer_set_enabled_m015E6D7B825528A31182F267234CC6A925F71DA8(L_5, (bool)1, NULL);
+		// }
+		return;
+	}
+}
+// System.Void SetGender::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SetGender__ctor_m034A1A18499384690E4998334D297A0B4A5C3B05 (SetGender_tDD4B4F07939EDE241A8897E7BA819BF228BA75CE* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
 	}
 }

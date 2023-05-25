@@ -284,7 +284,15 @@ extern void TwoHandedGrab_HasNoInteractors_m51A0B0DEB04E0B06046D927A09ACF6DECB88
 extern void TwoHandedGrab_OnSelectEntering_mAFC7A25C1022B89692B819FC9614D261B03BFD90 (void);
 // 0x00000088 System.Void TwoHandedGrab::.ctor()
 extern void TwoHandedGrab__ctor_m302FB3F074176361962462AB7F4630064AA060D3 (void);
-static Il2CppMethodPointer s_methodPointers[136] = 
+// 0x00000089 System.Void SetGender::Start()
+extern void SetGender_Start_mCBE6AA1CD48DB8E86BB9EE59FFAA4EB5BD8E5E4B (void);
+// 0x0000008A System.Void SetGender::Update()
+extern void SetGender_Update_mC9A418998A4B8C383B40E9E6F75FECC5074A23C9 (void);
+// 0x0000008B System.Void SetGender::SetGenderProps(Gender)
+extern void SetGender_SetGenderProps_m8C5C375552E06046AE1CD0FED4E243887C7414DF (void);
+// 0x0000008C System.Void SetGender::.ctor()
+extern void SetGender__ctor_m034A1A18499384690E4998334D297A0B4A5C3B05 (void);
+static Il2CppMethodPointer s_methodPointers[140] = 
 {
 	DebugPlayerReachTarget_SetToggleReach_m974C13BC63FEC103AB46BFB8F67A9219B272A7BC,
 	DebugPlayerReachTarget__ctor_m93EA878C56B69234949AAB090311C41B78097E1E,
@@ -422,8 +430,12 @@ static Il2CppMethodPointer s_methodPointers[136] =
 	TwoHandedGrab_HasNoInteractors_m51A0B0DEB04E0B06046D927A09ACF6DECB887C6B,
 	TwoHandedGrab_OnSelectEntering_mAFC7A25C1022B89692B819FC9614D261B03BFD90,
 	TwoHandedGrab__ctor_m302FB3F074176361962462AB7F4630064AA060D3,
+	SetGender_Start_mCBE6AA1CD48DB8E86BB9EE59FFAA4EB5BD8E5E4B,
+	SetGender_Update_mC9A418998A4B8C383B40E9E6F75FECC5074A23C9,
+	SetGender_SetGenderProps_m8C5C375552E06046AE1CD0FED4E243887C7414DF,
+	SetGender__ctor_m034A1A18499384690E4998334D297A0B4A5C3B05,
 };
-static const int32_t s_InvokerIndices[136] = 
+static const int32_t s_InvokerIndices[140] = 
 {
 	3729,
 	8905,
@@ -561,12 +573,16 @@ static const int32_t s_InvokerIndices[136] =
 	8626,
 	7086,
 	8905,
+	8905,
+	8905,
+	7046,
+	8905,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Players_CodeGenModule;
 const Il2CppCodeGenModule g_Players_CodeGenModule = 
 {
 	"Players.dll",
-	136,
+	140,
 	s_methodPointers,
 	0,
 	NULL,
