@@ -128,6 +128,10 @@ public class Ball : MonoBehaviour
                 ballDidHit = true;
                 //TODO create animation for splashing ball?
             }
+            if (coll.CompareTag("trophy"))
+            {
+                ballDidHit = true;
+            }
             if (coll.CompareTag("gamehall"))
             {
                 ballDidHit = true;

@@ -30,6 +30,7 @@ TagManager:
   - left
   - right
   - PlayerGroup
+  - trophy
   layers:
   - Default
   - TransparentFX
