@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1824863771487179369}
   m_Layer: 0
   m_Name: 24
-  m_TagString: trophy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 3488743954688959895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -17.265953, y: 0.020416498, z: 0.041466236}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 196377759247280132}
   m_Father: {fileID: 0}
