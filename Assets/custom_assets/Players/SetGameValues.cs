@@ -138,6 +138,7 @@ public class SetGameValues : MonoBehaviour
                 }
             }
             NPC.UpdateValues(tempName, gender, contingency, height, false, trial_block);
+            NPC.GetComponentInChildren<SetGender>().SetGenderProps(gender);
             //GenerateTrialList(player.contingency);
         }
 
