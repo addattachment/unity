@@ -1133,6 +1133,9 @@ MonoBehaviour:
   _collider: {fileID: 1116187790063479128}
   scaleCircleDistance: 2.5
   maxDistance: 1.8
+  ParticleEffectStart: {fileID: 5453561044947141682}
+  ParticleEffectEndLeft: {fileID: 5261189890889074113}
+  ParticleEffectEndRight: {fileID: 7582514393768087317}
   caregiverScore: 0
   controllerDist: 0
   circleDist: 0
@@ -1583,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5261189890896553025, guid: 4c7d28c774beba849b29eac33e19acf1, type: 3}
       propertyPath: m_Name
-      value: ParticleEffect_Release
+      value: ParticleEffect_Release_left
       objectReference: {fileID: 0}
     - target: {fileID: 5261189890896553054, guid: 4c7d28c774beba849b29eac33e19acf1, type: 3}
       propertyPath: ShapeModule.m_MeshRenderer
@@ -1591,6 +1594,11 @@ PrefabInstance:
       objectReference: {fileID: 1116187791472637560}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c7d28c774beba849b29eac33e19acf1, type: 3}
+--- !u!198 &5261189890889074113 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5261189890896553054, guid: 4c7d28c774beba849b29eac33e19acf1, type: 3}
+  m_PrefabInstance: {fileID: 9576863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5261189890889074143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5261189890896553024, guid: 4c7d28c774beba849b29eac33e19acf1, type: 3}
@@ -1913,6 +1921,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32161fc8389a2264e8338ffb7646eb84, type: 3}
+--- !u!198 &5453561044947141682 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5453561044158164497, guid: 32161fc8389a2264e8338ffb7646eb84, type: 3}
+  m_PrefabInstance: {fileID: 1359948323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5453561044947141684 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5453561044158164503, guid: 32161fc8389a2264e8338ffb7646eb84, type: 3}
@@ -1931,7 +1944,7 @@ PrefabInstance:
       objectReference: {fileID: 1116187790294126243}
     - target: {fileID: 7582514392603452034, guid: 1448a05e273c77e469d40a89f732cad1, type: 3}
       propertyPath: m_Name
-      value: ParticleEffect_Release 2
+      value: ParticleEffect_Release_right
       objectReference: {fileID: 0}
     - target: {fileID: 7582514392603452035, guid: 1448a05e273c77e469d40a89f732cad1, type: 3}
       propertyPath: m_RootOrder
@@ -1991,6 +2004,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1448a05e273c77e469d40a89f732cad1, type: 3}
+--- !u!198 &7582514393768087317 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7582514392603452033, guid: 1448a05e273c77e469d40a89f732cad1, type: 3}
+  m_PrefabInstance: {fileID: 1539255700}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7582514393768087319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7582514392603452035, guid: 1448a05e273c77e469d40a89f732cad1, type: 3}
