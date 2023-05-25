@@ -464,6 +464,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralA075733224B92CCF1AF4ACD563ADFFEBD4890E5D
 IL2CPP_EXTERN_C String_t* _stringLiteralA0F8785045B8B16162BC7A7DA58B984F3F8AA3CB;
 IL2CPP_EXTERN_C String_t* _stringLiteralA20DD55338E7D5514BAB6D6891361369346C394B;
 IL2CPP_EXTERN_C String_t* _stringLiteralA61FAA4C3FF2E93EBE1ED797E616C9519BA27B33;
+IL2CPP_EXTERN_C String_t* _stringLiteralACC481B6ADEAB7966F34FE2F86F82F0287C2D667;
 IL2CPP_EXTERN_C String_t* _stringLiteralB92EF51E45166C91E2762DB6C9F27C8BD6EBE466;
 IL2CPP_EXTERN_C String_t* _stringLiteralCAF8804297181FF007CA835529DD4477CFD94A70;
 IL2CPP_EXTERN_C String_t* _stringLiteralCE56535889F62D360B36C1F47ECCD0BE7A884DFF;
@@ -10111,6 +10112,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Ball_ProcessCollision_mBC50F19F3E7CA3672
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral49889C59D5D0683041C00061AD09B3E33BD6209A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral94227256CE153A39E993FBF39B8F5F4888289E3F);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral970DBD957E951CBB2A0CADFAE721EDA0478353B9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralACC481B6ADEAB7966F34FE2F86F82F0287C2D667);
 		s_Il2CppMethodInitialized = true;
 	}
 	TargetHit_t2630569193CFBD21E388F1316D111592D7C8CDF1* V_0 = NULL;
@@ -10181,7 +10183,7 @@ IL_0042:
 		bool L_13 = __this->___ballDidHit_16;
 		if (L_13)
 		{
-			goto IL_00f7;
+			goto IL_010b;
 		}
 	}
 	{
@@ -10290,33 +10292,50 @@ IL_00b2:
 
 IL_00c6:
 	{
-		// if (coll.CompareTag("gamehall"))
+		// if (coll.CompareTag("trophy"))
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27 = ___0_coll;
 		NullCheck(L_27);
 		bool L_28;
-		L_28 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_27, _stringLiteral94227256CE153A39E993FBF39B8F5F4888289E3F, NULL);
+		L_28 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_27, _stringLiteralACC481B6ADEAB7966F34FE2F86F82F0287C2D667, NULL);
 		if (!L_28)
 		{
-			goto IL_00f7;
+			goto IL_00da;
+		}
+	}
+	{
+		// ballDidHit = true;
+		__this->___ballDidHit_16 = (bool)1;
+	}
+
+IL_00da:
+	{
+		// if (coll.CompareTag("gamehall"))
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_29 = ___0_coll;
+		NullCheck(L_29);
+		bool L_30;
+		L_30 = GameObject_CompareTag_m6378BE50D009A93D46036F74CC3F7E2ECB0636E5(L_29, _stringLiteral94227256CE153A39E993FBF39B8F5F4888289E3F, NULL);
+		if (!L_30)
+		{
+			goto IL_010b;
 		}
 	}
 	{
 		// ballDidHit = true;
 		__this->___ballDidHit_16 = (bool)1;
 		// Rb.velocity = Vector3.zero;
-		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_29 = __this->___Rb_4;
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_30;
-		L_30 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
-		NullCheck(L_29);
-		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_29, L_30, NULL);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_31 = __this->___Rb_4;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_32;
+		L_32 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_31);
+		Rigidbody_set_velocity_mE4031DF1C2C1CCE889F2AC9D8871D83795BB0D62(L_31, L_32, NULL);
 		// StartCoroutine(Explode());
-		RuntimeObject* L_31;
-		L_31 = Ball_Explode_mF1D87030191305F1999F6F5C5D5FB39B09BB2D72(__this, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_32;
-		L_32 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_31, NULL);
+		RuntimeObject* L_33;
+		L_33 = Ball_Explode_mF1D87030191305F1999F6F5C5D5FB39B09BB2D72(__this, NULL);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_34;
+		L_34 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_33, NULL);
 	}
 
-IL_00f7:
+IL_010b:
 	{
 		// }
 		return;

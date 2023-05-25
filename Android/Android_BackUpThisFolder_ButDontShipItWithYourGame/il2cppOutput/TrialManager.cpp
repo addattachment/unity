@@ -3830,6 +3830,12 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreTrialState_EnterState_mF9D92394AB2014
 		PlayerGroup_t9A018240A3C70C903D89AA964E4F977537B8B015* L_19 = L_18->___players_11;
 		NullCheck(L_19);
 		PlayerGroup_MakeSlingshotsAppear_m2C748F7275135E3D49B4901167788B6FEBDE82EB(L_19, (bool)1, NULL);
+		// state.gameManager.trialIsRunning = false;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_20 = ___0_state;
+		NullCheck(L_20);
+		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_21 = L_20->___gameManager_10;
+		NullCheck(L_21);
+		L_21->___trialIsRunning_23 = (bool)0;
 		// }
 		return;
 	}
