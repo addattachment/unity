@@ -7543,6 +7543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8889768191879290624}
     m_Modifications:
+    - target: {fileID: 1929229897, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
+      propertyPath: minHeight
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 1047682327657280342, guid: a26c055d3fad3734581536c22a7573d9, type: 3}
       propertyPath: m_Name
       value: Slingshot
