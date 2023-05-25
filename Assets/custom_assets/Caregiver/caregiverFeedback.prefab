@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &385571837
 Transform:
   m_ObjectHideFlags: 0
@@ -26,14 +26,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385571836}
-  m_LocalRotation: {x: 0.85426956, y: -0.0145119205, z: -0.023882946, w: 0.51907855}
-  m_LocalPosition: {x: -82.5, y: 150.4, z: -447.26}
+  m_LocalRotation: {x: 0.8154365, y: -0.016163979, z: -0.022797348, w: 0.5781716}
+  m_LocalPosition: {x: -82.3, y: 128.1, z: -418.2}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1102273343259632473}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 62.396, y: -173.075, z: -173.856}
+  m_LocalEulerAnglesHint: {x: 70.422, y: -170.402, z: -170.947}
 --- !u!108 &385571840
 Light:
   m_ObjectHideFlags: 0
@@ -45,11 +45,11 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9000878, b: 0.6264151, a: 1}
-  m_Intensity: 2
+  m_Color: {r: 0.9528302, g: 0.9528302, b: 0.9528302, a: 1}
+  m_Intensity: 1
   m_Range: 6.2828655
-  m_SpotAngle: 38.949936
-  m_InnerSpotAngle: 16.876974
+  m_SpotAngle: 69.77042
+  m_InnerSpotAngle: 0
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
@@ -668,7 +668,7 @@ RectTransform:
   m_GameObject: {fileID: 1574375012}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: -466}
-  m_LocalScale: {x: 400, y: 400, z: 1}
+  m_LocalScale: {x: 693.52, y: 400, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1102273343259632473}
@@ -759,7 +759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1102273342102741772
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1026,7 +1026,6 @@ MonoBehaviour:
   feedbackText: {fileID: 1102273342102741775}
   caregiverEmotion: {fileID: 0}
   trialList: {fileID: 0}
-  gameManager: {fileID: 0}
   setCaregiverGaze: {fileID: 0}
   feedbackCamera: {fileID: 8262410051571887965}
   sun: {fileID: 0}
@@ -1332,8 +1331,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.7, y: 77.7}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: 0.7, y: 94}
+  m_SizeDelta: {x: 70, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8262410050408949760
 CanvasRenderer:
@@ -1608,11 +1607,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30f78ed5e5eb44c188a740990ce49414, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sourceGainDB: 0
-  sourceSize: 13303
+  sourceGainDB: 4.28
+  sourceSize: 15145
   enableDoppler: 1
   sourceAttenuationMode: 2
-  minAttenuationDistance: 1
+  minAttenuationDistance: 4
   maxAttenuationDistance: 102.85
 --- !u!1 &8262410051327184228
 GameObject:
@@ -1631,7 +1630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8262410051327184231
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1762,7 +1761,7 @@ RectTransform:
   m_GameObject: {fileID: 8262410051374135386}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -347.69998}
-  m_LocalScale: {x: 400, y: 400, z: 1}
+  m_LocalScale: {x: 400, y: 786.04004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1102273343259632473}
@@ -1862,8 +1861,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8262410051571887965}
-  m_LocalRotation: {x: -0, y: -0.7969784, z: -0, w: 0.60400784}
-  m_LocalPosition: {x: -33.7, y: 5, z: -20.700012}
+  m_LocalRotation: {x: -0.044322725, y: -0.36997688, z: -0.017674144, w: 0.9278148}
+  m_LocalPosition: {x: -53.9, y: 4.6, z: 0.9}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1871,7 +1870,7 @@ Transform:
   - {fileID: 1585947396106726377}
   m_Father: {fileID: 7843173990086754739}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -105.685, z: 0}
+  m_LocalEulerAnglesHint: {x: -5.47, y: -43.48, z: 0}
 --- !u!20 &8262410051571887966
 Camera:
   m_ObjectHideFlags: 0
@@ -1897,7 +1896,7 @@ Camera:
     height: 1
   near clip plane: 0.6
   far clip plane: 1000
-  field of view: 26
+  field of view: 55
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
