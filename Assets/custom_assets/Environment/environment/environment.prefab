@@ -299,7 +299,7 @@ Light:
   m_InnerSpotAngle: 33.950546
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -357,7 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 1
   m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
+  m_AdditionalLightsShadowResolutionTier: 1
   m_LightLayerMask: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
@@ -2677,68 +2677,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
---- !u!1 &4915641851430870627 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3671923382214026259, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}
-  m_PrefabInstance: {fileID: 8557565952064354928}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &566949246892498446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915641851430870627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730bf688695372a4ea78349ae99f5606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Mat: {fileID: -5435503746789433605, guid: c5a74d094a30c944183cdfe6759781b0, type: 3}
-  scoreColor: {r: 0.1729052, g: 1, b: 0, a: 0}
-  missColor: {r: 1, g: 0, b: 0, a: 0}
-  neutralColor: {r: 0, g: 0, b: 0, a: 0}
-  useTween: 0
-  testRed: 0
-  testGreen: 0
---- !u!114 &3392440028191228363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915641851430870627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730bf688695372a4ea78349ae99f5606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Mat: {fileID: -5435503746789433605, guid: c5a74d094a30c944183cdfe6759781b0, type: 3}
-  scoreColor: {r: 0.1729052, g: 1, b: 0, a: 0}
-  missColor: {r: 1, g: 0, b: 0, a: 0}
-  neutralColor: {r: 0, g: 0, b: 0, a: 0}
-  useTween: 0
-  testRed: 0
-  testGreen: 0
---- !u!114 &3593573135810233239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4915641851430870627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 730bf688695372a4ea78349ae99f5606, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Mat: {fileID: -5435503746789433605, guid: c5a74d094a30c944183cdfe6759781b0, type: 3}
-  scoreColor: {r: 0.1729052, g: 1, b: 0, a: 0}
-  missColor: {r: 1, g: 0, b: 0, a: 0}
-  neutralColor: {r: 0, g: 0, b: 0, a: 0}
-  useTween: 0
-  testRed: 0
-  testGreen: 0
 --- !u!4 &5727468857730581721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4160932912065232553, guid: a3ce6ea7144b2e249acc286c9fd3173b, type: 3}

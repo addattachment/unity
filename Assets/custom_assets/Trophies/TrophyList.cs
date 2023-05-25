@@ -78,6 +78,8 @@ public class TrophyList : MonoBehaviour
         iTween.MoveTo(currentTrophy, ht);
 
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
+        currentTrophy.GetComponent<Rigidbody>().freezeRotation = false;
+
         //currentTrophy.GetComponent<Rigidbody>().mass = 1.0f;
         currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
         currentTrophy.GetComponent<Rigidbody>().useGravity = true;
@@ -144,6 +146,7 @@ public class TrophyList : MonoBehaviour
         trophyDidAppear = true; // this is used by the trophyAppearState to know when to start listening
         currentTrophy = Instantiate(trophiesList[trophyIndex], trophyFloatLocation.position, Quaternion.identity, this.trophyStandLocation); //Quaternion.identity
         currentTrophy.GetComponent<Rigidbody>().isKinematic = true;
+        currentTrophy.GetComponent<Rigidbody>().freezeRotation = true;
         iTween.MoveTo(currentTrophy, iTween.Hash("position", trophyStandLocation.position, "easeType", "easeOutBounce", "delay", 0.5f, "time", 1.0f));
         trophyAppear.Play();
     }

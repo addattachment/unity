@@ -11,7 +11,10 @@ public class CaregiverEmotion : MonoBehaviour
 
     [SerializeField] private bool testHappy = false;
     [SerializeField] private bool testAngry = false;
-
+    /*
+    This script needs to be placed on the head of the zorgfiguur (with the two or three blend shapes)
+    Make sure that the blend shapes are not blocked by the animation baking
+     */
     // Start is called before the first frame update
     void Start()
     {
