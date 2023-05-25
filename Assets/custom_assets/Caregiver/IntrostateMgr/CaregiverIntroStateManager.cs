@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CaregiverIntroStateManager : MonoBehaviour
@@ -22,6 +23,9 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public GameObject InstructionBoard;
     public Appear InstructionBoardAppear;
     public TMP_Text InstructionBoardText;
+
+    public List<GameObject> ArrowPointInside;
+    public List<GameObject> ArrowPointOutside;
 
     [Header("data connections")]
     public WsClient ws;

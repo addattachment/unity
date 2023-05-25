@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 [RequireComponent(typeof(Appear))]
 public class ScoreCaregiver : MonoBehaviour
@@ -51,8 +52,12 @@ public class ScoreCaregiver : MonoBehaviour
 
     public void EnableScoring()
     {
-        meCircle.transform.position = startPosMeCircle;
-        caregiverCircle.transform.position = startPosCaregiverCircle;
+        Hashtable transformMe = iTween.Hash("position", startPosMeCircle, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo");
+        iTween.MoveBy(meCircle, transformMe);
+        Hashtable transformCaregiver = iTween.Hash("position", startPosCaregiverCircle, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo");
+        iTween.MoveBy(caregiverCircle, transformCaregiver);
+        //meCircle.transform.position = startPosMeCircle;
+        //caregiverCircle.transform.position = startPosCaregiverCircle;
         _collider.SetActive(true);
         appear.Raise();
         gripIsPushed = false;
