@@ -1531,6 +1531,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1116187791131120817, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+      propertyPath: ParticleEffectStart
+      value: 
+      objectReference: {fileID: 1355689330}
+    - target: {fileID: 1116187791131120817, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+      propertyPath: ParticleEffectEndLeft
+      value: 
+      objectReference: {fileID: 1355689329}
+    - target: {fileID: 1116187791131120817, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+      propertyPath: ParticleEffectEndRight
+      value: 
+      objectReference: {fileID: 1355689328}
     - target: {fileID: 1116187791131120818, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -1581,6 +1593,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+--- !u!198 &1355689328 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7582514393768087317, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1355689327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1355689329 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5261189890889074113, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1355689327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1355689330 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5453561044947141682, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1355689327}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1464104650 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7503608639798151424, guid: fea0cde42e061444283401bd19595261, type: 3}

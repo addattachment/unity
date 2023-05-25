@@ -12,6 +12,11 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private float scaleCircleDistance = 5.0f;
     [SerializeField] private float maxDistance = 2.0f;
 
+    public ParticleSystem ParticleEffectStart;
+    public ParticleSystem ParticleEffectEndLeft;
+    public ParticleSystem ParticleEffectEndRight;
+
+
     public int caregiverScore = 0;
     private float controllerStartDist = 0.0f;
     public float controllerDist = 0.0f;
@@ -98,7 +103,7 @@ public class ScoreCaregiver : MonoBehaviour
 
     public void SendScore(int trialIndex)
     {
-        
+
         //debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
         caregiverScoreEvent.Set(trialIndex, caregiverScore);
         ws.SendWSMessage(caregiverScoreEvent.SaveToString());
@@ -155,11 +160,15 @@ public class ScoreCaregiver : MonoBehaviour
     {
         meCircleRing.material.color = Color.red;
         caregiverCircleRing.material.color = Color.red;
+        ParticleEffectStart.Play();
+
     }
     public void ChangeToGreen()
     {
         meCircleRing.material.color = Color.green;
         caregiverCircleRing.material.color = Color.green;
+        ParticleEffectEndLeft.Play(); 
+        ParticleEffectEndRight.Play(); 
     }
 }
 public class CaregiverScoreEvent

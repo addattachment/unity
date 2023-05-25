@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5261189890896553054}
   - component: {fileID: 5261189890896553055}
   m_Layer: 0
-  m_Name: ParticleEffect_Release
+  m_Name: ParticleEffect_Release_Disc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

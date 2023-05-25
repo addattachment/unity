@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5453561044158164497}
   - component: {fileID: 5453561044158164502}
   m_Layer: 0
-  m_Name: ParticleEffect_Start
+  m_Name: ParticleEffect_Start_Disc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
