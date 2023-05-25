@@ -3692,7 +3692,7 @@ IL_007c:
 		bool L_30 = L_29->___mustGiveFeedback_35;
 		if (!((int32_t)((int32_t)L_27&(int32_t)L_30)))
 		{
-			goto IL_00ad;
+			goto IL_00b8;
 		}
 	}
 	{
@@ -3702,16 +3702,22 @@ IL_007c:
 		GameManager_tA0A711758C0F8A7192442809330FEE13EE9E35BE* L_32 = L_31->___gameManager_10;
 		NullCheck(L_32);
 		L_32->___mustGiveFeedback_35 = (bool)0;
-		// state.SwitchState(state.preTrialState);
+		// state.trialList.NextTrial();
 		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_33 = ___0_state;
-		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_34 = ___0_state;
-		NullCheck(L_34);
-		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_35 = L_34->___preTrialState_5;
 		NullCheck(L_33);
-		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_33, L_35, NULL);
+		TrialList_t36AEF901BBEBF02130139096DB8D8D3480DBDA05* L_34 = L_33->___trialList_13;
+		NullCheck(L_34);
+		TrialList_NextTrial_mACB31D18CCE50A911009A2775024F1353F704F4C(L_34, NULL);
+		// state.SwitchState(state.preTrialState);
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_35 = ___0_state;
+		TrialStateManager_tCCF596B63A914D1C18E8CDBE5243112B9DF5BC06* L_36 = ___0_state;
+		NullCheck(L_36);
+		PreTrialState_t1C495298ED36B0F6283A5805032045205512133B* L_37 = L_36->___preTrialState_5;
+		NullCheck(L_35);
+		TrialStateManager_SwitchState_mF53347D8B7C02C7613932CC07BB3FA35CB4D2A62(L_35, L_37, NULL);
 	}
 
-IL_00ad:
+IL_00b8:
 	{
 		// }
 		return;

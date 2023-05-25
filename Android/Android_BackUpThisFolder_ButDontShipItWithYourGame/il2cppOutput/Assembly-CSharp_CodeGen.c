@@ -90,47 +90,67 @@ extern void U3CFadeItU3Ed__13_System_Collections_IEnumerator_get_Current_m59FA2B
 extern void Initiate_Fade_m09D1FE18B46493AE2A6C8FC3CC52BE2AFB23B16F (void);
 // 0x00000027 System.Void Initiate::DoneFading()
 extern void Initiate_DoneFading_mE9055FFE383FEB666E55564F3D68B8874B4CBA29 (void);
-// 0x00000028 System.Void GameFinished::SetNextNPC(System.String)
+// 0x00000028 System.Void TutorialMgr::Start()
+extern void TutorialMgr_Start_m00C19949EA85109F4E7E1EBE1393FCBE830E4B69 (void);
+// 0x00000029 System.Void TutorialMgr::Update()
+extern void TutorialMgr_Update_mA05E119111FB3FBA8BDACE19555A4ADC13CCB97C (void);
+// 0x0000002A System.Collections.IEnumerator TutorialMgr::ShowTutorialScreen()
+extern void TutorialMgr_ShowTutorialScreen_m03453E79A2DDBD538122A26C374C7EA6CAE4949E (void);
+// 0x0000002B System.Void TutorialMgr::.ctor()
+extern void TutorialMgr__ctor_mA86895F4F05049266841649E1863C31CB3CECE04 (void);
+// 0x0000002C System.Void TutorialMgr/<ShowTutorialScreen>d__7::.ctor(System.Int32)
+extern void U3CShowTutorialScreenU3Ed__7__ctor_mD0C05BBF850F27EA806FBB275D0A880721E5447E (void);
+// 0x0000002D System.Void TutorialMgr/<ShowTutorialScreen>d__7::System.IDisposable.Dispose()
+extern void U3CShowTutorialScreenU3Ed__7_System_IDisposable_Dispose_mFF4AAC0BB55322AD7AE658E0AEB9BEC80AA2C7DD (void);
+// 0x0000002E System.Boolean TutorialMgr/<ShowTutorialScreen>d__7::MoveNext()
+extern void U3CShowTutorialScreenU3Ed__7_MoveNext_mDF0F4AE98097CE79A3D27CC23B67D6E9E21F1821 (void);
+// 0x0000002F System.Object TutorialMgr/<ShowTutorialScreen>d__7::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+extern void U3CShowTutorialScreenU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m07154F90BE706C96213184B16F4C984BF66F0398 (void);
+// 0x00000030 System.Void TutorialMgr/<ShowTutorialScreen>d__7::System.Collections.IEnumerator.Reset()
+extern void U3CShowTutorialScreenU3Ed__7_System_Collections_IEnumerator_Reset_m2802DC30BC41D8A597B1387F67B8B94524B72D35 (void);
+// 0x00000031 System.Object TutorialMgr/<ShowTutorialScreen>d__7::System.Collections.IEnumerator.get_Current()
+extern void U3CShowTutorialScreenU3Ed__7_System_Collections_IEnumerator_get_Current_m6C348BA8179A6A8D785FCC5E761B77AFAE54A8DE (void);
+// 0x00000032 System.Void GameFinished::SetNextNPC(System.String)
 extern void GameFinished_SetNextNPC_mF5A56688C92771558CD597B1C837F683EF207428 (void);
-// 0x00000029 System.Void GameFinished::ShowGameFinishedCanvas(System.String)
+// 0x00000033 System.Void GameFinished::ShowGameFinishedCanvas(System.String)
 extern void GameFinished_ShowGameFinishedCanvas_m3B27596AD0274FCB4FE6CE7E81A0A377EC34B73A (void);
-// 0x0000002A System.Void GameFinished::HideGameFinishedCanvas()
+// 0x00000034 System.Void GameFinished::HideGameFinishedCanvas()
 extern void GameFinished_HideGameFinishedCanvas_mAD2FCAC37D1C612293CD96FD87283CD6EFD950F8 (void);
-// 0x0000002B System.Void GameFinished::.ctor()
+// 0x00000035 System.Void GameFinished::.ctor()
 extern void GameFinished__ctor_m53271F6AB08960EE4EAAA91F87173989B74A5951 (void);
-// 0x0000002C System.Void print_debug::Start()
+// 0x00000036 System.Void print_debug::Start()
 extern void print_debug_Start_m8DE442F6D74573C398E0F0A7DE909523935FDD13 (void);
-// 0x0000002D System.Void print_debug::Update()
+// 0x00000037 System.Void print_debug::Update()
 extern void print_debug_Update_mD5B4866959D96433B4B4B09C15540CFFF788C93D (void);
-// 0x0000002E System.Void print_debug::Print(System.String)
+// 0x00000038 System.Void print_debug::Print(System.String)
 extern void print_debug_Print_m0DF36E7973ABA7EF9A734E8BB89A7E8BC04DD135 (void);
-// 0x0000002F System.Void print_debug::Select(System.Boolean)
+// 0x00000039 System.Void print_debug::Select(System.Boolean)
 extern void print_debug_Select_mDCFA8176F2E538FB149F0C2F1F74EBB51E1A41F9 (void);
-// 0x00000030 System.Void print_debug::.ctor()
+// 0x0000003A System.Void print_debug::.ctor()
 extern void print_debug__ctor_m052FB0F9113385DABF8D88C594BD3FEF7A978E0D (void);
-// 0x00000031 System.Void TravisGameAssets.HitImpactEffectsPreview::Start()
+// 0x0000003B System.Void TravisGameAssets.HitImpactEffectsPreview::Start()
 extern void HitImpactEffectsPreview_Start_mDBAE4636E9F53312E86D068F3B71820822E2FEE7 (void);
-// 0x00000032 System.Void TravisGameAssets.HitImpactEffectsPreview::Update()
+// 0x0000003C System.Void TravisGameAssets.HitImpactEffectsPreview::Update()
 extern void HitImpactEffectsPreview_Update_m3E5851C79F2B6FED8960F5854B7576BB9C2AE18B (void);
-// 0x00000033 System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleRotation()
+// 0x0000003D System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleRotation()
 extern void HitImpactEffectsPreview_ToggleRotation_mDF257CEC93D29B988AB7C7D5351BA90D0F23D95A (void);
-// 0x00000034 System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleFloor()
+// 0x0000003E System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleFloor()
 extern void HitImpactEffectsPreview_ToggleFloor_m46CAA22630F68A0091563740B922CF33A8A58D60 (void);
-// 0x00000035 System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleSlowMotion()
+// 0x0000003F System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleSlowMotion()
 extern void HitImpactEffectsPreview_ToggleSlowMotion_mBA6019B5589C94E3D4422E381A4B32AB41832F10 (void);
-// 0x00000036 System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleLighting()
+// 0x00000040 System.Void TravisGameAssets.HitImpactEffectsPreview::ToggleLighting()
 extern void HitImpactEffectsPreview_ToggleLighting_m9460655D22228DD82181A3A916B96801438FC05B (void);
-// 0x00000037 System.Void TravisGameAssets.HitImpactEffectsPreview::NextHit()
+// 0x00000041 System.Void TravisGameAssets.HitImpactEffectsPreview::NextHit()
 extern void HitImpactEffectsPreview_NextHit_m68BC7C4EDDD7DD6352C8C16B83719A7D1B8B92AF (void);
-// 0x00000038 System.Void TravisGameAssets.HitImpactEffectsPreview::PreviousHit()
+// 0x00000042 System.Void TravisGameAssets.HitImpactEffectsPreview::PreviousHit()
 extern void HitImpactEffectsPreview_PreviousHit_m4C03EFBA92EA6B4BEED3C8CEBB3818556E30407F (void);
-// 0x00000039 System.Void TravisGameAssets.HitImpactEffectsPreview::RefreshHitUI()
+// 0x00000043 System.Void TravisGameAssets.HitImpactEffectsPreview::RefreshHitUI()
 extern void HitImpactEffectsPreview_RefreshHitUI_mF6020FE296846EE7188FA76D98C00269B7DECF23 (void);
-// 0x0000003A UnityEngine.GameObject TravisGameAssets.HitImpactEffectsPreview::SpawnHit()
+// 0x00000044 UnityEngine.GameObject TravisGameAssets.HitImpactEffectsPreview::SpawnHit()
 extern void HitImpactEffectsPreview_SpawnHit_m0B6276660CE590154CCB7C9C55FBB2DA2F4705AC (void);
-// 0x0000003B System.Void TravisGameAssets.HitImpactEffectsPreview::.ctor()
+// 0x00000045 System.Void TravisGameAssets.HitImpactEffectsPreview::.ctor()
 extern void HitImpactEffectsPreview__ctor_m55BC63E955B324AB77FCDD705DE282B6BFE0DD60 (void);
-static Il2CppMethodPointer s_methodPointers[59] = 
+static Il2CppMethodPointer s_methodPointers[69] = 
 {
 	DebugLogPanel_OnEnable_m4C489B5C608B75CE479F870BB6FE1164649B82DF,
 	DebugLogPanel_Application_logMessageReceivedThreaded_mED3AF5264AD8E306E9A21D9AA0E6ACC6A362FCC1,
@@ -171,6 +191,16 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	U3CFadeItU3Ed__13_System_Collections_IEnumerator_get_Current_m59FA2B15979DAE5E53D23BC308D79C2AE9F346A0,
 	Initiate_Fade_m09D1FE18B46493AE2A6C8FC3CC52BE2AFB23B16F,
 	Initiate_DoneFading_mE9055FFE383FEB666E55564F3D68B8874B4CBA29,
+	TutorialMgr_Start_m00C19949EA85109F4E7E1EBE1393FCBE830E4B69,
+	TutorialMgr_Update_mA05E119111FB3FBA8BDACE19555A4ADC13CCB97C,
+	TutorialMgr_ShowTutorialScreen_m03453E79A2DDBD538122A26C374C7EA6CAE4949E,
+	TutorialMgr__ctor_mA86895F4F05049266841649E1863C31CB3CECE04,
+	U3CShowTutorialScreenU3Ed__7__ctor_mD0C05BBF850F27EA806FBB275D0A880721E5447E,
+	U3CShowTutorialScreenU3Ed__7_System_IDisposable_Dispose_mFF4AAC0BB55322AD7AE658E0AEB9BEC80AA2C7DD,
+	U3CShowTutorialScreenU3Ed__7_MoveNext_mDF0F4AE98097CE79A3D27CC23B67D6E9E21F1821,
+	U3CShowTutorialScreenU3Ed__7_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m07154F90BE706C96213184B16F4C984BF66F0398,
+	U3CShowTutorialScreenU3Ed__7_System_Collections_IEnumerator_Reset_m2802DC30BC41D8A597B1387F67B8B94524B72D35,
+	U3CShowTutorialScreenU3Ed__7_System_Collections_IEnumerator_get_Current_m6C348BA8179A6A8D785FCC5E761B77AFAE54A8DE,
 	GameFinished_SetNextNPC_mF5A56688C92771558CD597B1C837F683EF207428,
 	GameFinished_ShowGameFinishedCanvas_m3B27596AD0274FCB4FE6CE7E81A0A377EC34B73A,
 	GameFinished_HideGameFinishedCanvas_mAD2FCAC37D1C612293CD96FD87283CD6EFD950F8,
@@ -192,7 +222,7 @@ static Il2CppMethodPointer s_methodPointers[59] =
 	HitImpactEffectsPreview_SpawnHit_m0B6276660CE590154CCB7C9C55FBB2DA2F4705AC,
 	HitImpactEffectsPreview__ctor_m55BC63E955B324AB77FCDD705DE282B6BFE0DD60,
 };
-static const int32_t s_InvokerIndices[59] = 
+static const int32_t s_InvokerIndices[69] = 
 {
 	8905,
 	2205,
@@ -233,6 +263,16 @@ static const int32_t s_InvokerIndices[59] =
 	8751,
 	11624,
 	15213,
+	8905,
+	8905,
+	8751,
+	8905,
+	7046,
+	8905,
+	8626,
+	8751,
+	8905,
+	8751,
 	7086,
 	7086,
 	8905,
@@ -258,7 +298,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	59,
+	69,
 	s_methodPointers,
 	0,
 	NULL,
