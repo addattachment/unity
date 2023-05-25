@@ -115,6 +115,8 @@ struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
 struct UnicodeCharU5BU5D_t67F27D09F8EB28D2C42DFF16FE60054F157012F5;
 // System.Action
 struct Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07;
+// UnityEngine.AudioSource
+struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 // WebSocketSharp.Net.AuthenticationChallenge
 struct AuthenticationChallenge_t6EADF65CD74974F1783AD785778A24AA7F6D00A2;
 // Ball
@@ -1666,6 +1668,8 @@ struct CountDown_tDEFEB702F9E648A9877A4C214047B43243989DEE  : public MonoBehavio
 	bool ___countDownFinished_10;
 	// UnityEngine.Light CountDown::spotLight
 	Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* ___spotLight_11;
+	// UnityEngine.AudioSource CountDown::gong
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___gong_12;
 };
 
 // GameFinished
