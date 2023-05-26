@@ -7581,6 +7581,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1464104650}
     - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+      propertyPath: screenSetup
+      value: 
+      objectReference: {fileID: 1102273342762647598}
+    - target: {fileID: 8262410051204558300, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
       propertyPath: feedbackPole
       value: 
       objectReference: {fileID: 1172207064}
@@ -7602,6 +7606,11 @@ PrefabInstance:
       objectReference: {fileID: 926133807}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+--- !u!1 &1102273342762647598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3333094956303575681, guid: 49fc2083ba570b84383cbf6991c76b9d, type: 3}
+  m_PrefabInstance: {fileID: 1102273342762647597}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116187790396479379
 PrefabInstance:
   m_ObjectHideFlags: 0
