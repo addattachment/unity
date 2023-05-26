@@ -37142,8 +37142,10 @@ struct CaregiverStateManager_t73B7CD360FDA163774F383F3A1DABF89AD9E44F8  : public
 	WsClient_t439BD04F8F8B8D6E26AD57F7657348FD02ABB520* ___ws_20;
 	// CaregiverFeedbackEvent CaregiverStateManager::caregiverFeedbackEvent
 	CaregiverFeedbackEvent_t20BCE1750BA1E1CBBF7CD2B8B5663EDDBA321A40* ___caregiverFeedbackEvent_21;
+	// System.Collections.Generic.List`1<UnityEngine.GameObject> CaregiverStateManager::arrows
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___arrows_22;
 	// System.String CaregiverStateManager::caregiverPhase
-	String_t* ___caregiverPhase_22;
+	String_t* ___caregiverPhase_23;
 };
 
 // CloudMovement
