@@ -1200,11 +1200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3082927197092843921, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3082927197860269582, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3082927198083374345, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_Enabled
@@ -1390,6 +1390,14 @@ PrefabInstance:
       propertyPath: crossFade
       value: 
       objectReference: {fileID: 94943118}
+    - target: {fileID: 8071847803728255082, guid: 28528e01c40e82543a202dae07327069, type: 3}
+      propertyPath: nextScene
+      value: GameScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071847803728255082, guid: 28528e01c40e82543a202dae07327069, type: 3}
+      propertyPath: currentScene
+      value: CaregiverIntroScene
+      objectReference: {fileID: 0}
     - target: {fileID: 8071847803759967216, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: m_Name
       value: SceneSwitcher

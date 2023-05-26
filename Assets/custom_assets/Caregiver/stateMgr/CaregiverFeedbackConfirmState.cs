@@ -22,6 +22,10 @@
         if (state.feedbackPole.isTouched)
         {
             state.feedbackPole.isTouched = false;
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().FadeBlackBox(false);
+        }
+        if (!state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().fadedToBlack)
+        {
             state.SwitchState(state.caregiverScoringState);
         }
     }

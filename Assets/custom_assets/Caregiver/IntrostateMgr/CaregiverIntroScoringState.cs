@@ -19,11 +19,11 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
         state.InstructionBoardText.text = "We leren je nu hoe je je zorgfiguur een lage score kan geven.";
         foreach (GameObject arrow in state.ArrowPointInside)
         {
-            arrow.GetComponent<MeshRenderer>().enabled = true;
+            arrow.GetComponent<MeshRenderer>().enabled = false;
         }
         foreach (GameObject arrow in state.ArrowPointOutside)
         {
-            arrow.GetComponent<MeshRenderer>().enabled = false;
+            arrow.GetComponent<MeshRenderer>().enabled = true;
         }
         // uitgaan van mondelinge instructies eerst?
     }
@@ -54,11 +54,11 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         state.InstructionBoardText.text = "Perfect, probeer nu eens voor een hoge score ze dicht bijeen te brengen";
                         foreach (GameObject arrow in state.ArrowPointOutside)
                         {
-                            arrow.GetComponent<MeshRenderer>().enabled = true;
+                            arrow.GetComponent<MeshRenderer>().enabled = false;
                         }
                         foreach (GameObject arrow in state.ArrowPointInside)
                         {
-                            arrow.GetComponent<MeshRenderer>().enabled = false;
+                            arrow.GetComponent<MeshRenderer>().enabled = true;
                         }
                     }
                     else

@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -20,6 +22,11 @@ public class CaregiverFeedback : MonoBehaviour
 
     [SerializeField] private ReadFeedback feedbackPole;
     [SerializeField] private bool enableText = false;
+    [SerializeField] private List<GameObject> blackbox;
+    [SerializeField] private bool testFade;
+    public bool fadedToBlack = false;
+    public GameObject screenSetup;
+
     // Start is called before the first frame update    
     void Awake()
     {
@@ -42,8 +49,49 @@ public class CaregiverFeedback : MonoBehaviour
         {
             feedbackText.enabled = false;
         }
+        if (testFade)
+        {
+            testFade = false;
+            FadeBlackBox(true);
+        }
     }
 
+    public void FadeBlackBox(bool fade_in)
+    {
+        Hashtable fadeHT;
+        if (fade_in)
+        {
+            fadeHT = iTween.Hash("from", 0.0f, "to", 1.0f, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo", "onupdate", "SetTransparency", "oncomplete", "FadedToBlack");
+        }
+        else
+        {
+            fadeHT = iTween.Hash("from", 1.0f, "to", 0.0f, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo", "onupdate", "SetTransparency", "oncomplete","FadedToTransp");
+        }
+        iTween.ValueTo(this.gameObject, fadeHT);
+
+    }
+
+    private void SetTransparency(float transparancy)
+    {
+        foreach (GameObject wall in blackbox)
+        {
+            Color c = wall.GetComponent<Renderer>().material.color;
+            c.a = transparancy;
+            wall.GetComponent<Renderer>().material.color = c;
+        }
+    }
+    private void FadedToBlack()
+    {
+        fadedToBlack = true;
+    }    
+    private void FadedToTransp()
+    {
+        fadedToBlack = false;
+    }
+    public void EnableScreenSetup(bool enable)
+    {
+        screenSetup.SetActive(enable);
+    }
 
     public void GiveFeedback()
     {
