@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public class CaregiverStateManager : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class CaregiverStateManager : MonoBehaviour
     [Header("data connections")]
     [HideInInspector] public WsClient ws;
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
+
+    public List<GameObject> arrows;
     // booleans to control state
 
     //public bool didReadFeedback = false;
@@ -41,6 +44,10 @@ public class CaregiverStateManager : MonoBehaviour
         currentCaregiverState.EnterState(this);
         caregiverFeedback = caregiverFeedbackScreen.GetComponent<CaregiverFeedback>();
         caregiverFeedbackEvent = new();
+        foreach(GameObject arrow in arrows)
+        {
+            arrow.SetActive(false);
+        }
     }
     private void Update()
     {
