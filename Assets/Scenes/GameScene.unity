@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.5
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_IndirectSpecularColor: {r: 0.34771124, g: 0.38132155, b: 0.43358165, a: 0.5}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -848,6 +848,11 @@ Transform:
   m_Father: {fileID: 5736673881739380327}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &649260465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3587184739917082587, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1116187790396479379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -6264,6 +6269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 002af738391b64a4183a3e244b4374d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1315084028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3587184739951967452, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1116187790396479379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1327522753
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6559,6 +6569,16 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4612317147196554199, guid: 92707c3ea535f3e43ac5bbb10dae04da, type: 3}
   m_PrefabInstance: {fileID: 4612317147779882071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1590793865 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3587184739318106970, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1116187790396479379}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1629820761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3587184738562191428, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
+  m_PrefabInstance: {fileID: 1116187790396479379}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1633729058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6722,7 +6742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5372552975471072745, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7304596425477891215, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
       propertyPath: m_Name
@@ -6771,6 +6791,18 @@ PrefabInstance:
     - target: {fileID: 7932232110839103029, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594867113146691508, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594867113146691508, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594867113146691508, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.067
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1dd1dc38be3ec0c469324ed808317aa5, type: 3}
@@ -9023,6 +9055,26 @@ PrefabInstance:
       propertyPath: scoreCaregiver
       value: 
       objectReference: {fileID: 1976189728}
+    - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
+      propertyPath: arrows.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
+      propertyPath: arrows.Array.data[0]
+      value: 
+      objectReference: {fileID: 1629820761}
+    - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
+      propertyPath: arrows.Array.data[1]
+      value: 
+      objectReference: {fileID: 649260465}
+    - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
+      propertyPath: arrows.Array.data[2]
+      value: 
+      objectReference: {fileID: 1590793865}
+    - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
+      propertyPath: arrows.Array.data[3]
+      value: 
+      objectReference: {fileID: 1315084028}
     - target: {fileID: 8518756412839926387, guid: bc29f2e37e535a24bab4407973ee79e5, type: 3}
       propertyPath: caregiverFeedbackScreen
       value: 
