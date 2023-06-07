@@ -7,7 +7,7 @@ public class CaregiverIntroWaveState : CaregiverIntroStateMachine
         state.caregiverPhase = "CaregiverIntroWaveState";
         // Here we show a UI screen with "to the left is your mother
         // we trigger the waving as well
-        state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
+        //state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
         // if seen, we lift the pushbutton (next state)
         // then, we raise the scoring system
         // then we can go to the next scene
@@ -32,10 +32,10 @@ public class CaregiverIntroWaveState : CaregiverIntroStateMachine
                 //state.InstructionBoardAppear.Lower();
                 state.SwitchState(state.caregiverIntroButtonState);
             }
-            else
-            {
-                state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
-            }
+            //else
+            //{
+            //    state.Caregiver.GetComponent<Animator>().SetTrigger("wave");
+            //}
         }
     }
 }

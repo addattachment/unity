@@ -143,12 +143,6 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
     }
 
 
-    private IEnumerator UpdateText(CaregiverIntroStateManager state, string updateText)
-    {
-        yield return new WaitForSeconds(3.0f);
-        state.InstructionBoardText.text = updateText;
-        string s = "sluit je hand volledig om de cirkels te activeren en trek ze zo ver mogelijk uit elkaar om een slechte score te geven";
-    }
 }
 /*
  * In this part, we'll have to show three text boxes or three voice messages:

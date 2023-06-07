@@ -168,8 +168,8 @@ public class Slingshot : MonoBehaviour
             case ReachTargetEnum.must:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
-                _direction.x += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
-                _direction.y += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
+                //_direction.x += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
+                //_direction.y += Random.Range(-0.02f, 0.02f); // random offset to make it look more real
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??
                 _launchForce -= (Physics.gravity * 0.25f);
