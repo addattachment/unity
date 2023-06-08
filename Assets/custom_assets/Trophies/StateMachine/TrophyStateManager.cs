@@ -13,7 +13,7 @@ public class TrophyStateManager : MonoBehaviour
     public TrophyCooldownState trophyCooldownState = new();
 
     // script references
-    public GameManager gameManager;
+    [HideInInspector] public GameManager gameManager;
     public PlayerGroup players;
     public TargetGroup targets;
     public TrophyList trophyList;
@@ -23,14 +23,9 @@ public class TrophyStateManager : MonoBehaviour
     [SerializeField] private bool sendStateWSMessage = false;
     public float waitTimeForTransition = 0.5f;
     [Header("data connections")]
-    [SerializeField] private WsClient ws;
+    private WsClient ws;
     StateMgrEvent trophyStateMgrEvent;
-    // booleans to control state
-    //public bool trophyMayAppear = false;
-    //public bool mayPrep = false;
-    //public bool canLaunch = false;
-    //public bool didShoot = false;
-    //public bool trophyIsGiven = false;
+
     private void Start()
     {
         ws = WsClient.Instance;

@@ -14,7 +14,6 @@ public class SwitchScene : MonoBehaviour
     [SerializeField] private TMP_Text buttonText;
     [SerializeField] private string nextScene = "Basescene";
     [SerializeField] private string currentScene = "Basescene";
-    [SerializeField] private bool nextIsTutorial = false;
 
     [SerializeField] Animator crossFade;
     [Header("debug")]
@@ -42,6 +41,8 @@ public class SwitchScene : MonoBehaviour
     {
         if (other.CompareTag("Hand"))
         {
+            Debug.Log("Switching");
+            GetComponent<BoxCollider>().enabled = false; // make sure we only touch once
             Switch();
         }
     }
@@ -61,7 +62,6 @@ public class SwitchScene : MonoBehaviour
         crossFade.SetTrigger("Start");
         yield return new WaitForSeconds(1f);
         wsClient.SendWSMessage(switchScene.SaveToString());
-        gameManager.isTutorial = nextIsTutorial;
         sceneMgr.SwitchScene(currentScene, nextScene);
         currentScene = sceneMgr.currentActiveScene;
         //Initiate.Fade(nextScene, Color.black, 1.0f);

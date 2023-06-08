@@ -14,6 +14,7 @@ public class CaregiverFeedback : MonoBehaviour
     public GameObject feedbackCamera;
     [SerializeField] private Light sun;
     public Light caregiverSpotLight;
+    public bool feedbackIsStarted;
     //[SerializeField] private Slingshot playerSlingshot;
     //[SerializeField] private GameObject playerSlingshot;
     public AudioSource audioSource;
@@ -65,6 +66,7 @@ public class CaregiverFeedback : MonoBehaviour
         }
         else
         {
+            screenSetup.SetActive(false);
             fadeHT = iTween.Hash("from", 1.0f, "to", 0.0f, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo", "onupdate", "SetTransparency", "oncomplete","FadedToTransp");
         }
         iTween.ValueTo(this.gameObject, fadeHT);
@@ -82,10 +84,14 @@ public class CaregiverFeedback : MonoBehaviour
     }
     private void FadedToBlack()
     {
+        feedbackCamera.SetActive(true);
+        screenSetup.SetActive(true);
         fadedToBlack = true;
     }    
     private void FadedToTransp()
     {
+        feedbackCamera.SetActive(false);
+
         fadedToBlack = false;
     }
     public void EnableScreenSetup(bool enable)
@@ -103,6 +109,7 @@ public class CaregiverFeedback : MonoBehaviour
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
         caregiverEmotion.SetAtmosphere(emotion);
         audioSource.Play();
+        feedbackIsStarted = true;
     }
 
     //public void SetSlingshotForFeedback(bool enabled)

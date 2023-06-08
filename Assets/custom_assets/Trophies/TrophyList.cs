@@ -72,17 +72,9 @@ public class TrophyList : MonoBehaviour
         ////////////////////
     }
 
-    private void MoveAndWait(GameObject currentTrophy, Hashtable ht)
+    private void Wait()
     {
-        // move trophy to winner
-        iTween.MoveTo(currentTrophy, ht);
-
-        currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
-        currentTrophy.GetComponent<Rigidbody>().freezeRotation = false;
-
-        //currentTrophy.GetComponent<Rigidbody>().mass = 1.0f;
-        currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-        currentTrophy.GetComponent<Rigidbody>().useGravity = true;
+        
         StartCoroutine(WaitForTransition());
     }
 
@@ -103,7 +95,16 @@ public class TrophyList : MonoBehaviour
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
         ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f,  "oncompletetarget", gameObject); //"oncomplete", "SetTrophyGiven",
-        MoveAndWait(currentTrophy, ht);
+                                                                                                                                                                                                       // move trophy to winner
+        iTween.MoveTo(currentTrophy, ht);
+
+        currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
+        currentTrophy.GetComponent<Rigidbody>().freezeRotation = false;
+
+        //currentTrophy.GetComponent<Rigidbody>().mass = 1.0f;
+        currentTrophy.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+        currentTrophy.GetComponent<Rigidbody>().useGravity = true;
+        Wait();
     }
 
     private void SetTrophyGiven()
@@ -115,18 +116,19 @@ public class TrophyList : MonoBehaviour
     {
         waitingTimeForTransition = waitTime;
         trophyIsGiven = false;
-        ht = iTween.Hash("amount", new Vector3(0, 3.0f, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.5f, "oncomplete", "DestroyTrophy", "oncompletetarget", gameObject);
+        ht = iTween.Hash("amount", new Vector3(0, 3.0f, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncomplete", "DestroyTrophy", "oncompletetarget", gameObject);
         // move trophy to winner
         iTween.MoveBy(currentTrophy, ht);
     }
     private void DestroyTrophy()
     {
         explode.transform.position = currentTrophy.transform.position;
+        explode.GetComponent<AudioSource>().Play();
         explode.GetComponentInChildren<Animator>().Play("Base Layer.Explosion");
 
         didExplode = false;
+        Wait();
         Destroy(currentTrophy);
-        SetTrophyGiven();
     }
     private IEnumerator WaitForDestruction()
     {

@@ -13,7 +13,7 @@ public class SceneMgr : MonoBehaviour
     [SerializeField] string caregiverIntroScene = "CaregiverIntroScene";
     [SerializeField] string gameScene = "GameScene";
     public string currentActiveScene;
-
+    private bool isLoading = false;
     [Header("Debug")]
     [SerializeField] private bool restartBool = false;
 
@@ -40,6 +40,8 @@ public class SceneMgr : MonoBehaviour
     void Start()
     {
         gameManager = GameManager.Instance;
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
 
         if (!IsAnAdditiveGameSceneLoaded())
         {
@@ -81,8 +83,18 @@ public class SceneMgr : MonoBehaviour
     }
     public void SwitchScene(string sceneToUnload, string sceneToLoad)
     {
-        SceneManager.UnloadSceneAsync(sceneToUnload);
-        LoadNewScene(sceneToLoad);
+        //Debug.Log("not loading so switching");
+        if (!isLoading)
+        {
+            isLoading = true;
+            SceneManager.UnloadSceneAsync(sceneToUnload);
+
+            LoadNewScene(sceneToLoad);
+        }
+        else
+        {
+            Debug.Log("Was already loading new scene");
+        }
     }
 
     private void LoadNewScene(string sceneToLoad)
@@ -117,5 +129,33 @@ public class SceneMgr : MonoBehaviour
         //SceneManager.UnloadScene("PlayerScene");
         //SceneManager.LoadScene("PlayerScene", LoadSceneMode.Additive);
         SceneManager.LoadScene(currentActiveScene);
+    }
+
+    private void OnSceneUnloaded(Scene current)
+    {
+        //Debug.Log("OnSceneUnloaded: " + current);
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        //Debug.Log("OnSceneLoaded: " + scene.name);
+        //Debug.Log(mode);
+        isLoading = false;
+    }
+
+    // called when the game is terminated
+    void OnDisable()
+    {
+        //Debug.Log("OnDisable");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+
+    }
+
+    void OnDestroy()
+    {
+        //Debug.Log("OnDestroy");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
+
     }
 }

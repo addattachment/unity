@@ -6,7 +6,7 @@ public class CaregiverIntroIdleState : CaregiverIntroStateMachine
     public override void EnterState(CaregiverIntroStateManager state)
     {
         state.caregiverPhase = "CaregiverIntroIdleState";
-        Debug.Log("Instructionboard appear: " + state.InstructionBoardAppear);
+        //Debug.Log("Instructionboard appear: " + state.InstructionBoardAppear);
         state.InstructionBoardAppear.Raise();
         state.InstructionBoardText.text = "We gaan je voorstellen aan je zorgfiguur, kijk maar naar haar!";
         state.scoreCaregiver.DisableScoring();

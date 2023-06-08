@@ -254,7 +254,7 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // equal or less chance of scoring than human player??
                         // equal chance must vs mustn
-                        if (guess >= 0.7f)
+                        if (guess >= 0.6f)
                         {
                             reachChance = ReachTargetEnum.must;
                         }
@@ -272,7 +272,7 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // have a low chance that the ball must hit the targets 
                         // most of the time it should be musn't, sometimes may
-                        if (guess >= Random.Range(0.2f, 0.5f))
+                        if (guess >= 0.6f)
                         {
                             reachChance = ReachTargetEnum.may;
                         }
@@ -285,7 +285,7 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // equal or less chance of scoring than human player??
                         // most of the time should be must, sometimes may
-                        if (guess >= 0.4f)
+                        if (guess >= 0.3f)
                         {
                             reachChance = ReachTargetEnum.must;
                         }
@@ -299,7 +299,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log(activeParticipant + " reachChance " + reachChance);
+        Debug.Log(activeParticipant + " reachChance " + reachChance + "guess: "+guess );
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

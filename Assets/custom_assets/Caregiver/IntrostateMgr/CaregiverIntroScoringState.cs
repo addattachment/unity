@@ -6,11 +6,11 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
 {
     private int passthrough = 0;
     private float timer = 0;
-    private float switchTextTime = 3.0f;
+    private float switchTextTime = 8.0f;
     public override void EnterState(CaregiverIntroStateManager state)
     {
         state.caregiverPhase = "CaregiverIntroScoringState";
-        state.scoreCaregiver.EnableScoring();
+        state.scoreCaregiver.EnableScoring(true);
         // play audio fragment: "goede score geven"
         passthrough = 0;
         state.feedbackButton.isTouched = false;
@@ -69,7 +69,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         state.InstructionBoardText.text = "probeer ze nog verder uiteen te zetten voor een echt slechte score";
 
                     }
-                    state.scoreCaregiver.EnableScoring();
+                    state.scoreCaregiver.EnableScoring(false);
 
                     break;
                 case 1:
@@ -98,7 +98,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                         state.InstructionBoardText.text = "probeer ze nog dichter bijeen te brengen voor een echt goede score";
 
                     }
-                    state.scoreCaregiver.EnableScoring();
+                    state.scoreCaregiver.EnableScoring(false);
                     break;
                 case 2:
                     state.scoreCaregiver.scoringStarted = false;

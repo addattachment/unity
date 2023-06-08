@@ -20,7 +20,7 @@ public class Exploded : MonoBehaviour
     public void Didexplode()
     {
         //Debug.Log("boom");
-        trophy.didExplode = true;
+        //trophy.didExplode = true;
         //hide the currentTrophy already
         //trophy.currentTrophy.GetComponent<Renderer>().enabled = false;
     }

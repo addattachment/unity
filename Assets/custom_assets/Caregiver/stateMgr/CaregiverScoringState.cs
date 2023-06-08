@@ -4,7 +4,7 @@
     public override void EnterState(CaregiverStateManager state)
     {
         state.caregiverPhase = "CaregiverScoringState";
-        state.scoreCaregiver.GetComponent<ScoreCaregiver>().EnableScoring();
+        state.scoreCaregiver.GetComponent<ScoreCaregiver>().EnableScoring(true);
         isListening = false;
     }
 

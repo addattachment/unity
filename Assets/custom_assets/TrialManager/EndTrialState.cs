@@ -25,6 +25,7 @@ public class EndTrialState : StateMachine
             // we set the name of the next trial round so the child already gets to know his/her next opponent
             state.gameFinished.SetNextNPC(state.gameManager.gameObject.GetComponent<SetGameValues>().NextTrialBlockNPCname); 
         }
+        state.gameFinished.enabled = true;
         state.gameFinished.ShowGameFinishedCanvas();
     }
 
