@@ -14,8 +14,10 @@ public class SetGameValues : MonoBehaviour
     public int trial_block = 1; // or 2
     public string NPCNameMale_1 = "Sander";
     public string NPCNameMale_2 = "Henk";
+    public string NPCNameMale_BU = "Tim";
     public string NPCNameFemale_1 = "Tinne";
     public string NPCNameFemale_2 = "Lindsay";
+    public string NPCNameFemale_BU = "Sandra";
     public string NextTrialBlockNPCname = "";
     [SerializeField] Player player;
     [SerializeField] Player NPC;
@@ -117,24 +119,24 @@ public class SetGameValues : MonoBehaviour
             {
                 if (trial_block == 1)
                 {
-                    tempName = NPCNameMale_1;
-                    NextTrialBlockNPCname = NPCNameMale_2;
+                    tempName = NPCNameMale_1 == playerName ? NPCNameMale_BU : NPCNameMale_1; // check that we're not using the same name for player & NPC
+                    NextTrialBlockNPCname = NPCNameMale_2 == playerName ? NPCNameMale_BU : NPCNameMale_2;
                 }
                 else
                 {
-                    tempName = NPCNameMale_2;
+                    tempName = NPCNameMale_2 == playerName ? NPCNameMale_BU : NPCNameMale_2;
                 }
             }
             else
             {
                 if (trial_block == 1)
                 {
-                    tempName = NPCNameFemale_1;
-                    NextTrialBlockNPCname = NPCNameFemale_2;
+                    tempName = NPCNameFemale_1 == playerName ? NPCNameFemale_BU : NPCNameFemale_1; 
+                    NextTrialBlockNPCname = NPCNameFemale_2 == playerName ? NPCNameFemale_BU : NPCNameFemale_2;
                 }
                 else
                 {
-                    tempName = NPCNameFemale_2;
+                    tempName = NPCNameFemale_2 == playerName ? NPCNameFemale_BU : NPCNameFemale_2;
                 }
             }
             NPC.UpdateValues(tempName, gender, contingency, height, false, trial_block);
