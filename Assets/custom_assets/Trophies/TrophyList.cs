@@ -22,6 +22,7 @@ public class TrophyList : MonoBehaviour
     [SerializeField] private GameObject explode;
     public bool didExplode = false;
     private float waitingTimeForTransition;
+    [SerializeField] private float scaleTrophy = 0.2f;
     [Header("testing")]
     [SerializeField] private bool testLightOn = false;
     [SerializeField] private bool testLightOff = false;
@@ -94,10 +95,22 @@ public class TrophyList : MonoBehaviour
         waitingTimeForTransition = waitTime;
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f,  "oncompletetarget", gameObject); //"oncomplete", "SetTrophyGiven",
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncompletetarget", gameObject, "oncomplete", "ShrinkTrophy");
                                                                                                                                                                                                        // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
 
+        
+    }
+
+    private void ShrinkTrophy()
+    {
+        ht = iTween.Hash("scale", new Vector3(scaleTrophy, scaleTrophy, scaleTrophy), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f, "oncompletetarget", gameObject, "oncomplete", "DropTrophy");
+                                                                                                                                                                                                      // move trophy to winner
+        iTween.ScaleTo(currentTrophy, ht);
+    }
+
+    private void DropTrophy()
+    {
         currentTrophy.GetComponent<Rigidbody>().isKinematic = false;
         currentTrophy.GetComponent<Rigidbody>().freezeRotation = false;
 
