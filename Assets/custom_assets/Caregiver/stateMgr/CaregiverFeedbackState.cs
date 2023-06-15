@@ -4,11 +4,12 @@
     {
         state.caregiverPhase = "CaregiverFeedbackState";
         state.caregiverFeedbackScreen.SetActive(true);
+        state.NPC_cam.SetActive(false);
         state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().FadeBlackBox(true);
         //state.caregiverFeedback.SetSlingshotForFeedback(true);
         state.lightingMgr.envLight.EnableSunlight(false);
         //state.lightingMgr.caregiverLight.EnableLight(true);
-        state.caregiverFeedback.setCaregiverGaze.SetGaze(state.caregiverFeedback.feedbackCamera); 
+        //state.caregiverFeedback.setCaregiverGaze.SetGaze(state.caregiverFeedback.feedbackCamera); 
         //Send start signal for caregiver feedback to python
         state.caregiverFeedbackEvent.Set(state.gameManager.currentTrial, true);
         state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());

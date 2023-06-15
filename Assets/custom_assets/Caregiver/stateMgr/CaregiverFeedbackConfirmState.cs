@@ -11,6 +11,8 @@
     {
         //state.caregiverFeedback.SetSlingshotForFeedback(false);
         state.lightingMgr.envLight.EnableSunlight(true);
+        state.NPC_cam.SetActive(true);
+
         //state.lightingMgr.caregiverLight.EnableLight(false);
         state.caregiverFeedbackScreen.SetActive(false);
         state.scoreCaregiver.SetActive(true);

@@ -35,6 +35,8 @@ public class ScoreCaregiver : MonoBehaviour
     private Vector3 startPosMeCircleOrig;
     private Vector3 startPosCaregiverCircle;
     private Vector3 startPosCaregiverCircleOrig;
+    [SerializeField, Range(0.0f, 1.0f)] private float testControllerDist = 0.0f;
+    [SerializeField] private bool enableTestModus = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,11 +62,11 @@ public class ScoreCaregiver : MonoBehaviour
         iTween.MoveBy(meCircle, transformMe);
         Hashtable transformCaregiver = iTween.Hash("position", startPosCaregiverCircle, "delay", 0.1f, "time", 1.0f, "easetype", "easeInOutExpo");
         iTween.MoveBy(caregiverCircle, transformCaregiver);
-        //if (resetPos)
-        //{
-        //    meCircle.transform.position = new Vector3(startPosMeCircle.x, meCircle.transform.position.y, meCircle.transform.position.z);
-        //    caregiverCircle.transform.position = new Vector3(startPosCaregiverCircle.x, caregiverCircle.transform.position.y, caregiverCircle.transform.position.z);
-        //}
+        if (resetPos)
+        {
+            meCircle.transform.position = new Vector3(startPosMeCircle.x, meCircle.transform.position.y, meCircle.transform.position.z);
+            caregiverCircle.transform.position = new Vector3(startPosCaregiverCircle.x, caregiverCircle.transform.position.y, caregiverCircle.transform.position.z);
+        }
         _collider.SetActive(true);
         appear.Raise();
         gripIsPushed = false;
@@ -104,6 +106,12 @@ public class ScoreCaregiver : MonoBehaviour
             MoveCircles();
             CalcScore();
         }
+        //if (enableTestModus)
+        //{
+        //    controllerDist = testControllerDist;
+        //    MoveCircles();
+        //    CalcScore();
+        //}
     }
 
     private void CalcScore()
@@ -136,16 +144,17 @@ public class ScoreCaregiver : MonoBehaviour
         //Debug.Log("Circle distance is " + circleDist);
         return circleDist;
     }
+    //todo: clamping is incorrect
     public void MoveCircles()
     {
         float movement = controllerDist * scaleCircleDistance / 2.0f;
         if (movement + startPosMeCircle.x > maxDistance / 2.0f)
         {
-            movement = maxDistance / 2.0f;
+            movement = maxDistance / 2.0f - startPosMeCircle.x;
         }
         if (movement + startPosMeCircle.x < 0.0f)
         {
-            movement = 0.0f;
+            movement = 0.0f - startPosMeCircle.x;
         }
         UpdateLocalPos(meCircle, xUpdate: movement + startPosMeCircle.x, meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
         UpdateLocalPos(caregiverCircle, xUpdate: -(movement + startPosMeCircle.x), meCircle.transform.localPosition.y, meCircle.transform.localPosition.z);
@@ -154,6 +163,7 @@ public class ScoreCaregiver : MonoBehaviour
     private void UpdateLocalPos(GameObject obj, float xUpdate, float yUpdate, float zUpdate)
     {
         Vector3 localPos = obj.transform.localPosition;
+        
         localPos.x = xUpdate;
         localPos.y = yUpdate;
         localPos.z = zUpdate;

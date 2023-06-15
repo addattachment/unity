@@ -24,6 +24,7 @@ public class CaregiverStateManager : MonoBehaviour
     [Header("data connections")]
     [HideInInspector] public WsClient ws;
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
+    public GameObject NPC_cam;
 
     public List<GameObject> arrows;
     // booleans to control state

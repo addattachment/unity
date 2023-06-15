@@ -11,7 +11,7 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public CaregiverIntroScoringState caregiverIntroScoringState = new();
     public CaregiverIntroEndState caregiverIntroEndState = new();
     // script references
-    public GameManager gameManager;
+    [HideInInspector] public GameManager gameManager;
 
     [HideInInspector] public CaregiverFeedback caregiverFeedback;
     public GameObject Caregiver;
@@ -28,7 +28,7 @@ public class CaregiverIntroStateManager : MonoBehaviour
     public List<GameObject> ArrowPointOutside;
 
     [Header("data connections")]
-    public WsClient ws;
+    [HideInInspector] public WsClient ws;
 
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
 

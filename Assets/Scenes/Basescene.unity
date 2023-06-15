@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000004, guid: 7fa6df2d4aa194f4f90ea309b3d41de6, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 794e712225dc0d649b7a9b9e04742ec8, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -4474,7 +4474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5342910215410073656, guid: 29d646fdcca941549b9991076b3db005, type: 3}
       propertyPath: ballsPerGame
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5342910215410073656, guid: 29d646fdcca941549b9991076b3db005, type: 3}
       propertyPath: developmentMode

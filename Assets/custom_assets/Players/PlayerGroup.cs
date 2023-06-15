@@ -8,14 +8,13 @@ public class PlayerGroup : MonoBehaviour
     public Player player;
     public Player NPC;
     public Player activeParticipant;
-    [SerializeField] private GameManager gameManager;
+    private GameManager gameManager;
     [SerializeField] private bool switchPlayer = false;
 
     [SerializeField] private List<Player> players;
 
-    [Header("data connections")]
-    [SerializeField] private WsClient ws;
-    [SerializeField] private OutletPassThrough lsl;
+    private WsClient ws;
+    private OutletPassThrough lsl;
     private PlayersScoreEvent playersScoreEvent = new();
     public GameObject PlayerInvisibleWall;
     public GameObject NPCInvisibleWall;
@@ -299,7 +298,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log(activeParticipant + " reachChance " + reachChance + "guess: "+guess );
+        Debug.Log(activeParticipant + " reachChance " + reachChance + "guess: " + guess);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

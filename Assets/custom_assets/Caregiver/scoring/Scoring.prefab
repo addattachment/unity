@@ -1143,6 +1143,8 @@ MonoBehaviour:
   appear: {fileID: 530363475566027556}
   isLow: 1
   ws: {fileID: 0}
+  testControllerDist: 0.123
+  enableTestModus: 1
 --- !u!1 &1116187791472637563
 GameObject:
   m_ObjectHideFlags: 0
