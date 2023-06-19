@@ -284,7 +284,7 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // equal or less chance of scoring than human player??
                         // most of the time should be must, sometimes may
-                        if (guess >= 0.3f)
+                        if (guess >= 0.4f)
                         {
                             reachChance = ReachTargetEnum.must;
                         }
@@ -298,7 +298,7 @@ public class PlayerGroup : MonoBehaviour
         }
         //debug_text.SetToggleReach(reachChance, activeParticipant);
         //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log(activeParticipant + " reachChance " + reachChance + "guess: " + guess);
+        Debug.Log(activeParticipant + " reachChance " + reachChance + " guess: " + guess);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

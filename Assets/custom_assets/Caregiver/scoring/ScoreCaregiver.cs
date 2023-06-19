@@ -137,6 +137,7 @@ public class ScoreCaregiver : MonoBehaviour
     {
         controllerDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position) - controllerStartDist;
         //Debug.Log("Distance between controllers = " + controllerDist);
+        controllerDist-= 0.05f; // an offset to make it easier to center the circles
     }
     private float DistanceBetweenCircles()
     {

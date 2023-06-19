@@ -75,7 +75,7 @@ public class TrophyList : MonoBehaviour
 
     private void Wait()
     {
-        
+
         StartCoroutine(WaitForTransition());
     }
 
@@ -95,17 +95,14 @@ public class TrophyList : MonoBehaviour
         waitingTimeForTransition = waitTime;
         // add to the list of won trophies
         winner.trophyWonList.Add(currentTrophy);
-        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(0, 1, 0), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncompletetarget", gameObject, "oncomplete", "ShrinkTrophy");
-                                                                                                                                                                                                       // move trophy to winner
+        ht = iTween.Hash("position", winner.trophySpawnLocation.transform.position + new Vector3(Random.Range(-0.4f, 0.4f), 1, Random.Range(-0.4f, 0.4f)), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 2.5f, "oncompletetarget", gameObject, "oncomplete", "ShrinkTrophy");                                                                                                                                                                                                      // move trophy to winner
         iTween.MoveTo(currentTrophy, ht);
-
-        
     }
 
     private void ShrinkTrophy()
     {
         ht = iTween.Hash("scale", new Vector3(scaleTrophy, scaleTrophy, scaleTrophy), "easeType", "easeInOutExpo", "delay", 0.1f, "time", 1.0f, "oncompletetarget", gameObject, "oncomplete", "DropTrophy");
-                                                                                                                                                                                                      // move trophy to winner
+        // move trophy to winner
         iTween.ScaleTo(currentTrophy, ht);
     }
 
@@ -123,7 +120,6 @@ public class TrophyList : MonoBehaviour
     private void SetTrophyGiven()
     {
         trophyIsGiven = true;
-
     }
     public void DestroyCurrentTrophy(float waitTime)
     {

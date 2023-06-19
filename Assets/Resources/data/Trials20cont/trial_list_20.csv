@@ -1,26 +1,26 @@
-Trial nr;response;good/bad/neutral;tone;intensity;childs performance
-0;Dit trekt op niks! Je bent uw best niet aan het doen.;bad;afstandelijk, niet-sensitief, boos;10;bad
-1;Is dat alles wat je kan? Noem je dat uw best doen?;bad;afstandelijk, niet-sensitief, minachtend;10;bad
-2;Ik had beter van jou verwacht, waar is uw motivatie naartoe?;bad;afstandelijk, niet-sensitief, teleurgesteld, verdrietig;10;bad
-3;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!;good;vriendelijk, lief, sensitief;10;bad
-4;Je hebt nog 20 trials te gaan;neutral;neutraal;5;Fout:508
-5;Je kan er niets van! Alle andere kinderen kunnen dit beter.;bad;afstandelijk, niet-sensitief, boos;10;bad
-6;Zet hem op, ik geloof in jou!;good;vriendelijk, lief, sensitief;10;bad
-7;Zonder inzet doe je beter niet mee.;bad;afstandelijk, niet-sensitief, frustratie, zuchtend;10;bad
-8;Je hebt nog 16 trials te gaan;neutral;neutraal;5;Fout:508
-9;Ben je uw best wel aan het doen? Op die manier was je beter thuis gebleven.;bad;afstandelijk, niet-sensitief;10;bad
-10;Als je zo weinig uw best doet, ga je zeker verliezen!;bad;afstandelijk, niet-sensitief, kwaad;10;bad
-11;Ik dacht al wel dat je er niets van zou kunnen!;bad;afstandelijk, niet-sensitief, teleurgesteld;10;bad
-12;Geef niet op, X. Ik weet dat je het kan!;good;vriendelijk, lief, sensitief;10;bad
-13;Je hebt nog 11 trials te gaan;neutral;neutraal;5;Fout:508
-14;Ik wist niet dat jij zo onhandig was. Alle andere kinderen doen het beter dan jou.;bad;afstandelijk, niet-sensitief, gefrustreerd en kwaad;10;bad
-15;Zo'n slechte prestatie heb ik nog nooit gezien!;bad;afstandelijk, niet-sensitief;10;bad
-16;Je hebt nog 8 trials te gaan;neutral;neutraal;5;Fout:508
-17;Het trekt op niets hoe jij hier bezig bent!;bad;afstandelijk, niet-sensitief, teleurgesteld;10;bad
-18;Dit trekt op niks! Ik schaam me in uw plaats.;bad;afstandelijk, niet-sensitief, kwaad;10;bad
-19;Hoe jij dat doet, het is niet om aan te zien.;bad;afstandelijk, niet-sensitief;10;bad
-20;Het is niet makkelijk, maar ik zie dat je uw best doet. Hou vol!;good;vriendelijk, lief, sensitief;10;bad
-21;Ik had verwacht dat je beter zou presteren en meer gemotiveerd zou zijn.;bad;afstandelijk, niet-sensitief, ogenrollend, kwaad;10;bad
-22;Zo moeilijk is dat toch niet! Doe nu toch gewoon eens uw best.;bad;afstandelijk, niet-sensitief, gefrustreerd en kwaad;10;bad
-23;Je hebt nog 1 trial te gaan;neutral;neutraal;5;Fout:508
-24;Ik heb de indruk dat je gewoon staat te slapen.;bad;afstandelijk, niet-sensitief, boos;10;bad
+Trial nr ;response                                                                           ;good/bad/neutral ;tone                                                    ;intensity ;childs performance
+       0 ;Dit trekt op niks! Je bent uw best niet aan het doen.                              ;bad              ;afstandelijk, niet-sensitief, boos                      ;       10 ;bad
+       1 ;Is dat alles wat je kan? Noem je dat uw best doen?                                 ;bad              ;afstandelijk, niet-sensitief, minachtend                ;       10 ;bad
+       2 ;Ik had beter van jou verwacht, waar is uw motivatie naartoe?                       ;bad              ;afstandelijk, niet-sensitief, teleurgesteld, verdrietig ;       10 ;bad
+       3 ;Je hebt misschien niet gewonnen maar voor mij ben jij een winnaar!                 ;good             ;vriendelijk, lief, sensitief                            ;       10 ;bad
+       4 ;Je hebt nog 20 trials te gaan                                                      ;neutral          ;neutraal                                                ;        5 ;good
+       5 ;Je kan er niets van! Alle andere kinderen kunnen dit beter.                        ;bad              ;afstandelijk, niet-sensitief, boos                      ;       10 ;bad
+       6 ;Zet hem op, ik geloof in jou!                                                      ;good             ;vriendelijk, lief, sensitief                            ;       10 ;bad
+       7 ;Zonder inzet doe je beter niet mee.                                                ;bad              ;afstandelijk, niet-sensitief, frustratie, zuchtend      ;       10 ;bad
+       8 ;Je hebt nog 16 trials te gaan                                                      ;neutral          ;neutraal                                                ;        5 ;good
+       9 ;Ben je uw best wel aan het doen? Op die manier was je beter thuis gebleven.        ;bad              ;afstandelijk, niet-sensitief                            ;       10 ;bad
+      10 ;Als je zo weinig uw best doet, ga je zeker verliezen!                              ;bad              ;afstandelijk, niet-sensitief, kwaad                     ;       10 ;bad
+      11 ;Ik dacht al wel dat je er niets van zou kunnen!                                    ;bad              ;afstandelijk, niet-sensitief, teleurgesteld             ;       10 ;bad
+      12 ;Geef niet op, X. Ik weet dat je het kan!                                           ;good             ;vriendelijk, lief, sensitief                            ;       10 ;bad
+      13 ;Je hebt nog 11 trials te gaan                                                      ;neutral          ;neutraal                                                ;        5 ;good
+      14 ;Ik wist niet dat jij zo onhandig was. Alle andere kinderen doen het beter dan jou. ;bad              ;afstandelijk, niet-sensitief, gefrustreerd en kwaad     ;       10 ;bad
+      15 ;Zo'n slechte prestatie heb ik nog nooit gezien!                                    ;bad              ;afstandelijk, niet-sensitief                            ;       10 ;bad
+      16 ;Je hebt nog 8 trials te gaan                                                       ;neutral          ;neutraal                                                ;        5 ;good
+      17 ;Het trekt op niets hoe jij hier bezig bent!                                        ;bad              ;afstandelijk, niet-sensitief, teleurgesteld             ;       10 ;bad
+      18 ;Dit trekt op niks! Ik schaam me in uw plaats.                                      ;bad              ;afstandelijk, niet-sensitief, kwaad                     ;       10 ;bad
+      19 ;Hoe jij dat doet, het is niet om aan te zien.                                      ;bad              ;afstandelijk, niet-sensitief                            ;       10 ;bad
+      20 ;Het is niet makkelijk, maar ik zie dat je uw best doet. Hou vol!                   ;good             ;vriendelijk, lief, sensitief                            ;       10 ;bad
+      21 ;Ik had verwacht dat je beter zou presteren en meer gemotiveerd zou zijn.           ;bad              ;afstandelijk, niet-sensitief, ogenrollend, kwaad        ;       10 ;bad
+      22 ;Zo moeilijk is dat toch niet! Doe nu toch gewoon eens uw best.                     ;bad              ;afstandelijk, niet-sensitief, gefrustreerd en kwaad     ;       10 ;bad
+      23 ;Je hebt nog 1 trial te gaan                                                        ;neutral          ;neutraal                                                ;        5 ;good
+      24 ;Ik heb de indruk dat je gewoon staat te slapen.                                    ;bad              ;afstandelijk, niet-sensitief, boos                      ;       10 ;bad

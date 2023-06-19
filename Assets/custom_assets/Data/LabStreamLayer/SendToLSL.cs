@@ -21,7 +21,7 @@ public class SendToLSL : MonoBehaviour
             _time += Time.deltaTime;
             if (_time >= _exec_time)
             {
-                Debug.Log("sending testmarker");
+                //Debug.Log("sending testmarker");
                 _time = 0.0f;
                 outletPassThrough.SendMarker(Marker.test);
             }

@@ -120,13 +120,13 @@ public class TrialList : MonoBehaviour
             string valueLine = trialStringList[i];
             string[] values = Regex.Split(valueLine, ";"); // your splitter here
             int trialnr = int.Parse(values[0]);
-            bool isGood = values[5] == "good";
+            bool isGood = values[5].Substring(0, 4) == "good";
             string response = values[1];
-            Atmosphere atm = (string)values[2] switch
+            Atmosphere atm = (string)values[2].Substring(0,3) switch
             {
-                "good" => Atmosphere.GOOD,
+                "goo" => Atmosphere.GOOD,
                 "bad" => Atmosphere.BAD,
-                "neutral" => Atmosphere.NEUTRAL,
+                "neu" => Atmosphere.NEUTRAL,
                 _ => Atmosphere.NEUTRAL,
             };
             Trial temp = new(); // temp trial to fill in values
