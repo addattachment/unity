@@ -158,6 +158,7 @@ public class Slingshot : MonoBehaviour
         Vector3 _direction;
         Vector3 _launchForce;
         //TODO something wrong with speed calculation?
+
         switch (reachTarget)
         {
             case ReachTargetEnum.may:
@@ -203,23 +204,25 @@ public class Slingshot : MonoBehaviour
                 var _mustReachForce = (hitTargetLoc - _ballPos).normalized * launchForceMultiplier - (Physics.gravity * 0.25f);
                 float diff = Vector3.Distance(_mayReachForce, _mustReachForce); // we 'abuse' the distance calculation to see whether the vectors are close to each others
                 _launchForce = _mayReachForce;
-                if (diff <= minDeflectionDist)
+
+                if (diff <= hitTarget.GetComponent<Renderer>().bounds.size.x)
                 {
                     //NOT DOING check for each vector if we want to add or subtract a diff! 
                     // check for y which is the largest and make sure the deflectionVector enlarges the distance between the two points
                     //minimum distance to move for y, as this is the least distinguisishable in any case
                     var _y_displ_dir = _launchForce.y >= _mustReachForce.y ? 1 : -1;
-                    var _min_y_displ = Mathf.Sqrt(Mathf.Pow(minDeflectionDist, 2) - Mathf.Pow(Mathf.Abs(_launchForce.y - _mustReachForce.y), 2));
-                    var _move_y = Random.Range(_min_y_displ, _min_y_displ + 0.4f) * _y_displ_dir;
+                    var _min_y_displ = Mathf.Sqrt(Mathf.Pow(hitTarget.GetComponent<Renderer>().bounds.size.x, 2) - Mathf.Pow(Mathf.Abs(_launchForce.y - _mustReachForce.y), 2));
+                    var _move_y = Random.Range(_min_y_displ, _min_y_displ + 0.1f) * _y_displ_dir;
                     Vector3 deflectionVector = new(0, _move_y);
+                    Debug.Log("deflection: " + deflectionVector + " diff "+diff+" bounds "+ hitTarget.GetComponent<Renderer>().bounds.size);
                     _launchForce += deflectionVector;
                 }
                 return _launchForce;
             case ReachTargetEnum.mayNPC:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
-                _direction.x += Random.Range(-0.1f, 0.1f);
-                _direction.y += Random.Range(-0.1f, 0.1f);
+                _direction.x += Random.Range(-0.15f, 0.15f);
+                _direction.y += Random.Range(-0.15f, 0.15f);
 
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??

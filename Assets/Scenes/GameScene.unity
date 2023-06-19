@@ -461,6 +461,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 43175171, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_Name
+      value: green
+      objectReference: {fileID: 0}
+    - target: {fileID: 489442748, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
+      propertyPath: m_Name
+      value: greenHole
+      objectReference: {fileID: 0}
     - target: {fileID: 489442749, guid: 8812d93e0fa3ff643860efe155ae03b8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -1435,7 +1443,7 @@ Light:
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 3.45
+  m_BounceIntensity: 4.45
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
