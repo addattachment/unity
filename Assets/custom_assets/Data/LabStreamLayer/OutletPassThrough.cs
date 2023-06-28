@@ -8,7 +8,7 @@ namespace LSL
     public class m_LSL_Event : UnityEvent<string>
     {
     }
-    public enum Marker { game_start = 0, ball_release = 1, ball_good_hit = 2, ball_bad_hit = 3, score = 4, test = 5, end_game = 6, LSL_test = 7 };
+    public enum Marker { game_start = 0, ball_release = 1, ball_good_hit = 2, ball_bad_hit = 3, score = 4, test = 5, end_game = 6, LSL_test = 7, caregiver_in_view = 8, caregiver_starts_feedback = 9, caregiver_stops_feedback = 10 };
 
     public class OutletPassThrough : MonoBehaviour
     {
@@ -88,7 +88,7 @@ namespace LSL
 
         private void SendMarker(int marker)
         {
-            sample[0] = "test" + marker;
+            sample[0] = "" + marker;
             if (outlet_1 != null)
             {
                 outlet_1.push_sample(sample);
@@ -101,7 +101,7 @@ namespace LSL
                 //Debug.Log("push sample outlet 2");
 
             }
-            //Debug.Log("LSL stream: " + Time.time + " " + sample);
+            Debug.Log("LSL stream: " + Time.time + " " + sample[0]);
 
         }
 

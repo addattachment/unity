@@ -24,6 +24,7 @@
     {
         if (state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().fadedToBlack & !state.caregiverFeedback.feedbackIsStarted)
         {
+            state.LSLOutlet.SendMarker(LSL.Marker.caregiver_in_view);
             state.caregiverFeedback.GiveFeedback();
         }
 
@@ -34,6 +35,7 @@
             state.caregiverFeedback.feedbackIsStarted = false;
             state.caregiverFeedbackEvent.Set(state.gameManager.currentTrial, false);
             state.ws.SendWSMessage(state.caregiverFeedbackEvent.SaveToString());
+            state.LSLOutlet.SendMarker(LSL.Marker.caregiver_stops_feedback);
             state.SwitchState(state.caregiverFeedbackConfirmState);
         }
     }

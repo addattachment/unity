@@ -1,3 +1,4 @@
+using LSL;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,11 +28,14 @@ public class CaregiverFeedback : MonoBehaviour
     [SerializeField] private bool testFade;
     public bool fadedToBlack = false;
     public GameObject screenSetup;
+    private OutletPassThrough LSLOutlet;
+
 
     // Start is called before the first frame update    
     void Awake()
     {
         gameManager = GameManager.Instance;
+        LSLOutlet = OutletPassThrough.Instance;
     }
 
     // Update is called once per frame
@@ -109,6 +113,7 @@ public class CaregiverFeedback : MonoBehaviour
         Atmosphere emotion = trialList.GetCurrentTrial().GetAtmosphere();
         caregiverEmotion.SetAtmosphere(emotion);
         audioSource.Play();
+        LSLOutlet.SendMarker(Marker.caregiver_starts_feedback);
         feedbackIsStarted = true;
     }
 

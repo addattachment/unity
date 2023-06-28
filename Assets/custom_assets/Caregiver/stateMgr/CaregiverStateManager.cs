@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using LSL;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CaregiverStateManager : MonoBehaviour
@@ -23,6 +24,7 @@ public class CaregiverStateManager : MonoBehaviour
     public LightingMgr lightingMgr;
     [Header("data connections")]
     [HideInInspector] public WsClient ws;
+    [HideInInspector] public OutletPassThrough LSLOutlet;
     public CaregiverFeedbackEvent caregiverFeedbackEvent;
     public GameObject NPC_cam;
 
@@ -39,6 +41,8 @@ public class CaregiverStateManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         ws = WsClient.Instance;
+        LSLOutlet = OutletPassThrough.Instance;
+
         Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIdleState";
