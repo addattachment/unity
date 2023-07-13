@@ -101,7 +101,7 @@ namespace LSL
                 //Debug.Log("push sample outlet 2");
 
             }
-            Debug.Log("LSL stream: " + Time.time + " " + sample[0]);
+            //Debug.Log("LSL stream: " + Time.time + " " + sample[0]);
 
         }
 

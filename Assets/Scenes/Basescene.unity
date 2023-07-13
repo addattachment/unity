@@ -622,7 +622,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5243160710955980869, guid: 9d5ffc7e8f265824e850dac751334930, type: 3}
       propertyPath: _steps
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5243160710955980869, guid: 9d5ffc7e8f265824e850dac751334930, type: 3}
       propertyPath: ColliderTag
@@ -3405,7 +3405,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962032292}
   m_LocalRotation: {x: 0.021980796, y: -0, z: -0, w: 0.9997584}
-  m_LocalPosition: {x: 0, y: 0.431, z: -0.49}
+  m_LocalPosition: {x: 0, y: 0.4, z: -0.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3427,13 +3427,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9f82377aeb9704193bd866d119aaa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showFps: 0
-  useDefaultFps: 1
-  customFps: 0
   screenFade: 1
-  eyeTracking: 1
+  eyeTracking: 0
+  trackingMode: 0
+  faceTracking: 0
+  lipsyncTracking: 0
+  lateLatching: 0
+  latelatchingDebug: 0
+  bodyTracking: 0
   foveationLevel: -1
-  appCheckResult: 100
+  openMRC: 0
+  foregroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backgroundCamObj: {fileID: 0}
+  foregroundCamObj: {fileID: 0}
+  mrcBackgroundRT: {fileID: 0}
+  mrcForegroundRT: {fileID: 0}
   useRecommendedAntiAliasingLevel: 1
 --- !u!114 &962032295
 MonoBehaviour:

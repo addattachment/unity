@@ -212,7 +212,7 @@ public class Slingshot : MonoBehaviour
                     //minimum distance to move for y, as this is the least distinguisishable in any case
                     var _y_displ_dir = _launchForce.y >= _mustReachForce.y ? 1 : -1;
                     var _min_y_displ = Mathf.Sqrt(Mathf.Pow(hitTarget.GetComponent<Renderer>().bounds.size.x, 2) - Mathf.Pow(Mathf.Abs(_launchForce.y - _mustReachForce.y), 2));
-                    var _move_y = Random.Range(_min_y_displ, _min_y_displ + 0.1f) * _y_displ_dir;
+                    var _move_y = Random.Range(_min_y_displ+0.05f, _min_y_displ + 0.1f) * _y_displ_dir;
                     Vector3 deflectionVector = new(0, _move_y);
                     Debug.Log("deflection: " + deflectionVector + " diff "+diff+" bounds "+ hitTarget.GetComponent<Renderer>().bounds.size);
                     _launchForce += deflectionVector;

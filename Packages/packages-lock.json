@@ -98,7 +98,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.pico.livepreview": {
-      "version": "file:C:/Users/student/Downloads/PICO Unity Live Preview Plugin (Experiment)",
+      "version": "file:C:/Users/student/Downloads/PICO Unity Live Preview Plugin (Experiment) (1)",
       "depth": 0,
       "source": "local",
       "dependencies": {
@@ -144,7 +144,7 @@
     },
     "com.unity.subsystemregistration": {
       "version": "1.1.0",
-      "depth": 1,
+      "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.subsystems": "1.0.0"
@@ -296,14 +296,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.picoxr": {
-      "version": "file:../VR/PICO Unity Integration SDK v211",
+      "version": "file:C:/Users/student/Downloads/PICO Unity Integration SDK-220",
       "depth": 0,
       "source": "local",
       "dependencies": {
-        "com.unity.xr.management": "3.2.16",
-        "com.unity.ugui": "1.0.0",
-        "com.unity.subsystemregistration": "1.0.6",
-        "com.unity.xr.interaction.toolkit": "0.9.4-preview"
+        "com.unity.xr.management": "4.0.0",
+        "com.unity.xr.interaction.toolkit": "2.0.0"
       }
     },
     "com.unity.modules.ai": {

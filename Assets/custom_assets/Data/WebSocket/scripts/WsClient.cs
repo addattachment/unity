@@ -138,7 +138,7 @@ public class WsClient : MonoBehaviour
 
     public void SendWSMessage(string message)
     {
-        Debug.Log("sending " + message);
+        //Debug.Log("sending " + message);
         DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)
