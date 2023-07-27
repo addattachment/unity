@@ -221,8 +221,8 @@ public class Slingshot : MonoBehaviour
             case ReachTargetEnum.mayNPC:
                 _direction = hitTargetLoc - _ballPos;
                 _direction = _direction.normalized; // A vector FROM the ball TOWARDS the hittarget
-                _direction.x += Random.Range(-0.25f, 0.25f);
-                _direction.y += Random.Range(-0.25f, 0.25f);
+                _direction.x += Random.Range(-0.15f, 0.15f);
+                _direction.y += Random.Range(-0.15f, 0.15f);
 
                 _launchForce = _direction * launchForceMultiplier;
                 //compensate for gravity TODO seems correct, BUT WHY??

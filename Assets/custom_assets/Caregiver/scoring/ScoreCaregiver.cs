@@ -64,8 +64,8 @@ public class ScoreCaregiver : MonoBehaviour
         iTween.MoveBy(caregiverCircle, transformCaregiver);
         if (resetPos)
         {
-            meCircle.transform.position = new Vector3(startPosMeCircle.x, meCircle.transform.position.y, meCircle.transform.position.z);
-            caregiverCircle.transform.position = new Vector3(startPosCaregiverCircle.x, caregiverCircle.transform.position.y, caregiverCircle.transform.position.z);
+            meCircle.transform.position = new Vector3(startPosMeCircleOrig.x, meCircle.transform.position.y, meCircle.transform.position.z);
+            caregiverCircle.transform.position = new Vector3(startPosCaregiverCircleOrig.x, caregiverCircle.transform.position.y, caregiverCircle.transform.position.z);
         }
         _collider.SetActive(true);
         appear.Raise();

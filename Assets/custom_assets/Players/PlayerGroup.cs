@@ -210,8 +210,6 @@ public class PlayerGroup : MonoBehaviour
     ///
     /// lets work with 3 or 4 lists of NPC & player scoring chances
     /// 
-    /// 
-    /// 
     [SerializeField]
     private int[,] losingSessionsNPCSide = new int[5, 5] {
         {1,1,0,0,1},
@@ -253,10 +251,7 @@ public class PlayerGroup : MonoBehaviour
     public void SetPlayerScoringChance(Slingshot slingshot, bool isGoodTrial)//Trial currentTrial)
     {
         int currentBall = activeParticipant.currentBallInTrial;
-        //Chance setting
-        float guess = Random.Range(0.0f, 1.0f);
 
-        //Trial currentTrial = trialList.GetCurrentTrial();
         ReachTargetEnum reachChance;
         if (gameManager.allMust)
         {
@@ -266,6 +261,8 @@ public class PlayerGroup : MonoBehaviour
         {
             if (gameManager.isTutorial)
             {
+                //Chance setting
+                float guess = Random.Range(0.0f, 1.0f);
                 if (guess >= 0.3f)
                 {
                     reachChance = ReachTargetEnum.preferredMust;
@@ -277,21 +274,19 @@ public class PlayerGroup : MonoBehaviour
             }
             else
             {
+
                 currentRow = gameManager.currentTrial % 5;
                 currentPos = currentBall;
                 currentNPCResponse = isGoodTrial ? winningSessionsNPCSide[currentRow, currentPos] : losingSessionsNPCSide[currentRow, currentPos];
-                currentPlayerResponse = isGoodTrial ? winningSessionsNPCSide[currentRow, currentPos] : losingSessionsPlayerSide[currentRow, currentPos];
+                currentPlayerResponse = isGoodTrial ? winningSessionsPlayerSide[currentRow, currentPos] : losingSessionsPlayerSide[currentRow, currentPos];
 
                 if (isGoodTrial)
                 {
-                    // NPC has 30% chance of scoring
-                    // Player has 40% of balls which are steered towards targets
-
                     if (activeParticipant.isRealPlayer)
                     {
                         // have a chance that the ball must hit the targets
                         // equal chance must vs may?
-                        if (winningSessionsNPCSide[gameManager.currentTrial % 5, currentBall] == 1)//guess >= 0.6f)
+                        if (winningSessionsNPCSide[gameManager.currentTrial % 5, currentBall] == 1)
                         {
                             reachChance = ReachTargetEnum.preferredMust;
                         }
@@ -304,25 +299,23 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // equal or less chance of scoring than human player??
                         // equal chance must vs mustn
-                        if (winningSessionsNPCSide[currentRow, currentBall] == 1)// guess >= 0.6f)
+                        if (winningSessionsNPCSide[currentRow, currentBall] == 1)
                         {
-                            reachChance = ReachTargetEnum.musnt; // must
+                            reachChance = ReachTargetEnum.mayNPC; 
                         }
                         else
                         {
-                            reachChance = ReachTargetEnum.mayNPC;
+                            reachChance = ReachTargetEnum.musnt;
                         }
                     }
                 }
                 else
                 {
-                    // NPC 60% chance of scoring
-                    // player max random[20-50%] chance of scoring
                     if (activeParticipant.isRealPlayer)
                     {
                         // have a low chance that the ball must hit the targets 
                         // most of the time it should be musn't, sometimes may
-                        if (losingSessionsPlayerSide[currentRow, currentBall] == 1)// guess >= 0.7f)
+                        if (losingSessionsPlayerSide[currentRow, currentBall] == 1)
                         {
                             reachChance = ReachTargetEnum.may;
                         }
@@ -335,7 +328,7 @@ public class PlayerGroup : MonoBehaviour
                     {
                         // equal or less chance of scoring than human player??
                         // most of the time should be must, sometimes may
-                        if (losingSessionsNPCSide[currentRow, currentBall] == 1)//guess >= 0.4f)
+                        if (losingSessionsNPCSide[currentRow, currentBall] == 1)
                         {
                             reachChance = ReachTargetEnum.must;
                         }
@@ -347,9 +340,7 @@ public class PlayerGroup : MonoBehaviour
                 }
             }
         }
-        //debug_text.SetToggleReach(reachChance, activeParticipant);
-        //debug_text.SetDebugText("" + reachChance + activeParticipant);
-        Debug.Log(activeParticipant + " reachChance " + reachChance);// + " guess: " + guess);
+        Debug.Log(activeParticipant + " reachChance " + reachChance + " for ball " + currentBall + " for trial "+ gameManager.currentTrial);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

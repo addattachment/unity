@@ -22,6 +22,7 @@ public class TrialState : StateMachine
         state.trialPhase = "TrialState";
         //state.players.PrepNewShootingTurn(state.trialList, state.targets);
         state.gameManager.trialIsRunning = true;
+        state.currentTrial = state.trialList.GetCurrentTrial();
     }
 
     public override void UpdateState(TrialStateManager state)

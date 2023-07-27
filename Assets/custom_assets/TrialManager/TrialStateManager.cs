@@ -20,6 +20,7 @@ public class TrialStateManager : MonoBehaviour
     public TrophyStateManager trophyStates;
     public CountDown countDown;
 
+    public Trial currentTrial;
 
     public float IntroPauseTimeForStart = 1.0f;
 

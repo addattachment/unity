@@ -6850,3 +6850,773 @@
 [2023-07-13 14:52:25.095] [pxr_streamer] [error] [35092|12468]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1c8b54c06d0
 [2023-07-13 14:52:25.096] [pxr_streamer] [info] [35092|12468]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1c916280a60
 [2023-07-13 14:52:25.096] [pxr_streamer] [error] [35092|37148]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1c916280a60
+[2023-07-19 13:26:06.596] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-07-19 13:26:06.596] [pxr_streamer] [info] process id= 54104
+[2023-07-19 13:26:06.596] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d8ce88aa90
+[2023-07-19 13:26:06.596] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d8ce7a2510, this= 0x1d918cc71f0
+[2023-07-19 13:26:06.596] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= Undefined, this= 0x1d918cc71f0
+[2023-07-19 13:26:06.596] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d918cc71f0
+[2023-07-19 13:26:06.596] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d918cc71f0
+[2023-07-19 13:26:06.597] [pxr_streamer] [debug] [54104|2964]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d918cc71f0
+[2023-07-19 13:26:06.597] [pxr_streamer] [debug] [54104|2964]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d94f089e70
+[2023-07-19 13:26:06.597] [pxr_streamer] [info] [54104|2964]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d94f089e70
+[2023-07-19 13:26:08.642] [pxr_streamer] [error] [54104|9544]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1d94f089e70
+[2023-07-19 13:26:08.643] [pxr_streamer] [info] [54104|9544]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1d918cc71f0
+[2023-07-19 13:26:08.643] [pxr_streamer] [error] [54104|2964]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1d918cc71f0
+[2023-07-19 13:27:53.260] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d972be6a30
+[2023-07-19 13:27:53.260] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d8ce7a1a70, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:53.260] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d918cc71f0
+[2023-07-19 13:27:53.260] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d8ce88aa90
+[2023-07-19 13:27:53.260] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d94f089e70
+[2023-07-19 13:27:53.262] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:53.262] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:53.262] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:53.262] [pxr_streamer] [debug] [54104|12304]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:53.262] [pxr_streamer] [debug] [54104|12304]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d9721f4840
+[2023-07-19 13:27:53.262] [pxr_streamer] [info] [54104|12304]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d9721f4840
+[2023-07-19 13:27:55.316] [pxr_streamer] [error] [54104|47564]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1d9721f4840
+[2023-07-19 13:27:55.316] [pxr_streamer] [info] [54104|47564]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1d96dfbb7a0
+[2023-07-19 13:27:55.316] [pxr_streamer] [error] [54104|12304]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1d96dfbb7a0
+[2023-07-19 13:29:44.230] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d96e144f40
+[2023-07-19 13:29:44.230] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d8c30133b0, this= 0x1d96de93220
+[2023-07-19 13:29:44.230] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d96dfbb7a0
+[2023-07-19 13:29:44.230] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d972be6a30
+[2023-07-19 13:29:44.230] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d9721f4840
+[2023-07-19 13:29:44.232] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d96de93220
+[2023-07-19 13:29:44.232] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d96de93220
+[2023-07-19 13:29:44.232] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d96de93220
+[2023-07-19 13:29:44.232] [pxr_streamer] [debug] [54104|19656]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d96de93220
+[2023-07-19 13:29:44.232] [pxr_streamer] [debug] [54104|19656]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d9721eece0
+[2023-07-19 13:29:44.232] [pxr_streamer] [info] [54104|19656]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d9721eece0
+[2023-07-19 13:29:46.265] [pxr_streamer] [error] [54104|13716]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1d9721eece0
+[2023-07-19 13:29:46.265] [pxr_streamer] [info] [54104|13716]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1d96de93220
+[2023-07-19 13:29:46.265] [pxr_streamer] [error] [54104|19656]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1d96de93220
+[2023-07-19 13:30:35.567] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d892f8b250
+[2023-07-19 13:30:35.567] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d90f52c730, this= 0x1d96de91f60
+[2023-07-19 13:30:35.567] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d96de93220
+[2023-07-19 13:30:35.567] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d96e144f40
+[2023-07-19 13:30:35.567] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d9721eece0
+[2023-07-19 13:30:35.568] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d96de91f60
+[2023-07-19 13:30:35.568] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d96de91f60
+[2023-07-19 13:30:35.568] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d96de91f60
+[2023-07-19 13:30:35.568] [pxr_streamer] [debug] [54104|45064]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d96de91f60
+[2023-07-19 13:30:35.569] [pxr_streamer] [debug] [54104|45064]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d93e1db540
+[2023-07-19 13:30:35.569] [pxr_streamer] [info] [54104|45064]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d93e1db540
+[2023-07-19 13:30:37.618] [pxr_streamer] [error] [54104|44636]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1d93e1db540
+[2023-07-19 13:30:37.618] [pxr_streamer] [info] [54104|44636]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1d96de91f60
+[2023-07-19 13:30:37.618] [pxr_streamer] [error] [54104|45064]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1d96de91f60
+[2023-07-19 13:37:21.956] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d9753ae370
+[2023-07-19 13:37:21.956] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d94fa3fcb0, this= 0x1d974d55cd0
+[2023-07-19 13:37:21.956] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d96de91f60
+[2023-07-19 13:37:21.956] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d892f8b250
+[2023-07-19 13:37:21.956] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d93e1db540
+[2023-07-19 13:37:21.957] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d974d55cd0
+[2023-07-19 13:37:21.958] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d974d55cd0
+[2023-07-19 13:37:21.958] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d974d55cd0
+[2023-07-19 13:37:21.958] [pxr_streamer] [debug] [54104|39848]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d974d55cd0
+[2023-07-19 13:37:21.958] [pxr_streamer] [debug] [54104|39848]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d972af6a30
+[2023-07-19 13:37:21.958] [pxr_streamer] [info] [54104|39848]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d972af6a30
+[2023-07-19 13:37:23.989] [pxr_streamer] [error] [54104|13468]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x1d972af6a30
+[2023-07-19 13:37:23.989] [pxr_streamer] [info] [54104|13468]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x1d974d55cd0
+[2023-07-19 13:37:23.990] [pxr_streamer] [error] [54104|39848]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x1d974d55cd0
+[2023-07-19 14:59:54.118] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d9d5fc3dd0
+[2023-07-19 14:59:54.118] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d90f52afc0, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.118] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d974d55cd0
+[2023-07-19 14:59:54.118] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d9753ae370
+[2023-07-19 14:59:54.118] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d972af6a30
+[2023-07-19 14:59:54.120] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.120] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.120] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.121] [pxr_streamer] [debug] [54104|18280]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.121] [pxr_streamer] [debug] [54104|18280]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d93e1df0c0
+[2023-07-19 14:59:54.121] [pxr_streamer] [info] [54104|18280]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d93e1df0c0
+[2023-07-19 14:59:54.121] [pxr_streamer] [info] [54104|43176]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.122] [pxr_streamer] [debug] [54104|43176]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:1721, this= 0x1d93e1df0c0
+[2023-07-19 14:59:54.122] [pxr_streamer] [debug] [54104|18280]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.129] [pxr_streamer] [info] [54104|18280]driver_impl.cpp:59 Connect: send connect request : { id = QbKajRGq, timestamp = 603151391, from = Driver, to = SRS, connection info : {id: "fStylbtGOC9Mshor\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x1d9d5fc3dd0
+[2023-07-19 14:59:54.130] [pxr_streamer] [info] [54104|18280]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= fStylbtGOC9Mshor, this= 0x1d94f3848e0
+[2023-07-19 14:59:54.131] [pxr_streamer] [info] [54104|18280]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = wJi7wkgH, timestamp = 603151398, from = SRS, to = Driver, req_id = QbKajRGq, result_code = 1 }, this= 0x1d9d5fc3dd0
+[2023-07-19 14:59:54.131] [pxr_streamer] [debug] [54104|18280]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x1d94f3848e0
+[2023-07-19 15:00:16.197] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x1d94f3848e0
+[2023-07-19 15:00:16.198] [pxr_streamer] [debug] [54104|18280]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x1d94f3848e0
+[2023-07-19 15:00:16.198] [pxr_streamer] [info] [54104|18280]driver_impl.cpp:81 Disconnect: send disconnect request : { id = r2CzX3JJ, timestamp = 603173465, from = Driver, to = SRS }, this= 0x1d9d5fc3dd0
+[2023-07-19 15:00:16.198] [pxr_streamer] [debug] [54104|18280]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d93e1df0c0
+[2023-07-19 15:00:16.198] [pxr_streamer] [error] [54104|43176]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x1d93e1df0c0
+[2023-07-19 15:00:16.198] [pxr_streamer] [error] [54104|43176]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x1d93e1df0c0
+[2023-07-19 15:00:16.198] [pxr_streamer] [error] [54104|43176]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x1d93e1df0c0
+[2023-07-19 15:16:24.684] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d892de2df0
+[2023-07-19 15:16:24.684] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d8667814f0, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.684] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d94f3848e0
+[2023-07-19 15:16:24.684] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d9d5fc3dd0
+[2023-07-19 15:16:24.684] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d93e1df0c0
+[2023-07-19 15:16:24.686] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.686] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.686] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.686] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.686] [pxr_streamer] [debug] [54104|40900]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d8c3056d80
+[2023-07-19 15:16:24.686] [pxr_streamer] [info] [54104|40900]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d8c3056d80
+[2023-07-19 15:16:24.687] [pxr_streamer] [info] [54104|51828]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.687] [pxr_streamer] [debug] [54104|51828]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:5369, this= 0x1d8c3056d80
+[2023-07-19 15:16:24.687] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.687] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:59 Connect: send connect request : { id = Qdll6Pnt, timestamp = 604141954, from = Driver, to = SRS, connection info : {id: "y6CWsarzIyrMu19f\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x1d892de2df0
+[2023-07-19 15:16:24.687] [pxr_streamer] [info] [54104|40900]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= y6CWsarzIyrMu19f, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.687] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = 9LVY3833, timestamp = 604141955, from = SRS, to = Driver, req_id = Qdll6Pnt, result_code = 1 }, this= 0x1d892de2df0
+[2023-07-19 15:16:24.687] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.688] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = IQSoODv2, timestamp = 604141955, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x1d892de2df0
+[2023-07-19 15:16:24.689] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.689] [pxr_streamer] [info] [54104|40900]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x1d9d58750c0
+[2023-07-19 15:16:24.690] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = ouMdwIP9, timestamp = 604141957, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x1d892de2df0
+[2023-07-19 15:16:24.691] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = K5NApInp, timestamp = 604141958, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x1d892de2df0
+[2023-07-19 15:16:24.691] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x1d9d58750c0
+[2023-07-19 15:16:53.468] [pxr_streamer] [error] [54104|40900]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58750c0
+[2023-07-19 15:17:20.696] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x1d9d58750c0
+[2023-07-19 15:17:20.696] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = JjXOKXau, timestamp = 604197964, from = Driver, to = SRS }, this= 0x1d892de2df0
+[2023-07-19 15:17:20.696] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x1d9d58750c0
+[2023-07-19 15:17:20.696] [pxr_streamer] [debug] [54104|40900]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x1d9d58750c0
+[2023-07-19 15:17:20.696] [pxr_streamer] [info] [54104|40900]driver_impl.cpp:81 Disconnect: send disconnect request : { id = UdzZ4QJl, timestamp = 604197964, from = Driver, to = SRS }, this= 0x1d892de2df0
+[2023-07-19 15:17:20.697] [pxr_streamer] [debug] [54104|40900]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c3056d80
+[2023-07-19 15:17:20.697] [pxr_streamer] [error] [54104|51828]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x1d8c3056d80
+[2023-07-19 15:17:20.697] [pxr_streamer] [error] [54104|51828]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x1d8c3056d80
+[2023-07-19 15:17:20.697] [pxr_streamer] [error] [54104|51828]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x1d8c3056d80
+[2023-07-19 15:17:23.434] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.434] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d866782120, this= 0x1d9d5875700
+[2023-07-19 15:17:23.434] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d9d58750c0
+[2023-07-19 15:17:23.434] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d892de2df0
+[2023-07-19 15:17:23.434] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c3056d80
+[2023-07-19 15:17:23.436] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d9d5875700
+[2023-07-19 15:17:23.436] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d9d5875700
+[2023-07-19 15:17:23.436] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d9d5875700
+[2023-07-19 15:17:23.436] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d9d5875700
+[2023-07-19 15:17:23.436] [pxr_streamer] [debug] [54104|29940]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d8c30540e0
+[2023-07-19 15:17:23.436] [pxr_streamer] [info] [54104|29940]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d8c30540e0
+[2023-07-19 15:17:23.437] [pxr_streamer] [info] [54104|53988]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x1d9d5875700
+[2023-07-19 15:17:23.437] [pxr_streamer] [debug] [54104|53988]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:15694, this= 0x1d8c30540e0
+[2023-07-19 15:17:23.437] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x1d9d5875700
+[2023-07-19 15:17:23.437] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:59 Connect: send connect request : { id = ekmDJyBA, timestamp = 604200705, from = Driver, to = SRS, connection info : {id: "vVctzlE7KbiUYz78\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.437] [pxr_streamer] [info] [54104|29940]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= vVctzlE7KbiUYz78, this= 0x1d9d5875700
+[2023-07-19 15:17:23.437] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = AswD1v1J, timestamp = 604200705, from = SRS, to = Driver, req_id = ekmDJyBA, result_code = 1 }, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.437] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x1d9d5875700
+[2023-07-19 15:17:23.439] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = WQKhQlii, timestamp = 604200706, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.439] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x1d9d5875700
+[2023-07-19 15:17:23.439] [pxr_streamer] [info] [54104|29940]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x1d9d5875700
+[2023-07-19 15:17:23.439] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = 2AEtgYNc, timestamp = 604200707, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.440] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = LW9UbRym, timestamp = 604200707, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x1d8c30e4450
+[2023-07-19 15:17:23.440] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x1d9d5875700
+[2023-07-19 15:17:23.502] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:17:53.507] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:18:23.512] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:18:53.519] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:19:23.529] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:19:53.537] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:20:23.544] [pxr_streamer] [error] [54104|29940]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d5875700
+[2023-07-19 15:20:27.574] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x1d9d5875700
+[2023-07-19 15:20:27.574] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = lstMcwIg, timestamp = 604384841, from = Driver, to = SRS }, this= 0x1d8c30e4450
+[2023-07-19 15:20:27.574] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x1d9d5875700
+[2023-07-19 15:20:27.574] [pxr_streamer] [debug] [54104|29940]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x1d9d5875700
+[2023-07-19 15:20:27.574] [pxr_streamer] [info] [54104|29940]driver_impl.cpp:81 Disconnect: send disconnect request : { id = KHXJgIVf, timestamp = 604384842, from = Driver, to = SRS }, this= 0x1d8c30e4450
+[2023-07-19 15:20:27.574] [pxr_streamer] [debug] [54104|29940]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c30540e0
+[2023-07-19 15:20:27.575] [pxr_streamer] [error] [54104|53988]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x1d8c30540e0
+[2023-07-19 15:20:27.575] [pxr_streamer] [error] [54104|53988]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x1d8c30540e0
+[2023-07-19 15:20:27.575] [pxr_streamer] [error] [54104|53988]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x1d8c30540e0
+[2023-07-19 15:20:29.583] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d918d31b60
+[2023-07-19 15:20:29.583] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d866781cc0, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.583] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d9d5875700
+[2023-07-19 15:20:29.583] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d8c30e4450
+[2023-07-19 15:20:29.583] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c30540e0
+[2023-07-19 15:20:29.585] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.585] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.585] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.585] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.585] [pxr_streamer] [debug] [54104|54144]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d8c304a180
+[2023-07-19 15:20:29.585] [pxr_streamer] [info] [54104|54144]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d8c304a180
+[2023-07-19 15:20:29.585] [pxr_streamer] [info] [54104|32424]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.585] [pxr_streamer] [debug] [54104|32424]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:52639, this= 0x1d8c304a180
+[2023-07-19 15:20:29.586] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.586] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:59 Connect: send connect request : { id = ILyhZt8P, timestamp = 604386853, from = Driver, to = SRS, connection info : {id: "QxYLKXjlsDqiOxIX\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x1d918d31b60
+[2023-07-19 15:20:29.586] [pxr_streamer] [info] [54104|54144]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= QxYLKXjlsDqiOxIX, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.586] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = OKVPafpP, timestamp = 604386854, from = SRS, to = Driver, req_id = ILyhZt8P, result_code = 1 }, this= 0x1d918d31b60
+[2023-07-19 15:20:29.586] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.588] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = qwc8q5R6, timestamp = 604386855, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x1d918d31b60
+[2023-07-19 15:20:29.588] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.588] [pxr_streamer] [info] [54104|54144]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x1d9d58766a0
+[2023-07-19 15:20:29.588] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = WuYF1IRd, timestamp = 604386856, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x1d918d31b60
+[2023-07-19 15:20:29.588] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = TDlAIeB2, timestamp = 604386856, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x1d918d31b60
+[2023-07-19 15:20:29.588] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x1d9d58766a0
+[2023-07-19 15:20:53.549] [pxr_streamer] [error] [54104|54144]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58766a0
+[2023-07-19 15:21:23.559] [pxr_streamer] [error] [54104|54144]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58766a0
+[2023-07-19 15:21:53.565] [pxr_streamer] [error] [54104|54144]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58766a0
+[2023-07-19 15:22:23.574] [pxr_streamer] [error] [54104|54144]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58766a0
+[2023-07-19 15:22:45.967] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x1d9d58766a0
+[2023-07-19 15:22:45.967] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x1d9d58766a0
+[2023-07-19 15:22:45.967] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = yY9mhZEk, timestamp = 604523234, from = Driver, to = SRS }, this= 0x1d918d31b60
+[2023-07-19 15:22:45.967] [pxr_streamer] [debug] [54104|54144]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x1d9d58766a0
+[2023-07-19 15:22:45.967] [pxr_streamer] [info] [54104|54144]driver_impl.cpp:81 Disconnect: send disconnect request : { id = nedmfngI, timestamp = 604523235, from = Driver, to = SRS }, this= 0x1d918d31b60
+[2023-07-19 15:22:45.967] [pxr_streamer] [debug] [54104|54144]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c304a180
+[2023-07-19 15:22:45.967] [pxr_streamer] [error] [54104|32424]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x1d8c304a180
+[2023-07-19 15:22:45.967] [pxr_streamer] [error] [54104|32424]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x1d8c304a180
+[2023-07-19 15:22:45.967] [pxr_streamer] [error] [54104|32424]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x1d8c304a180
+[2023-07-19 15:24:26.608] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x1d787209730
+[2023-07-19 15:24:26.609] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x1d7858b72a0, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.609] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x1d9d58766a0
+[2023-07-19 15:24:26.609] [pxr_streamer] [info] [54104|14164]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x1d918d31b60
+[2023-07-19 15:24:26.609] [pxr_streamer] [debug] [54104|14164]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d8c304a180
+[2023-07-19 15:24:26.610] [pxr_streamer] [debug] [54104|14164]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.610] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.610] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.610] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.610] [pxr_streamer] [debug] [54104|42844]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x1d9721ee460
+[2023-07-19 15:24:26.611] [pxr_streamer] [info] [54104|42844]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x1d9721ee460
+[2023-07-19 15:24:26.611] [pxr_streamer] [info] [54104|36132]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.611] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.611] [pxr_streamer] [debug] [54104|36132]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:3058, this= 0x1d9721ee460
+[2023-07-19 15:24:26.611] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:59 Connect: send connect request : { id = W6EKpUus, timestamp = 604623879, from = Driver, to = SRS, connection info : {id: "if1CKnvKy3aneJXL\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x1d787209730
+[2023-07-19 15:24:26.611] [pxr_streamer] [info] [54104|42844]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= if1CKnvKy3aneJXL, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.612] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = TLKg1tTY, timestamp = 604623879, from = SRS, to = Driver, req_id = W6EKpUus, result_code = 1 }, this= 0x1d787209730
+[2023-07-19 15:24:26.612] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.612] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.612] [pxr_streamer] [error] [54104|14164]streaming_driver_interface_impl.cpp:65 StartStreaming: "device not connected", !device_connected_, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.613] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = 6oQMfzKL, timestamp = 604623880, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x1d787209730
+[2023-07-19 15:24:26.613] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.613] [pxr_streamer] [info] [54104|42844]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x1d9d58753e0
+[2023-07-19 15:24:26.613] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = XyoHFcoU, timestamp = 604623881, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x1d787209730
+[2023-07-19 15:24:26.614] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = aTSrOqYV, timestamp = 604623881, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x1d787209730
+[2023-07-19 15:24:26.614] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x1d9d58753e0
+[2023-07-19 15:24:53.610] [pxr_streamer] [error] [54104|42844]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58753e0
+[2023-07-19 15:25:23.619] [pxr_streamer] [error] [54104|42844]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58753e0
+[2023-07-19 15:25:53.630] [pxr_streamer] [error] [54104|42844]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x1d9d58753e0
+[2023-07-19 15:26:01.328] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x1d9d58753e0
+[2023-07-19 15:26:01.329] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = Q9QW25zx, timestamp = 604718596, from = Driver, to = SRS }, this= 0x1d787209730
+[2023-07-19 15:26:01.329] [pxr_streamer] [info] [54104|14164]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x1d9d58753e0
+[2023-07-19 15:26:01.329] [pxr_streamer] [debug] [54104|42844]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x1d9d58753e0
+[2023-07-19 15:26:01.329] [pxr_streamer] [info] [54104|42844]driver_impl.cpp:81 Disconnect: send disconnect request : { id = alJCg7yR, timestamp = 604718597, from = Driver, to = SRS }, this= 0x1d787209730
+[2023-07-19 15:26:01.329] [pxr_streamer] [debug] [54104|42844]transport_client_tcp2.cpp:73 Stop: called, this= 0x1d9721ee460
+[2023-07-19 15:26:01.329] [pxr_streamer] [error] [54104|36132]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x1d9721ee460
+[2023-07-19 15:26:01.329] [pxr_streamer] [error] [54104|36132]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x1d9721ee460
+[2023-07-19 15:26:01.329] [pxr_streamer] [error] [54104|36132]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x1d9721ee460
+[2023-07-19 15:33:23.078] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-07-19 15:33:23.078] [pxr_streamer] [info] process id= 54144
+[2023-07-19 15:33:23.078] [pxr_streamer] [info] [54144|44380]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x284fbba0180
+[2023-07-19 15:33:23.078] [pxr_streamer] [debug] [54144|44380]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x286b9e69e70, this= 0x286b91b52c0
+[2023-07-19 15:33:23.078] [pxr_streamer] [debug] [54144|44380]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= Undefined, this= 0x286b91b52c0
+[2023-07-19 15:33:23.078] [pxr_streamer] [error] [54144|44380]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x286b91b52c0
+[2023-07-19 15:33:23.078] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x286b91b52c0
+[2023-07-19 15:33:23.078] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x286b91b52c0
+[2023-07-19 15:33:23.078] [pxr_streamer] [debug] [54144|47072]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x286b72c6be0
+[2023-07-19 15:33:23.079] [pxr_streamer] [info] [54144|47072]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x286b72c6be0
+[2023-07-19 15:33:23.079] [pxr_streamer] [info] [54144|7132]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x286b91b52c0
+[2023-07-19 15:33:23.079] [pxr_streamer] [debug] [54144|7132]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:31791, this= 0x286b72c6be0
+[2023-07-19 15:33:23.079] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x286b91b52c0
+[2023-07-19 15:33:23.079] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:59 Connect: send connect request : { id = kfiSLgBl, timestamp = 605160347, from = Driver, to = SRS, connection info : {id: "B2O36w9IGw8vEhWm\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x284fbba0180
+[2023-07-19 15:33:23.079] [pxr_streamer] [info] [54144|47072]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= B2O36w9IGw8vEhWm, this= 0x286b91b52c0
+[2023-07-19 15:33:23.080] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = aIPcO6Ht, timestamp = 605160348, from = SRS, to = Driver, req_id = kfiSLgBl, result_code = 1 }, this= 0x284fbba0180
+[2023-07-19 15:33:23.080] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x286b91b52c0
+[2023-07-19 15:33:23.081] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x286b91b52c0
+[2023-07-19 15:33:23.081] [pxr_streamer] [error] [54144|44380]streaming_driver_interface_impl.cpp:65 StartStreaming: "device not connected", !device_connected_, this= 0x286b91b52c0
+[2023-07-19 15:33:23.083] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = usayQxgY, timestamp = 605160350, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x284fbba0180
+[2023-07-19 15:33:23.083] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x286b91b52c0
+[2023-07-19 15:33:23.083] [pxr_streamer] [info] [54144|47072]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x286b91b52c0
+[2023-07-19 15:33:23.083] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = IjssHI1k, timestamp = 605160351, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x284fbba0180
+[2023-07-19 15:33:23.084] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = BcHEn8eA, timestamp = 605160351, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x284fbba0180
+[2023-07-19 15:33:23.084] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x286b91b52c0
+[2023-07-19 15:33:23.738] [pxr_streamer] [error] [54144|47072]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x286b91b52c0
+[2023-07-19 15:33:53.741] [pxr_streamer] [error] [54144|47072]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x286b91b52c0
+[2023-07-19 15:33:55.561] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x286b91b52c0
+[2023-07-19 15:33:55.562] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = HISDyytF, timestamp = 605192829, from = Driver, to = SRS }, this= 0x284fbba0180
+[2023-07-19 15:33:55.562] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x286b91b52c0
+[2023-07-19 15:33:55.562] [pxr_streamer] [debug] [54144|47072]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x286b91b52c0
+[2023-07-19 15:33:55.562] [pxr_streamer] [info] [54144|47072]driver_impl.cpp:81 Disconnect: send disconnect request : { id = EWgPq6cK, timestamp = 605192829, from = Driver, to = SRS }, this= 0x284fbba0180
+[2023-07-19 15:33:55.562] [pxr_streamer] [debug] [54144|47072]transport_client_tcp2.cpp:73 Stop: called, this= 0x286b72c6be0
+[2023-07-19 15:33:55.562] [pxr_streamer] [error] [54144|7132]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x286b72c6be0
+[2023-07-19 15:33:55.562] [pxr_streamer] [error] [54144|7132]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x286b72c6be0
+[2023-07-19 15:33:55.562] [pxr_streamer] [error] [54144|7132]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x286b72c6be0
+[2023-07-19 16:21:06.493] [pxr_streamer] [info] [54144|44380]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x284fe32ad70
+[2023-07-19 16:21:06.493] [pxr_streamer] [debug] [54144|44380]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x284fce65710, this= 0x286be1f6010
+[2023-07-19 16:21:06.493] [pxr_streamer] [debug] [54144|44380]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x286b91b52c0
+[2023-07-19 16:21:06.493] [pxr_streamer] [info] [54144|44380]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x284fbba0180
+[2023-07-19 16:21:06.494] [pxr_streamer] [debug] [54144|44380]transport_client_tcp2.cpp:73 Stop: called, this= 0x286b72c6be0
+[2023-07-19 16:21:06.496] [pxr_streamer] [debug] [54144|44380]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [error] [54144|44380]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [debug] [54144|10344]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [debug] [54144|10344]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x286c57de7f0
+[2023-07-19 16:21:06.496] [pxr_streamer] [info] [54144|10344]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x286c57de7f0
+[2023-07-19 16:21:06.496] [pxr_streamer] [info] [54144|19720]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [debug] [54144|19720]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:34342, this= 0x286c57de7f0
+[2023-07-19 16:21:06.496] [pxr_streamer] [debug] [54144|10344]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x286be1f6010
+[2023-07-19 16:21:06.496] [pxr_streamer] [info] [54144|10344]driver_impl.cpp:59 Connect: send connect request : { id = rZ9bC2xB, timestamp = 608023764, from = Driver, to = SRS, connection info : {id: "yCLkAZcZ3apmF49D\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x284fe32ad70
+[2023-07-19 16:21:06.497] [pxr_streamer] [info] [54144|10344]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= yCLkAZcZ3apmF49D, this= 0x286be1f6010
+[2023-07-19 16:21:06.497] [pxr_streamer] [info] [54144|10344]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = gmgvEWXA, timestamp = 608023765, from = SRS, to = Driver, req_id = rZ9bC2xB, result_code = 1 }, this= 0x284fe32ad70
+[2023-07-19 16:21:06.497] [pxr_streamer] [debug] [54144|10344]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x286be1f6010
+[2023-07-19 16:21:06.499] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x286be1f6010
+[2023-07-19 16:21:06.499] [pxr_streamer] [error] [54144|44380]streaming_driver_interface_impl.cpp:65 StartStreaming: "device not connected", !device_connected_, this= 0x286be1f6010
+[2023-07-19 16:21:10.134] [pxr_streamer] [info] [54144|44380]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x286be1f6010
+[2023-07-19 16:21:10.134] [pxr_streamer] [debug] [54144|10344]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x286be1f6010
+[2023-07-19 16:21:10.134] [pxr_streamer] [info] [54144|10344]driver_impl.cpp:81 Disconnect: send disconnect request : { id = DxVvLZpZ, timestamp = 608027402, from = Driver, to = SRS }, this= 0x284fe32ad70
+[2023-07-19 16:21:10.134] [pxr_streamer] [debug] [54144|10344]transport_client_tcp2.cpp:73 Stop: called, this= 0x286c57de7f0
+[2023-07-19 16:21:10.134] [pxr_streamer] [error] [54144|19720]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x286c57de7f0
+[2023-07-19 16:21:10.134] [pxr_streamer] [error] [54144|19720]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x286c57de7f0
+[2023-07-19 16:21:10.134] [pxr_streamer] [error] [54144|19720]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x286c57de7f0
+[2023-07-20 15:42:37.465] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-07-20 15:42:37.465] [pxr_streamer] [info] process id= 12844
+[2023-07-20 15:42:37.465] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x26a4844f500
+[2023-07-20 15:42:37.465] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x26967bc9df0, this= 0x268a39f12c0
+[2023-07-20 15:42:37.465] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= Undefined, this= 0x268a39f12c0
+[2023-07-20 15:42:37.465] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x268a39f12c0
+[2023-07-20 15:42:37.465] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x268a39f12c0
+[2023-07-20 15:42:37.466] [pxr_streamer] [debug] [12844|32828]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x268a39f12c0
+[2023-07-20 15:42:37.466] [pxr_streamer] [debug] [12844|32828]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x26a48fe5cf0
+[2023-07-20 15:42:37.466] [pxr_streamer] [info] [12844|32828]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x26a48fe5cf0
+[2023-07-20 15:42:37.466] [pxr_streamer] [info] [12844|42204]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x268a39f12c0
+[2023-07-20 15:42:37.466] [pxr_streamer] [debug] [12844|32828]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x268a39f12c0
+[2023-07-20 15:42:37.467] [pxr_streamer] [debug] [12844|42204]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:34552, this= 0x26a48fe5cf0
+[2023-07-20 15:42:37.470] [pxr_streamer] [info] [12844|32828]driver_impl.cpp:59 Connect: send connect request : { id = A3fVfbL1, timestamp = 692126361, from = Driver, to = SRS, connection info : {id: "5NNvjI1WjZCcVNeZ\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x26a4844f500
+[2023-07-20 15:42:37.470] [pxr_streamer] [info] [12844|32828]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= 5NNvjI1WjZCcVNeZ, this= 0x268a39f12c0
+[2023-07-20 15:42:37.470] [pxr_streamer] [info] [12844|32828]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = Mr3aONSy, timestamp = 692126365, from = SRS, to = Driver, req_id = A3fVfbL1, result_code = 1 }, this= 0x26a4844f500
+[2023-07-20 15:42:37.470] [pxr_streamer] [debug] [12844|32828]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x268a39f12c0
+[2023-07-20 15:44:15.042] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x268a39f12c0
+[2023-07-20 15:44:15.042] [pxr_streamer] [debug] [12844|32828]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x268a39f12c0
+[2023-07-20 15:44:15.042] [pxr_streamer] [info] [12844|32828]driver_impl.cpp:81 Disconnect: send disconnect request : { id = hVVhbhah, timestamp = 692223936, from = Driver, to = SRS }, this= 0x26a4844f500
+[2023-07-20 15:44:15.042] [pxr_streamer] [debug] [12844|32828]transport_client_tcp2.cpp:73 Stop: called, this= 0x26a48fe5cf0
+[2023-07-20 15:44:15.043] [pxr_streamer] [error] [12844|42204]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x26a48fe5cf0
+[2023-07-20 15:44:15.043] [pxr_streamer] [error] [12844|42204]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x26a48fe5cf0
+[2023-07-20 15:44:15.043] [pxr_streamer] [error] [12844|42204]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x26a48fe5cf0
+[2023-07-20 15:44:16.628] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x269dcc5fa00
+[2023-07-20 15:44:16.628] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x2699cb35230, this= 0x269cc753000
+[2023-07-20 15:44:16.628] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x268a39f12c0
+[2023-07-20 15:44:16.628] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x26a4844f500
+[2023-07-20 15:44:16.629] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x26a48fe5cf0
+[2023-07-20 15:44:16.630] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x269cc753000
+[2023-07-20 15:44:16.630] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x269cc753000
+[2023-07-20 15:44:16.630] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x269cc753000
+[2023-07-20 15:44:16.630] [pxr_streamer] [debug] [12844|23128]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x269cc753000
+[2023-07-20 15:44:16.630] [pxr_streamer] [debug] [12844|23128]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x268a6981290
+[2023-07-20 15:44:16.631] [pxr_streamer] [info] [12844|23128]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x268a6981290
+[2023-07-20 15:44:16.631] [pxr_streamer] [info] [12844|42628]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x269cc753000
+[2023-07-20 15:44:16.631] [pxr_streamer] [debug] [12844|42628]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:34600, this= 0x268a6981290
+[2023-07-20 15:44:16.631] [pxr_streamer] [debug] [12844|23128]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x269cc753000
+[2023-07-20 15:44:16.631] [pxr_streamer] [info] [12844|23128]driver_impl.cpp:59 Connect: send connect request : { id = AuRrEqRm, timestamp = 692225525, from = Driver, to = SRS, connection info : {id: "Fbr2x2nxhwST2ayG\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x269dcc5fa00
+[2023-07-20 15:44:16.631] [pxr_streamer] [info] [12844|23128]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= Fbr2x2nxhwST2ayG, this= 0x269cc753000
+[2023-07-20 15:44:16.632] [pxr_streamer] [info] [12844|23128]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = GsEp2nuh, timestamp = 692225526, from = SRS, to = Driver, req_id = AuRrEqRm, result_code = 1 }, this= 0x269dcc5fa00
+[2023-07-20 15:44:16.632] [pxr_streamer] [debug] [12844|23128]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x269cc753000
+[2023-07-20 15:46:42.663] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x269cc753000
+[2023-07-20 15:46:42.663] [pxr_streamer] [debug] [12844|23128]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x269cc753000
+[2023-07-20 15:46:42.663] [pxr_streamer] [info] [12844|23128]driver_impl.cpp:81 Disconnect: send disconnect request : { id = nKvDxSN4, timestamp = 692371558, from = Driver, to = SRS }, this= 0x269dcc5fa00
+[2023-07-20 15:46:42.663] [pxr_streamer] [debug] [12844|23128]transport_client_tcp2.cpp:73 Stop: called, this= 0x268a6981290
+[2023-07-20 15:46:42.664] [pxr_streamer] [error] [12844|42628]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x268a6981290
+[2023-07-20 15:46:42.664] [pxr_streamer] [error] [12844|42628]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x268a6981290
+[2023-07-20 15:46:42.664] [pxr_streamer] [error] [12844|42628]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x268a6981290
+[2023-07-20 15:57:45.460] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x269cd092160
+[2023-07-20 15:57:45.460] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x269dd1a0aa0, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.460] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x269cc753000
+[2023-07-20 15:57:45.460] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x269dcc5fa00
+[2023-07-20 15:57:45.460] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x268a6981290
+[2023-07-20 15:57:45.462] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.462] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.462] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.462] [pxr_streamer] [debug] [12844|13624]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.462] [pxr_streamer] [debug] [12844|13624]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x268a69a02b0
+[2023-07-20 15:57:45.462] [pxr_streamer] [info] [12844|13624]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x268a69a02b0
+[2023-07-20 15:57:45.463] [pxr_streamer] [info] [12844|36932]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.463] [pxr_streamer] [debug] [12844|36932]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:34976, this= 0x268a69a02b0
+[2023-07-20 15:57:45.463] [pxr_streamer] [debug] [12844|13624]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.463] [pxr_streamer] [info] [12844|13624]driver_impl.cpp:59 Connect: send connect request : { id = J5c59Bsb, timestamp = 693034357, from = Driver, to = SRS, connection info : {id: "fu6OwApRf5OFN5HY\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x269cd092160
+[2023-07-20 15:57:45.463] [pxr_streamer] [info] [12844|13624]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= fu6OwApRf5OFN5HY, this= 0x26a3d95ad30
+[2023-07-20 15:57:45.464] [pxr_streamer] [info] [12844|13624]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = WcOEAXQw, timestamp = 693034358, from = SRS, to = Driver, req_id = J5c59Bsb, result_code = 1 }, this= 0x269cd092160
+[2023-07-20 15:57:45.464] [pxr_streamer] [debug] [12844|13624]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x26a3d95ad30
+[2023-07-20 15:58:18.287] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x26a3d95ad30
+[2023-07-20 15:58:18.287] [pxr_streamer] [debug] [12844|13624]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x26a3d95ad30
+[2023-07-20 15:58:18.287] [pxr_streamer] [info] [12844|13624]driver_impl.cpp:81 Disconnect: send disconnect request : { id = 8XFbu4AN, timestamp = 693067182, from = Driver, to = SRS }, this= 0x269cd092160
+[2023-07-20 15:58:18.287] [pxr_streamer] [debug] [12844|13624]transport_client_tcp2.cpp:73 Stop: called, this= 0x268a69a02b0
+[2023-07-20 15:58:18.288] [pxr_streamer] [error] [12844|36932]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x268a69a02b0
+[2023-07-20 15:58:18.288] [pxr_streamer] [error] [12844|36932]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x268a69a02b0
+[2023-07-20 15:58:18.288] [pxr_streamer] [error] [12844|36932]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x268a69a02b0
+[2023-07-20 15:58:21.960] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x26a3e14f2e0
+[2023-07-20 15:58:21.960] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x26a3e127510, this= 0x268a5c760c0
+[2023-07-20 15:58:21.960] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x26a3d95ad30
+[2023-07-20 15:58:21.960] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x269cd092160
+[2023-07-20 15:58:21.960] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x268a69a02b0
+[2023-07-20 15:58:21.962] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x268a5c760c0
+[2023-07-20 15:58:21.962] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x268a5c760c0
+[2023-07-20 15:58:21.962] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x268a5c760c0
+[2023-07-20 15:58:21.962] [pxr_streamer] [debug] [12844|16028]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x268a5c760c0
+[2023-07-20 15:58:21.962] [pxr_streamer] [debug] [12844|16028]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x269c85c1e90
+[2023-07-20 15:58:21.962] [pxr_streamer] [info] [12844|16028]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x269c85c1e90
+[2023-07-20 15:58:21.963] [pxr_streamer] [info] [12844|7064]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x268a5c760c0
+[2023-07-20 15:58:21.963] [pxr_streamer] [debug] [12844|7064]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:34993, this= 0x269c85c1e90
+[2023-07-20 15:58:21.963] [pxr_streamer] [debug] [12844|16028]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x268a5c760c0
+[2023-07-20 15:58:21.963] [pxr_streamer] [info] [12844|16028]driver_impl.cpp:59 Connect: send connect request : { id = ZNcpPApf, timestamp = 693070858, from = Driver, to = SRS, connection info : {id: "F2oEyfKmgqlM7hLy\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x26a3e14f2e0
+[2023-07-20 15:58:21.963] [pxr_streamer] [info] [12844|16028]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= F2oEyfKmgqlM7hLy, this= 0x268a5c760c0
+[2023-07-20 15:58:21.964] [pxr_streamer] [info] [12844|16028]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = ZXjkRUtq, timestamp = 693070858, from = SRS, to = Driver, req_id = ZNcpPApf, result_code = 1 }, this= 0x26a3e14f2e0
+[2023-07-20 15:58:21.964] [pxr_streamer] [debug] [12844|16028]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x268a5c760c0
+[2023-07-20 15:58:48.561] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x268a5c760c0
+[2023-07-20 15:58:48.562] [pxr_streamer] [debug] [12844|16028]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x268a5c760c0
+[2023-07-20 15:58:48.562] [pxr_streamer] [info] [12844|16028]driver_impl.cpp:81 Disconnect: send disconnect request : { id = 1UIwhY3E, timestamp = 693097456, from = Driver, to = SRS }, this= 0x26a3e14f2e0
+[2023-07-20 15:58:48.562] [pxr_streamer] [debug] [12844|16028]transport_client_tcp2.cpp:73 Stop: called, this= 0x269c85c1e90
+[2023-07-20 15:58:48.562] [pxr_streamer] [error] [12844|7064]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x269c85c1e90
+[2023-07-20 15:58:48.562] [pxr_streamer] [error] [12844|7064]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x269c85c1e90
+[2023-07-20 15:58:48.562] [pxr_streamer] [error] [12844|7064]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x269c85c1e90
+[2023-07-20 15:58:49.529] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x26a3de58680
+[2023-07-20 15:58:49.529] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x26a3e127100, this= 0x268a5c76d40
+[2023-07-20 15:58:49.529] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x268a5c760c0
+[2023-07-20 15:58:49.529] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x26a3e14f2e0
+[2023-07-20 15:58:49.529] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x269c85c1e90
+[2023-07-20 15:58:49.531] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [debug] [12844|45476]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [debug] [12844|45476]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x269c85c1c70
+[2023-07-20 15:58:49.531] [pxr_streamer] [info] [12844|45476]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x269c85c1c70
+[2023-07-20 15:58:49.531] [pxr_streamer] [info] [12844|24104]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [debug] [12844|45476]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x268a5c76d40
+[2023-07-20 15:58:49.531] [pxr_streamer] [debug] [12844|24104]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:35008, this= 0x269c85c1c70
+[2023-07-20 15:58:49.531] [pxr_streamer] [info] [12844|45476]driver_impl.cpp:59 Connect: send connect request : { id = hkzXOPOA, timestamp = 693098426, from = Driver, to = SRS, connection info : {id: "wZWNYCyR2qJojqfN\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x26a3de58680
+[2023-07-20 15:58:49.531] [pxr_streamer] [info] [12844|45476]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= wZWNYCyR2qJojqfN, this= 0x268a5c76d40
+[2023-07-20 15:58:49.532] [pxr_streamer] [info] [12844|45476]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = YsUvbsyf, timestamp = 693098426, from = SRS, to = Driver, req_id = hkzXOPOA, result_code = 1 }, this= 0x26a3de58680
+[2023-07-20 15:58:49.532] [pxr_streamer] [debug] [12844|45476]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x268a5c76d40
+[2023-07-20 16:02:42.252] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x268a5c76d40
+[2023-07-20 16:02:42.252] [pxr_streamer] [debug] [12844|45476]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x268a5c76d40
+[2023-07-20 16:02:42.252] [pxr_streamer] [info] [12844|45476]driver_impl.cpp:81 Disconnect: send disconnect request : { id = a3IvGZ5c, timestamp = 693331146, from = Driver, to = SRS }, this= 0x26a3de58680
+[2023-07-20 16:02:42.252] [pxr_streamer] [debug] [12844|45476]transport_client_tcp2.cpp:73 Stop: called, this= 0x269c85c1c70
+[2023-07-20 16:02:42.252] [pxr_streamer] [error] [12844|24104]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x269c85c1c70
+[2023-07-20 16:02:42.253] [pxr_streamer] [error] [12844|24104]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x269c85c1c70
+[2023-07-20 16:02:42.253] [pxr_streamer] [error] [12844|24104]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x269c85c1c70
+[2023-07-20 16:02:48.475] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x269e1fbbef0
+[2023-07-20 16:02:48.475] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x26b21884a00, this= 0x268a5c76a20
+[2023-07-20 16:02:48.475] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x268a5c76d40
+[2023-07-20 16:02:48.475] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x26a3de58680
+[2023-07-20 16:02:48.475] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x269c85c1c70
+[2023-07-20 16:02:48.477] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x268a5c76a20
+[2023-07-20 16:02:48.477] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x268a5c76a20
+[2023-07-20 16:02:48.477] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x268a5c76a20
+[2023-07-20 16:02:48.477] [pxr_streamer] [debug] [12844|19348]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x268a5c76a20
+[2023-07-20 16:02:48.477] [pxr_streamer] [debug] [12844|19348]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x26b21a2b870
+[2023-07-20 16:02:48.477] [pxr_streamer] [info] [12844|19348]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x26b21a2b870
+[2023-07-20 16:02:48.478] [pxr_streamer] [info] [12844|20624]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x268a5c76a20
+[2023-07-20 16:02:48.478] [pxr_streamer] [debug] [12844|20624]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:35137, this= 0x26b21a2b870
+[2023-07-20 16:02:48.478] [pxr_streamer] [debug] [12844|19348]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x268a5c76a20
+[2023-07-20 16:02:48.478] [pxr_streamer] [info] [12844|19348]driver_impl.cpp:59 Connect: send connect request : { id = IdDX7MjE, timestamp = 693337372, from = Driver, to = SRS, connection info : {id: "5QltGnq9UEx2X42V\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x269e1fbbef0
+[2023-07-20 16:02:48.478] [pxr_streamer] [info] [12844|19348]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= 5QltGnq9UEx2X42V, this= 0x268a5c76a20
+[2023-07-20 16:02:48.479] [pxr_streamer] [info] [12844|19348]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = rQg87TnY, timestamp = 693337373, from = SRS, to = Driver, req_id = IdDX7MjE, result_code = 1 }, this= 0x269e1fbbef0
+[2023-07-20 16:02:48.479] [pxr_streamer] [debug] [12844|19348]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x268a5c76a20
+[2023-07-20 16:07:23.275] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x268a5c76a20
+[2023-07-20 16:07:23.275] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x268a5c76a20
+[2023-07-20 16:09:12.773] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x268a5c76a20
+[2023-07-20 16:09:12.773] [pxr_streamer] [debug] [12844|19348]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x268a5c76a20
+[2023-07-20 16:09:12.773] [pxr_streamer] [info] [12844|19348]driver_impl.cpp:81 Disconnect: send disconnect request : { id = RGOAbp3Q, timestamp = 693721668, from = Driver, to = SRS }, this= 0x269e1fbbef0
+[2023-07-20 16:09:12.774] [pxr_streamer] [debug] [12844|19348]transport_client_tcp2.cpp:73 Stop: called, this= 0x26b21a2b870
+[2023-07-20 16:09:12.774] [pxr_streamer] [error] [12844|20624]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x26b21a2b870
+[2023-07-20 16:09:12.774] [pxr_streamer] [error] [12844|20624]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x26b21a2b870
+[2023-07-20 16:09:12.774] [pxr_streamer] [error] [12844|20624]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x26b21a2b870
+[2023-07-20 16:09:50.166] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x2687c8a3f80
+[2023-07-20 16:09:50.166] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x2699cac0380, this= 0x26b228f8010
+[2023-07-20 16:09:50.166] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x268a5c76a20
+[2023-07-20 16:09:50.166] [pxr_streamer] [info] [12844|36376]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x269e1fbbef0
+[2023-07-20 16:09:50.166] [pxr_streamer] [debug] [12844|36376]transport_client_tcp2.cpp:73 Stop: called, this= 0x26b21a2b870
+[2023-07-20 16:09:50.169] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [debug] [12844|20192]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [debug] [12844|20192]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x2699d443360
+[2023-07-20 16:09:50.169] [pxr_streamer] [info] [12844|20192]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x2699d443360
+[2023-07-20 16:09:50.169] [pxr_streamer] [info] [12844|26944]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [debug] [12844|26944]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:35428, this= 0x2699d443360
+[2023-07-20 16:09:50.169] [pxr_streamer] [debug] [12844|20192]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x26b228f8010
+[2023-07-20 16:09:50.169] [pxr_streamer] [info] [12844|20192]driver_impl.cpp:59 Connect: send connect request : { id = Y9fmuDKA, timestamp = 693759064, from = Driver, to = SRS, connection info : {id: "rwUw1EQPGsSBLJM7\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x2687c8a3f80
+[2023-07-20 16:09:50.169] [pxr_streamer] [info] [12844|20192]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= rwUw1EQPGsSBLJM7, this= 0x26b228f8010
+[2023-07-20 16:09:50.171] [pxr_streamer] [info] [12844|20192]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = FlKe3Hsl, timestamp = 693759065, from = SRS, to = Driver, req_id = Y9fmuDKA, result_code = 1 }, this= 0x2687c8a3f80
+[2023-07-20 16:09:50.171] [pxr_streamer] [debug] [12844|20192]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x26b228f8010
+[2023-07-20 16:09:50.171] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x26b228f8010
+[2023-07-20 16:09:50.171] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:65 StartStreaming: "device not connected", !device_connected_, this= 0x26b228f8010
+[2023-07-20 16:12:15.548] [pxr_streamer] [debug] [12844|36376]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x26b228f8010
+[2023-07-20 16:12:15.548] [pxr_streamer] [error] [12844|36376]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x26b228f8010
+[2023-07-20 16:14:55.357] [pxr_streamer] [info] [12844|36376]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x26b228f8010
+[2023-07-20 16:14:55.358] [pxr_streamer] [debug] [12844|20192]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x26b228f8010
+[2023-07-20 16:14:55.358] [pxr_streamer] [info] [12844|20192]driver_impl.cpp:81 Disconnect: send disconnect request : { id = A1rjxXB3, timestamp = 694064252, from = Driver, to = SRS }, this= 0x2687c8a3f80
+[2023-07-20 16:14:55.358] [pxr_streamer] [debug] [12844|20192]transport_client_tcp2.cpp:73 Stop: called, this= 0x2699d443360
+[2023-07-20 16:14:55.358] [pxr_streamer] [error] [12844|26944]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x2699d443360
+[2023-07-20 16:14:55.358] [pxr_streamer] [error] [12844|26944]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x2699d443360
+[2023-07-20 16:14:55.358] [pxr_streamer] [error] [12844|26944]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x2699d443360
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] process id= 29836
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x17aa2034a30
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x179143c96d0, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= Undefined, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|52680]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|52680]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x17913c1c450
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] [29836|52680]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x17913c1c450
+[2023-07-20 16:16:46.945] [pxr_streamer] [info] [29836|53468]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|52680]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.945] [pxr_streamer] [debug] [29836|53468]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:35739, this= 0x17913c1c450
+[2023-07-20 16:16:46.946] [pxr_streamer] [info] [29836|52680]driver_impl.cpp:59 Connect: send connect request : { id = k1PQWkXF, timestamp = 694175840, from = Driver, to = SRS, connection info : {id: "nAkLqFP9kU4ojRwU\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x17aa2034a30
+[2023-07-20 16:16:46.946] [pxr_streamer] [info] [29836|52680]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= nAkLqFP9kU4ojRwU, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.947] [pxr_streamer] [info] [29836|52680]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = 5OCVDzMr, timestamp = 694175841, from = SRS, to = Driver, req_id = k1PQWkXF, result_code = 1 }, this= 0x17aa2034a30
+[2023-07-20 16:16:46.947] [pxr_streamer] [debug] [29836|52680]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.947] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x17a9f248cf0
+[2023-07-20 16:16:46.947] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:65 StartStreaming: "device not connected", !device_connected_, this= 0x17a9f248cf0
+[2023-07-20 16:19:07.181] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x17a9f248cf0
+[2023-07-20 16:19:07.181] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x17a9f248cf0
+[2023-07-20 16:21:28.032] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x17a9f248cf0
+[2023-07-20 16:21:28.032] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x17a9f248cf0
+[2023-07-20 16:23:13.215] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x17a9f248cf0
+[2023-07-20 16:23:13.215] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x17a9f248cf0
+[2023-07-20 16:24:20.474] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x17a9f248cf0
+[2023-07-20 16:24:20.474] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:105 VibrateController: "device not connected", !device_connected_, this= 0x17a9f248cf0
+[2023-07-20 16:25:43.373] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x17a9f248cf0
+[2023-07-20 16:25:43.373] [pxr_streamer] [debug] [29836|52680]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x17a9f248cf0
+[2023-07-20 16:25:43.373] [pxr_streamer] [info] [29836|52680]driver_impl.cpp:81 Disconnect: send disconnect request : { id = IXCKMBtY, timestamp = 694712267, from = Driver, to = SRS }, this= 0x17aa2034a30
+[2023-07-20 16:25:43.373] [pxr_streamer] [debug] [29836|52680]transport_client_tcp2.cpp:73 Stop: called, this= 0x17913c1c450
+[2023-07-20 16:25:43.373] [pxr_streamer] [error] [29836|53468]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x17913c1c450
+[2023-07-20 16:25:43.373] [pxr_streamer] [error] [29836|53468]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x17913c1c450
+[2023-07-20 16:25:43.373] [pxr_streamer] [error] [29836|53468]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x17913c1c450
+[2023-07-20 16:43:34.827] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x17af6747ac0
+[2023-07-20 16:43:34.827] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x17af5e00450, this= 0x17accf776f0
+[2023-07-20 16:43:34.827] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x17a9f248cf0
+[2023-07-20 16:43:34.827] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x17aa2034a30
+[2023-07-20 16:43:34.827] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x17913c1c450
+[2023-07-20 16:43:34.829] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x17accf776f0
+[2023-07-20 16:43:34.830] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x17accf776f0
+[2023-07-20 16:43:34.830] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x17accf776f0
+[2023-07-20 16:43:34.830] [pxr_streamer] [debug] [29836|4312]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x17accf776f0
+[2023-07-20 16:43:34.830] [pxr_streamer] [debug] [29836|4312]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x17892aeba70
+[2023-07-20 16:43:34.830] [pxr_streamer] [info] [29836|4312]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x17892aeba70
+[2023-07-20 16:43:34.830] [pxr_streamer] [info] [29836|36108]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x17accf776f0
+[2023-07-20 16:43:34.830] [pxr_streamer] [debug] [29836|36108]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:37306, this= 0x17892aeba70
+[2023-07-20 16:43:34.830] [pxr_streamer] [debug] [29836|4312]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x17accf776f0
+[2023-07-20 16:43:34.831] [pxr_streamer] [info] [29836|4312]driver_impl.cpp:59 Connect: send connect request : { id = hZvxrCzm, timestamp = 695783725, from = Driver, to = SRS, connection info : {id: "tBEXxy6byBU4MFAu\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x17af6747ac0
+[2023-07-20 16:43:34.831] [pxr_streamer] [info] [29836|4312]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= tBEXxy6byBU4MFAu, this= 0x17accf776f0
+[2023-07-20 16:43:34.831] [pxr_streamer] [info] [29836|4312]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = rFHMfwzK, timestamp = 695783725, from = SRS, to = Driver, req_id = hZvxrCzm, result_code = 1 }, this= 0x17af6747ac0
+[2023-07-20 16:43:34.831] [pxr_streamer] [debug] [29836|4312]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x17accf776f0
+[2023-07-20 16:44:02.801] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x17accf776f0
+[2023-07-20 16:44:02.802] [pxr_streamer] [debug] [29836|4312]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x17accf776f0
+[2023-07-20 16:44:02.802] [pxr_streamer] [info] [29836|4312]driver_impl.cpp:81 Disconnect: send disconnect request : { id = cGR9Emmz, timestamp = 695811696, from = Driver, to = SRS }, this= 0x17af6747ac0
+[2023-07-20 16:44:02.802] [pxr_streamer] [debug] [29836|4312]transport_client_tcp2.cpp:73 Stop: called, this= 0x17892aeba70
+[2023-07-20 16:44:02.802] [pxr_streamer] [error] [29836|36108]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x17892aeba70
+[2023-07-20 16:44:02.802] [pxr_streamer] [error] [29836|36108]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x17892aeba70
+[2023-07-20 16:44:02.802] [pxr_streamer] [error] [29836|36108]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x17892aeba70
+[2023-07-20 17:11:33.701] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x17aa1835420
+[2023-07-20 17:11:33.701] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x17af5e06080, this= 0x17af5bbae60
+[2023-07-20 17:11:33.701] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x17accf776f0
+[2023-07-20 17:11:33.701] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x17af6747ac0
+[2023-07-20 17:11:33.701] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x17892aeba70
+[2023-07-20 17:11:33.702] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x17af5bbae60
+[2023-07-20 17:11:33.702] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x17af5bbae60
+[2023-07-20 17:11:33.702] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x17af5bbae60
+[2023-07-20 17:11:33.703] [pxr_streamer] [debug] [29836|38040]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x17af5bbae60
+[2023-07-20 17:11:33.703] [pxr_streamer] [debug] [29836|38040]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x176ebe71b80
+[2023-07-20 17:11:33.703] [pxr_streamer] [info] [29836|38040]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x176ebe71b80
+[2023-07-20 17:11:33.703] [pxr_streamer] [info] [29836|20668]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x17af5bbae60
+[2023-07-20 17:11:33.703] [pxr_streamer] [debug] [29836|20668]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:50977, this= 0x176ebe71b80
+[2023-07-20 17:11:33.703] [pxr_streamer] [debug] [29836|38040]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x17af5bbae60
+[2023-07-20 17:11:33.703] [pxr_streamer] [info] [29836|38040]driver_impl.cpp:59 Connect: send connect request : { id = ZnACsQuH, timestamp = 697462598, from = Driver, to = SRS, connection info : {id: "5sLAZxNP2qR5shuy\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x17aa1835420
+[2023-07-20 17:11:33.704] [pxr_streamer] [info] [29836|38040]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= 5sLAZxNP2qR5shuy, this= 0x17af5bbae60
+[2023-07-20 17:11:33.704] [pxr_streamer] [info] [29836|38040]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = krqVmOJ2, timestamp = 697462598, from = SRS, to = Driver, req_id = ZnACsQuH, result_code = 1 }, this= 0x17aa1835420
+[2023-07-20 17:11:33.704] [pxr_streamer] [debug] [29836|38040]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x17af5bbae60
+[2023-07-20 17:11:57.151] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x17af5bbae60
+[2023-07-20 17:11:57.151] [pxr_streamer] [debug] [29836|38040]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x17af5bbae60
+[2023-07-20 17:11:57.151] [pxr_streamer] [info] [29836|38040]driver_impl.cpp:81 Disconnect: send disconnect request : { id = YCKgUvkS, timestamp = 697486046, from = Driver, to = SRS }, this= 0x17aa1835420
+[2023-07-20 17:11:57.151] [pxr_streamer] [debug] [29836|38040]transport_client_tcp2.cpp:73 Stop: called, this= 0x176ebe71b80
+[2023-07-20 17:11:57.152] [pxr_streamer] [error] [29836|20668]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x176ebe71b80
+[2023-07-20 17:11:57.152] [pxr_streamer] [error] [29836|20668]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x176ebe71b80
+[2023-07-20 17:11:57.152] [pxr_streamer] [error] [29836|20668]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x176ebe71b80
+[2023-07-20 17:11:58.165] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x176e73c2600
+[2023-07-20 17:11:58.165] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x17aa59e4560, this= 0x176e087cdd0
+[2023-07-20 17:11:58.165] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x17af5bbae60
+[2023-07-20 17:11:58.165] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x17aa1835420
+[2023-07-20 17:11:58.165] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x176ebe71b80
+[2023-07-20 17:11:58.166] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x176e087cdd0
+[2023-07-20 17:11:58.166] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x176e087cdd0
+[2023-07-20 17:11:58.166] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x176e087cdd0
+[2023-07-20 17:11:58.166] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x176e087cdd0
+[2023-07-20 17:11:58.167] [pxr_streamer] [debug] [29836|15712]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x176e7cd2ce0
+[2023-07-20 17:11:58.167] [pxr_streamer] [info] [29836|15712]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x176e7cd2ce0
+[2023-07-20 17:11:58.167] [pxr_streamer] [info] [29836|20752]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x176e087cdd0
+[2023-07-20 17:11:58.167] [pxr_streamer] [debug] [29836|20752]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:23433, this= 0x176e7cd2ce0
+[2023-07-20 17:11:58.167] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x176e087cdd0
+[2023-07-20 17:11:58.167] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:59 Connect: send connect request : { id = ePPMI2E7, timestamp = 697487062, from = Driver, to = SRS, connection info : {id: "MHFeUJqDe2Kdk2r9\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x176e73c2600
+[2023-07-20 17:11:58.167] [pxr_streamer] [info] [29836|15712]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= MHFeUJqDe2Kdk2r9, this= 0x176e087cdd0
+[2023-07-20 17:11:58.168] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = g26YFTro, timestamp = 697487062, from = SRS, to = Driver, req_id = ePPMI2E7, result_code = 1 }, this= 0x176e73c2600
+[2023-07-20 17:11:58.168] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x176e087cdd0
+[2023-07-20 17:12:12.025] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:474 ProcessNotifyMessage: received disconnect notify : { id = NS5tErHH, timestamp = 697500919, from = SRS, to = Driver, connection info: { id = , name = , module_version = , protocol_version =  } }, this= 0x176e73c2600
+[2023-07-20 17:12:12.025] [pxr_streamer] [error] [29836|15712]streaming_driver_interface_impl.cpp:237 NotifyDeviceDisconnected: "device not connected", !device_connected_, this= 0x176e087cdd0
+[2023-07-20 17:12:12.025] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = kiderXyJ, timestamp = 697500919, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x176e73c2600
+[2023-07-20 17:12:12.025] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x176e087cdd0
+[2023-07-20 17:12:12.025] [pxr_streamer] [info] [29836|15712]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x176e087cdd0
+[2023-07-20 17:12:12.025] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = OtIdY54S, timestamp = 697500920, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x176e73c2600
+[2023-07-20 17:12:12.026] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = wdh1TKc3, timestamp = 697500920, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x176e73c2600
+[2023-07-20 17:12:12.026] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x176e087cdd0
+[2023-07-20 17:12:42.008] [pxr_streamer] [error] [29836|15712]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x176e087cdd0
+[2023-07-20 17:13:12.013] [pxr_streamer] [error] [29836|15712]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x176e087cdd0
+[2023-07-20 17:13:42.022] [pxr_streamer] [error] [29836|15712]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x176e087cdd0
+[2023-07-20 17:14:12.026] [pxr_streamer] [error] [29836|15712]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x176e087cdd0
+[2023-07-20 17:14:40.352] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x176e087cdd0
+[2023-07-20 17:14:40.353] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = KIlMzGKK, timestamp = 697649247, from = Driver, to = SRS }, this= 0x176e73c2600
+[2023-07-20 17:14:40.353] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x176e087cdd0
+[2023-07-20 17:14:40.353] [pxr_streamer] [debug] [29836|15712]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x176e087cdd0
+[2023-07-20 17:14:40.353] [pxr_streamer] [info] [29836|15712]driver_impl.cpp:81 Disconnect: send disconnect request : { id = eK91DipN, timestamp = 697649247, from = Driver, to = SRS }, this= 0x176e73c2600
+[2023-07-20 17:14:40.353] [pxr_streamer] [debug] [29836|15712]transport_client_tcp2.cpp:73 Stop: called, this= 0x176e7cd2ce0
+[2023-07-20 17:14:40.353] [pxr_streamer] [error] [29836|20752]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x176e7cd2ce0
+[2023-07-20 17:14:40.353] [pxr_streamer] [error] [29836|20752]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x176e7cd2ce0
+[2023-07-20 17:14:40.353] [pxr_streamer] [error] [29836|20752]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x176e7cd2ce0
+[2023-07-20 17:14:43.852] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x17a16b52b00
+[2023-07-20 17:14:43.852] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x17af5e05d60, this= 0x176ec009db0
+[2023-07-20 17:14:43.852] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x176e087cdd0
+[2023-07-20 17:14:43.852] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x176e73c2600
+[2023-07-20 17:14:43.852] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x176e7cd2ce0
+[2023-07-20 17:14:43.854] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x176ec009db0
+[2023-07-20 17:14:43.854] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x176ec009db0
+[2023-07-20 17:14:43.854] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x176ec009db0
+[2023-07-20 17:14:43.854] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x176ec009db0
+[2023-07-20 17:14:43.855] [pxr_streamer] [debug] [29836|41948]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x176ebe787e0
+[2023-07-20 17:14:43.855] [pxr_streamer] [info] [29836|41948]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x176ebe787e0
+[2023-07-20 17:14:43.855] [pxr_streamer] [info] [29836|46804]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x176ec009db0
+[2023-07-20 17:14:43.855] [pxr_streamer] [debug] [29836|46804]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:15993, this= 0x176ebe787e0
+[2023-07-20 17:14:43.855] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x176ec009db0
+[2023-07-20 17:14:43.855] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:59 Connect: send connect request : { id = m13rTBz3, timestamp = 697652750, from = Driver, to = SRS, connection info : {id: "b5tOXeSONVvXqWRU\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x17a16b52b00
+[2023-07-20 17:14:43.855] [pxr_streamer] [info] [29836|41948]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= b5tOXeSONVvXqWRU, this= 0x176ec009db0
+[2023-07-20 17:14:43.856] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = Cg5bCVIj, timestamp = 697652750, from = SRS, to = Driver, req_id = m13rTBz3, result_code = 1 }, this= 0x17a16b52b00
+[2023-07-20 17:14:43.856] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x176ec009db0
+[2023-07-20 17:14:43.857] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = Lv5WW2dF, timestamp = 697652751, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x17a16b52b00
+[2023-07-20 17:14:43.857] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x176ec009db0
+[2023-07-20 17:14:43.857] [pxr_streamer] [info] [29836|41948]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x176ec009db0
+[2023-07-20 17:14:43.857] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = 14t77kDo, timestamp = 697652752, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x17a16b52b00
+[2023-07-20 17:14:43.858] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = rpgdh6mi, timestamp = 697652752, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x17a16b52b00
+[2023-07-20 17:14:43.858] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x176ec009db0
+[2023-07-20 17:14:49.591] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x176ec009db0
+[2023-07-20 17:14:49.591] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = 4pVSREBT, timestamp = 697658485, from = Driver, to = SRS }, this= 0x17a16b52b00
+[2023-07-20 17:14:49.591] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x176ec009db0
+[2023-07-20 17:14:49.591] [pxr_streamer] [debug] [29836|41948]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x176ec009db0
+[2023-07-20 17:14:49.591] [pxr_streamer] [info] [29836|41948]driver_impl.cpp:81 Disconnect: send disconnect request : { id = 1IsD2lDV, timestamp = 697658486, from = Driver, to = SRS }, this= 0x17a16b52b00
+[2023-07-20 17:14:49.591] [pxr_streamer] [debug] [29836|41948]transport_client_tcp2.cpp:73 Stop: called, this= 0x176ebe787e0
+[2023-07-20 17:14:49.591] [pxr_streamer] [error] [29836|46804]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x176ebe787e0
+[2023-07-20 17:14:49.591] [pxr_streamer] [error] [29836|46804]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x176ebe787e0
+[2023-07-20 17:14:49.591] [pxr_streamer] [error] [29836|46804]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x176ebe787e0
+[2023-07-20 17:15:04.242] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.242] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x176eb731050, this= 0x17942e850c0
+[2023-07-20 17:15:04.242] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x176ec009db0
+[2023-07-20 17:15:04.242] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x17a16b52b00
+[2023-07-20 17:15:04.242] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x176ebe787e0
+[2023-07-20 17:15:04.243] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x17942e850c0
+[2023-07-20 17:15:04.243] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x17942e850c0
+[2023-07-20 17:15:04.243] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x17942e850c0
+[2023-07-20 17:15:04.243] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x17942e850c0
+[2023-07-20 17:15:04.244] [pxr_streamer] [debug] [29836|28452]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x17afe4d9710
+[2023-07-20 17:15:04.244] [pxr_streamer] [info] [29836|28452]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x17afe4d9710
+[2023-07-20 17:15:04.244] [pxr_streamer] [info] [29836|43484]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x17942e850c0
+[2023-07-20 17:15:04.244] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x17942e850c0
+[2023-07-20 17:15:04.244] [pxr_streamer] [debug] [29836|43484]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:1050, this= 0x17afe4d9710
+[2023-07-20 17:15:04.244] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:59 Connect: send connect request : { id = p9EzW4jY, timestamp = 697673138, from = Driver, to = SRS, connection info : {id: "Msw1utdhM34jFJcT\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.244] [pxr_streamer] [info] [29836|28452]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= Msw1utdhM34jFJcT, this= 0x17942e850c0
+[2023-07-20 17:15:04.244] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = jFSmIXyE, timestamp = 697673139, from = SRS, to = Driver, req_id = p9EzW4jY, result_code = 1 }, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.244] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x17942e850c0
+[2023-07-20 17:15:04.245] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = vFIKXuZ2, timestamp = 697673139, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.245] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x17942e850c0
+[2023-07-20 17:15:04.245] [pxr_streamer] [info] [29836|28452]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x17942e850c0
+[2023-07-20 17:15:04.245] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = LVfTpYox, timestamp = 697673140, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.246] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = w43ZjKXc, timestamp = 697673140, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x176e0a5b3e0
+[2023-07-20 17:15:04.246] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x17942e850c0
+[2023-07-20 17:15:12.042] [pxr_streamer] [error] [29836|28452]streaming_driver_interface_impl.cpp:310 NotifyControllerStateUpdated: "invalid streaming state", streaming_state_ != pxr_rpc::StreamingState::kStreamingReady, this= 0x17942e850c0
+[2023-07-20 17:15:12.043] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x17942e850c0
+[2023-07-20 17:15:12.043] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = qStbwKmm, timestamp = 697680938, from = Driver, to = SRS }, this= 0x176e0a5b3e0
+[2023-07-20 17:15:12.043] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x17942e850c0
+[2023-07-20 17:15:12.043] [pxr_streamer] [debug] [29836|28452]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x17942e850c0
+[2023-07-20 17:15:12.043] [pxr_streamer] [info] [29836|28452]driver_impl.cpp:81 Disconnect: send disconnect request : { id = 6xMJlZeW, timestamp = 697680938, from = Driver, to = SRS }, this= 0x176e0a5b3e0
+[2023-07-20 17:15:12.043] [pxr_streamer] [debug] [29836|28452]transport_client_tcp2.cpp:73 Stop: called, this= 0x17afe4d9710
+[2023-07-20 17:15:12.044] [pxr_streamer] [error] [29836|43484]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x17afe4d9710
+[2023-07-20 17:15:12.044] [pxr_streamer] [error] [29836|43484]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x17afe4d9710
+[2023-07-20 17:15:12.044] [pxr_streamer] [error] [29836|43484]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x17afe4d9710
+[2023-07-20 17:15:17.042] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x17afc4be950
+[2023-07-20 17:15:17.042] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x17af5dffaa0, this= 0x176ec608aa0
+[2023-07-20 17:15:17.042] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x17942e850c0
+[2023-07-20 17:15:17.042] [pxr_streamer] [info] [29836|49764]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x176e0a5b3e0
+[2023-07-20 17:15:17.042] [pxr_streamer] [debug] [29836|49764]transport_client_tcp2.cpp:73 Stop: called, this= 0x17afe4d9710
+[2023-07-20 17:15:17.044] [pxr_streamer] [debug] [29836|49764]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [error] [29836|49764]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [debug] [29836|36940]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x176ebe74a40
+[2023-07-20 17:15:17.044] [pxr_streamer] [info] [29836|36940]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x176ebe74a40
+[2023-07-20 17:15:17.044] [pxr_streamer] [info] [29836|56052]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 0, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [debug] [29836|56052]transport_client_tcp2.cpp:161 HandleConnect: local= 127.0.0.1:3324, this= 0x176ebe74a40
+[2023-07-20 17:15:17.044] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:444 HandleTransportConnect: connect success, this= 0x176ec608aa0
+[2023-07-20 17:15:17.044] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:59 Connect: send connect request : { id = MuAUQlqs, timestamp = 697685939, from = Driver, to = SRS, connection info : {id: "SKuabqPKgNh3xewA\000" name: "Streaming Driver SDK\000" module_version: "1.1.1.1\000" protocol_version: "1.0.0.0\000"} }, this= 0x17afc4be950
+[2023-07-20 17:15:17.044] [pxr_streamer] [info] [29836|36940]streaming_driver_interface_impl.cpp:332 StartRpcConnect: driver id= SKuabqPKgNh3xewA, this= 0x176ec608aa0
+[2023-07-20 17:15:17.045] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:650 ProcessResponseMessage: received connect response : { id = L1XRGEey, timestamp = 697685939, from = SRS, to = Driver, req_id = MuAUQlqs, result_code = 1 }, this= 0x17afc4be950
+[2023-07-20 17:15:17.045] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:174 NotifyDriverConnectResult: result= 0, this= 0x176ec608aa0
+[2023-07-20 17:15:17.046] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:447 ProcessNotifyMessage: received connect notify : { id = CnAYHGkL, timestamp = 697685940, from = SRS, to = Driver, connection info: { id = PA8E50MGH3060069D, name = PICO 4 Enterprise, module_version = b4346, protocol_version = 1.1.0.0 } }, this= 0x17afc4be950
+[2023-07-20 17:15:17.046] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:216 NotifyDeviceConnected: device info= id= PA8E50MGH3060069D, name= PICO 4 Enterprise, module version= b4346, protocol version= 1.1.0.0, fov= 2,{0,0,0,0}, this= 0x176ec608aa0
+[2023-07-20 17:15:17.047] [pxr_streamer] [info] [29836|36940]streaming_driver_interface_impl.cpp:62 StartStreaming: (1920,1920), fps= 72, this= 0x176ec608aa0
+[2023-07-20 17:15:17.047] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:207 StartStreaming: send start streaming request : { id = wLl8QvgR, timestamp = 697685941, from = Driver, to = SRS, media config : {render_width: 1920 render_height: 1920 fps: 72}, this= 0x17afc4be950
+[2023-07-20 17:15:17.047] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:507 ProcessNotifyMessage: send update driver state request : , id = 6y2mnnoN, timestamp = 697685941, from = SRS, to = Driver, streaming state : {streaming_state: kStreamingLaunching}, media config : {}, this= 0x17afc4be950
+[2023-07-20 17:15:17.047] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:252 NotifyStreamingStateUpdated: state= 1, config= (0,0), fps= 0, this= 0x176ec608aa0
+[2023-07-20 17:15:19.979] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:78 StopStreaming: stop streaming, this= 0x176ec608aa0
+[2023-07-20 17:15:19.979] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:230 StopStreaming: send stop streaming request : { id = s9CmbwgU, timestamp = 697688873, from = Driver, to = SRS }, this= 0x17afc4be950
+[2023-07-20 17:15:19.979] [pxr_streamer] [info] [29836|49764]streaming_driver_interface_impl.cpp:53 DisconnectFromService: disconnect from service, this= 0x176ec608aa0
+[2023-07-20 17:15:19.979] [pxr_streamer] [debug] [29836|36940]streaming_driver_interface_impl.cpp:374 InvokeDisconnectFromService: disconnect from service, this= 0x176ec608aa0
+[2023-07-20 17:15:19.979] [pxr_streamer] [info] [29836|36940]driver_impl.cpp:81 Disconnect: send disconnect request : { id = NtgBozTp, timestamp = 697688873, from = Driver, to = SRS }, this= 0x17afc4be950
+[2023-07-20 17:15:19.979] [pxr_streamer] [debug] [29836|36940]transport_client_tcp2.cpp:73 Stop: called, this= 0x176ebe74a40
+[2023-07-20 17:15:19.979] [pxr_streamer] [error] [29836|56052]transport_client_tcp2.cpp:116 operator (): recv error= 1236, msg= The network connection was aborted by the local system., this= 0x176ebe74a40
+[2023-07-20 17:15:19.979] [pxr_streamer] [error] [29836|56052]transport_client_tcp2.cpp:129 HandleReceiveData: has been disconnected, this= 0x176ebe74a40
+[2023-07-20 17:15:19.979] [pxr_streamer] [error] [29836|56052]transport_client_tcp2.cpp:105 StartAyncRecv: has been disconnected, this= 0x176ebe74a40
+[2023-07-27 15:18:20.757] [pxr_streamer] [info] ***********  Log Begin **********
+[2023-07-27 15:18:20.757] [pxr_streamer] [info] process id= 57820
+[2023-07-27 15:18:20.757] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x228e4c01e60
+[2023-07-27 15:18:20.757] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x228e763f510, this= 0x228e4c72e90
+[2023-07-27 15:18:20.758] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= Undefined, this= 0x228e4c72e90
+[2023-07-27 15:18:20.758] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x228e4c72e90
+[2023-07-27 15:18:20.758] [pxr_streamer] [info] [57820|57040]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x228e4c72e90
+[2023-07-27 15:18:20.758] [pxr_streamer] [debug] [57820|34840]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x228e4c72e90
+[2023-07-27 15:18:20.758] [pxr_streamer] [debug] [57820|34840]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x228e76296c0
+[2023-07-27 15:18:20.758] [pxr_streamer] [info] [57820|34840]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x228e76296c0
+[2023-07-27 15:18:22.769] [pxr_streamer] [error] [57820|28192]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x228e76296c0
+[2023-07-27 15:18:22.769] [pxr_streamer] [info] [57820|28192]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x228e4c72e90
+[2023-07-27 15:18:22.769] [pxr_streamer] [error] [57820|34840]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x228e4c72e90
+[2023-07-27 15:28:19.219] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x22924406f50
+[2023-07-27 15:28:19.219] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x228e848dca0, this= 0x228e4c73b10
+[2023-07-27 15:28:19.219] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x228e4c72e90
+[2023-07-27 15:28:19.219] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x228e4c01e60
+[2023-07-27 15:28:19.219] [pxr_streamer] [debug] [57820|57040]transport_client_tcp2.cpp:73 Stop: called, this= 0x228e76296c0
+[2023-07-27 15:28:19.221] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x228e4c73b10
+[2023-07-27 15:28:19.221] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x228e4c73b10
+[2023-07-27 15:28:19.221] [pxr_streamer] [info] [57820|57040]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x228e4c73b10
+[2023-07-27 15:28:19.221] [pxr_streamer] [debug] [57820|10648]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x228e4c73b10
+[2023-07-27 15:28:19.221] [pxr_streamer] [debug] [57820|10648]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x2296612ce50
+[2023-07-27 15:28:19.221] [pxr_streamer] [info] [57820|10648]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x2296612ce50
+[2023-07-27 15:28:21.270] [pxr_streamer] [error] [57820|56020]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x2296612ce50
+[2023-07-27 15:28:21.270] [pxr_streamer] [info] [57820|56020]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x228e4c73b10
+[2023-07-27 15:28:21.270] [pxr_streamer] [error] [57820|10648]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x228e4c73b10
+[2023-07-27 15:38:40.403] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x228e4c73b10
+[2023-07-27 15:38:40.403] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:104 VibrateController: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x228e4c73b10
+[2023-07-27 15:39:19.258] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x22955679db0
+[2023-07-27 15:39:19.258] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x228e8490130, this= 0x227ed662cc0
+[2023-07-27 15:39:19.258] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x228e4c73b10
+[2023-07-27 15:39:19.258] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x22924406f50
+[2023-07-27 15:39:19.258] [pxr_streamer] [debug] [57820|57040]transport_client_tcp2.cpp:73 Stop: called, this= 0x2296612ce50
+[2023-07-27 15:39:19.260] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x227ed662cc0
+[2023-07-27 15:39:19.260] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x227ed662cc0
+[2023-07-27 15:39:19.260] [pxr_streamer] [info] [57820|57040]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x227ed662cc0
+[2023-07-27 15:39:19.260] [pxr_streamer] [debug] [57820|24364]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x227ed662cc0
+[2023-07-27 15:39:19.260] [pxr_streamer] [debug] [57820|24364]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x2296d373640
+[2023-07-27 15:39:19.260] [pxr_streamer] [info] [57820|24364]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x2296d373640
+[2023-07-27 15:39:21.303] [pxr_streamer] [error] [57820|23340]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x2296d373640
+[2023-07-27 15:39:21.303] [pxr_streamer] [info] [57820|23340]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x227ed662cc0
+[2023-07-27 15:39:21.303] [pxr_streamer] [error] [57820|24364]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x227ed662cc0
+[2023-07-27 15:39:54.967] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x227ed662cc0
+[2023-07-27 15:39:54.967] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:104 VibrateController: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x227ed662cc0
+[2023-07-27 15:40:36.557] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:22 DriverImpl: Driver created, this= 0x229662aaba0
+[2023-07-27 15:40:36.557] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:20 StreamingDriverInterfaceImpl: callback= 0x22952322de0, this= 0x228e4c71590
+[2023-07-27 15:40:36.557] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:27 ~StreamingDriverInterfaceImpl: called, this= 0x227ed662cc0
+[2023-07-27 15:40:36.557] [pxr_streamer] [info] [57820|57040]driver_impl.cpp:27 ~DriverImpl: Driver destroyed, this= 0x22955679db0
+[2023-07-27 15:40:36.557] [pxr_streamer] [debug] [57820|57040]transport_client_tcp2.cpp:73 Stop: called, this= 0x2296d373640
+[2023-07-27 15:40:36.559] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:117 SetTrackingOrigin: tracking origin= StageLevel, this= 0x228e4c71590
+[2023-07-27 15:40:36.559] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:119 SetTrackingOrigin: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x228e4c71590
+[2023-07-27 15:40:36.559] [pxr_streamer] [info] [57820|57040]streaming_driver_interface_impl.cpp:39 ConnectToService: connect to service, this= 0x228e4c71590
+[2023-07-27 15:40:36.559] [pxr_streamer] [debug] [57820|51744]streaming_driver_interface_impl.cpp:343 InvokeConnectToService: connect to service, this= 0x228e4c71590
+[2023-07-27 15:40:36.559] [pxr_streamer] [debug] [57820|51744]transport_client_tcp2.cpp:33 Start: buffer size(send\recv): 1048576\1048576, this= 0x229547c7030
+[2023-07-27 15:40:36.559] [pxr_streamer] [info] [57820|51744]transport_client_tcp2.cpp:58 Start: server= 127.0.0.1:29000, local=0.0.0.0:0, this= 0x229547c7030
+[2023-07-27 15:40:38.598] [pxr_streamer] [error] [57820|15544]transport_client_tcp2.cpp:145 HandleConnect: connected error= No connection could be made because the target machine actively refused it., this= 0x229547c7030
+[2023-07-27 15:40:38.598] [pxr_streamer] [info] [57820|15544]streaming_driver_interface_impl.cpp:141 NotifyConnectResult: connect to service, result= 10061, this= 0x228e4c71590
+[2023-07-27 15:40:38.598] [pxr_streamer] [error] [57820|51744]streaming_driver_interface_impl.cpp:438 HandleTransportConnect: connect to service error= 10061, this= 0x228e4c71590
+[2023-07-27 15:41:34.922] [pxr_streamer] [debug] [57820|57040]streaming_driver_interface_impl.cpp:102 VibrateController: index= 0a\d\f= (0.405,2,0), this= 0x228e4c71590
+[2023-07-27 15:41:34.922] [pxr_streamer] [error] [57820|57040]streaming_driver_interface_impl.cpp:104 VibrateController: "not connected", connect_state_ != DriverConnectState::kRpcConnected, this= 0x228e4c71590

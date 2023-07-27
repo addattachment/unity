@@ -974,7 +974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116187791131120818, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.106
       objectReference: {fileID: 0}
     - target: {fileID: 1116187791131120818, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -982,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116187791131120818, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.001
       objectReference: {fileID: 0}
     - target: {fileID: 1116187791131120818, guid: 0fa0020a0438ae44aaaed8ab4946e0bb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1590,13 +1590,14 @@ MonoBehaviour:
   player: {fileID: 8889768191879290618}
   NPC: {fileID: 0}
   activeParticipant: {fileID: 0}
-  gameManager: {fileID: 0}
   switchPlayer: 0
   players: []
-  ws: {fileID: 0}
-  lsl: {fileID: 0}
   PlayerInvisibleWall: {fileID: 0}
   NPCInvisibleWall: {fileID: 0}
+  currentRow: 0
+  currentPos: 0
+  currentNPCResponse: 0
+  currentPlayerResponse: 0
 --- !u!4 &1633729059
 Transform:
   m_ObjectHideFlags: 0
@@ -2707,13 +2708,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd9f82377aeb9704193bd866d119aaa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showFps: 0
-  useDefaultFps: 1
-  customFps: 0
   screenFade: 1
   eyeTracking: 1
+  trackingMode: 0
+  faceTracking: 0
+  lipsyncTracking: 0
+  lateLatching: 0
+  latelatchingDebug: 0
+  bodyTracking: 0
   foveationLevel: -1
-  appCheckResult: 100
+  openMRC: 1
+  foregroundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  backgroundCamObj: {fileID: 0}
+  foregroundCamObj: {fileID: 0}
+  mrcBackgroundRT: {fileID: 0}
+  mrcForegroundRT: {fileID: 0}
   useRecommendedAntiAliasingLevel: 1
 --- !u!114 &8889768191879290626
 MonoBehaviour:
