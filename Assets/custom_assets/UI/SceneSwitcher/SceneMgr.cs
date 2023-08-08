@@ -118,6 +118,7 @@ public class SceneMgr : MonoBehaviour
             case "GameScene":
                 gameManager.isTutorial = false;
                 gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
+                gameManager.currentTrial = 0;
                 break;
             default:
                 break;
