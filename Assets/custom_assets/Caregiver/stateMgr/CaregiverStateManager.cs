@@ -43,7 +43,7 @@ public class CaregiverStateManager : MonoBehaviour
         ws = WsClient.Instance;
         LSLOutlet = OutletPassThrough.Instance;
 
-        Caregiver.GetComponent<Animator>().runtimeAnimatorController = controller;
+        Caregiver.GetComponentInChildren<Animator>().runtimeAnimatorController = controller;
         currentCaregiverState = caregiverIdleState;
         caregiverPhase = "caregiverIdleState";
         currentCaregiverState.EnterState(this);
