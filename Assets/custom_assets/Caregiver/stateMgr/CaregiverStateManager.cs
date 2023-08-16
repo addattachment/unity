@@ -9,6 +9,8 @@ public class CaregiverStateManager : MonoBehaviour
     public CaregiverFeedbackState caregiverFeedbackState = new();
     public CaregiverFeedbackConfirmState caregiverFeedbackConfirmState = new();
     public CaregiverScoringState caregiverScoringState = new();
+    public CaregiverEndScoringState caregiverEndScoringState = new();
+
     // script references
     [HideInInspector] public GameManager gameManager;
     public PlayerGroup players;
@@ -22,6 +24,8 @@ public class CaregiverStateManager : MonoBehaviour
     public GameObject caregiverFeedbackScreen;
     public GameObject scoreCaregiver;
     public LightingMgr lightingMgr;
+    public GameObject finalScoringBoard;
+
     [Header("data connections")]
     [HideInInspector] public WsClient ws;
     [HideInInspector] public OutletPassThrough LSLOutlet;
@@ -29,11 +33,6 @@ public class CaregiverStateManager : MonoBehaviour
     public GameObject NPC_cam;
 
     public List<GameObject> arrows;
-    // booleans to control state
-
-    //public bool didReadFeedback = false;
-    //public bool didGiveScore = false;
-    //public bool mustGiveFeedback = false;
 
     // caregiverPhase is for debugging purposes
     public string caregiverPhase = "caregiverIdleState";

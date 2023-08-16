@@ -896,6 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gradientTime: 3
   fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  testFade: 0
 --- !u!114 &345405027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2223,10 +2224,10 @@ MonoBehaviour:
   m_IsTrackedAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 12f382f5-22bb-41a8-bbd9-636999fa467f
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2319,10 +2320,10 @@ MonoBehaviour:
   m_UIScrollAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 3731480a-34dc-4116-89dc-bfe8bf73f39b
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -3457,14 +3458,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   screenFade: 1
-  eyeTracking: 0
+  eyeTracking: 1
   trackingMode: 0
   faceTracking: 0
   lipsyncTracking: 0
   lateLatching: 0
   latelatchingDebug: 0
   bodyTracking: 0
-  foveationLevel: -1
+  foveationLevel: 3
   openMRC: 0
   foregroundLayerMask:
     serializedVersion: 2
@@ -5471,10 +5472,10 @@ MonoBehaviour:
   m_IsTrackedAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 
+      m_Id: 9ddcc27c-0fb6-4311-9ce3-f001230152a2
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -5567,10 +5568,10 @@ MonoBehaviour:
   m_UIScrollAction:
     m_UseReference: 0
     m_Action:
-      m_Name: 
+      m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 
+      m_Id: 36223aa3-1c99-4352-86eb-774b4c1edb03
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []

@@ -10,6 +10,8 @@ using UnityEngine;
 /// </summary>
 public class EndTrialState : StateMachine
 {
+    private float timeToEndState = 2.5f;
+    private float passedTime = 0f;
     public override void EnterState(TrialStateManager state)
     {
         state.trialPhase = "EndTrialState";
@@ -32,7 +34,13 @@ public class EndTrialState : StateMachine
 
     public override void UpdateState(TrialStateManager state)
     {
-       
+        //add scoring of caregiver once more, with an explanation after a few seconds
+
+        passedTime += Time.deltaTime;
+        if (passedTime >= timeToEndState)
+        {
+            state.gameManager.toFinalScoring = true;
+        }
     }
 
     public override void ExitState(TrialStateManager state)

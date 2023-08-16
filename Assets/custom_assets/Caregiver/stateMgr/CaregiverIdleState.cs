@@ -7,7 +7,6 @@
 
     public override void ExitState(CaregiverStateManager state)
     {
-        state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.gameManager.currentTrial);
     }
 
 
@@ -16,6 +15,7 @@
         if (state.gameManager.mustGiveFeedback)
         {
             state.gameManager.mustGiveFeedback = false;
+            state.caregiverFeedbackScreen.GetComponent<CaregiverFeedback>().LoadAudioClip(state.gameManager.currentTrial);
             state.SwitchState(state.caregiverFeedbackState);
         }
         else
@@ -31,9 +31,15 @@
             {
                 if (state.caregiverGaze.follow)
                 {
+
                     state.caregiverGaze.ClearGaze();
                 }
             }
+        }
+        if (state.gameManager.toFinalScoring)
+        {
+            state.gameManager.toFinalScoring = false;
+            state.SwitchState(state.caregiverEndScoringState);
         }
     }
 }

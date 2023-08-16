@@ -941,13 +941,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320303140}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.4512624, y: 2.5557475, z: 0.15804225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1489153808}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1355689327
 PrefabInstance:
@@ -1105,6 +1105,10 @@ PrefabInstance:
     - target: {fileID: 7558978724375151116, guid: 46636a193cf64f341937fb06b339cd7e, type: 3}
       propertyPath: m_Name
       value: SceneFadeOut
+      objectReference: {fileID: 0}
+    - target: {fileID: 7558978724375151116, guid: 46636a193cf64f341937fb06b339cd7e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7558978724375151123, guid: 46636a193cf64f341937fb06b339cd7e, type: 3}
       propertyPath: m_Pivot.x
@@ -1355,6 +1359,7 @@ Transform:
   - {fileID: 491137548}
   - {fileID: 76288908}
   - {fileID: 384635463}
+  - {fileID: 1320303142}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -38,7 +38,7 @@ public class Ball : MonoBehaviour
     [SerializeField] Vector3 launchForce;
 
     [Header("score result")]
-    [SerializeField] private OutletPassThrough lsl;
+    private OutletPassThrough lsl;
     private List<TargetHit> wrongHitTransforms = new();
     [Header("atmosphere")]
     [SerializeField] private GameObject backgroundSound;
@@ -60,10 +60,10 @@ public class Ball : MonoBehaviour
         targets = GameObject.FindGameObjectWithTag("target")
                             .GetComponent<TargetGroup>(); // todo write tests for finding all gameobjects
         slingShot = this.GetComponentInParent<Slingshot>();
-        lsl = GameObject.FindGameObjectWithTag("lsl")
-                        .GetComponent<OutletPassThrough>();
         backgroundSound = GameObject.FindGameObjectWithTag("atmosphere");
         gameManager = GameManager.Instance;
+        lsl = OutletPassThrough.Instance;
+
         trajectoryManager = TrajectoryManager.Instance;
         hitTargetObject = slingShot.hitTarget;
 

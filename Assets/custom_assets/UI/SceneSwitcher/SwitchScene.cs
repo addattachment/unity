@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using LSL;
+using Unity.XR.PXR;
 
 public class SwitchScene : MonoBehaviour
 {
@@ -15,7 +16,9 @@ public class SwitchScene : MonoBehaviour
     [SerializeField] private string nextScene = "Basescene";
     [SerializeField] private string currentScene = "Basescene";
 
-    [SerializeField] Animator crossFade;
+    //[SerializeField] Animator crossFade;
+    [SerializeField] private PXR_ScreenFade screenFade;
+
     [Header("debug")]
     public bool testSwitch = false;
     [SerializeField] GameObject[] hideObjectWhenNotNeeded;
@@ -59,8 +62,10 @@ public class SwitchScene : MonoBehaviour
         buttonText.SetText("op naar het volgende!");
         yield return new WaitForSeconds(1.5f);
         SwitchSceneEvent switchScene= new(nextScene);
-        crossFade.SetTrigger("Start");
+        //crossFade.SetTrigger("Start");
+        screenFade = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PXR_ScreenFade>();
         yield return new WaitForSeconds(1f);
+        screenFade.LaunchScreenFade();
         wsClient.SendWSMessage(switchScene.SaveToString());
         sceneMgr.SwitchScene(currentScene, nextScene);
         currentScene = sceneMgr.currentActiveScene;
