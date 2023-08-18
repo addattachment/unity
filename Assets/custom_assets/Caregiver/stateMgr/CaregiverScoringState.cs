@@ -12,7 +12,7 @@
     {
         //go to the next trial
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.gameManager.currentTrial);
-        state.gameManager.restart = true;
+        state.gameManager.done = true;
     }
 
 

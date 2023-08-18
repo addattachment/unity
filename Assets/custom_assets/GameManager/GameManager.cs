@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
     [Header("trial stateMgr bools")]
     public bool startTrial = false;
     public bool toPostTrial = false;
-    public bool restart = false;
+    public bool done = false;
     public bool ballIsShot = false;
     public bool trialIsRunning = false;
     public bool trialListFinished = false;

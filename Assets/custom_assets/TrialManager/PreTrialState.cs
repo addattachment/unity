@@ -36,7 +36,7 @@ public class PreTrialState : StateMachine
         //make sure other variables are also false
         state.gameManager.toPostTrial = false;
         state.gameManager.ballIsShot = false;
-        state.gameManager.restart = false;
+        state.gameManager.done = false;
         state.targets.SetAllNewTranslateValues();
     }
 }

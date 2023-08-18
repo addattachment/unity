@@ -58,7 +58,7 @@ public class TrialState : StateMachine
         //make sure other variables are also false
         //state.startTrial = false;
 
-        state.gameManager.restart = false;
+        state.gameManager.done = false;
         state.gameManager.ballIsShot = false;
     }
 

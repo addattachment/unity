@@ -17,7 +17,7 @@ public class CaregiverEndScoringState : CaregiverStateMachine
     {
         //go to the next trial
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(-1);
-        state.gameManager.restart = true;
+        state.gameManager.done = true;
     }
 
 
@@ -25,11 +25,13 @@ public class CaregiverEndScoringState : CaregiverStateMachine
     {
         if (state.scoreCaregiver.GetComponent<ScoreCaregiver>().scoringStarted & !isListening)
         {
+            // eenmalig maar feedback pole omhoog brengen
             state.feedbackPole.RaiseFeedbackPole();
             isListening = true;
         }
         if (state.feedbackPole.isTouched)
         {
+            // eens feedback geraakt stoppen met scorens
             state.scoreCaregiver.GetComponent<ScoreCaregiver>().DisableScoring();
             state.finalScoringBoard.GetComponent<Appear>().Lower();
         }

@@ -28,18 +28,18 @@ public class PostTrialState : StateMachine
             state.gameManager.mustGiveFeedback = true;
         }
         // restart is set in caregiver scoring exit of state
-        if (state.gameManager.restart)
+        if (state.gameManager.done)
         {
             //Set index for next trial, this also checks if we've come to the end
             state.trialList.NextTrial();
             if (!state.gameManager.trialListFinished)
             {
-                state.gameManager.restart = false;
+                state.gameManager.done = false;
                 state.SwitchState(state.preTrialState);
             }
             else
             {
-                state.gameManager.restart = false;
+                state.gameManager.done = false;
                 state.SwitchState(state.endState);
             }
         }

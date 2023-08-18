@@ -36,7 +36,7 @@
                 }
             }
         }
-        if (state.gameManager.toFinalScoring)
+        if (state.gameManager.toFinalScoring && !state.gameManager.done)
         {
             state.gameManager.toFinalScoring = false;
             state.SwitchState(state.caregiverEndScoringState);
