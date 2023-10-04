@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     public bool didGiveScore = false;
     public bool mustGiveFeedback = false;
     public bool toFinalScoring = false; // bool to indicate that the game has ended, and we need to give once more a scoring of the caregiver
-
+    public bool enableScoring = false; // check so we can't start scoring too soon
     [Header("ball stateMgr bools")]
     public bool isInitiated = false;
     [Header("light bools")]

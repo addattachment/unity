@@ -11,6 +11,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
     {
         state.caregiverPhase = "CaregiverIntroScoringState";
         state.scoreCaregiver.EnableScoring(true);
+        state.gameManager.enableScoring = true;
         // play audio fragment: "goede score geven"
         passthrough = 0;
         state.feedbackButton.isTouched = false;
@@ -30,7 +31,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
 
     public override void ExitState(CaregiverIntroStateManager state)
     {
-
+        state.gameManager.enableScoring = false;
     }
 
 

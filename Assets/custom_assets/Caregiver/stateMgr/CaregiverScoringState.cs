@@ -6,6 +6,7 @@
         state.caregiverPhase = "CaregiverScoringState";
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().EnableScoring(true);
         isListening = false;
+        state.gameManager.enableScoring = true;
     }
 
     public override void ExitState(CaregiverStateManager state)
@@ -13,6 +14,7 @@
         //go to the next trial
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(state.gameManager.currentTrial);
         state.gameManager.done = true;
+        state.gameManager.enableScoring = false;
     }
 
 

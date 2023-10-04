@@ -11,6 +11,7 @@ public class CaregiverEndScoringState : CaregiverStateMachine
         state.finalScoringBoard.GetComponent<Appear>().Raise();
         isShaking = false;
         isListening = false;
+        state.gameManager.enableScoring = true;
     }
 
     public override void ExitState(CaregiverStateManager state)
@@ -18,6 +19,7 @@ public class CaregiverEndScoringState : CaregiverStateMachine
         //go to the next trial
         state.scoreCaregiver.GetComponent<ScoreCaregiver>().SendScore(-1);
         state.gameManager.done = true;
+        state.gameManager.enableScoring = false;
     }
 
 

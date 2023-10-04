@@ -80,6 +80,8 @@ public class ScoreCaregiver : MonoBehaviour
 
     public void SwitchGripMode()
     {
+        if (!GameManager.Instance.enableScoring) return; //TODO VERIFY
+
         gripIsPushed = !gripIsPushed;
         if (gripIsPushed)
         {

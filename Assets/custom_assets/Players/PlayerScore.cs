@@ -104,6 +104,8 @@ public class PlayerScore : MonoBehaviour
         playerBallScoreEvent.Set(gameManager.currentTrial, player.playerName, player.isRealPlayer, score);
         ws.SendWSMessage(playerBallScoreEvent.SaveToString());
         lsl.SendMarker(Marker.score);
+
+
     }
 }
 

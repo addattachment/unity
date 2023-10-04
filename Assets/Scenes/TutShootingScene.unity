@@ -2498,7 +2498,7 @@ MonoBehaviour:
   isRealPlayer: 1
   isActivePlayer: 0
   contingency: 0
-  trial_block: 1
+  trial_block: 200
   score: 0
   currentBallInTrial: 0
   slingshot: {fileID: 1855352217}
@@ -2545,7 +2545,7 @@ MonoBehaviour:
   latelatchingDebug: 0
   bodyTracking: 0
   foveationLevel: -1
-  openMRC: 1
+  openMRC: 0
   foregroundLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295

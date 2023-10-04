@@ -212,7 +212,10 @@ public class Ball : MonoBehaviour
         ball_flying_audio.Play();
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = true;
         //Send LSL data
-        lsl.SendMarker(Marker.ball_release);
+        if (!gameManager.isTutorial)
+        {
+            lsl.SendMarker(Marker.ball_release);
+        }
         //Calculate trajectory of ball
         _time_to_target = CalcFlyingTime(targets.hitTarget.transform.position);
         _hitTargetPos = targets.hitTarget.GetComponent<TargetPosUpdate>().GetFuturePositionOfTarget(_time_to_target);
