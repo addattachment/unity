@@ -9,6 +9,8 @@ public class TutorialMgr : MonoBehaviour
     [SerializeField] private TMP_Text ShootTutorialScreensText;
     [SerializeField] private GameObject NextLevelArrow;
     [SerializeField] private TrialStateManager trialState;
+    [SerializeField] private Appear nextLevelButton;
+
     private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class TutorialMgr : MonoBehaviour
     {
         if (gameManager.currentTrial > 0 && trialState.currentState == trialState.trialState && !NextLevelArrow.GetComponent<MeshRenderer>().enabled)
         {
+            nextLevelButton.Raise();
             NextLevelArrow.GetComponent<MeshRenderer>().enabled = true;
             ShootTutorialScreensText.text = "Als je gereed bent, duw links op de knop om verder te gaan";
         }

@@ -1672,6 +1672,7 @@ MonoBehaviour:
   ShootTutorialScreensText: {fileID: 1746826597}
   NextLevelArrow: {fileID: 421254897}
   trialState: {fileID: 762719113}
+  nextLevelButton: {fileID: 1991372038}
 --- !u!1 &406294663
 GameObject:
   m_ObjectHideFlags: 0
@@ -5475,6 +5476,11 @@ Transform:
   m_Father: {fileID: 136558683}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15.857112, y: 12.153117, z: 0.25833693}
+--- !u!1 &1361998816 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8071847803759967216, guid: 28528e01c40e82543a202dae07327069, type: 3}
+  m_PrefabInstance: {fileID: 1991372036}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1374780077
 GameObject:
   m_ObjectHideFlags: 0
@@ -7920,6 +7926,14 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8071847803728255081, guid: 28528e01c40e82543a202dae07327069, type: 3}
+      propertyPath: m_MaxDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8071847803728255081, guid: 28528e01c40e82543a202dae07327069, type: 3}
+      propertyPath: m_AutoConfigureConnectedAnchor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8071847803728255082, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: crossFade
       value: 
@@ -7942,7 +7956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8071847803759967217, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.00002
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8071847803759967217, guid: 28528e01c40e82543a202dae07327069, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7976,13 +7990,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8071847803728255081, guid: 28528e01c40e82543a202dae07327069, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 28528e01c40e82543a202dae07327069, type: 3}
 --- !u!4 &1991372037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8071847803759967217, guid: 28528e01c40e82543a202dae07327069, type: 3}
   m_PrefabInstance: {fileID: 1991372036}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1991372038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1361998816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e9634a1d005e304ca0e953b1b3ba92b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHeight: 1
+  minHeight: 0
+  duration: 1
+  RaiseFeedback: 0
+  LowerFeedback: 0
+  isLow: 1
 --- !u!1 &1997030830
 GameObject:
   m_ObjectHideFlags: 0
