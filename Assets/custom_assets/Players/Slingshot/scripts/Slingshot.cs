@@ -240,6 +240,7 @@ public class Slingshot : MonoBehaviour
 
     public Ball PrepNewBall(TargetGroup targets)
     {
+        Debug.Log("prepping new ball at " + Time.time);
         hitTarget = targets.hitTarget;
         InstBall = Instantiate(Ball, Hook.transform.position, Quaternion.identity, transform);
         InstBall.GetComponent<Renderer>().material = hitTarget.GetComponent<Renderer>().material;

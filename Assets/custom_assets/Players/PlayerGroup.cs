@@ -18,6 +18,7 @@ public class PlayerGroup : MonoBehaviour
     private PlayersScoreEvent playersScoreEvent = new();
     public GameObject PlayerInvisibleWall;
     public GameObject NPCInvisibleWall;
+    public GameObject activeBall;
 
     [Header("Debugging")]
 
@@ -25,6 +26,7 @@ public class PlayerGroup : MonoBehaviour
     [SerializeField] int currentPos = 0;
     [SerializeField] int currentNPCResponse = 0;
     [SerializeField] int currentPlayerResponse = 0;
+
     void Start()
     {
         gameManager = GameManager.Instance;
@@ -51,6 +53,10 @@ public class PlayerGroup : MonoBehaviour
             SwitchPlayer();
         }
         ////////////////////////
+        if (activeParticipant != null)
+        {
+            activeBall = activeParticipant.instBall != null ? activeParticipant.instBall : null;
+        }
     }
 
     public bool BallsLeft()
@@ -301,7 +307,7 @@ public class PlayerGroup : MonoBehaviour
                         // equal chance must vs mustn
                         if (winningSessionsNPCSide[currentRow, currentBall] == 1)
                         {
-                            reachChance = ReachTargetEnum.mayNPC; 
+                            reachChance = ReachTargetEnum.mayNPC;
                         }
                         else
                         {
@@ -340,7 +346,7 @@ public class PlayerGroup : MonoBehaviour
                 }
             }
         }
-        Debug.Log(activeParticipant + " reachChance " + reachChance + " for ball " + currentBall + " for trial "+ gameManager.currentTrial);
+        Debug.Log(activeParticipant + " reachChance " + reachChance + " for ball " + currentBall + " for trial " + gameManager.currentTrial);
         slingshot.SetTargetReachable(reachEnum: reachChance);
     }
 }

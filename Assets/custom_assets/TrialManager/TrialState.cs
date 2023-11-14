@@ -33,6 +33,7 @@ public class TrialState : StateMachine
         //    state.players.SwitchPlayer();
         //    state.players.PrepNewShootingTurn(state.trialList, state.targets);
         //}
+        
         if (state.gameManager.toPostTrial)
         {
             if (!isLowering)

@@ -26,6 +26,9 @@ public class BallStateManager : MonoBehaviour
     //public bool canLaunch = false;
     //public bool didShoot = false;
 
+    [SerializeField] private float maxTimeNoBall = 3.0f;
+    private float _timerForNoBall = 0.0f;
+
     // ballPhase is for debugging purposes
     public string ballPhase = "ballInitState";
     [SerializeField] private bool sendStateWSMessage = false;
@@ -38,7 +41,7 @@ public class BallStateManager : MonoBehaviour
     {
         gameManager = GameManager.Instance;
         ws = WsClient.Instance;
-        if(players == null)
+        if (players == null)
         {
             players = GameObject.FindGameObjectWithTag("PlayerGroup").GetComponent<PlayerGroup>();
         }
@@ -50,6 +53,7 @@ public class BallStateManager : MonoBehaviour
     private void Update()
     {
         currentBallState.UpdateState(this);
+        CheckIfBallShouldBePresent();
 
     }
     public void SwitchState(BallStateMachine newState)
@@ -62,5 +66,22 @@ public class BallStateManager : MonoBehaviour
             ws.SendWSMessage(ballStateMgrEvent.SaveToString());
         }
         currentBallState.EnterState(this);
+    }
+
+    private void CheckIfBallShouldBePresent()
+    {
+        if (gameManager.trialIsRunning && players.activeBall == null)
+        {
+            _timerForNoBall += Time.deltaTime;
+            if(_timerForNoBall >= maxTimeNoBall)
+            {
+                Debug.Log("no ball present, we enter the ballPrepState again to generate a new ball");
+                SwitchState(ballPrepState);
+            }
+        }
+        else
+        {
+            _timerForNoBall = 0.0f;
+        }
     }
 }
