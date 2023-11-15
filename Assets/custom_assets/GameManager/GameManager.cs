@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
     public bool trophyIsGiven = false;
 
     [Header("caregiver stateMgr bools")]
+    public bool caregiverBaseLineGiven = false;
     public bool didReadFeedback = false;
     public bool didGiveScore = false;
     public bool mustGiveFeedback = false;

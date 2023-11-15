@@ -99,12 +99,12 @@ public class SceneMgr : MonoBehaviour
 
     private void LoadNewScene(string sceneToLoad)
     {
-        SetSceneVariables(sceneToLoad);
+        sceneToLoad = SetSceneVariables(sceneToLoad); // we return sceneToLoad, if we want to alter the course of the scene that needs to be loaded
         SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive);
         currentActiveScene = sceneToLoad;
     }
 
-    private void SetSceneVariables(string sceneToLoad)
+    private string SetSceneVariables(string sceneToLoad)
     {
         Debug.Log("Switching to " + sceneToLoad);
         switch (sceneToLoad)
@@ -116,6 +116,12 @@ public class SceneMgr : MonoBehaviour
                 gameManager.isTutorial = true;
                 break;
             case "GameScene":
+                if (gameManager.caregiverBaseLineGiven == false)
+                {
+                    Debug.Log("instead loading the caregiver scene again");
+                    gameManager.isTutorial = true;
+                    return "CaregiverIntroScene";
+                }
                 gameManager.isTutorial = false;
                 gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
                 gameManager.currentTrial = WsClient.Instance.playerVals.trial_number;
@@ -124,6 +130,8 @@ public class SceneMgr : MonoBehaviour
             default:
                 break;
         }
+        return sceneToLoad;
+
     }
     public void RestartScene()
     {

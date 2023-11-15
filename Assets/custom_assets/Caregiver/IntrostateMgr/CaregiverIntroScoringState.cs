@@ -105,7 +105,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
                     state.scoreCaregiver.scoringStarted = false;
                     state.scoreCaregiver.SendScore(-1);
                     state.InstructionBoardText.text = "Goed gedaan, we gaan het spel nu starten!";
-
+                    state.gameManager.caregiverBaseLineGiven = true;
                     state.feedbackButton.RaiseFeedbackPole();
                     // als score goed, feedbackbutton omhoog en naar echte spel
                     break;
