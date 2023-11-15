@@ -111,6 +111,7 @@ public class SceneMgr : MonoBehaviour
         {
             case "TutShootingScene":
                 gameManager.isTutorial = true;
+                gameManager.currentTrial = 0;
                 break;
             case "CaregiverIntroScene":
                 gameManager.isTutorial = true;
