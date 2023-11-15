@@ -89,6 +89,7 @@ public class SetGameValues : MonoBehaviour
         contingency = playerVals.contingency == 20 ? Contingency.c_20 : Contingency.c_80;
         height = playerVals.height;
         trial_block = playerVals.trial_block;
+        gameManager.currentTrial = playerVals.trial_number;
         UpdateGameValues();
     }
 

@@ -175,6 +175,7 @@ public class PlayerVals
     public string gender;
     public int contingency;
     public int trial_block;
+    public int trial_number;
     public bool valuesSet = false;
     public string SaveToString()
     {
