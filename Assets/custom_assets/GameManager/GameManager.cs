@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -59,11 +60,12 @@ public class GameManager : MonoBehaviour
     public bool mustGiveFeedback = false;
     public bool toFinalScoring = false; // bool to indicate that the game has ended, and we need to give once more a scoring of the caregiver
     public bool enableScoring = false; // check so we can't start scoring too soon
+    public CaregiverScoreEvent caregiverScoreEvent = new();
+    public CaregiverScoreListEvent caregiverScoreList = new();
     [Header("ball stateMgr bools")]
     public bool isInitiated = false;
     [Header("light bools")]
     public bool LightIsSet = false;
-
 
     private void Awake()
     {
@@ -106,4 +108,51 @@ public class GameManager : MonoBehaviour
     //}
 
 
+}
+
+[System.Serializable]
+public class CaregiverScoreEvent
+{
+    public int trialNumber;
+    public string websocketMessage = "caregiverScore";
+    public int score;
+    public float _time;
+    public CaregiverScoreEvent()
+    {
+    }
+    public void Set(int currentTrial, int newScore)
+    {
+        trialNumber = currentTrial;
+        score = newScore;
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
+    }
+}
+
+[System.Serializable]
+public class CaregiverScoreListEvent
+{
+
+    public List<CaregiverScoreEvent> caregiverScoreList;
+    public string websocketMessage = "caregiverScoreList";
+
+    public float _time;
+    public CaregiverScoreListEvent()
+    {
+        caregiverScoreList = new();
+    }
+    public void Add(int currentTrial, int newScore)
+    {
+        var tempScoreEvent = new CaregiverScoreEvent();
+        tempScoreEvent.Set(currentTrial, newScore);
+        caregiverScoreList.Add(tempScoreEvent);
+    }
+    public string SaveToString()
+    {
+        _time = Time.time;
+        return JsonUtility.ToJson(this);
+    }
 }

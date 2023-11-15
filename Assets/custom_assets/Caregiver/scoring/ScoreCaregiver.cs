@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(Appear))]
 public class ScoreCaregiver : MonoBehaviour
@@ -27,8 +28,9 @@ public class ScoreCaregiver : MonoBehaviour
     [SerializeField] private Appear appear;
     public bool isLow = true;
     [Header("Data connections")]
-    [SerializeField] private WsClient ws;
+    private WsClient ws;
     private CaregiverScoreEvent caregiverScoreEvent;
+    [SerializeField] private CaregiverScoreListEvent caregiverScoreList;
     //TESTING
     //[SerializeField] private DebugConnection debug_text;
     private Vector3 startPosMeCircle;
@@ -49,7 +51,9 @@ public class ScoreCaregiver : MonoBehaviour
         startPosMeCircle = meCircle.transform.position;
         startPosCaregiverCircleOrig = caregiverCircle.transform.position;
         startPosCaregiverCircle = caregiverCircle.transform.position;
-        caregiverScoreEvent = new();
+        caregiverScoreEvent = GameManager.Instance.caregiverScoreEvent; // we set the caregiver score events in the gamemanager to keep them continuous over the scenes
+        caregiverScoreList = GameManager.Instance.caregiverScoreList;
+
         var controllers = GameObject.FindGameObjectsWithTag("Hand");
         LeftController = controllers[0];
         RightController = controllers[1];
@@ -129,6 +133,8 @@ public class ScoreCaregiver : MonoBehaviour
         //debug_text.SetDebugText("caregiverscore: " +caregiverScore + " based on "+ controllerDist + "/" + maxDistance + " trial:" + trialIndex);
         caregiverScoreEvent.Set(trialIndex, caregiverScore);
         ws.SendWSMessage(caregiverScoreEvent.SaveToString());
+        caregiverScoreList.Add(trialIndex, caregiverScore);
+        ws.SendWSMessage(caregiverScoreList.SaveToString());
     }
 
 
@@ -139,7 +145,7 @@ public class ScoreCaregiver : MonoBehaviour
     {
         controllerDist = Vector3.Distance(LeftController.transform.position, RightController.transform.position) - controllerStartDist;
         //Debug.Log("Distance between controllers = " + controllerDist);
-        controllerDist-= 0.05f; // an offset to make it easier to center the circles
+        controllerDist -= 0.05f; // an offset to make it easier to center the circles
     }
     private float DistanceBetweenCircles()
     {
@@ -166,7 +172,7 @@ public class ScoreCaregiver : MonoBehaviour
     private void UpdateLocalPos(GameObject obj, float xUpdate, float yUpdate, float zUpdate)
     {
         Vector3 localPos = obj.transform.localPosition;
-        
+
         localPos.x = xUpdate;
         localPos.y = yUpdate;
         localPos.z = zUpdate;
@@ -196,23 +202,4 @@ public class ScoreCaregiver : MonoBehaviour
         ParticleEffectEndRight.Play();
     }
 }
-public class CaregiverScoreEvent
-{
-    public int trialNumber;
-    public string websocketMessage = "caregiverScore";
-    public int score;
-    public float _time;
-    public CaregiverScoreEvent()
-    {
-    }
-    public void Set(int currentTrial, int newScore)
-    {
-        trialNumber = currentTrial;
-        score = newScore;
-    }
-    public string SaveToString()
-    {
-        _time = Time.time;
-        return JsonUtility.ToJson(this);
-    }
-}
+
