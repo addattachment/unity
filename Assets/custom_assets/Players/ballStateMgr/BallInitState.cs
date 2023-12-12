@@ -7,7 +7,7 @@ public class BallInitState : BallStateMachine
         state.ballPhase = "ballInitState";
 
         //state.players.ResetPlayers();
-        state.amountOfBallsInTrial = state.gameManager.ballsPerGame;
+        //state.amountOfBallsInTrial = state.gameManager.ballsPerGame;
     }
 
     public override void ExitState(BallStateManager state)

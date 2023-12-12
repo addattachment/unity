@@ -213,13 +213,15 @@ public class PlayerGroup : MonoBehaviour
         }
         ws.SendWSMessage(playersScoreEvent.SaveToString());
     }
+
+    
     ///
     /// lets work with 3 or 4 lists of NPC & player scoring chances
     /// 
     [SerializeField]
     private int[,] losingSessionsNPCSide = new int[5, 5] {
         {1,1,0,0,1},
-        {0,0,1,1,1},
+        {0,1,1,1,0},
         {1,0,1,1,1},
         {1,1,0,1,1},
         {1,1,1,0,0}
@@ -246,8 +248,9 @@ public class PlayerGroup : MonoBehaviour
         {1,0,1,0,1},
         {0,1,1,1,0},
         {1,1,0,1,1},
-        {1,0,1,1,1}
+        {1,1,1,0,1}
     };
+
 
     /// <summary>
     /// sets the ReachtargetEnum of the active slingshot

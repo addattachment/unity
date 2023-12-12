@@ -22,6 +22,11 @@ public class BallLaunchState : BallStateMachine
             state.currentBall.canProcessCollisions = false;
             state.SwitchState(state.ballCalcImpactState);
         }
+        if (state.currentBall.ballNotLaunchedQuicklyEnough)
+        {
+            state.currentBall.ballDidScore = false;
+            state.SwitchState(state.ballCalcImpactState);
+        }
     }
 }
 

@@ -13,7 +13,7 @@ public class BallPrepState : BallStateMachine
 
         state.players.SetPlayerScoringChance(slingshot, state.isGoodTrial);
         //Debug.Log("enter ball prep state " + Time.time);
-        if (activeParticipant.currentBallInTrial < state.amountOfBallsInTrial)
+        if (activeParticipant.currentBallInTrial < state.gameManager.ballsPerGame)
         {
             //// Make sure we can detect collisions by the new bullet (only once!)
             //state.targets.readyForHit = true;
@@ -47,6 +47,11 @@ public class BallPrepState : BallStateMachine
         {
             state.currentBall.ballIsGrabbed = false;
             state.SwitchState(state.ballLaunchState);
+        }
+        if (state.currentBall.ballNotLaunchedQuicklyEnough)
+        {
+            state.currentBall.ballDidScore = false;
+            state.SwitchState(state.ballCalcImpactState);
         }
     }
 }

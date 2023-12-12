@@ -24,8 +24,8 @@ public class GazeEvent
 public class Gazed : MonoBehaviour, IGazeFocusable
 {
     [SerializeField, Tooltip("either caregiver or NPC")] private string objectName = "caregiver"; // or "NPC"
-    [SerializeField] private WsClient ws;
-    [SerializeField] private GameManager gameManager;
+    private WsClient ws;
+    private GameManager gameManager;
     private GazeEvent gazeEvent;
     [Tooltip("bool to indicate that an object is seen at least once")]public bool hasBeenSeen = false;
     /// <summary>

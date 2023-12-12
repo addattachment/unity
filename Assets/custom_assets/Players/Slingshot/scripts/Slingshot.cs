@@ -31,7 +31,7 @@ public class Slingshot : MonoBehaviour
 
     [Header("Shooting parameters")]
     [Range(0.0f, 50.0f)] public float launchForceMultiplier = 20.0f;
-    [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float minDeflectionDist = 1.3f;
+    [SerializeField, Tooltip("distance to decide whether we need to deflect the ball")] float deflectionOffset = 0.8f;
     public GameObject hitTarget; // we use the hittarget object to adapt the deflection distance
     [Tooltip("defines whether we may, must or musn't hit the correct targets")] public ReachTargetEnum reachTarget;
     [SerializeField, Tooltip("how much may the drawing hook differ from the perfect hook to guide a ball to hit")] private float minGuidanceDist = 0.9f;
@@ -146,7 +146,7 @@ public class Slingshot : MonoBehaviour
     }
 
     /// <summary>
-    /// function to replace the springjoint, to be able to control better the velocity we're giving to the ball
+    /// function to calculate the velocity we're giving the ball in order to send it towards or away from its target, depending on the reachtarget enum
     /// </summary>
     /// <param name="origin"></param>
     /// <param name="hitTargetLoc"></param>
@@ -212,7 +212,7 @@ public class Slingshot : MonoBehaviour
                     //minimum distance to move for y, as this is the least distinguisishable in any case
                     var _y_displ_dir = _launchForce.y >= _mustReachForce.y ? 1 : -1;
                     var _min_y_displ = Mathf.Sqrt(Mathf.Pow(hitTarget.GetComponent<Renderer>().bounds.size.x, 2) - Mathf.Pow(Mathf.Abs(_launchForce.y - _mustReachForce.y), 2));
-                    var _move_y = Random.Range(_min_y_displ+0.05f, _min_y_displ + 0.1f) * _y_displ_dir;
+                    var _move_y = Random.Range(_min_y_displ+deflectionOffset, _min_y_displ + 2*deflectionOffset) * _y_displ_dir;
                     Vector3 deflectionVector = new(0, _move_y);
                     Debug.Log("deflection: " + deflectionVector + " diff "+diff+" bounds "+ hitTarget.GetComponent<Renderer>().bounds.size);
                     _launchForce += deflectionVector;
@@ -247,7 +247,7 @@ public class Slingshot : MonoBehaviour
         InstBall.GetComponent<TrailRenderer>().material.color = hitTarget.GetComponent<Renderer>().material.color;
         player.instBall = InstBall;
         //update deflection distance
-        minDeflectionDist = hitTarget.transform.localScale.x * 2.0f;
+        //minDeflectionDist = hitTarget.transform.localScale.x * 2.0f;
         return InstBall.GetComponent<Ball>();
     }
 

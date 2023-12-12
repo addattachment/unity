@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using LSL;
@@ -7,27 +6,21 @@ using Unity.XR.PXR;
 
 public class SwitchScene : MonoBehaviour
 {
-    private GameManager gameManager;
     private WsClient wsClient;
-    private OutletPassThrough LSLOutlet;
     private SceneMgr sceneMgr;
     [Header("next scene things")]
     [SerializeField] private TMP_Text buttonText;
-    [SerializeField] private string nextScene = "Basescene";
     [SerializeField] private string currentScene = "Basescene";
-
-    //[SerializeField] Animator crossFade;
-    [SerializeField] private PXR_ScreenFade screenFade;
+    [SerializeField] private string nextScene = "Basescene";
+    private PXR_ScreenFade screenFade;
 
     [Header("debug")]
     public bool testSwitch = false;
-    [SerializeField] GameObject[] hideObjectWhenNotNeeded;
+    //[SerializeField] GameObject[] hideObjectWhenNotNeeded;
 
     private void Start()
     {
         wsClient = WsClient.Instance;
-        LSLOutlet = OutletPassThrough.Instance;
-        gameManager = GameManager.Instance;
         sceneMgr = SceneMgr.Instance;
     }
 
@@ -61,7 +54,7 @@ public class SwitchScene : MonoBehaviour
         gameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.red);
         buttonText.SetText("op naar het volgende!");
         yield return new WaitForSeconds(1.5f);
-        SwitchSceneEvent switchScene= new(nextScene);
+        SwitchSceneEvent switchScene = new(nextScene);
         //crossFade.SetTrigger("Start");
         screenFade = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<PXR_ScreenFade>();
         yield return new WaitForSeconds(1f);

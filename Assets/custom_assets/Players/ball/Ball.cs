@@ -16,6 +16,7 @@ public class Ball : MonoBehaviour
     [SerializeField] private AudioSource BallFloorImpact;
     [SerializeField] private AudioSource BallDestructionNoHitSound;
     [SerializeField] private AudioSource ball_flying_audio;
+    [SerializeField] private AudioSource ball_gets_removed;
 
     [Header("shooting arguments")]
     [Tooltip("time used for determining when bullet is not attached to slingshot anymore")] public float ReleaseTime = 0.5f;
@@ -30,6 +31,7 @@ public class Ball : MonoBehaviour
     public bool canProcessCollisions = true;
     public bool ballDidScore = false;
     private bool showLinerender = false;
+    public bool ballNotLaunchedQuicklyEnough = false;
 
     [Header("ball Steering")]
     private float _time_to_target = 1.0f;
@@ -41,7 +43,7 @@ public class Ball : MonoBehaviour
     private OutletPassThrough lsl;
     private List<TargetHit> wrongHitTransforms = new();
     [Header("atmosphere")]
-    [SerializeField] private GameObject backgroundSound;
+    private GameObject backgroundSound;
     [SerializeField] private TrailRenderer trail;
 
     [Header("ParticleEffects")]
@@ -279,13 +281,28 @@ public class Ball : MonoBehaviour
     /// DestroyThisBall
     /// first makes sure a new ball is created and immediately destroys this one
     /// </summary>
-    private void DestroyThisBall()
+    public void DestroyThisBall()
     {
         //backgroundSound.GetComponent<FilterBackgroundSound>().enableTransition = false;
         trajectoryManager.EnableLine(false);
         Destroy(gameObject);
     }
-    IEnumerator Explode()
+
+    private void DestroyBeforeShooting()
+    {
+        Debug.Log("destroying this ball because you didn't use it");
+        if (didHitATarget)
+        {
+            BallDestructionNoHitSound.Play();
+        }
+        ballNotLaunchedQuicklyEnough = true;
+        DestroyThisBall();
+    }
+    public void BallGetsRemovedSound()
+    {
+        ball_gets_removed.Play();
+    }
+    public IEnumerator Explode()
     {
         yield return new WaitForSeconds(DestructionTime);
         if (!didHitATarget)

@@ -33,6 +33,7 @@ public class WsClient : MonoBehaviour
     [SerializeField] private string port = "8080";
     //[SerializeField] private Ws_to_debug wsToDebug;
     public PlayerVals playerVals;
+    [SerializeField] private bool enableDebugMessages = false;
 
     [System.Serializable] public class WsEvent : UnityEvent<string> { }
     //public WsEvent wsMsgReceived;
@@ -138,7 +139,7 @@ public class WsClient : MonoBehaviour
 
     public void SendWSMessage(string message)
     {
-        //Debug.Log("sending " + message);
+        if(enableDebugMessages) Debug.Log("sending " + message);
         DateTime epochStart = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
         int cur_time = (int)(DateTime.UtcNow - epochStart).TotalSeconds;
         if (hasWsConnection)
