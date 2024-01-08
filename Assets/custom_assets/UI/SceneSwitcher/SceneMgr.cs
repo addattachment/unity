@@ -127,6 +127,7 @@ public class SceneMgr : MonoBehaviour
                 gameManager.trialListGenerated = false; // we opt for a renewed triallist generation
                 gameManager.currentTrial = WsClient.Instance.playerVals.trial_number;
                 OutletPassThrough.Instance.SendMarker(Marker.game_start);
+                gameManager.trialIsRunning = false;
                 break;
             default:
                 break;
