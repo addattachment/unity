@@ -1006,7 +1006,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3684825000734399089, guid: 223f7902c188d274f9cb8d70bf8a5172, type: 3}
       propertyPath: m_Size.y
-      value: 1.3045553
+      value: 1.2535775
       objectReference: {fileID: 0}
     - target: {fileID: 3684825000734399089, guid: 223f7902c188d274f9cb8d70bf8a5172, type: 3}
       propertyPath: m_Size.z
@@ -1018,11 +1018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3684825000734399089, guid: 223f7902c188d274f9cb8d70bf8a5172, type: 3}
       propertyPath: m_Center.y
-      value: 0.71474886
+      value: 0.6892598
       objectReference: {fileID: 0}
     - target: {fileID: 3684825000734399089, guid: 223f7902c188d274f9cb8d70bf8a5172, type: 3}
       propertyPath: m_Center.z
-      value: -0.02713297
+      value: -0.027132977
       objectReference: {fileID: 0}
     - target: {fileID: 3684825000734399090, guid: 223f7902c188d274f9cb8d70bf8a5172, type: 3}
       propertyPath: objectName
@@ -1189,8 +1189,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47087595, y: 0.43158093, z: 0.34448802}
-  m_Center: {x: 0.022130702, y: 1.5805398, z: 0.011441032}
+  m_Size: {x: 0.59902674, y: 0.43158093, z: 0.4163971}
+  m_Center: {x: 0.056449797, y: 1.5805398, z: 0.047395576}
 --- !u!114 &491137547 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8895746635564159595, guid: d12c68e7996cd014c9589b253bacd4a3, type: 3}
