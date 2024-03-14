@@ -139,6 +139,7 @@ public class CaregiverIntroScoringState : CaregiverIntroStateMachine
         }
         if (state.feedbackButton.isTouched && passthrough == 2)
         {
+            Debug.Log("switching because touched");
             state.SwitchState(state.caregiverIntroEndState);
         }
     }
